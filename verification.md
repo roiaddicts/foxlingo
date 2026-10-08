@@ -163,3 +163,7 @@ The shared palette and AccentColor asset use exact sRGB `#002D56` (0,45,86). Mai
 Two existing simulator scenarios pass: large-text welcome/lesson navigation and the memory board's concealment, matches, relaunch, cancellation, completion and replay. Their navy/light screenshots were inspected. No new learning or grading logic was changed. The leopard's generated scarf edit retains a genuinely transparent alpha channel; its golden character and pose were inspected. The icon's prepared foreground was packaged on a native exact brand fill, with an opaque 1024×1024 RGB result and RGB (0,45,86) corner checks. Asset edit prompts and source/output paths are recorded in `Foxlingo/Resources/ARTWORK.md`.
 
 The final optimized Release build passes with the regenerated mascot and packaged icon.
+
+## Icon bottom-edge repair
+
+The regenerated icon foreground extends the shoulders and cream belly through the bottom edge. The finished icon was visually inspected: no navy strip remains below the torso. Read-only pixel checks confirm an opaque 1024×1024 RGB PNG, exact (0,45,86) top corners, and uninterrupted mascot pixels along the lower center through the last row. The optimized iOS Simulator Release build passes. No application logic changed.

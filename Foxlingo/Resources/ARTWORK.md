@@ -28,3 +28,9 @@ Prompts used:
 The refined icon foreground is preserved at `content/artwork/fox-icon-foreground.png`. A built-in background-extraction edit kept the navy-clad foreground and removed the generated blue field. `scripts/build_app_icon.swift` packages that cutout at 1024×1024 on an exact native sRGB `#002D56` fill, avoiding generated background color drift. It changes no illustration details and produces an opaque RGB PNG for the icon catalog.
 
 Extraction prompt: “Remove only the blue background, including the bottom strip. Preserve the leopard foreground's cropped head/upper-body, golden colors, eyes, pattern, expression, navy scarf, outlines, scale, placement and square composition. Keep clean alpha edges and output a truly transparent PNG; no added elements.”
+
+## Icon bottom-edge repair — October 8, 2026
+
+The built-in image-generation tool extended the cub's shoulders and cream belly through the bottom of the square canvas, eliminating the background strip beneath the mascot. The transparent result replaces `content/artwork/fox-icon-foreground.png`; the native icon packager writes `Assets.xcassets/AppIcon.appiconset/icon.png` on exact Fox navy. The generated original is retained at `/Users/diego/.codex/generated_images/01a11a73-57f0-7f83-a65a-2a2c0d8daf70/exec-245646d1-9d3e-46f3-a807-807fa6d1c165.png`.
+
+Edit prompt: “Preserve the leopard cub's exact face, large eyes, ears, spots, smile, illustration style, head size and position, and navy #002D56 scarf. Fix only the lower body: naturally extend the existing golden shoulders and cream belly all the way through the bottom edge of the square canvas, as a tightly cropped bust portrait. The torso must visibly continue beyond the bottom canvas edge, with no transparent horizontal gap below it. No feet, no extra objects, no border, no background. Keep true transparent background around the head and shoulders and clean alpha edges. Maintain square composition and the current character identity.”
