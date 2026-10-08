@@ -154,7 +154,7 @@ public struct ContentPack: Codable, Sendable {
                 try require(x.choices.count == 4 && ci.count == 4 && Set(x.choices.map { Recall.normalize($0.text) }).count == 4 && !x.answerIDs.isEmpty && Set(x.answerIDs).isSubset(of:ci), "Invalid choices for \(x.key).")
             case "match":
                 let left = Set(x.left.map(\.id)), right = Set(x.right.map(\.id))
-                try require(left.count == 3 && x.left.count == 3 && right.count == 3 && x.right.count == 3 && x.pairs.count == 3 && Set(x.pairs.map(\.left)) == left && Set(x.pairs.map(\.right)) == right && Set(x.left.map { Recall.normalize($0.text) }).count == 3 && Set(x.right.map { Recall.normalize($0.text) }).count == 3, "Ambiguous matching board \(x.key).")
+                try require(x.objectiveIDs.count == 3 && Set(x.objectiveIDs).count == 3 && left == Set(["l-0","l-1","l-2"]) && right == Set(["r-0","r-1","r-2"]) && left.count == 3 && x.left.count == 3 && right.count == 3 && x.right.count == 3 && x.pairs.count == 3 && Set(x.pairs.map(\.left)) == left && Set(x.pairs.map(\.right)) == right && Set(x.left.map { Recall.normalize($0.text) }).count == 3 && Set(x.right.map { Recall.normalize($0.text) }).count == 3, "Ambiguous matching board \(x.key).")
             default: throw ContentError.invalid("Unknown exercise type.")
             }
         }
@@ -178,4 +178,23 @@ public struct FileContentRepository: ContentRepository {
     public let url: URL
     public init(url: URL) { self.url = url }
     public func load() throws -> ContentPack { try ContentPack.load(Data(contentsOf:url)) }
+}
+
+public enum AnswerArtwork {
+    public static let flags = ["spain":"flag-spain","mexico":"flag-mexico","germany":"flag-germany","brazil":"flag-brazil","portugal":"flag-portugal","argentina":"flag-argentina","france":"flag-france","england":"flag-england","colombia":"flag-colombia","austria":"flag-austria","azerbaijan":"flag-azerbaijan","belgium":"flag-belgium","greece":"flag-greece","italy":"flag-italy","netherlands":"flag-netherlands","norway":"flag-norway","slovakia":"flag-slovakia","ukraine":"flag-ukraine","uruguay":"flag-uruguay","chile":"flag-chile","czechia":"flag-czech-republic","turkiye":"flag-turkey","turkey":"flag-turkey"]
+    public static func entity(_ text: String,type: String,pack: ContentPack) -> Entity? {
+        guard ["club","player"].contains(type) else {return nil}
+        return pack.entities.first {e in e.type == type && e.imageAsset != nil && ([e.name]+e.aliases).contains {Recall.normalize($0) == Recall.normalize(text)} }
+    }
+    public static func type(objectiveID: UUID,pack: ContentPack) -> String? {
+        let o=pack.objective(objectiveID)
+        guard o.factIDs.count == 1,let f=pack.facts.first(where:{$0.id == o.factIDs[0]}) else {return nil}
+        if f.predicate == "country" || f.predicate.hasSuffix("-country") {return "country"}
+        guard f.predicate != "nickname",let id=f.value.entityID else {return nil}
+        let type=pack.entity(id).type
+        return ["club","player"].contains(type) ? type : nil
+    }
+    public static func canShow(_ text: String,type: String,pack: ContentPack) -> Bool {
+        type == "country" ? flags[Recall.normalize(text)] != nil : entity(text,type:type,pack:pack) != nil
+    }
 }

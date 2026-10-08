@@ -56,3 +56,12 @@ QA exports are local generated artifacts under the ignored `output/` directory. 
 ## Delivery boundary
 
 This is a locally runnable native MVP, not an App Store or TestFlight publication. Physical-device installation needs the user's Apple development signing configuration. Live data, automated AI publishing, Firebase, match preparation, and the connection explorer remain the later work described in the vision.
+
+## Visual clues and memory polish
+
+- 37 core tests pass, including reversed memory pairs, concealed mismatch turns, saved pairs, malformed board rejection, and semantic visual typing (cities cannot become club badges).
+- Real simulator flows pass for memory resume and all three football games. Large text welcome/lesson also passes after the semantic answer fix.
+- All 9 club categories have cached badges. All 4 country categories use cached flag images; 22 flag images are bundled for country answers. Visual clues retain spoken country/club names. Player picker shows both grid clues.
+- Choice answers only use artwork when all four options have supported visuals of the same semantic type. Historical, numeric, city, and nickname facts retain their meaning as text.
+- VoiceOver holds unmatched cards until explicit dismissal; ordinary play turns them over after 1.8 seconds. This behavior is implemented and reviewed; a live VoiceOver session has not been exercised.
+- Replayed lessons report their actual next recall date, preserving existing schedules. Press animations respect Reduce Motion.

@@ -56,4 +56,27 @@ final class GameTests: XCTestCase {
         XCTAssertEqual(state.streak.activeDays.count,1);XCTAssertTrue(state.reviews.isEmpty);XCTAssertTrue(state.acquiredCards.isEmpty)
     }
 
+    func testMemoryTurnsHideUntilRevealedAndMatchInEitherOrder() {
+        var memory=MemoryMatch(pairs:[Pair(left:"l-0",right:"r-0"),Pair(left:"l-1",right:"r-1")])
+        XCTAssertFalse(memory.isVisible("l-0"))
+        XCTAssertEqual(memory.flip("r-0"),.revealed)
+        XCTAssertEqual(memory.flip("r-0"),.ignored)
+        XCTAssertEqual(memory.flip("l-0"),.matched("l-0"))
+        XCTAssertTrue(memory.isVisible("r-0"));XCTAssertEqual(memory.flip("r-0"),.ignored)
+        XCTAssertEqual(memory.flip("l-1"),.revealed);XCTAssertEqual(memory.flip("r-1"),.matched("l-1"))
+    }
+    func testMemoryMismatchBlocksThirdRevealAndCanClose() {
+        var memory=MemoryMatch(pairs:[Pair(left:"l-0",right:"r-0"),Pair(left:"l-1",right:"r-1")])
+        XCTAssertEqual(memory.flip("unknown"),.ignored)
+        XCTAssertEqual(memory.flip("l-0"),.revealed);XCTAssertEqual(memory.flip("l-1"),.mismatch)
+        XCTAssertEqual(memory.flip("r-0"),.ignored);XCTAssertTrue(memory.waitingToClose)
+        memory.closeMismatch();XCTAssertFalse(memory.isVisible("l-0"));XCTAssertTrue(memory.matched.isEmpty)
+        XCTAssertEqual(memory.flip("l-0"),.revealed);XCTAssertEqual(memory.flip("r-0"),.matched("l-0"))
+    }
+    func testMemoryRestoresOnlyCompletedPairs() {
+        let memory=MemoryMatch(pairs:[Pair(left:"l-0",right:"r-0"),Pair(left:"l-1",right:"r-1")],completed:["l-0","unknown"])
+        XCTAssertEqual(memory.matched,Set(["l-0","r-0"]))
+        XCTAssertTrue(memory.faceUp.isEmpty);XCTAssertFalse(memory.isVisible("l-1"))
+    }
+
 }

@@ -11,6 +11,9 @@ public struct GameCategory: Codable, Identifiable, Sendable {
     public let id: String
     public let title: String
     public let playerIDs: [String]
+    public let imageAsset: String?
+    public let imageURL: String?
+    public let flag: String?
 }
 public struct SquadMember: Codable, Sendable {
     public let playerID: String
@@ -91,4 +94,28 @@ public enum BoardMatcher {
     public static func accepts(player: String, slot: Int, candidates: [Set<String>], placed: [Int:String]) -> Bool {
         candidates.indices.contains(slot) && placed[slot] == nil && !placed.values.contains(player) && candidates[slot].contains(player)
     }
+}
+
+/// Face-down association matching. A pending mismatch must close before another turn.
+public struct MemoryMatch: Sendable {
+    public enum Turn: Equatable {case ignored, revealed, matched(String), mismatch}
+    public let pairs: [Pair]
+    public private(set) var faceUp: [String] = []
+    public private(set) var matched: Set<String>
+    public init(pairs: [Pair], completed: [String] = []) {
+        self.pairs=pairs
+        matched=Set(pairs.filter{completed.contains($0.left)}.flatMap{[$0.left,$0.right]})
+    }
+    public func isVisible(_ id: String) -> Bool {matched.contains(id) || faceUp.contains(id)}
+    public var waitingToClose: Bool {faceUp.count == 2}
+    public mutating func flip(_ id: String) -> Turn {
+        guard !waitingToClose, !isVisible(id), pairs.contains(where:{$0.left == id || $0.right == id}) else {return .ignored}
+        faceUp.append(id)
+        guard faceUp.count == 2 else {return .revealed}
+        if let pair=pairs.first(where:{Set([$0.left,$0.right]) == Set(faceUp)}) {
+            matched.formUnion(faceUp);faceUp=[];return .matched(pair.left)
+        }
+        return .mismatch
+    }
+    public mutating func closeMismatch() {faceUp=[]}
 }

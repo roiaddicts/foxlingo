@@ -593,5 +593,125 @@
     "asset": "entity-werder-bremen",
     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/SV-Werder-Bremen-Logo.svg/250px-SV-Werder-Bremen-Logo.svg.png",
     "cached": true
+  },
+  {
+    "asset": "entity-chelsea",
+    "url": "https://img.uefa.com/imgml/TP/teams/logos/100x100/52914.png",
+    "cached": true
+  },
+  {
+    "asset": "entity-tottenham",
+    "url": "https://img.uefa.com/imgml/TP/teams/logos/100x100/1652.png",
+    "cached": true
+  },
+  {
+    "asset": "flag-germany",
+    "url": "https://futbol-11.com/media/flags/2.webp",
+    "cached": true
+  },
+  {
+    "asset": "flag-brazil",
+    "url": "https://futbol-11.com/media/flags/7.webp",
+    "cached": true
+  },
+  {
+    "asset": "flag-portugal",
+    "url": "https://futbol-11.com/media/flags/4.webp",
+    "cached": true
+  },
+  {
+    "asset": "flag-spain",
+    "url": "https://futbol-11.com/media/flags/8.webp",
+    "cached": true
+  },
+  {
+    "asset": "flag-mexico",
+    "url": "https://futbol-11.com/media/flags/19.webp",
+    "cached": true
+  },
+  {
+    "asset": "flag-argentina",
+    "url": "https://futbol-11.com/media/flags/1.webp",
+    "cached": true
+  },
+  {
+    "asset": "flag-france",
+    "url": "https://futbol-11.com/media/flags/10.webp",
+    "cached": true
+  },
+  {
+    "asset": "flag-england",
+    "url": "https://futbol-11.com/media/flags/6.webp",
+    "cached": true
+  },
+  {
+    "asset": "flag-colombia",
+    "url": "https://futbol-11.com/media/flags/20.webp",
+    "cached": true
+  },
+  {
+    "asset": "flag-austria",
+    "url": "https://futbol-11.com/media/flags/23.webp",
+    "cached": true
+  },
+  {
+    "asset": "flag-azerbaijan",
+    "url": "https://flagcdn.com/w160/az.png",
+    "cached": true
+  },
+  {
+    "asset": "flag-belgium",
+    "url": "https://futbol-11.com/media/flags/3.webp",
+    "cached": true
+  },
+  {
+    "asset": "flag-czech-republic",
+    "url": "https://futbol-11.com/media/flags/27.webp",
+    "cached": true
+  },
+  {
+    "asset": "flag-greece",
+    "url": "https://futbol-11.com/media/flags/49.webp",
+    "cached": true
+  },
+  {
+    "asset": "flag-italy",
+    "url": "https://futbol-11.com/media/flags/11.webp",
+    "cached": true
+  },
+  {
+    "asset": "flag-netherlands",
+    "url": "https://futbol-11.com/media/flags/9.webp",
+    "cached": true
+  },
+  {
+    "asset": "flag-norway",
+    "url": "https://futbol-11.com/media/flags/26.webp",
+    "cached": true
+  },
+  {
+    "asset": "flag-slovakia",
+    "url": "https://futbol-11.com/media/flags/37.webp",
+    "cached": true
+  },
+  {
+    "asset": "flag-turkey",
+    "url": "https://futbol-11.com/media/flags/24.webp",
+    "cached": true
+  },
+  {
+    "asset": "flag-ukraine",
+    "url": "https://futbol-11.com/media/flags/31.webp",
+    "cached": true
+  },
+  {
+    "asset": "flag-uruguay",
+    "url": "https://futbol-11.com/media/flags/12.webp",
+    "cached": true
+  },
+  {
+    "asset": "flag-chile",
+    "url": "https://futbol-11.com/media/flags/34c.webp",
+    "cached": true
   }
 ]

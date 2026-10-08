@@ -14,7 +14,7 @@ struct PrimaryButton: View {
     var action: () -> Void
     var body: some View {
         Button(action:action) { HStack { Text(title).font(.headline); Spacer(); Image(systemName:symbol) }.padding(18).foregroundStyle(.white).background(Palette.green,in:RoundedRectangle(cornerRadius:18)) }
-            .buttonStyle(.plain).frame(minHeight:52)
+            .buttonStyle(PressFeedback()).frame(minHeight:52)
     }
 }
 struct Leopard: View {
@@ -69,5 +69,39 @@ struct EntityArtwork: View {
     private var fallback: some View {
         Text(initials).font(.system(size:size*0.3,weight:.black,design:.rounded)).foregroundStyle(Palette.ink)
             .frame(width:size,height:size).background(Palette.ochre.opacity(0.18),in:RoundedRectangle(cornerRadius:size*0.22))
+    }
+}
+
+struct PressFeedback: ButtonStyle {
+    @Environment(\.accessibilityReduceMotion) private var reduced
+    func makeBody(configuration: Configuration) -> some View {
+        configuration.label.opacity(configuration.isPressed ? 0.85 : 1)
+            .scaleEffect(configuration.isPressed && !reduced ? 0.97 : 1)
+            .animation(reduced ? nil : .spring(response:0.25,dampingFraction:0.8),value:configuration.isPressed)
+    }
+}
+struct GameCategoryMark: View {
+    let category: GameCategory
+    var size: CGFloat = 42
+    var body: some View {
+        Group {
+            if let flag=category.flag, category.imageAsset == nil {Text(flag).font(.system(size:size*0.8)).frame(width:size,height:size)}
+            else {EntityArtwork(asset:category.imageAsset,url:category.imageURL,initials:"⚽",size:size)}
+        }.accessibilityElement(children:.ignore).accessibilityLabel(category.title)
+    }
+}
+
+/// Only explicit semantic types can opt into visual answers: a city named
+/// Monterrey must never turn into the football club’s badge.
+struct KnowledgeAnswer: View {
+    let text: String
+    var expectedType: String? = nil
+    @EnvironmentObject private var model: AppModel
+    var body: some View {
+        Group {
+            if expectedType == "country", let flag=AnswerArtwork.flags[Recall.normalize(text)] {Image(flag).resizable().scaledToFit().frame(width:56,height:40)}
+            else if let expectedType, let pack=model.pack, let entity=AnswerArtwork.entity(text,type:expectedType,pack:pack) {ClubMark(club:entity,size:56)}
+            else {Text(text)}
+        }.accessibilityElement(children:.ignore).accessibilityLabel(text)
     }
 }

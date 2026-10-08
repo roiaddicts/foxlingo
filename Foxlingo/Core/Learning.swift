@@ -26,6 +26,7 @@ public struct LessonResume: Codable, Sendable {
     public var step: Int = 0
     public var attempts: [Attempt] = []
     public var matched: [String] = []
+    public var memoryOrder: [String]? = nil
     public var sessionID = UUID()
 }
 public struct LearnerState: Codable, Sendable {
@@ -161,7 +162,7 @@ public struct StateStore {
         let s = try JSONDecoder().decode(LearnerState.self,from:data)
         guard s.schemaVersion == 1, TimeZone(identifier:s.homeTimeZone) != nil,
               s.reviews.values.allSatisfy({ (0...4).contains($0.stage) && (0...4).contains($0.highestEarned) && $0.highestEarned >= $0.stage && $0.lapses >= 0 && $0.revision > 0 }),
-              s.resumes.values.allSatisfy({ (0...6).contains($0.step) && Set($0.matched).count == $0.matched.count && Set($0.matched).isSubset(of:["l-0","l-1","l-2"]) }),
+              s.resumes.values.allSatisfy({ (0...6).contains($0.step) && Set($0.matched).count == $0.matched.count && Set($0.matched).isSubset(of:["l-0","l-1","l-2"]) && ($0.memoryOrder == nil || ($0.memoryOrder!.count == 6 && Set($0.memoryOrder!) == Set(["l-0","l-1","l-2","r-0","r-1","r-2"]))) }),
               (0...1).contains(s.streak.freezes), (0..<7).contains(s.streak.daysSinceRefill), s.streak.longest >= 0,
               Set(s.sessions.map(\.id)).count == s.sessions.count else { throw SaveError.recovery("Unsupported saved progress.") }
         return s

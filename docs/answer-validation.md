@@ -9,3 +9,9 @@ Embedding similarity could help discovery or suggest an alias for editorial revi
 A small model could eventually assess long explanations against the specific lesson facts, with an explicit uncertain result and reviewed grading examples. It is unnecessary for these short identity and statistic answers. Authored aliases and exact relationships give predictable feedback, offline operation, and no per-answer model cost.
 
 Correctness in a game does not imply scheduled recall mastery. Games record a separate completed session and active streak day. Only independent answers to due objectives advance review stages and album tiers.
+
+## Memory matching and learning evidence
+
+Lesson pairs are now shuffled into six face-down tiles. The learner reveals two; valid associations remain visible, and mismatches close after 1.8 seconds. The game permits either reveal order and same-side mistakes, preserves the board layout and found pairs across a restart, and conceals face-down text from accessibility labels. Incorrect feedback does not reveal an unseen correct partner.
+
+This is a design choice for variety and memory challenge. It can reward remembering tile locations, so it is not treated as proof of independent football knowledge. Scheduled typed recall remains the mastery check. [Roediger and Karpicke (2006)](https://pubmed.ncbi.nlm.nih.gov/16507066/) provide evidence for the retention benefits of retrieval practice; their study did not test this app’s face-down game.

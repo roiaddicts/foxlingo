@@ -20817,7 +20817,9 @@
         "player-376",
         "player-427",
         "player-170"
-      ]
+      ],
+      "imageAsset": "entity-arsenal",
+      "imageURL": "https://img.uefa.com/imgml/TP/teams/logos/100x100/52280.png"
     },
     {
       "id": "category-3",
@@ -20910,7 +20912,9 @@
         "player-458",
         "player-351",
         "player-821"
-      ]
+      ],
+      "imageAsset": "entity-manchester-united",
+      "imageURL": "https://img.uefa.com/imgml/TP/teams/logos/100x100/52682.png"
     },
     {
       "id": "category-4",
@@ -20971,7 +20975,9 @@
         "player-1155",
         "player-170",
         "player-484"
-      ]
+      ],
+      "imageAsset": "entity-liverpool",
+      "imageURL": "https://img.uefa.com/imgml/TP/teams/logos/100x100/7889.png"
     },
     {
       "id": "category-5",
@@ -21060,7 +21066,9 @@
         "player-1194",
         "player-1530",
         "player-170"
-      ]
+      ],
+      "imageAsset": "entity-chelsea",
+      "imageURL": "https://img.uefa.com/imgml/TP/teams/logos/100x100/52914.png"
     },
     {
       "id": "category-6",
@@ -21104,7 +21112,9 @@
         "player-1084",
         "player-1132",
         "player-81"
-      ]
+      ],
+      "imageAsset": "entity-tottenham",
+      "imageURL": "https://img.uefa.com/imgml/TP/teams/logos/100x100/1652.png"
     },
     {
       "id": "category-8",
@@ -21181,7 +21191,9 @@
         "player-655",
         "player-376",
         "player-890"
-      ]
+      ],
+      "imageAsset": "entity-barcelona",
+      "imageURL": "https://img.uefa.com/imgml/TP/teams/logos/100x100/50080.png"
     },
     {
       "id": "category-9",
@@ -21268,7 +21280,9 @@
         "player-1111",
         "player-593",
         "player-979"
-      ]
+      ],
+      "imageAsset": "entity-madrid",
+      "imageURL": "https://img.uefa.com/imgml/TP/teams/logos/100x100/50051.png"
     },
     {
       "id": "category-14",
@@ -21341,7 +21355,9 @@
         "player-655",
         "player-1233",
         "player-1097"
-      ]
+      ],
+      "imageAsset": "entity-bayern-munich",
+      "imageURL": "https://img.uefa.com/imgml/TP/teams/logos/100x100/50037.png"
     },
     {
       "id": "category-15",
@@ -21392,7 +21408,9 @@
         "player-1194",
         "player-1422",
         "player-1529"
-      ]
+      ],
+      "imageAsset": "entity-borussia-dortmund",
+      "imageURL": "https://img.uefa.com/imgml/TP/teams/logos/100x100/52758.png"
     },
     {
       "id": "category-23",
@@ -21438,7 +21456,9 @@
         "player-1175",
         "player-1422",
         "player-1529"
-      ]
+      ],
+      "imageAsset": "flag-germany",
+      "imageURL": "https://futbol-11.com/media/flags/2.webp"
     },
     {
       "id": "category-24",
@@ -21493,7 +21513,9 @@
         "player-1520",
         "player-902",
         "player-276"
-      ]
+      ],
+      "imageAsset": "flag-brazil",
+      "imageURL": "https://futbol-11.com/media/flags/7.webp"
     },
     {
       "id": "category-28",
@@ -21529,7 +21551,9 @@
         "player-993",
         "player-1001",
         "player-1166"
-      ]
+      ],
+      "imageAsset": "flag-portugal",
+      "imageURL": "https://futbol-11.com/media/flags/4.webp"
     },
     {
       "id": "category-30",
@@ -21605,7 +21629,9 @@
         "player-891",
         "player-599",
         "player-890"
-      ]
+      ],
+      "imageAsset": "flag-spain",
+      "imageURL": "https://futbol-11.com/media/flags/8.webp"
     }
   ],
   "bingoCategoryIDs": [

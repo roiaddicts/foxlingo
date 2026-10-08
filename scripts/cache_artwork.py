@@ -19,6 +19,11 @@ artworkPath=ROOT/'content/club-artwork.json'
 if artworkPath.exists():
  for key,value in json.loads(artworkPath.read_text()).items():
   if value.get('url'):urls.setdefault('entity-'+key,value['url'])
+for c in p["categories"]:
+ if c.get("imageAsset") and c.get("imageURL"):urls.setdefault(c["imageAsset"],c["imageURL"])
+countries=json.loads((ROOT/'content/country-artwork.json').read_text())
+for key in ['spain','mexico','germany','brazil','portugal','argentina','france','england','colombia','austria','azerbaijan','belgium','czechia','greece','italy','netherlands','norway','slovakia','turkiye','ukraine','uruguay','chile']:
+ c=countries[key];urls[c['imageAsset']]=c['imageURL']
 manifest=[]
 for name,url in urls.items():
  folder=ASSETS/(name+'.imageset');folder.mkdir(exist_ok=True)

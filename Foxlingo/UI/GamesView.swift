@@ -37,6 +37,8 @@ struct FootballGameView: View {
     @State private var selectedSlot: Int?
     @State private var offered: String?
     @State private var feedback=""
+    @State private var feedbackError=false
+    @Environment(\.accessibilityReduceMotion) private var reduced
     @State private var history: [Int]=[]
     @State private var assisted=Set<Int>()
     @State private var sessionID=UUID()
@@ -53,7 +55,7 @@ struct FootballGameView: View {
     var body: some View {
         ScrollView {
             VStack(alignment:.leading,spacing:18) {
-                HStack {Text("\(placed.count) / \(count)").font(.title2.bold());Spacer();Text("UNTIMED").font(.caption.bold()).tracking(2).foregroundStyle(Palette.muted)}
+                HStack {Text("\(placed.count) / \(count)").font(.title2.bold()).contentTransition(.numericText()).animation(reduced ? nil : .snappy,value:placed.count);Spacer();Text("UNTIMED").font(.caption.bold()).tracking(2).foregroundStyle(Palette.muted)}
                 ProgressView(value:Double(placed.count),total:Double(count))
                 if placed.count == count {
                     HStack {Leopard(pose:"celebrate").frame(width:70,height:75);VStack(alignment:.leading,spacing:5) {Text("Board complete!").font(.title2.bold()).accessibilityIdentifier("game-complete");Text(assisted.isEmpty ? "You made every connection." : "\(assisted.count) helped connections. Play again to recall them.").font(.subheadline)}}
@@ -74,15 +76,15 @@ struct FootballGameView: View {
                     }.padding(16).background(Palette.green.opacity(0.09),in:RoundedRectangle(cornerRadius:22))
                 } else if game == .grid {
                     Grid(horizontalSpacing:6,verticalSpacing:6) {
-                        GridRow {Text("CLUB ×\nCOUNTRY").font(.system(size:9,weight:.bold));ForEach(0..<3,id:\.self) {c in Text(shortTitle(pack.category(pack.gridColumnIDs[c])!.title)).font(.caption.bold()).frame(maxWidth:.infinity)}}
-                        ForEach(0..<3,id:\.self) {r in GridRow {Text(shortTitle(pack.category(pack.gridRowIDs[r])!.title)).font(.system(size:11,weight:.bold)).lineLimit(2).minimumScaleFactor(0.75).frame(width:62);ForEach(0..<3,id:\.self) {c in cell(r*3+c,label:"+")}}}
+                        GridRow {Image(systemName:"multiply").accessibilityLabel("Club and country");ForEach(0..<3,id:\.self) {c in GameCategoryMark(category:pack.category(pack.gridColumnIDs[c])!).frame(maxWidth:.infinity)}}
+                        ForEach(0..<3,id:\.self) {r in GridRow {GameCategoryMark(category:pack.category(pack.gridRowIDs[r])!).frame(width:62);ForEach(0..<3,id:\.self) {c in cell(r*3+c,label:"+")}}}
                     }
                 } else {
                     LazyVGrid(columns:Array(repeating:GridItem(.flexible(),spacing:8),count:3),spacing:8) {
                         ForEach(0..<12,id:\.self) {slot in cell(slot,label:shortTitle(pack.category(pack.bingoCategoryIDs[slot])!.title))}
                     }
                 }
-                if !feedback.isEmpty {Text(feedback).font(.subheadline).foregroundStyle(Palette.green).accessibilityIdentifier("game-feedback")}
+                if !feedback.isEmpty {Text(feedback).font(.subheadline).foregroundStyle(feedbackError ? Palette.red : Palette.green).accessibilityIdentifier("game-feedback")}
                 if !awarded {
                     HStack {Button("Undo",systemImage:"arrow.uturn.backward") {undo()}.disabled(history.isEmpty);Spacer();Button("Help me connect",systemImage:"lightbulb") {hint()}.accessibilityIdentifier("game-hint")}.frame(minHeight:44)
                 }
@@ -93,7 +95,7 @@ struct FootballGameView: View {
         .onChange(of:squadIndex) {reset()}
         .sheet(isPresented:Binding(get:{selectedSlot != nil},set:{if !$0 {selectedSlot=nil}})) {
             if let slot=selectedSlot {
-                NavigationStack {PlayerAnswerSheet(players:game == .lineup ? pack.players.filter { $0.id.hasPrefix("classic-player-") } : pack.players.filter { $0.id.hasPrefix("player-") },title:game == .grid ? "\(shortTitle(pack.category(pack.gridRowIDs[slot/3])!.title)) × \(shortTitle(pack.category(pack.gridColumnIDs[slot%3])!.title))" : squad.positions[slot]) {player in place(player.id,at:slot)} }
+                NavigationStack {PlayerAnswerSheet(players:game == .lineup ? pack.players.filter { $0.id.hasPrefix("classic-player-") } : pack.players.filter { $0.id.hasPrefix("player-") },title:game == .grid ? "Choose a player" : squad.positions[slot],clues:game == .grid ? [pack.category(pack.gridRowIDs[slot/3])!,pack.category(pack.gridColumnIDs[slot%3])!] : []) {player in place(player.id,at:slot)} }
             }
         }
     }
@@ -105,26 +107,27 @@ struct FootballGameView: View {
             if game == .bingo, let offered {place(offered,at:slot)} else {selectedSlot=slot}
         } label: {
             VStack(spacing:5) {
+                if game == .bingo {GameCategoryMark(category:pack.category(pack.bingoCategoryIDs[slot])!,size:placed[slot] == nil ? 48 : 24)}
                 if let player=placed[slot].flatMap(pack.player) {portrait(player,size:game == .lineup ? 44 : 46);Text(player.name).font(.system(size:10,weight:.semibold)).lineLimit(3);if game == .lineup {Text(label).font(.system(size:9,weight:.bold)).foregroundStyle(Palette.muted)}}
-                else {Image(systemName:game == .lineup ? "person.fill" : "plus").font(.headline).foregroundStyle(Palette.green);Text(label).font(.system(size:game == .lineup ? 10 : 11,weight:.bold)).lineLimit(3)}
+                else if game != .bingo {Image(systemName:game == .lineup ? "tshirt.fill" : "plus").font(.headline).foregroundStyle(Palette.green);if game == .lineup {Text(label).font(.caption2.bold())}}
             }.frame(maxWidth:.infinity,minHeight:game == .lineup ? 76 : 94).padding(6)
                 .background(placed[slot] == nil ? .white : Palette.green.opacity(0.12),in:RoundedRectangle(cornerRadius:12))
                 .overlay {RoundedRectangle(cornerRadius:12).stroke(Palette.green.opacity(placed[slot] == nil ? 0.12 : 0.35),lineWidth:1)}
-        }.buttonStyle(.plain).accessibilityLabel(accessibleCell(slot,label:label)).accessibilityIdentifier("game-cell-\(slot)")
+        }.buttonStyle(PressFeedback()).accessibilityLabel(accessibleCell(slot,label:label)).accessibilityIdentifier("game-cell-\(slot)")
     }
     private func accessibleCell(_ slot: Int,label: String) -> String {
         let clue=game == .grid ? "\(shortTitle(pack.category(pack.gridRowIDs[slot/3])!.title)) and \(shortTitle(pack.category(pack.gridColumnIDs[slot%3])!.title))" : label
         return clue + ": " + (placed[slot].flatMap(pack.player)?.name ?? "Choose a player")
     }
     @discardableResult private func place(_ player: String,at slot: Int,helped: Bool = false) -> Bool {
-        guard BoardMatcher.accepts(player:player,slot:slot,candidates:candidates,placed:placed) else {feedback="That connection doesn’t fit this square, or the player is already on the board. Try another.";model.respond(false);return false}
-        placed[slot]=player;history.append(slot);selectedSlot=nil
+        guard BoardMatcher.accepts(player:player,slot:slot,candidates:candidates,placed:placed) else {feedbackError=true;feedback="That connection doesn’t fit this square, or the player is already on the board. Try another.";model.respond(false);return false}
+        feedbackError=false;placed[slot]=player;history.append(slot);selectedSlot=nil
         if helped {assisted.insert(slot)}
         feedback=helped ? "A helped connection. Try to remember this pair next time." : "Connection made.";model.respond(true)
         if placed.count == count {
             if !awarded {_ = model.state.completeGame(id:sessionID,kind:game.rawValue,count:count,now:model.now);model.save();awarded=true}
         } else if game == .bingo {nextPlayer()}
-        if BoardMatcher.solution(candidates,fixed:placed) == nil {feedback="Each connection fits, but the remaining board needs a different combination. Undo a choice to make room."}
+        if BoardMatcher.solution(candidates,fixed:placed) == nil {feedbackError=true;feedback="Each connection fits, but the remaining board needs a different combination. Undo a choice to make room."}
         return true
     }
     private func nextPlayer(excluding: String? = nil) {
@@ -132,15 +135,16 @@ struct FootballGameView: View {
         offered=(ids.filter{$0 != excluding}.shuffled().first ?? ids.first)
     }
     private func hint() {
-        guard let solution=BoardMatcher.solution(candidates,fixed:placed), let slot=solution.keys.sorted().first(where:{placed[$0] == nil}), let player=solution[slot] else {feedback="Undo a choice first so every remaining square can be filled.";return}
+        guard let solution=BoardMatcher.solution(candidates,fixed:placed), let slot=solution.keys.sorted().first(where:{placed[$0] == nil}), let player=solution[slot] else {feedbackError=true;feedback="Undo a choice first so every remaining square can be filled.";return}
         place(player,at:slot,helped:true)
     }
-    private func undo() {guard !awarded, let slot=history.popLast() else {return};placed.removeValue(forKey:slot);assisted.remove(slot);feedback="Make a new connection.";if game == .bingo {nextPlayer()}}
-    private func reset() {placed=[:];history=[];assisted=[];awarded=false;feedback="";sessionID=UUID();offered=nil;if game == .bingo {nextPlayer()}}
+    private func undo() {guard !awarded, let slot=history.popLast() else {return};placed.removeValue(forKey:slot);assisted.remove(slot);feedbackError=false;feedback="Make a new connection.";if game == .bingo {nextPlayer()}}
+    private func reset() {placed=[:];history=[];assisted=[];awarded=false;feedbackError=false;feedback="";sessionID=UUID();offered=nil;if game == .bingo {nextPlayer()}}
 }
 struct PlayerAnswerSheet: View {
     let players: [GamePlayer]
     let title: String
+    var clues: [GameCategory] = []
     let onChoose: (GamePlayer) -> Bool
     @Environment(\.dismiss) var dismiss
     @State private var query=""
@@ -152,6 +156,7 @@ struct PlayerAnswerSheet: View {
     }
     var body: some View {
         List {
+            if !clues.isEmpty {HStack {ForEach(clues) {GameCategoryMark(category:$0,size:56)};Spacer()}.padding(.vertical,8)}
             Section {TextField("Type a player’s name",text:$query).autocorrectionDisabled().accessibilityIdentifier("game-player-search");Text("Select the person you mean. The board checks the relationship.").font(.caption).foregroundStyle(.secondary)}
             if !message.isEmpty {Text(message).foregroundStyle(Palette.red).accessibilityIdentifier("game-answer-error")}
             ForEach(results) {player in

@@ -54,6 +54,27 @@ final class LearningTests: XCTestCase {
     func testRejectAmbiguousMatching() {
         XCTAssertThrowsError(try mutatePack {j in var e=j["exercises"] as! [[String:Any]];var pairs=e[4]["pairs"] as! [[String:Any]];pairs[1]["right"]=pairs[0]["right"];e[4]["pairs"]=pairs;j["exercises"]=e})
     }
+    func testRejectIncompleteAndOverlappingMemoryBoard() {
+        XCTAssertThrowsError(try mutatePack {j in
+            var e=j["exercises"] as! [[String:Any]]
+            e[4]["objectiveIDs"]=Array((e[4]["objectiveIDs"] as! [String]).prefix(1));j["exercises"]=e
+        })
+        XCTAssertThrowsError(try mutatePack {j in
+            var e=j["exercises"] as! [[String:Any]]
+            var right=e[4]["right"] as! [[String:Any]], pairs=e[4]["pairs"] as! [[String:Any]]
+            right[0]["id"]="l-0";pairs[0]["right"]="l-0"
+            e[4]["right"]=right;e[4]["pairs"]=pairs;j["exercises"]=e
+        })
+    }
+    func testVisualAnswersRespectSemanticMeaning() {
+        let city=pack.objectives.first {$0.factIDs.contains {id in pack.facts.contains {$0.id == id && $0.predicate == "city"}}}!
+        XCTAssertNil(AnswerArtwork.type(objectiveID:city.id,pack:pack))
+        let nick=pack.objectives.first {$0.factIDs.contains {id in pack.facts.contains {$0.id == id && $0.predicate == "nickname"}}}!
+        XCTAssertNil(AnswerArtwork.type(objectiveID:nick.id,pack:pack))
+        XCTAssertNil(AnswerArtwork.entity("Monterrey",type:"city",pack:pack))
+        XCTAssertNotNil(AnswerArtwork.entity("Monterrey",type:"club",pack:pack))
+        XCTAssertEqual(AnswerArtwork.flags["spain"],"flag-spain")
+    }
     func testMatchingScoringAndAliases() {
         let x=pack.exercises[4];XCTAssertTrue(x.accepts(left:"l-0",right:"r-0"));XCTAssertFalse(x.accepts(left:"l-0",right:"r-1"))
         let o=pack.objectives.first{$0.answers.contains("Alfredo Di Stéfano")}!

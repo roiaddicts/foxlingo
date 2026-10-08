@@ -1,0 +1,354 @@
+{
+  "argentina": {
+    "imageAsset": "flag-argentina",
+    "imageURL": "https://futbol-11.com/media/flags/1.webp"
+  },
+  "germany": {
+    "imageAsset": "flag-germany",
+    "imageURL": "https://futbol-11.com/media/flags/2.webp"
+  },
+  "belgium": {
+    "imageAsset": "flag-belgium",
+    "imageURL": "https://futbol-11.com/media/flags/3.webp"
+  },
+  "portugal": {
+    "imageAsset": "flag-portugal",
+    "imageURL": "https://futbol-11.com/media/flags/4.webp"
+  },
+  "england": {
+    "imageAsset": "flag-england",
+    "imageURL": "https://futbol-11.com/media/flags/6.webp"
+  },
+  "brazil": {
+    "imageAsset": "flag-brazil",
+    "imageURL": "https://futbol-11.com/media/flags/7.webp"
+  },
+  "spain": {
+    "imageAsset": "flag-spain",
+    "imageURL": "https://futbol-11.com/media/flags/8.webp"
+  },
+  "netherlands": {
+    "imageAsset": "flag-netherlands",
+    "imageURL": "https://futbol-11.com/media/flags/9.webp"
+  },
+  "france": {
+    "imageAsset": "flag-france",
+    "imageURL": "https://futbol-11.com/media/flags/10.webp"
+  },
+  "italy": {
+    "imageAsset": "flag-italy",
+    "imageURL": "https://futbol-11.com/media/flags/11.webp"
+  },
+  "uruguay": {
+    "imageAsset": "flag-uruguay",
+    "imageURL": "https://futbol-11.com/media/flags/12.webp"
+  },
+  "sweden": {
+    "imageAsset": "flag-sweden",
+    "imageURL": "https://futbol-11.com/media/flags/13.webp"
+  },
+  "croatia": {
+    "imageAsset": "flag-croatia",
+    "imageURL": "https://futbol-11.com/media/flags/14.webp"
+  },
+  "denmark": {
+    "imageAsset": "flag-denmark",
+    "imageURL": "https://futbol-11.com/media/flags/15.webp"
+  },
+  "switzerland": {
+    "imageAsset": "flag-switzerland",
+    "imageURL": "https://futbol-11.com/media/flags/16.webp"
+  },
+  "ivory coast": {
+    "imageAsset": "flag-ivory-coast",
+    "imageURL": "https://futbol-11.com/media/flags/17.webp"
+  },
+  "senegal": {
+    "imageAsset": "flag-senegal",
+    "imageURL": "https://futbol-11.com/media/flags/18.webp"
+  },
+  "mexico": {
+    "imageAsset": "flag-mexico",
+    "imageURL": "https://futbol-11.com/media/flags/19.webp"
+  },
+  "colombia": {
+    "imageAsset": "flag-colombia",
+    "imageURL": "https://futbol-11.com/media/flags/20.webp"
+  },
+  "morocco": {
+    "imageAsset": "flag-morocco",
+    "imageURL": "https://futbol-11.com/media/flags/21.webp"
+  },
+  "united states": {
+    "imageAsset": "flag-united-states",
+    "imageURL": "https://futbol-11.com/media/flags/22.webp"
+  },
+  "austria": {
+    "imageAsset": "flag-austria",
+    "imageURL": "https://futbol-11.com/media/flags/23.webp"
+  },
+  "turkey": {
+    "imageAsset": "flag-turkey",
+    "imageURL": "https://futbol-11.com/media/flags/24.webp"
+  },
+  "scotland": {
+    "imageAsset": "flag-scotland",
+    "imageURL": "https://futbol-11.com/media/flags/25.webp"
+  },
+  "norway": {
+    "imageAsset": "flag-norway",
+    "imageURL": "https://futbol-11.com/media/flags/26.webp"
+  },
+  "czech republic": {
+    "imageAsset": "flag-czech-republic",
+    "imageURL": "https://futbol-11.com/media/flags/27.webp"
+  },
+  "algeria": {
+    "imageAsset": "flag-algeria",
+    "imageURL": "https://futbol-11.com/media/flags/28.webp"
+  },
+  "nigeria": {
+    "imageAsset": "flag-nigeria",
+    "imageURL": "https://futbol-11.com/media/flags/29.webp"
+  },
+  "poland": {
+    "imageAsset": "flag-poland",
+    "imageURL": "https://futbol-11.com/media/flags/30.webp"
+  },
+  "wales": {
+    "imageAsset": "flag-wales",
+    "imageURL": "https://futbol-11.com/media/flags/30w.webp"
+  },
+  "ghana": {
+    "imageAsset": "flag-ghana",
+    "imageURL": "https://futbol-11.com/media/flags/32.webp"
+  },
+  "egypt": {
+    "imageAsset": "flag-egypt",
+    "imageURL": "https://futbol-11.com/media/flags/32e.webp"
+  },
+  "gabon": {
+    "imageAsset": "flag-gabon",
+    "imageURL": "https://futbol-11.com/media/flags/33g.webp"
+  },
+  "chile": {
+    "imageAsset": "flag-chile",
+    "imageURL": "https://futbol-11.com/media/flags/34c.webp"
+  },
+  "bosnia": {
+    "imageAsset": "flag-bosnia",
+    "imageURL": "https://futbol-11.com/media/flags/35b.webp"
+  },
+  "ecuador": {
+    "imageAsset": "flag-ecuador",
+    "imageURL": "https://futbol-11.com/media/flags/34.webp"
+  },
+  "slovakia": {
+    "imageAsset": "flag-slovakia",
+    "imageURL": "https://futbol-11.com/media/flags/37.webp"
+  },
+  "ukraine": {
+    "imageAsset": "flag-ukraine",
+    "imageURL": "https://futbol-11.com/media/flags/31.webp"
+  },
+  "hungary": {
+    "imageAsset": "flag-hungary",
+    "imageURL": "https://futbol-11.com/media/flags/39.webp"
+  },
+  "guinea": {
+    "imageAsset": "flag-guinea",
+    "imageURL": "https://futbol-11.com/media/flags/40.webp"
+  },
+  "serbia": {
+    "imageAsset": "flag-serbia",
+    "imageURL": "https://futbol-11.com/media/flags/41.webp"
+  },
+  "cameroon": {
+    "imageAsset": "flag-cameroon",
+    "imageURL": "https://futbol-11.com/media/flags/36.webp"
+  },
+  "bulgaria": {
+    "imageAsset": "flag-bulgaria",
+    "imageURL": "https://futbol-11.com/media/flags/43.webp"
+  },
+  "south korea": {
+    "imageAsset": "flag-south-korea",
+    "imageURL": "https://futbol-11.com/media/flags/33.webp"
+  },
+  "slovenia": {
+    "imageAsset": "flag-slovenia",
+    "imageURL": "https://futbol-11.com/media/flags/45.webp"
+  },
+  "canada": {
+    "imageAsset": "flag-canada",
+    "imageURL": "https://futbol-11.com/media/flags/46.webp"
+  },
+  "costa rica": {
+    "imageAsset": "flag-costa-rica",
+    "imageURL": "https://futbol-11.com/media/flags/47.webp"
+  },
+  "russia": {
+    "imageAsset": "flag-russia",
+    "imageURL": "https://futbol-11.com/media/flags/48.webp"
+  },
+  "greece": {
+    "imageAsset": "flag-greece",
+    "imageURL": "https://futbol-11.com/media/flags/49.webp"
+  },
+  "togo": {
+    "imageAsset": "flag-togo",
+    "imageURL": "https://futbol-11.com/media/flags/50.webp"
+  },
+  "peru": {
+    "imageAsset": "flag-peru",
+    "imageURL": "https://futbol-11.com/media/flags/51.webp"
+  },
+  "australia": {
+    "imageAsset": "flag-australia",
+    "imageURL": "https://futbol-11.com/media/flags/52.webp"
+  },
+  "ireland": {
+    "imageAsset": "flag-ireland",
+    "imageURL": "https://futbol-11.com/media/flags/53.webp"
+  },
+  "georgia": {
+    "imageAsset": "flag-georgia",
+    "imageURL": "https://futbol-11.com/media/flags/54.webp"
+  },
+  "central african republic": {
+    "imageAsset": "flag-central-african-republic",
+    "imageURL": "https://futbol-11.com/media/flags/55.webp"
+  },
+  "belarus": {
+    "imageAsset": "flag-belarus",
+    "imageURL": "https://futbol-11.com/media/flags/56.webp"
+  },
+  "northern ireland": {
+    "imageAsset": "flag-northern-ireland",
+    "imageURL": "https://futbol-11.com/media/flags/57.webp"
+  },
+  "trinidad and tobago": {
+    "imageAsset": "flag-trinidad-and-tobago",
+    "imageURL": "https://futbol-11.com/media/flags/58.webp"
+  },
+  "israel": {
+    "imageAsset": "flag-israel",
+    "imageURL": "https://futbol-11.com/media/flags/59.webp"
+  },
+  "finland": {
+    "imageAsset": "flag-finland",
+    "imageURL": "https://futbol-11.com/media/flags/60.webp"
+  },
+  "mali": {
+    "imageAsset": "flag-mali",
+    "imageURL": "https://futbol-11.com/media/flags/61.webp"
+  },
+  "kenya": {
+    "imageAsset": "flag-kenya",
+    "imageURL": "https://futbol-11.com/media/flags/62.webp"
+  },
+  "iceland": {
+    "imageAsset": "flag-iceland",
+    "imageURL": "https://futbol-11.com/media/flags/63.webp"
+  },
+  "jamaica": {
+    "imageAsset": "flag-jamaica",
+    "imageURL": "https://futbol-11.com/media/flags/64.webp"
+  },
+  "japan": {
+    "imageAsset": "flag-japan",
+    "imageURL": "https://futbol-11.com/media/flags/35.webp"
+  },
+  "paraguay": {
+    "imageAsset": "flag-paraguay",
+    "imageURL": "https://futbol-11.com/media/flags/66.webp"
+  },
+  "montenegro": {
+    "imageAsset": "flag-montenegro",
+    "imageURL": "https://futbol-11.com/media/flags/67.webp"
+  },
+  "armenia": {
+    "imageAsset": "flag-armenia",
+    "imageURL": "https://futbol-11.com/media/flags/68.webp"
+  },
+  "burkina faso": {
+    "imageAsset": "flag-burkina-faso",
+    "imageURL": "https://futbol-11.com/media/flags/69.webp"
+  },
+  "albania": {
+    "imageAsset": "flag-albania",
+    "imageURL": "https://futbol-11.com/media/flags/70.webp"
+  },
+  "romania": {
+    "imageAsset": "flag-romania",
+    "imageURL": "https://futbol-11.com/media/flags/71.webp"
+  },
+  "north macedonia": {
+    "imageAsset": "flag-north-macedonia",
+    "imageURL": "https://futbol-11.com/media/flags/72.webp"
+  },
+  "angola": {
+    "imageAsset": "flag-angola",
+    "imageURL": "https://futbol-11.com/media/flags/73.webp"
+  },
+  "venezuela": {
+    "imageAsset": "flag-venezuela",
+    "imageURL": "https://futbol-11.com/media/flags/74.webp"
+  },
+  "congo dr": {
+    "imageAsset": "flag-congo-dr",
+    "imageURL": "https://futbol-11.com/media/flags/75.webp"
+  },
+  "kosovo": {
+    "imageAsset": "flag-kosovo",
+    "imageURL": "https://futbol-11.com/media/flags/76.webp"
+  },
+  "south africa": {
+    "imageAsset": "flag-south-africa",
+    "imageURL": "https://futbol-11.com/media/flags/77.webp"
+  },
+  "liberia": {
+    "imageAsset": "flag-liberia",
+    "imageURL": "https://futbol-11.com/media/flags/78.webp"
+  },
+  "saudi arabia": {
+    "imageAsset": "flag-saudi-arabia",
+    "imageURL": "https://futbol-11.com/media/flags/79.webp"
+  },
+  "iran": {
+    "imageAsset": "flag-iran",
+    "imageURL": "https://futbol-11.com/media/flags/80.webp"
+  },
+  "uzbekistan": {
+    "imageAsset": "flag-uzbekistan",
+    "imageURL": "https://futbol-11.com/media/flags/81.webp"
+  },
+  "dominican rep.": {
+    "imageAsset": "flag-dominican-rep.",
+    "imageURL": "https://futbol-11.com/media/flags/82.webp"
+  },
+  "mozambique": {
+    "imageAsset": "flag-mozambique",
+    "imageURL": "https://futbol-11.com/media/flags/83.webp"
+  },
+  "martinique": {
+    "imageAsset": "flag-martinique",
+    "imageURL": "https://futbol-11.com/media/flags/84.webp"
+  },
+  "curacao": {
+    "imageAsset": "flag-curacao",
+    "imageURL": "https://futbol-11.com/media/flags/85.webp"
+  },
+  "czechia": {
+    "imageAsset": "flag-czech-republic",
+    "imageURL": "https://futbol-11.com/media/flags/27.webp"
+  },
+  "turkiye": {
+    "imageAsset": "flag-turkey",
+    "imageURL": "https://futbol-11.com/media/flags/24.webp"
+  },
+  "azerbaijan": {
+    "imageAsset": "flag-azerbaijan",
+    "imageURL": "https://flagcdn.com/w160/az.png"
+  }
+}
