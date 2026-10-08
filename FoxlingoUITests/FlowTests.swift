@@ -14,8 +14,6 @@ final class FlowTests: XCTestCase {
     func completeLesson(_ key: String) {
         tap(key);tap("lesson-next");tap("lesson-next")
         for _ in 0..<4 {tap("answer-choice-0");tap("answer-next")}
-        for i in 0..<3 {tap("match-l-\(i)");tap("match-r-\(i)")}
-        tap("finish-lesson")
         XCTAssertTrue(app.staticTexts["lesson-complete"].waitForExistence(timeout:3))
         tap("back-roadmap")
     }
@@ -121,11 +119,7 @@ final class FlowTests: XCTestCase {
         tap("lesson-next")
         tap("answer-choice-1");XCTAssertTrue(app.staticTexts["answer-feedback"].exists);tap("answer-next")
         for _ in 0..<4 {tap("answer-choice-0");tap("answer-next")}
-        tap("match-l-0");tap("match-r-1");XCTAssertTrue(app.staticTexts["answer-feedback"].exists)
-        let hidden=NSPredicate(format:"value == %@","Face down")
-        expectation(for:hidden,evaluatedWith:app.buttons["match-l-0"]);waitForExpectations(timeout:5)
-        for i in 0..<3 {tap("match-l-\(i)");tap("match-r-\(i)")}
-        tap("finish-lesson");tap("back-roadmap")
+        tap("back-roadmap")
         app.tabBars.buttons["Album"].tap();tap("card-xolos")
         XCTAssertTrue(app.staticTexts["Your knowledge set"].exists)
         app.tabBars.buttons["Practice"].tap();XCTAssertTrue(app.staticTexts["You're all caught up."].exists)
@@ -284,9 +278,8 @@ final class FlowTests: XCTestCase {
     func testLessonUpdateActivatesNextLaunchAndRestartsChangedResume() {
         start();tap("choose-XT");completeLesson("lesson-xolos-identity")
         tap("lesson-xolos-identity");tap("lesson-next");tap("lesson-next")
-        for _ in 0..<4 {tap("answer-choice-0");tap("answer-next")}
-        tap("match-l-0");tap("match-r-0")
-        XCTAssertEqual(app.buttons["match-l-0"].value as? String,"Matched")
+        for _ in 0..<3 {tap("answer-choice-0");tap("answer-next")}
+        XCTAssertTrue(app.buttons["answer-choice-0"].exists)
         app.terminate()
         app.launchArguments=["-ui-testing","-test-now","1800000000","-stage-test-lessons"];app.launch()
         app.tabBars.buttons["Album"].tap();app.buttons["Settings"].tap();tap("lesson-updates")
@@ -333,27 +326,37 @@ final class FlowTests: XCTestCase {
         let shot=XCTAttachment(screenshot:app.screenshot());shot.name="Expanded club roadmap";shot.lifetime = .keepAlways;add(shot)
     }
 
-    func testMemoryCardsConcealMismatchAndResumePairs() {
-        start();tap("choose-XT");tap("lesson-xolos-identity");tap("lesson-next");tap("lesson-next")
-        for _ in 0..<4 {tap("answer-choice-0");tap("answer-next")}
-        XCTAssertEqual(app.buttons["match-l-0"].value as? String,"Face down")
-        XCTAssertTrue(app.buttons["match-l-0"].label.hasPrefix("Hidden card"))
-        tap("match-r-0");XCTAssertEqual(app.buttons["match-r-0"].value as? String,"Revealed")
-        tap("match-l-0");XCTAssertEqual(app.buttons["match-l-0"].value as? String,"Matched")
-        let position=app.buttons["match-l-1"].label
-        app.terminate();start(reset:false);tap("lesson-xolos-identity")
-        XCTAssertEqual(app.buttons["match-l-0"].value as? String,"Matched")
-        XCTAssertEqual(app.buttons["match-l-1"].label,position)
-        tap("match-l-1");tap("match-l-2")
-        XCTAssertEqual(app.buttons["match-l-1"].value as? String,"Revealed")
-        XCTAssertFalse(app.buttons["finish-lesson"].exists)
+    func testStandaloneMemoryConcealsFlipsRestoresAndCompletes() {
+        start();tap("choose-XT");completeLesson("lesson-xolos-identity")
+        XCTAssertFalse(app.buttons.matching(NSPredicate(format:"identifier BEGINSWITH %@","match-")).firstMatch.exists)
+        app.tabBars.buttons["Games"].tap();tap("game-memory")
+        let image="memory-memory-riascos-image",answer="memory-memory-riascos-answer"
+        XCTAssertEqual(app.buttons[image].value as? String,"Face down")
+        XCTAssertTrue(app.buttons[image].label.hasPrefix("Hidden card"))
+        tap(image);tap("memory-memory-arce-answer")
+        XCTAssertEqual(app.buttons[image].value as? String,"Revealed")
+        tap("memory-memory-cristiano-image")
+        XCTAssertEqual(app.buttons["memory-memory-cristiano-image"].value as? String,"Face down")
         let hidden=NSPredicate(format:"value == %@","Face down")
-        expectation(for:hidden,evaluatedWith:app.buttons["match-l-1"]);waitForExpectations(timeout:5)
-        XCTAssertEqual(app.buttons["match-l-2"].value as? String,"Face down")
-        for i in 1..<3 {tap("match-r-\(i)");tap("match-l-\(i)")}
-        XCTAssertTrue(app.buttons["finish-lesson"].exists)
-        let shot=XCTAttachment(screenshot:app.screenshot());shot.name="Memory pairs";shot.lifetime = .keepAlways;add(shot)
-        tap("finish-lesson");XCTAssertTrue(app.staticTexts["lesson-complete"].exists)
+        expectation(for:hidden,evaluatedWith:app.buttons[image]);waitForExpectations(timeout:5)
+        tap(image);tap(answer);XCTAssertEqual(app.buttons[image].value as? String,"Matched")
+        app.terminate();start(reset:false);app.tabBars.buttons["Games"].tap();tap("game-memory")
+        XCTAssertEqual(app.buttons[image].value as? String,"Matched")
+        let shot=XCTAttachment(screenshot:app.screenshot());shot.name="Memory 4 by 4 saved board";shot.lifetime = .keepAlways;add(shot)
+        tap("memory-restart");app.buttons["Keep playing"].tap()
+        for key in ["arce","cristiano","madrid","saucedo","ramos","casillas","xolos"] {tap("memory-memory-"+key+"-image");tap("memory-memory-"+key+"-answer")}
+        XCTAssertTrue(app.staticTexts["memory-complete"].exists)
+        Thread.sleep(forTimeInterval:0.5)
+        let done=XCTAttachment(screenshot:app.screenshot());done.name="Memory names and stats complete";done.lifetime = .keepAlways;add(done)
+        tap("memory-replay");XCTAssertEqual(app.buttons[image].value as? String,"Face down")
+    }
+
+    func testLargeTextStandaloneMemoryBoard() {
+        app.launchArguments=["-ui-testing","-reset-test-state","-UIPreferredContentSizeCategoryName","UICTContentSizeCategoryAccessibilityXXXL"];app.launch()
+        tap("choose-XT");app.tabBars.buttons["Games"].tap();tap("game-memory")
+        tap("memory-memory-ramos-image");tap("memory-memory-ramos-answer")
+        XCTAssertEqual(app.buttons["memory-memory-ramos-answer"].value as? String,"Matched")
+        let shot=XCTAttachment(screenshot:app.screenshot());shot.name="Memory at accessibility text size";shot.lifetime = .keepAlways;add(shot)
     }
 
     func testDailyPlanResumesAndShowsRealBacklog() {
@@ -364,8 +367,7 @@ final class FlowTests: XCTestCase {
         tap("daily-lesson");XCTAssertTrue(app.staticTexts["The home ground"].exists)
         tap("lesson-next")
         for _ in 0..<4 {tap("answer-choice-0");tap("answer-next")}
-        for i in 0..<3 {tap("match-l-\(i)");tap("match-r-\(i)")}
-        tap("finish-lesson");tap("back-roadmap")
+        tap("back-roadmap")
         completeLesson("lesson-xolos-climb")
         app.terminate();start(reset:false,now:1_800_000_000+86401)
         tap("session-size");app.buttons["Quick · 5"].tap()
@@ -390,8 +392,7 @@ final class FlowTests: XCTestCase {
         tap("coverage-learn-lesson-xolos-identity")
         tap("lesson-next");tap("lesson-next")
         for _ in 0..<4 {tap("answer-choice-0");tap("answer-next")}
-        for i in 0..<3 {tap("match-l-\(i)");tap("match-r-\(i)")}
-        tap("finish-lesson");tap("back-roadmap")
+        tap("back-roadmap")
         for _ in 0..<6 {if app.buttons["coverage-recall"].isHittable {break};app.swipeDown()}
         tap("coverage-recall")
         for _ in 0..<3 {tap("reveal-recall");tap("recall-next")}

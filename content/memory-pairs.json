@@ -1,0 +1,42 @@
+[
+  {
+    "key": "memory-riascos",
+    "subjectID": "8a32d77b-d409-5435-9516-5adccb2b059a"
+  },
+  {
+    "key": "memory-arce",
+    "subjectID": "d3ac3035-32f6-5d96-bc18-d3f683b7708b"
+  },
+  {
+    "key": "memory-cristiano",
+    "subjectID": "6d957fed-48cd-5e99-8e09-2758304bba08"
+  },
+  {
+    "key": "memory-madrid",
+    "subjectID": "b10020b9-4d2f-5384-a229-6bb3d69da093"
+  },
+  {
+    "key": "memory-saucedo",
+    "subjectID": "8dc70c1f-7491-530f-9c92-3e48cd54f665",
+    "factID": "8aca7238-5fe3-5641-9a15-06ea15f8009e",
+    "label": "Goals conceded"
+  },
+  {
+    "key": "memory-ramos",
+    "subjectID": "bd1a5c77-15cc-5bde-bd77-b3a9679f8e95",
+    "factID": "3fee9ab4-e9d7-5cb0-acd8-8003830291f3",
+    "label": "Club goals"
+  },
+  {
+    "key": "memory-casillas",
+    "subjectID": "b63b8e8c-5e58-54f5-815d-9e37d56baf32",
+    "factID": "6b462a97-8d08-5a09-8a58-aeff31a8138e",
+    "label": "Club appearances"
+  },
+  {
+    "key": "memory-xolos",
+    "subjectID": "f85aa453-4336-52ef-900a-853646479e20",
+    "factID": "349445dd-bdd9-56b9-8c18-774d2ab78fa9",
+    "label": "Founded"
+  }
+]

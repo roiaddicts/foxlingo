@@ -57,7 +57,7 @@ Expanded lessons were drafted with a cheaper subagent and checked against offici
 
 Original leopard artwork and its app icon are bundled in the asset catalog. Generation prompts and asset locations are recorded in [artwork notes](Foxlingo/Resources/ARTWORK.md).
 
-Lesson matching now uses six shuffled, face-down cards. Mismatches remain visible briefly, then conceal; completed pairs and board order survive a restart. Hidden text is also concealed from accessibility labels. This is playful acquisition practice; it does not substitute for scheduled independent recall.
+Lessons contain two story pages and four questions, then finish directly. Memory matching lives in Games as a separate 4×4 board: eight pictured players/clubs pair with four names and four sourced historical stats. Cards lift on touch or pointer hover and flip in 3D; Reduce Motion removes movement. Mismatches conceal after 1.8 seconds, and board order, found pairs and turn count survive relaunch. Hidden content stays concealed from accessibility labels. Game completion supports the streak without advancing recall mastery.
 
 Game clues use offline club badges and country flags, including the player picker. Lesson identity answers reuse badges, faces, and flags; dates, statistics, and historical statements retain readable text. All visual clues expose their names to VoiceOver. Unmatched memory cards remain revealed for VoiceOver until the learner turns them over.
 
@@ -93,6 +93,8 @@ Roadmaps may specify a canonical `subjectID`; older club-only JSON falls back to
 
 ### Saved game boards
 
-Bingo, grid, classic lineups and Who am I? resume after leaving or relaunching the app. Saved boards retain connections, Undo history, helped answers, skipped bingo offers, squad identity and mystery clues. Games shows **Continue** for saved sessions. Starting again asks before clearing meaningful progress and leaves the other boards intact.
+Memory match, bingo, grid, classic lineups and Who am I? resume after leaving or relaunching the app. Saved boards retain connections, Undo history, helped answers, skipped bingo offers, squad identity and mystery clues. Games shows **Continue** for saved sessions. Starting again asks before clearing meaningful progress and leaves the other boards intact.
 
 Saved boards are checked against their content before restoration. Changes to board layout, eligible players or clue meaning start a fresh board with an explanation; artwork and source wording changes preserve the board. Invalid game drafts do not discard learning history. Completing a game removes its draft and credits its original session once. Club and nationality categories use cached badges and flags; player choices use faces with accessible names.
+
+Memory definitions live in `content/memory-pairs.json` and compile to `memory-en.json`. Statistics reference canonical fact UUIDs, preserving provenance and historical scope. Legacy lesson matching records remain readable for saved-progress and pack compatibility, but no matching board appears in the learning path; a lesson saved at the old final step offers Finish directly.

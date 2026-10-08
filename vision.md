@@ -218,7 +218,7 @@ The first release should prove one complete learning loop across her two favorit
 
 1. Choose Xolos or Real Madrid.
 2. Complete a short introductory lesson with supported club identity, history, and selected player content.
-3. Practice through a small set of reusable exercises, starting with multiple choice and relationship matching.
+3. Practice through a small set of reusable exercises, starting with multiple choice. Keep the 4×4 image-to-name/stat memory game as optional play in Games, outside the learning path.
 4. Unlock an album card and see learning progress.
 5. Return for spaced review, improve the card through recall, and maintain a streak with the leopard companion.
 

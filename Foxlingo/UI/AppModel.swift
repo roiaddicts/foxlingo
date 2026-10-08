@@ -4,6 +4,7 @@ import AudioToolbox
 @MainActor final class AppModel: ObservableObject {
     @Published var pack: ContentPack?
     @Published var state = LearnerState()
+    @Published var memoryPairs: [MemoryGamePair] = []
     @Published var mysteries: [MysteryRound] = []
     @Published var games: GamePack?
     @Published var gamesError: String?
@@ -68,6 +69,9 @@ import AudioToolbox
         } catch { gamesError=error.localizedDescription }
         if let pack,let url=Bundle.main.url(forResource:"mystery-en",withExtension:"json"),let data=try? Data(contentsOf:url) {
             mysteries=(try? MysteryDeck.load(data,pack:pack)) ?? []
+        }
+        if let pack,let url=Bundle.main.url(forResource:"memory-en",withExtension:"json"),let data=try? Data(contentsOf:url) {
+            memoryPairs=(try? MemoryGameDeck.load(data,pack:pack)) ?? []
         }
         do {
             let restored = try store.loadWithNotice()

@@ -152,3 +152,5 @@ print(f'{len(pack["lessons"])} lessons, {len(pack["objectives"])} unique objecti
 
 # Mystery boards reference this curriculum by canonical fact/subject IDs.
 (ROOT/'Foxlingo/Resources/mystery-en.json').write_text((ROOT/'content/mystery-rounds.json').read_text())
+
+(ROOT/"Foxlingo/Resources/memory-en.json").write_text((ROOT/"content/memory-pairs.json").read_text())

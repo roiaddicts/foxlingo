@@ -14,6 +14,11 @@ struct GamesHome: View {
             VStack(alignment:.leading,spacing:22) {
                 HStack {VStack(alignment:.leading,spacing:8) {Eyebrow(text:"The training ground");Text("Play with football").font(.largeTitle.bold())};Spacer();Leopard().frame(width:70,height:80)}
                 Text("Different ways to connect the names you know. No timer. Try, learn, and try again.").foregroundStyle(Palette.muted)
+                if !model.memoryPairs.isEmpty {
+                    NavigationLink {MemoryGameView(pairs:model.memoryPairs)} label: {
+                        HStack(spacing:16) {Image(systemName:"rectangle.on.rectangle.angled").font(.title2).frame(width:50,height:60).foregroundStyle(Palette.green);VStack(alignment:.leading,spacing:6) {Text("Memory match").font(.title3.bold());Text(model.state.savedGame("memory") != nil ? "Continue your saved pairs." : "16 cards. Faces, badges, names and stats.").font(.subheadline).foregroundStyle(Palette.muted)};Spacer();Image(systemName:"chevron.right")}.padding(18).background(.white.opacity(0.8),in:RoundedRectangle(cornerRadius:20))
+                    }.buttonStyle(PressFeedback()).accessibilityIdentifier("game-memory")
+                }
                 if let pack=model.games {
                     if !model.mysteries.isEmpty {
                         NavigationLink {MysteryGameView(rounds:model.mysteries)} label: {
