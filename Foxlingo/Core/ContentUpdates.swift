@@ -106,8 +106,22 @@ public enum ContentUpdateRules {
         for (key,id) in keys(new) where priorKeys[key] != nil {
             guard priorKeys[key] == id else {throw ContentError.invalid("An existing content key changed its identifier.")}
         }
+        func scoreMapping(_ score: ScoreInput) -> [UUID:Int] {
+            [score.leftEntityID:score.leftGoals,score.rightEntityID:score.rightGoals]
+        }
+        func scoreFacts(_ objective: Objective,_ pack: ContentPack) -> Data {
+            bytes(objective.factIDs.map {id in
+                let fact=pack.facts.first {$0.id == id}!
+                return FactMeaning(id:id,subject:fact.subjectID,predicate:fact.predicate,value:fact.value,scope:fact.scope)
+            })
+        }
         for objective in new.objectives {
             guard let previous=old.objectives.first(where:{$0.id == objective.id}) else {continue}
+            if let priorScore=old.scoreInput(for:previous.id),let nextScore=new.scoreInput(for:objective.id),scoreMapping(priorScore) != scoreMapping(nextScore) {
+                guard objective.revision > previous.revision && scoreFacts(objective,new) != scoreFacts(previous,old) else {
+                    throw ContentError.invalid("A changed score orientation needs a revised memory and updated factual context: \(objective.key).")
+                }
+            }
             guard objective.revision >= previous.revision,
                   objective.revision > previous.revision || meaning(objective,in:new) == meaning(previous,in:old) else {
                 throw ContentError.invalid("A changed answer needs a higher objective revision: \(objective.key).")

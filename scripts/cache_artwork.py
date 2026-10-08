@@ -40,5 +40,10 @@ for name,url in urls.items():
   file.unlink(missing_ok=True);manifest.append(dict(asset=name,url=url,cached=False));continue
  (folder/'Contents.json').write_text(json.dumps({'images':[{'filename':'image.png','idiom':'universal'}],'info':{'author':'xcode','version':1}},indent=2)+'\n')
  manifest.append(dict(asset=name,url=url,cached=True))
+# Keep curated career artwork (including a crest cropped from an AFC PDF).
+# These cached artifacts have their own provenance and are not raw URL images.
+for item in json.loads((ROOT/'content/player-career-artwork.json').read_text()):
+ if not any(m['asset']==item['key'] for m in manifest):
+  manifest.append(dict(asset=item['key'],url=item['imageURL'],sourceURL=item['sourceURL'],cached=(ROOT/item['assetPath']).exists()))
 (ROOT/'Foxlingo/Resources/artwork-manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
 print(sum(m['cached'] for m in manifest),'images cached;',len(manifest),'requested')

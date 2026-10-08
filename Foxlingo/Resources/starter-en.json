@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "key": "foxlingo-favorites-en",
-  "contentVersion": 8,
+  "contentVersion": 10,
   "language": "en",
   "entities": [
     {
@@ -1252,6 +1252,21 @@
       ]
     },
     {
+      "id": "a503aa98-f9b7-5a05-a09b-6fc369e9c376",
+      "key": "entity-ac-milan",
+      "type": "club",
+      "name": "AC Milan",
+      "aliases": [
+        "Milan"
+      ],
+      "visual": "ACM",
+      "externalRefs": {
+        "uefa.club": "50058"
+      },
+      "imageAsset": "entity-ac-milan",
+      "imageURL": "https://img.uefa.com/imgml/TP/teams/logos/100x100/50058.png"
+    },
+    {
       "id": "544551ae-f6d2-5492-8278-b79ebab76843",
       "key": "entity-country-greece",
       "type": "country",
@@ -1940,6 +1955,18 @@
       "verifiedAt": "2026-10-08"
     },
     {
+      "key": "saucedo-xolos-signing-profile",
+      "title": "El Club Tijuana realiza 11 movimientos en el Régimen de Transferencias de la Primera División",
+      "url": "https://xolos.com.mx/noticias/primer-equipo/7997",
+      "verifiedAt": "2026-10-08"
+    },
+    {
+      "key": "saucedo-xolos-mexico-debut",
+      "title": "Xoloitzcuintles de Selección Nacional",
+      "url": "https://xolos.com.mx/noticias/copa-libertadores-2013/7372",
+      "verifiedAt": "2026-10-08"
+    },
+    {
       "key": "competition-uefa-origins",
       "title": "Setting the standard for club football",
       "url": "https://www.uefa.com/news/0268-121578ca9f2b-3ebc8c09202b-1000--setting-the-standard-for-club-football/",
@@ -2021,6 +2048,12 @@
       "key": "competition-artwork-entity-competition-liga-mx",
       "title": "Hectortoro2019, via Wikimedia Commons — CC BY-SA 4.0; unmodified original",
       "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "verifiedAt": "2026-10-08"
+    },
+    {
+      "key": "artwork-ac-milan-uefa",
+      "title": "AC Milan · UEFA club identity and badge",
+      "url": "https://www.uefa.com/uefachampionsleague/history/clubs/50058--milan/",
       "verifiedAt": "2026-10-08"
     }
   ],
@@ -6114,6 +6147,55 @@
       "evidence": "Official source excerpt: “Marcó 23 goles en 65 partidos”"
     },
     {
+      "id": "b3985a43-7ca9-5dbf-8fcb-c5d32222394f",
+      "key": "fact-enrichment-saucedo-pan-american-medal",
+      "subjectID": "8dc70c1f-7491-530f-9c92-3e48cd54f665",
+      "predicate": "saucedo-pan-american-medal",
+      "value": {
+        "kind": "text",
+        "display": "Bronze",
+        "text": "Bronze"
+      },
+      "scope": "Mexico under-23 team; 2003 Pan American Games in Santo Domingo",
+      "sourceKeys": [
+        "saucedo-xolos-signing-profile"
+      ],
+      "evidence": "Official source excerpt: “medalla de bronce en los juegos Panamericanos de Santo Domingo 2003”"
+    },
+    {
+      "id": "25586665-0a9b-517a-9342-934e59a8c712",
+      "key": "fact-enrichment-saucedo-mexico-debut-year",
+      "subjectID": "8dc70c1f-7491-530f-9c92-3e48cd54f665",
+      "predicate": "saucedo-mexico-debut-year",
+      "value": {
+        "kind": "number",
+        "display": "2013",
+        "number": 2013,
+        "unit": "year"
+      },
+      "scope": "Senior Mexico national team; January 2013 friendly against Denmark",
+      "sourceKeys": [
+        "saucedo-xolos-mexico-debut"
+      ],
+      "evidence": "Official source excerpt: “debutar el 30 de Enero de 2013 en un duelo amistoso ante Dinamarca”"
+    },
+    {
+      "id": "d71877d7-d78f-594b-98a6-efe45e7e3117",
+      "key": "fact-enrichment-saucedo-xolos-previous-club",
+      "subjectID": "8dc70c1f-7491-530f-9c92-3e48cd54f665",
+      "predicate": "saucedo-xolos-previous-club",
+      "value": {
+        "kind": "entity",
+        "display": "Tigres UANL",
+        "entityID": "72c10e2a-d55a-586f-923a-e95b8492aab6"
+      },
+      "scope": "Saucedo’s move to Club Tijuana ahead of Apertura 2011",
+      "sourceKeys": [
+        "saucedo-xolos-signing-profile"
+      ],
+      "evidence": "Official source excerpt: “Proveniente de los Tigres de la UANL”"
+    },
+    {
       "id": "0adaf349-aa14-5cd0-af84-ca3cbd40e6dd",
       "key": "fact-competition-ucl-origin-season",
       "subjectID": "4f46285c-b3c7-58ab-b0ec-1605d4dcb90b",
@@ -9966,6 +10048,50 @@
       "revision": 1
     },
     {
+      "id": "1ce32e2a-9639-5ab2-bb26-4d0e3a5b0f41",
+      "key": "objective-enrichment-saucedo-pan-american-medal",
+      "factIDs": [
+        "b3985a43-7ca9-5dbf-8fcb-c5d32222394f"
+      ],
+      "prompt": "What medal did Mexico’s under-23 team win at the 2003 Santo Domingo Pan American Games, with Saucedo in the squad?",
+      "answers": [
+        "Bronze",
+        "Bronze medal"
+      ],
+      "feedback": "Mexico U-23 medal: Bronze. Context: Mexico under-23 team; 2003 Pan American Games in Santo Domingo.",
+      "revision": 1
+    },
+    {
+      "id": "1d83d0bb-43d3-51ac-9a32-0e0251906933",
+      "key": "objective-enrichment-saucedo-mexico-debut-year",
+      "factIDs": [
+        "25586665-0a9b-517a-9342-934e59a8c712"
+      ],
+      "prompt": "In what year did Saucedo make his senior Mexico debut, in a friendly against Denmark?",
+      "answers": [
+        "2013",
+        "two thousand thirteen",
+        "two thousand and thirteen"
+      ],
+      "feedback": "Senior Mexico debut year: 2013. Context: Senior Mexico national team; January 2013 friendly against Denmark.",
+      "revision": 1
+    },
+    {
+      "id": "106fea23-a12c-586c-af03-e50a3269c133",
+      "key": "objective-enrichment-saucedo-xolos-previous-club",
+      "factIDs": [
+        "d71877d7-d78f-594b-98a6-efe45e7e3117"
+      ],
+      "prompt": "From which club did Saucedo join Xolos ahead of Apertura 2011?",
+      "answers": [
+        "Tigres UANL",
+        "Tigres",
+        "Tigres de la UANL"
+      ],
+      "feedback": "Club before joining Xolos: Tigres UANL. Context: Saucedo’s move to Club Tijuana ahead of Apertura 2011.",
+      "revision": 1
+    },
+    {
       "id": "dd22680b-bfaa-54d6-8f9f-698d7ac40899",
       "key": "objective-competition-ucl-origin-season",
       "factIDs": [
@@ -10386,7 +10512,8 @@
           "lessonIDs": [
             "dae773af-29b5-5890-8291-e06205971223",
             "c851e047-ee55-5102-8e00-e5281e725f9f",
-            "f0dfdccd-d160-5d55-a298-04485e367a7e"
+            "f0dfdccd-d160-5d55-a298-04485e367a7e",
+            "713ddb2a-1609-56cf-a1fc-36dd8644e84f"
           ]
         }
       ]
@@ -11425,7 +11552,7 @@
       "key": "roadmap-player-saucedo",
       "subjectID": "8dc70c1f-7491-530f-9c92-3e48cd54f665",
       "clubID": "f85aa453-4336-52ef-900a-853646479e20",
-      "summary": "Three historical player connections, plus an optional club story.",
+      "summary": "Six historical player connections across two lessons, plus an optional club story.",
       "chapters": [
         {
           "key": "roadmap-player-saucedo-foundations",
@@ -11441,6 +11568,13 @@
           "note": "Optional club history. Only player-specific facts establish who participated in the final.",
           "lessonIDs": [
             "b021ef8a-0c22-51dd-8ea7-4e4ba2ed9609"
+          ]
+        },
+        {
+          "key": "roadmap-player-saucedo-deeper-stories",
+          "title": "Deeper stories",
+          "lessonIDs": [
+            "713ddb2a-1609-56cf-a1fc-36dd8644e84f"
           ]
         }
       ]
@@ -14031,6 +14165,33 @@
       ]
     },
     {
+      "id": "713ddb2a-1609-56cf-a1fc-36dd8644e84f",
+      "key": "lesson-player-saucedo-career-milestones",
+      "title": "Cirilo Saucedo: Club and country",
+      "subtitle": "A youth medal, a senior debut, and the move to Xolos",
+      "story": [
+        {
+          "title": "A medal with Mexico’s under-23s",
+          "body": "Before his long top-flight career, Cirilo Saucedo also represented Mexico at youth level. Club Tijuana’s profile notes that he was part of the Mexico under-23 squad that won bronze at the 2003 Pan American Games in Santo Domingo."
+        },
+        {
+          "title": "From Tigres to a Mexico debut",
+          "body": "Club Tijuana announced Saucedo’s arrival from Tigres UANL ahead of Apertura 2011, its first top-flight tournament. In January 2013 he made his senior Mexico debut in a friendly against Denmark. These are two distinct career steps: a club move in 2011 and a senior international debut in 2013."
+        }
+      ],
+      "objectiveIDs": [
+        "1ce32e2a-9639-5ab2-bb26-4d0e3a5b0f41",
+        "1d83d0bb-43d3-51ac-9a32-0e0251906933",
+        "106fea23-a12c-586c-af03-e50a3269c133"
+      ],
+      "exerciseIDs": [
+        "bce9c5d2-dbab-5b70-9ff2-2f5f9bcb25d3",
+        "7de90e25-86c4-5982-80c9-50fb2113fc27",
+        "926ad291-af3f-5841-8c5f-872df5c23e77",
+        "0e597c2e-e6d1-5605-bc0d-ee17c0e09760"
+      ]
+    },
+    {
       "id": "81f73de5-bb7e-518c-a421-0ce4e6d848b5",
       "key": "lesson-competition-champions-league-origins",
       "title": "The European Cup begins",
@@ -14725,7 +14886,14 @@
       ],
       "left": [],
       "right": [],
-      "pairs": []
+      "pairs": [],
+      "scoreInput": {
+        "leftEntityID": "f85aa453-4336-52ef-900a-853646479e20",
+        "rightEntityID": "a6e9d25d-0c7c-5012-bbe3-75cc36a86bda",
+        "leftGoals": 4,
+        "rightGoals": 1,
+        "maximum": 20
+      }
     },
     {
       "id": "0dbe9664-5d57-52e9-9245-57f36a10816c",
@@ -24551,7 +24719,14 @@
       ],
       "left": [],
       "right": [],
-      "pairs": []
+      "pairs": [],
+      "scoreInput": {
+        "leftEntityID": "6e4d3f78-a965-5fb8-abb5-13794ef86865",
+        "rightEntityID": "25f994bc-8507-5a0c-a27c-f1f918d30d29",
+        "leftGoals": 9,
+        "rightGoals": 0,
+        "maximum": 20
+      }
     },
     {
       "id": "132f908a-06eb-5cc2-93b7-d4ad85c74cbf",
@@ -30204,6 +30379,142 @@
       "pairs": []
     },
     {
+      "id": "bce9c5d2-dbab-5b70-9ff2-2f5f9bcb25d3",
+      "key": "exercise-player-saucedo-career-milestones-choice-0",
+      "kind": "choice",
+      "objectiveIDs": [
+        "1ce32e2a-9639-5ab2-bb26-4d0e3a5b0f41"
+      ],
+      "prompt": "What medal did Mexico’s under-23 team win at the 2003 Santo Domingo Pan American Games, with Saucedo in the squad?",
+      "feedback": "Mexico U-23 medal: Bronze. Context: Mexico under-23 team; 2003 Pan American Games in Santo Domingo.",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "Bronze"
+        },
+        {
+          "id": "choice-1",
+          "text": "Silver"
+        },
+        {
+          "id": "choice-2",
+          "text": "Gold"
+        },
+        {
+          "id": "choice-3",
+          "text": "No medal"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "7de90e25-86c4-5982-80c9-50fb2113fc27",
+      "key": "exercise-player-saucedo-career-milestones-choice-1",
+      "kind": "choice",
+      "objectiveIDs": [
+        "1d83d0bb-43d3-51ac-9a32-0e0251906933"
+      ],
+      "prompt": "In what year did Saucedo make his senior Mexico debut, in a friendly against Denmark?",
+      "feedback": "Senior Mexico debut year: 2013. Context: Senior Mexico national team; January 2013 friendly against Denmark.",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "2013"
+        },
+        {
+          "id": "choice-1",
+          "text": "2011"
+        },
+        {
+          "id": "choice-2",
+          "text": "2012"
+        },
+        {
+          "id": "choice-3",
+          "text": "2014"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "926ad291-af3f-5841-8c5f-872df5c23e77",
+      "key": "exercise-player-saucedo-career-milestones-choice-2",
+      "kind": "choice",
+      "objectiveIDs": [
+        "106fea23-a12c-586c-af03-e50a3269c133"
+      ],
+      "prompt": "From which club did Saucedo join Xolos ahead of Apertura 2011?",
+      "feedback": "Club before joining Xolos: Tigres UANL. Context: Saucedo’s move to Club Tijuana ahead of Apertura 2011.",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "Tigres UANL"
+        },
+        {
+          "id": "choice-1",
+          "text": "Santos Laguna"
+        },
+        {
+          "id": "choice-2",
+          "text": "Toluca"
+        },
+        {
+          "id": "choice-3",
+          "text": "Pumas UNAM"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "0e597c2e-e6d1-5605-bc0d-ee17c0e09760",
+      "key": "exercise-player-saucedo-career-milestones-choice-3",
+      "kind": "choice",
+      "objectiveIDs": [
+        "1ce32e2a-9639-5ab2-bb26-4d0e3a5b0f41"
+      ],
+      "prompt": "What medal did Mexico’s under-23 team win at the 2003 Santo Domingo Pan American Games, with Saucedo in the squad?",
+      "feedback": "Mexico U-23 medal: Bronze. Context: Mexico under-23 team; 2003 Pan American Games in Santo Domingo.",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "Bronze"
+        },
+        {
+          "id": "choice-1",
+          "text": "Silver"
+        },
+        {
+          "id": "choice-2",
+          "text": "Gold"
+        },
+        {
+          "id": "choice-3",
+          "text": "No medal"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
       "id": "ea802aad-180c-5660-a05a-73dc610e12e9",
       "key": "exercise-competition-champions-league-origins-choice-0",
       "kind": "choice",
@@ -30507,7 +30818,14 @@
       ],
       "left": [],
       "right": [],
-      "pairs": []
+      "pairs": [],
+      "scoreInput": {
+        "leftEntityID": "a503aa98-f9b7-5a05-a09b-6fc369e9c376",
+        "rightEntityID": "8b6a2a49-f861-5aa6-8bc9-f9d5ed889507",
+        "leftGoals": 3,
+        "rightGoals": 0,
+        "maximum": 20
+      }
     },
     {
       "id": "676bd761-9ecf-58d7-bd0d-7aae3bcfb32c",
@@ -30541,7 +30859,14 @@
       ],
       "left": [],
       "right": [],
-      "pairs": []
+      "pairs": [],
+      "scoreInput": {
+        "leftEntityID": "a503aa98-f9b7-5a05-a09b-6fc369e9c376",
+        "rightEntityID": "8b6a2a49-f861-5aa6-8bc9-f9d5ed889507",
+        "leftGoals": 3,
+        "rightGoals": 3,
+        "maximum": 20
+      }
     },
     {
       "id": "8084458d-00f3-518d-9252-6e74bac9f766",
@@ -30575,7 +30900,14 @@
       ],
       "left": [],
       "right": [],
-      "pairs": []
+      "pairs": [],
+      "scoreInput": {
+        "leftEntityID": "8b6a2a49-f861-5aa6-8bc9-f9d5ed889507",
+        "rightEntityID": "a503aa98-f9b7-5a05-a09b-6fc369e9c376",
+        "leftGoals": 3,
+        "rightGoals": 2,
+        "maximum": 20
+      }
     },
     {
       "id": "c384c3fc-88dc-5991-84af-a523a4e53879",
@@ -30609,7 +30941,14 @@
       ],
       "left": [],
       "right": [],
-      "pairs": []
+      "pairs": [],
+      "scoreInput": {
+        "leftEntityID": "a503aa98-f9b7-5a05-a09b-6fc369e9c376",
+        "rightEntityID": "8b6a2a49-f861-5aa6-8bc9-f9d5ed889507",
+        "leftGoals": 3,
+        "rightGoals": 0,
+        "maximum": 20
+      }
     },
     {
       "id": "80aefa91-b737-58ba-a797-92b7463501ca",
@@ -31501,12 +31840,16 @@
       "objectiveIDs": [
         "af53b5eb-258d-5bfe-9b0e-88a4066953cb",
         "c33b7eee-6d79-52a8-b68d-e27669adcb98",
-        "bb5f0870-0d11-5ffc-af4f-e23c99f5848d"
+        "bb5f0870-0d11-5ffc-af4f-e23c99f5848d",
+        "1ce32e2a-9639-5ab2-bb26-4d0e3a5b0f41",
+        "1d83d0bb-43d3-51ac-9a32-0e0251906933",
+        "106fea23-a12c-586c-af03-e50a3269c133"
       ],
       "lessonIDs": [
-        "5d2f943a-dcde-5c0b-a100-14b0ef478d8c"
+        "5d2f943a-dcde-5c0b-a100-14b0ef478d8c",
+        "713ddb2a-1609-56cf-a1fc-36dd8644e84f"
       ],
-      "knowledgeVersion": 1,
+      "knowledgeVersion": 2,
       "caption": "Between the posts"
     },
     {

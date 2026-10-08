@@ -13,6 +13,8 @@ struct LessonView: View {
     @State private var feedback: String?
     @State private var correct = false
     @State private var choiceAnswered = false
+    @State private var scoreLeft=0
+    @State private var scoreRight=0
     @State private var retries = 0
     var activities: [Exercise] { guard let pack=model.pack else {return []};return lesson.exerciseIDs.map(pack.exercise).filter {$0.kind == "choice"} }
     var exercise: Exercise? { let index=resume.step-2;return activities.indices.contains(index) ? activities[index] : nil }
@@ -65,7 +67,7 @@ struct LessonView: View {
         return subject.imageAsset != nil && ["club","player","competition"].contains(subject.type) ? subject : nil
     }
     private func prepare() {
-        feedback=nil; correct=false; choiceAnswered=false; retries=0
+        feedback=nil; correct=false; choiceAnswered=false; retries=0;scoreLeft=0;scoreRight=0
         if let x=exercise {
             choiceOrder=x.choices.shuffled()
 
@@ -87,19 +89,38 @@ struct LessonView: View {
         guard let pack=model.pack,let type=AnswerArtwork.type(objectiveID:x.objectiveIDs[0],pack:pack),x.choices.allSatisfy({AnswerArtwork.canShow($0.text,type:type,pack:pack)}) else {return nil}
         return type
     }
-    private func choiceBoard(_ x: Exercise) -> some View {
-        VStack(spacing:12) {
-            ForEach(choiceOrder) { choice in
-                Button {
-                    guard !choiceAnswered else{return}
-                    correct=x.accepts(choice.id);choiceAnswered=true;feedback=x.feedback;model.respond(correct)
-                    record(x.objectiveIDs[0],answer:choice.text,success:correct,hinted:retries>0)
-                } label: {
-                    HStack { KnowledgeAnswer(text:choice.text,expectedType:choiceVisualType(x)).font(.headline);Spacer(); if choiceAnswered && x.accepts(choice.id) {Image(systemName:"checkmark.circle.fill").foregroundStyle(Palette.brand)} }
-                        .padding(18).frame(minHeight:56).background(.white.opacity(0.8),in:RoundedRectangle(cornerRadius:16)).overlay { RoundedRectangle(cornerRadius:16).stroke(choiceAnswered && x.accepts(choice.id) ? Palette.brand : Palette.ink.opacity(0.12),lineWidth:choiceAnswered && x.accepts(choice.id) ? 2 : 1) }
-                }.buttonStyle(.plain).disabled(choiceAnswered).accessibilityIdentifier("answer-\(choice.id)")
+    @ViewBuilder private func choiceBoard(_ x: Exercise) -> some View {
+        if let score=x.scoreInput {
+            VStack(spacing:18) {
+                ScoreWheels(input:score,left:$scoreLeft,right:$scoreRight).disabled(choiceAnswered)
+                if !choiceAnswered {
+                    PrimaryButton(title:"Check score") {
+                        answer(x,text:"\(scoreLeft)–\(scoreRight)",success:score.accepts(left:scoreLeft,right:scoreRight))
+                    }.accessibilityIdentifier("check-score")
+                }
             }
+        } else if let visualType=choiceVisualType(x) {
+            LazyVGrid(columns:[GridItem(.flexible()),GridItem(.flexible())],spacing:12) {
+                ForEach(choiceOrder) {choice in choiceButton(choice,in:x,visualType:visualType)}
+            }.accessibilityIdentifier("image-choice-grid")
+        } else {
+            VStack(spacing:12) {ForEach(choiceOrder) {choice in choiceButton(choice,in:x,visualType:nil)}}
         }
+    }
+    private func answer(_ exercise: Exercise,text: String,success: Bool) {
+        guard !choiceAnswered else {return}
+        correct=success;choiceAnswered=true;feedback=exercise.feedback;model.respond(correct)
+        record(exercise.objectiveIDs[0],answer:text,success:correct,hinted:retries>0)
+    }
+    private func choiceButton(_ choice: Choice,in exercise: Exercise,visualType: String?) -> some View {
+        Button {answer(exercise,text:choice.text,success:exercise.accepts(choice.id))} label: {
+            Group {
+                if let visualType {KnowledgeAnswer(text:choice.text,expectedType:visualType,visualSize:76).frame(maxWidth:.infinity,minHeight:96)}
+                else {HStack {Text(choice.text).font(.headline);Spacer()}.frame(minHeight:20)}
+            }.padding(18).background(.white.opacity(0.8),in:RoundedRectangle(cornerRadius:16))
+                .overlay {RoundedRectangle(cornerRadius:16).stroke(choiceAnswered && exercise.accepts(choice.id) ? Palette.brand : Palette.ink.opacity(0.12),lineWidth:choiceAnswered && exercise.accepts(choice.id) ? 2 : 1)}
+                .overlay(alignment:.topTrailing) {if choiceAnswered && exercise.accepts(choice.id) {Image(systemName:"checkmark.circle.fill").foregroundStyle(Palette.brand).padding(9)}}
+        }.buttonStyle(PressFeedback()).disabled(choiceAnswered).accessibilityIdentifier("answer-\(choice.id)")
     }
     private var resultMessage: String {
         guard let due=lesson.objectiveIDs.compactMap({model.state.reviews[$0]?.due}).min() else {return "Three connections practiced."}
@@ -132,5 +153,34 @@ struct LessonSources: View {
                 }
             }
         }.navigationTitle("Sources & context")
+    }
+}
+
+/// Native wheel controls, with the score's authored team orientation kept visible.
+struct ScoreWheels: View {
+    let input: ScoreInput
+    @Binding var left: Int
+    @Binding var right: Int
+    @EnvironmentObject var model: AppModel
+    var body: some View {
+        GeometryReader {geometry in
+            let columnWidth=(geometry.size.width-34)/2
+            HStack(alignment:.bottom,spacing:8) {
+                wheel(entityID:input.leftEntityID,value:$left,id:"score-left",width:columnWidth)
+                Text("–").font(.largeTitle.bold()).frame(width:18,height:160)
+                wheel(entityID:input.rightEntityID,value:$right,id:"score-right",width:columnWidth)
+            }.frame(width:geometry.size.width)
+        }.frame(height:264).padding(.vertical,18).background(.white.opacity(0.8),in:RoundedRectangle(cornerRadius:20))
+    }
+    private func wheel(entityID: UUID,value: Binding<Int>,id: String,width: CGFloat) -> some View {
+        VStack(spacing:8) {
+            if let pack=model.pack {
+                let club=pack.entity(entityID)
+                ClubMark(club:club,size:48)
+                Text(club.name).font(.subheadline.bold()).multilineTextAlignment(.center).frame(maxWidth:.infinity,minHeight:40)
+                Picker("\(club.name) goals",selection:value) {ForEach(0...input.maximum,id:\.self) {Text(String($0)).font(.title.bold()).tag($0)}}
+                    .pickerStyle(.wheel).frame(width:width,height:160).clipped().accessibilityIdentifier(id)
+            }
+        }.frame(width:width)
     }
 }

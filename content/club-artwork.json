@@ -270,5 +270,9 @@
   "xolos": {
     "url": "https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a5e6ca831774457196dbe90_TIJ.avif",
     "source": "Supplied seed or official club site"
+  },
+  "ac-milan": {
+    "url": "https://img.uefa.com/imgml/TP/teams/logos/100x100/50058.png",
+    "source": "https://www.uefa.com/uefachampionsleague/history/clubs/50058--milan/"
   }
 }

@@ -13,9 +13,21 @@ final class FlowTests: XCTestCase {
     }
     func completeLesson(_ key: String) {
         tap(key);tap("lesson-next");tap("lesson-next")
-        for _ in 0..<4 {tap("answer-choice-0");tap("answer-next")}
+        for index in 0..<4 {
+            if app.pickerWheels.count == 2 {
+                let score = key == "lesson-necaxa-starter" ? ("9","0") : key == "lesson-competition-champions-league-istanbul" ? [("3","0"),("3","3"),("3","2"),("3","0")][index] : ("4","1")
+                setScore(score.0,score.1);tap("check-score")
+            } else {tap("answer-choice-0")}
+            tap("answer-next")
+        }
         XCTAssertTrue(app.staticTexts["lesson-complete"].waitForExistence(timeout:3))
         tap("back-roadmap")
+    }
+    func setScore(_ left: String,_ right: String) {
+        let first=app.pickerWheels["score-left"].exists ? app.pickerWheels["score-left"] : app.pickerWheels.element(boundBy:0)
+        let second=app.pickerWheels["score-right"].exists ? app.pickerWheels["score-right"] : app.pickerWheels.element(boundBy:1)
+        XCTAssertTrue(first.waitForExistence(timeout:3));first.adjust(toPickerWheelValue:left)
+        XCTAssertTrue(second.exists);second.adjust(toPickerWheelValue:right)
     }
     func graphSelect(_ control:String,_ name:String,_ key:String) {
         tap(control)
@@ -108,7 +120,7 @@ final class FlowTests: XCTestCase {
         app.segmentedControls["rehearsal-mode"].buttons["Say it aloud"].tap();app.switches["rehearsal-explained"].tap();tap("rehearsal-check")
         app.navigationBars.buttons.element(boundBy:0).tap();app.navigationBars.buttons.element(boundBy:0).tap();tap("coverage-recall")
         for answer in ["Toluca","4-1","December 2, 2012"] {
-            let input=app.descendants(matching:.any)["recall-answer"].firstMatch;input.tap();input.typeText(answer);tap("check-recall")
+            if app.pickerWheels.count == 2 {setScore("4","1")} else {let input=app.descendants(matching:.any)["recall-answer"].firstMatch;input.tap();input.typeText(answer)};tap("check-recall")
             XCTAssertTrue(app.staticTexts["You previewed this fact in the study pack. This answer counts as rehearsal."].exists);tap("recall-next")
         }
         XCTAssertTrue(app.staticTexts["0 of 3 recalled independently."].exists);tap("practice-done")
@@ -125,7 +137,7 @@ final class FlowTests: XCTestCase {
         XCTAssertTrue(app.staticTexts["The aggregate score: Missed"].exists)
         app.navigationBars.buttons.element(boundBy:0).tap();app.navigationBars.buttons.element(boundBy:0).tap();tap("coverage-recall")
         for answer in ["Toluca","4-1","December 2, 2012"] {
-            let input=app.descendants(matching:.any)["recall-answer"].firstMatch;input.tap();input.typeText(answer);tap("check-recall")
+            if app.pickerWheels.count == 2 {setScore("4","1")} else {let input=app.descendants(matching:.any)["recall-answer"].firstMatch;input.tap();input.typeText(answer)};tap("check-recall")
             XCTAssertTrue(app.staticTexts["You previewed this fact in the study pack. This answer counts as rehearsal."].exists);tap("recall-next")
         }
         XCTAssertTrue(app.staticTexts["0 of 3 recalled independently."].exists);tap("practice-done")
@@ -255,7 +267,78 @@ final class FlowTests: XCTestCase {
         app.terminate();start(reset:false)
         XCTAssertTrue(app.staticTexts["roadmap-progress"].label.contains("1 of 2 starter lessons"))
         tap("switch-club");let search=app.searchFields.firstMatch;search.tap();search.typeText("Xolos");tap("club-entity-xolos")
-        XCTAssertTrue(app.staticTexts["roadmap-progress"].label.contains("1 of 9 lessons"))
+        XCTAssertTrue(app.staticTexts["roadmap-progress"].label.contains("1 of 10 lessons"))
+    }
+
+    func testIstanbulScoreWheelsKeepMatchAndShootoutSeparate() {
+        start();tap("choose-XT");chooseCompetition("Champions League","champions-league")
+        tap("lesson-competition-champions-league-istanbul");tap("lesson-next");tap("lesson-next")
+        for (index,score) in [("3","0"),("3","3"),("3","2"),("3","0")].enumerated() {
+            XCTAssertEqual(app.pickerWheels.count,2)
+            XCTAssertTrue(app.staticTexts[index == 2 ? "Liverpool" : "AC Milan"].exists)
+            setScore(score.0,score.1)
+            let shot=XCTAttachment(screenshot:app.screenshot());shot.name=index == 2 ? "Liverpool penalty shootout orientation" : "Istanbul match score wheels";shot.lifetime = .keepAlways;add(shot)
+            tap("check-score");XCTAssertTrue(app.staticTexts["Good connection"].exists);tap("answer-next")
+        }
+        XCTAssertTrue(app.staticTexts["lesson-complete"].exists)
+    }
+    func testScoreWheelsAndImageChoiceGrid() {
+        start();tap("choose-XT");tap("lesson-xolos-final");tap("lesson-next");tap("lesson-next")
+        XCTAssertTrue(app.otherElements["image-choice-grid"].exists || app.buttons["answer-choice-0"].exists)
+        let buttons=(0..<4).map {app.buttons["answer-choice-\($0)"]}
+        let rows=Set(buttons.map {Int($0.frame.midY.rounded())})
+        XCTAssertEqual(rows.count,2)
+        let grid=XCTAttachment(screenshot:app.screenshot());grid.name="Club answers in two by two grid";grid.lifetime = .keepAlways;add(grid)
+        tap("answer-choice-0");tap("answer-next")
+        XCTAssertEqual(app.pickerWheels.count,2)
+        setScore("1","4");tap("check-score")
+        XCTAssertTrue(app.staticTexts["Let's build that memory"].exists);tap("answer-next")
+        setScore("4","1")
+        let prompt=app.staticTexts["What was the aggregate score in Xolos’s favor in the 2012 final?"]
+        XCTAssertGreaterThanOrEqual(prompt.frame.minX,0);XCTAssertLessThanOrEqual(prompt.frame.maxX,app.frame.maxX)
+        let wheels=XCTAttachment(screenshot:app.screenshot());wheels.name="Xolos aggregate score wheels";wheels.lifetime = .keepAlways;add(wheels)
+        tap("check-score");XCTAssertTrue(app.staticTexts["Good connection"].exists);tap("answer-next")
+        for _ in 0..<2 {tap("answer-choice-0");tap("answer-next")};tap("back-roadmap")
+        app.terminate();start(reset:false,now:1_800_086_401)
+        app.tabBars.buttons["Practice"].tap();tap("start-review")
+        XCTAssertEqual(app.pickerWheels.count,2)
+        setScore("4","1");tap("check-recall")
+        XCTAssertTrue(app.staticTexts["You remembered"].exists)
+        let recall=XCTAttachment(screenshot:app.screenshot());recall.name="Score wheel scheduled recall";recall.lifetime = .keepAlways;add(recall)
+    }
+    func testSaucedoCareerAndVisualRecall() {
+        start()
+        tap("choose-XT");choosePlayer("Cirilo Saucedo","saucedo")
+        tap("lesson-player-saucedo-career-milestones");tap("lesson-next");tap("lesson-next")
+        for _ in 0..<2 {tap("answer-choice-0");tap("answer-next")}
+        XCTAssertTrue(app.staticTexts["lesson-subject"].isHittable)
+        let badges=XCTAttachment(screenshot:app.screenshot());badges.name="Saucedo previous club badges";badges.lifetime = .keepAlways;add(badges)
+        for _ in 0..<2 {tap("answer-choice-0");tap("answer-next")};tap("back-roadmap")
+        app.terminate()
+        start(reset:false,now:1_800_086_401)
+        app.tabBars.buttons["Practice"].tap();tap("start-review")
+        XCTAssertEqual(app.staticTexts["recall-subject"].label,"Cirilo Saucedo")
+        for _ in 0..<3 {
+            XCTAssertTrue(app.staticTexts["recall-subject"].isHittable)
+            let recall=XCTAttachment(screenshot:app.screenshot());recall.name="Saucedo recall context";recall.lifetime = .keepAlways;add(recall)
+            tap("reveal-recall");XCTAssertTrue(app.staticTexts["recall-feedback-heading"].isHittable);tap("recall-next")
+        }
+        XCTAssertTrue(app.staticTexts["practice-complete"].isHittable)
+        XCTAssertTrue(app.staticTexts["0 of 3 recalled independently."].exists)
+        tap("practice-done")
+    }
+    func testRecallConcealsClubIdentityUntilSubmission() {
+        start();tap("choose-RM");completeLesson("lesson-madrid-identity")
+        app.terminate();start(reset:false,now:1_800_086_401)
+        app.tabBars.buttons["Practice"].tap();tap("start-review")
+        // Due reviews are ordered by objective key: city, founded year, then identity.
+        for _ in 0..<2 {tap("reveal-recall");tap("recall-next")}
+        XCTAssertTrue(app.staticTexts["Which club is this roadmap about?"].exists)
+        XCTAssertFalse(app.staticTexts["recall-subject"].exists)
+        let shot=XCTAttachment(screenshot:app.screenshot());shot.name="Identity recall without answer artwork";shot.lifetime = .keepAlways;add(shot)
+        tap("reveal-recall");XCTAssertEqual(app.staticTexts["recall-subject"].label,"Real Madrid");XCTAssertTrue(app.staticTexts["recall-feedback-heading"].isHittable)
+        let feedback=XCTAttachment(screenshot:app.screenshot());feedback.name="Identity recall revealed feedback";feedback.lifetime = .keepAlways;add(feedback)
+        tap("recall-next");XCTAssertTrue(app.staticTexts["practice-complete"].isHittable)
     }
     func testArceCareerBadgesAtLargestText() {
         app.launchArguments=["-ui-testing","-reset-test-state","-test-now","1800000000","-UIPreferredContentSizeCategoryName","UICTContentSizeCategoryAccessibilityXXXL"];app.launch()
@@ -271,7 +354,7 @@ final class FlowTests: XCTestCase {
     func testLargeTextPlayerRoadmap() {
         app.launchArguments=["-ui-testing","-reset-test-state","-test-now","1800000000","-UIPreferredContentSizeCategoryName","UICTContentSizeCategoryAccessibilityXXXL"];app.launch()
         tap("choose-XT");choosePlayer("Cirilo Saucedo","saucedo")
-        XCTAssertTrue(app.staticTexts["roadmap-progress"].label.contains("0 of 1 starter lessons"))
+        XCTAssertTrue(app.staticTexts["roadmap-progress"].label.contains("0 of 2 starter lessons"))
         for _ in 0..<6 {if app.buttons["switch-club"].isHittable {break};app.swipeDown()}
         let header=XCTAttachment(screenshot:app.screenshot());header.name="Large text player roadmap";header.lifetime = .keepAlways;add(header)
         tap("lesson-xolos-saucedo");XCTAssertTrue(app.buttons["lesson-next"].exists)

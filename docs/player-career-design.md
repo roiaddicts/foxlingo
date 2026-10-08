@@ -9,3 +9,7 @@ Progress plan: share identical required lesson/objective IDs between player and 
 Interaction plan: reuse the tested lesson transitions, answer feedback, sound settings and press feedback. Portraits and badges are stable reference visuals, with scalable text and no new animation loop. The connection explorer names new career-club relationships in ordinary language.
 
 Review plan: verify source scope, avoid duplicate memories, distinguish the two América clubs, inspect normal and largest-text lessons, and check old achievements plus shared progress. Cache all artwork for offline use and retain source provenance and badge-period limits in the content notes.
+
+Saucedo’s second lesson connects his Mexico under-23 bronze medal, 2013 senior debut and 2011 move from Tigres. Avoid the draft’s forecast of an appearance milestone. His card follows the same six-memory versioning as the other players.
+
+Recall context uses one shared canonical factual subject, with a 48-point portrait or badge and readable name. Suppress both until submission if the question tests that identity or nickname, including Ramos’s equalizer and Madrid’s name. Mixed-subject questions stay neutral. Answer submission brings the feedback heading into view; Next and completion return to the top without a motion loop. Scoring, assisted status and review scheduling remain unchanged.

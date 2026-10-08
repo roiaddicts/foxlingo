@@ -25,9 +25,9 @@ final class LearningTests: XCTestCase {
         return try ContentPack.load(JSONSerialization.data(withJSONObject:json))
     }
     func testCompletePackAndSharedFact() {
-        XCTAssertEqual(pack.lessons.count,94);XCTAssertEqual(pack.cards.count,77);XCTAssertEqual(pack.objectives.count,281)
+        XCTAssertEqual(pack.lessons.count,95);XCTAssertEqual(pack.cards.count,77);XCTAssertEqual(pack.objectives.count,284)
         XCTAssertEqual(pack.lessons.prefix(12).flatMap(\.objectiveIDs).count,36)
-        XCTAssertEqual(pack.roadmaps.prefix(2).map{$0.chapters.flatMap(\.lessonIDs).count},[9,10])
+        XCTAssertEqual(pack.roadmaps.prefix(2).map{$0.chapters.flatMap(\.lessonIDs).count},[10,10])
         XCTAssertEqual(pack.lessons[8].objectiveIDs[2],pack.lessons[10].objectiveIDs[1])
     }
     func testCompetitionCoverageAndCanonicalEntities() {

@@ -1,0 +1,44 @@
+{
+  "exercise-xolos-final-choice-1": {
+    "leftEntityID": "f85aa453-4336-52ef-900a-853646479e20",
+    "rightEntityID": "a6e9d25d-0c7c-5012-bbe3-75cc36a86bda",
+    "leftGoals": 4,
+    "rightGoals": 1,
+    "maximum": 20
+  },
+  "exercise-necaxa-starter-choice-2": {
+    "leftEntityID": "6e4d3f78-a965-5fb8-abb5-13794ef86865",
+    "rightEntityID": "25f994bc-8507-5a0c-a27c-f1f918d30d29",
+    "leftGoals": 9,
+    "rightGoals": 0,
+    "maximum": 20
+  },
+  "exercise-competition-champions-league-istanbul-choice-0": {
+    "leftEntityID": "a503aa98-f9b7-5a05-a09b-6fc369e9c376",
+    "rightEntityID": "8b6a2a49-f861-5aa6-8bc9-f9d5ed889507",
+    "leftGoals": 3,
+    "rightGoals": 0,
+    "maximum": 20
+  },
+  "exercise-competition-champions-league-istanbul-choice-1": {
+    "leftEntityID": "a503aa98-f9b7-5a05-a09b-6fc369e9c376",
+    "rightEntityID": "8b6a2a49-f861-5aa6-8bc9-f9d5ed889507",
+    "leftGoals": 3,
+    "rightGoals": 3,
+    "maximum": 20
+  },
+  "exercise-competition-champions-league-istanbul-choice-2": {
+    "leftEntityID": "8b6a2a49-f861-5aa6-8bc9-f9d5ed889507",
+    "rightEntityID": "a503aa98-f9b7-5a05-a09b-6fc369e9c376",
+    "leftGoals": 3,
+    "rightGoals": 2,
+    "maximum": 20
+  },
+  "exercise-competition-champions-league-istanbul-choice-3": {
+    "leftEntityID": "a503aa98-f9b7-5a05-a09b-6fc369e9c376",
+    "rightEntityID": "8b6a2a49-f861-5aa6-8bc9-f9d5ed889507",
+    "leftGoals": 3,
+    "rightGoals": 0,
+    "maximum": 20
+  }
+}

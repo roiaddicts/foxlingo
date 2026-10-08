@@ -126,6 +126,7 @@ pack['roadmaps'] += json.loads((ROOT/'content/player-roadmaps.json').read_text()
 from merge_favorites import merge as merge_favorites
 merge_favorites(pack)
 merge_favorites(pack,'content/player-enrichment.json')
+merge_favorites(pack,'content/saucedo-enrichment.json')
 # Artwork-only subjects and aliases resolve every authored club/player answer.
 # Seed namespaces are kept explicit; these subjects add no career claims or cards.
 pack['entities'] += [
@@ -136,7 +137,14 @@ for key,aliases in {'entity-leon':['León','Leon'], 'entity-pumas':['Pumas'], 'e
  entity['aliases']=list(dict.fromkeys(entity['aliases']+aliases))
 from merge_competitions import merge as merge_competitions
 merge_competitions(pack)
-pack['contentVersion']=8
+# Score wheels retain canonical question/objective IDs and explicitly authored sides.
+pack['entities'].append(dict(id=uid('entity-ac-milan'),key='entity-ac-milan',type='club',name='AC Milan',aliases=['Milan'],visual='ACM',externalRefs={'uefa.club':'50058'},imageAsset='entity-ac-milan',imageURL='https://img.uefa.com/imgml/TP/teams/logos/100x100/50058.png'))
+pack['sources'].append(dict(key='artwork-ac-milan-uefa',title='AC Milan · UEFA club identity and badge',url='https://www.uefa.com/uefachampionsleague/history/clubs/50058--milan/',verifiedAt='2026-10-08'))
+score_inputs=json.loads((ROOT/'content/score-inputs.json').read_text())
+for exercise in pack['exercises']:
+ if exercise['key'] in score_inputs:exercise['scoreInput']=score_inputs[exercise['key']]
+if set(score_inputs) != {x['key'] for x in pack['exercises'] if x.get('scoreInput')}:raise ValueError('Missing score exercise')
+pack['contentVersion']=10
 # Promote explicitly authored country values into canonical targets. Preserve
 # fact/objective IDs, wording, scope and revision: the taught claim is unchanged.
 flags=json.loads((ROOT/'content/country-artwork.json').read_text())

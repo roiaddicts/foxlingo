@@ -105,11 +105,12 @@ struct GameCategoryMark: View {
 struct KnowledgeAnswer: View {
     let text: String
     var expectedType: String? = nil
+    var visualSize: CGFloat = 56
     @EnvironmentObject private var model: AppModel
     var body: some View {
         Group {
-            if expectedType == "country", let flag=AnswerArtwork.flags[Recall.normalize(text)] {Image(flag).resizable().scaledToFit().frame(width:56,height:40)}
-            else if let expectedType, let pack=model.pack, let entity=AnswerArtwork.entity(text,type:expectedType,pack:pack) {ClubMark(club:entity,size:56)}
+            if expectedType == "country", let flag=AnswerArtwork.flags[Recall.normalize(text)] {Image(flag).resizable().scaledToFit().frame(width:visualSize,height:visualSize*5/7)}
+            else if let expectedType, let pack=model.pack, let entity=AnswerArtwork.entity(text,type:expectedType,pack:pack) {ClubMark(club:entity,size:visualSize)}
             else {Text(text)}
         }.accessibilityElement(children:.ignore).accessibilityLabel(text)
     }

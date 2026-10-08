@@ -45,7 +45,7 @@ public struct KnowledgeGraph: Sendable {
         let derived=pack.facts.compactMap {fact -> GraphEdge? in
             guard let target=fact.value.entityID,target != fact.subjectID else {return nil}
             let isCountry=fact.predicate == "country" || fact.predicate.hasSuffix("-country")
-            let careerLabels=["arce-first-division-debut-club":"First-division debut club","arce-veracruz-transfer":"Club joined in Verano 2002","riascos-professional-debut-club":"Professional debut club","riascos-china-scoring-title-club":"Club for the 2010 scoring title"]
+            let careerLabels=["saucedo-xolos-previous-club":"Club before joining Xolos","arce-first-division-debut-club":"First-division debut club","arce-veracruz-transfer":"Club joined in Verano 2002","riascos-professional-debut-club":"Professional debut club","riascos-china-scoring-title-club":"Club for the 2010 scoring title"]
             let baseGroup:GraphGroup=switch fact.predicate {case "club","previous","player":.history;case "opponent":.events;case "city","stadium":.places;default:.other}
             let baseLabel:String=switch fact.predicate {case "club":"Club in this period";case "previous":"Previous club";case "player":"Historical player";case "opponent":"Opponent in this context";case "city":"City connection";case "stadium":"Home stadium";default:fact.predicate}
             let group:GraphGroup=isCountry ? .origins : careerLabels[fact.predicate] != nil ? .history : baseGroup

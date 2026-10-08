@@ -170,4 +170,40 @@ final class ContentUpdateTests: XCTestCase {
         let unavailable=try ContentCache(directory:blocked,bundledData:data)
         let result=try unavailable.load();XCTAssertEqual(result.pack.contentVersion,baseVersion);XCTAssertNotNil(result.notice)
     }
+    func testScoreOrientationCannotChangeUnderExistingRecallMemory() throws {
+        let active=try cache().load().pack
+        func changed(_ revise: Bool,_ reviseFact: Bool) throws -> Data {
+            try update {j in
+                var rows=j["exercises"] as! [[String:Any]]
+                var objectiveID=""
+                for i in rows.indices where (rows[i]["key"] as! String).contains("istanbul-choice-0") || (rows[i]["key"] as! String).contains("istanbul-choice-3") {
+                    var score=rows[i]["scoreInput"] as! [String:Any]
+                    let left=score["leftEntityID"]!;score["leftEntityID"]=score["rightEntityID"];score["rightEntityID"]=left
+                    rows[i]["scoreInput"]=score;objectiveID=(rows[i]["objectiveIDs"] as! [String])[0]
+                }
+                j["exercises"]=rows
+                var objectives=j["objectives"] as! [[String:Any]]
+                let index=objectives.firstIndex {$0["id"] as! String == objectiveID}!
+                if revise {objectives[index]["revision"]=2};j["objectives"]=objectives
+                if reviseFact {
+                    let factID=(objectives[index]["factIDs"] as! [String])[0]
+                    var facts=j["facts"] as! [[String:Any]]
+                    let fi=facts.firstIndex {$0["id"] as! String == factID}!
+                    facts[fi]["scope"]="Changed factual context for a test correction";j["facts"]=facts
+                }
+            }
+        }
+        for (revision,context) in [(false,false),(true,false)] {
+            let candidate=try ContentPack.load(changed(revision,context))
+            XCTAssertThrowsError(try ContentUpdateRules.validateTransition(from:active,to:candidate))
+        }
+        let correction=try ContentPack.load(changed(true,true))
+        XCTAssertNoThrow(try ContentUpdateRules.validateTransition(from:active,to:correction))
+        let range=try ContentPack.load(update {j in
+            var rows=j["exercises"] as! [[String:Any]]
+            for i in rows.indices where rows[i]["scoreInput"] != nil {var score=rows[i]["scoreInput"] as! [String:Any];score["maximum"]=25;rows[i]["scoreInput"]=score};j["exercises"]=rows
+        })
+        XCTAssertNoThrow(try ContentUpdateRules.validateTransition(from:active,to:range))
+    }
+
 }

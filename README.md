@@ -1,6 +1,6 @@
 # Foxlingo
 
-An offline-first iPhone football-learning app with **68 club roadmaps**, **six player starters**, **three competition courses**, **94 JSON-authored lessons**, **77 collectible cards**, a small leopard companion, spaced reviews, and forgiving streaks. Xolos has nine lessons and Real Madrid has ten; every other club has a three-fact introductory lesson.
+An offline-first iPhone football-learning app with **68 club roadmaps**, **six player starters**, **three competition courses**, **95 JSON-authored lessons**, **77 collectible cards**, a small leopard companion, visual 2×2 choices, native score wheels, spaced reviews, and forgiving streaks. Xolos has ten lessons and Real Madrid has ten; every other club has a three-fact introductory lesson.
 
 The catalog covers the **2026/27 Champions League league phase**, **2026/27 Bundesliga**, and **Liga MX Apertura 2026**, verified as snapshots on October 8, 2026. The Games tab offers **football bingo**, a **club × country grid**, **four classic Real Madrid lineup challenges**, **Who am I?** with six sourced featured players, **Memory match**, and illustrated **Football timelines** for Xolos and Madrid.
 
@@ -19,7 +19,7 @@ Minimum iOS: **17.0**. The project uses SwiftUI and Apple's frameworks, with no 
 - `Foxlingo/Resources/starter-en.json` is the bundled, validated English curriculum.
 - `scripts/build_content.py` rebuilds it with stable UUIDs. Facts retain official source references and historical scope.
 - `scripts/inventory_seeds.py` inventories embedded Futbol11 JSON without executing the source bundle. The report is `ref/seed-inventory.json`.
-- The initial 36 favorite-club objective slots share one Ramos equalizer objective. The expanded curriculum totals **281 unique review memories**.
+- The initial 36 favorite-club objective slots share one Ramos equalizer objective. The expanded curriculum totals **284 unique review memories**.
 - `content/favorites-enrichment.json` adds four sourced stories: Casillas’s honours, Ramos’s trophy record, Xolos’s early climb, and Madrid’s European titles from 2018 through 2024. Existing lesson IDs and earned tiers remain intact. See [source notes](content/favorites-enrichment-notes.md).
 - `content/club-expansion.json` contains sourced club lesson drafts; `scripts/merge_expansion.py` compiles them into the starter pack without replacing existing progress IDs.
 - `Foxlingo/Resources/games-en.json` contains 2,300 namespaced player records, category relationships, and season squad positions. `scripts/build_games.py` extracts them deterministically.

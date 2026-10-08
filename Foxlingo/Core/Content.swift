@@ -54,6 +54,22 @@ public struct Pair: Codable, Sendable {
     public let left: String
     public let right: String
 }
+/// Authored orientation prevents guessing which side a historical score belongs to.
+public struct ScoreInput: Codable, Equatable, Sendable {
+    public let leftEntityID: UUID
+    public let rightEntityID: UUID
+    public let leftGoals: Int
+    public let rightGoals: Int
+    public let maximum: Int
+    public func accepts(left: Int,right: Int) -> Bool {left == leftGoals && right == rightGoals}
+    public static func pair(in text: String) -> [Int]? {
+        let pattern=#"(?<![0-9])([0-9]{1,2})[–−-]([0-9]{1,2})(?![0-9])"#
+        guard let regex=try? NSRegularExpression(pattern:pattern) else {return nil}
+        let range=NSRange(text.startIndex...,in:text),matches=regex.matches(in:text,range:range)
+        guard matches.count == 1 else {return nil}
+        return (1...2).compactMap {index in Range(matches[0].range(at:index),in:text).flatMap {Int(text[$0])}}
+    }
+}
 public struct Exercise: Codable, Identifiable, Sendable {
     public let id: UUID
     public let key: String
@@ -66,6 +82,7 @@ public struct Exercise: Codable, Identifiable, Sendable {
     public let left: [Choice]
     public let right: [Choice]
     public let pairs: [Pair]
+    public let scoreInput: ScoreInput?
     public func accepts(_ answer: String) -> Bool { answerIDs.contains(answer) }
     public func accepts(left: String, right: String) -> Bool { pairs.contains { $0.left == left && $0.right == right } }
 }
@@ -140,6 +157,7 @@ public struct ContentPack: Codable, Sendable {
     public func entity(_ id: UUID) -> Entity { entities.first { $0.id == id }! }
     public func lesson(_ id: UUID) -> Lesson { lessons.first { $0.id == id }! }
     public func objective(_ id: UUID) -> Objective { objectives.first { $0.id == id }! }
+    public func scoreInput(for objectiveID: UUID) -> ScoreInput? {exercises.first {$0.objectiveIDs == [objectiveID] && $0.scoreInput != nil}?.scoreInput}
     public func exercise(_ id: UUID) -> Exercise { exercises.first { $0.id == id }! }
     public func validate() throws {
         func require(_ condition: Bool, _ message: String) throws { if !condition { throw ContentError.invalid(message) } }
@@ -167,6 +185,14 @@ public struct ContentPack: Codable, Sendable {
         }
         for x in exercises {
             try require(!x.objectiveIDs.isEmpty && Set(x.objectiveIDs).isSubset(of:oi), "Broken exercise objective.")
+            if let score=x.scoreInput {
+                try require(x.kind == "choice" && score.leftEntityID != score.rightEntityID && ei.contains(score.leftEntityID) && ei.contains(score.rightEntityID),"Broken score teams.")
+                try require([score.leftEntityID,score.rightEntityID].allSatisfy {entity($0).type == "club" && entity($0).imageAsset != nil},"Score teams need club artwork.")
+                try require((10...99).contains(score.maximum) && (0...score.maximum).contains(score.leftGoals) && (0...score.maximum).contains(score.rightGoals),"Invalid score range.")
+                let expected=[score.leftGoals,score.rightGoals]
+                let correctChoices=x.choices.filter {x.answerIDs.contains($0.id)}
+                try require(!correctChoices.isEmpty && correctChoices.allSatisfy {ScoreInput.pair(in:$0.text) == expected} && x.objectiveIDs.count == 1 && objective(x.objectiveIDs[0]).answers.contains {ScoreInput.pair(in:$0) == expected},"Score conflicts with its authored answer.")
+            }
             switch x.kind {
             case "choice":
                 let ci = Set(x.choices.map(\.id))
@@ -176,6 +202,10 @@ public struct ContentPack: Codable, Sendable {
                 try require(x.objectiveIDs.count == 3 && Set(x.objectiveIDs).count == 3 && left == Set(["l-0","l-1","l-2"]) && right == Set(["r-0","r-1","r-2"]) && left.count == 3 && x.left.count == 3 && right.count == 3 && x.right.count == 3 && x.pairs.count == 3 && Set(x.pairs.map(\.left)) == left && Set(x.pairs.map(\.right)) == right && Set(x.left.map { Recall.normalize($0.text) }).count == 3 && Set(x.right.map { Recall.normalize($0.text) }).count == 3, "Ambiguous matching board \(x.key).")
             default: throw ContentError.invalid("Unknown exercise type.")
             }
+        }
+        for o in objectives {
+            let scores=exercises.filter {$0.objectiveIDs == [o.id]}.compactMap(\.scoreInput)
+            try require(scores.allSatisfy {$0 == scores.first},"Conflicting score orientation for one memory.")
         }
         for l in lessons {
             try require(l.story.count == 2 && l.objectiveIDs.count == 3 && Set(l.objectiveIDs).count == 3 && Set(l.objectiveIDs).isSubset(of:oi) && (4...5).contains(l.exerciseIDs.count) && Set(l.exerciseIDs).count == l.exerciseIDs.count && Set(l.exerciseIDs).isSubset(of:xi), "Invalid lesson \(l.key).")
@@ -201,6 +231,19 @@ public enum Recall {
         value.folding(options:[.diacriticInsensitive, .caseInsensitive], locale:Locale(identifier:"en_US_POSIX")).split(whereSeparator: \.isWhitespace).joined(separator:" ")
     }
     public static func accepts(_ value: String, for objective: Objective) -> Bool { objective.answers.map(normalize).contains(normalize(value)) }
+    /// Show question context only when it cannot identify the answer being recalled.
+    /// A mixed-subject objective needs neutral context rather than a guessed owner.
+    public static func subjectArtwork(for objective: Objective, pack: ContentPack, answerRevealed: Bool = false) -> Entity? {
+        let facts=objective.factIDs.compactMap {id in pack.facts.first {$0.id == id}}
+        guard facts.count == objective.factIDs.count,let id=facts.first?.subjectID,
+              facts.allSatisfy({$0.subjectID == id}),let subject=pack.entities.first(where:{$0.id == id}),
+              subject.imageAsset != nil,["club","player","competition"].contains(subject.type) else {return nil}
+        let identity=Set(([subject.name]+subject.aliases).map(normalize))
+        let testsIdentity=objective.answers.contains {identity.contains(normalize($0))}
+            || facts.contains {$0.predicate == "nickname" || $0.predicate == "name" || $0.value.entityID == id}
+        return testsIdentity && !answerRevealed ? nil : subject
+    }
+
 }
 public protocol ContentRepository { func load() throws -> ContentPack }
 public struct FileContentRepository: ContentRepository {
