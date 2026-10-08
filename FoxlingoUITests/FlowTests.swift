@@ -175,6 +175,46 @@ final class FlowTests: XCTestCase {
         app.tabBars.buttons["Album"].tap();XCTAssertTrue(app.staticTexts.matching(NSPredicate(format:"label CONTAINS %@", "8 of ")).firstMatch.exists)
         let shot=XCTAttachment(screenshot:app.screenshot());shot.name="Complete album";shot.lifetime = .keepAlways;add(shot)
     }
+    func testMysteryCluesNeutralGuessSourcesCompletionAndReplay() {
+        start();tap("choose-XT");app.tabBars.buttons["Games"].tap();tap("game-mystery")
+        XCTAssertFalse(app.staticTexts["mystery-identity"].exists)
+        XCTAssertFalse(app.staticTexts["Duvier Riascos"].exists)
+        tap("mystery-choose");tap("mystery-player-entity-cristiano")
+        XCTAssertTrue(app.staticTexts["mystery-feedback"].label.contains("cannot rule"))
+        XCTAssertTrue(app.descendants(matching:.any)["mystery-clue-1"].firstMatch.exists)
+        XCTAssertFalse(app.staticTexts["mystery-identity"].exists)
+        tap("mystery-choose");tap("mystery-player-entity-riascos")
+        XCTAssertEqual(app.staticTexts["mystery-identity"].label,"Duvier Riascos")
+        tap("mystery-sources");XCTAssertTrue(app.navigationBars["Sources & context"].exists);app.buttons["Done"].tap()
+        tap("mystery-next");XCTAssertFalse(app.staticTexts["Duvier Riascos"].exists)
+        for key in ["arce","saucedo","cristiano","ramos","casillas"] {
+            if key == "saucedo" {
+                tap("mystery-choose");tap("mystery-player-entity-ramos")
+                XCTAssertTrue(app.staticTexts["mystery-feedback"].label.contains("differs"))
+                tap("mystery-reveal")
+                XCTAssertEqual(app.descendants(matching:.any)["mystery-context-1"].firstMatch.label,"Club Tijuana")
+                tap("mystery-reveal")
+                XCTAssertTrue(app.descendants(matching:.any)["mystery-clue-2"].firstMatch.exists)
+            }
+            tap("mystery-choose");tap("mystery-player-entity-"+key);tap("mystery-next")
+        }
+        XCTAssertTrue(app.staticTexts["mystery-complete"].exists)
+        let shot=XCTAttachment(screenshot:app.screenshot());shot.name="Mystery board complete";shot.lifetime = .keepAlways;add(shot)
+        tap("mystery-replay");XCTAssertFalse(app.staticTexts["mystery-complete"].exists);XCTAssertFalse(app.staticTexts["mystery-identity"].exists)
+        XCTAssertFalse(app.descendants(matching:.any)["mystery-clue-1"].firstMatch.exists)
+        let restart=XCTAttachment(screenshot:app.screenshot());restart.name="Mystery hidden player";restart.lifetime = .keepAlways;add(restart)
+    }
+
+    func testLargeTextMysteryCluesAndPlayerPicker() {
+        app.launchArguments=["-ui-testing","-reset-test-state","-UIPreferredContentSizeCategoryName","UICTContentSizeCategoryAccessibilityXXXL"]
+        app.launch();tap("choose-XT");app.tabBars.buttons["Games"].tap();tap("game-mystery")
+        tap("mystery-reveal")
+        let clue=XCTAttachment(screenshot:app.screenshot());clue.name="Mystery clues at large text";clue.lifetime = .keepAlways;add(clue)
+        tap("mystery-choose");tap("mystery-player-entity-riascos")
+        XCTAssertTrue(app.staticTexts["mystery-identity"].exists)
+        tap("mystery-next");XCTAssertFalse(app.staticTexts["mystery-identity"].exists)
+    }
+
     func testThreeGamesAndFreeTextIdentitySelection() {
         start();tap("choose-XT");app.tabBars.buttons["Games"].tap()
         tap("game-grid");tap("game-cell-0")

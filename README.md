@@ -2,7 +2,7 @@
 
 An offline-first iPhone football-learning app with **68 club roadmaps**, **six player starters**, **78 JSON-authored lessons**, **74 collectible cards**, a small leopard companion, spaced reviews, and forgiving streaks. Xolos and Real Madrid keep their deeper six-lesson courses; every other club has a three-fact introductory lesson.
 
-The catalog covers the **2026/27 Champions League league phase**, **2026/27 Bundesliga**, and **Liga MX Apertura 2026**, verified as snapshots on October 8, 2026. The Games tab offers **football bingo**, a **club × country grid**, and **four classic Real Madrid lineup challenges**.
+The catalog covers the **2026/27 Champions League league phase**, **2026/27 Bundesliga**, and **Liga MX Apertura 2026**, verified as snapshots on October 8, 2026. The Games tab offers **football bingo**, a **club × country grid**, **four classic Real Madrid lineup challenges**, and **Who am I?** with six sourced featured players.
 
 ## Run on an iPhone simulator
 
@@ -24,6 +24,7 @@ Minimum iOS: **17.0**. The project uses SwiftUI and Apple's frameworks, with no 
 - `Foxlingo/Resources/games-en.json` contains 2,300 namespaced player records, category relationships, and season squad positions. `scripts/build_games.py` extracts them deterministically.
 - `content/club-artwork.json` and `Foxlingo/Resources/artwork-manifest.json` record badge and portrait provenance. Selected artwork is bundled; other seed portraits load over HTTPS with initials as an offline fallback.
 - Club, player, and country answers in authored lessons use cached badges, portraits, and flags, including all distractors. Game category clues are also bundled, and classic lineup boards show their club badge. Text facts retain their meaning and visual controls keep spoken names for accessibility.
+- `content/mystery-rounds.json` configures Who am I? using canonical player and fact UUIDs. Roles, scoped records and unique final name initials reveal progressively; plausible or unknown guesses reveal more evidence without a false error. Portraits/sources stay hidden until identification. The order shuffles on normal entry/replay.
 - Game validation ensures boards can be solved with distinct players. Undo and hints support recovery. A helped game counts toward the streak but does not advance recall stages or unlock cards.
 - Free-text recall uses authored aliases after case, accent, and whitespace normalization. Game search selects a concrete player ID, then checks exact category intersections or squad membership and position; there are no embeddings or model calls.
 - Learning progress is stored locally in Application Support. Writes are atomic; recovery preserves damaged saves and can restore the previous working save.

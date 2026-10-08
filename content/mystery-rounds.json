@@ -1,0 +1,216 @@
+[
+  {
+    "id": "a2ef8a03-4626-5a87-a5f4-e153973472f0",
+    "key": "mystery-riascos",
+    "subjectID": "8a32d77b-d409-5435-9516-5adccb2b059a",
+    "clues": [
+      {
+        "label": "Historical playing role",
+        "factID": "05e8bab9-c9d4-5bbb-94b9-9ea381b1c3ca",
+        "comparisonFactIDs": [
+          "05e8bab9-c9d4-5bbb-94b9-9ea381b1c3ca",
+          "6fbce9f3-294e-5b7c-9e6a-b54f14281209",
+          "7d4f52cc-510c-5235-9ab9-63ea3185c897",
+          "cb5206f5-9d7e-5b69-9a07-de8942cfc514",
+          "5d295c91-5f36-5162-90fa-c46072c252f1",
+          "75d01564-6d55-5491-818c-4e624665695f"
+        ],
+        "initials": false,
+        "predicate": "position"
+      },
+      {
+        "label": "Previous club",
+        "factID": "d418375d-1fbf-5a54-8eac-214d2ae98490",
+        "comparisonFactIDs": [
+          "d418375d-1fbf-5a54-8eac-214d2ae98490"
+        ],
+        "initials": false,
+        "predicate": "previous"
+      },
+      {
+        "label": "Name initials",
+        "comparisonFactIDs": [],
+        "initials": true
+      }
+    ]
+  },
+  {
+    "id": "b9dd947f-62c1-590e-be89-3746a49396c9",
+    "key": "mystery-arce",
+    "subjectID": "d3ac3035-32f6-5d96-bc18-d3f683b7708b",
+    "clues": [
+      {
+        "label": "Historical playing role",
+        "factID": "6fbce9f3-294e-5b7c-9e6a-b54f14281209",
+        "comparisonFactIDs": [
+          "05e8bab9-c9d4-5bbb-94b9-9ea381b1c3ca",
+          "6fbce9f3-294e-5b7c-9e6a-b54f14281209",
+          "7d4f52cc-510c-5235-9ab9-63ea3185c897",
+          "cb5206f5-9d7e-5b69-9a07-de8942cfc514",
+          "5d295c91-5f36-5162-90fa-c46072c252f1",
+          "75d01564-6d55-5491-818c-4e624665695f"
+        ],
+        "initials": false,
+        "predicate": "position"
+      },
+      {
+        "label": "Local connection",
+        "factID": "bc35ed63-b5d1-519b-a25c-b799752fb685",
+        "comparisonFactIDs": [
+          "bc35ed63-b5d1-519b-a25c-b799752fb685"
+        ],
+        "initials": false,
+        "predicate": "city"
+      },
+      {
+        "label": "Name initials",
+        "comparisonFactIDs": [],
+        "initials": true
+      }
+    ]
+  },
+  {
+    "id": "d6da43d2-3c08-5a0f-aba0-f04b3e8eda87",
+    "key": "mystery-saucedo",
+    "subjectID": "8dc70c1f-7491-530f-9c92-3e48cd54f665",
+    "clues": [
+      {
+        "label": "Historical playing role",
+        "factID": "7d4f52cc-510c-5235-9ab9-63ea3185c897",
+        "comparisonFactIDs": [
+          "05e8bab9-c9d4-5bbb-94b9-9ea381b1c3ca",
+          "6fbce9f3-294e-5b7c-9e6a-b54f14281209",
+          "7d4f52cc-510c-5235-9ab9-63ea3185c897",
+          "cb5206f5-9d7e-5b69-9a07-de8942cfc514",
+          "5d295c91-5f36-5162-90fa-c46072c252f1",
+          "75d01564-6d55-5491-818c-4e624665695f"
+        ],
+        "initials": false,
+        "predicate": "position"
+      },
+      {
+        "label": "Goals conceded",
+        "factID": "8aca7238-5fe3-5641-9a15-06ea15f8009e",
+        "comparisonFactIDs": [
+          "8aca7238-5fe3-5641-9a15-06ea15f8009e"
+        ],
+        "initials": false,
+        "predicate": "conceded",
+        "contextEntityID": "f85aa453-4336-52ef-900a-853646479e20"
+      },
+      {
+        "label": "Name initials",
+        "comparisonFactIDs": [],
+        "initials": true
+      }
+    ]
+  },
+  {
+    "id": "e4b537dc-17bb-58ff-be3b-5ac36a725756",
+    "key": "mystery-cristiano",
+    "subjectID": "6d957fed-48cd-5e99-8e09-2758304bba08",
+    "clues": [
+      {
+        "label": "Historical playing role",
+        "factID": "cb5206f5-9d7e-5b69-9a07-de8942cfc514",
+        "comparisonFactIDs": [
+          "05e8bab9-c9d4-5bbb-94b9-9ea381b1c3ca",
+          "6fbce9f3-294e-5b7c-9e6a-b54f14281209",
+          "7d4f52cc-510c-5235-9ab9-63ea3185c897",
+          "cb5206f5-9d7e-5b69-9a07-de8942cfc514",
+          "5d295c91-5f36-5162-90fa-c46072c252f1",
+          "75d01564-6d55-5491-818c-4e624665695f"
+        ],
+        "initials": false,
+        "predicate": "position"
+      },
+      {
+        "label": "Final goal type",
+        "factID": "1e32a0f3-a347-5e93-ae97-68b121459acf",
+        "comparisonFactIDs": [
+          "1e32a0f3-a347-5e93-ae97-68b121459acf"
+        ],
+        "initials": false,
+        "predicate": "goal",
+        "contextEntityID": "b10020b9-4d2f-5384-a229-6bb3d69da093"
+      },
+      {
+        "label": "Name initials",
+        "comparisonFactIDs": [],
+        "initials": true
+      }
+    ]
+  },
+  {
+    "id": "bf5df694-a827-56db-8700-a8197f84108d",
+    "key": "mystery-ramos",
+    "subjectID": "bd1a5c77-15cc-5bde-bd77-b3a9679f8e95",
+    "clues": [
+      {
+        "label": "Historical playing role",
+        "factID": "5d295c91-5f36-5162-90fa-c46072c252f1",
+        "comparisonFactIDs": [
+          "05e8bab9-c9d4-5bbb-94b9-9ea381b1c3ca",
+          "6fbce9f3-294e-5b7c-9e6a-b54f14281209",
+          "7d4f52cc-510c-5235-9ab9-63ea3185c897",
+          "cb5206f5-9d7e-5b69-9a07-de8942cfc514",
+          "5d295c91-5f36-5162-90fa-c46072c252f1",
+          "75d01564-6d55-5491-818c-4e624665695f"
+        ],
+        "initials": false,
+        "predicate": "position"
+      },
+      {
+        "label": "Club goals",
+        "factID": "3fee9ab4-e9d7-5cb0-acd8-8003830291f3",
+        "comparisonFactIDs": [
+          "3fee9ab4-e9d7-5cb0-acd8-8003830291f3"
+        ],
+        "initials": false,
+        "predicate": "goals",
+        "contextEntityID": "b10020b9-4d2f-5384-a229-6bb3d69da093"
+      },
+      {
+        "label": "Name initials",
+        "comparisonFactIDs": [],
+        "initials": true
+      }
+    ]
+  },
+  {
+    "id": "f8533e23-0302-5b23-9a0f-2465701af8ad",
+    "key": "mystery-casillas",
+    "subjectID": "b63b8e8c-5e58-54f5-815d-9e37d56baf32",
+    "clues": [
+      {
+        "label": "Historical playing role",
+        "factID": "75d01564-6d55-5491-818c-4e624665695f",
+        "comparisonFactIDs": [
+          "05e8bab9-c9d4-5bbb-94b9-9ea381b1c3ca",
+          "6fbce9f3-294e-5b7c-9e6a-b54f14281209",
+          "7d4f52cc-510c-5235-9ab9-63ea3185c897",
+          "cb5206f5-9d7e-5b69-9a07-de8942cfc514",
+          "5d295c91-5f36-5162-90fa-c46072c252f1",
+          "75d01564-6d55-5491-818c-4e624665695f"
+        ],
+        "initials": false,
+        "predicate": "position"
+      },
+      {
+        "label": "First-team debut year",
+        "factID": "dfa42b5d-84cb-502f-9880-bf1f81a19ae5",
+        "comparisonFactIDs": [
+          "dfa42b5d-84cb-502f-9880-bf1f81a19ae5"
+        ],
+        "initials": false,
+        "predicate": "debut",
+        "contextEntityID": "b10020b9-4d2f-5384-a229-6bb3d69da093"
+      },
+      {
+        "label": "Name initials",
+        "comparisonFactIDs": [],
+        "initials": true
+      }
+    ]
+  }
+]

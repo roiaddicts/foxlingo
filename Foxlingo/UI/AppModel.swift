@@ -4,6 +4,7 @@ import AudioToolbox
 @MainActor final class AppModel: ObservableObject {
     @Published var pack: ContentPack?
     @Published var state = LearnerState()
+    @Published var mysteries: [MysteryRound] = []
     @Published var games: GamePack?
     @Published var gamesError: String?
     @Published var message: String?
@@ -65,6 +66,9 @@ import AudioToolbox
             guard let url=Bundle.main.url(forResource:"games-en",withExtension:"json") else {throw ContentError.invalid("Game content is missing.")}
             games=try GamePack.load(Data(contentsOf:url))
         } catch { gamesError=error.localizedDescription }
+        if let pack,let url=Bundle.main.url(forResource:"mystery-en",withExtension:"json"),let data=try? Data(contentsOf:url) {
+            mysteries=(try? MysteryDeck.load(data,pack:pack)) ?? []
+        }
         do {
             let restored = try store.loadWithNotice()
             state = restored.state ?? LearnerState()

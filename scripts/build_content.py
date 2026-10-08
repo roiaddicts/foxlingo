@@ -149,3 +149,6 @@ for entity in pack['entities']:
  if entity['key'] in ['entity-xolos','entity-madrid','entity-cristiano','entity-ramos','entity-casillas','entity-arce','entity-saucedo','entity-riascos','entity-di-stefano']: entity['imageAsset']=entity['key']
 out=ROOT/'Foxlingo/Resources/starter-en.json';out.write_text(json.dumps(pack,ensure_ascii=False,indent=2)+'\n')
 print(f'{len(pack["lessons"])} lessons, {len(pack["objectives"])} unique objectives, {len(pack["cards"])} cards')
+
+# Mystery boards reference this curriculum by canonical fact/subject IDs.
+(ROOT/'Foxlingo/Resources/mystery-en.json').write_text((ROOT/'content/mystery-rounds.json').read_text())
