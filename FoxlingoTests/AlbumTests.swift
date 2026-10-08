@@ -45,10 +45,10 @@ final class AlbumTests: XCTestCase {
         let lesson=pack.lessons[0],card=pack.cards.first {$0.key == "card-xolos"}!
         state.completeLesson(lesson,pack:pack,sessionID:UUID(),attempts:[],now:now)
         let partial=CardReadiness.make(card:card,pack:pack,state:state,now:now.addingTimeInterval(86401))
-        XCTAssertEqual(partial.introduced,3);XCTAssertEqual(partial.missing,6);XCTAssertEqual(partial.due,3);XCTAssertNil(partial.currentStage)
+        XCTAssertEqual(partial.introduced,3);XCTAssertEqual(partial.missing,9);XCTAssertEqual(partial.due,3);XCTAssertNil(partial.currentStage)
         let intro=pack.cards.first {$0.key == "card-atlas"}!
         XCTAssertEqual(CardReadiness.scopeLabel(card:intro,pack:pack),"Intro · 3 connections")
-        XCTAssertEqual(CardReadiness.scopeLabel(card:card,pack:pack),"Club foundations · 9 connections")
+        XCTAssertEqual(CardReadiness.scopeLabel(card:card,pack:pack),"Club foundations · 12 connections")
     }
     func testCorrectedFactsRequireRefreshUntilIndependentDueRecall() throws {
         var state=LearnerState();let card=pack.cards.first {$0.key == "card-riascos"}!

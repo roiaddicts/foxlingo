@@ -25,9 +25,9 @@ final class LearningTests: XCTestCase {
         return try ContentPack.load(JSONSerialization.data(withJSONObject:json))
     }
     func testCompletePackAndSharedFact() {
-        XCTAssertEqual(pack.lessons.count,78);XCTAssertEqual(pack.cards.count,74);XCTAssertEqual(pack.objectives.count,233)
+        XCTAssertEqual(pack.lessons.count,82);XCTAssertEqual(pack.cards.count,74);XCTAssertEqual(pack.objectives.count,245)
         XCTAssertEqual(pack.lessons.prefix(12).flatMap(\.objectiveIDs).count,36)
-        XCTAssertEqual(pack.roadmaps.prefix(2).map{$0.chapters.flatMap(\.lessonIDs).count},[6,6])
+        XCTAssertEqual(pack.roadmaps.prefix(2).map{$0.chapters.flatMap(\.lessonIDs).count},[7,9])
         XCTAssertEqual(pack.lessons[8].objectiveIDs[2],pack.lessons[10].objectiveIDs[1])
     }
     func testCompetitionCoverageAndCanonicalEntities() {
@@ -138,7 +138,7 @@ final class LearningTests: XCTestCase {
         var s=learned();let card=pack.cards.first{$0.key=="card-xolos"}!
         for id in pack.lessons[0].objectiveIDs {let o=pack.objective(id);s.recordRecall(attempt(o,at:s.reviews[id]!.due),objective:o)}
         XCTAssertEqual(s.tier(card),0)
-        for l in pack.lessons[1...2] {_ = s.completeLesson(l,pack:pack,sessionID:UUID(),attempts:[],now:start)}
+        for id in card.lessonIDs where id != pack.lessons[0].id {_ = s.completeLesson(pack.lesson(id),pack:pack,sessionID:UUID(),attempts:[],now:start)}
         for id in card.objectiveIDs where s.reviews[id]!.highestEarned==0 {s.recordRecall(attempt(pack.objective(id),at:s.reviews[id]!.due),objective:pack.objective(id))}
         XCTAssertEqual(s.tier(card),1)
         let id=card.objectiveIDs[0];s.recordRecall(attempt(pack.objective(id),at:s.reviews[id]!.due,correct:false),objective:pack.objective(id));XCTAssertEqual(s.tier(card),1)

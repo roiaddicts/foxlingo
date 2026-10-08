@@ -42,6 +42,7 @@ public struct LearnerState: Codable, Sendable {
     public var completedLessons: Set<UUID> = []
     public var resumes: [UUID: LessonResume] = [:]
     public var gameResumes: GameResumeCollection? = nil
+    public var rehearsals: RehearsalCollection? = nil
     public var reviews: [UUID: ReviewState] = [:]
     public var acquiredCards: Set<UUID> = []
     public var cardAchievements: [UUID:CardAchievement]? = nil

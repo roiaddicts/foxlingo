@@ -1,0 +1,396 @@
+{
+  "sources": [
+    {
+      "key": "enrichment-casillas-anniversary",
+      "title": "Today marks 25 years since Casillas' debut",
+      "url": "https://www.realmadrid.com/en-US/news/club/latest-news/se-cumplen-25-anos-del-debut-de-casillas-12-09-2024",
+      "verifiedAt": "2026-10-08"
+    },
+    {
+      "key": "enrichment-ramos-profile",
+      "title": "Sergio Ramos García - History and honours",
+      "url": "https://www.realmadrid.com/en-US/the-club/history/football-legends/sergio-ramos-garcia?pid=1384791177940",
+      "verifiedAt": "2026-10-08"
+    },
+    {
+      "key": "enrichment-xolos-history",
+      "title": "¡HISTORIA DE ÉXITOS!",
+      "url": "https://xolos.com.mx/noticias/primer-equipo/7815",
+      "verifiedAt": "2026-10-08"
+    },
+    {
+      "key": "enrichment-madrid-2018",
+      "title": "The Decimotercera!",
+      "url": "https://www.realmadrid.com/en-US/news/football/first-team/special-features/the-decimotercera",
+      "verifiedAt": "2026-10-08"
+    },
+    {
+      "key": "enrichment-madrid-2022",
+      "title": "La Decimocuarta!",
+      "url": "https://www.realmadrid.com/en-US/news/football/first-team/special-features/la-decimocuarta",
+      "verifiedAt": "2026-10-08"
+    },
+    {
+      "key": "enrichment-madrid-2024",
+      "title": "La Decimoquinta!",
+      "url": "https://www.realmadrid.com/en-US/news/football/first-team/latest-news/la-decimoquinta-06-06-2024",
+      "verifiedAt": "2026-10-08"
+    }
+  ],
+  "lessons": [
+    {
+      "key": "lesson-madrid-casillas-honours",
+      "clubKey": "entity-madrid",
+      "subjectKey": "entity-casillas",
+      "title": "Iker Casillas: A captain’s honours",
+      "subtitle": "Club success and Spain’s golden era",
+      "story": [
+        {
+          "title": "A long Madrid chapter",
+          "body": "Casillas’s Real Madrid career brought him 19 titles as a madridista. Three were Champions League trophies, part of an honours collection built over many seasons. Those honours add a new layer to his 725 official appearances: the goalkeeper was central to teams that repeatedly reached the top of Europe."
+        },
+        {
+          "title": "A champion with Spain",
+          "body": "His international story reached its high point with Spain’s 2010 World Cup win. He also lifted the European Championship in 2008 and again in 2012. Keep the two chapters distinct: Madrid’s 19 titles belong to his club career, while the World Cup and two Euros came with Spain."
+        }
+      ],
+      "facts": [
+        {
+          "key": "casillas-madrid-title-total",
+          "prompt": "How many titles did Casillas win as a Real Madrid player?",
+          "answers": [
+            "19",
+            "nineteen"
+          ],
+          "distractors": [
+            "17",
+            "20",
+            "22"
+          ],
+          "label": "Real Madrid titles",
+          "sourceKey": "enrichment-casillas-anniversary",
+          "value": {
+            "kind": "number",
+            "display": "19",
+            "number": 19,
+            "unit": "titles"
+          },
+          "scope": "Casillas's Real Madrid career; historical total",
+          "evidence": "Official source excerpt: “19 titles as a madridista”"
+        },
+        {
+          "key": "casillas-madrid-champions-leagues",
+          "prompt": "How many Champions League titles were among Casillas’s Madrid honours?",
+          "answers": [
+            "3",
+            "three"
+          ],
+          "distractors": [
+            "2",
+            "4",
+            "5"
+          ],
+          "label": "Champions League titles",
+          "sourceKey": "enrichment-casillas-anniversary",
+          "value": {
+            "kind": "number",
+            "display": "3",
+            "number": 3,
+            "unit": "Champions League titles"
+          },
+          "scope": "Casillas's Real Madrid career; historical total",
+          "evidence": "Official source excerpt: “3 Champions Leagues”"
+        },
+        {
+          "key": "casillas-spain-world-cup",
+          "prompt": "Which major international title did Casillas lift with Spain in 2010?",
+          "answers": [
+            "World Cup",
+            "FIFA World Cup"
+          ],
+          "distractors": [
+            "European Championship",
+            "Confederations Cup",
+            "Olympic football gold"
+          ],
+          "label": "Spain title in 2010",
+          "sourceKey": "enrichment-casillas-anniversary",
+          "value": {
+            "kind": "text",
+            "display": "World Cup",
+            "text": "World Cup"
+          },
+          "scope": "Spain national team; 2010",
+          "evidence": "Official source excerpt: “the 2010 World Cup with the Spanish National Team”"
+        }
+      ]
+    },
+    {
+      "key": "lesson-madrid-ramos-honours",
+      "clubKey": "entity-madrid",
+      "subjectKey": "entity-ramos",
+      "title": "Sergio Ramos: A defender’s trophy haul",
+      "subtitle": "Four European Cups among 22 titles",
+      "story": [
+        {
+          "title": "A decorated Madrid career",
+          "body": "Across 16 seasons with Real Madrid, Sergio Ramos collected 22 titles. The defender’s haul included four European Cups, a remarkable return for a player whose decisive moments became part of the club’s biggest nights. His record extends well beyond the 2014 equalizer already connected to La Décima."
+        },
+        {
+          "title": "Different competitions, one legacy",
+          "body": "Ramos’s honours also included five LaLiga titles. He captained Madrid through European success and lifted the trophies as the team moved into a new era. Remember the scale of the collection by keeping its parts separate: 22 titles overall, four European Cups, and five Spanish league championships."
+        }
+      ],
+      "facts": [
+        {
+          "key": "ramos-madrid-title-total",
+          "prompt": "How many titles did Ramos win with Real Madrid?",
+          "answers": [
+            "22",
+            "twenty-two",
+            "twenty two"
+          ],
+          "distractors": [
+            "20",
+            "21",
+            "23"
+          ],
+          "label": "Real Madrid titles",
+          "sourceKey": "enrichment-ramos-profile",
+          "value": {
+            "kind": "number",
+            "display": "22",
+            "number": 22,
+            "unit": "titles"
+          },
+          "scope": "Ramos's Real Madrid career; historical total",
+          "evidence": "Official source excerpt: “22 titles”"
+        },
+        {
+          "key": "ramos-european-cups",
+          "prompt": "How many European Cups did Ramos win with Madrid?",
+          "answers": [
+            "4",
+            "four"
+          ],
+          "distractors": [
+            "3",
+            "5",
+            "6"
+          ],
+          "label": "European Cup titles",
+          "sourceKey": "enrichment-ramos-profile",
+          "value": {
+            "kind": "number",
+            "display": "4",
+            "number": 4,
+            "unit": "European Cup titles"
+          },
+          "scope": "Ramos's Real Madrid career; historical total",
+          "evidence": "Official source excerpt: “Four European Cups”"
+        },
+        {
+          "key": "ramos-laliga-titles",
+          "prompt": "How many LaLiga titles were in Ramos’s Real Madrid honours?",
+          "answers": [
+            "5",
+            "five"
+          ],
+          "distractors": [
+            "4",
+            "6",
+            "7"
+          ],
+          "label": "LaLiga titles",
+          "sourceKey": "enrichment-ramos-profile",
+          "value": {
+            "kind": "number",
+            "display": "5",
+            "number": 5,
+            "unit": "LaLiga titles"
+          },
+          "scope": "Ramos's Real Madrid career; historical total",
+          "evidence": "Official source excerpt: “5 LaLiga titles”"
+        }
+      ]
+    },
+    {
+      "key": "lesson-xolos-early-path",
+      "clubKey": "entity-xolos",
+      "subjectKey": "entity-xolos",
+      "title": "Xolos: The road to the top flight",
+      "subtitle": "Early milestones on the climb",
+      "story": [
+        {
+          "title": "A professional beginning",
+          "body": "Club Tijuana’s professional story began with a match on January 14, 2007. Its first title followed in the Apertura 2010 Liga de Ascenso, the second-tier competition. Winning that tournament was a milestone in its own right, but it did not yet mean promotion: Xolos still had to win a separate two-leg promotion final."
+        },
+        {
+          "title": "The climb becomes real",
+          "body": "After the promotion final against Irapuato, Xolos reached Mexico’s top flight in 2011. The club’s Primera División history began on July 23, 2011, against Morelia, with Joe Corona scoring its first goal in that division. Keep the first professional match, the second-tier title, and the top-flight debut as three different milestones."
+        }
+      ],
+      "facts": [
+        {
+          "key": "xolos-professional-debut-date",
+          "prompt": "On what date did Club Tijuana make its professional debut?",
+          "answers": [
+            "January 14, 2007",
+            "14 January 2007",
+            "2007-01-14"
+          ],
+          "distractors": [
+            "January 21, 2007",
+            "January 28, 2007",
+            "November 11, 2007"
+          ],
+          "label": "Professional debut",
+          "sourceKey": "enrichment-xolos-history",
+          "value": {
+            "kind": "date",
+            "display": "January 14, 2007",
+            "text": "2007-01-14"
+          },
+          "scope": "Club Tijuana chronology; professional debut",
+          "evidence": "Official source excerpt: “DEBUT PROFESIONAL: Domingo 14 de Enero de 2007”"
+        },
+        {
+          "key": "xolos-first-title-season",
+          "prompt": "In which Liga de Ascenso tournament did Xolos win their first title?",
+          "answers": [
+            "Apertura 2010",
+            "Liga de Ascenso Apertura 2010"
+          ],
+          "distractors": [
+            "Clausura 2009",
+            "Apertura 2011",
+            "Apertura 2012"
+          ],
+          "label": "First title",
+          "sourceKey": "enrichment-xolos-history",
+          "value": {
+            "kind": "text",
+            "display": "Apertura 2010",
+            "text": "Apertura 2010"
+          },
+          "scope": "Liga de Ascenso; first Xolos title",
+          "evidence": "Official source excerpt: “llegó para el Apertura 2010”"
+        },
+        {
+          "key": "xolos-first-division-debut-date",
+          "prompt": "On what date did Xolos’s history in Mexico’s top division begin?",
+          "answers": [
+            "July 23, 2011",
+            "23 July 2011",
+            "2011-07-23"
+          ],
+          "distractors": [
+            "July 16, 2011",
+            "August 6, 2011",
+            "October 15, 2011"
+          ],
+          "label": "First-division debut",
+          "sourceKey": "enrichment-xolos-history",
+          "value": {
+            "kind": "date",
+            "display": "July 23, 2011",
+            "text": "2011-07-23"
+          },
+          "scope": "Club Tijuana; first match in Mexico's Primera División",
+          "evidence": "Official source excerpt: “inició el 23 de julio de 2011”"
+        }
+      ]
+    },
+    {
+      "key": "lesson-madrid-european-modern-era",
+      "clubKey": "entity-madrid",
+      "subjectKey": "entity-madrid",
+      "title": "Madrid’s modern European run",
+      "subtitle": "From a three-peat to the 15th crown",
+      "story": [
+        {
+          "title": "Three in a row",
+          "body": "Madrid’s 2018 victory in Kyiv completed a third consecutive Champions League triumph and brought its European Cup total to 13. That three-peat closed a remarkable five-season stretch in which the club won the competition four times. It connects the earlier European story to a modern period of sustained success."
+        },
+        {
+          "title": "The count keeps climbing",
+          "body": "The European Cup count reached 14 when Madrid beat Liverpool in the 2022 final in Paris. Two years later, a win over Borussia Dortmund at Wembley brought the club to 15. Follow the sequence by attaching each number to its year: 13 in 2018, 14 in 2022, and 15 in 2024."
+        }
+      ],
+      "facts": [
+        {
+          "key": "madrid-european-cup-2018",
+          "prompt": "What number European Cup did Real Madrid win in 2018?",
+          "answers": [
+            "13",
+            "13th",
+            "thirteenth"
+          ],
+          "distractors": [
+            "11",
+            "12",
+            "14"
+          ],
+          "label": "European Cup count in 2018",
+          "sourceKey": "enrichment-madrid-2018",
+          "value": {
+            "kind": "number",
+            "display": "13th",
+            "number": 13,
+            "unit": "European Cup titles"
+          },
+          "scope": "Real Madrid; 2018 European Cup final",
+          "evidence": "Official source excerpt: “secured the club's 13th European crown”"
+        },
+        {
+          "key": "madrid-european-cup-2022",
+          "prompt": "What number European Cup did Real Madrid win in 2022?",
+          "answers": [
+            "14",
+            "14th",
+            "fourteenth"
+          ],
+          "distractors": [
+            "12",
+            "13",
+            "15"
+          ],
+          "label": "European Cup count in 2022",
+          "sourceKey": "enrichment-madrid-2022",
+          "value": {
+            "kind": "number",
+            "display": "14th",
+            "number": 14,
+            "unit": "European Cup titles"
+          },
+          "scope": "Real Madrid; 2022 European Cup final",
+          "evidence": "Official source excerpt: “fourteenth European Cup”"
+        },
+        {
+          "key": "madrid-european-cup-2024",
+          "prompt": "What number European Cup did Real Madrid win in 2024?",
+          "answers": [
+            "15",
+            "15th",
+            "fifteenth"
+          ],
+          "distractors": [
+            "13",
+            "14",
+            "16"
+          ],
+          "label": "European Cup count in 2024",
+          "sourceKey": "enrichment-madrid-2024",
+          "value": {
+            "kind": "number",
+            "display": "15th",
+            "number": 15,
+            "unit": "European Cup titles"
+          },
+          "scope": "Real Madrid; 2024 European Cup final",
+          "evidence": "Official source excerpt: “15 in football and 11 in basketball”"
+        }
+      ]
+    }
+  ]
+}

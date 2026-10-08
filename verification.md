@@ -10,8 +10,8 @@ Verified October 8, 2026, using Xcode 26.3 and an iPhone 17 Pro simulator runnin
 
 | Requirement | Evidence |
 | --- | --- |
-| 68 club roadmaps, 78 lessons | Content checks confirm 36 Champions League, 18 Bundesliga, 18 Liga MX memberships; full simulator walkthrough completes the 12 favorite-club lessons and sample Atlas/Paderborn starters |
-| JSON-authored content and 74 album cards | Pack validation covers 233 objectives; favorite-club walkthrough unlocks its original eight cards |
+| 68 club roadmaps, 82 lessons | Content checks confirm 36 Champions League, 18 Bundesliga, 18 Liga MX memberships; full simulator walkthrough completes the 12 favorite-club lessons and sample Atlas/Paderborn starters |
+| JSON-authored content and 74 album cards | Pack validation covers 245 objectives; favorite-club walkthrough unlocks its original eight cards |
 | Matching and multiple choice | Correct pairs, wrong pairs, wrong choices and retries exercised in simulator |
 | Independent recall | Typed correct answers scored 3/3; answer reveals tested separately |
 | Shared facts and review queue | Core tests verify one shared Ramos objective, ordering and bounded queues; integration verifies due review |
@@ -177,3 +177,15 @@ Two JSON-authored boards rehearse existing sourced chronology: three Xolos miles
 Two focused iPhone simulator scenarios pass: wrong checks, concealed dates, reorder/relaunch restoration, restart cancellation, independent completion, source context, club switching, assisted-reveal cancellation, replay and the largest accessibility text size. Exported standard and large-text screenshots were inspected. Decorative step numerals were given a fixed size after inspection to prevent overflow, while event text remains scalable. Move controls expose current positions and announce their new position after moving. Reorder springs and date-reveal transitions honor Reduce Motion; physical VoiceOver and system Reduce Motion were not manually exercised.
 
 The final optimized Release build succeeds, including the decorative numeral and disabled-arrow refinements. Authored and bundled timeline JSON are byte-identical. The final simulator build is installed with ordinary learner progress preserved.
+
+## Deeper favourite stories, coverage rehearsal and animated streak
+
+Content version 6 adds four official-source lessons: Casillas’s honours, Ramos’s Madrid trophies, Xolos’s professional/second-tier/top-flight beginnings, and Madrid’s 2018/2022/2024 European Cup sequence. The pack now has 82 lessons and 245 unique objectives; Xolos has seven required lessons, Madrid nine, and Ramos/Casillas two each. All pre-existing entities, sources, facts, objectives, exercises and lessons compare unchanged against the previous committed pack. Expanded cards preserve old objective sets and increment knowledgeVersion to 2. Six official pages were rechecked on October 8, 2026; authoring and source limitations are recorded in `content/favorites-enrichment-notes.md`.
+
+Six JSON-authored rehearsals require an original written explanation or explicit confirmation of an aloud explanation before revealing three sourced anchors. Completion needs three explicit reflections, with all missed permitted. Notes preserve the original and optional revision; history snapshots include prompts, labels and reflections. Aloud rehearsal records no audio and does not use model grading. Revealed drafts and saved history apply preview protection to recall in the originating study visit.
+
+131 core tests pass. The seven rehearsal tests cover save restoration, required reflections, once-only streak activity without recall/card changes, semantic revision, retired stories, malformed optional drafts, and preventing an archived session from erasing a new draft. Updated roadmap/card tests cover expanded knowledge, shared progress and content version changes. Authored and bundled rehearsal prompts are byte-identical.
+
+The streak uses a native Canvas flame with three layered paths and continuous tip movement at up to 24 redraws per second. Its loop pauses when hidden or inactive; Reduce Motion and Low Power Mode use a static flame, and zero active days uses a muted silhouette. These fallback conditions were inspected in code; physical-device power consumption and manual Low Power/Reduce Motion switching have not been measured. The optimized Release build succeeds.
+
+Five focused simulator scenarios pass across the two runs: written-note restore and saved reflections; aloud rehearsal at the largest text size; reading saved history before due recall; freshly revealed anchors before due recall; and expanded Ramos player/club shared progress. Both preview scenarios yield zero independent successes and preserve all three due memories. A container accessibility identifier initially hid the individual reflection identifiers; removing it restored independent controls. Final written, history and largest-text checks pass, and their screenshots were visually inspected. The streak remains a compact flame beside the count, and saved notes display the original explanation and each reflection.

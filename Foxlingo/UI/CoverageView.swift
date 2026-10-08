@@ -23,6 +23,7 @@ struct CoverageView: View {
                     if let study=try? CoverageStudyPack.make(pack:pack,firstID:first,secondID:second) {
                         Label("Club comparison · no fixture selected",systemImage:"books.vertical").font(.subheadline.bold()).accessibilityIdentifier("coverage-scope")
                         Text("\(Set(study.first.factIDs + study.second.factIDs).count) sourced historical facts. Live squads, statistics, and a complete head-to-head briefing aren't included.").font(.subheadline).foregroundStyle(Palette.muted)
+                        NavigationLink {RehearsalLibrary(lessonIDs:Set(study.first.lessonIDs+study.second.lessonIDs),onPreview:{previewed.formUnion($0)})} label:{Label("Rehearse these stories",systemImage:"text.bubble").font(.headline).frame(minHeight:44)}.buttonStyle(PressFeedback()).accessibilityIdentifier("coverage-rehearse")
                         recall(study,pack:pack)
                         clubStories(study.first,pack:pack)
                         clubStories(study.second,pack:pack)

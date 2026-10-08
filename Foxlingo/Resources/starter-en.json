@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "key": "foxlingo-favorites-en",
-  "contentVersion": 5,
+  "contentVersion": 6,
   "language": "en",
   "entities": [
     {
@@ -1751,6 +1751,42 @@
       "key": "bundesliga-history-schalke-04",
       "title": "Schalke: historical guide",
       "url": "https://www.bundesliga.com/en/bundesliga/news/fc-schalke-04-bundesliga-club-by-club-historical-guide-24140",
+      "verifiedAt": "2026-10-08"
+    },
+    {
+      "key": "enrichment-casillas-anniversary",
+      "title": "Today marks 25 years since Casillas' debut",
+      "url": "https://www.realmadrid.com/en-US/news/club/latest-news/se-cumplen-25-anos-del-debut-de-casillas-12-09-2024",
+      "verifiedAt": "2026-10-08"
+    },
+    {
+      "key": "enrichment-ramos-profile",
+      "title": "Sergio Ramos García - History and honours",
+      "url": "https://www.realmadrid.com/en-US/the-club/history/football-legends/sergio-ramos-garcia?pid=1384791177940",
+      "verifiedAt": "2026-10-08"
+    },
+    {
+      "key": "enrichment-xolos-history",
+      "title": "¡HISTORIA DE ÉXITOS!",
+      "url": "https://xolos.com.mx/noticias/primer-equipo/7815",
+      "verifiedAt": "2026-10-08"
+    },
+    {
+      "key": "enrichment-madrid-2018",
+      "title": "The Decimotercera!",
+      "url": "https://www.realmadrid.com/en-US/news/football/first-team/special-features/the-decimotercera",
+      "verifiedAt": "2026-10-08"
+    },
+    {
+      "key": "enrichment-madrid-2022",
+      "title": "La Decimocuarta!",
+      "url": "https://www.realmadrid.com/en-US/news/football/first-team/special-features/la-decimocuarta",
+      "verifiedAt": "2026-10-08"
+    },
+    {
+      "key": "enrichment-madrid-2024",
+      "title": "La Decimoquinta!",
+      "url": "https://www.realmadrid.com/en-US/news/football/first-team/latest-news/la-decimoquinta-06-06-2024",
       "verifiedAt": "2026-10-08"
     }
   ],
@@ -5493,6 +5529,206 @@
         "bundesliga-history-werder-bremen"
       ],
       "evidence": "The Bundesliga historical guide records Werder’s league and cup double in 2003/04."
+    },
+    {
+      "id": "a233c1bf-6a0b-5229-82e7-c63c98a09dab",
+      "key": "fact-enrichment-casillas-madrid-title-total",
+      "subjectID": "b63b8e8c-5e58-54f5-815d-9e37d56baf32",
+      "predicate": "casillas-madrid-title-total",
+      "value": {
+        "kind": "number",
+        "display": "19",
+        "number": 19,
+        "unit": "titles"
+      },
+      "scope": "Casillas's Real Madrid career; historical total",
+      "sourceKeys": [
+        "enrichment-casillas-anniversary"
+      ],
+      "evidence": "Official source excerpt: “19 titles as a madridista”"
+    },
+    {
+      "id": "3dc76121-4744-5638-89fb-a1e80cb5f7fb",
+      "key": "fact-enrichment-casillas-madrid-champions-leagues",
+      "subjectID": "b63b8e8c-5e58-54f5-815d-9e37d56baf32",
+      "predicate": "casillas-madrid-champions-leagues",
+      "value": {
+        "kind": "number",
+        "display": "3",
+        "number": 3,
+        "unit": "Champions League titles"
+      },
+      "scope": "Casillas's Real Madrid career; historical total",
+      "sourceKeys": [
+        "enrichment-casillas-anniversary"
+      ],
+      "evidence": "Official source excerpt: “3 Champions Leagues”"
+    },
+    {
+      "id": "d4800f5a-ec4c-58e0-ac81-1d21e749449f",
+      "key": "fact-enrichment-casillas-spain-world-cup",
+      "subjectID": "b63b8e8c-5e58-54f5-815d-9e37d56baf32",
+      "predicate": "casillas-spain-world-cup",
+      "value": {
+        "kind": "text",
+        "display": "World Cup",
+        "text": "World Cup"
+      },
+      "scope": "Spain national team; 2010",
+      "sourceKeys": [
+        "enrichment-casillas-anniversary"
+      ],
+      "evidence": "Official source excerpt: “the 2010 World Cup with the Spanish National Team”"
+    },
+    {
+      "id": "b7f84085-17bb-5fa0-baca-abf498fc25f2",
+      "key": "fact-enrichment-ramos-madrid-title-total",
+      "subjectID": "bd1a5c77-15cc-5bde-bd77-b3a9679f8e95",
+      "predicate": "ramos-madrid-title-total",
+      "value": {
+        "kind": "number",
+        "display": "22",
+        "number": 22,
+        "unit": "titles"
+      },
+      "scope": "Ramos's Real Madrid career; historical total",
+      "sourceKeys": [
+        "enrichment-ramos-profile"
+      ],
+      "evidence": "Official source excerpt: “22 titles”"
+    },
+    {
+      "id": "57bd863e-c676-5daf-b863-eb8efdfd8e90",
+      "key": "fact-enrichment-ramos-european-cups",
+      "subjectID": "bd1a5c77-15cc-5bde-bd77-b3a9679f8e95",
+      "predicate": "ramos-european-cups",
+      "value": {
+        "kind": "number",
+        "display": "4",
+        "number": 4,
+        "unit": "European Cup titles"
+      },
+      "scope": "Ramos's Real Madrid career; historical total",
+      "sourceKeys": [
+        "enrichment-ramos-profile"
+      ],
+      "evidence": "Official source excerpt: “Four European Cups”"
+    },
+    {
+      "id": "78213dc8-fe8f-5f1c-9dc1-24be139eac08",
+      "key": "fact-enrichment-ramos-laliga-titles",
+      "subjectID": "bd1a5c77-15cc-5bde-bd77-b3a9679f8e95",
+      "predicate": "ramos-laliga-titles",
+      "value": {
+        "kind": "number",
+        "display": "5",
+        "number": 5,
+        "unit": "LaLiga titles"
+      },
+      "scope": "Ramos's Real Madrid career; historical total",
+      "sourceKeys": [
+        "enrichment-ramos-profile"
+      ],
+      "evidence": "Official source excerpt: “5 LaLiga titles”"
+    },
+    {
+      "id": "71c7ca4f-9edc-554f-9d57-de478086f333",
+      "key": "fact-enrichment-xolos-professional-debut-date",
+      "subjectID": "f85aa453-4336-52ef-900a-853646479e20",
+      "predicate": "xolos-professional-debut-date",
+      "value": {
+        "kind": "date",
+        "display": "January 14, 2007",
+        "text": "2007-01-14"
+      },
+      "scope": "Club Tijuana chronology; professional debut",
+      "sourceKeys": [
+        "enrichment-xolos-history"
+      ],
+      "evidence": "Official source excerpt: “DEBUT PROFESIONAL: Domingo 14 de Enero de 2007”"
+    },
+    {
+      "id": "1a4d2742-dbfc-5995-ad8e-3bfb3f9cfe7f",
+      "key": "fact-enrichment-xolos-first-title-season",
+      "subjectID": "f85aa453-4336-52ef-900a-853646479e20",
+      "predicate": "xolos-first-title-season",
+      "value": {
+        "kind": "text",
+        "display": "Apertura 2010",
+        "text": "Apertura 2010"
+      },
+      "scope": "Liga de Ascenso; first Xolos title",
+      "sourceKeys": [
+        "enrichment-xolos-history"
+      ],
+      "evidence": "Official source excerpt: “llegó para el Apertura 2010”"
+    },
+    {
+      "id": "8e462ce7-a441-5a26-b762-b48d534f204d",
+      "key": "fact-enrichment-xolos-first-division-debut-date",
+      "subjectID": "f85aa453-4336-52ef-900a-853646479e20",
+      "predicate": "xolos-first-division-debut-date",
+      "value": {
+        "kind": "date",
+        "display": "July 23, 2011",
+        "text": "2011-07-23"
+      },
+      "scope": "Club Tijuana; first match in Mexico's Primera División",
+      "sourceKeys": [
+        "enrichment-xolos-history"
+      ],
+      "evidence": "Official source excerpt: “inició el 23 de julio de 2011”"
+    },
+    {
+      "id": "b4d94ad3-7a0c-5e20-9e4e-fe2cf5c822d1",
+      "key": "fact-enrichment-madrid-european-cup-2018",
+      "subjectID": "b10020b9-4d2f-5384-a229-6bb3d69da093",
+      "predicate": "madrid-european-cup-2018",
+      "value": {
+        "kind": "number",
+        "display": "13th",
+        "number": 13,
+        "unit": "European Cup titles"
+      },
+      "scope": "Real Madrid; 2018 European Cup final",
+      "sourceKeys": [
+        "enrichment-madrid-2018"
+      ],
+      "evidence": "Official source excerpt: “secured the club's 13th European crown”"
+    },
+    {
+      "id": "7707101a-acc9-5ff9-a066-e34750039bdd",
+      "key": "fact-enrichment-madrid-european-cup-2022",
+      "subjectID": "b10020b9-4d2f-5384-a229-6bb3d69da093",
+      "predicate": "madrid-european-cup-2022",
+      "value": {
+        "kind": "number",
+        "display": "14th",
+        "number": 14,
+        "unit": "European Cup titles"
+      },
+      "scope": "Real Madrid; 2022 European Cup final",
+      "sourceKeys": [
+        "enrichment-madrid-2022"
+      ],
+      "evidence": "Official source excerpt: “fourteenth European Cup”"
+    },
+    {
+      "id": "b9da36cb-ca52-5ce5-88a3-954fb042dedb",
+      "key": "fact-enrichment-madrid-european-cup-2024",
+      "subjectID": "b10020b9-4d2f-5384-a229-6bb3d69da093",
+      "predicate": "madrid-european-cup-2024",
+      "value": {
+        "kind": "number",
+        "display": "15th",
+        "number": 15,
+        "unit": "European Cup titles"
+      },
+      "scope": "Real Madrid; 2024 European Cup final",
+      "sourceKeys": [
+        "enrichment-madrid-2024"
+      ],
+      "evidence": "Official source excerpt: “15 in football and 11 in basketball”"
     }
   ],
   "objectives": [
@@ -8590,6 +8826,180 @@
       ],
       "feedback": "Club history: 2003/04. Context: Club history.",
       "revision": 1
+    },
+    {
+      "id": "dcef6f8b-b1e0-5ec5-85ab-0ad7ebdece6d",
+      "key": "objective-enrichment-casillas-madrid-title-total",
+      "factIDs": [
+        "a233c1bf-6a0b-5229-82e7-c63c98a09dab"
+      ],
+      "prompt": "How many titles did Casillas win as a Real Madrid player?",
+      "answers": [
+        "19",
+        "nineteen"
+      ],
+      "feedback": "Real Madrid titles: 19. Context: Casillas's Real Madrid career; historical total.",
+      "revision": 1
+    },
+    {
+      "id": "ff0dc2ab-9798-554c-b83a-efcfd7fb1cfa",
+      "key": "objective-enrichment-casillas-madrid-champions-leagues",
+      "factIDs": [
+        "3dc76121-4744-5638-89fb-a1e80cb5f7fb"
+      ],
+      "prompt": "How many Champions League titles were among Casillas’s Madrid honours?",
+      "answers": [
+        "3",
+        "three"
+      ],
+      "feedback": "Champions League titles: 3. Context: Casillas's Real Madrid career; historical total.",
+      "revision": 1
+    },
+    {
+      "id": "43be1aa3-4a1f-5a33-b49a-0f54581b1fa6",
+      "key": "objective-enrichment-casillas-spain-world-cup",
+      "factIDs": [
+        "d4800f5a-ec4c-58e0-ac81-1d21e749449f"
+      ],
+      "prompt": "Which major international title did Casillas lift with Spain in 2010?",
+      "answers": [
+        "World Cup",
+        "FIFA World Cup"
+      ],
+      "feedback": "Spain title in 2010: World Cup. Context: Spain national team; 2010.",
+      "revision": 1
+    },
+    {
+      "id": "69068ed3-637b-5164-a93b-2ee87419ef02",
+      "key": "objective-enrichment-ramos-madrid-title-total",
+      "factIDs": [
+        "b7f84085-17bb-5fa0-baca-abf498fc25f2"
+      ],
+      "prompt": "How many titles did Ramos win with Real Madrid?",
+      "answers": [
+        "22",
+        "twenty-two",
+        "twenty two"
+      ],
+      "feedback": "Real Madrid titles: 22. Context: Ramos's Real Madrid career; historical total.",
+      "revision": 1
+    },
+    {
+      "id": "2263e2f6-62f0-51fb-89ad-81ea650eb7d7",
+      "key": "objective-enrichment-ramos-european-cups",
+      "factIDs": [
+        "57bd863e-c676-5daf-b863-eb8efdfd8e90"
+      ],
+      "prompt": "How many European Cups did Ramos win with Madrid?",
+      "answers": [
+        "4",
+        "four"
+      ],
+      "feedback": "European Cup titles: 4. Context: Ramos's Real Madrid career; historical total.",
+      "revision": 1
+    },
+    {
+      "id": "9cfb319c-fc16-5d92-8c5c-23f05e412645",
+      "key": "objective-enrichment-ramos-laliga-titles",
+      "factIDs": [
+        "78213dc8-fe8f-5f1c-9dc1-24be139eac08"
+      ],
+      "prompt": "How many LaLiga titles were in Ramos’s Real Madrid honours?",
+      "answers": [
+        "5",
+        "five"
+      ],
+      "feedback": "LaLiga titles: 5. Context: Ramos's Real Madrid career; historical total.",
+      "revision": 1
+    },
+    {
+      "id": "fbcd042b-e97d-5138-8294-864410a1ad89",
+      "key": "objective-enrichment-xolos-professional-debut-date",
+      "factIDs": [
+        "71c7ca4f-9edc-554f-9d57-de478086f333"
+      ],
+      "prompt": "On what date did Club Tijuana make its professional debut?",
+      "answers": [
+        "January 14, 2007",
+        "14 January 2007",
+        "2007-01-14"
+      ],
+      "feedback": "Professional debut: January 14, 2007. Context: Club Tijuana chronology; professional debut.",
+      "revision": 1
+    },
+    {
+      "id": "be1aabee-37d9-5441-a5a8-9f23c16dab40",
+      "key": "objective-enrichment-xolos-first-title-season",
+      "factIDs": [
+        "1a4d2742-dbfc-5995-ad8e-3bfb3f9cfe7f"
+      ],
+      "prompt": "In which Liga de Ascenso tournament did Xolos win their first title?",
+      "answers": [
+        "Apertura 2010",
+        "Liga de Ascenso Apertura 2010"
+      ],
+      "feedback": "First title: Apertura 2010. Context: Liga de Ascenso; first Xolos title.",
+      "revision": 1
+    },
+    {
+      "id": "d361ea35-a119-57e0-ad68-8f563c099d90",
+      "key": "objective-enrichment-xolos-first-division-debut-date",
+      "factIDs": [
+        "8e462ce7-a441-5a26-b762-b48d534f204d"
+      ],
+      "prompt": "On what date did Xolos’s history in Mexico’s top division begin?",
+      "answers": [
+        "July 23, 2011",
+        "23 July 2011",
+        "2011-07-23"
+      ],
+      "feedback": "First-division debut: July 23, 2011. Context: Club Tijuana; first match in Mexico's Primera División.",
+      "revision": 1
+    },
+    {
+      "id": "0a993891-89d1-52da-b736-c7ee9589df87",
+      "key": "objective-enrichment-madrid-european-cup-2018",
+      "factIDs": [
+        "b4d94ad3-7a0c-5e20-9e4e-fe2cf5c822d1"
+      ],
+      "prompt": "What number European Cup did Real Madrid win in 2018?",
+      "answers": [
+        "13",
+        "13th",
+        "thirteenth"
+      ],
+      "feedback": "European Cup count in 2018: 13th. Context: Real Madrid; 2018 European Cup final.",
+      "revision": 1
+    },
+    {
+      "id": "3918c276-027e-5eac-9931-a40faa27c47a",
+      "key": "objective-enrichment-madrid-european-cup-2022",
+      "factIDs": [
+        "7707101a-acc9-5ff9-a066-e34750039bdd"
+      ],
+      "prompt": "What number European Cup did Real Madrid win in 2022?",
+      "answers": [
+        "14",
+        "14th",
+        "fourteenth"
+      ],
+      "feedback": "European Cup count in 2022: 14th. Context: Real Madrid; 2022 European Cup final.",
+      "revision": 1
+    },
+    {
+      "id": "1214c4ac-f339-5ed3-bed8-3d7523242f56",
+      "key": "objective-enrichment-madrid-european-cup-2024",
+      "factIDs": [
+        "b9da36cb-ca52-5ce5-88a3-954fb042dedb"
+      ],
+      "prompt": "What number European Cup did Real Madrid win in 2024?",
+      "answers": [
+        "15",
+        "15th",
+        "fifteenth"
+      ],
+      "feedback": "European Cup count in 2024: 15th. Context: Real Madrid; 2024 European Cup final.",
+      "revision": 1
     }
   ],
   "roadmaps": [
@@ -8621,6 +9031,13 @@
             "523fb086-b184-5791-9437-b2f3d90752d4",
             "5d2f943a-dcde-5c0b-a100-14b0ef478d8c"
           ]
+        },
+        {
+          "key": "roadmap-xolos-deeper-stories",
+          "title": "Deeper stories",
+          "lessonIDs": [
+            "dae773af-29b5-5890-8291-e06205971223"
+          ]
         }
       ]
     },
@@ -8651,6 +9068,15 @@
             "24f8f510-fc4c-5792-8eae-bbc32f221b5b",
             "edd1219f-0972-5612-a866-dff094c0cb82",
             "d2918813-a681-5980-9321-3958c85154f9"
+          ]
+        },
+        {
+          "key": "roadmap-madrid-deeper-stories",
+          "title": "Deeper stories",
+          "lessonIDs": [
+            "b95cfb65-1c8f-54b2-a1e7-1a807a7c9a0e",
+            "e52778c4-2c12-5998-8368-1d9ed2f07fc0",
+            "cb785161-d137-5e44-bd19-bf196f8fec6c"
           ]
         }
       ]
@@ -9701,6 +10127,13 @@
           "lessonIDs": [
             "a96e0170-a1fe-5991-9a62-1786a8709a11"
           ]
+        },
+        {
+          "key": "roadmap-player-ramos-deeper-stories",
+          "title": "Deeper stories",
+          "lessonIDs": [
+            "e52778c4-2c12-5998-8368-1d9ed2f07fc0"
+          ]
         }
       ]
     },
@@ -9725,6 +10158,13 @@
           "note": "Optional club history. Only player-specific facts establish who participated in the final.",
           "lessonIDs": [
             "a96e0170-a1fe-5991-9a62-1786a8709a11"
+          ]
+        },
+        {
+          "key": "roadmap-player-casillas-deeper-stories",
+          "title": "Deeper stories",
+          "lessonIDs": [
+            "b95cfb65-1c8f-54b2-a1e7-1a807a7c9a0e"
           ]
         }
       ]
@@ -11913,6 +12353,114 @@
         "27bf70ed-765f-5ee1-89f4-66a51f694c73",
         "88fb2ef3-7ced-5138-9937-310bbe71a089",
         "7e7230ae-c471-53b6-b973-ddb7622cc5f0"
+      ]
+    },
+    {
+      "id": "b95cfb65-1c8f-54b2-a1e7-1a807a7c9a0e",
+      "key": "lesson-madrid-casillas-honours",
+      "title": "Iker Casillas: A captain’s honours",
+      "subtitle": "Club success and Spain’s golden era",
+      "story": [
+        {
+          "title": "A long Madrid chapter",
+          "body": "Casillas’s Real Madrid career brought him 19 titles as a madridista. Three were Champions League trophies, part of an honours collection built over many seasons. Those honours add a new layer to his 725 official appearances: the goalkeeper was central to teams that repeatedly reached the top of Europe."
+        },
+        {
+          "title": "A champion with Spain",
+          "body": "His international story reached its high point with Spain’s 2010 World Cup win. He also lifted the European Championship in 2008 and again in 2012. Keep the two chapters distinct: Madrid’s 19 titles belong to his club career, while the World Cup and two Euros came with Spain."
+        }
+      ],
+      "objectiveIDs": [
+        "dcef6f8b-b1e0-5ec5-85ab-0ad7ebdece6d",
+        "ff0dc2ab-9798-554c-b83a-efcfd7fb1cfa",
+        "43be1aa3-4a1f-5a33-b49a-0f54581b1fa6"
+      ],
+      "exerciseIDs": [
+        "7f621eb0-a61c-54bd-a0db-2d013f4d6eb2",
+        "731c20e4-b4f2-5d00-8dab-f5834ca7c920",
+        "1387a04d-f4b5-5a9c-a3f3-2ea5c63ede12",
+        "d3840c33-ba69-57db-8398-84123b4869b1"
+      ]
+    },
+    {
+      "id": "e52778c4-2c12-5998-8368-1d9ed2f07fc0",
+      "key": "lesson-madrid-ramos-honours",
+      "title": "Sergio Ramos: A defender’s trophy haul",
+      "subtitle": "Four European Cups among 22 titles",
+      "story": [
+        {
+          "title": "A decorated Madrid career",
+          "body": "Across 16 seasons with Real Madrid, Sergio Ramos collected 22 titles. The defender’s haul included four European Cups, a remarkable return for a player whose decisive moments became part of the club’s biggest nights. His record extends well beyond the 2014 equalizer already connected to La Décima."
+        },
+        {
+          "title": "Different competitions, one legacy",
+          "body": "Ramos’s honours also included five LaLiga titles. He captained Madrid through European success and lifted the trophies as the team moved into a new era. Remember the scale of the collection by keeping its parts separate: 22 titles overall, four European Cups, and five Spanish league championships."
+        }
+      ],
+      "objectiveIDs": [
+        "69068ed3-637b-5164-a93b-2ee87419ef02",
+        "2263e2f6-62f0-51fb-89ad-81ea650eb7d7",
+        "9cfb319c-fc16-5d92-8c5c-23f05e412645"
+      ],
+      "exerciseIDs": [
+        "fe102cec-b75f-59c7-ad0a-dec201a50259",
+        "b8bd0055-139c-51b0-800f-7bf8ab928dad",
+        "3ced0ba8-7b59-5607-8732-387db1d69b3d",
+        "9de10c4a-e7bd-5bd2-9bdc-818e174ede46"
+      ]
+    },
+    {
+      "id": "dae773af-29b5-5890-8291-e06205971223",
+      "key": "lesson-xolos-early-path",
+      "title": "Xolos: The road to the top flight",
+      "subtitle": "Early milestones on the climb",
+      "story": [
+        {
+          "title": "A professional beginning",
+          "body": "Club Tijuana’s professional story began with a match on January 14, 2007. Its first title followed in the Apertura 2010 Liga de Ascenso, the second-tier competition. Winning that tournament was a milestone in its own right, but it did not yet mean promotion: Xolos still had to win a separate two-leg promotion final."
+        },
+        {
+          "title": "The climb becomes real",
+          "body": "After the promotion final against Irapuato, Xolos reached Mexico’s top flight in 2011. The club’s Primera División history began on July 23, 2011, against Morelia, with Joe Corona scoring its first goal in that division. Keep the first professional match, the second-tier title, and the top-flight debut as three different milestones."
+        }
+      ],
+      "objectiveIDs": [
+        "fbcd042b-e97d-5138-8294-864410a1ad89",
+        "be1aabee-37d9-5441-a5a8-9f23c16dab40",
+        "d361ea35-a119-57e0-ad68-8f563c099d90"
+      ],
+      "exerciseIDs": [
+        "1b5d3a03-d18c-5103-886c-f5e0fe8a2a13",
+        "21a527fd-7bb1-5405-bd45-116706f4314d",
+        "22e102bc-6b94-59e5-bdba-d748a248a826",
+        "62f3d02e-39fb-5a53-9b7f-5c2c4b8668b9"
+      ]
+    },
+    {
+      "id": "cb785161-d137-5e44-bd19-bf196f8fec6c",
+      "key": "lesson-madrid-european-modern-era",
+      "title": "Madrid’s modern European run",
+      "subtitle": "From a three-peat to the 15th crown",
+      "story": [
+        {
+          "title": "Three in a row",
+          "body": "Madrid’s 2018 victory in Kyiv completed a third consecutive Champions League triumph and brought its European Cup total to 13. That three-peat closed a remarkable five-season stretch in which the club won the competition four times. It connects the earlier European story to a modern period of sustained success."
+        },
+        {
+          "title": "The count keeps climbing",
+          "body": "The European Cup count reached 14 when Madrid beat Liverpool in the 2022 final in Paris. Two years later, a win over Borussia Dortmund at Wembley brought the club to 15. Follow the sequence by attaching each number to its year: 13 in 2018, 14 in 2022, and 15 in 2024."
+        }
+      ],
+      "objectiveIDs": [
+        "0a993891-89d1-52da-b736-c7ee9589df87",
+        "3918c276-027e-5eac-9931-a40faa27c47a",
+        "1214c4ac-f339-5ed3-bed8-3d7523242f56"
+      ],
+      "exerciseIDs": [
+        "9c2fa989-20e3-5b74-98e7-94106d3ec121",
+        "c707feef-07f3-5add-be09-5293aac9aed2",
+        "beee7568-44bc-53b5-8f5e-499da5497380",
+        "6e786dab-4b3d-5f2e-ad88-b3b2fb385011"
       ]
     }
   ],
@@ -26892,6 +27440,550 @@
           "right": "r-2"
         }
       ]
+    },
+    {
+      "id": "7f621eb0-a61c-54bd-a0db-2d013f4d6eb2",
+      "key": "exercise-madrid-casillas-honours-choice-0",
+      "kind": "choice",
+      "objectiveIDs": [
+        "dcef6f8b-b1e0-5ec5-85ab-0ad7ebdece6d"
+      ],
+      "prompt": "How many titles did Casillas win as a Real Madrid player?",
+      "feedback": "Real Madrid titles: 19. Context: Casillas's Real Madrid career; historical total.",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "19"
+        },
+        {
+          "id": "choice-1",
+          "text": "17"
+        },
+        {
+          "id": "choice-2",
+          "text": "20"
+        },
+        {
+          "id": "choice-3",
+          "text": "22"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "731c20e4-b4f2-5d00-8dab-f5834ca7c920",
+      "key": "exercise-madrid-casillas-honours-choice-1",
+      "kind": "choice",
+      "objectiveIDs": [
+        "ff0dc2ab-9798-554c-b83a-efcfd7fb1cfa"
+      ],
+      "prompt": "How many Champions League titles were among Casillas’s Madrid honours?",
+      "feedback": "Champions League titles: 3. Context: Casillas's Real Madrid career; historical total.",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "3"
+        },
+        {
+          "id": "choice-1",
+          "text": "2"
+        },
+        {
+          "id": "choice-2",
+          "text": "4"
+        },
+        {
+          "id": "choice-3",
+          "text": "5"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "1387a04d-f4b5-5a9c-a3f3-2ea5c63ede12",
+      "key": "exercise-madrid-casillas-honours-choice-2",
+      "kind": "choice",
+      "objectiveIDs": [
+        "43be1aa3-4a1f-5a33-b49a-0f54581b1fa6"
+      ],
+      "prompt": "Which major international title did Casillas lift with Spain in 2010?",
+      "feedback": "Spain title in 2010: World Cup. Context: Spain national team; 2010.",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "World Cup"
+        },
+        {
+          "id": "choice-1",
+          "text": "European Championship"
+        },
+        {
+          "id": "choice-2",
+          "text": "Confederations Cup"
+        },
+        {
+          "id": "choice-3",
+          "text": "Olympic football gold"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "d3840c33-ba69-57db-8398-84123b4869b1",
+      "key": "exercise-madrid-casillas-honours-choice-3",
+      "kind": "choice",
+      "objectiveIDs": [
+        "dcef6f8b-b1e0-5ec5-85ab-0ad7ebdece6d"
+      ],
+      "prompt": "How many titles did Casillas win as a Real Madrid player?",
+      "feedback": "Real Madrid titles: 19. Context: Casillas's Real Madrid career; historical total.",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "19"
+        },
+        {
+          "id": "choice-1",
+          "text": "17"
+        },
+        {
+          "id": "choice-2",
+          "text": "20"
+        },
+        {
+          "id": "choice-3",
+          "text": "22"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "fe102cec-b75f-59c7-ad0a-dec201a50259",
+      "key": "exercise-madrid-ramos-honours-choice-0",
+      "kind": "choice",
+      "objectiveIDs": [
+        "69068ed3-637b-5164-a93b-2ee87419ef02"
+      ],
+      "prompt": "How many titles did Ramos win with Real Madrid?",
+      "feedback": "Real Madrid titles: 22. Context: Ramos's Real Madrid career; historical total.",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "22"
+        },
+        {
+          "id": "choice-1",
+          "text": "20"
+        },
+        {
+          "id": "choice-2",
+          "text": "21"
+        },
+        {
+          "id": "choice-3",
+          "text": "23"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "b8bd0055-139c-51b0-800f-7bf8ab928dad",
+      "key": "exercise-madrid-ramos-honours-choice-1",
+      "kind": "choice",
+      "objectiveIDs": [
+        "2263e2f6-62f0-51fb-89ad-81ea650eb7d7"
+      ],
+      "prompt": "How many European Cups did Ramos win with Madrid?",
+      "feedback": "European Cup titles: 4. Context: Ramos's Real Madrid career; historical total.",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "4"
+        },
+        {
+          "id": "choice-1",
+          "text": "3"
+        },
+        {
+          "id": "choice-2",
+          "text": "5"
+        },
+        {
+          "id": "choice-3",
+          "text": "6"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "3ced0ba8-7b59-5607-8732-387db1d69b3d",
+      "key": "exercise-madrid-ramos-honours-choice-2",
+      "kind": "choice",
+      "objectiveIDs": [
+        "9cfb319c-fc16-5d92-8c5c-23f05e412645"
+      ],
+      "prompt": "How many LaLiga titles were in Ramos’s Real Madrid honours?",
+      "feedback": "LaLiga titles: 5. Context: Ramos's Real Madrid career; historical total.",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "5"
+        },
+        {
+          "id": "choice-1",
+          "text": "4"
+        },
+        {
+          "id": "choice-2",
+          "text": "6"
+        },
+        {
+          "id": "choice-3",
+          "text": "7"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "9de10c4a-e7bd-5bd2-9bdc-818e174ede46",
+      "key": "exercise-madrid-ramos-honours-choice-3",
+      "kind": "choice",
+      "objectiveIDs": [
+        "69068ed3-637b-5164-a93b-2ee87419ef02"
+      ],
+      "prompt": "How many titles did Ramos win with Real Madrid?",
+      "feedback": "Real Madrid titles: 22. Context: Ramos's Real Madrid career; historical total.",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "22"
+        },
+        {
+          "id": "choice-1",
+          "text": "20"
+        },
+        {
+          "id": "choice-2",
+          "text": "21"
+        },
+        {
+          "id": "choice-3",
+          "text": "23"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "1b5d3a03-d18c-5103-886c-f5e0fe8a2a13",
+      "key": "exercise-xolos-early-path-choice-0",
+      "kind": "choice",
+      "objectiveIDs": [
+        "fbcd042b-e97d-5138-8294-864410a1ad89"
+      ],
+      "prompt": "On what date did Club Tijuana make its professional debut?",
+      "feedback": "Professional debut: January 14, 2007. Context: Club Tijuana chronology; professional debut.",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "January 14, 2007"
+        },
+        {
+          "id": "choice-1",
+          "text": "January 21, 2007"
+        },
+        {
+          "id": "choice-2",
+          "text": "January 28, 2007"
+        },
+        {
+          "id": "choice-3",
+          "text": "November 11, 2007"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "21a527fd-7bb1-5405-bd45-116706f4314d",
+      "key": "exercise-xolos-early-path-choice-1",
+      "kind": "choice",
+      "objectiveIDs": [
+        "be1aabee-37d9-5441-a5a8-9f23c16dab40"
+      ],
+      "prompt": "In which Liga de Ascenso tournament did Xolos win their first title?",
+      "feedback": "First title: Apertura 2010. Context: Liga de Ascenso; first Xolos title.",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "Apertura 2010"
+        },
+        {
+          "id": "choice-1",
+          "text": "Clausura 2009"
+        },
+        {
+          "id": "choice-2",
+          "text": "Apertura 2011"
+        },
+        {
+          "id": "choice-3",
+          "text": "Apertura 2012"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "22e102bc-6b94-59e5-bdba-d748a248a826",
+      "key": "exercise-xolos-early-path-choice-2",
+      "kind": "choice",
+      "objectiveIDs": [
+        "d361ea35-a119-57e0-ad68-8f563c099d90"
+      ],
+      "prompt": "On what date did Xolos’s history in Mexico’s top division begin?",
+      "feedback": "First-division debut: July 23, 2011. Context: Club Tijuana; first match in Mexico's Primera División.",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "July 23, 2011"
+        },
+        {
+          "id": "choice-1",
+          "text": "July 16, 2011"
+        },
+        {
+          "id": "choice-2",
+          "text": "August 6, 2011"
+        },
+        {
+          "id": "choice-3",
+          "text": "October 15, 2011"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "62f3d02e-39fb-5a53-9b7f-5c2c4b8668b9",
+      "key": "exercise-xolos-early-path-choice-3",
+      "kind": "choice",
+      "objectiveIDs": [
+        "fbcd042b-e97d-5138-8294-864410a1ad89"
+      ],
+      "prompt": "On what date did Club Tijuana make its professional debut?",
+      "feedback": "Professional debut: January 14, 2007. Context: Club Tijuana chronology; professional debut.",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "January 14, 2007"
+        },
+        {
+          "id": "choice-1",
+          "text": "January 21, 2007"
+        },
+        {
+          "id": "choice-2",
+          "text": "January 28, 2007"
+        },
+        {
+          "id": "choice-3",
+          "text": "November 11, 2007"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "9c2fa989-20e3-5b74-98e7-94106d3ec121",
+      "key": "exercise-madrid-european-modern-era-choice-0",
+      "kind": "choice",
+      "objectiveIDs": [
+        "0a993891-89d1-52da-b736-c7ee9589df87"
+      ],
+      "prompt": "What number European Cup did Real Madrid win in 2018?",
+      "feedback": "European Cup count in 2018: 13th. Context: Real Madrid; 2018 European Cup final.",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "13"
+        },
+        {
+          "id": "choice-1",
+          "text": "11"
+        },
+        {
+          "id": "choice-2",
+          "text": "12"
+        },
+        {
+          "id": "choice-3",
+          "text": "14"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "c707feef-07f3-5add-be09-5293aac9aed2",
+      "key": "exercise-madrid-european-modern-era-choice-1",
+      "kind": "choice",
+      "objectiveIDs": [
+        "3918c276-027e-5eac-9931-a40faa27c47a"
+      ],
+      "prompt": "What number European Cup did Real Madrid win in 2022?",
+      "feedback": "European Cup count in 2022: 14th. Context: Real Madrid; 2022 European Cup final.",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "14"
+        },
+        {
+          "id": "choice-1",
+          "text": "12"
+        },
+        {
+          "id": "choice-2",
+          "text": "13"
+        },
+        {
+          "id": "choice-3",
+          "text": "15"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "beee7568-44bc-53b5-8f5e-499da5497380",
+      "key": "exercise-madrid-european-modern-era-choice-2",
+      "kind": "choice",
+      "objectiveIDs": [
+        "1214c4ac-f339-5ed3-bed8-3d7523242f56"
+      ],
+      "prompt": "What number European Cup did Real Madrid win in 2024?",
+      "feedback": "European Cup count in 2024: 15th. Context: Real Madrid; 2024 European Cup final.",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "15"
+        },
+        {
+          "id": "choice-1",
+          "text": "13"
+        },
+        {
+          "id": "choice-2",
+          "text": "14"
+        },
+        {
+          "id": "choice-3",
+          "text": "16"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "6e786dab-4b3d-5f2e-ad88-b3b2fb385011",
+      "key": "exercise-madrid-european-modern-era-choice-3",
+      "kind": "choice",
+      "objectiveIDs": [
+        "0a993891-89d1-52da-b736-c7ee9589df87"
+      ],
+      "prompt": "What number European Cup did Real Madrid win in 2018?",
+      "feedback": "European Cup count in 2018: 13th. Context: Real Madrid; 2018 European Cup final.",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "13"
+        },
+        {
+          "id": "choice-1",
+          "text": "11"
+        },
+        {
+          "id": "choice-2",
+          "text": "12"
+        },
+        {
+          "id": "choice-3",
+          "text": "14"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
     }
   ],
   "cards": [
@@ -26908,14 +28000,18 @@
         "8444e6ea-10ea-536e-95d0-0fb109ae3192",
         "0a6c4dff-675f-55f1-94ac-af9afe8c2ce4",
         "78b89ef2-7c0b-5bf7-9e60-e04c15b783b1",
-        "74b1c947-630d-517a-b434-9ed7b17ccb0b"
+        "74b1c947-630d-517a-b434-9ed7b17ccb0b",
+        "fbcd042b-e97d-5138-8294-864410a1ad89",
+        "be1aabee-37d9-5441-a5a8-9f23c16dab40",
+        "d361ea35-a119-57e0-ad68-8f563c099d90"
       ],
       "lessonIDs": [
         "939b91f5-2048-5bd5-bd25-269bcef2f0ba",
         "8b582179-4361-5215-b178-0b586ad8c1ff",
-        "b021ef8a-0c22-51dd-8ea7-4e4ba2ed9609"
+        "b021ef8a-0c22-51dd-8ea7-4e4ba2ed9609",
+        "dae773af-29b5-5890-8291-e06205971223"
       ],
-      "knowledgeVersion": 1,
+      "knowledgeVersion": 2,
       "caption": "From the border to the title"
     },
     {
@@ -26976,14 +28072,18 @@
         "e3fd5a42-8a7a-557b-b1f1-b937e80900ab",
         "3dcca19b-2931-56ee-a276-e6c50f170cd3",
         "6fcf20ae-05f0-52b7-8369-ebaac9e29668",
-        "214ff404-c530-5016-817e-45c7ae7d11d6"
+        "214ff404-c530-5016-817e-45c7ae7d11d6",
+        "0a993891-89d1-52da-b736-c7ee9589df87",
+        "3918c276-027e-5eac-9931-a40faa27c47a",
+        "1214c4ac-f339-5ed3-bed8-3d7523242f56"
       ],
       "lessonIDs": [
         "fb63689c-7329-570c-9848-c15f63d7e622",
         "ef7d2d11-4af2-563a-abd2-15614d853380",
-        "a96e0170-a1fe-5991-9a62-1786a8709a11"
+        "a96e0170-a1fe-5991-9a62-1786a8709a11",
+        "cb785161-d137-5e44-bd19-bf196f8fec6c"
       ],
-      "knowledgeVersion": 1,
+      "knowledgeVersion": 2,
       "caption": "A European story"
     },
     {
@@ -27008,12 +28108,16 @@
       "objectiveIDs": [
         "c9ef9a09-3564-587a-9bc9-67c6e8f90e32",
         "214ff404-c530-5016-817e-45c7ae7d11d6",
-        "084626cc-b09a-50a9-9d61-012023270097"
+        "084626cc-b09a-50a9-9d61-012023270097",
+        "69068ed3-637b-5164-a93b-2ee87419ef02",
+        "2263e2f6-62f0-51fb-89ad-81ea650eb7d7",
+        "9cfb319c-fc16-5d92-8c5c-23f05e412645"
       ],
       "lessonIDs": [
-        "edd1219f-0972-5612-a866-dff094c0cb82"
+        "edd1219f-0972-5612-a866-dff094c0cb82",
+        "e52778c4-2c12-5998-8368-1d9ed2f07fc0"
       ],
-      "knowledgeVersion": 1,
+      "knowledgeVersion": 2,
       "caption": "The turning point"
     },
     {
@@ -27023,12 +28127,16 @@
       "objectiveIDs": [
         "30447f3e-bb53-5525-8005-07d0067e0048",
         "73b4401d-075a-5db9-bf4b-16d36de4b4dc",
-        "868d776d-9a58-5141-8d37-2c36663c4255"
+        "868d776d-9a58-5141-8d37-2c36663c4255",
+        "dcef6f8b-b1e0-5ec5-85ab-0ad7ebdece6d",
+        "ff0dc2ab-9798-554c-b83a-efcfd7fb1cfa",
+        "43be1aa3-4a1f-5a33-b49a-0f54581b1fa6"
       ],
       "lessonIDs": [
-        "d2918813-a681-5980-9321-3958c85154f9"
+        "d2918813-a681-5980-9321-3958c85154f9",
+        "b95cfb65-1c8f-54b2-a1e7-1a807a7c9a0e"
       ],
-      "knowledgeVersion": 1,
+      "knowledgeVersion": 2,
       "caption": "The goalkeeper"
     },
     {

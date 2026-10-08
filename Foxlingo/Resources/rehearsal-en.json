@@ -1,0 +1,62 @@
+[
+  {
+    "lessonID": "b021ef8a-0c22-51dd-8ea7-4e4ba2ed9609",
+    "subjectID": "f85aa453-4336-52ef-900a-853646479e20",
+    "prompt": "Explain how Xolos secured their first Liga MX title. Set the scene for someone new to the club.",
+    "anchorTitles": [
+      "The opponent",
+      "The aggregate score",
+      "The decisive date"
+    ]
+  },
+  {
+    "lessonID": "a96e0170-a1fe-5991-9a62-1786a8709a11",
+    "subjectID": "b10020b9-4d2f-5384-a229-6bb3d69da093",
+    "prompt": "Explain why Ramos’s equalizer mattered to the La Décima story. Include the setting and what happened next.",
+    "anchorTitles": [
+      "The opponent",
+      "The year",
+      "The equalizer"
+    ]
+  },
+  {
+    "lessonID": "e52778c4-2c12-5998-8368-1d9ed2f07fc0",
+    "subjectID": "bd1a5c77-15cc-5bde-bd77-b3a9679f8e95",
+    "prompt": "Introduce Ramos’s Real Madrid honours. Distinguish his overall trophy haul from its European and league parts.",
+    "anchorTitles": [
+      "All Madrid titles",
+      "European Cup titles",
+      "LaLiga titles"
+    ]
+  },
+  {
+    "lessonID": "b95cfb65-1c8f-54b2-a1e7-1a807a7c9a0e",
+    "subjectID": "b63b8e8c-5e58-54f5-815d-9e37d56baf32",
+    "prompt": "Explain Casillas’s honours across Madrid and Spain. Keep club trophies and international success distinct.",
+    "anchorTitles": [
+      "Madrid title total",
+      "Champions League titles",
+      "Spain’s title"
+    ]
+  },
+  {
+    "lessonID": "dae773af-29b5-5890-8291-e06205971223",
+    "subjectID": "f85aa453-4336-52ef-900a-853646479e20",
+    "prompt": "Explain Xolos’s early climb. Distinguish their professional debut, second-tier title and top-flight debut.",
+    "anchorTitles": [
+      "Professional debut",
+      "First second-tier title",
+      "Top-flight debut"
+    ]
+  },
+  {
+    "lessonID": "cb785161-d137-5e44-bd19-bf196f8fec6c",
+    "subjectID": "b10020b9-4d2f-5384-a229-6bb3d69da093",
+    "prompt": "Describe Madrid’s European title sequence from 2018 through 2024. Connect each milestone to its year.",
+    "anchorTitles": [
+      "The 2018 crown",
+      "The 2022 crown",
+      "The 2024 crown"
+    ]
+  }
+]

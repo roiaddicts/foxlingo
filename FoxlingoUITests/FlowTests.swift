@@ -27,6 +27,62 @@ final class FlowTests: XCTestCase {
         tap("switch-club");app.segmentedControls["roadmap-subject-type"].buttons["Players"].tap()
         let search=app.searchFields.firstMatch;search.tap();search.typeText(name);tap("club-entity-\(key)")
     }
+    func testCoverageRehearsalRevealPreservesDueRecall() {
+        start();tap("choose-XT");completeLesson("lesson-xolos-final")
+        app.terminate();start(reset:false,now:1_800_000_000+86401)
+        app.tabBars.buttons["Practice"].tap();tap("coverage-open");tap("coverage-rehearse");tap("rehearsal-topic-lesson-xolos-final")
+        app.segmentedControls["rehearsal-mode"].buttons["Say it aloud"].tap();app.switches["rehearsal-explained"].tap();tap("rehearsal-check")
+        app.navigationBars.buttons.element(boundBy:0).tap();app.navigationBars.buttons.element(boundBy:0).tap();tap("coverage-recall")
+        for answer in ["Toluca","4-1","December 2, 2012"] {
+            let input=app.descendants(matching:.any)["recall-answer"].firstMatch;input.tap();input.typeText(answer);tap("check-recall")
+            XCTAssertTrue(app.staticTexts["You previewed this fact in the study pack. This answer counts as rehearsal."].exists);tap("recall-next")
+        }
+        XCTAssertTrue(app.staticTexts["0 of 3 recalled independently."].exists);tap("practice-done")
+        app.navigationBars.buttons.element(boundBy:0).tap();app.tabBars.buttons["Learn"].tap();XCTAssertTrue(app.staticTexts["daily-due-count"].label.contains("3 ready"))
+    }
+    func testSavedRehearsalHistoryPreviewsKeepDueRecall() {
+        start();tap("choose-XT");completeLesson("lesson-xolos-final")
+        app.tabBars.buttons["Practice"].tap();tap("rehearsal-open");tap("rehearsal-topic-lesson-xolos-final")
+        app.segmentedControls["rehearsal-mode"].buttons["Say it aloud"].tap();app.switches["rehearsal-explained"].tap();tap("rehearsal-check")
+        for index in 0..<3 {tap("rehearsal-reflection-\(index)");app.buttons["I missed this"].tap()}
+        tap("rehearsal-finish")
+        app.terminate();start(reset:false,now:1_800_000_000+86401)
+        app.tabBars.buttons["Practice"].tap();tap("coverage-open");tap("coverage-rehearse");tap("rehearsal-history")
+        XCTAssertTrue(app.staticTexts["The aggregate score: Missed"].exists)
+        app.navigationBars.buttons.element(boundBy:0).tap();app.navigationBars.buttons.element(boundBy:0).tap();tap("coverage-recall")
+        for answer in ["Toluca","4-1","December 2, 2012"] {
+            let input=app.descendants(matching:.any)["recall-answer"].firstMatch;input.tap();input.typeText(answer);tap("check-recall")
+            XCTAssertTrue(app.staticTexts["You previewed this fact in the study pack. This answer counts as rehearsal."].exists);tap("recall-next")
+        }
+        XCTAssertTrue(app.staticTexts["0 of 3 recalled independently."].exists);tap("practice-done")
+        app.navigationBars.buttons.element(boundBy:0).tap();app.tabBars.buttons["Learn"].tap();XCTAssertTrue(app.staticTexts["daily-due-count"].label.contains("3 ready"))
+    }
+    func testWrittenRehearsalRestoresChecksAndSavedReflections() {
+        start();tap("choose-XT");app.tabBars.buttons["Practice"].tap();tap("rehearsal-open");tap("rehearsal-topic-lesson-madrid-decima")
+        XCTAssertFalse(app.staticTexts["The opponent"].exists)
+        let response=app.textViews["rehearsal-response"];response.tap();response.typeText("Ramos sent the final into extra time.");app.buttons["Done"].tap()
+        app.terminate();start(reset:false);app.tabBars.buttons["Practice"].tap();tap("rehearsal-open");tap("rehearsal-topic-lesson-madrid-decima")
+        XCTAssertTrue(app.textViews["rehearsal-response"].value as? String == "Ramos sent the final into extra time.")
+        tap("rehearsal-check");XCTAssertTrue(app.staticTexts["rehearsal-original"].label.contains("Ramos sent"))
+        XCTAssertFalse(app.buttons["rehearsal-finish"].isEnabled)
+        for (index,label) in ["I included this","I missed this","I'm unsure"].enumerated() {tap("rehearsal-reflection-\(index)");app.buttons[label].tap()}
+        tap("rehearsal-finish");XCTAssertTrue(app.staticTexts["rehearsal-complete"].exists)
+        app.navigationBars.buttons.element(boundBy:0).tap();tap("rehearsal-history")
+        XCTAssertTrue(app.staticTexts["The opponent: Included"].exists);XCTAssertTrue(app.staticTexts["The year: Missed"].exists);XCTAssertTrue(app.staticTexts["The equalizer: Unsure"].exists)
+        let saved=XCTAttachment(screenshot:app.screenshot());saved.name="Saved coverage explanation";saved.lifetime = .keepAlways;add(saved)
+        app.tabBars.buttons["Learn"].tap();XCTAssertEqual(app.otherElements["streak-badge"].label,"1 active day streak")
+        let flame=XCTAttachment(screenshot:app.screenshot());flame.name="Procedural streak flame";flame.lifetime = .keepAlways;add(flame)
+    }
+    func testAloudRehearsalAtLargestTextNeedsExplicitReflection() {
+        app.launchArguments=["-ui-testing","-reset-test-state","-test-now","1800000000","-UIPreferredContentSizeCategoryName","UICTContentSizeCategoryAccessibilityXXXL"];app.launch()
+        tap("choose-XT");app.tabBars.buttons["Practice"].tap();tap("rehearsal-open");tap("rehearsal-topic-lesson-madrid-ramos-honours")
+        app.segmentedControls["rehearsal-mode"].buttons["Say it aloud"].tap()
+        XCTAssertFalse(app.buttons["rehearsal-check"].isEnabled)
+        app.switches["rehearsal-explained"].tap();tap("rehearsal-check")
+        for index in 0..<3 {tap("rehearsal-reflection-\(index)");app.buttons["I missed this"].tap()}
+        let shot=XCTAttachment(screenshot:app.screenshot());shot.name="Large text rehearsal reflection";shot.lifetime = .keepAlways;add(shot)
+        tap("rehearsal-finish");XCTAssertTrue(app.staticTexts["rehearsal-complete"].exists)
+    }
     func testTimelineWrongOrderResumeRestartAndIndependentCompletion() {
         start();tap("choose-XT");app.tabBars.buttons["Games"].tap();tap("game-timeline")
         XCTAssertTrue(app.staticTexts["timeline-title"].label.contains("Xolos"))
@@ -71,22 +127,23 @@ final class FlowTests: XCTestCase {
     }
     func testPlayerRoadmapSharedProgressOptionalContextAndPersistence() {
         start();tap("choose-XT");choosePlayer("Sergio Ramos","ramos")
-        XCTAssertTrue(app.staticTexts["roadmap-progress"].label.contains("0 of 1 starter lessons"))
+        XCTAssertTrue(app.staticTexts["roadmap-progress"].label.contains("0 of 2 starter lessons"))
         XCTAssertTrue(app.staticTexts["daily-lesson-subject"].label.contains("Sergio Ramos · Your roadmap"))
         completeLesson("lesson-madrid-ramos")
+        completeLesson("lesson-madrid-ramos-honours")
         XCTAssertTrue(app.staticTexts["Your player starter is complete."].exists)
-        XCTAssertTrue(app.staticTexts["roadmap-progress"].label.contains("1 of 1 starter lessons"))
+        XCTAssertTrue(app.staticTexts["roadmap-progress"].label.contains("2 of 2 starter lessons"))
         XCTAssertTrue(app.staticTexts["roadmap-optional-progress"].label.contains("0 of 1 optional"))
         app.terminate();start(reset:false)
         XCTAssertTrue(app.staticTexts["Sergio Ramos"].exists)
         tap("switch-club");let search=app.searchFields.firstMatch;search.tap();search.typeText("Real Madrid");tap("club-entity-madrid")
-        XCTAssertTrue(app.staticTexts["roadmap-progress"].label.contains("1 of 6 lessons"))
+        XCTAssertTrue(app.staticTexts["roadmap-progress"].label.contains("2 of 9 lessons"))
         choosePlayer("Sergio Ramos","ramos")
         completeLesson("lesson-madrid-decima")
-        XCTAssertTrue(app.staticTexts["roadmap-progress"].label.contains("1 of 1 starter lessons"))
+        XCTAssertTrue(app.staticTexts["roadmap-progress"].label.contains("2 of 2 starter lessons"))
         XCTAssertTrue(app.staticTexts["roadmap-optional-progress"].label.contains("1 of 1 optional"))
         app.terminate();start(reset:false,now:1_800_000_000+86401)
-        XCTAssertTrue(app.staticTexts["daily-due-count"].label.contains("5 ready"))
+        XCTAssertTrue(app.staticTexts["daily-due-count"].label.contains("8 ready"))
         let shot=XCTAttachment(screenshot:app.screenshot());shot.name="Player starter progress";shot.lifetime = .keepAlways;add(shot)
     }
     func testPlayerRoadmapAlbumEntryAndExplicitSelection() {

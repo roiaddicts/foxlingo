@@ -65,7 +65,7 @@ struct LearnView: View {
             if let pack=model.pack, let r=model.roadmap {
                 let club=pack.entity(r.entityID),progress=RoadmapProgress.make(roadmap:r,pack:pack,state:model.state)
                 VStack(alignment:.leading,spacing:26) {
-                    HStack { Text("foxlingo").font(.system(.title,design:.rounded,weight:.black)); Spacer(); Label("\(model.state.streak.current(at:model.now,zone:model.state.homeTimeZone))",systemImage:"flame.fill").font(.headline).foregroundStyle(Palette.brand).accessibilityLabel("\(model.state.streak.current(at:model.now,zone:model.state.homeTimeZone)) active day streak") }
+                    HStack { Text("foxlingo").font(.system(.title,design:.rounded,weight:.black)); Spacer(); StreakBadge(days:model.state.streak.current(at:model.now,zone:model.state.homeTimeZone)) }
                     if typeSize.isAccessibilitySize {
                         VStack(alignment:.leading,spacing:16) {
                             HStack(spacing:14) {ClubMark(club:club);Eyebrow(text:club.type == "player" ? "Player starter" : "Your roadmap")}

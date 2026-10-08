@@ -123,6 +123,8 @@ graph=json.loads((ROOT/'content/graph-connections.json').read_text())
 pack['entities'] += graph['entities']
 pack['relationships'] = graph['relationships']
 pack['roadmaps'] += json.loads((ROOT/'content/player-roadmaps.json').read_text())
+from merge_favorites import merge as merge_favorites
+merge_favorites(pack)
 # Artwork-only subjects and aliases resolve every authored club/player answer.
 # Seed namespaces are kept explicit; these subjects add no career claims or cards.
 pack['entities'] += [
@@ -131,7 +133,7 @@ pack['entities'] += [
 for key,aliases in {'entity-leon':['León','Leon'], 'entity-pumas':['Pumas'], 'entity-bayern-munich':['Bayern Munich'], 'entity-manchester-united':['Manchester United']}.items():
  entity=next(e for e in pack['entities'] if e['key']==key)
  entity['aliases']=list(dict.fromkeys(entity['aliases']+aliases))
-pack['contentVersion']=5
+pack['contentVersion']=6
 # Promote explicitly authored country values into canonical targets. Preserve
 # fact/objective IDs, wording, scope and revision: the taught claim is unchanged.
 flags=json.loads((ROOT/'content/country-artwork.json').read_text())
@@ -156,3 +158,5 @@ print(f'{len(pack["lessons"])} lessons, {len(pack["objectives"])} unique objecti
 (ROOT/"Foxlingo/Resources/memory-en.json").write_text((ROOT/"content/memory-pairs.json").read_text())
 
 (ROOT/"Foxlingo/Resources/timeline-en.json").write_text((ROOT/"content/timeline-rounds.json").read_text())
+
+(ROOT/"Foxlingo/Resources/rehearsal-en.json").write_text((ROOT/"content/rehearsal-prompts.json").read_text())

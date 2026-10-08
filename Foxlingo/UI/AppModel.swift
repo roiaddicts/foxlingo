@@ -3,6 +3,8 @@ import SwiftUI
 @MainActor final class AppModel: ObservableObject {
     @Published var pack: ContentPack?
     @Published var state = LearnerState()
+    @Published var rehearsalTopics: [RehearsalTopic] = []
+    @Published var rehearsalError: String?
     @Published var timelines: [TimelineRound] = []
     @Published var timelineError: String?
     @Published var memoryPairs: [MemoryGamePair] = []
@@ -84,10 +86,18 @@ import SwiftUI
                 if timelines.count < (try JSONDecoder().decode([TimelineDefinition].self,from:data)).count {timelineError="Some stories need refreshed evidence. Available timelines are ready to play."}
             } catch {timelineError=error.localizedDescription}
         }
+        if let pack {
+            do {
+                guard let url=Bundle.main.url(forResource:"rehearsal-en",withExtension:"json") else {throw ContentError.invalid("Rehearsal stories are missing.")}
+                rehearsalTopics=try RehearsalTopic.load(Data(contentsOf:url),pack:pack)
+            } catch {rehearsalError=error.localizedDescription}
+        }
         do {
             let restored = try store.loadWithNotice()
             state = restored.state ?? LearnerState()
+            state.reconcileRehearsals(rehearsalTopics,now:now)
             message = restored.notice
+            if (state.rehearsals?.discardedDrafts ?? 0) > 0 {message="A rehearsal draft could not be opened. Your learning history is preserved."}
             if let pack {
                 if state.installedContentVersion != pack.contentVersion {
                     let previous=contentCache?.previousPack(version:state.installedContentVersion ?? contentCache?.bundled.contentVersion)

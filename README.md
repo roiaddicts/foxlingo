@@ -1,6 +1,6 @@
 # Foxlingo
 
-An offline-first iPhone football-learning app with **68 club roadmaps**, **six player starters**, **78 JSON-authored lessons**, **74 collectible cards**, a small leopard companion, spaced reviews, and forgiving streaks. Xolos and Real Madrid keep their deeper six-lesson courses; every other club has a three-fact introductory lesson.
+An offline-first iPhone football-learning app with **68 club roadmaps**, **six player starters**, **82 JSON-authored lessons**, **74 collectible cards**, a small leopard companion, spaced reviews, and forgiving streaks. Xolos has seven lessons and Real Madrid has nine; every other club has a three-fact introductory lesson.
 
 The catalog covers the **2026/27 Champions League league phase**, **2026/27 Bundesliga**, and **Liga MX Apertura 2026**, verified as snapshots on October 8, 2026. The Games tab offers **football bingo**, a **club × country grid**, **four classic Real Madrid lineup challenges**, **Who am I?** with six sourced featured players, **Memory match**, and illustrated **Football timelines** for Xolos and Madrid.
 
@@ -19,7 +19,8 @@ Minimum iOS: **17.0**. The project uses SwiftUI and Apple's frameworks, with no 
 - `Foxlingo/Resources/starter-en.json` is the bundled, validated English curriculum.
 - `scripts/build_content.py` rebuilds it with stable UUIDs. Facts retain official source references and historical scope.
 - `scripts/inventory_seeds.py` inventories embedded Futbol11 JSON without executing the source bundle. The report is `ref/seed-inventory.json`.
-- The initial 36 favorite-club objective slots share one Ramos equalizer objective. The expanded curriculum totals **233 unique review memories**.
+- The initial 36 favorite-club objective slots share one Ramos equalizer objective. The expanded curriculum totals **245 unique review memories**.
+- `content/favorites-enrichment.json` adds four sourced stories: Casillas’s honours, Ramos’s trophy record, Xolos’s early climb, and Madrid’s European titles from 2018 through 2024. Existing lesson IDs and earned tiers remain intact. See [source notes](content/favorites-enrichment-notes.md).
 - `content/club-expansion.json` contains sourced club lesson drafts; `scripts/merge_expansion.py` compiles them into the starter pack without replacing existing progress IDs.
 - `Foxlingo/Resources/games-en.json` contains 2,300 namespaced player records, category relationships, and season squad positions. `scripts/build_games.py` extracts them deterministically.
 - `content/club-artwork.json` and `Foxlingo/Resources/artwork-manifest.json` record badge and portrait provenance. Selected artwork is bundled; other seed portraits load over HTTPS with initials as an offline fallback.
@@ -69,6 +70,14 @@ Learn suggests a short review across all learned clubs, an unfinished lesson, or
 
 Open **Practice → Prepare with two clubs**. Choose two distinct canonical clubs without changing the main roadmap. The pack gathers their supported stories and fact scopes with source links. It is a historical comparison, not an upcoming fixture or a current squad briefing. New facts link to lessons; recall includes only learned objectives at the current revision. Short decks rotate while balancing the selected clubs and deduplicating shared objectives. Facts opened during this preparation visit count as assisted rehearsal: they cannot earn independent recall credit or change a due schedule. Other due answers update normally; the result reports how many scheduled reviews actually changed. Answers save immediately, but leaving an unfinished recall session starts a fresh rotating deck next time.
 
+### Coverage rehearsal
+
+Practice → Rehearse a football story, or Rehearse these stories inside a club comparison, offers six illustrated prompts. Explain from memory in a written note or aloud, then reveal three sourced anchors and explicitly mark each as included, missed, or unsure. Original and optional revised explanations save locally; unfinished notes restore after reopening. Saved explanations retain their prompt and reflections even when a story is updated or retired. The aloud option records no audio and uses self-reflection, without model grading.
+
+Finishing counts as streak activity, without changing due dates or card mastery. Revealing anchors or reading saved notes marks those facts as assisted for recall in the same preparation visit. Definitions live in `content/rehearsal-prompts.json`; see [rehearsal authoring](docs/rehearsals.md).
+
+The streak uses a small, continuously drawn flame. It pauses when hidden or inactive and displays a static flame under Reduce Motion or Low Power Mode.
+
 ### Album collections
 
 The album starts with Xolos and Real Madrid. Switch to a competition or all clubs, search club/player names, or show discovered cards only. Collection totals stay fixed while filtering, and shared cards count once. Each card states its depth: a three-connection introduction, club foundations, or a player story.
@@ -85,9 +94,9 @@ Graph coverage is limited to this library. A missing path means no supported pat
 
 ### Player roadmaps
 
-Open Learn's roadmap chooser and select **Players**, or open a player roadmap from its album card. Riascos, Arce, Saucedo, Ronaldo, Ramos, and Casillas each have a three-memory starter and a separately counted optional club-history chapter. These starters organize the existing sourced curriculum; they are not full career courses or new statistics datasets. The definitions live in `content/player-roadmaps.json` and compile into the same JSON pack.
+Open Learn's roadmap chooser and select **Players**, or open a player roadmap from its album card. Riascos, Arce, Saucedo and Ronaldo each have a three-memory starter. Ramos and Casillas now have two required lessons and six memories each, including their honours. Every player path has a separately counted optional club-history chapter. These are introductory courses rather than complete career timelines. The definitions live in `content/player-roadmaps.json` and compile into the same JSON pack.
 
-Player selection persists while preserving the preferred club. Required completion excludes optional chapters; daily plans stop recommending new player lessons when the starter is finished. An intentionally interrupted optional lesson can still resume. Shared lesson UUIDs mean club and player paths share completion, saved sessions, cards, and one coordinated recall queue. For Ramos, the starter and optional final together introduce five unique memories rather than six. Club browsers, album competition collections, and comparison packs continue using only club roadmaps.
+Player selection persists while preserving the preferred club. Required completion excludes optional chapters; daily plans stop recommending new player lessons when the starter is finished. An intentionally interrupted optional lesson can still resume. Shared lesson UUIDs mean club and player paths share completion, saved sessions, cards, and one coordinated recall queue. For Ramos, the two required lessons and optional final together introduce eight unique memories; the equalizer is shared between paths. Club browsers, album competition collections, and comparison packs continue using only club roadmaps.
 
 Roadmaps may specify a canonical `subjectID`; older club-only JSON falls back to `clubID`. A contextual `clubID` remains required, and a club subject must match it. Chapters may specify `isOptional` and explanatory `note` text. Opening a linked player roadmap from a card counts as preview for that card visit's practice.
 

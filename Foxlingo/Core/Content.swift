@@ -170,9 +170,9 @@ public struct ContentPack: Codable, Sendable {
             }
         }
         for l in lessons {
-            try require(l.story.count == 2 && l.objectiveIDs.count == 3 && Set(l.objectiveIDs).count == 3 && Set(l.objectiveIDs).isSubset(of:oi) && l.exerciseIDs.count == 5 && Set(l.exerciseIDs).isSubset(of:xi), "Invalid lesson \(l.key).")
+            try require(l.story.count == 2 && l.objectiveIDs.count == 3 && Set(l.objectiveIDs).count == 3 && Set(l.objectiveIDs).isSubset(of:oi) && (4...5).contains(l.exerciseIDs.count) && Set(l.exerciseIDs).count == l.exerciseIDs.count && Set(l.exerciseIDs).isSubset(of:xi), "Invalid lesson \(l.key).")
             let activities = l.exerciseIDs.map(exercise)
-            try require(activities.filter { $0.kind == "choice" }.count == 4 && activities.filter { $0.kind == "match" }.count == 1 && Set(activities.flatMap(\.objectiveIDs)) == Set(l.objectiveIDs), "Incomplete assessment \(l.key).")
+            try require(activities.filter { $0.kind == "choice" }.count == 4 && activities.filter { $0.kind == "match" }.count == activities.count-4 && Set(activities.flatMap(\.objectiveIDs)) == Set(l.objectiveIDs), "Incomplete assessment \(l.key).")
         }
         try require(Set(roadmaps.map(\.entityID)).count == roadmaps.count,"Duplicate roadmap subjects.")
         for r in roadmaps {

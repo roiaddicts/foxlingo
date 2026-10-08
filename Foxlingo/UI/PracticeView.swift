@@ -10,6 +10,7 @@ struct PracticeRoute: Identifiable, Hashable {
 struct PracticeHome: View {
     @EnvironmentObject var model: AppModel
     @State private var route: PracticeRoute?
+    @State private var rehearsalPreviewed=Set<UUID>()
     var body: some View {
         ScrollView {
             VStack(alignment:.leading,spacing:24) {
@@ -20,19 +21,20 @@ struct PracticeHome: View {
                 if !model.due.isEmpty {
                     Text("\(model.studyPlan?.totalDue ?? 0) memories\nready to revisit.").font(.title.bold())
                     Text("\(model.due.count) in this session, across your clubs. No timer, no pressure. The rest can wait.").foregroundStyle(Palette.muted)
-                    Button { route=PracticeRoute(model.due,dueMode:true) } label: { HStack {Text("Start review").font(.headline);Spacer();Image(systemName:"arrow.right")}.padding(18).background(Palette.brand,in:RoundedRectangle(cornerRadius:18)).foregroundStyle(.white) }.accessibilityIdentifier("start-review")
+                    Button { route=PracticeRoute(model.due,dueMode:true,assistedObjectiveIDs:rehearsalPreviewed) } label: { HStack {Text("Start review").font(.headline);Spacer();Image(systemName:"arrow.right")}.padding(18).background(Palette.brand,in:RoundedRectangle(cornerRadius:18)).foregroundStyle(.white) }.accessibilityIdentifier("start-review")
                 } else if let p=model.pack {
                     let learned=(model.studyPlan?.rehearsalObjectiveIDs ?? []).map(p.objective)
                     Text(learned.isEmpty ? "Your first memories\nstart with a lesson." : "You're all caught up.").font(.title.bold())
                     Text(learned.isEmpty ? "Choose Xolos or Madrid in Learn, then come back for recall." : "Your memories are resting. You can rehearse now, or wait until they're due.").foregroundStyle(Palette.muted)
                     if !learned.isEmpty {
                         if let next=model.state.reviews.values.map(\.due).min() { Text("Next review: \(next.formatted(date:.abbreviated,time:.shortened))").font(.subheadline) }
-                        Button {route=PracticeRoute(learned,dueMode:false)} label:{Label("Optional practice",systemImage:"play.fill").font(.headline)}.accessibilityIdentifier("optional-practice")
+                        Button {route=PracticeRoute(learned,dueMode:false,assistedObjectiveIDs:rehearsalPreviewed)} label:{Label("Optional practice",systemImage:"play.fill").font(.headline)}.accessibilityIdentifier("optional-practice")
                     }
                 }
                 if let p=model.pack,let plan=model.studyPlan,!plan.mistakeObjectiveIDs.isEmpty {
-                    Button {route=PracticeRoute(plan.mistakeObjectiveIDs.map(p.objective),dueMode:false)} label:{Label("Recent tricky connections",systemImage:"lightbulb").font(.headline).frame(minHeight:44)}.accessibilityIdentifier("practice-mistakes")
+                    Button {route=PracticeRoute(plan.mistakeObjectiveIDs.map(p.objective),dueMode:false,assistedObjectiveIDs:rehearsalPreviewed)} label:{Label("Recent tricky connections",systemImage:"lightbulb").font(.headline).frame(minHeight:44)}.accessibilityIdentifier("practice-mistakes")
                 }
+                NavigationLink {RehearsalLibrary(onPreview:{rehearsalPreviewed.formUnion($0)})} label: {Label("Rehearse a football story",systemImage:"text.bubble").font(.headline).frame(minHeight:44)}.buttonStyle(PressFeedback()).accessibilityIdentifier("rehearsal-open")
                 NavigationLink {CoverageView()} label: {
                     HStack(spacing:14) {Image(systemName:"books.vertical").font(.title2);VStack(alignment:.leading,spacing:5) {Text("Prepare with two clubs").font(.headline);Text("Sourced stories and mixed recall").font(.subheadline).foregroundStyle(Palette.muted)};Spacer();Image(systemName:"chevron.right").font(.caption)}.padding(18).background(.white.opacity(0.75),in:RoundedRectangle(cornerRadius:18)).contentShape(Rectangle())
                 }.buttonStyle(PressFeedback()).accessibilityIdentifier("coverage-open")
@@ -41,7 +43,7 @@ struct PracticeHome: View {
                 Text("Finding an answer in memory builds a different skill from recognizing it on a screen. Card upgrades come from successful recall when reviews are due.").foregroundStyle(Palette.muted)
             }.padding(24)
         }.journal().navigationBarTitleDisplayMode(.inline)
-        .navigationDestination(item:$route) { r in if let p=model.pack {PracticeSession(objectives:r.objectiveIDs.map(p.objective),dueMode:r.dueMode)} }
+        .navigationDestination(item:$route) { r in if let p=model.pack {PracticeSession(objectives:r.objectiveIDs.map(p.objective),dueMode:r.dueMode,assistedObjectiveIDs:r.assistedObjectiveIDs,previewContext:"the story rehearsal")} }
     }
 }
 struct PracticeSession: View {
