@@ -28,7 +28,8 @@ Minimum iOS: **17.0**. The project uses SwiftUI and Apple's frameworks, with no 
 - Free-text recall uses authored aliases after case, accent, and whitespace normalization. Game search selects a concrete player ID, then checks exact category intersections or squad membership and position; there are no embeddings or model calls.
 - Learning progress is stored locally in Application Support. Writes are atomic; recovery preserves damaged saves and can restore the previous working save.
 - Fact values distinguish entity relationships, numbers with units, text, and historical dates.
-- Content updates must preserve identifiers and increment an objective's revision when its meaning changes.
+- Settings → Lesson updates imports a newer full curriculum JSON through Files or a supplied HTTPS manifest. Updates are validated and cached separately from progress, then activate after quitting Foxlingo from the app switcher and reopening. Compatible previous versions can be restored; earned history remains. No feed is published by default.
+- Content updates must preserve identifiers and increment an objective's revision when its meaning changes. See [content update authoring and recovery](docs/content-updates.md) for the manifest format, bounds, migration rules, and local manifest tool.
 - A review session keeps its starting deck stable while the due queue updates behind it.
 
 ## Checks

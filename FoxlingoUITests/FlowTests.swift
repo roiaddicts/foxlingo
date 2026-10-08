@@ -200,6 +200,48 @@ final class FlowTests: XCTestCase {
         let bingo=XCTAttachment(screenshot:app.screenshot());bingo.name="Football bingo";bingo.lifetime = .keepAlways;add(bingo)
     }
 
+    func testLessonUpdateActivatesNextLaunchAndRestartsChangedResume() {
+        start();tap("choose-XT");completeLesson("lesson-xolos-identity")
+        tap("lesson-xolos-identity");tap("lesson-next");tap("lesson-next")
+        for _ in 0..<4 {tap("answer-choice-0");tap("answer-next")}
+        tap("match-l-0");tap("match-r-0")
+        XCTAssertEqual(app.buttons["match-l-0"].value as? String,"Matched")
+        app.terminate()
+        app.launchArguments=["-ui-testing","-test-now","1800000000","-stage-test-lessons"];app.launch()
+        app.tabBars.buttons["Album"].tap();app.buttons["Settings"].tap();tap("lesson-updates")
+        XCTAssertTrue(app.descendants(matching:.any)["lesson-installed-version"].firstMatch.exists)
+        XCTAssertEqual(app.descendants(matching:.any)["lesson-installed-version"].firstMatch.value as? String,"Version 5")
+        XCTAssertTrue(app.descendants(matching:.any)["lesson-update-staged"].firstMatch.exists)
+        let staged=XCTAttachment(screenshot:app.screenshot());staged.name="Lesson update waiting";staged.lifetime = .keepAlways;add(staged)
+        app.terminate();start(reset:false)
+        tap("lesson-xolos-identity")
+        XCTAssertTrue(app.staticTexts["Updated story fixture"].exists)
+        XCTAssertFalse(app.buttons["match-l-0"].exists)
+        app.navigationBars.buttons["Close lesson"].tap()
+        app.tabBars.buttons["Album"].tap();app.buttons["Settings"].tap();tap("lesson-updates")
+        XCTAssertEqual(app.descendants(matching:.any)["lesson-installed-version"].firstMatch.value as? String,"Version 6")
+        tap("lesson-rollback")
+        app.buttons["Restore on next launch"].tap()
+        app.swipeDown();app.swipeDown()
+        XCTAssertTrue(app.descendants(matching:.any)["lesson-update-staged"].firstMatch.exists)
+        app.terminate();start(reset:false)
+        app.tabBars.buttons["Album"].tap();app.buttons["Settings"].tap();tap("lesson-updates")
+        XCTAssertEqual(app.descendants(matching:.any)["lesson-installed-version"].firstMatch.value as? String,"Version 5")
+        XCTAssertTrue(app.staticTexts["lesson-update-message"].label.lowercased().contains("earned cards"))
+        let restored=XCTAttachment(screenshot:app.screenshot());restored.name="Lesson rollback installed";restored.lifetime = .keepAlways;add(restored)
+    }
+
+    func testUpdatedLibraryOnboardsWithoutFavoriteRoadmaps() {
+        app.launchArguments=["-ui-testing","-reset-test-state","-stage-test-lessons","-test-library-without-favorites"];app.launch()
+        app.terminate();start(reset:false)
+        XCTAssertFalse(app.buttons["choose-XT"].exists);XCTAssertFalse(app.buttons["choose-RM"].exists)
+        let choice=app.buttons.matching(NSPredicate(format:"identifier BEGINSWITH %@","choose-")).firstMatch
+        XCTAssertTrue(choice.waitForExistence(timeout:5));choice.tap()
+        XCTAssertTrue(app.tabBars.buttons["Learn"].exists)
+        XCTAssertTrue(app.buttons.matching(NSPredicate(format:"identifier BEGINSWITH %@","lesson-")).firstMatch.exists)
+        let shot=XCTAttachment(screenshot:app.screenshot());shot.name="Updated library club fallback";shot.lifetime = .keepAlways;add(shot)
+    }
+
     func testExpandedClubLibraryAndStarterLesson() {
         start();tap("choose-XT");tap("switch-club")
         let search=app.searchFields.firstMatch

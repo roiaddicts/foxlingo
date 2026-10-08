@@ -31,19 +31,22 @@ struct RootView: View {
 struct WelcomeView: View {
     let pack: ContentPack
     @EnvironmentObject var model: AppModel
+    private var startingClubs: [Entity] {
+        let favorites=pack.clubRoadmaps.map {pack.entity($0.entityID)}.filter {$0.key == "entity-xolos" || $0.key == "entity-madrid"}
+        return favorites.isEmpty ? pack.clubRoadmaps.prefix(2).map {pack.entity($0.entityID)} : favorites
+    }
     var body: some View {
         ScrollView {
             VStack(alignment:.leading,spacing:22) {
                 HStack { Text("foxlingo").font(.system(.largeTitle,design:.rounded,weight:.black)); Spacer(); Image(systemName:"soccerball").font(.title2) }
                 Leopard().frame(height:130).frame(maxWidth:.infinity)
                 Eyebrow(text:"Your football story starts here")
-                Text("Two favorite clubs.\nA world to learn.").font(.system(.largeTitle,design:.rounded,weight:.bold))
+                Text(startingClubs.count == 2 && startingClubs.allSatisfy({["entity-xolos","entity-madrid"].contains($0.key)}) ? "Two favorite clubs.\nA world to learn." : "Choose a club.\nA world to learn.").font(.system(.largeTitle,design:.rounded,weight:.bold))
                 Text("Short stories, playful practice, and a collection that grows with what you remember.").foregroundStyle(Palette.muted)
                 Text("Where shall we start?").font(.headline)
-                ForEach(pack.roadmaps.filter { ["roadmap-xolos","roadmap-madrid"].contains($0.key) }) { r in
-                    let club = pack.entity(r.clubID)
+                ForEach(startingClubs) { club in
                     Button { model.select(club.id) } label: {
-                        HStack(spacing:16) { ClubMark(club:club,size:52); VStack(alignment:.leading,spacing:4) { Text(club.visual == "XT" ? "Xolos" : club.name).font(.title3.bold()); Text(club.visual == "XT" ? "Club Tijuana · Mexico" : "Real Madrid · Spain").font(.subheadline).foregroundStyle(Palette.muted) }; Spacer(); Image(systemName:"arrow.right") }.padding(16).background(.white.opacity(0.7),in:RoundedRectangle(cornerRadius:20))
+                        HStack(spacing:16) { ClubMark(club:club,size:52); VStack(alignment:.leading,spacing:4) { Text(club.visual == "XT" ? "Xolos" : club.name).font(.title3.bold()); Text(club.key == "entity-xolos" ? "Club Tijuana · Mexico" : club.key == "entity-madrid" ? "Real Madrid · Spain" : "Start the club story").font(.subheadline).foregroundStyle(Palette.muted) }; Spacer(); Image(systemName:"arrow.right") }.padding(16).background(.white.opacity(0.7),in:RoundedRectangle(cornerRadius:20))
                     }.buttonStyle(.plain).accessibilityIdentifier("choose-\(club.visual)")
                 }
                 Text("You can switch clubs anytime. About 3 minutes per lesson.").font(.footnote).foregroundStyle(Palette.muted)

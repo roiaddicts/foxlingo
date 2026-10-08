@@ -21,7 +21,7 @@ struct ExplorerView: View {
     @State private var inspecting: GraphEdge?
     var body: some View {
         ScrollView {
-            if let pack=model.pack,let focus=focusID ?? initialID ?? pack.entities.first(where:{$0.key == "entity-madrid"})?.id {
+            if let pack=model.pack,let focus=focusID ?? initialID ?? pack.entities.first(where:{$0.key == "entity-madrid"})?.id ?? pack.entities.first?.id {
                 let graph=KnowledgeGraph(pack:pack),entity=pack.entity(focus),nearby=graph.neighbors(of:focus,groups:lens.groups)
                 VStack(alignment:.leading,spacing:24) {
                     if typeSize.isAccessibilitySize {

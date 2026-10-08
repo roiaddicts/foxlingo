@@ -9,6 +9,10 @@ import AudioToolbox
     @Published var message: String?
     @Published var contentError: String?
     @Published var recoveryRequired = false
+    @Published var updateMessage: String?
+    @Published var stagedVersion: Int?
+    @Published var rollbackVersion: Int?
+    private var contentCache: ContentCache?
     private let store: StateStore
     var now: Date {
         #if DEBUG
@@ -26,11 +30,36 @@ import AudioToolbox
         store = StateStore(directory:base)
         #endif
         load()
+        #if DEBUG
+        if args.contains("-ui-testing"),args.contains("-stage-test-lessons"),let cache=contentCache,let pack {
+            do {
+                var json=try JSONSerialization.jsonObject(with:cache.bundledData) as! [String:Any]
+                json["contentVersion"]=pack.contentVersion+1
+                var lessons=json["lessons"] as! [[String:Any]]
+                var story=lessons[0]["story"] as! [[String:String]]
+                story[0]["title"]="Updated story fixture";lessons[0]["story"]=story;json["lessons"]=lessons
+                if args.contains("-test-library-without-favorites") {
+                    json["roadmaps"]=(json["roadmaps"] as! [[String:Any]]).filter {!["roadmap-xolos","roadmap-madrid"].contains($0["key"] as! String)}
+                }
+                try cache.stage(JSONSerialization.data(withJSONObject:json),active:pack)
+                refreshUpdateStatus();updateMessage="Test lesson version is waiting for next launch."
+            } catch {updateMessage=error.localizedDescription}
+        }
+        #endif
     }
     func load() {
         do {
             guard let url = Bundle.main.url(forResource:"starter-en",withExtension:"json") else { throw ContentError.invalid("The starter lessons are missing.") }
-            pack = try FileContentRepository(url:url).load()
+            let bundledData=try Data(contentsOf:url)
+            let contentBase=store.directory.deletingLastPathComponent().appendingPathComponent(store.directory.lastPathComponent == "UITest" ? "ContentUITest" : "FoxlingoContent")
+            contentCache=try ContentCache(directory:contentBase,bundledData:bundledData)
+            #if DEBUG
+            if ProcessInfo.processInfo.arguments.contains("-reset-test-state") {try? FileManager.default.removeItem(at:contentBase)}
+            #endif
+            do {
+                let result=try contentCache!.load();pack=result.pack;updateMessage=result.notice
+            } catch {pack=try ContentPack.load(bundledData);updateMessage="Saved lesson updates could not be opened. Bundled lessons are available: \(error.localizedDescription)"}
+            refreshUpdateStatus()
         } catch { contentError = error.localizedDescription; return }
         do {
             guard let url=Bundle.main.url(forResource:"games-en",withExtension:"json") else {throw ContentError.invalid("Game content is missing.")}
@@ -40,7 +69,14 @@ import AudioToolbox
             let restored = try store.loadWithNotice()
             state = restored.state ?? LearnerState()
             message = restored.notice
-            if let pack { state.reconcile(pack,now:now) }
+            if let pack {
+                if state.installedContentVersion != pack.contentVersion {
+                    let previous=contentCache?.previousPack(version:state.installedContentVersion ?? contentCache?.bundled.contentVersion)
+                    if restored.state != nil {try store.archiveBeforeContentUpdate(state)}
+                    let retired=state.migrateContent(from:previous,to:pack,now:now)
+                    if retired > 0 {updateMessage="Updated lessons are ready. \(retired) unfinished \(retired == 1 ? "lesson will" : "lessons will") restart; previous attempts are archived. Earned cards are preserved."}
+                } else {state.reconcile(pack,now:now)}
+            }
             if restored.state != nil && restored.notice == nil {save()}
         } catch { recoveryRequired = true; message = error.localizedDescription }
     }
@@ -59,6 +95,39 @@ import AudioToolbox
             state = LearnerState(); recoveryRequired = false; message = nil; save()
         } catch { message = error.localizedDescription }
     }
+    var updateAddress: String {
+        get {guard let cache=contentCache else {return ""};return (try? String(contentsOf:cache.directory.appendingPathComponent("feed.txt"),encoding:.utf8)) ?? ""}
+    }
+    func saveUpdateAddress(_ value: String) throws {
+        let address=value.trimmingCharacters(in:.whitespacesAndNewlines)
+        if !address.isEmpty {_ = try ContentUpdateRules.https(address)}
+        guard let cache=contentCache else {throw ContentError.invalid("Lesson storage is unavailable.")}
+        try FileManager.default.createDirectory(at:cache.directory,withIntermediateDirectories:true)
+        try address.write(to:cache.directory.appendingPathComponent("feed.txt"),atomically:true,encoding:.utf8)
+    }
+    private func refreshUpdateStatus() {stagedVersion=contentCache?.pendingVersion;rollbackVersion=contentCache?.previousVersion}
+    func importLessons(_ data: Data) async throws {
+        guard let cache=contentCache,let pack else {throw ContentError.invalid("Lesson storage is unavailable.")}
+        let work=Task.detached {try Task.checkCancellation();try cache.stage(data,active:pack)}
+        try await withTaskCancellationHandler(operation:{try await work.value},onCancel:{work.cancel()})
+        refreshUpdateStatus()
+        updateMessage="Version \(stagedVersion ?? 0) is waiting. Quit Foxlingo from the app switcher, then reopen it to use this version."
+    }
+    func checkForLessons(_ address: String) async throws {
+        guard let cache=contentCache else {throw ContentError.invalid("Lesson storage is unavailable.")}
+        try saveUpdateAddress(address)
+        let data=try await ContentDownload.fetch(manifestURL:address.trimmingCharacters(in:.whitespacesAndNewlines),bundled:cache.bundled)
+        try Task.checkCancellation()
+        let fetched=try ContentPack.load(data)
+        if fetched.contentVersion == pack?.contentVersion {updateMessage="Your lesson library is up to date.";return}
+        try await importLessons(data)
+    }
+    func rollbackLessons() throws {
+        guard let cache=contentCache,let pack else {throw ContentError.invalid("Lesson storage is unavailable.")}
+        try cache.stageRollback(active:pack);refreshUpdateStatus()
+        updateMessage="Previous lesson version \(stagedVersion ?? 0) will return after you quit Foxlingo from the app switcher and reopen it. Your learning history stays."
+    }
+    func cancelLessonUpdate() throws {try contentCache?.cancelPending();refreshUpdateStatus();updateMessage="The waiting update was removed. Installed lessons stay available."}
     func select(_ id: UUID) {state.selectClub(id);save()}
     func selectSubject(_ id: UUID) {if let pack,let roadmap=pack.roadmaps.first(where:{$0.entityID == id}) {state.selectRoadmap(roadmap,pack:pack);save()}}
     var roadmap: Roadmap? {pack.flatMap {state.activeRoadmap($0)}}

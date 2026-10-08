@@ -32,6 +32,7 @@ public struct LessonResume: Codable, Sendable {
 }
 public struct LearnerState: Codable, Sendable {
     public var schemaVersion = 1
+    public var installedContentVersion: Int? = nil
     public var selectedClub: UUID?
     public var selectedRoadmapID: UUID? = nil
     public var homeTimeZone: String
@@ -174,6 +175,11 @@ public struct StateStore {
               (0...1).contains(s.streak.freezes), (0..<7).contains(s.streak.daysSinceRefill), s.streak.longest >= 0,
               Set(s.sessions.map(\.id)).count == s.sessions.count else { throw SaveError.recovery("Unsupported saved progress.") }
         return s
+    }
+    public func archiveBeforeContentUpdate(_ state: LearnerState) throws {
+        try FileManager.default.createDirectory(at:directory,withIntermediateDirectories:true)
+        let file=directory.appendingPathComponent("learner-before-content-update-\(UUID().uuidString).json")
+        try JSONEncoder().encode(state).write(to:file,options:.atomic)
     }
     public func load() throws -> LearnerState? { try loadWithNotice().state }
     public func loadWithNotice() throws -> (state: LearnerState?, notice: String?) {

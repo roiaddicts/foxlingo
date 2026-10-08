@@ -153,6 +153,11 @@ struct SettingsView: View {
             Section("Album tiers") {
                 Text("Cards unlock when you complete a related lesson. Bronze, silver, gold, and diamond require independent recall when reviews are due, across every connection in the card’s set. A clean sequence reaches diamond after about 25 days.")
             }
+            Section("Lesson library") {
+                NavigationLink {ContentUpdatesView()} label: {Label("Lesson updates",systemImage:"arrow.down.circle")}.accessibilityIdentifier("lesson-updates")
+                if let version=model.pack?.contentVersion {LabeledContent("Installed version",value:String(version))}
+                if let version=model.stagedVersion {Text("Version \(version) waiting for next launch").font(.caption)}
+            }
             Section("Content & sources") {
                 Text("Club lessons checked October 8, 2026. Competition membership is a dated snapshot. Game relationships come from the supplied historical Futbol11 seed. Each lesson includes source links and context.")
                 if let p=model.pack {ForEach(p.sources) {s in if let url=URL(string:s.url){Link(s.title,destination:url)}}}
