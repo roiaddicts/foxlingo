@@ -67,6 +67,11 @@ struct FootballGameView: View {
                     }
                 }
                 if game == .lineup {
+                    HStack(spacing:12) {
+                        if let madrid=model.pack?.entities.first(where:{$0.key == "entity-madrid"}) {ClubMark(club:madrid,size:48)}
+                        Text("Real Madrid").font(.headline)
+                        Spacer()
+                    }
                     Picker("Classic squad",selection:$squadIndex) {ForEach(Array(pack.lineups.enumerated()),id:\.offset) {i,s in Text(s.title).tag(i)}}.disabled(!placed.isEmpty).accessibilityIdentifier("lineup-squad")
                     Text(squad.scope).font(.caption).foregroundStyle(Palette.muted)
                     VStack(spacing:20) {

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "key": "foxlingo-favorites-en",
-  "contentVersion": 4,
+  "contentVersion": 5,
   "language": "en",
   "entities": [
     {
@@ -339,7 +339,8 @@
       "type": "club",
       "name": "Bayern München",
       "aliases": [
-        "FC Bayern München"
+        "FC Bayern München",
+        "Bayern Munich"
       ],
       "visual": "FCB",
       "externalRefs": {},
@@ -653,7 +654,10 @@
       "key": "entity-leon",
       "type": "club",
       "name": "Club León",
-      "aliases": [],
+      "aliases": [
+        "León",
+        "Leon"
+      ],
       "visual": "CLN",
       "externalRefs": {},
       "competitions": [
@@ -723,7 +727,9 @@
       "key": "entity-manchester-united",
       "type": "club",
       "name": "Man United",
-      "aliases": [],
+      "aliases": [
+        "Manchester United"
+      ],
       "visual": "MUN",
       "externalRefs": {},
       "competitions": [
@@ -849,7 +855,9 @@
       "key": "entity-pumas",
       "type": "club",
       "name": "Pumas UNAM",
-      "aliases": [],
+      "aliases": [
+        "Pumas"
+      ],
       "visual": "PUM",
       "externalRefs": {},
       "competitions": [
@@ -1111,6 +1119,35 @@
       "visual": "2012",
       "aliases": [],
       "externalRefs": {}
+    },
+    {
+      "id": "d8cfa43a-3ba1-5946-a7f8-9c7f57a42e69",
+      "key": "entity-juventus",
+      "type": "club",
+      "name": "Juventus",
+      "aliases": [
+        "Juventus FC"
+      ],
+      "visual": "JU",
+      "externalRefs": {
+        "futbol11.dataset12": "28"
+      },
+      "imageAsset": "entity-juventus",
+      "imageURL": "https://img.uefa.com/imgml/TP/teams/logos/100x100/50139.png"
+    },
+    {
+      "id": "8dffe727-4d2b-57e0-9d4a-01cbc5c11750",
+      "key": "entity-bale",
+      "type": "player",
+      "name": "Gareth Bale",
+      "aliases": [
+        "Bale"
+      ],
+      "visual": "GB",
+      "externalRefs": {
+        "futbol11.dataset2": "9"
+      },
+      "imageAsset": "entity-bale"
     },
     {
       "id": "544551ae-f6d2-5492-8278-b79ebab76843",

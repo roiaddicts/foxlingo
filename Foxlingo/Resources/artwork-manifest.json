@@ -30,6 +30,11 @@
     "cached": true
   },
   {
+    "asset": "seed-player-9",
+    "url": "https://futbol-11.com/images/9.webp",
+    "cached": true
+  },
+  {
     "asset": "seed-player-53",
     "url": "https://futbol-11.com/images/53.png",
     "cached": true
@@ -272,6 +277,16 @@
   {
     "asset": "entity-di-stefano",
     "url": "https://i.ibb.co/ZRYfRm4z/distefano.webp",
+    "cached": true
+  },
+  {
+    "asset": "entity-bale",
+    "url": "https://futbol-11.com/images/9.webp",
+    "cached": true
+  },
+  {
+    "asset": "entity-juventus",
+    "url": "https://img.uefa.com/imgml/TP/teams/logos/100x100/50139.png",
     "cached": true
   },
   {
@@ -632,6 +647,11 @@
   {
     "asset": "flag-spain",
     "url": "https://futbol-11.com/media/flags/8.webp",
+    "cached": true
+  },
+  {
+    "asset": "flag-ecuador",
+    "url": "https://futbol-11.com/media/flags/34.webp",
     "cached": true
   },
   {

@@ -23,6 +23,7 @@ Minimum iOS: **17.0**. The project uses SwiftUI and Apple's frameworks, with no 
 - `content/club-expansion.json` contains sourced club lesson drafts; `scripts/merge_expansion.py` compiles them into the starter pack without replacing existing progress IDs.
 - `Foxlingo/Resources/games-en.json` contains 2,300 namespaced player records, category relationships, and season squad positions. `scripts/build_games.py` extracts them deterministically.
 - `content/club-artwork.json` and `Foxlingo/Resources/artwork-manifest.json` record badge and portrait provenance. Selected artwork is bundled; other seed portraits load over HTTPS with initials as an offline fallback.
+- Club, player, and country answers in authored lessons use cached badges, portraits, and flags, including all distractors. Game category clues are also bundled, and classic lineup boards show their club badge. Text facts retain their meaning and visual controls keep spoken names for accessibility.
 - Game validation ensures boards can be solved with distinct players. Undo and hints support recovery. A helped game counts toward the streak but does not advance recall stages or unlock cards.
 - Free-text recall uses authored aliases after case, accent, and whitespace normalization. Game search selects a concrete player ID, then checks exact category intersections or squad membership and position; there are no embeddings or model calls.
 - Learning progress is stored locally in Application Support. Writes are atomic; recovery preserves damaged saves and can restore the previous working save.

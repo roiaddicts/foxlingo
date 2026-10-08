@@ -197,7 +197,7 @@ public struct FileContentRepository: ContentRepository {
 }
 
 public enum AnswerArtwork {
-    public static let flags = ["spain":"flag-spain","mexico":"flag-mexico","germany":"flag-germany","brazil":"flag-brazil","portugal":"flag-portugal","argentina":"flag-argentina","france":"flag-france","england":"flag-england","colombia":"flag-colombia","austria":"flag-austria","azerbaijan":"flag-azerbaijan","belgium":"flag-belgium","greece":"flag-greece","italy":"flag-italy","netherlands":"flag-netherlands","norway":"flag-norway","slovakia":"flag-slovakia","ukraine":"flag-ukraine","uruguay":"flag-uruguay","chile":"flag-chile","czechia":"flag-czech-republic","turkiye":"flag-turkey","turkey":"flag-turkey"]
+    public static let flags = ["ecuador":"flag-ecuador","spain":"flag-spain","mexico":"flag-mexico","germany":"flag-germany","brazil":"flag-brazil","portugal":"flag-portugal","argentina":"flag-argentina","france":"flag-france","england":"flag-england","colombia":"flag-colombia","austria":"flag-austria","azerbaijan":"flag-azerbaijan","belgium":"flag-belgium","greece":"flag-greece","italy":"flag-italy","netherlands":"flag-netherlands","norway":"flag-norway","slovakia":"flag-slovakia","ukraine":"flag-ukraine","uruguay":"flag-uruguay","chile":"flag-chile","czechia":"flag-czech-republic","turkiye":"flag-turkey","turkey":"flag-turkey"]
     public static func entity(_ text: String,type: String,pack: ContentPack) -> Entity? {
         guard ["club","player"].contains(type) else {return nil}
         return pack.entities.first {e in e.type == type && e.imageAsset != nil && ([e.name]+e.aliases).contains {Recall.normalize($0) == Recall.normalize(text)} }

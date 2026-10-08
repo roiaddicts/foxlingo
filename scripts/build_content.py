@@ -123,7 +123,15 @@ graph=json.loads((ROOT/'content/graph-connections.json').read_text())
 pack['entities'] += graph['entities']
 pack['relationships'] = graph['relationships']
 pack['roadmaps'] += json.loads((ROOT/'content/player-roadmaps.json').read_text())
-pack['contentVersion']=4
+# Artwork-only subjects and aliases resolve every authored club/player answer.
+# Seed namespaces are kept explicit; these subjects add no career claims or cards.
+pack['entities'] += [
+ dict(id=uid('entity-juventus'),key='entity-juventus',type='club',name='Juventus',aliases=['Juventus FC'],visual='JU',externalRefs={'futbol11.dataset12':'28'},imageAsset='entity-juventus',imageURL='https://img.uefa.com/imgml/TP/teams/logos/100x100/50139.png'),
+ dict(id=uid('entity-bale'),key='entity-bale',type='player',name='Gareth Bale',aliases=['Bale'],visual='GB',externalRefs={'futbol11.dataset2':'9'},imageAsset='entity-bale')]
+for key,aliases in {'entity-leon':['León','Leon'], 'entity-pumas':['Pumas'], 'entity-bayern-munich':['Bayern Munich'], 'entity-manchester-united':['Manchester United']}.items():
+ entity=next(e for e in pack['entities'] if e['key']==key)
+ entity['aliases']=list(dict.fromkeys(entity['aliases']+aliases))
+pack['contentVersion']=5
 # Promote explicitly authored country values into canonical targets. Preserve
 # fact/objective IDs, wording, scope and revision: the taught claim is unchanged.
 flags=json.loads((ROOT/'content/country-artwork.json').read_text())

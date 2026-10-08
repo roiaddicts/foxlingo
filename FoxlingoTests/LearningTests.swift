@@ -75,6 +75,34 @@ final class LearningTests: XCTestCase {
         XCTAssertNotNil(AnswerArtwork.entity("Monterrey",type:"club",pack:pack))
         XCTAssertEqual(AnswerArtwork.flags["spain"],"flag-spain")
     }
+    func testEveryVisualLessonAnswerAndGameClueHasOfflineArtwork() throws {
+        let root=URL(fileURLWithPath:#filePath).deletingLastPathComponent().deletingLastPathComponent()
+        let assets=root.appendingPathComponent("Foxlingo/Resources/Assets.xcassets")
+        func cached(_ name: String) {
+            XCTAssertTrue(FileManager.default.fileExists(atPath:assets.appendingPathComponent(name+".imageset/image.png").path),name)
+        }
+        for exercise in pack.exercises {
+            if exercise.kind == "choice", let type=AnswerArtwork.type(objectiveID:exercise.objectiveIDs[0],pack:pack) {
+                for choice in exercise.choices {
+                    XCTAssertTrue(AnswerArtwork.canShow(choice.text,type:type,pack:pack),"\(exercise.key): \(choice.text)")
+                    if type == "country", let flag=AnswerArtwork.flags[Recall.normalize(choice.text)] {cached(flag)}
+                    else if let entity=AnswerArtwork.entity(choice.text,type:type,pack:pack),let asset=entity.imageAsset {cached(asset)}
+                }
+            }
+            for pair in exercise.pairs {
+                let index=exercise.left.firstIndex {$0.id == pair.left}!
+                let text=exercise.right.first {$0.id == pair.right}!.text
+                if let type=AnswerArtwork.type(objectiveID:exercise.objectiveIDs[index],pack:pack) {
+                    XCTAssertTrue(AnswerArtwork.canShow(text,type:type,pack:pack),"\(exercise.key): \(text)")
+                }
+            }
+        }
+        let games=try GamePack.load(Data(contentsOf:root.appendingPathComponent("Foxlingo/Resources/games-en.json")))
+        for category in games.categories {
+            XCTAssertNotNil(category.imageAsset,category.title)
+            if let asset=category.imageAsset {cached(asset)}
+        }
+    }
     func testMatchingScoringAndAliases() {
         let x=pack.exercises[4];XCTAssertTrue(x.accepts(left:"l-0",right:"r-0"));XCTAssertFalse(x.accepts(left:"l-0",right:"r-1"))
         let o=pack.objectives.first{$0.answers.contains("Alfredo Di Stéfano")}!

@@ -100,6 +100,8 @@ Album pages organize collections by favorite team, competition, era, national te
 
 ## The leopard and game progression
 
+Games use visual clues by default: national flags for countries, badges for clubs, and portraits for players. Names remain available to VoiceOver and as a fallback when artwork is unavailable. Dates, scores, cities, nicknames, and other literal facts keep their text; a city must never be mistaken for a same-named club. Every authored visual answer, including distractors, should have cached artwork so one image does not reveal the correct choice.
+
 A leopard mascot is the companion throughout the experience. It introduces stories, offers hints, reacts to answers, celebrates milestones, and welcomes her back. Its personality is playful, knowledgeable, and supportive. Its name and final visual identity remain design work for the MVP.
 
 Use daily streaks, short quests, visible roadmap progress, chapter milestones, album upgrades, and cosmetic rewards to support returning. XP represents activity; it stays distinct from mastery.
