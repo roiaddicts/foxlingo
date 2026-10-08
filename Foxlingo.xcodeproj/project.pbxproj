@@ -22,6 +22,7 @@
 		57B81FDE40AFC1193B8B0DA0 /* AlbumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC35574D37589DA87E7C5A5D /* AlbumView.swift */; };
 		769A0CFBF5C7D001606397C8 /* FlowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D90F61C2695718E9BCED131 /* FlowTests.swift */; };
 		771846DCC4629031AA025373 /* Learning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44549E9139E3443B66DB2E34 /* Learning.swift */; };
+		8C163C272018AC63A3695C8A /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4A1974B3B01C85D26BA1F0 /* Album.swift */; };
 		8DD514B0DD979023A88925C9 /* GamesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A787A4A96F423AD601B4AF /* GamesView.swift */; };
 		CF9A929E09FFBE10432EAD98 /* Coverage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7638A5E7DA4EB6E90B02A7 /* Coverage.swift */; };
 		D8D1DF02BED409D8C8A7DC61 /* CoverageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E310116659D3792CD47BE118 /* CoverageView.swift */; };
@@ -51,6 +52,7 @@
 		585971EEDF1CEED7EEC0823B /* Games.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Games.swift; sourceTree = "<group>"; };
 		5DF9265116E25E2BF11AF2C9 /* LessonView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LessonView.swift; sourceTree = "<group>"; };
 		69CAF16169F54078C4005D08 /* FoxlingoApp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FoxlingoApp.swift; sourceTree = "<group>"; };
+		6B4A1974B3B01C85D26BA1F0 /* Album.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
 		6D6843E51D69668BD8540FBE /* games-en.json */ = {isa = PBXFileReference; includeInIndex = 1; path = "games-en.json"; sourceTree = "<group>"; };
 		8DA24C96CBA922814BAD5EB4 /* Design.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Design.swift; sourceTree = "<group>"; };
 		AE49724F121C78481AA89D89 /* PracticeView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PracticeView.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 				44549E9139E3443B66DB2E34 /* Learning.swift */,
 				CF04BE9776E9842A6456BD2C /* StudyPlan.swift */,
 				4E7638A5E7DA4EB6E90B02A7 /* Coverage.swift */,
+				6B4A1974B3B01C85D26BA1F0 /* Album.swift */,
 			);
 			name = Core;
 			path = Core;
@@ -296,6 +299,7 @@
 				4B1C5419C35BA13FFF9A8DF7 /* StudyPlanView.swift in Sources */,
 				CF9A929E09FFBE10432EAD98 /* Coverage.swift in Sources */,
 				D8D1DF02BED409D8C8A7DC61 /* CoverageView.swift in Sources */,
+				8C163C272018AC63A3695C8A /* Album.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

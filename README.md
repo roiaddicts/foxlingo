@@ -65,3 +65,9 @@ Learn suggests a short review across all learned clubs, an unfinished lesson, or
 ### Coverage preparation
 
 Open **Practice → Prepare with two clubs**. Choose two distinct canonical clubs without changing the main roadmap. The pack gathers their supported stories and fact scopes with source links. It is a historical comparison, not an upcoming fixture or a current squad briefing. New facts link to lessons; recall includes only learned objectives at the current revision. Short decks rotate while balancing the selected clubs and deduplicating shared objectives. Facts opened during this preparation visit count as assisted rehearsal: they cannot earn independent recall credit or change a due schedule. Other due answers update normally; the result reports how many scheduled reviews actually changed. Answers save immediately, but leaving an unfinished recall session starts a fresh rotating deck next time.
+
+### Album collections
+
+The album starts with Xolos and Real Madrid. Switch to a competition or all clubs, search club/player names, or show discovered cards only. Collection totals stay fixed while filtering, and shared cards count once. Each card states its depth: a three-connection introduction, club foundations, or a player story.
+
+Card details separate introduced connections, remaining lessons, refreshed facts, and current recall stage. Earned tiers remain visible when a knowledge set expands or a fact changes. Saved achievements record their knowledge-set version where known; older saves with uncertain provenance retain their tier without inventing a version. Opening card context or a source marks that connection as assisted for the card's next practice session, preserving its due schedule.

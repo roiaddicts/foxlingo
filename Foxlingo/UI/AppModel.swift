@@ -41,10 +41,12 @@ import AudioToolbox
             state = restored.state ?? LearnerState()
             message = restored.notice
             if let pack { state.reconcile(pack,now:now) }
+            if restored.state != nil && restored.notice == nil {save()}
         } catch { recoveryRequired = true; message = error.localizedDescription }
     }
     func save() {
         guard !recoveryRequired else { return }
+        if let pack {state.captureCardAchievements(pack)}
         do { try store.save(state) } catch { message = "Progress could not be saved: \(error.localizedDescription)" }
     }
     func reset() {

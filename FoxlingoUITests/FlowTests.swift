@@ -220,4 +220,51 @@ final class FlowTests: XCTestCase {
         XCTAssertTrue(app.staticTexts["daily-due-count"].label.contains("3 ready"))
     }
 
+    func testAlbumFiltersSearchAndPartialKnowledge() {
+        start();tap("choose-XT");app.tabBars.buttons["Album"].tap()
+        app.switches["album-discovered-only"].coordinate(withNormalizedOffset:CGVector(dx:0.93,dy:0.5)).tap();tap("album-show-all")
+        app.tabBars.buttons["Learn"].tap();completeLesson("lesson-xolos-identity")
+        app.tabBars.buttons["Album"].tap()
+        XCTAssertTrue(app.staticTexts["album-count"].label.contains("1 of 8 discovered"))
+        app.switches["album-discovered-only"].coordinate(withNormalizedOffset:CGVector(dx:0.93,dy:0.5)).tap()
+        XCTAssertTrue(app.staticTexts["album-count"].label.contains("1 of 8 discovered"))
+        tap("card-xolos")
+        XCTAssertTrue(app.staticTexts["card-coverage"].label.contains("3 of 9 connections introduced"))
+        XCTAssertTrue(app.staticTexts["card-current-recall"].label.contains("6 to discover"))
+        app.navigationBars.buttons.element(boundBy:0).tap()
+        for _ in 0..<4 {if app.buttons["album-collection"].isHittable {break};app.swipeDown()}
+        tap("album-collection");app.buttons["Champions League"].tap();tap("album-show-all")
+        XCTAssertTrue(app.staticTexts["album-count"].label.contains("0 of 39 discovered"))
+        let search=app.searchFields.firstMatch
+        if !search.isHittable {app.swipeDown()};search.tap();search.typeText("Arsenal")
+        XCTAssertTrue(app.staticTexts["album-results"].label.contains("1 search result"))
+        XCTAssertTrue(app.staticTexts["album-count"].label.contains("0 of 39 discovered"))
+        tap("card-arsenal")
+        XCTAssertTrue(app.staticTexts["Intro · 3 connections"].exists)
+        let shot=XCTAttachment(screenshot:app.screenshot());shot.name="Album knowledge scope";shot.lifetime = .keepAlways;add(shot)
+    }
+    func testAlbumContextPreviewKeepsRecallDue() {
+        start();tap("choose-XT");completeLesson("lesson-xolos-identity")
+        app.terminate();start(reset:false,now:1_800_000_000+86401)
+        app.tabBars.buttons["Album"].tap();tap("card-xolos")
+        for key in ["nickname","city","stadium"] {tap("card-context-objective-xolos-identity-\(key)")}
+        tap("card-practice")
+        for answer in ["Xolos","Tijuana","Estadio Caliente"] {
+            let input=app.descendants(matching:.any)["recall-answer"].firstMatch
+            input.tap();input.typeText(answer);tap("check-recall")
+            XCTAssertTrue(app.staticTexts["You previewed this fact in the card context. This answer counts as rehearsal."].exists)
+            tap("recall-next")
+        }
+        XCTAssertTrue(app.staticTexts["0 of 3 recalled independently."].exists);tap("practice-done")
+        app.tabBars.buttons["Learn"].tap()
+        XCTAssertTrue(app.staticTexts["daily-due-count"].label.contains("3 ready"))
+    }
+    func testLargeTextAlbum() {
+        app.launchArguments=["-ui-testing","-reset-test-state","-UIPreferredContentSizeCategoryName","UICTContentSizeCategoryAccessibilityXXXL"]
+        app.launch();tap("choose-XT");app.tabBars.buttons["Album"].tap();tap("card-xolos")
+        for _ in 0..<6 {if app.staticTexts["card-coverage"].isHittable {break};app.swipeUp()}
+        XCTAssertTrue(app.staticTexts["card-coverage"].isHittable)
+        let shot=XCTAttachment(screenshot:app.screenshot());shot.name="Large text album";shot.lifetime = .keepAlways;add(shot)
+    }
+
 }

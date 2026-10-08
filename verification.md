@@ -4,7 +4,7 @@ Verified October 8, 2026, using Xcode 26.3 and an iPhone 17 Pro simulator runnin
 
 ## Result
 
-**32 core tests and all six end-to-end scenarios passed across the full regression and focused reruns.** The Debug app used in UI tests and the optimized Release app both built successfully. The Release executable contains none of the Debug-only test launch flags.
+**58 core tests pass.** The initial six end-to-end scenarios and subsequent focused simulator checks are recorded below. The original full regression and later feature checks are separate runs, rather than a fresh run of every UI test after every change. Debug and optimized Release builds have passed; the Release executable excludes the Debug-only test launch flags.
 
 ## Requirements and evidence
 
@@ -75,3 +75,11 @@ This is a locally runnable native MVP, not an App Store or TestFlight publicatio
 50 core tests pass. Coverage cases verify distinct canonical clubs, shared-objective deduplication, readable scope/source references, current-revision eligibility, rotating balanced sessions, and due-versus-early scheduling. Three real simulator coverage flows pass after the final fixes: a new learner reads sources and opens a lesson; club selection excludes the other chosen club and preserves Learn's selection; mixed due/early practice reports only three scheduled changes; correctly typed previewed answers earn zero independent successes and leave all three due objectives ready. The updated large-text welcome/lesson flow also passes. Coverage headers and lesson actions have separate accessibility controls, avoiding DisclosureGroup's inherited identifiers.
 
 The study pack deliberately covers available historical course content. It does not supply current squads, live statistics, fixture scheduling, or a complete head-to-head briefing. Preview assistance persists for this preparation visit and its copied recall deck; it is not a global record of every answer seen anywhere in the app.
+
+## Album collections and achievements
+
+58 core tests pass, including collection membership through lessons, shared-card deduplication and search through either club, fixed totals while filtering, partial knowledge coverage, revised-fact refresh, additive knowledge sets, and older-save migration. Earned tiers survive revised or expanded sets. When an old save cannot prove the version of an achievement, that version remains unknown until demonstrated at the active version.
+
+Simulator checks pass for collection filters, search, partial Xolos coverage, and assisted card practice. Opening all three identity contexts, then typing all three answers correctly, produces zero independent successes and leaves the three scheduled reviews due. These checks use separate Debug test saves and preserve ordinary learner progress.
+
+The largest accessibility text size keeps album cards in one column and card details scrollable. The compact comparison screen also passes its lesson/recall/club-selection regression. Exported screenshots were inspected for the standard card detail, comparison screen, and large-text card. The optimized Release build passes with these changes.

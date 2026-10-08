@@ -49,6 +49,7 @@ struct PracticeSession: View {
     let dueMode: Bool
     var isCoverage = false
     var assistedObjectiveIDs: Set<UUID> = []
+    var previewContext = "the study pack"
     @EnvironmentObject var model: AppModel
     @Environment(\.dismiss) var dismiss
     @State private var index=0
@@ -81,7 +82,7 @@ struct PracticeSession: View {
                     if submitted {
                         Label(correct && !hinted ? "You remembered" : "A connection to revisit",systemImage:correct && !hinted ? "checkmark.circle.fill" : "lightbulb.fill").font(.headline).foregroundStyle(correct && !hinted ? Palette.green : Palette.ink)
                         Text(o.feedback).accessibilityIdentifier("recall-feedback")
-                        if hinted {Text(assistedObjectiveIDs.contains(o.id) ? "You previewed this fact in the study pack. This answer counts as rehearsal." : "Revealed answers don't count as independent recall.").font(.footnote).foregroundStyle(Palette.muted)}
+                        if hinted {Text(assistedObjectiveIDs.contains(o.id) ? "You previewed this fact in \(previewContext). This answer counts as rehearsal." : "Revealed answers don't count as independent recall.").font(.footnote).foregroundStyle(Palette.muted)}
                         PrimaryButton(title:index == objectives.count-1 ? "Finish practice" : "Next memory") {next()}.accessibilityIdentifier("recall-next")
                     } else {
                         PrimaryButton(title:"Check answer") {submit(reveal:false)}.disabled(Recall.normalize(answer).isEmpty).opacity(Recall.normalize(answer).isEmpty ? 0.5 : 1).accessibilityIdentifier("check-recall")

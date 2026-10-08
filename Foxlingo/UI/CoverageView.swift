@@ -17,13 +17,12 @@ struct CoverageView: View {
             if let pack=model.pack,let first=firstID ?? pack.entities.first(where:{$0.key == "entity-xolos"})?.id,let second=secondID ?? pack.entities.first(where:{$0.key == "entity-madrid"})?.id {
                 VStack(alignment:.leading,spacing:24) {
                     Eyebrow(text:"Coverage preparation")
-                    Text("Two clubs.\nStories worth knowing.").font(.system(.largeTitle,design:.rounded,weight:.bold))
-                    Text("Build a study comparison from the stories in your library.").foregroundStyle(Palette.muted)
+                    Text("Compare two clubs").font(.title.bold())
                     HStack(spacing:12) {selection(pack.entity(first),first:true);Image(systemName:"arrow.left.arrow.right").foregroundStyle(Palette.muted);selection(pack.entity(second),first:false)}
                     if let message {Text(message).foregroundStyle(Palette.red)}
                     if let study=try? CoverageStudyPack.make(pack:pack,firstID:first,secondID:second) {
                         Label("Club comparison · no fixture selected",systemImage:"books.vertical").font(.subheadline.bold()).accessibilityIdentifier("coverage-scope")
-                        Text("This pack covers \(Set(study.first.factIDs + study.second.factIDs).count) sourced facts from your club courses. Current squads and live statistics aren't included. This is a historical foundations pack, without a complete head-to-head or rivalry briefing.").font(.subheadline).foregroundStyle(Palette.muted)
+                        Text("\(Set(study.first.factIDs + study.second.factIDs).count) sourced historical facts. Live squads, statistics, and a complete head-to-head briefing aren't included.").font(.subheadline).foregroundStyle(Palette.muted)
                         recall(study,pack:pack)
                         clubStories(study.first,pack:pack)
                         clubStories(study.second,pack:pack)
@@ -45,7 +44,7 @@ struct CoverageView: View {
     }
     private func selection(_ club: Entity,first: Bool) -> some View {
         Button {selectingFirst=first} label: {
-            VStack(spacing:10) {ClubMark(club:club,size:64);Text(club.name).font(.subheadline.bold()).multilineTextAlignment(.center);Image(systemName:"chevron.down").font(.caption)}.frame(maxWidth:.infinity,minHeight:136).padding(12).background(.white.opacity(0.8),in:RoundedRectangle(cornerRadius:18)).contentShape(Rectangle())
+            VStack(spacing:10) {ClubMark(club:club,size:54);Text(club.name).font(.subheadline.bold()).multilineTextAlignment(.center);Image(systemName:"chevron.down").font(.caption)}.frame(maxWidth:.infinity,minHeight:108).padding(12).background(.white.opacity(0.8),in:RoundedRectangle(cornerRadius:18)).contentShape(Rectangle())
         }.buttonStyle(PressFeedback()).accessibilityLabel("Change \(first ? "first" : "second") club, \(club.name)").accessibilityIdentifier(first ? "coverage-first" : "coverage-second")
     }
     private func recall(_ study: CoverageStudyPack,pack: ContentPack) -> some View {

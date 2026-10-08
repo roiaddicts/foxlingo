@@ -6,6 +6,7 @@ public struct ReviewState: Codable, Sendable {
     public var highestEarned = 0
     public var due: Date
     public var lapses = 0
+    public var refreshRequired: Bool? = nil
     public var learnedAt: Date
 }
 public struct Attempt: Codable, Sendable {
@@ -40,14 +41,16 @@ public struct LearnerState: Codable, Sendable {
     public var resumes: [UUID: LessonResume] = [:]
     public var reviews: [UUID: ReviewState] = [:]
     public var acquiredCards: Set<UUID> = []
+    public var cardAchievements: [UUID:CardAchievement]? = nil
     public var attempts: [Attempt] = []
     public var sessions: [SessionRecord] = []
     public var streak = StreakState()
     public init(timeZone: String = TimeZone.current.identifier) { homeTimeZone = timeZone }
     public mutating func reconcile(_ pack: ContentPack, now: Date) {
+        captureCardAchievements(pack)
         for o in pack.objectives {
             if let old = reviews[o.id], old.revision != o.revision {
-                reviews[o.id] = ReviewState(revision:o.revision, highestEarned:old.highestEarned, due:now.addingTimeInterval(86400), learnedAt:now)
+                reviews[o.id] = ReviewState(revision:o.revision, highestEarned:old.highestEarned, due:now.addingTimeInterval(86400), refreshRequired:true, learnedAt:now)
             }
         }
     }
@@ -60,6 +63,7 @@ public struct LearnerState: Codable, Sendable {
             reviews[id] = ReviewState(revision:o.revision, due:now.addingTimeInterval(86400), learnedAt:now)
         }
         for card in pack.cards where card.lessonIDs.contains(lesson.id) { acquiredCards.insert(card.id) }
+        captureCardAchievements(pack)
         attempts += newAttempts
         sessions.append(SessionRecord(id:sessionID, kind:"lesson", completedAt:now, attemptCount:newAttempts.count))
         streak.record(now, zone:homeTimeZone)
@@ -78,6 +82,7 @@ public struct LearnerState: Codable, Sendable {
         attempts.append(attempt)
         guard attempt.mode == "due", r.due <= attempt.timestamp else { return }
         if attempt.correct && !attempt.hinted {
+            r.refreshRequired=false
             r.stage = min(4, r.stage + 1)
             r.highestEarned = max(r.highestEarned, r.stage)
             let days = [1,3,7,14,30][r.stage]
@@ -101,7 +106,8 @@ public struct LearnerState: Codable, Sendable {
     }
     public func tier(_ card: AlbumCard) -> Int {
         guard acquiredCards.contains(card.id) else { return -1 }
-        return card.objectiveIDs.map { reviews[$0]?.highestEarned ?? 0 }.min() ?? 0
+        if let achievement=cardAchievements?[card.id],achievement.knowledgeVersion != card.knowledgeVersion {return achievement.tier}
+        return max(cardAchievements?[card.id]?.tier ?? 0,card.objectiveIDs.map { reviews[$0]?.highestEarned ?? 0 }.min() ?? 0)
     }
     public static let tierNames = ["Cardboard", "Bronze", "Silver", "Gold", "Diamond"]
 }
@@ -161,7 +167,7 @@ public struct StateStore {
     }
     private func decode(_ data: Data) throws -> LearnerState {
         let s = try JSONDecoder().decode(LearnerState.self,from:data)
-        guard s.schemaVersion == 1, (s.preferredSessionSize == nil || [5,10,20].contains(s.preferredSessionSize!)), TimeZone(identifier:s.homeTimeZone) != nil,
+        guard s.schemaVersion == 1, (s.cardAchievements?.values.allSatisfy({(0...4).contains($0.tier) && ($0.knowledgeVersion.map {$0 > 0} ?? true)}) ?? true), (s.preferredSessionSize == nil || [5,10,20].contains(s.preferredSessionSize!)), TimeZone(identifier:s.homeTimeZone) != nil,
               s.reviews.values.allSatisfy({ (0...4).contains($0.stage) && (0...4).contains($0.highestEarned) && $0.highestEarned >= $0.stage && $0.lapses >= 0 && $0.revision > 0 }),
               s.resumes.values.allSatisfy({ (0...6).contains($0.step) && Set($0.matched).count == $0.matched.count && Set($0.matched).isSubset(of:["l-0","l-1","l-2"]) && ($0.memoryOrder == nil || ($0.memoryOrder!.count == 6 && Set($0.memoryOrder!) == Set(["l-0","l-1","l-2","r-0","r-1","r-2"]))) }),
               (0...1).contains(s.streak.freezes), (0..<7).contains(s.streak.daysSinceRefill), s.streak.longest >= 0,
