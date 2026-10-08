@@ -1,0 +1,528 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0E2E56708C090FEFDB0CC103 /* PracticeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE49724F121C78481AA89D89 /* PracticeView.swift */; };
+		15651C29A41D3C6A0CE3343A /* Games.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585971EEDF1CEED7EEC0823B /* Games.swift */; };
+		1E1865D4CFED7ED4A654AB3E /* ClubLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1C7ED3212E0B5D84B7C261 /* ClubLibrary.swift */; };
+		1E5D991E5C811E12B4275712 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 267DA166EFB8DC9CD6BB95DF /* Foundation.framework */; };
+		22DBE181761C1F65CCFEB48A /* starter-en.json in Resources */ = {isa = PBXBuildFile; fileRef = 0CF94E40E1DBE5E69BB7F885 /* starter-en.json */; };
+		3518FC19D3DC254DD426541E /* FoxlingoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CAF16169F54078C4005D08 /* FoxlingoApp.swift */; };
+		46B3BF1D599171185BC5162A /* Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040EE940F8B19FB06AC7B14F /* Content.swift */; };
+		47369FEA4DBE19E21B44D699 /* games-en.json in Resources */ = {isa = PBXBuildFile; fileRef = 6D6843E51D69668BD8540FBE /* games-en.json */; };
+		48C1FBF7696621329BCE25D6 /* Design.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA24C96CBA922814BAD5EB4 /* Design.swift */; };
+		57A8939DC6FFF5D6D8DA2337 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 267DA166EFB8DC9CD6BB95DF /* Foundation.framework */; };
+		57B81FDE40AFC1193B8B0DA0 /* AlbumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC35574D37589DA87E7C5A5D /* AlbumView.swift */; };
+		769A0CFBF5C7D001606397C8 /* FlowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D90F61C2695718E9BCED131 /* FlowTests.swift */; };
+		771846DCC4629031AA025373 /* Learning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44549E9139E3443B66DB2E34 /* Learning.swift */; };
+		8DD514B0DD979023A88925C9 /* GamesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A787A4A96F423AD601B4AF /* GamesView.swift */; };
+		E4C07B436636FFB6564F3716 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD6271B8ABEAC92237DD4836 /* Assets.xcassets */; };
+		EB1413DD838DE09AE7572DF2 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA791A790FCB14403A8DBC23 /* AppModel.swift */; };
+		FD0B4E21402AE9822AA3C66D /* LessonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF9265116E25E2BF11AF2C9 /* LessonView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8BD385CA52F7D82200602D4C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7505C31B985B6E1065DE13F2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 94B0076C227C0C1867B40AAF;
+			remoteInfo = Foxlingo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		040EE940F8B19FB06AC7B14F /* Content.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Content.swift; sourceTree = "<group>"; };
+		0CF94E40E1DBE5E69BB7F885 /* starter-en.json */ = {isa = PBXFileReference; includeInIndex = 1; path = "starter-en.json"; sourceTree = "<group>"; };
+		14A787A4A96F423AD601B4AF /* GamesView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GamesView.swift; sourceTree = "<group>"; };
+		267DA166EFB8DC9CD6BB95DF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3D90F61C2695718E9BCED131 /* FlowTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FlowTests.swift; sourceTree = "<group>"; };
+		44549E9139E3443B66DB2E34 /* Learning.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Learning.swift; sourceTree = "<group>"; };
+		585971EEDF1CEED7EEC0823B /* Games.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Games.swift; sourceTree = "<group>"; };
+		5DF9265116E25E2BF11AF2C9 /* LessonView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LessonView.swift; sourceTree = "<group>"; };
+		69CAF16169F54078C4005D08 /* FoxlingoApp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FoxlingoApp.swift; sourceTree = "<group>"; };
+		6D6843E51D69668BD8540FBE /* games-en.json */ = {isa = PBXFileReference; includeInIndex = 1; path = "games-en.json"; sourceTree = "<group>"; };
+		8DA24C96CBA922814BAD5EB4 /* Design.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Design.swift; sourceTree = "<group>"; };
+		AE49724F121C78481AA89D89 /* PracticeView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PracticeView.swift; sourceTree = "<group>"; };
+		B001EEB9083DBCB177F147DF /* FoxlingoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoxlingoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA791A790FCB14403A8DBC23 /* AppModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		BC35574D37589DA87E7C5A5D /* AlbumView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AlbumView.swift; sourceTree = "<group>"; };
+		FD1C7ED3212E0B5D84B7C261 /* ClubLibrary.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ClubLibrary.swift; sourceTree = "<group>"; };
+		FD6271B8ABEAC92237DD4836 /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FE6E53D5680A4EC6313AA676 /* Foxlingo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Foxlingo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		38D5B4C3447687EDC718571B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57A8939DC6FFF5D6D8DA2337 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49D4DC1AA28AFFEBC51CF40E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E5D991E5C811E12B4275712 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		032FE1F99814908E3C40567F /* Foxlingo */ = {
+			isa = PBXGroup;
+			children = (
+				052BE11339FA119C1A8E6AE4 /* Core */,
+				F1FB063382B9981F813328A4 /* UI */,
+				B7711FEAB1B426A9FD7EC0F7 /* Resources */,
+			);
+			name = Foxlingo;
+			path = Foxlingo;
+			sourceTree = "<group>";
+		};
+		052BE11339FA119C1A8E6AE4 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				040EE940F8B19FB06AC7B14F /* Content.swift */,
+				585971EEDF1CEED7EEC0823B /* Games.swift */,
+				44549E9139E3443B66DB2E34 /* Learning.swift */,
+			);
+			name = Core;
+			path = Core;
+			sourceTree = "<group>";
+		};
+		7CDD4AA9353F5F5C23A70D78 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A9434FE9C547D471BE30543E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A040AF15F93C5D31C0413687 /* FoxlingoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3D90F61C2695718E9BCED131 /* FlowTests.swift */,
+			);
+			name = FoxlingoUITests;
+			path = FoxlingoUITests;
+			sourceTree = "<group>";
+		};
+		A9434FE9C547D471BE30543E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				267DA166EFB8DC9CD6BB95DF /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		B7711FEAB1B426A9FD7EC0F7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0CF94E40E1DBE5E69BB7F885 /* starter-en.json */,
+				6D6843E51D69668BD8540FBE /* games-en.json */,
+				FD6271B8ABEAC92237DD4836 /* Assets.xcassets */,
+			);
+			name = Resources;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D54468F07CF3938597F95412 = {
+			isa = PBXGroup;
+			children = (
+				E960E051A3914E91B79064E2 /* Products */,
+				7CDD4AA9353F5F5C23A70D78 /* Frameworks */,
+				032FE1F99814908E3C40567F /* Foxlingo */,
+				A040AF15F93C5D31C0413687 /* FoxlingoUITests */,
+			);
+			sourceTree = "<group>";
+		};
+		E960E051A3914E91B79064E2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FE6E53D5680A4EC6313AA676 /* Foxlingo.app */,
+				B001EEB9083DBCB177F147DF /* FoxlingoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F1FB063382B9981F813328A4 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				BC35574D37589DA87E7C5A5D /* AlbumView.swift */,
+				BA791A790FCB14403A8DBC23 /* AppModel.swift */,
+				FD1C7ED3212E0B5D84B7C261 /* ClubLibrary.swift */,
+				8DA24C96CBA922814BAD5EB4 /* Design.swift */,
+				69CAF16169F54078C4005D08 /* FoxlingoApp.swift */,
+				14A787A4A96F423AD601B4AF /* GamesView.swift */,
+				5DF9265116E25E2BF11AF2C9 /* LessonView.swift */,
+				AE49724F121C78481AA89D89 /* PracticeView.swift */,
+			);
+			name = UI;
+			path = UI;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		94B0076C227C0C1867B40AAF /* Foxlingo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9E9614088873EAF744B0D51 /* Build configuration list for PBXNativeTarget "Foxlingo" */;
+			buildPhases = (
+				C097B2140C89FFCBE597CD95 /* Sources */,
+				38D5B4C3447687EDC718571B /* Frameworks */,
+				C7E0E2A8B47430C7439F2D80 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Foxlingo;
+			productName = Foxlingo;
+			productReference = FE6E53D5680A4EC6313AA676 /* Foxlingo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B71E147BC8A0D236826A5123 /* FoxlingoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D42128A9DF00F613112A2D9 /* Build configuration list for PBXNativeTarget "FoxlingoUITests" */;
+			buildPhases = (
+				7400853A6212B4C4186F4102 /* Sources */,
+				49D4DC1AA28AFFEBC51CF40E /* Frameworks */,
+				EC3E96D2FBDC116F1EFA5D11 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				46315A98FAFCB1DF816AB380 /* PBXTargetDependency */,
+			);
+			name = FoxlingoUITests;
+			productName = FoxlingoUITests;
+			productReference = B001EEB9083DBCB177F147DF /* FoxlingoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7505C31B985B6E1065DE13F2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+			};
+			buildConfigurationList = E9F7E552F10D4DC681C40051 /* Build configuration list for PBXProject "Foxlingo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D54468F07CF3938597F95412;
+			productRefGroup = E960E051A3914E91B79064E2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				94B0076C227C0C1867B40AAF /* Foxlingo */,
+				B71E147BC8A0D236826A5123 /* FoxlingoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C7E0E2A8B47430C7439F2D80 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22DBE181761C1F65CCFEB48A /* starter-en.json in Resources */,
+				47369FEA4DBE19E21B44D699 /* games-en.json in Resources */,
+				E4C07B436636FFB6564F3716 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC3E96D2FBDC116F1EFA5D11 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7400853A6212B4C4186F4102 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				769A0CFBF5C7D001606397C8 /* FlowTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C097B2140C89FFCBE597CD95 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46B3BF1D599171185BC5162A /* Content.swift in Sources */,
+				15651C29A41D3C6A0CE3343A /* Games.swift in Sources */,
+				771846DCC4629031AA025373 /* Learning.swift in Sources */,
+				57B81FDE40AFC1193B8B0DA0 /* AlbumView.swift in Sources */,
+				EB1413DD838DE09AE7572DF2 /* AppModel.swift in Sources */,
+				1E1865D4CFED7ED4A654AB3E /* ClubLibrary.swift in Sources */,
+				48C1FBF7696621329BCE25D6 /* Design.swift in Sources */,
+				3518FC19D3DC254DD426541E /* FoxlingoApp.swift in Sources */,
+				8DD514B0DD979023A88925C9 /* GamesView.swift in Sources */,
+				FD0B4E21402AE9822AA3C66D /* LessonView.swift in Sources */,
+				0E2E56708C090FEFDB0CC103 /* PracticeView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		46315A98FAFCB1DF816AB380 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Foxlingo;
+			target = 94B0076C227C0C1867B40AAF /* Foxlingo */;
+			targetProxy = 8BD385CA52F7D82200602D4C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0CF5A7993E8811D274EC3B6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		118B30F789E310EB04E9B3AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.diego.foxlingo.uitests;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_TARGET_NAME = Foxlingo;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		317C52A4EDE21F66C98B7791 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Foxlingo;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.diego.foxlingo;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		44745AA6AFF41EA6EB4D0F06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Foxlingo;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.diego.foxlingo;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		767FB473B1B6217892DF859D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.diego.foxlingo.uitests;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_TARGET_NAME = Foxlingo;
+			};
+			name = Debug;
+		};
+		E6BDB5A23D9E5307A090A2E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D42128A9DF00F613112A2D9 /* Build configuration list for PBXNativeTarget "FoxlingoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				118B30F789E310EB04E9B3AA /* Release */,
+				767FB473B1B6217892DF859D /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9E9614088873EAF744B0D51 /* Build configuration list for PBXNativeTarget "Foxlingo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44745AA6AFF41EA6EB4D0F06 /* Release */,
+				317C52A4EDE21F66C98B7791 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9F7E552F10D4DC681C40051 /* Build configuration list for PBXProject "Foxlingo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0CF5A7993E8811D274EC3B6C /* Debug */,
+				E6BDB5A23D9E5307A090A2E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7505C31B985B6E1065DE13F2 /* Project object */;
+}

@@ -1,0 +1,597 @@
+[
+  {
+    "asset": "entity-madrid",
+    "url": "https://img.uefa.com/imgml/TP/teams/logos/100x100/50051.png",
+    "cached": true
+  },
+  {
+    "asset": "entity-xolos",
+    "url": "https://www.xolos.com.mx/images/sitio/logo.png",
+    "cached": true
+  },
+  {
+    "asset": "entity-arce",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/Fernando_Enrique_Arce_Ruiz.jpg/250px-Fernando_Enrique_Arce_Ruiz.jpg",
+    "cached": true
+  },
+  {
+    "asset": "entity-riascos",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Duvier_Riascos.jpg/250px-Duvier_Riascos.jpg",
+    "cached": true
+  },
+  {
+    "asset": "entity-saucedo",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Cirilo_Saucedo.jpg/250px-Cirilo_Saucedo.jpg",
+    "cached": true
+  },
+  {
+    "asset": "seed-player-1",
+    "url": "https://futbol-11.com/images/1.png",
+    "cached": true
+  },
+  {
+    "asset": "seed-player-53",
+    "url": "https://futbol-11.com/images/53.png",
+    "cached": true
+  },
+  {
+    "asset": "seed-player-57",
+    "url": "https://i.ibb.co/hFqxc0H/Ramos.png",
+    "cached": true
+  },
+  {
+    "asset": "seed-player-12",
+    "url": "https://futbol-11.com/images/12.webp",
+    "cached": true
+  },
+  {
+    "asset": "seed-player-56",
+    "url": "https://futbol-11.com/images/56.webp",
+    "cached": true
+  },
+  {
+    "asset": "seed-player-76",
+    "url": "https://futbol-11.com/images/76.png",
+    "cached": true
+  },
+  {
+    "asset": "seed-player-79",
+    "url": "https://futbol-11.com/images/79.png",
+    "cached": true
+  },
+  {
+    "asset": "seed-player-83",
+    "url": "https://futbol-11.com/images/83.png",
+    "cached": true
+  },
+  {
+    "asset": "seed-player-103",
+    "url": "https://futbol-11.com/images/103.webp",
+    "cached": true
+  },
+  {
+    "asset": "seed-player-210",
+    "url": "https://futbol-11.com/images/210.png",
+    "cached": true
+  },
+  {
+    "asset": "seed-player-28",
+    "url": "https://futbol-11.com/images/28.png",
+    "cached": true
+  },
+  {
+    "asset": "seed-player-18",
+    "url": "https://futbol-11.com/images/18.webp",
+    "cached": true
+  },
+  {
+    "asset": "seed-player-54",
+    "url": "https://futbol-11.com/images/54.png",
+    "cached": true
+  },
+  {
+    "asset": "seed-player-58",
+    "url": "https://futbol-11.com/images/58.webp",
+    "cached": true
+  },
+  {
+    "asset": "seed-player-74",
+    "url": "https://futbol-11.com/images/74.png",
+    "cached": true
+  },
+  {
+    "asset": "seed-player-86",
+    "url": "https://futbol-11.com/images/86.png",
+    "cached": true
+  },
+  {
+    "asset": "seed-player-128",
+    "url": "https://futbol-11.com/images/128.webp",
+    "cached": true
+  },
+  {
+    "asset": "seed-player-129",
+    "url": "https://futbol-11.com/images/129.png",
+    "cached": true
+  },
+  {
+    "asset": "seed-player-145",
+    "url": "https://futbol-11.com/images/145.webp",
+    "cached": true
+  },
+  {
+    "asset": "seed-player-165",
+    "url": "https://futbol-11.com/images/165.webp",
+    "cached": true
+  },
+  {
+    "asset": "seed-player-173",
+    "url": "https://futbol-11.com/images/173.webp",
+    "cached": true
+  },
+  {
+    "asset": "seed-player-176",
+    "url": "https://futbol-11.com/images/176.png",
+    "cached": true
+  },
+  {
+    "asset": "seed-player-187",
+    "url": "https://futbol-11.com/images/187.png",
+    "cached": true
+  },
+  {
+    "asset": "seed-player-198",
+    "url": "https://futbol-11.com/images/198.png",
+    "cached": true
+  },
+  {
+    "asset": "seed-player-212",
+    "url": "https://futbol-11.com/images/212.webp",
+    "cached": true
+  },
+  {
+    "asset": "seed-player-223",
+    "url": "https://futbol-11.com/images/223.png",
+    "cached": true
+  },
+  {
+    "asset": "seed-player-230",
+    "url": "https://futbol-11.com/images/230.webp",
+    "cached": true
+  },
+  {
+    "asset": "seed-player-242",
+    "url": "https://futbol-11.com/images/242.webp",
+    "cached": true
+  },
+  {
+    "asset": "seed-player-251",
+    "url": "https://i.ibb.co/Wtx3k5F/grimaldo.webp",
+    "cached": true
+  },
+  {
+    "asset": "seed-player-258",
+    "url": "https://futbol-11.com/images/258.webp",
+    "cached": true
+  },
+  {
+    "asset": "seed-player-261",
+    "url": "https://futbol-11.com/images/261.webp",
+    "cached": true
+  },
+  {
+    "asset": "seed-player-278",
+    "url": "https://futbol-11.com/images/278.webp",
+    "cached": true
+  },
+  {
+    "asset": "seed-player-285",
+    "url": "https://futbol-11.com/images/285.png",
+    "cached": true
+  },
+  {
+    "asset": "seed-player-291",
+    "url": "https://futbol-11.com/images/291.png",
+    "cached": true
+  },
+  {
+    "asset": "seed-player-303",
+    "url": "https://futbol-11.com/images/303.png",
+    "cached": true
+  },
+  {
+    "asset": "seed-player-310",
+    "url": "https://futbol-11.com/images/310.png",
+    "cached": true
+  },
+  {
+    "asset": "seed-player-326",
+    "url": "https://futbol-11.com/images/326.webp",
+    "cached": true
+  },
+  {
+    "asset": "seed-player-352",
+    "url": "https://futbol-11.com/images/352.png",
+    "cached": true
+  },
+  {
+    "asset": "seed-player-358",
+    "url": "https://futbol-11.com/images/358.png",
+    "cached": true
+  },
+  {
+    "asset": "seed-player-365",
+    "url": "https://futbol-11.com/images/365.webp",
+    "cached": true
+  },
+  {
+    "asset": "seed-player-402",
+    "url": "https://futbol-11.com/images/402.png",
+    "cached": true
+  },
+  {
+    "asset": "seed-player-434",
+    "url": "https://futbol-11.com/images/434.png",
+    "cached": true
+  },
+  {
+    "asset": "seed-player-461",
+    "url": "https://futbol-11.com/images/461.webp",
+    "cached": true
+  },
+  {
+    "asset": "seed-player-498",
+    "url": "https://futbol-11.com/images/498.webp",
+    "cached": true
+  },
+  {
+    "asset": "seed-player-512",
+    "url": "https://futbol-11.com/images/512.png",
+    "cached": true
+  },
+  {
+    "asset": "entity-cristiano",
+    "url": "https://futbol-11.com/images/1.png",
+    "cached": true
+  },
+  {
+    "asset": "entity-casillas",
+    "url": "https://futbol-11.com/images/53.png",
+    "cached": true
+  },
+  {
+    "asset": "entity-ramos",
+    "url": "https://i.ibb.co/hFqxc0H/Ramos.png",
+    "cached": true
+  },
+  {
+    "asset": "entity-aek-athens",
+    "url": "https://thumb.wikimedia.org/wikipedia/en/thumb/0/04/AEK_Athens_FC_logo.svg/250px-AEK_Athens_FC_logo.svg.png",
+    "cached": true
+  },
+  {
+    "asset": "entity-america",
+    "url": "https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a5e6c9b2446e918c498180a_America_Amarillo%404x.avif",
+    "cached": true
+  },
+  {
+    "asset": "entity-arsenal",
+    "url": "https://img.uefa.com/imgml/TP/teams/logos/100x100/52280.png",
+    "cached": true
+  },
+  {
+    "asset": "entity-aston-villa",
+    "url": "https://img.uefa.com/imgml/TP/teams/logos/100x100/52683.png",
+    "cached": true
+  },
+  {
+    "asset": "entity-atlante",
+    "url": "https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a5e6c9c9cae2d89fc2adb68_ATLANTE_LOGO1.avif",
+    "cached": true
+  },
+  {
+    "asset": "entity-atlas",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/F%C3%BAtbol_Club_Atlas.svg/250px-F%C3%BAtbol_Club_Atlas.svg.png",
+    "cached": true
+  },
+  {
+    "asset": "entity-atletico-madrid",
+    "url": "https://thumb.wikimedia.org/wikipedia/en/thumb/f/f9/Atletico_Madrid_Logo_2024.svg/250px-Atletico_Madrid_Logo_2024.svg.png",
+    "cached": true
+  },
+  {
+    "asset": "entity-atletico-san-luis",
+    "url": "https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a5e6c9960ac5dbd241aea03_ASL.avif",
+    "cached": true
+  },
+  {
+    "asset": "entity-augsburg",
+    "url": "https://thumb.wikimedia.org/wikipedia/en/thumb/c/c5/FC_Augsburg_logo.svg/250px-FC_Augsburg_logo.svg.png",
+    "cached": true
+  },
+  {
+    "asset": "entity-barcelona",
+    "url": "https://img.uefa.com/imgml/TP/teams/logos/100x100/50080.png",
+    "cached": true
+  },
+  {
+    "asset": "entity-bayer-leverkusen",
+    "url": "https://i.ibb.co/bR7NWx3/leverkusen.png",
+    "cached": true
+  },
+  {
+    "asset": "entity-bayern-munich",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/FC_Bayern_M%C3%BCnchen_logo_%282024%29.svg/250px-FC_Bayern_M%C3%BCnchen_logo_%282024%29.svg.png",
+    "cached": true
+  },
+  {
+    "asset": "entity-bodo-glimt",
+    "url": "https://thumb.wikimedia.org/wikipedia/en/thumb/8/8d/FK_Bodo_Glimt_logo.svg/250px-FK_Bodo_Glimt_logo.svg.png",
+    "cached": true
+  },
+  {
+    "asset": "entity-borussia-dortmund",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Borussia_Dortmund_logo.svg/250px-Borussia_Dortmund_logo.svg.png",
+    "cached": true
+  },
+  {
+    "asset": "entity-borussia-monchengladbach",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Borussia_M%C3%B6nchengladbach_logo.svg/250px-Borussia_M%C3%B6nchengladbach_logo.svg.png",
+    "cached": true
+  },
+  {
+    "asset": "entity-chivas",
+    "url": "https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a5e6c9f1c8b04fc10fa1773_GDL.avif",
+    "cached": true
+  },
+  {
+    "asset": "entity-club-brugge",
+    "url": "https://thumb.wikimedia.org/wikipedia/en/thumb/d/d0/Club_Brugge_KV_logo.svg/250px-Club_Brugge_KV_logo.svg.png",
+    "cached": true
+  },
+  {
+    "asset": "entity-como",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Calcio_Como_-_logo_%28Italy%2C_2019-%29.svg/250px-Calcio_Como_-_logo_%28Italy%2C_2019-%29.svg.png",
+    "cached": true
+  },
+  {
+    "asset": "entity-cruz-azul",
+    "url": "https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a5e6c9d2bb5857e718e211c_CAZ.avif",
+    "cached": true
+  },
+  {
+    "asset": "entity-eintracht-frankfurt",
+    "url": "https://thumb.wikimedia.org/wikipedia/en/thumb/7/7e/Eintracht_Frankfurt_crest.svg/250px-Eintracht_Frankfurt_crest.svg.png",
+    "cached": true
+  },
+  {
+    "asset": "entity-elversberg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/SV_Elversberg_Logo_2021.svg/250px-SV_Elversberg_Logo_2021.svg.png",
+    "cached": true
+  },
+  {
+    "asset": "entity-fc-cologne",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/1._FC_Koeln_Logo_2014%E2%80%93.svg/250px-1._FC_Koeln_Logo_2014%E2%80%93.svg.png",
+    "cached": true
+  },
+  {
+    "asset": "entity-fenerbah-e",
+    "url": "https://img.uefa.com/imgml/TP/teams/logos/140x140/52692.png",
+    "cached": true
+  },
+  {
+    "asset": "entity-feyenoord",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Feyenoord_logo_since_2024.svg/250px-Feyenoord_logo_since_2024.svg.png",
+    "cached": true
+  },
+  {
+    "asset": "entity-freiburg",
+    "url": "https://thumb.wikimedia.org/wikipedia/en/thumb/6/6d/SC_Freiburg_logo.svg/250px-SC_Freiburg_logo.svg.png",
+    "cached": true
+  },
+  {
+    "asset": "entity-galatasaray",
+    "url": "https://img.uefa.com/imgml/TP/teams/logos/100x100/50067.png",
+    "cached": true
+  },
+  {
+    "asset": "entity-hamburger-sv",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Hamburger_SV_logo.svg/250px-Hamburger_SV_logo.svg.png",
+    "cached": true
+  },
+  {
+    "asset": "entity-hoffenheim",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Logo_TSG_Hoffenheim.svg/250px-Logo_TSG_Hoffenheim.svg.png",
+    "cached": true
+  },
+  {
+    "asset": "entity-inter",
+    "url": "https://img.uefa.com/imgml/TP/teams/logos/100x100/50138.png",
+    "cached": true
+  },
+  {
+    "asset": "entity-juarez",
+    "url": "https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a5e6c9e689b5a3d3279ffa8_FCJ.avif",
+    "cached": true
+  },
+  {
+    "asset": "entity-lask",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/LASK-Logo_2023.svg/250px-LASK-Logo_2023.svg.png",
+    "cached": true
+  },
+  {
+    "asset": "entity-leipzig",
+    "url": "https://thumb.wikimedia.org/wikipedia/en/thumb/0/04/RB_Leipzig_2014_logo.svg/330px-RB_Leipzig_2014_logo.svg.png",
+    "cached": true
+  },
+  {
+    "asset": "entity-lens",
+    "url": "https://thumb.wikimedia.org/wikipedia/en/thumb/c/cc/RC_Lens_logo.svg/250px-RC_Lens_logo.svg.png",
+    "cached": true
+  },
+  {
+    "asset": "entity-leon",
+    "url": "https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a5e6ca0cdb5f0e282b09d83_LEO.avif",
+    "cached": true
+  },
+  {
+    "asset": "entity-lille",
+    "url": "https://thumb.wikimedia.org/wikipedia/en/thumb/3/3f/Lille_OSC_2018_logo.svg/250px-Lille_OSC_2018_logo.svg.png",
+    "cached": true
+  },
+  {
+    "asset": "entity-liverpool",
+    "url": "https://img.uefa.com/imgml/TP/teams/logos/100x100/7889.png",
+    "cached": true
+  },
+  {
+    "asset": "entity-mainz-05",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/1._FSV_Mainz_05_logo.svg/250px-1._FSV_Mainz_05_logo.svg.png",
+    "cached": true
+  },
+  {
+    "asset": "entity-manchester-city",
+    "url": "https://img.uefa.com/imgml/TP/teams/logos/100x100/52919.png",
+    "cached": true
+  },
+  {
+    "asset": "entity-manchester-united",
+    "url": "https://img.uefa.com/imgml/TP/teams/logos/100x100/52682.png",
+    "cached": true
+  },
+  {
+    "asset": "entity-monterrey",
+    "url": "https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a5e6ca0934a529e3a059d99_MTY.avif",
+    "cached": true
+  },
+  {
+    "asset": "entity-napoli",
+    "url": "https://img.uefa.com/imgml/TP/teams/logos/100x100/50136.png",
+    "cached": true
+  },
+  {
+    "asset": "entity-necaxa",
+    "url": "https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a5e6ca2689b5a3d327a0104_NEC.avif",
+    "cached": true
+  },
+  {
+    "asset": "entity-pachuca",
+    "url": "https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a5e6ca3758a0f05f3413c16_PAC.avif",
+    "cached": true
+  },
+  {
+    "asset": "entity-paderborn-07",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/SC_Paderborn_07_Logo_new.svg/250px-SC_Paderborn_07_Logo_new.svg.png",
+    "cached": true
+  },
+  {
+    "asset": "entity-porto",
+    "url": "https://img.uefa.com/imgml/TP/teams/logos/100x100/50064.png",
+    "cached": true
+  },
+  {
+    "asset": "entity-psg",
+    "url": "https://img.uefa.com/imgml/TP/teams/logos/100x100/52747.png",
+    "cached": true
+  },
+  {
+    "asset": "entity-psv",
+    "url": "https://img.uefa.com/imgml/TP/teams/logos/140x140/50062.png",
+    "cached": true
+  },
+  {
+    "asset": "entity-puebla",
+    "url": "https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a5e6ca4b78dd663211bfeb6_PUE.avif",
+    "cached": true
+  },
+  {
+    "asset": "entity-pumas",
+    "url": "https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a5e6ca98837d61c59fd7ff7_UNAM.avif",
+    "cached": true
+  },
+  {
+    "asset": "entity-queretaro",
+    "url": "https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a5e6ca5cb542006a67b5f22_QRO.avif",
+    "cached": true
+  },
+  {
+    "asset": "entity-real-betis",
+    "url": "https://img.uefa.com/imgml/TP/teams/logos/100x100/52265.png",
+    "cached": true
+  },
+  {
+    "asset": "entity-roma",
+    "url": "https://img.uefa.com/imgml/TP/teams/logos/100x100/50137.png",
+    "cached": true
+  },
+  {
+    "asset": "entity-sabah",
+    "url": "https://thumb.wikimedia.org/wikipedia/en/thumb/1/17/Sabah_FK_%28Azerbaijan%29_logo.svg/250px-Sabah_FK_%28Azerbaijan%29_logo.svg.png",
+    "cached": true
+  },
+  {
+    "asset": "entity-santos-laguna",
+    "url": "https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a5e6ca6cdb5f0e282b09f51_SAN.avif",
+    "cached": true
+  },
+  {
+    "asset": "entity-schalke-04",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/FC_Schalke_04_Logo.svg/250px-FC_Schalke_04_Logo.svg.png",
+    "cached": true
+  },
+  {
+    "asset": "entity-shakhtar",
+    "url": "https://img.uefa.com/imgml/TP/teams/logos/140x140/52707.png",
+    "cached": true
+  },
+  {
+    "asset": "entity-slavia-prague",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/SK_Slavia_Praha_full_logo.svg/250px-SK_Slavia_Praha_full_logo.svg.png",
+    "cached": true
+  },
+  {
+    "asset": "entity-slovan-bratislava",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/SK_Slovan_Bratislava_logo.svg/250px-SK_Slovan_Bratislava_logo.svg.png",
+    "cached": true
+  },
+  {
+    "asset": "entity-sporting-cp",
+    "url": "https://img.uefa.com/imgml/TP/teams/logos/100x100/50149.png",
+    "cached": true
+  },
+  {
+    "asset": "entity-stuttgart",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/VfB_Stuttgart_1893_Logo.svg/250px-VfB_Stuttgart_1893_Logo.svg.png",
+    "cached": true
+  },
+  {
+    "asset": "entity-tigres-uanl",
+    "url": "https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a5e6ca7cb542006a67b6bca_TIG.avif",
+    "cached": true
+  },
+  {
+    "asset": "entity-toluca",
+    "url": "https://cdn.prod.website-files.com/69fcf3ea92d2cdb9abbec2bb/6a5e6caab86c8596b997270e_TOL.avif",
+    "cached": true
+  },
+  {
+    "asset": "entity-union-berlin",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/1._FC_Union_Berlin_Logo.svg/330px-1._FC_Union_Berlin_Logo.svg.png",
+    "cached": true
+  },
+  {
+    "asset": "entity-viking",
+    "url": "https://upload.wikimedia.org/wikipedia/en/thumb/1/13/Viking_FK_logo_2020.svg/250px-Viking_FK_logo_2020.svg.png",
+    "cached": true
+  },
+  {
+    "asset": "entity-villarreal",
+    "url": "https://img.uefa.com/imgml/TP/teams/logos/100x100/70691.png",
+    "cached": true
+  },
+  {
+    "asset": "entity-werder-bremen",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/SV-Werder-Bremen-Logo.svg/250px-SV-Werder-Bremen-Logo.svg.png",
+    "cached": true
+  }
+]

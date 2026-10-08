@@ -1,0 +1,556 @@
+[
+  {
+    "namespace": "futbol11.dataset0",
+    "offset": 21938,
+    "records": 2356,
+    "fields": [
+      "clubID",
+      "firstName",
+      "id",
+      "lastName",
+      "nickname",
+      "positions"
+    ],
+    "duplicateIDs": 0,
+    "madridReferences": [],
+    "xolosReferences": []
+  },
+  {
+    "namespace": "futbol11.dataset1",
+    "offset": 213538,
+    "records": 85,
+    "fields": [
+      "flag",
+      "id",
+      "name"
+    ],
+    "duplicateIDs": 0,
+    "madridReferences": [],
+    "xolosReferences": []
+  },
+  {
+    "namespace": "futbol11.dataset2",
+    "offset": 221339,
+    "records": 2224,
+    "fields": [
+      "bingo",
+      "countryID",
+      "firstName",
+      "grid",
+      "id",
+      "image",
+      "lastName",
+      "nickname"
+    ],
+    "duplicateIDs": 0,
+    "madridReferences": [],
+    "xolosReferences": []
+  },
+  {
+    "namespace": "futbol11.dataset3",
+    "offset": 474379,
+    "records": 12,
+    "fields": [
+      "id",
+      "text"
+    ],
+    "duplicateIDs": 0,
+    "madridReferences": [],
+    "xolosReferences": []
+  },
+  {
+    "namespace": "futbol11.dataset4",
+    "offset": 481491,
+    "records": 8,
+    "fields": [
+      "id",
+      "name"
+    ],
+    "duplicateIDs": 0,
+    "madridReferences": [],
+    "xolosReferences": []
+  },
+  {
+    "namespace": "futbol11.dataset5",
+    "offset": 502647,
+    "records": 830,
+    "fields": [
+      "clubID",
+      "firstName",
+      "id",
+      "lastName",
+      "nickname",
+      "positions"
+    ],
+    "duplicateIDs": 0,
+    "madridReferences": [],
+    "xolosReferences": []
+  },
+  {
+    "namespace": "futbol11.dataset6",
+    "offset": 575940,
+    "records": 5,
+    "fields": [
+      "name",
+      "players"
+    ],
+    "duplicateIDs": 0,
+    "madridReferences": [],
+    "xolosReferences": []
+  },
+  {
+    "namespace": "futbol11.dataset7",
+    "offset": 577860,
+    "records": 32,
+    "fields": [
+      "id",
+      "logo",
+      "name"
+    ],
+    "duplicateIDs": 0,
+    "madridReferences": [],
+    "xolosReferences": []
+  },
+  {
+    "namespace": "futbol11.dataset8",
+    "offset": 623126,
+    "records": 1226,
+    "fields": [
+      "active",
+      "clubID",
+      "firstName",
+      "id",
+      "lastName",
+      "nickname",
+      "positions"
+    ],
+    "duplicateIDs": 0,
+    "madridReferences": [],
+    "xolosReferences": []
+  },
+  {
+    "namespace": "futbol11.dataset9",
+    "offset": 738201,
+    "records": 22,
+    "fields": [
+      "id",
+      "logo",
+      "name"
+    ],
+    "duplicateIDs": 0,
+    "madridReferences": [],
+    "xolosReferences": []
+  },
+  {
+    "namespace": "futbol11.dataset10",
+    "offset": 740514,
+    "records": 420,
+    "fields": [
+      "clubID",
+      "firstName",
+      "id",
+      "lastName",
+      "nickname",
+      "positions"
+    ],
+    "duplicateIDs": 0,
+    "madridReferences": [],
+    "xolosReferences": []
+  },
+  {
+    "namespace": "futbol11.dataset11",
+    "offset": 777335,
+    "records": 16,
+    "fields": [
+      "id",
+      "logo",
+      "name"
+    ],
+    "duplicateIDs": 0,
+    "madridReferences": [],
+    "xolosReferences": []
+  },
+  {
+    "namespace": "futbol11.dataset12",
+    "offset": 789562,
+    "records": 37,
+    "fields": [
+      "id",
+      "logo",
+      "name"
+    ],
+    "duplicateIDs": 0,
+    "madridReferences": [
+      {
+        "id": 14,
+        "name": "Real Madrid",
+        "logo": "https://img.uefa.com/imgml/TP/teams/logos/100x100/50051.png"
+      }
+    ],
+    "xolosReferences": []
+  },
+  {
+    "namespace": "futbol11.dataset13",
+    "offset": 798838,
+    "records": 1465,
+    "fields": [
+      "clubID",
+      "firstName",
+      "id",
+      "lastName",
+      "positions"
+    ],
+    "duplicateIDs": 1,
+    "madridReferences": [],
+    "xolosReferences": []
+  },
+  {
+    "namespace": "futbol11.dataset14",
+    "offset": 914985,
+    "records": 33,
+    "fields": [
+      "id",
+      "logo",
+      "name"
+    ],
+    "duplicateIDs": 0,
+    "madridReferences": [],
+    "xolosReferences": []
+  },
+  {
+    "namespace": "futbol11.dataset15",
+    "offset": 927759,
+    "records": 622,
+    "fields": [
+      "clubID",
+      "firstName",
+      "id",
+      "lastName",
+      "nickname",
+      "positions"
+    ],
+    "duplicateIDs": 0,
+    "madridReferences": [],
+    "xolosReferences": []
+  },
+  {
+    "namespace": "futbol11.dataset16",
+    "offset": 982761,
+    "records": 24,
+    "fields": [
+      "id",
+      "logo",
+      "name"
+    ],
+    "duplicateIDs": 0,
+    "madridReferences": [],
+    "xolosReferences": []
+  },
+  {
+    "namespace": "futbol11.dataset17",
+    "offset": 1005106,
+    "records": 1018,
+    "fields": [
+      "clubID",
+      "firstName",
+      "id",
+      "lastName",
+      "positions"
+    ],
+    "duplicateIDs": 0,
+    "madridReferences": [],
+    "xolosReferences": []
+  },
+  {
+    "namespace": "futbol11.dataset18",
+    "offset": 1088407,
+    "records": 29,
+    "fields": [
+      "id",
+      "logo",
+      "name"
+    ],
+    "duplicateIDs": 0,
+    "madridReferences": [
+      {
+        "id": 29,
+        "name": "Real Madrid",
+        "logo": "https://img.uefa.com/imgml/TP/teams/logos/100x100/50051.png"
+      }
+    ],
+    "xolosReferences": []
+  },
+  {
+    "namespace": "futbol11.dataset19",
+    "offset": 1101421,
+    "records": 94,
+    "fields": [
+      "id",
+      "logo",
+      "name",
+      "type"
+    ],
+    "duplicateIDs": 0,
+    "madridReferences": [
+      {
+        "id": 9,
+        "name": "Real Madrid",
+        "logo": "https://img.uefa.com/imgml/TP/teams/logos/100x100/50051.png",
+        "type": "club"
+      }
+    ],
+    "xolosReferences": []
+  },
+  {
+    "namespace": "futbol11.dataset20",
+    "offset": 1136186,
+    "records": 374,
+    "fields": [],
+    "duplicateIDs": 0,
+    "madridReferences": [],
+    "xolosReferences": []
+  },
+  {
+    "namespace": "futbol11.dataset21",
+    "offset": 1159373,
+    "records": 2729,
+    "fields": [
+      "birthday",
+      "clubID",
+      "countryID",
+      "firstName",
+      "id",
+      "lastName",
+      "nickname",
+      "ovr",
+      "positions"
+    ],
+    "duplicateIDs": 0,
+    "madridReferences": [],
+    "xolosReferences": []
+  },
+  {
+    "namespace": "futbol11.dataset22",
+    "offset": 1483309,
+    "records": 35,
+    "fields": [
+      "id",
+      "logo",
+      "name"
+    ],
+    "duplicateIDs": 0,
+    "madridReferences": [],
+    "xolosReferences": []
+  },
+  {
+    "namespace": "futbol11.dataset23",
+    "offset": 1491277,
+    "records": 365,
+    "fields": [
+      "id",
+      "player",
+      "teammates"
+    ],
+    "duplicateIDs": 0,
+    "madridReferences": [],
+    "xolosReferences": []
+  },
+  {
+    "namespace": "futbol11.dataset24",
+    "offset": 1528575,
+    "records": 251,
+    "fields": [
+      "groups",
+      "id",
+      "image",
+      "name"
+    ],
+    "duplicateIDs": 0,
+    "madridReferences": [],
+    "xolosReferences": []
+  },
+  {
+    "namespace": "futbol11.dataset25",
+    "offset": 1554454,
+    "records": 61,
+    "fields": [
+      "id",
+      "logo",
+      "name",
+      "type"
+    ],
+    "duplicateIDs": 0,
+    "madridReferences": [
+      {
+        "id": 9,
+        "name": "Real Madrid",
+        "logo": "https://img.uefa.com/imgml/TP/teams/logos/100x100/50051.png",
+        "type": "club"
+      }
+    ],
+    "xolosReferences": []
+  },
+  {
+    "namespace": "futbol11.dataset26",
+    "offset": 1588646,
+    "records": 369,
+    "fields": [
+      "id",
+      "players",
+      "title"
+    ],
+    "duplicateIDs": 2,
+    "madridReferences": [],
+    "xolosReferences": []
+  },
+  {
+    "namespace": "futbol11.dataset27",
+    "offset": 1675154,
+    "records": 158,
+    "fields": [
+      "id",
+      "level",
+      "players",
+      "title"
+    ],
+    "duplicateIDs": 0,
+    "madridReferences": [],
+    "xolosReferences": []
+  },
+  {
+    "namespace": "futbol11.dataset28",
+    "offset": 1714452,
+    "records": 109,
+    "fields": [
+      "id",
+      "image",
+      "lastName"
+    ],
+    "duplicateIDs": 0,
+    "madridReferences": [],
+    "xolosReferences": []
+  },
+  {
+    "namespace": "futbol11.dataset29",
+    "offset": 1721490,
+    "records": 36,
+    "fields": [
+      "id",
+      "logo",
+      "name"
+    ],
+    "duplicateIDs": 0,
+    "madridReferences": [],
+    "xolosReferences": []
+  },
+  {
+    "namespace": "futbol11.dataset30",
+    "offset": 1732397,
+    "records": 2549,
+    "fields": [
+      "active",
+      "clubID",
+      "firstName",
+      "id",
+      "lastName",
+      "nickname",
+      "positions"
+    ],
+    "duplicateIDs": 0,
+    "madridReferences": [],
+    "xolosReferences": []
+  },
+  {
+    "namespace": "futbol11.dataset31",
+    "offset": 1942496,
+    "records": 98,
+    "fields": [
+      "clubID",
+      "id",
+      "logo",
+      "name",
+      "players"
+    ],
+    "duplicateIDs": 0,
+    "madridReferences": [],
+    "xolosReferences": []
+  },
+  {
+    "namespace": "futbol11.dataset32",
+    "offset": 1973300,
+    "records": 420,
+    "fields": [
+      "id",
+      "players",
+      "title"
+    ],
+    "duplicateIDs": 336,
+    "madridReferences": [],
+    "xolosReferences": []
+  },
+  {
+    "namespace": "futbol11.dataset33",
+    "offset": 2067969,
+    "records": 295,
+    "fields": [
+      "addcorr",
+      "correctPl",
+      "id",
+      "impostors",
+      "title"
+    ],
+    "duplicateIDs": 95,
+    "madridReferences": [],
+    "xolosReferences": []
+  },
+  {
+    "namespace": "futbol11.dataset34",
+    "offset": 2110417,
+    "records": 176,
+    "fields": [
+      "clubs",
+      "id",
+      "player"
+    ],
+    "duplicateIDs": 47,
+    "madridReferences": [],
+    "xolosReferences": []
+  },
+  {
+    "namespace": "futbol11.dataset35",
+    "offset": 2135979,
+    "records": 48,
+    "fields": [
+      "countryID",
+      "id",
+      "name"
+    ],
+    "duplicateIDs": 0,
+    "madridReferences": [
+      {
+        "id": 14,
+        "name": "Real Madrid",
+        "countryID": 7
+      }
+    ],
+    "xolosReferences": []
+  },
+  {
+    "namespace": "futbol11.dataset36",
+    "offset": 2138061,
+    "records": 366,
+    "fields": [
+      "birthday",
+      "height",
+      "id",
+      "name",
+      "position",
+      "previousClubs",
+      "previousLeagues",
+      "secID"
+    ],
+    "duplicateIDs": 3,
+    "madridReferences": [],
+    "xolosReferences": []
+  }
+]
