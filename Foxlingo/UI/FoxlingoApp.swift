@@ -60,6 +60,7 @@ struct LearnView: View {
     @State private var practiceRoute: PracticeRoute?
     @State private var clubLibrary=false
     @Environment(\.dynamicTypeSize) private var typeSize
+    @Environment(\.accessibilityReduceMotion) private var reduced
     var body: some View {
         ScrollView {
             if let pack=model.pack, let r=model.roadmap {
@@ -68,18 +69,18 @@ struct LearnView: View {
                     HStack { Text("foxlingo").font(.system(.title,design:.rounded,weight:.black)); Spacer(); StreakBadge(days:model.state.streak.current(at:model.now,zone:model.state.homeTimeZone)) }
                     if typeSize.isAccessibilitySize {
                         VStack(alignment:.leading,spacing:16) {
-                            HStack(spacing:14) {ClubMark(club:club);Eyebrow(text:club.type == "player" ? "Player starter" : "Your roadmap")}
+                            HStack(spacing:14) {ClubMark(club:club);Eyebrow(text:club.type == "player" ? "Player starter" : club.type == "competition" ? "Competition foundations" : "Your roadmap").dynamicTypeSize(...DynamicTypeSize.xxxLarge)}
                             Text(club.visual == "XT" ? "Xolos" : club.name).font(.title2.bold())
-                            Button {clubLibrary=true} label:{Label("Choose roadmap",systemImage:"arrow.left.arrow.right").font(.subheadline).frame(minHeight:44)}.accessibilityIdentifier("switch-club")
                         }
                     } else {
-                    HStack(spacing:14) { ClubMark(club:club); VStack(alignment:.leading,spacing:4) { Eyebrow(text:club.type == "player" ? "Player starter" : "Your roadmap"); Text(club.visual == "XT" ? "Xolos" : club.name).font(.largeTitle.bold()) }; Spacer(); Button {clubLibrary=true} label: { Image(systemName:"arrow.left.arrow.right").frame(width:44,height:44).background(.white.opacity(0.8),in:Circle()) }.accessibilityLabel("Switch roadmap").accessibilityIdentifier("switch-club") }
+                    HStack(spacing:14) { ClubMark(club:club); VStack(alignment:.leading,spacing:4) { Eyebrow(text:club.type == "player" ? "Player starter" : club.type == "competition" ? "Competition foundations" : "Your roadmap").dynamicTypeSize(...DynamicTypeSize.xxxLarge); Text(club.visual == "XT" ? "Xolos" : club.name).font(.largeTitle.bold()) }; Spacer() }
                     }
-                    HStack {Text("\(progress.completedRequired) of \(progress.requiredLessonIDs.count) \(club.type == "player" ? "starter lessons" : "lessons") complete").accessibilityIdentifier("roadmap-progress").font(.subheadline).foregroundStyle(Palette.muted);Spacer();Leopard().frame(width:52,height:60)}
+                    Button {clubLibrary=true} label:{Label("Choose roadmap",systemImage:"arrow.left.arrow.right").font(.subheadline.bold()).frame(minHeight:44)}.buttonStyle(PressFeedback()).accessibilityIdentifier("switch-club")
+                    HStack {Text("\(progress.completedRequired) of \(progress.requiredLessonIDs.count) \(club.type == "player" ? "starter lessons" : club.type == "competition" ? "foundation lessons" : "lessons") complete").accessibilityIdentifier("roadmap-progress").contentTransition(.numericText()).animation(reduced ? nil : .easeInOut(duration:0.2),value:progress.completedRequired).font(.subheadline).foregroundStyle(Palette.muted);Spacer();Leopard().frame(width:52,height:60)}
                     if let summary=r.summary {Text(summary).font(.subheadline).foregroundStyle(Palette.muted)}
                     DailyPlanView(pack:pack,openLesson:{activeLesson=$0},openPractice:{practiceRoute=$0})
                     RoadmapChapters(roadmap:r,pack:pack,openLesson:{activeLesson=$0})
-                    Text(club.type == "player" ? "Club context stays optional. Scheduled recall strengthens the connections you learn." : "Every club has a story. You're building yours.").font(.footnote).foregroundStyle(Palette.muted).padding(.bottom,20)
+                    Text(club.type == "player" ? "Club context stays optional. Scheduled recall strengthens the connections you learn." : club.type == "competition" ? "A foundation in this competition. Historical and season-specific facts keep their scope." : "Every club has a story. You're building yours.").font(.footnote).foregroundStyle(Palette.muted).padding(.bottom,20)
                 }.padding(24)
             }
         }.journal().navigationBarTitleDisplayMode(.inline)
@@ -115,24 +116,29 @@ struct RoadmapChapters: View {
         }
     }
 }
-struct PlayerRoadmapView: View {
+struct SubjectRoadmapView: View {
     let roadmap: Roadmap
     @EnvironmentObject private var model: AppModel
+    @Environment(\.dynamicTypeSize) private var typeSize
     @State private var lesson: Lesson?
     var body: some View {
         ScrollView {
             if let pack=model.pack {
                 let player=pack.entity(roadmap.entityID),progress=RoadmapProgress.make(roadmap:roadmap,pack:pack,state:model.state)
                 VStack(alignment:.leading,spacing:24) {
-                    HStack(spacing:18) {ClubMark(club:player,size:88);VStack(alignment:.leading,spacing:6) {Eyebrow(text:"Player starter");Text(player.name).font(.title2.bold())}}
+                    if typeSize.isAccessibilitySize {
+                        VStack(alignment:.leading,spacing:16) {ClubMark(club:player,size:88);Eyebrow(text:player.type == "player" ? "Player starter" : "Competition foundations").dynamicTypeSize(...DynamicTypeSize.xxxLarge);Text(player.name).font(.title2.bold())}
+                    } else {
+                        HStack(spacing:18) {ClubMark(club:player,size:88);VStack(alignment:.leading,spacing:6) {Eyebrow(text:player.type == "player" ? "Player starter" : "Competition foundations").dynamicTypeSize(...DynamicTypeSize.xxxLarge);Text(player.name).font(.title2.bold())}}
+                    }
                     if let summary=roadmap.summary {Text(summary).foregroundStyle(Palette.muted)}
-                    Text("\(progress.completedRequired) of \(progress.requiredLessonIDs.count) starter lessons complete · \(progress.requiredObjectiveIDs.count) memories").font(.subheadline).accessibilityIdentifier("player-roadmap-progress")
-                    if model.roadmap?.id == roadmap.id {Label("Selected for Learn",systemImage:"checkmark.circle.fill").foregroundStyle(Palette.brand).font(.headline).accessibilityIdentifier("player-roadmap-selected")}
-                    else {PrimaryButton(title:"Make this my roadmap",symbol:"map") {model.selectSubject(player.id)}.accessibilityIdentifier("player-roadmap-select")}
+                    Text("\(progress.completedRequired) of \(progress.requiredLessonIDs.count) \(player.type == "player" ? "starter" : "foundation") lessons complete · \(progress.requiredObjectiveIDs.count) memories").font(.subheadline).accessibilityIdentifier(player.type == "player" ? "player-roadmap-progress" : "competition-roadmap-progress")
+                    if model.roadmap?.id == roadmap.id {Label("Selected for Learn",systemImage:"checkmark.circle.fill").foregroundStyle(Palette.brand).font(.headline).accessibilityIdentifier(player.type == "player" ? "player-roadmap-selected" : "competition-roadmap-selected")}
+                    else {PrimaryButton(title:"Make this my roadmap",symbol:"map") {model.selectSubject(player.id)}.accessibilityIdentifier(player.type == "player" ? "player-roadmap-select" : "competition-roadmap-select")}
                     RoadmapChapters(roadmap:roadmap,pack:pack,openLesson:{lesson=$0})
                 }.padding(24)
             }
-        }.journal().navigationTitle("Player roadmap").navigationBarTitleDisplayMode(.inline)
+        }.journal().navigationTitle(model.pack?.entity(roadmap.entityID).type == "player" ? "Player roadmap" : "Competition roadmap").navigationBarTitleDisplayMode(.inline)
         .fullScreenCover(item:$lesson) {lesson in NavigationStack {LessonView(lesson:lesson)}}
     }
 }

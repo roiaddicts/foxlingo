@@ -19,7 +19,7 @@ python3 scripts/build_update_manifest.py \
   --output /tmp/lesson-manifest.json
 ```
 
-Replace the example address with the hosted file's actual HTTPS URL. The bundled file is currently version 5; an installed version 5 app needs a higher reviewed version for an update. The command creates a local file and does not publish it. Uploading a JSON file with different whitespace requires regenerating its manifest because the SHA-256 covers the original bytes.
+Replace the example address with the hosted file's actual HTTPS URL. The bundled file is currently version 7; an installed version 7 app needs a higher reviewed version for an update. The command creates a local file and does not publish it. Uploading a JSON file with different whitespace requires regenerating its manifest because the SHA-256 covers the original bytes.
 
 A manifest contains `packKey`, `contentVersion`, `schemaVersion`, `language`, `contentURL`, and `sha256`. Its metadata must agree with the downloaded file. Manifest downloads are limited to 64 KiB; curriculum downloads/imports to 16 MiB, even without an accurate size header. Requests use HTTPS, reject insecure redirects and unsuccessful responses, and carry no provider credentials. The hash detects mismatched bytes; trust still comes from choosing a trusted feed and reviewing authored facts.
 
@@ -32,3 +32,9 @@ On a genuine next launch, the app retains the current working version before ins
 Before learner migration, the original learner JSON is archived on the device. Unchanged lesson resumes retain their board order, matches, attempts, and session ID. Changed or unprovable resumes restart, while their attempts remain historical acquisition attempts. Changed objective sets/revisions retire incompatible lesson completion flags; review corrections schedule a refresh. Earned card tiers, session history, and streaks remain. Repeated launches do not repeat a completed migration. Resetting learning progress preserves the lesson library and waiting update.
 
 This feature does not supply automatic factual verification, content signing, provider integrations, generation on demand, or a production publishing service.
+
+## Competition courses
+
+A competition roadmap uses `subjectID` pointing to a canonical `competition` entity and omits `clubID`. Club roadmaps retain their club ID; player starters retain supported club context. This additive schema-1 extension requires an app edition that understands competition roadmaps. Older app editions reject these packs; the new edition still accepts legacy club-only JSON. Do not publish version 7 to older binaries without distributing the compatible app.
+
+Competition cards enumerate only required course lessons and objectives. Optional club-context chapters use existing lesson IDs; they share memories and resumes without inflating competition completion. Selection preserves the preferred club used by club comparison. The compiler reads `content/competition-roadmaps.json` and `content/competition-lessons.json`; provenance and licensing are recorded separately in `content/competition-artwork.json`.

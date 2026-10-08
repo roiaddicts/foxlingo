@@ -133,7 +133,9 @@ pack['entities'] += [
 for key,aliases in {'entity-leon':['León','Leon'], 'entity-pumas':['Pumas'], 'entity-bayern-munich':['Bayern Munich'], 'entity-manchester-united':['Manchester United']}.items():
  entity=next(e for e in pack['entities'] if e['key']==key)
  entity['aliases']=list(dict.fromkeys(entity['aliases']+aliases))
-pack['contentVersion']=6
+from merge_competitions import merge as merge_competitions
+merge_competitions(pack)
+pack['contentVersion']=7
 # Promote explicitly authored country values into canonical targets. Preserve
 # fact/objective IDs, wording, scope and revision: the taught claim is unchanged.
 flags=json.loads((ROOT/'content/country-artwork.json').read_text())

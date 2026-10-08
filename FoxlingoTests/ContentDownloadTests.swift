@@ -25,9 +25,9 @@ final class ContentDownloadTests: XCTestCase, @unchecked Sendable {
         let root=URL(fileURLWithPath:#filePath).deletingLastPathComponent().deletingLastPathComponent()
         let bundled=try Data(contentsOf:root.appendingPathComponent("Foxlingo/Resources/starter-en.json"))
         let pack=try ContentPack.load(bundled)
-        var json=try JSONSerialization.jsonObject(with:bundled) as! [String:Any];json["contentVersion"]=6
+        var json=try JSONSerialization.jsonObject(with:bundled) as! [String:Any];json["contentVersion"]=pack.contentVersion+1
         let data=try JSONSerialization.data(withJSONObject:json)
-        let manifest=ContentManifest(packKey:pack.key,contentVersion:6,schemaVersion:1,language:"en",contentURL:file,sha256:ContentUpdateRules.digest(data))
+        let manifest=ContentManifest(packKey:pack.key,contentVersion:pack.contentVersion+1,schemaVersion:1,language:"en",contentURL:file,sha256:ContentUpdateRules.digest(data))
         return (pack,data,try JSONEncoder().encode(manifest))
     }
     func session() -> URLSession {

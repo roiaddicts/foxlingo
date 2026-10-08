@@ -90,11 +90,19 @@ public struct Chapter: Codable, Identifiable, Sendable {
 public struct Roadmap: Codable, Identifiable, Sendable {
     public let id: UUID
     public let key: String
-    public let clubID: UUID
+    public let clubID: UUID?
     public let subjectID: UUID?
     public let summary: String?
     public let chapters: [Chapter]
-    public var entityID: UUID {subjectID ?? clubID}
+    public var entityID: UUID {subjectID ?? clubID!}
+    private enum CodingKeys: String,CodingKey {case id,key,clubID,subjectID,summary,chapters}
+    public init(from decoder: Decoder) throws {
+        let c=try decoder.container(keyedBy:CodingKeys.self)
+        id=try c.decode(UUID.self,forKey:.id);key=try c.decode(String.self,forKey:.key)
+        clubID=try c.decodeIfPresent(UUID.self,forKey:.clubID);subjectID=try c.decodeIfPresent(UUID.self,forKey:.subjectID)
+        guard subjectID != nil || clubID != nil else {throw ContentError.invalid("A roadmap needs a canonical subject.")}
+        summary=try c.decodeIfPresent(String.self,forKey:.summary);chapters=try c.decode([Chapter].self,forKey:.chapters)
+    }
 }
 public struct AlbumCard: Codable, Identifiable, Sendable {
     public let id: UUID
@@ -177,8 +185,13 @@ public struct ContentPack: Codable, Sendable {
         try require(Set(roadmaps.map(\.entityID)).count == roadmaps.count,"Duplicate roadmap subjects.")
         for r in roadmaps {
             let lessons=r.chapters.flatMap(\.lessonIDs)
-            try require(ei.contains(r.clubID) && entities.first(where:{$0.id == r.clubID})?.type == "club" && ei.contains(r.entityID) && !r.chapters.isEmpty && r.chapters.allSatisfy {!$0.lessonIDs.isEmpty} && r.chapters.contains {$0.isOptional != true} && Set(lessons).count == lessons.count && Set(lessons).isSubset(of:li), "Broken roadmap.")
-            try require(entity(r.entityID).type != "club" || r.entityID == r.clubID,"Conflicting club roadmap subject.")
+            try require(ei.contains(r.entityID) && !r.chapters.isEmpty && r.chapters.allSatisfy {!$0.lessonIDs.isEmpty} && r.chapters.contains {$0.isOptional != true} && Set(lessons).count == lessons.count && Set(lessons).isSubset(of:li), "Broken roadmap.")
+            switch entity(r.entityID).type {
+            case "club": try require(r.clubID == r.entityID,"Conflicting club roadmap subject.")
+            case "player": try require(r.clubID.map {ei.contains($0) && entity($0).type == "club"} == true,"A player roadmap needs supported club context.")
+            case "competition": try require(r.subjectID == r.entityID && r.clubID == nil,"A competition roadmap cannot belong to a club.")
+            default: throw ContentError.invalid("Unsupported roadmap subject.")
+            }
         }
         for c in cards { try require(ei.contains(c.entityID) && !c.objectiveIDs.isEmpty && Set(c.objectiveIDs).isSubset(of:oi) && !c.lessonIDs.isEmpty && Set(c.lessonIDs).isSubset(of:li), "Broken album card.") }
     }

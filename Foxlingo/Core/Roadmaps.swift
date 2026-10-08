@@ -2,6 +2,7 @@ import Foundation
 
 extension ContentPack {
     public var clubRoadmaps: [Roadmap] {roadmaps.filter {entity($0.entityID).type == "club"}}
+    public var competitionRoadmaps: [Roadmap] {roadmaps.filter {entity($0.entityID).type == "competition"}}
     public var playerRoadmaps: [Roadmap] {roadmaps.filter {entity($0.entityID).type == "player"}}
 }
 extension LearnerState {

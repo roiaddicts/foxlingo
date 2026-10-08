@@ -24,8 +24,54 @@ final class FlowTests: XCTestCase {
     }
     func choosePlayer(_ name:String,_ key:String) {
         for _ in 0..<6 {if app.buttons["switch-club"].isHittable {break};app.swipeDown()}
-        tap("switch-club");app.segmentedControls["roadmap-subject-type"].buttons["Players"].tap()
+        tap("switch-club")
+        if app.segmentedControls["roadmap-subject-type"].exists {app.segmentedControls["roadmap-subject-type"].buttons["Players"].tap()}
+        else {tap("roadmap-subject-type");app.buttons["Players"].tap()}
         let search=app.searchFields.firstMatch;search.tap();search.typeText(name);tap("club-entity-\(key)")
+    }
+    func chooseCompetition(_ name:String,_ key:String) {
+        for _ in 0..<6 {if app.buttons["switch-club"].isHittable {break};app.swipeDown()}
+        tap("switch-club")
+        let search=app.searchFields.firstMatch;search.tap();search.typeText(name)
+        tap("club-entity-competition-"+key)
+    }
+    func testCompetitionFoundationsPersistenceAndAlbum() {
+        start();tap("choose-XT");chooseCompetition("Liga MX","liga-mx")
+        XCTAssertTrue(app.staticTexts["roadmap-progress"].label.contains("0 of 3 foundation lessons"))
+        let before=XCTAttachment(screenshot:app.screenshot());before.name="Liga MX foundations";before.lifetime = .keepAlways;add(before)
+        completeLesson("lesson-competition-liga-mx-origins")
+        app.terminate();start(reset:false)
+        XCTAssertTrue(app.staticTexts["roadmap-progress"].label.contains("1 of 3 foundation lessons"))
+        completeLesson("lesson-competition-liga-mx-short-tournaments")
+        completeLesson("lesson-competition-liga-mx-first-short-title")
+        XCTAssertTrue(app.staticTexts["roadmap-progress"].label.contains("3 of 3 foundation lessons"))
+        app.tabBars.buttons["Album"].tap();tap("album-collection");app.buttons["Competitions"].tap()
+        tap("card-competition-liga-mx")
+        XCTAssertTrue(app.staticTexts["card-coverage"].label.contains("9 of 9 connections introduced"))
+        tap("card-competition-roadmap")
+        XCTAssertTrue(app.staticTexts["competition-roadmap-selected"].exists)
+        XCTAssertTrue(app.staticTexts["competition-roadmap-progress"].label.contains("3 of 3 foundation"))
+        let detail=XCTAttachment(screenshot:app.screenshot());detail.name="Competition album roadmap";detail.lifetime = .keepAlways;add(detail)
+    }
+    func testCompetitionChooserAndClubOnlyCoverage() {
+        start();tap("choose-XT");tap("switch-club")
+        tap("club-entity-competition-champions-league")
+        XCTAssertTrue(app.staticTexts["roadmap-progress"].label.contains("0 of 3 foundation lessons"))
+        chooseCompetition("German league","bundesliga")
+        let marks=XCTAttachment(screenshot:app.screenshot());marks.name="Bundesliga foundations";marks.lifetime = .keepAlways;add(marks)
+        app.tabBars.buttons["Practice"].tap();tap("coverage-open");tap("coverage-first")
+        let search=app.searchFields.firstMatch;search.tap();search.typeText("Champions League")
+        XCTAssertFalse(app.buttons["club-entity-competition-champions-league"].exists)
+    }
+    func testLargeTextCompetitionAlbumHeader() {
+        app.launchArguments=["-ui-testing","-reset-test-state","-test-now","1800000000","-UIPreferredContentSizeCategoryName","UICTContentSizeCategoryAccessibilityXXXL"];app.launch()
+        tap("choose-XT");chooseCompetition("UEFA Champions League","champions-league")
+        XCTAssertTrue(app.staticTexts["roadmap-progress"].exists)
+        app.tabBars.buttons["Album"].tap();tap("album-collection");app.buttons["Competitions"].tap();tap("card-competition-champions-league");tap("card-competition-roadmap")
+        XCTAssertTrue(app.staticTexts["UEFA Champions League"].isHittable)
+        let header=XCTAttachment(screenshot:app.screenshot());header.name="Large text competition header";header.lifetime = .keepAlways;add(header)
+        for _ in 0..<6 {if app.staticTexts["competition-roadmap-progress"].isHittable {break};app.swipeUp()}
+        XCTAssertTrue(app.staticTexts["competition-roadmap-progress"].isHittable)
     }
     func testCoverageRehearsalRevealPreservesDueRecall() {
         start();tap("choose-XT");completeLesson("lesson-xolos-final")
@@ -374,7 +420,7 @@ final class FlowTests: XCTestCase {
         let bingo=XCTAttachment(screenshot:app.screenshot());bingo.name="Football bingo";bingo.lifetime = .keepAlways;add(bingo)
     }
 
-    func testLessonUpdateActivatesNextLaunchAndRestartsChangedResume() {
+    func testLessonUpdateActivatesNextLaunchAndRestartsChangedResume() throws {
         start();tap("choose-XT");completeLesson("lesson-xolos-identity")
         tap("lesson-xolos-identity");tap("lesson-next");tap("lesson-next")
         for _ in 0..<3 {tap("answer-choice-0");tap("answer-next")}
@@ -383,7 +429,9 @@ final class FlowTests: XCTestCase {
         app.launchArguments=["-ui-testing","-test-now","1800000000","-stage-test-lessons"];app.launch()
         app.tabBars.buttons["Album"].tap();app.buttons["Settings"].tap();tap("lesson-updates")
         XCTAssertTrue(app.descendants(matching:.any)["lesson-installed-version"].firstMatch.exists)
-        XCTAssertEqual(app.descendants(matching:.any)["lesson-installed-version"].firstMatch.value as? String,"Version 5")
+        let baseline=try XCTUnwrap(app.descendants(matching:.any)["lesson-installed-version"].firstMatch.value as? String)
+        let baseVersion=try XCTUnwrap(Int(baseline.split(separator:" ").last ?? ""))
+        XCTAssertGreaterThan(baseVersion,0)
         XCTAssertTrue(app.descendants(matching:.any)["lesson-update-staged"].firstMatch.exists)
         let staged=XCTAttachment(screenshot:app.screenshot());staged.name="Lesson update waiting";staged.lifetime = .keepAlways;add(staged)
         app.terminate();start(reset:false)
@@ -392,14 +440,14 @@ final class FlowTests: XCTestCase {
         XCTAssertFalse(app.buttons["match-l-0"].exists)
         app.navigationBars.buttons["Close lesson"].tap()
         app.tabBars.buttons["Album"].tap();app.buttons["Settings"].tap();tap("lesson-updates")
-        XCTAssertEqual(app.descendants(matching:.any)["lesson-installed-version"].firstMatch.value as? String,"Version 6")
+        XCTAssertEqual(app.descendants(matching:.any)["lesson-installed-version"].firstMatch.value as? String,"Version \(baseVersion+1)")
         tap("lesson-rollback")
         app.buttons["Restore on next launch"].tap()
         app.swipeDown();app.swipeDown()
         XCTAssertTrue(app.descendants(matching:.any)["lesson-update-staged"].firstMatch.exists)
         app.terminate();start(reset:false)
         app.tabBars.buttons["Album"].tap();app.buttons["Settings"].tap();tap("lesson-updates")
-        XCTAssertEqual(app.descendants(matching:.any)["lesson-installed-version"].firstMatch.value as? String,"Version 5")
+        XCTAssertEqual(app.descendants(matching:.any)["lesson-installed-version"].firstMatch.value as? String,baseline)
         XCTAssertTrue(app.staticTexts["lesson-update-message"].label.lowercased().contains("earned cards"))
         let restored=XCTAttachment(screenshot:app.screenshot());restored.name="Lesson rollback installed";restored.lifetime = .keepAlways;add(restored)
     }
@@ -561,16 +609,17 @@ final class FlowTests: XCTestCase {
         app.switches["album-discovered-only"].coordinate(withNormalizedOffset:CGVector(dx:0.93,dy:0.5)).tap()
         XCTAssertTrue(app.staticTexts["album-count"].label.contains("1 of 8 discovered"))
         tap("card-xolos")
-        XCTAssertTrue(app.staticTexts["card-coverage"].label.contains("3 of 9 connections introduced"))
-        XCTAssertTrue(app.staticTexts["card-current-recall"].label.contains("6 to discover"))
+        XCTAssertTrue(app.staticTexts["card-coverage"].label.contains("3 of 12 connections introduced"))
+        XCTAssertTrue(app.staticTexts["card-current-recall"].label.contains("9 to discover"))
         app.navigationBars.buttons.element(boundBy:0).tap()
         for _ in 0..<4 {if app.buttons["album-collection"].isHittable {break};app.swipeDown()}
         tap("album-collection");app.buttons["Champions League"].tap();tap("album-show-all")
-        XCTAssertTrue(app.staticTexts["album-count"].label.contains("0 of 39 discovered"))
+        XCTAssertTrue(app.staticTexts["album-membership-scope"].label.contains("2026/27 UEFA Champions League league phase"))
+        XCTAssertTrue(app.staticTexts["album-count"].label.contains("0 of 40 discovered"))
         let search=app.searchFields.firstMatch
         if !search.isHittable {app.swipeDown()};search.tap();search.typeText("Arsenal")
         XCTAssertTrue(app.staticTexts["album-results"].label.contains("1 search result"))
-        XCTAssertTrue(app.staticTexts["album-count"].label.contains("0 of 39 discovered"))
+        XCTAssertTrue(app.staticTexts["album-count"].label.contains("0 of 40 discovered"))
         tap("card-arsenal")
         XCTAssertTrue(app.staticTexts["Intro · 3 connections"].exists)
         let shot=XCTAttachment(screenshot:app.screenshot());shot.name="Album knowledge scope";shot.lifetime = .keepAlways;add(shot)

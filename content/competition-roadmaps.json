@@ -1,0 +1,43 @@
+[
+  {
+    "key": "champions-league",
+    "name": "UEFA Champions League",
+    "aliases": [
+      "Champions League",
+      "UCL",
+      "European Cup"
+    ],
+    "visual": "UCL",
+    "membershipScope": "champions",
+    "summary": "European Cup origins, the 2024/25 league phase, and defining European nights. Three foundation lessons; a shared Madrid story is optional.",
+    "caption": "Europe’s club championship",
+    "optionalLessonKey": "lesson-madrid-decima"
+  },
+  {
+    "key": "bundesliga",
+    "name": "Bundesliga",
+    "aliases": [
+      "German Bundesliga",
+      "German league"
+    ],
+    "visual": "BL",
+    "membershipScope": "bundesliga",
+    "summary": "The German top flight: origins, changes to league size, and defining records. Three foundation lessons; a Bayern introduction is optional.",
+    "caption": "Germany’s top flight",
+    "optionalLessonKey": "lesson-bayern-munich-starter"
+  },
+  {
+    "key": "liga-mx",
+    "name": "Liga MX",
+    "aliases": [
+      "Liga BBVA MX",
+      "LigaMX",
+      "Mexican league"
+    ],
+    "visual": "MX",
+    "membershipScope": "ligamx",
+    "summary": "Mexico’s top flight: professional roots, short tournaments, and defining moments. Three foundation lessons; Xolos’s first title story is optional.",
+    "caption": "Mexico’s championship stories",
+    "optionalLessonKey": "lesson-xolos-final"
+  }
+]

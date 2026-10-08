@@ -1,0 +1,874 @@
+{
+  "sources": [
+    {
+      "key": "competition-uefa-origins",
+      "title": "Setting the standard for club football",
+      "url": "https://www.uefa.com/news/0268-121578ca9f2b-3ebc8c09202b-1000--setting-the-standard-for-club-football/",
+      "verifiedAt": "2026-10-08"
+    },
+    {
+      "key": "competition-uefa-format-2024",
+      "title": "UEFA Club Competitions 2024/25 onwards: new league phase draw procedures explained",
+      "url": "https://www.uefa.com/uefachampionsleague/news/028f-1b7f80216368-4c26e95cc15b-1000--uefa-club-competitions-2024-25-onwards-new-league-phase-/",
+      "verifiedAt": "2026-10-08"
+    },
+    {
+      "key": "competition-uefa-istanbul-2005",
+      "title": "2004/05: Liverpool belief defies Milan",
+      "url": "https://www.uefa.com/uefachampionsleague/news/0253-0d7b89fe7b7f-c91716d11bdf-1000--2004-05-liverpool-belief-defies-milan/",
+      "verifiedAt": "2026-10-08"
+    },
+    {
+      "key": "competition-bundesliga-origins",
+      "title": "60 years of Bundesliga: Germany’s top flight celebrates milestone anniversary",
+      "url": "https://www.bundesliga.com/en/bundesliga/news/60-years-anniversary-fans-goals-stars-24240",
+      "verifiedAt": "2026-10-08"
+    },
+    {
+      "key": "competition-bundesliga-faq",
+      "title": "10 things on the Bundesliga",
+      "url": "https://www.bundesliga.com/en/faq/10-things-on-the-bundesliga",
+      "verifiedAt": "2026-10-08"
+    },
+    {
+      "key": "competition-bundesliga-title-2024",
+      "title": "Bayer Leverkusen are 2023/24 Bundesliga champions!",
+      "url": "https://www.bundesliga.com/en/bundesliga/news/bayer-leverkusen-are-2023-24-bundesliga-champions-26930",
+      "verifiedAt": "2026-10-08"
+    },
+    {
+      "key": "competition-bundesliga-record-2024",
+      "title": "Xabi Alonso's Bayer Leverkusen's become first Bundesliga team to go unbeaten throughout a season",
+      "url": "https://www.bundesliga.com/en/bundesliga/news/bayer-leverkusen-record-unbeaten-run-xabi-alonso-26289",
+      "verifiedAt": "2026-10-08"
+    },
+    {
+      "key": "competition-ligamx-first-division",
+      "title": "Historia",
+      "url": "https://www.chivasdecorazon.com.mx/en/club/historia",
+      "verifiedAt": "2026-10-08"
+    },
+    {
+      "key": "competition-ligamx-brand-2012",
+      "title": "El Informador: Liga MX presentation (2012)",
+      "url": "https://www.informador.mx/amp/Deportes/Nace-la-Liga-MX-20120605-0226.html",
+      "verifiedAt": "2026-10-08"
+    },
+    {
+      "key": "competition-ligamx-short-format",
+      "title": "Claro Sports: history of short tournaments",
+      "url": "https://www.clarosports.com/futbol/liga-mx/historia-torneos-cortos-liga-mx/",
+      "verifiedAt": "2026-10-08"
+    },
+    {
+      "key": "competition-ligamx-santos-history",
+      "title": "Santos Laguna: Guerreros de Honor",
+      "url": "https://www.clubsantos.mx/guerreros-de-honor",
+      "verifiedAt": "2026-10-08"
+    },
+    {
+      "key": "competition-artwork-entity-competition-champions-league",
+      "title": "UEFA, 2018–21 logo archive — UEFA marks; archive includes usage guidance",
+      "url": "https://www.uefa.com/news-media/mediaservices/mediadownloads/",
+      "verifiedAt": "2026-10-08"
+    },
+    {
+      "key": "competition-artwork-entity-competition-bundesliga",
+      "title": "Bundesliga / DFL — Competition mark; original SVG rendered as PNG, native layout displays red symbol",
+      "url": "https://www.bundesliga.com/en/bundesliga",
+      "verifiedAt": "2026-10-08"
+    },
+    {
+      "key": "competition-artwork-entity-competition-liga-mx",
+      "title": "Hectortoro2019, via Wikimedia Commons — CC BY-SA 4.0; unmodified original",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "verifiedAt": "2026-10-08"
+    }
+  ],
+  "lessons": [
+    {
+      "key": "lesson-competition-champions-league-origins",
+      "subjectKey": "champions-league",
+      "chapterTitle": "Origins",
+      "title": "The European Cup begins",
+      "subtitle": "An invitational tournament becomes a continental stage",
+      "story": [
+        {
+          "title": "A new European contest",
+          "body": "The competition now known as the UEFA Champions League began in the 1955/56 season. Its original name was the European Champion Clubs’ Cup, a direct description of its aim: bring leading club sides from different countries into one European contest."
+        },
+        {
+          "title": "A small field, a lasting idea",
+          "body": "That first edition was an invitational tournament with 16 teams. Clubs were invited to take part, so the opening field was not yet the modern qualifying path from national leagues. The competition’s name and entry system would change, but the idea of a European club champion started here."
+        }
+      ],
+      "facts": [
+        {
+          "key": "ucl-origin-season",
+          "prompt": "In which season did the first European Champion Clubs’ Cup take place?",
+          "answers": [
+            "1955/56",
+            "1955-56"
+          ],
+          "distractors": [
+            "1953/54",
+            "1954/55",
+            "1956/57"
+          ],
+          "label": "First season",
+          "sourceKey": "competition-uefa-origins",
+          "value": {
+            "kind": "text",
+            "display": "1955/56",
+            "text": "1955/56"
+          },
+          "scope": "European Champion Clubs’ Cup; inaugural season",
+          "evidence": "Official UEFA excerpt: “1955/56”"
+        },
+        {
+          "key": "ucl-original-name",
+          "prompt": "What was the competition’s original name?",
+          "answers": [
+            "European Champion Clubs’ Cup",
+            "European Champion Clubs' Cup",
+            "European Cup"
+          ],
+          "distractors": [
+            "European Nations’ Cup",
+            "UEFA Cup Winners’ Cup",
+            "European Super Cup"
+          ],
+          "label": "Original competition name",
+          "sourceKey": "competition-uefa-origins",
+          "value": {
+            "kind": "text",
+            "display": "European Champion Clubs’ Cup",
+            "text": "European Champion Clubs’ Cup"
+          },
+          "scope": "Competition name before the UEFA Champions League era",
+          "evidence": "Official UEFA excerpt: “European Champion Clubs' Cup”"
+        },
+        {
+          "key": "ucl-inaugural-field-size",
+          "prompt": "How many teams took part in the inaugural invitational tournament?",
+          "answers": [
+            "16",
+            "sixteen"
+          ],
+          "distractors": [
+            "8",
+            "24",
+            "32"
+          ],
+          "label": "Inaugural field size",
+          "sourceKey": "competition-uefa-origins",
+          "value": {
+            "kind": "number",
+            "display": "16",
+            "number": 16,
+            "unit": "teams"
+          },
+          "scope": "European Champion Clubs’ Cup; 1955/56 inaugural tournament",
+          "evidence": "Official UEFA excerpt: “16-team invitational tournament”"
+        }
+      ]
+    },
+    {
+      "key": "lesson-competition-champions-league-format",
+      "subjectKey": "champions-league",
+      "chapterTitle": "How it works",
+      "title": "From groups to one league phase",
+      "subtitle": "The Champions League changes shape",
+      "story": [
+        {
+          "title": "A new name and a new stage",
+          "body": "The European Cup introduced its first group stage in 1991/92. The Champions League name followed in 1992/93. These are separate milestones: a change in the tournament structure, followed by the identity associated with its next era."
+        },
+        {
+          "title": "A shared table",
+          "body": "Beginning in 2024/25, the group stage gave way to a league phase with 36 clubs. Each club plays eight matches against eight different opponents: four at home and four away. Unlike a traditional round-robin league, clubs do not face every other participant."
+        }
+      ],
+      "facts": [
+        {
+          "key": "ucl-name-era-start",
+          "prompt": "In which season did the Champions League name begin?",
+          "answers": [
+            "1992/93",
+            "1992-93"
+          ],
+          "distractors": [
+            "1990/91",
+            "1991/92",
+            "1993/94"
+          ],
+          "label": "Champions League era",
+          "sourceKey": "competition-uefa-origins",
+          "value": {
+            "kind": "text",
+            "display": "1992/93",
+            "text": "1992/93"
+          },
+          "scope": "Champions League branding; 1992/93",
+          "evidence": "Official UEFA excerpt: “Champions League from the 1992/93 season”"
+        },
+        {
+          "key": "ucl-league-phase-field",
+          "prompt": "How many clubs entered the new league phase in 2024/25?",
+          "answers": [
+            "36",
+            "thirty-six",
+            "thirty six"
+          ],
+          "distractors": [
+            "32",
+            "34",
+            "38"
+          ],
+          "label": "League-phase clubs",
+          "sourceKey": "competition-uefa-format-2024",
+          "value": {
+            "kind": "number",
+            "display": "36",
+            "number": 36,
+            "unit": "clubs"
+          },
+          "scope": "UEFA Champions League; format introduced in 2024/25",
+          "evidence": "Official UEFA excerpt: “From the 2024/25 season, 36 clubs will participate”"
+        },
+        {
+          "key": "ucl-league-phase-opponents",
+          "prompt": "How many different opponents does each club face in the 2024/25 league phase?",
+          "answers": [
+            "8",
+            "eight"
+          ],
+          "distractors": [
+            "6",
+            "10",
+            "12"
+          ],
+          "label": "Different opponents",
+          "sourceKey": "competition-uefa-format-2024",
+          "value": {
+            "kind": "number",
+            "display": "8",
+            "number": 8,
+            "unit": "different opponents"
+          },
+          "scope": "UEFA Champions League; format introduced in 2024/25",
+          "evidence": "Official UEFA excerpt: “eight matches against eight different teams”"
+        }
+      ]
+    },
+    {
+      "key": "lesson-competition-champions-league-istanbul",
+      "subjectKey": "champions-league",
+      "chapterTitle": "Defining history",
+      "title": "Istanbul: a final turned around",
+      "subtitle": "Liverpool’s 2005 comeback against Milan",
+      "story": [
+        {
+          "title": "A steep half-time deficit",
+          "body": "At half-time of the 2005 final in Istanbul, AC Milan led Liverpool 3–0. Liverpool answered with three goals in seven minutes, leveling the match at 3–3 and carrying it into extra time."
+        },
+        {
+          "title": "A champion decided by penalties",
+          "body": "Neither team scored in extra time, so the final went to a penalty shoot-out. Liverpool won the shoot-out 3–2 and lifted the trophy after one of the competition’s most memorable comebacks. Keep the match score separate from the shoot-out score: 3–3, then Liverpool 3–2 on penalties."
+        }
+      ],
+      "facts": [
+        {
+          "key": "ucl-istanbul-halftime-score",
+          "prompt": "What was the score at half-time in the 2005 final?",
+          "answers": [
+            "Milan 3–0 Liverpool",
+            "Milan 3-0 Liverpool",
+            "3–0 to Milan"
+          ],
+          "distractors": [
+            "Milan 2–0 Liverpool",
+            "Milan 1–0 Liverpool",
+            "Milan 4–0 Liverpool"
+          ],
+          "label": "Half-time score",
+          "sourceKey": "competition-uefa-istanbul-2005",
+          "value": {
+            "kind": "text",
+            "display": "Milan 3–0 Liverpool",
+            "text": "Milan 3–0 Liverpool"
+          },
+          "scope": "2004/05 UEFA Champions League final; half-time",
+          "evidence": "Official UEFA excerpt: “Trailing 3-0 to AC Milan at half-time”"
+        },
+        {
+          "key": "ucl-istanbul-fulltime-score",
+          "prompt": "What was the match score after extra time in the 2005 final?",
+          "answers": [
+            "3–3",
+            "3-3",
+            "three-three"
+          ],
+          "distractors": [
+            "2–2",
+            "1–1",
+            "4–4"
+          ],
+          "label": "Match score after extra time",
+          "sourceKey": "competition-uefa-istanbul-2005",
+          "value": {
+            "kind": "text",
+            "display": "3–3",
+            "text": "3–3"
+          },
+          "scope": "2004/05 UEFA Champions League final; after extra time",
+          "evidence": "Official UEFA excerpt: “AC Milan 3-3 Liverpool FC”"
+        },
+        {
+          "key": "ucl-istanbul-shootout-score",
+          "prompt": "What was Liverpool’s winning penalty shoot-out score?",
+          "answers": [
+            "3–2",
+            "3-2",
+            "three-two"
+          ],
+          "distractors": [
+            "4–3",
+            "5–4",
+            "2–1"
+          ],
+          "label": "Penalty shoot-out score",
+          "sourceKey": "competition-uefa-istanbul-2005",
+          "value": {
+            "kind": "text",
+            "display": "3–2",
+            "text": "3–2"
+          },
+          "scope": "2004/05 UEFA Champions League final; penalty shoot-out",
+          "evidence": "Official UEFA excerpt: “Liverpool win 3-2 on penalties”"
+        }
+      ]
+    },
+    {
+      "key": "lesson-competition-bundesliga-origins",
+      "subjectKey": "bundesliga",
+      "chapterTitle": "Origins",
+      "title": "A national league takes shape",
+      "subtitle": "The Bundesliga begins in the 1960s",
+      "story": [
+        {
+          "title": "A single top division",
+          "body": "On July 28, 1962, the German Football Association voted to introduce a national single-division top flight. The plan brought a new national competition together from the regional structure that had preceded it."
+        },
+        {
+          "title": "The first season",
+          "body": "The Bundesliga began in 1963/64 with 16 clubs. That inaugural season established the league as Germany’s national top division. The start date, its nationwide structure, and its opening field size explain what made the new competition different."
+        }
+      ],
+      "facts": [
+        {
+          "key": "bundesliga-founding-decision-year",
+          "prompt": "In what year did the DFB vote to introduce a nationwide single-division top flight?",
+          "answers": [
+            "1962",
+            "nineteen sixty-two"
+          ],
+          "distractors": [
+            "1954",
+            "1960",
+            "1963"
+          ],
+          "label": "Founding decision",
+          "sourceKey": "competition-bundesliga-origins",
+          "value": {
+            "kind": "number",
+            "display": "1962",
+            "number": 1962,
+            "unit": "year"
+          },
+          "scope": "DFB decision to establish the Bundesliga; 28 July 1962",
+          "evidence": "Official Bundesliga excerpt: “28 July 1962”"
+        },
+        {
+          "key": "bundesliga-first-season",
+          "prompt": "What was the Bundesliga’s first season?",
+          "answers": [
+            "1963/64",
+            "1963-64"
+          ],
+          "distractors": [
+            "1961/62",
+            "1962/63",
+            "1964/65"
+          ],
+          "label": "First season",
+          "sourceKey": "competition-bundesliga-faq",
+          "value": {
+            "kind": "text",
+            "display": "1963/64",
+            "text": "1963/64"
+          },
+          "scope": "Inaugural Bundesliga season",
+          "evidence": "Official Bundesliga excerpt: “first season began in August 1963”"
+        },
+        {
+          "key": "bundesliga-inaugural-clubs",
+          "prompt": "How many clubs played in the first Bundesliga season?",
+          "answers": [
+            "16",
+            "sixteen"
+          ],
+          "distractors": [
+            "14",
+            "18",
+            "20"
+          ],
+          "label": "Inaugural clubs",
+          "sourceKey": "competition-bundesliga-faq",
+          "value": {
+            "kind": "number",
+            "display": "16",
+            "number": 16,
+            "unit": "clubs"
+          },
+          "scope": "Bundesliga; inaugural season 1963/64",
+          "evidence": "Official Bundesliga excerpt: “16 teams”"
+        }
+      ]
+    },
+    {
+      "key": "lesson-competition-bundesliga-format",
+      "subjectKey": "bundesliga",
+      "chapterTitle": "How it works",
+      "title": "A league grows, then settles",
+      "subtitle": "How reunification changed the field",
+      "story": [
+        {
+          "title": "The first expansion",
+          "body": "The Bundesliga expanded from 16 to 18 clubs in 1965/66. The 18-club setup became the familiar shape of the competition, though one historic season would briefly make the league larger."
+        },
+        {
+          "title": "One season of 20 clubs",
+          "body": "After German reunification, the 1991/92 Bundesliga admitted 20 clubs, including the East German sides Hansa Rostock and Dynamo Dresden. The league returned to 18 teams the following season, 1992/93. That temporary change tied league size to a major national turning point."
+        }
+      ],
+      "facts": [
+        {
+          "key": "bundesliga-expansion-1965",
+          "prompt": "How many clubs were in the Bundesliga after its 1965/66 expansion?",
+          "answers": [
+            "18",
+            "eighteen"
+          ],
+          "distractors": [
+            "16",
+            "20",
+            "22"
+          ],
+          "label": "Expanded league size",
+          "sourceKey": "competition-bundesliga-faq",
+          "value": {
+            "kind": "number",
+            "display": "18",
+            "number": 18,
+            "unit": "clubs"
+          },
+          "scope": "Bundesliga; 1965/66 format change",
+          "evidence": "Official Bundesliga excerpt: “expanded to 18 teams”"
+        },
+        {
+          "key": "bundesliga-reunification-season-size",
+          "prompt": "How many teams took part in the one-off Bundesliga season after reunification?",
+          "answers": [
+            "20",
+            "twenty"
+          ],
+          "distractors": [
+            "18",
+            "19",
+            "22"
+          ],
+          "label": "One-off league size",
+          "sourceKey": "competition-bundesliga-faq",
+          "value": {
+            "kind": "number",
+            "display": "20",
+            "number": 20,
+            "unit": "teams"
+          },
+          "scope": "Bundesliga; one-off 1991/92 season after German reunification",
+          "evidence": "Official Bundesliga excerpt: “20 teams”"
+        },
+        {
+          "key": "bundesliga-return-to-18",
+          "prompt": "In which season did the league return to 18 teams?",
+          "answers": [
+            "1992/93",
+            "1992-93"
+          ],
+          "distractors": [
+            "1990/91",
+            "1991/92",
+            "1993/94"
+          ],
+          "label": "Return to 18 teams",
+          "sourceKey": "competition-bundesliga-faq",
+          "value": {
+            "kind": "text",
+            "display": "1992/93",
+            "text": "1992/93"
+          },
+          "scope": "Bundesliga; season after the one-off 20-team expansion",
+          "evidence": "Official Bundesliga excerpt: “18 teams the following year”"
+        }
+      ]
+    },
+    {
+      "key": "lesson-competition-bundesliga-leverkusen-invincible",
+      "subjectKey": "bundesliga",
+      "chapterTitle": "Defining history",
+      "title": "Leverkusen’s unbeaten season",
+      "subtitle": "The 2023/24 champions finish without a loss",
+      "story": [
+        {
+          "title": "A first for the league",
+          "body": "Bayer Leverkusen clinched their first Bundesliga title on Matchday 29 of the 2023/24 season. They kept winning and drawing after securing the championship, then completed all 34 league matches without a defeat."
+        },
+        {
+          "title": "An unbeaten campaign",
+          "body": "Leverkusen finished the 2023/24 Bundesliga with 28 wins, six draws, and zero losses. It was the first time a team completed a full Bundesliga season unbeaten. The feat belongs to that completed season, not to an ongoing record that could change."
+        }
+      ],
+      "facts": [
+        {
+          "key": "bundesliga-leverkusen-title-matchday",
+          "prompt": "On which matchday did Leverkusen clinch the 2023/24 Bundesliga title?",
+          "answers": [
+            "29",
+            "Matchday 29"
+          ],
+          "distractors": [
+            "27",
+            "28",
+            "30"
+          ],
+          "label": "Title-clinching matchday",
+          "sourceKey": "competition-bundesliga-title-2024",
+          "value": {
+            "kind": "number",
+            "display": "29",
+            "number": 29,
+            "unit": "matchday"
+          },
+          "scope": "Bayer Leverkusen; Bundesliga 2023/24",
+          "evidence": "Official Bundesliga excerpt: “on Matchday 29 out of 34”"
+        },
+        {
+          "key": "bundesliga-leverkusen-wins-2024",
+          "prompt": "How many Bundesliga matches did Leverkusen win in their 2023/24 unbeaten season?",
+          "answers": [
+            "28",
+            "twenty-eight",
+            "twenty eight"
+          ],
+          "distractors": [
+            "26",
+            "27",
+            "29"
+          ],
+          "label": "League wins",
+          "sourceKey": "competition-bundesliga-record-2024",
+          "value": {
+            "kind": "number",
+            "display": "28",
+            "number": 28,
+            "unit": "wins"
+          },
+          "scope": "Bayer Leverkusen; Bundesliga 2023/24, 34 matches",
+          "evidence": "Official Bundesliga excerpt: “28 wins, six draws and zero defeats”"
+        },
+        {
+          "key": "bundesliga-leverkusen-defeats-2024",
+          "prompt": "How many defeats did Leverkusen record in their 2023/24 Bundesliga season?",
+          "answers": [
+            "0",
+            "zero",
+            "none"
+          ],
+          "distractors": [
+            "1",
+            "2",
+            "3"
+          ],
+          "label": "League defeats",
+          "sourceKey": "competition-bundesliga-record-2024",
+          "value": {
+            "kind": "number",
+            "display": "0",
+            "number": 0,
+            "unit": "defeats"
+          },
+          "scope": "Bayer Leverkusen; Bundesliga 2023/24, 34 matches",
+          "evidence": "Official Bundesliga excerpt: “first team to complete an entire Bundesliga season without defeat”"
+        }
+      ]
+    },
+    {
+      "key": "lesson-competition-liga-mx-origins",
+      "subjectKey": "liga-mx",
+      "chapterTitle": "Origins",
+      "title": "The roots of Mexico’s top flight",
+      "subtitle": "A professional league, then a new identity",
+      "story": [
+        {
+          "title": "The professional roots",
+          "body": "Mexico’s professional First Division began in 1943/44. This is the historical starting point of the top flight. Its Spanish name, Primera División, describes its place at the top of the domestic league structure."
+        },
+        {
+          "title": "The Liga MX identity",
+          "body": "The Liga MX project was presented in 2012. That modern identity came decades after the first professional season. Keep the two dates separate: 1943/44 for the professional roots, and 2012 for the Liga MX launch."
+        }
+      ],
+      "facts": [
+        {
+          "key": "ligamx-first-professional-season",
+          "prompt": "What was the first season of Mexico’s professional First Division?",
+          "answers": [
+            "1943/44",
+            "1943-44"
+          ],
+          "distractors": [
+            "1941/42",
+            "1942/43",
+            "1944/45"
+          ],
+          "label": "First professional season",
+          "sourceKey": "competition-ligamx-first-division",
+          "value": {
+            "kind": "text",
+            "display": "1943/44",
+            "text": "1943/44"
+          },
+          "scope": "Mexican professional First Division; inaugural season",
+          "evidence": "Chivas official history dates the professional First Division’s beginning to 1943-44."
+        },
+        {
+          "key": "ligamx-historical-name",
+          "prompt": "What Spanish name describes the historical Mexican First Division?",
+          "answers": [
+            "Primera División"
+          ],
+          "distractors": [
+            "Segunda División",
+            "Liga de Ascenso",
+            "Tercera División"
+          ],
+          "label": "Historical competition name",
+          "sourceKey": "competition-ligamx-first-division",
+          "value": {
+            "kind": "text",
+            "display": "Primera División",
+            "text": "Primera División"
+          },
+          "scope": "Mexican professional top flight; historical identity",
+          "evidence": "Chivas official history identifies the professional First Division, translated as Primera División."
+        },
+        {
+          "key": "ligamx-brand-launch-year",
+          "prompt": "In which year was the Liga MX project presented?",
+          "answers": [
+            "2012"
+          ],
+          "distractors": [
+            "2008",
+            "2010",
+            "2014"
+          ],
+          "label": "Liga MX identity",
+          "sourceKey": "competition-ligamx-brand-2012",
+          "value": {
+            "kind": "number",
+            "display": "2012",
+            "number": 2012,
+            "unit": "year"
+          },
+          "scope": "Liga MX project presentation; June 2012",
+          "evidence": "El Informador’s on-site report, dated June 5, 2012, documents Decio de María’s presentation of Liga MX."
+        }
+      ]
+    },
+    {
+      "key": "lesson-competition-liga-mx-short-tournaments",
+      "subjectKey": "liga-mx",
+      "chapterTitle": "How it works",
+      "title": "Two title races",
+      "subtitle": "From Invierno and Verano to Apertura and Clausura",
+      "story": [
+        {
+          "title": "A split calendar",
+          "body": "Mexico’s short-tournament era began with Invierno 1996. The structure created two title races within a football season. The first labels were Invierno and Verano: winter and summer."
+        },
+        {
+          "title": "Read the tournament label",
+          "body": "Later editions use Apertura and Clausura. A championship belongs to its named tournament, so a year alone is not enough to identify the title. Some editions have special names, including Bicentenario and Guard1anes. Read the full label before comparing winners."
+        }
+      ],
+      "facts": [
+        {
+          "key": "ligamx-tournaments-per-year",
+          "prompt": "How many title races did the short-tournament structure create within a football season?",
+          "answers": [
+            "2"
+          ],
+          "distractors": [
+            "1",
+            "3",
+            "4"
+          ],
+          "label": "Title races per season",
+          "sourceKey": "competition-ligamx-short-format",
+          "value": {
+            "kind": "number",
+            "display": "2",
+            "number": 2,
+            "unit": "tournaments"
+          },
+          "scope": "Mexican short-tournament structure introduced in 1996; individual editions can be cancelled",
+          "evidence": "Claro Sports describes the 1996 format as allowing two champions in a football season."
+        },
+        {
+          "key": "ligamx-original-short-names",
+          "prompt": "What were the short tournaments first called?",
+          "answers": [
+            "Invierno and Verano",
+            "Verano and Invierno",
+            "Invierno y Verano",
+            "Verano y Invierno"
+          ],
+          "distractors": [
+            "Apertura and Clausura",
+            "Primavera and Otoño",
+            "Norte and Sur"
+          ],
+          "label": "Original tournament names",
+          "sourceKey": "competition-ligamx-short-format",
+          "value": {
+            "kind": "text",
+            "display": "Invierno and Verano",
+            "text": "Invierno and Verano"
+          },
+          "scope": "Mexican First Division; initial short-tournament names from 1996",
+          "evidence": "Claro Sports lists the early editions as Invierno and Verano."
+        },
+        {
+          "key": "ligamx-later-short-names",
+          "prompt": "Which pair of names is used for later opening and closing tournaments?",
+          "answers": [
+            "Apertura and Clausura",
+            "Clausura and Apertura",
+            "Apertura y Clausura",
+            "Clausura y Apertura"
+          ],
+          "distractors": [
+            "Invierno and Verano",
+            "Primavera and Otoño",
+            "Norte and Sur"
+          ],
+          "label": "Later tournament names",
+          "sourceKey": "competition-ligamx-short-format",
+          "value": {
+            "kind": "text",
+            "display": "Apertura and Clausura",
+            "text": "Apertura and Clausura"
+          },
+          "scope": "Liga MX tournament labels; some editions have special names",
+          "evidence": "Claro Sports documents later editions as Apertura and Clausura, alongside special tournament names."
+        }
+      ]
+    },
+    {
+      "key": "lesson-competition-liga-mx-first-short-title",
+      "subjectKey": "liga-mx",
+      "chapterTitle": "Defining history",
+      "title": "Santos and the short-tournament era",
+      "subtitle": "A first crown and the people behind it",
+      "story": [
+        {
+          "title": "A new era’s first winner",
+          "body": "Santos Laguna won Invierno 1996, the first title in the short-tournament era and the club’s first league championship. Jared Borgetti arrived for that tournament and scored 16 goals in the title-winning campaign."
+        },
+        {
+          "title": "A champion returns as coach",
+          "body": "Benjamín Galindo was a player in that first Santos championship. He later returned as the coach who won Clausura 2012. The two milestones connect a person to one club across different roles and generations."
+        }
+      ],
+      "facts": [
+        {
+          "key": "ligamx-first-short-era-champion",
+          "prompt": "Which club won the first short-tournament title in 1996?",
+          "answers": [
+            "Santos Laguna",
+            "Santos"
+          ],
+          "distractors": [
+            "Toluca",
+            "Necaxa",
+            "Pachuca"
+          ],
+          "label": "Invierno 1996 champion",
+          "sourceKey": "competition-ligamx-short-format",
+          "value": {
+            "kind": "entity",
+            "display": "Santos Laguna",
+            "entityKey": "entity-santos-laguna"
+          },
+          "scope": "Mexican First Division; Invierno 1996",
+          "evidence": "Claro Sports identifies Santos Laguna as the inaugural short-tournament champion."
+        },
+        {
+          "key": "ligamx-borgetti-goals-1996",
+          "prompt": "How many goals did Jared Borgetti score in Santos’s Invierno 1996 campaign?",
+          "answers": [
+            "16"
+          ],
+          "distractors": [
+            "12",
+            "14",
+            "18"
+          ],
+          "label": "Borgetti’s goals",
+          "sourceKey": "competition-ligamx-santos-history",
+          "value": {
+            "kind": "number",
+            "display": "16",
+            "number": 16,
+            "unit": "goals"
+          },
+          "scope": "Jared Borgetti; Santos Laguna; Invierno 1996",
+          "evidence": "Santos’s official biography records Borgetti’s 16 goals in the club’s first title-winning tournament."
+        },
+        {
+          "key": "ligamx-galindo-coach-title",
+          "prompt": "After winning as a player in Invierno 1996, which Santos title did Benjamín Galindo win as coach?",
+          "answers": [
+            "Clausura 2012"
+          ],
+          "distractors": [
+            "Apertura 2012",
+            "Clausura 2015",
+            "Clausura 2018"
+          ],
+          "label": "Galindo’s coaching title",
+          "sourceKey": "competition-ligamx-santos-history",
+          "value": {
+            "kind": "text",
+            "display": "Clausura 2012",
+            "text": "Clausura 2012"
+          },
+          "scope": "Benjamín Galindo; Santos Laguna; coaching championship",
+          "evidence": "Santos’s official biography distinguishes Galindo’s player title in Invierno 1996 from his coaching title in Clausura 2012."
+        }
+      ]
+    }
+  ]
+}

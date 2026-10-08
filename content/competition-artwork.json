@@ -1,0 +1,24 @@
+[
+  {
+    "key": "entity-competition-champions-league",
+    "source": "https://www.uefa.com/news-media/mediaservices/mediadownloads/",
+    "assetURL": "https://editorial.uefa.com/resources/0261-10452c529032-e0c7240791ca-1000/uefa_champions_league_logo.zip",
+    "credit": "UEFA, 2018–21 logo archive",
+    "license": "UEFA marks; archive includes usage guidance"
+  },
+  {
+    "key": "entity-competition-bundesliga",
+    "source": "https://www.bundesliga.com/en/bundesliga",
+    "assetURL": "https://www.bundesliga.com/assets/logo/bundesliga_neg.svg",
+    "credit": "Bundesliga / DFL",
+    "license": "Competition mark; original SVG rendered as PNG, native layout displays red symbol"
+  },
+  {
+    "key": "entity-competition-liga-mx",
+    "source": "https://commons.wikimedia.org/wiki/File:LIGA_MX.png",
+    "assetURL": "https://upload.wikimedia.org/wikipedia/commons/0/07/LIGA_MX.png",
+    "credit": "Hectortoro2019, via Wikimedia Commons",
+    "license": "CC BY-SA 4.0; unmodified original",
+    "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/"
+  }
+]

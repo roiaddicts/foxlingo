@@ -15,20 +15,23 @@ struct AlbumView: View {
                 Picker("Collection",selection:$scope) {ForEach(AlbumScope.allCases) {s in Text(s.title).tag(s)}}.pickerStyle(.menu).accessibilityIdentifier("album-collection")
                 Toggle("Discovered only",isOn:$discoveredOnly).accessibilityIdentifier("album-discovered-only")
                 if let pack=model.pack {
+                    if let membership=pack.competitionScopes?[scope.rawValue] {
+                        Text("Club membership · "+membership).font(.caption).foregroundStyle(Palette.muted).accessibilityIdentifier("album-membership-scope")
+                    }
                     let collection=AlbumCollection.make(pack:pack,state:model.state,scope:scope,discoveredOnly:discoveredOnly,query:query)
                     Text("\(collection.discovered) of \(collection.total) discovered · \(scope.title)").font(.subheadline).foregroundStyle(Palette.muted).contentTransition(.numericText()).accessibilityIdentifier("album-count")
                     if !query.isEmpty {Text("\(collection.visibleCount) search \(collection.visibleCount == 1 ? "result" : "results")").font(.subheadline).foregroundStyle(Palette.muted).accessibilityIdentifier("album-results")}
                     if collection.sections.isEmpty {
                         ContentUnavailableView {
                             Label(query.isEmpty ? "Your collection starts with a story" : "No matching cards",systemImage:query.isEmpty ? "book" : "magnifyingglass")
-                        } description: {Text(query.isEmpty ? "Complete a club lesson to discover its card." : "Try a club, player, or nickname.")}
+                        } description: {Text(query.isEmpty ? "Complete a lesson to discover its card." : "Try a competition, club, player, or nickname.")}
                         actions: {
                             if !query.isEmpty {Button("Clear search") {query=""}.accessibilityIdentifier("album-clear-search")}
                             if discoveredOnly {Button("Show all cards") {discoveredOnly=false}.accessibilityIdentifier("album-show-all")}
                         }
                     }
                     ForEach(collection.sections) {section in
-                        HStack {ClubMark(club:pack.entity(section.clubID),size:34);Text(pack.entity(section.clubID).name).font(.title2.bold())}
+                        HStack {ClubMark(club:pack.entity(section.subjectID),size:34);Text(pack.entity(section.subjectID).name).font(.title2.bold())}
                         LazyVGrid(columns:[GridItem(.adaptive(minimum:typeSize.isAccessibilitySize ? 280 : 145),spacing:14)],spacing:14) {
                             ForEach(section.cards) {card in
                                 NavigationLink {CardDetail(card:card)} label: {Collectible(card:card,pack:pack,tier:model.state.tier(card),readiness:CardReadiness.make(card:card,pack:pack,state:model.state,now:model.now))}.buttonStyle(PressFeedback()).accessibilityIdentifier(card.key)
@@ -39,7 +42,7 @@ struct AlbumView: View {
                 Text("Cards celebrate their defined knowledge sets. Scheduled recall improves them over time.").font(.footnote).foregroundStyle(Palette.muted)
             }.padding(24)
         }.scrollDismissesKeyboard(.interactively).journal().navigationTitle("Album").navigationBarTitleDisplayMode(.inline)
-        .searchable(text:$query,prompt:"Find a club or player")
+        .searchable(text:$query,prompt:"Find a subject")
         .animation(reduced ? nil : .easeInOut(duration:0.2),value:scope)
         .animation(reduced ? nil : .easeInOut(duration:0.2),value:discoveredOnly)
     }
@@ -87,8 +90,8 @@ struct CardDetail: View {
                 VStack(alignment:.leading,spacing:22) {
                     Collectible(card:card,pack:pack,tier:tier).frame(maxWidth:typeSize.isAccessibilitySize ? .infinity : 260).frame(maxWidth:.infinity)
                     NavigationLink {ExplorerView(initialID:card.entityID).onAppear {previewed.formUnion(card.objectiveIDs)}} label:{Label("Explore connections",systemImage:"point.3.connected.trianglepath.dotted").font(.headline).frame(minHeight:44)}.buttonStyle(PressFeedback()).accessibilityIdentifier("card-graph-open")
-                    if let roadmap=pack.playerRoadmaps.first(where:{$0.entityID == card.entityID}) {
-                        NavigationLink {PlayerRoadmapView(roadmap:roadmap).onAppear {previewed.formUnion(card.objectiveIDs)}} label:{Label("Open player roadmap",systemImage:"map").font(.headline).frame(minHeight:44)}.buttonStyle(PressFeedback()).accessibilityIdentifier("card-player-roadmap")
+                    if let roadmap=pack.roadmaps.first(where:{$0.entityID == card.entityID}),pack.entity(card.entityID).type != "club" {
+                        NavigationLink {SubjectRoadmapView(roadmap:roadmap).onAppear {previewed.formUnion(card.objectiveIDs)}} label:{Label(pack.entity(card.entityID).type == "player" ? "Open player roadmap" : "Open competition roadmap",systemImage:"map").font(.headline).frame(minHeight:44)}.buttonStyle(PressFeedback()).accessibilityIdentifier(pack.entity(card.entityID).type == "player" ? "card-player-roadmap" : "card-competition-roadmap")
                     }
                     Text(tier < 0 ? "Discover this story" : "Your knowledge set").font(.title2.bold())
                     if tier >= 0 {
@@ -124,7 +127,7 @@ struct CardDetail: View {
                     if tier >= 0 && !learned.isEmpty {
                         PrimaryButton(title:"Practice this knowledge set",symbol:"arrow.clockwise") {practice=PracticeRoute(learned,dueMode:readiness.due > 0,assistedObjectiveIDs:previewed)}.accessibilityIdentifier("card-practice")
                     }
-                    Text("Earned tiers stay with you. Current recall reflects this active knowledge set; context, a linked player roadmap, or the explorer opened here counts as rehearsal in card practice.").font(.footnote).foregroundStyle(Palette.muted)
+                    Text("Earned tiers stay with you. Current recall reflects this active knowledge set; context, a linked roadmap, or the explorer opened here counts as rehearsal in card practice.").font(.footnote).foregroundStyle(Palette.muted)
                 }.padding(24)
             }
         }.journal().navigationTitle(model.pack?.entity(card.entityID).name ?? "Card").navigationBarTitleDisplayMode(.inline)

@@ -1,13 +1,13 @@
 import Foundation
 
 public enum AlbumScope: String, CaseIterable, Identifiable, Sendable {
-    case favorites, all, champions, bundesliga, ligamx
+    case favorites, all, competitions, champions, bundesliga, ligamx
     public var id: String {rawValue}
-    public var title: String {switch self {case .favorites:"Favorites";case .all:"All clubs";case .champions:"Champions League";case .bundesliga:"Bundesliga";case .ligamx:"Liga MX"}}
+    public var title: String {switch self {case .favorites:"Favorites";case .all:"All subjects";case .competitions:"Competitions";case .champions:"Champions League";case .bundesliga:"Bundesliga";case .ligamx:"Liga MX"}}
 }
 public struct AlbumSection: Identifiable, Sendable {
-    public var id: UUID {clubID}
-    public let clubID: UUID
+    public var id: UUID {subjectID}
+    public let subjectID: UUID
     public let cards: [AlbumCard]
 }
 public struct AlbumCollection: Sendable {
@@ -16,31 +16,44 @@ public struct AlbumCollection: Sendable {
     public let visibleCount: Int
     public let sections: [AlbumSection]
     public static func make(pack: ContentPack,state: LearnerState,scope: AlbumScope,discoveredOnly: Bool,query: String) -> Self {
-        let roadmaps=pack.clubRoadmaps.filter {r in
-            let club=pack.entity(r.clubID)
+        let clubs=pack.clubRoadmaps.filter {r in
+            let club=pack.entity(r.entityID)
             switch scope {
             case .all:return true
+            case .competitions:return false
             case .favorites:return ["entity-xolos","entity-madrid"].contains(club.key)
             default:return club.competitions?.contains(scope.rawValue) == true
             }
         }
+        let competitions=pack.competitionRoadmaps.filter {r in
+            switch scope {
+            case .all,.competitions:return true
+            case .favorites:return false
+            default:return pack.entity(r.entityID).competitions?.contains(scope.rawValue) == true
+            }
+        }
+        let roadmaps=competitions+clubs
+        func linkedCards(_ roadmap: Roadmap) -> [AlbumCard] {
+            if pack.entity(roadmap.entityID).type == "competition" {return pack.cards.filter {$0.entityID == roadmap.entityID}}
+            let lessons=Set(roadmap.chapters.flatMap(\.lessonIDs))
+            return pack.cards.filter {!lessons.isDisjoint(with:Set($0.lessonIDs))}
+        }
         var associatedNames=[UUID:[String]]()
         for roadmap in roadmaps {
-            let lessons=Set(roadmap.chapters.flatMap(\.lessonIDs)),club=pack.entity(roadmap.clubID)
-            for card in pack.cards where !lessons.isDisjoint(with:Set(card.lessonIDs)) {associatedNames[card.id,default:[]] += [club.name]+club.aliases}
+            let club=pack.entity(roadmap.entityID)
+            for card in linkedCards(roadmap) {associatedNames[card.id,default:[]] += [club.name]+club.aliases}
         }
         var seen=Set<UUID>(), total=0, discovered=0, visible=0
         var sections=[AlbumSection]()
         let search=Recall.normalize(query)
         for r in roadmaps {
-            let lessons=Set(r.chapters.flatMap(\.lessonIDs))
-            let cards=pack.cards.filter {!lessons.isDisjoint(with:Set($0.lessonIDs)) && seen.insert($0.id).inserted}
+            let cards=linkedCards(r).filter {seen.insert($0.id).inserted}
             total += cards.count;discovered += cards.filter {state.acquiredCards.contains($0.id)}.count
             let matches=cards.filter {card in
                 let entity=pack.entity(card.entityID)
                 return (!discoveredOnly || state.acquiredCards.contains(card.id)) && (search.isEmpty || ([entity.name,card.caption]+entity.aliases+(associatedNames[card.id] ?? [])).contains {Recall.normalize($0).contains(search)})
             }
-            if !matches.isEmpty {sections.append(AlbumSection(clubID:r.clubID,cards:matches));visible += matches.count}
+            if !matches.isEmpty {sections.append(AlbumSection(subjectID:r.entityID,cards:matches));visible += matches.count}
         }
         return Self(total:total,discovered:discovered,visibleCount:visible,sections:sections)
     }
@@ -67,7 +80,7 @@ public struct CardReadiness: Sendable {
     }
     public static func scopeLabel(card: AlbumCard,pack: ContentPack) -> String {
         let type=pack.entity(card.entityID).type
-        let title=type == "player" ? "Player story" : type == "club" ? (card.objectiveIDs.count == 3 ? "Intro" : "Club foundations") : "Knowledge set"
+        let title=type == "player" ? "Player story" : type == "club" ? (card.objectiveIDs.count == 3 ? "Intro" : "Club foundations") : type == "competition" ? "Competition foundations" : "Knowledge set"
         return "\(title) · \(card.objectiveIDs.count) connections"
     }
 }

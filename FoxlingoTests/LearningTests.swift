@@ -25,14 +25,14 @@ final class LearningTests: XCTestCase {
         return try ContentPack.load(JSONSerialization.data(withJSONObject:json))
     }
     func testCompletePackAndSharedFact() {
-        XCTAssertEqual(pack.lessons.count,82);XCTAssertEqual(pack.cards.count,74);XCTAssertEqual(pack.objectives.count,245)
+        XCTAssertEqual(pack.lessons.count,91);XCTAssertEqual(pack.cards.count,77);XCTAssertEqual(pack.objectives.count,272)
         XCTAssertEqual(pack.lessons.prefix(12).flatMap(\.objectiveIDs).count,36)
         XCTAssertEqual(pack.roadmaps.prefix(2).map{$0.chapters.flatMap(\.lessonIDs).count},[7,9])
         XCTAssertEqual(pack.lessons[8].objectiveIDs[2],pack.lessons[10].objectiveIDs[1])
     }
     func testCompetitionCoverageAndCanonicalEntities() {
         for (key,count) in [("champions",36),("bundesliga",18),("ligamx",18)] {
-            let entities=pack.entities.filter{$0.competitions?.contains(key) == true}
+            let entities=pack.entities.filter{$0.type == "club" && $0.competitions?.contains(key) == true}
             XCTAssertEqual(entities.count,count)
             XCTAssertTrue(entities.allSatisfy{club in pack.roadmaps.contains{$0.clubID == club.id}})
         }

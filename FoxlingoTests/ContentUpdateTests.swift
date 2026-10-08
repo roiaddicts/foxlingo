@@ -12,46 +12,47 @@ final class ContentUpdateTests: XCTestCase {
         directory=FileManager.default.temporaryDirectory.appendingPathComponent("lesson-cache-"+UUID().uuidString)
     }
     override func tearDownWithError() throws {try? FileManager.default.removeItem(at:directory)}
+    var baseVersion: Int {bundled.contentVersion}
     func cache() throws -> ContentCache {try ContentCache(directory:directory,bundledData:data)}
-    func update(_ version: Int=7,_ edit: (inout [String:Any]) -> Void = {_ in}) throws -> Data {
+    func update(_ version: Int?=nil,_ edit: (inout [String:Any]) -> Void = {_ in}) throws -> Data {
         var json=try JSONSerialization.jsonObject(with:data) as! [String:Any]
-        json["contentVersion"]=version;edit(&json)
+        json["contentVersion"]=version ?? (baseVersion+1);edit(&json)
         return try JSONSerialization.data(withJSONObject:json,options:.sortedKeys)
     }
     func testStageActivationRollbackAndCancellation() throws {
         let c=try cache();let initial=try c.load().pack
         try c.stage(update(),active:initial)
-        XCTAssertEqual(initial.contentVersion,6);XCTAssertEqual(c.pendingVersion,7)
+        XCTAssertEqual(initial.contentVersion,baseVersion);XCTAssertEqual(c.pendingVersion,baseVersion+1)
         let installed=try c.load().pack
-        XCTAssertEqual(installed.contentVersion,7);XCTAssertNil(c.pendingVersion);XCTAssertEqual(c.previousVersion,6)
-        try c.stageRollback(active:installed);XCTAssertEqual(c.pendingVersion,6)
-        try c.cancelPending();XCTAssertEqual(try c.load().pack.contentVersion,7)
+        XCTAssertEqual(installed.contentVersion,baseVersion+1);XCTAssertNil(c.pendingVersion);XCTAssertEqual(c.previousVersion,baseVersion)
+        try c.stageRollback(active:installed);XCTAssertEqual(c.pendingVersion,baseVersion)
+        try c.cancelPending();XCTAssertEqual(try c.load().pack.contentVersion,baseVersion+1)
         try c.stageRollback(active:installed)
-        XCTAssertEqual(try c.load().pack.contentVersion,6);XCTAssertEqual(c.previousVersion,7)
+        XCTAssertEqual(try c.load().pack.contentVersion,baseVersion);XCTAssertEqual(c.previousVersion,baseVersion+1)
     }
     func testNewerPendingWinsAndSameVersionIsRejected() throws {
         let c=try cache();let active=try c.load().pack
-        try c.stage(update(9),active:active)
-        XCTAssertThrowsError(try c.stage(update(8),active:active))
-        XCTAssertThrowsError(try c.stage(update(9),active:active))
-        XCTAssertEqual(c.pendingVersion,9)
+        try c.stage(update(baseVersion+3),active:active)
+        XCTAssertThrowsError(try c.stage(update(baseVersion+2),active:active))
+        XCTAssertThrowsError(try c.stage(update(baseVersion+3),active:active))
+        XCTAssertEqual(c.pendingVersion,baseVersion+3)
     }
     func testInvalidDownloadsLeaveActiveAndPendingUntouched() throws {
         let c=try cache();let active=try c.load().pack;try c.stage(update(),active:active)
         for field in ["key","language","schemaVersion"] {
-            let bad=try update(8) {$0[field]=field == "schemaVersion" ? 99 : "other"}
+            let bad=try update(baseVersion+2) {$0[field]=field == "schemaVersion" ? 99 : "other"}
             XCTAssertThrowsError(try c.stage(bad,active:active))
-            XCTAssertEqual(c.pendingVersion,7)
+            XCTAssertEqual(c.pendingVersion,baseVersion+1)
         }
         XCTAssertThrowsError(try c.stage(Data(repeating:32,count:ContentUpdateRules.maximumBytes+1),active:active))
-        XCTAssertEqual(try c.load().pack.contentVersion,7)
+        XCTAssertEqual(try c.load().pack.contentVersion,baseVersion+1)
     }
     func testRawManifestChecksumAndMetadataAgreement() throws {
         let next=try update();let pack=try ContentPack.load(next)
-        let manifest=ContentManifest(packKey:pack.key,contentVersion:7,schemaVersion:1,language:"en",contentURL:"https://example.com/lessons.json",sha256:ContentUpdateRules.digest(next))
-        XCTAssertEqual(try manifest.verify(next,bundled:bundled).contentVersion,7)
+        let manifest=ContentManifest(packKey:pack.key,contentVersion:baseVersion+1,schemaVersion:1,language:"en",contentURL:"https://example.com/lessons.json",sha256:ContentUpdateRules.digest(next))
+        XCTAssertEqual(try manifest.verify(next,bundled:bundled).contentVersion,baseVersion+1)
         XCTAssertThrowsError(try manifest.verify(next+Data([32]),bundled:bundled))
-        let wrong=ContentManifest(packKey:pack.key,contentVersion:8,schemaVersion:1,language:"en",contentURL:manifest.contentURL,sha256:manifest.sha256)
+        let wrong=ContentManifest(packKey:pack.key,contentVersion:baseVersion+2,schemaVersion:1,language:"en",contentURL:manifest.contentURL,sha256:manifest.sha256)
         XCTAssertThrowsError(try wrong.verify(next,bundled:bundled))
         for address in ["http://example.com/feed.json","https://user:secret@example.com/feed.json","file:///tmp/feed.json"] {XCTAssertThrowsError(try ContentUpdateRules.https(address))}
     }
@@ -69,7 +70,7 @@ final class ContentUpdateTests: XCTestCase {
         let c=try cache();let active=try c.load().pack
         XCTAssertThrowsError(try c.stage(corrected(false),active:active))
         try c.stage(corrected(true),active:active)
-        let metadata=try update(8) {j in var sources=j["sources"] as! [[String:Any]];sources[0]["verifiedAt"]="2026-10-09";j["sources"]=sources}
+        let metadata=try update(baseVersion+2) {j in var sources=j["sources"] as! [[String:Any]];sources[0]["verifiedAt"]="2026-10-09";j["sources"]=sources}
         try c.cancelPending();XCTAssertNoThrow(try c.stage(metadata,active:active))
     }
     func testReassignedKeyAndGraphIdentityAreRejected() throws {
@@ -87,7 +88,7 @@ final class ContentUpdateTests: XCTestCase {
     }
     func testCompatibleResumePreservedChangedResumeArchivedAndRecallRefreshed() throws {
         let lesson=bundled.lessons[0],now=Date(timeIntervalSince1970:1800000000)
-        var learner=LearnerState();learner.installedContentVersion=6
+        var learner=LearnerState();learner.installedContentVersion=baseVersion
         _ = learner.completeLesson(lesson,pack:bundled,sessionID:UUID(),attempts:[],now:now)
         var resume=LessonResume();resume.step=6;resume.matched=["l-0","l-1"]
         resume.attempts=[Attempt(objectiveID:lesson.objectiveIDs[0],answer:"old",correct:true,hinted:false,mode:"acquisition",timestamp:now)]
@@ -103,12 +104,12 @@ final class ContentUpdateTests: XCTestCase {
         XCTAssertFalse(learner.completedLessons.contains(lesson.id))
         XCTAssertFalse(learner.acquiredCards.isEmpty);XCTAssertEqual(learner.reviews[lesson.objectiveIDs[0]]?.revision,2)
         XCTAssertEqual(learner.reviews[lesson.objectiveIDs[0]]?.refreshRequired,true)
-        try store.save(learner);XCTAssertEqual(try store.load()?.installedContentVersion,7)
+        try store.save(learner);XCTAssertEqual(try store.load()?.installedContentVersion,baseVersion+1)
         XCTAssertEqual(learner.migrateContent(from:bundled,to:changed,now:now),0)
         XCTAssertTrue(try FileManager.default.contentsOfDirectory(atPath:directory.path).contains {$0.hasPrefix("learner-before-content-update-")})
     }
     func testPairMeaningChangeRetiresResumeEvenIfObjectiveRevisionSame() throws {
-        let lesson=bundled.lessons[0];var learner=LearnerState();learner.installedContentVersion=6
+        let lesson=bundled.lessons[0];var learner=LearnerState();learner.installedContentVersion=baseVersion
         var resume=LessonResume();resume.step=6;resume.matched=["l-0","l-1"];learner.resumes[lesson.id]=resume
         let changed=try update {j in
             var exercises=j["exercises"] as! [[String:Any]];let i=exercises.firstIndex {$0["id"] as? String == lesson.exerciseIDs.last!.uuidString.lowercased()}!
@@ -122,15 +123,15 @@ final class ContentUpdateTests: XCTestCase {
         let c=try cache();let active=try c.load().pack;try c.stage(update(),active:active);_ = try c.load()
         let file=directory.appendingPathComponent("active.json")
         var entry=try JSONSerialization.jsonObject(with:Data(contentsOf:file)) as! [String:Any]
-        entry["data"]=try update(9).base64EncodedString()
+        entry["data"]=try update(baseVersion+3).base64EncodedString()
         try JSONSerialization.data(withJSONObject:entry).write(to:file,options:.atomic)
-        XCTAssertEqual(try c.load().pack.contentVersion,6)
+        XCTAssertEqual(try c.load().pack.contentVersion,baseVersion)
         try Data("truncated".utf8).write(to:directory.appendingPathComponent("pending.json"))
-        let result=try c.load();XCTAssertEqual(result.pack.contentVersion,6);XCTAssertNotNil(result.notice)
+        let result=try c.load();XCTAssertEqual(result.pack.contentVersion,baseVersion);XCTAssertNotNil(result.notice)
     }
     func testRollbackKeepsEarnedTierAndRefreshesCurrentRevision() throws {
         var learner=LearnerState();let lesson=bundled.lessons[0],now=Date()
-        learner.installedContentVersion=6
+        learner.installedContentVersion=baseVersion
         _ = learner.completeLesson(lesson,pack:bundled,sessionID:UUID(),attempts:[],now:now)
         let card=bundled.cards.first {$0.lessonIDs.contains(lesson.id)}!
         for id in card.lessonIDs where id != lesson.id {_ = learner.completeLesson(bundled.lesson(id),pack:bundled,sessionID:UUID(),attempts:[],now:now)}
@@ -161,12 +162,12 @@ final class ContentUpdateTests: XCTestCase {
     }
     func testNewerBundledPackWinsAndUnwritableCacheKeepsOfflineLessons() throws {
         let c=try cache();let active=try c.load().pack;try c.stage(update(),active:active);_ = try c.load()
-        let upgraded=try ContentCache(directory:directory,bundledData:update(8))
-        XCTAssertEqual(try upgraded.load().pack.contentVersion,8)
-        XCTAssertEqual(upgraded.previousPack(version:7)?.contentVersion,7)
+        let upgraded=try ContentCache(directory:directory,bundledData:update(baseVersion+2))
+        XCTAssertEqual(try upgraded.load().pack.contentVersion,baseVersion+2)
+        XCTAssertEqual(upgraded.previousPack(version:baseVersion+1)?.contentVersion,baseVersion+1)
         let blocked=directory.appendingPathComponent("blocked")
         try Data().write(to:blocked)
         let unavailable=try ContentCache(directory:blocked,bundledData:data)
-        let result=try unavailable.load();XCTAssertEqual(result.pack.contentVersion,6);XCTAssertNotNil(result.notice)
+        let result=try unavailable.load();XCTAssertEqual(result.pack.contentVersion,baseVersion);XCTAssertNotNil(result.notice)
     }
 }

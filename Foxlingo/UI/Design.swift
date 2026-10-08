@@ -56,7 +56,16 @@ struct EntityArtwork: View {
     var body: some View {
         Group {
             if let asset, let image=UIImage(named:asset) {
-                Image(uiImage:image).resizable().scaledToFit()
+                if asset == "entity-competition-bundesliga" {
+                    // Frame the red emblem from the original wide federation lockup.
+                    Image(uiImage:image).resizable()
+                        .frame(width:size*1024/135,height:size*1024/135)
+                        .offset(x:size*(512-87.5)/135)
+                        .frame(width:size,height:size).clipped()
+                } else {
+                    Image(uiImage:image).resizable().scaledToFit()
+                        .scaleEffect(asset == "entity-competition-champions-league" ? 1.35 : 1)
+                }
             } else if let url, let remote=URL(string:url), remote.scheme == "https" {
                 AsyncImage(url:remote) { phase in
                     if let image=phase.image { image.resizable().scaledToFit() } else { fallback }

@@ -31,7 +31,7 @@ struct DailyPlanView: View {
                 Text(plan.isResuming ? "Pick up your story." : "One new football story.").font(.title3.bold())
                 lessonLink(id,primary:true)
             } else if !plan.rehearsalObjectiveIDs.isEmpty {
-                Text(model.roadmap.map {pack.entity($0.entityID).type == "player"} == true ? "Your player starter is complete." : "Your roadmap is complete.").font(.title3.bold())
+                Text(model.roadmap.map {pack.entity($0.entityID).type == "player"} == true ? "Your player starter is complete." : model.roadmap.map {pack.entity($0.entityID).type == "competition"} == true ? "Your competition foundations are complete." : "Your roadmap is complete.").font(.title3.bold())
                 Text("Rehearse a few connections, explore optional context, or choose another roadmap.").font(.subheadline).foregroundStyle(Palette.muted)
                 PrimaryButton(title:"Rehearse \(plan.rehearsalObjectiveIDs.count) \(plan.rehearsalObjectiveIDs.count == 1 ? "memory" : "memories")",symbol:"arrow.clockwise") {openPractice(PracticeRoute(plan.rehearsalObjectiveIDs.map(pack.objective),dueMode:false))}.accessibilityIdentifier("daily-rehearsal")
             }
@@ -43,7 +43,7 @@ struct DailyPlanView: View {
     @ViewBuilder private func lessonLink(_ id: UUID,primary: Bool) -> some View {
         let lesson=pack.lesson(id)
         let selectedOwner=model.roadmap.flatMap {r in r.chapters.filter {$0.isOptional != true}.flatMap(\.lessonIDs).contains(id) ? r : nil}
-        let owner=selectedOwner ?? pack.playerRoadmaps.first(where:{$0.chapters.filter {$0.isOptional != true}.flatMap(\.lessonIDs).contains(id)}) ?? pack.clubRoadmaps.first(where:{$0.chapters.flatMap(\.lessonIDs).contains(id)})
+        let owner=selectedOwner ?? pack.playerRoadmaps.first(where:{$0.chapters.filter {$0.isOptional != true}.flatMap(\.lessonIDs).contains(id)}) ?? pack.competitionRoadmaps.first(where:{$0.chapters.filter {$0.isOptional != true}.flatMap(\.lessonIDs).contains(id)}) ?? pack.clubRoadmaps.first(where:{$0.chapters.flatMap(\.lessonIDs).contains(id)})
         let title="\(plan.isResuming ? "Continue" : "Start"): \(lesson.title)"
         if let owner {Text("\(pack.entity(owner.entityID).name) · \(owner.id == model.roadmap?.id ? "Your roadmap" : "Shared learning library")").font(.caption).foregroundStyle(Palette.muted).accessibilityIdentifier("daily-lesson-subject")}
         if primary {PrimaryButton(title:title,symbol:plan.isResuming ? "play.fill" : "book") {openLesson(lesson)}.accessibilityIdentifier("daily-lesson")}
