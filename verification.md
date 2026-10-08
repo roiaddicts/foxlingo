@@ -4,7 +4,7 @@ Verified October 8, 2026, using Xcode 26.3 and an iPhone 17 Pro simulator runnin
 
 ## Result
 
-**68 core tests pass.** The initial six end-to-end scenarios and subsequent focused simulator checks are recorded below. The original full regression and later feature checks are separate runs, rather than a fresh run of every UI test after every change. Debug and optimized Release builds have passed; the Release executable excludes the Debug-only test launch flags.
+**76 core tests pass.** The initial six end-to-end scenarios and subsequent focused simulator checks are recorded below. The original full regression and later feature checks are separate runs, rather than a fresh run of every UI test after every change. Debug and optimized Release builds have passed; the Release executable excludes the Debug-only test launch flags.
 
 ## Requirements and evidence
 
@@ -93,3 +93,11 @@ The library contains 98 canonical subjects and 57 supported graph edges: 46 enti
 Four focused simulator scenarios pass across the final runs: sourced path/filter/evidence navigation, large-text exploration entered from a card, card-context recall protection, and card-explorer recall protection. The explorer regression finds the three-edge Ramos → equalizer → 2014 final → Ronaldo event path, handles unsupported paths and zero-hop identity, and exposes sources. Opening the explorer from a learned card then answering all three due questions correctly earns zero independent successes and leaves all three reviews due. One initial UI regression had an incorrect text-field identifier; the corrected test passes.
 
 Normal map/path screenshots and the largest-text list were inspected. Long map labels wrap within their nodes; Di Stéfano's seed portrait is cached. At accessibility sizes, the heading and labeled search control occupy separate rows. The final optimized Release build passes. This graph is a sourced library explorer, not comprehensive football history or proof of teammate relationships.
+
+## Player starters and shared roadmap progress
+
+76 core tests pass. Eight roadmap tests cover six canonical player starters, required versus optional progress, shared objective deduplication, completion across both club/player paths, unchanged recall dates on replay, shared resumed sessions, persisted selection, older saves/packs, retired roadmap fallback, unchanged club-only coverage/album membership, and invalid subject/context references.
+
+Five focused simulator scenarios pass across the feature runs: player selection/restart/shared progress, album entry and explicit selection, large-text player roadmap and lesson, historical club comparison regression, and large-text club welcome/lesson regression. Completing Ramos's player lesson gives one of one required lessons complete while optional context remains zero of one. Switching to Madrid shows the same completed lesson in its six-lesson course. Completing the optional final leaves required player progress complete and produces exactly five due memories the next day. Player selection survives relaunch; opening a roadmap from the album requires an explicit action to select it for Learn.
+
+Standard player progress and the largest-text player header/lesson screenshots were inspected. At accessibility sizes, names use the full width and the roadmap switch has its own labeled row. The optimized Release build passes. The six starters reuse existing sourced lessons and clearly separate optional team history; full player careers, additional player lessons, national-team timelines, and wider dated statistics remain later content work.

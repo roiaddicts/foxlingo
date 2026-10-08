@@ -35,11 +35,12 @@ public struct DailyStudyPlan: Sendable {
             let second=latest[b.id]?.timestamp ?? state.reviews[b.id]!.learnedAt
             return first == second ? a.key < b.key : first < second
         }
-        let selected=pack.roadmaps.first {$0.clubID == state.selectedClub} ?? pack.roadmaps.first
+        let selected=state.activeRoadmap(pack)
         let selectedLessons=selected?.chapters.flatMap(\.lessonIDs) ?? []
+        let requiredLessons=selected?.chapters.filter {$0.isOptional != true}.flatMap(\.lessonIDs) ?? []
         let allLessons=selectedLessons + pack.roadmaps.filter {$0.id != selected?.id}.flatMap {$0.chapters.flatMap(\.lessonIDs)}
         let resumed=allLessons.first {state.resumes[$0] != nil}
-        let next=selectedLessons.first {!state.completedLessons.contains($0)}
+        let next=requiredLessons.first {!state.completedLessons.contains($0)}
         return Self(totalDue:due.count,dueObjectiveIDs:Array(due.prefix(size)).map(\.id),lessonID:resumed ?? next,isResuming:resumed != nil,mistakeObjectiveIDs:Array(mistakes.prefix(size)).map(\.id),rehearsalObjectiveIDs:Array(rehearsal.prefix(size)).map(\.id))
     }
 }

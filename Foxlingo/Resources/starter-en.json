@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "key": "foxlingo-favorites-en",
-  "contentVersion": 3,
+  "contentVersion": 4,
   "language": "en",
   "entities": [
     {
@@ -9538,6 +9538,156 @@
           "title": "Meet the club",
           "lessonIDs": [
             "d40d5494-d5f9-5658-8163-cacf27537753"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "76c64abf-62ed-5205-8d54-dcacc46c0f89",
+      "key": "roadmap-player-riascos",
+      "subjectID": "8a32d77b-d409-5435-9516-5adccb2b059a",
+      "clubID": "f85aa453-4336-52ef-900a-853646479e20",
+      "summary": "Three historical player connections, plus an optional club story.",
+      "chapters": [
+        {
+          "key": "roadmap-player-riascos-foundations",
+          "title": "Player foundations",
+          "lessonIDs": [
+            "5cbf13e2-98ff-5fe3-9d26-85360d344e80"
+          ]
+        },
+        {
+          "key": "roadmap-player-riascos-club-context",
+          "title": "Club context",
+          "isOptional": true,
+          "note": "Optional club history. Only player-specific facts establish who participated in the final.",
+          "lessonIDs": [
+            "b021ef8a-0c22-51dd-8ea7-4e4ba2ed9609"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "e709d605-8932-5d1c-9850-33550491c3ef",
+      "key": "roadmap-player-arce",
+      "subjectID": "d3ac3035-32f6-5d96-bc18-d3f683b7708b",
+      "clubID": "f85aa453-4336-52ef-900a-853646479e20",
+      "summary": "Three historical player connections, plus an optional club story.",
+      "chapters": [
+        {
+          "key": "roadmap-player-arce-foundations",
+          "title": "Player foundations",
+          "lessonIDs": [
+            "523fb086-b184-5791-9437-b2f3d90752d4"
+          ]
+        },
+        {
+          "key": "roadmap-player-arce-club-context",
+          "title": "Club context",
+          "isOptional": true,
+          "note": "Optional club history. Only player-specific facts establish who participated in the final.",
+          "lessonIDs": [
+            "b021ef8a-0c22-51dd-8ea7-4e4ba2ed9609"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "0125262b-7a4d-522c-85dd-96ee85e1560e",
+      "key": "roadmap-player-saucedo",
+      "subjectID": "8dc70c1f-7491-530f-9c92-3e48cd54f665",
+      "clubID": "f85aa453-4336-52ef-900a-853646479e20",
+      "summary": "Three historical player connections, plus an optional club story.",
+      "chapters": [
+        {
+          "key": "roadmap-player-saucedo-foundations",
+          "title": "Player foundations",
+          "lessonIDs": [
+            "5d2f943a-dcde-5c0b-a100-14b0ef478d8c"
+          ]
+        },
+        {
+          "key": "roadmap-player-saucedo-club-context",
+          "title": "Club context",
+          "isOptional": true,
+          "note": "Optional club history. Only player-specific facts establish who participated in the final.",
+          "lessonIDs": [
+            "b021ef8a-0c22-51dd-8ea7-4e4ba2ed9609"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "61670db7-91ac-593f-a1f2-3af2fbe56157",
+      "key": "roadmap-player-cristiano",
+      "subjectID": "6d957fed-48cd-5e99-8e09-2758304bba08",
+      "clubID": "b10020b9-4d2f-5384-a229-6bb3d69da093",
+      "summary": "Three historical player connections, plus an optional club story.",
+      "chapters": [
+        {
+          "key": "roadmap-player-cristiano-foundations",
+          "title": "Player foundations",
+          "lessonIDs": [
+            "24f8f510-fc4c-5792-8eae-bbc32f221b5b"
+          ]
+        },
+        {
+          "key": "roadmap-player-cristiano-club-context",
+          "title": "Club context",
+          "isOptional": true,
+          "note": "Optional club history. Only player-specific facts establish who participated in the final.",
+          "lessonIDs": [
+            "a96e0170-a1fe-5991-9a62-1786a8709a11"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a0152822-9528-588e-a924-2344294651db",
+      "key": "roadmap-player-ramos",
+      "subjectID": "bd1a5c77-15cc-5bde-bd77-b3a9679f8e95",
+      "clubID": "b10020b9-4d2f-5384-a229-6bb3d69da093",
+      "summary": "Three historical player connections, plus an optional club story.",
+      "chapters": [
+        {
+          "key": "roadmap-player-ramos-foundations",
+          "title": "Player foundations",
+          "lessonIDs": [
+            "edd1219f-0972-5612-a866-dff094c0cb82"
+          ]
+        },
+        {
+          "key": "roadmap-player-ramos-club-context",
+          "title": "Club context",
+          "isOptional": true,
+          "note": "Optional club history. Only player-specific facts establish who participated in the final.",
+          "lessonIDs": [
+            "a96e0170-a1fe-5991-9a62-1786a8709a11"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c580d1d0-78da-5ec0-9c9c-08348e26c0b2",
+      "key": "roadmap-player-casillas",
+      "subjectID": "b63b8e8c-5e58-54f5-815d-9e37d56baf32",
+      "clubID": "b10020b9-4d2f-5384-a229-6bb3d69da093",
+      "summary": "Three historical player connections, plus an optional club story.",
+      "chapters": [
+        {
+          "key": "roadmap-player-casillas-foundations",
+          "title": "Player foundations",
+          "lessonIDs": [
+            "d2918813-a681-5980-9321-3958c85154f9"
+          ]
+        },
+        {
+          "key": "roadmap-player-casillas-club-context",
+          "title": "Club context",
+          "isOptional": true,
+          "note": "Optional club history. Only player-specific facts establish who participated in the final.",
+          "lessonIDs": [
+            "a96e0170-a1fe-5991-9a62-1786a8709a11"
           ]
         }
       ]

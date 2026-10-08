@@ -24,15 +24,15 @@ struct DailyPlanView: View {
             }
             if plan.totalDue > 0 {
                 Text("A few familiar connections.").font(.title3.bold())
-                Text("\(plan.dueObjectiveIDs.count) in this session · \(plan.totalDue) ready across your clubs. \(plan.totalDue > plan.dueObjectiveIDs.count ? "The rest can wait." : "No timer, no pressure.")").font(.subheadline).foregroundStyle(Palette.muted).accessibilityIdentifier("daily-due-count")
+                Text("\(plan.dueObjectiveIDs.count) in this session · \(plan.totalDue) ready across your roadmaps. \(plan.totalDue > plan.dueObjectiveIDs.count ? "The rest can wait." : "No timer, no pressure.")").font(.subheadline).foregroundStyle(Palette.muted).accessibilityIdentifier("daily-due-count")
                 PrimaryButton(title:"Review \(plan.dueObjectiveIDs.count) \(plan.dueObjectiveIDs.count == 1 ? "memory" : "memories")",symbol:"arrow.clockwise") {openPractice(PracticeRoute(plan.dueObjectiveIDs.map(pack.objective),dueMode:true))}.accessibilityIdentifier("daily-review")
                 if let id=plan.lessonID {lessonLink(id,primary:false)}
             } else if let id=plan.lessonID {
                 Text(plan.isResuming ? "Pick up your story." : "One new football story.").font(.title3.bold())
                 lessonLink(id,primary:true)
             } else if !plan.rehearsalObjectiveIDs.isEmpty {
-                Text("Your roadmap is complete.").font(.title3.bold())
-                Text("Rehearse a few connections. Switch clubs to discover another story.").font(.subheadline).foregroundStyle(Palette.muted)
+                Text(model.roadmap.map {pack.entity($0.entityID).type == "player"} == true ? "Your player starter is complete." : "Your roadmap is complete.").font(.title3.bold())
+                Text("Rehearse a few connections, explore optional context, or choose another roadmap.").font(.subheadline).foregroundStyle(Palette.muted)
                 PrimaryButton(title:"Rehearse \(plan.rehearsalObjectiveIDs.count) \(plan.rehearsalObjectiveIDs.count == 1 ? "memory" : "memories")",symbol:"arrow.clockwise") {openPractice(PracticeRoute(plan.rehearsalObjectiveIDs.map(pack.objective),dueMode:false))}.accessibilityIdentifier("daily-rehearsal")
             }
             if !plan.mistakeObjectiveIDs.isEmpty {
@@ -42,7 +42,10 @@ struct DailyPlanView: View {
     }
     @ViewBuilder private func lessonLink(_ id: UUID,primary: Bool) -> some View {
         let lesson=pack.lesson(id)
+        let selectedOwner=model.roadmap.flatMap {r in r.chapters.filter {$0.isOptional != true}.flatMap(\.lessonIDs).contains(id) ? r : nil}
+        let owner=selectedOwner ?? pack.playerRoadmaps.first(where:{$0.chapters.filter {$0.isOptional != true}.flatMap(\.lessonIDs).contains(id)}) ?? pack.clubRoadmaps.first(where:{$0.chapters.flatMap(\.lessonIDs).contains(id)})
         let title="\(plan.isResuming ? "Continue" : "Start"): \(lesson.title)"
+        if let owner {Text("\(pack.entity(owner.entityID).name) · \(owner.id == model.roadmap?.id ? "Your roadmap" : "Shared learning library")").font(.caption).foregroundStyle(Palette.muted).accessibilityIdentifier("daily-lesson-subject")}
         if primary {PrimaryButton(title:title,symbol:plan.isResuming ? "play.fill" : "book") {openLesson(lesson)}.accessibilityIdentifier("daily-lesson")}
         else {Button {openLesson(lesson)} label:{Label(title,systemImage:"book").font(.subheadline.bold()).frame(minHeight:44)}.buttonStyle(PressFeedback()).accessibilityIdentifier("daily-lesson")}
     }

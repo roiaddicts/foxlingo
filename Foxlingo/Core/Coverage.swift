@@ -16,7 +16,7 @@ public struct CoverageStudyPack: Sendable {
     public static func make(pack: ContentPack, firstID: UUID, secondID: UUID) throws -> Self {
         guard firstID != secondID else {throw ContentError.invalid("Choose two different clubs.")}
         func club(_ id: UUID) throws -> CoverageClub {
-            guard let roadmap=pack.roadmaps.first(where:{$0.clubID == id}) else {throw ContentError.invalid("This club does not have a study roadmap yet.")}
+            guard let roadmap=pack.clubRoadmaps.first(where:{$0.clubID == id}) else {throw ContentError.invalid("This club does not have a study roadmap yet.")}
             let lessons=roadmap.chapters.flatMap(\.lessonIDs)
             let objectives=unique(lessons.flatMap {pack.lesson($0).objectiveIDs})
             let facts=unique(objectives.flatMap {pack.objective($0).factIDs})

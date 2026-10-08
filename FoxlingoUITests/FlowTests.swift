@@ -24,6 +24,47 @@ final class FlowTests: XCTestCase {
         let search=app.searchFields.firstMatch;search.tap();search.typeText(name)
         tap("graph-select-entity-\(key)")
     }
+    func choosePlayer(_ name:String,_ key:String) {
+        for _ in 0..<6 {if app.buttons["switch-club"].isHittable {break};app.swipeDown()}
+        tap("switch-club");app.segmentedControls["roadmap-subject-type"].buttons["Players"].tap()
+        let search=app.searchFields.firstMatch;search.tap();search.typeText(name);tap("club-entity-\(key)")
+    }
+    func testPlayerRoadmapSharedProgressOptionalContextAndPersistence() {
+        start();tap("choose-XT");choosePlayer("Sergio Ramos","ramos")
+        XCTAssertTrue(app.staticTexts["roadmap-progress"].label.contains("0 of 1 starter lessons"))
+        XCTAssertTrue(app.staticTexts["daily-lesson-subject"].label.contains("Sergio Ramos · Your roadmap"))
+        completeLesson("lesson-madrid-ramos")
+        XCTAssertTrue(app.staticTexts["Your player starter is complete."].exists)
+        XCTAssertTrue(app.staticTexts["roadmap-progress"].label.contains("1 of 1 starter lessons"))
+        XCTAssertTrue(app.staticTexts["roadmap-optional-progress"].label.contains("0 of 1 optional"))
+        app.terminate();start(reset:false)
+        XCTAssertTrue(app.staticTexts["Sergio Ramos"].exists)
+        tap("switch-club");let search=app.searchFields.firstMatch;search.tap();search.typeText("Real Madrid");tap("club-entity-madrid")
+        XCTAssertTrue(app.staticTexts["roadmap-progress"].label.contains("1 of 6 lessons"))
+        choosePlayer("Sergio Ramos","ramos")
+        completeLesson("lesson-madrid-decima")
+        XCTAssertTrue(app.staticTexts["roadmap-progress"].label.contains("1 of 1 starter lessons"))
+        XCTAssertTrue(app.staticTexts["roadmap-optional-progress"].label.contains("1 of 1 optional"))
+        app.terminate();start(reset:false,now:1_800_000_000+86401)
+        XCTAssertTrue(app.staticTexts["daily-due-count"].label.contains("5 ready"))
+        let shot=XCTAttachment(screenshot:app.screenshot());shot.name="Player starter progress";shot.lifetime = .keepAlways;add(shot)
+    }
+    func testPlayerRoadmapAlbumEntryAndExplicitSelection() {
+        start();tap("choose-XT");app.tabBars.buttons["Album"].tap();tap("card-cristiano");tap("card-player-roadmap")
+        XCTAssertTrue(app.staticTexts["player-roadmap-progress"].label.contains("0 of 1 starter lessons"))
+        XCTAssertTrue(app.staticTexts["Optional club context".uppercased()].exists)
+        tap("player-roadmap-select");XCTAssertTrue(app.staticTexts["player-roadmap-selected"].exists)
+        app.tabBars.buttons["Learn"].tap();XCTAssertTrue(app.staticTexts["Cristiano Ronaldo"].exists)
+    }
+    func testLargeTextPlayerRoadmap() {
+        app.launchArguments=["-ui-testing","-reset-test-state","-test-now","1800000000","-UIPreferredContentSizeCategoryName","UICTContentSizeCategoryAccessibilityXXXL"];app.launch()
+        tap("choose-XT");choosePlayer("Cirilo Saucedo","saucedo")
+        XCTAssertTrue(app.staticTexts["roadmap-progress"].label.contains("0 of 1 starter lessons"))
+        for _ in 0..<6 {if app.buttons["switch-club"].isHittable {break};app.swipeDown()}
+        let header=XCTAttachment(screenshot:app.screenshot());header.name="Large text player roadmap";header.lifetime = .keepAlways;add(header)
+        tap("lesson-xolos-saucedo");XCTAssertTrue(app.buttons["lesson-next"].exists)
+        let shot=XCTAttachment(screenshot:app.screenshot());shot.name="Large text player lesson";shot.lifetime = .keepAlways;add(shot)
+    }
     func testConnectionExplorerPathsFiltersAndEvidence() {
         start();tap("choose-XT");app.tabBars.buttons["Album"].tap();tap("graph-open")
         XCTAssertTrue(app.staticTexts["graph-neighbor-count"].label.contains("Football links"))

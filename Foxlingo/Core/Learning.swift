@@ -33,6 +33,7 @@ public struct LessonResume: Codable, Sendable {
 public struct LearnerState: Codable, Sendable {
     public var schemaVersion = 1
     public var selectedClub: UUID?
+    public var selectedRoadmapID: UUID? = nil
     public var homeTimeZone: String
     public var preferredSessionSize: Int? = nil
     public var sound = true

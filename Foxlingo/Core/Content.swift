@@ -84,12 +84,17 @@ public struct Chapter: Codable, Identifiable, Sendable {
     public let key: String
     public let title: String
     public let lessonIDs: [UUID]
+    public let isOptional: Bool?
+    public let note: String?
 }
 public struct Roadmap: Codable, Identifiable, Sendable {
     public let id: UUID
     public let key: String
     public let clubID: UUID
+    public let subjectID: UUID?
+    public let summary: String?
     public let chapters: [Chapter]
+    public var entityID: UUID {subjectID ?? clubID}
 }
 public struct AlbumCard: Codable, Identifiable, Sendable {
     public let id: UUID
@@ -169,7 +174,12 @@ public struct ContentPack: Codable, Sendable {
             let activities = l.exerciseIDs.map(exercise)
             try require(activities.filter { $0.kind == "choice" }.count == 4 && activities.filter { $0.kind == "match" }.count == 1 && Set(activities.flatMap(\.objectiveIDs)) == Set(l.objectiveIDs), "Incomplete assessment \(l.key).")
         }
-        for r in roadmaps { try require(ei.contains(r.clubID) && !r.chapters.isEmpty && Set(r.chapters.flatMap(\.lessonIDs)).isSubset(of:li), "Broken roadmap.") }
+        try require(Set(roadmaps.map(\.entityID)).count == roadmaps.count,"Duplicate roadmap subjects.")
+        for r in roadmaps {
+            let lessons=r.chapters.flatMap(\.lessonIDs)
+            try require(ei.contains(r.clubID) && entities.first(where:{$0.id == r.clubID})?.type == "club" && ei.contains(r.entityID) && !r.chapters.isEmpty && r.chapters.allSatisfy {!$0.lessonIDs.isEmpty} && r.chapters.contains {$0.isOptional != true} && Set(lessons).count == lessons.count && Set(lessons).isSubset(of:li), "Broken roadmap.")
+            try require(entity(r.entityID).type != "club" || r.entityID == r.clubID,"Conflicting club roadmap subject.")
+        }
         for c in cards { try require(ei.contains(c.entityID) && !c.objectiveIDs.isEmpty && Set(c.objectiveIDs).isSubset(of:oi) && !c.lessonIDs.isEmpty && Set(c.lessonIDs).isSubset(of:li), "Broken album card.") }
     }
 }

@@ -122,7 +122,8 @@ merge(pack)
 graph=json.loads((ROOT/'content/graph-connections.json').read_text())
 pack['entities'] += graph['entities']
 pack['relationships'] = graph['relationships']
-pack['contentVersion']=3
+pack['roadmaps'] += json.loads((ROOT/'content/player-roadmaps.json').read_text())
+pack['contentVersion']=4
 # Promote explicitly authored country values into canonical targets. Preserve
 # fact/objective IDs, wording, scope and revision: the taught claim is unchanged.
 flags=json.loads((ROOT/'content/country-artwork.json').read_text())

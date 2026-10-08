@@ -37,7 +37,7 @@ final class LearningTests: XCTestCase {
             XCTAssertTrue(entities.allSatisfy{club in pack.roadmaps.contains{$0.clubID == club.id}})
         }
         XCTAssertEqual(pack.entities.filter{$0.name == "Atlético de Madrid"}.count,1)
-        XCTAssertEqual(pack.roadmaps.count,68)
+        XCTAssertEqual(pack.clubRoadmaps.count,68);XCTAssertEqual(pack.playerRoadmaps.count,6)
     }
     func testRejectInvalidSchemaAndDuplicateIDs() {
         XCTAssertThrowsError(try mutatePack{$0["schemaVersion"]=2})

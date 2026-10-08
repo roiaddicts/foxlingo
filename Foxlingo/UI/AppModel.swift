@@ -59,8 +59,9 @@ import AudioToolbox
             state = LearnerState(); recoveryRequired = false; message = nil; save()
         } catch { message = error.localizedDescription }
     }
-    func select(_ id: UUID) { state.selectedClub = id; save() }
-    var roadmap: Roadmap? { pack?.roadmaps.first { $0.clubID == state.selectedClub } ?? pack?.roadmaps.first }
+    func select(_ id: UUID) {state.selectClub(id);save()}
+    func selectSubject(_ id: UUID) {if let pack,let roadmap=pack.roadmaps.first(where:{$0.entityID == id}) {state.selectRoadmap(roadmap,pack:pack);save()}}
+    var roadmap: Roadmap? {pack.flatMap {state.activeRoadmap($0)}}
     var studyPlan: DailyStudyPlan? {pack.map {DailyStudyPlan.make(pack:$0,state:state,now:now,limit:state.preferredSessionSize ?? 10)}}
     var due: [Objective] {guard let pack,let studyPlan else {return []};return studyPlan.dueObjectiveIDs.map(pack.objective)}
     func respond(_ correct: Bool) {

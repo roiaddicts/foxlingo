@@ -14,7 +14,7 @@ struct RootView: View {
                 ContentUnavailableView("Lessons unavailable",systemImage:"book.closed",description:Text(error)).journal()
             } else if model.recoveryRequired {
                 NavigationStack { VStack(spacing:24) { Leopard().frame(height:110); Text("Let's recover your progress").font(.title.bold()); Text(model.message ?? "Saved progress needs attention."); PrimaryButton(title:"Retry",action:{model.recoveryRequired=false;model.load()}); Button("Settings") { settings=true } }.padding(24).journal() }
-            } else if model.state.selectedClub == nil, let pack = model.pack {
+            } else if model.state.selectedClub == nil && !(model.pack?.roadmaps.contains {$0.id == model.state.selectedRoadmapID} ?? false), let pack = model.pack {
                 WelcomeView(pack:pack)
             } else {
                 TabView {
@@ -56,37 +56,80 @@ struct LearnView: View {
     @State private var activeLesson: Lesson?
     @State private var practiceRoute: PracticeRoute?
     @State private var clubLibrary=false
+    @Environment(\.dynamicTypeSize) private var typeSize
     var body: some View {
         ScrollView {
             if let pack=model.pack, let r=model.roadmap {
-                let club=pack.entity(r.clubID)
+                let club=pack.entity(r.entityID),progress=RoadmapProgress.make(roadmap:r,pack:pack,state:model.state)
                 VStack(alignment:.leading,spacing:26) {
                     HStack { Text("foxlingo").font(.system(.title,design:.rounded,weight:.black)); Spacer(); Label("\(model.state.streak.current(at:model.now,zone:model.state.homeTimeZone))",systemImage:"flame.fill").font(.headline).foregroundStyle(Palette.green).accessibilityLabel("\(model.state.streak.current(at:model.now,zone:model.state.homeTimeZone)) active day streak") }
-                    HStack(spacing:14) { ClubMark(club:club); VStack(alignment:.leading,spacing:4) { Eyebrow(text:"Your roadmap"); Text(club.visual == "XT" ? "Xolos" : club.name).font(.largeTitle.bold()) }; Spacer(); Button {clubLibrary=true} label: { Image(systemName:"arrow.left.arrow.right").frame(width:44,height:44).background(.white.opacity(0.8),in:Circle()) }.accessibilityLabel("Switch club").accessibilityIdentifier("switch-club") }
-                    HStack {Text("\(r.chapters.flatMap(\.lessonIDs).filter {model.state.completedLessons.contains($0)}.count) of \(r.chapters.flatMap(\.lessonIDs).count) lessons complete").font(.subheadline).foregroundStyle(Palette.muted);Spacer();Leopard().frame(width:52,height:60)}
-                    DailyPlanView(pack:pack,openLesson:{activeLesson=$0},openPractice:{practiceRoute=$0})
-                    ForEach(Array(r.chapters.enumerated()),id:\.element.id) { index, chapter in
-                        VStack(alignment:.leading,spacing:18) {
-                            HStack { Eyebrow(text:"Chapter \(index+1)"); Rectangle().fill(Palette.ink.opacity(0.12)).frame(height:1) }
-                            Text(chapter.title).font(.title2.bold())
-                            ForEach(Array(chapter.lessonIDs.enumerated()),id:\.element) { n,id in
-                                let l=pack.lesson(id), done=model.state.completedLessons.contains(id), started=model.state.resumes[id] != nil
-                                Button { activeLesson=l } label: {
-                                    HStack(spacing:18) {
-                                        VStack(spacing:0) { Circle().fill(done ? Palette.green : .white).frame(width:52,height:52).overlay { Image(systemName:done ? "checkmark" : started ? "play.fill" : "book.fill").foregroundStyle(done ? .white : Palette.green) }; if n < chapter.lessonIDs.count-1 { Rectangle().fill(Palette.green.opacity(0.2)).frame(width:3,height:22) } }
-                                        VStack(alignment:.leading,spacing:5) { Text(l.title).font(.headline); Text(done ? "Completed · Play again" : started ? "Continue lesson" : l.subtitle).font(.subheadline).foregroundStyle(Palette.muted) }.padding(.bottom,n < chapter.lessonIDs.count-1 ? 22 : 0)
-                                        Spacer(); Image(systemName:"chevron.right").font(.caption.bold()).padding(.bottom,n < chapter.lessonIDs.count-1 ? 22 : 0)
-                                    }
-                                }.buttonStyle(.plain).accessibilityIdentifier(l.key)
-                            }
+                    if typeSize.isAccessibilitySize {
+                        VStack(alignment:.leading,spacing:16) {
+                            HStack(spacing:14) {ClubMark(club:club);Eyebrow(text:club.type == "player" ? "Player starter" : "Your roadmap")}
+                            Text(club.visual == "XT" ? "Xolos" : club.name).font(.title2.bold())
+                            Button {clubLibrary=true} label:{Label("Choose roadmap",systemImage:"arrow.left.arrow.right").font(.subheadline).frame(minHeight:44)}.accessibilityIdentifier("switch-club")
                         }
+                    } else {
+                    HStack(spacing:14) { ClubMark(club:club); VStack(alignment:.leading,spacing:4) { Eyebrow(text:club.type == "player" ? "Player starter" : "Your roadmap"); Text(club.visual == "XT" ? "Xolos" : club.name).font(.largeTitle.bold()) }; Spacer(); Button {clubLibrary=true} label: { Image(systemName:"arrow.left.arrow.right").frame(width:44,height:44).background(.white.opacity(0.8),in:Circle()) }.accessibilityLabel("Switch roadmap").accessibilityIdentifier("switch-club") }
                     }
-                    Text("Every club has a story. You're building yours.").font(.footnote).foregroundStyle(Palette.muted).padding(.bottom,20)
+                    HStack {Text("\(progress.completedRequired) of \(progress.requiredLessonIDs.count) \(club.type == "player" ? "starter lessons" : "lessons") complete").accessibilityIdentifier("roadmap-progress").font(.subheadline).foregroundStyle(Palette.muted);Spacer();Leopard().frame(width:52,height:60)}
+                    if let summary=r.summary {Text(summary).font(.subheadline).foregroundStyle(Palette.muted)}
+                    DailyPlanView(pack:pack,openLesson:{activeLesson=$0},openPractice:{practiceRoute=$0})
+                    RoadmapChapters(roadmap:r,pack:pack,openLesson:{activeLesson=$0})
+                    Text(club.type == "player" ? "Club context stays optional. Scheduled recall strengthens the connections you learn." : "Every club has a story. You're building yours.").font(.footnote).foregroundStyle(Palette.muted).padding(.bottom,20)
                 }.padding(24)
             }
         }.journal().navigationBarTitleDisplayMode(.inline)
-            .sheet(isPresented:$clubLibrary) {NavigationStack {ClubLibrary(onSelect:{id in model.select(id);clubLibrary=false},onClose:{clubLibrary=false})}}
+            .sheet(isPresented:$clubLibrary) {NavigationStack {ClubLibrary(onSelect:{id in model.selectSubject(id);clubLibrary=false},onClose:{clubLibrary=false},allowPlayers:true)}}
             .fullScreenCover(item:$activeLesson) { lesson in NavigationStack { LessonView(lesson:lesson) } }
             .navigationDestination(item:$practiceRoute) { r in if let p=model.pack {PracticeSession(objectives:r.objectiveIDs.map(p.objective),dueMode:r.dueMode)} }
+    }
+}
+
+struct RoadmapChapters: View {
+    let roadmap: Roadmap
+    let pack: ContentPack
+    let openLesson: (Lesson) -> Void
+    @EnvironmentObject private var model: AppModel
+    var body: some View {
+        ForEach(Array(roadmap.chapters.enumerated()),id:\.element.id) {index,chapter in
+            VStack(alignment:.leading,spacing:18) {
+                HStack {Eyebrow(text:chapter.isOptional == true ? "Optional club context" : "Chapter \(index+1)");Rectangle().fill(Palette.ink.opacity(0.12)).frame(height:1)}
+                Text(chapter.title).font(.title2.bold())
+                if let note=chapter.note {Text(note).font(.subheadline).foregroundStyle(Palette.muted)}
+                if chapter.isOptional == true {Text("\(chapter.lessonIDs.filter {model.state.completedLessons.contains($0)}.count) of \(chapter.lessonIDs.count) optional lessons complete").font(.caption).foregroundStyle(Palette.muted).accessibilityIdentifier("roadmap-optional-progress")}
+                ForEach(Array(chapter.lessonIDs.enumerated()),id:\.element) {n,id in
+                    let lesson=pack.lesson(id),done=model.state.completedLessons.contains(id),started=model.state.resumes[id] != nil
+                    Button {openLesson(lesson)} label:{
+                        HStack(spacing:18) {
+                            VStack(spacing:0) {Circle().fill(done ? Palette.green : .white).frame(width:52,height:52).overlay {Image(systemName:done ? "checkmark" : started ? "play.fill" : "book.fill").foregroundStyle(done ? .white : Palette.green)};if n < chapter.lessonIDs.count-1 {Rectangle().fill(Palette.green.opacity(0.2)).frame(width:3,height:22)}}
+                            VStack(alignment:.leading,spacing:5) {Text(lesson.title).font(.headline);Text(done ? "Completed · Play again" : started ? "Continue lesson" : lesson.subtitle).font(.subheadline).foregroundStyle(Palette.muted)}.padding(.bottom,n < chapter.lessonIDs.count-1 ? 22 : 0)
+                            Spacer();Image(systemName:"chevron.right").font(.caption.bold()).padding(.bottom,n < chapter.lessonIDs.count-1 ? 22 : 0)
+                        }.contentShape(Rectangle())
+                    }.buttonStyle(PressFeedback()).accessibilityIdentifier(lesson.key)
+                }
+            }
+        }
+    }
+}
+struct PlayerRoadmapView: View {
+    let roadmap: Roadmap
+    @EnvironmentObject private var model: AppModel
+    @State private var lesson: Lesson?
+    var body: some View {
+        ScrollView {
+            if let pack=model.pack {
+                let player=pack.entity(roadmap.entityID),progress=RoadmapProgress.make(roadmap:roadmap,pack:pack,state:model.state)
+                VStack(alignment:.leading,spacing:24) {
+                    HStack(spacing:18) {ClubMark(club:player,size:88);VStack(alignment:.leading,spacing:6) {Eyebrow(text:"Player starter");Text(player.name).font(.title2.bold())}}
+                    if let summary=roadmap.summary {Text(summary).foregroundStyle(Palette.muted)}
+                    Text("\(progress.completedRequired) of \(progress.requiredLessonIDs.count) starter lessons complete · \(progress.requiredObjectiveIDs.count) memories").font(.subheadline).accessibilityIdentifier("player-roadmap-progress")
+                    if model.roadmap?.id == roadmap.id {Label("Selected for Learn",systemImage:"checkmark.circle.fill").foregroundStyle(Palette.green).font(.headline).accessibilityIdentifier("player-roadmap-selected")}
+                    else {PrimaryButton(title:"Make this my roadmap",symbol:"map") {model.selectSubject(player.id)}.accessibilityIdentifier("player-roadmap-select")}
+                    RoadmapChapters(roadmap:roadmap,pack:pack,openLesson:{lesson=$0})
+                }.padding(24)
+            }
+        }.journal().navigationTitle("Player roadmap").navigationBarTitleDisplayMode(.inline)
+        .fullScreenCover(item:$lesson) {lesson in NavigationStack {LessonView(lesson:lesson)}}
     }
 }

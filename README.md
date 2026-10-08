@@ -1,6 +1,6 @@
 # Foxlingo
 
-An offline-first iPhone football-learning app with **68 club roadmaps**, **78 JSON-authored lessons**, **74 collectible cards**, a small leopard companion, spaced reviews, and forgiving streaks. Xolos and Real Madrid keep their deeper six-lesson courses; every other club has a three-fact introductory lesson.
+An offline-first iPhone football-learning app with **68 club roadmaps**, **six player starters**, **78 JSON-authored lessons**, **74 collectible cards**, a small leopard companion, spaced reviews, and forgiving streaks. Xolos and Real Madrid keep their deeper six-lesson courses; every other club has a three-fact introductory lesson.
 
 The catalog covers the **2026/27 Champions League league phase**, **2026/27 Bundesliga**, and **Liga MX Apertura 2026**, verified as snapshots on October 8, 2026. The Games tab offers **football bingo**, a **club × country grid**, and **four classic Real Madrid lineup challenges**.
 
@@ -79,3 +79,11 @@ Open **Album → Explore connections**, or explore from a card. Tap nearby badge
 The default filter uses club history and events. Country and place relationships can be included explicitly. The graph combines entity-valued facts with curated, fact-backed relationships in `content/graph-connections.json`; the build script compiles both into the canonical starter JSON. Country answers share canonical country UUIDs without changing taught answers or review revisions. The 2014 final, Ramos's equalizer, and the two-leg 2012 final are separate occurrence records. Self-references remain facts rather than graph edges; literal statistics remain scoped details. Traversing an edge backward preserves the original claim. Shared club history never implies teammates.
 
 Graph coverage is limited to this library. A missing path means no supported path under the selected filters, not that two subjects have no real-world connection. Structural validation rejects broken references or missing provenance; curated claims still need factual review. Explorer visits earn no XP, streak activity, or recall credit. Entering the explorer from a card conservatively marks its whole knowledge set assisted for that card visit. Wider match/goal histories and richer league connections remain future content work.
+
+### Player roadmaps
+
+Open Learn's roadmap chooser and select **Players**, or open a player roadmap from its album card. Riascos, Arce, Saucedo, Ronaldo, Ramos, and Casillas each have a three-memory starter and a separately counted optional club-history chapter. These starters organize the existing sourced curriculum; they are not full career courses or new statistics datasets. The definitions live in `content/player-roadmaps.json` and compile into the same JSON pack.
+
+Player selection persists while preserving the preferred club. Required completion excludes optional chapters; daily plans stop recommending new player lessons when the starter is finished. An intentionally interrupted optional lesson can still resume. Shared lesson UUIDs mean club and player paths share completion, saved sessions, cards, and one coordinated recall queue. For Ramos, the starter and optional final together introduce five unique memories rather than six. Club browsers, album competition collections, and comparison packs continue using only club roadmaps.
+
+Roadmaps may specify a canonical `subjectID`; older club-only JSON falls back to `clubID`. A contextual `clubID` remains required, and a club subject must match it. Chapters may specify `isOptional` and explanatory `note` text. Opening a linked player roadmap from a card counts as preview for that card visit's practice.

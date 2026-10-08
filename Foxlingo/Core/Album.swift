@@ -16,7 +16,7 @@ public struct AlbumCollection: Sendable {
     public let visibleCount: Int
     public let sections: [AlbumSection]
     public static func make(pack: ContentPack,state: LearnerState,scope: AlbumScope,discoveredOnly: Bool,query: String) -> Self {
-        let roadmaps=pack.roadmaps.filter {r in
+        let roadmaps=pack.clubRoadmaps.filter {r in
             let club=pack.entity(r.clubID)
             switch scope {
             case .all:return true

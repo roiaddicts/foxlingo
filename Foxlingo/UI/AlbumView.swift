@@ -87,6 +87,9 @@ struct CardDetail: View {
                 VStack(alignment:.leading,spacing:22) {
                     Collectible(card:card,pack:pack,tier:tier).frame(maxWidth:typeSize.isAccessibilitySize ? .infinity : 260).frame(maxWidth:.infinity)
                     NavigationLink {ExplorerView(initialID:card.entityID).onAppear {previewed.formUnion(card.objectiveIDs)}} label:{Label("Explore connections",systemImage:"point.3.connected.trianglepath.dotted").font(.headline).frame(minHeight:44)}.buttonStyle(PressFeedback()).accessibilityIdentifier("card-graph-open")
+                    if let roadmap=pack.playerRoadmaps.first(where:{$0.entityID == card.entityID}) {
+                        NavigationLink {PlayerRoadmapView(roadmap:roadmap).onAppear {previewed.formUnion(card.objectiveIDs)}} label:{Label("Open player roadmap",systemImage:"map").font(.headline).frame(minHeight:44)}.buttonStyle(PressFeedback()).accessibilityIdentifier("card-player-roadmap")
+                    }
                     Text(tier < 0 ? "Discover this story" : "Your knowledge set").font(.title2.bold())
                     if tier >= 0 {
                         Text("Earned \(LearnerState.tierNames[tier]) · \(achievementScope)").font(.headline).accessibilityIdentifier("card-achievement")
@@ -121,7 +124,7 @@ struct CardDetail: View {
                     if tier >= 0 && !learned.isEmpty {
                         PrimaryButton(title:"Practice this knowledge set",symbol:"arrow.clockwise") {practice=PracticeRoute(learned,dueMode:readiness.due > 0,assistedObjectiveIDs:previewed)}.accessibilityIdentifier("card-practice")
                     }
-                    Text("Earned tiers stay with you. Current recall reflects this active knowledge set; context or the explorer opened here counts as rehearsal in card practice.").font(.footnote).foregroundStyle(Palette.muted)
+                    Text("Earned tiers stay with you. Current recall reflects this active knowledge set; context, a linked player roadmap, or the explorer opened here counts as rehearsal in card practice.").font(.footnote).foregroundStyle(Palette.muted)
                 }.padding(24)
             }
         }.journal().navigationTitle(model.pack?.entity(card.entityID).name ?? "Card").navigationBarTitleDisplayMode(.inline)
