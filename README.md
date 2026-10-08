@@ -38,7 +38,7 @@ xcodebuild -project Foxlingo.xcodeproj -scheme Foxlingo \
   -destination 'platform=iOS Simulator,name=iPhone 17 Pro' test
 ```
 
-The Swift package tests validate content, scoring, due review ordering, tier spacing, semantic revisions, streaks, time zones, and save recovery. The Xcode UI tests exercise lessons, matching, resume, the album, due review, club browsing, all three games, and incorrect-name recovery.
+The Swift package tests validate content, scoring, due review ordering, tier spacing, semantic revisions, streaks, time zones, and save recovery. The Xcode UI tests exercise lessons, matching, resume, the album, due review, club browsing, all three games, incorrect-name recovery, daily plans, and club comparison study packs.
 
 The UI-test launch flags (`-ui-testing`, `-reset-test-state`, and `-test-now`) exist only in Debug builds. They use a separate test save directory. The normal app has no time-travel or mastery bypass controls.
 
@@ -48,7 +48,7 @@ The UI-test launch flags (`-ui-testing`, `-reset-test-state`, and `-test-now`) e
 - [MVP specification](mvp.md): the initial learning loop and acceptance criteria.
 - [Answer validation](docs/answer-validation.md): current grading and future typo/model options.
 
-Expanded lessons were drafted with a cheaper subagent and checked against official sources and the app’s schema. Deeper courses for the added clubs, live statistics, Firebase publishing, match preparation, and a connection explorer remain future work. See [expansion notes](content/expansion-notes.md).
+Expanded lessons were drafted with a cheaper subagent and checked against official sources and the app’s schema. Deeper courses for the added clubs, live statistics, Firebase publishing, live fixture briefings, and a connection explorer remain future work. See [expansion notes](content/expansion-notes.md).
 
 ## Artwork
 
@@ -61,3 +61,7 @@ Game clues use offline club badges and country flags, including the player picke
 ### Daily study plan
 
 Learn suggests a short review across all learned clubs, an unfinished lesson, or the next lesson in the selected roadmap. Choose 5, 10, or 20 memories; the preference is saved locally. The total due queue stays visible while the session deck is bounded and frozen on launch. Recent tricky connections are distinct objectives with a failed or assisted most recent recall in the last week; later independent recall clears them. Optional rehearsal rotates toward least recently attempted knowledge. Corrected content starts a new learning window and ignores attempts from its previous revision.
+
+### Coverage preparation
+
+Open **Practice → Prepare with two clubs**. Choose two distinct canonical clubs without changing the main roadmap. The pack gathers their supported stories and fact scopes with source links. It is a historical comparison, not an upcoming fixture or a current squad briefing. New facts link to lessons; recall includes only learned objectives at the current revision. Short decks rotate while balancing the selected clubs and deduplicating shared objectives. Facts opened during this preparation visit count as assisted rehearsal: they cannot earn independent recall credit or change a due schedule. Other due answers update normally; the result reports how many scheduled reviews actually changed. Answers save immediately, but leaving an unfinished recall session starts a fresh rotating deck next time.

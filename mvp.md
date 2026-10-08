@@ -1,6 +1,6 @@
 # Foxlingo MVP — Xolos & Real Madrid
 
-Status: implementation specification for the first personal iPhone release. The full ambition lives in [vision.md](vision.md).
+Status: baseline implementation specification for the first personal iPhone release. The current build also includes the club expansion, visual football games, daily planning, and offline comparison packs documented in README.md. The full ambition lives in [vision.md](vision.md).
 
 ## The first release
 
@@ -55,7 +55,7 @@ Research date: October 8, 2026. Importers must retain source URLs, verification 
 
 ## Screens and session flow
 
-Use three bottom tabs: **Learn**, **Practice**, and **Album**. Put settings behind a toolbar button; a separate profile tab is unnecessary for one personal learner.
+Use four bottom tabs: **Learn**, **Practice**, **Games**, and **Album**. Put settings behind a toolbar button; a separate profile tab is unnecessary for one personal learner.
 
 ### First launch
 
@@ -69,11 +69,11 @@ All lessons remain selectable. The recommended sequence follows the chapter orde
 
 Each lesson has two short story screens followed by four multiple-choice questions and one matching board. Every objective must be assessed at least once; the fourth question rephrases one objective. A wrong answer shows the correct answer and explanation, then offers a retry. Completion requires finishing the activities, not a perfect first-attempt score. Preserve first-attempt results; retries are not independent mastery evidence.
 
-The result screen shows what was learned, any card unlocked, and the next review date. All three objectives enter review after lesson completion, including those missed during practice.
+The result screen shows what was practiced, any card unlocked, and the actual next review date. New objectives enter review after lesson completion, including those missed during practice; replaying a lesson preserves existing schedules.
 
 ### Practice
 
-Show the number of due objectives across both teams. Start a session of up to ten due objectives, with no duplicate objective in a session. Prioritize oldest due time, then higher lapse count, then stable objective key. Do not introduce unlearned facts here.
+Show the number of due objectives across both teams. Choose sessions of up to five, ten, or twenty due objectives, with no duplicate objective in a session. Prioritize oldest due time, then higher lapse count, then stable objective key. Do not introduce unlearned facts here.
 
 If nothing is due, offer optional practice of learned objectives and a link to the next lesson. Do not pretend reviews are overdue or award retention upgrades for early rehearsal.
 
@@ -94,7 +94,7 @@ Provide sound and haptic toggles, a clear explanation of streaks and card tiers,
 ### Exercise formats
 
 1. **Multiple choice:** four distinct choices, shuffled, with one or more explicitly accepted choice IDs. A submission gets explanatory feedback.
-2. **Relationship matching:** three left-hand items and three right-hand items, shuffled independently. Store allowed pair edges rather than assuming matching display labels establish correctness. For this MVP author boards with unambiguous one-to-one pairings; validate that constraint before loading them. Correct pairs remain visible and disabled. Wrong pairs explain the mismatch and remain available to retry. This format supports acquisition and rehearsal, not tier upgrades.
+2. **Relationship matching:** three clue cards and three fact cards, shuffled together and concealed until tapped. Store allowed pair edges rather than assuming matching display labels establish correctness. For this MVP author boards with unambiguous one-to-one pairings; validate that constraint before loading them. Correct pairs remain visible and disabled. Wrong pairs offer generic feedback and conceal again after a reading delay; VoiceOver uses explicit closure. This format supports acquisition and rehearsal, not tier upgrades.
 3. **Recall:** a short-answer prompt, submitted before showing the answer. Accept authored aliases after trimming, case folding, whitespace normalization, and diacritic normalization. Use exact normalized comparison, without AI grading or fuzzy matching. Author prompts that have concise answers, such as a year, position, country, opponent, or player name. Include legitimate alternate spellings. A hint or reveal counts as unsuccessful independent recall.
 
 Use recall for scheduled retention reviews. This makes card upgrades reflect more than recognition of visible options. Voice input, narrative answer grading, and timed challenges are deferred.

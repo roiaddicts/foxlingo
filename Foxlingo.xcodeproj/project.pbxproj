@@ -23,6 +23,8 @@
 		769A0CFBF5C7D001606397C8 /* FlowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D90F61C2695718E9BCED131 /* FlowTests.swift */; };
 		771846DCC4629031AA025373 /* Learning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44549E9139E3443B66DB2E34 /* Learning.swift */; };
 		8DD514B0DD979023A88925C9 /* GamesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A787A4A96F423AD601B4AF /* GamesView.swift */; };
+		CF9A929E09FFBE10432EAD98 /* Coverage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7638A5E7DA4EB6E90B02A7 /* Coverage.swift */; };
+		D8D1DF02BED409D8C8A7DC61 /* CoverageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E310116659D3792CD47BE118 /* CoverageView.swift */; };
 		E4C07B436636FFB6564F3716 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD6271B8ABEAC92237DD4836 /* Assets.xcassets */; };
 		EB1413DD838DE09AE7572DF2 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA791A790FCB14403A8DBC23 /* AppModel.swift */; };
 		FD0B4E21402AE9822AA3C66D /* LessonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF9265116E25E2BF11AF2C9 /* LessonView.swift */; };
@@ -45,6 +47,7 @@
 		267DA166EFB8DC9CD6BB95DF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		3D90F61C2695718E9BCED131 /* FlowTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FlowTests.swift; sourceTree = "<group>"; };
 		44549E9139E3443B66DB2E34 /* Learning.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Learning.swift; sourceTree = "<group>"; };
+		4E7638A5E7DA4EB6E90B02A7 /* Coverage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Coverage.swift; sourceTree = "<group>"; };
 		585971EEDF1CEED7EEC0823B /* Games.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Games.swift; sourceTree = "<group>"; };
 		5DF9265116E25E2BF11AF2C9 /* LessonView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LessonView.swift; sourceTree = "<group>"; };
 		69CAF16169F54078C4005D08 /* FoxlingoApp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FoxlingoApp.swift; sourceTree = "<group>"; };
@@ -56,6 +59,7 @@
 		BA791A790FCB14403A8DBC23 /* AppModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
 		BC35574D37589DA87E7C5A5D /* AlbumView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AlbumView.swift; sourceTree = "<group>"; };
 		CF04BE9776E9842A6456BD2C /* StudyPlan.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StudyPlan.swift; sourceTree = "<group>"; };
+		E310116659D3792CD47BE118 /* CoverageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CoverageView.swift; sourceTree = "<group>"; };
 		FD1C7ED3212E0B5D84B7C261 /* ClubLibrary.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ClubLibrary.swift; sourceTree = "<group>"; };
 		FD6271B8ABEAC92237DD4836 /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FE6E53D5680A4EC6313AA676 /* Foxlingo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Foxlingo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -99,6 +103,7 @@
 				585971EEDF1CEED7EEC0823B /* Games.swift */,
 				44549E9139E3443B66DB2E34 /* Learning.swift */,
 				CF04BE9776E9842A6456BD2C /* StudyPlan.swift */,
+				4E7638A5E7DA4EB6E90B02A7 /* Coverage.swift */,
 			);
 			name = Core;
 			path = Core;
@@ -171,6 +176,7 @@
 				5DF9265116E25E2BF11AF2C9 /* LessonView.swift */,
 				AE49724F121C78481AA89D89 /* PracticeView.swift */,
 				B048B05A96BAE389A67DDA53 /* StudyPlanView.swift */,
+				E310116659D3792CD47BE118 /* CoverageView.swift */,
 			);
 			name = UI;
 			path = UI;
@@ -288,6 +294,8 @@
 				0E2E56708C090FEFDB0CC103 /* PracticeView.swift in Sources */,
 				2AD1BC14E7FFC0C83D7818F9 /* StudyPlan.swift in Sources */,
 				4B1C5419C35BA13FFF9A8DF7 /* StudyPlanView.swift in Sources */,
+				CF9A929E09FFBE10432EAD98 /* Coverage.swift in Sources */,
+				D8D1DF02BED409D8C8A7DC61 /* CoverageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -4,6 +4,8 @@ struct ClubLibrary: View {
     @EnvironmentObject var model: AppModel
     let onSelect: (UUID) -> Void
     let onClose: () -> Void
+    var excludedClubID: UUID? = nil
+    var selectedClubID: UUID? = nil
     @State private var query=""
     @State private var competition="all"
     let competitions=[("all","All"),("champions","Champions League"),("bundesliga","Bundesliga"),("ligamx","Liga MX")]
@@ -21,8 +23,8 @@ struct ClubLibrary: View {
                 Section("\(clubs.count) club roadmaps") {
                     ForEach(clubs) {club in
                         Button {onSelect(club.id)} label: {
-                            HStack(spacing:14) {ClubMark(club:club,size:42);VStack(alignment:.leading,spacing:5) {Text(club.name).font(.headline);Text(club.competitions?.compactMap{key in competitions.first{$0.0 == key}?.1}.joined(separator:" · ") ?? "Favorite club").font(.caption).foregroundStyle(.secondary)};Spacer();if model.state.selectedClub == club.id {Image(systemName:"checkmark.circle.fill")}}.contentShape(Rectangle())
-                        }.buttonStyle(.plain).accessibilityIdentifier("club-\(club.key)")
+                            HStack(spacing:14) {ClubMark(club:club,size:42);VStack(alignment:.leading,spacing:5) {Text(club.name).font(.headline);Text(club.competitions?.compactMap{key in competitions.first{$0.0 == key}?.1}.joined(separator:" · ") ?? "Favorite club").font(.caption).foregroundStyle(.secondary)};Spacer();if (selectedClubID ?? model.state.selectedClub) == club.id {Image(systemName:"checkmark.circle.fill")}}.contentShape(Rectangle())
+                        }.buttonStyle(.plain).disabled(club.id == excludedClubID).accessibilityHint(club.id == excludedClubID ? "Already selected as the other club" : "Choose this club").accessibilityIdentifier("club-\(club.key)")
                     }
                 }
             }

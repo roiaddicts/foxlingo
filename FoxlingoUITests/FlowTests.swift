@@ -164,4 +164,60 @@ final class FlowTests: XCTestCase {
         XCTAssertTrue(app.staticTexts["daily-due-count"].label.contains("5 in this session · 6 ready"))
     }
 
+    func testCoveragePreviewLessonRecallAndIndependentClubSelection() {
+        start();tap("choose-XT");app.tabBars.buttons["Practice"].tap();tap("coverage-open")
+        XCTAssertTrue(app.staticTexts["coverage-scope"].exists)
+        XCTAssertTrue(app.staticTexts["coverage-new-learner"].exists)
+        XCTAssertFalse(app.buttons["coverage-recall"].exists)
+        tap("coverage-story-lesson-xolos-identity")
+        XCTAssertTrue(app.staticTexts["Checked 2026-10-08"].firstMatch.exists)
+        tap("coverage-learn-lesson-xolos-identity")
+        tap("lesson-next");tap("lesson-next")
+        for _ in 0..<4 {tap("answer-choice-0");tap("answer-next")}
+        for i in 0..<3 {tap("match-l-\(i)");tap("match-r-\(i)")}
+        tap("finish-lesson");tap("back-roadmap")
+        for _ in 0..<6 {if app.buttons["coverage-recall"].isHittable {break};app.swipeDown()}
+        tap("coverage-recall")
+        for _ in 0..<3 {tap("reveal-recall");tap("recall-next")}
+        XCTAssertTrue(app.staticTexts["This was rehearsal. Scheduled recall is what improves your cards."].exists)
+        tap("practice-done")
+        for _ in 0..<6 {if app.buttons["coverage-second"].isHittable {break};app.swipeDown()}
+        tap("coverage-second")
+        XCTAssertFalse(app.buttons["club-entity-xolos"].isEnabled)
+        let search=app.searchFields.firstMatch;search.tap();search.typeText("Atlas");tap("club-entity-atlas")
+        XCTAssertTrue(app.buttons["coverage-second"].label.contains("Atlas"))
+        let shot=XCTAttachment(screenshot:app.screenshot());shot.name="Coverage comparison";shot.lifetime = .keepAlways;add(shot)
+        app.navigationBars.buttons.element(boundBy:0).tap();app.tabBars.buttons["Learn"].tap()
+        XCTAssertTrue(app.staticTexts["Xolos"].exists)
+    }
+    func testCoverageMixedDueAndRehearsalSummary() {
+        start();tap("choose-XT");completeLesson("lesson-xolos-identity")
+        app.terminate();start(reset:false,now:1_800_000_000+86401)
+        tap("switch-club");tap("club-entity-madrid");completeLesson("lesson-madrid-identity")
+        app.tabBars.buttons["Practice"].tap();tap("coverage-open");tap("coverage-recall")
+        for _ in 0..<6 {tap("reveal-recall");tap("recall-next")}
+        XCTAssertTrue(app.staticTexts["3 scheduled reviews updated. Early answers were rehearsal."].exists)
+        tap("practice-done")
+    }
+
+    func testCoveragePreviewCannotEarnIndependentRecall() {
+        start();tap("choose-XT");completeLesson("lesson-xolos-identity")
+        app.terminate();start(reset:false,now:1_800_000_000+86401)
+        app.tabBars.buttons["Practice"].tap();tap("coverage-open")
+        tap("coverage-story-lesson-xolos-identity")
+        for _ in 0..<6 {if app.buttons["coverage-recall"].isHittable {break};app.swipeDown()}
+        tap("coverage-recall")
+        for answer in ["Xolos","Tijuana","Estadio Caliente"] {
+            let input=app.descendants(matching:.any)["recall-answer"].firstMatch
+            input.tap();input.typeText(answer);tap("check-recall")
+            XCTAssertTrue(app.staticTexts["You previewed this fact in the study pack. This answer counts as rehearsal."].exists)
+            XCTAssertFalse(app.staticTexts["You remembered"].exists);tap("recall-next")
+        }
+        XCTAssertTrue(app.staticTexts["0 of 3 recalled independently."].exists)
+        XCTAssertTrue(app.staticTexts["This was rehearsal. Scheduled recall is what improves your cards."].exists)
+        tap("practice-done")
+        app.navigationBars.buttons.element(boundBy:0).tap();app.tabBars.buttons["Learn"].tap()
+        XCTAssertTrue(app.staticTexts["daily-due-count"].label.contains("3 ready"))
+    }
+
 }

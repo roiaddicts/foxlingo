@@ -55,7 +55,7 @@ QA exports are local generated artifacts under the ignored `output/` directory. 
 
 ## Delivery boundary
 
-This is a locally runnable native MVP, not an App Store or TestFlight publication. Physical-device installation needs the user's Apple development signing configuration. Live data, automated AI publishing, Firebase, match preparation, and the connection explorer remain the later work described in the vision.
+This is a locally runnable native MVP, not an App Store or TestFlight publication. Physical-device installation needs the user's Apple development signing configuration. Live data, automated AI publishing, Firebase, live fixture briefings, and the connection explorer remain the later work described in the vision.
 
 ## Visual clues and memory polish
 
@@ -69,3 +69,9 @@ This is a locally runnable native MVP, not an App Store or TestFlight publicatio
 ## Daily study plan
 
 44 core tests pass, including a 34-item backlog split into a five-question batch, cross-club resume, completed roadmaps, corrected-content history, bounded recent mistakes, rotating rehearsal, and old-save compatibility. The real simulator daily-plan flow passes: interrupted lesson resumes, six due objectives become a five-question session, the remaining queue updates, and the five-question preference persists into the next day's backlog. Independent recall, sources, and settings regression also passes. Picker persistence is verified through the resulting deck, rather than relying on its accessibility value.
+
+## Offline coverage study packs
+
+50 core tests pass. Coverage cases verify distinct canonical clubs, shared-objective deduplication, readable scope/source references, current-revision eligibility, rotating balanced sessions, and due-versus-early scheduling. Three real simulator coverage flows pass after the final fixes: a new learner reads sources and opens a lesson; club selection excludes the other chosen club and preserves Learn's selection; mixed due/early practice reports only three scheduled changes; correctly typed previewed answers earn zero independent successes and leave all three due objectives ready. The updated large-text welcome/lesson flow also passes. Coverage headers and lesson actions have separate accessibility controls, avoiding DisclosureGroup's inherited identifiers.
+
+The study pack deliberately covers available historical course content. It does not supply current squads, live statistics, fixture scheduling, or a complete head-to-head briefing. Preview assistance persists for this preparation visit and its copied recall deck; it is not a global record of every answer seen anywhere in the app.
