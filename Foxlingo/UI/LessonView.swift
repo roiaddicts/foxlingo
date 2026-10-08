@@ -65,7 +65,7 @@ struct LessonView: View {
             let previous=model.state.acquiredCards
             _ = model.state.completeLesson(lesson,pack:pack,sessionID:resume.sessionID,attempts:resume.attempts,now:model.now)
             unlocked=pack.cards.filter {model.state.acquiredCards.contains($0.id) && !previous.contains($0.id)}
-            completed=true;model.respond(true);model.save()
+            completed=true;model.respond(true,event:unlocked.isEmpty ? .completion : .unlock);model.save()
         } else { withAnimation(reduced ? nil : .easeInOut(duration:0.2)) { resume.step += 1; resume.matched=[]; resume.memoryOrder=nil; prepare() }; persist() }
     }
     private func record(_ id: UUID, answer: String, success: Bool, hinted: Bool) {

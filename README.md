@@ -98,3 +98,7 @@ Memory match, bingo, grid, classic lineups and Who am I? resume after leaving or
 Saved boards are checked against their content before restoration. Changes to board layout, eligible players or clue meaning start a fresh board with an explanation; artwork and source wording changes preserve the board. Invalid game drafts do not discard learning history. Completing a game removes its draft and credits its original session once. Club and nationality categories use cached badges and flags; player choices use faces with accessible names.
 
 Memory definitions live in `content/memory-pairs.json` and compile to `memory-en.json`. Statistics reference canonical fact UUIDs, preserving provenance and historical scope. Legacy lesson matching records remain readable for saved-progress and pack compatibility, but no matching board appears in the learning path; a lesson saved at the old final step offers Finish directly.
+
+### Sound assets
+
+**Settings → Assets → Sounds** previews all eight supplied clips. Correct lesson/recall answers use the success cue; small wins and setbacks belong to individual mini-game moves. Level-up celebrates completed sessions, new album cards and earned tier upgrades. Brief reveal/skip cues add touch feedback. The Sound toggle stops playback immediately and persists independently of haptics. Clips are bundled offline and respect Silent Mode and other audio. See `docs/assets.md` for the source folder and event mapping.

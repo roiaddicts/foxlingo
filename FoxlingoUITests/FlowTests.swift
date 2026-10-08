@@ -351,6 +351,22 @@ final class FlowTests: XCTestCase {
         tap("memory-replay");XCTAssertEqual(app.buttons[image].value as? String,"Face down")
     }
 
+    func testBundledSoundPreviewsMuteAndPersist() {
+        start();tap("choose-XT");app.buttons["Settings"].tap();tap("sound-assets")
+        for (asset,title) in [("level-up","Level up"),("wrong","Wrong answer"),("game-over","Game over"),("ui-interface","Interface"),("success","Success"),("small-win","Small win"),("sad-trumpet","Sad trumpet"),("small-defeat","Small setback")] {
+            tap("sound-preview-"+asset)
+            XCTAssertEqual(app.staticTexts["sound-preview-status"].label,"Previewed "+title+".")
+        }
+        let shot=XCTAttachment(screenshot:app.screenshot());shot.name="Bundled sound library";shot.lifetime = .keepAlways;add(shot)
+        for _ in 0..<6 {if app.switches["sound-assets-toggle"].exists && app.switches["sound-assets-toggle"].isHittable {break};app.swipeDown()}
+        app.switches["sound-assets-toggle"].coordinate(withNormalizedOffset:CGVector(dx:0.93,dy:0.5)).tap()
+        XCTAssertFalse(app.buttons["sound-preview-success"].isEnabled)
+        XCTAssertFalse(app.staticTexts["sound-preview-status"].exists)
+        app.terminate();start(reset:false);app.buttons["Settings"].tap();tap("sound-assets")
+        XCTAssertEqual(app.switches["sound-assets-toggle"].value as? String,"0")
+        XCTAssertFalse(app.buttons["sound-preview-success"].isEnabled)
+    }
+
     func testLargeTextStandaloneMemoryBoard() {
         app.launchArguments=["-ui-testing","-reset-test-state","-UIPreferredContentSizeCategoryName","UICTContentSizeCategoryAccessibilityXXXL"];app.launch()
         tap("choose-XT");app.tabBars.buttons["Games"].tap();tap("game-memory")

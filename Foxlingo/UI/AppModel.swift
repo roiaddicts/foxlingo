@@ -1,5 +1,4 @@
 import SwiftUI
-import AudioToolbox
 
 @MainActor final class AppModel: ObservableObject {
     @Published var pack: ContentPack?
@@ -15,6 +14,8 @@ import AudioToolbox
     @Published var stagedVersion: Int?
     @Published var rollbackVersion: Int?
     private var contentCache: ContentCache?
+    @Published var audioPreviewStatus: String?
+    private let sounds=SoundPlayer()
     private let store: StateStore
     var now: Date {
         #if DEBUG
@@ -141,8 +142,15 @@ import AudioToolbox
     var roadmap: Roadmap? {pack.flatMap {state.activeRoadmap($0)}}
     var studyPlan: DailyStudyPlan? {pack.map {DailyStudyPlan.make(pack:$0,state:state,now:now,limit:state.preferredSessionSize ?? 10)}}
     var due: [Objective] {guard let pack,let studyPlan else {return []};return studyPlan.dueObjectiveIDs.map(pack.objective)}
-    func respond(_ correct: Bool) {
+    func respond(_ correct: Bool,event: SoundEvent?=nil) {
         if state.haptics { UINotificationFeedbackGenerator().notificationOccurred(correct ? .success : .error) }
-        if state.sound { AudioServicesPlaySystemSound(correct ? 1104 : 1053) }
+        playSound(event ?? (correct ? .correct : .incorrect))
     }
+    func playSound(_ event: SoundEvent) {if state.sound {sounds.play(event.asset)}}
+    func stopSounds() {sounds.stop();audioPreviewStatus=nil}
+    func previewSound(_ asset: SoundAsset) {
+        guard state.sound else {return}
+        audioPreviewStatus=sounds.play(asset,preview:true) ? "Previewed \(asset.title)." : "This sound could not be played."
+    }
+
 }

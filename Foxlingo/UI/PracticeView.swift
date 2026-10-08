@@ -99,11 +99,14 @@ struct PracticeSession: View {
         correct = !reveal && Recall.accepts(answer,for:o)
         if correct && !hinted {successes += 1}
         if dueMode && !previewed,let review=model.state.reviews[o.id],review.revision == o.revision,review.due <= model.now {scheduledAttempts += 1}
+        let previousTier=model.pack?.cards.map {model.state.tier($0)} ?? []
         model.state.recordRecall(Attempt(objectiveID:o.id,answer:answer,correct:correct,hinted:hinted,mode:dueMode && !previewed ? "due" : "early",timestamp:model.now),objective:o)
-        model.respond(correct);model.save();submitted=true
+        let upgraded=model.pack.map {pack in zip(previousTier,pack.cards.map {model.state.tier($0)}).contains {$1 > $0}} ?? false
+        if !reveal {model.respond(correct,event:upgraded ? .unlock : nil)} else {model.playSound(.reveal)}
+        model.save();submitted=true
     }
     private func next() {
-        if index == objectives.count-1 { _ = model.state.completePractice(id:sessionID,count:objectives.count,now:model.now);model.save();completed=true }
+        if index == objectives.count-1 { _ = model.state.completePractice(id:sessionID,count:objectives.count,now:model.now);model.save();completed=true;model.respond(true,event:.completion) }
         else {index += 1;answer="";submitted=false;hinted=false;correct=false}
     }
 }

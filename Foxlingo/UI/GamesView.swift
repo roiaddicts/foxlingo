@@ -78,7 +78,7 @@ struct FootballGameView: View {
                 } else {
                     Text(game == .bingo ? "Place this player in any matching category, or skip." : game == .grid ? "Tap a square. Find a player who fits both clues. Each player can be used once." : "Tap a position and name a player from this season’s squad. Each player can be used once.").font(.subheadline).foregroundStyle(Palette.muted)
                     if game == .bingo, let player=offered.flatMap(pack.player) {
-                        HStack(spacing:16) {portrait(player,size:70);Text(player.name).font(.title3.bold()).accessibilityIdentifier("bingo-offered-player");Spacer();Button("Skip") {nextPlayer(excluding:player.id);persist()}.accessibilityIdentifier("bingo-skip")}.padding(14).background(.white,in:RoundedRectangle(cornerRadius:18))
+                        HStack(spacing:16) {portrait(player,size:70);Text(player.name).font(.title3.bold()).accessibilityIdentifier("bingo-offered-player");Spacer();Button("Skip") {nextPlayer(excluding:player.id);persist();model.playSound(.reveal)}.accessibilityIdentifier("bingo-skip")}.padding(14).background(.white,in:RoundedRectangle(cornerRadius:18))
                     }
                 }
                 if game == .lineup {
@@ -143,10 +143,10 @@ struct FootballGameView: View {
         return clue + ": " + (placed[slot].flatMap(pack.player)?.name ?? "Choose a player")
     }
     @discardableResult private func place(_ player: String,at slot: Int,helped: Bool = false) -> Bool {
-        guard BoardMatcher.accepts(player:player,slot:slot,candidates:candidates,placed:placed) else {feedbackError=true;feedback="That connection doesn’t fit this square, or the player is already on the board. Try another.";model.respond(false);return false}
+        guard BoardMatcher.accepts(player:player,slot:slot,candidates:candidates,placed:placed) else {feedbackError=true;feedback="That connection doesn’t fit this square, or the player is already on the board. Try another.";model.respond(false,event:.mismatch);return false}
         feedbackError=false;placed[slot]=player;history.append(slot);selectedSlot=nil
         if helped {assisted.insert(slot)}
-        feedback=helped ? "A helped connection. Try to remember this pair next time." : "Connection made.";model.respond(true)
+        feedback=helped ? "A helped connection. Try to remember this pair next time." : "Connection made.";model.respond(true,event:placed.count == count ? .completion : .connection)
         if placed.count == count {
             if !awarded {_ = model.state.completeGame(id:sessionID,kind:game.rawValue,count:count,now:model.now);model.state.removeSavedGame(game.rawValue);model.save();awarded=true}
         } else if game == .bingo {nextPlayer()}

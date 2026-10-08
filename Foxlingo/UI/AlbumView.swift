@@ -143,6 +143,9 @@ struct SettingsView: View {
                 Toggle("Haptics",isOn:$model.state.haptics).onChange(of:model.state.haptics){model.save()}
                 Text("English · Offline starter edition").foregroundStyle(.secondary)
             }
+            Section("Assets") {
+                NavigationLink {SoundAssetsView()} label:{Label("Sounds",systemImage:"waveform")}.accessibilityIdentifier("sound-assets")
+            }
             Section("Streaks") {
                 Text("Complete a lesson or practice session to count an active day. One freeze protects one missed day between active days, without counting it as practice. Earn another freeze after seven active days, up to one at a time.")
                 LabeledContent("Home time zone",value:model.state.homeTimeZone)

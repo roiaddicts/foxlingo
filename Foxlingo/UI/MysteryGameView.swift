@@ -55,7 +55,7 @@ struct MysteryGameView: View {
                         Button("Sources & context",systemImage:"text.book.closed") {sources=true}.accessibilityIdentifier("mystery-sources")
                     } else {
                         PrimaryButton(title:"Choose a player",symbol:"person.crop.circle") {choosing=true}.accessibilityIdentifier("mystery-choose")
-                        if turn.revealed < 3 {Button("Reveal another clue",systemImage:"lightbulb") {withAnimation(reduced ? nil : .easeOut(duration:0.22)) {turn.reveal(in:round);feedback="";persist()}}.frame(minHeight:44).accessibilityIdentifier("mystery-reveal")}
+                        if turn.revealed < 3 {Button("Reveal another clue",systemImage:"lightbulb") {withAnimation(reduced ? nil : .easeOut(duration:0.22)) {turn.reveal(in:round);feedback="";persist();model.playSound(.reveal)}}.frame(minHeight:44).accessibilityIdentifier("mystery-reveal")}
                     }
                 }
                 Text("Historical lesson facts. Clues count toward game practice; card upgrades still require scheduled recall.").font(.caption).foregroundStyle(Palette.muted)
@@ -111,9 +111,9 @@ struct MysteryGameView: View {
         choosing=false
         withAnimation(reduced ? nil : .easeOut(duration:0.22)) {
             switch turn.guess(player,in:round) {
-            case .identified:contradicted=false;feedback="Found the connection.";model.respond(true)
+            case .identified:contradicted=false;feedback="Found the connection.";model.respond(true,event:.connection)
             case .moreClues:contradicted=false;feedback="We cannot rule that player out from these clues. Let’s reveal another."
-            case .contradicted:contradicted=true;feedback="That player differs from a clue already shown. Try another connection."
+            case .contradicted:model.respond(false,event:.mismatch);contradicted=true;feedback="That player differs from a clue already shown. Try another connection."
             case .ignored:break
             }
         }
@@ -124,7 +124,7 @@ struct MysteryGameView: View {
         clueCounts.append(turn.revealed)
         if index == rounds.count-1 {
             finished=true
-            _ = model.state.completeGame(id:sessionID,kind:"mystery",count:rounds.count,now:model.now);model.state.removeSavedGame("mystery");model.save();model.respond(true)
+            _ = model.state.completeGame(id:sessionID,kind:"mystery",count:rounds.count,now:model.now);model.state.removeSavedGame("mystery");model.save();model.respond(true,event:.completion)
         } else {index += 1;turn=MysteryTurn();feedback="";contradicted=false}
         persist()
     }

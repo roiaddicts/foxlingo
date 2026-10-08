@@ -70,13 +70,13 @@ struct MemoryGameView: View {
         let outcome=board.flip(id)
         switch outcome {
         case .ignored:return
-        case .revealed:scope=pair.fact?.scope
-        case .mismatch:moves += 1;scope=pair.fact?.scope;model.respond(false)
-        case .matched:moves += 1;scope=pair.fact?.scope;model.respond(true)
+        case .revealed:scope=pair.fact?.scope;model.playSound(.reveal)
+        case .mismatch:moves += 1;scope=pair.fact?.scope;model.respond(false,event:.mismatch)
+        case .matched:moves += 1;scope=pair.fact?.scope;if found < 8 {model.respond(true,event:.connection)}
         }
         if found == 8 {
             finished=true;notice=nil;model.state.removeSavedGame("memory")
-            _ = model.state.completeGame(id:sessionID,kind:"memory",count:8,now:model.now);model.save()
+            _ = model.state.completeGame(id:sessionID,kind:"memory",count:8,now:model.now);model.save();model.respond(true,event:.completion)
         } else {persist()}
     }
     private func closeMismatch() {board.closeMismatch();scope=nil}

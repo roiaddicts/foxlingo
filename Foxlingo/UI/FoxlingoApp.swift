@@ -24,7 +24,7 @@ struct RootView: View {
                     NavigationStack { AlbumView().toolbar { Button {settings=true} label:{Image(systemName:"gearshape")}.accessibilityLabel("Settings") } }.tabItem { Label("Album",systemImage:"rectangle.stack") }
                 }
             }
-        }.onChange(of:scenePhase) { if scenePhase == .active {model.objectWillChange.send()} }.sheet(isPresented:$settings) { NavigationStack { SettingsView() } }
+        }.onChange(of:scenePhase) { if scenePhase == .active {model.objectWillChange.send()} else {model.stopSounds()} }.onChange(of:model.state.sound) {if !model.state.sound {model.stopSounds()}}.sheet(isPresented:$settings) { NavigationStack { SettingsView() } }
         .alert("Progress notice",isPresented:Binding(get:{model.message != nil && !model.recoveryRequired},set:{if !$0 {model.message=nil}})) { Button("OK") { model.message=nil } } message:{Text(model.message ?? "")}
     }
 }
