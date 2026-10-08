@@ -4,7 +4,7 @@ Verified October 8, 2026, using Xcode 26.3 and an iPhone 17 Pro simulator runnin
 
 ## Result
 
-**58 core tests pass.** The initial six end-to-end scenarios and subsequent focused simulator checks are recorded below. The original full regression and later feature checks are separate runs, rather than a fresh run of every UI test after every change. Debug and optimized Release builds have passed; the Release executable excludes the Debug-only test launch flags.
+**68 core tests pass.** The initial six end-to-end scenarios and subsequent focused simulator checks are recorded below. The original full regression and later feature checks are separate runs, rather than a fresh run of every UI test after every change. Debug and optimized Release builds have passed; the Release executable excludes the Debug-only test launch flags.
 
 ## Requirements and evidence
 
@@ -55,7 +55,7 @@ QA exports are local generated artifacts under the ignored `output/` directory. 
 
 ## Delivery boundary
 
-This is a locally runnable native MVP, not an App Store or TestFlight publication. Physical-device installation needs the user's Apple development signing configuration. Live data, automated AI publishing, Firebase, live fixture briefings, and the connection explorer remain the later work described in the vision.
+This is a locally runnable native MVP, not an App Store or TestFlight publication. Physical-device installation needs the user's Apple development signing configuration. Live data, automated AI publishing, Firebase, live fixture briefings, and wider graph coverage remain the later work described in the vision.
 
 ## Visual clues and memory polish
 
@@ -83,3 +83,13 @@ The study pack deliberately covers available historical course content. It does 
 Simulator checks pass for collection filters, search, partial Xolos coverage, and assisted card practice. Opening all three identity contexts, then typing all three answers correctly, produces zero independent successes and leaves the three scheduled reviews due. These checks use separate Debug test saves and preserve ordinary learner progress.
 
 The largest accessibility text size keeps album cards in one column and card details scrollable. The compact comparison screen also passes its lesson/recall/club-selection regression. Exported screenshots were inspected for the standard card detail, comparison screen, and large-text card. The optimized Release build passes with these changes.
+
+## Connection explorer
+
+68 core tests pass. Ten graph tests cover identity paths, unknown/disconnected subjects, backward traversal without reversed claims, self-reference exclusion, literal-statistic boundaries, relationship filters, canonical country targets, distinct match/goal/tie occurrences, parallel scoped claims, stable paths after record reordering, duplicate names, malformed relationship rejection, and older packs without authored relationships.
+
+The library contains 98 canonical subjects and 57 supported graph edges: 46 entity-valued facts and 11 curated relationships backed by existing sourced facts. Source references and required provenance are structurally validated; this does not automatically establish the truth of future authored claims.
+
+Four focused simulator scenarios pass across the final runs: sourced path/filter/evidence navigation, large-text exploration entered from a card, card-context recall protection, and card-explorer recall protection. The explorer regression finds the three-edge Ramos → equalizer → 2014 final → Ronaldo event path, handles unsupported paths and zero-hop identity, and exposes sources. Opening the explorer from a learned card then answering all three due questions correctly earns zero independent successes and leaves all three reviews due. One initial UI regression had an incorrect text-field identifier; the corrected test passes.
+
+Normal map/path screenshots and the largest-text list were inspected. Long map labels wrap within their nodes; Di Stéfano's seed portrait is cached. At accessibility sizes, the heading and labeled search control occupy separate rows. The final optimized Release build passes. This graph is a sourced library explorer, not comprehensive football history or proof of teammate relationships.

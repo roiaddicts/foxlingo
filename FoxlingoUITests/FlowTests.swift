@@ -19,6 +19,58 @@ final class FlowTests: XCTestCase {
         XCTAssertTrue(app.staticTexts["lesson-complete"].waitForExistence(timeout:3))
         tap("back-roadmap")
     }
+    func graphSelect(_ control:String,_ name:String,_ key:String) {
+        tap(control)
+        let search=app.searchFields.firstMatch;search.tap();search.typeText(name)
+        tap("graph-select-entity-\(key)")
+    }
+    func testConnectionExplorerPathsFiltersAndEvidence() {
+        start();tap("choose-XT");app.tabBars.buttons["Album"].tap();tap("graph-open")
+        XCTAssertTrue(app.staticTexts["graph-neighbor-count"].label.contains("Football links"))
+        XCTAssertTrue(app.buttons["graph-node-entity-cristiano"].isHittable)
+        XCTAssertTrue(app.buttons["graph-node-entity-casillas"].isHittable)
+        XCTAssertTrue(app.buttons["graph-node-entity-ramos"].isHittable)
+        let map=XCTAttachment(screenshot:app.screenshot());map.name="Connections map";map.lifetime = .keepAlways;add(map)
+        tap("graph-path-step-0")
+        XCTAssertTrue(app.staticTexts["graph-edge-claim"].label.contains("101 goals"))
+        XCTAssertTrue(app.staticTexts["Checked 2026-10-08"].exists)
+        tap("graph-edge-done")
+        graphSelect("graph-path-from","Sergio Ramos","ramos")
+        graphSelect("graph-path-to","Cristiano Ronaldo","cristiano")
+        for _ in 0..<6 {if app.buttons["graph-filter"].isHittable {break};app.swipeDown()}
+        tap("graph-filter");app.buttons["Matches & moments"].tap()
+        for _ in 0..<8 {if app.staticTexts["graph-path-result"].isHittable {break};app.swipeUp()}
+        XCTAssertEqual(app.staticTexts["graph-path-result"].label,"3 links · shortest supported path")
+        let path=XCTAttachment(screenshot:app.screenshot());path.name="Sourced event path";path.lifetime = .keepAlways;add(path)
+        tap("graph-path-step-0")
+        XCTAssertTrue(app.staticTexts["graph-edge-claim"].label.contains("equalizer"));tap("graph-edge-done")
+        graphSelect("graph-path-from","Xolos","xolos")
+        XCTAssertTrue(app.staticTexts["graph-path-result"].label.contains("No supported path in this library"))
+        graphSelect("graph-path-to","Xolos","xolos")
+        XCTAssertEqual(app.staticTexts["graph-path-result"].label,"Same subject · 0 links")
+    }
+    func testLargeTextExplorerAndCardEntry() {
+        app.launchArguments=["-ui-testing","-reset-test-state","-test-now","1800000000","-UIPreferredContentSizeCategoryName","UICTContentSizeCategoryAccessibilityXXXL"];app.launch()
+        tap("choose-XT");app.tabBars.buttons["Album"].tap();tap("card-xolos");tap("card-graph-open")
+        XCTAssertTrue(app.otherElements["graph-focus"].exists || app.staticTexts["graph-focus"].exists)
+        tap("graph-find");let search=app.searchFields.firstMatch;search.tap();search.typeText("Arsenal");tap("graph-select-entity-arsenal")
+        XCTAssertTrue(app.staticTexts["graph-neighbor-count"].label.contains("0 supported links"))
+        let shot=XCTAttachment(screenshot:app.screenshot());shot.name="Large text explorer";shot.lifetime = .keepAlways;add(shot)
+    }
+    func testCardExplorerPreviewKeepsRecallDue() {
+        start();tap("choose-XT");completeLesson("lesson-xolos-identity")
+        app.terminate();start(reset:false,now:1_800_000_000+86401)
+        app.tabBars.buttons["Album"].tap();tap("card-xolos");tap("card-graph-open")
+        XCTAssertTrue(app.buttons["graph-find"].exists)
+        app.navigationBars.buttons.element(boundBy:0).tap();tap("card-practice")
+        for answer in ["Xolos","Tijuana","Estadio Caliente"] {
+            let field=app.descendants(matching:.any)["recall-answer"].firstMatch;field.tap();field.typeText(answer);tap("check-recall")
+            XCTAssertTrue(app.staticTexts["You previewed this fact in the card context or explorer. This answer counts as rehearsal."].exists)
+            tap("recall-next")
+        }
+        XCTAssertTrue(app.staticTexts["0 of 3 recalled independently."].exists);tap("practice-done")
+        app.tabBars.buttons["Learn"].tap();XCTAssertTrue(app.staticTexts["daily-due-count"].label.contains("3 ready"))
+    }
     func testBothClubsLessonResumeAlbumAndReview() {
         start();tap("choose-XT")
         tap("lesson-xolos-identity");tap("lesson-next")
@@ -252,7 +304,7 @@ final class FlowTests: XCTestCase {
         for answer in ["Xolos","Tijuana","Estadio Caliente"] {
             let input=app.descendants(matching:.any)["recall-answer"].firstMatch
             input.tap();input.typeText(answer);tap("check-recall")
-            XCTAssertTrue(app.staticTexts["You previewed this fact in the card context. This answer counts as rehearsal."].exists)
+            XCTAssertTrue(app.staticTexts["You previewed this fact in the card context or explorer. This answer counts as rehearsal."].exists)
             tap("recall-next")
         }
         XCTAssertTrue(app.staticTexts["0 of 3 recalled independently."].exists);tap("practice-done")

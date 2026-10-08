@@ -1,6 +1,6 @@
 """Build the curated starter pack. Stable IDs survive repeated runs."""
 from pathlib import Path
-import json, uuid, re
+import json, uuid, re, unicodedata
 ROOT=Path(__file__).resolve().parents[1]
 NAMESPACE=uuid.UUID('37ac373c-bf94-43fa-bf40-bfa0283391a3')
 def uid(key): return str(uuid.uuid5(NAMESPACE,key))
@@ -119,7 +119,24 @@ for subject,lids in by_subject.items():
  pack['cards'].append(dict(id=uid('card-'+subject),key='card-'+subject,entityID=uid('entity-'+subject),objectiveIDs=oids,lessonIDs=lids,knowledgeVersion=1,caption={'xolos':'From the border to the title','madrid':'A European story','riascos':'The forward','arce':'The local connection','saucedo':'Between the posts','cristiano':'The finisher','ramos':'The turning point','casillas':'The goalkeeper'}[subject]))
 from merge_expansion import merge
 merge(pack)
+graph=json.loads((ROOT/'content/graph-connections.json').read_text())
+pack['entities'] += graph['entities']
+pack['relationships'] = graph['relationships']
+pack['contentVersion']=3
+# Promote explicitly authored country values into canonical targets. Preserve
+# fact/objective IDs, wording, scope and revision: the taught claim is unchanged.
+flags=json.loads((ROOT/'content/country-artwork.json').read_text())
+for fact in pack['facts']:
+ if fact['predicate'].endswith('-country') and fact['value']['kind']=='text':
+  name=fact['value']['display'];plain=''.join(c for c in unicodedata.normalize('NFD',name.lower()) if not unicodedata.combining(c));slug=re.sub(r'[^a-z0-9]+','-',plain).strip('-')
+  target=next((e for e in pack['entities'] if e['type']=='country' and e['name']==name),None)
+  if target is None:
+   key='entity-country-'+slug
+   target=dict(id=uid(key),key=key,type='country',name=name,aliases=[],visual=name[:2].upper(),externalRefs={})
+   if slug in flags:target.update(flags[slug])
+   pack['entities'].append(target)
+  fact['value']=dict(kind='entity',display=name,entityID=target['id'])
 for entity in pack['entities']:
- if entity['key'] in ['entity-xolos','entity-madrid','entity-cristiano','entity-ramos','entity-casillas','entity-arce','entity-saucedo','entity-riascos']: entity['imageAsset']=entity['key']
+ if entity['key'] in ['entity-xolos','entity-madrid','entity-cristiano','entity-ramos','entity-casillas','entity-arce','entity-saucedo','entity-riascos','entity-di-stefano']: entity['imageAsset']=entity['key']
 out=ROOT/'Foxlingo/Resources/starter-en.json';out.write_text(json.dumps(pack,ensure_ascii=False,indent=2)+'\n')
 print(f'{len(pack["lessons"])} lessons, {len(pack["objectives"])} unique objectives, {len(pack["cards"])} cards')

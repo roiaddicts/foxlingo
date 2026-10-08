@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "key": "foxlingo-favorites-en",
-  "contentVersion": 2,
+  "contentVersion": 3,
   "language": "en",
   "entities": [
     {
@@ -154,7 +154,8 @@
       "name": "Alfredo Di Stéfano",
       "aliases": [],
       "visual": "AD",
-      "externalRefs": {}
+      "externalRefs": {},
+      "imageAsset": "entity-di-stefano"
     },
     {
       "id": "1cc0aaf1-6f90-54f1-95ac-72da793d62d5",
@@ -1083,6 +1084,209 @@
       ],
       "imageURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/SV-Werder-Bremen-Logo.svg/250px-SV-Werder-Bremen-Logo.svg.png",
       "imageAsset": "entity-werder-bremen"
+    },
+    {
+      "id": "f5fc0507-d8c9-5a1e-adfa-1796e6fb69a6",
+      "key": "entity-final-2014",
+      "name": "2014 Champions League final",
+      "type": "match",
+      "visual": "2014",
+      "aliases": [],
+      "externalRefs": {}
+    },
+    {
+      "id": "25f378f3-adcc-5248-8282-b6c656e1a627",
+      "key": "entity-ramos-equalizer-2014",
+      "name": "Ramos’s 2014 equalizer",
+      "type": "goal",
+      "visual": "SR",
+      "aliases": [],
+      "externalRefs": {}
+    },
+    {
+      "id": "3d4eac9c-af88-5c13-9aa7-c367978a9ae5",
+      "key": "entity-xolos-final-2012",
+      "name": "2012 Apertura final",
+      "type": "tie",
+      "visual": "2012",
+      "aliases": [],
+      "externalRefs": {}
+    },
+    {
+      "id": "544551ae-f6d2-5492-8278-b79ebab76843",
+      "key": "entity-country-greece",
+      "type": "country",
+      "name": "Greece",
+      "aliases": [],
+      "visual": "GR",
+      "externalRefs": {},
+      "imageAsset": "flag-greece",
+      "imageURL": "https://futbol-11.com/media/flags/49.webp"
+    },
+    {
+      "id": "928e3844-b491-5d46-8c6a-ae73e60a412b",
+      "key": "entity-country-england",
+      "type": "country",
+      "name": "England",
+      "aliases": [],
+      "visual": "EN",
+      "externalRefs": {},
+      "imageAsset": "flag-england",
+      "imageURL": "https://futbol-11.com/media/flags/6.webp"
+    },
+    {
+      "id": "fb571053-9a4d-5e85-aa52-4e7159c956c3",
+      "key": "entity-country-spain",
+      "type": "country",
+      "name": "Spain",
+      "aliases": [],
+      "visual": "SP",
+      "externalRefs": {},
+      "imageAsset": "flag-spain",
+      "imageURL": "https://futbol-11.com/media/flags/8.webp"
+    },
+    {
+      "id": "1ce9dc24-62d0-53e8-86d9-2b6840617dc6",
+      "key": "entity-country-germany",
+      "type": "country",
+      "name": "Germany",
+      "aliases": [],
+      "visual": "GE",
+      "externalRefs": {},
+      "imageAsset": "flag-germany",
+      "imageURL": "https://futbol-11.com/media/flags/2.webp"
+    },
+    {
+      "id": "ed4e06da-50a7-59df-8f36-fb59fc57f708",
+      "key": "entity-country-norway",
+      "type": "country",
+      "name": "Norway",
+      "aliases": [],
+      "visual": "NO",
+      "externalRefs": {},
+      "imageAsset": "flag-norway",
+      "imageURL": "https://futbol-11.com/media/flags/26.webp"
+    },
+    {
+      "id": "8535ba4c-81ab-54fd-be11-0ff5d4602d86",
+      "key": "entity-country-belgium",
+      "type": "country",
+      "name": "Belgium",
+      "aliases": [],
+      "visual": "BE",
+      "externalRefs": {},
+      "imageAsset": "flag-belgium",
+      "imageURL": "https://futbol-11.com/media/flags/3.webp"
+    },
+    {
+      "id": "e9413144-9b53-5144-988e-c08d81c3a46a",
+      "key": "entity-country-italy",
+      "type": "country",
+      "name": "Italy",
+      "aliases": [],
+      "visual": "IT",
+      "externalRefs": {},
+      "imageAsset": "flag-italy",
+      "imageURL": "https://futbol-11.com/media/flags/11.webp"
+    },
+    {
+      "id": "07fbddbb-e1d2-56dd-bcb1-0bcd138f7500",
+      "key": "entity-country-turkiye",
+      "type": "country",
+      "name": "Türkiye",
+      "aliases": [],
+      "visual": "TÜ",
+      "externalRefs": {},
+      "imageAsset": "flag-turkey",
+      "imageURL": "https://futbol-11.com/media/flags/24.webp"
+    },
+    {
+      "id": "41229fb8-7ed3-527f-9b5c-bba9529682ca",
+      "key": "entity-country-netherlands",
+      "type": "country",
+      "name": "Netherlands",
+      "aliases": [],
+      "visual": "NE",
+      "externalRefs": {},
+      "imageAsset": "flag-netherlands",
+      "imageURL": "https://futbol-11.com/media/flags/9.webp"
+    },
+    {
+      "id": "d4b77fee-f147-5b50-a87b-80cddfa470d8",
+      "key": "entity-country-austria",
+      "type": "country",
+      "name": "Austria",
+      "aliases": [],
+      "visual": "AU",
+      "externalRefs": {},
+      "imageAsset": "flag-austria",
+      "imageURL": "https://futbol-11.com/media/flags/23.webp"
+    },
+    {
+      "id": "ad1640f8-d9f3-5071-874a-2239581600a7",
+      "key": "entity-country-france",
+      "type": "country",
+      "name": "France",
+      "aliases": [],
+      "visual": "FR",
+      "externalRefs": {},
+      "imageAsset": "flag-france",
+      "imageURL": "https://futbol-11.com/media/flags/10.webp"
+    },
+    {
+      "id": "5987232c-e39b-56f1-a1ac-e6ab147d0b23",
+      "key": "entity-country-portugal",
+      "type": "country",
+      "name": "Portugal",
+      "aliases": [],
+      "visual": "PO",
+      "externalRefs": {},
+      "imageAsset": "flag-portugal",
+      "imageURL": "https://futbol-11.com/media/flags/4.webp"
+    },
+    {
+      "id": "ea1e2919-ba3c-5803-9032-a62ac5949ef5",
+      "key": "entity-country-azerbaijan",
+      "type": "country",
+      "name": "Azerbaijan",
+      "aliases": [],
+      "visual": "AZ",
+      "externalRefs": {},
+      "imageAsset": "flag-azerbaijan",
+      "imageURL": "https://flagcdn.com/w160/az.png"
+    },
+    {
+      "id": "9b6eaceb-7ed4-5310-ae9d-94fcfd175055",
+      "key": "entity-country-ukraine",
+      "type": "country",
+      "name": "Ukraine",
+      "aliases": [],
+      "visual": "UK",
+      "externalRefs": {},
+      "imageAsset": "flag-ukraine",
+      "imageURL": "https://futbol-11.com/media/flags/31.webp"
+    },
+    {
+      "id": "e2c115c7-14bb-578b-8ec0-17f85bfdcfd0",
+      "key": "entity-country-czechia",
+      "type": "country",
+      "name": "Czechia",
+      "aliases": [],
+      "visual": "CZ",
+      "externalRefs": {},
+      "imageAsset": "flag-czech-republic",
+      "imageURL": "https://futbol-11.com/media/flags/27.webp"
+    },
+    {
+      "id": "eb5bd8c6-7f4e-5fb7-a855-b1cc2abea1a1",
+      "key": "entity-country-slovakia",
+      "type": "country",
+      "name": "Slovakia",
+      "aliases": [],
+      "visual": "SL",
+      "externalRefs": {},
+      "imageAsset": "flag-slovakia",
+      "imageURL": "https://futbol-11.com/media/flags/37.webp"
     }
   ],
   "sources": [
@@ -2091,9 +2295,9 @@
       "subjectID": "75a862bb-ea5e-5448-a1c9-8af9caca0a2e",
       "predicate": "aek-athens-country",
       "value": {
-        "kind": "text",
+        "kind": "entity",
         "display": "Greece",
-        "text": "Greece"
+        "entityID": "544551ae-f6d2-5492-8278-b79ebab76843"
       },
       "scope": "2026/27 UEFA Champions League league phase",
       "sourceKeys": [
@@ -2187,9 +2391,9 @@
       "subjectID": "6e24f189-8ba1-510a-931c-041107f61723",
       "predicate": "arsenal-country",
       "value": {
-        "kind": "text",
+        "kind": "entity",
         "display": "England",
-        "text": "England"
+        "entityID": "928e3844-b491-5d46-8c6a-ae73e60a412b"
       },
       "scope": "2026/27 UEFA Champions League league phase",
       "sourceKeys": [
@@ -2235,9 +2439,9 @@
       "subjectID": "eb776548-b0db-5f30-ab1b-b47dabd128a5",
       "predicate": "aston-villa-country",
       "value": {
-        "kind": "text",
+        "kind": "entity",
         "display": "England",
-        "text": "England"
+        "entityID": "928e3844-b491-5d46-8c6a-ae73e60a412b"
       },
       "scope": "2026/27 UEFA Champions League league phase",
       "sourceKeys": [
@@ -2379,9 +2583,9 @@
       "subjectID": "ebe2de4a-b598-5bfd-9891-2e34c91c8390",
       "predicate": "atletico-madrid-country",
       "value": {
-        "kind": "text",
+        "kind": "entity",
         "display": "Spain",
-        "text": "Spain"
+        "entityID": "fb571053-9a4d-5e85-aa52-4e7159c956c3"
       },
       "scope": "2026/27 UEFA Champions League league phase",
       "sourceKeys": [
@@ -2523,9 +2727,9 @@
       "subjectID": "cee52a7d-c1dc-5eef-98ef-fa8a218ad413",
       "predicate": "barcelona-country",
       "value": {
-        "kind": "text",
+        "kind": "entity",
         "display": "Spain",
-        "text": "Spain"
+        "entityID": "fb571053-9a4d-5e85-aa52-4e7159c956c3"
       },
       "scope": "2026/27 UEFA Champions League league phase",
       "sourceKeys": [
@@ -2619,9 +2823,9 @@
       "subjectID": "2f365de6-6307-5e8d-a80e-d4459c58787a",
       "predicate": "bayern-munich-country",
       "value": {
-        "kind": "text",
+        "kind": "entity",
         "display": "Germany",
-        "text": "Germany"
+        "entityID": "1ce9dc24-62d0-53e8-86d9-2b6840617dc6"
       },
       "scope": "2026/27 UEFA Champions League league phase",
       "sourceKeys": [
@@ -2667,9 +2871,9 @@
       "subjectID": "c3a88c7b-17b5-5b31-8544-f7e5a465ccbb",
       "predicate": "bodo-glimt-country",
       "value": {
-        "kind": "text",
+        "kind": "entity",
         "display": "Norway",
-        "text": "Norway"
+        "entityID": "ed4e06da-50a7-59df-8f36-fb59fc57f708"
       },
       "scope": "2026/27 UEFA Champions League league phase",
       "sourceKeys": [
@@ -2715,9 +2919,9 @@
       "subjectID": "933e03de-44e1-53b6-8a7a-8008fc84ae63",
       "predicate": "borussia-dortmund-country",
       "value": {
-        "kind": "text",
+        "kind": "entity",
         "display": "Germany",
-        "text": "Germany"
+        "entityID": "1ce9dc24-62d0-53e8-86d9-2b6840617dc6"
       },
       "scope": "2026/27 UEFA Champions League league phase",
       "sourceKeys": [
@@ -2859,9 +3063,9 @@
       "subjectID": "13ada8db-42c0-504c-a1b3-809ec473e4dc",
       "predicate": "club-brugge-country",
       "value": {
-        "kind": "text",
+        "kind": "entity",
         "display": "Belgium",
-        "text": "Belgium"
+        "entityID": "8535ba4c-81ab-54fd-be11-0ff5d4602d86"
       },
       "scope": "2026/27 UEFA Champions League league phase",
       "sourceKeys": [
@@ -2907,9 +3111,9 @@
       "subjectID": "20ff9eba-eac1-5548-a328-7f2c34d56496",
       "predicate": "como-country",
       "value": {
-        "kind": "text",
+        "kind": "entity",
         "display": "Italy",
-        "text": "Italy"
+        "entityID": "e9413144-9b53-5144-988e-c08d81c3a46a"
       },
       "scope": "2026/27 UEFA Champions League league phase",
       "sourceKeys": [
@@ -3147,9 +3351,9 @@
       "subjectID": "0a9bcb17-6cf8-50e7-8d14-7d5ecc8c26f8",
       "predicate": "fenerbah-e-country",
       "value": {
-        "kind": "text",
+        "kind": "entity",
         "display": "Türkiye",
-        "text": "Türkiye"
+        "entityID": "07fbddbb-e1d2-56dd-bcb1-0bcd138f7500"
       },
       "scope": "2026/27 UEFA Champions League league phase",
       "sourceKeys": [
@@ -3195,9 +3399,9 @@
       "subjectID": "4b9f41b9-582b-5da7-8090-94bcbeb15df4",
       "predicate": "feyenoord-country",
       "value": {
-        "kind": "text",
+        "kind": "entity",
         "display": "Netherlands",
-        "text": "Netherlands"
+        "entityID": "41229fb8-7ed3-527f-9b5c-bba9529682ca"
       },
       "scope": "2026/27 UEFA Champions League league phase",
       "sourceKeys": [
@@ -3291,9 +3495,9 @@
       "subjectID": "77d99961-7a9a-5698-886d-7fb79ffbb673",
       "predicate": "galatasaray-country",
       "value": {
-        "kind": "text",
+        "kind": "entity",
         "display": "Türkiye",
-        "text": "Türkiye"
+        "entityID": "07fbddbb-e1d2-56dd-bcb1-0bcd138f7500"
       },
       "scope": "2026/27 UEFA Champions League league phase",
       "sourceKeys": [
@@ -3435,9 +3639,9 @@
       "subjectID": "7b12f9cf-a10f-5220-8a93-9121d3d85474",
       "predicate": "inter-country",
       "value": {
-        "kind": "text",
+        "kind": "entity",
         "display": "Italy",
-        "text": "Italy"
+        "entityID": "e9413144-9b53-5144-988e-c08d81c3a46a"
       },
       "scope": "2026/27 UEFA Champions League league phase",
       "sourceKeys": [
@@ -3531,9 +3735,9 @@
       "subjectID": "2018da00-09ed-50cf-a0ae-306197e54dee",
       "predicate": "lask-country",
       "value": {
-        "kind": "text",
+        "kind": "entity",
         "display": "Austria",
-        "text": "Austria"
+        "entityID": "d4b77fee-f147-5b50-a87b-80cddfa470d8"
       },
       "scope": "2026/27 UEFA Champions League league phase",
       "sourceKeys": [
@@ -3579,9 +3783,9 @@
       "subjectID": "db77a092-45d0-57c0-a7d8-0f2c30a3568e",
       "predicate": "leipzig-country",
       "value": {
-        "kind": "text",
+        "kind": "entity",
         "display": "Germany",
-        "text": "Germany"
+        "entityID": "1ce9dc24-62d0-53e8-86d9-2b6840617dc6"
       },
       "scope": "2026/27 UEFA Champions League league phase",
       "sourceKeys": [
@@ -3627,9 +3831,9 @@
       "subjectID": "79dbf896-2537-5506-bdb1-4a44e1cc3fde",
       "predicate": "lens-country",
       "value": {
-        "kind": "text",
+        "kind": "entity",
         "display": "France",
-        "text": "France"
+        "entityID": "ad1640f8-d9f3-5071-874a-2239581600a7"
       },
       "scope": "2026/27 UEFA Champions League league phase",
       "sourceKeys": [
@@ -3723,9 +3927,9 @@
       "subjectID": "dbfa41d8-89bb-50a6-925b-dfe442491772",
       "predicate": "lille-country",
       "value": {
-        "kind": "text",
+        "kind": "entity",
         "display": "France",
-        "text": "France"
+        "entityID": "ad1640f8-d9f3-5071-874a-2239581600a7"
       },
       "scope": "2026/27 UEFA Champions League league phase",
       "sourceKeys": [
@@ -3771,9 +3975,9 @@
       "subjectID": "8b6a2a49-f861-5aa6-8bc9-f9d5ed889507",
       "predicate": "liverpool-country",
       "value": {
-        "kind": "text",
+        "kind": "entity",
         "display": "England",
-        "text": "England"
+        "entityID": "928e3844-b491-5d46-8c6a-ae73e60a412b"
       },
       "scope": "2026/27 UEFA Champions League league phase",
       "sourceKeys": [
@@ -3867,9 +4071,9 @@
       "subjectID": "4686f5b6-f634-5fb3-995c-2f58ce005d08",
       "predicate": "manchester-city-country",
       "value": {
-        "kind": "text",
+        "kind": "entity",
         "display": "England",
-        "text": "England"
+        "entityID": "928e3844-b491-5d46-8c6a-ae73e60a412b"
       },
       "scope": "2026/27 UEFA Champions League league phase",
       "sourceKeys": [
@@ -3915,9 +4119,9 @@
       "subjectID": "1e1c96fa-0f06-58dc-8ad8-29d7fb8ae5c4",
       "predicate": "manchester-united-country",
       "value": {
-        "kind": "text",
+        "kind": "entity",
         "display": "England",
-        "text": "England"
+        "entityID": "928e3844-b491-5d46-8c6a-ae73e60a412b"
       },
       "scope": "2026/27 UEFA Champions League league phase",
       "sourceKeys": [
@@ -4011,9 +4215,9 @@
       "subjectID": "19d98437-635f-52f7-ae2c-9552d207ce25",
       "predicate": "napoli-country",
       "value": {
-        "kind": "text",
+        "kind": "entity",
         "display": "Italy",
-        "text": "Italy"
+        "entityID": "e9413144-9b53-5144-988e-c08d81c3a46a"
       },
       "scope": "2026/27 UEFA Champions League league phase",
       "sourceKeys": [
@@ -4203,9 +4407,9 @@
       "subjectID": "83337db9-3034-510d-a130-f71e6a35f417",
       "predicate": "porto-country",
       "value": {
-        "kind": "text",
+        "kind": "entity",
         "display": "Portugal",
-        "text": "Portugal"
+        "entityID": "5987232c-e39b-56f1-a1ac-e6ab147d0b23"
       },
       "scope": "2026/27 UEFA Champions League league phase",
       "sourceKeys": [
@@ -4251,9 +4455,9 @@
       "subjectID": "14e0e068-6616-5ac7-b5b3-f88bc65e473a",
       "predicate": "psg-country",
       "value": {
-        "kind": "text",
+        "kind": "entity",
         "display": "France",
-        "text": "France"
+        "entityID": "ad1640f8-d9f3-5071-874a-2239581600a7"
       },
       "scope": "2026/27 UEFA Champions League league phase",
       "sourceKeys": [
@@ -4299,9 +4503,9 @@
       "subjectID": "c9084088-6dc4-5ee2-8d74-403db60aa214",
       "predicate": "psv-country",
       "value": {
-        "kind": "text",
+        "kind": "entity",
         "display": "Netherlands",
-        "text": "Netherlands"
+        "entityID": "41229fb8-7ed3-527f-9b5c-bba9529682ca"
       },
       "scope": "2026/27 UEFA Champions League league phase",
       "sourceKeys": [
@@ -4491,9 +4695,9 @@
       "subjectID": "1bc74a6c-9567-5212-aa6b-7f56a84b8ffa",
       "predicate": "real-betis-country",
       "value": {
-        "kind": "text",
+        "kind": "entity",
         "display": "Spain",
-        "text": "Spain"
+        "entityID": "fb571053-9a4d-5e85-aa52-4e7159c956c3"
       },
       "scope": "2026/27 UEFA Champions League league phase",
       "sourceKeys": [
@@ -4539,9 +4743,9 @@
       "subjectID": "bfbeecff-e46e-5cae-a7d8-a09e05bf7d9b",
       "predicate": "roma-country",
       "value": {
-        "kind": "text",
+        "kind": "entity",
         "display": "Italy",
-        "text": "Italy"
+        "entityID": "e9413144-9b53-5144-988e-c08d81c3a46a"
       },
       "scope": "2026/27 UEFA Champions League league phase",
       "sourceKeys": [
@@ -4587,9 +4791,9 @@
       "subjectID": "d0793e6c-cea8-50bc-87f8-067bcfa5977b",
       "predicate": "sabah-country",
       "value": {
-        "kind": "text",
+        "kind": "entity",
         "display": "Azerbaijan",
-        "text": "Azerbaijan"
+        "entityID": "ea1e2919-ba3c-5803-9032-a62ac5949ef5"
       },
       "scope": "2026/27 UEFA Champions League league phase",
       "sourceKeys": [
@@ -4731,9 +4935,9 @@
       "subjectID": "207de5f3-d728-5f13-a6d4-64a9caa21b36",
       "predicate": "shakhtar-country",
       "value": {
-        "kind": "text",
+        "kind": "entity",
         "display": "Ukraine",
-        "text": "Ukraine"
+        "entityID": "9b6eaceb-7ed4-5310-ae9d-94fcfd175055"
       },
       "scope": "2026/27 UEFA Champions League league phase",
       "sourceKeys": [
@@ -4779,9 +4983,9 @@
       "subjectID": "7a2ac613-48c0-5a59-ab79-225178928b7f",
       "predicate": "slavia-prague-country",
       "value": {
-        "kind": "text",
+        "kind": "entity",
         "display": "Czechia",
-        "text": "Czechia"
+        "entityID": "e2c115c7-14bb-578b-8ec0-17f85bfdcfd0"
       },
       "scope": "2026/27 UEFA Champions League league phase",
       "sourceKeys": [
@@ -4827,9 +5031,9 @@
       "subjectID": "4c02e7a8-d125-5eab-a5c9-e44948734acd",
       "predicate": "slovan-bratislava-country",
       "value": {
-        "kind": "text",
+        "kind": "entity",
         "display": "Slovakia",
-        "text": "Slovakia"
+        "entityID": "eb5bd8c6-7f4e-5fb7-a855-b1cc2abea1a1"
       },
       "scope": "2026/27 UEFA Champions League league phase",
       "sourceKeys": [
@@ -4875,9 +5079,9 @@
       "subjectID": "97fa938f-9988-5592-aea1-f36fefb7ecd3",
       "predicate": "sporting-cp-country",
       "value": {
-        "kind": "text",
+        "kind": "entity",
         "display": "Portugal",
-        "text": "Portugal"
+        "entityID": "5987232c-e39b-56f1-a1ac-e6ab147d0b23"
       },
       "scope": "2026/27 UEFA Champions League league phase",
       "sourceKeys": [
@@ -4923,9 +5127,9 @@
       "subjectID": "03823966-c9a4-5c3c-81b1-5d08edfe2a15",
       "predicate": "stuttgart-country",
       "value": {
-        "kind": "text",
+        "kind": "entity",
         "display": "Germany",
-        "text": "Germany"
+        "entityID": "1ce9dc24-62d0-53e8-86d9-2b6840617dc6"
       },
       "scope": "2026/27 UEFA Champions League league phase",
       "sourceKeys": [
@@ -5115,9 +5319,9 @@
       "subjectID": "8cf7d6c2-8f3d-53be-be94-6314c29fc4ce",
       "predicate": "viking-country",
       "value": {
-        "kind": "text",
+        "kind": "entity",
         "display": "Norway",
-        "text": "Norway"
+        "entityID": "ed4e06da-50a7-59df-8f36-fb59fc57f708"
       },
       "scope": "2026/27 UEFA Champions League league phase",
       "sourceKeys": [
@@ -5163,9 +5367,9 @@
       "subjectID": "7dbba888-f324-578c-af69-fc6ae429bad8",
       "predicate": "villarreal-country",
       "value": {
-        "kind": "text",
+        "kind": "entity",
         "display": "Spain",
-        "text": "Spain"
+        "entityID": "fb571053-9a4d-5e85-aa52-4e7159c956c3"
       },
       "scope": "2026/27 UEFA Champions League league phase",
       "sourceKeys": [
@@ -27635,5 +27839,154 @@
     "champions": "2026/27 UEFA Champions League league phase",
     "bundesliga": "2026/27 Bundesliga",
     "ligamx": "Liga MX Apertura 2026"
-  }
+  },
+  "relationships": [
+    {
+      "id": "282bbcdd-9f02-52a0-b103-51933620ff42",
+      "key": "relationship-riascos-xolos",
+      "subjectID": "8a32d77b-d409-5435-9516-5adccb2b059a",
+      "objectID": "f85aa453-4336-52ef-900a-853646479e20",
+      "group": "history",
+      "label": "Joined",
+      "claim": "Duvier Riascos joined Club Tijuana for Clausura 2012.",
+      "scope": "Clausura 2012",
+      "factIDs": [
+        "d418375d-1fbf-5a54-8eac-214d2ae98490"
+      ]
+    },
+    {
+      "id": "eaff509e-19c1-593c-9b33-2ef8ed240c82",
+      "key": "relationship-saucedo-xolos",
+      "subjectID": "8dc70c1f-7491-530f-9c92-3e48cd54f665",
+      "objectID": "f85aa453-4336-52ef-900a-853646479e20",
+      "group": "history",
+      "label": "Kept goal for",
+      "claim": "Cirilo Saucedo’s 11 goals conceded in 17 matches were recorded for Xolos.",
+      "scope": "Clausura 2012 regular phase",
+      "factIDs": [
+        "8aca7238-5fe3-5641-9a15-06ea15f8009e",
+        "91a975f2-4678-5d2b-bb25-631cbee22b74"
+      ]
+    },
+    {
+      "id": "3737d5ce-a584-5ef8-a822-90a46e882abf",
+      "key": "relationship-ramos-madrid",
+      "subjectID": "bd1a5c77-15cc-5bde-bd77-b3a9679f8e95",
+      "objectID": "b10020b9-4d2f-5384-a229-6bb3d69da093",
+      "group": "history",
+      "label": "Scored for",
+      "claim": "Real Madrid’s club-career record credits Sergio Ramos with 101 goals.",
+      "scope": "Real Madrid club career; historical profile",
+      "factIDs": [
+        "3fee9ab4-e9d7-5cb0-acd8-8003830291f3"
+      ]
+    },
+    {
+      "id": "594a5b18-0e16-5ca2-9f6a-051cfd961f29",
+      "key": "relationship-casillas-madrid",
+      "subjectID": "b63b8e8c-5e58-54f5-815d-9e37d56baf32",
+      "objectID": "b10020b9-4d2f-5384-a229-6bb3d69da093",
+      "group": "history",
+      "label": "Made appearances for",
+      "claim": "Real Madrid records 725 official appearances for Iker Casillas.",
+      "scope": "Real Madrid club career; historical profile",
+      "factIDs": [
+        "6b462a97-8d08-5a09-8a58-aeff31a8138e"
+      ]
+    },
+    {
+      "id": "9092136e-2485-55a0-a053-12288771901b",
+      "key": "relationship-madrid-final-2014",
+      "subjectID": "b10020b9-4d2f-5384-a229-6bb3d69da093",
+      "objectID": "f5fc0507-d8c9-5a1e-adfa-1796e6fb69a6",
+      "group": "events",
+      "label": "Played in",
+      "claim": "Real Madrid faced Atlético de Madrid in the 2014 Champions League final.",
+      "scope": "2014 Champions League final",
+      "factIDs": [
+        "685f84bc-b283-5671-88ad-105002b821ba",
+        "add9d570-519a-5e21-a6ef-16b18b764b52"
+      ]
+    },
+    {
+      "id": "9feb78c7-2d75-530e-ab91-65ce5a450cac",
+      "key": "relationship-atletico-final-2014",
+      "subjectID": "ebe2de4a-b598-5bfd-9891-2e34c91c8390",
+      "objectID": "f5fc0507-d8c9-5a1e-adfa-1796e6fb69a6",
+      "group": "events",
+      "label": "Played in",
+      "claim": "Atlético de Madrid faced Real Madrid in the 2014 Champions League final.",
+      "scope": "2014 Champions League final",
+      "factIDs": [
+        "685f84bc-b283-5671-88ad-105002b821ba"
+      ]
+    },
+    {
+      "id": "58d56e54-ae32-5618-8f98-d7115b110afb",
+      "key": "relationship-ramos-goal-2014",
+      "subjectID": "bd1a5c77-15cc-5bde-bd77-b3a9679f8e95",
+      "objectID": "25f378f3-adcc-5248-8282-b6c656e1a627",
+      "group": "events",
+      "label": "Scored",
+      "claim": "Sergio Ramos scored Real Madrid’s equalizer to force extra time.",
+      "scope": "2014 Champions League final; added time",
+      "factIDs": [
+        "27e655c6-9f7b-50d2-bf2a-423ef2af4e9d"
+      ]
+    },
+    {
+      "id": "bf47e527-f4f5-57fe-ad93-54b7c4a2398b",
+      "key": "relationship-equalizer-final-2014",
+      "subjectID": "25f378f3-adcc-5248-8282-b6c656e1a627",
+      "objectID": "f5fc0507-d8c9-5a1e-adfa-1796e6fb69a6",
+      "group": "events",
+      "label": "Occurred in",
+      "claim": "Ramos’s equalizer was scored in the 2014 Champions League final.",
+      "scope": "2014 Champions League final",
+      "factIDs": [
+        "27e655c6-9f7b-50d2-bf2a-423ef2af4e9d"
+      ]
+    },
+    {
+      "id": "21d81517-2256-5065-a49f-dcc10ba93757",
+      "key": "relationship-cristiano-final-2014",
+      "subjectID": "6d957fed-48cd-5e99-8e09-2758304bba08",
+      "objectID": "f5fc0507-d8c9-5a1e-adfa-1796e6fb69a6",
+      "group": "events",
+      "label": "Scored a penalty in",
+      "claim": "Cristiano Ronaldo scored a penalty for Real Madrid in this final.",
+      "scope": "2014 Champions League final",
+      "factIDs": [
+        "cc283f65-052c-54e3-b93d-863ce6e7ba0f",
+        "1e32a0f3-a347-5e93-ae97-68b121459acf"
+      ]
+    },
+    {
+      "id": "eaad6659-99a2-597b-9987-082767b69e59",
+      "key": "relationship-xolos-final-2012",
+      "subjectID": "f85aa453-4336-52ef-900a-853646479e20",
+      "objectID": "3d4eac9c-af88-5c13-9aa7-c367978a9ae5",
+      "group": "events",
+      "label": "Played in",
+      "claim": "Xolos faced Toluca in the two-leg Apertura 2012 final.",
+      "scope": "Apertura 2012 final; two legs",
+      "factIDs": [
+        "2fe972ba-343b-5011-b359-617710664ffa",
+        "1353d401-fb51-5b54-ae2b-b1a0c10bf2f0"
+      ]
+    },
+    {
+      "id": "a806eb52-4b84-528b-a3db-7d8b9516d259",
+      "key": "relationship-toluca-final-2012",
+      "subjectID": "a6e9d25d-0c7c-5012-bbe3-75cc36a86bda",
+      "objectID": "3d4eac9c-af88-5c13-9aa7-c367978a9ae5",
+      "group": "events",
+      "label": "Played in",
+      "claim": "Toluca faced Xolos in the two-leg Apertura 2012 final.",
+      "scope": "Apertura 2012 final; two legs",
+      "factIDs": [
+        "2fe972ba-343b-5011-b359-617710664ffa"
+      ]
+    }
+  ]
 }

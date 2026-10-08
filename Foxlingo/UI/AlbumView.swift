@@ -11,6 +11,7 @@ struct AlbumView: View {
         ScrollView {
             LazyVStack(alignment:.leading,spacing:22) {
                 HStack {VStack(alignment:.leading,spacing:8) {Eyebrow(text:"A collection of connections");Text("Your album").font(.largeTitle.bold())};Spacer();Leopard().frame(width:52,height:60)}
+                NavigationLink {ExplorerView()} label:{Label("Explore connections",systemImage:"point.3.connected.trianglepath.dotted").font(.headline).frame(minHeight:44)}.buttonStyle(PressFeedback()).accessibilityIdentifier("graph-open")
                 Picker("Collection",selection:$scope) {ForEach(AlbumScope.allCases) {s in Text(s.title).tag(s)}}.pickerStyle(.menu).accessibilityIdentifier("album-collection")
                 Toggle("Discovered only",isOn:$discoveredOnly).accessibilityIdentifier("album-discovered-only")
                 if let pack=model.pack {
@@ -85,6 +86,7 @@ struct CardDetail: View {
                 let tier=model.state.tier(card), readiness=CardReadiness.make(card:card,pack:pack,state:model.state,now:model.now)
                 VStack(alignment:.leading,spacing:22) {
                     Collectible(card:card,pack:pack,tier:tier).frame(maxWidth:typeSize.isAccessibilitySize ? .infinity : 260).frame(maxWidth:.infinity)
+                    NavigationLink {ExplorerView(initialID:card.entityID).onAppear {previewed.formUnion(card.objectiveIDs)}} label:{Label("Explore connections",systemImage:"point.3.connected.trianglepath.dotted").font(.headline).frame(minHeight:44)}.buttonStyle(PressFeedback()).accessibilityIdentifier("card-graph-open")
                     Text(tier < 0 ? "Discover this story" : "Your knowledge set").font(.title2.bold())
                     if tier >= 0 {
                         Text("Earned \(LearnerState.tierNames[tier]) · \(achievementScope)").font(.headline).accessibilityIdentifier("card-achievement")
@@ -119,12 +121,12 @@ struct CardDetail: View {
                     if tier >= 0 && !learned.isEmpty {
                         PrimaryButton(title:"Practice this knowledge set",symbol:"arrow.clockwise") {practice=PracticeRoute(learned,dueMode:readiness.due > 0,assistedObjectiveIDs:previewed)}.accessibilityIdentifier("card-practice")
                     }
-                    Text("Earned tiers stay with you. Current recall reflects this active knowledge set; context opened here counts as rehearsal in card practice.").font(.footnote).foregroundStyle(Palette.muted)
+                    Text("Earned tiers stay with you. Current recall reflects this active knowledge set; context or the explorer opened here counts as rehearsal in card practice.").font(.footnote).foregroundStyle(Palette.muted)
                 }.padding(24)
             }
         }.journal().navigationTitle(model.pack?.entity(card.entityID).name ?? "Card").navigationBarTitleDisplayMode(.inline)
         .fullScreenCover(item:$lesson){l in NavigationStack {LessonView(lesson:l)}}
-        .navigationDestination(item:$practice) {route in if let pack=model.pack {PracticeSession(objectives:route.objectiveIDs.map(pack.objective),dueMode:route.dueMode,assistedObjectiveIDs:route.assistedObjectiveIDs,previewContext:"the card context")}}
+        .navigationDestination(item:$practice) {route in if let pack=model.pack {PracticeSession(objectives:route.objectiveIDs.map(pack.objective),dueMode:route.dueMode,assistedObjectiveIDs:route.assistedObjectiveIDs,previewContext:"the card context or explorer")}}
     }
 }
 struct SettingsView: View {

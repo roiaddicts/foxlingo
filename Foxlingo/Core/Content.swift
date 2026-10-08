@@ -118,6 +118,7 @@ public struct ContentPack: Codable, Sendable {
     public let lessons: [Lesson]
     public let exercises: [Exercise]
     public let cards: [AlbumCard]
+    public let relationships: [GraphRelationship]?
     public static func load(_ data: Data) throws -> Self {
         let pack = try JSONDecoder().decode(Self.self, from: data)
         try pack.validate()
@@ -130,8 +131,10 @@ public struct ContentPack: Codable, Sendable {
     public func validate() throws {
         func require(_ condition: Bool, _ message: String) throws { if !condition { throw ContentError.invalid(message) } }
         try require(schemaVersion == 1 && language == "en", "Unsupported content version or language.")
-        let ids = entities.map(\.id) + facts.map(\.id) + objectives.map(\.id) + roadmaps.map(\.id) + lessons.map(\.id) + exercises.map(\.id) + cards.map(\.id)
-        let keys = entities.map(\.key) + facts.map(\.key) + objectives.map(\.key) + roadmaps.map(\.key) + lessons.map(\.key) + exercises.map(\.key) + cards.map(\.key) + sources.map(\.key)
+        var ids = entities.map(\.id) + facts.map(\.id) + objectives.map(\.id) + roadmaps.map(\.id) + lessons.map(\.id) + exercises.map(\.id) + cards.map(\.id)
+        var keys = entities.map(\.key) + facts.map(\.key) + objectives.map(\.key) + roadmaps.map(\.key) + lessons.map(\.key) + exercises.map(\.key) + cards.map(\.key) + sources.map(\.key)
+        ids += (relationships ?? []).map(\.id)
+        keys += (relationships ?? []).map(\.key)
         try require(Set(ids).count == ids.count && Set(keys).count == keys.count, "Duplicate content identifiers.")
         let ei = Set(entities.map(\.id)), fi = Set(facts.map(\.id)), oi = Set(objectives.map(\.id)), li = Set(lessons.map(\.id)), xi = Set(exercises.map(\.id)), sk = Set(sources.map(\.key))
         for s in sources { try require(URL(string:s.url)?.scheme == "https" && !s.verifiedAt.isEmpty, "Invalid source.") }
@@ -146,6 +149,9 @@ public struct ContentPack: Codable, Sendable {
             }
         }
         for o in objectives { try require(!o.factIDs.isEmpty && Set(o.factIDs).isSubset(of:fi) && !o.answers.isEmpty && o.answers.allSatisfy { !Recall.normalize($0).isEmpty } && o.revision > 0 && !o.prompt.isEmpty, "Invalid objective \(o.key).") }
+        for r in relationships ?? [] {
+            try require(ei.contains(r.subjectID) && ei.contains(r.objectID) && r.subjectID != r.objectID && !r.factIDs.isEmpty && Set(r.factIDs).isSubset(of:fi) && !r.label.isEmpty && !r.claim.isEmpty && !r.scope.isEmpty,"Invalid graph relationship \(r.key).")
+        }
         for x in exercises {
             try require(!x.objectiveIDs.isEmpty && Set(x.objectiveIDs).isSubset(of:oi), "Broken exercise objective.")
             switch x.kind {

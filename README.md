@@ -48,7 +48,7 @@ The UI-test launch flags (`-ui-testing`, `-reset-test-state`, and `-test-now`) e
 - [MVP specification](mvp.md): the initial learning loop and acceptance criteria.
 - [Answer validation](docs/answer-validation.md): current grading and future typo/model options.
 
-Expanded lessons were drafted with a cheaper subagent and checked against official sources and the app’s schema. Deeper courses for the added clubs, live statistics, Firebase publishing, live fixture briefings, and a connection explorer remain future work. See [expansion notes](content/expansion-notes.md).
+Expanded lessons were drafted with a cheaper subagent and checked against official sources and the app’s schema. Deeper courses for the added clubs, live statistics, Firebase publishing and live fixture briefings remain future work. See [expansion notes](content/expansion-notes.md).
 
 ## Artwork
 
@@ -71,3 +71,11 @@ Open **Practice → Prepare with two clubs**. Choose two distinct canonical club
 The album starts with Xolos and Real Madrid. Switch to a competition or all clubs, search club/player names, or show discovered cards only. Collection totals stay fixed while filtering, and shared cards count once. Each card states its depth: a three-connection introduction, club foundations, or a player story.
 
 Card details separate introduced connections, remaining lessons, refreshed facts, and current recall stage. Earned tiers remain visible when a knowledge set expands or a fact changes. Saved achievements record their knowledge-set version where known; older saves with uncertain provenance retain their tier without inventing a version. Opening card context or a source marks that connection as assisted for the card's next practice session, preserving its due schedule.
+
+### Connection explorer
+
+Open **Album → Explore connections**, or explore from a card. Tap nearby badges, faces, or moment nodes to move through the map. Choose two subjects to find the fewest supported links, then inspect each step's original claim, historical scope, evidence, and source links. At accessibility text sizes, a readable list replaces the spatial map.
+
+The default filter uses club history and events. Country and place relationships can be included explicitly. The graph combines entity-valued facts with curated, fact-backed relationships in `content/graph-connections.json`; the build script compiles both into the canonical starter JSON. Country answers share canonical country UUIDs without changing taught answers or review revisions. The 2014 final, Ramos's equalizer, and the two-leg 2012 final are separate occurrence records. Self-references remain facts rather than graph edges; literal statistics remain scoped details. Traversing an edge backward preserves the original claim. Shared club history never implies teammates.
+
+Graph coverage is limited to this library. A missing path means no supported path under the selected filters, not that two subjects have no real-world connection. Structural validation rejects broken references or missing provenance; curated claims still need factual review. Explorer visits earn no XP, streak activity, or recall credit. Entering the explorer from a card conservatively marks its whole knowledge set assisted for that card visit. Wider match/goal histories and richer league connections remain future content work.

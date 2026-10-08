@@ -1,0 +1,180 @@
+{
+  "entities": [
+    {
+      "id": "f5fc0507-d8c9-5a1e-adfa-1796e6fb69a6",
+      "key": "entity-final-2014",
+      "name": "2014 Champions League final",
+      "type": "match",
+      "visual": "2014",
+      "aliases": [],
+      "externalRefs": {}
+    },
+    {
+      "id": "25f378f3-adcc-5248-8282-b6c656e1a627",
+      "key": "entity-ramos-equalizer-2014",
+      "name": "Ramos’s 2014 equalizer",
+      "type": "goal",
+      "visual": "SR",
+      "aliases": [],
+      "externalRefs": {}
+    },
+    {
+      "id": "3d4eac9c-af88-5c13-9aa7-c367978a9ae5",
+      "key": "entity-xolos-final-2012",
+      "name": "2012 Apertura final",
+      "type": "tie",
+      "visual": "2012",
+      "aliases": [],
+      "externalRefs": {}
+    }
+  ],
+  "relationships": [
+    {
+      "id": "282bbcdd-9f02-52a0-b103-51933620ff42",
+      "key": "relationship-riascos-xolos",
+      "subjectID": "8a32d77b-d409-5435-9516-5adccb2b059a",
+      "objectID": "f85aa453-4336-52ef-900a-853646479e20",
+      "group": "history",
+      "label": "Joined",
+      "claim": "Duvier Riascos joined Club Tijuana for Clausura 2012.",
+      "scope": "Clausura 2012",
+      "factIDs": [
+        "d418375d-1fbf-5a54-8eac-214d2ae98490"
+      ]
+    },
+    {
+      "id": "eaff509e-19c1-593c-9b33-2ef8ed240c82",
+      "key": "relationship-saucedo-xolos",
+      "subjectID": "8dc70c1f-7491-530f-9c92-3e48cd54f665",
+      "objectID": "f85aa453-4336-52ef-900a-853646479e20",
+      "group": "history",
+      "label": "Kept goal for",
+      "claim": "Cirilo Saucedo’s 11 goals conceded in 17 matches were recorded for Xolos.",
+      "scope": "Clausura 2012 regular phase",
+      "factIDs": [
+        "8aca7238-5fe3-5641-9a15-06ea15f8009e",
+        "91a975f2-4678-5d2b-bb25-631cbee22b74"
+      ]
+    },
+    {
+      "id": "3737d5ce-a584-5ef8-a822-90a46e882abf",
+      "key": "relationship-ramos-madrid",
+      "subjectID": "bd1a5c77-15cc-5bde-bd77-b3a9679f8e95",
+      "objectID": "b10020b9-4d2f-5384-a229-6bb3d69da093",
+      "group": "history",
+      "label": "Scored for",
+      "claim": "Real Madrid’s club-career record credits Sergio Ramos with 101 goals.",
+      "scope": "Real Madrid club career; historical profile",
+      "factIDs": [
+        "3fee9ab4-e9d7-5cb0-acd8-8003830291f3"
+      ]
+    },
+    {
+      "id": "594a5b18-0e16-5ca2-9f6a-051cfd961f29",
+      "key": "relationship-casillas-madrid",
+      "subjectID": "b63b8e8c-5e58-54f5-815d-9e37d56baf32",
+      "objectID": "b10020b9-4d2f-5384-a229-6bb3d69da093",
+      "group": "history",
+      "label": "Made appearances for",
+      "claim": "Real Madrid records 725 official appearances for Iker Casillas.",
+      "scope": "Real Madrid club career; historical profile",
+      "factIDs": [
+        "6b462a97-8d08-5a09-8a58-aeff31a8138e"
+      ]
+    },
+    {
+      "id": "9092136e-2485-55a0-a053-12288771901b",
+      "key": "relationship-madrid-final-2014",
+      "subjectID": "b10020b9-4d2f-5384-a229-6bb3d69da093",
+      "objectID": "f5fc0507-d8c9-5a1e-adfa-1796e6fb69a6",
+      "group": "events",
+      "label": "Played in",
+      "claim": "Real Madrid faced Atlético de Madrid in the 2014 Champions League final.",
+      "scope": "2014 Champions League final",
+      "factIDs": [
+        "685f84bc-b283-5671-88ad-105002b821ba",
+        "add9d570-519a-5e21-a6ef-16b18b764b52"
+      ]
+    },
+    {
+      "id": "9feb78c7-2d75-530e-ab91-65ce5a450cac",
+      "key": "relationship-atletico-final-2014",
+      "subjectID": "ebe2de4a-b598-5bfd-9891-2e34c91c8390",
+      "objectID": "f5fc0507-d8c9-5a1e-adfa-1796e6fb69a6",
+      "group": "events",
+      "label": "Played in",
+      "claim": "Atlético de Madrid faced Real Madrid in the 2014 Champions League final.",
+      "scope": "2014 Champions League final",
+      "factIDs": [
+        "685f84bc-b283-5671-88ad-105002b821ba"
+      ]
+    },
+    {
+      "id": "58d56e54-ae32-5618-8f98-d7115b110afb",
+      "key": "relationship-ramos-goal-2014",
+      "subjectID": "bd1a5c77-15cc-5bde-bd77-b3a9679f8e95",
+      "objectID": "25f378f3-adcc-5248-8282-b6c656e1a627",
+      "group": "events",
+      "label": "Scored",
+      "claim": "Sergio Ramos scored Real Madrid’s equalizer to force extra time.",
+      "scope": "2014 Champions League final; added time",
+      "factIDs": [
+        "27e655c6-9f7b-50d2-bf2a-423ef2af4e9d"
+      ]
+    },
+    {
+      "id": "bf47e527-f4f5-57fe-ad93-54b7c4a2398b",
+      "key": "relationship-equalizer-final-2014",
+      "subjectID": "25f378f3-adcc-5248-8282-b6c656e1a627",
+      "objectID": "f5fc0507-d8c9-5a1e-adfa-1796e6fb69a6",
+      "group": "events",
+      "label": "Occurred in",
+      "claim": "Ramos’s equalizer was scored in the 2014 Champions League final.",
+      "scope": "2014 Champions League final",
+      "factIDs": [
+        "27e655c6-9f7b-50d2-bf2a-423ef2af4e9d"
+      ]
+    },
+    {
+      "id": "21d81517-2256-5065-a49f-dcc10ba93757",
+      "key": "relationship-cristiano-final-2014",
+      "subjectID": "6d957fed-48cd-5e99-8e09-2758304bba08",
+      "objectID": "f5fc0507-d8c9-5a1e-adfa-1796e6fb69a6",
+      "group": "events",
+      "label": "Scored a penalty in",
+      "claim": "Cristiano Ronaldo scored a penalty for Real Madrid in this final.",
+      "scope": "2014 Champions League final",
+      "factIDs": [
+        "cc283f65-052c-54e3-b93d-863ce6e7ba0f",
+        "1e32a0f3-a347-5e93-ae97-68b121459acf"
+      ]
+    },
+    {
+      "id": "eaad6659-99a2-597b-9987-082767b69e59",
+      "key": "relationship-xolos-final-2012",
+      "subjectID": "f85aa453-4336-52ef-900a-853646479e20",
+      "objectID": "3d4eac9c-af88-5c13-9aa7-c367978a9ae5",
+      "group": "events",
+      "label": "Played in",
+      "claim": "Xolos faced Toluca in the two-leg Apertura 2012 final.",
+      "scope": "Apertura 2012 final; two legs",
+      "factIDs": [
+        "2fe972ba-343b-5011-b359-617710664ffa",
+        "1353d401-fb51-5b54-ae2b-b1a0c10bf2f0"
+      ]
+    },
+    {
+      "id": "a806eb52-4b84-528b-a3db-7d8b9516d259",
+      "key": "relationship-toluca-final-2012",
+      "subjectID": "a6e9d25d-0c7c-5012-bbe3-75cc36a86bda",
+      "objectID": "3d4eac9c-af88-5c13-9aa7-c367978a9ae5",
+      "group": "events",
+      "label": "Played in",
+      "claim": "Toluca faced Xolos in the two-leg Apertura 2012 final.",
+      "scope": "Apertura 2012 final; two legs",
+      "factIDs": [
+        "2fe972ba-343b-5011-b359-617710664ffa"
+      ]
+    }
+  ]
+}
