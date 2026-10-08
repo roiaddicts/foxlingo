@@ -90,3 +90,9 @@ Open Learn's roadmap chooser and select **Players**, or open a player roadmap fr
 Player selection persists while preserving the preferred club. Required completion excludes optional chapters; daily plans stop recommending new player lessons when the starter is finished. An intentionally interrupted optional lesson can still resume. Shared lesson UUIDs mean club and player paths share completion, saved sessions, cards, and one coordinated recall queue. For Ramos, the starter and optional final together introduce five unique memories rather than six. Club browsers, album competition collections, and comparison packs continue using only club roadmaps.
 
 Roadmaps may specify a canonical `subjectID`; older club-only JSON falls back to `clubID`. A contextual `clubID` remains required, and a club subject must match it. Chapters may specify `isOptional` and explanatory `note` text. Opening a linked player roadmap from a card counts as preview for that card visit's practice.
+
+### Saved game boards
+
+Bingo, grid, classic lineups and Who am I? resume after leaving or relaunching the app. Saved boards retain connections, Undo history, helped answers, skipped bingo offers, squad identity and mystery clues. Games shows **Continue** for saved sessions. Starting again asks before clearing meaningful progress and leaves the other boards intact.
+
+Saved boards are checked against their content before restoration. Changes to board layout, eligible players or clue meaning start a fresh board with an explanation; artwork and source wording changes preserve the board. Invalid game drafts do not discard learning history. Completing a game removes its draft and credits its original session once. Club and nationality categories use cached badges and flags; player choices use faces with accessible names.

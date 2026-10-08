@@ -85,6 +85,7 @@ public struct MysteryTurn: Sendable {
     public private(set) var solved=false
     public private(set) var guesses=0
     public init() {}
+    public init(restoring progress: MysteryProgress) {revealed=progress.revealed;solved=progress.solved;guesses=progress.guesses}
     public mutating func reveal(in round: MysteryRound) {guard !solved else {return};revealed=min(round.definition.clues.count,revealed+1)}
     public mutating func guess(_ player: Entity,in round: MysteryRound) -> Guess {
         guard !solved else {return .ignored}

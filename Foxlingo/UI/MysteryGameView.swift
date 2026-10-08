@@ -21,12 +21,17 @@ struct MysteryGameView: View {
     @State private var sessionID=UUID()
     @State private var finished=false
     @State private var clueCounts: [Int]=[]
+    @State private var loaded=false
+    @State private var confirmRestart=false
+    @State private var resumeNotice: String?
+    @Environment(\.scenePhase) private var scenePhase
     var round: MysteryRound {rounds[index]}
     var body: some View {
         ScrollView {
             VStack(alignment:.leading,spacing:22) {
                 HStack {Eyebrow(text:"\(index+1) of \(rounds.count) players");Spacer();Text("UNTIMED").font(.caption.bold()).foregroundStyle(Palette.muted)}
                 ProgressView(value:Double(finished ? rounds.count : index),total:Double(rounds.count)).animation(reduced ? nil : .snappy,value:index)
+                if let resumeNotice {Text(resumeNotice).font(.subheadline).foregroundStyle(Palette.muted).accessibilityIdentifier("mystery-resume-notice")}
                 if finished {
                     HStack(spacing:16) {Leopard(pose:"celebrate").frame(width:80,height:88);VStack(alignment:.leading,spacing:6) {Text("Faces found!").font(.title.bold()).accessibilityIdentifier("mystery-complete");Text("\(rounds.count) players connected to their stories.").foregroundStyle(Palette.muted)}}
                     Text("Clues used: \(clueCounts.map(String.init).joined(separator:" · ")). This is practice, not an independent recall score.").font(.subheadline)
@@ -50,12 +55,17 @@ struct MysteryGameView: View {
                         Button("Sources & context",systemImage:"text.book.closed") {sources=true}.accessibilityIdentifier("mystery-sources")
                     } else {
                         PrimaryButton(title:"Choose a player",symbol:"person.crop.circle") {choosing=true}.accessibilityIdentifier("mystery-choose")
-                        if turn.revealed < 3 {Button("Reveal another clue",systemImage:"lightbulb") {withAnimation(reduced ? nil : .easeOut(duration:0.22)) {turn.reveal(in:round);feedback=""}}.frame(minHeight:44).accessibilityIdentifier("mystery-reveal")}
+                        if turn.revealed < 3 {Button("Reveal another clue",systemImage:"lightbulb") {withAnimation(reduced ? nil : .easeOut(duration:0.22)) {turn.reveal(in:round);feedback="";persist()}}.frame(minHeight:44).accessibilityIdentifier("mystery-reveal")}
                     }
                 }
                 Text("Historical lesson facts. Clues count toward game practice; card upgrades still require scheduled recall.").font(.caption).foregroundStyle(Palette.muted)
             }.padding(24)
         }.journal().navigationTitle("Who am I?").navigationBarTitleDisplayMode(.inline)
+        .onAppear {restore()}
+        .onDisappear {persist()}
+        .onChange(of:scenePhase) {if scenePhase != .active {persist()}}
+        .toolbar {if !finished {Button("Start again",systemImage:"arrow.counterclockwise") {if index > 0 || turn.revealed > 1 || turn.guesses > 0 || turn.solved {confirmRestart=true} else {replay()}}.accessibilityIdentifier("mystery-restart")}}
+        .alert("Start a new mystery board?",isPresented:$confirmRestart) {Button("Start a new board",role:.destructive) {replay()};Button("Keep playing",role:.cancel) {}} message:{Text("This clears the clues and players on this board. Your other games and learning progress stay saved.")}
         .sheet(isPresented:$choosing) {
             NavigationStack {
                 ScrollView {
@@ -107,14 +117,16 @@ struct MysteryGameView: View {
             case .ignored:break
             }
         }
+        persist()
     }
     private func next() {
         guard turn.solved,!finished else {return}
         clueCounts.append(turn.revealed)
         if index == rounds.count-1 {
             finished=true
-            _ = model.state.completeGame(id:sessionID,kind:"mystery",count:rounds.count,now:model.now);model.save();model.respond(true)
+            _ = model.state.completeGame(id:sessionID,kind:"mystery",count:rounds.count,now:model.now);model.state.removeSavedGame("mystery");model.save();model.respond(true)
         } else {index += 1;turn=MysteryTurn();feedback="";contradicted=false}
+        persist()
     }
     private func replay() {
         #if DEBUG
@@ -122,5 +134,23 @@ struct MysteryGameView: View {
         #else
         rounds.shuffle()
         #endif
-        index=0;turn=MysteryTurn();clueCounts=[];feedback="";contradicted=false;finished=false;sessionID=UUID()}
+        model.state.removeSavedGame("mystery");resumeNotice=nil
+        index=0;turn=MysteryTurn();clueCounts=[];feedback="";contradicted=false;finished=false;sessionID=UUID();persist()}
+    private func persist() {
+        guard loaded,!finished else {return}
+        let progress=MysteryProgress(roundIDs:rounds.map(\.id),index:index,revealed:turn.revealed,solved:turn.solved,guesses:turn.guesses,clueCounts:clueCounts)
+        model.state.storeGame(GameResume(signature:GameResumeRules.mysterySignature(rounds),sessionID:sessionID,mystery:progress),kind:"mystery");model.save()
+    }
+    private func restore() {
+        guard !loaded else {return};loaded=true
+        if let resume=model.state.savedGame("mystery") {
+            if let progress=GameResumeRules.restoreMystery(resume,rounds:rounds,completedSessions:Set(model.state.sessions.map(\.id))) {
+                let byID=Dictionary(uniqueKeysWithValues:rounds.map {($0.id,$0)})
+                rounds=progress.roundIDs.map {byID[$0]!};index=progress.index;turn=MysteryTurn(restoring:progress);clueCounts=progress.clueCounts;sessionID=resume.sessionID
+                resumeNotice="Your players and clues are right where you left them.";return
+            }
+            model.state.removeSavedGame("mystery");resumeNotice="That saved game could not be used with this content. A fresh board is ready; your completed activity is preserved."
+        }
+        persist()
+    }
 }

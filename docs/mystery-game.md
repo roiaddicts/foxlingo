@@ -12,4 +12,4 @@ Normal entry and replay shuffle the round order. Replay clears revealed clues, i
 
 Animations reveal clues, resolve portraits and fill classic board cells/progress; Reduce Motion removes those animated changes. Large accessibility text uses a single-column player picker. Numeric records retain units, club context and historical scope.
 
-This release bundles mystery definitions with app code. Lesson delivery can change the facts they reference, but does not yet distribute new mystery definitions or game packs. Leaving an unfinished game resets its transient board; persistent game resumes remain later work.
+This release bundles mystery definitions with app code. Lesson delivery can change the facts they reference, but does not yet distribute new mystery definitions or game packs. Unfinished boards save locally, including player order, revealed clues, guesses and a solved player awaiting Next or Finish. Returning preserves that session; completing it removes the draft and records activity once. A changed clue meaning retires only the incompatible saved board. Artwork and source wording edits preserve it.

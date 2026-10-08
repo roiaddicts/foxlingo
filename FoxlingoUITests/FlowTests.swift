@@ -175,6 +175,46 @@ final class FlowTests: XCTestCase {
         app.tabBars.buttons["Album"].tap();XCTAssertTrue(app.staticTexts.matching(NSPredicate(format:"label CONTAINS %@", "8 of ")).firstMatch.exists)
         let shot=XCTAttachment(screenshot:app.screenshot());shot.name="Complete album";shot.lifetime = .keepAlways;add(shot)
     }
+    func testClassicBoardsResumeAcrossRelaunchAndRestartCancel() {
+        start();tap("choose-XT");app.tabBars.buttons["Games"].tap()
+        for game in ["grid","lineup","bingo"] {
+            tap("game-"+game);tap("game-hint")
+            if game == "bingo" {tap("bingo-skip")}
+            app.terminate();start(reset:false);app.tabBars.buttons["Games"].tap();tap("game-"+game)
+            XCTAssertTrue(app.staticTexts["game-resume-notice"].exists)
+            let progress="1 / " + (game == "grid" ? "9" : game == "lineup" ? "11" : "12")
+            XCTAssertTrue(app.staticTexts[progress].exists)
+            tap("game-restart");app.buttons["Keep playing"].tap()
+            XCTAssertTrue(app.staticTexts[progress].exists)
+            let shot=XCTAttachment(screenshot:app.screenshot());shot.name="Saved "+game;shot.lifetime = .keepAlways;add(shot)
+            app.navigationBars.buttons.element(boundBy:0).tap()
+        }
+        tap("game-grid");tap("game-restart");app.buttons["Start a new board"].tap()
+        XCTAssertTrue(app.staticTexts["0 / 9"].exists)
+        app.navigationBars.buttons.element(boundBy:0).tap();tap("game-lineup")
+        XCTAssertTrue(app.staticTexts["1 / 11"].exists)
+    }
+
+    func testMysteryRevealsAndSolvedFinalPlayerResume() {
+        start();tap("choose-XT");app.tabBars.buttons["Games"].tap();tap("game-mystery");tap("mystery-reveal")
+        app.terminate();start(reset:false);app.tabBars.buttons["Games"].tap();tap("game-mystery")
+        XCTAssertTrue(app.staticTexts["mystery-resume-notice"].exists)
+        XCTAssertTrue(app.descendants(matching:.any)["mystery-clue-1"].firstMatch.exists)
+        tap("mystery-restart");app.buttons["Keep playing"].tap()
+        XCTAssertTrue(app.descendants(matching:.any)["mystery-clue-1"].firstMatch.exists)
+        for key in ["riascos","arce","saucedo","cristiano","ramos","casillas"] {
+            tap("mystery-choose");tap("mystery-player-entity-"+key)
+            if key != "casillas" {tap("mystery-next")}
+        }
+        app.terminate();start(reset:false);app.tabBars.buttons["Games"].tap();tap("game-mystery")
+        XCTAssertEqual(app.staticTexts["mystery-identity"].label,"Iker Casillas")
+        let shot=XCTAttachment(screenshot:app.screenshot());shot.name="Saved solved final mystery";shot.lifetime = .keepAlways;add(shot)
+        tap("mystery-next");XCTAssertTrue(app.staticTexts["mystery-complete"].exists)
+        app.terminate();start(reset:false);app.tabBars.buttons["Games"].tap();tap("game-mystery")
+        XCTAssertFalse(app.staticTexts["mystery-resume-notice"].exists)
+        XCTAssertFalse(app.staticTexts["mystery-identity"].exists)
+    }
+
     func testMysteryCluesNeutralGuessSourcesCompletionAndReplay() {
         start();tap("choose-XT");app.tabBars.buttons["Games"].tap();tap("game-mystery")
         XCTAssertFalse(app.staticTexts["mystery-identity"].exists)
@@ -229,6 +269,7 @@ final class FlowTests: XCTestCase {
         let grid=XCTAttachment(screenshot:app.screenshot());grid.name="Football grid";grid.lifetime = .keepAlways;add(grid)
         app.navigationBars.buttons.element(boundBy:0).tap()
         tap("game-lineup");tap("game-cell-10")
+        XCTAssertTrue(app.descendants(matching:.any)["game-lineup-context"].firstMatch.exists)
         let keeper=app.textFields["game-player-search"];keeper.tap();keeper.typeText("Casillas");tap("game-player-classic-player-77")
         for _ in 0..<10 {tap("game-hint")}
         XCTAssertTrue(app.staticTexts["game-complete"].exists)
