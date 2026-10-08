@@ -20,7 +20,7 @@ struct PracticeHome: View {
                 if !model.due.isEmpty {
                     Text("\(model.studyPlan?.totalDue ?? 0) memories\nready to revisit.").font(.title.bold())
                     Text("\(model.due.count) in this session, across your clubs. No timer, no pressure. The rest can wait.").foregroundStyle(Palette.muted)
-                    Button { route=PracticeRoute(model.due,dueMode:true) } label: { HStack {Text("Start review").font(.headline);Spacer();Image(systemName:"arrow.right")}.padding(18).background(Palette.green,in:RoundedRectangle(cornerRadius:18)).foregroundStyle(.white) }.accessibilityIdentifier("start-review")
+                    Button { route=PracticeRoute(model.due,dueMode:true) } label: { HStack {Text("Start review").font(.headline);Spacer();Image(systemName:"arrow.right")}.padding(18).background(Palette.brand,in:RoundedRectangle(cornerRadius:18)).foregroundStyle(.white) }.accessibilityIdentifier("start-review")
                 } else if let p=model.pack {
                     let learned=(model.studyPlan?.rehearsalObjectiveIDs ?? []).map(p.objective)
                     Text(learned.isEmpty ? "Your first memories\nstart with a lesson." : "You're all caught up.").font(.title.bold())
@@ -80,7 +80,7 @@ struct PracticeSession: View {
                     Text("A short answer is enough.").foregroundStyle(Palette.muted)
                     TextField("Your answer",text:$answer,axis:.vertical).font(.title3).padding(18).background(.white,in:RoundedRectangle(cornerRadius:16)).focused($focused).disabled(submitted).autocorrectionDisabled().submitLabel(.done).accessibilityIdentifier("recall-answer")
                     if submitted {
-                        Label(correct && !hinted ? "You remembered" : "A connection to revisit",systemImage:correct && !hinted ? "checkmark.circle.fill" : "lightbulb.fill").font(.headline).foregroundStyle(correct && !hinted ? Palette.green : Palette.ink)
+                        Label(correct && !hinted ? "You remembered" : "A connection to revisit",systemImage:correct && !hinted ? "checkmark.circle.fill" : "lightbulb.fill").font(.headline).foregroundStyle(correct && !hinted ? Palette.brand : Palette.ink)
                         Text(o.feedback).accessibilityIdentifier("recall-feedback")
                         if hinted {Text(assistedObjectiveIDs.contains(o.id) ? "You previewed this fact in \(previewContext). This answer counts as rehearsal." : "Revealed answers don't count as independent recall.").font(.footnote).foregroundStyle(Palette.muted)}
                         PrimaryButton(title:index == objectives.count-1 ? "Finish practice" : "Next memory") {next()}.accessibilityIdentifier("recall-next")

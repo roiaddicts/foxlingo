@@ -16,18 +16,18 @@ struct GamesHome: View {
                 Text("Different ways to connect the names you know. No timer. Try, learn, and try again.").foregroundStyle(Palette.muted)
                 if !model.memoryPairs.isEmpty {
                     NavigationLink {MemoryGameView(pairs:model.memoryPairs)} label: {
-                        HStack(spacing:16) {Image(systemName:"rectangle.on.rectangle.angled").font(.title2).frame(width:50,height:60).foregroundStyle(Palette.green);VStack(alignment:.leading,spacing:6) {Text("Memory match").font(.title3.bold());Text(model.state.savedGame("memory") != nil ? "Continue your saved pairs." : "16 cards. Faces, badges, names and stats.").font(.subheadline).foregroundStyle(Palette.muted)};Spacer();Image(systemName:"chevron.right")}.padding(18).background(.white.opacity(0.8),in:RoundedRectangle(cornerRadius:20))
+                        HStack(spacing:16) {Image(systemName:"rectangle.on.rectangle.angled").font(.title2).frame(width:50,height:60).foregroundStyle(Palette.brand);VStack(alignment:.leading,spacing:6) {Text("Memory match").font(.title3.bold());Text(model.state.savedGame("memory") != nil ? "Continue your saved pairs." : "16 cards. Faces, badges, names and stats.").font(.subheadline).foregroundStyle(Palette.muted)};Spacer();Image(systemName:"chevron.right")}.padding(18).background(.white.opacity(0.8),in:RoundedRectangle(cornerRadius:20))
                     }.buttonStyle(PressFeedback()).accessibilityIdentifier("game-memory")
                 }
                 if let pack=model.games {
                     if !model.mysteries.isEmpty {
                         NavigationLink {MysteryGameView(rounds:model.mysteries)} label: {
-                            HStack(spacing:16) {Image(systemName:"person.crop.circle.badge.questionmark").font(.title2).frame(width:50,height:60).foregroundStyle(Palette.green);VStack(alignment:.leading,spacing:6) {Text("Who am I?").font(.title3.bold());Text(model.state.savedGame("mystery") != nil ? "Continue your saved clues." : "Reveal a clue. Find a familiar face.").font(.subheadline).foregroundStyle(Palette.muted)};Spacer();Image(systemName:"chevron.right")}.padding(18).background(.white.opacity(0.8),in:RoundedRectangle(cornerRadius:20))
+                            HStack(spacing:16) {Image(systemName:"person.crop.circle.badge.questionmark").font(.title2).frame(width:50,height:60).foregroundStyle(Palette.brand);VStack(alignment:.leading,spacing:6) {Text("Who am I?").font(.title3.bold());Text(model.state.savedGame("mystery") != nil ? "Continue your saved clues." : "Reveal a clue. Find a familiar face.").font(.subheadline).foregroundStyle(Palette.muted)};Spacer();Image(systemName:"chevron.right")}.padding(18).background(.white.opacity(0.8),in:RoundedRectangle(cornerRadius:20))
                         }.buttonStyle(PressFeedback()).accessibilityIdentifier("game-mystery")
                     }
                     ForEach(FootballGame.allCases) { game in
                         NavigationLink {FootballGameView(game:game,pack:pack)} label: {
-                            HStack(spacing:16) {Image(systemName:game.symbol).font(.title2).frame(width:50,height:60).foregroundStyle(Palette.green);VStack(alignment:.leading,spacing:6) {Text(game.title).font(.title3.bold());Text(model.state.savedGame(game.rawValue).flatMap(\.board).map {"Continue · \($0.placed.count) connections saved"} ?? game.subtitle).font(.subheadline).foregroundStyle(Palette.muted)};Spacer();Image(systemName:"chevron.right")}.padding(18).background(.white.opacity(0.8),in:RoundedRectangle(cornerRadius:20))
+                            HStack(spacing:16) {Image(systemName:game.symbol).font(.title2).frame(width:50,height:60).foregroundStyle(Palette.brand);VStack(alignment:.leading,spacing:6) {Text(game.title).font(.title3.bold());Text(model.state.savedGame(game.rawValue).flatMap(\.board).map {"Continue · \($0.placed.count) connections saved"} ?? game.subtitle).font(.subheadline).foregroundStyle(Palette.muted)};Spacer();Image(systemName:"chevron.right")}.padding(18).background(.white.opacity(0.8),in:RoundedRectangle(cornerRadius:20))
                         }.buttonStyle(PressFeedback()).accessibilityIdentifier("game-\(game.rawValue)")
                     }
                     Text("\(pack.players.count) players · \(pack.lineups.count) classic Madrid squads").font(.subheadline.bold())
@@ -93,7 +93,7 @@ struct FootballGameView: View {
                         ForEach(Array([[0,1,2],[3,4,5],[6,7,8,9],[10]].enumerated()),id:\.offset) {_,row in
                             HStack(alignment:.top,spacing:8) {ForEach(row,id:\.self) {slot in cell(slot,label:squad.positions[slot]).frame(maxWidth:row.count == 1 ? 95 : .infinity)}}.frame(maxWidth:.infinity)
                         }
-                    }.padding(16).background(Palette.green.opacity(0.09),in:RoundedRectangle(cornerRadius:22))
+                    }.padding(16).background(Palette.brand.opacity(0.09),in:RoundedRectangle(cornerRadius:22))
                 } else if game == .grid {
                     Grid(horizontalSpacing:6,verticalSpacing:6) {
                         GridRow {Image(systemName:"multiply").accessibilityLabel("Club and country");ForEach(0..<3,id:\.self) {c in GameCategoryMark(category:pack.category(pack.gridColumnIDs[c])!).frame(maxWidth:.infinity)}}
@@ -104,7 +104,7 @@ struct FootballGameView: View {
                         ForEach(0..<12,id:\.self) {slot in cell(slot,label:shortTitle(pack.category(pack.bingoCategoryIDs[slot])!.title))}
                     }
                 }
-                if !feedback.isEmpty {Text(feedback).font(.subheadline).foregroundStyle(feedbackError ? Palette.red : Palette.green).accessibilityIdentifier("game-feedback")}
+                if !feedback.isEmpty {Text(feedback).font(.subheadline).foregroundStyle(feedbackError ? Palette.red : Palette.brand).accessibilityIdentifier("game-feedback")}
                 if !awarded {
                     HStack {Button("Undo",systemImage:"arrow.uturn.backward") {undo()}.disabled(history.isEmpty);Spacer();Button("Help me connect",systemImage:"lightbulb") {hint()}.accessibilityIdentifier("game-hint")}.frame(minHeight:44)
                 }
@@ -132,10 +132,10 @@ struct FootballGameView: View {
             VStack(spacing:5) {
                 if game == .bingo {GameCategoryMark(category:pack.category(pack.bingoCategoryIDs[slot])!,size:placed[slot] == nil ? 48 : 24)}
                 if let player=placed[slot].flatMap(pack.player) {portrait(player,size:game == .lineup ? 44 : 46).transition(.scale(scale:0.86).combined(with:.opacity));Text(player.name).font(.system(size:10,weight:.semibold)).lineLimit(3);if game == .lineup {Text(label).font(.system(size:9,weight:.bold)).foregroundStyle(Palette.muted)}}
-                else if game != .bingo {Image(systemName:game == .lineup ? "tshirt.fill" : "plus").font(.headline).foregroundStyle(Palette.green);if game == .lineup {Text(label).font(.caption2.bold())}}
+                else if game != .bingo {Image(systemName:game == .lineup ? "tshirt.fill" : "plus").font(.headline).foregroundStyle(Palette.brand);if game == .lineup {Text(label).font(.caption2.bold())}}
             }.frame(maxWidth:.infinity,minHeight:game == .lineup ? 76 : 94).padding(6)
-                .background(placed[slot] == nil ? .white : Palette.green.opacity(0.12),in:RoundedRectangle(cornerRadius:12))
-                .overlay {RoundedRectangle(cornerRadius:12).stroke(Palette.green.opacity(placed[slot] == nil ? 0.12 : 0.35),lineWidth:1)}
+                .background(placed[slot] == nil ? .white : Palette.brand.opacity(0.12),in:RoundedRectangle(cornerRadius:12))
+                .overlay {RoundedRectangle(cornerRadius:12).stroke(Palette.brand.opacity(placed[slot] == nil ? 0.12 : 0.35),lineWidth:1)}
         }.animation(reduced ? nil : .spring(response:0.32,dampingFraction:0.82),value:placed[slot]).buttonStyle(PressFeedback()).accessibilityLabel(accessibleCell(slot,label:label)).accessibilityIdentifier("game-cell-\(slot)")
     }
     private func accessibleCell(_ slot: Int,label: String) -> String {

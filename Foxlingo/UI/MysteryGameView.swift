@@ -43,13 +43,13 @@ struct MysteryGameView: View {
                             Text(round.player.name).font(.title2.bold()).accessibilityIdentifier("mystery-identity")
                             Text("\(turn.revealed) of 3 clues used").font(.subheadline).foregroundStyle(Palette.muted)
                         } else {
-                            Image(systemName:"person.crop.circle.badge.questionmark").font(.system(size:70)).foregroundStyle(Palette.green).accessibilityHidden(true)
+                            Image(systemName:"person.crop.circle.badge.questionmark").font(.system(size:70)).foregroundStyle(Palette.brand).accessibilityHidden(true)
                             Text("Which featured player?").font(.title2.bold())
                             Text("One of the \(rounds.count) players on this board. Use the clues to find the person.").font(.subheadline).foregroundStyle(Palette.muted).multilineTextAlignment(.center)
                         }
                     }.frame(maxWidth:.infinity).padding(.vertical,8).animation(reduced ? nil : .spring(response:0.4,dampingFraction:0.8),value:turn.solved)
                     ForEach(0..<turn.revealed,id:\.self) {i in clue(i).transition(.opacity.combined(with:.move(edge:.bottom)))}
-                    if !feedback.isEmpty {Label(feedback,systemImage:contradicted ? "arrow.triangle.branch" : turn.solved ? "checkmark.circle.fill" : "lightbulb").font(.subheadline).foregroundStyle(contradicted ? Palette.ink : Palette.green).accessibilityIdentifier("mystery-feedback")}
+                    if !feedback.isEmpty {Label(feedback,systemImage:contradicted ? "arrow.triangle.branch" : turn.solved ? "checkmark.circle.fill" : "lightbulb").font(.subheadline).foregroundStyle(contradicted ? Palette.ink : Palette.brand).accessibilityIdentifier("mystery-feedback")}
                     if turn.solved {
                         PrimaryButton(title:index == rounds.count-1 ? "Finish board" : "Next player") {next()}.accessibilityIdentifier("mystery-next")
                         Button("Sources & context",systemImage:"text.book.closed") {sources=true}.accessibilityIdentifier("mystery-sources")
@@ -96,7 +96,7 @@ struct MysteryGameView: View {
         let clue=round.definition.clues[i]
         return VStack(alignment:.leading,spacing:10) {
             HStack(spacing:10) {
-                Text("\(i+1)").font(.caption.bold()).frame(width:24,height:24).background(Palette.green.opacity(0.1),in:Circle())
+                Text("\(i+1)").font(.caption.bold()).frame(width:24,height:24).background(Palette.brand.opacity(0.1),in:Circle())
                 if let context=clue.contextEntityID,let pack=model.pack {EntityArtwork(asset:pack.entity(context).imageAsset,url:pack.entity(context).imageURL,initials:pack.entity(context).visual,size:28).accessibilityElement(children:.ignore).accessibilityLabel(pack.entity(context).name).accessibilityIdentifier("mystery-context-\(i)")}
                 Text(clue.label).font(.subheadline.bold()).foregroundStyle(Palette.muted)
             }

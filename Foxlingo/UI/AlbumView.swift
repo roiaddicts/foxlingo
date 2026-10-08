@@ -58,8 +58,8 @@ struct Collectible: View {
             Text(CardReadiness.scopeLabel(card:card,pack:pack)).font(.caption).foregroundStyle(Palette.muted)
             if tier >= 0,let readiness {
                 Text("\(readiness.introduced) of \(card.objectiveIDs.count) introduced").font(.caption)
-                if readiness.refresh > 0 {Label("\(readiness.refresh) to refresh",systemImage:"arrow.triangle.2.circlepath").font(.caption).foregroundStyle(Palette.green)}
-                else if readiness.due > 0 {Label("\(readiness.due) ready to review",systemImage:"arrow.clockwise").font(.caption).foregroundStyle(Palette.green)}
+                if readiness.refresh > 0 {Label("\(readiness.refresh) to refresh",systemImage:"arrow.triangle.2.circlepath").font(.caption).foregroundStyle(Palette.brand)}
+                else if readiness.due > 0 {Label("\(readiness.due) ready to review",systemImage:"arrow.clockwise").font(.caption).foregroundStyle(Palette.brand)}
             }
         }.padding(16).frame(maxWidth:.infinity,alignment:.leading).background(tier < 0 ? Color.white.opacity(0.35) : tier == 0 ? Color(red:0.87,green:0.8,blue:0.67) : tier == 1 ? Color(red:0.86,green:0.72,blue:0.55) : tier == 2 ? Color(red:0.84,green:0.87,blue:0.87) : tier == 3 ? Palette.ochre.opacity(0.5) : Color(red:0.78,green:0.91,blue:0.89),in:RoundedRectangle(cornerRadius:18))
         .overlay {RoundedRectangle(cornerRadius:18).stroke(Palette.ink.opacity(tier < 0 ? 0.08 : 0.2),lineWidth:1)}

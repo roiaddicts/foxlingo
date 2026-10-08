@@ -2,7 +2,7 @@ import SwiftUI
 
 @main struct FoxlingoApp: App {
     @StateObject private var model = AppModel()
-    var body: some Scene { WindowGroup { RootView().environmentObject(model).tint(Palette.green).preferredColorScheme(.light) } }
+    var body: some Scene { WindowGroup { RootView().environmentObject(model).tint(Palette.brand).preferredColorScheme(.light) } }
 }
 struct RootView: View {
     @EnvironmentObject var model: AppModel
@@ -65,7 +65,7 @@ struct LearnView: View {
             if let pack=model.pack, let r=model.roadmap {
                 let club=pack.entity(r.entityID),progress=RoadmapProgress.make(roadmap:r,pack:pack,state:model.state)
                 VStack(alignment:.leading,spacing:26) {
-                    HStack { Text("foxlingo").font(.system(.title,design:.rounded,weight:.black)); Spacer(); Label("\(model.state.streak.current(at:model.now,zone:model.state.homeTimeZone))",systemImage:"flame.fill").font(.headline).foregroundStyle(Palette.green).accessibilityLabel("\(model.state.streak.current(at:model.now,zone:model.state.homeTimeZone)) active day streak") }
+                    HStack { Text("foxlingo").font(.system(.title,design:.rounded,weight:.black)); Spacer(); Label("\(model.state.streak.current(at:model.now,zone:model.state.homeTimeZone))",systemImage:"flame.fill").font(.headline).foregroundStyle(Palette.brand).accessibilityLabel("\(model.state.streak.current(at:model.now,zone:model.state.homeTimeZone)) active day streak") }
                     if typeSize.isAccessibilitySize {
                         VStack(alignment:.leading,spacing:16) {
                             HStack(spacing:14) {ClubMark(club:club);Eyebrow(text:club.type == "player" ? "Player starter" : "Your roadmap")}
@@ -105,7 +105,7 @@ struct RoadmapChapters: View {
                     let lesson=pack.lesson(id),done=model.state.completedLessons.contains(id),started=model.state.resumes[id] != nil
                     Button {openLesson(lesson)} label:{
                         HStack(spacing:18) {
-                            VStack(spacing:0) {Circle().fill(done ? Palette.green : .white).frame(width:52,height:52).overlay {Image(systemName:done ? "checkmark" : started ? "play.fill" : "book.fill").foregroundStyle(done ? .white : Palette.green)};if n < chapter.lessonIDs.count-1 {Rectangle().fill(Palette.green.opacity(0.2)).frame(width:3,height:22)}}
+                            VStack(spacing:0) {Circle().fill(done ? Palette.brand : .white).frame(width:52,height:52).overlay {Image(systemName:done ? "checkmark" : started ? "play.fill" : "book.fill").foregroundStyle(done ? .white : Palette.brand)};if n < chapter.lessonIDs.count-1 {Rectangle().fill(Palette.brand.opacity(0.2)).frame(width:3,height:22)}}
                             VStack(alignment:.leading,spacing:5) {Text(lesson.title).font(.headline);Text(done ? "Completed · Play again" : started ? "Continue lesson" : lesson.subtitle).font(.subheadline).foregroundStyle(Palette.muted)}.padding(.bottom,n < chapter.lessonIDs.count-1 ? 22 : 0)
                             Spacer();Image(systemName:"chevron.right").font(.caption.bold()).padding(.bottom,n < chapter.lessonIDs.count-1 ? 22 : 0)
                         }.contentShape(Rectangle())
@@ -127,7 +127,7 @@ struct PlayerRoadmapView: View {
                     HStack(spacing:18) {ClubMark(club:player,size:88);VStack(alignment:.leading,spacing:6) {Eyebrow(text:"Player starter");Text(player.name).font(.title2.bold())}}
                     if let summary=roadmap.summary {Text(summary).foregroundStyle(Palette.muted)}
                     Text("\(progress.completedRequired) of \(progress.requiredLessonIDs.count) starter lessons complete · \(progress.requiredObjectiveIDs.count) memories").font(.subheadline).accessibilityIdentifier("player-roadmap-progress")
-                    if model.roadmap?.id == roadmap.id {Label("Selected for Learn",systemImage:"checkmark.circle.fill").foregroundStyle(Palette.green).font(.headline).accessibilityIdentifier("player-roadmap-selected")}
+                    if model.roadmap?.id == roadmap.id {Label("Selected for Learn",systemImage:"checkmark.circle.fill").foregroundStyle(Palette.brand).font(.headline).accessibilityIdentifier("player-roadmap-selected")}
                     else {PrimaryButton(title:"Make this my roadmap",symbol:"map") {model.selectSubject(player.id)}.accessibilityIdentifier("player-roadmap-select")}
                     RoadmapChapters(roadmap:roadmap,pack:pack,openLesson:{lesson=$0})
                 }.padding(24)

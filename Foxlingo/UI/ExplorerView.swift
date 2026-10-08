@@ -82,7 +82,7 @@ struct ExplorerView: View {
                     Text("\(path.count) \(path.count == 1 ? "link" : "links") · shortest supported path").font(.headline).accessibilityIdentifier("graph-path-result")
                     ScrollView(.horizontal) {HStack(spacing:14) {
                         GraphEntityLabel(entity:pack.entity(first),size:48,vertical:true)
-                        ForEach(path) {step in Image(systemName:"arrow.right").foregroundStyle(Palette.green);GraphEntityLabel(entity:pack.entity(step.toID),size:48,vertical:true)}
+                        ForEach(path) {step in Image(systemName:"arrow.right").foregroundStyle(Palette.brand);GraphEntityLabel(entity:pack.entity(step.toID),size:48,vertical:true)}
                     }.padding(.vertical,8)}
                     ForEach(Array(path.enumerated()),id:\.element.id) {index,step in
                         Button {inspecting=step.edge} label:{VStack(alignment:.leading,spacing:8) {
@@ -109,7 +109,7 @@ private struct GraphEntityLabel: View {
     }
     @ViewBuilder private var art: some View {
         if entity.type == "country",let flag=AnswerArtwork.flags[Recall.normalize(entity.name)] {Image(flag).resizable().scaledToFit().frame(width:size,height:size)}
-        else if ["match","tie","goal","city","venue"].contains(entity.type) {Image(systemName:entity.type == "goal" ? "soccerball" : entity.type == "city" ? "building.2" : entity.type == "venue" ? "sportscourt" : "flag.checkered").font(.system(size:size*0.5)).frame(width:size,height:size).foregroundStyle(Palette.green).background(.white.opacity(0.7),in:Circle())}
+        else if ["match","tie","goal","city","venue"].contains(entity.type) {Image(systemName:entity.type == "goal" ? "soccerball" : entity.type == "city" ? "building.2" : entity.type == "venue" ? "sportscourt" : "flag.checkered").font(.system(size:size*0.5)).frame(width:size,height:size).foregroundStyle(Palette.brand).background(.white.opacity(0.7),in:Circle())}
         else {ClubMark(club:entity,size:size)}
     }
 }
@@ -124,7 +124,7 @@ private struct NeighborhoodMap: View {
             let center=CGPoint(x:geo.size.width/2,y:180)
             ZStack {
                 Canvas {context,_ in
-                    for index in ids.indices {var line=Path();line.move(to:center);line.addLine(to:position(index,width:geo.size.width));context.stroke(line,with:.color(Palette.green.opacity(0.25)),lineWidth:1.5)}
+                    for index in ids.indices {var line=Path();line.move(to:center);line.addLine(to:position(index,width:geo.size.width));context.stroke(line,with:.color(Palette.brand.opacity(0.25)),lineWidth:1.5)}
                 }.accessibilityHidden(true)
                 GraphEntityLabel(entity:focus,size:62,vertical:true).position(center).accessibilityIdentifier("graph-focus")
                 ForEach(Array(ids.enumerated()),id:\.element) {index,id in

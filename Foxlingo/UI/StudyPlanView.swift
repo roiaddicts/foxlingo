@@ -20,7 +20,7 @@ struct DailyPlanView: View {
         VStack(alignment:.leading,spacing:14) {
             HStack {Eyebrow(text:"Today's plan");Spacer();SessionSizePicker()}
             if model.state.streak.activeDays.contains(StreakState.dayKey(model.now,zone:model.state.homeTimeZone)) {
-                Label("You practiced today",systemImage:"checkmark.circle.fill").font(.subheadline.bold()).foregroundStyle(Palette.green)
+                Label("You practiced today",systemImage:"checkmark.circle.fill").font(.subheadline.bold()).foregroundStyle(Palette.brand)
             }
             if plan.totalDue > 0 {
                 Text("A few familiar connections.").font(.title3.bold())

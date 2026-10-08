@@ -17,7 +17,7 @@ struct ContentUpdatesView: View {
                 LabeledContent("Installed",value:"Version \(model.pack?.contentVersion ?? 0)")
                     .accessibilityElement(children:.ignore).accessibilityLabel("Installed lesson library").accessibilityValue("Version \(model.pack?.contentVersion ?? 0)").accessibilityIdentifier("lesson-installed-version")
                 if let version=model.stagedVersion {
-                    Label("Version \(version) waiting",systemImage:"checkmark.circle.fill").foregroundStyle(Palette.green).accessibilityIdentifier("lesson-update-staged")
+                    Label("Version \(version) waiting",systemImage:"checkmark.circle.fill").foregroundStyle(Palette.brand).accessibilityIdentifier("lesson-update-staged")
                     Text("Quit Foxlingo from the app switcher, then reopen it to activate this version. Your current lesson stays as it is.").font(.caption)
                     Button("Remove waiting update") {perform {try model.cancelLessonUpdate()}}.disabled(busy)
                 }

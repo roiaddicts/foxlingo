@@ -1,10 +1,10 @@
 import SwiftUI
 
 enum Palette {
-    static let paper = Color(red:0.97,green:0.95,blue:0.89)
-    static let ink = Color(red:0.12,green:0.18,blue:0.15)
-    static let green = Color(red:0.13,green:0.36,blue:0.27)
-    static let muted = Color(red:0.36,green:0.39,blue:0.34)
+    static let paper = Color(red:244/255,green:247/255,blue:251/255)
+    static let ink = brand
+    static let brand = Color(.sRGB,red:0,green:45/255,blue:86/255,opacity:1)
+    static let muted = Color(red:86/255,green:103/255,blue:122/255)
     static let ochre = Color(red:0.87,green:0.65,blue:0.25)
     static let red = Color(red:0.68,green:0.19,blue:0.18)
 }
@@ -13,7 +13,7 @@ struct PrimaryButton: View {
     var symbol = "arrow.right"
     var action: () -> Void
     var body: some View {
-        Button(action:action) { HStack { Text(title).font(.headline); Spacer(); Image(systemName:symbol) }.padding(18).foregroundStyle(.white).background(Palette.green,in:RoundedRectangle(cornerRadius:18)) }
+        Button(action:action) { HStack { Text(title).font(.headline); Spacer(); Image(systemName:symbol) }.padding(18).foregroundStyle(.white).background(Palette.brand,in:RoundedRectangle(cornerRadius:18)) }
             .buttonStyle(PressFeedback()).frame(minHeight:52)
     }
 }

@@ -113,10 +113,10 @@ private struct MemoryCardFace: View, Animatable {
     var animatableData: Double {get {angle} set {angle=newValue}}
     var body: some View {
         ZStack {
-            RoundedRectangle(cornerRadius:14).fill(Palette.green)
+            RoundedRectangle(cornerRadius:14).fill(Palette.brand)
                 .overlay {Image(systemName:"pawprint.fill").font(.title2).foregroundStyle(.white.opacity(0.9))}
                 .opacity(angle < 90 ? 1 : 0)
-            RoundedRectangle(cornerRadius:14).fill(matched ? Palette.green.opacity(0.12) : .white)
+            RoundedRectangle(cornerRadius:14).fill(matched ? Palette.brand.opacity(0.12) : .white)
                 .overlay {
                     VStack(spacing:6) {
                         if image {EntityArtwork(asset:pair.subject.imageAsset,url:pair.subject.imageURL,initials:pair.subject.visual,size:52,isPlayer:pair.subject.type == "player")}
@@ -124,10 +124,10 @@ private struct MemoryCardFace: View, Animatable {
                             Text(fact.value.display).font(.system(size:min(textSize*1.6,30),weight:.bold,design:.rounded)).lineLimit(1).minimumScaleFactor(0.65)
                             Text(pair.definition.label ?? "").font(.system(size:min(textSize*0.85,16),weight:.semibold)).multilineTextAlignment(.center).lineLimit(2).minimumScaleFactor(0.65)
                         } else {Text(pair.subject.name).font(.system(size:min(textSize,22),weight:.semibold,design:.rounded)).multilineTextAlignment(.center).lineLimit(4).minimumScaleFactor(0.65).padding(.horizontal,5)}
-                        if matched {Image(systemName:"checkmark.circle.fill").font(.caption).foregroundStyle(Palette.green)}
+                        if matched {Image(systemName:"checkmark.circle.fill").font(.caption).foregroundStyle(Palette.brand)}
                     }
                 }.rotation3DEffect(.degrees(180),axis:(x:0,y:1,z:0)).opacity(angle >= 90 ? 1 : 0)
-        }.overlay {RoundedRectangle(cornerRadius:14).stroke(Palette.green.opacity(0.18),lineWidth:1)}
+        }.overlay {RoundedRectangle(cornerRadius:14).stroke(Palette.brand.opacity(0.18),lineWidth:1)}
             .rotation3DEffect(.degrees(angle),axis:(x:0,y:1,z:0),perspective:0.45).accessibilityHidden(true)
     }
 }

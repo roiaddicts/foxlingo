@@ -12,7 +12,7 @@ struct SoundAssetsView: View {
             Section("Sound library") {
                 ForEach(SoundAsset.allCases) {asset in
                     Button {model.previewSound(asset)} label: {
-                        HStack(spacing:14) {Image(systemName:"play.circle.fill").font(.title2).foregroundStyle(Palette.green);VStack(alignment:.leading,spacing:4) {Text(asset.title).foregroundStyle(Palette.ink);Text(asset.usage).font(.caption).foregroundStyle(Palette.muted)};Spacer()}.padding(.vertical,4)
+                        HStack(spacing:14) {Image(systemName:"play.circle.fill").font(.title2).foregroundStyle(Palette.brand);VStack(alignment:.leading,spacing:4) {Text(asset.title).foregroundStyle(Palette.ink);Text(asset.usage).font(.caption).foregroundStyle(Palette.muted)};Spacer()}.padding(.vertical,4)
                     }.disabled(!model.state.sound).accessibilityLabel("Preview \(asset.title)").accessibilityIdentifier("sound-preview-\(asset.rawValue)")
                 }
             }

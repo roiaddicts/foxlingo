@@ -63,7 +63,7 @@ struct CoverageView: View {
                 Text("\(learned.count) learned connections in this session. Facts opened here count as rehearsal. Other due answers update your recall. New material stays in its lessons.").font(.subheadline).foregroundStyle(Palette.muted)
                 PrimaryButton(title:"Recall this pack",symbol:"arrow.clockwise") {practice=PracticeRoute(learned.map(pack.objective),dueMode:true,assistedObjectiveIDs:previewed)}.accessibilityIdentifier("coverage-recall")
             }
-        }.padding(18).background(Palette.green.opacity(0.07),in:RoundedRectangle(cornerRadius:20))
+        }.padding(18).background(Palette.brand.opacity(0.07),in:RoundedRectangle(cornerRadius:20))
     }
     private func clubStories(_ study: CoverageClub,pack: ContentPack) -> some View {
         VStack(alignment:.leading,spacing:16) {

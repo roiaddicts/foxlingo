@@ -22,7 +22,7 @@ struct LessonView: View {
                 if completed {
                     result
                 } else {
-                    ProgressView(value:Double(resume.step),total:Double(2+activities.count)).tint(Palette.green).accessibilityLabel("Lesson progress, \(resume.step) of \(2+activities.count) steps")
+                    ProgressView(value:Double(resume.step),total:Double(2+activities.count)).tint(Palette.brand).accessibilityLabel("Lesson progress, \(resume.step) of \(2+activities.count) steps")
                     Eyebrow(text:resume.step < 2 ? "The story" : "Try it out")
                     if resume.step < 2 {
                         let page=lesson.story[resume.step]
@@ -34,7 +34,7 @@ struct LessonView: View {
                         Text(x.prompt).font(.title2.bold())
                         choiceBoard(x)
                         if let feedback {
-                            Label(correct ? "Good connection" : "Let's build that memory",systemImage:correct ? "checkmark.circle.fill" : "lightbulb.fill").font(.headline).foregroundStyle(correct ? Palette.green : Palette.ink)
+                            Label(correct ? "Good connection" : "Let's build that memory",systemImage:correct ? "checkmark.circle.fill" : "lightbulb.fill").font(.headline).foregroundStyle(correct ? Palette.brand : Palette.ink)
                             Text(feedback).foregroundStyle(Palette.muted).accessibilityIdentifier("answer-feedback")
                         }
                         if x.kind == "choice", choiceAnswered {
@@ -83,8 +83,8 @@ struct LessonView: View {
                     correct=x.accepts(choice.id);choiceAnswered=true;feedback=x.feedback;model.respond(correct)
                     record(x.objectiveIDs[0],answer:choice.text,success:correct,hinted:retries>0)
                 } label: {
-                    HStack { KnowledgeAnswer(text:choice.text,expectedType:choiceVisualType(x)).font(.headline);Spacer(); if choiceAnswered && x.accepts(choice.id) {Image(systemName:"checkmark.circle.fill").foregroundStyle(Palette.green)} }
-                        .padding(18).frame(minHeight:56).background(.white.opacity(0.8),in:RoundedRectangle(cornerRadius:16)).overlay { RoundedRectangle(cornerRadius:16).stroke(choiceAnswered && x.accepts(choice.id) ? Palette.green : Palette.ink.opacity(0.12),lineWidth:choiceAnswered && x.accepts(choice.id) ? 2 : 1) }
+                    HStack { KnowledgeAnswer(text:choice.text,expectedType:choiceVisualType(x)).font(.headline);Spacer(); if choiceAnswered && x.accepts(choice.id) {Image(systemName:"checkmark.circle.fill").foregroundStyle(Palette.brand)} }
+                        .padding(18).frame(minHeight:56).background(.white.opacity(0.8),in:RoundedRectangle(cornerRadius:16)).overlay { RoundedRectangle(cornerRadius:16).stroke(choiceAnswered && x.accepts(choice.id) ? Palette.brand : Palette.ink.opacity(0.12),lineWidth:choiceAnswered && x.accepts(choice.id) ? 2 : 1) }
                 }.buttonStyle(.plain).disabled(choiceAnswered).accessibilityIdentifier("answer-\(choice.id)")
             }
         }
