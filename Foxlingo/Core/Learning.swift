@@ -33,6 +33,7 @@ public struct LearnerState: Codable, Sendable {
     public var schemaVersion = 1
     public var selectedClub: UUID?
     public var homeTimeZone: String
+    public var preferredSessionSize: Int? = nil
     public var sound = true
     public var haptics = true
     public var completedLessons: Set<UUID> = []
@@ -160,7 +161,7 @@ public struct StateStore {
     }
     private func decode(_ data: Data) throws -> LearnerState {
         let s = try JSONDecoder().decode(LearnerState.self,from:data)
-        guard s.schemaVersion == 1, TimeZone(identifier:s.homeTimeZone) != nil,
+        guard s.schemaVersion == 1, (s.preferredSessionSize == nil || [5,10,20].contains(s.preferredSessionSize!)), TimeZone(identifier:s.homeTimeZone) != nil,
               s.reviews.values.allSatisfy({ (0...4).contains($0.stage) && (0...4).contains($0.highestEarned) && $0.highestEarned >= $0.stage && $0.lapses >= 0 && $0.revision > 0 }),
               s.resumes.values.allSatisfy({ (0...6).contains($0.step) && Set($0.matched).count == $0.matched.count && Set($0.matched).isSubset(of:["l-0","l-1","l-2"]) && ($0.memoryOrder == nil || ($0.memoryOrder!.count == 6 && Set($0.memoryOrder!) == Set(["l-0","l-1","l-2","r-0","r-1","r-2"]))) }),
               (0...1).contains(s.streak.freezes), (0..<7).contains(s.streak.daysSinceRefill), s.streak.longest >= 0,

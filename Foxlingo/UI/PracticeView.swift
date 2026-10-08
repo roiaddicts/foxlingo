@@ -15,18 +15,22 @@ struct PracticeHome: View {
                 Eyebrow(text:"Keep the connections")
                 Text("Practice").font(.system(.largeTitle,design:.rounded,weight:.black))
                 Leopard(pose:"encourage").frame(height:95).frame(maxWidth:.infinity)
+                SessionSizePicker()
                 if !model.due.isEmpty {
-                    Text("\(model.due.count) memories\nready to revisit.").font(.title.bold())
-                    Text("A short recall session, across both clubs. No timer, no pressure.").foregroundStyle(Palette.muted)
+                    Text("\(model.studyPlan?.totalDue ?? 0) memories\nready to revisit.").font(.title.bold())
+                    Text("\(model.due.count) in this session, across your clubs. No timer, no pressure. The rest can wait.").foregroundStyle(Palette.muted)
                     Button { route=PracticeRoute(model.due,dueMode:true) } label: { HStack {Text("Start review").font(.headline);Spacer();Image(systemName:"arrow.right")}.padding(18).background(Palette.green,in:RoundedRectangle(cornerRadius:18)).foregroundStyle(.white) }.accessibilityIdentifier("start-review")
                 } else if let p=model.pack {
-                    let learned=p.objectives.filter {model.state.reviews[$0.id] != nil}.sorted{$0.key < $1.key}
+                    let learned=(model.studyPlan?.rehearsalObjectiveIDs ?? []).map(p.objective)
                     Text(learned.isEmpty ? "Your first memories\nstart with a lesson." : "You're all caught up.").font(.title.bold())
                     Text(learned.isEmpty ? "Choose Xolos or Madrid in Learn, then come back for recall." : "Your memories are resting. You can rehearse now, or wait until they're due.").foregroundStyle(Palette.muted)
                     if !learned.isEmpty {
                         if let next=model.state.reviews.values.map(\.due).min() { Text("Next review: \(next.formatted(date:.abbreviated,time:.shortened))").font(.subheadline) }
-                        Button {route=PracticeRoute(Array(learned.prefix(10)),dueMode:false)} label:{Label("Optional practice",systemImage:"play.fill").font(.headline)}.accessibilityIdentifier("optional-practice")
+                        Button {route=PracticeRoute(learned,dueMode:false)} label:{Label("Optional practice",systemImage:"play.fill").font(.headline)}.accessibilityIdentifier("optional-practice")
                     }
+                }
+                if let p=model.pack,let plan=model.studyPlan,!plan.mistakeObjectiveIDs.isEmpty {
+                    Button {route=PracticeRoute(plan.mistakeObjectiveIDs.map(p.objective),dueMode:false)} label:{Label("Recent tricky connections",systemImage:"lightbulb").font(.headline).frame(minHeight:44)}.accessibilityIdentifier("practice-mistakes")
                 }
                 Divider()
                 Text("Why recall?").font(.headline)

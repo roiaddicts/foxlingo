@@ -140,4 +140,28 @@ final class FlowTests: XCTestCase {
         tap("finish-lesson");XCTAssertTrue(app.staticTexts["lesson-complete"].exists)
     }
 
+    func testDailyPlanResumesAndShowsRealBacklog() {
+        start();tap("choose-XT")
+        tap("daily-lesson");tap("lesson-next")
+        app.terminate();start(reset:false)
+        XCTAssertTrue(app.buttons["daily-lesson"].label.hasPrefix("Continue:"))
+        tap("daily-lesson");XCTAssertTrue(app.staticTexts["The home ground"].exists)
+        tap("lesson-next")
+        for _ in 0..<4 {tap("answer-choice-0");tap("answer-next")}
+        for i in 0..<3 {tap("match-l-\(i)");tap("match-r-\(i)")}
+        tap("finish-lesson");tap("back-roadmap")
+        completeLesson("lesson-xolos-climb")
+        app.terminate();start(reset:false,now:1_800_000_000+86401)
+        tap("session-size");app.buttons["Quick · 5"].tap()
+        XCTAssertTrue(app.staticTexts["daily-due-count"].label.contains("5 in this session · 6 ready"))
+        tap("daily-review")
+        XCTAssertTrue(app.staticTexts["SCHEDULED RECALL · 1 OF 5"].waitForExistence(timeout:5))
+        for _ in 0..<5 {tap("reveal-recall");tap("recall-next")}
+        tap("practice-done")
+        XCTAssertTrue(app.staticTexts["daily-due-count"].label.contains("1 ready"))
+        let shot=XCTAttachment(screenshot:app.screenshot());shot.name="Daily study plan";shot.lifetime = .keepAlways;add(shot)
+        app.terminate();start(reset:false,now:1_800_000_000+2*86400+2)
+        XCTAssertTrue(app.staticTexts["daily-due-count"].label.contains("5 in this session · 6 ready"))
+    }
+
 }

@@ -57,3 +57,7 @@ Original leopard artwork and its app icon are bundled in the asset catalog. Gene
 Lesson matching now uses six shuffled, face-down cards. Mismatches remain visible briefly, then conceal; completed pairs and board order survive a restart. Hidden text is also concealed from accessibility labels. This is playful acquisition practice; it does not substitute for scheduled independent recall.
 
 Game clues use offline club badges and country flags, including the player picker. Lesson identity answers reuse badges, faces, and flags; dates, statistics, and historical statements retain readable text. All visual clues expose their names to VoiceOver. Unmatched memory cards remain revealed for VoiceOver until the learner turns them over.
+
+### Daily study plan
+
+Learn suggests a short review across all learned clubs, an unfinished lesson, or the next lesson in the selected roadmap. Choose 5, 10, or 20 memories; the preference is saved locally. The total due queue stays visible while the session deck is bounded and frozen on launch. Recent tricky connections are distinct objectives with a failed or assisted most recent recall in the last week; later independent recall clears them. Optional rehearsal rotates toward least recently attempted knowledge. Corrected content starts a new learning window and ignores attempts from its previous revision.

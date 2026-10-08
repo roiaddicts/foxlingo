@@ -65,3 +65,7 @@ This is a locally runnable native MVP, not an App Store or TestFlight publicatio
 - Choice answers only use artwork when all four options have supported visuals of the same semantic type. Historical, numeric, city, and nickname facts retain their meaning as text.
 - VoiceOver holds unmatched cards until explicit dismissal; ordinary play turns them over after 1.8 seconds. This behavior is implemented and reviewed; a live VoiceOver session has not been exercised.
 - Replayed lessons report their actual next recall date, preserving existing schedules. Press animations respect Reduce Motion.
+
+## Daily study plan
+
+44 core tests pass, including a 34-item backlog split into a five-question batch, cross-club resume, completed roadmaps, corrected-content history, bounded recent mistakes, rotating rehearsal, and old-save compatibility. The real simulator daily-plan flow passes: interrupted lesson resumes, six due objectives become a five-question session, the remaining queue updates, and the five-question preference persists into the next day's backlog. Independent recall, sources, and settings regression also passes. Picker persistence is verified through the resulting deck, rather than relying on its accessibility value.

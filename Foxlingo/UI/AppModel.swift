@@ -59,7 +59,8 @@ import AudioToolbox
     }
     func select(_ id: UUID) { state.selectedClub = id; save() }
     var roadmap: Roadmap? { pack?.roadmaps.first { $0.clubID == state.selectedClub } ?? pack?.roadmaps.first }
-    var due: [Objective] { pack.map { state.dueObjectives($0,now:now) } ?? [] }
+    var studyPlan: DailyStudyPlan? {pack.map {DailyStudyPlan.make(pack:$0,state:state,now:now,limit:state.preferredSessionSize ?? 10)}}
+    var due: [Objective] {guard let pack,let studyPlan else {return []};return studyPlan.dueObjectiveIDs.map(pack.objective)}
     func respond(_ correct: Bool) {
         if state.haptics { UINotificationFeedbackGenerator().notificationOccurred(correct ? .success : .error) }
         if state.sound { AudioServicesPlaySystemSound(correct ? 1104 : 1053) }
