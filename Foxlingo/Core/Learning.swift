@@ -35,6 +35,7 @@ public struct LearnerState: Codable, Sendable {
     public var installedContentVersion: Int? = nil
     public var selectedClub: UUID?
     public var selectedRoadmapID: UUID? = nil
+    public var savedRoadmapIDs: [UUID]? = nil
     public var homeTimeZone: String
     public var preferredSessionSize: Int? = nil
     public var sound = true
@@ -51,6 +52,7 @@ public struct LearnerState: Codable, Sendable {
     public var streak = StreakState()
     public init(timeZone: String = TimeZone.current.identifier) { homeTimeZone = timeZone }
     public mutating func reconcile(_ pack: ContentPack, now: Date) {
+        initializeSavedRoadmaps(pack)
         captureCardAchievements(pack)
         for o in pack.objectives {
             if let old = reviews[o.id], old.revision != o.revision {

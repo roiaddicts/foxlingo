@@ -65,7 +65,11 @@ Game clues use offline club badges and country flags, including the player picke
 
 ### Daily study plan
 
-Learn suggests a short review across all learned clubs, an unfinished lesson, or the next lesson in the selected roadmap. Choose 5, 10, or 20 memories; the preference is saved locally. The total due queue stays visible while the session deck is bounded and frozen on launch. Recent tricky connections are distinct objectives with a failed or assisted most recent recall in the last week; later independent recall clears them. Optional rehearsal rotates toward least recently attempted knowledge. Corrected content starts a new learning window and ignores attempts from its previous revision.
+Learn suggests a short review across all learned subjects, an unfinished lesson in the selected roadmap, or its next required lesson. Once that path is complete, required learning from My roadmaps is suggested in saved order. Choose 5, 10, or 20 memories; the preference is saved locally. The total due queue stays visible while the session deck is bounded and frozen on launch. Recent tricky connections are distinct objectives with a failed or assisted most recent recall in the last week; later independent recall clears them. Optional rehearsal rotates toward least recently attempted knowledge. Corrected content starts a new learning window and ignores attempts from its previous revision.
+
+### My roadmaps
+
+Bookmark clubs, players and competitions from Learn or its chooser. Saved paths show their required progress above the browsing catalog. Selecting and bookmarking are separate actions. Removing a bookmark keeps the selected path, unfinished lessons, learned facts, reviews and album cards. Xolos and Madrid are saved initially; an explicitly empty list stays empty after relaunch. Missing paths retain their saved IDs across content updates and rollback. These preferences are local to this installation.
 
 ### Coverage preparation
 

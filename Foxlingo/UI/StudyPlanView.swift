@@ -42,10 +42,9 @@ struct DailyPlanView: View {
     }
     @ViewBuilder private func lessonLink(_ id: UUID,primary: Bool) -> some View {
         let lesson=pack.lesson(id)
-        let selectedOwner=model.roadmap.flatMap {r in r.chapters.filter {$0.isOptional != true}.flatMap(\.lessonIDs).contains(id) ? r : nil}
-        let owner=selectedOwner ?? pack.playerRoadmaps.first(where:{$0.chapters.filter {$0.isOptional != true}.flatMap(\.lessonIDs).contains(id)}) ?? pack.competitionRoadmaps.first(where:{$0.chapters.filter {$0.isOptional != true}.flatMap(\.lessonIDs).contains(id)}) ?? pack.clubRoadmaps.first(where:{$0.chapters.flatMap(\.lessonIDs).contains(id)})
+        let owner=pack.roadmaps.first {$0.id == plan.lessonRoadmapID}
         let title="\(plan.isResuming ? "Continue" : "Start"): \(lesson.title)"
-        if let owner {Text("\(pack.entity(owner.entityID).name) · \(owner.id == model.roadmap?.id ? "Your roadmap" : "Shared learning library")").font(.caption).foregroundStyle(Palette.muted).accessibilityIdentifier("daily-lesson-subject")}
+        if let owner {Text("\(pack.entity(owner.entityID).name) · \(owner.id == model.roadmap?.id ? "Your roadmap" : "My roadmaps")").font(.caption).foregroundStyle(Palette.muted).accessibilityIdentifier("daily-lesson-subject")}
         if primary {PrimaryButton(title:title,symbol:plan.isResuming ? "play.fill" : "book") {openLesson(lesson)}.accessibilityIdentifier("daily-lesson")}
         else {Button {openLesson(lesson)} label:{Label(title,systemImage:"book").font(.subheadline.bold()).frame(minHeight:44)}.buttonStyle(PressFeedback()).accessibilityIdentifier("daily-lesson")}
     }

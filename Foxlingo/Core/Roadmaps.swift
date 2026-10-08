@@ -6,6 +6,31 @@ extension ContentPack {
     public var playerRoadmaps: [Roadmap] {roadmaps.filter {entity($0.entityID).type == "player"}}
 }
 extension LearnerState {
+    private func defaultSavedRoadmapIDs(_ pack: ContentPack) -> [UUID] {
+        // Canonical IDs survive a first launch against a pack that retires a
+        // favorite. Rollback can then restore its bookmark without re-migration.
+        [UUID(uuidString:"778bc70b-5f93-56c1-8313-e2608dbf8098")!,UUID(uuidString:"bddbc932-cbaf-53b0-b140-826944a89ce2")!]
+    }
+    public mutating func initializeSavedRoadmaps(_ pack: ContentPack) {
+        if savedRoadmapIDs == nil {savedRoadmapIDs=defaultSavedRoadmapIDs(pack)}
+        var seen=Set<UUID>()
+        savedRoadmapIDs=savedRoadmapIDs!.filter {seen.insert($0).inserted}
+    }
+    public func savedRoadmaps(_ pack: ContentPack) -> [Roadmap] {
+        let paths=Dictionary(uniqueKeysWithValues:pack.roadmaps.map {($0.id,$0)})
+        var seen=Set<UUID>()
+        return (savedRoadmapIDs ?? defaultSavedRoadmapIDs(pack)).filter {seen.insert($0).inserted}.compactMap {paths[$0]}
+    }
+    public func unavailableSavedRoadmapCount(_ pack: ContentPack) -> Int {
+        Set(savedRoadmapIDs ?? defaultSavedRoadmapIDs(pack)).count-savedRoadmaps(pack).count
+    }
+    public mutating func setRoadmapSaved(_ id: UUID,saved: Bool,pack: ContentPack) {
+        initializeSavedRoadmaps(pack)
+        if saved {
+            guard pack.roadmaps.contains(where:{$0.id == id}),!savedRoadmapIDs!.contains(id) else {return}
+            savedRoadmapIDs!.append(id)
+        } else {savedRoadmapIDs!.removeAll {$0 == id}}
+    }
     public func activeRoadmap(_ pack: ContentPack) -> Roadmap? {
         if let id=selectedRoadmapID,let selected=pack.roadmaps.first(where:{$0.id == id}) {return selected}
         return pack.clubRoadmaps.first {$0.clubID == selectedClub} ?? pack.clubRoadmaps.first ?? pack.roadmaps.first

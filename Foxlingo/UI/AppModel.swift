@@ -111,7 +111,7 @@ import SwiftUI
     }
     func save() {
         guard !recoveryRequired else { return }
-        if let pack {state.captureCardAchievements(pack)}
+        if let pack {state.initializeSavedRoadmaps(pack);state.captureCardAchievements(pack)}
         do { try store.save(state) } catch { message = "Progress could not be saved: \(error.localizedDescription)" }
     }
     func reset() {
@@ -159,6 +159,12 @@ import SwiftUI
     func cancelLessonUpdate() throws {try contentCache?.cancelPending();refreshUpdateStatus();updateMessage="The waiting update was removed. Installed lessons stay available."}
     func select(_ id: UUID) {state.selectClub(id);save()}
     func selectSubject(_ id: UUID) {if let pack,let roadmap=pack.roadmaps.first(where:{$0.entityID == id}) {state.selectRoadmap(roadmap,pack:pack);save()}}
+    func setRoadmapSaved(_ roadmap: Roadmap,saved: Bool) {
+        guard let pack else {return}
+        state.setRoadmapSaved(roadmap.id,saved:saved,pack:pack);save()
+        if state.haptics {UISelectionFeedbackGenerator().selectionChanged()}
+        UIAccessibility.post(notification:.announcement,argument:saved ? "Saved to My roadmaps" : "Removed from My roadmaps. Your learning is preserved.")
+    }
     var roadmap: Roadmap? {pack.flatMap {state.activeRoadmap($0)}}
     var studyPlan: DailyStudyPlan? {pack.map {DailyStudyPlan.make(pack:$0,state:state,now:now,limit:state.preferredSessionSize ?? 10)}}
     var due: [Objective] {guard let pack,let studyPlan else {return []};return studyPlan.dueObjectiveIDs.map(pack.objective)}

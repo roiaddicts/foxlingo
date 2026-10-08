@@ -46,6 +46,7 @@ final class RoadmapTests: XCTestCase {
     }
     func testPlayerStarterCompletesWithoutRequiringOptionalClubContext() {
         var state=LearnerState();let path=roadmap("roadmap-player-ramos")
+        state.savedRoadmapIDs=[]
         state.selectClub(roadmap("roadmap-xolos").clubID!);state.selectRoadmap(path,pack:pack)
         let required=path.chapters[0].lessonIDs[0]
         state.completeLesson(pack.lesson(required),pack:pack,sessionID:UUID(),attempts:[],now:now)

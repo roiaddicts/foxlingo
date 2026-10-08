@@ -76,6 +76,7 @@ struct LearnView: View {
                     HStack(spacing:14) { ClubMark(club:club); VStack(alignment:.leading,spacing:4) { Eyebrow(text:club.type == "player" ? "Player starter" : club.type == "competition" ? "Competition foundations" : "Your roadmap").dynamicTypeSize(...DynamicTypeSize.xxxLarge); Text(club.visual == "XT" ? "Xolos" : club.name).font(.largeTitle.bold()) }; Spacer() }
                     }
                     Button {clubLibrary=true} label:{Label("Choose roadmap",systemImage:"arrow.left.arrow.right").font(.subheadline.bold()).frame(minHeight:44)}.buttonStyle(PressFeedback()).accessibilityIdentifier("switch-club")
+                    RoadmapSaveButton(roadmap:r,showsTitle:true,identifierPrefix:"active-toggle")
                     HStack {Text("\(progress.completedRequired) of \(progress.requiredLessonIDs.count) \(club.type == "player" ? "starter lessons" : club.type == "competition" ? "foundation lessons" : "lessons") complete").accessibilityIdentifier("roadmap-progress").contentTransition(.numericText()).animation(reduced ? nil : .easeInOut(duration:0.2),value:progress.completedRequired).font(.subheadline).foregroundStyle(Palette.muted);Spacer();Leopard().frame(width:52,height:60)}
                     if let summary=r.summary {Text(summary).font(.subheadline).foregroundStyle(Palette.muted)}
                     DailyPlanView(pack:pack,openLesson:{activeLesson=$0},openPractice:{practiceRoute=$0})
@@ -135,6 +136,7 @@ struct SubjectRoadmapView: View {
                     Text("\(progress.completedRequired) of \(progress.requiredLessonIDs.count) \(player.type == "player" ? "starter" : "foundation") lessons complete · \(progress.requiredObjectiveIDs.count) memories").font(.subheadline).accessibilityIdentifier(player.type == "player" ? "player-roadmap-progress" : "competition-roadmap-progress")
                     if model.roadmap?.id == roadmap.id {Label("Selected for Learn",systemImage:"checkmark.circle.fill").foregroundStyle(Palette.brand).font(.headline).accessibilityIdentifier(player.type == "player" ? "player-roadmap-selected" : "competition-roadmap-selected")}
                     else {PrimaryButton(title:"Make this my roadmap",symbol:"map") {model.selectSubject(player.id)}.accessibilityIdentifier(player.type == "player" ? "player-roadmap-select" : "competition-roadmap-select")}
+                    RoadmapSaveButton(roadmap:roadmap,showsTitle:true,identifierPrefix:"subject-toggle")
                     RoadmapChapters(roadmap:roadmap,pack:pack,openLesson:{lesson=$0})
                 }.padding(24)
             }

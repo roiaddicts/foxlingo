@@ -26,7 +26,7 @@ final class StudyPlanTests: XCTestCase {
         XCTAssertEqual(DailyStudyPlan.make(pack:pack,state:state,now:now,limit:20).dueObjectiveIDs.count,20)
     }
     func testNewLearnerAndSelectedClubLesson() {
-        var state=LearnerState();state.selectedClub=pack.roadmaps[1].clubID
+        var state=LearnerState();state.savedRoadmapIDs=[];state.selectedClub=pack.roadmaps[1].clubID
         let plan=DailyStudyPlan.make(pack:pack,state:state,now:now)
         XCTAssertEqual(plan.lessonID,pack.roadmaps[1].chapters[0].lessonIDs[0]);XCTAssertFalse(plan.isResuming)
         XCTAssertTrue(plan.rehearsalObjectiveIDs.isEmpty);XCTAssertTrue(plan.dueObjectiveIDs.isEmpty)
@@ -38,7 +38,10 @@ final class StudyPlanTests: XCTestCase {
         let id=pack.roadmaps[1].chapters[0].lessonIDs[0]
         state.resumes[id]=LessonResume(step:3)
         let plan=DailyStudyPlan.make(pack:pack,state:state,now:now)
-        XCTAssertEqual(plan.lessonID,id);XCTAssertTrue(plan.isResuming);XCTAssertEqual(state.resumes[id]?.step,3)
+        XCTAssertEqual(plan.lessonID,pack.roadmaps[0].chapters[0].lessonIDs[0]);XCTAssertFalse(plan.isResuming);XCTAssertEqual(state.resumes[id]?.step,3)
+        state.completedLessons=Set(pack.roadmaps[0].chapters.flatMap(\.lessonIDs))
+        let fallback=DailyStudyPlan.make(pack:pack,state:state,now:now)
+        XCTAssertEqual(fallback.lessonID,id);XCTAssertTrue(fallback.isResuming);XCTAssertEqual(fallback.lessonRoadmapID,pack.roadmaps[1].id)
     }
     func testMistakesAreDistinctBoundedAndClearAfterCorrection() {
         let objectives=Array(pack.objectives.prefix(3));var state=stateWithLearned(objectives)

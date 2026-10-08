@@ -33,6 +33,7 @@ final class CompetitionTests: XCTestCase {
     }
     func testOptionalStoryDoesNotCompleteFoundationsOrDuplicateMemories() {
         var state=LearnerState();let course=pack.competitionRoadmaps.first {$0.key == "roadmap-competition-liga-mx"}!
+        state.savedRoadmapIDs=[]
         let p=RoadmapProgress.make(roadmap:course,pack:pack,state:state)
         let optional=pack.lesson(p.optionalLessonIDs[0])
         state.completeLesson(optional,pack:pack,sessionID:UUID(),attempts:[],now:now)

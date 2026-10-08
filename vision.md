@@ -29,6 +29,8 @@ The app succeeds when knowledge is retained and useful. Time spent, XP, and stre
 
 Choose multiple roadmaps and move between them freely. A league, club, player, or award can be a starting point. Suggested prerequisites provide context without preventing direct access to a useful subject.
 
+My roadmaps now saves an ordered selection of club, player and competition paths. Saving and choosing are separate actions; removing a bookmark preserves learned facts, reviews, cards and unfinished lessons. The daily plan prioritizes the selected path, then suggests required learning from saved paths. Review remains one global queue. Award paths and production progress synchronization remain future work.
+
 Each roadmap contains chapters, short lessons, practice, and cumulative challenges. Shared facts connect roadmaps: learning a player’s championship win can advance relevant player, team, and competition objectives without teaching the same fact from scratch each time.
 
 Roadmap structures adapt to the subject:

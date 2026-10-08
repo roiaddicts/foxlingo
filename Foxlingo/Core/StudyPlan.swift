@@ -6,6 +6,7 @@ public struct DailyStudyPlan: Sendable {
     public let totalDue: Int
     public let dueObjectiveIDs: [UUID]
     public let lessonID: UUID?
+    public let lessonRoadmapID: UUID?
     public let isResuming: Bool
     public let mistakeObjectiveIDs: [UUID]
     public let rehearsalObjectiveIDs: [UUID]
@@ -38,9 +39,18 @@ public struct DailyStudyPlan: Sendable {
         let selected=state.activeRoadmap(pack)
         let selectedLessons=selected?.chapters.flatMap(\.lessonIDs) ?? []
         let requiredLessons=selected?.chapters.filter {$0.isOptional != true}.flatMap(\.lessonIDs) ?? []
-        let allLessons=selectedLessons + pack.roadmaps.filter {$0.id != selected?.id}.flatMap {$0.chapters.flatMap(\.lessonIDs)}
-        let resumed=allLessons.first {state.resumes[$0] != nil}
-        let next=requiredLessons.first {!state.completedLessons.contains($0)}
-        return Self(totalDue:due.count,dueObjectiveIDs:Array(due.prefix(size)).map(\.id),lessonID:resumed ?? next,isResuming:resumed != nil,mistakeObjectiveIDs:Array(mistakes.prefix(size)).map(\.id),rehearsalObjectiveIDs:Array(rehearsal.prefix(size)).map(\.id))
+        var resumed=selectedLessons.first {state.resumes[$0] != nil}
+        var next=resumed ?? requiredLessons.first {!state.completedLessons.contains($0)}
+        var owner=next == nil ? nil : selected?.id
+        if next == nil {
+            for roadmap in state.savedRoadmaps(pack) where roadmap.id != selected?.id {
+                let lessons=roadmap.chapters.filter {$0.isOptional != true}.flatMap(\.lessonIDs)
+                let resume=lessons.first {state.resumes[$0] != nil}
+                if let id=resume ?? lessons.first(where:{!state.completedLessons.contains($0)}) {
+                    next=id;resumed=resume;owner=roadmap.id;break
+                }
+            }
+        }
+        return Self(totalDue:due.count,dueObjectiveIDs:Array(due.prefix(size)).map(\.id),lessonID:next,lessonRoadmapID:owner,isResuming:resumed != nil,mistakeObjectiveIDs:Array(mistakes.prefix(size)).map(\.id),rehearsalObjectiveIDs:Array(rehearsal.prefix(size)).map(\.id))
     }
 }

@@ -53,6 +53,34 @@ final class FlowTests: XCTestCase {
         XCTAssertTrue(app.staticTexts["competition-roadmap-progress"].label.contains("3 of 3 foundation"))
         let detail=XCTAttachment(screenshot:app.screenshot());detail.name="Competition album roadmap";detail.lifetime = .keepAlways;add(detail)
     }
+    func testSavedRoadmapsSeparateSelectionRemovalAndPersistence() {
+        start();tap("choose-XT")
+        XCTAssertEqual(app.buttons["active-toggle-roadmap-xolos"].value as? String,"Saved")
+        chooseCompetition("Bundesliga","bundesliga")
+        XCTAssertEqual(app.buttons["active-toggle-roadmap-competition-bundesliga"].value as? String,"Not saved")
+        tap("active-toggle-roadmap-competition-bundesliga")
+        XCTAssertEqual(app.buttons["active-toggle-roadmap-competition-bundesliga"].value as? String,"Saved")
+        app.terminate();start(reset:false)
+        XCTAssertTrue(app.staticTexts["Bundesliga"].exists)
+        XCTAssertEqual(app.buttons["active-toggle-roadmap-competition-bundesliga"].value as? String,"Saved")
+        tap("active-toggle-roadmap-competition-bundesliga")
+        XCTAssertTrue(app.staticTexts["Bundesliga"].exists)
+        tap("switch-club")
+        XCTAssertTrue(app.buttons["saved-entity-xolos"].exists);XCTAssertTrue(app.buttons["saved-entity-madrid"].exists)
+        XCTAssertFalse(app.buttons["saved-entity-competition-bundesliga"].exists)
+        let shot=XCTAttachment(screenshot:app.screenshot());shot.name="My roadmaps";shot.lifetime = .keepAlways;add(shot)
+        tap("saved-toggle-roadmap-xolos");tap("saved-toggle-roadmap-madrid")
+        XCTAssertTrue(app.staticTexts["Save a club, player or competition with its bookmark. Removing a roadmap keeps everything you've learned."].exists)
+        app.buttons["Done"].tap();app.terminate();start(reset:false);tap("switch-club")
+        XCTAssertFalse(app.buttons["saved-entity-xolos"].exists);XCTAssertFalse(app.buttons["saved-entity-madrid"].exists)
+    }
+    func testSavedRoadmapsLargestText() {
+        app.launchArguments=["-ui-testing","-reset-test-state","-test-now","1800000000","-UIPreferredContentSizeCategoryName","UICTContentSizeCategoryAccessibilityXXXL"];app.launch()
+        tap("choose-XT");tap("switch-club")
+        tap("saved-toggle-roadmap-xolos")
+        XCTAssertFalse(app.buttons["saved-entity-xolos"].exists)
+        let shot=XCTAttachment(screenshot:app.screenshot());shot.name="My roadmaps at largest text";shot.lifetime = .keepAlways;add(shot)
+    }
     func testCompetitionChooserAndClubOnlyCoverage() {
         start();tap("choose-XT");tap("switch-club")
         tap("club-entity-competition-champions-league")
@@ -177,7 +205,7 @@ final class FlowTests: XCTestCase {
         XCTAssertTrue(app.staticTexts["daily-lesson-subject"].label.contains("Sergio Ramos · Your roadmap"))
         completeLesson("lesson-madrid-ramos")
         completeLesson("lesson-madrid-ramos-honours")
-        XCTAssertTrue(app.staticTexts["Your player starter is complete."].exists)
+        XCTAssertTrue(app.staticTexts["daily-lesson-subject"].label.contains("My roadmaps"))
         XCTAssertTrue(app.staticTexts["roadmap-progress"].label.contains("2 of 2 starter lessons"))
         XCTAssertTrue(app.staticTexts["roadmap-optional-progress"].label.contains("0 of 1 optional"))
         app.terminate();start(reset:false)
