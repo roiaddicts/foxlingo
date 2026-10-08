@@ -211,7 +211,7 @@ final class FlowTests: XCTestCase {
         app.terminate();start(reset:false)
         XCTAssertTrue(app.staticTexts["Sergio Ramos"].exists)
         tap("switch-club");let search=app.searchFields.firstMatch;search.tap();search.typeText("Real Madrid");tap("club-entity-madrid")
-        XCTAssertTrue(app.staticTexts["roadmap-progress"].label.contains("2 of 9 lessons"))
+        XCTAssertTrue(app.staticTexts["roadmap-progress"].label.contains("2 of 10 lessons"))
         choosePlayer("Sergio Ramos","ramos")
         completeLesson("lesson-madrid-decima")
         XCTAssertTrue(app.staticTexts["roadmap-progress"].label.contains("2 of 2 starter lessons"))
@@ -222,10 +222,51 @@ final class FlowTests: XCTestCase {
     }
     func testPlayerRoadmapAlbumEntryAndExplicitSelection() {
         start();tap("choose-XT");app.tabBars.buttons["Album"].tap();tap("card-cristiano");tap("card-player-roadmap")
-        XCTAssertTrue(app.staticTexts["player-roadmap-progress"].label.contains("0 of 1 starter lessons"))
+        XCTAssertTrue(app.staticTexts["player-roadmap-progress"].label.contains("0 of 2 starter lessons"))
         XCTAssertTrue(app.staticTexts["Optional club context".uppercased()].exists)
         tap("player-roadmap-select");XCTAssertTrue(app.staticTexts["player-roadmap-selected"].exists)
         app.tabBars.buttons["Learn"].tap();XCTAssertTrue(app.staticTexts["Cristiano Ronaldo"].exists)
+    }
+    func testCristianoCareerLessonSharedProgressAndAlbum() {
+        start();tap("choose-XT");choosePlayer("Cristiano Ronaldo","cristiano")
+        XCTAssertTrue(app.staticTexts["roadmap-progress"].label.contains("0 of 2 starter lessons"))
+        completeLesson("lesson-madrid-cristiano")
+        tap("lesson-player-cristiano-madrid-records");tap("lesson-next");tap("lesson-next")
+        XCTAssertTrue(app.staticTexts["According to Real Madrid’s official profile, how many official goals did Cristiano Ronaldo score for the club?"].exists)
+        let shot=XCTAttachment(screenshot:app.screenshot());shot.name="Cristiano scoped Madrid record";shot.lifetime = .keepAlways;add(shot)
+        for _ in 0..<4 {tap("answer-choice-0");tap("answer-next")}
+        tap("back-roadmap")
+        XCTAssertTrue(app.staticTexts["roadmap-progress"].label.contains("2 of 2 starter lessons"))
+        app.terminate();start(reset:false)
+        XCTAssertTrue(app.staticTexts["roadmap-progress"].label.contains("2 of 2 starter lessons"))
+        app.tabBars.buttons["Album"].tap();tap("card-cristiano")
+        XCTAssertTrue(app.staticTexts["card-coverage"].label.contains("6 of 6 connections introduced"))
+        XCTAssertTrue(app.staticTexts["card-coverage"].label.contains("Active set version 2"))
+    }
+    func testRiascosCareerClubBadgesAndPersistence() {
+        start();tap("choose-XT");choosePlayer("Duvier Riascos","riascos")
+        tap("lesson-player-riascos-tijuana-and-beyond");tap("lesson-next");tap("lesson-next")
+        let debut=XCTAttachment(screenshot:app.screenshot());debut.name="Riascos debut club badges";debut.lifetime = .keepAlways;add(debut)
+        tap("answer-choice-0");tap("answer-next")
+        let china=XCTAttachment(screenshot:app.screenshot());china.name="Riascos Chinese scoring club badges";china.lifetime = .keepAlways;add(china)
+        for _ in 0..<3 {tap("answer-choice-0");tap("answer-next")}
+        tap("back-roadmap")
+        XCTAssertTrue(app.staticTexts["roadmap-progress"].label.contains("1 of 2 starter lessons"))
+        app.terminate();start(reset:false)
+        XCTAssertTrue(app.staticTexts["roadmap-progress"].label.contains("1 of 2 starter lessons"))
+        tap("switch-club");let search=app.searchFields.firstMatch;search.tap();search.typeText("Xolos");tap("club-entity-xolos")
+        XCTAssertTrue(app.staticTexts["roadmap-progress"].label.contains("1 of 9 lessons"))
+    }
+    func testArceCareerBadgesAtLargestText() {
+        app.launchArguments=["-ui-testing","-reset-test-state","-test-now","1800000000","-UIPreferredContentSizeCategoryName","UICTContentSizeCategoryAccessibilityXXXL"];app.launch()
+        tap("choose-XT");choosePlayer("Fernando Arce","arce")
+        tap("lesson-player-arce-career-milestones");tap("lesson-next");tap("lesson-next")
+        tap("answer-choice-0");tap("answer-next")
+        XCTAssertTrue(app.staticTexts["lesson-subject"].isHittable)
+        let shot=XCTAttachment(screenshot:app.screenshot());shot.name="Arce career badges at largest text";shot.lifetime = .keepAlways;add(shot)
+        for _ in 0..<3 {tap("answer-choice-0");tap("answer-next")}
+        tap("back-roadmap")
+        XCTAssertTrue(app.staticTexts["roadmap-progress"].label.contains("1 of 2 starter lessons"))
     }
     func testLargeTextPlayerRoadmap() {
         app.launchArguments=["-ui-testing","-reset-test-state","-test-now","1800000000","-UIPreferredContentSizeCategoryName","UICTContentSizeCategoryAccessibilityXXXL"];app.launch()

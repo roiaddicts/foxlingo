@@ -1,0 +1,378 @@
+{
+  "sources": [
+    {
+      "key": "player-enrichment-cristiano-realmadrid",
+      "title": "Cristiano Ronaldo Dos Santos Aveiro — History and honours",
+      "url": "https://www.realmadrid.com/pt-PT/o-clube/historia/lendas-futebol/cristiano-ronaldo-dos-santos-aveiro/",
+      "verifiedAt": "2026-10-08"
+    },
+    {
+      "key": "player-enrichment-arce-xolos-profile",
+      "title": "OFICIAL.. Fernando Arce es de Tijuana",
+      "url": "https://xolos.com.mx/noticias/xoloitzcuintles/2422/club-tijuana-sub17-2-1-puebla-fc-sub17-final.html",
+      "verifiedAt": "2026-10-08"
+    },
+    {
+      "key": "player-enrichment-riascos-xolos-signing",
+      "title": "El delantero colombiano Duvier Riascos completa la plantilla de Xoloitzcuintles",
+      "url": "https://xolos.com.mx/noticias/xoloitzcuintles/2515/%E2%80%9C",
+      "verifiedAt": "2026-10-08"
+    },
+    {
+      "key": "player-enrichment-riascos-xolos-retrospective",
+      "title": "¿Sabes qué fue de estas 5 figuras del campeonato?",
+      "url": "https://xolos.com.mx/noticias/torneo-de-copa/10790",
+      "verifiedAt": "2026-10-08"
+    },
+    {
+      "key": "artwork-entity-irapuato",
+      "title": "Club Deportivo Irapuato, official site · badge source",
+      "url": "https://www.clubdeportivoirapuato.com/",
+      "verifiedAt": "2026-10-08"
+    },
+    {
+      "key": "artwork-entity-veracruz",
+      "title": "Club Deportivo Tiburones Rojos de Veracruz, via French Wikipedia/Wikimedia image hosting; file metadata identifies the club as author and cites its former official site http://www.tiburones-rojos.com/. · badge source",
+      "url": "https://fr.wikipedia.org/wiki/Fichier:CD_Veracruz_(logo).svg",
+      "verifiedAt": "2026-10-08"
+    },
+    {
+      "key": "artwork-entity-america-de-cali",
+      "title": "América de Cali, official identity page · badge source",
+      "url": "https://www.americadecali.com/pages/identidad",
+      "verifiedAt": "2026-10-08"
+    },
+    {
+      "key": "artwork-entity-shanghai-shenhua",
+      "title": "Asian Football Confederation (AFC), AFC Champions League Elite 2024/25 Technical Report, club-mark page 3 · badge source",
+      "url": "https://assets.the-afc.com/Corporate_Page/Technical/Technical_Reports/AFC-Champions-League-Elite-2024-25-Technical-Report.pdf",
+      "verifiedAt": "2026-10-08"
+    }
+  ],
+  "lessons": [
+    {
+      "key": "lesson-player-cristiano-madrid-records",
+      "clubKey": "entity-madrid",
+      "subjectKey": "entity-cristiano",
+      "title": "Cristiano Ronaldo: Madrid’s scoring legacy",
+      "subtitle": "A remarkable scoring rate and a European trophy haul",
+      "story": [
+        {
+          "title": "More than a goal per game",
+          "body": "Cristiano Ronaldo played for Real Madrid from 2009 to 2018. The club’s official profile records 451 goals in 438 official matches, a scoring rate above one per game. Across competitions, 105 of those Madrid goals came in the Champions League."
+        },
+        {
+          "title": "A champion in Europe",
+          "body": "His Madrid years also brought four Champions League titles. The profile presents those trophies alongside his club scoring records: 451 goals overall, including 105 in Europe’s leading club competition. His Madrid chapter combined individual output with repeated team success."
+        }
+      ],
+      "facts": [
+        {
+          "key": "cristiano-madrid-goals-total",
+          "prompt": "According to Real Madrid’s official profile, how many official goals did Cristiano Ronaldo score for the club?",
+          "answers": [
+            "451",
+            "four hundred fifty-one",
+            "four hundred and fifty-one",
+            "four hundred fifty one",
+            "four hundred and fifty one"
+          ],
+          "distractors": [
+            "438",
+            "312",
+            "105"
+          ],
+          "label": "Official Real Madrid goals",
+          "sourceKey": "player-enrichment-cristiano-realmadrid",
+          "value": {
+            "kind": "number",
+            "display": "451",
+            "number": 451,
+            "unit": "official goals"
+          },
+          "scope": "Cristiano Ronaldo's Real Madrid career, 2009–2018",
+          "evidence": "Official source excerpt: “451 em 438 jogos oficiais com o Real Madrid”"
+        },
+        {
+          "key": "cristiano-madrid-champions-goals",
+          "prompt": "How many Champions League goals did Ronaldo score for Real Madrid?",
+          "answers": [
+            "105",
+            "one hundred five",
+            "one hundred and five"
+          ],
+          "distractors": [
+            "312",
+            "451",
+            "22"
+          ],
+          "label": "Real Madrid Champions League goals",
+          "sourceKey": "player-enrichment-cristiano-realmadrid",
+          "value": {
+            "kind": "number",
+            "display": "105",
+            "number": 105,
+            "unit": "Champions League goals"
+          },
+          "scope": "Cristiano Ronaldo's Real Madrid career, 2009–2018",
+          "evidence": "Official source excerpt: “105 na Champions”"
+        },
+        {
+          "key": "cristiano-madrid-champions-titles",
+          "prompt": "How many Champions League titles did Ronaldo win with Real Madrid?",
+          "answers": [
+            "4",
+            "four"
+          ],
+          "distractors": [
+            "2",
+            "3",
+            "5"
+          ],
+          "label": "Champions League titles",
+          "sourceKey": "player-enrichment-cristiano-realmadrid",
+          "value": {
+            "kind": "number",
+            "display": "4",
+            "number": 4,
+            "unit": "Champions League titles"
+          },
+          "scope": "Cristiano Ronaldo's Real Madrid career, 2009–2018",
+          "evidence": "Official source excerpt: “4 Champions League”"
+        }
+      ]
+    },
+    {
+      "key": "lesson-player-arce-career-milestones",
+      "clubKey": "entity-xolos",
+      "subjectKey": "entity-arce",
+      "title": "Fernando Arce: From Irapuato to Tijuana",
+      "subtitle": "A long Mexican career brought him back to his hometown club",
+      "story": [
+        {
+          "title": "A first-division beginning",
+          "body": "Fernando Arce took his early youth steps at América, then made his Mexican first-division debut with Irapuato on 28 October 2000. After three seasons, he moved to Veracruz in the Verano 2002 tournament, where he became a regular starter."
+        },
+        {
+          "title": "International and club milestones",
+          "body": "Arce made his senior Mexico debut on 4 February 2003 and later played at the 2007 Gold Cup and Copa América. He joined Santos Laguna for Clausura 2008 and helped the club reach the final with a key semifinal goal against Monterrey. Later, his hometown team Club Tijuana signed him from Santos."
+        }
+      ],
+      "facts": [
+        {
+          "key": "arce-first-division-debut-club",
+          "prompt": "Which club gave Fernando Arce his first-division debut?",
+          "answers": [
+            "Irapuato",
+            "Irapuato FC",
+            "Club Deportivo Irapuato"
+          ],
+          "distractors": [
+            "Veracruz",
+            "Club América",
+            "Atlante"
+          ],
+          "label": "First-division debut club",
+          "sourceKey": "player-enrichment-arce-xolos-profile",
+          "value": {
+            "kind": "entity",
+            "display": "Irapuato",
+            "entityKey": "entity-irapuato"
+          },
+          "scope": "Fernando Arce's Mexican Primera División debut; 28 October 2000",
+          "evidence": "Club profile excerpt: “el Irapuato FC”; first-division debut dated 28 October 2000."
+        },
+        {
+          "key": "arce-veracruz-transfer",
+          "prompt": "Which club did Arce join in Verano 2002 after three seasons at Irapuato?",
+          "answers": [
+            "Veracruz",
+            "Tiburones Rojos de Veracruz",
+            "CD Veracruz"
+          ],
+          "distractors": [
+            "Atlante",
+            "Club Tijuana",
+            "Santos Laguna"
+          ],
+          "label": "Club joined in Verano 2002",
+          "sourceKey": "player-enrichment-arce-xolos-profile",
+          "value": {
+            "kind": "entity",
+            "display": "Veracruz",
+            "entityKey": "entity-veracruz"
+          },
+          "scope": "Fernando Arce's club career; Verano 2002",
+          "evidence": "Club profile excerpt: “Veracruz en el Verano 2002”."
+        },
+        {
+          "key": "arce-mexico-debut-year",
+          "prompt": "In which year did Fernando Arce make his senior Mexico debut?",
+          "answers": [
+            "2003",
+            "two thousand three",
+            "two thousand and three"
+          ],
+          "distractors": [
+            "2000",
+            "2004",
+            "2007"
+          ],
+          "label": "Senior Mexico debut year",
+          "sourceKey": "player-enrichment-arce-xolos-profile",
+          "value": {
+            "kind": "number",
+            "display": "2003",
+            "number": 2003,
+            "unit": "year"
+          },
+          "scope": "Fernando Arce's senior Mexico national-team debut",
+          "evidence": "Club profile excerpt: “Debutó el 4 de febrero de 2003”."
+        }
+      ]
+    },
+    {
+      "key": "lesson-player-riascos-tijuana-and-beyond",
+      "clubKey": "entity-xolos",
+      "subjectKey": "entity-riascos",
+      "title": "Duvier Riascos: Goals across continents",
+      "subtitle": "A Colombian forward built a career in South America, China, and Mexico",
+      "story": [
+        {
+          "title": "A career starts in Colombia",
+          "body": "Duvier Riascos began his professional career with América de Cali in 2005. His path later crossed into China, where he won the 2010 Chinese Super League scoring title while representing Shanghai Shenhua. The club’s signing profile celebrates the scoring crown as one of his standout individual achievements."
+        },
+        {
+          "title": "A chapter in Tijuana",
+          "body": "After playing for Puebla in Apertura 2011, Riascos joined Club Tijuana for Clausura 2012. A 2019 Xolos retrospective recalls him as one of the club’s title-era figures and credits him with 23 goals in 65 matches for the team. It describes a career that continued after his Tijuana spell, including a move to Universidad Católica in 2019."
+        }
+      ],
+      "facts": [
+        {
+          "key": "riascos-professional-debut-club",
+          "prompt": "Which club did Riascos represent when he began his professional career in 2005?",
+          "answers": [
+            "América de Cali",
+            "America de Cali",
+            "América Cali",
+            "America Cali"
+          ],
+          "distractors": [
+            "Puebla",
+            "Club Tijuana",
+            "Santos Laguna"
+          ],
+          "label": "Professional debut club",
+          "sourceKey": "player-enrichment-riascos-xolos-signing",
+          "value": {
+            "kind": "entity",
+            "display": "América de Cali",
+            "entityKey": "entity-america-de-cali"
+          },
+          "scope": "Duvier Riascos professional career; 2005 debut, per Club Tijuana profile",
+          "evidence": "Signing profile excerpts: “Año del debut: 2005”; “Club del debut: América de Cali”."
+        },
+        {
+          "key": "riascos-china-scoring-title-club",
+          "prompt": "Which club did Riascos represent when he won the 2010 Chinese Super League scoring title?",
+          "answers": [
+            "Shanghai Shenhua",
+            "Shanghai Shenhua FC"
+          ],
+          "distractors": [
+            "América de Cali",
+            "Puebla",
+            "Club Tijuana"
+          ],
+          "label": "Club for Chinese scoring title",
+          "sourceKey": "player-enrichment-riascos-xolos-signing",
+          "value": {
+            "kind": "entity",
+            "display": "Shanghai Shenhua",
+            "entityKey": "entity-shanghai-shenhua"
+          },
+          "scope": "Duvier Riascos; 2010 Chinese Super League top-scorer honor",
+          "evidence": "The signing profile names “Shanghai Shenhua FC” in its description of the 2010 scoring title."
+        },
+        {
+          "key": "riascos-xolos-goals-total",
+          "prompt": "How many goals did a 2019 Xolos retrospective credit Riascos with for Club Tijuana?",
+          "answers": [
+            "23",
+            "twenty-three",
+            "twenty three"
+          ],
+          "distractors": [
+            "16",
+            "24",
+            "31"
+          ],
+          "label": "Goals in Xolos retrospective",
+          "sourceKey": "player-enrichment-riascos-xolos-retrospective",
+          "value": {
+            "kind": "number",
+            "display": "23",
+            "number": 23,
+            "unit": "goals"
+          },
+          "scope": "Duvier Riascos’s Club Tijuana spell, as recorded in a 17 March 2019 club retrospective",
+          "evidence": "Official source excerpt: “Marcó 23 goles en 65 partidos”"
+        }
+      ]
+    }
+  ],
+  "entities": [
+    {
+      "id": "466d4f14-d18c-545e-acce-a2545249b62b",
+      "key": "entity-irapuato",
+      "type": "club",
+      "name": "Irapuato",
+      "aliases": [
+        "Irapuato FC",
+        "Club Deportivo Irapuato"
+      ],
+      "visual": "IR",
+      "externalRefs": {},
+      "imageAsset": "entity-irapuato"
+    },
+    {
+      "id": "951b0baa-7818-5972-af94-e52d2aa6ebdd",
+      "key": "entity-veracruz",
+      "type": "club",
+      "name": "Veracruz",
+      "aliases": [
+        "Tiburones Rojos de Veracruz",
+        "CD Veracruz"
+      ],
+      "visual": "VE",
+      "externalRefs": {},
+      "imageAsset": "entity-veracruz"
+    },
+    {
+      "id": "a5703da5-98b4-55d8-88ec-57538a17f332",
+      "key": "entity-america-de-cali",
+      "type": "club",
+      "name": "América de Cali",
+      "aliases": [
+        "America de Cali",
+        "América Cali",
+        "America Cali"
+      ],
+      "visual": "AC",
+      "externalRefs": {},
+      "imageAsset": "entity-america-de-cali"
+    },
+    {
+      "id": "c69379bc-9fd5-5511-8c54-6eb8ab45b908",
+      "key": "entity-shanghai-shenhua",
+      "type": "club",
+      "name": "Shanghai Shenhua",
+      "aliases": [
+        "Shanghai Shenhua FC"
+      ],
+      "visual": "SS",
+      "externalRefs": {},
+      "imageAsset": "entity-shanghai-shenhua"
+    }
+  ]
+}

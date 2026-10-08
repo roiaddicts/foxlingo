@@ -125,6 +125,7 @@ pack['relationships'] = graph['relationships']
 pack['roadmaps'] += json.loads((ROOT/'content/player-roadmaps.json').read_text())
 from merge_favorites import merge as merge_favorites
 merge_favorites(pack)
+merge_favorites(pack,'content/player-enrichment.json')
 # Artwork-only subjects and aliases resolve every authored club/player answer.
 # Seed namespaces are kept explicit; these subjects add no career claims or cards.
 pack['entities'] += [
@@ -135,7 +136,7 @@ for key,aliases in {'entity-leon':['León','Leon'], 'entity-pumas':['Pumas'], 'e
  entity['aliases']=list(dict.fromkeys(entity['aliases']+aliases))
 from merge_competitions import merge as merge_competitions
 merge_competitions(pack)
-pack['contentVersion']=7
+pack['contentVersion']=8
 # Promote explicitly authored country values into canonical targets. Preserve
 # fact/objective IDs, wording, scope and revision: the taught claim is unchanged.
 flags=json.loads((ROOT/'content/country-artwork.json').read_text())

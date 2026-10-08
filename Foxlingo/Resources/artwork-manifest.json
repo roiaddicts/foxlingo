@@ -743,5 +743,29 @@
     "asset": "flag-chile",
     "url": "https://futbol-11.com/media/flags/34c.webp",
     "cached": true
+  },
+  {
+    "asset": "entity-irapuato",
+    "url": "https://www.clubdeportivoirapuato.com/_next/image?q=75&url=https%3A%2F%2Fsincere-horses-e580bd091e.media.strapiapp.com%2Fimage_Editado_6e511e6668.png&w=1200",
+    "cached": true,
+    "sourceURL": "https://www.clubdeportivoirapuato.com/"
+  },
+  {
+    "asset": "entity-veracruz",
+    "url": "https://upload.wikimedia.org/wikipedia/fr/thumb/3/3c/CD_Veracruz_%28logo%29.svg/500px-CD_Veracruz_%28logo%29.svg.png",
+    "cached": true,
+    "sourceURL": "https://fr.wikipedia.org/wiki/Fichier:CD_Veracruz_(logo).svg"
+  },
+  {
+    "asset": "entity-america-de-cali",
+    "url": "https://www.americadecali.com/cdn/shop/files/escudo-america-1024x563_1.jpg?v=1714678523&width=1200",
+    "cached": true,
+    "sourceURL": "https://www.americadecali.com/pages/identidad"
+  },
+  {
+    "asset": "entity-shanghai-shenhua",
+    "url": "https://assets.the-afc.com/Corporate_Page/Technical/Technical_Reports/AFC-Champions-League-Elite-2024-25-Technical-Report.pdf",
+    "cached": true,
+    "sourceURL": "https://assets.the-afc.com/Corporate_Page/Technical/Technical_Reports/AFC-Champions-League-Elite-2024-25-Technical-Report.pdf"
   }
 ]

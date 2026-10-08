@@ -4,8 +4,9 @@ import json,uuid
 ROOT=Path(__file__).resolve().parents[1]
 NS=uuid.UUID('37ac373c-bf94-43fa-bf40-bfa0283391a3')
 def uid(key):return str(uuid.uuid5(NS,key))
-def merge(pack):
- data=json.loads((ROOT/'content/favorites-enrichment.json').read_text())
+def merge(pack,content_path='content/favorites-enrichment.json'):
+ data=json.loads((ROOT/content_path).read_text())
+ pack['entities'].extend(data.get('entities',[]))
  pack['sources'].extend(data['sources'])
  for draft in data['lessons']:
   subject=next(e for e in pack['entities'] if e['key']==draft['subjectKey'])
@@ -14,7 +15,9 @@ def merge(pack):
   for row in draft['facts']:
    fk='fact-enrichment-'+row['key'];ok='objective-enrichment-'+row['key']
    value=dict(row['value'])
-   if value['kind']=='entity':value['entityID']=next(e['id'] for e in pack['entities'] if e['key']==value.pop('entityKey'))
+   if value['kind']=='entity':
+    entity_key=value.pop('entityKey')
+    value['entityID']=next(e['id'] for e in pack['entities'] if e['key']==entity_key)
    pack['facts'].append(dict(id=uid(fk),key=fk,subjectID=subject['id'],predicate=row['key'],value=value,scope=row['scope'],sourceKeys=[row['sourceKey']],evidence=row['evidence']))
    pack['objectives'].append(dict(id=uid(ok),key=ok,factIDs=[uid(fk)],prompt=row['prompt'],answers=row['answers'],feedback=f"{row['label']}: {value['display']}. Context: {row['scope']}.",revision=1))
    objective_ids.append(uid(ok))
@@ -25,7 +28,7 @@ def merge(pack):
   lesson=dict(id=uid(draft['key']),key=draft['key'],title=draft['title'],subtitle=draft['subtitle'],story=draft['story'],objectiveIDs=objective_ids,exerciseIDs=exercises)
   pack['lessons'].append(lesson)
   for roadmap in pack['roadmaps']:
-   if roadmap.get('subjectID',roadmap['clubID']) in {subject['id'],club['id']}:
+   if (roadmap.get('subjectID') or roadmap.get('clubID')) in {subject['id'],club['id']}:
     # Favorite club paths include all their deeper stories; player paths include
     # only their own new knowledge, leaving optional club context untouched.
     chapter=next((c for c in roadmap['chapters'] if c['key'].endswith('-deeper-stories')),None)
@@ -33,4 +36,4 @@ def merge(pack):
      chapter=dict(key=roadmap['key']+'-deeper-stories',title='Deeper stories',lessonIDs=[]);roadmap['chapters'].append(chapter)
     chapter['lessonIDs'].append(lesson['id'])
   card=next(c for c in pack['cards'] if c['entityID']==subject['id'])
-  card['lessonIDs'].append(lesson['id']);card['objectiveIDs'].extend(objective_ids);card['knowledgeVersion']=2
+  card['lessonIDs'].append(lesson['id']);card['objectiveIDs'].extend(objective_ids);card['knowledgeVersion']=card['knowledgeVersion']+1

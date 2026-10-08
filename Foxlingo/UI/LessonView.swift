@@ -17,12 +17,16 @@ struct LessonView: View {
     var activities: [Exercise] { guard let pack=model.pack else {return []};return lesson.exerciseIDs.map(pack.exercise).filter {$0.kind == "choice"} }
     var exercise: Exercise? { let index=resume.step-2;return activities.indices.contains(index) ? activities[index] : nil }
     var body: some View {
+        ScrollViewReader {proxy in
         ScrollView {
             VStack(alignment:.leading,spacing:24) {
                 if completed {
                     result
                 } else {
                     ProgressView(value:Double(resume.step),total:Double(2+activities.count)).tint(Palette.brand).accessibilityLabel("Lesson progress, \(resume.step) of \(2+activities.count) steps")
+                    if let subject=lessonSubject {
+                        HStack(alignment:.top,spacing:12) {ClubMark(club:subject,size:48);Text(subject.name).font(.subheadline.bold()).foregroundStyle(Palette.muted).accessibilityIdentifier("lesson-subject")}
+                    }
                     Eyebrow(text:resume.step < 2 ? "The story" : "Try it out")
                     if resume.step < 2 {
                         let page=lesson.story[resume.step]
@@ -46,11 +50,19 @@ struct LessonView: View {
                     if resume.step >= 2+activities.count {PrimaryButton(title:"Finish lesson") {advance()}.accessibilityIdentifier("finish-lesson")}
                     NavigationLink { LessonSources(lesson:lesson) } label:{Label("Sources & context",systemImage:"text.book.closed").font(.footnote)}
                 }
-            }.padding(24)
+            }.padding(24).id("lesson-top")
+        }
+        .onChange(of:resume.step) {_,_ in proxy.scrollTo("lesson-top",anchor:.top)}
+        .onChange(of:completed) {_,_ in proxy.scrollTo("lesson-top",anchor:.top)}
         }.journal().navigationTitle(lesson.title).navigationBarTitleDisplayMode(.inline)
         .toolbar { ToolbarItem(placement:.topBarLeading) { Button { persist(); dismiss() } label:{Image(systemName:"xmark")}.accessibilityLabel("Close lesson") } }
         .onAppear { if !loaded { resume=model.state.resumes[lesson.id] ?? LessonResume(); loaded=true; prepare() } }
         .onDisappear { if loaded && !completed { persist() } }
+    }
+    private var lessonSubject: Entity? {
+        guard let pack=model.pack,let objectiveID=lesson.objectiveIDs.first,let factID=pack.objective(objectiveID).factIDs.first,let fact=pack.facts.first(where:{$0.id == factID}) else {return nil}
+        let subject=pack.entity(fact.subjectID)
+        return subject.imageAsset != nil && ["club","player","competition"].contains(subject.type) ? subject : nil
     }
     private func prepare() {
         feedback=nil; correct=false; choiceAnswered=false; retries=0

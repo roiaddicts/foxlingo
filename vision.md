@@ -269,3 +269,7 @@ The visual identity uses Fox navy `#002D56` as its primary color across the app,
 ### Competition foundations implementation
 
 The first independent competition paths are Champions League, Bundesliga and Liga MX: three lessons each for origins, format history and a defining moment. Each introduces nine scoped memories and a collectible card. Optional Madrid, Bayern and Xolos context shares existing canonical lessons. The chooser searches clubs, players and competitions; competition cards have their own collection. This is a foundation, not full era, rivalry, record or current-season coverage. More lessons and richer player roadmaps remain part of the full vision.
+
+### Player career foundations implementation
+
+Cristiano, Arce and Riascos now have two required lessons each, including scoring records or career milestones. Their new lessons share progress with Madrid and Xolos, use explicit historical/source scopes and cached career-club badges, and expand each player card's versioned knowledge set to six memories. Player portraits anchor lesson screens. Ramos and Casillas also have six-memory paths; Saucedo has three. These are career foundations, with broader timelines, award editions, richer dated statistics and current-season coverage still to build.

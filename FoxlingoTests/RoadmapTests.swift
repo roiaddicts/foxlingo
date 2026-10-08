@@ -11,10 +11,10 @@ final class RoadmapTests: XCTestCase {
     func roadmap(_ key:String) -> Roadmap {pack.roadmaps.first {$0.key == key}!}
     func testSixPlayerStartersUseSharedCanonicalLessonsAndOptionalContext() {
         XCTAssertEqual(pack.clubRoadmaps.count,68);XCTAssertEqual(pack.playerRoadmaps.count,6)
-        XCTAssertEqual(pack.lessons.count,91);XCTAssertEqual(pack.objectives.count,272);XCTAssertEqual(pack.cards.count,77)
+        XCTAssertEqual(pack.lessons.count,94);XCTAssertEqual(pack.objectives.count,281);XCTAssertEqual(pack.cards.count,77)
         for path in pack.playerRoadmaps {
             let progress=RoadmapProgress.make(roadmap:path,pack:pack,state:LearnerState())
-            let deeper=["roadmap-player-ramos","roadmap-player-casillas"].contains(path.key)
+            let deeper=path.key != "roadmap-player-saucedo"
             XCTAssertEqual(progress.requiredLessonIDs.count,deeper ? 2 : 1);XCTAssertEqual(progress.optionalLessonIDs.count,1)
             XCTAssertEqual(progress.requiredObjectiveIDs.count,deeper ? 6 : 3)
             XCTAssertTrue(path.chapters.first {$0.isOptional == true}!.note!.contains("player-specific"))
@@ -82,7 +82,7 @@ final class RoadmapTests: XCTestCase {
         json["roadmaps"]=all.filter {$0["subjectID"] != nil}+all.filter {$0["subjectID"] == nil}
         let reordered=try ContentPack.load(JSONSerialization.data(withJSONObject:json))
         let coverage=try CoverageStudyPack.make(pack:reordered,firstID:roadmap("roadmap-xolos").clubID!,secondID:roadmap("roadmap-madrid").clubID!)
-        XCTAssertEqual(coverage.first.lessonIDs.count,7);XCTAssertEqual(coverage.second.lessonIDs.count,9)
+        XCTAssertEqual(coverage.first.lessonIDs.count,9);XCTAssertEqual(coverage.second.lessonIDs.count,10)
         let album=AlbumCollection.make(pack:reordered,state:LearnerState(),scope:.all,discoveredOnly:false,query:"")
         XCTAssertEqual(album.total,77);XCTAssertEqual(album.sections.count,71)
         var state=LearnerState();state.selectClub(roadmap("roadmap-madrid").clubID!)

@@ -1,0 +1,46 @@
+[
+  {
+    "key": "entity-irapuato",
+    "status": "cached-and-checked",
+    "sourceURL": "https://www.clubdeportivoirapuato.com/",
+    "imageURL": "https://www.clubdeportivoirapuato.com/_next/image?q=75&url=https%3A%2F%2Fsincere-horses-e580bd091e.media.strapiapp.com%2Fimage_Editado_6e511e6668.png&w=1200",
+    "credit": "Club Deportivo Irapuato, official site",
+    "license": "Club identity mark; the official site reserves rights. Obtain permission before publication or redistribution.",
+    "scope": "Current official-site badge used illustratively; not asserted to be the badge used during Fernando Arce's 2000 debut.",
+    "assetPath": "Foxlingo/Resources/Assets.xcassets/entity-irapuato.imageset/image.png",
+    "bitmapCheck": "Downloaded successfully; decoded as PNG (298 × 320); visually inspected."
+  },
+  {
+    "key": "entity-veracruz",
+    "status": "cached-and-checked",
+    "sourceURL": "https://fr.wikipedia.org/wiki/Fichier:CD_Veracruz_(logo).svg",
+    "imageURL": "https://upload.wikimedia.org/wikipedia/fr/thumb/3/3c/CD_Veracruz_%28logo%29.svg/500px-CD_Veracruz_%28logo%29.svg.png",
+    "credit": "Club Deportivo Tiburones Rojos de Veracruz, via French Wikipedia/Wikimedia image hosting; file metadata identifies the club as author and cites its former official site http://www.tiburones-rojos.com/.",
+    "license": "The file page marks the artwork as a historical registered trademark (Marque déposée historique), not as freely licensed. Cached for the authorized personal prototype only; credit the club/source and seek permission before public distribution or publication.",
+    "scope": "Historical Club Deportivo Tiburones Rojos de Veracruz badge, matching the club named in the French Wikipedia infobox. Used illustratively for Fernando Arce’s Veracruz chapter; exact badge-period match is not established.",
+    "assetPath": "Foxlingo/Resources/Assets.xcassets/entity-veracruz.imageset/image.png",
+    "bitmapCheck": "Linked 500 × 500 PNG downloaded successfully, decoded and visually inspected; cached PNG is 320 × 320."
+  },
+  {
+    "key": "entity-america-de-cali",
+    "status": "cached-and-checked",
+    "sourceURL": "https://www.americadecali.com/pages/identidad",
+    "imageURL": "https://www.americadecali.com/cdn/shop/files/escudo-america-1024x563_1.jpg?v=1714678523&width=1200",
+    "credit": "América de Cali, official identity page",
+    "license": "Club identity mark; the official site reserves rights. Obtain permission before publication or redistribution.",
+    "scope": "Current América de Cali (Colombia) shield cropped from the club's official identity page; this is distinct from Club América (Mexico) and is illustrative of the 2005 career milestone, not era-exact.",
+    "assetPath": "Foxlingo/Resources/Assets.xcassets/entity-america-de-cali.imageset/image.png",
+    "bitmapCheck": "Downloaded successfully; decoded as PNG (320 × 320); visually inspected."
+  },
+  {
+    "key": "entity-shanghai-shenhua",
+    "status": "cached-and-checked",
+    "sourceURL": "https://assets.the-afc.com/Corporate_Page/Technical/Technical_Reports/AFC-Champions-League-Elite-2024-25-Technical-Report.pdf",
+    "imageURL": "https://assets.the-afc.com/Corporate_Page/Technical/Technical_Reports/AFC-Champions-League-Elite-2024-25-Technical-Report.pdf",
+    "credit": "Asian Football Confederation (AFC), AFC Champions League Elite 2024/25 Technical Report, club-mark page 3",
+    "license": "Club and AFC marks; rights and reuse terms are not granted by the report page. Obtain permission before publication or redistribution.",
+    "scope": "Shanghai Shenhua crest cropped from the AFC's 2024/25 competition report; current-period mark used illustratively, not asserted to be the badge used during Riascos's 2010 scoring title.",
+    "assetPath": "Foxlingo/Resources/Assets.xcassets/entity-shanghai-shenhua.imageset/image.png",
+    "bitmapCheck": "Official PDF downloaded; crest crop decoded as PNG (320 × 320); visually inspected."
+  }
+]

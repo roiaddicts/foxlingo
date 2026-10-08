@@ -64,7 +64,7 @@ final class AlbumTests: XCTestCase {
         state.reconcile(revised,now:now)
         XCTAssertEqual(state.tier(card),4)
         var readiness=CardReadiness.make(card:card,pack:revised,state:state,now:now)
-        XCTAssertEqual(readiness.refresh,1);XCTAssertEqual(readiness.introduced,2);XCTAssertNil(readiness.currentStage)
+        XCTAssertEqual(readiness.refresh,1);XCTAssertEqual(readiness.introduced,card.objectiveIDs.count-1);XCTAssertNil(readiness.currentStage)
         let o=revised.objective(id),due=state.reviews[id]!.due
         state.recordRecall(Attempt(objectiveID:id,answer:o.answers[0],correct:true,hinted:true,mode:"early",timestamp:due),objective:o)
         XCTAssertTrue(state.reviews[id]!.refreshRequired == true)
@@ -82,15 +82,15 @@ final class AlbumTests: XCTestCase {
         var cards=json["cards"] as! [[String:Any]]
         let index=cards.firstIndex {$0["key"] as! String == card.key}!
         cards[index]["objectiveIDs"]=card.objectiveIDs.map(\.uuidString)+[extra.id.uuidString]
-        cards[index]["knowledgeVersion"]=2;json["cards"]=cards
+        cards[index]["knowledgeVersion"]=card.knowledgeVersion+1;json["cards"]=cards
         let expanded=try ContentPack.load(JSONSerialization.data(withJSONObject:json))
         let updated=expanded.cards[index]
         state.reconcile(expanded,now:now);state.captureCardAchievements(expanded)
-        XCTAssertEqual(state.tier(updated),4);XCTAssertEqual(state.cardAchievements?[card.id]?.knowledgeVersion,1)
+        XCTAssertEqual(state.tier(updated),4);XCTAssertEqual(state.cardAchievements?[card.id]?.knowledgeVersion,card.knowledgeVersion)
         XCTAssertEqual(CardReadiness.make(card:updated,pack:expanded,state:state,now:now).missing,1)
         state.reviews[extra.id]=ReviewState(revision:extra.revision,stage:4,highestEarned:4,due:now,learnedAt:now)
         state.captureCardAchievements(expanded)
-        XCTAssertEqual(state.cardAchievements?[card.id]?.knowledgeVersion,2)
+        XCTAssertEqual(state.cardAchievements?[card.id]?.knowledgeVersion,card.knowledgeVersion+1)
     }
     func testLegacyDiamondDoesNotClaimARevisedSetVersion() throws {
         var state=LearnerState();let card=pack.cards.first {$0.key == "card-riascos"}!
