@@ -2,7 +2,7 @@
 
 An offline-first iPhone football-learning app with **68 club roadmaps**, **six player starters**, **78 JSON-authored lessons**, **74 collectible cards**, a small leopard companion, spaced reviews, and forgiving streaks. Xolos and Real Madrid keep their deeper six-lesson courses; every other club has a three-fact introductory lesson.
 
-The catalog covers the **2026/27 Champions League league phase**, **2026/27 Bundesliga**, and **Liga MX Apertura 2026**, verified as snapshots on October 8, 2026. The Games tab offers **football bingo**, a **club × country grid**, **four classic Real Madrid lineup challenges**, and **Who am I?** with six sourced featured players.
+The catalog covers the **2026/27 Champions League league phase**, **2026/27 Bundesliga**, and **Liga MX Apertura 2026**, verified as snapshots on October 8, 2026. The Games tab offers **football bingo**, a **club × country grid**, **four classic Real Madrid lineup challenges**, **Who am I?** with six sourced featured players, **Memory match**, and illustrated **Football timelines** for Xolos and Madrid.
 
 ## Run on an iPhone simulator
 
@@ -102,3 +102,9 @@ Memory definitions live in `content/memory-pairs.json` and compile to `memory-en
 ### Sound assets
 
 **Settings → Assets → Sounds** previews all eight supplied clips. Correct lesson/recall answers use the success cue; small wins and setbacks belong to individual mini-game moves. Level-up celebrates completed sessions, new album cards and earned tier upgrades. Brief reveal/skip cues add touch feedback. The Sound toggle stops playback immediately and persists independently of haptics. Clips are bundled offline and respect Silent Mode and other audio. See `docs/assets.md` for the source folder and event mapping.
+
+### Football timelines
+
+Games → Football timeline rehearses the order of existing sourced milestones: Xolos's founding, promotion and first championship; Madrid's founding, first European Cup, Casillas debut and La Décima. Badges and portraits accompany the events. Move milestones with accessible earlier/later arrows, then check the whole sequence. Dates stay concealed until a correct check or an explicitly assisted reveal; the finished story exposes historical context and source links. Xolos is an introductory story rehearsal, not a difficult mastery assessment.
+
+Definitions live in `content/timeline-rounds.json` and compile to `timeline-en.json`. Chronology comes from canonical year/date facts, with ambiguous same-year events rejected. Player milestones require supported club affiliation and club context in the dated claim. Saved event order, moves, checks and session identity survive relaunch. Switching clubs or restarting asks before replacing an edited board; retired facts leave unaffected timelines available. Completed games credit activity once, never recall stages or card tiers. Reorder and date-reveal transitions respect Reduce Motion.

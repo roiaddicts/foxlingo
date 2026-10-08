@@ -154,3 +154,5 @@ print(f'{len(pack["lessons"])} lessons, {len(pack["objectives"])} unique objecti
 (ROOT/'Foxlingo/Resources/mystery-en.json').write_text((ROOT/'content/mystery-rounds.json').read_text())
 
 (ROOT/"Foxlingo/Resources/memory-en.json").write_text((ROOT/"content/memory-pairs.json").read_text())
+
+(ROOT/"Foxlingo/Resources/timeline-en.json").write_text((ROOT/"content/timeline-rounds.json").read_text())

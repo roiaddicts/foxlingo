@@ -3,6 +3,8 @@ import SwiftUI
 @MainActor final class AppModel: ObservableObject {
     @Published var pack: ContentPack?
     @Published var state = LearnerState()
+    @Published var timelines: [TimelineRound] = []
+    @Published var timelineError: String?
     @Published var memoryPairs: [MemoryGamePair] = []
     @Published var mysteries: [MysteryRound] = []
     @Published var games: GamePack?
@@ -73,6 +75,14 @@ import SwiftUI
         }
         if let pack,let url=Bundle.main.url(forResource:"memory-en",withExtension:"json"),let data=try? Data(contentsOf:url) {
             memoryPairs=(try? MemoryGameDeck.load(data,pack:pack)) ?? []
+        }
+        if let pack {
+            do {
+                guard let url=Bundle.main.url(forResource:"timeline-en",withExtension:"json") else {throw ContentError.invalid("Timeline content is missing.")}
+                let data=try Data(contentsOf:url)
+                timelines=try TimelineDeck.load(data,pack:pack)
+                if timelines.count < (try JSONDecoder().decode([TimelineDefinition].self,from:data)).count {timelineError="Some stories need refreshed evidence. Available timelines are ready to play."}
+            } catch {timelineError=error.localizedDescription}
         }
         do {
             let restored = try store.loadWithNotice()

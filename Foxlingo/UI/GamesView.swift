@@ -14,6 +14,16 @@ struct GamesHome: View {
             VStack(alignment:.leading,spacing:22) {
                 HStack {VStack(alignment:.leading,spacing:8) {Eyebrow(text:"The training ground");Text("Play with football").font(.largeTitle.bold())};Spacer();Leopard().frame(width:70,height:80)}
                 Text("Different ways to connect the names you know. No timer. Try, learn, and try again.").foregroundStyle(Palette.muted)
+                if !model.timelines.isEmpty {
+                    NavigationLink {TimelineGameView(rounds:model.timelines)} label: {
+                        HStack(spacing:16) {
+                            ZStack {ClubMark(club:model.timelines[0].subject,size:38).offset(x:-8,y:-7);ClubMark(club:model.timelines.last!.subject,size:38).offset(x:8,y:10)}.frame(width:50,height:60).accessibilityHidden(true)
+                            VStack(alignment:.leading,spacing:6) {Text("Football timeline").font(.title3.bold());Text(model.state.savedGame("timeline") != nil ? "Continue your saved milestones." : "Arrange the moments. Reveal the story.").font(.subheadline).foregroundStyle(Palette.muted)}
+                            Spacer();Image(systemName:"chevron.right")
+                        }.padding(18).background(.white.opacity(0.8),in:RoundedRectangle(cornerRadius:20))
+                    }.buttonStyle(PressFeedback()).accessibilityIdentifier("game-timeline")
+                }
+                if let error=model.timelineError {Text("Timeline content: "+error).font(.footnote).foregroundStyle(Palette.muted)}
                 if !model.memoryPairs.isEmpty {
                     NavigationLink {MemoryGameView(pairs:model.memoryPairs)} label: {
                         HStack(spacing:16) {Image(systemName:"rectangle.on.rectangle.angled").font(.title2).frame(width:50,height:60).foregroundStyle(Palette.brand);VStack(alignment:.leading,spacing:6) {Text("Memory match").font(.title3.bold());Text(model.state.savedGame("memory") != nil ? "Continue your saved pairs." : "16 cards. Faces, badges, names and stats.").font(.subheadline).foregroundStyle(Palette.muted)};Spacer();Image(systemName:"chevron.right")}.padding(18).background(.white.opacity(0.8),in:RoundedRectangle(cornerRadius:20))

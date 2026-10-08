@@ -10,7 +10,11 @@ app_group=p.main_group.new_group('Foxlingo','Foxlingo')
  Dir.glob(File.join(root,'Foxlingo',dir,'*.swift')).sort.each {|file|app.add_file_references([g.new_file(File.basename(file))])}
 end
 resources=app_group.new_group('Resources','Resources')
-['starter-en.json','games-en.json','mystery-en.json','Assets.xcassets'].each {|file|app.resources_build_phase.add_file_reference(resources.new_file(file))}
+['starter-en.json','games-en.json','mystery-en.json','memory-en.json','timeline-en.json','Sounds','Assets.xcassets'].each do |file|
+ ref=resources.new_file(file)
+ ref.last_known_file_type='folder' if file == 'Sounds'
+ app.resources_build_phase.add_file_reference(ref)
+end
 utg=p.main_group.new_group('FoxlingoUITests','FoxlingoUITests')
 Dir.glob(File.join(root,'FoxlingoUITests','*.swift')).each {|file|ui.add_file_references([utg.new_file(File.basename(file))])}
 [app,ui].each do |target|

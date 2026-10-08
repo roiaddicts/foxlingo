@@ -167,3 +167,13 @@ The final optimized Release build passes with the regenerated mascot and package
 ## Icon bottom-edge repair
 
 The regenerated icon foreground extends the shoulders and cream belly through the bottom edge. The finished icon was visually inspected: no navy strip remains below the torso. Read-only pixel checks confirm an opaque 1024×1024 RGB PNG, exact (0,45,86) top corners, and uninterrupted mascot pixels along the lower center through the last row. The optimized iOS Simulator Release build passes. No application logic changed.
+
+## Illustrated football timelines
+
+Two JSON-authored boards rehearse existing sourced chronology: three Xolos milestones and four Real Madrid milestones. Canonical year/date facts provide ordering; the game does not infer dates from text captions. Club mismatch, absent player club context, non-year numbers, impossible calendar dates, duplicate events/facts and tied years are rejected. Retired facts leave unaffected rounds available. The starter shuffle never begins solved. Dates/source context remain concealed until correct completion or an explicitly assisted reveal.
+
+124 core tests pass, including seven timeline tests covering chronology, safe move bounds, wrong-order save restoration, session identity, once-only activity credit, content compatibility, and preservation of learning state. A subsequent focused seven-test run also passes after normalizing authored event order in the fingerprint. Artwork/source-title changes and event-array reordering preserve a board; changed date values invalidate it. Timeline completion leaves recall stages, due dates and card acquisition untouched.
+
+Two focused iPhone simulator scenarios pass: wrong checks, concealed dates, reorder/relaunch restoration, restart cancellation, independent completion, source context, club switching, assisted-reveal cancellation, replay and the largest accessibility text size. Exported standard and large-text screenshots were inspected. Decorative step numerals were given a fixed size after inspection to prevent overflow, while event text remains scalable. Move controls expose current positions and announce their new position after moving. Reorder springs and date-reveal transitions honor Reduce Motion; physical VoiceOver and system Reduce Motion were not manually exercised.
+
+The final optimized Release build succeeds, including the decorative numeral and disabled-arrow refinements. Authored and bundled timeline JSON are byte-identical. The final simulator build is installed with ordinary learner progress preserved.
