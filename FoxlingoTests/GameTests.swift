@@ -23,6 +23,33 @@ final class GameTests: XCTestCase {
         XCTAssertEqual(games.player("classic-player-77")?.name,"Iker Casillas")
         XCTAssertEqual(games.player("classic-player-77")?.imageAsset,"seed-player-53")
     }
+    func testCurrentCatalogPreservesReusedIdentitiesAndExposesNewRecords() {
+        XCTAssertEqual(games.player("player-2229")?.name,"Hannibal Mejbri")
+        XCTAssertEqual(games.player("current-player-2229")?.name,"Dwight Gayle")
+        XCTAssertEqual(games.player("player-2230")?.name,"Mattia Perin")
+        XCTAssertEqual(games.player("current-player-2230")?.name,"Gerd Muller")
+        XCTAssertTrue(games.connectionPlayers.contains {$0.id == "current-player-5"})
+        XCTAssertFalse(games.squadPlayers.contains {$0.id == "current-player-5"})
+        XCTAssertTrue(games.gridCandidates(row:1,column:1).contains("current-player-5"))
+        XCTAssertEqual(games.player("current-player-5")?.imageAsset,"seed-current-player-5")
+        XCTAssertEqual(games.connectionPlayers.count,3491)
+        XCTAssertFalse(games.connectionPlayers.contains {$0.id == "player-5" || $0.id == "player-518"})
+        XCTAssertTrue(games.sourceURL.contains("futbol11.com"))
+        // Liverpool uses category 4 and source group 6; matching raw integers
+        // would incorrectly put these imported records in Tottenham's category.
+        XCTAssertTrue(games.category("category-4")!.playerIDs.contains("player-2353"))
+        XCTAssertFalse(games.category("category-6")!.playerIDs.contains("player-2353"))
+    }
+    func testActiveCatalogIsOptionalForOlderPacksAndRejectsHiddenCandidates() throws {
+        var json=try JSONSerialization.jsonObject(with:JSONEncoder().encode(games)) as! [String:Any]
+        json.removeValue(forKey:"activeConnectionPlayerIDs")
+        let older=try GamePack.load(JSONSerialization.data(withJSONObject:json))
+        XCTAssertTrue(older.connectionPlayers.contains {$0.id == "player-5"})
+        for ids in [["missing"],["classic-player-77"],["player-1","player-1"],["player-1"]] {
+            json["activeConnectionPlayerIDs"]=ids
+            XCTAssertThrowsError(try GamePack.load(JSONSerialization.data(withJSONObject:json)))
+        }
+    }
     func testEveryGameHasDistinctPlayerSolution() {
         let boards=[games.bingoCategoryIDs.map {Set(games.category($0)!.playerIDs)},(0..<9).map{games.gridCandidates(row:$0/3,column:$0%3)}]+games.lineups.map{s in (0..<11).map(s.candidates)}
         for board in boards {

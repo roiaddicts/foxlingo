@@ -86,7 +86,7 @@ struct FootballWordleView: View {
         } else {model.playSound(.reveal);persist()}
     }
     private func begin() {
-        let eligible=pack.players.filter {$0.id.hasPrefix("player-") && !FootballWordle.names($0).isEmpty}
+        let eligible=pack.connectionPlayers.filter {!FootballWordle.names($0).isEmpty}
         #if DEBUG
         let selected=ProcessInfo.processInfo.arguments.contains("-ui-testing") ? eligible.first {$0.name == "Lionel Messi"} ?? eligible[0] : eligible.randomElement()!
         #else

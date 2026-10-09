@@ -13,6 +13,9 @@ for key in ['arce','riascos','saucedo']:
 for n in [1,9,53,57,12,56,76,79,83,103,210,28,18,54,58,74,86,128,129,145,165,173,176,187,198,212,223,230,242,251,258,261,278,285,291,303,310,326,352,358,365,402,434,461,498,512,1512]:
  player=next((x for x in p['players'] if x['id']==f'player-{n}'),None)
  if player and player.get('imageURL'):urls[f'seed-player-{n}']=player['imageURL']
+for player in p['players']:
+ if player['id'].startswith('current-player-') and player.get('imageURL'):
+  urls[player['imageAsset']]=player['imageURL']
 # Retain the exact source-to-entity linkage; no ID joins across namespaces.
 for key,n in [('cristiano',1),('casillas',53),('ramos',57),('di-stefano',1512),('bale',9)]:urls['entity-'+key]=urls[f'seed-player-{n}']
 # New authored players carry an explicit provider identity and reviewed portrait source.
@@ -38,12 +41,17 @@ for squad in p['lineups']:
 countries=json.loads((ROOT/'content/country-artwork.json').read_text())
 for key in ['ecuador','spain','mexico','germany','brazil','portugal','argentina','france','england','colombia','austria','azerbaijan','belgium','czechia','greece','italy','netherlands','norway','slovakia','turkiye','ukraine','uruguay','chile']:
  c=countries[key];urls[c['imageAsset']]=c['imageURL']
+manifest_path=ROOT/'Foxlingo/Resources/artwork-manifest.json'
+previous_artwork={item['asset']:item for item in json.loads(manifest_path.read_text())} if manifest_path.exists() else {}
 def cache_image(item):
  name,url=item
  folder=ASSETS/(name+'.imageset');folder.mkdir(exist_ok=True)
  file=folder/'image.png'
  if file.exists() and (folder/'Contents.json').exists():
-  return dict(asset=name,url=url,cached=True)
+  cached=dict(previous_artwork.get(name,{}))
+  cached.update(asset=name,url=cached.get('url',url),cached=True)
+  if cached['url'] != url:cached['requestedURL']=url
+  return cached
  r=subprocess.run(['curl','-fsSL','--retry','2','--retry-delay','1','--max-time','20',url,'-o',str(file)],capture_output=True)
  if r.returncode or not file.exists():
   return dict(asset=name,url=url,cached=False)

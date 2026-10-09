@@ -46,6 +46,13 @@ public struct GamePack: Codable, Sendable {
     public let gridRowIDs: [String]
     public let gridColumnIDs: [String]
     public let lineups: [ClassicSquad]
+    public let activeConnectionPlayerIDs: [String]?
+    /// Connection games use the game-player catalog, including reviewed source namespaces.
+    public var connectionPlayers: [GamePlayer] {
+        let active=activeConnectionPlayerIDs.map(Set.init)
+        return players.filter {!$0.id.hasPrefix("classic-player-") && (active?.contains($0.id) ?? true)}
+    }
+    public var squadPlayers: [GamePlayer] {players.filter {$0.id.hasPrefix("classic-player-")}}
     public func player(_ id: String) -> GamePlayer? { players.first { $0.id == id } }
     public func category(_ id: String) -> GameCategory? { categories.first { $0.id == id } }
     public func gridCandidates(row: Int, column: Int) -> Set<String> {
@@ -58,6 +65,10 @@ public struct GamePack: Codable, Sendable {
     }
     public func validate() throws {
         let ids=Set(players.map(\.id)), cats=Set(categories.map(\.id))
+        if let active=activeConnectionPlayerIDs {
+            let activeIDs=Set(active)
+            guard !active.isEmpty,activeIDs.count == active.count,activeIDs.isSubset(of:ids),active.allSatisfy({!$0.hasPrefix("classic-player-")}),categories.allSatisfy({Set($0.playerIDs).isSubset(of:activeIDs)}) else {throw ContentError.invalid("Invalid active player catalog.")}
+        }
         guard schemaVersion == 1, ids.count == players.count, cats.count == categories.count,
               players.allSatisfy({ !$0.name.isEmpty && !$0.aliases.isEmpty }),
               categories.allSatisfy({ !$0.playerIDs.isEmpty && Set($0.playerIDs).isSubset(of:ids) }),

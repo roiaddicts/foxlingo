@@ -84,6 +84,17 @@ final class FlowTests: XCTestCase {
         choosePlayer("Dennis Bergkamp","dennis-bergkamp")
         XCTAssertTrue(app.staticTexts["roadmap-progress"].label.contains("0 of 2 starter lessons"))
     }
+    func testCurrentPlayerNamespaceCanBeSelectedAndResumed() {
+        start();tap("choose-XT");app.tabBars.buttons["Games"].tap();tap("game-grid");tap("game-cell-4")
+        let search=app.textFields["game-player-search"];search.tap();search.typeText("Neymar")
+        XCTAssertTrue(app.buttons["game-player-current-player-5"].isHittable)
+        XCTAssertFalse(app.buttons["game-player-player-5"].exists)
+        let choices=XCTAttachment(screenshot:app.screenshot());choices.name="Current player search above keyboard";choices.lifetime = .keepAlways;add(choices)
+        tap("game-player-current-player-5")
+        XCTAssertTrue(app.buttons["game-cell-4"].label.contains("Neymar Jr"))
+        app.terminate();start(reset:false);app.tabBars.buttons["Games"].tap();tap("game-grid")
+        XCTAssertTrue(app.buttons["game-cell-4"].label.contains("Neymar Jr"))
+    }
     func testSavedRoadmapsSeparateSelectionRemovalAndPersistence() {
         start();tap("choose-XT")
         XCTAssertEqual(app.buttons["active-toggle-roadmap-xolos"].value as? String,"Saved")

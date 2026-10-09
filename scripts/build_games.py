@@ -4,6 +4,7 @@ import json,re,unicodedata
 ROOT=Path(__file__).resolve().parents[1]
 import argparse
 from futbol11_source import extract, bind_roles, role_data
+from futbol11_identity import player_ids
 parser=argparse.ArgumentParser(description=__doc__)
 parser.add_argument('--snapshot',type=Path,help='Validated snapshot.json from refresh_futbol11.py')
 args=parser.parse_args()
@@ -22,11 +23,15 @@ else:
 scope='Historical relationships imported from the supplied Futbol11 bundle; snapshot date unknown. These games do not claim current squads or exhaustive career coverage.'
 # Role indexes below are internal compiler aliases, independent of source encounter order.
 D={1:roles['countries'],2:roles['gamePlayers'],27:roles['categories'],30:roles['classicPlayers'],31:roles['classicSquads']}
+previous_path=ROOT/'Foxlingo/Resources/games-en.json'
+previous=json.loads(previous_path.read_text()) if previous_path.exists() else dict(players=[],categories=[],lineups=[])
+overrides=json.loads((ROOT/'content/futbol11-current-player-namespaces.json').read_text())['overrides'] if args.snapshot and snapshot['schemaVersion']==2 else []
+resolved=player_ids(D[2],previous['players'],overrides)
 def name(p):return p.get('nickname') or ' '.join(filter(None,[p.get('firstName'),p.get('lastName')]))
 def norm(v):return ''.join(c for c in unicodedata.normalize('NFD',v.lower()) if not unicodedata.combining(c))
 def ints(v):return list(dict.fromkeys(int(x.strip()) for x in v.split(',') if x.strip()))
 def imageurl(v):return source_url+v if v.startswith('/') else v
-categories=[dict(id=f'category-{p["id"]}',title=p['title'],playerIDs=[f'player-{i}' for i in ints(p['players'])]) for p in D[27]]
+categories=[dict(id=f'category-{p["id"]}',title=p['title'],playerIDs=[resolved[i] for i in ints(p['players']) if resolved[i] is not None]) for p in D[27]]
 # Visual clues are content, so new boards can ship with their own badges and flags.
 club_visuals={1:('arsenal',52280),3:('manchester-united',52682),4:('liverpool',7889),5:('chelsea',52914),6:('tottenham',1652),8:('barcelona',50080),9:('madrid',50051),14:('bayern-munich',50037),15:('borussia-dortmund',52758)}
 flags={23:'Germany',24:'Brazil',28:'Portugal',30:'Spain'}
@@ -38,9 +43,25 @@ for c in categories:
  if i in flags:c.update(country_visuals[norm(flags[i])])
  elif i in club_visuals:
   key,uefa=club_visuals[i];c['imageAsset']='entity-'+key;c['imageURL']=f'https://img.uefa.com/imgml/TP/teams/logos/100x100/{uefa}.png'
-players=[dict(id=f'player-{p["id"]}',name=name(p),aliases=list(dict.fromkeys(filter(None,[name(p),' '.join(filter(None,[p.get('firstName'),p.get('lastName')]))]))),imageURL=imageurl(p['image']) if p.get('image') else None,imageAsset=f'seed-player-{p["id"]}') for p in D[2]]
+players=[dict(id=resolved[p['id']],name=name(p),aliases=list(dict.fromkeys(filter(None,[name(p),' '.join(filter(None,[p.get('firstName'),p.get('lastName')]))]))),imageURL=imageurl(p['image']) if p.get('image') else None,imageAsset='seed-'+resolved[p['id']]) for p in D[2] if resolved[p['id']] is not None]
+known_player_ids={p['id'] for p in players}
+players.extend(p for p in previous['players'] if p['id'] not in known_player_ids and not p['id'].startswith('classic-player-'))
+if args.snapshot and snapshot['schemaVersion']==2:
+ # The current Grid module explicitly unions bingo/grid memberships against
+ # gameGroups. Match each category's named criterion, never its integer ID:
+ # Liverpool is category 4 but group 6, for example.
+ for category in categories:
+  title=category['title'];is_club=title.startswith('Played for ');is_country=title.startswith('From ')
+  if not (is_club or is_country):continue
+  target=norm(title[11:] if is_club else title[5:])
+  groups=[g for g in roles['gameGroups'] if norm(g['name'])==target and (g['type'].startswith('club') if is_club else g['type'].startswith('country'))]
+  if len(groups)>1:raise ValueError('Ambiguous named membership group: '+title)
+  if not groups:continue
+  group=groups[0]['id']
+  added=[resolved[p['id']] for p in D[2] if resolved[p['id']] is not None and (group in ints(p.get('bingo','')) or group in ints(p.get('grid','')))]
+  category['playerIDs']=list(dict.fromkeys(category['playerIDs']+added))
 # Classic squads use a separate ID namespace. Portrait joins require the explicit preserved crosswalk.
-portraits={f'player-{p["id"]}':p for p in D[2]}
+portraits={p['id']:p for p in players}
 crosswalk={r['classicID']:r for r in json.loads((ROOT/'content/classic-portrait-crosswalk.json').read_text())}
 classic={p['id']:p for p in D[30]};lineups=[]
 ordered=sorted(D[31],key=lambda s:([35,36,37,38].index(s['id']) if s['id'] in [35,36,37,38] else 4+s['id']))
@@ -48,10 +69,12 @@ for squad in ordered:
  members=[]
  for i in ints(squad['players']):
   p=classic[i];pid=f'classic-player-{i}';link=crosswalk.get(pid);photo=portraits.get(link['portraitID']) if link else None
-  if link and (norm(name(p)) != norm(link['classicName']) or photo is None or norm(name(photo)) != norm(link['portraitName'])):raise ValueError('Curated portrait identity changed: '+pid)
-  if not any(v['id']==pid for v in players):players.append(dict(id=pid,name=name(p),aliases=[name(p)],imageURL=imageurl(photo['image']) if photo and photo.get('image') else None,imageAsset=f'seed-player-{photo["id"]}' if photo else None))
+  if link and (norm(name(p)) != norm(link['classicName']) or photo is None or norm(photo['name']) != norm(link['portraitName'])):raise ValueError('Curated portrait identity changed: '+pid)
+  if not any(v['id']==pid for v in players):players.append(dict(id=pid,name=name(p),aliases=[name(p)],imageURL=photo.get('imageURL') if photo else None,imageAsset=photo.get('imageAsset') if photo else None))
   members.append(dict(playerID=pid,positions=[v.strip() for v in p['positions'].split(',') if v.strip()]))
  lineups.append(dict(id=f'lineup-{squad["id"]}',title=squad['name'].replace('Real M','Real Madrid'),imageAsset=f'classic-shirt-{squad["id"]}',clubName=squad['name'].rsplit(' ',1)[0].replace('Real M','Real Madrid'),imageURL=imageurl(squad['logo']),scope='Build a valid 4–3–3 using this historical season squad; this is not a particular match’s starting XI.',source=source,members=members,positions=['LW','ST','RW','CM','CM','CDM','LB','CB','CB','RB','GK']))
+known_player_ids={p['id'] for p in players}
+players.extend(p for p in previous['players'] if p['id'] not in known_player_ids)
 def solvable(squad):
  match={}
  def assign(slot,seen):
@@ -69,6 +92,7 @@ for squad in lineups:
   squad['scope']='Build a valid 4–3–1–2 from this historical season squad; this is a playable formation, not a claimed match starting XI.'
  if not solvable(squad):raise ValueError('No supported formation for '+squad['title'])
 pack=dict(schemaVersion=1,fetchedAt=fetched_at,scope=scope,sourceURL=source_url+'/',players=players,categories=categories,bingoCategoryIDs=[f'category-{i}' for i in [1,3,4,5,6,8,9,14,15,23,24,28]],gridRowIDs=[f'category-{i}' for i in [9,8,14]],gridColumnIDs=[f'category-{i}' for i in [30,24,23]],lineups=lineups)
+pack['activeConnectionPlayerIDs']=[target for target in resolved.values() if target is not None]
 known={p['id'] for p in players}
 for c in categories:
  if not set(c['playerIDs']).issubset(known):raise ValueError('Unresolved category members: '+c['id'])

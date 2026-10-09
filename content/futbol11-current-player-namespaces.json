@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 1,
+  "scope": "Explicit current-site game-player namespace overrides. These preserve prior records; they do not assert that renamed records represent the same person.",
+  "overrides": [
+    {
+      "providerID": 5,
+      "previousName": "Neymar",
+      "incomingName": "Neymar Jr",
+      "targetID": "current-player-5"
+    },
+    {
+      "providerID": 89,
+      "previousName": "Alexander Lacazette",
+      "incomingName": "Alexandre Lacazette",
+      "targetID": "current-player-89"
+    },
+    {
+      "providerID": 269,
+      "previousName": "Aaron Wan Bissaka",
+      "incomingName": "Aaron Wan-Bissaka",
+      "targetID": "current-player-269"
+    },
+    {
+      "providerID": 518,
+      "previousName": "Moussa Dembele",
+      "incomingName": "Mousa Dembele",
+      "targetID": "current-player-518",
+      "quarantined": true
+    },
+    {
+      "providerID": 681,
+      "previousName": "Diogo Demme",
+      "incomingName": "Diego Demme",
+      "targetID": "current-player-681"
+    },
+    {
+      "providerID": 820,
+      "previousName": "Savinho",
+      "incomingName": "Savio",
+      "targetID": "current-player-820"
+    },
+    {
+      "providerID": 1165,
+      "previousName": "Florentino Luis",
+      "incomingName": "Florentino",
+      "targetID": "current-player-1165"
+    },
+    {
+      "providerID": 1637,
+      "previousName": "Freddy Guarin",
+      "incomingName": "Fredy Guarin",
+      "targetID": "current-player-1637"
+    },
+    {
+      "providerID": 1872,
+      "previousName": "Tom Watson",
+      "incomingName": "Tommy Watson",
+      "targetID": "current-player-1872"
+    },
+    {
+      "providerID": 1937,
+      "previousName": "Heorhiy Sudakov",
+      "incomingName": "Georgiy Sudakov",
+      "targetID": "current-player-1937"
+    },
+    {
+      "providerID": 2229,
+      "previousName": "Hannibal Mejbri",
+      "incomingName": "Dwight Gayle",
+      "targetID": "current-player-2229"
+    },
+    {
+      "providerID": 2230,
+      "previousName": "Mattia Perin",
+      "incomingName": "Gerd Muller",
+      "targetID": "current-player-2230"
+    }
+  ]
+}

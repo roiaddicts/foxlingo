@@ -152,7 +152,7 @@ struct FootballGameView: View {
         .alert("Start a new board?",isPresented:$confirmRestart) {Button("Start a new board",role:.destructive) {reset()};Button("Keep playing",role:.cancel) {}} message:{Text("This clears this board’s connections. Your other games and learning progress stay saved.")}
         .sheet(isPresented:Binding(get:{selectedSlot != nil},set:{if !$0 {selectedSlot=nil}})) {
             if let slot=selectedSlot {
-                NavigationStack {PlayerAnswerSheet(players:game == .lineup ? pack.players.filter { $0.id.hasPrefix("classic-player-") } : pack.players.filter { $0.id.hasPrefix("player-") },title:game == .grid ? "Choose a player" : squad.positions[slot],clues:game == .grid ? [pack.category(pack.gridRowIDs[slot/3])!,pack.category(pack.gridColumnIDs[slot%3])!] : [],contextClubName:game == .lineup ? squad.clubName : nil,contextClubImageURL:game == .lineup ? squad.imageURL : nil,contextClubImageAsset:game == .lineup ? squad.imageAsset : nil,contextTitle:game == .lineup ? squad.title : nil,contextScope:game == .lineup ? squad.scope : nil) {player in place(player.id,at:slot)} }
+                NavigationStack {PlayerAnswerSheet(players:game == .lineup ? pack.squadPlayers : pack.connectionPlayers,title:game == .grid ? "Choose a player" : squad.positions[slot],clues:game == .grid ? [pack.category(pack.gridRowIDs[slot/3])!,pack.category(pack.gridColumnIDs[slot%3])!] : [],contextClubName:game == .lineup ? squad.clubName : nil,contextClubImageURL:game == .lineup ? squad.imageURL : nil,contextClubImageAsset:game == .lineup ? squad.imageAsset : nil,contextTitle:game == .lineup ? squad.title : nil,contextScope:game == .lineup ? squad.scope : nil) {player in place(player.id,at:slot)} }
             }
         }
     }

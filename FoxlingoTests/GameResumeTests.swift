@@ -62,7 +62,7 @@ final class GameResumeTests: XCTestCase {
     func testLegalDeadEndWithNoOfferedPlayerStillRestoresForUndo() {
         let players=[GamePlayer(id:"a",name:"A",aliases:["A"],imageURL:nil,imageAsset:nil),GamePlayer(id:"b",name:"B",aliases:["B"],imageURL:nil,imageAsset:nil)]
         let categories=[GameCategory(id:"x",title:"X",playerIDs:["a","b"],imageAsset:nil,imageURL:nil,flag:nil),GameCategory(id:"y",title:"Y",playerIDs:["a"],imageAsset:nil,imageURL:nil,flag:nil)]
-        let p=GamePack(fetchedAt:nil,schemaVersion:1,scope:"Test board",sourceURL:"https://example.com",players:players,categories:categories,bingoCategoryIDs:["x","y"],gridRowIDs:[],gridColumnIDs:[],lineups:[])
+        let p=GamePack(fetchedAt:nil,schemaVersion:1,scope:"Test board",sourceURL:"https://example.com",players:players,categories:categories,bingoCategoryIDs:["x","y"],gridRowIDs:[],gridColumnIDs:[],lineups:[],activeConnectionPlayerIDs:nil)
         let board=BoardProgress(squadID:nil,placed:[0:"a"],history:[0],assisted:[],offered:nil)
         let saved=GameResume(signature:GameResumeRules.boardSignature(kind:"bingo",pack:p,squadID:nil)!,sessionID:UUID(),board:board)
         XCTAssertNil(BoardMatcher.solution([Set(["a","b"]),Set(["a"])],fixed:board.placed))
