@@ -4,10 +4,12 @@ import json
 import re
 from pathlib import Path
 
-LITERAL = re.compile(r'''JSON\.parse\(\s*("(?:\\.|[^"\\])*"|'(?:\\.|[^'\\])*')\s*\)''')
+LITERAL = re.compile(r'''JSON\.parse\(\s*("(?:\\.|[^"\\])*"|'(?:\\.|[^'\\])*'|`(?:\\.|[^`\\])*`)\s*\)''')
 
 
 def js_string(literal):
+    if literal.startswith('`') and '${' in literal:
+        raise ValueError('Interpolated template strings are not static data')
     body = literal[1:-1]
     result = []
     i = 0
@@ -52,7 +54,7 @@ def extract(raw, url):
     return datasets
 
 
-def bind_roles(datasets):
+def bind_roles(datasets, profile='legacy'):
     """Positional indexes are diagnostics, not identities or join instructions."""
     checks = {
         'gamePlayers': lambda d: {'bingo', 'grid', 'countryID', 'image', 'firstName', 'id'} <= set(d['fields']),
@@ -65,6 +67,12 @@ def bind_roles(datasets):
         'leagues': lambda d: set(d['fields']) == {'id', 'name'} and all('League' in r.get('name', '') for r in d['data']),
         'leagueClubs': lambda d: set(d['fields']) == {'id', 'name', 'countryID'},
     }
+    if profile == 'current':
+        checks = {k:v for k,v in checks.items() if k in {'gamePlayers','countries','categories','classicPlayers','classicSquads','gameGroups'}}
+        checks['countries'] = lambda d: {'id','name','flag'} <= set(d['fields']) <= {'id','name','flag','bgColor'}
+        checks['gameGroups'] = lambda d: set(d['fields']) == {'id','name','logo','type'}
+    elif profile != 'legacy':
+        raise ValueError('Unknown source role profile')
     roles = {}
     for role, check in checks.items():
         matches = [d for d in datasets if d['records'] > 0 and check(d)]
@@ -92,7 +100,7 @@ def bind_roles(datasets):
 def role_data(snapshot):
     value = json.loads(Path(snapshot).read_text())
     by_id = {d['id']: d for d in value['datasets']}
-    expected = bind_roles(value['datasets'])
+    expected = bind_roles(value['datasets'], 'current' if value['schemaVersion'] == 2 else 'legacy')
     if value['roles'] != expected:
         raise ValueError('Snapshot role manifest disagrees with validated datasets')
     return {role: by_id[identifier]['data'] for role, identifier in expected.items()}

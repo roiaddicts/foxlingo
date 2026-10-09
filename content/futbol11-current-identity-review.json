@@ -1,0 +1,92 @@
+{
+  "sourceSnapshot": "ref/futbol11-snapshots/2026-10-09T07-24-09.051921+00-00-647159b7c135/snapshot.json",
+  "sourceSnapshotSHA256": "647159b7c1352ab4b4e52ee160e2a76dbcc6580173f8eac095ed8f0bc42dd6c1",
+  "bundledGamePackSHA256": "67bff5aa523763b8c0b5ac1668ec71c5671c4b4e567d2ad423c16fe535e55eea",
+  "scope": "Identity comparison only. A shared integer ID is insufficient evidence of the same person.",
+  "changes": [
+    {
+      "providerID": 5,
+      "bundledID": "player-5",
+      "bundledName": "Neymar",
+      "currentName": "Neymar Jr",
+      "status": "Unresolved; automatic replacement refused"
+    },
+    {
+      "providerID": 89,
+      "bundledID": "player-89",
+      "bundledName": "Alexander Lacazette",
+      "currentName": "Alexandre Lacazette",
+      "status": "Unresolved; automatic replacement refused"
+    },
+    {
+      "providerID": 269,
+      "bundledID": "player-269",
+      "bundledName": "Aaron Wan Bissaka",
+      "currentName": "Aaron Wan-Bissaka",
+      "status": "Unresolved; automatic replacement refused"
+    },
+    {
+      "providerID": 518,
+      "bundledID": "player-518",
+      "bundledName": "Moussa Dembele",
+      "currentName": "Mousa Dembele",
+      "status": "Unresolved; automatic replacement refused"
+    },
+    {
+      "providerID": 681,
+      "bundledID": "player-681",
+      "bundledName": "Diogo Demme",
+      "currentName": "Diego Demme",
+      "status": "Unresolved; automatic replacement refused"
+    },
+    {
+      "providerID": 820,
+      "bundledID": "player-820",
+      "bundledName": "Savinho",
+      "currentName": "Savio",
+      "status": "Unresolved; automatic replacement refused"
+    },
+    {
+      "providerID": 1165,
+      "bundledID": "player-1165",
+      "bundledName": "Florentino Luis",
+      "currentName": "Florentino",
+      "status": "Unresolved; automatic replacement refused"
+    },
+    {
+      "providerID": 1637,
+      "bundledID": "player-1637",
+      "bundledName": "Freddy Guarin",
+      "currentName": "Fredy Guarin",
+      "status": "Unresolved; automatic replacement refused"
+    },
+    {
+      "providerID": 1872,
+      "bundledID": "player-1872",
+      "bundledName": "Tom Watson",
+      "currentName": "Tommy Watson",
+      "status": "Unresolved; automatic replacement refused"
+    },
+    {
+      "providerID": 1937,
+      "bundledID": "player-1937",
+      "bundledName": "Heorhiy Sudakov",
+      "currentName": "Georgiy Sudakov",
+      "status": "Unresolved; automatic replacement refused"
+    },
+    {
+      "providerID": 2229,
+      "bundledID": "player-2229",
+      "bundledName": "Hannibal Mejbri",
+      "currentName": "Dwight Gayle",
+      "status": "Unresolved; automatic replacement refused"
+    },
+    {
+      "providerID": 2230,
+      "bundledID": "player-2230",
+      "bundledName": "Mattia Perin",
+      "currentName": "Gerd Muller",
+      "status": "Unresolved; automatic replacement refused"
+    }
+  ]
+}

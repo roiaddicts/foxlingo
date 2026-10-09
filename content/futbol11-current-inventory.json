@@ -1,0 +1,721 @@
+{
+  "fetchedAt": "2026-10-09T07:24:09.051921+00:00",
+  "assets": [
+    {
+      "url": "https://futbol11.com/_nuxt/BFoQYPrx.js",
+      "file": "asset-0.js",
+      "bytes": 211049,
+      "sha256": "534a5ff4aaf2641d7651a5da7ab00b4ddb1028e1607ad218328bdfed8c564781"
+    },
+    {
+      "url": "https://futbol11.com/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js",
+      "file": "asset-1.js",
+      "bytes": 1239,
+      "sha256": "2595496fe48df6fcf9b1bc57c29a744c121eb4dd11566466bc13d2e52e6bbcc8"
+    },
+    {
+      "url": "https://futbol11.com/_nuxt/BS1S6pnL.js",
+      "file": "asset-2.js",
+      "bytes": 2254,
+      "sha256": "c4883ee48ecfeaf423bdf743f6f2f5e1b696de03703f8637b0789b7fcb880283"
+    },
+    {
+      "url": "https://futbol11.com/_nuxt/D0DZ4v9q.js",
+      "file": "asset-3.js",
+      "bytes": 438,
+      "sha256": "9346bb86ab8db56d88868a79967c66af91ebf13e606ebd173b763885d3b8080d"
+    },
+    {
+      "url": "https://futbol11.com/_nuxt/Cnf_mNWe.js",
+      "file": "asset-4.js",
+      "bytes": 7798,
+      "sha256": "837ab1333fd6c8d9408796b7794563d8efa99cc12ad05228b23a17defed11e6e"
+    },
+    {
+      "url": "https://futbol11.com/_nuxt/2njWVocP.js",
+      "file": "asset-5.js",
+      "bytes": 416,
+      "sha256": "f1dfee18b55330d9aa463a16bee5c7be698c809576ba4dee744c40067572dda1"
+    },
+    {
+      "url": "https://futbol11.com/_nuxt/Bm1vzqBg.js",
+      "file": "asset-6.js",
+      "bytes": 13651,
+      "sha256": "0bbde8e6034ba8760c290575e08489ef5b88cab692cfa63b79d263591a316aef"
+    },
+    {
+      "url": "https://futbol11.com/_nuxt/CaAfWsTq.js",
+      "file": "asset-7.js",
+      "bytes": 9959,
+      "sha256": "274761c215339ee53895ac7ec56ef0651ccf70ea0da5f94aa2cca3a1c16b967e"
+    },
+    {
+      "url": "https://futbol11.com/_nuxt/CnV5DmAQ.js",
+      "file": "asset-8.js",
+      "bytes": 7783,
+      "sha256": "bd866b0d643a768cdbe6426922a5dd54bc6b9674c542b74e4580d50bc4fe722f"
+    },
+    {
+      "url": "https://futbol11.com/_nuxt/sF1zb7uP.js",
+      "file": "asset-9.js",
+      "bytes": 324153,
+      "sha256": "91c3acbf274f4944bff7d31b93f5d093ef4607afe69db13714ac0e954cba9b30"
+    },
+    {
+      "url": "https://futbol11.com/_nuxt/CJ0HsCno.js",
+      "file": "asset-10.js",
+      "bytes": 981,
+      "sha256": "1b32d345d2ae7c121121cffaf4d6602a47cbae92191c8372490c6c8f6eb20a8d"
+    },
+    {
+      "url": "https://futbol11.com/_nuxt/Bk7exa3r.js",
+      "file": "asset-11.js",
+      "bytes": 2490,
+      "sha256": "5304a6a7fad0b131e0d2b29388aaefe340752d86a69de8c852d801a8fbf1bbbc"
+    },
+    {
+      "url": "https://futbol11.com/_nuxt/B7YQaTmR.js",
+      "file": "asset-12.js",
+      "bytes": 585,
+      "sha256": "a07adf0eb37a8f112d01087d85765b66850fcdfd453bf34f5815d38b32b0e8ae"
+    },
+    {
+      "url": "https://futbol11.com/_nuxt/bP-lBEqt.js",
+      "file": "asset-13.js",
+      "bytes": 298,
+      "sha256": "af8506983c850002cf9c1e02a0e8b821a5f856c29127e82e12c822745ccd6582"
+    },
+    {
+      "url": "https://futbol11.com/_nuxt/U8uOf8nf.js",
+      "file": "asset-14.js",
+      "bytes": 323831,
+      "sha256": "a08e55f623b79032ea49fe5663f399a4214411d0b9bd7cae740d1f9ba6328a76"
+    },
+    {
+      "url": "https://futbol11.com/_nuxt/CbPJdEEG.js",
+      "file": "asset-15.js",
+      "bytes": 64,
+      "sha256": "7151bdf90d56e6cc6cdbe764bbe9983a54f97dc3b067cc7e049632bc5ff818ba"
+    },
+    {
+      "url": "https://futbol11.com/_nuxt/BCMtjR1p.js",
+      "file": "asset-16.js",
+      "bytes": 1568,
+      "sha256": "4d08bf663c4ea5260954c282eaced215efb26c8a7bca714246ac9f368dc432dd"
+    },
+    {
+      "url": "https://futbol11.com/_nuxt/TWH7oXCF.js",
+      "file": "asset-17.js",
+      "bytes": 10124,
+      "sha256": "60757ebbf5f4e889d6827f665d8ca15e89c949879eae6d66f5d8238d2226987f"
+    },
+    {
+      "url": "https://futbol11.com/_nuxt/BolQXeIk.js",
+      "file": "asset-18.js",
+      "bytes": 6216,
+      "sha256": "e0d10411b30597e2a8f59b45cdd9243a2ffe3c3d3fc7ef7b3039ca0dc967a64c"
+    },
+    {
+      "url": "https://futbol11.com/_nuxt/DeeNQ71c.js",
+      "file": "asset-19.js",
+      "bytes": 7878,
+      "sha256": "813dc367861c132aa27cdb8f27170695962923d6695565137b6f588aef628a40"
+    },
+    {
+      "url": "https://futbol11.com/_nuxt/CGiaVn1Q.js",
+      "file": "asset-20.js",
+      "bytes": 8930,
+      "sha256": "dc224b4f3dbfe14967e97d7bbb1f5bf04f925b1f0ceaca0e54a9224202fc4716"
+    },
+    {
+      "url": "https://futbol11.com/_nuxt/DSA0EnpL.js",
+      "file": "asset-21.js",
+      "bytes": 338638,
+      "sha256": "3a66d0cdcba5eff56ea1dd8c696ead120eed6561af614625f0f0f7a704ff3f90"
+    },
+    {
+      "url": "https://futbol11.com/_nuxt/Ca2XfCUN.js",
+      "file": "asset-22.js",
+      "bytes": 5692,
+      "sha256": "a38057b344456d49778774ae463fef06ec714217b2c84b22921a468f92344005"
+    },
+    {
+      "url": "https://futbol11.com/_nuxt/BB1-fJfF.js",
+      "file": "asset-23.js",
+      "bytes": 9724,
+      "sha256": "b79e7e8fe719a86dcc2b0818e0bf0f68a5def48a956e58a9a5b58ccdfc522e28"
+    },
+    {
+      "url": "https://futbol11.com/_nuxt/CqzMf87k.js",
+      "file": "asset-24.js",
+      "bytes": 111584,
+      "sha256": "8ecb6a8ed0147ba88cd537b6e3ec907901b5c427572bba0a66260d0e2b3afc9a"
+    },
+    {
+      "url": "https://futbol11.com/_nuxt/hI2TEKYI.js",
+      "file": "asset-25.js",
+      "bytes": 22925,
+      "sha256": "582ef48d4b5b70a849db063b2e9ce7ad0b4c5492608cc4e4d5f754be1500f1af"
+    },
+    {
+      "url": "https://futbol11.com/_nuxt/B-zpluk7.js",
+      "file": "asset-26.js",
+      "bytes": 7995,
+      "sha256": "8f087a11da84b0a9ce1f746d6dc729f52fa7945f3f036f7bf575f2d7c524ce83"
+    },
+    {
+      "url": "https://futbol11.com/_nuxt/De_Ib__8.js",
+      "file": "asset-27.js",
+      "bytes": 35785,
+      "sha256": "e141323cf7dafc7f023dd2fa43eb1672e060b6b8d42720164a345c612ed38431"
+    },
+    {
+      "url": "https://futbol11.com/_nuxt/BRACT1hv.js",
+      "file": "asset-28.js",
+      "bytes": 673,
+      "sha256": "589b80a1a9eb18761896e2caac4cf50fc05908c27f665c78f82f329156da9e98"
+    },
+    {
+      "url": "https://futbol11.com/_nuxt/BY1uB9Nf.js",
+      "file": "asset-29.js",
+      "bytes": 857,
+      "sha256": "aed985f0ae7cb6a531da42063c045c78807cd5e2849a3ae34564b6f6874da92f"
+    },
+    {
+      "url": "https://futbol11.com/_nuxt/Bm1R4yGj.js",
+      "file": "asset-30.js",
+      "bytes": 973,
+      "sha256": "be65bcee5a62170b40d6b45989babf8796c9f76789692850f35ad9733a61b87a"
+    },
+    {
+      "url": "https://futbol11.com/_nuxt/OP-31qLv.js",
+      "file": "asset-31.js",
+      "bytes": 5261,
+      "sha256": "b86b3d28e2ab271722a0fe25801a2975accceb7346729edcd0da54c0c5061203"
+    },
+    {
+      "url": "https://futbol11.com/_nuxt/DwSPKIQ1.js",
+      "file": "asset-32.js",
+      "bytes": 7533,
+      "sha256": "17cd666912e2bac7da7b1d55c53b0e440e675edd1c14d2726c4dd9c751604879"
+    },
+    {
+      "url": "https://futbol11.com/_nuxt/DBBWvOZC.js",
+      "file": "asset-33.js",
+      "bytes": 11369,
+      "sha256": "b5407c5d56d47d521b7be56aa8ffbe582aaa8af96532802bc6ab597f97a1a02d"
+    },
+    {
+      "url": "https://futbol11.com/_nuxt/BF6R45Oi.js",
+      "file": "asset-34.js",
+      "bytes": 1481,
+      "sha256": "b5ec8d5e049feedc09db89bfa610d62cde9d6587f4dc2047fb8acf39fabfaaab"
+    },
+    {
+      "url": "https://futbol11.com/_nuxt/Ca2vDWde.js",
+      "file": "asset-35.js",
+      "bytes": 20220,
+      "sha256": "091ccf21841f1a0bcb0798579f473389bf0f7d6cb36d1e879e01e121fc0c9b4e"
+    },
+    {
+      "url": "https://futbol11.com/_nuxt/ChS2TaaV.js",
+      "file": "asset-36.js",
+      "bytes": 208502,
+      "sha256": "cd68e03944a99fbbb8dfde8b022bdf3ea303f0ca9099e7589704f27c1f3fc6d2"
+    },
+    {
+      "url": "https://futbol11.com/_nuxt/kl-l7D9q.js",
+      "file": "asset-37.js",
+      "bytes": 36349,
+      "sha256": "74e307412ad0d91750891f026b2e4f248d89380993b531651860b83a716b83b2"
+    },
+    {
+      "url": "https://futbol11.com/_nuxt/Bk3TCz69.js",
+      "file": "asset-38.js",
+      "bytes": 210361,
+      "sha256": "6bea8861237380b86fe70271254b16108a7d9d61fe08ed15412714587b4ae723"
+    },
+    {
+      "url": "https://futbol11.com/_nuxt/CbMZhYsy.js",
+      "file": "asset-39.js",
+      "bytes": 58828,
+      "sha256": "9d5f04aabc88378df4d3ece4459d96580b2e02f215ef6a01ba3f6bd61693c149"
+    },
+    {
+      "url": "https://futbol11.com/_nuxt/BBfJTTYO.js",
+      "file": "asset-40.js",
+      "bytes": 5630,
+      "sha256": "5cde78a871a56ef98f577e101effaa134984e7028294a188936a4cd14fc5bb51"
+    },
+    {
+      "url": "https://futbol11.com/_nuxt/Cwe7mafN.js",
+      "file": "asset-41.js",
+      "bytes": 1042,
+      "sha256": "a9bcf22136191e0fbb8a79235dd20a3aa8bbed9ee85eec7d5338bcd9af827944"
+    },
+    {
+      "url": "https://futbol11.com/_nuxt/D6V6rIzX.js",
+      "file": "asset-42.js",
+      "bytes": 30064,
+      "sha256": "0afec7ab66681299bf00f111cda6a0c28d6efef91e8f906cdf426064aba96a42"
+    },
+    {
+      "url": "https://futbol11.com/_nuxt/D34wXvBj.js",
+      "file": "asset-43.js",
+      "bytes": 7522,
+      "sha256": "62ddf365ac1e3912bd6bebad7905f4e6bf6addb44a74d87e57c3833e3e892f52"
+    },
+    {
+      "url": "https://futbol11.com/_nuxt/BAVUj-6u.js",
+      "file": "asset-44.js",
+      "bytes": 11362,
+      "sha256": "8b739d6e9163af869a87af29674c1d069b0ee4cafadeea18e08f9b8cb698d0a1"
+    },
+    {
+      "url": "https://futbol11.com/_nuxt/B2tFiaen.js",
+      "file": "asset-45.js",
+      "bytes": 105043,
+      "sha256": "a2a7db076eb5d7ea814ce75ad2692f0f2a63e779a591c366519160cc869d6969"
+    },
+    {
+      "url": "https://futbol11.com/_nuxt/8BCraab8.js",
+      "file": "asset-46.js",
+      "bytes": 15197,
+      "sha256": "cd619a940b9f10049d5d9be0ef360d6741db23fce0e7be5073e00738b1dcd5e4"
+    },
+    {
+      "url": "https://futbol11.com/_nuxt/kVu-JysD.js",
+      "file": "asset-47.js",
+      "bytes": 90326,
+      "sha256": "f5535bf7d471a495f507f2f5068670605ced3828650e72d509c134ae31ad2285"
+    },
+    {
+      "url": "https://futbol11.com/_nuxt/BMK2ETiu.js",
+      "file": "asset-48.js",
+      "bytes": 42710,
+      "sha256": "aefb1fe1aec7dfe84be7cfd8a5f1d7be6d0caefcc4ef234c2ef812095d6826cb"
+    },
+    {
+      "url": "https://futbol11.com/_nuxt/Ch6puMpg.js",
+      "file": "asset-49.js",
+      "bytes": 21909,
+      "sha256": "1d8708e9d311ccae4e5d1a3a1f450a092d517d6f98c79202280816382d24b570"
+    },
+    {
+      "url": "https://futbol11.com/_nuxt/CZjPM9E1.js",
+      "file": "asset-50.js",
+      "bytes": 12027,
+      "sha256": "2222192e80c544155190597c3e1c1e8c3699ff2d99800e55ba3406001c3fe990"
+    },
+    {
+      "url": "https://futbol11.com/_nuxt/OYqEpWl3.js",
+      "file": "asset-51.js",
+      "bytes": 17931,
+      "sha256": "19b12807fd9a0dc9641a26182012aa809d10fde2cfdaec017439c8563ae8731c"
+    },
+    {
+      "url": "https://futbol11.com/_nuxt/CMtivwF6.js",
+      "file": "asset-52.js",
+      "bytes": 13627,
+      "sha256": "e104d9ca2385537c5e3bd6187abbf78fc423b70cdbe5c2556418b5651fc51091"
+    },
+    {
+      "url": "https://futbol11.com/_nuxt/DpXy3Tvh.js",
+      "file": "asset-53.js",
+      "bytes": 36674,
+      "sha256": "bd59496fb949d6ba28322a175ddcc3cf4c4d4c3defea8455965d4015b5e08f9c"
+    },
+    {
+      "url": "https://futbol11.com/_nuxt/B_38yFlX.js",
+      "file": "asset-54.js",
+      "bytes": 14210,
+      "sha256": "b3b4697661ac25389e9412725d21ee574b29d87602f9caf3f95beee53accc57f"
+    },
+    {
+      "url": "https://futbol11.com/_nuxt/CgxlPKu7.js",
+      "file": "asset-55.js",
+      "bytes": 115526,
+      "sha256": "f1dda8c3923484fd82632824b0d1268314e0d3d08cdd7bb3f48e8328e8c6498d"
+    },
+    {
+      "url": "https://futbol11.com/_nuxt/CqIDHrmS.js",
+      "file": "asset-56.js",
+      "bytes": 13339,
+      "sha256": "2e37c8793387bbd86f19f9a717357203955b90592db3822abf4b7c683db4ce1d"
+    },
+    {
+      "url": "https://futbol11.com/_nuxt/Bz_Whfjw.js",
+      "file": "asset-57.js",
+      "bytes": 7517,
+      "sha256": "07ea2a28b4da551f792bfea270ce8f782b3e0eb541f04dc94096a165e023e12e"
+    },
+    {
+      "url": "https://futbol11.com/_nuxt/BBNd67SJ.js",
+      "file": "asset-58.js",
+      "bytes": 91679,
+      "sha256": "80cd200737e2475987e822f10f7b883019e43ed2f1e3ea6229ec0b20188a3d7e"
+    },
+    {
+      "url": "https://futbol11.com/_nuxt/CkLBaazO.js",
+      "file": "asset-59.js",
+      "bytes": 40609,
+      "sha256": "456fc389028e608e1913675fc51b622198f61ff91003519076d13ab2cf722a6d"
+    },
+    {
+      "url": "https://futbol11.com/_nuxt/C0dTKGDs.js",
+      "file": "asset-60.js",
+      "bytes": 34969,
+      "sha256": "5b8fb38aedbbe2cde3d3004dc7e4c9a7a2ce1c9b6a87c30ddbfb5e38c5d75355"
+    },
+    {
+      "url": "https://futbol11.com/_nuxt/CbV11bUy.js",
+      "file": "asset-61.js",
+      "bytes": 69316,
+      "sha256": "3038fdd2d05556dd3e190324d069445727059dda01b83b59d4b7d19f0570ff97"
+    },
+    {
+      "url": "https://futbol11.com/_nuxt/C4gKTBvJ.js",
+      "file": "asset-62.js",
+      "bytes": 17717,
+      "sha256": "ce5e5089a235076804cb568eeba749eabb5b2d421caf0f2a31e64600bf433563"
+    },
+    {
+      "url": "https://futbol11.com/_nuxt/C4-6O7P0.js",
+      "file": "asset-63.js",
+      "bytes": 547,
+      "sha256": "8967c7d46398ae46f28193adb6d187e0d4d8d060aebaff688a8bb48d7736fd00"
+    }
+  ],
+  "roles": {
+    "gamePlayers": "futbol11.91c3acbf274f4944bff7d31b93f5d093ef4607afe69db13714ac0e954cba9b30.literal0",
+    "countries": "futbol11.dc224b4f3dbfe14967e97d7bbb1f5bf04f925b1f0ceaca0e54a9224202fc4716.literal0",
+    "categories": "futbol11.5b8fb38aedbbe2cde3d3004dc7e4c9a7a2ce1c9b6a87c30ddbfb5e38c5d75355.literal0",
+    "classicPlayers": "futbol11.6bea8861237380b86fe70271254b16108a7d9d61fe08ed15412714587b4ae723.literal0",
+    "classicSquads": "futbol11.74e307412ad0d91750891f026b2e4f248d89380993b531651860b83a716b83b2.literal0",
+    "gameGroups": "futbol11.8f087a11da84b0a9ce1f746d6dc729f52fa7945f3f036f7bf575f2d7c524ce83.literal0"
+  },
+  "datasets": [
+    {
+      "id": "futbol11.91c3acbf274f4944bff7d31b93f5d093ef4607afe69db13714ac0e954cba9b30.literal0",
+      "sourceURL": "https://futbol11.com/_nuxt/sF1zb7uP.js",
+      "assetSHA256": "91c3acbf274f4944bff7d31b93f5d093ef4607afe69db13714ac0e954cba9b30",
+      "literalIndex": 0,
+      "offset": 8,
+      "records": 3492,
+      "fields": [
+        "bingo",
+        "countryID",
+        "firstName",
+        "grid",
+        "id",
+        "image",
+        "lastName",
+        "nickname"
+      ],
+      "duplicateIDs": 0
+    },
+    {
+      "id": "futbol11.a08e55f623b79032ea49fe5663f399a4214411d0b9bd7cae740d1f9ba6328a76.literal0",
+      "sourceURL": "https://futbol11.com/_nuxt/U8uOf8nf.js",
+      "assetSHA256": "a08e55f623b79032ea49fe5663f399a4214411d0b9bd7cae740d1f9ba6328a76",
+      "literalIndex": 0,
+      "offset": 8,
+      "records": 2729,
+      "fields": [
+        "birthday",
+        "clubID",
+        "countryID",
+        "firstName",
+        "id",
+        "lastName",
+        "nickname",
+        "ovr",
+        "positions"
+      ],
+      "duplicateIDs": 0
+    },
+    {
+      "id": "futbol11.dc224b4f3dbfe14967e97d7bbb1f5bf04f925b1f0ceaca0e54a9224202fc4716.literal0",
+      "sourceURL": "https://futbol11.com/_nuxt/CGiaVn1Q.js",
+      "assetSHA256": "dc224b4f3dbfe14967e97d7bbb1f5bf04f925b1f0ceaca0e54a9224202fc4716",
+      "literalIndex": 0,
+      "offset": 8,
+      "records": 114,
+      "fields": [
+        "bgColor",
+        "flag",
+        "id",
+        "name"
+      ],
+      "duplicateIDs": 0
+    },
+    {
+      "id": "futbol11.3a66d0cdcba5eff56ea1dd8c696ead120eed6561af614625f0f0f7a704ff3f90.literal0",
+      "sourceURL": "https://futbol11.com/_nuxt/DSA0EnpL.js",
+      "assetSHA256": "3a66d0cdcba5eff56ea1dd8c696ead120eed6561af614625f0f0f7a704ff3f90",
+      "literalIndex": 0,
+      "offset": 358,
+      "records": 2729,
+      "fields": [
+        "birthday",
+        "clubID",
+        "countryID",
+        "firstName",
+        "id",
+        "lastName",
+        "nickname",
+        "ovr",
+        "positions"
+      ],
+      "duplicateIDs": 0
+    },
+    {
+      "id": "futbol11.8f087a11da84b0a9ce1f746d6dc729f52fa7945f3f036f7bf575f2d7c524ce83.literal0",
+      "sourceURL": "https://futbol11.com/_nuxt/B-zpluk7.js",
+      "assetSHA256": "8f087a11da84b0a9ce1f746d6dc729f52fa7945f3f036f7bf575f2d7c524ce83",
+      "literalIndex": 0,
+      "offset": 8,
+      "records": 105,
+      "fields": [
+        "id",
+        "logo",
+        "name",
+        "type"
+      ],
+      "duplicateIDs": 0
+    },
+    {
+      "id": "futbol11.e141323cf7dafc7f023dd2fa43eb1672e060b6b8d42720164a345c612ed38431.literal0",
+      "sourceURL": "https://futbol11.com/_nuxt/De_Ib__8.js",
+      "assetSHA256": "e141323cf7dafc7f023dd2fa43eb1672e060b6b8d42720164a345c612ed38431",
+      "literalIndex": 0,
+      "offset": 454,
+      "records": 365,
+      "fields": [
+        "id",
+        "player",
+        "teammates"
+      ],
+      "duplicateIDs": 0
+    },
+    {
+      "id": "futbol11.cd68e03944a99fbbb8dfde8b022bdf3ea303f0ca9099e7589704f27c1f3fc6d2.literal0",
+      "sourceURL": "https://futbol11.com/_nuxt/ChS2TaaV.js",
+      "assetSHA256": "cd68e03944a99fbbb8dfde8b022bdf3ea303f0ca9099e7589704f27c1f3fc6d2",
+      "literalIndex": 0,
+      "offset": 8,
+      "records": 2614,
+      "fields": [
+        "clubID",
+        "firstName",
+        "id",
+        "lastName",
+        "nickname",
+        "positions"
+      ],
+      "duplicateIDs": 0
+    },
+    {
+      "id": "futbol11.74e307412ad0d91750891f026b2e4f248d89380993b531651860b83a716b83b2.literal0",
+      "sourceURL": "https://futbol11.com/_nuxt/kl-l7D9q.js",
+      "assetSHA256": "74e307412ad0d91750891f026b2e4f248d89380993b531651860b83a716b83b2",
+      "literalIndex": 0,
+      "offset": 594,
+      "records": 98,
+      "fields": [
+        "clubID",
+        "id",
+        "logo",
+        "name",
+        "players"
+      ],
+      "duplicateIDs": 0
+    },
+    {
+      "id": "futbol11.6bea8861237380b86fe70271254b16108a7d9d61fe08ed15412714587b4ae723.literal0",
+      "sourceURL": "https://futbol11.com/_nuxt/Bk3TCz69.js",
+      "assetSHA256": "6bea8861237380b86fe70271254b16108a7d9d61fe08ed15412714587b4ae723",
+      "literalIndex": 0,
+      "offset": 8,
+      "records": 2556,
+      "fields": [
+        "active",
+        "clubID",
+        "firstName",
+        "id",
+        "lastName",
+        "nickname",
+        "positions"
+      ],
+      "duplicateIDs": 0
+    },
+    {
+      "id": "futbol11.9d5f04aabc88378df4d3ece4459d96580b2e02f215ef6a01ba3f6bd61693c149.literal0",
+      "sourceURL": "https://futbol11.com/_nuxt/CbMZhYsy.js",
+      "assetSHA256": "9d5f04aabc88378df4d3ece4459d96580b2e02f215ef6a01ba3f6bd61693c149",
+      "literalIndex": 0,
+      "offset": 514,
+      "records": 405,
+      "fields": [
+        "id",
+        "players",
+        "title"
+      ],
+      "duplicateIDs": 2
+    },
+    {
+      "id": "futbol11.0afec7ab66681299bf00f111cda6a0c28d6efef91e8f906cdf426064aba96a42.literal0",
+      "sourceURL": "https://futbol11.com/_nuxt/D6V6rIzX.js",
+      "assetSHA256": "0afec7ab66681299bf00f111cda6a0c28d6efef91e8f906cdf426064aba96a42",
+      "literalIndex": 0,
+      "offset": 495,
+      "records": 342,
+      "fields": [
+        "clubs",
+        "id",
+        "player"
+      ],
+      "duplicateIDs": 213
+    },
+    {
+      "id": "futbol11.a2a7db076eb5d7ea814ce75ad2692f0f2a63e779a591c366519160cc869d6969.literal0",
+      "sourceURL": "https://futbol11.com/_nuxt/B2tFiaen.js",
+      "assetSHA256": "a2a7db076eb5d7ea814ce75ad2692f0f2a63e779a591c366519160cc869d6969",
+      "literalIndex": 0,
+      "offset": 511,
+      "records": 1063,
+      "fields": [
+        "clubID",
+        "firstName",
+        "id",
+        "lastName",
+        "positions"
+      ],
+      "duplicateIDs": 0
+    },
+    {
+      "id": "futbol11.f5535bf7d471a495f507f2f5068670605ced3828650e72d509c134ae31ad2285.literal0",
+      "sourceURL": "https://futbol11.com/_nuxt/kVu-JysD.js",
+      "assetSHA256": "f5535bf7d471a495f507f2f5068670605ced3828650e72d509c134ae31ad2285",
+      "literalIndex": 0,
+      "offset": 1629,
+      "records": 417,
+      "fields": [
+        "id",
+        "players",
+        "title"
+      ],
+      "duplicateIDs": 333
+    },
+    {
+      "id": "futbol11.aefb1fe1aec7dfe84be7cfd8a5f1d7be6d0caefcc4ef234c2ef812095d6826cb.literal0",
+      "sourceURL": "https://futbol11.com/_nuxt/BMK2ETiu.js",
+      "assetSHA256": "aefb1fe1aec7dfe84be7cfd8a5f1d7be6d0caefcc4ef234c2ef812095d6826cb",
+      "literalIndex": 0,
+      "offset": 576,
+      "records": 366,
+      "fields": [
+        "id",
+        "info"
+      ],
+      "duplicateIDs": 54
+    },
+    {
+      "id": "futbol11.bd59496fb949d6ba28322a175ddcc3cf4c4d4c3defea8455965d4015b5e08f9c.literal0",
+      "sourceURL": "https://futbol11.com/_nuxt/DpXy3Tvh.js",
+      "assetSHA256": "bd59496fb949d6ba28322a175ddcc3cf4c4d4c3defea8455965d4015b5e08f9c",
+      "literalIndex": 0,
+      "offset": 8,
+      "records": 295,
+      "fields": [
+        "addcorr",
+        "correctPl",
+        "id",
+        "impostors",
+        "title"
+      ],
+      "duplicateIDs": 96
+    },
+    {
+      "id": "futbol11.f1dda8c3923484fd82632824b0d1268314e0d3d08cdd7bb3f48e8328e8c6498d.literal0",
+      "sourceURL": "https://futbol11.com/_nuxt/CgxlPKu7.js",
+      "assetSHA256": "f1dda8c3923484fd82632824b0d1268314e0d3d08cdd7bb3f48e8328e8c6498d",
+      "literalIndex": 0,
+      "offset": 8,
+      "records": 1246,
+      "fields": [
+        "countryID",
+        "firstName",
+        "id",
+        "lastName",
+        "positions"
+      ],
+      "duplicateIDs": 0
+    },
+    {
+      "id": "futbol11.80cd200737e2475987e822f10f7b883019e43ed2f1e3ea6229ec0b20188a3d7e.literal0",
+      "sourceURL": "https://futbol11.com/_nuxt/BBNd67SJ.js",
+      "assetSHA256": "80cd200737e2475987e822f10f7b883019e43ed2f1e3ea6229ec0b20188a3d7e",
+      "literalIndex": 0,
+      "offset": 3241,
+      "records": 450,
+      "fields": [
+        "clubID",
+        "players",
+        "season"
+      ],
+      "duplicateIDs": 0
+    },
+    {
+      "id": "futbol11.456fc389028e608e1913675fc51b622198f61ff91003519076d13ab2cf722a6d.literal0",
+      "sourceURL": "https://futbol11.com/_nuxt/CkLBaazO.js",
+      "assetSHA256": "456fc389028e608e1913675fc51b622198f61ff91003519076d13ab2cf722a6d",
+      "literalIndex": 0,
+      "offset": 463,
+      "records": 251,
+      "fields": [
+        "groups",
+        "id",
+        "image",
+        "name"
+      ],
+      "duplicateIDs": 0
+    },
+    {
+      "id": "futbol11.5b8fb38aedbbe2cde3d3004dc7e4c9a7a2ce1c9b6a87c30ddbfb5e38c5d75355.literal0",
+      "sourceURL": "https://futbol11.com/_nuxt/C0dTKGDs.js",
+      "assetSHA256": "5b8fb38aedbbe2cde3d3004dc7e4c9a7a2ce1c9b6a87c30ddbfb5e38c5d75355",
+      "literalIndex": 0,
+      "offset": 409,
+      "records": 158,
+      "fields": [
+        "id",
+        "level",
+        "players",
+        "title"
+      ],
+      "duplicateIDs": 0
+    },
+    {
+      "id": "futbol11.3038fdd2d05556dd3e190324d069445727059dda01b83b59d4b7d19f0570ff97.literal0",
+      "sourceURL": "https://futbol11.com/_nuxt/CbV11bUy.js",
+      "assetSHA256": "3038fdd2d05556dd3e190324d069445727059dda01b83b59d4b7d19f0570ff97",
+      "literalIndex": 0,
+      "offset": 13440,
+      "records": 366,
+      "fields": [
+        "birthday",
+        "height",
+        "id",
+        "name",
+        "position",
+        "previousClubs",
+        "previousLeagues",
+        "secID"
+      ],
+      "duplicateIDs": 2
+    }
+  ],
+  "totalRecords": 20161,
+  "dailyDataStatus": "Embedded datasets retained; no independent daily-game endpoint or game-date coverage verified."
+}

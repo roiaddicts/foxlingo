@@ -10,6 +10,7 @@ args=parser.parse_args()
 if args.snapshot:
  roles=role_data(args.snapshot);snapshot=json.loads(args.snapshot.read_text())
  fetched_at=snapshot['fetchedAt']
+ source_url=snapshot['sourceURL'].rstrip('/')
  source=str(args.snapshot.relative_to(ROOT)) if args.snapshot.is_relative_to(ROOT) else str(args.snapshot)
 else:
  datasets=extract((ROOT/'ref/futbol11.js').read_bytes(),'https://futbol-11.com/')
@@ -17,13 +18,14 @@ else:
  scope='Historical relationships imported from the supplied Futbol11 bundle; snapshot date unknown. These games do not claim current squads or exhaustive career coverage.'
  source='ref/futbol11.js'
  fetched_at=None
+ source_url='https://futbol-11.com'
 scope='Historical relationships imported from the supplied Futbol11 bundle; snapshot date unknown. These games do not claim current squads or exhaustive career coverage.'
 # Role indexes below are internal compiler aliases, independent of source encounter order.
 D={1:roles['countries'],2:roles['gamePlayers'],27:roles['categories'],30:roles['classicPlayers'],31:roles['classicSquads']}
 def name(p):return p.get('nickname') or ' '.join(filter(None,[p.get('firstName'),p.get('lastName')]))
 def norm(v):return ''.join(c for c in unicodedata.normalize('NFD',v.lower()) if not unicodedata.combining(c))
 def ints(v):return list(dict.fromkeys(int(x.strip()) for x in v.split(',') if x.strip()))
-def imageurl(v):return 'https://futbol-11.com'+v if v.startswith('/') else v
+def imageurl(v):return source_url+v if v.startswith('/') else v
 categories=[dict(id=f'category-{p["id"]}',title=p['title'],playerIDs=[f'player-{i}' for i in ints(p['players'])]) for p in D[27]]
 # Visual clues are content, so new boards can ship with their own badges and flags.
 club_visuals={1:('arsenal',52280),3:('manchester-united',52682),4:('liverpool',7889),5:('chelsea',52914),6:('tottenham',1652),8:('barcelona',50080),9:('madrid',50051),14:('bayern-munich',50037),15:('borussia-dortmund',52758)}
@@ -66,7 +68,7 @@ for squad in lineups:
   squad['rows']=[[0,1],[2],[3,4,5],[6,7,8,9],[10]]
   squad['scope']='Build a valid 4–3–1–2 from this historical season squad; this is a playable formation, not a claimed match starting XI.'
  if not solvable(squad):raise ValueError('No supported formation for '+squad['title'])
-pack=dict(schemaVersion=1,fetchedAt=fetched_at,scope=scope,sourceURL='https://futbol-11.com/',players=players,categories=categories,bingoCategoryIDs=[f'category-{i}' for i in [1,3,4,5,6,8,9,14,15,23,24,28]],gridRowIDs=[f'category-{i}' for i in [9,8,14]],gridColumnIDs=[f'category-{i}' for i in [30,24,23]],lineups=lineups)
+pack=dict(schemaVersion=1,fetchedAt=fetched_at,scope=scope,sourceURL=source_url+'/',players=players,categories=categories,bingoCategoryIDs=[f'category-{i}' for i in [1,3,4,5,6,8,9,14,15,23,24,28]],gridRowIDs=[f'category-{i}' for i in [9,8,14]],gridColumnIDs=[f'category-{i}' for i in [30,24,23]],lineups=lineups)
 known={p['id'] for p in players}
 for c in categories:
  if not set(c['playerIDs']).issubset(known):raise ValueError('Unresolved category members: '+c['id'])
