@@ -58,6 +58,20 @@ final class ContentDownloadTests: XCTestCase, @unchecked Sendable {
         values[file] = .init(data:data,status:200,length:ContentUpdateRules.maximumBytes+1,responseURL:nil);LessonURLProtocol.set(values)
         do {_ = try await ContentDownload.fetch(manifestURL:feed,bundled:pack,testingSession:session());XCTFail("Oversized declared download accepted")} catch {}
     }
+    func testDailyPointerDownloadsVerifiedRelativePackageAndRejectsCorruption() async throws {
+        let root=URL(fileURLWithPath:#filePath).deletingLastPathComponent().deletingLastPathComponent()
+        let raw=try Data(contentsOf:root.appendingPathComponent("Foxlingo/Resources/daily-en.json"))
+        let digest=ContentUpdateRules.digest(raw),name="2026-10-09-\(digest.prefix(12)).json"
+        let pointer=try JSONSerialization.data(withJSONObject:["file":name,"sha256":digest,"gameDate":"2026-10-09","timeZone":"America/Mexico_City","modes":19])
+        let address="https://daily.example/daily/latest.json",content="https://daily.example/daily/"+name
+        LessonURLProtocol.set([address:.init(data:pointer,status:200,length:nil,responseURL:nil),content:.init(data:raw,status:200,length:nil,responseURL:nil)])
+        let result=try await ContentDownload.fetchDaily(pointerURL:address,testingSession:session())
+        XCTAssertEqual(result,raw)
+        LessonURLProtocol.set([address:.init(data:pointer,status:200,length:nil,responseURL:nil),content:.init(data:Data("{}".utf8),status:200,length:nil,responseURL:nil)])
+        do {_ = try await ContentDownload.fetchDaily(pointerURL:address,testingSession:session());XCTFail("Corrupt daily package accepted")} catch {}
+        LessonURLProtocol.set([address:.init(data:pointer,status:503,length:nil,responseURL:nil)])
+        do {_ = try await ContentDownload.fetchDaily(pointerURL:address,testingSession:session());XCTFail("Failed daily feed accepted")} catch {}
+    }
     func testCancelledImportAndBoundedFileRead() async throws {
         let (_,data,_)=try fixture()
         let file=FileManager.default.temporaryDirectory.appendingPathComponent(UUID().uuidString+".json")

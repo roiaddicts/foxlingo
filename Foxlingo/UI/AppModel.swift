@@ -11,6 +11,10 @@ import SwiftUI
     @Published var mysteries: [MysteryRound] = []
     @Published var drafts: DraftPack?
     @Published var draftsError: String?
+    @Published var daily: DailyChallengePack?
+    @Published var dailyMessage: String?
+    var dailyCache: DailyChallengeCache?
+    private var refreshingDaily=false
     @Published var games: GamePack?
     @Published var gamesError: String?
     @Published var message: String?
@@ -39,6 +43,7 @@ import SwiftUI
         store = StateStore(directory:base)
         #endif
         load()
+        Task {await refreshDailyIfNeeded()}
         #if DEBUG
         if args.contains("-ui-testing"),args.contains("-stage-test-lessons"),let cache=contentCache,let pack {
             do {
@@ -78,6 +83,12 @@ import SwiftUI
             guard let url=Bundle.main.url(forResource:"drafts-en",withExtension:"json") else {throw ContentError.invalid("XI content is missing.")}
             drafts=try DraftPack.load(Data(contentsOf:url))
         } catch {draftsError=error.localizedDescription}
+        do {
+            let cache=DailyChallengeCache(directory:store.directory.appendingPathComponent("DailyChallenges"))
+            dailyCache=cache
+            guard let url=Bundle.main.url(forResource:"daily-en",withExtension:"json") else {throw ContentError.invalid("Daily challenges are missing.")}
+            daily=try cache.load(bundled:Data(contentsOf:url))
+        } catch {dailyMessage=error.localizedDescription}
         if let pack,let url=Bundle.main.url(forResource:"mystery-en",withExtension:"json"),let data=try? Data(contentsOf:url) {
             mysteries=(try? MysteryDeck.load(data,pack:pack)) ?? []
         }
@@ -120,6 +131,33 @@ import SwiftUI
             }
             if restored.state != nil && restored.notice == nil {save()}
         } catch { recoveryRequired = true; message = error.localizedDescription }
+    }
+    var dailyAddress: String {
+        guard let cache=dailyCache else {return ""}
+        return (try? String(contentsOf:cache.directory.appendingPathComponent("feed.txt"),encoding:.utf8)) ?? ""
+    }
+    func importDaily(_ data: Data) async throws {
+        guard let cache=dailyCache else {throw ContentError.invalid("Daily challenge storage is unavailable.")}
+        let work=Task.detached {try Task.checkCancellation();return try DailyChallengePack.load(data)}
+        _ = try await withTaskCancellationHandler(operation:{try await work.value},onCancel:{work.cancel()})
+        try Task.checkCancellation()
+        daily=try cache.install(data)
+        dailyMessage="Challenges for \(daily!.gameDate) are ready offline."
+    }
+    func checkForDaily(_ address: String) async throws {
+        let address=address.trimmingCharacters(in:.whitespacesAndNewlines)
+        _ = try ContentUpdateRules.https(address)
+        guard let cache=dailyCache else {throw ContentError.invalid("Daily challenge storage is unavailable.")}
+        try FileManager.default.createDirectory(at:cache.directory,withIntermediateDirectories:true)
+        try address.write(to:cache.directory.appendingPathComponent("feed.txt"),atomically:true,encoding:.utf8)
+        let data=try await ContentDownload.fetchDaily(pointerURL:address)
+        try await importDaily(data)
+    }
+    func refreshDailyIfNeeded() async {
+        guard !refreshingDaily,daily?.isToday(now) != true,!dailyAddress.isEmpty else {return}
+        refreshingDaily=true;defer {refreshingDaily=false}
+        do {try await checkForDaily(dailyAddress)}
+        catch {dailyMessage="Couldn’t refresh challenges. The saved \(daily?.gameDate ?? "") set is still available."}
     }
     func recordGameGap(game: String,context: String,subjects: [UUID]=[],facts: [UUID]=[],names: [String]=[],assets: [String]=[],playerIDs: [String]=[]) {
         guard let pack else {return}

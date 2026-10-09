@@ -26,8 +26,8 @@
       "sourceURL": "https://futbol11.com/futbol11-top10",
       "mechanic": "Name ten players on a scoped statistical ranking.",
       "requiredData": "ranked lists with values and cutoff dates",
-      "status": "planned",
-      "notes": ""
+      "status": "native",
+      "notes": "Native untimed Top 10 consumes the verified dated package. Nationality flags, ranked portrait reveals, source scope, hints, mistake tracking, persistent completion and idempotent streak credit. Timer variant remains optional."
     },
     {
       "id": "grid",

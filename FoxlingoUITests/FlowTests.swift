@@ -237,6 +237,32 @@ final class FlowTests: XCTestCase {
         }
         XCTAssertTrue(button.isHittable);button.tap()
     }
+    func testDailyTop10SearchResumeAndCompletion() {
+        start();tap("choose-XT");app.tabBars.buttons["Games"].tap();tap("game-top10")
+        XCTAssertEqual(app.staticTexts["top10-title"].label,"Chelsea 2023/24 - Most matches")
+        tap("top10-choose")
+        let search=app.textFields["game-player-search"];XCTAssertTrue(search.waitForExistence(timeout:3))
+        search.typeText("Messi");tap("game-player-daily-general-2")
+        XCTAssertTrue(app.staticTexts["game-answer-error"].exists)
+        search.tap()
+        // Replace through the delete key to keep the keyboard's result area exercised.
+        search.typeText(String(repeating:XCUIKeyboardKey.delete.rawValue,count:5)+"Gallagher")
+        tap("game-player-daily-general-919")
+        XCTAssertTrue(app.staticTexts["Conor Gallagher"].exists)
+        let settled=expectation(for:NSPredicate(format:"hittable == true"),evaluatedWith:app.buttons["top10-choose"])
+        wait(for:[settled],timeout:5)
+        Thread.sleep(forTimeInterval:0.35)
+        let shot=XCTAttachment(screenshot:app.screenshot());shot.name="Daily Top 10 ranked flags and portrait";shot.lifetime = .keepAlways;add(shot)
+        app.terminate();start(reset:false);app.tabBars.buttons["Games"].tap();tap("game-top10")
+        XCTAssertTrue(app.staticTexts["Conor Gallagher"].exists)
+        for _ in 0..<9 {tap("top10-hint")}
+        for _ in 0..<5 {if app.staticTexts["top10-complete"].isHittable {break};app.swipeUp()}
+        XCTAssertTrue(app.staticTexts["top10-complete"].exists)
+        app.terminate();start(reset:false);app.tabBars.buttons["Games"].tap();tap("game-top10")
+        for _ in 0..<5 {if app.staticTexts["top10-complete"].isHittable {break};app.swipeUp()}
+        XCTAssertTrue(app.staticTexts["top10-complete"].exists)
+        XCTAssertFalse(app.buttons["top10-choose"].exists)
+    }
     func testDraftNationsSearchPositionsUndoAndResume() {
         start();tap("choose-XT");app.tabBars.buttons["Games"].tap();tap("game-draft-nations")
         XCTAssertEqual(app.staticTexts["draft-offered"].label,"England")

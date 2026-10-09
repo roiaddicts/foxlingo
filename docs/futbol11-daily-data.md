@@ -44,4 +44,14 @@ Offline tests verify all nineteen mode selections, JavaScript arithmetic compati
 
 ## Remaining app work
 
-Daily extraction coverage is nineteen modes; native game coverage remains ten modes. The packaged selections are not yet a live in-app daily feed. Remaining work includes native adapters and screens for SquadSlice, Statdle, Top 10, Goltexto, Pyramid, Legacy, Bingo Retro, Link and Guess the Footballer, plus daily feed/cache integration and the broader source-authored Connections/Impostor variants. Full goal completion requires those games to be playable and the daily selections to reach the app with correct identity mapping and freshness display.
+Daily extraction covers nineteen modes; native game coverage is eleven modes. Top 10 now consumes the packaged daily ranking in-app. Remaining native screens are SquadSlice, Statdle, Goltexto, Pyramid, Legacy, Bingo Retro, Link and Guess the Footballer. Existing native games still need source-authored daily adapters and broader Connections/Impostor variants.
+
+## In-app delivery
+
+The app bundles `Foxlingo/Resources/daily-en.json` as its initial offline set. In Games → Daily challenge updates, import a compiled package or connect an HTTPS URL to the published `latest.json`. The referenced package must be in the same feed directory with the exact dated digest filename. Foxlingo checks the checksum, date, timezone, nineteen-mode inventory and Top 10 source relationships before installation. Failed downloads or imports preserve the last good set. A configured feed is checked on launch and when the app becomes active if its saved set is not today's set.
+
+No public feed is deployed or assumed. Host the output directory from the refresh command on your HTTPS static storage and supply that `latest.json` address. To refresh the next app build's bundled set, copy the verified dated output to `Foxlingo/Resources/daily-en.json` and run the core tests.
+
+Top 10 uses the general-game player table, never Clubs/Nations numeric IDs. It preserves ranked order, nationality flag clues, source title/season and visible game date. Portraits replace flags on successful guesses. Source nicknames and HTTPS portrait URLs are supported. Saved progress is tied to the exact ranking, names, images, flags, date and timezone. Both unfinished and finished lists survive relaunch, and completion earns streak credit once per session. Wrong answers and assisted reveals record practice gaps without fabricating lesson facts.
+
+The feed's other eighteen selections are retained in the package but do not yet drive their native screens. Full goal completion requires every game to be playable and every daily adapter to preserve source identity and freshness.

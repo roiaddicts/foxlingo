@@ -24,6 +24,21 @@ public enum ContentDownload {
         _ = try manifest.verify(data,bundled:bundled)
         return data
     }
+    public static func fetchDaily(pointerURL: String) async throws -> Data {
+        try await fetchDaily(pointerURL:pointerURL,testingSession:nil)
+    }
+    static func fetchDaily(pointerURL: String,testingSession: URLSession?) async throws -> Data {
+        let url=try ContentUpdateRules.https(pointerURL)
+        let config=URLSessionConfiguration.ephemeral
+        config.timeoutIntervalForRequest=30;config.timeoutIntervalForResource=90
+        config.httpCookieStorage=nil;config.urlCredentialStorage=nil
+        let session=testingSession ?? URLSession(configuration:config,delegate:HTTPSRedirects(),delegateQueue:nil)
+        defer {session.invalidateAndCancel()}
+        let pointer=try JSONDecoder().decode(DailyChallengePointer.self,from:await read(url,limit:64*1024,session:session))
+        let data=try await read(pointer.contentURL(relativeTo:url),limit:ContentUpdateRules.maximumBytes,session:session)
+        _ = try pointer.verify(data)
+        return data
+    }
     private static func read(_ url: URL,limit: Int,session: URLSession) async throws -> Data {
         let (stream,response)=try await session.bytes(from:url)
         guard let http=response as? HTTPURLResponse,http.statusCode == 200,

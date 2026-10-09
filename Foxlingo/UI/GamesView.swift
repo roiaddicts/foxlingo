@@ -28,6 +28,16 @@ struct GamesHome: View {
                         }
                     }
                 }
+                if let daily=model.daily {
+                    NavigationLink {DailyTop10View(pack:daily)} label: {
+                        HStack(spacing:16) {
+                            EntityArtwork(asset:nil,url:daily.top10.flags.first,initials:"⚽",size:50)
+                            VStack(alignment:.leading,spacing:6) {Text("Football Top 10").font(.title3.bold());Text(daily.isToday(model.now) ? "Today · "+daily.top10.title : daily.gameDate+" · Saved challenge").font(.subheadline).foregroundStyle(Palette.muted)}
+                            Spacer();Image(systemName:"chevron.right")
+                        }.padding(18).background(.white.opacity(0.8),in:RoundedRectangle(cornerRadius:20))
+                    }.buttonStyle(PressFeedback()).accessibilityIdentifier("game-top10")
+                }
+                NavigationLink("Daily challenge updates",destination:DailyUpdatesView()).font(.subheadline).accessibilityIdentifier("daily-updates")
                 if !model.timelines.isEmpty {
                     NavigationLink {TimelineGameView(rounds:model.timelines)} label: {
                         HStack(spacing:16) {
@@ -273,6 +283,7 @@ struct PlayerAnswerSheet: View {
     var contextClubImageAsset: String? = nil
     var contextTitle: String? = nil
     var contextScope: String? = nil
+    var rejectionMessage="That connection doesn’t fit. Try another player."
     var fallbackImageAsset: String? = nil
     var fallbackImageURL: String? = nil
     let onChoose: (GamePlayer) -> Bool
@@ -299,7 +310,7 @@ struct PlayerAnswerSheet: View {
                 LazyVStack(alignment:.leading,spacing:8) {
                     if !message.isEmpty {Text(message).foregroundStyle(Palette.red).accessibilityIdentifier("game-answer-error")}
                     ForEach(results) {player in
-                        Button {if !onChoose(player) {message="That connection doesn’t fit. Try another player."}} label: {
+                        Button {if !onChoose(player) {message=rejectionMessage}} label: {
                             HStack(spacing:12) {EntityArtwork(asset:player.imageAsset ?? fallbackImageAsset,url:player.imageURL ?? fallbackImageURL,initials:String(player.name.prefix(2)),size:64,isPlayer:player.imageAsset != nil || player.imageURL != nil,portraitFocus:true);Text(player.name).font(.headline);Spacer()}.frame(maxWidth:.infinity,alignment:.leading).padding(8).background(.white,in:RoundedRectangle(cornerRadius:12))
                         }.accessibilityIdentifier("game-player-\(player.id)")
                     }
@@ -310,6 +321,6 @@ struct PlayerAnswerSheet: View {
             HStack {Image(systemName:"magnifyingglass");TextField("Type a player’s name",text:$query).focused($searchFocused).autocorrectionDisabled().accessibilityIdentifier("game-player-search")}
                 .padding(14).background(.white,in:RoundedRectangle(cornerRadius:14)).padding(12).background(.regularMaterial)
         }.journal().navigationTitle(title).navigationBarTitleDisplayMode(.inline).toolbar {Button("Cancel"){dismiss()}}
-        .task {searchFocused=true}
+        .task {searchFocused=true}.onChange(of:query) {message=""}
     }
 }
