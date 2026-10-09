@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0AE33D3319C8B3B14DD01D05 /* DailyRanking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626600C4441F578D70FC60AA /* DailyRanking.swift */; };
 		0DB687199F91BAC584FCE1F4 /* Mystery.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C18A5B21E37AAF8EAFEDD6 /* Mystery.swift */; };
 		0E2E56708C090FEFDB0CC103 /* PracticeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE49724F121C78481AA89D89 /* PracticeView.swift */; };
+		0FF94C760F9AF7CFA8224EDC /* DailySquadSliceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5805FBE83EFA5E707214FA /* DailySquadSliceView.swift */; };
 		12F69F3E40185E7CEF50D20F /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F87F3A242BA97B77CD920D /* Timeline.swift */; };
 		15651C29A41D3C6A0CE3343A /* Games.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585971EEDF1CEED7EEC0823B /* Games.swift */; };
 		18630EBBC5C3089B37CECC50 /* StreakBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4549B851986FB8C584392F2D /* StreakBadge.swift */; };
@@ -28,6 +30,7 @@
 		48C1FBF7696621329BCE25D6 /* Design.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA24C96CBA922814BAD5EB4 /* Design.swift */; };
 		4B1C5419C35BA13FFF9A8DF7 /* StudyPlanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B048B05A96BAE389A67DDA53 /* StudyPlanView.swift */; };
 		4D7B21D17CD24BA132AD8D68 /* TimelineGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA1EE9385DBFEE017150BDB /* TimelineGameView.swift */; };
+		52A3B34633522B38F65D8C2A /* DailySquadSlice.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F42670E83DFD2C425C1988 /* DailySquadSlice.swift */; };
 		551AA343E77B9AD83B4B20A5 /* memory-en.json in Resources */ = {isa = PBXBuildFile; fileRef = BFCB34612F32F812991157E5 /* memory-en.json */; };
 		55CE0E13AC7F5D3DF0882AA7 /* DraftXI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE9855923E0E8D93595C59C /* DraftXI.swift */; };
 		57A8939DC6FFF5D6D8DA2337 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 267DA166EFB8DC9CD6BB95DF /* Foundation.framework */; };
@@ -39,6 +42,7 @@
 		727AE784889220E9616DE498 /* ContentUpdatesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D25505AA67832982A60EE08 /* ContentUpdatesView.swift */; };
 		769A0CFBF5C7D001606397C8 /* FlowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D90F61C2695718E9BCED131 /* FlowTests.swift */; };
 		771846DCC4629031AA025373 /* Learning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44549E9139E3443B66DB2E34 /* Learning.swift */; };
+		77409B84F227F4AEB9C972F9 /* DailyPyramidView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171DB1CE51A229979E27C97B /* DailyPyramidView.swift */; };
 		82150E21B0A20A2157A9663C /* PlayerGroups.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1748C6C507FC54A146D6F51C /* PlayerGroups.swift */; };
 		829EA4E2190693D065F4C3D3 /* DailyChallenges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E56B339B1BD67288DEE76F /* DailyChallenges.swift */; };
 		8C163C272018AC63A3695C8A /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4A1974B3B01C85D26BA1F0 /* Album.swift */; };
@@ -86,6 +90,7 @@
 		0CF94E40E1DBE5E69BB7F885 /* starter-en.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; path = "starter-en.json"; sourceTree = "<group>"; };
 		14A787A4A96F423AD601B4AF /* GamesView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GamesView.swift; sourceTree = "<group>"; };
 		164EF1553A2DCCE0E460298C /* PlayerGroupsView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PlayerGroupsView.swift; sourceTree = "<group>"; };
+		171DB1CE51A229979E27C97B /* DailyPyramidView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DailyPyramidView.swift; sourceTree = "<group>"; };
 		1748C6C507FC54A146D6F51C /* PlayerGroups.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PlayerGroups.swift; sourceTree = "<group>"; };
 		1B49C4B82824235151BA9829 /* GameResume.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GameResume.swift; sourceTree = "<group>"; };
 		1D15CE2DB7E9C37C8BEE5083 /* drafts-en.json */ = {isa = PBXFileReference; includeInIndex = 1; path = "drafts-en.json"; sourceTree = "<group>"; };
@@ -104,6 +109,7 @@
 		5A29533AECE8FA1EB16B96D4 /* Graph.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Graph.swift; sourceTree = "<group>"; };
 		5DF9265116E25E2BF11AF2C9 /* LessonView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LessonView.swift; sourceTree = "<group>"; };
 		61FC0FA460EC5AF74B59DD8F /* ContentDownload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ContentDownload.swift; sourceTree = "<group>"; };
+		626600C4441F578D70FC60AA /* DailyRanking.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DailyRanking.swift; sourceTree = "<group>"; };
 		635B5A44F3E8D0C885166D86 /* FootballWordle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FootballWordle.swift; sourceTree = "<group>"; };
 		68E742E45065DB444B399B7B /* DailyTop10View.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DailyTop10View.swift; sourceTree = "<group>"; };
 		69CAF16169F54078C4005D08 /* FoxlingoApp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FoxlingoApp.swift; sourceTree = "<group>"; };
@@ -118,6 +124,7 @@
 		8DA24C96CBA922814BAD5EB4 /* Design.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Design.swift; sourceTree = "<group>"; };
 		8DD871C7BE65AF8D81842116 /* rehearsal-en.json */ = {isa = PBXFileReference; includeInIndex = 1; path = "rehearsal-en.json"; sourceTree = "<group>"; };
 		9293F084AA12E8F914D0DA78 /* PracticeGaps.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PracticeGaps.swift; sourceTree = "<group>"; };
+		9F5805FBE83EFA5E707214FA /* DailySquadSliceView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DailySquadSliceView.swift; sourceTree = "<group>"; };
 		AE49724F121C78481AA89D89 /* PracticeView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PracticeView.swift; sourceTree = "<group>"; };
 		B001EEB9083DBCB177F147DF /* FoxlingoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoxlingoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B048B05A96BAE389A67DDA53 /* StudyPlanView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StudyPlanView.swift; sourceTree = "<group>"; };
@@ -126,6 +133,7 @@
 		BC35574D37589DA87E7C5A5D /* AlbumView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AlbumView.swift; sourceTree = "<group>"; };
 		BFCB34612F32F812991157E5 /* memory-en.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; path = "memory-en.json"; sourceTree = "<group>"; };
 		C2C18A5B21E37AAF8EAFEDD6 /* Mystery.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Mystery.swift; sourceTree = "<group>"; };
+		C5F42670E83DFD2C425C1988 /* DailySquadSlice.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DailySquadSlice.swift; sourceTree = "<group>"; };
 		CADE050C3166F8029D3AB230 /* FootballWordleView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FootballWordleView.swift; sourceTree = "<group>"; };
 		CF04BE9776E9842A6456BD2C /* StudyPlan.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StudyPlan.swift; sourceTree = "<group>"; };
 		D0A114FDEA77AA562EE89769 /* mystery-en.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; path = "mystery-en.json"; sourceTree = "<group>"; };
@@ -198,6 +206,8 @@
 				DFE9855923E0E8D93595C59C /* DraftXI.swift */,
 				77E56B339B1BD67288DEE76F /* DailyChallenges.swift */,
 				08674D1A67FB4BEBB32B545F /* DailyReveal.swift */,
+				626600C4441F578D70FC60AA /* DailyRanking.swift */,
+				C5F42670E83DFD2C425C1988 /* DailySquadSlice.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -290,6 +300,8 @@
 				E76FE00149A3C9E3A3970AB7 /* DraftXIView.swift */,
 				68E742E45065DB444B399B7B /* DailyTop10View.swift */,
 				B9CCCC9A83AE35A3079A6E8F /* DailyRevealView.swift */,
+				171DB1CE51A229979E27C97B /* DailyPyramidView.swift */,
+				9F5805FBE83EFA5E707214FA /* DailySquadSliceView.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -456,6 +468,10 @@
 				F5012D961E7D81E94EFE4094 /* DailyTop10View.swift in Sources */,
 				35331C00CA2C1D6B9950622C /* DailyReveal.swift in Sources */,
 				A4C5594ACC500AA8E6365CB7 /* DailyRevealView.swift in Sources */,
+				0AE33D3319C8B3B14DD01D05 /* DailyRanking.swift in Sources */,
+				52A3B34633522B38F65D8C2A /* DailySquadSlice.swift in Sources */,
+				77409B84F227F4AEB9C972F9 /* DailyPyramidView.swift in Sources */,
+				0FF94C760F9AF7CFA8224EDC /* DailySquadSliceView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

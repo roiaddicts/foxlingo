@@ -8,8 +8,8 @@
       "sourceURL": "https://futbol11.com/futbol11-squadslice",
       "mechanic": "Guess a club from a season-specific squad nationality pie chart.",
       "requiredData": "squad nationality counts, seasons, club artwork",
-      "status": "planned",
-      "notes": ""
+      "status": "native",
+      "notes": "Verified daily season squad and nationality chart, source-specific seeded reveal order, Random or Clockwise whole-country 30/60/full reveals, three guesses, club shirt search, final squad portraits and saved rounds."
     },
     {
       "id": "statdle",
@@ -69,10 +69,10 @@
       "id": "pyramid",
       "title": "Pyramid",
       "sourceURL": "https://futbol11.com/futbol11-pyramid",
-      "mechanic": "Arrange ten players in four ranking tiers.",
+      "mechanic": "Rank ten offered players from highest to lowest across four pyramid rows.",
       "requiredData": "ranked values with tied-score rules and cutoff dates",
-      "status": "planned",
-      "notes": ""
+      "status": "native",
+      "notes": "Verified daily player/value pairs, source floor-day selection and tie handling; draggable or tap-swapped portraits, Easy bands, one correct-slot check, exact-rank grading and saved rounds."
     },
     {
       "id": "connections",

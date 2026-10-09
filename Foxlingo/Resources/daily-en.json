@@ -4,10 +4,10 @@
   "timeZone": "America/Mexico_City",
   "dayOfYear": 282,
   "elapsedDayFloor": 282,
-  "fetchedAt": "2026-10-09T20:27:29.764175+00:00",
-  "compiledAt": "2026-10-09T20:27:30.630702+00:00",
+  "fetchedAt": "2026-10-09T21:01:19.594752+00:00",
+  "compiledAt": "2026-10-09T21:01:20.392074+00:00",
   "selectorContractsSHA256": "a65139d4c6efebca4955265210ef88b45d7a93257a54bf7b38bb17bea9d6e769",
-  "sourceSnapshotSHA256": "5cee79b10b19b793aca92492bca8399e9a6e3b3e71e4a21a4a37ad6eaf869bd3",
+  "sourceSnapshotSHA256": "5661de4cabe20bc60bf101ba39f637ced4bdba8bc59a6d3ddcd6ac21dc4b8337",
   "sourceURL": "https://futbol11.com/",
   "datasets": [
     {
@@ -146511,7 +146511,124 @@
           "players": "174,408,2015,405,218,2078,741,1380,737,901,911,2043,2990,330,1904,410,895,629,620,909,309,738,2996,2997,2998,2999,3000,3001"
         },
         "index": 282,
-        "datasetRecords": 450
+        "datasetRecords": 450,
+        "slices": [
+          {
+            "countryID": 10,
+            "playerIDs": [
+              174,
+              2015,
+              405,
+              2078,
+              741,
+              737,
+              901,
+              410,
+              895,
+              738,
+              2999,
+              3000,
+              3001
+            ],
+            "count": 13
+          },
+          {
+            "countryID": 1,
+            "playerIDs": [
+              2043,
+              620,
+              2998
+            ],
+            "count": 3
+          },
+          {
+            "countryID": 7,
+            "playerIDs": [
+              408,
+              911
+            ],
+            "count": 2
+          },
+          {
+            "countryID": 19,
+            "playerIDs": [
+              218,
+              1904
+            ],
+            "count": 2
+          },
+          {
+            "countryID": 6,
+            "playerIDs": [
+              309
+            ],
+            "count": 1
+          },
+          {
+            "countryID": 13,
+            "playerIDs": [
+              1380
+            ],
+            "count": 1
+          },
+          {
+            "countryID": 17,
+            "playerIDs": [
+              2990
+            ],
+            "count": 1
+          },
+          {
+            "countryID": 34,
+            "playerIDs": [
+              629
+            ],
+            "count": 1
+          },
+          {
+            "countryID": 37,
+            "playerIDs": [
+              2996
+            ],
+            "count": 1
+          },
+          {
+            "countryID": 51,
+            "playerIDs": [
+              330
+            ],
+            "count": 1
+          },
+          {
+            "countryID": 65,
+            "playerIDs": [
+              909
+            ],
+            "count": 1
+          },
+          {
+            "countryID": 66,
+            "playerIDs": [
+              2997
+            ],
+            "count": 1
+          }
+        ],
+        "revealOrder": [
+          65,
+          1,
+          13,
+          51,
+          10,
+          6,
+          17,
+          34,
+          37,
+          7,
+          19,
+          66
+        ],
+        "omittedPlayerIDs": []
       },
       "sourceModule": "https://futbol11.com/_nuxt/CR5rtasp.js",
       "sourceModuleSHA256": "a893f0a68ceaa0d555845b1640c77e4682ff3e0809e82ee672f2484e033e6052",

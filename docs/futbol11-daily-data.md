@@ -44,7 +44,7 @@ Offline tests verify all nineteen mode selections, JavaScript arithmetic compati
 
 ## Remaining app work
 
-Daily extraction covers nineteen modes; native game coverage is fourteen modes. Top 10, Statdle, Legacy and Link consume packaged daily selections in-app. Remaining native screens are SquadSlice, Goltexto, Pyramid, Bingo Retro and Guess the Footballer. Existing native games still need source-authored daily adapters and broader Connections/Impostor variants.
+Daily extraction covers nineteen modes; native game coverage is sixteen modes. Top 10, Statdle, Legacy, Link, Pyramid and SquadSlice consume packaged daily selections in-app. Remaining native screens are Goltexto, Bingo Retro and Guess the Footballer. Existing native games still need source-authored daily adapters and broader Connections/Impostor variants.
 
 ## In-app delivery
 
@@ -56,4 +56,6 @@ Top 10 uses the general-game player table, never Clubs/Nations numeric IDs. It p
 
 The feed's other fifteen selections are retained in the package but do not yet drive their native screens. Full goal completion requires every game to be playable and every daily adapter to preserve source identity and freshness.
 
-The additive `support.clubs` table preserves the source's inline club names, country IDs and kit URLs, with its module URL/digest. Its executable wrapper has a reviewed selector contract. Legacy's club clue order and Link's teammate order are compiled with the source shuffle and correct seeds. Statdle, Legacy and Link are explicitly bound to the general-game player table during compilation. Apps reject selected native record indexes that do not match the game date's rounded local day index. Older Top 10-only packages remain readable without inventing clues for the new modes. A newer bundled date, or a same-date bundle with more supported modes, takes precedence over an older cached package after an app update.
+The additive `support.clubs` table preserves the source's inline club names, country IDs and kit URLs, with its module URL/digest. Its executable wrapper has a reviewed selector contract. Legacy's club clue order and Link's teammate order are compiled with the source shuffle and correct seeds. Statdle, Legacy and Link are explicitly bound to the general-game player table during compilation. Apps reject selected native record indexes that do not match the game date's local index: floor for Pyramid and rounded for the other supported modes. Older Top 10-only packages remain readable without inventing clues for the new modes. A newer bundled date, or a same-date bundle with more supported modes, takes precedence over an older cached package after an app update.
+
+SquadSlice has its own UTF-16 FNV-1a/Mulberry32 shuffle, seeded with `clubID-season`; it does not use the common daily shuffle. Its compiled `slices` preserve the source general-player join, omitted player IDs, descending nationality counts and numeric-country tie order. `revealOrder` is verified against an independent authored JavaScript math oracle. Pyramid uses `elapsedDayFloor`, validates its source record and ten unique selected values, and keeps the first source player per tied value. Native Pyramid validates the floor index; the other selected native records validate the rounded index.

@@ -47,6 +47,20 @@ def shuffle(values,seed):
         result[i],result[j]=result[j],result[i]
     return result
 
+def squad_shuffle(values,seed):
+    """SquadSlice uses FNV-1a and Mulberry32, not the shared daily shuffle."""
+    state=2166136261
+    encoded=seed.encode('utf-16-le')
+    for i in range(0,len(encoded),2):state=((state^int.from_bytes(encoded[i:i+2],'little'))*16777619)&0xffffffff
+    result=list(values)
+    for i in range(len(result)-1,0,-1):
+        state=(state+1831565813)&0xffffffff
+        value=((state^(state>>15))*(state|1))&0xffffffff
+        value=((value+(((value^(value>>7))*(value|61))&0xffffffff))^value)&0xffffffff
+        rand=((value^(value>>14))&0xffffffff)/4294967296
+        j=math.floor(rand*(i+1));result[i],result[j]=result[j],result[i]
+    return result
+
 def day_indexes(day,zone):
     z=ZoneInfo(zone);start=datetime.combine(day,time.min,z)
     jan0=datetime.combine(date(day.year,1,1)-timedelta(days=1),time.min,z)
@@ -116,8 +130,26 @@ def compile_daily(snapshot,day,zone):
             game['selection']['clueOrder']=order
         else:
             game['randomPlayOrder']=True # Eight clue reveals are randomized during play.
+    squad_game=next(g for g in games if g['id']=='squadslice');squad_record=squad_game['selection']['record']
+    squad_url=archive.mode('squadslice')
+    if archive.imported(squad_url,'l2')!=general_url or archive.imported(squad_url,'r2')!=club_url:raise ValueError('SquadSlice identity binding changed')
+    country_url=archive.imported(squad_url,'t2');countries=archive.rows({'id','name','flag','bgColor'},country_url)
+    country_ids={c['id'] for c in countries};general_map={p['id']:p for p in general}
+    roster=[general_map[i] for i in csv(squad_record['players']) if i in general_map]
+    if not roster or len({p['id'] for p in roster})!=len(roster):raise ValueError('Invalid SquadSlice roster')
+    groups={}
+    for player in roster:
+        if player['countryID'] not in country_ids:raise ValueError('Missing squad nationality flag')
+        groups.setdefault(player['countryID'],[]).append(player['id'])
+    slices=[dict(countryID=country,playerIDs=groups[country],count=len(groups[country])) for country in sorted(groups)]
+    slices.sort(key=lambda row:-row['count']) # Stable ties retain Object.values numeric-key order.
+    squad_game['selection']['slices']=slices
+    squad_game['selection']['revealOrder']=[r['countryID'] for r in squad_shuffle(slices,str(squad_record['clubID'])+'-'+squad_record['season'])]
+    squad_game['selection']['omittedPlayerIDs']=[i for i in csv(squad_record['players']) if i not in general_map]
+    if not any(c['id']==squad_record['clubID'] for c in clubs):raise ValueError('Missing squad answer club')
     # Pyramid deliberately uses floor rather than the common rounded day helper.
     url,text=module('pyramid',['p=Math.floor(C/G)','let S=u1[p]','i.has(r.number)?!1:(i.add(r.number),!0)'])
+    if archive.imported(url,'a1')!=general_url:raise ValueError('Pyramid player namespace binding changed')
     rows=archive.rows({'id','title','players'},url)
     if not 0<=floor_index<len(rows):raise ValueError('Pyramid index outside source coverage')
     chosen=rows[floor_index];seen=set();rank=[]

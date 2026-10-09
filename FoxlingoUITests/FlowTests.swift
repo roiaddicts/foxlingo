@@ -240,6 +240,58 @@ final class FlowTests: XCTestCase {
     func revealClue(_ id: String) -> XCUIElement {
         app.descendants(matching:.any).matching(identifier:"reveal-clue-"+id).firstMatch
     }
+    func tapPyramidSlot(_ slot:Int) {
+        let button=app.buttons["pyramid-slot-\(slot)"]
+        for _ in 0..<6 {
+            if button.exists && button.isHittable && button.frame.midY < app.frame.maxY-100 && button.frame.midY > app.frame.minY+110 {break}
+            if button.exists && button.frame.midY < app.frame.minY+110 {app.swipeDown()} else {app.swipeUp()}
+        }
+        button.tap()
+    }
+    func testDailyPyramidRankingSwapResumeAndGrade() {
+        start();tap("choose-XT");app.tabBars.buttons["Games"].tap();tap("game-pyramid")
+        tapPyramidSlot(2);tapPyramidSlot(0)
+        app.terminate();start(reset:false);app.tabBars.buttons["Games"].tap();tap("game-pyramid")
+        XCTAssertTrue(app.buttons["pyramid-slot-2"].label.contains("Nani"))
+        XCTAssertTrue(app.buttons["pyramid-slot-0"].label.contains("Pauleta"))
+        for slot in [6,8,9,7,4,1,3,5] {tapPyramidSlot(slot)}
+        // Exercise the native drag path before restoring the correct ranks by tap.
+        for _ in 0..<3 {app.swipeDown()}
+        let from=app.buttons["pyramid-slot-1"],to=app.buttons["pyramid-slot-2"]
+        from.press(forDuration:0.5,thenDragTo:to)
+        XCTAssertTrue(to.label.contains("Figo"))
+        tapPyramidSlot(1);tapPyramidSlot(2)
+        tap("pyramid-help");tap("pyramid-submit")
+        XCTAssertTrue(app.staticTexts["pyramid-complete"].waitForExistence(timeout:3))
+        XCTAssertEqual(app.staticTexts["pyramid-complete"].label,"Perfect pyramid!")
+        Thread.sleep(forTimeInterval:0.4)
+        let shot=XCTAttachment(screenshot:app.screenshot());shot.name="Pyramid ranked portrait board";shot.lifetime = .keepAlways;add(shot)
+    }
+    func testDailySquadSliceFlagsSearchResumeAndFinalChance() {
+        start();tap("choose-XT");app.tabBars.buttons["Games"].tap();tap("game-squadslice")
+        app.segmentedControls["squad-reveal-order"].buttons["Clockwise"].tap()
+        XCTAssertEqual(app.staticTexts["squad-season"].label,"2016/17")
+        XCTAssertTrue(app.buttons["squad-country-10"].exists)
+        XCTAssertFalse(app.buttons["squad-country-1"].exists)
+        let chart=app.otherElements.matching(identifier:"squad-chart").firstMatch
+        XCTAssertTrue(chart.exists);chart.coordinate(withNormalizedOffset:CGVector(dx:0.85,dy:0.35)).tap()
+        XCTAssertTrue(app.descendants(matching:.any).matching(identifier:"squad-selected-country").firstMatch.exists)
+        tap("squad-country-10")
+        XCTAssertTrue(app.descendants(matching:.any).matching(identifier:"squad-selected-country").firstMatch.exists)
+        XCTAssertFalse(app.scrollViews["squad-country-players"].exists)
+        tap("squad-guess")
+        let search=app.textFields["squad-club-search"];XCTAssertTrue(search.waitForExistence(timeout:3));search.typeText("Arsenal");tap("squad-club-1")
+        XCTAssertTrue(app.buttons["squad-country-1"].waitForExistence(timeout:3))
+        app.terminate();start(reset:false);app.tabBars.buttons["Games"].tap();tap("game-squadslice")
+        XCTAssertTrue(app.staticTexts["squad-chances"].label.contains("1 / 3"))
+        tap("squad-skip");tap("squad-guess");search.typeText("Milan");tap("squad-club-12")
+        XCTAssertTrue(app.staticTexts["squad-answer"].waitForExistence(timeout:3))
+        XCTAssertEqual(app.staticTexts["squad-answer"].label,"AC Milan")
+        tap("squad-country-10")
+        XCTAssertTrue(app.scrollViews["squad-country-players"].waitForExistence(timeout:3))
+        Thread.sleep(forTimeInterval:0.4)
+        let shot=XCTAttachment(screenshot:app.screenshot());shot.name="SquadSlice nationality ring and portraits";shot.lifetime = .keepAlways;add(shot)
+    }
     func testDailyLegacyAndLinkVisualCluesSearchAndResume() {
         start();tap("choose-XT");app.tabBars.buttons["Games"].tap();tap("game-legacy")
         XCTAssertEqual(revealClue("club-89").label,"Club: PSV")

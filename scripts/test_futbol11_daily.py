@@ -2,7 +2,7 @@ import json,subprocess,tempfile,unittest
 from datetime import date
 from pathlib import Path
 from unittest.mock import patch
-from futbol11_daily import compile_daily,day_indexes,shuffle,publish,selector_digest
+from futbol11_daily import compile_daily,day_indexes,shuffle,publish,selector_digest,squad_shuffle
 from futbol11_archive import Archive
 ROOT=Path(__file__).resolve().parents[1]
 SNAPSHOT=ROOT/'ref/futbol11-fixtures/current-2026-10-09/snapshot.json'
@@ -63,6 +63,16 @@ class DailyTests(unittest.TestCase):
             return text+';a[0].id=999;' if url==first['support']['clubs']['sourceURL'] else text
         with patch.object(Archive,'text',changed):
             with self.assertRaisesRegex(ValueError,'support contract changed'):compile_daily(SNAPSHOT,date(2026,10,9),'America/Mexico_City')
+    def test_squad_rng_matches_independent_javascript_and_source_cohort(self):
+        js="function shuffled(seed){let s=2166136261;for(let i=0;i<seed.length;i++)s=Math.imul(s^seed.charCodeAt(i),16777619);s>>>=0;let a=Array.from({length:20},(_,i)=>i);for(let i=a.length-1;i>0;i--){s=s+1831565813|0;let v=Math.imul(s^s>>>15,1|s);v=v+Math.imul(v^v>>>7,61|v)^v;let j=Math.floor(((v^v>>>14)>>>0)/4294967296*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}console.log(JSON.stringify(['12-2016/17','1-2025/26','😀'].map(shuffled)));"
+        expected=json.loads(subprocess.check_output(['node','-e',js],text=True))
+        self.assertEqual([squad_shuffle(list(range(20)),seed) for seed in ['12-2016/17','1-2025/26','😀']],expected)
+        pack=compile_daily(SNAPSHOT,date(2026,10,9),'America/Mexico_City')
+        squad=next(g['selection'] for g in pack['games'] if g['id']=='squadslice')
+        self.assertEqual(squad['revealOrder'],[65,1,13,51,10,6,17,34,37,7,19,66])
+        self.assertEqual(sum(s['count'] for s in squad['slices']),28)
+        self.assertEqual(squad['slices'][0]['countryID'],10);self.assertEqual(squad['slices'][0]['count'],13)
+        self.assertEqual(squad['omittedPlayerIDs'],[])
     def test_new_homepage_mode_is_reported_instead_of_silently_omitted(self):
         routes=Archive(SNAPSHOT).catalog_routes()
         with patch.object(Archive,'catalog_routes',return_value=routes|{'/futbol11-new-mode'}):

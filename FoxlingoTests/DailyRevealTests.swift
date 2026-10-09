@@ -5,6 +5,13 @@ final class DailyRevealTests: XCTestCase {
     private func data() throws -> Data {
         try Data(contentsOf:URL(fileURLWithPath:#filePath).deletingLastPathComponent().deletingLastPathComponent().appendingPathComponent("Foxlingo/Resources/daily-en.json"))
     }
+    private func removeNewSupport(_ root: inout [String:Any]) {
+        root.removeValue(forKey:"support")
+        var games=root["games"] as! [[String:Any]],i=games.firstIndex {$0["id"] as? String == "squadslice"}!
+        var selection=games[i]["selection"] as! [String:Any]
+        for key in ["slices","revealOrder","omittedPlayerIDs"] {selection.removeValue(forKey:key)}
+        games[i]["selection"]=selection;root["games"]=games
+    }
     private func pack() throws -> DailyChallengePack {try DailyChallengePack.load(data())}
     func testSourceAnswersClubsAndHistoricalSeasonStats() throws {
         let pack=try pack();XCTAssertEqual(pack.revealRounds.count,3)
@@ -87,17 +94,29 @@ final class DailyRevealTests: XCTestCase {
     }
     func testAppUpdatePrefersNewerBundledCapabilitiesOverOlderSameDayCache() throws {
         let bundled=try data();var root=try JSONSerialization.jsonObject(with:bundled) as! [String:Any]
-        root.removeValue(forKey:"support");let old=try JSONSerialization.data(withJSONObject:root)
+        removeNewSupport(&root);let old=try JSONSerialization.data(withJSONObject:root)
         let directory=FileManager.default.temporaryDirectory.appendingPathComponent(UUID().uuidString)
         defer {try? FileManager.default.removeItem(at:directory)}
         let cache=DailyChallengeCache(directory:directory);_ = try cache.install(old)
         XCTAssertEqual(try cache.load(bundled:bundled).revealRounds.count,3)
         func redate(_ date: String,_ index: Int) throws {
-            root["gameDate"]=date;root["dayOfYear"]=index
+            root["gameDate"]=date;root["dayOfYear"]=index;root["elapsedDayFloor"]=index
             var games=root["games"] as! [[String:Any]];let i=games.firstIndex {$0["id"] as? String == "top10"}!
             let url=games[i]["sourceModule"] as! String,datasets=root["datasets"] as! [[String:Any]]
             let rows=datasets.first {$0["sourceURL"] as? String == url}!["data"] as! [[String:Any]]
-            var selection=games[i]["selection"] as! [String:Any];selection["index"]=index;selection["record"]=rows[index];games[i]["selection"]=selection;root["games"]=games
+            var selection=games[i]["selection"] as! [String:Any];selection["index"]=index;selection["record"]=rows[index];games[i]["selection"]=selection
+            let rankIndex=games.firstIndex {$0["id"] as? String == "pyramid"}!,rankURL=games[rankIndex]["sourceModule"] as! String
+            let rankRows=datasets.first {$0["sourceURL"] as? String == rankURL}!["data"] as! [[String:Any]]
+            var rankSelection=games[rankIndex]["selection"] as! [String:Any];rankSelection["index"]=index;rankSelection["record"]=rankRows[index]
+            var values=Set<Int>(),selected:[[String:Int]]=[]
+            for pair in (rankRows[index]["players"] as! String).split(separator:".") {
+                let parts=pair.split(separator:",").map {Int($0)!}
+                if values.insert(parts[1]).inserted {selected.append(["playerID":parts[0],"value":parts[1]])}
+            }
+            rankSelection["players"]=Array(selected.prefix(10));games[rankIndex]["selection"]=rankSelection
+            let squadIndex=games.firstIndex {$0["id"] as? String == "squadslice"}!,squadURL=games[squadIndex]["sourceModule"] as! String
+            let squadRows=datasets.first {$0["sourceURL"] as? String == squadURL}!["data"] as! [[String:Any]]
+            var squadSelection=games[squadIndex]["selection"] as! [String:Any];squadSelection["index"]=index;squadSelection["record"]=squadRows[index];games[squadIndex]["selection"]=squadSelection;root["games"]=games
             _ = try cache.install(JSONSerialization.data(withJSONObject:root))
         }
         try redate("2026-10-08",281)
@@ -106,7 +125,7 @@ final class DailyRevealTests: XCTestCase {
         XCTAssertEqual(try cache.load(bundled:bundled).gameDate,"2026-10-10")
     }
     func testOlderTop10OnlyPackagesStillLoadWithoutInventingOtherModes() throws {
-        var root=try JSONSerialization.jsonObject(with:data()) as! [String:Any];root.removeValue(forKey:"support")
+        var root=try JSONSerialization.jsonObject(with:data()) as! [String:Any];removeNewSupport(&root)
         let pack=try DailyChallengePack.load(JSONSerialization.data(withJSONObject:root))
         XCTAssertTrue(pack.revealRounds.isEmpty);XCTAssertEqual(pack.top10.rankedPlayers.count,10)
     }

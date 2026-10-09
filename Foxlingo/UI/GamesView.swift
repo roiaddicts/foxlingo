@@ -29,6 +29,14 @@ struct GamesHome: View {
                     }
                 }
                 if let daily=model.daily {
+                    NavigationLink {DailyPyramidView(pack:daily)} label: {
+                        HStack(spacing:16) {Image(systemName:"triangle.fill").font(.title2).frame(width:50,height:60).foregroundStyle(Palette.brand);VStack(alignment:.leading,spacing:6) {Text("Football Pyramid").font(.title3.bold());Text("Rank ten players. Drag to rearrange.").font(.subheadline).foregroundStyle(Palette.muted)};Spacer();Image(systemName:"chevron.right")}.padding(18).background(.white.opacity(0.8),in:RoundedRectangle(cornerRadius:20))
+                    }.buttonStyle(PressFeedback()).accessibilityIdentifier("game-pyramid")
+                    if let squad=daily.squadSlice {
+                        NavigationLink {DailySquadSliceView(pack:daily,round:squad)} label: {
+                            HStack(spacing:16) {Image(systemName:"chart.pie.fill").font(.title2).frame(width:50,height:60).foregroundStyle(Palette.brand);VStack(alignment:.leading,spacing:6) {Text("SquadSlice").font(.title3.bold());Text("Flags, a season, and three chances.").font(.subheadline).foregroundStyle(Palette.muted)};Spacer();Image(systemName:"chevron.right")}.padding(18).background(.white.opacity(0.8),in:RoundedRectangle(cornerRadius:20))
+                        }.buttonStyle(PressFeedback()).accessibilityIdentifier("game-squadslice")
+                    }
                     ForEach(daily.revealRounds,id:\.mode.rawValue) {round in
                         NavigationLink {DailyRevealView(pack:daily,round:round)} label: {
                             HStack(spacing:16) {
