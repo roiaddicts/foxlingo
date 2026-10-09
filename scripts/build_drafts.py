@@ -2,8 +2,9 @@
 from pathlib import Path
 import argparse, hashlib, json, unicodedata
 from collections import defaultdict
-from futbol11_source import extract, role_data
+from futbol11_source import extract
 from futbol11_static import one_table
+from futbol11_archive import Archive
 ROOT=Path(__file__).resolve().parents[1]
 SCOPE='Futbol11 historical seed pool; roster, position and activity cutoff dates are not published. Fetch time is not data freshness.'
 POSITIONS={'GK','LB','CB','RB','LWB','RWB','CDM','CM','CAM','LM','RM','LW','RW','ST','CF'}
@@ -22,10 +23,12 @@ def positions(row):
 
 
 def compile_pack(path):
-    meta=json.loads(path.read_text()); root=path.parent; roles=role_data(path)
+    archive=Archive(path);meta=archive.meta;root=path.parent;roles=archive.roles
+    countries_module=archive.mode('countries');clubs_module=archive.mode('clubs')
+    modules={'CnV5DmAQ.js':archive.imported(countries_module,'z'),'Ca2vDWde.js':clubs_module,'B2tFiaen.js':archive.mode('america'),'8BCraab8.js':archive.mode('legends'),'CaAfWsTq.js':archive.imported(countries_module,'ue'),'U8uOf8nf.js':archive.imported(countries_module,'O'),'ChS2TaaV.js':archive.imported(clubs_module,'G')}
     source_url=meta['sourceURL'].rstrip('/')
     def module(filename):
-        matches=[a for a in meta['assets'] if a['url'].rsplit('/',1)[-1]==filename]
+        matches=[a for a in meta['assets'] if a['url']==modules[filename]]
         if len(matches)!=1: raise ValueError('Missing source module: '+filename)
         item=matches[0]; raw=(root/item['file']).read_bytes()
         if hashlib.sha256(raw).hexdigest()!=item['sha256']: raise ValueError('Source asset digest changed: '+filename)

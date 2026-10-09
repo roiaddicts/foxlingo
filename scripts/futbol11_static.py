@@ -4,7 +4,7 @@ from futbol11_source import js_string
 TOKEN = re.compile(r'''\s*(?:(?P<string>"(?:\\.|[^"\\])*"|'(?:\\.|[^'\\])*')|(?P<number>-?\d+(?:\.\d+)?)|(?P<identifier>[A-Za-z_$][\w$]*)|(?P<punct>[\[\]{},:]))''')
 
 
-def array_at(source, start):
+def array_at(source, start, with_end=False):
     pos = start
     items = 0
     def token():
@@ -50,7 +50,7 @@ def array_at(source, start):
         raise ValueError('JavaScript expression is not static data')
     result = value()
     if not isinstance(result, list): raise ValueError('Expected a static array')
-    return result
+    return (result,pos) if with_end else result
 
 
 def tables(source, required):

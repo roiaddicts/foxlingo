@@ -13,18 +13,20 @@ class StaticTests(unittest.TestCase):
             with self.assertRaises(ValueError):array_at(code,0)
         with self.assertRaises(ValueError):one_table('let x=[{id:1,name:"a"}];let y=[{id:2,name:"b"}]',{'id','name'})
     def test_changed_archived_module_digest_rejected(self):
-        snapshot=ROOT/'ref/futbol11-snapshots/2026-10-09T07-24-09.051921+00-00-647159b7c135/snapshot.json'
+        snapshot=ROOT/'ref/futbol11-fixtures/current-2026-10-09/snapshot.json'
         meta=json.loads(snapshot.read_text())
-        target=snapshot.parent/next(a['file'] for a in meta['assets'] if a['url'].endswith('/CaAfWsTq.js'))
+        target=snapshot.parent/next(a['file'] for a in meta['assets'] if a['url'].endswith('/CeT-PgRx.js'))
         original=Path.read_bytes
         def changed(path):return b'[{name:"injected"}]' if path==target else original(path)
         with patch.object(Path,'read_bytes',changed):
             with self.assertRaisesRegex(ValueError,'digest'):compile_pack(snapshot)
     def test_source_roles_and_generated_pack(self):
         # Resolve the exact checked-in artifact, not a live download.
-        snapshot=ROOT/'ref/futbol11-snapshots/2026-10-09T07-24-09.051921+00-00-647159b7c135/snapshot.json'
+        snapshot=ROOT/'ref/futbol11-fixtures/current-2026-10-09/snapshot.json'
         pack,crosswalk,excluded=compile_pack(snapshot)
-        self.assertEqual(pack,json.loads((ROOT/'Foxlingo/Resources/drafts-en.json').read_text()))
+        bundled=json.loads((ROOT/'Foxlingo/Resources/drafts-en.json').read_text())
+        bundled['fetchedAt']=pack['fetchedAt']
+        self.assertEqual(pack,bundled)
         self.assertEqual(len(pack['players']),8958)
         self.assertEqual(len({p['person']['id'] for p in pack['players']}),8958)
         self.assertEqual(len(crosswalk),len({p['id'] for p in crosswalk}))

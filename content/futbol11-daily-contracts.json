@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-09",
+  "scope": "Reviewed default daily selectors. A changed program requires review; static data and module filename changes are allowed.",
+  "selectors": {
+    "countries": "6d93c977d382329a7655b82eeb9d38b7038d3d7e6d4cf1924245cebef0cac8b1",
+    "clubs": "84b8c56b7312584abe80d01cb3c587db61ff206330d6149c828c66d0dd6bd1d9",
+    "retro": "ab4b5da7799747a0eb6eb79246eeee0d85a4c0403efa04ff9cceef0991a65a28",
+    "legends": "856d25b5de7d7d2a6336328becca3f1d8b4f327fa0915e507f28daaf8fec5379",
+    "america": "5be65f80490752238606a90e119bf3352b7fb4e43dfe8d093c33e28b709f263e",
+    "top10": "b4b1d51d596f05acf98727b55ee6fa9975b5e5e21c28aaeedc68a7866a1ca689",
+    "statdle": "08add8b00abb56db090a149ba61d27026eb4ae27109d0db4a640b84aca96d5e7",
+    "legacy": "c44d864c6e4b218ca089f7041c7a5ffa1a3a38efd1aa32574f64cf7a714450f8",
+    "link": "82896c6cc4e2f1e0c411c131c87874ef7c8c68459905eb54c7513eef3cd99e1e",
+    "squadslice": "579c9435efe7bcc2ee7122b539ca11869ef6ebbdcf4bd13796a20b8b03219954",
+    "guesswho": "066acd43e35b8c394784c4d8171f11814e90f324c84a3a1178847d28bcdff735",
+    "pyramid": "26450eb4cbde0b91838986851e45d335336d6c451b3ad70bc6f9c94470a76109",
+    "wordle": "c2cff2eb8e70a5be2f87d819a2bbee79acf3da381a4d2837beb3f4c8052c5e4a",
+    "goltexto": "e32f67da93f2b396a47b528e22132ee8f5f7c427ab027cb3aadd34d6f2522ae1",
+    "impostor": "bc1eb9fb9934cdb0a39e81a54b3917f111b99822ba74035f059a42dcdd3ed9e2",
+    "bingo": "a2118ef39dc2648b42919534961935cb3a8c1648dbe42c3bb5bc752c4cbba4cc",
+    "bingo-retro": "1d87dec55634fec488e8e9fd66fd3a92c9692bfa4ee541b7dadd2e6620a6225e",
+    "grid": "c18fb1096cd4952af00f64c1715f65681e8f42314e5497b0cc25593d30514136",
+    "connections": "d3269efd0d34cc1ee7dc35c1c01425dfe0438c8294bbc3775e65f2900bdae434"
+  }
+}

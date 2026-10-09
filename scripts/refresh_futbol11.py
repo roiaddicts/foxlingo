@@ -9,6 +9,8 @@ import re
 from pathlib import Path
 import shutil
 import tempfile
+import time
+from urllib.error import HTTPError, URLError
 from urllib.parse import urljoin, urlsplit
 from urllib.request import Request, build_opener, HTTPRedirectHandler
 
@@ -35,14 +37,26 @@ class Redirects(HTTPRedirectHandler):
         return super().redirect_request(request, response, code, message, headers, url)
 
 
-def download(url, limit=MAX_ASSET):
-    request = Request(source_url(url), headers={'User-Agent': 'Foxlingo-content-refresh/1.0', 'Accept-Encoding': 'identity'})
-    with build_opener(Redirects).open(request, timeout=30) as response:
-        source_url(response.url)
-        data = response.read(limit + 1)
-        if len(data) > limit:
-            raise ValueError('Source exceeds download limit')
-        return data
+def download(url, limit=MAX_ASSET, attempts=3, sleep=time.sleep):
+    request = Request(source_url(url), headers={'User-Agent': 'Foxlingo-content-refresh/1.0', 'Accept-Encoding': 'identity', 'Cache-Control':'no-cache'})
+    for attempt in range(attempts):
+        try:
+            with build_opener(Redirects).open(request, timeout=20) as response:
+                source_url(response.url)
+                data = response.read(limit + 1)
+                if len(data) > limit:raise ValueError('Source exceeds download limit')
+                if urlsplit(url).path.endswith('.js') and re.match(rb'\s*(?:<!doctype|<html)',data,re.I):raise ValueError('HTML received instead of source module')
+                return data
+        except (HTTPError,URLError,TimeoutError,ConnectionError) as error:
+            retryable=not isinstance(error,HTTPError) or error.code in (408,429,500,502,503,504)
+            if isinstance(error,HTTPError):error.close()
+            if not retryable or attempt==attempts-1:raise
+            delay=2**attempt
+            if isinstance(error,HTTPError):
+                retry_after=error.headers.get('Retry-After','') if error.headers else ''
+                if retry_after.isdigit():delay=min(8,int(retry_after))
+            sleep(delay)
+    raise ValueError('No download attempts configured')
 
 
 class Scripts(HTMLParser):

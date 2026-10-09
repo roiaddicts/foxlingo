@@ -1,0 +1,1 @@
+import{_ as e,o as s,c as o,g as c}from"./Dnajaj0l.js";const t={},_={class:"container"};function a(r,n){return s(),o("div",_,[...n[0]||(n[0]=[c("div",{class:"spinner"},null,-1)])])}const d=Object.assign(e(t,[["render",a],["__scopeId","data-v-c568a6f8"]]),{__name:"LoadingSpinner"});export{d as _};
