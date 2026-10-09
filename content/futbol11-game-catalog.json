@@ -89,8 +89,8 @@
       "sourceURL": "https://futbol11.com/futbol11-clubs",
       "mechanic": "Build an XI from eleven different clubs.",
       "requiredData": "club membership, position eligibility",
-      "status": "planned",
-      "notes": ""
+      "status": "native",
+      "notes": "Archived mode-specific membership and position pools; five formations, saved XI, Undo and assisted connections. Source roster cutoff is unpublished."
     },
     {
       "id": "legacy",
@@ -116,8 +116,8 @@
       "sourceURL": "https://futbol11.com/futbol11-retro",
       "mechanic": "Build an XI from eleven different historical season squads.",
       "requiredData": "season squads and position eligibility",
-      "status": "planned",
-      "notes": "Current complete-the-lineup is one historical squad; it does not yet implement the multi-squad Retro mechanic."
+      "status": "native",
+      "notes": "Archived mode-specific membership and position pools; five formations, saved XI, Undo and assisted connections. Source roster cutoff is unpublished. One season squad per distinct club."
     },
     {
       "id": "link",
@@ -143,8 +143,8 @@
       "sourceURL": "https://futbol11.com/futbol11",
       "mechanic": "Build an XI from eleven different countries.",
       "requiredData": "country and position eligibility",
-      "status": "planned",
-      "notes": ""
+      "status": "native",
+      "notes": "Archived mode-specific membership and position pools; five formations, saved XI, Undo and assisted connections. Source roster cutoff is unpublished."
     },
     {
       "id": "guess-the-footballer",
@@ -161,17 +161,17 @@
       "sourceURL": "https://futbol11.com/futbol11-legends",
       "mechanic": "Build a nationalities XI using legendary players.",
       "requiredData": "legend pool, country and position eligibility",
-      "status": "planned",
-      "notes": ""
+      "status": "native",
+      "notes": "Archived mode-specific membership and position pools; five formations, saved XI, Undo and assisted connections. Source roster cutoff is unpublished. Excludes source records marked active; unmarked records are not a live retirement check."
     },
     {
       "id": "america",
       "title": "America XI",
       "sourceURL": "https://futbol11.com/futbol11-america",
-      "mechanic": "Build a nationalities XI using American players.",
-      "requiredData": "regional player pool, country and position eligibility",
-      "status": "planned",
-      "notes": ""
+      "mechanic": "Build an XI from eleven different South American clubs.",
+      "requiredData": "regional club membership and position eligibility",
+      "status": "native",
+      "notes": "Archived mode-specific membership and position pools; five formations, saved XI, Undo and assisted connections. Source roster cutoff is unpublished."
     }
   ]
 }

@@ -1549,6 +1549,426 @@
     "requestedURL": "https://futbol11.com/media/flags/34c.webp"
   },
   {
+    "asset": "flag-sweden",
+    "url": "https://futbol11.com/media/flags/13.webp",
+    "cached": true
+  },
+  {
+    "asset": "flag-croatia",
+    "url": "https://futbol11.com/media/flags/14.webp",
+    "cached": true
+  },
+  {
+    "asset": "flag-denmark",
+    "url": "https://futbol11.com/media/flags/15.webp",
+    "cached": true
+  },
+  {
+    "asset": "flag-switzerland",
+    "url": "https://futbol11.com/media/flags/16.webp",
+    "cached": true
+  },
+  {
+    "asset": "flag-ivory-coast",
+    "url": "https://futbol11.com/media/flags/17.webp",
+    "cached": true
+  },
+  {
+    "asset": "flag-senegal",
+    "url": "https://futbol11.com/media/flags/18.webp",
+    "cached": true
+  },
+  {
+    "asset": "flag-morocco",
+    "url": "https://futbol11.com/media/flags/21.webp",
+    "cached": true
+  },
+  {
+    "asset": "draft-nations-group-22",
+    "url": "https://futbol11.com/media/flags/22.webp",
+    "cached": true
+  },
+  {
+    "asset": "flag-scotland",
+    "url": "https://futbol11.com/media/flags/25.webp",
+    "cached": true
+  },
+  {
+    "asset": "flag-algeria",
+    "url": "https://futbol11.com/media/flags/28.webp",
+    "cached": true
+  },
+  {
+    "asset": "flag-nigeria",
+    "url": "https://futbol11.com/media/flags/29.webp",
+    "cached": true
+  },
+  {
+    "asset": "flag-poland",
+    "url": "https://futbol11.com/media/flags/30.webp",
+    "cached": true
+  },
+  {
+    "asset": "flag-ghana",
+    "url": "https://futbol11.com/media/flags/32.webp",
+    "cached": true
+  },
+  {
+    "asset": "flag-south-korea",
+    "url": "https://futbol11.com/media/flags/33.webp",
+    "cached": true
+  },
+  {
+    "asset": "flag-japan",
+    "url": "https://futbol11.com/media/flags/35.webp",
+    "cached": true
+  },
+  {
+    "asset": "flag-cameroon",
+    "url": "https://futbol11.com/media/flags/36.webp",
+    "cached": true
+  },
+  {
+    "asset": "draft-clubs-group-1",
+    "url": "https://futbol11.com/media/shirts/1.png",
+    "cached": true
+  },
+  {
+    "asset": "draft-clubs-group-2",
+    "url": "https://futbol11.com/media/shirts/2.png",
+    "cached": true
+  },
+  {
+    "asset": "draft-clubs-group-3",
+    "url": "https://futbol11.com/media/shirts/3.png",
+    "cached": true
+  },
+  {
+    "asset": "draft-clubs-group-4",
+    "url": "https://futbol11.com/media/shirts/4.png",
+    "cached": true
+  },
+  {
+    "asset": "draft-clubs-group-5",
+    "url": "https://futbol11.com/media/shirts/5.png",
+    "cached": true
+  },
+  {
+    "asset": "draft-clubs-group-6",
+    "url": "https://futbol11.com/media/shirts/6.png",
+    "cached": true
+  },
+  {
+    "asset": "draft-clubs-group-7",
+    "url": "https://futbol11.com/media/shirts/7.png",
+    "cached": true
+  },
+  {
+    "asset": "draft-clubs-group-8",
+    "url": "https://futbol11.com/media/shirts/58.png",
+    "cached": true
+  },
+  {
+    "asset": "draft-clubs-group-11",
+    "url": "https://futbol11.com/media/shirts/95.png",
+    "cached": true
+  },
+  {
+    "asset": "draft-clubs-group-13",
+    "url": "https://futbol11.com/media/shirts/8.png",
+    "cached": true
+  },
+  {
+    "asset": "draft-clubs-group-14",
+    "url": "https://futbol11.com/media/shirts/9.png",
+    "cached": true
+  },
+  {
+    "asset": "draft-clubs-group-16",
+    "url": "https://futbol11.com/media/shirts/10.png",
+    "cached": true
+  },
+  {
+    "asset": "draft-clubs-group-17",
+    "url": "https://futbol11.com/media/shirts/90.png",
+    "cached": true
+  },
+  {
+    "asset": "draft-clubs-group-19",
+    "url": "https://futbol11.com/media/shirts/53.png",
+    "cached": true
+  },
+  {
+    "asset": "draft-clubs-group-20",
+    "url": "https://futbol11.com/media/shirts/85.png",
+    "cached": true
+  },
+  {
+    "asset": "draft-clubs-group-21",
+    "url": "https://futbol11.com/media/shirts/63.png",
+    "cached": true
+  },
+  {
+    "asset": "draft-clubs-group-23",
+    "url": "https://futbol11.com/media/shirts/11.png",
+    "cached": true
+  },
+  {
+    "asset": "draft-clubs-group-24",
+    "url": "https://futbol11.com/media/shirts/12.png",
+    "cached": true
+  },
+  {
+    "asset": "draft-clubs-group-22",
+    "url": "https://futbol11.com/media/shirts/46.png",
+    "cached": true
+  },
+  {
+    "asset": "draft-clubs-group-25",
+    "url": "https://futbol11.com/media/shirts/62.png",
+    "cached": true
+  },
+  {
+    "asset": "draft-clubs-group-26",
+    "url": "https://futbol11.com/media/shirts/22.png",
+    "cached": true
+  },
+  {
+    "asset": "draft-clubs-group-27",
+    "url": "https://futbol11.com/media/shirts/91.png",
+    "cached": true
+  },
+  {
+    "asset": "draft-clubs-group-28",
+    "url": "https://futbol11.com/media/shirts/13.png",
+    "cached": true
+  },
+  {
+    "asset": "draft-clubs-group-36",
+    "url": "https://futbol11.com/media/shirts/17.png",
+    "cached": true
+  },
+  {
+    "asset": "draft-clubs-group-38",
+    "url": "https://futbol11.com/media/shirts/18.png",
+    "cached": true
+  },
+  {
+    "asset": "draft-clubs-group-41",
+    "url": "https://futbol11.com/media/shirts/21.png",
+    "cached": true
+  },
+  {
+    "asset": "draft-clubs-group-43",
+    "url": "https://futbol11.com/media/shirts/19.png",
+    "cached": true
+  },
+  {
+    "asset": "draft-clubs-group-44",
+    "url": "https://futbol11.com/media/shirts/82.png",
+    "cached": true
+  },
+  {
+    "asset": "draft-clubs-group-45",
+    "url": "https://futbol11.com/media/shirts/20.png",
+    "cached": true
+  },
+  {
+    "asset": "draft-clubs-group-46",
+    "url": "https://futbol11.com/media/shirts/83.png",
+    "cached": true
+  },
+  {
+    "asset": "draft-clubs-group-47",
+    "url": "https://futbol11.com/media/shirts/60.png",
+    "cached": true
+  },
+  {
+    "asset": "draft-clubs-group-48",
+    "url": "https://futbol11.com/media/shirts/114.png",
+    "cached": true
+  },
+  {
+    "asset": "draft-clubs-group-50",
+    "url": "https://futbol11.com/media/shirts/115.png",
+    "cached": true
+  },
+  {
+    "asset": "draft-clubs-group-51",
+    "url": "https://futbol11.com/media/shirts/129.png",
+    "cached": true
+  },
+  {
+    "asset": "draft-clubs-group-58",
+    "url": "https://futbol11.com/media/shirts/124.png",
+    "cached": true
+  },
+  {
+    "asset": "draft-america-group-1",
+    "url": "https://i.ibb.co/MZCZC5j/logo-0024-10.png",
+    "cached": true
+  },
+  {
+    "asset": "draft-america-group-2",
+    "url": "https://i.ibb.co/xCKv1HZ/logo-0033-1.png",
+    "cached": true
+  },
+  {
+    "asset": "draft-america-group-3",
+    "url": "https://i.ibb.co/nD1D4SP/logo-0032-2.png",
+    "cached": true
+  },
+  {
+    "asset": "draft-america-group-4",
+    "url": "https://i.ibb.co/vkwRVcs/logo-0031-3.png",
+    "cached": true
+  },
+  {
+    "asset": "draft-america-group-5",
+    "url": "https://i.ibb.co/L5CsmGV/logo-0030-4.png",
+    "cached": true
+  },
+  {
+    "asset": "draft-america-group-6",
+    "url": "https://i.ibb.co/NTbHpJR/logo-0029-5.png",
+    "cached": true
+  },
+  {
+    "asset": "draft-america-group-7",
+    "url": "https://i.ibb.co/mXMR6tW/logo-0028-6.png",
+    "cached": true
+  },
+  {
+    "asset": "draft-america-group-8",
+    "url": "https://i.ibb.co/j6rb0f7/logo-0027-7.png",
+    "cached": true
+  },
+  {
+    "asset": "draft-america-group-9",
+    "url": "https://i.ibb.co/J7VYgcY/logo-0026-8.png",
+    "cached": true
+  },
+  {
+    "asset": "draft-america-group-10",
+    "url": "https://i.ibb.co/wrnhvHn/logo-0025-9.png",
+    "cached": true
+  },
+  {
+    "asset": "draft-america-group-11",
+    "url": "https://i.ibb.co/kxSZTkc/logo-0023-11.png",
+    "cached": true
+  },
+  {
+    "asset": "draft-america-group-12",
+    "url": "https://i.ibb.co/ryBzXcp/logo-0022-12.png",
+    "cached": true
+  },
+  {
+    "asset": "draft-america-group-13",
+    "url": "https://i.ibb.co/mh7XN6K/logo-0021-13.png",
+    "cached": true
+  },
+  {
+    "asset": "draft-america-group-14",
+    "url": "https://i.ibb.co/MVTfyhF/logo-0020-14.png",
+    "cached": true
+  },
+  {
+    "asset": "draft-america-group-15",
+    "url": "https://i.ibb.co/xM2Dbj6/logo-0019-15.png",
+    "cached": true
+  },
+  {
+    "asset": "draft-america-group-16",
+    "url": "https://i.ibb.co/ft2dJ1t/logo-0018-16.png",
+    "cached": true
+  },
+  {
+    "asset": "draft-america-group-17",
+    "url": "https://i.ibb.co/d4dV3H8/logo-0017-17.png",
+    "cached": true
+  },
+  {
+    "asset": "draft-america-group-18",
+    "url": "https://i.ibb.co/f0xJ01X/logo-0016-18.png",
+    "cached": true
+  },
+  {
+    "asset": "draft-america-group-19",
+    "url": "https://i.ibb.co/fp3bBfp/logo-0015-19.png",
+    "cached": true
+  },
+  {
+    "asset": "draft-america-group-20",
+    "url": "https://i.ibb.co/JWLsrnY/logo-0014-20.png",
+    "cached": true
+  },
+  {
+    "asset": "draft-america-group-21",
+    "url": "https://i.ibb.co/gV0Gmr6/logo-0013-21.png",
+    "cached": true
+  },
+  {
+    "asset": "draft-america-group-22",
+    "url": "https://i.ibb.co/mBvYJz5/logo-0012-22.png",
+    "cached": true
+  },
+  {
+    "asset": "draft-america-group-24",
+    "url": "https://i.ibb.co/C9H6vmh/logo-0010-24.png",
+    "cached": true
+  },
+  {
+    "asset": "draft-america-group-26",
+    "url": "https://i.ibb.co/XzJCBqq/logo-0008-26.png",
+    "cached": true
+  },
+  {
+    "asset": "draft-america-group-27",
+    "url": "https://i.ibb.co/zJxMdq6/clubnacional.png",
+    "cached": true
+  },
+  {
+    "asset": "draft-america-group-28",
+    "url": "https://i.ibb.co/hm3jjpD/logo-0006-28.png",
+    "cached": true
+  },
+  {
+    "asset": "draft-america-group-29",
+    "url": "https://i.ibb.co/fDC6yx1/logo-0005-29.png",
+    "cached": true
+  },
+  {
+    "asset": "draft-america-group-30",
+    "url": "https://i.ibb.co/2S7xD37/logo-0004-30.png",
+    "cached": true
+  },
+  {
+    "asset": "draft-america-group-31",
+    "url": "https://i.ibb.co/nnQ05vR/logo-0003-31.png",
+    "cached": true
+  },
+  {
+    "asset": "draft-america-group-32",
+    "url": "https://i.ibb.co/JyxMPFX/logo-0002-32.png",
+    "cached": true
+  },
+  {
+    "asset": "draft-america-group-33",
+    "url": "https://i.ibb.co/8Dr6285/logo-0001-33.png",
+    "cached": true
+  },
+  {
+    "asset": "draft-america-group-34",
+    "url": "https://i.ibb.co/6tTTy6P/logo-0000-34.png",
+    "cached": true
+  },
+  {
+    "asset": "draft-america-group-35",
+    "url": "https://i.ibb.co/bM4L2k2c/est.png",
+    "cached": true
+  },
+  {
     "asset": "entity-irapuato",
     "url": "https://www.clubdeportivoirapuato.com/_next/image?q=75&url=https%3A%2F%2Fsincere-horses-e580bd091e.media.strapiapp.com%2Fimage_Editado_6e511e6668.png&w=1200",
     "sourceURL": "https://www.clubdeportivoirapuato.com/",

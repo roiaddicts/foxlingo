@@ -1,0 +1,26 @@
+[
+  {
+    "id": "draft-clubs-player-1367",
+    "name": "Wesley Moraes",
+    "positions": null,
+    "reason": "missing or unsupported position codes"
+  },
+  {
+    "id": "draft-clubs-player-1974",
+    "name": "James Rodriguez",
+    "positions": null,
+    "reason": "missing or unsupported position codes"
+  },
+  {
+    "id": "draft-classic-player-1452",
+    "name": "Henning Berg",
+    "positions": "CBM RB, CDM",
+    "reason": "missing or unsupported position codes"
+  },
+  {
+    "id": "draft-classic-player-1960",
+    "name": "Dany Nounkeu",
+    "positions": "CB, LB, EB",
+    "reason": "missing or unsupported position codes"
+  }
+]

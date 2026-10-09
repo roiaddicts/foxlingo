@@ -43,6 +43,19 @@ struct GamesHome: View {
                         HStack(spacing:16) {Image(systemName:"rectangle.on.rectangle.angled").font(.title2).frame(width:50,height:60).foregroundStyle(Palette.brand);VStack(alignment:.leading,spacing:6) {Text("Memory match").font(.title3.bold());Text(model.state.savedGame("memory") != nil ? "Continue your saved pairs." : "16 cards. Faces, badges, names and stats.").font(.subheadline).foregroundStyle(Palette.muted)};Spacer();Image(systemName:"chevron.right")}.padding(18).background(.white.opacity(0.8),in:RoundedRectangle(cornerRadius:20))
                     }.buttonStyle(PressFeedback()).accessibilityIdentifier("game-memory")
                 }
+                if let drafts=model.drafts {
+                    Text("Build an XI").font(.title2.bold())
+                    ForEach(drafts.modes) {mode in
+                        NavigationLink {DraftXIView(engine:DraftEngine(pack:drafts,mode:mode))} label: {
+                            HStack(spacing:16) {
+                                if let group=mode.groups.first {EntityArtwork(asset:group.imageAsset,url:group.imageURL,initials:"⚽",size:50)}
+                                VStack(alignment:.leading,spacing:6) {Text(mode.title).font(.title3.bold());Text(model.state.savedGame("draft-"+mode.id) != nil ? "Continue your saved XI." : mode.subtitle).font(.subheadline).foregroundStyle(Palette.muted)}
+                                Spacer();Image(systemName:"chevron.right")
+                            }.padding(18).background(.white.opacity(0.8),in:RoundedRectangle(cornerRadius:20))
+                        }.buttonStyle(PressFeedback()).accessibilityIdentifier("game-draft-"+mode.id)
+                    }
+                }
+                if let error=model.draftsError {Text(error).font(.footnote).foregroundStyle(Palette.muted)}
                 if let pack=model.games {
                     ForEach([PlayerGroupMode.connections,.impostor],id:\.rawValue) {mode in
                         NavigationLink {PlayerGroupsView(mode:mode,pack:pack)} label: {
@@ -260,6 +273,8 @@ struct PlayerAnswerSheet: View {
     var contextClubImageAsset: String? = nil
     var contextTitle: String? = nil
     var contextScope: String? = nil
+    var fallbackImageAsset: String? = nil
+    var fallbackImageURL: String? = nil
     let onChoose: (GamePlayer) -> Bool
     @Environment(\.dismiss) var dismiss
     @State private var query=""
@@ -285,7 +300,7 @@ struct PlayerAnswerSheet: View {
                     if !message.isEmpty {Text(message).foregroundStyle(Palette.red).accessibilityIdentifier("game-answer-error")}
                     ForEach(results) {player in
                         Button {if !onChoose(player) {message="That connection doesn’t fit. Try another player."}} label: {
-                            HStack(spacing:12) {EntityArtwork(asset:player.imageAsset,url:player.imageURL,initials:String(player.name.prefix(2)),size:64,isPlayer:true,portraitFocus:true);Text(player.name).font(.headline);Spacer()}.frame(maxWidth:.infinity,alignment:.leading).padding(8).background(.white,in:RoundedRectangle(cornerRadius:12))
+                            HStack(spacing:12) {EntityArtwork(asset:player.imageAsset ?? fallbackImageAsset,url:player.imageURL ?? fallbackImageURL,initials:String(player.name.prefix(2)),size:64,isPlayer:player.imageAsset != nil || player.imageURL != nil,portraitFocus:true);Text(player.name).font(.headline);Spacer()}.frame(maxWidth:.infinity,alignment:.leading).padding(8).background(.white,in:RoundedRectangle(cornerRadius:12))
                         }.accessibilityIdentifier("game-player-\(player.id)")
                     }
                     if results.isEmpty {Text(query.count < 2 ? "Type at least two letters to find a player." : "No name found. Try a full name or known nickname.").font(.subheadline).foregroundStyle(Palette.muted)}

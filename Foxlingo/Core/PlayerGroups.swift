@@ -77,7 +77,7 @@ public enum PlayerGroupDeck {
         return PlayerGroupProgress(mode:mode,groups:groups,order:order,selected:[],solved:[],checks:0,round:0)
     }
     public static func restore(_ saved: GameResume,mode: PlayerGroupMode,pack: GamePack,completedSessions: Set<UUID>) -> PlayerGroupProgress? {
-        guard saved.schemaVersion == 1,saved.signature == signature(pack),!completedSessions.contains(saved.sessionID),saved.board == nil,saved.memory == nil,saved.mystery == nil,saved.timeline == nil,saved.wordle == nil,
+        guard saved.draft == nil,saved.schemaVersion == 1,saved.signature == signature(pack),!completedSessions.contains(saved.sessionID),saved.board == nil,saved.memory == nil,saved.mystery == nil,saved.timeline == nil,saved.wordle == nil,
               let board=saved.grouping,board.mode == mode,!board.finished,board.groups.count == 4,Set(board.groups.map(\.categoryID)) == Set(categoryIDs),
               board.checks >= board.solved.count,board.checks <= 100_000,board.round >= 0,board.round < 4,
               Set(board.groups.flatMap(\.playerIDs)).count == 16,board.order.count == 16,Set(board.order) == Set(board.groups.flatMap(\.playerIDs)),

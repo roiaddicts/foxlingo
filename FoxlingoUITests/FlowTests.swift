@@ -225,6 +225,54 @@ final class FlowTests: XCTestCase {
         }
         XCTAssertTrue(button.exists,id);XCTAssertTrue(button.isHittable,id);button.tap()
     }
+    func tapDraftSlot(_ slot: Int) {
+        let button=app.buttons["draft-slot-\(slot)"]
+        for _ in 0..<10 {
+            let top=app.navigationBars.firstMatch.frame.maxY+8
+            let bottom=app.buttons["draft-search"].frame.minY-8
+            if button.exists && button.frame.midY < top {app.swipeDown();continue}
+            if button.exists && button.frame.midY > bottom {app.swipeUp();continue}
+            if button.isHittable {break}
+            app.swipeUp()
+        }
+        XCTAssertTrue(button.isHittable);button.tap()
+    }
+    func testDraftNationsSearchPositionsUndoAndResume() {
+        start();tap("choose-XT");app.tabBars.buttons["Games"].tap();tap("game-draft-nations")
+        XCTAssertEqual(app.staticTexts["draft-offered"].label,"England")
+        tap("draft-search")
+        let search=app.textFields["game-player-search"];search.tap();search.typeText("Mbapp")
+        tap("game-player-draft-nations-player-1")
+        XCTAssertTrue(app.staticTexts["game-answer-error"].exists)
+        search.tap();search.typeText(String(repeating:XCUIKeyboardKey.delete.rawValue,count:5));search.typeText("Kane")
+        tap("game-player-draft-nations-player-7")
+        XCTAssertFalse(app.keyboards.firstMatch.exists)
+        let shot=XCTAttachment(screenshot:app.screenshot());shot.name="Nations XI selected player and pitch";shot.lifetime = .keepAlways;add(shot)
+        tapDraftSlot(9)
+        XCTAssertEqual(app.staticTexts["draft-offered"].label,"Italy")
+        let placedShot=XCTAttachment(screenshot:app.screenshot());placedShot.name="Nations XI placed portrait";placedShot.lifetime = .keepAlways;add(placedShot)
+        app.terminate();start(reset:false);app.tabBars.buttons["Games"].tap();tap("game-draft-nations")
+        XCTAssertEqual(app.staticTexts["draft-offered"].label,"Italy")
+        XCTAssertTrue(app.buttons["draft-slot-9"].label.contains("Harry Kane"))
+        tap("draft-undo");XCTAssertEqual(app.staticTexts["draft-offered"].label,"England")
+        for _ in 0..<11 {tap("draft-help")}
+        XCTAssertTrue(app.staticTexts["draft-complete"].exists)
+        tap("draft-replay");XCTAssertFalse(app.staticTexts["draft-complete"].exists)
+    }
+    func testDraftClubRetroLegendsAndAmericaCompletion() {
+        start();tap("choose-XT");app.tabBars.buttons["Games"].tap()
+        for mode in ["clubs","retro","legends","america"] {
+            for _ in 0..<5 {app.swipeDown()}
+            tap("game-draft-"+mode)
+            XCTAssertTrue(app.staticTexts["draft-offered"].exists,mode)
+            let shot=XCTAttachment(screenshot:app.screenshot());shot.name=mode+" XI source artwork";shot.lifetime = .keepAlways;add(shot)
+            tap("draft-help");tap("draft-undo")
+            for _ in 0..<11 {tap("draft-help")}
+            XCTAssertTrue(app.staticTexts["draft-complete"].exists,mode)
+            let completeShot=XCTAttachment(screenshot:app.screenshot());completeShot.name=mode+" completed XI portraits";completeShot.lifetime = .keepAlways;add(completeShot)
+            app.navigationBars.buttons.element(boundBy:0).tap()
+        }
+    }
     func testConnectionsWrongGroupSelectionResumeAndCompletion() {
         start();tap("choose-XT");app.tabBars.buttons["Games"].tap();tap("game-connections")
         let groups=[["player-173","player-187","player-230","player-242"],["current-player-5","current-player-820","player-103","player-145"],["current-player-1165","player-1","player-128","player-210"],["player-129","player-1512","player-251","player-291"]]

@@ -41,6 +41,10 @@ for squad in p['lineups']:
 countries=json.loads((ROOT/'content/country-artwork.json').read_text())
 for key in ['ecuador','spain','mexico','germany','brazil','portugal','argentina','france','england','colombia','austria','azerbaijan','belgium','czechia','greece','italy','netherlands','norway','slovakia','turkiye','ukraine','uruguay','chile']:
  c=countries[key];urls[c['imageAsset']]=c['imageURL']
+draft_path=ROOT/'Foxlingo/Resources/drafts-en.json'
+if draft_path.exists():
+ for mode in json.loads(draft_path.read_text())['modes']:
+  for group in mode['groups']:urls.setdefault(group['imageAsset'],group['imageURL'])
 manifest_path=ROOT/'Foxlingo/Resources/artwork-manifest.json'
 previous_artwork={item['asset']:item for item in json.loads(manifest_path.read_text())} if manifest_path.exists() else {}
 def cache_image(item):
@@ -72,5 +76,7 @@ for player in catalog['players']:
 for item in json.loads((ROOT/'content/player-career-artwork.json').read_text()):
  if not any(m['asset']==item['key'] for m in manifest):
   manifest.append(dict(asset=item['key'],url=item['imageURL'],sourceURL=item['sourceURL'],cached=(ROOT/item['assetPath']).exists()))
+for name,item in previous_artwork.items():
+ if not any(m['asset']==name for m in manifest):manifest.append(item)
 (ROOT/'Foxlingo/Resources/artwork-manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
 print(sum(m['cached'] for m in manifest),'images cached;',len(manifest),'requested')

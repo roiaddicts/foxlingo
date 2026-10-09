@@ -9,6 +9,8 @@ import SwiftUI
     @Published var timelineError: String?
     @Published var memoryPairs: [MemoryGamePair] = []
     @Published var mysteries: [MysteryRound] = []
+    @Published var drafts: DraftPack?
+    @Published var draftsError: String?
     @Published var games: GamePack?
     @Published var gamesError: String?
     @Published var message: String?
@@ -72,6 +74,10 @@ import SwiftUI
             guard let url=Bundle.main.url(forResource:"games-en",withExtension:"json") else {throw ContentError.invalid("Game content is missing.")}
             games=try GamePack.load(Data(contentsOf:url))
         } catch { gamesError=error.localizedDescription }
+        do {
+            guard let url=Bundle.main.url(forResource:"drafts-en",withExtension:"json") else {throw ContentError.invalid("XI content is missing.")}
+            drafts=try DraftPack.load(Data(contentsOf:url))
+        } catch {draftsError=error.localizedDescription}
         if let pack,let url=Bundle.main.url(forResource:"mystery-en",withExtension:"json"),let data=try? Data(contentsOf:url) {
             mysteries=(try? MysteryDeck.load(data,pack:pack)) ?? []
         }
