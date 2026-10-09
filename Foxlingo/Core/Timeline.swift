@@ -48,6 +48,12 @@ public struct TimelineProgress: Codable, Sendable {
         var moved=order;moved.swapAt(index,index+offset)
         return Self(roundID:roundID,order:moved,checks:checks,moves:min(moves+1,100_000))
     }
+    public func moving(_ eventID: String,to destination: Int) -> Self {
+        guard let index=order.firstIndex(of:eventID),order.indices.contains(destination),index != destination else {return self}
+        var moved=order;moved.remove(at:index);moved.insert(eventID,at:destination)
+        return Self(roundID:roundID,order:moved,checks:checks,moves:min(moves+1,100_000))
+    }
+
 }
 public enum TimelineDeck {
     public static func load(_ data: Data,pack: ContentPack) throws -> [TimelineRound] {
@@ -95,7 +101,7 @@ public enum TimelineDeck {
         return nil
     }
     public static func restore(_ resume: GameResume,rounds: [TimelineRound],completedSessions: Set<UUID>) -> TimelineProgress? {
-        guard resume.schemaVersion == 1,resume.board == nil,resume.mystery == nil,resume.memory == nil,!completedSessions.contains(resume.sessionID),let progress=resume.timeline,
+        guard resume.wordle == nil,resume.schemaVersion == 1,resume.board == nil,resume.mystery == nil,resume.memory == nil,!completedSessions.contains(resume.sessionID),let progress=resume.timeline,
               let round=rounds.first(where:{$0.id == progress.roundID}),resume.signature == round.signature,
               progress.order.count == round.events.count,Set(progress.order) == Set(round.answer),(0...100_000).contains(progress.checks),(0...100_000).contains(progress.moves) else {return nil}
         return progress

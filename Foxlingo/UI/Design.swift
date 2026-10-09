@@ -53,6 +53,7 @@ struct EntityArtwork: View {
     let initials: String
     var size: CGFloat = 64
     var isPlayer = false
+    var portraitFocus = false
     var body: some View {
         Group {
             if let asset, let image=UIImage(named:asset) {
@@ -64,7 +65,8 @@ struct EntityArtwork: View {
                         .frame(width:size,height:size).clipped()
                 } else {
                     Image(uiImage:image).resizable().scaledToFit()
-                        .scaleEffect(asset == "entity-competition-champions-league" ? 1.35 : 1)
+                        .scaleEffect(portraitFocus && ["entity-riascos","entity-arce","entity-saucedo"].contains(asset) ? 2.1 : asset == "entity-competition-champions-league" ? 1.35 : 1)
+                        .offset(y:portraitFocus && ["entity-riascos","entity-arce","entity-saucedo"].contains(asset) ? size*0.55 : 0)
                 }
             } else if let url, let remote=URL(string:url), remote.scheme == "https" {
                 AsyncImage(url:remote) { phase in

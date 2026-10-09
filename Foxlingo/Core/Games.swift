@@ -20,6 +20,7 @@ public struct SquadMember: Codable, Sendable {
     public let positions: [String]
 }
 public struct ClassicSquad: Codable, Identifiable, Sendable {
+    public let imageAsset: String?
     public let clubName: String?
     public let imageURL: String?
     public let rows: [[Int]]?
@@ -103,7 +104,7 @@ public enum BoardMatcher {
     }
 }
 
-/// Face-down association matching. A pending mismatch must close before another turn.
+/// Face-down association matching. A pending mismatch may close automatically when a new hidden card is tapped.
 public struct MemoryMatch: Sendable {
     public enum Turn: Equatable {case ignored, revealed, matched(String), mismatch}
     public let pairs: [Pair]
@@ -115,8 +116,12 @@ public struct MemoryMatch: Sendable {
     }
     public func isVisible(_ id: String) -> Bool {matched.contains(id) || faceUp.contains(id)}
     public var waitingToClose: Bool {faceUp.count == 2}
-    public mutating func flip(_ id: String) -> Turn {
-        guard !waitingToClose, !isVisible(id), pairs.contains(where:{$0.left == id || $0.right == id}) else {return .ignored}
+    public mutating func flip(_ id: String, advancingPendingMismatch: Bool = false) -> Turn {
+        guard !isVisible(id), pairs.contains(where:{$0.left == id || $0.right == id}) else {return .ignored}
+        if waitingToClose {
+            guard advancingPendingMismatch else {return .ignored}
+            closeMismatch()
+        }
         faceUp.append(id)
         guard faceUp.count == 2 else {return .revealed}
         if let pair=pairs.first(where:{Set([$0.left,$0.right]) == Set(faceUp)}) {

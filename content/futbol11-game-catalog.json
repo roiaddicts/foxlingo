@@ -1,0 +1,177 @@
+{
+  "verifiedAt": "2026-10-09",
+  "sourceURL": "https://futbol11.com/",
+  "games": [
+    {
+      "id": "squadslice",
+      "title": "SquadSlice",
+      "sourceURL": "https://futbol11.com/futbol11-squadslice",
+      "mechanic": "Guess a club from a season-specific squad nationality pie chart.",
+      "requiredData": "squad nationality counts, seasons, club artwork",
+      "status": "planned",
+      "notes": ""
+    },
+    {
+      "id": "statdle",
+      "title": "Statdle",
+      "sourceURL": "https://futbol11.com/futbol11-statdle",
+      "mechanic": "Identify a season-specific player through revealed stats.",
+      "requiredData": "season appearances, goals, assists, club, nation, position, value",
+      "status": "planned",
+      "notes": ""
+    },
+    {
+      "id": "top10",
+      "title": "Top 10",
+      "sourceURL": "https://futbol11.com/futbol11-top10",
+      "mechanic": "Name ten players on a scoped statistical ranking.",
+      "requiredData": "ranked lists with values and cutoff dates",
+      "status": "planned",
+      "notes": ""
+    },
+    {
+      "id": "grid",
+      "title": "Grid",
+      "sourceURL": "https://futbol11.com/futbol11-grid",
+      "mechanic": "Place distinct players at the intersection of two categories.",
+      "requiredData": "category membership and player artwork",
+      "status": "native",
+      "notes": ""
+    },
+    {
+      "id": "bingo",
+      "title": "Bingo",
+      "sourceURL": "https://futbol11.com/futbol11-bingo",
+      "mechanic": "Place offered players into twelve matching categories.",
+      "requiredData": "category membership and player artwork",
+      "status": "native",
+      "notes": ""
+    },
+    {
+      "id": "goltexto",
+      "title": "Goltexto",
+      "sourceURL": "https://futbol11.com/futbol11-goltexto",
+      "mechanic": "Find a player through trait-based similarity feedback.",
+      "requiredData": "scoped player profiles and explicit similarity weights",
+      "status": "planned",
+      "notes": ""
+    },
+    {
+      "id": "impostor",
+      "title": "Impostor",
+      "sourceURL": "https://futbol11.com/futbol11-impostor",
+      "mechanic": "Select all players that satisfy a category, avoiding outsiders.",
+      "requiredData": "complete round-specific positive and negative membership",
+      "status": "planned",
+      "notes": ""
+    },
+    {
+      "id": "pyramid",
+      "title": "Pyramid",
+      "sourceURL": "https://futbol11.com/futbol11-pyramid",
+      "mechanic": "Arrange ten players in four ranking tiers.",
+      "requiredData": "ranked values with tied-score rules and cutoff dates",
+      "status": "planned",
+      "notes": ""
+    },
+    {
+      "id": "connections",
+      "title": "Connections",
+      "sourceURL": "https://futbol11.com/futbol11-connections",
+      "mechanic": "Partition sixteen players into four hidden groups.",
+      "requiredData": "authored four-player groups and ambiguity rules",
+      "status": "planned",
+      "notes": ""
+    },
+    {
+      "id": "clubs",
+      "title": "Clubs XI",
+      "sourceURL": "https://futbol11.com/futbol11-clubs",
+      "mechanic": "Build an XI from eleven different clubs.",
+      "requiredData": "club membership, position eligibility",
+      "status": "planned",
+      "notes": ""
+    },
+    {
+      "id": "legacy",
+      "title": "Legacy",
+      "sourceURL": "https://futbol11.com/futbol11-legacy",
+      "mechanic": "Identify a player from four unordered career clubs.",
+      "requiredData": "career-club membership and club badges",
+      "status": "planned",
+      "notes": ""
+    },
+    {
+      "id": "bingo-retro",
+      "title": "Bingo Retro",
+      "sourceURL": "https://futbol11.com/futbol11-bingo-retro",
+      "mechanic": "Bingo with retired legends.",
+      "requiredData": "retirement flags and historical membership",
+      "status": "planned",
+      "notes": ""
+    },
+    {
+      "id": "retro",
+      "title": "Retro XI",
+      "sourceURL": "https://futbol11.com/futbol11-retro",
+      "mechanic": "Build an XI from eleven different historical season squads.",
+      "requiredData": "season squads and position eligibility",
+      "status": "planned",
+      "notes": "Current complete-the-lineup is one historical squad; it does not yet implement the multi-squad Retro mechanic."
+    },
+    {
+      "id": "link",
+      "title": "Link",
+      "sourceURL": "https://futbol11.com/futbol11-link",
+      "mechanic": "Identify a player from five former senior teammates.",
+      "requiredData": "verified shared senior appearances, not merely squad overlap",
+      "status": "planned",
+      "notes": ""
+    },
+    {
+      "id": "wordle",
+      "title": "Wordle",
+      "sourceURL": "https://futbol11.com/futbol11-wordle",
+      "mechanic": "Guess a football name using letter position feedback.",
+      "requiredData": "valid names, normalization and repeated-letter counts",
+      "status": "native",
+      "notes": ""
+    },
+    {
+      "id": "futbol11",
+      "title": "Nations XI",
+      "sourceURL": "https://futbol11.com/futbol11",
+      "mechanic": "Build an XI from eleven different countries.",
+      "requiredData": "country and position eligibility",
+      "status": "planned",
+      "notes": ""
+    },
+    {
+      "id": "guess-the-footballer",
+      "title": "Guess the Footballer",
+      "sourceURL": "https://futbol11.com/guess-the-footballer",
+      "mechanic": "Ask yes/no profile questions before guessing a player.",
+      "requiredData": "scoped club, nation, league, position, age profiles",
+      "status": "planned",
+      "notes": ""
+    },
+    {
+      "id": "legends",
+      "title": "Legends XI",
+      "sourceURL": "https://futbol11.com/futbol11-legends",
+      "mechanic": "Build a nationalities XI using legendary players.",
+      "requiredData": "legend pool, country and position eligibility",
+      "status": "planned",
+      "notes": ""
+    },
+    {
+      "id": "america",
+      "title": "America XI",
+      "sourceURL": "https://futbol11.com/futbol11-america",
+      "mechanic": "Build a nationalities XI using American players.",
+      "requiredData": "regional player pool, country and position eligibility",
+      "status": "planned",
+      "notes": ""
+    }
+  ]
+}

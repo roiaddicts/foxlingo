@@ -9,6 +9,7 @@ struct MemoryGameView: View {
     @State private var order: [String]=[]
     @State private var board=MemoryMatch(pairs:[])
     @State private var moves=0
+    @State private var flipDuration=0.28
     @State private var sessionID=UUID()
     @State private var loaded=false
     @State private var finished=false
@@ -31,7 +32,7 @@ struct MemoryGameView: View {
                             let spoken=visible ? (image ? pair.subject.name+" image" : pair.answer.replacingOccurrences(of:"\n",with:" ")+(pair.fact.map {". "+$0.scope} ?? "")) : "Hidden card \(index+1)"
                             Button {flip(id,pair:pair)} label: {
                                 MemoryCardFace(pair:pair,image:image,angle:visible ? 180 : 0,matched:matched)
-                                    .frame(height:min(cardHeight,200)).animation(reduced ? nil : .easeInOut(duration:0.38),value:visible)
+                                    .frame(height:min(cardHeight,200)).animation(reduced ? nil : .easeInOut(duration:flipDuration),value:visible)
                             } .buttonStyle(MemoryLiftStyle())
                                 .accessibilityRepresentation {
                                     Button {flip(id,pair:pair)} label:{Text(spoken)}
@@ -57,7 +58,7 @@ struct MemoryGameView: View {
         .onReceive(NotificationCenter.default.publisher(for:UIAccessibility.voiceOverStatusDidChangeNotification)) {_ in voiceOver=UIAccessibility.isVoiceOverRunning}
         .task(id:"\(board.faceUp)-\(voiceOver)") {
             guard !voiceOver,board.waitingToClose else {return}
-            do {try await Task.sleep(for:.seconds(1.8))} catch {return}
+            do {try await Task.sleep(for:.seconds(0.95))} catch {return}
             guard !Task.isCancelled else {return};closeMismatch()
         }
         .sheet(isPresented:$sources) {
@@ -67,11 +68,15 @@ struct MemoryGameView: View {
         }
     }
     private func flip(_ id: String,pair: MemoryGamePair) {
-        let outcome=board.flip(id)
+        flipDuration=board.waitingToClose ? 0.12 : 0.28
+        let outcome=board.flip(id,advancingPendingMismatch:true)
         switch outcome {
         case .ignored:return
         case .revealed:scope=pair.fact?.scope;model.playSound(.reveal)
-        case .mismatch:moves += 1;scope=pair.fact?.scope;model.respond(false,event:.mismatch)
+        case .mismatch:
+            let missed=pairs.filter {board.faceUp.contains($0.relationship.left) || board.faceUp.contains($0.relationship.right)}
+            model.recordGameGap(game:"memory",context:"Memory match · "+missed.map(\.subject.name).joined(separator:" & "),subjects:missed.map(\.subject.id),facts:missed.compactMap {$0.fact?.id})
+            moves += 1;scope=pair.fact?.scope;model.respond(false,event:.mismatch)
         case .matched:moves += 1;scope=pair.fact?.scope;if found < 8 {model.respond(true,event:.connection)}
         }
         if found == 8 {
@@ -119,13 +124,15 @@ private struct MemoryCardFace: View, Animatable {
             RoundedRectangle(cornerRadius:14).fill(matched ? Palette.brand.opacity(0.12) : .white)
                 .overlay {
                     VStack(spacing:6) {
-                        if image {EntityArtwork(asset:pair.subject.imageAsset,url:pair.subject.imageURL,initials:pair.subject.visual,size:52,isPlayer:pair.subject.type == "player")}
+                        if image {GeometryReader {geometry in EntityArtwork(asset:pair.subject.imageAsset,url:pair.subject.imageURL,initials:pair.subject.visual,size:min(geometry.size.width-8,geometry.size.height-8),isPlayer:pair.subject.type == "player",portraitFocus:true).frame(maxWidth:.infinity,maxHeight:.infinity)}}
                         else if let fact=pair.fact {
                             Text(fact.value.display).font(.system(size:min(textSize*1.6,30),weight:.bold,design:.rounded)).lineLimit(1).minimumScaleFactor(0.65)
                             Text(pair.definition.label ?? "").font(.system(size:min(textSize*0.85,16),weight:.semibold)).multilineTextAlignment(.center).lineLimit(2).minimumScaleFactor(0.65)
                         } else {Text(pair.subject.name).font(.system(size:min(textSize,22),weight:.semibold,design:.rounded)).multilineTextAlignment(.center).lineLimit(4).minimumScaleFactor(0.65).padding(.horizontal,5)}
-                        if matched {Image(systemName:"checkmark.circle.fill").font(.caption).foregroundStyle(Palette.brand)}
+
                     }
+                }.overlay(alignment:.topTrailing) {
+                    if matched {Image(systemName:"checkmark.circle.fill").font(.system(size:12,weight:.bold)).foregroundStyle(Palette.brand).background(.white,in:Circle()).padding(5)}
                 }.rotation3DEffect(.degrees(180),axis:(x:0,y:1,z:0)).opacity(angle >= 90 ? 1 : 0)
         }.overlay {RoundedRectangle(cornerRadius:14).stroke(Palette.brand.opacity(0.18),lineWidth:1)}
             .rotation3DEffect(.degrees(angle),axis:(x:0,y:1,z:0),perspective:0.45).accessibilityHidden(true)

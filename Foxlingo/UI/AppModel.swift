@@ -95,6 +95,12 @@ import SwiftUI
         do {
             let restored = try store.loadWithNotice()
             state = restored.state ?? LearnerState()
+            #if DEBUG
+            let args=ProcessInfo.processInfo.arguments
+            if args.contains("-ui-testing"),let i=args.firstIndex(of:"-test-streak-days"),args.count > i+1,let count=Int(args[i+1]),(1...64).contains(count) {
+                for offset in (0..<count).reversed() {state.streak.record(now.addingTimeInterval(-Double(offset)*86400),zone:state.homeTimeZone)}
+            }
+            #endif
             state.reconcileRehearsals(rehearsalTopics,now:now)
             message = restored.notice
             if (state.rehearsals?.discardedDrafts ?? 0) > 0 {message="A rehearsal draft could not be opened. Your learning history is preserved."}
@@ -108,6 +114,20 @@ import SwiftUI
             }
             if restored.state != nil && restored.notice == nil {save()}
         } catch { recoveryRequired = true; message = error.localizedDescription }
+    }
+    func recordGameGap(game: String,context: String,subjects: [UUID]=[],facts: [UUID]=[],names: [String]=[],assets: [String]=[]) {
+        guard let pack else {return}
+        var ids=Set(subjects)
+        for name in names {
+            let normalized=Recall.normalize(name)
+            let matches=pack.entities.filter {$0.aliases.map(Recall.normalize).contains(normalized) || Recall.normalize($0.name) == normalized}
+            if matches.count == 1 {ids.insert(matches[0].id)}
+        }
+        for asset in assets {
+            let matches=pack.entities.filter {$0.imageAsset == asset}
+            if matches.count == 1 {ids.insert(matches[0].id)}
+        }
+        state.recordPracticeGap(PracticeGap(game:game,context:context,subjectIDs:ids.sorted {$0.uuidString < $1.uuidString},factIDs:facts,timestamp:now));save()
     }
     func save() {
         guard !recoveryRequired else { return }

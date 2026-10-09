@@ -1,6 +1,16 @@
 import XCTest
 @testable import FoxlingoCore
 final class MemoryGameTests: XCTestCase {
+    func testNewHiddenCardInterruptsMismatchWithoutLosingMatches() {
+        var board=MemoryMatch(pairs:[Pair(left:"a",right:"A"),Pair(left:"b",right:"B"),Pair(left:"c",right:"C")])
+        _ = board.flip("a");_ = board.flip("A")
+        _ = board.flip("b");XCTAssertEqual(board.flip("C"),.mismatch)
+        XCTAssertEqual(board.flip("C",advancingPendingMismatch:true),.ignored)
+        XCTAssertEqual(board.faceUp,["b","C"])
+        XCTAssertEqual(board.flip("c",advancingPendingMismatch:true),.revealed)
+        XCTAssertEqual(board.faceUp,["c"]);XCTAssertEqual(board.matched,["a","A"])
+        XCTAssertEqual(board.flip("C"),.matched("c"))
+    }
     func fixture() throws -> (ContentPack,Data,[MemoryGamePair]) {
         let root=URL(fileURLWithPath:#filePath).deletingLastPathComponent().deletingLastPathComponent()
         let pack=try ContentPack.load(Data(contentsOf:root.appendingPathComponent("Foxlingo/Resources/starter-en.json")))

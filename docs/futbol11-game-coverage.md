@@ -1,0 +1,11 @@
+# Futbol11 game coverage
+
+The current source lists 19 football modes. `content/futbol11-game-catalog.json` records each mode, its rule reference, required data and implementation status. Grid, Bingo and Football Wordle currently reproduce their core source mechanic. The existing single-squad lineup, Who am I?, Memory and Timeline are separate Foxlingo games.
+
+Do not treat the 98 historical lineups as completion of Retro: Retro mixes eleven distinct squads into one XI. Nations, Legends, America and Clubs are related drafting mechanics with separate eligibility pools. Statdle requires season-specific values; lifetime records are not substitutes. Link requires evidence of sharing senior appearances; co-membership in a seasonal squad alone is insufficient. Similarity games must explain the compared traits and never adjudicate factual free-text answers by similarity alone.
+
+Missing modes remain planned until playable natively and verified. The JSON catalog is development tracking, not a claim that these games are available in the app. Current source data describes different cutoff dates per mode; preserve those scopes rather than presenting it as live 2026 statistics.
+
+Mistake tracking now stores up to 500 practice gaps independently of recall, album mastery and streaks. Available source-backed lessons are recommended by exact fact first, then related subject. Unknown seed records do not produce invented recommendations. Mystery gaps stay in the saved round until identification so lesson titles cannot reveal a hidden answer. Wordle uses normalized first names, surnames and nicknames with four to eight letters and consumes repeated-letter counts correctly; finished losses reveal the answer but do not advance a streak.
+
+On-demand generation still needs a configured server and verified evidence; provider credentials belong on the server.

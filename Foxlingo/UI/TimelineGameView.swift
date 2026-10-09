@@ -28,12 +28,18 @@ struct TimelineGameView: View {
                     }
                 }
                 if let notice {Text(notice).font(.subheadline).foregroundStyle(Palette.muted).accessibilityIdentifier("timeline-notice")}
-                Text(finished ? "A few milestones, connected in time." : "Put these milestones from earliest to latest. Use the arrows to move an event.").font(.subheadline).foregroundStyle(Palette.muted)
+                Text(finished ? "A few milestones, connected in time." : "Put these milestones from earliest to latest. Drag a milestone to its place in the story.").font(.subheadline).foregroundStyle(Palette.muted)
                 HStack {Label("Earliest",systemImage:"arrow.down");Spacer();Text("\(progress.order.count) milestones").contentTransition(.numericText())}.font(.caption.bold()).foregroundStyle(Palette.muted)
                 VStack(spacing:0) {
                     ForEach(progress.order,id:\.self) {id in
                         if let event=round.events.first(where:{$0.id == id}),let index=progress.order.firstIndex(of:id) {
                             eventRow(event,index:index)
+                                .draggable(finished ? "" : event.id)
+                                .dropDestination(for:String.self) {items,_ in
+                                    guard !finished,items.count == 1,let id=items.first,progress.order.contains(id),let target=progress.order.firstIndex(of:event.id) else {return false}
+                                    withAnimation(reduced ? nil : .snappy) {progress=progress.moving(id,to:target);feedback=nil}
+                                    model.playSound(.reveal);persist();return true
+                                }
                         }
                     }
                 }
@@ -109,7 +115,7 @@ struct TimelineGameView: View {
         guard !finished else {return}
         progress=TimelineProgress(roundID:progress.roundID,order:progress.order,checks:min(progress.checks+1,100_000),moves:progress.moves)
         if round.accepts(progress.order) {complete(helped:false)}
-        else {feedback="Not quite yet. Move a milestone, or reveal the dated story to learn the sequence.";model.respond(false,event:.mismatch);persist();UIAccessibility.post(notification:.announcement,argument:feedback)}
+        else {model.recordGameGap(game:"timeline",context:round.definition.title,subjects:[round.subject.id],facts:round.events.map(\.fact.id));feedback="Not quite yet. Move a milestone, or reveal the dated story to learn the sequence.";model.respond(false,event:.mismatch);persist();UIAccessibility.post(notification:.announcement,argument:feedback)}
     }
     private func complete(helped: Bool) {
         guard !finished else {return}

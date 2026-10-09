@@ -169,6 +169,51 @@ final class FlowTests: XCTestCase {
         let shot=XCTAttachment(screenshot:app.screenshot());shot.name="Large text rehearsal reflection";shot.lifetime = .keepAlways;add(shot)
         tap("rehearsal-finish");XCTAssertTrue(app.staticTexts["rehearsal-complete"].exists)
     }
+    func testFootballWordleRestoresAndHandlesRepeatedLetters() {
+        start();tap("choose-XT");app.tabBars.buttons["Games"].tap();tap("game-wordle")
+        for letter in "RAMOS" {tap("wordle-key-\(letter)")};tap("wordle-submit")
+        XCTAssertEqual(app.otherElements["wordle-row-0"].value as? String,"absent, absent, present, absent, present")
+        app.terminate();start(reset:false);app.tabBars.buttons["Games"].tap();tap("game-wordle")
+        XCTAssertTrue(app.otherElements["wordle-row-0"].label.contains("RAMOS"))
+        for letter in "MESSI" {tap("wordle-key-\(letter)")};tap("wordle-submit")
+        XCTAssertEqual(app.staticTexts["wordle-identity"].label,"Lionel Messi")
+        XCTAssertEqual(app.otherElements["wordle-row-1"].value as? String,"correct, correct, correct, correct, correct")
+        let shot=XCTAttachment(screenshot:app.screenshot());shot.name="Native Football Wordle solved";shot.lifetime = .keepAlways;add(shot)
+        tap("wordle-replay");XCTAssertFalse(app.staticTexts["wordle-identity"].exists)
+    }
+    func testUnsolvedMysteryDoesNotRecommendItsHiddenAnswer() {
+        start();tap("choose-XT");app.tabBars.buttons["Games"].tap();tap("game-mystery")
+        tap("mystery-reveal");tap("mystery-player-entity-casillas")
+        XCTAssertTrue(app.staticTexts["mystery-feedback"].label.contains("differs"))
+        app.navigationBars.buttons.element(boundBy:0).tap()
+        XCTAssertFalse(app.buttons.matching(NSPredicate(format:"identifier BEGINSWITH %@","game-recommend-")).firstMatch.exists)
+        app.terminate();start(reset:false);app.tabBars.buttons["Games"].tap();tap("game-mystery")
+        tap("mystery-player-entity-riascos")
+        app.navigationBars.buttons.element(boundBy:0).tap()
+        XCTAssertTrue(app.buttons.matching(NSPredicate(format:"identifier BEGINSWITH %@","game-recommend-")).firstMatch.exists)
+    }
+    func testShaderStreakAtOneAndSixtyFourDays() {
+        for count in [1,64] {
+            app.launchArguments=["-ui-testing","-reset-test-state","-test-now","1800000000","-test-streak-days",String(count)];app.launch()
+            tap("choose-XT")
+            XCTAssertEqual(app.otherElements["streak-badge"].label,"\(count) active day streak")
+            Thread.sleep(forTimeInterval:0.3)
+            let shot=XCTAttachment(screenshot:app.screenshot());shot.name="Metal flame \(count) days";shot.lifetime = .keepAlways;add(shot)
+            app.terminate()
+        }
+    }
+    func testTimelineDragPersistsItsNewOrder() {
+        start();tap("choose-XT");app.tabBars.buttons["Games"].tap();tap("game-timeline")
+        let rows=app.descendants(matching:.any).matching(NSPredicate(format:"identifier BEGINSWITH %@","timeline-event-"))
+        let first=rows.element(boundBy:0),last=rows.element(boundBy:2)
+        XCTAssertTrue(first.waitForExistence(timeout:5));let id=first.identifier
+        first.press(forDuration:0.5,thenDragTo:last)
+        let moved=app.descendants(matching:.any)[id].firstMatch
+        XCTAssertTrue(moved.label.hasPrefix("3."))
+        app.terminate();start(reset:false);app.tabBars.buttons["Games"].tap();tap("game-timeline")
+        XCTAssertTrue(app.descendants(matching:.any)[id].firstMatch.label.hasPrefix("3."))
+        let shot=XCTAttachment(screenshot:app.screenshot());shot.name="Draggable timeline restored";shot.lifetime = .keepAlways;add(shot)
+    }
     func testTimelineWrongOrderResumeRestartAndIndependentCompletion() {
         start();tap("choose-XT");app.tabBars.buttons["Games"].tap();tap("game-timeline")
         XCTAssertTrue(app.staticTexts["timeline-title"].label.contains("Xolos"))
@@ -506,7 +551,7 @@ final class FlowTests: XCTestCase {
         tap("mystery-restart");app.buttons["Keep playing"].tap()
         XCTAssertTrue(app.descendants(matching:.any)["mystery-clue-1"].firstMatch.exists)
         for key in ["riascos","arce","saucedo","cristiano","ramos","casillas"] {
-            tap("mystery-choose");tap("mystery-player-entity-"+key)
+            tap("mystery-player-entity-"+key)
             if key != "casillas" {tap("mystery-next")}
         }
         app.terminate();start(reset:false);app.tabBars.buttons["Games"].tap();tap("game-mystery")
@@ -521,31 +566,38 @@ final class FlowTests: XCTestCase {
     func testMysteryCluesNeutralGuessSourcesCompletionAndReplay() {
         start();tap("choose-XT");app.tabBars.buttons["Games"].tap();tap("game-mystery")
         XCTAssertFalse(app.staticTexts["mystery-identity"].exists)
-        XCTAssertFalse(app.staticTexts["Duvier Riascos"].exists)
-        tap("mystery-choose");tap("mystery-player-entity-cristiano")
+        XCTAssertTrue(app.buttons["mystery-player-entity-riascos"].exists)
+        tap("mystery-player-entity-cristiano")
         XCTAssertTrue(app.staticTexts["mystery-feedback"].label.contains("cannot rule"))
         XCTAssertTrue(app.descendants(matching:.any)["mystery-clue-1"].firstMatch.exists)
         XCTAssertFalse(app.staticTexts["mystery-identity"].exists)
-        tap("mystery-choose");tap("mystery-player-entity-riascos")
+        tap("mystery-player-entity-riascos")
         XCTAssertEqual(app.staticTexts["mystery-identity"].label,"Duvier Riascos")
         tap("mystery-sources");XCTAssertTrue(app.navigationBars["Sources & context"].exists);app.buttons["Done"].tap()
-        tap("mystery-next");XCTAssertFalse(app.staticTexts["Duvier Riascos"].exists)
+        tap("mystery-next");XCTAssertTrue(app.buttons["mystery-player-entity-riascos"].exists)
         for key in ["arce","saucedo","cristiano","ramos","casillas"] {
             if key == "saucedo" {
-                tap("mystery-choose");tap("mystery-player-entity-ramos")
+                tap("mystery-player-entity-ramos")
                 XCTAssertTrue(app.staticTexts["mystery-feedback"].label.contains("differs"))
                 tap("mystery-reveal")
                 XCTAssertEqual(app.descendants(matching:.any)["mystery-context-1"].firstMatch.label,"Club Tijuana")
                 tap("mystery-reveal")
                 XCTAssertTrue(app.descendants(matching:.any)["mystery-clue-2"].firstMatch.exists)
             }
-            tap("mystery-choose");tap("mystery-player-entity-"+key);tap("mystery-next")
+            tap("mystery-player-entity-"+key);tap("mystery-next")
         }
         XCTAssertTrue(app.staticTexts["mystery-complete"].exists)
         let shot=XCTAttachment(screenshot:app.screenshot());shot.name="Mystery board complete";shot.lifetime = .keepAlways;add(shot)
         tap("mystery-replay");XCTAssertFalse(app.staticTexts["mystery-complete"].exists);XCTAssertFalse(app.staticTexts["mystery-identity"].exists)
         XCTAssertFalse(app.descendants(matching:.any)["mystery-clue-1"].firstMatch.exists)
         let restart=XCTAttachment(screenshot:app.screenshot());restart.name="Mystery hidden player";restart.lifetime = .keepAlways;add(restart)
+        app.navigationBars.buttons.element(boundBy:0).tap()
+        XCTAssertTrue(app.buttons.matching(NSPredicate(format:"identifier BEGINSWITH %@","game-recommend-")).firstMatch.exists)
+        app.terminate();start(reset:false);app.tabBars.buttons["Games"].tap()
+        let recommendation=app.buttons.matching(NSPredicate(format:"identifier BEGINSWITH %@","game-recommend-")).firstMatch
+        XCTAssertTrue(recommendation.waitForExistence(timeout:5));recommendation.tap()
+        XCTAssertTrue(app.buttons["lesson-next"].waitForExistence(timeout:5))
+
     }
 
     func testLargeTextMysteryCluesAndPlayerPicker() {
@@ -553,7 +605,7 @@ final class FlowTests: XCTestCase {
         app.launch();tap("choose-XT");app.tabBars.buttons["Games"].tap();tap("game-mystery")
         tap("mystery-reveal")
         let clue=XCTAttachment(screenshot:app.screenshot());clue.name="Mystery clues at large text";clue.lifetime = .keepAlways;add(clue)
-        tap("mystery-choose");tap("mystery-player-entity-riascos")
+        tap("mystery-player-entity-riascos")
         XCTAssertTrue(app.staticTexts["mystery-identity"].exists)
         tap("mystery-next");XCTAssertFalse(app.staticTexts["mystery-identity"].exists)
     }
@@ -580,6 +632,10 @@ final class FlowTests: XCTestCase {
         tap("game-grid");tap("game-cell-0")
         let search=app.textFields["game-player-search"]
         XCTAssertTrue(search.waitForExistence(timeout:5));search.tap();search.typeText("Cristiano Ronaldo")
+        let result=app.buttons["game-player-player-1"]
+        XCTAssertTrue(result.waitForExistence(timeout:5));XCTAssertTrue(result.isHittable)
+        XCTAssertLessThan(result.frame.maxY,search.frame.minY)
+        let keyboardShot=XCTAttachment(screenshot:app.screenshot());keyboardShot.name="Player results above keyboard search";keyboardShot.lifetime = .keepAlways;add(keyboardShot)
         tap("game-player-player-1");XCTAssertTrue(app.staticTexts["game-answer-error"].exists)
         search.tap()
         search.typeText(String(repeating:XCUIKeyboardKey.delete.rawValue,count:50)+"Casillas")
@@ -588,7 +644,11 @@ final class FlowTests: XCTestCase {
         XCTAssertTrue(app.staticTexts["game-complete"].exists)
         let grid=XCTAttachment(screenshot:app.screenshot());grid.name="Football grid";grid.lifetime = .keepAlways;add(grid)
         app.navigationBars.buttons.element(boundBy:0).tap()
-        tap("game-lineup");tap("game-cell-10")
+        tap("game-lineup")
+        let first=app.buttons["game-cell-0"],defender=app.buttons["game-cell-6"]
+        XCTAssertEqual(first.frame.width,defender.frame.width,accuracy:1)
+        XCTAssertEqual(first.frame.height,defender.frame.height,accuracy:1)
+        tap("game-cell-10")
         XCTAssertTrue(app.descendants(matching:.any)["game-lineup-context"].firstMatch.exists)
         let keeper=app.textFields["game-player-search"];keeper.tap();keeper.typeText("Casillas");tap("game-player-classic-player-77")
         for _ in 0..<10 {tap("game-hint")}
@@ -664,9 +724,10 @@ final class FlowTests: XCTestCase {
         tap(image);tap("memory-memory-arce-answer")
         XCTAssertEqual(app.buttons[image].value as? String,"Revealed")
         tap("memory-memory-cristiano-image")
-        XCTAssertEqual(app.buttons["memory-memory-cristiano-image"].value as? String,"Face down")
+        XCTAssertEqual(app.buttons["memory-memory-cristiano-image"].value as? String,"Revealed")
         let hidden=NSPredicate(format:"value == %@","Face down")
         expectation(for:hidden,evaluatedWith:app.buttons[image]);waitForExpectations(timeout:5)
+        tap("memory-memory-cristiano-answer")
         tap(image);tap(answer);XCTAssertEqual(app.buttons[image].value as? String,"Matched")
         app.terminate();start(reset:false);app.tabBars.buttons["Games"].tap();tap("game-memory")
         XCTAssertEqual(app.buttons[image].value as? String,"Matched")

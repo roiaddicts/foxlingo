@@ -49,7 +49,7 @@ for squad in ordered:
   if link and (norm(name(p)) != norm(link['classicName']) or photo is None or norm(name(photo)) != norm(link['portraitName'])):raise ValueError('Curated portrait identity changed: '+pid)
   if not any(v['id']==pid for v in players):players.append(dict(id=pid,name=name(p),aliases=[name(p)],imageURL=imageurl(photo['image']) if photo and photo.get('image') else None,imageAsset=f'seed-player-{photo["id"]}' if photo else None))
   members.append(dict(playerID=pid,positions=[v.strip() for v in p['positions'].split(',') if v.strip()]))
- lineups.append(dict(id=f'lineup-{squad["id"]}',title=squad['name'].replace('Real M','Real Madrid'),clubName=squad['name'].rsplit(' ',1)[0].replace('Real M','Real Madrid'),imageURL=imageurl(squad['logo']),scope='Build a valid 4–3–3 using this historical season squad; this is not a particular match’s starting XI.',source=source,members=members,positions=['LW','ST','RW','CM','CM','CDM','LB','CB','CB','RB','GK']))
+ lineups.append(dict(id=f'lineup-{squad["id"]}',title=squad['name'].replace('Real M','Real Madrid'),imageAsset=f'classic-shirt-{squad["id"]}',clubName=squad['name'].rsplit(' ',1)[0].replace('Real M','Real Madrid'),imageURL=imageurl(squad['logo']),scope='Build a valid 4–3–3 using this historical season squad; this is not a particular match’s starting XI.',source=source,members=members,positions=['LW','ST','RW','CM','CM','CDM','LB','CB','CB','RB','GK']))
 def solvable(squad):
  match={}
  def assign(slot,seen):

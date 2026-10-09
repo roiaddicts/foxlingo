@@ -31,24 +31,29 @@ if artworkPath.exists():
   if value.get('url'):urls.setdefault('entity-'+key,value['url'])
 for c in p["categories"]:
  if c.get("imageAsset") and c.get("imageURL"):urls.setdefault(c["imageAsset"],c["imageURL"])
+for squad in p['lineups']:
+ if squad.get('imageAsset') and squad.get('imageURL'):urls[squad['imageAsset']]=squad['imageURL']
 countries=json.loads((ROOT/'content/country-artwork.json').read_text())
 for key in ['ecuador','spain','mexico','germany','brazil','portugal','argentina','france','england','colombia','austria','azerbaijan','belgium','czechia','greece','italy','netherlands','norway','slovakia','turkiye','ukraine','uruguay','chile']:
  c=countries[key];urls[c['imageAsset']]=c['imageURL']
-manifest=[]
-for name,url in urls.items():
+def cache_image(item):
+ name,url=item
  folder=ASSETS/(name+'.imageset');folder.mkdir(exist_ok=True)
  file=folder/'image.png'
  if file.exists() and (folder/'Contents.json').exists():
-  manifest.append(dict(asset=name,url=url,cached=True));continue
+  return dict(asset=name,url=url,cached=True)
  r=subprocess.run(['curl','-fsSL','--retry','2','--retry-delay','1','--max-time','20',url,'-o',str(file)],capture_output=True)
  if r.returncode or not file.exists():
-  manifest.append(dict(asset=name,url=url,cached=False));continue
+  return dict(asset=name,url=url,cached=False)
  # Verify and convert to PNG, bounding decoded memory costs without altering content.
  r=subprocess.run(['sips','-s','format','png','-Z','320',str(file),'--out',str(file)],capture_output=True)
  if r.returncode:
-  file.unlink(missing_ok=True);manifest.append(dict(asset=name,url=url,cached=False));continue
+  file.unlink(missing_ok=True);return dict(asset=name,url=url,cached=False)
  (folder/'Contents.json').write_text(json.dumps({'images':[{'filename':'image.png','idiom':'universal'}],'info':{'author':'xcode','version':1}},indent=2)+'\n')
- manifest.append(dict(asset=name,url=url,cached=True))
+ return dict(asset=name,url=url,cached=True)
+from concurrent.futures import ThreadPoolExecutor
+with ThreadPoolExecutor(max_workers=8) as pool:
+ manifest=list(pool.map(cache_image,urls.items()))
 for player in catalog['players']:
  if player.get('portraitSourceURL'):
   item=next(m for m in manifest if m['asset']==player['key']);item['sourceURL']=player['portraitSourceURL']

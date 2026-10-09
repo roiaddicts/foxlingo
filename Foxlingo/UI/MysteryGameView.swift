@@ -14,7 +14,7 @@ struct MysteryGameView: View {
     @Environment(\.dynamicTypeSize) private var typeSize
     @State private var index=0
     @State private var turn=MysteryTurn()
-    @State private var choosing=false
+    @State private var pendingMistake=false
     @State private var sources=false
     @State private var feedback=""
     @State private var contradicted=false
@@ -28,7 +28,7 @@ struct MysteryGameView: View {
     var round: MysteryRound {rounds[index]}
     var body: some View {
         ScrollView {
-            VStack(alignment:.leading,spacing:22) {
+            VStack(alignment:.leading,spacing:12) {
                 HStack {Eyebrow(text:"\(index+1) of \(rounds.count) players");Spacer();Text("UNTIMED").font(.caption.bold()).foregroundStyle(Palette.muted)}
                 ProgressView(value:Double(finished ? rounds.count : index),total:Double(rounds.count)).animation(reduced ? nil : .snappy,value:index)
                 if let resumeNotice {Text(resumeNotice).font(.subheadline).foregroundStyle(Palette.muted).accessibilityIdentifier("mystery-resume-notice")}
@@ -37,48 +37,40 @@ struct MysteryGameView: View {
                     Text("Clues used: \(clueCounts.map(String.init).joined(separator:" · ")). This is practice, not an independent recall score.").font(.subheadline)
                     PrimaryButton(title:"Play again",symbol:"arrow.clockwise") {replay()}.accessibilityIdentifier("mystery-replay")
                 } else {
-                    VStack(spacing:12) {
-                        if turn.solved {
+                    if turn.solved {
+                    VStack(spacing:8) {
                             ClubMark(club:round.player,size:108).transition(.scale(scale:0.88).combined(with:.opacity))
                             Text(round.player.name).font(.title2.bold()).accessibilityIdentifier("mystery-identity")
                             Text("\(turn.revealed) of 3 clues used").font(.subheadline).foregroundStyle(Palette.muted)
-                        } else {
-                            Image(systemName:"person.crop.circle.badge.questionmark").font(.system(size:70)).foregroundStyle(Palette.brand).accessibilityHidden(true)
-                            Text("Which featured player?").font(.title2.bold())
-                            Text("One of the \(rounds.count) players on this board. Use the clues to find the person.").font(.subheadline).foregroundStyle(Palette.muted).multilineTextAlignment(.center)
-                        }
-                    }.frame(maxWidth:.infinity).padding(.vertical,8).animation(reduced ? nil : .spring(response:0.4,dampingFraction:0.8),value:turn.solved)
+                    }.frame(maxWidth:.infinity).animation(reduced ? nil : .spring(response:0.4,dampingFraction:0.8),value:turn.solved)
+                    }
                     ForEach(0..<turn.revealed,id:\.self) {i in clue(i).transition(.opacity.combined(with:.move(edge:.bottom)))}
                     if !feedback.isEmpty {Label(feedback,systemImage:contradicted ? "arrow.triangle.branch" : turn.solved ? "checkmark.circle.fill" : "lightbulb").font(.subheadline).foregroundStyle(contradicted ? Palette.ink : Palette.brand).accessibilityIdentifier("mystery-feedback")}
                     if turn.solved {
                         PrimaryButton(title:index == rounds.count-1 ? "Finish board" : "Next player") {next()}.accessibilityIdentifier("mystery-next")
                         Button("Sources & context",systemImage:"text.book.closed") {sources=true}.accessibilityIdentifier("mystery-sources")
                     } else {
-                        PrimaryButton(title:"Choose a player",symbol:"person.crop.circle") {choosing=true}.accessibilityIdentifier("mystery-choose")
-                        if turn.revealed < 3 {Button("Reveal another clue",systemImage:"lightbulb") {withAnimation(reduced ? nil : .easeOut(duration:0.22)) {turn.reveal(in:round);feedback="";persist();model.playSound(.reveal)}}.frame(minHeight:44).accessibilityIdentifier("mystery-reveal")}
+                        LazyVGrid(columns:typeSize.isAccessibilitySize ? [GridItem(.flexible())] : [GridItem(.flexible()),GridItem(.flexible())],spacing:10) {
+                            ForEach(rounds) {candidate in
+                                Button {guess(candidate.player)} label: {
+                                    VStack(spacing:5) {EntityArtwork(asset:candidate.player.imageAsset,url:candidate.player.imageURL,initials:candidate.player.visual,size:78,isPlayer:true,portraitFocus:true);Text(candidate.player.name).font(.subheadline.bold()).lineLimit(2).multilineTextAlignment(.center)}.frame(maxWidth:.infinity).frame(minHeight:108).frame(height:typeSize.isAccessibilitySize ? nil : 108).background(.white,in:RoundedRectangle(cornerRadius:16))
+                                }.buttonStyle(PressFeedback()).accessibilityLabel(candidate.player.name).accessibilityIdentifier("mystery-player-\(candidate.player.key)")
+                            }
+                        }
+
                     }
                 }
                 Text("Historical lesson facts. Clues count toward game practice; card upgrades still require scheduled recall.").font(.caption).foregroundStyle(Palette.muted)
-            }.padding(24)
+            }.padding(16)
         }.journal().navigationTitle("Who am I?").navigationBarTitleDisplayMode(.inline)
         .onAppear {restore()}
         .onDisappear {persist()}
         .onChange(of:scenePhase) {if scenePhase != .active {persist()}}
         .toolbar {if !finished {Button("Start again",systemImage:"arrow.counterclockwise") {if index > 0 || turn.revealed > 1 || turn.guesses > 0 || turn.solved {confirmRestart=true} else {replay()}}.accessibilityIdentifier("mystery-restart")}}
         .alert("Start a new mystery board?",isPresented:$confirmRestart) {Button("Start a new board",role:.destructive) {replay()};Button("Keep playing",role:.cancel) {}} message:{Text("This clears the clues and players on this board. Your other games and learning progress stay saved.")}
-        .sheet(isPresented:$choosing) {
-            NavigationStack {
-                ScrollView {
-                    VStack(alignment:.leading,spacing:18) {
-                        Text("The featured players").font(.title2.bold())
-                        Text("A guess that still fits the clues reveals another clue. Missing evidence is never treated as a wrong fact.").font(.subheadline).foregroundStyle(Palette.muted)
-                        LazyVGrid(columns:typeSize.isAccessibilitySize ? [GridItem(.flexible())] : [GridItem(.flexible()),GridItem(.flexible())],spacing:14) {
-                            ForEach(rounds) {candidate in
-                                Button {guess(candidate.player)} label: {VStack(spacing:10) {ClubMark(club:candidate.player,size:72);Text(candidate.player.name).font(.headline).multilineTextAlignment(.center)}.frame(maxWidth:.infinity,minHeight:130).padding(12).background(.white,in:RoundedRectangle(cornerRadius:18))}.buttonStyle(PressFeedback()).accessibilityLabel(candidate.player.name).accessibilityIdentifier("mystery-player-\(candidate.player.key)")
-                            }
-                        }
-                    }.padding(24)
-                }.journal().navigationTitle("Choose a player").navigationBarTitleDisplayMode(.inline).toolbar {Button("Cancel") {choosing=false}}
+        .safeAreaInset(edge:.bottom) {
+            if !finished && !turn.solved && turn.revealed < 3 {
+                PrimaryButton(title:"Reveal another clue",symbol:"lightbulb") {withAnimation(reduced ? nil : .easeOut(duration:0.22)) {turn.reveal(in:round);feedback="";persist();model.playSound(.reveal)}}.accessibilityIdentifier("mystery-reveal").padding(16).background(.regularMaterial)
             }
         }
         .sheet(isPresented:$sources) {
@@ -94,7 +86,7 @@ struct MysteryGameView: View {
     }
     private func clue(_ i: Int) -> some View {
         let clue=round.definition.clues[i]
-        return VStack(alignment:.leading,spacing:10) {
+        return VStack(alignment:.leading,spacing:6) {
             HStack(spacing:10) {
                 Text("\(i+1)").font(.caption.bold()).frame(width:24,height:24).background(Palette.brand.opacity(0.1),in:Circle())
                 if let context=clue.contextEntityID,let pack=model.pack {EntityArtwork(asset:pack.entity(context).imageAsset,url:pack.entity(context).imageURL,initials:pack.entity(context).visual,size:28).accessibilityElement(children:.ignore).accessibilityLabel(pack.entity(context).name).accessibilityIdentifier("mystery-context-\(i)")}
@@ -105,15 +97,16 @@ struct MysteryGameView: View {
                 if let unit=fact.value.unit,unit != "year" {Text(unit).font(.subheadline).foregroundStyle(Palette.muted)}
                 Text(fact.scope).font(.caption).foregroundStyle(Palette.muted)
             }
-        }.frame(maxWidth:.infinity,alignment:.leading).padding(18).background(.white.opacity(0.8),in:RoundedRectangle(cornerRadius:18))
+        }.frame(maxWidth:.infinity,alignment:.leading).padding(12).background(.white.opacity(0.8),in:RoundedRectangle(cornerRadius:18))
     }
     private func guess(_ player: Entity) {
-        choosing=false
         withAnimation(reduced ? nil : .easeOut(duration:0.22)) {
             switch turn.guess(player,in:round) {
-            case .identified:contradicted=false;feedback="Found the connection.";model.respond(true,event:.connection)
+            case .identified:
+                if pendingMistake {model.recordGameGap(game:"mystery",context:"Who am I? · "+round.player.name,subjects:[round.player.id],facts:Array(round.definition.clues.prefix(turn.revealed)).compactMap(\.factID));pendingMistake=false}
+                contradicted=false;feedback="Found the connection.";model.respond(true,event:.connection)
             case .moreClues:contradicted=false;feedback="We cannot rule that player out from these clues. Let’s reveal another."
-            case .contradicted:model.respond(false,event:.mismatch);contradicted=true;feedback="That player differs from a clue already shown. Try another connection."
+            case .contradicted:pendingMistake=true;model.respond(false,event:.mismatch);contradicted=true;feedback="That player differs from a clue already shown. Try another connection."
             case .ignored:break
             }
         }
@@ -135,10 +128,10 @@ struct MysteryGameView: View {
         rounds.shuffle()
         #endif
         model.state.removeSavedGame("mystery");resumeNotice=nil
-        index=0;turn=MysteryTurn();clueCounts=[];feedback="";contradicted=false;finished=false;sessionID=UUID();persist()}
+        index=0;turn=MysteryTurn();pendingMistake=false;clueCounts=[];feedback="";contradicted=false;finished=false;sessionID=UUID();persist()}
     private func persist() {
         guard loaded,!finished else {return}
-        let progress=MysteryProgress(roundIDs:rounds.map(\.id),index:index,revealed:turn.revealed,solved:turn.solved,guesses:turn.guesses,clueCounts:clueCounts)
+        let progress=MysteryProgress(roundIDs:rounds.map(\.id),index:index,revealed:turn.revealed,solved:turn.solved,guesses:turn.guesses,clueCounts:clueCounts,pendingMistake:pendingMistake)
         model.state.storeGame(GameResume(signature:GameResumeRules.mysterySignature(rounds),sessionID:sessionID,mystery:progress),kind:"mystery");model.save()
     }
     private func restore() {
@@ -146,7 +139,7 @@ struct MysteryGameView: View {
         if let resume=model.state.savedGame("mystery") {
             if let progress=GameResumeRules.restoreMystery(resume,rounds:rounds,completedSessions:Set(model.state.sessions.map(\.id))) {
                 let byID=Dictionary(uniqueKeysWithValues:rounds.map {($0.id,$0)})
-                rounds=progress.roundIDs.map {byID[$0]!};index=progress.index;turn=MysteryTurn(restoring:progress);clueCounts=progress.clueCounts;sessionID=resume.sessionID
+                rounds=progress.roundIDs.map {byID[$0]!};index=progress.index;turn=MysteryTurn(restoring:progress);clueCounts=progress.clueCounts;pendingMistake=progress.pendingMistake ?? false;sessionID=resume.sessionID
                 resumeNotice="Your players and clues are right where you left them.";return
             }
             model.state.removeSavedGame("mystery");resumeNotice="That saved game could not be used with this content. A fresh board is ready; your completed activity is preserved."

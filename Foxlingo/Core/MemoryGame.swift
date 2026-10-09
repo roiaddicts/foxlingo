@@ -46,7 +46,7 @@ public enum MemoryGameDeck {
     }
     public static func restore(_ resume: GameResume,pairs: [MemoryGamePair],completedSessions: Set<UUID>) -> MemoryProgress? {
         let ids=Set(pairs.flatMap {[$0.relationship.left,$0.relationship.right]})
-        guard resume.schemaVersion == 1,resume.signature == signature(pairs),resume.board == nil,resume.mystery == nil,resume.timeline == nil,!completedSessions.contains(resume.sessionID),let progress=resume.memory,
+        guard resume.wordle == nil,resume.schemaVersion == 1,resume.signature == signature(pairs),resume.board == nil,resume.mystery == nil,resume.timeline == nil,!completedSessions.contains(resume.sessionID),let progress=resume.memory,
               progress.order.count == 16,Set(progress.order) == ids,
               Set(progress.matched).count == progress.matched.count,progress.matched.count < 8,
               Set(progress.matched).isSubset(of:Set(pairs.map { $0.relationship.left })),progress.moves >= progress.matched.count,progress.moves <= 100_000 else {return nil}

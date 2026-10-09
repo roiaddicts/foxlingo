@@ -7,7 +7,7 @@ ui.add_dependency(app)
 app_group=p.main_group.new_group('Foxlingo','Foxlingo')
 ['Core','UI'].each do |dir|
  g=app_group.new_group(dir,dir)
- Dir.glob(File.join(root,'Foxlingo',dir,'*.swift')).sort.each {|file|app.add_file_references([g.new_file(File.basename(file))])}
+ Dir.glob(File.join(root,'Foxlingo',dir,'*.{swift,metal}')).sort.each {|file|app.add_file_references([g.new_file(File.basename(file))])}
 end
 resources=app_group.new_group('Resources','Resources')
 ['starter-en.json','games-en.json','mystery-en.json','memory-en.json','timeline-en.json','rehearsal-en.json','Sounds','Assets.xcassets'].each do |file|

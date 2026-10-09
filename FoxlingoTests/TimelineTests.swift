@@ -2,6 +2,15 @@ import XCTest
 @testable import FoxlingoCore
 
 final class TimelineTests: XCTestCase {
+    func testDragInsertsAtDestinationAndRejectsUnknownItems() {
+        let progress=TimelineProgress(roundID:"round",order:["a","b","c","d"],checks:2,moves:4)
+        let moved=progress.moving("a",to:3)
+        XCTAssertEqual(moved.order,["b","c","d","a"]);XCTAssertEqual(moved.moves,5);XCTAssertEqual(moved.checks,2)
+        XCTAssertEqual(moved.moving("a",to:0).order,progress.order)
+        for destination in [-1,Int.max,4] {XCTAssertEqual(progress.moving("a",to:destination).order,progress.order)}
+        XCTAssertEqual(progress.moving("missing",to:1).moves,4)
+        XCTAssertEqual(progress.moving("a",to:0).moves,4)
+    }
     func fixture() throws -> (ContentPack,Data,[TimelineRound]) {
         let root=URL(fileURLWithPath:#filePath).deletingLastPathComponent().deletingLastPathComponent()
         let pack=try ContentPack.load(Data(contentsOf:root.appendingPathComponent("Foxlingo/Resources/starter-en.json")))
