@@ -2,7 +2,7 @@
 
 An offline-first iPhone football-learning app with **68 club roadmaps**, **20 player paths**, **four competition courses**, **126 JSON-authored lessons**, **92 collectible cards**, a small leopard companion, visual 2×2 choices, native score wheels, spaced reviews, and forgiving streaks. Xolos has ten lessons and Real Madrid has ten; every other club has a three-fact introductory lesson.
 
-The catalog covers the **2026/27 Champions League league phase**, **2026/27 Bundesliga**, and **Liga MX Apertura 2026**, verified as snapshots on October 8, 2026. The Games tab offers **football bingo**, a **club × country grid**, **98 classic season lineup challenges**, **Who am I?** with six sourced featured players, **Memory match**, **Football Wordle**, and draggable, illustrated **Football timelines** for Xolos and Madrid.
+The catalog covers the **2026/27 Champions League league phase**, **2026/27 Bundesliga**, and **Liga MX Apertura 2026**, verified as snapshots on October 8, 2026. The Games tab offers **football bingo**, a **club × country grid**, **98 classic season lineup challenges**, **Who am I?** with six sourced featured players, **Memory match**, **Football Wordle**, **Connections**, **Find the Impostors**, and draggable, illustrated **Football timelines** for Xolos and Madrid.
 
 ## Run on an iPhone simulator
 
@@ -44,7 +44,7 @@ xcodebuild -project Foxlingo.xcodeproj -scheme Foxlingo \
   -destination 'platform=iOS Simulator,name=iPhone 17 Pro' test
 ```
 
-The Swift package tests validate content, scoring, due review ordering, tier spacing, semantic revisions, streaks, time zones, and save recovery. The Xcode UI tests exercise lessons, matching, resume, the album, due review, club browsing, all three games, incorrect-name recovery, daily plans, and club comparison study packs.
+The Swift package tests validate content, scoring, due review ordering, tier spacing, semantic revisions, streaks, time zones, and save recovery. The Xcode UI tests exercise lessons, matching, resume, the album, due review, club browsing, native game flows, incorrect-name recovery, daily plans, and club comparison study packs.
 
 The UI-test launch flags (`-ui-testing`, `-reset-test-state`, and `-test-now`) exist only in Debug builds. They use a separate test save directory. The normal app has no time-travel or mastery bypass controls.
 
@@ -60,7 +60,7 @@ Expanded lessons were drafted with a cheaper subagent and checked against offici
 
 Original leopard artwork and its app icon are bundled in the asset catalog. Generation prompts and asset locations are recorded in [artwork notes](Foxlingo/Resources/ARTWORK.md).
 
-Lessons contain two story pages and four questions, then finish directly. Memory matching lives in Games as a separate 4×4 board: eight pictured players/clubs pair with four names and four sourced historical stats. Cards lift on touch or pointer hover and flip in 3D; Reduce Motion removes movement. Mismatches conceal after 1.8 seconds, and board order, found pairs and turn count survive relaunch. Hidden content stays concealed from accessibility labels. Game completion supports the streak without advancing recall mastery.
+Lessons contain two story pages and four questions, then finish directly. Memory matching lives in Games as a separate 4×4 board: eight pictured players/clubs pair with four names and four sourced historical stats. Cards lift on touch or pointer hover and flip in 3D; Reduce Motion removes movement. Mismatches conceal after 0.95 seconds, or immediately when another hidden card is tapped, and board order, found pairs and turn count survive relaunch. Hidden content stays concealed from accessibility labels. Game completion supports the streak without advancing recall mastery.
 
 Game clues use offline club badges and country flags, including the player picker. Lesson identity answers reuse badges, faces, and flags; dates, statistics, and historical statements retain readable text. All visual clues expose their names to VoiceOver. Unmatched memory cards remain revealed for VoiceOver until the learner turns them over.
 

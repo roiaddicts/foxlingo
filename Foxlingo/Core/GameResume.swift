@@ -31,8 +31,9 @@ public struct GameResume: Codable, Sendable {
     public let memory: MemoryProgress?
     public let timeline: TimelineProgress?
     public let wordle: WordleProgress?
-    public init(signature: String,sessionID: UUID,board: BoardProgress?=nil,mystery: MysteryProgress?=nil,memory: MemoryProgress?=nil,timeline: TimelineProgress?=nil,wordle: WordleProgress?=nil) {
-        self.signature=signature;self.sessionID=sessionID;self.board=board;self.mystery=mystery;self.memory=memory;self.timeline=timeline;self.wordle=wordle
+    public let grouping: PlayerGroupProgress?
+    public init(signature: String,sessionID: UUID,board: BoardProgress?=nil,mystery: MysteryProgress?=nil,memory: MemoryProgress?=nil,timeline: TimelineProgress?=nil,wordle: WordleProgress?=nil,grouping: PlayerGroupProgress?=nil) {
+        self.signature=signature;self.sessionID=sessionID;self.board=board;self.mystery=mystery;self.memory=memory;self.timeline=timeline;self.wordle=wordle;self.grouping=grouping
     }
     static var invalid: Self {var value=Self(signature:"",sessionID:UUID());value.schemaVersion=0;return value}
 }
@@ -79,7 +80,7 @@ public enum GameResumeRules {
         return ContentUpdateRules.digest(ContentUpdateRules.bytes(BoardIdentity(kind:kind,scope:scope,layout:layout,candidates:candidates.map {$0.sorted()},names:names)))
     }
     public static func restoreBoard(_ resume: GameResume,kind: String,pack: GamePack,completedSessions: Set<UUID>) -> BoardProgress? {
-        guard resume.wordle == nil,resume.schemaVersion == 1,!completedSessions.contains(resume.sessionID),resume.mystery == nil,resume.memory == nil,resume.timeline == nil,
+        guard resume.grouping == nil,resume.wordle == nil,resume.schemaVersion == 1,!completedSessions.contains(resume.sessionID),resume.mystery == nil,resume.memory == nil,resume.timeline == nil,
               let board=resume.board,let candidates=candidates(kind:kind,pack:pack,squadID:board.squadID),
               resume.signature == boardSignature(kind:kind,pack:pack,squadID:board.squadID),
               board.placed.count < candidates.count,Set(board.placed.values).count == board.placed.count,
@@ -115,7 +116,7 @@ public enum GameResumeRules {
         return ContentUpdateRules.digest(data)
     }
     public static func restoreMystery(_ resume: GameResume,rounds: [MysteryRound],completedSessions: Set<UUID>) -> MysteryProgress? {
-        guard resume.wordle == nil,resume.schemaVersion == 1,!completedSessions.contains(resume.sessionID),resume.board == nil,resume.memory == nil,resume.timeline == nil,
+        guard resume.grouping == nil,resume.wordle == nil,resume.schemaVersion == 1,!completedSessions.contains(resume.sessionID),resume.board == nil,resume.memory == nil,resume.timeline == nil,
               resume.signature == mysterySignature(rounds),let progress=resume.mystery,
               progress.roundIDs.count == rounds.count,Set(progress.roundIDs) == Set(rounds.map(\.id)),
               rounds.indices.contains(progress.index),progress.clueCounts.count == progress.index,

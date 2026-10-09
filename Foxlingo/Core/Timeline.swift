@@ -101,7 +101,7 @@ public enum TimelineDeck {
         return nil
     }
     public static func restore(_ resume: GameResume,rounds: [TimelineRound],completedSessions: Set<UUID>) -> TimelineProgress? {
-        guard resume.wordle == nil,resume.schemaVersion == 1,resume.board == nil,resume.mystery == nil,resume.memory == nil,!completedSessions.contains(resume.sessionID),let progress=resume.timeline,
+        guard resume.grouping == nil,resume.wordle == nil,resume.schemaVersion == 1,resume.board == nil,resume.mystery == nil,resume.memory == nil,!completedSessions.contains(resume.sessionID),let progress=resume.timeline,
               let round=rounds.first(where:{$0.id == progress.roundID}),resume.signature == round.signature,
               progress.order.count == round.events.count,Set(progress.order) == Set(round.answer),(0...100_000).contains(progress.checks),(0...100_000).contains(progress.moves) else {return nil}
         return progress

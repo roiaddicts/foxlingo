@@ -8,8 +8,14 @@ public struct PracticeGap: Codable, Identifiable, Sendable {
     public let subjectIDs: [UUID]
     public let factIDs: [UUID]
     public let timestamp: Date
-    public init(game: String,context: String,subjectIDs: [UUID],factIDs: [UUID]=[],timestamp: Date) {
+    public let referenceNames: [String]?
+    public let referenceAssets: [String]?
+    public let referencePlayerIDs: [String]?
+    public init(game: String,context: String,subjectIDs: [UUID],factIDs: [UUID]=[],timestamp: Date,referenceNames: [String]=[],referenceAssets: [String]=[],referencePlayerIDs: [String]=[]) {
         id=UUID();self.game=game;self.context=context;self.subjectIDs=subjectIDs;self.factIDs=factIDs;self.timestamp=timestamp
+        self.referenceNames=Array(Set(referenceNames.filter {!$0.trimmingCharacters(in:.whitespacesAndNewlines).isEmpty})).sorted().prefix(32).map {$0}
+        self.referenceAssets=Array(Set(referenceAssets)).sorted().prefix(32).map {$0}
+        self.referencePlayerIDs=Array(Set(referencePlayerIDs)).sorted().prefix(32).map {$0}
     }
 }
 public struct PracticeRecommendation: Identifiable, Sendable {

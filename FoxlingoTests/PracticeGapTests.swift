@@ -1,6 +1,16 @@
 import XCTest
 @testable import FoxlingoCore
 final class PracticeGapTests: XCTestCase {
+    func testUnknownSeedNamesSurviveSaveWithoutInventingCanonicalSubjects() throws {
+        let gap=PracticeGap(game:"grid",context:"Madrid × Brazil",subjectIDs:[],timestamp:Date(timeIntervalSince1970:100),referenceNames:["Savio","Savio"," "],referenceAssets:["entity-madrid","flag-brazil"],referencePlayerIDs:["current-player-820"])
+        let decoded=try JSONDecoder().decode(PracticeGap.self,from:JSONEncoder().encode(gap))
+        XCTAssertEqual(decoded.referencePlayerIDs,["current-player-820"]);XCTAssertEqual(decoded.referenceNames,["Savio"]);XCTAssertTrue(decoded.subjectIDs.isEmpty)
+        XCTAssertEqual(decoded.referenceAssets,["entity-madrid","flag-brazil"])
+        var json=try JSONSerialization.jsonObject(with:JSONEncoder().encode(gap)) as! [String:Any]
+        json.removeValue(forKey:"referencePlayerIDs");json.removeValue(forKey:"referenceNames");json.removeValue(forKey:"referenceAssets")
+        let old=try JSONDecoder().decode(PracticeGap.self,from:JSONSerialization.data(withJSONObject:json))
+        XCTAssertNil(old.referencePlayerIDs);XCTAssertNil(old.referenceNames);XCTAssertNil(old.referenceAssets)
+    }
     func fixture() throws -> ContentPack {
         let root=URL(fileURLWithPath:#filePath).deletingLastPathComponent().deletingLastPathComponent()
         return try ContentPack.load(Data(contentsOf:root.appendingPathComponent("Foxlingo/Resources/starter-en.json")))

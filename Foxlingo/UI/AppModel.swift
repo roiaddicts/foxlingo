@@ -115,7 +115,7 @@ import SwiftUI
             if restored.state != nil && restored.notice == nil {save()}
         } catch { recoveryRequired = true; message = error.localizedDescription }
     }
-    func recordGameGap(game: String,context: String,subjects: [UUID]=[],facts: [UUID]=[],names: [String]=[],assets: [String]=[]) {
+    func recordGameGap(game: String,context: String,subjects: [UUID]=[],facts: [UUID]=[],names: [String]=[],assets: [String]=[],playerIDs: [String]=[]) {
         guard let pack else {return}
         var ids=Set(subjects)
         for name in names {
@@ -127,7 +127,7 @@ import SwiftUI
             let matches=pack.entities.filter {$0.imageAsset == asset}
             if matches.count == 1 {ids.insert(matches[0].id)}
         }
-        state.recordPracticeGap(PracticeGap(game:game,context:context,subjectIDs:ids.sorted {$0.uuidString < $1.uuidString},factIDs:facts,timestamp:now));save()
+        state.recordPracticeGap(PracticeGap(game:game,context:context,subjectIDs:ids.sorted {$0.uuidString < $1.uuidString},factIDs:facts,timestamp:now,referenceNames:names,referenceAssets:assets,referencePlayerIDs:playerIDs));save()
     }
     func save() {
         guard !recoveryRequired else { return }

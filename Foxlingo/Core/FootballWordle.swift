@@ -25,7 +25,7 @@ public enum FootballWordle {
         ContentUpdateRules.digest(ContentUpdateRules.bytes(["football-wordle-v1",player.id,player.name,answer]))
     }
     public static func restore(_ resume: GameResume,pack: GamePack,completedSessions: Set<UUID>) -> WordleProgress? {
-        guard resume.schemaVersion == 1,!completedSessions.contains(resume.sessionID),resume.board == nil,resume.memory == nil,resume.mystery == nil,resume.timeline == nil,
+        guard resume.grouping == nil,resume.schemaVersion == 1,!completedSessions.contains(resume.sessionID),resume.board == nil,resume.memory == nil,resume.mystery == nil,resume.timeline == nil,
               let progress=resume.wordle,let player=pack.player(progress.playerID),names(player).contains(progress.answer),
               signature(player:player,answer:progress.answer) == resume.signature,progress.guesses.count < 6,!progress.guesses.contains(progress.answer),
               Set(progress.guesses).count == progress.guesses.count else {return nil}

@@ -36,11 +36,13 @@
 		727AE784889220E9616DE498 /* ContentUpdatesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D25505AA67832982A60EE08 /* ContentUpdatesView.swift */; };
 		769A0CFBF5C7D001606397C8 /* FlowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D90F61C2695718E9BCED131 /* FlowTests.swift */; };
 		771846DCC4629031AA025373 /* Learning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44549E9139E3443B66DB2E34 /* Learning.swift */; };
+		82150E21B0A20A2157A9663C /* PlayerGroups.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1748C6C507FC54A146D6F51C /* PlayerGroups.swift */; };
 		8C163C272018AC63A3695C8A /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4A1974B3B01C85D26BA1F0 /* Album.swift */; };
 		8C81A81D34C0F0B1DCB608A8 /* MysteryGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78055BFC3AA23280B83DA4D3 /* MysteryGameView.swift */; };
 		8DD514B0DD979023A88925C9 /* GamesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A787A4A96F423AD601B4AF /* GamesView.swift */; };
 		8EB98D9276AE75E20BAF7F52 /* SoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC839D51CA750F88265F29E8 /* SoundPlayer.swift */; };
 		A1005C114B258C7607A8598B /* ContentDownload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FC0FA460EC5AF74B59DD8F /* ContentDownload.swift */; };
+		B16F19770BE9E039CD91B532 /* PlayerGroupsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164EF1553A2DCCE0E460298C /* PlayerGroupsView.swift */; };
 		B457BA92F3A07D2F90E8B378 /* FootballWordleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADE050C3166F8029D3AB230 /* FootballWordleView.swift */; };
 		C1458E9D45F9E1846E9020C0 /* SoundAssetsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5EF711CD94AE4DBD7A4EE6 /* SoundAssetsView.swift */; };
 		CBC042094EDA4DDA1440A416 /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A29533AECE8FA1EB16B96D4 /* Graph.swift */; };
@@ -74,6 +76,8 @@
 		0C9B1366A7BCF1012DB573C8 /* RehearsalView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RehearsalView.swift; sourceTree = "<group>"; };
 		0CF94E40E1DBE5E69BB7F885 /* starter-en.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; path = "starter-en.json"; sourceTree = "<group>"; };
 		14A787A4A96F423AD601B4AF /* GamesView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GamesView.swift; sourceTree = "<group>"; };
+		164EF1553A2DCCE0E460298C /* PlayerGroupsView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PlayerGroupsView.swift; sourceTree = "<group>"; };
+		1748C6C507FC54A146D6F51C /* PlayerGroups.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PlayerGroups.swift; sourceTree = "<group>"; };
 		1B49C4B82824235151BA9829 /* GameResume.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GameResume.swift; sourceTree = "<group>"; };
 		1DA94985E81B1F0E04C77F26 /* Rehearsal.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Rehearsal.swift; sourceTree = "<group>"; };
 		267DA166EFB8DC9CD6BB95DF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
@@ -174,6 +178,7 @@
 				1DA94985E81B1F0E04C77F26 /* Rehearsal.swift */,
 				9293F084AA12E8F914D0DA78 /* PracticeGaps.swift */,
 				635B5A44F3E8D0C885166D86 /* FootballWordle.swift */,
+				1748C6C507FC54A146D6F51C /* PlayerGroups.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -260,6 +265,7 @@
 				0C9B1366A7BCF1012DB573C8 /* RehearsalView.swift */,
 				834E16AC4A8C72946520109E /* StreakFire.metal */,
 				CADE050C3166F8029D3AB230 /* FootballWordleView.swift */,
+				164EF1553A2DCCE0E460298C /* PlayerGroupsView.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -416,6 +422,8 @@
 				EE9936A69FB0163F645ED8EB /* PracticeGaps.swift in Sources */,
 				70F3444C5757DBA66A63E170 /* FootballWordle.swift in Sources */,
 				B457BA92F3A07D2F90E8B378 /* FootballWordleView.swift in Sources */,
+				82150E21B0A20A2157A9663C /* PlayerGroups.swift in Sources */,
+				B16F19770BE9E039CD91B532 /* PlayerGroupsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

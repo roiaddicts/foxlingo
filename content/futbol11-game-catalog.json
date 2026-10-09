@@ -62,8 +62,8 @@
       "sourceURL": "https://futbol11.com/futbol11-impostor",
       "mechanic": "Select all players that satisfy a category, avoiding outsiders.",
       "requiredData": "complete round-specific positive and negative membership",
-      "status": "planned",
-      "notes": ""
+      "status": "native",
+      "notes": "Country-based native boards use four explicit seed categories and exclude ambiguous cross-country membership within each board. Other source categories and authored daily variants remain to be added."
     },
     {
       "id": "pyramid",
@@ -80,8 +80,8 @@
       "sourceURL": "https://futbol11.com/futbol11-connections",
       "mechanic": "Partition sixteen players into four hidden groups.",
       "requiredData": "authored four-player groups and ambiguity rules",
-      "status": "planned",
-      "notes": ""
+      "status": "native",
+      "notes": "Country-based native boards use four explicit seed categories and exclude ambiguous cross-country membership within each board. Other source categories and authored daily variants remain to be added."
     },
     {
       "id": "clubs",

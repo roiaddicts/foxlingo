@@ -211,6 +211,53 @@ final class FlowTests: XCTestCase {
         let shot=XCTAttachment(screenshot:app.screenshot());shot.name="Native Football Wordle solved";shot.lifetime = .keepAlways;add(shot)
         tap("wordle-replay");XCTAssertFalse(app.staticTexts["wordle-identity"].exists)
     }
+    func tapGroupPlayer(_ id: String) {
+        let button=app.buttons["groups-player-"+id]
+        for step in 0..<12 {
+            let top=app.navigationBars.firstMatch.frame.maxY+8
+            let bottom=app.buttons["groups-check"].frame.minY-8
+            if button.exists {
+                if button.frame.midY < top {app.swipeDown();continue}
+                if button.frame.midY > bottom {app.swipeUp();continue}
+                if button.isHittable {break}
+            }
+            if step < 6 {app.swipeDown()} else {app.swipeUp()}
+        }
+        XCTAssertTrue(button.exists,id);XCTAssertTrue(button.isHittable,id);button.tap()
+    }
+    func testConnectionsWrongGroupSelectionResumeAndCompletion() {
+        start();tap("choose-XT");app.tabBars.buttons["Games"].tap();tap("game-connections")
+        let groups=[["player-173","player-187","player-230","player-242"],["current-player-5","current-player-820","player-103","player-145"],["current-player-1165","player-1","player-128","player-210"],["player-129","player-1512","player-251","player-291"]]
+        for id in [groups[0][0]]+Array(groups[1].prefix(3)) {tapGroupPlayer(id)}
+        tap("groups-check");XCTAssertTrue(app.staticTexts["groups-feedback"].label.contains("don’t form"))
+        tap("groups-clear");tapGroupPlayer(groups[0][0])
+        app.terminate();start(reset:false);app.tabBars.buttons["Games"].tap();tap("game-connections")
+        XCTAssertEqual(app.buttons["groups-player-"+groups[0][0]].value as? String,"Selected")
+        for id in groups[0].dropFirst() {tapGroupPlayer(id)}
+        XCTAssertTrue(app.buttons["groups-check"].isEnabled)
+        tap("groups-check")
+        let solved=XCTAttachment(screenshot:app.screenshot());solved.name="Connections first group check";solved.lifetime = .keepAlways;add(solved)
+        XCTAssertTrue(app.otherElements["groups-solved-category-23"].waitForExistence(timeout:3) || app.descendants(matching:.any)["groups-solved-category-23"].firstMatch.exists)
+        expectation(for:NSPredicate(format:"exists == false"),evaluatedWith:app.buttons["groups-player-"+groups[0][0]]);waitForExpectations(timeout:3)
+        let shot=XCTAttachment(screenshot:app.screenshot());shot.name="Connections grouped portraits";shot.lifetime = .keepAlways;add(shot)
+        for group in groups.dropFirst() {for id in group {tapGroupPlayer(id)};tap("groups-check")}
+        XCTAssertTrue(app.staticTexts["groups-complete"].exists)
+        tap("groups-replay");XCTAssertFalse(app.staticTexts["groups-complete"].exists)
+    }
+    func testImpostorWrongSelectionResumeAndFourRounds() {
+        start();tap("choose-XT");app.tabBars.buttons["Games"].tap();tap("game-impostor")
+        let groups=[["player-173","player-187","player-230","player-242"],["current-player-5","current-player-820","player-103","player-145"],["current-player-1165","player-1","player-128","player-210"],["player-129","player-1512","player-251","player-291"]]
+        XCTAssertEqual(app.buttons.matching(NSPredicate(format:"identifier BEGINSWITH %@","groups-player-")).count,8)
+        for id in groups[1] {tapGroupPlayer(id)};tap("groups-check")
+        XCTAssertTrue(app.staticTexts["groups-feedback"].label.contains("don’t form"))
+        tap("groups-clear")
+        tapGroupPlayer(groups[0][0]);app.terminate();start(reset:false);app.tabBars.buttons["Games"].tap();tap("game-impostor")
+        XCTAssertEqual(app.buttons["groups-player-"+groups[0][0]].value as? String,"Selected")
+        for id in groups[0].dropFirst() {tapGroupPlayer(id)};tap("groups-check")
+        let shot=XCTAttachment(screenshot:app.screenshot());shot.name="Impostor flag and player choices";shot.lifetime = .keepAlways;add(shot)
+        for group in groups.dropFirst() {for id in group {tapGroupPlayer(id)};tap("groups-check")}
+        XCTAssertTrue(app.staticTexts["groups-complete"].exists)
+    }
     func testUnsolvedMysteryDoesNotRecommendItsHiddenAnswer() {
         start();tap("choose-XT");app.tabBars.buttons["Games"].tap();tap("game-mystery")
         tap("mystery-reveal");tap("mystery-player-entity-casillas")

@@ -44,6 +44,18 @@ struct GamesHome: View {
                     }.buttonStyle(PressFeedback()).accessibilityIdentifier("game-memory")
                 }
                 if let pack=model.games {
+                    ForEach([PlayerGroupMode.connections,.impostor],id:\.rawValue) {mode in
+                        NavigationLink {PlayerGroupsView(mode:mode,pack:pack)} label: {
+                            HStack(spacing:16) {
+                                Image(systemName:mode == .connections ? "square.grid.4x3.fill" : "person.crop.circle.badge.xmark").font(.title2).frame(width:50,height:60).foregroundStyle(Palette.brand)
+                                VStack(alignment:.leading,spacing:6) {
+                                    Text(mode == .connections ? "Football Connections" : "Find the Impostors").font(.title3.bold())
+                                    Text(model.state.savedGame(mode.rawValue) != nil ? "Continue your saved groups." : mode == .connections ? "16 players. Find four shared countries." : "Find the four who fit. Leave the outsiders.").font(.subheadline).foregroundStyle(Palette.muted)
+                                }
+                                Spacer();Image(systemName:"chevron.right")
+                            }.padding(18).background(.white.opacity(0.8),in:RoundedRectangle(cornerRadius:20))
+                        }.buttonStyle(PressFeedback()).accessibilityIdentifier("game-"+mode.rawValue)
+                    }
                     NavigationLink {FootballWordleView(pack:pack)} label: {
                         HStack(spacing:16) {Image(systemName:"character.textbox").font(.title2).frame(width:50,height:60);VStack(alignment:.leading,spacing:6) {Text("Football Wordle").font(.title3.bold());Text("Six guesses. Find a football name.").font(.subheadline).foregroundStyle(Palette.muted)};Spacer();Image(systemName:"chevron.right")}.padding(18).background(.white.opacity(0.8),in:RoundedRectangle(cornerRadius:20))
                     }.buttonStyle(PressFeedback()).accessibilityIdentifier("game-wordle")
@@ -126,7 +138,7 @@ struct FootballGameView: View {
                                 HStack(spacing:8) {ForEach(row,id:\.self) {slot in cell(slot,label:squad.positions[slot]).frame(width:width)}}.frame(maxWidth:.infinity)
                             }
                         }
-                    }.frame(height:CGFloat((squad.rows ?? [[0,1,2],[3,4,5],[6,7,8,9],[10]]).count)*124-12)
+                    }.frame(height:CGFloat((squad.rows ?? [[0,1,2],[3,4,5],[6,7,8,9],[10]]).count)*132-12)
                         .padding(12).background(Palette.brand.opacity(0.09),in:RoundedRectangle(cornerRadius:22))
                 } else if game == .grid {
                     Grid(horizontalSpacing:6,verticalSpacing:6) {
@@ -152,23 +164,38 @@ struct FootballGameView: View {
         .alert("Start a new board?",isPresented:$confirmRestart) {Button("Start a new board",role:.destructive) {reset()};Button("Keep playing",role:.cancel) {}} message:{Text("This clears this board’s connections. Your other games and learning progress stay saved.")}
         .sheet(isPresented:Binding(get:{selectedSlot != nil},set:{if !$0 {selectedSlot=nil}})) {
             if let slot=selectedSlot {
-                NavigationStack {PlayerAnswerSheet(players:game == .lineup ? pack.squadPlayers : pack.connectionPlayers,title:game == .grid ? "Choose a player" : squad.positions[slot],clues:game == .grid ? [pack.category(pack.gridRowIDs[slot/3])!,pack.category(pack.gridColumnIDs[slot%3])!] : [],contextClubName:game == .lineup ? squad.clubName : nil,contextClubImageURL:game == .lineup ? squad.imageURL : nil,contextClubImageAsset:game == .lineup ? squad.imageAsset : nil,contextTitle:game == .lineup ? squad.title : nil,contextScope:game == .lineup ? squad.scope : nil) {player in place(player.id,at:slot)} }
+                NavigationStack {PlayerAnswerSheet(players:game == .lineup ? pack.squadPlayers : pack.connectionPlayers,title:game == .grid ? "Choose a player" : squad.positions[slot],clues:game == .grid ? [pack.category(pack.gridRowIDs[slot/3])!,pack.category(pack.gridColumnIDs[slot%3])!] : [],contextClubName:game == .lineup ? squad.clubName : nil,contextClubImageURL:game == .lineup ? squad.imageURL : nil,contextClubImageAsset:game == .lineup ? squad.imageAsset : nil,contextTitle:game == .lineup ? squad.title : nil,contextScope:game == .lineup ? squad.scope : nil) {player in place(player.id,at:slot)} }.presentationDetents([.large])
             }
         }
     }
     private func shortTitle(_ title: String) -> String {title.replacingOccurrences(of:"Played for ",with:"").replacingOccurrences(of:"From ",with:"")}
-    private func portrait(_ p: GamePlayer, size: CGFloat) -> some View {EntityArtwork(asset:p.imageAsset,url:p.imageURL,initials:p.name.split(separator:" ").compactMap(\.first).map(String.init).prefix(2).joined(),size:size,isPlayer:true)}
+    private func portrait(_ p: GamePlayer, size: CGFloat) -> some View {EntityArtwork(asset:p.imageAsset,url:p.imageURL,initials:p.name.split(separator:" ").compactMap(\.first).map(String.init).prefix(2).joined(),size:size,isPlayer:true,portraitFocus:true)}
     private func cell(_ slot: Int,label: String) -> some View {
         Button {
             guard placed[slot] == nil else {return}
             if game == .bingo {if let offered {place(offered,at:slot)}} else {selectedSlot=slot}
         } label: {
             VStack(spacing:5) {
-                if game == .bingo {GameCategoryMark(category:pack.category(pack.bingoCategoryIDs[slot])!,size:placed[slot] == nil ? 48 : 24)}
-                if let player=placed[slot].flatMap(pack.player) {portrait(player,size:game == .lineup ? 56 : 64).transition(.scale(scale:0.86).combined(with:.opacity));Text(player.name).font(.system(size:10,weight:.semibold)).lineLimit(2).minimumScaleFactor(0.8).frame(height:24);if game == .lineup {Text(label).font(.system(size:9,weight:.bold)).foregroundStyle(Palette.muted)}}
-                else if game == .lineup {EntityArtwork(asset:squad.imageAsset,url:squad.imageURL,initials:"⚽",size:60);Text(label).font(.caption2.bold())}
-                else if game == .grid {Image(systemName:"plus").font(.headline).foregroundStyle(Palette.brand)}
-            }.frame(maxWidth:.infinity).frame(height:game == .lineup ? 100 : 116).padding(6)
+                if let player=placed[slot].flatMap(pack.player) {
+                    portrait(player,size:game == .lineup ? 68 : game == .grid ? 80 : 74)
+                        .transition(.scale(scale:0.9).combined(with:.opacity))
+                    Text(player.name).font(.system(size:10,weight:.semibold)).lineLimit(2).minimumScaleFactor(0.8).frame(height:24)
+                    if game == .lineup {Text(label).font(.system(size:9,weight:.bold)).foregroundStyle(Palette.muted)}
+                } else if game == .lineup {
+                    EntityArtwork(asset:squad.imageAsset,url:squad.imageURL,initials:"⚽",size:68)
+                    Text(label).font(.caption2.bold())
+                } else if game == .grid {
+                    Image(systemName:"plus").font(.headline).foregroundStyle(Palette.brand)
+                } else {
+                    GameCategoryMark(category:pack.category(pack.bingoCategoryIDs[slot])!,size:56)
+                }
+            }.frame(maxWidth:.infinity).frame(height:game == .lineup ? 120 : 128)
+                .overlay(alignment:.topLeading) {
+                    if game == .bingo && placed[slot] != nil {
+                        GameCategoryMark(category:pack.category(pack.bingoCategoryIDs[slot])!,size:22)
+                            .padding(3).background(.white,in:RoundedRectangle(cornerRadius:6)).padding(4)
+                    }
+                }
                 .background(placed[slot] == nil ? .white : Palette.brand.opacity(0.12),in:RoundedRectangle(cornerRadius:12))
                 .overlay {RoundedRectangle(cornerRadius:12).stroke(Palette.brand.opacity(placed[slot] == nil ? 0.12 : 0.35),lineWidth:1)}
         }.animation(reduced ? nil : .spring(response:0.32,dampingFraction:0.82),value:placed[slot]).buttonStyle(PressFeedback()).accessibilityLabel(accessibleCell(slot,label:label)).accessibilityIdentifier("game-cell-\(slot)")
@@ -181,7 +208,7 @@ struct FootballGameView: View {
         guard BoardMatcher.accepts(player:player,slot:slot,candidates:candidates,placed:placed) else {
             if placed[slot] == nil && !placed.values.contains(player) {
                 let categories=game == .grid ? [pack.category(pack.gridRowIDs[slot/3]),pack.category(pack.gridColumnIDs[slot%3])].compactMap {$0} : game == .bingo ? [pack.category(pack.bingoCategoryIDs[slot])!]:[]
-                model.recordGameGap(game:game.rawValue,context:game == .lineup ? squad.title+" · "+squad.positions[slot] : categories.map(\.title).joined(separator:" & "),names:[pack.player(player)?.name,game == .lineup ? squad.clubName:nil].compactMap {$0},assets:categories.compactMap(\.imageAsset))
+                model.recordGameGap(game:game.rawValue,context:game == .lineup ? squad.title+" · "+squad.positions[slot] : categories.map(\.title).joined(separator:" & "),names:[pack.player(player)?.name,game == .lineup ? squad.clubName:nil].compactMap {$0},assets:categories.compactMap(\.imageAsset),playerIDs:[player])
             }
             feedbackError=true;feedback="That connection doesn’t fit this square, or the player is already on the board. Try another.";model.respond(false,event:.mismatch);return false}
         feedbackError=false;placed[slot]=player;history.append(slot);selectedSlot=nil
@@ -236,6 +263,7 @@ struct PlayerAnswerSheet: View {
     let onChoose: (GamePlayer) -> Bool
     @Environment(\.dismiss) var dismiss
     @State private var query=""
+    @FocusState private var searchFocused: Bool
     @State private var message=""
     var results: [GamePlayer] {
         guard Recall.normalize(query).count >= 2 else {return []}
@@ -257,15 +285,16 @@ struct PlayerAnswerSheet: View {
                     if !message.isEmpty {Text(message).foregroundStyle(Palette.red).accessibilityIdentifier("game-answer-error")}
                     ForEach(results) {player in
                         Button {if !onChoose(player) {message="That connection doesn’t fit. Try another player."}} label: {
-                            HStack(spacing:12) {EntityArtwork(asset:player.imageAsset,url:player.imageURL,initials:String(player.name.prefix(2)),size:56,isPlayer:true);Text(player.name).font(.headline);Spacer()}.frame(maxWidth:.infinity,alignment:.leading).padding(8).background(.white,in:RoundedRectangle(cornerRadius:12))
+                            HStack(spacing:12) {EntityArtwork(asset:player.imageAsset,url:player.imageURL,initials:String(player.name.prefix(2)),size:64,isPlayer:true,portraitFocus:true);Text(player.name).font(.headline);Spacer()}.frame(maxWidth:.infinity,alignment:.leading).padding(8).background(.white,in:RoundedRectangle(cornerRadius:12))
                         }.accessibilityIdentifier("game-player-\(player.id)")
                     }
                     if results.isEmpty {Text(query.count < 2 ? "Type at least two letters to find a player." : "No name found. Try a full name or known nickname.").font(.subheadline).foregroundStyle(Palette.muted)}
                 }.padding(12)
             }.scrollDismissesKeyboard(.interactively)
         }.safeAreaInset(edge:.bottom,spacing:0) {
-            HStack {Image(systemName:"magnifyingglass");TextField("Type a player’s name",text:$query).autocorrectionDisabled().accessibilityIdentifier("game-player-search")}
+            HStack {Image(systemName:"magnifyingglass");TextField("Type a player’s name",text:$query).focused($searchFocused).autocorrectionDisabled().accessibilityIdentifier("game-player-search")}
                 .padding(14).background(.white,in:RoundedRectangle(cornerRadius:14)).padding(12).background(.regularMaterial)
         }.journal().navigationTitle(title).navigationBarTitleDisplayMode(.inline).toolbar {Button("Cancel"){dismiss()}}
+        .task {searchFocused=true}
     }
 }
