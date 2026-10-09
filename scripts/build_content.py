@@ -146,7 +146,7 @@ for exercise in pack['exercises']:
 if set(score_inputs) != {x['key'] for x in pack['exercises'] if x.get('scoreInput')}:raise ValueError('Missing score exercise')
 from merge_player_catalog import compile_catalog
 compile_catalog(pack)
-pack['contentVersion']=11
+pack['contentVersion']=12
 # Promote explicitly authored country values into canonical targets. Preserve
 # fact/objective IDs, wording, scope and revision: the taught claim is unchanged.
 flags=json.loads((ROOT/'content/country-artwork.json').read_text())

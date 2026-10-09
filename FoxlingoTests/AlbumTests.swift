@@ -19,8 +19,8 @@ final class AlbumTests: XCTestCase {
     func testCompetitionUsesHistoricalRoadmapMembershipAndDeduplicates() {
         let state=LearnerState()
         let all=AlbumCollection.make(pack:pack,state:state,scope:.all,discoveredOnly:false,query:"")
-        XCTAssertEqual(all.total,89)
-        XCTAssertEqual(Set(all.sections.flatMap{$0.cards.map(\.id)}).count,89)
+        XCTAssertEqual(all.total,92)
+        XCTAssertEqual(Set(all.sections.flatMap{$0.cards.map(\.id)}).count,92)
         let champions=AlbumCollection.make(pack:pack,state:state,scope:.champions,discoveredOnly:false,query:"")
         let cards=champions.sections.flatMap(\.cards)
         XCTAssertTrue(cards.contains {$0.key == "card-cristiano"})

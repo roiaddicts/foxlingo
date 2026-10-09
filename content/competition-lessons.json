@@ -83,6 +83,30 @@
       "title": "Hectortoro2019, via Wikimedia Commons — CC BY-SA 4.0; unmodified original",
       "url": "https://creativecommons.org/licenses/by-sa/4.0/",
       "verifiedAt": "2026-10-08"
+    },
+    {
+      "key": "premier-origins",
+      "title": "Premier League: Origins and History",
+      "url": "https://www.premierleague.com/en/history",
+      "verifiedAt": "2026-10-09"
+    },
+    {
+      "key": "premier-first-season",
+      "title": "Premier League: 1992/93 season review",
+      "url": "https://www.premierleague.com/en/news/58731",
+      "verifiedAt": "2026-10-09"
+    },
+    {
+      "key": "premier-invincibles",
+      "title": "Premier League: 2003/04 season review",
+      "url": "https://www.premierleague.com/en/news/59016",
+      "verifiedAt": "2026-10-09"
+    },
+    {
+      "key": "premier-first-inductees",
+      "title": "Premier League: Shearer and Henry inducted into Hall of Fame",
+      "url": "https://www.premierleague.com/en/news/2103122",
+      "verifiedAt": "2026-10-09"
     }
   ],
   "lessons": [
@@ -867,6 +891,263 @@
           },
           "scope": "Benjamín Galindo; Santos Laguna; coaching championship",
           "evidence": "Santos’s official biography distinguishes Galindo’s player title in Invierno 1996 from his coaching title in Clausura 2012."
+        }
+      ]
+    },
+    {
+      "key": "lesson-competition-premier-league-origins",
+      "subjectKey": "premier-league",
+      "title": "A new English league",
+      "chapterTitle": "League origins",
+      "subtitle": "The 1992 launch and its first champions",
+      "story": [
+        {
+          "title": "A new competition",
+          "body": "The Premier League was established in 1992. Its first campaign, 1992/93, began with 22 clubs; the later 20-club format should not be applied to that opening season."
+        },
+        {
+          "title": "The first champions",
+          "body": "Manchester United won the inaugural Premier League title. This starts a new competition’s history, rather than the whole history of English top-flight football."
+        }
+      ],
+      "facts": [
+        {
+          "key": "premier-established-year",
+          "prompt": "In which year was the Premier League established?",
+          "answers": [
+            "1992"
+          ],
+          "distractors": [
+            "1888",
+            "1963",
+            "1991"
+          ],
+          "label": "League established",
+          "sourceKey": "premier-origins",
+          "value": {
+            "kind": "number",
+            "display": "1992",
+            "number": 1992,
+            "unit": "year"
+          },
+          "scope": "Premier League established as a limited company on 27 May 1992",
+          "evidence": "The league’s history records establishment in May 1992 and the first campaign beginning in August that year."
+        },
+        {
+          "key": "premier-inaugural-clubs",
+          "prompt": "How many clubs played in the first Premier League campaign, 1992/93?",
+          "answers": [
+            "22"
+          ],
+          "distractors": [
+            "20",
+            "18",
+            "24"
+          ],
+          "label": "Inaugural clubs",
+          "sourceKey": "premier-origins",
+          "value": {
+            "kind": "number",
+            "display": "22",
+            "number": 22,
+            "unit": "clubs"
+          },
+          "scope": "Premier League 1992/93 inaugural campaign; before the later reduction to 20 clubs",
+          "evidence": "The official league history lists 22 inaugural member clubs."
+        },
+        {
+          "key": "premier-first-champions",
+          "prompt": "Which club won the inaugural Premier League title in 1992/93?",
+          "answers": [
+            "Man United",
+            "Manchester United",
+            "Manchester United FC"
+          ],
+          "distractors": [
+            "Arsenal",
+            "Liverpool",
+            "Man City"
+          ],
+          "label": "First champions",
+          "sourceKey": "premier-first-season",
+          "value": {
+            "kind": "entity",
+            "display": "Man United",
+            "entityKey": "entity-manchester-united"
+          },
+          "scope": "Premier League 1992/93 title; not the preceding First Division season",
+          "evidence": "The official 1992/93 review identifies Manchester United as champions."
+        }
+      ]
+    },
+    {
+      "key": "lesson-competition-premier-league-invincibles",
+      "subjectKey": "premier-league",
+      "title": "An unbeaten league season",
+      "chapterTitle": "A defining season",
+      "subtitle": "Arsenal’s 2003/04 league record",
+      "story": [
+        {
+          "title": "The Invincibles",
+          "body": "Arsenal completed the 2003/04 Premier League campaign without losing a league match. The claim applies to that league season, not every competition Arsenal played in."
+        },
+        {
+          "title": "Wins and draws",
+          "body": "Their 38 league games consisted of 26 wins and 12 draws. Those two totals tell the story of an unbeaten campaign; they are separate from Arsenal’s longer unbeaten run across seasons."
+        }
+      ],
+      "facts": [
+        {
+          "key": "premier-invincibles-club",
+          "prompt": "Which club went unbeaten through the entire 2003/04 Premier League season?",
+          "answers": [
+            "Arsenal",
+            "Arsenal FC"
+          ],
+          "distractors": [
+            "Man United",
+            "Liverpool",
+            "Man City"
+          ],
+          "label": "Unbeaten champions",
+          "sourceKey": "premier-invincibles",
+          "value": {
+            "kind": "entity",
+            "display": "Arsenal",
+            "entityKey": "entity-arsenal"
+          },
+          "scope": "Arsenal’s 2003/04 Premier League season only",
+          "evidence": "The official season review describes Arsenal’s unbeaten title-winning league campaign."
+        },
+        {
+          "key": "premier-invincibles-wins",
+          "prompt": "How many Premier League matches did Arsenal win in their unbeaten 2003/04 season?",
+          "answers": [
+            "26"
+          ],
+          "distractors": [
+            "30",
+            "22",
+            "38"
+          ],
+          "label": "League wins",
+          "sourceKey": "premier-invincibles",
+          "value": {
+            "kind": "number",
+            "display": "26",
+            "number": 26,
+            "unit": "league wins"
+          },
+          "scope": "Arsenal’s 38-match 2003/04 Premier League campaign",
+          "evidence": "The season review reports 26 wins during Arsenal’s unbeaten league campaign."
+        },
+        {
+          "key": "premier-invincibles-draws",
+          "prompt": "How many Premier League matches did Arsenal draw in 2003/04?",
+          "answers": [
+            "12"
+          ],
+          "distractors": [
+            "8",
+            "10",
+            "14"
+          ],
+          "label": "League draws",
+          "sourceKey": "premier-invincibles",
+          "value": {
+            "kind": "number",
+            "display": "12",
+            "number": 12,
+            "unit": "league draws"
+          },
+          "scope": "Arsenal’s 38-match 2003/04 Premier League campaign",
+          "evidence": "The league’s season review reports 12 draws alongside 26 wins."
+        }
+      ]
+    },
+    {
+      "key": "lesson-competition-premier-league-goalscorers",
+      "subjectKey": "premier-league",
+      "title": "Two Hall of Fame goalscorers",
+      "chapterTitle": "Key players and records",
+      "subtitle": "Completed careers, league goals and scoring awards",
+      "story": [
+        {
+          "title": "Shearer’s league goals",
+          "body": "The league’s 2021 Hall of Fame announcement credited Alan Shearer with 260 Premier League goals across Blackburn Rovers and Newcastle United. That is a Premier League total, not a single-club or all-competitions total."
+        },
+        {
+          "title": "Henry’s Arsenal seasons",
+          "body": "Thierry Henry scored 30 Premier League goals in Arsenal’s unbeaten 2003/04 season. The league’s 2021 Hall of Fame announcement also credited him with four Premier League Golden Boots across his career. A single-season goal total and a career award count describe different achievements."
+        }
+      ],
+      "facts": [
+        {
+          "key": "premier-shearer-goals",
+          "prompt": "How many Premier League goals did Alan Shearer score in his completed career?",
+          "answers": [
+            "260"
+          ],
+          "distractors": [
+            "175",
+            "228",
+            "148"
+          ],
+          "label": "Shearer’s Premier League goals",
+          "sourceKey": "premier-first-inductees",
+          "value": {
+            "kind": "number",
+            "display": "260",
+            "number": 260,
+            "unit": "Premier League goals"
+          },
+          "scope": "Alan Shearer’s completed Premier League career, 1992–2006, at Blackburn and Newcastle; total stated in the 2021 Hall of Fame announcement",
+          "evidence": "The Premier League’s first-inductees announcement credits Shearer with 260 goals across 14 Premier League seasons."
+        },
+        {
+          "key": "premier-henry-invincibles-goals",
+          "prompt": "How many Premier League goals did Thierry Henry score in Arsenal’s unbeaten 2003/04 season?",
+          "answers": [
+            "30"
+          ],
+          "distractors": [
+            "26",
+            "22",
+            "38"
+          ],
+          "label": "Henry’s 2003/04 league goals",
+          "sourceKey": "premier-invincibles",
+          "value": {
+            "kind": "number",
+            "display": "30",
+            "number": 30,
+            "unit": "Premier League goals"
+          },
+          "scope": "Thierry Henry’s 2003/04 Premier League season at Arsenal; excludes other seasons and competitions",
+          "evidence": "The official 2003/04 review lists Henry as top goalscorer with 30 league goals."
+        },
+        {
+          "key": "premier-henry-boots",
+          "prompt": "How many Premier League Golden Boots did Thierry Henry win?",
+          "answers": [
+            "4",
+            "four"
+          ],
+          "distractors": [
+            "2",
+            "3",
+            "5"
+          ],
+          "label": "Henry’s Golden Boots",
+          "sourceKey": "premier-first-inductees",
+          "value": {
+            "kind": "number",
+            "display": "4",
+            "number": 4,
+            "unit": "Golden Boot awards"
+          },
+          "scope": "Thierry Henry’s four Premier League Golden Boots, as recorded in his 2021 Hall of Fame induction announcement",
+          "evidence": "The league’s Hall of Fame announcement identifies Henry as a four-time Golden Boot winner."
         }
       ]
     }

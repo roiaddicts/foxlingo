@@ -10,8 +10,8 @@ final class RoadmapTests: XCTestCase {
     }
     func roadmap(_ key:String) -> Roadmap {pack.roadmaps.first {$0.key == key}!}
     func testPlayerPathsUseCanonicalLessonsAndOptionalContext() {
-        XCTAssertEqual(pack.clubRoadmaps.count,68);XCTAssertEqual(pack.playerRoadmaps.count,18)
-        XCTAssertEqual(pack.lessons.count,119);XCTAssertEqual(pack.objectives.count,356);XCTAssertEqual(pack.cards.count,89)
+        XCTAssertEqual(pack.clubRoadmaps.count,68);XCTAssertEqual(pack.playerRoadmaps.count,20)
+        XCTAssertEqual(pack.lessons.count,126);XCTAssertEqual(pack.objectives.count,377);XCTAssertEqual(pack.cards.count,92)
         for path in pack.playerRoadmaps {
             let progress=RoadmapProgress.make(roadmap:path,pack:pack,state:LearnerState())
             XCTAssertEqual(progress.requiredLessonIDs.count,2);XCTAssertEqual(progress.optionalLessonIDs.count,1)
@@ -87,7 +87,7 @@ final class RoadmapTests: XCTestCase {
         let coverage=try CoverageStudyPack.make(pack:reordered,firstID:roadmap("roadmap-xolos").clubID!,secondID:roadmap("roadmap-madrid").clubID!)
         XCTAssertEqual(coverage.first.lessonIDs.count,10);XCTAssertEqual(coverage.second.lessonIDs.count,10)
         let album=AlbumCollection.make(pack:reordered,state:LearnerState(),scope:.all,discoveredOnly:false,query:"")
-        XCTAssertEqual(album.total,89);XCTAssertEqual(album.sections.count,71)
+        XCTAssertEqual(album.total,92);XCTAssertEqual(album.sections.count,72)
         var state=LearnerState();state.selectClub(roadmap("roadmap-madrid").clubID!)
         XCTAssertEqual(state.activeRoadmap(reordered)?.key,"roadmap-madrid")
     }

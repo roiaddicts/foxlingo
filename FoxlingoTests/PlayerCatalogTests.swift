@@ -27,7 +27,7 @@ final class PlayerCatalogTests: XCTestCase {
             XCTAssertEqual(edge.objectID,path.clubID)
             XCTAssertTrue(edge.factIDs.allSatisfy {identifier in pack.facts.first {$0.id == identifier}?.subjectID == subject.id})
         }
-        XCTAssertEqual(rows.count,12)
+        XCTAssertEqual(rows.count,14)
     }
     func testCuratedFootballAliasesAcceptEquivalentsAndRejectDistractors() throws {
         let (pack,_)=try fixture()
@@ -53,5 +53,20 @@ final class PlayerCatalogTests: XCTestCase {
         XCTAssertEqual(raul.value.number,1994);XCTAssertTrue(raul.scope.contains("1992"))
         let rush=try fact("catalog-rush-best-season-goals")
         XCTAssertEqual(rush.value.number,47);XCTAssertTrue(rush.scope.contains("1983/84"))
+    }
+    func testArsenalCareerTotalsStaySeparateFromLeagueTotals() throws {
+        let (pack,_)=try fixture()
+        for (player,appearances,goals,leagueGoals) in [("henry",377,228,175),("bergkamp",423,120,87)] {
+            func record(_ suffix:String) throws -> Fact {
+                try XCTUnwrap(pack.facts.first {$0.predicate == "catalog-\(player)-record-\(suffix)"})
+            }
+            XCTAssertEqual(try record("arsenal-appearances").value.number,Double(appearances))
+            XCTAssertEqual(try record("arsenal-goals").value.number,Double(goals))
+            let league=try record("premier-league-goals")
+            XCTAssertEqual(league.value.number,Double(leagueGoals))
+            XCTAssertTrue(league.scope.contains("Premier League"))
+        }
+        let nationality=try XCTUnwrap(pack.facts.first {$0.predicate == "catalog-bergkamp-career-nationality"})
+        XCTAssertEqual(pack.entity(try XCTUnwrap(nationality.value.entityID)).imageAsset,"flag-netherlands")
     }
 }

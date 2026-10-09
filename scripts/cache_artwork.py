@@ -31,6 +31,8 @@ if artworkPath.exists():
   if value.get('url'):urls.setdefault('entity-'+key,value['url'])
 for c in p["categories"]:
  if c.get("imageAsset") and c.get("imageURL"):urls.setdefault(c["imageAsset"],c["imageURL"])
+for competition in json.loads((ROOT/'content/competition-artwork.json').read_text()):
+ if competition['key'] == 'entity-competition-premier-league':urls[competition['key']]=competition['assetURL']
 for squad in p['lineups']:
  if squad.get('imageAsset') and squad.get('imageURL'):urls[squad['imageAsset']]=squad['imageURL']
 countries=json.loads((ROOT/'content/country-artwork.json').read_text())

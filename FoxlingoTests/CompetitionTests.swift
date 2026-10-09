@@ -9,7 +9,7 @@ final class CompetitionTests: XCTestCase {
         pack=try ContentPack.load(Data(contentsOf:root.appendingPathComponent("Foxlingo/Resources/starter-en.json")))
     }
     func testIndependentCoursesShareOnlyOptionalClubContext() {
-        XCTAssertEqual(pack.competitionRoadmaps.count,3)
+        XCTAssertEqual(pack.competitionRoadmaps.count,4)
         for path in pack.competitionRoadmaps {
             XCTAssertNil(path.clubID)
             let progress=RoadmapProgress.make(roadmap:path,pack:pack,state:LearnerState())
@@ -52,7 +52,7 @@ final class CompetitionTests: XCTestCase {
     func testAlbumCollectionsExposeCompetitionWithoutBorrowingClubCards() {
         let state=LearnerState()
         let courses=AlbumCollection.make(pack:pack,state:state,scope:.competitions,discoveredOnly:false,query:"")
-        XCTAssertEqual(courses.total,3)
+        XCTAssertEqual(courses.total,4)
         XCTAssertTrue(courses.sections.flatMap(\.cards).allSatisfy {pack.entity($0.entityID).type == "competition"})
         let favorites=AlbumCollection.make(pack:pack,state:state,scope:.favorites,discoveredOnly:false,query:"")
         XCTAssertEqual(favorites.total,14)

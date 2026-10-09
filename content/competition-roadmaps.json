@@ -39,5 +39,18 @@
     "summary": "Mexico’s top flight: professional roots, short tournaments, and defining moments. Three foundation lessons; Xolos’s first title story is optional.",
     "caption": "Mexico’s championship stories",
     "optionalLessonKey": "lesson-xolos-final"
+  },
+  {
+    "key": "premier-league",
+    "name": "Premier League",
+    "aliases": [
+      "English Premier League",
+      "EPL"
+    ],
+    "visual": "PL",
+    "membershipScope": "premier-league",
+    "summary": "League origins, Arsenal’s unbeaten 2003/04 season, and the first Hall of Fame goalscorers. Three foundation lessons; shared Arsenal history is optional.",
+    "caption": "English league stories and records",
+    "optionalLessonKey": "lesson-arsenal-starter"
   }
 ]

@@ -65,6 +65,25 @@ final class FlowTests: XCTestCase {
         XCTAssertTrue(app.staticTexts["competition-roadmap-progress"].label.contains("3 of 3 foundation"))
         let detail=XCTAttachment(screenshot:app.screenshot());detail.name="Competition album roadmap";detail.lifetime = .keepAlways;add(detail)
     }
+    func testPremierLeagueAndArsenalPlayerPaths() {
+        start();tap("choose-XT");chooseCompetition("Premier League","premier-league")
+        completeLesson("lesson-competition-premier-league-origins")
+        completeLesson("lesson-competition-premier-league-invincibles")
+        completeLesson("lesson-competition-premier-league-goalscorers")
+        app.terminate();start(reset:false)
+        XCTAssertTrue(app.staticTexts["roadmap-progress"].label.contains("3 of 3 foundation lessons"))
+        let course=XCTAttachment(screenshot:app.screenshot());course.name="Premier League completed path";course.lifetime = .keepAlways;add(course)
+        choosePlayer("Thierry Henry","thierry-henry")
+        XCTAssertTrue(app.staticTexts["roadmap-progress"].label.contains("0 of 2 starter lessons"))
+        Thread.sleep(forTimeInterval:0.5) // Capture the settled sheet dismissal and numeric transition.
+        let player=XCTAttachment(screenshot:app.screenshot());player.name="Henry player path";player.lifetime = .keepAlways;add(player)
+        completeLesson("lesson-catalog-henry-career")
+        completeLesson("lesson-catalog-henry-record")
+        app.terminate();start(reset:false)
+        XCTAssertTrue(app.staticTexts["roadmap-progress"].label.contains("2 of 2 starter lessons"))
+        choosePlayer("Dennis Bergkamp","dennis-bergkamp")
+        XCTAssertTrue(app.staticTexts["roadmap-progress"].label.contains("0 of 2 starter lessons"))
+    }
     func testSavedRoadmapsSeparateSelectionRemovalAndPersistence() {
         start();tap("choose-XT")
         XCTAssertEqual(app.buttons["active-toggle-roadmap-xolos"].value as? String,"Saved")

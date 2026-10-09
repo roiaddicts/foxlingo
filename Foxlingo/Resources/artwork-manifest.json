@@ -361,6 +361,26 @@
     "cached": true
   },
   {
+    "asset": "entity-thierry-henry",
+    "url": "https://futbol-11.com/images/80.png",
+    "cached": true
+  },
+  {
+    "asset": "seed-player-80",
+    "url": "https://futbol-11.com/images/80.png",
+    "cached": true
+  },
+  {
+    "asset": "entity-dennis-bergkamp",
+    "url": "https://futbol-11.com/images/839.png",
+    "cached": true
+  },
+  {
+    "asset": "seed-player-839",
+    "url": "https://futbol-11.com/images/839.png",
+    "cached": true
+  },
+  {
     "asset": "entity-juventus",
     "url": "https://img.uefa.com/imgml/TP/teams/logos/100x100/50139.png",
     "cached": true
@@ -728,6 +748,11 @@
   {
     "asset": "flag-spain",
     "url": "https://futbol-11.com/media/flags/8.webp",
+    "cached": true
+  },
+  {
+    "asset": "entity-competition-premier-league",
+    "url": "https://www.premierleague.com/resources/v1.54.15/i/favicon/favicon-196x196.png",
     "cached": true
   },
   {

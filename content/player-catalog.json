@@ -139,6 +139,30 @@
       "seedID": "player-48",
       "seedName": "Bastian Schweinsteiger",
       "clubKey": "entity-bayern-munich"
+    },
+    {
+      "key": "entity-thierry-henry",
+      "name": "Thierry Henry",
+      "aliases": [
+        "Henry",
+        "Titi"
+      ],
+      "visual": "TH",
+      "seedID": "player-80",
+      "seedName": "Thierry Henry",
+      "clubKey": "entity-arsenal"
+    },
+    {
+      "key": "entity-dennis-bergkamp",
+      "name": "Dennis Bergkamp",
+      "aliases": [
+        "Bergkamp",
+        "The Iceman"
+      ],
+      "visual": "DB",
+      "seedID": "player-839",
+      "seedName": "Dennis Bergkamp",
+      "clubKey": "entity-arsenal"
     }
   ],
   "sources": [
@@ -218,6 +242,42 @@
       "key": "global-player-schweinsteiger-profile",
       "title": "Bastian Schweinsteiger | FC Bayern Hall of Fame",
       "url": "https://fcbayern.com/en/club/hall-of-fame/bastian-schweinsteiger",
+      "verifiedAt": "2026-10-09"
+    },
+    {
+      "key": "catalog-henry-arsenal-profile",
+      "title": "Henry on goals, glory and the power of our cannon",
+      "url": "https://arsenal-fc.shorthandstories.com/henry-on-goals-glory-and-the-power-of-our-cannon/index.html",
+      "verifiedAt": "2026-10-09"
+    },
+    {
+      "key": "catalog-henry-premier-league-career",
+      "title": "Henry: I wanted to elevate the forward position",
+      "url": "https://www.premierleague.com/en/news/2096418",
+      "verifiedAt": "2026-10-09"
+    },
+    {
+      "key": "catalog-henry-premier-league-anniversary",
+      "title": "OTD - 3 August",
+      "url": "https://www.premierleague.com/en/news/694184",
+      "verifiedAt": "2026-10-09"
+    },
+    {
+      "key": "catalog-henry-fifa-world-cup",
+      "title": "Neuer returns to join elite World Cup club",
+      "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/exclusive-world-cup-club-12-years-champions",
+      "verifiedAt": "2026-10-09"
+    },
+    {
+      "key": "catalog-bergkamp-arsenal-profile",
+      "title": "30 years on: Dennis Bergkamp signs for Arsenal",
+      "url": "https://www.arsenal.com/news/30-years-dennis-bergkamp-signs-arsenal?id=14333",
+      "verifiedAt": "2026-10-09"
+    },
+    {
+      "key": "catalog-bergkamp-premier-league-career",
+      "title": "OTD - 20 June",
+      "url": "https://www.premierleague.com/es/news/759819",
       "verifiedAt": "2026-10-09"
     }
   ],
@@ -2298,6 +2358,360 @@
           "scope": "Bastian Schweinsteiger's Bayern Munich career; domestic league titles",
           "sourceKey": "global-player-schweinsteiger-profile",
           "evidence": "Bayern Hall of Fame records eight Bundesliga titles."
+        }
+      ]
+    },
+    {
+      "key": "lesson-catalog-henry-career",
+      "subjectKey": "entity-thierry-henry",
+      "clubKey": "entity-arsenal",
+      "title": "Thierry Henry · career connections",
+      "subtitle": "A move from Italy, a return to Arsenal and a national-team triumph",
+      "story": [
+        {
+          "title": "A new role in north London",
+          "body": "Arsenal brought Henry from Juventus in 1999. He had played mainly as a winger in Italy; Arsène Wenger reshaped him into a striker, and his Arsenal career took off."
+        },
+        {
+          "title": "A return and an international memory",
+          "body": "After leaving for Barcelona, Henry returned to Arsenal on loan in 2012. Before that club chapter, he had won the 1998 World Cup with France. The comeback and the World Cup belong to separate parts of his career."
+        }
+      ],
+      "facts": [
+        {
+          "key": "catalog-henry-career-previous-club",
+          "label": "Club before Arsenal",
+          "prompt": "Which club did Henry join Arsenal from in 1999?",
+          "answers": [
+            "Juventus",
+            "Juventus FC"
+          ],
+          "distractors": [
+            "Inter",
+            "Barcelona",
+            "Bayern Munich"
+          ],
+          "value": {
+            "kind": "entity",
+            "display": "Juventus",
+            "entityKey": "entity-juventus"
+          },
+          "scope": "Henry's 1999 move to Arsenal; immediately previous club was Juventus",
+          "sourceKey": "catalog-henry-premier-league-career",
+          "evidence": "The Premier League account says Wenger brought Henry to Arsenal from Juventus in 1999."
+        },
+        {
+          "key": "catalog-henry-career-comeback-year",
+          "label": "Henry’s Arsenal loan return",
+          "prompt": "In which year did Henry return to Arsenal on loan?",
+          "answers": [
+            "2012",
+            "two thousand twelve"
+          ],
+          "distractors": [
+            "2009",
+            "2011",
+            "2013"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "2012",
+            "number": 2012,
+            "unit": "year"
+          },
+          "scope": "Henry's brief return to Arsenal on loan after leaving for Barcelona; calendar year 2012",
+          "sourceKey": "catalog-henry-premier-league-anniversary",
+          "evidence": "The Premier League history notes that Henry returned for a brief loan spell in 2012."
+        },
+        {
+          "key": "catalog-henry-career-world-cup-country",
+          "label": "Henry’s 1998 World Cup team",
+          "prompt": "Which country did Henry represent when he won the 1998 World Cup?",
+          "answers": [
+            "France"
+          ],
+          "distractors": [
+            "Netherlands",
+            "Brazil",
+            "Italy"
+          ],
+          "value": {
+            "kind": "entity",
+            "display": "France",
+            "entityKey": "entity-country-france"
+          },
+          "scope": "Thierry Henry's national-team honour at the 1998 FIFA World Cup; not an Arsenal club title",
+          "sourceKey": "catalog-henry-fifa-world-cup",
+          "evidence": "FIFA identifies Henry as France's 1998 World Cup champion."
+        }
+      ]
+    },
+    {
+      "key": "lesson-catalog-henry-record",
+      "subjectKey": "entity-thierry-henry",
+      "clubKey": "entity-arsenal",
+      "title": "Thierry Henry · Arsenal record",
+      "subtitle": "Whole-club totals alongside Premier League-only numbers",
+      "story": [
+        {
+          "title": "His complete Arsenal record",
+          "body": "Across his two Arsenal spells, Henry finished with 377 appearances and 228 goals in all competitions. These are whole-club totals, including the 2012 return, rather than Premier League-only counts."
+        },
+        {
+          "title": "The league-only view",
+          "body": "The Premier League records 258 Arsenal appearances and 175 goals for Henry. The Premier League totals cover league matches only; the larger 377 appearance and 228 goal totals cover all competitions across his Arsenal career."
+        }
+      ],
+      "facts": [
+        {
+          "key": "catalog-henry-record-arsenal-appearances",
+          "label": "Whole-career Arsenal appearances",
+          "prompt": "How many total appearances did Henry make for Arsenal across all competitions and both spells?",
+          "answers": [
+            "377",
+            "three hundred seventy-seven",
+            "three hundred and seventy-seven"
+          ],
+          "distractors": [
+            "258",
+            "423",
+            "400"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "377",
+            "number": 377,
+            "unit": "Arsenal appearances in all competitions"
+          },
+          "scope": "Thierry Henry's complete Arsenal career including the 2012 loan return; all competitions; club-published career total",
+          "sourceKey": "catalog-henry-arsenal-profile",
+          "evidence": "Arsenal's career feature gives the final Gunners total across his career."
+        },
+        {
+          "key": "catalog-henry-record-arsenal-goals",
+          "label": "Whole-career Arsenal goals",
+          "prompt": "How many goals did Henry score for Arsenal across all competitions and both spells?",
+          "answers": [
+            "228",
+            "two hundred twenty-eight",
+            "two hundred and twenty-eight"
+          ],
+          "distractors": [
+            "175",
+            "226",
+            "250"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "228",
+            "number": 228,
+            "unit": "Arsenal goals in all competitions"
+          },
+          "scope": "Thierry Henry's complete Arsenal career including the 2012 loan return; all competitions; club-published career total",
+          "sourceKey": "catalog-henry-arsenal-profile",
+          "evidence": "Arsenal's feature reports his completed Gunners goal total."
+        },
+        {
+          "key": "catalog-henry-record-premier-league-goals",
+          "label": "Premier League goals for Arsenal",
+          "prompt": "How many Premier League goals did Henry score for Arsenal across his league career?",
+          "answers": [
+            "175",
+            "one hundred seventy-five",
+            "one hundred and seventy-five"
+          ],
+          "distractors": [
+            "174",
+            "228",
+            "258"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "175",
+            "number": 175,
+            "unit": "Arsenal goals in the Premier League"
+          },
+          "scope": "Premier League-only Arsenal total, including the 2012 loan return; distinct from Henry's all-competition Arsenal goals",
+          "sourceKey": "catalog-henry-premier-league-career",
+          "evidence": "The Premier League Hall of Fame article gives his final league goal total."
+        }
+      ]
+    },
+    {
+      "key": "lesson-catalog-bergkamp-career",
+      "subjectKey": "entity-dennis-bergkamp",
+      "clubKey": "entity-arsenal",
+      "title": "Dennis Bergkamp · career connections",
+      "subtitle": "From Inter to an 11-year Arsenal chapter",
+      "story": [
+        {
+          "title": "Arriving from Italy",
+          "body": "Bergkamp joined Arsenal from Inter Milan in 1995. He was a Dutch forward, and his arrival helped usher in a more technical style at Highbury."
+        },
+        {
+          "title": "A long stay at Arsenal",
+          "body": "Bergkamp remained with Arsenal until the end of the 2005/06 campaign, when he retired. His final season closed an 11-year club chapter that began with his move from Inter."
+        }
+      ],
+      "facts": [
+        {
+          "key": "catalog-bergkamp-career-previous-club",
+          "label": "Club before Arsenal",
+          "prompt": "Which club did Bergkamp join Arsenal from?",
+          "answers": [
+            "Inter",
+            "Inter Milan"
+          ],
+          "distractors": [
+            "Juventus",
+            "Barcelona",
+            "Bayern Munich"
+          ],
+          "value": {
+            "kind": "entity",
+            "display": "Inter",
+            "entityKey": "entity-inter"
+          },
+          "scope": "Dennis Bergkamp's 1995 transfer to Arsenal; immediately previous club was Inter Milan",
+          "sourceKey": "catalog-bergkamp-premier-league-career",
+          "evidence": "The Premier League history records Bergkamp's move to Arsenal from Inter."
+        },
+        {
+          "key": "catalog-bergkamp-career-nationality",
+          "label": "Bergkamp’s national identity",
+          "prompt": "Which country was Bergkamp’s national-team country?",
+          "answers": [
+            "Netherlands",
+            "The Netherlands",
+            "Dutch"
+          ],
+          "distractors": [
+            "France",
+            "Germany",
+            "Italy"
+          ],
+          "value": {
+            "kind": "entity",
+            "display": "Netherlands",
+            "entityKey": "entity-country-netherlands"
+          },
+          "scope": "Dennis Bergkamp's nationality; Netherlands national-team identity, separate from Arsenal club career",
+          "sourceKey": "catalog-bergkamp-premier-league-career",
+          "evidence": "The Premier League profile identifies him as a Dutch forward."
+        },
+        {
+          "key": "catalog-bergkamp-career-retirement-season",
+          "label": "Bergkamp’s final season",
+          "prompt": "At the end of which campaign did Bergkamp retire?",
+          "answers": [
+            "2005/06",
+            "2005–06",
+            "2005-06"
+          ],
+          "distractors": [
+            "2003/04",
+            "2004/05",
+            "2006/07"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "2005/06",
+            "text": "2005/06"
+          },
+          "scope": "Dennis Bergkamp's retirement at the end of Arsenal's 2005/06 campaign",
+          "sourceKey": "catalog-bergkamp-premier-league-career",
+          "evidence": "The Premier League biography dates his retirement to the end of the 2005/06 campaign."
+        }
+      ]
+    },
+    {
+      "key": "lesson-catalog-bergkamp-record",
+      "subjectKey": "entity-dennis-bergkamp",
+      "clubKey": "entity-arsenal",
+      "title": "Dennis Bergkamp · Arsenal record",
+      "subtitle": "All-competition totals and Premier League-only output",
+      "story": [
+        {
+          "title": "The full Arsenal totals",
+          "body": "Arsenal credits Bergkamp with 423 appearances and 120 goals across his complete club career. Those are all-competition Arsenal totals, not a count of Premier League matches alone."
+        },
+        {
+          "title": "Premier League numbers",
+          "body": "In the Premier League, Bergkamp made 315 appearances and scored 87 goals. The league-only total is a subset of the broader Arsenal record; keeping the competition label attached prevents the counts from being confused."
+        }
+      ],
+      "facts": [
+        {
+          "key": "catalog-bergkamp-record-arsenal-appearances",
+          "label": "Whole-career Arsenal appearances",
+          "prompt": "How many total appearances did Bergkamp make for Arsenal across all competitions?",
+          "answers": [
+            "423",
+            "four hundred twenty-three",
+            "four hundred and twenty-three"
+          ],
+          "distractors": [
+            "315",
+            "377",
+            "450"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "423",
+            "number": 423,
+            "unit": "Arsenal appearances in all competitions"
+          },
+          "scope": "Dennis Bergkamp's complete Arsenal career, 1995–2006; all competitions",
+          "sourceKey": "catalog-bergkamp-arsenal-profile",
+          "evidence": "Arsenal's club feature gives his full career appearance total."
+        },
+        {
+          "key": "catalog-bergkamp-record-arsenal-goals",
+          "label": "Whole-career Arsenal goals",
+          "prompt": "How many goals did Bergkamp score for Arsenal across all competitions?",
+          "answers": [
+            "120",
+            "one hundred twenty",
+            "one hundred and twenty"
+          ],
+          "distractors": [
+            "87",
+            "94",
+            "140"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "120",
+            "number": 120,
+            "unit": "Arsenal goals in all competitions"
+          },
+          "scope": "Dennis Bergkamp's complete Arsenal career, 1995–2006; all competitions",
+          "sourceKey": "catalog-bergkamp-arsenal-profile",
+          "evidence": "Arsenal's club feature gives his full career goal total."
+        },
+        {
+          "key": "catalog-bergkamp-record-premier-league-goals",
+          "label": "Premier League goals for Arsenal",
+          "prompt": "How many Premier League goals did Bergkamp score?",
+          "answers": [
+            "87",
+            "eighty-seven",
+            "eighty seven"
+          ],
+          "distractors": [
+            "94",
+            "120",
+            "315"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "87",
+            "number": 87,
+            "unit": "Premier League goals"
+          },
+          "scope": "Dennis Bergkamp's Premier League career; league-only total for Arsenal, distinct from all-competition Arsenal goals",
+          "sourceKey": "catalog-bergkamp-premier-league-career",
+          "evidence": "The Premier League biography gives 87 goals in 315 league appearances."
         }
       ]
     }

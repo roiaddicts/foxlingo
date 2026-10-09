@@ -20,5 +20,12 @@
     "credit": "Hectortoro2019, via Wikimedia Commons",
     "license": "CC BY-SA 4.0; unmodified original",
     "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  {
+    "key": "entity-competition-premier-league",
+    "source": "https://www.premierleague.com/en/history",
+    "assetURL": "https://www.premierleague.com/resources/v1.54.15/i/favicon/favicon-196x196.png",
+    "credit": "Premier League; official site competition icon",
+    "license": "Premier League competition mark; no ownership claimed"
   }
 ]

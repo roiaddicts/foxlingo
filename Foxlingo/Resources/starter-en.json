@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "key": "foxlingo-favorites-en",
-  "contentVersion": 11,
+  "contentVersion": 12,
   "language": "en",
   "entities": [
     {
@@ -1257,6 +1257,22 @@
       ]
     },
     {
+      "id": "836127db-6f83-5014-beaf-0fefededb2ce",
+      "key": "entity-competition-premier-league",
+      "type": "competition",
+      "name": "Premier League",
+      "aliases": [
+        "English Premier League",
+        "EPL"
+      ],
+      "visual": "PL",
+      "externalRefs": {},
+      "imageAsset": "entity-competition-premier-league",
+      "competitions": [
+        "premier-league"
+      ]
+    },
+    {
       "id": "a503aa98-f9b7-5a05-a09b-6fc369e9c376",
       "key": "entity-ac-milan",
       "type": "club",
@@ -1270,6 +1286,28 @@
       },
       "imageAsset": "entity-ac-milan",
       "imageURL": "https://img.uefa.com/imgml/TP/teams/logos/100x100/50058.png"
+    },
+    {
+      "id": "ad1640f8-d9f3-5071-874a-2239581600a7",
+      "key": "entity-country-france",
+      "type": "country",
+      "name": "France",
+      "aliases": [],
+      "visual": "FR",
+      "externalRefs": {},
+      "imageAsset": "flag-france",
+      "imageURL": "https://futbol-11.com/media/flags/10.webp"
+    },
+    {
+      "id": "41229fb8-7ed3-527f-9b5c-bba9529682ca",
+      "key": "entity-country-netherlands",
+      "type": "country",
+      "name": "Netherlands",
+      "aliases": [],
+      "visual": "NE",
+      "externalRefs": {},
+      "imageAsset": "flag-netherlands",
+      "imageURL": "https://futbol-11.com/media/flags/9.webp"
     },
     {
       "id": "4e69fd40-4a9e-5e10-9519-bdedf329fc5a",
@@ -1427,6 +1465,38 @@
       "imageURL": "https://futbol-11.com/images/48.png"
     },
     {
+      "id": "0fee3ca7-d6fd-55ec-8791-2b7d89786068",
+      "key": "entity-thierry-henry",
+      "type": "player",
+      "name": "Thierry Henry",
+      "aliases": [
+        "Henry",
+        "Titi"
+      ],
+      "visual": "TH",
+      "externalRefs": {
+        "futbol11.gamePlayers": "80"
+      },
+      "imageAsset": "entity-thierry-henry",
+      "imageURL": "https://futbol-11.com/images/80.png"
+    },
+    {
+      "id": "48fc2cd4-e278-5a1b-8e75-827169520b41",
+      "key": "entity-dennis-bergkamp",
+      "type": "player",
+      "name": "Dennis Bergkamp",
+      "aliases": [
+        "Bergkamp",
+        "The Iceman"
+      ],
+      "visual": "DB",
+      "externalRefs": {
+        "futbol11.gamePlayers": "839"
+      },
+      "imageAsset": "entity-dennis-bergkamp",
+      "imageURL": "https://futbol-11.com/images/839.png"
+    },
+    {
       "id": "544551ae-f6d2-5492-8278-b79ebab76843",
       "key": "entity-country-greece",
       "type": "country",
@@ -1515,17 +1585,6 @@
       "imageURL": "https://futbol-11.com/media/flags/24.webp"
     },
     {
-      "id": "41229fb8-7ed3-527f-9b5c-bba9529682ca",
-      "key": "entity-country-netherlands",
-      "type": "country",
-      "name": "Netherlands",
-      "aliases": [],
-      "visual": "NE",
-      "externalRefs": {},
-      "imageAsset": "flag-netherlands",
-      "imageURL": "https://futbol-11.com/media/flags/9.webp"
-    },
-    {
       "id": "d4b77fee-f147-5b50-a87b-80cddfa470d8",
       "key": "entity-country-austria",
       "type": "country",
@@ -1535,17 +1594,6 @@
       "externalRefs": {},
       "imageAsset": "flag-austria",
       "imageURL": "https://futbol-11.com/media/flags/23.webp"
-    },
-    {
-      "id": "ad1640f8-d9f3-5071-874a-2239581600a7",
-      "key": "entity-country-france",
-      "type": "country",
-      "name": "France",
-      "aliases": [],
-      "visual": "FR",
-      "externalRefs": {},
-      "imageAsset": "flag-france",
-      "imageURL": "https://futbol-11.com/media/flags/10.webp"
     },
     {
       "id": "5987232c-e39b-56f1-a1ac-e6ab147d0b23",
@@ -2211,6 +2259,30 @@
       "verifiedAt": "2026-10-08"
     },
     {
+      "key": "premier-origins",
+      "title": "Premier League: Origins and History",
+      "url": "https://www.premierleague.com/en/history",
+      "verifiedAt": "2026-10-09"
+    },
+    {
+      "key": "premier-first-season",
+      "title": "Premier League: 1992/93 season review",
+      "url": "https://www.premierleague.com/en/news/58731",
+      "verifiedAt": "2026-10-09"
+    },
+    {
+      "key": "premier-invincibles",
+      "title": "Premier League: 2003/04 season review",
+      "url": "https://www.premierleague.com/en/news/59016",
+      "verifiedAt": "2026-10-09"
+    },
+    {
+      "key": "premier-first-inductees",
+      "title": "Premier League: Shearer and Henry inducted into Hall of Fame",
+      "url": "https://www.premierleague.com/en/news/2103122",
+      "verifiedAt": "2026-10-09"
+    },
+    {
       "key": "artwork-ac-milan-uefa",
       "title": "AC Milan · UEFA club identity and badge",
       "url": "https://www.uefa.com/uefachampionsleague/history/clubs/50058--milan/",
@@ -2292,6 +2364,42 @@
       "key": "global-player-schweinsteiger-profile",
       "title": "Bastian Schweinsteiger | FC Bayern Hall of Fame",
       "url": "https://fcbayern.com/en/club/hall-of-fame/bastian-schweinsteiger",
+      "verifiedAt": "2026-10-09"
+    },
+    {
+      "key": "catalog-henry-arsenal-profile",
+      "title": "Henry on goals, glory and the power of our cannon",
+      "url": "https://arsenal-fc.shorthandstories.com/henry-on-goals-glory-and-the-power-of-our-cannon/index.html",
+      "verifiedAt": "2026-10-09"
+    },
+    {
+      "key": "catalog-henry-premier-league-career",
+      "title": "Henry: I wanted to elevate the forward position",
+      "url": "https://www.premierleague.com/en/news/2096418",
+      "verifiedAt": "2026-10-09"
+    },
+    {
+      "key": "catalog-henry-premier-league-anniversary",
+      "title": "OTD - 3 August",
+      "url": "https://www.premierleague.com/en/news/694184",
+      "verifiedAt": "2026-10-09"
+    },
+    {
+      "key": "catalog-henry-fifa-world-cup",
+      "title": "Neuer returns to join elite World Cup club",
+      "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/exclusive-world-cup-club-12-years-champions",
+      "verifiedAt": "2026-10-09"
+    },
+    {
+      "key": "catalog-bergkamp-arsenal-profile",
+      "title": "30 years on: Dennis Bergkamp signs for Arsenal",
+      "url": "https://www.arsenal.com/news/30-years-dennis-bergkamp-signs-arsenal?id=14333",
+      "verifiedAt": "2026-10-09"
+    },
+    {
+      "key": "catalog-bergkamp-premier-league-career",
+      "title": "OTD - 20 June",
+      "url": "https://www.premierleague.com/es/news/759819",
       "verifiedAt": "2026-10-09"
     }
   ],
@@ -6879,6 +6987,157 @@
       "evidence": "Santos’s official biography distinguishes Galindo’s player title in Invierno 1996 from his coaching title in Clausura 2012."
     },
     {
+      "id": "355fd9a4-6b2b-5059-9d12-331067647d7d",
+      "key": "fact-competition-premier-established-year",
+      "subjectID": "836127db-6f83-5014-beaf-0fefededb2ce",
+      "predicate": "premier-established-year",
+      "value": {
+        "kind": "number",
+        "display": "1992",
+        "number": 1992,
+        "unit": "year"
+      },
+      "scope": "Premier League established as a limited company on 27 May 1992",
+      "sourceKeys": [
+        "premier-origins"
+      ],
+      "evidence": "The league’s history records establishment in May 1992 and the first campaign beginning in August that year."
+    },
+    {
+      "id": "534faf9d-eb03-5b1f-9697-4ceb69d54c27",
+      "key": "fact-competition-premier-inaugural-clubs",
+      "subjectID": "836127db-6f83-5014-beaf-0fefededb2ce",
+      "predicate": "premier-inaugural-clubs",
+      "value": {
+        "kind": "number",
+        "display": "22",
+        "number": 22,
+        "unit": "clubs"
+      },
+      "scope": "Premier League 1992/93 inaugural campaign; before the later reduction to 20 clubs",
+      "sourceKeys": [
+        "premier-origins"
+      ],
+      "evidence": "The official league history lists 22 inaugural member clubs."
+    },
+    {
+      "id": "4a1b147c-a86d-583d-8bc9-ff1ee3c09633",
+      "key": "fact-competition-premier-first-champions",
+      "subjectID": "836127db-6f83-5014-beaf-0fefededb2ce",
+      "predicate": "premier-first-champions",
+      "value": {
+        "kind": "entity",
+        "display": "Man United",
+        "entityID": "1e1c96fa-0f06-58dc-8ad8-29d7fb8ae5c4"
+      },
+      "scope": "Premier League 1992/93 title; not the preceding First Division season",
+      "sourceKeys": [
+        "premier-first-season"
+      ],
+      "evidence": "The official 1992/93 review identifies Manchester United as champions."
+    },
+    {
+      "id": "0697f45c-02b7-5571-8923-c5ad579da5e8",
+      "key": "fact-competition-premier-invincibles-club",
+      "subjectID": "836127db-6f83-5014-beaf-0fefededb2ce",
+      "predicate": "premier-invincibles-club",
+      "value": {
+        "kind": "entity",
+        "display": "Arsenal",
+        "entityID": "6e24f189-8ba1-510a-931c-041107f61723"
+      },
+      "scope": "Arsenal’s 2003/04 Premier League season only",
+      "sourceKeys": [
+        "premier-invincibles"
+      ],
+      "evidence": "The official season review describes Arsenal’s unbeaten title-winning league campaign."
+    },
+    {
+      "id": "defc01f8-66b7-598b-a967-e22d61af7e49",
+      "key": "fact-competition-premier-invincibles-wins",
+      "subjectID": "836127db-6f83-5014-beaf-0fefededb2ce",
+      "predicate": "premier-invincibles-wins",
+      "value": {
+        "kind": "number",
+        "display": "26",
+        "number": 26,
+        "unit": "league wins"
+      },
+      "scope": "Arsenal’s 38-match 2003/04 Premier League campaign",
+      "sourceKeys": [
+        "premier-invincibles"
+      ],
+      "evidence": "The season review reports 26 wins during Arsenal’s unbeaten league campaign."
+    },
+    {
+      "id": "d757e989-8994-58ee-a70e-a65bfc8d767f",
+      "key": "fact-competition-premier-invincibles-draws",
+      "subjectID": "836127db-6f83-5014-beaf-0fefededb2ce",
+      "predicate": "premier-invincibles-draws",
+      "value": {
+        "kind": "number",
+        "display": "12",
+        "number": 12,
+        "unit": "league draws"
+      },
+      "scope": "Arsenal’s 38-match 2003/04 Premier League campaign",
+      "sourceKeys": [
+        "premier-invincibles"
+      ],
+      "evidence": "The league’s season review reports 12 draws alongside 26 wins."
+    },
+    {
+      "id": "5ebf21a5-0d21-5b30-981d-45d253165ea9",
+      "key": "fact-competition-premier-shearer-goals",
+      "subjectID": "836127db-6f83-5014-beaf-0fefededb2ce",
+      "predicate": "premier-shearer-goals",
+      "value": {
+        "kind": "number",
+        "display": "260",
+        "number": 260,
+        "unit": "Premier League goals"
+      },
+      "scope": "Alan Shearer’s completed Premier League career, 1992–2006, at Blackburn and Newcastle; total stated in the 2021 Hall of Fame announcement",
+      "sourceKeys": [
+        "premier-first-inductees"
+      ],
+      "evidence": "The Premier League’s first-inductees announcement credits Shearer with 260 goals across 14 Premier League seasons."
+    },
+    {
+      "id": "2cdcd0c8-d8ce-57b4-95ec-e6abd74175f1",
+      "key": "fact-competition-premier-henry-invincibles-goals",
+      "subjectID": "836127db-6f83-5014-beaf-0fefededb2ce",
+      "predicate": "premier-henry-invincibles-goals",
+      "value": {
+        "kind": "number",
+        "display": "30",
+        "number": 30,
+        "unit": "Premier League goals"
+      },
+      "scope": "Thierry Henry’s 2003/04 Premier League season at Arsenal; excludes other seasons and competitions",
+      "sourceKeys": [
+        "premier-invincibles"
+      ],
+      "evidence": "The official 2003/04 review lists Henry as top goalscorer with 30 league goals."
+    },
+    {
+      "id": "c3479cd1-af24-5fc7-9b99-0b4b9a3c689e",
+      "key": "fact-competition-premier-henry-boots",
+      "subjectID": "836127db-6f83-5014-beaf-0fefededb2ce",
+      "predicate": "premier-henry-boots",
+      "value": {
+        "kind": "number",
+        "display": "4",
+        "number": 4,
+        "unit": "Golden Boot awards"
+      },
+      "scope": "Thierry Henry’s four Premier League Golden Boots, as recorded in his 2021 Hall of Fame induction announcement",
+      "sourceKeys": [
+        "premier-first-inductees"
+      ],
+      "evidence": "The league’s Hall of Fame announcement identifies Henry as a four-time Golden Boot winner."
+    },
+    {
       "id": "f31f5ce6-8777-5b08-a876-2437d2cfd408",
       "key": "fact-enrichment-catalog-raul-birth-city",
       "subjectID": "4e69fd40-4a9e-5e10-9519-bdedf329fc5a",
@@ -8086,6 +8345,205 @@
         "global-player-schweinsteiger-profile"
       ],
       "evidence": "Bayern Hall of Fame records eight Bundesliga titles."
+    },
+    {
+      "id": "279a8f54-e751-5e81-8d49-2e11633f0667",
+      "key": "fact-enrichment-catalog-henry-career-previous-club",
+      "subjectID": "0fee3ca7-d6fd-55ec-8791-2b7d89786068",
+      "predicate": "catalog-henry-career-previous-club",
+      "value": {
+        "kind": "entity",
+        "display": "Juventus",
+        "entityID": "d8cfa43a-3ba1-5946-a7f8-9c7f57a42e69"
+      },
+      "scope": "Henry's 1999 move to Arsenal; immediately previous club was Juventus",
+      "sourceKeys": [
+        "catalog-henry-premier-league-career"
+      ],
+      "evidence": "The Premier League account says Wenger brought Henry to Arsenal from Juventus in 1999."
+    },
+    {
+      "id": "f30e9343-d717-5b01-be57-644f8227f046",
+      "key": "fact-enrichment-catalog-henry-career-comeback-year",
+      "subjectID": "0fee3ca7-d6fd-55ec-8791-2b7d89786068",
+      "predicate": "catalog-henry-career-comeback-year",
+      "value": {
+        "kind": "number",
+        "display": "2012",
+        "number": 2012,
+        "unit": "year"
+      },
+      "scope": "Henry's brief return to Arsenal on loan after leaving for Barcelona; calendar year 2012",
+      "sourceKeys": [
+        "catalog-henry-premier-league-anniversary"
+      ],
+      "evidence": "The Premier League history notes that Henry returned for a brief loan spell in 2012."
+    },
+    {
+      "id": "9a9126b2-1921-5859-8d20-66924e64d92f",
+      "key": "fact-enrichment-catalog-henry-career-world-cup-country",
+      "subjectID": "0fee3ca7-d6fd-55ec-8791-2b7d89786068",
+      "predicate": "catalog-henry-career-world-cup-country",
+      "value": {
+        "kind": "entity",
+        "display": "France",
+        "entityID": "ad1640f8-d9f3-5071-874a-2239581600a7"
+      },
+      "scope": "Thierry Henry's national-team honour at the 1998 FIFA World Cup; not an Arsenal club title",
+      "sourceKeys": [
+        "catalog-henry-fifa-world-cup"
+      ],
+      "evidence": "FIFA identifies Henry as France's 1998 World Cup champion."
+    },
+    {
+      "id": "84af32e0-c1f7-5e2d-95b8-941e68586c22",
+      "key": "fact-enrichment-catalog-henry-record-arsenal-appearances",
+      "subjectID": "0fee3ca7-d6fd-55ec-8791-2b7d89786068",
+      "predicate": "catalog-henry-record-arsenal-appearances",
+      "value": {
+        "kind": "number",
+        "display": "377",
+        "number": 377,
+        "unit": "Arsenal appearances in all competitions"
+      },
+      "scope": "Thierry Henry's complete Arsenal career including the 2012 loan return; all competitions; club-published career total",
+      "sourceKeys": [
+        "catalog-henry-arsenal-profile"
+      ],
+      "evidence": "Arsenal's career feature gives the final Gunners total across his career."
+    },
+    {
+      "id": "e13a8083-f814-54bf-9346-e5392b90824b",
+      "key": "fact-enrichment-catalog-henry-record-arsenal-goals",
+      "subjectID": "0fee3ca7-d6fd-55ec-8791-2b7d89786068",
+      "predicate": "catalog-henry-record-arsenal-goals",
+      "value": {
+        "kind": "number",
+        "display": "228",
+        "number": 228,
+        "unit": "Arsenal goals in all competitions"
+      },
+      "scope": "Thierry Henry's complete Arsenal career including the 2012 loan return; all competitions; club-published career total",
+      "sourceKeys": [
+        "catalog-henry-arsenal-profile"
+      ],
+      "evidence": "Arsenal's feature reports his completed Gunners goal total."
+    },
+    {
+      "id": "fe6aa27f-9e22-51aa-9dc2-e7169be90127",
+      "key": "fact-enrichment-catalog-henry-record-premier-league-goals",
+      "subjectID": "0fee3ca7-d6fd-55ec-8791-2b7d89786068",
+      "predicate": "catalog-henry-record-premier-league-goals",
+      "value": {
+        "kind": "number",
+        "display": "175",
+        "number": 175,
+        "unit": "Arsenal goals in the Premier League"
+      },
+      "scope": "Premier League-only Arsenal total, including the 2012 loan return; distinct from Henry's all-competition Arsenal goals",
+      "sourceKeys": [
+        "catalog-henry-premier-league-career"
+      ],
+      "evidence": "The Premier League Hall of Fame article gives his final league goal total."
+    },
+    {
+      "id": "649229a2-4e6b-5aa9-88b6-3a2223fca57e",
+      "key": "fact-enrichment-catalog-bergkamp-career-previous-club",
+      "subjectID": "48fc2cd4-e278-5a1b-8e75-827169520b41",
+      "predicate": "catalog-bergkamp-career-previous-club",
+      "value": {
+        "kind": "entity",
+        "display": "Inter",
+        "entityID": "7b12f9cf-a10f-5220-8a93-9121d3d85474"
+      },
+      "scope": "Dennis Bergkamp's 1995 transfer to Arsenal; immediately previous club was Inter Milan",
+      "sourceKeys": [
+        "catalog-bergkamp-premier-league-career"
+      ],
+      "evidence": "The Premier League history records Bergkamp's move to Arsenal from Inter."
+    },
+    {
+      "id": "e2e95e67-ec1a-5aac-a882-8262d9fae594",
+      "key": "fact-enrichment-catalog-bergkamp-career-nationality",
+      "subjectID": "48fc2cd4-e278-5a1b-8e75-827169520b41",
+      "predicate": "catalog-bergkamp-career-nationality",
+      "value": {
+        "kind": "entity",
+        "display": "Netherlands",
+        "entityID": "41229fb8-7ed3-527f-9b5c-bba9529682ca"
+      },
+      "scope": "Dennis Bergkamp's nationality; Netherlands national-team identity, separate from Arsenal club career",
+      "sourceKeys": [
+        "catalog-bergkamp-premier-league-career"
+      ],
+      "evidence": "The Premier League profile identifies him as a Dutch forward."
+    },
+    {
+      "id": "75a1fcfd-85f2-53a7-8bbc-a9b1e4c866e2",
+      "key": "fact-enrichment-catalog-bergkamp-career-retirement-season",
+      "subjectID": "48fc2cd4-e278-5a1b-8e75-827169520b41",
+      "predicate": "catalog-bergkamp-career-retirement-season",
+      "value": {
+        "kind": "text",
+        "display": "2005/06",
+        "text": "2005/06"
+      },
+      "scope": "Dennis Bergkamp's retirement at the end of Arsenal's 2005/06 campaign",
+      "sourceKeys": [
+        "catalog-bergkamp-premier-league-career"
+      ],
+      "evidence": "The Premier League biography dates his retirement to the end of the 2005/06 campaign."
+    },
+    {
+      "id": "23d86ea1-a51f-5a04-8200-0d9411aa0366",
+      "key": "fact-enrichment-catalog-bergkamp-record-arsenal-appearances",
+      "subjectID": "48fc2cd4-e278-5a1b-8e75-827169520b41",
+      "predicate": "catalog-bergkamp-record-arsenal-appearances",
+      "value": {
+        "kind": "number",
+        "display": "423",
+        "number": 423,
+        "unit": "Arsenal appearances in all competitions"
+      },
+      "scope": "Dennis Bergkamp's complete Arsenal career, 1995–2006; all competitions",
+      "sourceKeys": [
+        "catalog-bergkamp-arsenal-profile"
+      ],
+      "evidence": "Arsenal's club feature gives his full career appearance total."
+    },
+    {
+      "id": "efedea7c-410c-5130-aae0-9d4259589b70",
+      "key": "fact-enrichment-catalog-bergkamp-record-arsenal-goals",
+      "subjectID": "48fc2cd4-e278-5a1b-8e75-827169520b41",
+      "predicate": "catalog-bergkamp-record-arsenal-goals",
+      "value": {
+        "kind": "number",
+        "display": "120",
+        "number": 120,
+        "unit": "Arsenal goals in all competitions"
+      },
+      "scope": "Dennis Bergkamp's complete Arsenal career, 1995–2006; all competitions",
+      "sourceKeys": [
+        "catalog-bergkamp-arsenal-profile"
+      ],
+      "evidence": "Arsenal's club feature gives his full career goal total."
+    },
+    {
+      "id": "ed885c14-0bc9-5c1f-8c1d-e5e607d9e1fe",
+      "key": "fact-enrichment-catalog-bergkamp-record-premier-league-goals",
+      "subjectID": "48fc2cd4-e278-5a1b-8e75-827169520b41",
+      "predicate": "catalog-bergkamp-record-premier-league-goals",
+      "value": {
+        "kind": "number",
+        "display": "87",
+        "number": 87,
+        "unit": "Premier League goals"
+      },
+      "scope": "Dennis Bergkamp's Premier League career; league-only total for Arsenal, distinct from all-competition Arsenal goals",
+      "sourceKeys": [
+        "catalog-bergkamp-premier-league-career"
+      ],
+      "evidence": "The Premier League biography gives 87 goals in 315 league appearances."
     }
   ],
   "objectives": [
@@ -11923,6 +12381,127 @@
       "revision": 1
     },
     {
+      "id": "310769cf-db89-5671-a1d1-e69d983395a6",
+      "key": "objective-competition-premier-established-year",
+      "factIDs": [
+        "355fd9a4-6b2b-5059-9d12-331067647d7d"
+      ],
+      "prompt": "In which year was the Premier League established?",
+      "answers": [
+        "1992"
+      ],
+      "feedback": "League established: 1992. Context: Premier League established as a limited company on 27 May 1992.",
+      "revision": 1
+    },
+    {
+      "id": "9260eb81-2c11-5340-b0d5-ede61b489769",
+      "key": "objective-competition-premier-inaugural-clubs",
+      "factIDs": [
+        "534faf9d-eb03-5b1f-9697-4ceb69d54c27"
+      ],
+      "prompt": "How many clubs played in the first Premier League campaign, 1992/93?",
+      "answers": [
+        "22"
+      ],
+      "feedback": "Inaugural clubs: 22. Context: Premier League 1992/93 inaugural campaign; before the later reduction to 20 clubs.",
+      "revision": 1
+    },
+    {
+      "id": "95f585eb-1b0e-593f-96fd-6035c475b4af",
+      "key": "objective-competition-premier-first-champions",
+      "factIDs": [
+        "4a1b147c-a86d-583d-8bc9-ff1ee3c09633"
+      ],
+      "prompt": "Which club won the inaugural Premier League title in 1992/93?",
+      "answers": [
+        "Man United",
+        "Manchester United",
+        "Manchester United FC"
+      ],
+      "feedback": "First champions: Man United. Context: Premier League 1992/93 title; not the preceding First Division season.",
+      "revision": 1
+    },
+    {
+      "id": "1a17f308-e6bb-5a60-8cc0-91e4fe560cd5",
+      "key": "objective-competition-premier-invincibles-club",
+      "factIDs": [
+        "0697f45c-02b7-5571-8923-c5ad579da5e8"
+      ],
+      "prompt": "Which club went unbeaten through the entire 2003/04 Premier League season?",
+      "answers": [
+        "Arsenal",
+        "Arsenal FC"
+      ],
+      "feedback": "Unbeaten champions: Arsenal. Context: Arsenal’s 2003/04 Premier League season only.",
+      "revision": 1
+    },
+    {
+      "id": "c0a31f45-50eb-50a7-8ee1-641e2b097969",
+      "key": "objective-competition-premier-invincibles-wins",
+      "factIDs": [
+        "defc01f8-66b7-598b-a967-e22d61af7e49"
+      ],
+      "prompt": "How many Premier League matches did Arsenal win in their unbeaten 2003/04 season?",
+      "answers": [
+        "26"
+      ],
+      "feedback": "League wins: 26. Context: Arsenal’s 38-match 2003/04 Premier League campaign.",
+      "revision": 1
+    },
+    {
+      "id": "8f5f4ba4-bef1-51b2-859e-98f80806d341",
+      "key": "objective-competition-premier-invincibles-draws",
+      "factIDs": [
+        "d757e989-8994-58ee-a70e-a65bfc8d767f"
+      ],
+      "prompt": "How many Premier League matches did Arsenal draw in 2003/04?",
+      "answers": [
+        "12"
+      ],
+      "feedback": "League draws: 12. Context: Arsenal’s 38-match 2003/04 Premier League campaign.",
+      "revision": 1
+    },
+    {
+      "id": "cb161f48-9670-5210-811d-3e7914438aa7",
+      "key": "objective-competition-premier-shearer-goals",
+      "factIDs": [
+        "5ebf21a5-0d21-5b30-981d-45d253165ea9"
+      ],
+      "prompt": "How many Premier League goals did Alan Shearer score in his completed career?",
+      "answers": [
+        "260"
+      ],
+      "feedback": "Shearer’s Premier League goals: 260. Context: Alan Shearer’s completed Premier League career, 1992–2006, at Blackburn and Newcastle; total stated in the 2021 Hall of Fame announcement.",
+      "revision": 1
+    },
+    {
+      "id": "928c0672-24d4-579d-9a45-13dd1bb79b29",
+      "key": "objective-competition-premier-henry-invincibles-goals",
+      "factIDs": [
+        "2cdcd0c8-d8ce-57b4-95ec-e6abd74175f1"
+      ],
+      "prompt": "How many Premier League goals did Thierry Henry score in Arsenal’s unbeaten 2003/04 season?",
+      "answers": [
+        "30"
+      ],
+      "feedback": "Henry’s 2003/04 league goals: 30. Context: Thierry Henry’s 2003/04 Premier League season at Arsenal; excludes other seasons and competitions.",
+      "revision": 1
+    },
+    {
+      "id": "4c109434-f466-59c5-ba59-8119b696a334",
+      "key": "objective-competition-premier-henry-boots",
+      "factIDs": [
+        "c3479cd1-af24-5fc7-9b99-0b4b9a3c689e"
+      ],
+      "prompt": "How many Premier League Golden Boots did Thierry Henry win?",
+      "answers": [
+        "4",
+        "four"
+      ],
+      "feedback": "Henry’s Golden Boots: 4. Context: Thierry Henry’s four Premier League Golden Boots, as recorded in his 2021 Hall of Fame induction announcement.",
+      "revision": 1
+    },
+    {
       "id": "6595c285-f2cb-5218-a371-60873ba1494c",
       "key": "objective-enrichment-catalog-raul-birth-city",
       "factIDs": [
@@ -12910,6 +13489,181 @@
         "eight"
       ],
       "feedback": "Schweinsteiger’s Bayern Bundesliga titles: 8. Context: Bastian Schweinsteiger's Bayern Munich career; domestic league titles.",
+      "revision": 1
+    },
+    {
+      "id": "1eb24afe-b8f8-58a3-8593-1dd50d0e47a0",
+      "key": "objective-enrichment-catalog-henry-career-previous-club",
+      "factIDs": [
+        "279a8f54-e751-5e81-8d49-2e11633f0667"
+      ],
+      "prompt": "Which club did Henry join Arsenal from in 1999?",
+      "answers": [
+        "Juventus",
+        "Juventus FC"
+      ],
+      "feedback": "Club before Arsenal: Juventus. Context: Henry's 1999 move to Arsenal; immediately previous club was Juventus.",
+      "revision": 1
+    },
+    {
+      "id": "6fed73e9-1277-54e2-9fa4-1ef0f4f84809",
+      "key": "objective-enrichment-catalog-henry-career-comeback-year",
+      "factIDs": [
+        "f30e9343-d717-5b01-be57-644f8227f046"
+      ],
+      "prompt": "In which year did Henry return to Arsenal on loan?",
+      "answers": [
+        "2012",
+        "two thousand twelve"
+      ],
+      "feedback": "Henry’s Arsenal loan return: 2012. Context: Henry's brief return to Arsenal on loan after leaving for Barcelona; calendar year 2012.",
+      "revision": 1
+    },
+    {
+      "id": "1b8c6d32-5b83-5f64-97da-ee7edaa9399a",
+      "key": "objective-enrichment-catalog-henry-career-world-cup-country",
+      "factIDs": [
+        "9a9126b2-1921-5859-8d20-66924e64d92f"
+      ],
+      "prompt": "Which country did Henry represent when he won the 1998 World Cup?",
+      "answers": [
+        "France"
+      ],
+      "feedback": "Henry’s 1998 World Cup team: France. Context: Thierry Henry's national-team honour at the 1998 FIFA World Cup; not an Arsenal club title.",
+      "revision": 1
+    },
+    {
+      "id": "c6d9f7ce-d81b-5d03-a4cc-411f8304988d",
+      "key": "objective-enrichment-catalog-henry-record-arsenal-appearances",
+      "factIDs": [
+        "84af32e0-c1f7-5e2d-95b8-941e68586c22"
+      ],
+      "prompt": "How many total appearances did Henry make for Arsenal across all competitions and both spells?",
+      "answers": [
+        "377",
+        "three hundred seventy-seven",
+        "three hundred and seventy-seven"
+      ],
+      "feedback": "Whole-career Arsenal appearances: 377. Context: Thierry Henry's complete Arsenal career including the 2012 loan return; all competitions; club-published career total.",
+      "revision": 1
+    },
+    {
+      "id": "5a73f5a1-41fb-5ce5-80b8-0ee36b1c6924",
+      "key": "objective-enrichment-catalog-henry-record-arsenal-goals",
+      "factIDs": [
+        "e13a8083-f814-54bf-9346-e5392b90824b"
+      ],
+      "prompt": "How many goals did Henry score for Arsenal across all competitions and both spells?",
+      "answers": [
+        "228",
+        "two hundred twenty-eight",
+        "two hundred and twenty-eight"
+      ],
+      "feedback": "Whole-career Arsenal goals: 228. Context: Thierry Henry's complete Arsenal career including the 2012 loan return; all competitions; club-published career total.",
+      "revision": 1
+    },
+    {
+      "id": "8e3c6fd1-f47f-5548-9bdd-7653b974ea21",
+      "key": "objective-enrichment-catalog-henry-record-premier-league-goals",
+      "factIDs": [
+        "fe6aa27f-9e22-51aa-9dc2-e7169be90127"
+      ],
+      "prompt": "How many Premier League goals did Henry score for Arsenal across his league career?",
+      "answers": [
+        "175",
+        "one hundred seventy-five",
+        "one hundred and seventy-five"
+      ],
+      "feedback": "Premier League goals for Arsenal: 175. Context: Premier League-only Arsenal total, including the 2012 loan return; distinct from Henry's all-competition Arsenal goals.",
+      "revision": 1
+    },
+    {
+      "id": "80c12ac7-5f51-5789-9929-1713d6fd1deb",
+      "key": "objective-enrichment-catalog-bergkamp-career-previous-club",
+      "factIDs": [
+        "649229a2-4e6b-5aa9-88b6-3a2223fca57e"
+      ],
+      "prompt": "Which club did Bergkamp join Arsenal from?",
+      "answers": [
+        "Inter",
+        "Inter Milan"
+      ],
+      "feedback": "Club before Arsenal: Inter. Context: Dennis Bergkamp's 1995 transfer to Arsenal; immediately previous club was Inter Milan.",
+      "revision": 1
+    },
+    {
+      "id": "1dc398aa-b3ca-5274-8f72-2c6994e3900a",
+      "key": "objective-enrichment-catalog-bergkamp-career-nationality",
+      "factIDs": [
+        "e2e95e67-ec1a-5aac-a882-8262d9fae594"
+      ],
+      "prompt": "Which country was Bergkamp’s national-team country?",
+      "answers": [
+        "Netherlands",
+        "The Netherlands",
+        "Dutch"
+      ],
+      "feedback": "Bergkamp’s national identity: Netherlands. Context: Dennis Bergkamp's nationality; Netherlands national-team identity, separate from Arsenal club career.",
+      "revision": 1
+    },
+    {
+      "id": "4e4eb00c-30da-5fc9-b08d-7c5f5cf98a6a",
+      "key": "objective-enrichment-catalog-bergkamp-career-retirement-season",
+      "factIDs": [
+        "75a1fcfd-85f2-53a7-8bbc-a9b1e4c866e2"
+      ],
+      "prompt": "At the end of which campaign did Bergkamp retire?",
+      "answers": [
+        "2005/06",
+        "2005–06",
+        "2005-06"
+      ],
+      "feedback": "Bergkamp’s final season: 2005/06. Context: Dennis Bergkamp's retirement at the end of Arsenal's 2005/06 campaign.",
+      "revision": 1
+    },
+    {
+      "id": "25c9f71c-ba62-5845-aa3d-613f74dbc875",
+      "key": "objective-enrichment-catalog-bergkamp-record-arsenal-appearances",
+      "factIDs": [
+        "23d86ea1-a51f-5a04-8200-0d9411aa0366"
+      ],
+      "prompt": "How many total appearances did Bergkamp make for Arsenal across all competitions?",
+      "answers": [
+        "423",
+        "four hundred twenty-three",
+        "four hundred and twenty-three"
+      ],
+      "feedback": "Whole-career Arsenal appearances: 423. Context: Dennis Bergkamp's complete Arsenal career, 1995–2006; all competitions.",
+      "revision": 1
+    },
+    {
+      "id": "9818ef17-4ad5-547b-8b1b-9ea1fb57077c",
+      "key": "objective-enrichment-catalog-bergkamp-record-arsenal-goals",
+      "factIDs": [
+        "efedea7c-410c-5130-aae0-9d4259589b70"
+      ],
+      "prompt": "How many goals did Bergkamp score for Arsenal across all competitions?",
+      "answers": [
+        "120",
+        "one hundred twenty",
+        "one hundred and twenty"
+      ],
+      "feedback": "Whole-career Arsenal goals: 120. Context: Dennis Bergkamp's complete Arsenal career, 1995–2006; all competitions.",
+      "revision": 1
+    },
+    {
+      "id": "a3acdaaf-7222-531a-8d74-bfa9345baeaf",
+      "key": "objective-enrichment-catalog-bergkamp-record-premier-league-goals",
+      "factIDs": [
+        "ed885c14-0bc9-5c1f-8c1d-e5e607d9e1fe"
+      ],
+      "prompt": "How many Premier League goals did Bergkamp score?",
+      "answers": [
+        "87",
+        "eighty-seven",
+        "eighty seven"
+      ],
+      "feedback": "Premier League goals for Arsenal: 87. Context: Dennis Bergkamp's Premier League career; league-only total for Arsenal, distinct from all-competition Arsenal goals.",
       "revision": 1
     }
   ],
@@ -14227,6 +14981,44 @@
       ]
     },
     {
+      "id": "dfee5ba7-8815-5b54-9814-b9f80ae0064b",
+      "key": "roadmap-competition-premier-league",
+      "subjectID": "836127db-6f83-5014-beaf-0fefededb2ce",
+      "summary": "League origins, Arsenal’s unbeaten 2003/04 season, and the first Hall of Fame goalscorers. Three foundation lessons; shared Arsenal history is optional.",
+      "chapters": [
+        {
+          "key": "lesson-competition-premier-league-origins-chapter",
+          "title": "League origins",
+          "lessonIDs": [
+            "e556fe59-f6ff-555f-b491-7892fa9d1fe6"
+          ]
+        },
+        {
+          "key": "lesson-competition-premier-league-invincibles-chapter",
+          "title": "A defining season",
+          "lessonIDs": [
+            "34d8dd37-f26a-51cd-860a-676c49f706a8"
+          ]
+        },
+        {
+          "key": "lesson-competition-premier-league-goalscorers-chapter",
+          "title": "Key players and records",
+          "lessonIDs": [
+            "764c9599-2d90-55f9-ac01-90f7b3374423"
+          ]
+        },
+        {
+          "key": "competition-premier-league-club-context",
+          "title": "A connected club story",
+          "lessonIDs": [
+            "fe1c3f01-7021-5fb9-a1d5-e78e08eb255b"
+          ],
+          "isOptional": true,
+          "note": "Shared club context. These facts are optional and do not count toward competition foundations."
+        }
+      ]
+    },
+    {
       "id": "b53fec3f-3a95-5d52-8dd6-4a813cb74fd5",
       "key": "roadmap-player-raul",
       "subjectID": "4e69fd40-4a9e-5e10-9519-bdedf329fc5a",
@@ -14606,6 +15398,70 @@
           "note": "Optional club history; these lessons do not add player-specific career claims.",
           "lessonIDs": [
             "1b2d33e3-761a-5c64-9d27-f2fb6898058e"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "f647902e-d5ea-5faf-b0ec-14d6e61643a1",
+      "key": "roadmap-player-thierry-henry",
+      "subjectID": "0fee3ca7-d6fd-55ec-8791-2b7d89786068",
+      "clubID": "6e24f189-8ba1-510a-931c-041107f61723",
+      "summary": "Six sourced career and club-record memories, plus optional club history.",
+      "chapters": [
+        {
+          "key": "roadmap-player-thierry-henry-career",
+          "title": "Career connections",
+          "lessonIDs": [
+            "f598b60e-60d8-5bec-b821-865526354ea1"
+          ]
+        },
+        {
+          "key": "roadmap-player-thierry-henry-record",
+          "title": "Club record",
+          "lessonIDs": [
+            "b1276fa9-98aa-55a4-883d-91462dc561bf"
+          ]
+        },
+        {
+          "key": "roadmap-player-thierry-henry-club-context",
+          "title": "Club context",
+          "isOptional": true,
+          "note": "Optional club history; these lessons do not add player-specific career claims.",
+          "lessonIDs": [
+            "fe1c3f01-7021-5fb9-a1d5-e78e08eb255b"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4824b9fe-5e4b-52ee-bbf4-247ff4cfee12",
+      "key": "roadmap-player-dennis-bergkamp",
+      "subjectID": "48fc2cd4-e278-5a1b-8e75-827169520b41",
+      "clubID": "6e24f189-8ba1-510a-931c-041107f61723",
+      "summary": "Six sourced career and club-record memories, plus optional club history.",
+      "chapters": [
+        {
+          "key": "roadmap-player-dennis-bergkamp-career",
+          "title": "Career connections",
+          "lessonIDs": [
+            "4094ab7c-6644-5ff7-a2b9-b8c0e6700b5d"
+          ]
+        },
+        {
+          "key": "roadmap-player-dennis-bergkamp-record",
+          "title": "Club record",
+          "lessonIDs": [
+            "606373bd-3acb-54e9-88b6-8f645320731f"
+          ]
+        },
+        {
+          "key": "roadmap-player-dennis-bergkamp-club-context",
+          "title": "Club context",
+          "isOptional": true,
+          "note": "Optional club history; these lessons do not add player-specific career claims.",
+          "lessonIDs": [
+            "fe1c3f01-7021-5fb9-a1d5-e78e08eb255b"
           ]
         }
       ]
@@ -17256,6 +18112,87 @@
       ]
     },
     {
+      "id": "e556fe59-f6ff-555f-b491-7892fa9d1fe6",
+      "key": "lesson-competition-premier-league-origins",
+      "title": "A new English league",
+      "subtitle": "The 1992 launch and its first champions",
+      "story": [
+        {
+          "title": "A new competition",
+          "body": "The Premier League was established in 1992. Its first campaign, 1992/93, began with 22 clubs; the later 20-club format should not be applied to that opening season."
+        },
+        {
+          "title": "The first champions",
+          "body": "Manchester United won the inaugural Premier League title. This starts a new competition’s history, rather than the whole history of English top-flight football."
+        }
+      ],
+      "objectiveIDs": [
+        "310769cf-db89-5671-a1d1-e69d983395a6",
+        "9260eb81-2c11-5340-b0d5-ede61b489769",
+        "95f585eb-1b0e-593f-96fd-6035c475b4af"
+      ],
+      "exerciseIDs": [
+        "8e2bac54-6994-5245-b6bc-fa34262a237e",
+        "063df2f4-55f8-5ae3-966b-be0a9b02056a",
+        "0461f188-43b1-5f87-8cb5-e92087492f68",
+        "56758693-e7f0-5b30-aaaa-b930819ca173"
+      ]
+    },
+    {
+      "id": "34d8dd37-f26a-51cd-860a-676c49f706a8",
+      "key": "lesson-competition-premier-league-invincibles",
+      "title": "An unbeaten league season",
+      "subtitle": "Arsenal’s 2003/04 league record",
+      "story": [
+        {
+          "title": "The Invincibles",
+          "body": "Arsenal completed the 2003/04 Premier League campaign without losing a league match. The claim applies to that league season, not every competition Arsenal played in."
+        },
+        {
+          "title": "Wins and draws",
+          "body": "Their 38 league games consisted of 26 wins and 12 draws. Those two totals tell the story of an unbeaten campaign; they are separate from Arsenal’s longer unbeaten run across seasons."
+        }
+      ],
+      "objectiveIDs": [
+        "1a17f308-e6bb-5a60-8cc0-91e4fe560cd5",
+        "c0a31f45-50eb-50a7-8ee1-641e2b097969",
+        "8f5f4ba4-bef1-51b2-859e-98f80806d341"
+      ],
+      "exerciseIDs": [
+        "ce884ffb-756a-5797-84e6-5c70d9e043ca",
+        "297ec796-8e39-5764-9cd4-637532a8549a",
+        "0d69bcb9-20f3-563f-9507-1854885df1c6",
+        "2b9a91a0-6a18-5f95-900d-dae2443a897d"
+      ]
+    },
+    {
+      "id": "764c9599-2d90-55f9-ac01-90f7b3374423",
+      "key": "lesson-competition-premier-league-goalscorers",
+      "title": "Two Hall of Fame goalscorers",
+      "subtitle": "Completed careers, league goals and scoring awards",
+      "story": [
+        {
+          "title": "Shearer’s league goals",
+          "body": "The league’s 2021 Hall of Fame announcement credited Alan Shearer with 260 Premier League goals across Blackburn Rovers and Newcastle United. That is a Premier League total, not a single-club or all-competitions total."
+        },
+        {
+          "title": "Henry’s Arsenal seasons",
+          "body": "Thierry Henry scored 30 Premier League goals in Arsenal’s unbeaten 2003/04 season. The league’s 2021 Hall of Fame announcement also credited him with four Premier League Golden Boots across his career. A single-season goal total and a career award count describe different achievements."
+        }
+      ],
+      "objectiveIDs": [
+        "cb161f48-9670-5210-811d-3e7914438aa7",
+        "928c0672-24d4-579d-9a45-13dd1bb79b29",
+        "4c109434-f466-59c5-ba59-8119b696a334"
+      ],
+      "exerciseIDs": [
+        "0c83e2c8-44ee-528b-9ea3-979a2a901e0b",
+        "63ca63bd-3df8-5de0-b1ba-3f43661d5848",
+        "041ad742-dbd7-56c2-b305-eb21c5feac9f",
+        "b04f0529-c009-5708-b7ac-756b24d9fb43"
+      ]
+    },
+    {
       "id": "e8de94fb-1d87-555b-bc33-46c9a31dad90",
       "key": "lesson-catalog-raul-career",
       "title": "Raúl · career connections",
@@ -17901,6 +18838,114 @@
         "c462189c-c397-5c58-9114-ba283f591856",
         "59170cde-12bd-5b85-bf70-55497c2f57a0",
         "a001892b-be15-5256-af8b-bab89e2029a4"
+      ]
+    },
+    {
+      "id": "f598b60e-60d8-5bec-b821-865526354ea1",
+      "key": "lesson-catalog-henry-career",
+      "title": "Thierry Henry · career connections",
+      "subtitle": "A move from Italy, a return to Arsenal and a national-team triumph",
+      "story": [
+        {
+          "title": "A new role in north London",
+          "body": "Arsenal brought Henry from Juventus in 1999. He had played mainly as a winger in Italy; Arsène Wenger reshaped him into a striker, and his Arsenal career took off."
+        },
+        {
+          "title": "A return and an international memory",
+          "body": "After leaving for Barcelona, Henry returned to Arsenal on loan in 2012. Before that club chapter, he had won the 1998 World Cup with France. The comeback and the World Cup belong to separate parts of his career."
+        }
+      ],
+      "objectiveIDs": [
+        "1eb24afe-b8f8-58a3-8593-1dd50d0e47a0",
+        "6fed73e9-1277-54e2-9fa4-1ef0f4f84809",
+        "1b8c6d32-5b83-5f64-97da-ee7edaa9399a"
+      ],
+      "exerciseIDs": [
+        "3f641480-9f9b-56ae-91a0-7b8a7453fb82",
+        "521b2c1a-4c43-53a3-8294-5b9c9ad24600",
+        "c778661f-d570-5683-aa42-32cdea277f3c",
+        "701b11ff-8a86-5cfa-81d7-8d76dbbf90af"
+      ]
+    },
+    {
+      "id": "b1276fa9-98aa-55a4-883d-91462dc561bf",
+      "key": "lesson-catalog-henry-record",
+      "title": "Thierry Henry · Arsenal record",
+      "subtitle": "Whole-club totals alongside Premier League-only numbers",
+      "story": [
+        {
+          "title": "His complete Arsenal record",
+          "body": "Across his two Arsenal spells, Henry finished with 377 appearances and 228 goals in all competitions. These are whole-club totals, including the 2012 return, rather than Premier League-only counts."
+        },
+        {
+          "title": "The league-only view",
+          "body": "The Premier League records 258 Arsenal appearances and 175 goals for Henry. The Premier League totals cover league matches only; the larger 377 appearance and 228 goal totals cover all competitions across his Arsenal career."
+        }
+      ],
+      "objectiveIDs": [
+        "c6d9f7ce-d81b-5d03-a4cc-411f8304988d",
+        "5a73f5a1-41fb-5ce5-80b8-0ee36b1c6924",
+        "8e3c6fd1-f47f-5548-9bdd-7653b974ea21"
+      ],
+      "exerciseIDs": [
+        "82013302-c224-53b0-b0fb-2d19a96804cb",
+        "dcc631d0-bcc2-5548-a519-3aec836e94fe",
+        "b2b19837-769d-5295-8f6d-16658941d3a9",
+        "f3c9766d-905e-5d0e-bd7e-dfbea00acd12"
+      ]
+    },
+    {
+      "id": "4094ab7c-6644-5ff7-a2b9-b8c0e6700b5d",
+      "key": "lesson-catalog-bergkamp-career",
+      "title": "Dennis Bergkamp · career connections",
+      "subtitle": "From Inter to an 11-year Arsenal chapter",
+      "story": [
+        {
+          "title": "Arriving from Italy",
+          "body": "Bergkamp joined Arsenal from Inter Milan in 1995. He was a Dutch forward, and his arrival helped usher in a more technical style at Highbury."
+        },
+        {
+          "title": "A long stay at Arsenal",
+          "body": "Bergkamp remained with Arsenal until the end of the 2005/06 campaign, when he retired. His final season closed an 11-year club chapter that began with his move from Inter."
+        }
+      ],
+      "objectiveIDs": [
+        "80c12ac7-5f51-5789-9929-1713d6fd1deb",
+        "1dc398aa-b3ca-5274-8f72-2c6994e3900a",
+        "4e4eb00c-30da-5fc9-b08d-7c5f5cf98a6a"
+      ],
+      "exerciseIDs": [
+        "10ac4b83-372d-50be-9ece-915b513a391d",
+        "36d154b2-e06a-5cfb-96ef-b38693f8dd44",
+        "6a151603-2039-525f-a868-6c6df1124c86",
+        "436e64e2-ab5c-504b-9283-83e25ac7a524"
+      ]
+    },
+    {
+      "id": "606373bd-3acb-54e9-88b6-8f645320731f",
+      "key": "lesson-catalog-bergkamp-record",
+      "title": "Dennis Bergkamp · Arsenal record",
+      "subtitle": "All-competition totals and Premier League-only output",
+      "story": [
+        {
+          "title": "The full Arsenal totals",
+          "body": "Arsenal credits Bergkamp with 423 appearances and 120 goals across his complete club career. Those are all-competition Arsenal totals, not a count of Premier League matches alone."
+        },
+        {
+          "title": "Premier League numbers",
+          "body": "In the Premier League, Bergkamp made 315 appearances and scored 87 goals. The league-only total is a subset of the broader Arsenal record; keeping the competition label attached prevents the counts from being confused."
+        }
+      ],
+      "objectiveIDs": [
+        "25c9f71c-ba62-5845-aa3d-613f74dbc875",
+        "9818ef17-4ad5-547b-8b1b-9ea1fb57077c",
+        "a3acdaaf-7222-531a-8d74-bfa9345baeaf"
+      ],
+      "exerciseIDs": [
+        "d8083d52-ee0f-5fa0-9614-1f9e10e673c4",
+        "5874efaa-70e4-5c87-ab14-cff7799584dd",
+        "27d4bc3d-0d4f-5df8-8430-ecb653bcdf13",
+        "926d53da-c328-550d-8875-d91c4da3ca0c"
       ]
     }
   ],
@@ -35236,6 +36281,414 @@
       "pairs": []
     },
     {
+      "id": "8e2bac54-6994-5245-b6bc-fa34262a237e",
+      "key": "exercise-competition-premier-league-origins-choice-0",
+      "kind": "choice",
+      "objectiveIDs": [
+        "310769cf-db89-5671-a1d1-e69d983395a6"
+      ],
+      "prompt": "In which year was the Premier League established?",
+      "feedback": "League established: 1992. Context: Premier League established as a limited company on 27 May 1992.",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "1992"
+        },
+        {
+          "id": "choice-1",
+          "text": "1888"
+        },
+        {
+          "id": "choice-2",
+          "text": "1963"
+        },
+        {
+          "id": "choice-3",
+          "text": "1991"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "063df2f4-55f8-5ae3-966b-be0a9b02056a",
+      "key": "exercise-competition-premier-league-origins-choice-1",
+      "kind": "choice",
+      "objectiveIDs": [
+        "9260eb81-2c11-5340-b0d5-ede61b489769"
+      ],
+      "prompt": "How many clubs played in the first Premier League campaign, 1992/93?",
+      "feedback": "Inaugural clubs: 22. Context: Premier League 1992/93 inaugural campaign; before the later reduction to 20 clubs.",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "22"
+        },
+        {
+          "id": "choice-1",
+          "text": "20"
+        },
+        {
+          "id": "choice-2",
+          "text": "18"
+        },
+        {
+          "id": "choice-3",
+          "text": "24"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "0461f188-43b1-5f87-8cb5-e92087492f68",
+      "key": "exercise-competition-premier-league-origins-choice-2",
+      "kind": "choice",
+      "objectiveIDs": [
+        "95f585eb-1b0e-593f-96fd-6035c475b4af"
+      ],
+      "prompt": "Which club won the inaugural Premier League title in 1992/93?",
+      "feedback": "First champions: Man United. Context: Premier League 1992/93 title; not the preceding First Division season.",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "Man United"
+        },
+        {
+          "id": "choice-1",
+          "text": "Arsenal"
+        },
+        {
+          "id": "choice-2",
+          "text": "Liverpool"
+        },
+        {
+          "id": "choice-3",
+          "text": "Man City"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "56758693-e7f0-5b30-aaaa-b930819ca173",
+      "key": "exercise-competition-premier-league-origins-choice-3",
+      "kind": "choice",
+      "objectiveIDs": [
+        "310769cf-db89-5671-a1d1-e69d983395a6"
+      ],
+      "prompt": "In which year was the Premier League established?",
+      "feedback": "League established: 1992. Context: Premier League established as a limited company on 27 May 1992.",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "1992"
+        },
+        {
+          "id": "choice-1",
+          "text": "1888"
+        },
+        {
+          "id": "choice-2",
+          "text": "1963"
+        },
+        {
+          "id": "choice-3",
+          "text": "1991"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "ce884ffb-756a-5797-84e6-5c70d9e043ca",
+      "key": "exercise-competition-premier-league-invincibles-choice-0",
+      "kind": "choice",
+      "objectiveIDs": [
+        "1a17f308-e6bb-5a60-8cc0-91e4fe560cd5"
+      ],
+      "prompt": "Which club went unbeaten through the entire 2003/04 Premier League season?",
+      "feedback": "Unbeaten champions: Arsenal. Context: Arsenal’s 2003/04 Premier League season only.",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "Arsenal"
+        },
+        {
+          "id": "choice-1",
+          "text": "Man United"
+        },
+        {
+          "id": "choice-2",
+          "text": "Liverpool"
+        },
+        {
+          "id": "choice-3",
+          "text": "Man City"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "297ec796-8e39-5764-9cd4-637532a8549a",
+      "key": "exercise-competition-premier-league-invincibles-choice-1",
+      "kind": "choice",
+      "objectiveIDs": [
+        "c0a31f45-50eb-50a7-8ee1-641e2b097969"
+      ],
+      "prompt": "How many Premier League matches did Arsenal win in their unbeaten 2003/04 season?",
+      "feedback": "League wins: 26. Context: Arsenal’s 38-match 2003/04 Premier League campaign.",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "26"
+        },
+        {
+          "id": "choice-1",
+          "text": "30"
+        },
+        {
+          "id": "choice-2",
+          "text": "22"
+        },
+        {
+          "id": "choice-3",
+          "text": "38"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "0d69bcb9-20f3-563f-9507-1854885df1c6",
+      "key": "exercise-competition-premier-league-invincibles-choice-2",
+      "kind": "choice",
+      "objectiveIDs": [
+        "8f5f4ba4-bef1-51b2-859e-98f80806d341"
+      ],
+      "prompt": "How many Premier League matches did Arsenal draw in 2003/04?",
+      "feedback": "League draws: 12. Context: Arsenal’s 38-match 2003/04 Premier League campaign.",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "12"
+        },
+        {
+          "id": "choice-1",
+          "text": "8"
+        },
+        {
+          "id": "choice-2",
+          "text": "10"
+        },
+        {
+          "id": "choice-3",
+          "text": "14"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "2b9a91a0-6a18-5f95-900d-dae2443a897d",
+      "key": "exercise-competition-premier-league-invincibles-choice-3",
+      "kind": "choice",
+      "objectiveIDs": [
+        "1a17f308-e6bb-5a60-8cc0-91e4fe560cd5"
+      ],
+      "prompt": "Which club went unbeaten through the entire 2003/04 Premier League season?",
+      "feedback": "Unbeaten champions: Arsenal. Context: Arsenal’s 2003/04 Premier League season only.",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "Arsenal"
+        },
+        {
+          "id": "choice-1",
+          "text": "Man United"
+        },
+        {
+          "id": "choice-2",
+          "text": "Liverpool"
+        },
+        {
+          "id": "choice-3",
+          "text": "Man City"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "0c83e2c8-44ee-528b-9ea3-979a2a901e0b",
+      "key": "exercise-competition-premier-league-goalscorers-choice-0",
+      "kind": "choice",
+      "objectiveIDs": [
+        "cb161f48-9670-5210-811d-3e7914438aa7"
+      ],
+      "prompt": "How many Premier League goals did Alan Shearer score in his completed career?",
+      "feedback": "Shearer’s Premier League goals: 260. Context: Alan Shearer’s completed Premier League career, 1992–2006, at Blackburn and Newcastle; total stated in the 2021 Hall of Fame announcement.",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "260"
+        },
+        {
+          "id": "choice-1",
+          "text": "175"
+        },
+        {
+          "id": "choice-2",
+          "text": "228"
+        },
+        {
+          "id": "choice-3",
+          "text": "148"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "63ca63bd-3df8-5de0-b1ba-3f43661d5848",
+      "key": "exercise-competition-premier-league-goalscorers-choice-1",
+      "kind": "choice",
+      "objectiveIDs": [
+        "928c0672-24d4-579d-9a45-13dd1bb79b29"
+      ],
+      "prompt": "How many Premier League goals did Thierry Henry score in Arsenal’s unbeaten 2003/04 season?",
+      "feedback": "Henry’s 2003/04 league goals: 30. Context: Thierry Henry’s 2003/04 Premier League season at Arsenal; excludes other seasons and competitions.",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "30"
+        },
+        {
+          "id": "choice-1",
+          "text": "26"
+        },
+        {
+          "id": "choice-2",
+          "text": "22"
+        },
+        {
+          "id": "choice-3",
+          "text": "38"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "041ad742-dbd7-56c2-b305-eb21c5feac9f",
+      "key": "exercise-competition-premier-league-goalscorers-choice-2",
+      "kind": "choice",
+      "objectiveIDs": [
+        "4c109434-f466-59c5-ba59-8119b696a334"
+      ],
+      "prompt": "How many Premier League Golden Boots did Thierry Henry win?",
+      "feedback": "Henry’s Golden Boots: 4. Context: Thierry Henry’s four Premier League Golden Boots, as recorded in his 2021 Hall of Fame induction announcement.",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "4"
+        },
+        {
+          "id": "choice-1",
+          "text": "2"
+        },
+        {
+          "id": "choice-2",
+          "text": "3"
+        },
+        {
+          "id": "choice-3",
+          "text": "5"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "b04f0529-c009-5708-b7ac-756b24d9fb43",
+      "key": "exercise-competition-premier-league-goalscorers-choice-3",
+      "kind": "choice",
+      "objectiveIDs": [
+        "cb161f48-9670-5210-811d-3e7914438aa7"
+      ],
+      "prompt": "How many Premier League goals did Alan Shearer score in his completed career?",
+      "feedback": "Shearer’s Premier League goals: 260. Context: Alan Shearer’s completed Premier League career, 1992–2006, at Blackburn and Newcastle; total stated in the 2021 Hall of Fame announcement.",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "260"
+        },
+        {
+          "id": "choice-1",
+          "text": "175"
+        },
+        {
+          "id": "choice-2",
+          "text": "228"
+        },
+        {
+          "id": "choice-3",
+          "text": "148"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
       "id": "185e7576-4d82-563c-8122-3d7a72e2a185",
       "key": "exercise-catalog-raul-career-choice-0",
       "kind": "choice",
@@ -38498,6 +39951,550 @@
       "left": [],
       "right": [],
       "pairs": []
+    },
+    {
+      "id": "3f641480-9f9b-56ae-91a0-7b8a7453fb82",
+      "key": "exercise-catalog-henry-career-choice-0",
+      "kind": "choice",
+      "objectiveIDs": [
+        "1eb24afe-b8f8-58a3-8593-1dd50d0e47a0"
+      ],
+      "prompt": "Which club did Henry join Arsenal from in 1999?",
+      "feedback": "Club before Arsenal: Juventus. Context: Henry's 1999 move to Arsenal; immediately previous club was Juventus.",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "Juventus"
+        },
+        {
+          "id": "choice-1",
+          "text": "Inter"
+        },
+        {
+          "id": "choice-2",
+          "text": "Barcelona"
+        },
+        {
+          "id": "choice-3",
+          "text": "Bayern Munich"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "521b2c1a-4c43-53a3-8294-5b9c9ad24600",
+      "key": "exercise-catalog-henry-career-choice-1",
+      "kind": "choice",
+      "objectiveIDs": [
+        "6fed73e9-1277-54e2-9fa4-1ef0f4f84809"
+      ],
+      "prompt": "In which year did Henry return to Arsenal on loan?",
+      "feedback": "Henry’s Arsenal loan return: 2012. Context: Henry's brief return to Arsenal on loan after leaving for Barcelona; calendar year 2012.",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "2012"
+        },
+        {
+          "id": "choice-1",
+          "text": "2009"
+        },
+        {
+          "id": "choice-2",
+          "text": "2011"
+        },
+        {
+          "id": "choice-3",
+          "text": "2013"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "c778661f-d570-5683-aa42-32cdea277f3c",
+      "key": "exercise-catalog-henry-career-choice-2",
+      "kind": "choice",
+      "objectiveIDs": [
+        "1b8c6d32-5b83-5f64-97da-ee7edaa9399a"
+      ],
+      "prompt": "Which country did Henry represent when he won the 1998 World Cup?",
+      "feedback": "Henry’s 1998 World Cup team: France. Context: Thierry Henry's national-team honour at the 1998 FIFA World Cup; not an Arsenal club title.",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "France"
+        },
+        {
+          "id": "choice-1",
+          "text": "Netherlands"
+        },
+        {
+          "id": "choice-2",
+          "text": "Brazil"
+        },
+        {
+          "id": "choice-3",
+          "text": "Italy"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "701b11ff-8a86-5cfa-81d7-8d76dbbf90af",
+      "key": "exercise-catalog-henry-career-choice-3",
+      "kind": "choice",
+      "objectiveIDs": [
+        "1eb24afe-b8f8-58a3-8593-1dd50d0e47a0"
+      ],
+      "prompt": "Which club did Henry join Arsenal from in 1999?",
+      "feedback": "Club before Arsenal: Juventus. Context: Henry's 1999 move to Arsenal; immediately previous club was Juventus.",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "Juventus"
+        },
+        {
+          "id": "choice-1",
+          "text": "Inter"
+        },
+        {
+          "id": "choice-2",
+          "text": "Barcelona"
+        },
+        {
+          "id": "choice-3",
+          "text": "Bayern Munich"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "82013302-c224-53b0-b0fb-2d19a96804cb",
+      "key": "exercise-catalog-henry-record-choice-0",
+      "kind": "choice",
+      "objectiveIDs": [
+        "c6d9f7ce-d81b-5d03-a4cc-411f8304988d"
+      ],
+      "prompt": "How many total appearances did Henry make for Arsenal across all competitions and both spells?",
+      "feedback": "Whole-career Arsenal appearances: 377. Context: Thierry Henry's complete Arsenal career including the 2012 loan return; all competitions; club-published career total.",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "377"
+        },
+        {
+          "id": "choice-1",
+          "text": "258"
+        },
+        {
+          "id": "choice-2",
+          "text": "423"
+        },
+        {
+          "id": "choice-3",
+          "text": "400"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "dcc631d0-bcc2-5548-a519-3aec836e94fe",
+      "key": "exercise-catalog-henry-record-choice-1",
+      "kind": "choice",
+      "objectiveIDs": [
+        "5a73f5a1-41fb-5ce5-80b8-0ee36b1c6924"
+      ],
+      "prompt": "How many goals did Henry score for Arsenal across all competitions and both spells?",
+      "feedback": "Whole-career Arsenal goals: 228. Context: Thierry Henry's complete Arsenal career including the 2012 loan return; all competitions; club-published career total.",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "228"
+        },
+        {
+          "id": "choice-1",
+          "text": "175"
+        },
+        {
+          "id": "choice-2",
+          "text": "226"
+        },
+        {
+          "id": "choice-3",
+          "text": "250"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "b2b19837-769d-5295-8f6d-16658941d3a9",
+      "key": "exercise-catalog-henry-record-choice-2",
+      "kind": "choice",
+      "objectiveIDs": [
+        "8e3c6fd1-f47f-5548-9bdd-7653b974ea21"
+      ],
+      "prompt": "How many Premier League goals did Henry score for Arsenal across his league career?",
+      "feedback": "Premier League goals for Arsenal: 175. Context: Premier League-only Arsenal total, including the 2012 loan return; distinct from Henry's all-competition Arsenal goals.",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "175"
+        },
+        {
+          "id": "choice-1",
+          "text": "174"
+        },
+        {
+          "id": "choice-2",
+          "text": "228"
+        },
+        {
+          "id": "choice-3",
+          "text": "258"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "f3c9766d-905e-5d0e-bd7e-dfbea00acd12",
+      "key": "exercise-catalog-henry-record-choice-3",
+      "kind": "choice",
+      "objectiveIDs": [
+        "c6d9f7ce-d81b-5d03-a4cc-411f8304988d"
+      ],
+      "prompt": "How many total appearances did Henry make for Arsenal across all competitions and both spells?",
+      "feedback": "Whole-career Arsenal appearances: 377. Context: Thierry Henry's complete Arsenal career including the 2012 loan return; all competitions; club-published career total.",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "377"
+        },
+        {
+          "id": "choice-1",
+          "text": "258"
+        },
+        {
+          "id": "choice-2",
+          "text": "423"
+        },
+        {
+          "id": "choice-3",
+          "text": "400"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "10ac4b83-372d-50be-9ece-915b513a391d",
+      "key": "exercise-catalog-bergkamp-career-choice-0",
+      "kind": "choice",
+      "objectiveIDs": [
+        "80c12ac7-5f51-5789-9929-1713d6fd1deb"
+      ],
+      "prompt": "Which club did Bergkamp join Arsenal from?",
+      "feedback": "Club before Arsenal: Inter. Context: Dennis Bergkamp's 1995 transfer to Arsenal; immediately previous club was Inter Milan.",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "Inter"
+        },
+        {
+          "id": "choice-1",
+          "text": "Juventus"
+        },
+        {
+          "id": "choice-2",
+          "text": "Barcelona"
+        },
+        {
+          "id": "choice-3",
+          "text": "Bayern Munich"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "36d154b2-e06a-5cfb-96ef-b38693f8dd44",
+      "key": "exercise-catalog-bergkamp-career-choice-1",
+      "kind": "choice",
+      "objectiveIDs": [
+        "1dc398aa-b3ca-5274-8f72-2c6994e3900a"
+      ],
+      "prompt": "Which country was Bergkamp’s national-team country?",
+      "feedback": "Bergkamp’s national identity: Netherlands. Context: Dennis Bergkamp's nationality; Netherlands national-team identity, separate from Arsenal club career.",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "Netherlands"
+        },
+        {
+          "id": "choice-1",
+          "text": "France"
+        },
+        {
+          "id": "choice-2",
+          "text": "Germany"
+        },
+        {
+          "id": "choice-3",
+          "text": "Italy"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "6a151603-2039-525f-a868-6c6df1124c86",
+      "key": "exercise-catalog-bergkamp-career-choice-2",
+      "kind": "choice",
+      "objectiveIDs": [
+        "4e4eb00c-30da-5fc9-b08d-7c5f5cf98a6a"
+      ],
+      "prompt": "At the end of which campaign did Bergkamp retire?",
+      "feedback": "Bergkamp’s final season: 2005/06. Context: Dennis Bergkamp's retirement at the end of Arsenal's 2005/06 campaign.",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "2005/06"
+        },
+        {
+          "id": "choice-1",
+          "text": "2003/04"
+        },
+        {
+          "id": "choice-2",
+          "text": "2004/05"
+        },
+        {
+          "id": "choice-3",
+          "text": "2006/07"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "436e64e2-ab5c-504b-9283-83e25ac7a524",
+      "key": "exercise-catalog-bergkamp-career-choice-3",
+      "kind": "choice",
+      "objectiveIDs": [
+        "80c12ac7-5f51-5789-9929-1713d6fd1deb"
+      ],
+      "prompt": "Which club did Bergkamp join Arsenal from?",
+      "feedback": "Club before Arsenal: Inter. Context: Dennis Bergkamp's 1995 transfer to Arsenal; immediately previous club was Inter Milan.",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "Inter"
+        },
+        {
+          "id": "choice-1",
+          "text": "Juventus"
+        },
+        {
+          "id": "choice-2",
+          "text": "Barcelona"
+        },
+        {
+          "id": "choice-3",
+          "text": "Bayern Munich"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "d8083d52-ee0f-5fa0-9614-1f9e10e673c4",
+      "key": "exercise-catalog-bergkamp-record-choice-0",
+      "kind": "choice",
+      "objectiveIDs": [
+        "25c9f71c-ba62-5845-aa3d-613f74dbc875"
+      ],
+      "prompt": "How many total appearances did Bergkamp make for Arsenal across all competitions?",
+      "feedback": "Whole-career Arsenal appearances: 423. Context: Dennis Bergkamp's complete Arsenal career, 1995–2006; all competitions.",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "423"
+        },
+        {
+          "id": "choice-1",
+          "text": "315"
+        },
+        {
+          "id": "choice-2",
+          "text": "377"
+        },
+        {
+          "id": "choice-3",
+          "text": "450"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "5874efaa-70e4-5c87-ab14-cff7799584dd",
+      "key": "exercise-catalog-bergkamp-record-choice-1",
+      "kind": "choice",
+      "objectiveIDs": [
+        "9818ef17-4ad5-547b-8b1b-9ea1fb57077c"
+      ],
+      "prompt": "How many goals did Bergkamp score for Arsenal across all competitions?",
+      "feedback": "Whole-career Arsenal goals: 120. Context: Dennis Bergkamp's complete Arsenal career, 1995–2006; all competitions.",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "120"
+        },
+        {
+          "id": "choice-1",
+          "text": "87"
+        },
+        {
+          "id": "choice-2",
+          "text": "94"
+        },
+        {
+          "id": "choice-3",
+          "text": "140"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "27d4bc3d-0d4f-5df8-8430-ecb653bcdf13",
+      "key": "exercise-catalog-bergkamp-record-choice-2",
+      "kind": "choice",
+      "objectiveIDs": [
+        "a3acdaaf-7222-531a-8d74-bfa9345baeaf"
+      ],
+      "prompt": "How many Premier League goals did Bergkamp score?",
+      "feedback": "Premier League goals for Arsenal: 87. Context: Dennis Bergkamp's Premier League career; league-only total for Arsenal, distinct from all-competition Arsenal goals.",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "87"
+        },
+        {
+          "id": "choice-1",
+          "text": "94"
+        },
+        {
+          "id": "choice-2",
+          "text": "120"
+        },
+        {
+          "id": "choice-3",
+          "text": "315"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "926d53da-c328-550d-8875-d91c4da3ca0c",
+      "key": "exercise-catalog-bergkamp-record-choice-3",
+      "kind": "choice",
+      "objectiveIDs": [
+        "25c9f71c-ba62-5845-aa3d-613f74dbc875"
+      ],
+      "prompt": "How many total appearances did Bergkamp make for Arsenal across all competitions?",
+      "feedback": "Whole-career Arsenal appearances: 423. Context: Dennis Bergkamp's complete Arsenal career, 1995–2006; all competitions.",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "423"
+        },
+        {
+          "id": "choice-1",
+          "text": "315"
+        },
+        {
+          "id": "choice-2",
+          "text": "377"
+        },
+        {
+          "id": "choice-3",
+          "text": "450"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
     }
   ],
   "cards": [
@@ -39729,6 +41726,29 @@
       "caption": "Mexico’s championship stories"
     },
     {
+      "id": "70a46726-b780-502e-887d-7da4c6f59271",
+      "key": "card-competition-premier-league",
+      "entityID": "836127db-6f83-5014-beaf-0fefededb2ce",
+      "objectiveIDs": [
+        "310769cf-db89-5671-a1d1-e69d983395a6",
+        "9260eb81-2c11-5340-b0d5-ede61b489769",
+        "95f585eb-1b0e-593f-96fd-6035c475b4af",
+        "1a17f308-e6bb-5a60-8cc0-91e4fe560cd5",
+        "c0a31f45-50eb-50a7-8ee1-641e2b097969",
+        "8f5f4ba4-bef1-51b2-859e-98f80806d341",
+        "cb161f48-9670-5210-811d-3e7914438aa7",
+        "928c0672-24d4-579d-9a45-13dd1bb79b29",
+        "4c109434-f466-59c5-ba59-8119b696a334"
+      ],
+      "lessonIDs": [
+        "e556fe59-f6ff-555f-b491-7892fa9d1fe6",
+        "34d8dd37-f26a-51cd-860a-676c49f706a8",
+        "764c9599-2d90-55f9-ac01-90f7b3374423"
+      ],
+      "knowledgeVersion": 1,
+      "caption": "English league stories and records"
+    },
+    {
       "id": "c9e39d70-49b5-5707-92db-f2cb72b8e326",
       "key": "card-raul",
       "entityID": "4e69fd40-4a9e-5e10-9519-bdedf329fc5a",
@@ -39952,6 +41972,44 @@
       "lessonIDs": [
         "e1016ff1-0161-5130-bb45-ecdcd8a14d3d",
         "b0ea6fec-ed37-50fd-942b-f0f96a39076c"
+      ],
+      "knowledgeVersion": 1,
+      "caption": "Career connections and club records"
+    },
+    {
+      "id": "ad041db8-b8ce-5822-a64b-9e74f7f98598",
+      "key": "card-thierry-henry",
+      "entityID": "0fee3ca7-d6fd-55ec-8791-2b7d89786068",
+      "objectiveIDs": [
+        "1eb24afe-b8f8-58a3-8593-1dd50d0e47a0",
+        "6fed73e9-1277-54e2-9fa4-1ef0f4f84809",
+        "1b8c6d32-5b83-5f64-97da-ee7edaa9399a",
+        "c6d9f7ce-d81b-5d03-a4cc-411f8304988d",
+        "5a73f5a1-41fb-5ce5-80b8-0ee36b1c6924",
+        "8e3c6fd1-f47f-5548-9bdd-7653b974ea21"
+      ],
+      "lessonIDs": [
+        "f598b60e-60d8-5bec-b821-865526354ea1",
+        "b1276fa9-98aa-55a4-883d-91462dc561bf"
+      ],
+      "knowledgeVersion": 1,
+      "caption": "Career connections and club records"
+    },
+    {
+      "id": "a031b98e-3140-590f-b609-5f92af777cad",
+      "key": "card-dennis-bergkamp",
+      "entityID": "48fc2cd4-e278-5a1b-8e75-827169520b41",
+      "objectiveIDs": [
+        "80c12ac7-5f51-5789-9929-1713d6fd1deb",
+        "1dc398aa-b3ca-5274-8f72-2c6994e3900a",
+        "4e4eb00c-30da-5fc9-b08d-7c5f5cf98a6a",
+        "25c9f71c-ba62-5845-aa3d-613f74dbc875",
+        "9818ef17-4ad5-547b-8b1b-9ea1fb57077c",
+        "a3acdaaf-7222-531a-8d74-bfa9345baeaf"
+      ],
+      "lessonIDs": [
+        "4094ab7c-6644-5ff7-a2b9-b8c0e6700b5d",
+        "606373bd-3acb-54e9-88b6-8f645320731f"
       ],
       "knowledgeVersion": 1,
       "caption": "Career connections and club records"
@@ -40264,6 +42322,32 @@
       "scope": "Bastian Schweinsteiger's Bayern Munich career; competitive club appearances",
       "factIDs": [
         "f88c5bcd-1c2f-5233-bbd7-df54a12de442"
+      ]
+    },
+    {
+      "id": "cef8e015-0794-516c-873c-6972fbdba735",
+      "key": "relationship-catalog-thierry-henry-club-record",
+      "subjectID": "0fee3ca7-d6fd-55ec-8791-2b7d89786068",
+      "objectID": "6e24f189-8ba1-510a-931c-041107f61723",
+      "group": "history",
+      "label": "Played for",
+      "claim": "Thierry Henry recorded 377 appearances for Arsenal.",
+      "scope": "Thierry Henry's complete Arsenal career including the 2012 loan return; all competitions; club-published career total",
+      "factIDs": [
+        "84af32e0-c1f7-5e2d-95b8-941e68586c22"
+      ]
+    },
+    {
+      "id": "6de07b5f-e862-576e-af58-52bebc50728c",
+      "key": "relationship-catalog-dennis-bergkamp-club-record",
+      "subjectID": "48fc2cd4-e278-5a1b-8e75-827169520b41",
+      "objectID": "6e24f189-8ba1-510a-931c-041107f61723",
+      "group": "history",
+      "label": "Played for",
+      "claim": "Dennis Bergkamp recorded 423 appearances for Arsenal.",
+      "scope": "Dennis Bergkamp's complete Arsenal career, 1995–2006; all competitions",
+      "factIDs": [
+        "23d86ea1-a51f-5a04-8200-0d9411aa0366"
       ]
     }
   ]

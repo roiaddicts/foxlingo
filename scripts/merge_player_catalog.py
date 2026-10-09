@@ -9,6 +9,16 @@ def compile_catalog(pack):
     data=json.loads((ROOT/'content/player-catalog.json').read_text())
     games=json.loads((ROOT/'Foxlingo/Resources/games-en.json').read_text())
     seeds={p['id']:p for p in games['players']}
+    # Country answers can precede the later text-to-country promotion pass.
+    # Resolve them from the explicit artwork registry, preserving stable IDs.
+    flags=json.loads((ROOT/'content/country-artwork.json').read_text())
+    for lesson in data['lessons']:
+        for fact in lesson['facts']:
+            value=fact['value']; key=value.get('entityKey','')
+            if not key.startswith('entity-country-') or any(e['key']==key for e in pack['entities']):
+                continue
+            name=value['display']; artwork=flags[name.lower()]
+            pack['entities'].append(dict(id=uid(key),key=key,type='country',name=name,aliases=[],visual=name[:2].upper(),externalRefs={},**artwork))
     for player in data['players']:
         key=player['key']; seed=seeds[player['seedID']]
         if seed['name'] != player['seedName']:
