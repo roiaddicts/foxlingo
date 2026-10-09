@@ -546,6 +546,23 @@ final class FlowTests: XCTestCase {
         tap("mystery-next");XCTAssertFalse(app.staticTexts["mystery-identity"].exists)
     }
 
+    func testExpandedClassicSquadUsesSelectedClub() {
+        start();tap("choose-XT");app.tabBars.buttons["Games"].tap();tap("game-lineup")
+        tap("lineup-squad")
+        let ajax=app.buttons["Ajax 18/19"]
+        XCTAssertTrue(ajax.waitForExistence(timeout:5));ajax.tap()
+        XCTAssertTrue(app.staticTexts["Ajax"].exists)
+        XCTAssertFalse(app.staticTexts["Real Madrid"].exists)
+        tap("game-cell-0")
+        let context=app.descendants(matching:.any)["game-lineup-context"].firstMatch
+        XCTAssertTrue(context.waitForExistence(timeout:5))
+        XCTAssertTrue(context.label.contains("Ajax"))
+        XCTAssertFalse(context.label.contains("Real Madrid"))
+        app.buttons["Cancel"].tap()
+        for _ in 0..<11 {tap("game-hint")}
+        XCTAssertTrue(app.staticTexts["game-complete"].exists)
+        let image=XCTAttachment(screenshot:app.screenshot());image.name="Ajax historical squad";image.lifetime = .keepAlways;add(image)
+    }
     func testThreeGamesAndFreeTextIdentitySelection() {
         start();tap("choose-XT");app.tabBars.buttons["Games"].tap()
         tap("game-grid");tap("game-cell-0")

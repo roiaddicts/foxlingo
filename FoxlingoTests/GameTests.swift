@@ -7,9 +7,19 @@ final class GameTests: XCTestCase {
         let root=URL(fileURLWithPath:#filePath).deletingLastPathComponent().deletingLastPathComponent()
         games=try GamePack.load(Data(contentsOf:root.appendingPathComponent("Foxlingo/Resources/games-en.json")))
     }
+    func testExpandedSeasonSquadsAndFormationRows() {
+        XCTAssertEqual(games.lineups.count,98)
+        XCTAssertEqual(games.lineups.prefix(4).map(\.id),["lineup-35","lineup-36","lineup-37","lineup-38"])
+        XCTAssertTrue(games.lineups.contains {$0.clubName == "Everton"})
+        XCTAssertEqual(games.lineups.filter {$0.rows != nil}.count,3)
+        for squad in games.lineups {
+            XCTAssertNotNil(squad.imageURL)
+            if let rows=squad.rows {XCTAssertEqual(rows.flatMap {$0}.sorted(),Array(0..<11))}
+        }
+    }
     func testSeedNamespacesAndPortraits() {
         XCTAssertEqual(games.player("player-53")?.name,"Iker Casillas")
-        XCTAssertEqual(games.player("classic-player-53")?.name,nil)
+        XCTAssertNotEqual(games.player("classic-player-53")?.name,"Iker Casillas")
         XCTAssertEqual(games.player("classic-player-77")?.name,"Iker Casillas")
         XCTAssertEqual(games.player("classic-player-77")?.imageAsset,"seed-player-53")
     }

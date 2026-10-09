@@ -75,7 +75,7 @@ final class LearningTests: XCTestCase {
         XCTAssertNotNil(AnswerArtwork.entity("Monterrey",type:"club",pack:pack))
         XCTAssertEqual(AnswerArtwork.flags["spain"],"flag-spain")
     }
-    func testEveryVisualLessonAnswerAndGameClueHasOfflineArtwork() throws {
+    func testEveryVisualLessonAnswerAndActiveGameClueHasOfflineArtwork() throws {
         let root=URL(fileURLWithPath:#filePath).deletingLastPathComponent().deletingLastPathComponent()
         let assets=root.appendingPathComponent("Foxlingo/Resources/Assets.xcassets")
         func cached(_ name: String) {
@@ -98,7 +98,7 @@ final class LearningTests: XCTestCase {
             }
         }
         let games=try GamePack.load(Data(contentsOf:root.appendingPathComponent("Foxlingo/Resources/games-en.json")))
-        for category in games.categories {
+        for category in games.categories where Set(games.bingoCategoryIDs + games.gridRowIDs + games.gridColumnIDs).contains(category.id) {
             XCTAssertNotNil(category.imageAsset,category.title)
             if let asset=category.imageAsset {cached(asset)}
         }

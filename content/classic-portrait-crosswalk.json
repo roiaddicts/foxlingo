@@ -1,0 +1,398 @@
+[
+  {
+    "classicID": "classic-player-406",
+    "portraitID": "player-595",
+    "classicName": "Michel Salgado",
+    "portraitName": "Michel Salgado"
+  },
+  {
+    "classicID": "classic-player-86",
+    "portraitID": "player-58",
+    "classicName": "Raul",
+    "portraitName": "Raul"
+  },
+  {
+    "classicID": "classic-player-529",
+    "portraitID": "player-473",
+    "classicName": "Claude Makelele",
+    "portraitName": "Claude Makelele"
+  },
+  {
+    "classicID": "classic-player-127",
+    "portraitID": "player-303",
+    "classicName": "Roberto Carlos",
+    "portraitName": "Roberto Carlos"
+  },
+  {
+    "classicID": "classic-player-1527",
+    "portraitID": "player-326",
+    "classicName": "Fernando Morientes",
+    "portraitName": "Fernando Morientes"
+  },
+  {
+    "classicID": "classic-player-91",
+    "portraitID": "player-600",
+    "classicName": "Fernando Hierro",
+    "portraitName": "Fernando Hierro"
+  },
+  {
+    "classicID": "classic-player-1620",
+    "portraitID": "player-596",
+    "classicName": "Santiago Solari",
+    "portraitName": "Santiago Solari"
+  },
+  {
+    "classicID": "classic-player-207",
+    "portraitID": "player-150",
+    "classicName": "Zinedine Zidane",
+    "portraitName": "Zinedine Zidane"
+  },
+  {
+    "classicID": "classic-player-104",
+    "portraitID": "player-154",
+    "classicName": "Luis Figo",
+    "portraitName": "Luis Figo"
+  },
+  {
+    "classicID": "classic-player-660",
+    "portraitID": "player-599",
+    "classicName": "Ivan Helguera",
+    "portraitName": "Ivan Helguera"
+  },
+  {
+    "classicID": "classic-player-1724",
+    "portraitID": "player-592",
+    "classicName": "Guti",
+    "portraitName": "Guti"
+  },
+  {
+    "classicID": "classic-player-636",
+    "portraitID": "player-1815",
+    "classicName": "Steve McManaman",
+    "portraitName": "Steve McManaman"
+  },
+  {
+    "classicID": "classic-player-77",
+    "portraitID": "player-53",
+    "classicName": "Iker Casillas",
+    "portraitName": "Iker Casillas"
+  },
+  {
+    "classicID": "classic-player-1729",
+    "portraitID": "player-601",
+    "classicName": "Pedro Munitis",
+    "portraitName": "Pedro Munitis"
+  },
+  {
+    "classicID": "classic-player-1734",
+    "portraitID": "player-633",
+    "classicName": "Cesar Sanchez",
+    "portraitName": "Cesar Sanchez"
+  },
+  {
+    "classicID": "classic-player-1723",
+    "portraitID": "player-598",
+    "classicName": "Aitor Karanka",
+    "portraitName": "Aitor Karanka"
+  },
+  {
+    "classicID": "classic-player-1732",
+    "portraitID": "player-1562",
+    "classicName": "Flavio Conceicao",
+    "portraitName": "Flavio Conceicao"
+  },
+  {
+    "classicID": "classic-player-1738",
+    "portraitID": "player-597",
+    "classicName": "Raul Bravo",
+    "portraitName": "Raul Bravo"
+  },
+  {
+    "classicID": "classic-player-210",
+    "portraitID": "player-12",
+    "classicName": "Karim Benzema",
+    "portraitName": "Karim Benzema"
+  },
+  {
+    "classicID": "classic-player-929",
+    "portraitID": "player-161",
+    "classicName": "Luka Modric",
+    "portraitName": "Luka Modric"
+  },
+  {
+    "classicID": "classic-player-179",
+    "portraitID": "player-69",
+    "classicName": "Angel Di Maria",
+    "portraitName": "Angel Di Maria"
+  },
+  {
+    "classicID": "classic-player-666",
+    "portraitID": "player-582",
+    "classicName": "Isco",
+    "portraitName": "Isco"
+  },
+  {
+    "classicID": "classic-player-76",
+    "portraitID": "player-57",
+    "classicName": "Sergio Ramos",
+    "portraitName": "Sergio Ramos"
+  },
+  {
+    "classicID": "classic-player-103",
+    "portraitID": "player-46",
+    "classicName": "Pepe",
+    "portraitName": "Pepe"
+  },
+  {
+    "classicID": "classic-player-101",
+    "portraitID": "player-1",
+    "classicName": "Cristiano Ronaldo",
+    "portraitName": "Cristiano Ronaldo"
+  },
+  {
+    "classicID": "classic-player-456",
+    "portraitID": "player-188",
+    "classicName": "Marcelo",
+    "portraitName": "Marcelo"
+  },
+  {
+    "classicID": "classic-player-83",
+    "portraitID": "player-352",
+    "classicName": "Xabi Alonso",
+    "portraitName": "Xabi Alonso"
+  },
+  {
+    "classicID": "classic-player-395",
+    "portraitID": "player-16",
+    "classicName": "Alvaro Morata",
+    "portraitName": "Alvaro Morata"
+  },
+  {
+    "classicID": "classic-player-402",
+    "portraitID": "player-471",
+    "classicName": "Alvaro Arbeloa",
+    "portraitName": "Alvaro Arbeloa"
+  },
+  {
+    "classicID": "classic-player-213",
+    "portraitID": "player-162",
+    "classicName": "Raphael Varane",
+    "portraitName": "Raphael Varane"
+  },
+  {
+    "classicID": "classic-player-347",
+    "portraitID": "player-358",
+    "classicName": "Sami Khedira",
+    "portraitName": "Sami Khedira"
+  },
+  {
+    "classicID": "classic-player-444",
+    "portraitID": "player-107",
+    "classicName": "Casemiro",
+    "portraitName": "Casemiro"
+  },
+  {
+    "classicID": "classic-player-429",
+    "portraitID": "player-959",
+    "classicName": "Fabio Coentrao",
+    "portraitName": "Fabio Coentrao"
+  },
+  {
+    "classicID": "classic-player-68",
+    "portraitID": "player-92",
+    "classicName": "Mesut Ozil",
+    "portraitName": "Mesut Ozil"
+  },
+  {
+    "classicID": "classic-player-1532",
+    "portraitID": "player-263",
+    "classicName": "Dani Carvajal",
+    "portraitName": "Dani Carvajal"
+  },
+  {
+    "classicID": "classic-player-1533",
+    "portraitID": "player-583",
+    "classicName": "Asier Illarramendi",
+    "portraitName": "Asier Illarramendi"
+  },
+  {
+    "classicID": "classic-player-1534",
+    "portraitID": "player-9",
+    "classicName": "Gareth Bale",
+    "portraitName": "Gareth Bale"
+  },
+  {
+    "classicID": "classic-player-1535",
+    "portraitID": "player-1344",
+    "classicName": "Diego Lopez",
+    "portraitName": "Diego Lopez"
+  },
+  {
+    "classicID": "classic-player-1536",
+    "portraitID": "player-1768",
+    "classicName": "Jese",
+    "portraitName": "Jese"
+  },
+  {
+    "classicID": "classic-player-1537",
+    "portraitID": "player-978",
+    "classicName": "Nacho",
+    "portraitName": "Nacho"
+  },
+  {
+    "classicID": "classic-player-1496",
+    "portraitID": "player-580",
+    "classicName": "Marco Asensio",
+    "portraitName": "Marco Asensio"
+  },
+  {
+    "classicID": "classic-player-59",
+    "portraitID": "player-56",
+    "classicName": "Toni Kroos",
+    "portraitName": "Toni Kroos"
+  },
+  {
+    "classicID": "classic-player-939",
+    "portraitID": "player-841",
+    "classicName": "Mateo Kovacic",
+    "portraitName": "Mateo Kovacic"
+  },
+  {
+    "classicID": "classic-player-1294",
+    "portraitID": "player-607",
+    "classicName": "Marcos Llorente",
+    "portraitName": "Marcos Llorente"
+  },
+  {
+    "classicID": "classic-player-1487",
+    "portraitID": "player-233",
+    "classicName": "Achraf Hakimi",
+    "portraitName": "Achraf Hakimi"
+  },
+  {
+    "classicID": "classic-player-1538",
+    "portraitID": "player-275",
+    "classicName": "Keylor Navas",
+    "portraitName": "Keylor Navas"
+  },
+  {
+    "classicID": "classic-player-1539",
+    "portraitID": "player-581",
+    "classicName": "Lucas Vazquez",
+    "portraitName": "Lucas Vazquez"
+  },
+  {
+    "classicID": "classic-player-1540",
+    "portraitID": "player-1443",
+    "classicName": "Borja Mayoral",
+    "portraitName": "Borja Mayoral"
+  },
+  {
+    "classicID": "classic-player-1541",
+    "portraitID": "player-248",
+    "classicName": "Theo Hernandez",
+    "portraitName": "Theo Hernandez"
+  },
+  {
+    "classicID": "classic-player-1542",
+    "portraitID": "player-889",
+    "classicName": "Dani Ceballos",
+    "portraitName": "Dani Ceballos"
+  },
+  {
+    "classicID": "classic-player-1544",
+    "portraitID": "player-2055",
+    "classicName": "Jesus Vallejo",
+    "portraitName": "Jesus Vallejo"
+  },
+  {
+    "classicID": "classic-player-807",
+    "portraitID": "player-579",
+    "classicName": "Federico Valverde",
+    "portraitName": "Federico Valverde"
+  },
+  {
+    "classicID": "classic-player-377",
+    "portraitID": "player-789",
+    "classicName": "Antonio Rudiger",
+    "portraitName": "Antonio Rudiger"
+  },
+  {
+    "classicID": "classic-player-232",
+    "portraitID": "player-172",
+    "classicName": "Thibaut Courtois",
+    "portraitName": "Thibaut Courtois"
+  },
+  {
+    "classicID": "classic-player-1545",
+    "portraitID": "player-556",
+    "classicName": "Rodrygo",
+    "portraitName": "Rodrygo"
+  },
+  {
+    "classicID": "classic-player-1546",
+    "portraitID": "player-1181",
+    "classicName": "Joselu",
+    "portraitName": "Joselu"
+  },
+  {
+    "classicID": "classic-player-1547",
+    "portraitID": "player-844",
+    "classicName": "Eduardo Camavinga",
+    "portraitName": "Eduardo Camavinga"
+  },
+  {
+    "classicID": "classic-player-1548",
+    "portraitID": "player-148",
+    "classicName": "Jude Bellingham",
+    "portraitName": "Jude Bellingham"
+  },
+  {
+    "classicID": "classic-player-1549",
+    "portraitID": "player-298",
+    "classicName": "Vinicius Jr",
+    "portraitName": "Vinicius Jr"
+  },
+  {
+    "classicID": "classic-player-1550",
+    "portraitID": "player-149",
+    "classicName": "Aurelien Tchouameni",
+    "portraitName": "Aurelien Tchouameni"
+  },
+  {
+    "classicID": "classic-player-1551",
+    "portraitID": "player-1981",
+    "classicName": "Ferland Mendy",
+    "portraitName": "Ferland Mendy"
+  },
+  {
+    "classicID": "classic-player-1552",
+    "portraitID": "player-983",
+    "classicName": "Andriy Lunin",
+    "portraitName": "Andriy Lunin"
+  },
+  {
+    "classicID": "classic-player-1554",
+    "portraitID": "player-250",
+    "classicName": "David Alaba",
+    "portraitName": "David Alaba"
+  },
+  {
+    "classicID": "classic-player-1555",
+    "portraitID": "player-540",
+    "classicName": "Eder Militao",
+    "portraitName": "Eder Militao"
+  },
+  {
+    "classicID": "classic-player-1556",
+    "portraitID": "player-943",
+    "classicName": "Arda Guler",
+    "portraitName": "Arda Guler"
+  },
+  {
+    "classicID": "classic-player-1557",
+    "portraitID": "player-2027",
+    "classicName": "Nico Paz",
+    "portraitName": "Nico Paz"
+  }
+]

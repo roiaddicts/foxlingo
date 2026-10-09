@@ -40,7 +40,7 @@ struct GamesHome: View {
                             HStack(spacing:16) {Image(systemName:game.symbol).font(.title2).frame(width:50,height:60).foregroundStyle(Palette.brand);VStack(alignment:.leading,spacing:6) {Text(game.title).font(.title3.bold());Text(model.state.savedGame(game.rawValue).flatMap(\.board).map {"Continue · \($0.placed.count) connections saved"} ?? game.subtitle).font(.subheadline).foregroundStyle(Palette.muted)};Spacer();Image(systemName:"chevron.right")}.padding(18).background(.white.opacity(0.8),in:RoundedRectangle(cornerRadius:20))
                         }.buttonStyle(PressFeedback()).accessibilityIdentifier("game-\(game.rawValue)")
                     }
-                    Text("\(pack.players.count) players · \(pack.lineups.count) classic Madrid squads").font(.subheadline.bold())
+                    Text("\(pack.players.count) players · \(pack.lineups.count) classic season squads").font(.subheadline.bold())
                     Text("Finished games count toward your streak. Album upgrades come from scheduled recall.").font(.footnote).foregroundStyle(Palette.muted)
                     DisclosureGroup("About these boards") {Text(pack.scope).font(.footnote);if let u=URL(string:pack.sourceURL){Link("Futbol11 reference",destination:u)}}
                 } else {Text(model.gamesError ?? "Game content unavailable.")}
@@ -93,14 +93,14 @@ struct FootballGameView: View {
                 }
                 if game == .lineup {
                     HStack(spacing:12) {
-                        if let madrid=model.pack?.entities.first(where:{$0.key == "entity-madrid"}) {ClubMark(club:madrid,size:48)}
-                        Text("Real Madrid").font(.headline)
+                        EntityArtwork(asset:nil,url:squad.imageURL,initials:"⚽",size:48)
+                        Text(squad.clubName ?? "Classic squad").font(.headline)
                         Spacer()
                     }
                     Picker("Classic squad",selection:Binding(get:{squadIndex},set:{squadIndex=$0;reset()})) {ForEach(Array(pack.lineups.enumerated()),id:\.offset) {i,s in Text(s.title).tag(i)}}.disabled(!placed.isEmpty).accessibilityIdentifier("lineup-squad")
                     Text(squad.scope).font(.caption).foregroundStyle(Palette.muted)
                     VStack(spacing:20) {
-                        ForEach(Array([[0,1,2],[3,4,5],[6,7,8,9],[10]].enumerated()),id:\.offset) {_,row in
+                        ForEach(Array((squad.rows ?? [[0,1,2],[3,4,5],[6,7,8,9],[10]]).enumerated()),id:\.offset) {_,row in
                             HStack(alignment:.top,spacing:8) {ForEach(row,id:\.self) {slot in cell(slot,label:squad.positions[slot]).frame(maxWidth:row.count == 1 ? 95 : .infinity)}}.frame(maxWidth:.infinity)
                         }
                     }.padding(16).background(Palette.brand.opacity(0.09),in:RoundedRectangle(cornerRadius:22))
@@ -118,7 +118,7 @@ struct FootballGameView: View {
                 if !awarded {
                     HStack {Button("Undo",systemImage:"arrow.uturn.backward") {undo()}.disabled(history.isEmpty);Spacer();Button("Help me connect",systemImage:"lightbulb") {hint()}.accessibilityIdentifier("game-hint")}.frame(minHeight:44)
                 }
-                Text(game == .lineup ? squad.source : "Historical club and nationality connections · Futbol11 seed snapshot").font(.caption).foregroundStyle(Palette.muted)
+                Text(game == .lineup ? "Historical season squad · Futbol11 seed snapshot" : "Historical club and nationality connections · Futbol11 seed snapshot").font(.caption).foregroundStyle(Palette.muted)
             }.padding(20)
         }.journal().navigationTitle(game.title).navigationBarTitleDisplayMode(.inline)
         .onAppear {restore()}
@@ -128,7 +128,7 @@ struct FootballGameView: View {
         .alert("Start a new board?",isPresented:$confirmRestart) {Button("Start a new board",role:.destructive) {reset()};Button("Keep playing",role:.cancel) {}} message:{Text("This clears this board’s connections. Your other games and learning progress stay saved.")}
         .sheet(isPresented:Binding(get:{selectedSlot != nil},set:{if !$0 {selectedSlot=nil}})) {
             if let slot=selectedSlot {
-                NavigationStack {PlayerAnswerSheet(players:game == .lineup ? pack.players.filter { $0.id.hasPrefix("classic-player-") } : pack.players.filter { $0.id.hasPrefix("player-") },title:game == .grid ? "Choose a player" : squad.positions[slot],clues:game == .grid ? [pack.category(pack.gridRowIDs[slot/3])!,pack.category(pack.gridColumnIDs[slot%3])!] : [],contextClub:game == .lineup ? model.pack?.entities.first(where:{$0.key == "entity-madrid"}) : nil,contextTitle:game == .lineup ? squad.title : nil,contextScope:game == .lineup ? squad.scope : nil) {player in place(player.id,at:slot)} }
+                NavigationStack {PlayerAnswerSheet(players:game == .lineup ? pack.players.filter { $0.id.hasPrefix("classic-player-") } : pack.players.filter { $0.id.hasPrefix("player-") },title:game == .grid ? "Choose a player" : squad.positions[slot],clues:game == .grid ? [pack.category(pack.gridRowIDs[slot/3])!,pack.category(pack.gridColumnIDs[slot%3])!] : [],contextClubName:game == .lineup ? squad.clubName : nil,contextClubImageURL:game == .lineup ? squad.imageURL : nil,contextTitle:game == .lineup ? squad.title : nil,contextScope:game == .lineup ? squad.scope : nil) {player in place(player.id,at:slot)} }
             }
         }
     }
@@ -198,7 +198,8 @@ struct PlayerAnswerSheet: View {
     let players: [GamePlayer]
     let title: String
     var clues: [GameCategory] = []
-    var contextClub: Entity? = nil
+    var contextClubName: String? = nil
+    var contextClubImageURL: String? = nil
     var contextTitle: String? = nil
     var contextScope: String? = nil
     let onChoose: (GamePlayer) -> Bool
@@ -212,9 +213,9 @@ struct PlayerAnswerSheet: View {
     }
     var body: some View {
         List {
-            if let contextClub {
+            if let contextClubName {
                 VStack(alignment:.leading,spacing:10) {
-                    HStack {ClubMark(club:contextClub,size:48);Text(contextClub.name).font(.headline)}
+                    HStack {EntityArtwork(asset:nil,url:contextClubImageURL,initials:"⚽",size:48);Text(contextClubName).font(.headline)}
                     if let contextTitle {Text(contextTitle).font(.headline)}
                     if let contextScope {Text(contextScope).font(.caption).foregroundStyle(Palette.muted)}
                 }.padding(.vertical,8).accessibilityElement(children:.combine).accessibilityIdentifier("game-lineup-context")

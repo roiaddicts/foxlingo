@@ -11,6 +11,15 @@ final class GameResumeTests: XCTestCase {
         let pack=try ContentPack.load(Data(contentsOf:root.appendingPathComponent("Foxlingo/Resources/starter-en.json")))
         rounds=try MysteryDeck.load(Data(contentsOf:root.appendingPathComponent("Foxlingo/Resources/mystery-en.json")),pack:pack)
     }
+    func testFetchProvenanceDoesNotResetBoards() throws {
+        let refreshed=try changedGames {$0["fetchedAt"]="2030-01-01T00:00:00Z"}
+        for kind in ["bingo","grid","lineup"] {
+            let saved=savedBoard(kind)
+            XCTAssertNotNil(GameResumeRules.restoreBoard(saved,kind:kind,pack:refreshed,completedSessions:[]))
+        }
+        let legacy=try changedGames {$0.removeValue(forKey:"fetchedAt")}
+        XCTAssertNil(legacy.fetchedAt)
+    }
     func savedBoard(_ kind: String="grid",pack: GamePack?=nil) -> GameResume {
         let p=pack ?? games!,squad=kind == "lineup" ? p.lineups[0].id : nil
         let candidates=GameResumeRules.candidates(kind:kind,pack:p,squadID:squad)!
@@ -53,7 +62,7 @@ final class GameResumeTests: XCTestCase {
     func testLegalDeadEndWithNoOfferedPlayerStillRestoresForUndo() {
         let players=[GamePlayer(id:"a",name:"A",aliases:["A"],imageURL:nil,imageAsset:nil),GamePlayer(id:"b",name:"B",aliases:["B"],imageURL:nil,imageAsset:nil)]
         let categories=[GameCategory(id:"x",title:"X",playerIDs:["a","b"],imageAsset:nil,imageURL:nil,flag:nil),GameCategory(id:"y",title:"Y",playerIDs:["a"],imageAsset:nil,imageURL:nil,flag:nil)]
-        let p=GamePack(schemaVersion:1,scope:"Test board",sourceURL:"https://example.com",players:players,categories:categories,bingoCategoryIDs:["x","y"],gridRowIDs:[],gridColumnIDs:[],lineups:[])
+        let p=GamePack(fetchedAt:nil,schemaVersion:1,scope:"Test board",sourceURL:"https://example.com",players:players,categories:categories,bingoCategoryIDs:["x","y"],gridRowIDs:[],gridColumnIDs:[],lineups:[])
         let board=BoardProgress(squadID:nil,placed:[0:"a"],history:[0],assisted:[],offered:nil)
         let saved=GameResume(signature:GameResumeRules.boardSignature(kind:"bingo",pack:p,squadID:nil)!,sessionID:UUID(),board:board)
         XCTAssertNil(BoardMatcher.solution([Set(["a","b"]),Set(["a"])],fixed:board.placed))

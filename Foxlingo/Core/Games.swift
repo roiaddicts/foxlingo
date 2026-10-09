@@ -20,6 +20,9 @@ public struct SquadMember: Codable, Sendable {
     public let positions: [String]
 }
 public struct ClassicSquad: Codable, Identifiable, Sendable {
+    public let clubName: String?
+    public let imageURL: String?
+    public let rows: [[Int]]?
     public let id: String
     public let title: String
     public let scope: String
@@ -32,6 +35,7 @@ public struct ClassicSquad: Codable, Identifiable, Sendable {
     }
 }
 public struct GamePack: Codable, Sendable {
+    public let fetchedAt: String?
     public let schemaVersion: Int
     public let scope: String
     public let sourceURL: String
@@ -63,6 +67,9 @@ public struct GamePack: Codable, Sendable {
         let grid=(0..<9).map {gridCandidates(row:$0/3,column:$0%3)}
         guard BoardMatcher.solution(bingo) != nil, BoardMatcher.solution(grid) != nil else {throw ContentError.invalid("Game board cannot be completed with distinct players.")}
         for s in lineups {
+            if let rows=s.rows {
+                guard !rows.isEmpty,rows.allSatisfy({!$0.isEmpty && $0.count <= 5}),rows.flatMap({$0}).sorted() == Array(0..<11) else {throw ContentError.invalid("Invalid formation rows.")}
+            }
             guard s.positions.count == 11, Set(s.members.map(\.playerID)).count == s.members.count,
                   Set(s.members.map(\.playerID)).isSubset(of:ids), !s.scope.isEmpty,
                   BoardMatcher.solution((0..<11).map(s.candidates)) != nil else {throw ContentError.invalid("Invalid classic squad.")}

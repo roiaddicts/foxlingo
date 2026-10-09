@@ -1,0 +1,591 @@
+{
+  "fetchedAt": "2026-10-09T06:01:08.642698+00:00",
+  "assets": [
+    {
+      "url": "https://futbol-11.com/js/chunk-vendors.2043a18a.js",
+      "file": "asset-0.js",
+      "bytes": 515701,
+      "sha256": "8a43fca63de0ba35af5cba63812a671d1492df039d21f6fdd4d9027a3e843bc4"
+    },
+    {
+      "url": "https://futbol-11.com/js/app.01010119.js",
+      "file": "asset-1.js",
+      "bytes": 2189416,
+      "sha256": "15ca6d6f3bcbb6c202eaf791b04f84ceec82ed2e50b9472eb039279d3f440fe1"
+    }
+  ],
+  "roles": {
+    "gamePlayers": "futbol11.15ca6d6f3bcbb6c202eaf791b04f84ceec82ed2e50b9472eb039279d3f440fe1.literal2",
+    "countries": "futbol11.15ca6d6f3bcbb6c202eaf791b04f84ceec82ed2e50b9472eb039279d3f440fe1.literal1",
+    "categories": "futbol11.15ca6d6f3bcbb6c202eaf791b04f84ceec82ed2e50b9472eb039279d3f440fe1.literal27",
+    "classicPlayers": "futbol11.15ca6d6f3bcbb6c202eaf791b04f84ceec82ed2e50b9472eb039279d3f440fe1.literal30",
+    "classicSquads": "futbol11.15ca6d6f3bcbb6c202eaf791b04f84ceec82ed2e50b9472eb039279d3f440fe1.literal31",
+    "catalogPlayers": "futbol11.15ca6d6f3bcbb6c202eaf791b04f84ceec82ed2e50b9472eb039279d3f440fe1.literal21",
+    "gameGroups": "futbol11.15ca6d6f3bcbb6c202eaf791b04f84ceec82ed2e50b9472eb039279d3f440fe1.literal19",
+    "leagues": "futbol11.15ca6d6f3bcbb6c202eaf791b04f84ceec82ed2e50b9472eb039279d3f440fe1.literal4",
+    "leagueClubs": "futbol11.15ca6d6f3bcbb6c202eaf791b04f84ceec82ed2e50b9472eb039279d3f440fe1.literal35"
+  },
+  "datasets": [
+    {
+      "id": "futbol11.15ca6d6f3bcbb6c202eaf791b04f84ceec82ed2e50b9472eb039279d3f440fe1.literal0",
+      "sourceURL": "https://futbol-11.com/js/app.01010119.js",
+      "assetSHA256": "15ca6d6f3bcbb6c202eaf791b04f84ceec82ed2e50b9472eb039279d3f440fe1",
+      "literalIndex": 0,
+      "offset": 21938,
+      "records": 2356,
+      "fields": [
+        "clubID",
+        "firstName",
+        "id",
+        "lastName",
+        "nickname",
+        "positions"
+      ],
+      "duplicateIDs": 0
+    },
+    {
+      "id": "futbol11.15ca6d6f3bcbb6c202eaf791b04f84ceec82ed2e50b9472eb039279d3f440fe1.literal1",
+      "sourceURL": "https://futbol-11.com/js/app.01010119.js",
+      "assetSHA256": "15ca6d6f3bcbb6c202eaf791b04f84ceec82ed2e50b9472eb039279d3f440fe1",
+      "literalIndex": 1,
+      "offset": 213538,
+      "records": 85,
+      "fields": [
+        "flag",
+        "id",
+        "name"
+      ],
+      "duplicateIDs": 0
+    },
+    {
+      "id": "futbol11.15ca6d6f3bcbb6c202eaf791b04f84ceec82ed2e50b9472eb039279d3f440fe1.literal2",
+      "sourceURL": "https://futbol-11.com/js/app.01010119.js",
+      "assetSHA256": "15ca6d6f3bcbb6c202eaf791b04f84ceec82ed2e50b9472eb039279d3f440fe1",
+      "literalIndex": 2,
+      "offset": 221339,
+      "records": 2224,
+      "fields": [
+        "bingo",
+        "countryID",
+        "firstName",
+        "grid",
+        "id",
+        "image",
+        "lastName",
+        "nickname"
+      ],
+      "duplicateIDs": 0
+    },
+    {
+      "id": "futbol11.15ca6d6f3bcbb6c202eaf791b04f84ceec82ed2e50b9472eb039279d3f440fe1.literal3",
+      "sourceURL": "https://futbol-11.com/js/app.01010119.js",
+      "assetSHA256": "15ca6d6f3bcbb6c202eaf791b04f84ceec82ed2e50b9472eb039279d3f440fe1",
+      "literalIndex": 3,
+      "offset": 474379,
+      "records": 12,
+      "fields": [
+        "id",
+        "text"
+      ],
+      "duplicateIDs": 0
+    },
+    {
+      "id": "futbol11.15ca6d6f3bcbb6c202eaf791b04f84ceec82ed2e50b9472eb039279d3f440fe1.literal4",
+      "sourceURL": "https://futbol-11.com/js/app.01010119.js",
+      "assetSHA256": "15ca6d6f3bcbb6c202eaf791b04f84ceec82ed2e50b9472eb039279d3f440fe1",
+      "literalIndex": 4,
+      "offset": 481491,
+      "records": 8,
+      "fields": [
+        "id",
+        "name"
+      ],
+      "duplicateIDs": 0
+    },
+    {
+      "id": "futbol11.15ca6d6f3bcbb6c202eaf791b04f84ceec82ed2e50b9472eb039279d3f440fe1.literal5",
+      "sourceURL": "https://futbol-11.com/js/app.01010119.js",
+      "assetSHA256": "15ca6d6f3bcbb6c202eaf791b04f84ceec82ed2e50b9472eb039279d3f440fe1",
+      "literalIndex": 5,
+      "offset": 502647,
+      "records": 830,
+      "fields": [
+        "clubID",
+        "firstName",
+        "id",
+        "lastName",
+        "nickname",
+        "positions"
+      ],
+      "duplicateIDs": 0
+    },
+    {
+      "id": "futbol11.15ca6d6f3bcbb6c202eaf791b04f84ceec82ed2e50b9472eb039279d3f440fe1.literal6",
+      "sourceURL": "https://futbol-11.com/js/app.01010119.js",
+      "assetSHA256": "15ca6d6f3bcbb6c202eaf791b04f84ceec82ed2e50b9472eb039279d3f440fe1",
+      "literalIndex": 6,
+      "offset": 575940,
+      "records": 5,
+      "fields": [
+        "name",
+        "players"
+      ],
+      "duplicateIDs": 0
+    },
+    {
+      "id": "futbol11.15ca6d6f3bcbb6c202eaf791b04f84ceec82ed2e50b9472eb039279d3f440fe1.literal7",
+      "sourceURL": "https://futbol-11.com/js/app.01010119.js",
+      "assetSHA256": "15ca6d6f3bcbb6c202eaf791b04f84ceec82ed2e50b9472eb039279d3f440fe1",
+      "literalIndex": 7,
+      "offset": 577860,
+      "records": 32,
+      "fields": [
+        "id",
+        "logo",
+        "name"
+      ],
+      "duplicateIDs": 0
+    },
+    {
+      "id": "futbol11.15ca6d6f3bcbb6c202eaf791b04f84ceec82ed2e50b9472eb039279d3f440fe1.literal8",
+      "sourceURL": "https://futbol-11.com/js/app.01010119.js",
+      "assetSHA256": "15ca6d6f3bcbb6c202eaf791b04f84ceec82ed2e50b9472eb039279d3f440fe1",
+      "literalIndex": 8,
+      "offset": 623126,
+      "records": 1226,
+      "fields": [
+        "active",
+        "clubID",
+        "firstName",
+        "id",
+        "lastName",
+        "nickname",
+        "positions"
+      ],
+      "duplicateIDs": 0
+    },
+    {
+      "id": "futbol11.15ca6d6f3bcbb6c202eaf791b04f84ceec82ed2e50b9472eb039279d3f440fe1.literal9",
+      "sourceURL": "https://futbol-11.com/js/app.01010119.js",
+      "assetSHA256": "15ca6d6f3bcbb6c202eaf791b04f84ceec82ed2e50b9472eb039279d3f440fe1",
+      "literalIndex": 9,
+      "offset": 738201,
+      "records": 22,
+      "fields": [
+        "id",
+        "logo",
+        "name"
+      ],
+      "duplicateIDs": 0
+    },
+    {
+      "id": "futbol11.15ca6d6f3bcbb6c202eaf791b04f84ceec82ed2e50b9472eb039279d3f440fe1.literal10",
+      "sourceURL": "https://futbol-11.com/js/app.01010119.js",
+      "assetSHA256": "15ca6d6f3bcbb6c202eaf791b04f84ceec82ed2e50b9472eb039279d3f440fe1",
+      "literalIndex": 10,
+      "offset": 740514,
+      "records": 420,
+      "fields": [
+        "clubID",
+        "firstName",
+        "id",
+        "lastName",
+        "nickname",
+        "positions"
+      ],
+      "duplicateIDs": 0
+    },
+    {
+      "id": "futbol11.15ca6d6f3bcbb6c202eaf791b04f84ceec82ed2e50b9472eb039279d3f440fe1.literal11",
+      "sourceURL": "https://futbol-11.com/js/app.01010119.js",
+      "assetSHA256": "15ca6d6f3bcbb6c202eaf791b04f84ceec82ed2e50b9472eb039279d3f440fe1",
+      "literalIndex": 11,
+      "offset": 777335,
+      "records": 16,
+      "fields": [
+        "id",
+        "logo",
+        "name"
+      ],
+      "duplicateIDs": 0
+    },
+    {
+      "id": "futbol11.15ca6d6f3bcbb6c202eaf791b04f84ceec82ed2e50b9472eb039279d3f440fe1.literal12",
+      "sourceURL": "https://futbol-11.com/js/app.01010119.js",
+      "assetSHA256": "15ca6d6f3bcbb6c202eaf791b04f84ceec82ed2e50b9472eb039279d3f440fe1",
+      "literalIndex": 12,
+      "offset": 789562,
+      "records": 37,
+      "fields": [
+        "id",
+        "logo",
+        "name"
+      ],
+      "duplicateIDs": 0
+    },
+    {
+      "id": "futbol11.15ca6d6f3bcbb6c202eaf791b04f84ceec82ed2e50b9472eb039279d3f440fe1.literal13",
+      "sourceURL": "https://futbol-11.com/js/app.01010119.js",
+      "assetSHA256": "15ca6d6f3bcbb6c202eaf791b04f84ceec82ed2e50b9472eb039279d3f440fe1",
+      "literalIndex": 13,
+      "offset": 798838,
+      "records": 1465,
+      "fields": [
+        "clubID",
+        "firstName",
+        "id",
+        "lastName",
+        "positions"
+      ],
+      "duplicateIDs": 1
+    },
+    {
+      "id": "futbol11.15ca6d6f3bcbb6c202eaf791b04f84ceec82ed2e50b9472eb039279d3f440fe1.literal14",
+      "sourceURL": "https://futbol-11.com/js/app.01010119.js",
+      "assetSHA256": "15ca6d6f3bcbb6c202eaf791b04f84ceec82ed2e50b9472eb039279d3f440fe1",
+      "literalIndex": 14,
+      "offset": 914985,
+      "records": 33,
+      "fields": [
+        "id",
+        "logo",
+        "name"
+      ],
+      "duplicateIDs": 0
+    },
+    {
+      "id": "futbol11.15ca6d6f3bcbb6c202eaf791b04f84ceec82ed2e50b9472eb039279d3f440fe1.literal15",
+      "sourceURL": "https://futbol-11.com/js/app.01010119.js",
+      "assetSHA256": "15ca6d6f3bcbb6c202eaf791b04f84ceec82ed2e50b9472eb039279d3f440fe1",
+      "literalIndex": 15,
+      "offset": 927759,
+      "records": 622,
+      "fields": [
+        "clubID",
+        "firstName",
+        "id",
+        "lastName",
+        "nickname",
+        "positions"
+      ],
+      "duplicateIDs": 0
+    },
+    {
+      "id": "futbol11.15ca6d6f3bcbb6c202eaf791b04f84ceec82ed2e50b9472eb039279d3f440fe1.literal16",
+      "sourceURL": "https://futbol-11.com/js/app.01010119.js",
+      "assetSHA256": "15ca6d6f3bcbb6c202eaf791b04f84ceec82ed2e50b9472eb039279d3f440fe1",
+      "literalIndex": 16,
+      "offset": 982761,
+      "records": 24,
+      "fields": [
+        "id",
+        "logo",
+        "name"
+      ],
+      "duplicateIDs": 0
+    },
+    {
+      "id": "futbol11.15ca6d6f3bcbb6c202eaf791b04f84ceec82ed2e50b9472eb039279d3f440fe1.literal17",
+      "sourceURL": "https://futbol-11.com/js/app.01010119.js",
+      "assetSHA256": "15ca6d6f3bcbb6c202eaf791b04f84ceec82ed2e50b9472eb039279d3f440fe1",
+      "literalIndex": 17,
+      "offset": 1005106,
+      "records": 1018,
+      "fields": [
+        "clubID",
+        "firstName",
+        "id",
+        "lastName",
+        "positions"
+      ],
+      "duplicateIDs": 0
+    },
+    {
+      "id": "futbol11.15ca6d6f3bcbb6c202eaf791b04f84ceec82ed2e50b9472eb039279d3f440fe1.literal18",
+      "sourceURL": "https://futbol-11.com/js/app.01010119.js",
+      "assetSHA256": "15ca6d6f3bcbb6c202eaf791b04f84ceec82ed2e50b9472eb039279d3f440fe1",
+      "literalIndex": 18,
+      "offset": 1088407,
+      "records": 29,
+      "fields": [
+        "id",
+        "logo",
+        "name"
+      ],
+      "duplicateIDs": 0
+    },
+    {
+      "id": "futbol11.15ca6d6f3bcbb6c202eaf791b04f84ceec82ed2e50b9472eb039279d3f440fe1.literal19",
+      "sourceURL": "https://futbol-11.com/js/app.01010119.js",
+      "assetSHA256": "15ca6d6f3bcbb6c202eaf791b04f84ceec82ed2e50b9472eb039279d3f440fe1",
+      "literalIndex": 19,
+      "offset": 1101421,
+      "records": 94,
+      "fields": [
+        "id",
+        "logo",
+        "name",
+        "type"
+      ],
+      "duplicateIDs": 0
+    },
+    {
+      "id": "futbol11.15ca6d6f3bcbb6c202eaf791b04f84ceec82ed2e50b9472eb039279d3f440fe1.literal20",
+      "sourceURL": "https://futbol-11.com/js/app.01010119.js",
+      "assetSHA256": "15ca6d6f3bcbb6c202eaf791b04f84ceec82ed2e50b9472eb039279d3f440fe1",
+      "literalIndex": 20,
+      "offset": 1136186,
+      "records": 374,
+      "fields": [],
+      "duplicateIDs": 0
+    },
+    {
+      "id": "futbol11.15ca6d6f3bcbb6c202eaf791b04f84ceec82ed2e50b9472eb039279d3f440fe1.literal21",
+      "sourceURL": "https://futbol-11.com/js/app.01010119.js",
+      "assetSHA256": "15ca6d6f3bcbb6c202eaf791b04f84ceec82ed2e50b9472eb039279d3f440fe1",
+      "literalIndex": 21,
+      "offset": 1159373,
+      "records": 2729,
+      "fields": [
+        "birthday",
+        "clubID",
+        "countryID",
+        "firstName",
+        "id",
+        "lastName",
+        "nickname",
+        "ovr",
+        "positions"
+      ],
+      "duplicateIDs": 0
+    },
+    {
+      "id": "futbol11.15ca6d6f3bcbb6c202eaf791b04f84ceec82ed2e50b9472eb039279d3f440fe1.literal22",
+      "sourceURL": "https://futbol-11.com/js/app.01010119.js",
+      "assetSHA256": "15ca6d6f3bcbb6c202eaf791b04f84ceec82ed2e50b9472eb039279d3f440fe1",
+      "literalIndex": 22,
+      "offset": 1483309,
+      "records": 35,
+      "fields": [
+        "id",
+        "logo",
+        "name"
+      ],
+      "duplicateIDs": 0
+    },
+    {
+      "id": "futbol11.15ca6d6f3bcbb6c202eaf791b04f84ceec82ed2e50b9472eb039279d3f440fe1.literal23",
+      "sourceURL": "https://futbol-11.com/js/app.01010119.js",
+      "assetSHA256": "15ca6d6f3bcbb6c202eaf791b04f84ceec82ed2e50b9472eb039279d3f440fe1",
+      "literalIndex": 23,
+      "offset": 1491277,
+      "records": 365,
+      "fields": [
+        "id",
+        "player",
+        "teammates"
+      ],
+      "duplicateIDs": 0
+    },
+    {
+      "id": "futbol11.15ca6d6f3bcbb6c202eaf791b04f84ceec82ed2e50b9472eb039279d3f440fe1.literal24",
+      "sourceURL": "https://futbol-11.com/js/app.01010119.js",
+      "assetSHA256": "15ca6d6f3bcbb6c202eaf791b04f84ceec82ed2e50b9472eb039279d3f440fe1",
+      "literalIndex": 24,
+      "offset": 1528575,
+      "records": 251,
+      "fields": [
+        "groups",
+        "id",
+        "image",
+        "name"
+      ],
+      "duplicateIDs": 0
+    },
+    {
+      "id": "futbol11.15ca6d6f3bcbb6c202eaf791b04f84ceec82ed2e50b9472eb039279d3f440fe1.literal25",
+      "sourceURL": "https://futbol-11.com/js/app.01010119.js",
+      "assetSHA256": "15ca6d6f3bcbb6c202eaf791b04f84ceec82ed2e50b9472eb039279d3f440fe1",
+      "literalIndex": 25,
+      "offset": 1554454,
+      "records": 61,
+      "fields": [
+        "id",
+        "logo",
+        "name",
+        "type"
+      ],
+      "duplicateIDs": 0
+    },
+    {
+      "id": "futbol11.15ca6d6f3bcbb6c202eaf791b04f84ceec82ed2e50b9472eb039279d3f440fe1.literal26",
+      "sourceURL": "https://futbol-11.com/js/app.01010119.js",
+      "assetSHA256": "15ca6d6f3bcbb6c202eaf791b04f84ceec82ed2e50b9472eb039279d3f440fe1",
+      "literalIndex": 26,
+      "offset": 1588646,
+      "records": 369,
+      "fields": [
+        "id",
+        "players",
+        "title"
+      ],
+      "duplicateIDs": 2
+    },
+    {
+      "id": "futbol11.15ca6d6f3bcbb6c202eaf791b04f84ceec82ed2e50b9472eb039279d3f440fe1.literal27",
+      "sourceURL": "https://futbol-11.com/js/app.01010119.js",
+      "assetSHA256": "15ca6d6f3bcbb6c202eaf791b04f84ceec82ed2e50b9472eb039279d3f440fe1",
+      "literalIndex": 27,
+      "offset": 1675154,
+      "records": 158,
+      "fields": [
+        "id",
+        "level",
+        "players",
+        "title"
+      ],
+      "duplicateIDs": 0
+    },
+    {
+      "id": "futbol11.15ca6d6f3bcbb6c202eaf791b04f84ceec82ed2e50b9472eb039279d3f440fe1.literal28",
+      "sourceURL": "https://futbol-11.com/js/app.01010119.js",
+      "assetSHA256": "15ca6d6f3bcbb6c202eaf791b04f84ceec82ed2e50b9472eb039279d3f440fe1",
+      "literalIndex": 28,
+      "offset": 1714452,
+      "records": 109,
+      "fields": [
+        "id",
+        "image",
+        "lastName"
+      ],
+      "duplicateIDs": 0
+    },
+    {
+      "id": "futbol11.15ca6d6f3bcbb6c202eaf791b04f84ceec82ed2e50b9472eb039279d3f440fe1.literal29",
+      "sourceURL": "https://futbol-11.com/js/app.01010119.js",
+      "assetSHA256": "15ca6d6f3bcbb6c202eaf791b04f84ceec82ed2e50b9472eb039279d3f440fe1",
+      "literalIndex": 29,
+      "offset": 1721490,
+      "records": 36,
+      "fields": [
+        "id",
+        "logo",
+        "name"
+      ],
+      "duplicateIDs": 0
+    },
+    {
+      "id": "futbol11.15ca6d6f3bcbb6c202eaf791b04f84ceec82ed2e50b9472eb039279d3f440fe1.literal30",
+      "sourceURL": "https://futbol-11.com/js/app.01010119.js",
+      "assetSHA256": "15ca6d6f3bcbb6c202eaf791b04f84ceec82ed2e50b9472eb039279d3f440fe1",
+      "literalIndex": 30,
+      "offset": 1732397,
+      "records": 2549,
+      "fields": [
+        "active",
+        "clubID",
+        "firstName",
+        "id",
+        "lastName",
+        "nickname",
+        "positions"
+      ],
+      "duplicateIDs": 0
+    },
+    {
+      "id": "futbol11.15ca6d6f3bcbb6c202eaf791b04f84ceec82ed2e50b9472eb039279d3f440fe1.literal31",
+      "sourceURL": "https://futbol-11.com/js/app.01010119.js",
+      "assetSHA256": "15ca6d6f3bcbb6c202eaf791b04f84ceec82ed2e50b9472eb039279d3f440fe1",
+      "literalIndex": 31,
+      "offset": 1942496,
+      "records": 98,
+      "fields": [
+        "clubID",
+        "id",
+        "logo",
+        "name",
+        "players"
+      ],
+      "duplicateIDs": 0
+    },
+    {
+      "id": "futbol11.15ca6d6f3bcbb6c202eaf791b04f84ceec82ed2e50b9472eb039279d3f440fe1.literal32",
+      "sourceURL": "https://futbol-11.com/js/app.01010119.js",
+      "assetSHA256": "15ca6d6f3bcbb6c202eaf791b04f84ceec82ed2e50b9472eb039279d3f440fe1",
+      "literalIndex": 32,
+      "offset": 1973300,
+      "records": 420,
+      "fields": [
+        "id",
+        "players",
+        "title"
+      ],
+      "duplicateIDs": 336
+    },
+    {
+      "id": "futbol11.15ca6d6f3bcbb6c202eaf791b04f84ceec82ed2e50b9472eb039279d3f440fe1.literal33",
+      "sourceURL": "https://futbol-11.com/js/app.01010119.js",
+      "assetSHA256": "15ca6d6f3bcbb6c202eaf791b04f84ceec82ed2e50b9472eb039279d3f440fe1",
+      "literalIndex": 33,
+      "offset": 2067969,
+      "records": 295,
+      "fields": [
+        "addcorr",
+        "correctPl",
+        "id",
+        "impostors",
+        "title"
+      ],
+      "duplicateIDs": 95
+    },
+    {
+      "id": "futbol11.15ca6d6f3bcbb6c202eaf791b04f84ceec82ed2e50b9472eb039279d3f440fe1.literal34",
+      "sourceURL": "https://futbol-11.com/js/app.01010119.js",
+      "assetSHA256": "15ca6d6f3bcbb6c202eaf791b04f84ceec82ed2e50b9472eb039279d3f440fe1",
+      "literalIndex": 34,
+      "offset": 2110417,
+      "records": 176,
+      "fields": [
+        "clubs",
+        "id",
+        "player"
+      ],
+      "duplicateIDs": 47
+    },
+    {
+      "id": "futbol11.15ca6d6f3bcbb6c202eaf791b04f84ceec82ed2e50b9472eb039279d3f440fe1.literal35",
+      "sourceURL": "https://futbol-11.com/js/app.01010119.js",
+      "assetSHA256": "15ca6d6f3bcbb6c202eaf791b04f84ceec82ed2e50b9472eb039279d3f440fe1",
+      "literalIndex": 35,
+      "offset": 2135979,
+      "records": 48,
+      "fields": [
+        "countryID",
+        "id",
+        "name"
+      ],
+      "duplicateIDs": 0
+    },
+    {
+      "id": "futbol11.15ca6d6f3bcbb6c202eaf791b04f84ceec82ed2e50b9472eb039279d3f440fe1.literal36",
+      "sourceURL": "https://futbol-11.com/js/app.01010119.js",
+      "assetSHA256": "15ca6d6f3bcbb6c202eaf791b04f84ceec82ed2e50b9472eb039279d3f440fe1",
+      "literalIndex": 36,
+      "offset": 2138061,
+      "records": 366,
+      "fields": [
+        "birthday",
+        "height",
+        "id",
+        "name",
+        "position",
+        "previousClubs",
+        "previousLeagues",
+        "secID"
+      ],
+      "duplicateIDs": 3
+    }
+  ],
+  "totalRecords": 18997,
+  "dailyDataStatus": "Embedded datasets retained; no independent daily-game endpoint or game-date coverage verified."
+}
