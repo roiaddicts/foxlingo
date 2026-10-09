@@ -1,0 +1,2305 @@
+{
+  "players": [
+    {
+      "key": "entity-raul",
+      "name": "Raúl",
+      "aliases": [
+        "Raul",
+        "Raúl González Blanco"
+      ],
+      "visual": "R",
+      "seedID": "player-58",
+      "seedName": "Raul",
+      "clubKey": "entity-madrid"
+    },
+    {
+      "key": "entity-benzema",
+      "name": "Karim Benzema",
+      "aliases": [
+        "Benzema"
+      ],
+      "visual": "KB",
+      "seedID": "player-12",
+      "seedName": "Karim Benzema",
+      "clubKey": "entity-madrid"
+    },
+    {
+      "key": "entity-zidane",
+      "name": "Zinedine Zidane",
+      "aliases": [
+        "Zidane",
+        "Zizou"
+      ],
+      "visual": "ZZ",
+      "seedID": "player-150",
+      "seedName": "Zinedine Zidane",
+      "clubKey": "entity-madrid"
+    },
+    {
+      "key": "entity-bale",
+      "name": "Gareth Bale",
+      "aliases": [
+        "Bale"
+      ],
+      "visual": "GB",
+      "seedID": "player-9",
+      "seedName": "Gareth Bale",
+      "clubKey": "entity-madrid"
+    },
+    {
+      "key": "entity-roberto-carlos",
+      "name": "Roberto Carlos",
+      "aliases": [
+        "Roberto Carlos da Silva"
+      ],
+      "visual": "RC",
+      "seedID": "player-303",
+      "seedName": "Roberto Carlos",
+      "clubKey": "entity-madrid"
+    },
+    {
+      "key": "entity-di-stefano",
+      "name": "Alfredo Di Stéfano",
+      "aliases": [
+        "Alfredo di Stefano",
+        "Di Stéfano"
+      ],
+      "visual": "AD",
+      "seedID": "player-1512",
+      "seedName": "Alfredo di Stefano",
+      "clubKey": "entity-madrid"
+    },
+    {
+      "key": "entity-gerrard",
+      "name": "Steven Gerrard",
+      "aliases": [
+        "Gerrard"
+      ],
+      "visual": "SG",
+      "seedID": "player-164",
+      "seedName": "Steven Gerrard",
+      "clubKey": "entity-liverpool"
+    },
+    {
+      "key": "entity-rush",
+      "name": "Ian Rush",
+      "aliases": [
+        "Rush"
+      ],
+      "visual": "IR",
+      "seedID": "player-1811",
+      "seedName": "Ian Rush",
+      "clubKey": "entity-liverpool",
+      "imageURL": "https://backend.liverpoolfc.com/sites/default/files/styles/lg/public/2025-02/past-players-ian-rush-20022025_a4ba0d252756f6d8113ef250a30d83f3.webp?itok=ydAgcUsS&width=1680",
+      "portraitSourceURL": "https://www.liverpoolfc.com/info/ian-rush"
+    },
+    {
+      "key": "entity-messi",
+      "name": "Lionel Messi",
+      "aliases": [
+        "Messi",
+        "Leo Messi"
+      ],
+      "visual": "LM",
+      "seedID": "player-2",
+      "seedName": "Lionel Messi",
+      "clubKey": "entity-barcelona"
+    },
+    {
+      "key": "entity-xavi",
+      "name": "Xavi Hernández",
+      "aliases": [
+        "Xavi",
+        "Xavi Hernandez"
+      ],
+      "visual": "XH",
+      "seedID": "player-54",
+      "seedName": "Xavi",
+      "clubKey": "entity-barcelona"
+    },
+    {
+      "key": "entity-lahm",
+      "name": "Philipp Lahm",
+      "aliases": [
+        "Lahm"
+      ],
+      "visual": "PL",
+      "seedID": "player-43",
+      "seedName": "Philipp Lahm",
+      "clubKey": "entity-bayern-munich"
+    },
+    {
+      "key": "entity-schweinsteiger",
+      "name": "Bastian Schweinsteiger",
+      "aliases": [
+        "Schweinsteiger",
+        "Schweini"
+      ],
+      "visual": "BS",
+      "seedID": "player-48",
+      "seedName": "Bastian Schweinsteiger",
+      "clubKey": "entity-bayern-munich"
+    }
+  ],
+  "sources": [
+    {
+      "key": "catalog-raul-official",
+      "title": "Raúl · official club biography",
+      "url": "https://www.realmadrid.com/en-US/the-club/history/football-legends/raul-gonzalez-blanco",
+      "verifiedAt": "2026-10-09"
+    },
+    {
+      "key": "catalog-benzema-official",
+      "title": "Karim Benzema · official club biography",
+      "url": "https://www.realmadrid.com/en-US/the-club/history/football-legends/karim-benzema",
+      "verifiedAt": "2026-10-09"
+    },
+    {
+      "key": "catalog-zidane-official",
+      "title": "Zinedine Zidane · official club biography",
+      "url": "https://www.realmadrid.com/en-US/the-club/history/football-legends/zinedine-zidane",
+      "verifiedAt": "2026-10-09"
+    },
+    {
+      "key": "catalog-bale-official",
+      "title": "Gareth Bale · official club biography",
+      "url": "https://www.realmadrid.com/en-US/the-club/history/football-legends/gareth-bale",
+      "verifiedAt": "2026-10-09"
+    },
+    {
+      "key": "catalog-roberto-carlos-official",
+      "title": "Roberto Carlos · official club biography",
+      "url": "https://www.realmadrid.com/en-US/the-club/history/football-legends/roberto-carlos-da-silva",
+      "verifiedAt": "2026-10-09"
+    },
+    {
+      "key": "catalog-di-stefano-official",
+      "title": "Alfredo Di Stéfano · official club biography",
+      "url": "https://www.realmadrid.com/en-US/the-club/history/football-legends/alfredo-di-stefano-laulhe",
+      "verifiedAt": "2026-10-09"
+    },
+    {
+      "key": "catalog-gerrard-official",
+      "title": "Steven Gerrard · official club biography",
+      "url": "https://www.liverpoolfc.com/info/steven-gerrard",
+      "verifiedAt": "2026-10-09"
+    },
+    {
+      "key": "catalog-rush-official",
+      "title": "Ian Rush · official club biography",
+      "url": "https://www.liverpoolfc.com/info/ian-rush",
+      "verifiedAt": "2026-10-09"
+    },
+    {
+      "key": "global-player-messi-profile",
+      "title": "Lionel Andrés Messi Cuccittini | FC Barcelona Players",
+      "url": "https://players.fcbarcelona.com/es/jugador/548-messi-lionel-andres-messi-cuccitini",
+      "verifiedAt": "2026-10-09"
+    },
+    {
+      "key": "global-player-messi-official-records",
+      "title": "Leo Messi, the man who broke records",
+      "url": "https://www.fcbarcelona.com/en/football/first-team/actualites/2070529/leo-messi-lhomme-qui-battait-des-records",
+      "verifiedAt": "2026-10-09"
+    },
+    {
+      "key": "global-player-xavi-profile",
+      "title": "Xavi Hernández | Barça Legends",
+      "url": "https://www.fcbarcelona.com/en/football/barca-legends/players/4231987/xavi",
+      "verifiedAt": "2026-10-09"
+    },
+    {
+      "key": "global-player-lahm-profile",
+      "title": "Philipp Lahm | FC Bayern Hall of Fame",
+      "url": "https://fcbayern.com/en/club/hall-of-fame/philipp-lahm",
+      "verifiedAt": "2026-10-09"
+    },
+    {
+      "key": "global-player-schweinsteiger-profile",
+      "title": "Bastian Schweinsteiger | FC Bayern Hall of Fame",
+      "url": "https://fcbayern.com/en/club/hall-of-fame/bastian-schweinsteiger",
+      "verifiedAt": "2026-10-09"
+    }
+  ],
+  "lessons": [
+    {
+      "key": "lesson-catalog-raul-career",
+      "subjectKey": "entity-raul",
+      "clubKey": "entity-madrid",
+      "title": "Raúl · career connections",
+      "subtitle": "A completed playing career, with the scope kept clear",
+      "story": [
+        {
+          "title": "Place the story",
+          "body": "Raúl’s story begins in Madrid. The club’s biography describes a forward whose development included its youth teams before his first-team debut in 1994."
+        },
+        {
+          "title": "Keep the scope",
+          "body": "Keep youth arrival and senior debut separate: 1992 starts the profile’s broader club timeline, while 29 October 1994 is the first-team milestone."
+        }
+      ],
+      "facts": [
+        {
+          "key": "catalog-raul-birth-city",
+          "label": "Birth city",
+          "prompt": "In which city was Raúl born?",
+          "answers": [
+            "Madrid",
+            "Madrid, Spain"
+          ],
+          "distractors": [
+            "Barcelona",
+            "Seville",
+            "Valencia"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Madrid",
+            "text": "Madrid"
+          },
+          "scope": "Raúl: birthplace in 1977.",
+          "sourceKey": "catalog-raul-official",
+          "evidence": "The official biography identifies Madrid for this career event."
+        },
+        {
+          "key": "catalog-raul-role",
+          "label": "Playing role",
+          "prompt": "How does Madrid’s official biography describe Raúl’s playing position?",
+          "answers": [
+            "Forward",
+            "Striker",
+            "Centre-forward",
+            "Center-forward"
+          ],
+          "distractors": [
+            "Goalkeeper",
+            "Centre-back",
+            "Full-back"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Forward",
+            "text": "Forward"
+          },
+          "scope": "Raúl: completed Real Madrid senior playing career; official club biography verified 2026-10-09. Competitive club totals, not national-team or whole-career totals.",
+          "sourceKey": "catalog-raul-official",
+          "evidence": "The official biography identifies Forward for this career event."
+        },
+        {
+          "key": "catalog-raul-senior-debut",
+          "label": "Senior debut year",
+          "prompt": "In which year did Raúl make his Real Madrid first-team debut?",
+          "answers": [
+            "1994"
+          ],
+          "distractors": [
+            "1992",
+            "1996",
+            "1998"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "1994",
+            "number": 1994,
+            "unit": "year"
+          },
+          "scope": "Real Madrid senior debut on 29 October 1994; the profile header starts in 1992 because it includes his youth-team arrival.",
+          "sourceKey": "catalog-raul-official",
+          "evidence": "The official club biography gives 1994 year for this specified context."
+        }
+      ]
+    },
+    {
+      "key": "lesson-catalog-raul-record",
+      "subjectKey": "entity-raul",
+      "clubKey": "entity-madrid",
+      "title": "Raúl · club record",
+      "subtitle": "A completed playing career, with the scope kept clear",
+      "story": [
+        {
+          "title": "Place the story",
+          "body": "Raúl finished his Madrid senior career with 741 appearances and 323 goals. Those figures belong to his club record, not to Spain or his later clubs."
+        },
+        {
+          "title": "Keep the scope",
+          "body": "His three European titles connect that long career to the finals of 1998, 2000 and 2002. Learn the appearances, goals and title count as separate memories."
+        }
+      ],
+      "facts": [
+        {
+          "key": "catalog-raul-appearances",
+          "label": "Club appearances",
+          "prompt": "How many Real Madrid senior appearances does Raúl’s official biography record?",
+          "answers": [
+            "741"
+          ],
+          "distractors": [
+            "724",
+            "772",
+            "805"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "741",
+            "number": 741,
+            "unit": "appearances"
+          },
+          "scope": "Raúl: completed Real Madrid senior playing career; official club biography verified 2026-10-09. Competitive club totals, not national-team or whole-career totals.",
+          "sourceKey": "catalog-raul-official",
+          "evidence": "The official club biography gives 741 appearances for this specified context."
+        },
+        {
+          "key": "catalog-raul-goals",
+          "label": "Club goals",
+          "prompt": "How many goals did Raúl score during his completed Madrid playing career?",
+          "answers": [
+            "323"
+          ],
+          "distractors": [
+            "312",
+            "342",
+            "360"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "323",
+            "number": 323,
+            "unit": "goals"
+          },
+          "scope": "Raúl: completed Real Madrid senior playing career; official club biography verified 2026-10-09. Competitive club totals, not national-team or whole-career totals.",
+          "sourceKey": "catalog-raul-official",
+          "evidence": "The official club biography gives 323 goals for this specified context."
+        },
+        {
+          "key": "catalog-raul-european-titles",
+          "label": "European titles",
+          "prompt": "How many European Cup/Champions League titles did Raúl win with Madrid?",
+          "answers": [
+            "3"
+          ],
+          "distractors": [
+            "2",
+            "4",
+            "5"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "3",
+            "number": 3,
+            "unit": "titles"
+          },
+          "scope": "Real Madrid wins in 1998, 2000 and 2002.",
+          "sourceKey": "catalog-raul-official",
+          "evidence": "The official club biography gives 3 titles for this specified context."
+        }
+      ]
+    },
+    {
+      "key": "lesson-catalog-benzema-career",
+      "subjectKey": "entity-benzema",
+      "clubKey": "entity-madrid",
+      "title": "Karim Benzema · career connections",
+      "subtitle": "A completed playing career, with the scope kept clear",
+      "story": [
+        {
+          "title": "Place the story",
+          "body": "Benzema was born in Lyon and arrived at Madrid in 2009. His club career continued through 2023, creating a long historical period to attach to his numbers."
+        },
+        {
+          "title": "Keep the scope",
+          "body": "The 2022 Ballon d’Or is an individual award within that period. Keep the player’s birthplace, Madrid arrival and award year as three distinct anchors."
+        }
+      ],
+      "facts": [
+        {
+          "key": "catalog-benzema-birth-city",
+          "label": "Birth city",
+          "prompt": "In which city was Karim Benzema born?",
+          "answers": [
+            "Lyon",
+            "Lyon, France"
+          ],
+          "distractors": [
+            "Marseille",
+            "Paris",
+            "Madrid"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Lyon",
+            "text": "Lyon"
+          },
+          "scope": "Karim Benzema: birthplace in 1987.",
+          "sourceKey": "catalog-benzema-official",
+          "evidence": "The official biography identifies Lyon for this career event."
+        },
+        {
+          "key": "catalog-benzema-arrival",
+          "label": "Madrid arrival",
+          "prompt": "In which year did Benzema join Real Madrid?",
+          "answers": [
+            "2009"
+          ],
+          "distractors": [
+            "2007",
+            "2011",
+            "2013"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "2009",
+            "number": 2009,
+            "unit": "year"
+          },
+          "scope": "Benzema’s Madrid playing spell began in 2009.",
+          "sourceKey": "catalog-benzema-official",
+          "evidence": "The official club biography gives 2009 year for this specified context."
+        },
+        {
+          "key": "catalog-benzema-ballon-year",
+          "label": "Ballon d’Or year",
+          "prompt": "In which year did Benzema win the Ballon d’Or?",
+          "answers": [
+            "2022"
+          ],
+          "distractors": [
+            "2018",
+            "2020",
+            "2023"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "2022",
+            "number": 2022,
+            "unit": "year"
+          },
+          "scope": "Benzema’s individual Ballon d’Or award in 2022.",
+          "sourceKey": "catalog-benzema-official",
+          "evidence": "The official club biography gives 2022 year for this specified context."
+        }
+      ]
+    },
+    {
+      "key": "lesson-catalog-benzema-record",
+      "subjectKey": "entity-benzema",
+      "clubKey": "entity-madrid",
+      "title": "Karim Benzema · club record",
+      "subtitle": "A completed playing career, with the scope kept clear",
+      "story": [
+        {
+          "title": "Place the story",
+          "body": "Across his Madrid career, Benzema made 648 appearances and scored 354 goals. The club biography lists 25 team titles for that completed spell."
+        },
+        {
+          "title": "Keep the scope",
+          "body": "A title count and a goal count measure different achievements. These questions use Madrid totals and do not combine his records at Lyon, later clubs or France."
+        }
+      ],
+      "facts": [
+        {
+          "key": "catalog-benzema-appearances",
+          "label": "Club appearances",
+          "prompt": "How many Real Madrid senior appearances does Karim Benzema’s official biography record?",
+          "answers": [
+            "648"
+          ],
+          "distractors": [
+            "631",
+            "679",
+            "712"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "648",
+            "number": 648,
+            "unit": "appearances"
+          },
+          "scope": "Karim Benzema: completed Real Madrid senior playing career; official club biography verified 2026-10-09. Competitive club totals, not national-team or whole-career totals.",
+          "sourceKey": "catalog-benzema-official",
+          "evidence": "The official club biography gives 648 appearances for this specified context."
+        },
+        {
+          "key": "catalog-benzema-goals",
+          "label": "Club goals",
+          "prompt": "How many goals did Karim Benzema score during his completed Madrid playing career?",
+          "answers": [
+            "354"
+          ],
+          "distractors": [
+            "343",
+            "373",
+            "391"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "354",
+            "number": 354,
+            "unit": "goals"
+          },
+          "scope": "Karim Benzema: completed Real Madrid senior playing career; official club biography verified 2026-10-09. Competitive club totals, not national-team or whole-career totals.",
+          "sourceKey": "catalog-benzema-official",
+          "evidence": "The official club biography gives 354 goals for this specified context."
+        },
+        {
+          "key": "catalog-benzema-club-titles",
+          "label": "Club titles",
+          "prompt": "How many titles did Benzema win during his completed Madrid playing spell?",
+          "answers": [
+            "25"
+          ],
+          "distractors": [
+            "18",
+            "22",
+            "30"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "25",
+            "number": 25,
+            "unit": "titles"
+          },
+          "scope": "Real Madrid honours during Benzema’s 2009–2023 playing spell; this is not a current club record ranking.",
+          "sourceKey": "catalog-benzema-official",
+          "evidence": "The official club biography gives 25 titles for this specified context."
+        }
+      ]
+    },
+    {
+      "key": "lesson-catalog-zidane-career",
+      "subjectKey": "entity-zidane",
+      "clubKey": "entity-madrid",
+      "title": "Zinedine Zidane · career connections",
+      "subtitle": "A completed playing career, with the scope kept clear",
+      "story": [
+        {
+          "title": "Place the story",
+          "body": "Zidane moved from Juventus to Madrid in 2001. A year later, his volley against Bayer Leverkusen became a defining moment of the European final."
+        },
+        {
+          "title": "Keep the scope",
+          "body": "This path follows Zidane as a player. His later coaching career has its own dates and should not be added to his playing appearances."
+        }
+      ],
+      "facts": [
+        {
+          "key": "catalog-zidane-previous-club",
+          "label": "Previous club",
+          "prompt": "From which club did Zidane join Real Madrid in 2001?",
+          "answers": [
+            "Juventus",
+            "Juve",
+            "Juventus FC"
+          ],
+          "distractors": [
+            "Inter",
+            "Barcelona",
+            "Liverpool"
+          ],
+          "value": {
+            "kind": "entity",
+            "display": "Juventus",
+            "entityKey": "entity-juventus"
+          },
+          "scope": "Zidane’s playing transfer from Juventus to Madrid in July 2001.",
+          "sourceKey": "catalog-zidane-official",
+          "evidence": "The official biography identifies Juventus for this career event."
+        },
+        {
+          "key": "catalog-zidane-arrival",
+          "label": "Madrid arrival",
+          "prompt": "In which year did Zidane join Madrid as a player?",
+          "answers": [
+            "2001"
+          ],
+          "distractors": [
+            "1996",
+            "1998",
+            "2003"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "2001",
+            "number": 2001,
+            "unit": "year"
+          },
+          "scope": "Zidane’s playing spell, not his later coaching appointments.",
+          "sourceKey": "catalog-zidane-official",
+          "evidence": "The official club biography gives 2001 year for this specified context."
+        },
+        {
+          "key": "catalog-zidane-final-opponent",
+          "label": "2002 final opponent",
+          "prompt": "Against which club did Zidane score his decisive 2002 European final volley?",
+          "answers": [
+            "Bayer 04 Leverkusen",
+            "Bayer Leverkusen",
+            "Leverkusen"
+          ],
+          "distractors": [
+            "Liverpool",
+            "Juventus",
+            "Barcelona"
+          ],
+          "value": {
+            "kind": "entity",
+            "display": "Bayer 04 Leverkusen",
+            "entityKey": "entity-bayer-leverkusen"
+          },
+          "scope": "2002 European Cup/Champions League final; Zidane as a Madrid player.",
+          "sourceKey": "catalog-zidane-official",
+          "evidence": "The official biography identifies Bayer 04 Leverkusen for this career event."
+        }
+      ]
+    },
+    {
+      "key": "lesson-catalog-zidane-record",
+      "subjectKey": "entity-zidane",
+      "clubKey": "entity-madrid",
+      "title": "Zinedine Zidane · club record",
+      "subtitle": "A completed playing career, with the scope kept clear",
+      "story": [
+        {
+          "title": "Place the story",
+          "body": "Zidane’s Madrid playing spell ended in 2006 with 227 appearances and 49 goals, according to the club biography."
+        },
+        {
+          "title": "Keep the scope",
+          "body": "Remember the club and role alongside the totals: Madrid player, 2001–2006. These are not France caps, whole-career totals or matches managed."
+        }
+      ],
+      "facts": [
+        {
+          "key": "catalog-zidane-appearances",
+          "label": "Club appearances",
+          "prompt": "How many Real Madrid senior appearances does Zinedine Zidane’s official biography record?",
+          "answers": [
+            "227"
+          ],
+          "distractors": [
+            "210",
+            "258",
+            "291"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "227",
+            "number": 227,
+            "unit": "appearances"
+          },
+          "scope": "Zinedine Zidane: completed Real Madrid senior playing career; official club biography verified 2026-10-09. Competitive club totals, not national-team or whole-career totals.",
+          "sourceKey": "catalog-zidane-official",
+          "evidence": "The official club biography gives 227 appearances for this specified context."
+        },
+        {
+          "key": "catalog-zidane-goals",
+          "label": "Club goals",
+          "prompt": "How many goals did Zinedine Zidane score during his completed Madrid playing career?",
+          "answers": [
+            "49"
+          ],
+          "distractors": [
+            "38",
+            "68",
+            "86"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "49",
+            "number": 49,
+            "unit": "goals"
+          },
+          "scope": "Zinedine Zidane: completed Real Madrid senior playing career; official club biography verified 2026-10-09. Competitive club totals, not national-team or whole-career totals.",
+          "sourceKey": "catalog-zidane-official",
+          "evidence": "The official club biography gives 49 goals for this specified context."
+        },
+        {
+          "key": "catalog-zidane-playing-end",
+          "label": "Playing spell ended",
+          "prompt": "In which year did Zidane’s Madrid playing spell end?",
+          "answers": [
+            "2006"
+          ],
+          "distractors": [
+            "2004",
+            "2008",
+            "2010"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "2006",
+            "number": 2006,
+            "unit": "year"
+          },
+          "scope": "End of Zidane’s 2001–2006 Madrid playing spell; coaching years excluded.",
+          "sourceKey": "catalog-zidane-official",
+          "evidence": "The official club biography gives 2006 year for this specified context."
+        }
+      ]
+    },
+    {
+      "key": "lesson-catalog-bale-career",
+      "subjectKey": "entity-bale",
+      "clubKey": "entity-madrid",
+      "title": "Gareth Bale · career connections",
+      "subtitle": "A completed playing career, with the scope kept clear",
+      "story": [
+        {
+          "title": "Place the story",
+          "body": "Bale arrived at Madrid in 2013 and made his debut against Villarreal that September. Later, his overhead kick against Liverpool became part of the club’s European final history."
+        },
+        {
+          "title": "Keep the scope",
+          "body": "Keep the two opponents separate: Villarreal belongs to his Madrid debut, Liverpool to the 2018 final. The dates give each connection its own place."
+        }
+      ],
+      "facts": [
+        {
+          "key": "catalog-bale-arrival",
+          "label": "Madrid arrival",
+          "prompt": "In which year did Gareth Bale join Real Madrid?",
+          "answers": [
+            "2013"
+          ],
+          "distractors": [
+            "2011",
+            "2014",
+            "2016"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "2013",
+            "number": 2013,
+            "unit": "year"
+          },
+          "scope": "Bale’s Madrid arrival in September 2013.",
+          "sourceKey": "catalog-bale-official",
+          "evidence": "The official club biography gives 2013 year for this specified context."
+        },
+        {
+          "key": "catalog-bale-debut-opponent",
+          "label": "Madrid debut opponent",
+          "prompt": "Against which club did Bale make his Madrid debut in September 2013?",
+          "answers": [
+            "Villarreal",
+            "Villarreal CF"
+          ],
+          "distractors": [
+            "Liverpool",
+            "Barcelona",
+            "Juventus"
+          ],
+          "value": {
+            "kind": "entity",
+            "display": "Villarreal",
+            "entityKey": "entity-villarreal"
+          },
+          "scope": "Madrid debut on 14 September 2013 at Villarreal.",
+          "sourceKey": "catalog-bale-official",
+          "evidence": "The official biography identifies Villarreal for this career event."
+        },
+        {
+          "key": "catalog-bale-overhead-opponent",
+          "label": "Overhead-kick opponent",
+          "prompt": "Against which club did Bale score his overhead kick in the 2018 European final?",
+          "answers": [
+            "Liverpool",
+            "Liverpool FC",
+            "LFC"
+          ],
+          "distractors": [
+            "Barcelona",
+            "Juventus",
+            "Bayer 04 Leverkusen"
+          ],
+          "value": {
+            "kind": "entity",
+            "display": "Liverpool",
+            "entityKey": "entity-liverpool"
+          },
+          "scope": "2018 European Cup/Champions League final; Bale’s overhead kick for Madrid.",
+          "sourceKey": "catalog-bale-official",
+          "evidence": "The official biography identifies Liverpool for this career event."
+        }
+      ]
+    },
+    {
+      "key": "lesson-catalog-bale-record",
+      "subjectKey": "entity-bale",
+      "clubKey": "entity-madrid",
+      "title": "Gareth Bale · club record",
+      "subtitle": "A completed playing career, with the scope kept clear",
+      "story": [
+        {
+          "title": "Place the story",
+          "body": "The Madrid biography lists 258 appearances, 106 goals and five European title honours for Bale. These totals refer to his Madrid career."
+        },
+        {
+          "title": "Keep the scope",
+          "body": "A trophy honour does not by itself say a player took the field in every final. Learn the club’s published honours count separately from individual match participation."
+        }
+      ],
+      "facts": [
+        {
+          "key": "catalog-bale-appearances",
+          "label": "Club appearances",
+          "prompt": "How many Real Madrid senior appearances does Gareth Bale’s official biography record?",
+          "answers": [
+            "258"
+          ],
+          "distractors": [
+            "241",
+            "289",
+            "322"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "258",
+            "number": 258,
+            "unit": "appearances"
+          },
+          "scope": "Gareth Bale: completed Real Madrid senior playing career; official club biography verified 2026-10-09. Competitive club totals, not national-team or whole-career totals.",
+          "sourceKey": "catalog-bale-official",
+          "evidence": "The official club biography gives 258 appearances for this specified context."
+        },
+        {
+          "key": "catalog-bale-goals",
+          "label": "Club goals",
+          "prompt": "How many goals did Gareth Bale score during his completed Madrid playing career?",
+          "answers": [
+            "106"
+          ],
+          "distractors": [
+            "95",
+            "125",
+            "143"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "106",
+            "number": 106,
+            "unit": "goals"
+          },
+          "scope": "Gareth Bale: completed Real Madrid senior playing career; official club biography verified 2026-10-09. Competitive club totals, not national-team or whole-career totals.",
+          "sourceKey": "catalog-bale-official",
+          "evidence": "The official club biography gives 106 goals for this specified context."
+        },
+        {
+          "key": "catalog-bale-european-titles",
+          "label": "European titles",
+          "prompt": "How many European Cup/Champions League titles did Bale win with Madrid?",
+          "answers": [
+            "5"
+          ],
+          "distractors": [
+            "3",
+            "4",
+            "6"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "5",
+            "number": 5,
+            "unit": "titles"
+          },
+          "scope": "Bale’s Madrid European title honours between 2014 and 2022; not a claim that he appeared in every final.",
+          "sourceKey": "catalog-bale-official",
+          "evidence": "The official club biography gives 5 titles for this specified context."
+        }
+      ]
+    },
+    {
+      "key": "lesson-catalog-roberto-carlos-career",
+      "subjectKey": "entity-roberto-carlos",
+      "clubKey": "entity-madrid",
+      "title": "Roberto Carlos · career connections",
+      "subtitle": "A completed playing career, with the scope kept clear",
+      "story": [
+        {
+          "title": "Place the story",
+          "body": "Roberto Carlos arrived from Inter in 1996. Madrid’s biography identifies him as a left back, giving his club move and playing role a clear historical context."
+        },
+        {
+          "title": "Keep the scope",
+          "body": "Connect Inter to the previous stop and Madrid to the spell that began in 1996. This is a past transfer, not a current-club question."
+        }
+      ],
+      "facts": [
+        {
+          "key": "catalog-roberto-carlos-role",
+          "label": "Playing role",
+          "prompt": "Which position does Madrid’s biography give Roberto Carlos?",
+          "answers": [
+            "Left back",
+            "Left-back",
+            "Leftback",
+            "LB"
+          ],
+          "distractors": [
+            "Goalkeeper",
+            "Centre-forward",
+            "Centre-back"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Left back",
+            "text": "Left back"
+          },
+          "scope": "Roberto Carlos’s principal Madrid playing role.",
+          "sourceKey": "catalog-roberto-carlos-official",
+          "evidence": "The official biography identifies Left back for this career event."
+        },
+        {
+          "key": "catalog-roberto-carlos-previous-club",
+          "label": "Previous club",
+          "prompt": "From which club did Roberto Carlos move to Madrid in 1996?",
+          "answers": [
+            "Inter",
+            "Inter Milan",
+            "Internazionale",
+            "Internazionale Milano"
+          ],
+          "distractors": [
+            "Juventus",
+            "Liverpool",
+            "Barcelona"
+          ],
+          "value": {
+            "kind": "entity",
+            "display": "Inter",
+            "entityKey": "entity-inter"
+          },
+          "scope": "Transfer from Inter to Madrid in 1996.",
+          "sourceKey": "catalog-roberto-carlos-official",
+          "evidence": "The official biography identifies Inter for this career event."
+        },
+        {
+          "key": "catalog-roberto-carlos-arrival",
+          "label": "Madrid arrival",
+          "prompt": "In which year did Roberto Carlos join Real Madrid?",
+          "answers": [
+            "1996"
+          ],
+          "distractors": [
+            "1994",
+            "1998",
+            "2001"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "1996",
+            "number": 1996,
+            "unit": "year"
+          },
+          "scope": "Roberto Carlos’s Madrid playing spell began in 1996.",
+          "sourceKey": "catalog-roberto-carlos-official",
+          "evidence": "The official club biography gives 1996 year for this specified context."
+        }
+      ]
+    },
+    {
+      "key": "lesson-catalog-roberto-carlos-record",
+      "subjectKey": "entity-roberto-carlos",
+      "clubKey": "entity-madrid",
+      "title": "Roberto Carlos · club record",
+      "subtitle": "A completed playing career, with the scope kept clear",
+      "story": [
+        {
+          "title": "Place the story",
+          "body": "Roberto Carlos left Madrid in 2007 after 527 appearances and 68 goals. Those figures describe his completed Madrid playing record."
+        },
+        {
+          "title": "Keep the scope",
+          "body": "The departure date is not a retirement date. Keep the club spell separate from his earlier teams, later teams and appearances for Brazil."
+        }
+      ],
+      "facts": [
+        {
+          "key": "catalog-roberto-carlos-appearances",
+          "label": "Club appearances",
+          "prompt": "How many Real Madrid senior appearances does Roberto Carlos’s official biography record?",
+          "answers": [
+            "527"
+          ],
+          "distractors": [
+            "510",
+            "558",
+            "591"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "527",
+            "number": 527,
+            "unit": "appearances"
+          },
+          "scope": "Roberto Carlos: completed Real Madrid senior playing career; official club biography verified 2026-10-09. Competitive club totals, not national-team or whole-career totals.",
+          "sourceKey": "catalog-roberto-carlos-official",
+          "evidence": "The official club biography gives 527 appearances for this specified context."
+        },
+        {
+          "key": "catalog-roberto-carlos-goals",
+          "label": "Club goals",
+          "prompt": "How many goals did Roberto Carlos score during his completed Madrid playing career?",
+          "answers": [
+            "68"
+          ],
+          "distractors": [
+            "57",
+            "87",
+            "105"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "68",
+            "number": 68,
+            "unit": "goals"
+          },
+          "scope": "Roberto Carlos: completed Real Madrid senior playing career; official club biography verified 2026-10-09. Competitive club totals, not national-team or whole-career totals.",
+          "sourceKey": "catalog-roberto-carlos-official",
+          "evidence": "The official club biography gives 68 goals for this specified context."
+        },
+        {
+          "key": "catalog-roberto-carlos-playing-end",
+          "label": "Madrid departure",
+          "prompt": "In which year did Roberto Carlos leave Madrid?",
+          "answers": [
+            "2007"
+          ],
+          "distractors": [
+            "2005",
+            "2009",
+            "2011"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "2007",
+            "number": 2007,
+            "unit": "year"
+          },
+          "scope": "End of Roberto Carlos’s Madrid playing spell; not his retirement year.",
+          "sourceKey": "catalog-roberto-carlos-official",
+          "evidence": "The official club biography gives 2007 year for this specified context."
+        }
+      ]
+    },
+    {
+      "key": "lesson-catalog-di-stefano-career",
+      "subjectKey": "entity-di-stefano",
+      "clubKey": "entity-madrid",
+      "title": "Alfredo Di Stéfano · career connections",
+      "subtitle": "A completed playing career, with the scope kept clear",
+      "story": [
+        {
+          "title": "Place the story",
+          "body": "Di Stéfano was born in Buenos Aires and played for Madrid from 1953 to 1964. Birthplace and club playing period are separate facts."
+        },
+        {
+          "title": "Keep the scope",
+          "body": "He also later worked as a coach. These lessons keep his playing record separate from those later roles and from national-team appearances."
+        }
+      ],
+      "facts": [
+        {
+          "key": "catalog-di-stefano-birth-city",
+          "label": "Birth city",
+          "prompt": "In which city was Alfredo Di Stéfano born?",
+          "answers": [
+            "Buenos Aires",
+            "Buenos Aires, Argentina"
+          ],
+          "distractors": [
+            "Madrid",
+            "Montevideo",
+            "Rosario"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Buenos Aires",
+            "text": "Buenos Aires"
+          },
+          "scope": "Di Stéfano’s birthplace in Argentina in 1926; not a national-team eligibility claim.",
+          "sourceKey": "catalog-di-stefano-official",
+          "evidence": "The official biography identifies Buenos Aires for this career event."
+        },
+        {
+          "key": "catalog-di-stefano-arrival",
+          "label": "Madrid arrival",
+          "prompt": "In which year did Di Stéfano’s Madrid playing spell begin?",
+          "answers": [
+            "1953"
+          ],
+          "distractors": [
+            "1949",
+            "1956",
+            "1960"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "1953",
+            "number": 1953,
+            "unit": "year"
+          },
+          "scope": "Madrid playing spell 1953–1964.",
+          "sourceKey": "catalog-di-stefano-official",
+          "evidence": "The official club biography gives 1953 year for this specified context."
+        },
+        {
+          "key": "catalog-di-stefano-playing-end",
+          "label": "Madrid playing departure",
+          "prompt": "In which year did Di Stéfano’s Madrid playing spell end?",
+          "answers": [
+            "1964"
+          ],
+          "distractors": [
+            "1960",
+            "1962",
+            "1966"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "1964",
+            "number": 1964,
+            "unit": "year"
+          },
+          "scope": "End of his Madrid playing spell; later coaching roles excluded.",
+          "sourceKey": "catalog-di-stefano-official",
+          "evidence": "The official club biography gives 1964 year for this specified context."
+        }
+      ]
+    },
+    {
+      "key": "lesson-catalog-di-stefano-record",
+      "subjectKey": "entity-di-stefano",
+      "clubKey": "entity-madrid",
+      "title": "Alfredo Di Stéfano · club record",
+      "subtitle": "A completed playing career, with the scope kept clear",
+      "story": [
+        {
+          "title": "Place the story",
+          "body": "Madrid’s biography records 396 official appearances and 308 goals for Di Stéfano. His later Super Ballon d’Or was awarded in 1989."
+        },
+        {
+          "title": "Keep the scope",
+          "body": "The award year lies outside his Madrid playing period. Use that separation to distinguish a career honour from a goal or appearance during a club spell."
+        }
+      ],
+      "facts": [
+        {
+          "key": "catalog-di-stefano-appearances",
+          "label": "Club appearances",
+          "prompt": "How many Real Madrid senior appearances does Alfredo Di Stéfano’s official biography record?",
+          "answers": [
+            "396"
+          ],
+          "distractors": [
+            "379",
+            "427",
+            "460"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "396",
+            "number": 396,
+            "unit": "appearances"
+          },
+          "scope": "Alfredo Di Stéfano: completed Real Madrid senior playing career; official club biography verified 2026-10-09. Competitive club totals, not national-team or whole-career totals.",
+          "sourceKey": "catalog-di-stefano-official",
+          "evidence": "The official club biography gives 396 appearances for this specified context."
+        },
+        {
+          "key": "catalog-di-stefano-goals",
+          "label": "Club goals",
+          "prompt": "How many goals did Alfredo Di Stéfano score during his completed Madrid playing career?",
+          "answers": [
+            "308"
+          ],
+          "distractors": [
+            "297",
+            "327",
+            "345"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "308",
+            "number": 308,
+            "unit": "goals"
+          },
+          "scope": "Alfredo Di Stéfano: completed Real Madrid senior playing career; official club biography verified 2026-10-09. Competitive club totals, not national-team or whole-career totals.",
+          "sourceKey": "catalog-di-stefano-official",
+          "evidence": "The official club biography gives 308 goals for this specified context."
+        },
+        {
+          "key": "catalog-di-stefano-super-ballon",
+          "label": "Super Ballon d’Or",
+          "prompt": "In which year did Di Stéfano receive the Super Ballon d’Or?",
+          "answers": [
+            "1989"
+          ],
+          "distractors": [
+            "1957",
+            "1959",
+            "1999"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "1989",
+            "number": 1989,
+            "unit": "year"
+          },
+          "scope": "Career recognition awarded in 1989, after his Madrid playing spell; distinct from his 1957 and 1959 Ballons d’Or.",
+          "sourceKey": "catalog-di-stefano-official",
+          "evidence": "The official club biography gives 1989 year for this specified context."
+        }
+      ]
+    },
+    {
+      "key": "lesson-catalog-gerrard-career",
+      "subjectKey": "entity-gerrard",
+      "clubKey": "entity-liverpool",
+      "title": "Steven Gerrard · career connections",
+      "subtitle": "A completed playing career, with the scope kept clear",
+      "story": [
+        {
+          "title": "Place the story",
+          "body": "Gerrard’s first Liverpool appearance came in 1998. He became captain in 2003 and lifted the European Cup in Istanbul in 2005."
+        },
+        {
+          "title": "Keep the scope",
+          "body": "The three years describe different milestones: debut, captaincy and a title. Recall the event alongside its date instead of treating the years as an interchangeable list."
+        }
+      ],
+      "facts": [
+        {
+          "key": "catalog-gerrard-senior-debut",
+          "label": "Liverpool debut",
+          "prompt": "In which year did Steven Gerrard make his Liverpool first-team debut?",
+          "answers": [
+            "1998"
+          ],
+          "distractors": [
+            "1996",
+            "2000",
+            "2003"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "1998",
+            "number": 1998,
+            "unit": "year"
+          },
+          "scope": "Liverpool senior debut on 29 November 1998.",
+          "sourceKey": "catalog-gerrard-official",
+          "evidence": "The official club biography gives 1998 year for this specified context."
+        },
+        {
+          "key": "catalog-gerrard-captain",
+          "label": "Captaincy began",
+          "prompt": "In which year did Gerrard first receive Liverpool’s captaincy?",
+          "answers": [
+            "2003"
+          ],
+          "distractors": [
+            "2001",
+            "2005",
+            "2007"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "2003",
+            "number": 2003,
+            "unit": "year"
+          },
+          "scope": "Captaincy awarded by Gérard Houllier in 2003.",
+          "sourceKey": "catalog-gerrard-official",
+          "evidence": "The official club biography gives 2003 year for this specified context."
+        },
+        {
+          "key": "catalog-gerrard-european-title",
+          "label": "Istanbul title",
+          "prompt": "In which year did Gerrard lift Liverpool’s European Cup in Istanbul?",
+          "answers": [
+            "2005"
+          ],
+          "distractors": [
+            "2001",
+            "2007",
+            "2012"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "2005",
+            "number": 2005,
+            "unit": "year"
+          },
+          "scope": "Liverpool European Cup/Champions League win in Istanbul on 25 May 2005.",
+          "sourceKey": "catalog-gerrard-official",
+          "evidence": "The official club biography gives 2005 year for this specified context."
+        }
+      ]
+    },
+    {
+      "key": "lesson-catalog-gerrard-record",
+      "subjectKey": "entity-gerrard",
+      "clubKey": "entity-liverpool",
+      "title": "Steven Gerrard · club record",
+      "subtitle": "A completed playing career, with the scope kept clear",
+      "story": [
+        {
+          "title": "Place the story",
+          "body": "Gerrard made 710 Liverpool appearances and scored 186 Liverpool goals. His completed England career is a separate record of 114 caps."
+        },
+        {
+          "title": "Keep the scope",
+          "body": "Club appearances and national-team caps use different scopes. In these questions, the named team tells you which total to retrieve."
+        }
+      ],
+      "facts": [
+        {
+          "key": "catalog-gerrard-appearances",
+          "label": "Club appearances",
+          "prompt": "How many Liverpool senior appearances does Steven Gerrard’s official biography record?",
+          "answers": [
+            "710"
+          ],
+          "distractors": [
+            "693",
+            "741",
+            "774"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "710",
+            "number": 710,
+            "unit": "appearances"
+          },
+          "scope": "Steven Gerrard: completed Liverpool senior playing career; official club biography verified 2026-10-09. Competitive club totals, not national-team or whole-career totals.",
+          "sourceKey": "catalog-gerrard-official",
+          "evidence": "The official club biography gives 710 appearances for this specified context."
+        },
+        {
+          "key": "catalog-gerrard-goals",
+          "label": "Club goals",
+          "prompt": "How many goals did Steven Gerrard score during his completed Liverpool playing career?",
+          "answers": [
+            "186"
+          ],
+          "distractors": [
+            "175",
+            "205",
+            "223"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "186",
+            "number": 186,
+            "unit": "goals"
+          },
+          "scope": "Steven Gerrard: completed Liverpool senior playing career; official club biography verified 2026-10-09. Competitive club totals, not national-team or whole-career totals.",
+          "sourceKey": "catalog-gerrard-official",
+          "evidence": "The official club biography gives 186 goals for this specified context."
+        },
+        {
+          "key": "catalog-gerrard-england-caps",
+          "label": "England caps",
+          "prompt": "How many England appearances had Gerrard made when he retired from international football in 2014?",
+          "answers": [
+            "114"
+          ],
+          "distractors": [
+            "93",
+            "102",
+            "128"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "114",
+            "number": 114,
+            "unit": "caps"
+          },
+          "scope": "England senior international career completed in 2014; national-team caps, not Liverpool appearances.",
+          "sourceKey": "catalog-gerrard-official",
+          "evidence": "The official club biography gives 114 caps for this specified context."
+        }
+      ]
+    },
+    {
+      "key": "lesson-catalog-rush-career",
+      "subjectKey": "entity-rush",
+      "clubKey": "entity-liverpool",
+      "title": "Ian Rush · career connections",
+      "subtitle": "A completed playing career, with the scope kept clear",
+      "story": [
+        {
+          "title": "Place the story",
+          "body": "Ian Rush had two Liverpool spells: 1980–1987 and 1988–1996. His year at Juventus sits between them rather than inside an uninterrupted Liverpool career."
+        },
+        {
+          "title": "Keep the scope",
+          "body": "Follow the route as a sequence: first arrival, Juventus, Liverpool return. That structure helps explain why the club biography lists two separate playing periods."
+        }
+      ],
+      "facts": [
+        {
+          "key": "catalog-rush-arrival",
+          "label": "First Liverpool arrival",
+          "prompt": "In which year did Ian Rush first join Liverpool?",
+          "answers": [
+            "1980"
+          ],
+          "distractors": [
+            "1978",
+            "1982",
+            "1984"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "1980",
+            "number": 1980,
+            "unit": "year"
+          },
+          "scope": "Beginning of Rush’s first Liverpool spell, 1980–1987.",
+          "sourceKey": "catalog-rush-official",
+          "evidence": "The official club biography gives 1980 year for this specified context."
+        },
+        {
+          "key": "catalog-rush-between-spells",
+          "label": "Club between spells",
+          "prompt": "Which club did Rush join between his two Liverpool spells?",
+          "answers": [
+            "Juventus",
+            "Juve",
+            "Juventus FC"
+          ],
+          "distractors": [
+            "Inter",
+            "Barcelona",
+            "Real Madrid"
+          ],
+          "value": {
+            "kind": "entity",
+            "display": "Juventus",
+            "entityKey": "entity-juventus"
+          },
+          "scope": "Rush’s move to Juventus between his Liverpool spells of 1980–1987 and 1988–1996.",
+          "sourceKey": "catalog-rush-official",
+          "evidence": "The official biography identifies Juventus for this career event."
+        },
+        {
+          "key": "catalog-rush-return",
+          "label": "Liverpool return",
+          "prompt": "In which year did Rush return to Liverpool for his second spell?",
+          "answers": [
+            "1988"
+          ],
+          "distractors": [
+            "1986",
+            "1990",
+            "1992"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "1988",
+            "number": 1988,
+            "unit": "year"
+          },
+          "scope": "Beginning of Rush’s second Liverpool spell, 1988–1996.",
+          "sourceKey": "catalog-rush-official",
+          "evidence": "The official club biography gives 1988 year for this specified context."
+        }
+      ]
+    },
+    {
+      "key": "lesson-catalog-rush-record",
+      "subjectKey": "entity-rush",
+      "clubKey": "entity-liverpool",
+      "title": "Ian Rush · club record",
+      "subtitle": "A completed playing career, with the scope kept clear",
+      "story": [
+        {
+          "title": "Place the story",
+          "body": "Across both Liverpool spells, Rush recorded 660 appearances and 346 goals. The club’s account also gives 47 goals for his 1983/84 season."
+        },
+        {
+          "title": "Keep the scope",
+          "body": "The season total is smaller because it covers one campaign. Match the scope to the number: both Liverpool spells for the career totals, 1983/84 for the season tally."
+        }
+      ],
+      "facts": [
+        {
+          "key": "catalog-rush-appearances",
+          "label": "Club appearances",
+          "prompt": "How many Liverpool senior appearances does Ian Rush’s official biography record?",
+          "answers": [
+            "660"
+          ],
+          "distractors": [
+            "643",
+            "691",
+            "724"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "660",
+            "number": 660,
+            "unit": "appearances"
+          },
+          "scope": "Ian Rush: completed Liverpool senior playing career; official club biography verified 2026-10-09. Competitive club totals, not national-team or whole-career totals.",
+          "sourceKey": "catalog-rush-official",
+          "evidence": "The official club biography gives 660 appearances for this specified context."
+        },
+        {
+          "key": "catalog-rush-goals",
+          "label": "Club goals",
+          "prompt": "How many goals did Ian Rush score during his completed Liverpool playing career?",
+          "answers": [
+            "346"
+          ],
+          "distractors": [
+            "335",
+            "365",
+            "383"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "346",
+            "number": 346,
+            "unit": "goals"
+          },
+          "scope": "Ian Rush: completed Liverpool senior playing career; official club biography verified 2026-10-09. Competitive club totals, not national-team or whole-career totals.",
+          "sourceKey": "catalog-rush-official",
+          "evidence": "The official club biography gives 346 goals for this specified context."
+        },
+        {
+          "key": "catalog-rush-best-season-goals",
+          "label": "1983/84 goals",
+          "prompt": "How many goals did Rush score for Liverpool in all competitions in 1983/84?",
+          "answers": [
+            "47"
+          ],
+          "distractors": [
+            "30",
+            "31",
+            "40"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "47",
+            "number": 47,
+            "unit": "goals"
+          },
+          "scope": "Liverpool 1983/84 season, all competitions; one-season total, not career goals.",
+          "sourceKey": "catalog-rush-official",
+          "evidence": "The official club biography gives 47 goals for this specified context."
+        }
+      ]
+    },
+    {
+      "key": "lesson-global-messi-career",
+      "subjectKey": "entity-messi",
+      "clubKey": "entity-barcelona",
+      "title": "Messi’s Barcelona journey",
+      "subtitle": "From Rosario to a long senior career at Barça",
+      "story": [
+        {
+          "title": "From Rosario",
+          "body": "Lionel Messi was born in Rosario, Argentina. FC Barcelona’s player profile records his senior Barcelona years as 2004 to 2021, a span that began when he entered the first team as a teenager."
+        },
+        {
+          "title": "A career across generations",
+          "body": "Messi’s first-team career at Barcelona began in 2004 and concluded in 2021. He remained with the club across many seasons, becoming a defining figure of the team’s modern era. Those dates describe his Barcelona senior span, rather than his full playing career elsewhere."
+        }
+      ],
+      "facts": [
+        {
+          "key": "messi-career-birthplace",
+          "label": "Messi’s birthplace",
+          "prompt": "Where was Lionel Messi born?",
+          "answers": [
+            "Rosario",
+            "Rosario, Argentina"
+          ],
+          "distractors": [
+            "Terrassa",
+            "Barcelona",
+            "Buenos Aires"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Rosario",
+            "text": "Rosario"
+          },
+          "scope": "Lionel Messi's birthplace; personal biographical fact, not a Barcelona club statistic",
+          "sourceKey": "global-player-messi-profile",
+          "evidence": "Official player profile lists Rosario as his birthplace."
+        },
+        {
+          "key": "messi-career-start-year",
+          "label": "Messi’s Barcelona senior start",
+          "prompt": "In which year did Messi’s senior Barcelona years begin?",
+          "answers": [
+            "2004",
+            "two thousand four"
+          ],
+          "distractors": [
+            "1998",
+            "2000",
+            "2005"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "2004",
+            "number": 2004,
+            "unit": "year"
+          },
+          "scope": "Start year of Messi's Barcelona senior-team span, 2004–2021",
+          "sourceKey": "global-player-messi-profile",
+          "evidence": "Official player profile lists his senior years as 2004–2021."
+        },
+        {
+          "key": "messi-career-end-year",
+          "label": "Messi’s Barcelona senior-team final year",
+          "prompt": "What was the final year of Messi’s Barcelona senior-team span?",
+          "answers": [
+            "2021",
+            "two thousand twenty-one"
+          ],
+          "distractors": [
+            "2015",
+            "2019",
+            "2022"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "2021",
+            "number": 2021,
+            "unit": "year"
+          },
+          "scope": "End year of Messi's Barcelona senior-team span, 2004–2021",
+          "sourceKey": "global-player-messi-profile",
+          "evidence": "Official player profile lists his senior years as 2004–2021."
+        }
+      ]
+    },
+    {
+      "key": "lesson-global-messi-records",
+      "subjectKey": "entity-messi",
+      "clubKey": "entity-barcelona",
+      "title": "Messi’s Barcelona record",
+      "subtitle": "Official appearances, goals and European honours",
+      "story": [
+        {
+          "title": "The club’s official count",
+          "body": "FC Barcelona’s record article separates official first-team appearances from other matches. As of 27 May 2021, it credited Messi with 778 official appearances and 672 goals. The date matters: these are historical club totals reported at the close of his Barcelona chapter."
+        },
+        {
+          "title": "Success in Europe",
+          "body": "Messi also won four European Cups with Barcelona. Together, the club-reported totals of 778 official appearances, 672 goals and four European Cups sketch his Barcelona record. They do not include later matches played after his departure."
+        }
+      ],
+      "facts": [
+        {
+          "key": "messi-record-official-appearances",
+          "label": "Messi’s official Barcelona appearances",
+          "prompt": "How many official Barcelona appearances had Messi made by 27 May 2021?",
+          "answers": [
+            "778",
+            "seven hundred seventy-eight",
+            "seven hundred and seventy-eight"
+          ],
+          "distractors": [
+            "767",
+            "837",
+            "672"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "778",
+            "number": 778,
+            "unit": "official Barcelona appearances"
+          },
+          "scope": "FC Barcelona official first-team appearances as of 2021-05-27; excludes other-match totals in the broader profile headline statistic",
+          "sourceKey": "global-player-messi-official-records",
+          "evidence": "The official club records article gives 778 official matches as of 27 May 2021."
+        },
+        {
+          "key": "messi-record-official-goals",
+          "label": "Messi’s official Barcelona goals",
+          "prompt": "How many goals had Messi scored in official Barcelona matches by 27 May 2021?",
+          "answers": [
+            "672",
+            "six hundred seventy-two",
+            "six hundred and seventy-two"
+          ],
+          "distractors": [
+            "778",
+            "709",
+            "6720"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "672",
+            "number": 672,
+            "unit": "goals in official Barcelona matches"
+          },
+          "scope": "FC Barcelona official first-team goals as of 2021-05-27; excludes other-match totals in the broader profile headline statistic",
+          "sourceKey": "global-player-messi-official-records",
+          "evidence": "The official club records article gives 672 goals as of 27 May 2021."
+        },
+        {
+          "key": "messi-record-european-cups",
+          "label": "Messi’s European Cups with Barcelona",
+          "prompt": "How many European Cups did Messi win with Barcelona?",
+          "answers": [
+            "4",
+            "four"
+          ],
+          "distractors": [
+            "2",
+            "3",
+            "5"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "4",
+            "number": 4,
+            "unit": "European Cups"
+          },
+          "scope": "Lionel Messi's FC Barcelona career, 2004–2021; club trophies",
+          "sourceKey": "global-player-messi-profile",
+          "evidence": "Official profile credits him with four European Cups."
+        }
+      ]
+    },
+    {
+      "key": "lesson-global-xavi-career",
+      "subjectKey": "entity-xavi",
+      "clubKey": "entity-barcelona",
+      "title": "Xavi’s Barcelona beginnings",
+      "subtitle": "A Terrassa-born midfielder’s first-team journey",
+      "story": [
+        {
+          "title": "A local beginning",
+          "body": "Xavi Hernández was born in Terrassa, Spain. Barcelona’s legend profile marks his senior debut in 1998, beginning a long first-team career with the club."
+        },
+        {
+          "title": "The end of his Barça playing chapter",
+          "body": "Xavi’s final Barcelona season ended in 2015. After that season he continued his playing career elsewhere, so the 1998 debut and 2015 final season mark only his Barça first-team period."
+        }
+      ],
+      "facts": [
+        {
+          "key": "xavi-career-birthplace",
+          "label": "Xavi’s birthplace",
+          "prompt": "Where was Xavi Hernández born?",
+          "answers": [
+            "Terrassa",
+            "Terrassa, Spain"
+          ],
+          "distractors": [
+            "Rosario",
+            "Barcelona",
+            "Madrid"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Terrassa",
+            "text": "Terrassa"
+          },
+          "scope": "Xavi Hernández's birthplace; personal biographical fact",
+          "sourceKey": "global-player-xavi-profile",
+          "evidence": "Official Barça Legends profile gives his birthplace as Terrassa."
+        },
+        {
+          "key": "xavi-career-senior-debut",
+          "label": "Xavi’s Barcelona senior debut year",
+          "prompt": "In which year did Xavi make his senior Barcelona debut?",
+          "answers": [
+            "1998",
+            "nineteen ninety-eight"
+          ],
+          "distractors": [
+            "1996",
+            "1999",
+            "2000"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "1998",
+            "number": 1998,
+            "unit": "year"
+          },
+          "scope": "Xavi's senior-team debut for FC Barcelona",
+          "sourceKey": "global-player-xavi-profile",
+          "evidence": "Official Barça Legends profile dates his senior debut to 1998."
+        },
+        {
+          "key": "xavi-career-final-barcelona-season",
+          "label": "Xavi’s final Barcelona season",
+          "prompt": "In which year did Xavi’s final Barcelona playing season end?",
+          "answers": [
+            "2015",
+            "two thousand fifteen"
+          ],
+          "distractors": [
+            "2013",
+            "2014",
+            "2016"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "2015",
+            "number": 2015,
+            "unit": "season end year"
+          },
+          "scope": "Xavi's final FC Barcelona playing season; the source identifies 2015 as his last season",
+          "sourceKey": "global-player-xavi-profile",
+          "evidence": "Official Barça Legends profile identifies 2015 as his final Barça season."
+        }
+      ]
+    },
+    {
+      "key": "lesson-global-xavi-records",
+      "subjectKey": "entity-xavi",
+      "clubKey": "entity-barcelona",
+      "title": "Xavi’s Barcelona honours and games",
+      "subtitle": "A long record of matches and major trophies",
+      "story": [
+        {
+          "title": "A Barça mainstay",
+          "body": "Barcelona’s official legend profile records 767 games for Xavi. Across his Barcelona career, he won eight league titles, anchoring a period of sustained domestic success."
+        },
+        {
+          "title": "European champion",
+          "body": "Xavi also lifted the Champions League four times with Barcelona. The club’s profile groups that European record with his 767 games and eight league titles; all three totals refer to his Barça career."
+        }
+      ],
+      "facts": [
+        {
+          "key": "xavi-record-barcelona-games",
+          "label": "Xavi’s Barcelona games",
+          "prompt": "How many games did Xavi play for Barcelona, according to the club’s legend profile?",
+          "answers": [
+            "767",
+            "seven hundred sixty-seven",
+            "seven hundred and sixty-seven"
+          ],
+          "distractors": [
+            "778",
+            "517",
+            "500"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "767",
+            "number": 767,
+            "unit": "Barcelona games"
+          },
+          "scope": "Xavi's FC Barcelona playing career; official club legend profile total",
+          "sourceKey": "global-player-xavi-profile",
+          "evidence": "Official Barça Legends profile lists 767 games."
+        },
+        {
+          "key": "xavi-record-league-titles",
+          "label": "Xavi’s Barcelona league titles",
+          "prompt": "How many league titles did Xavi win with Barcelona?",
+          "answers": [
+            "8",
+            "eight"
+          ],
+          "distractors": [
+            "6",
+            "7",
+            "9"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "8",
+            "number": 8,
+            "unit": "league titles"
+          },
+          "scope": "Xavi's FC Barcelona career; domestic league titles",
+          "sourceKey": "global-player-xavi-profile",
+          "evidence": "Official Barça Legends profile lists eight league titles."
+        },
+        {
+          "key": "xavi-record-champions-league-titles",
+          "label": "Xavi’s Barcelona Champions League titles",
+          "prompt": "How many Champions League titles did Xavi win with Barcelona?",
+          "answers": [
+            "4",
+            "four"
+          ],
+          "distractors": [
+            "3",
+            "5",
+            "6"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "4",
+            "number": 4,
+            "unit": "Champions League titles"
+          },
+          "scope": "Xavi's FC Barcelona career; UEFA Champions League titles",
+          "sourceKey": "global-player-xavi-profile",
+          "evidence": "Official Barça Legends profile lists four Champions League titles."
+        }
+      ]
+    },
+    {
+      "key": "lesson-global-lahm-career",
+      "subjectKey": "entity-lahm",
+      "clubKey": "entity-bayern-munich",
+      "title": "Lahm’s route back to Bayern",
+      "subtitle": "A Stuttgart loan and leadership on two world stages",
+      "story": [
+        {
+          "title": "A loan spell away",
+          "body": "Philipp Lahm spent a loan spell at VfB Stuttgart before returning to Bayern Munich. The Bayern Hall of Fame includes that detour in its account of his career, while his Bayern statistics count only his appearances for the Munich club."
+        },
+        {
+          "title": "Captain for club and country",
+          "body": "Lahm captained Bayern to the 2013 Champions League title. A year later, he captained Germany to the 2014 World Cup. Those milestones belong to different teams: one was a Bayern club triumph, and the other an international title with Germany."
+        }
+      ],
+      "facts": [
+        {
+          "key": "lahm-career-loan-club",
+          "label": "Lahm’s loan club",
+          "prompt": "Which club did Philipp Lahm represent on loan before returning to Bayern?",
+          "answers": [
+            "VfB Stuttgart",
+            "Stuttgart"
+          ],
+          "distractors": [
+            "Borussia Dortmund",
+            "Hamburger SV",
+            "Eintracht Frankfurt"
+          ],
+          "value": {
+            "kind": "entity",
+            "display": "VfB Stuttgart",
+            "entityKey": "entity-stuttgart"
+          },
+          "scope": "Philipp Lahm's loan spell away from Bayern Munich; club named by Bayern's Hall of Fame profile",
+          "sourceKey": "global-player-lahm-profile",
+          "evidence": "Bayern Hall of Fame records Lahm’s loan spell with VfB Stuttgart."
+        },
+        {
+          "key": "lahm-career-bayern-champions-year",
+          "label": "Lahm’s Bayern captaincy in Europe",
+          "prompt": "In which year did Lahm captain Bayern to the Champions League title?",
+          "answers": [
+            "2013",
+            "two thousand thirteen"
+          ],
+          "distractors": [
+            "2010",
+            "2012",
+            "2014"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "2013",
+            "number": 2013,
+            "unit": "year"
+          },
+          "scope": "Bayern Munich's 2013 Champions League triumph; Lahm captained the club side",
+          "sourceKey": "global-player-lahm-profile",
+          "evidence": "Bayern Hall of Fame notes Lahm captained the 2013 Champions League winners."
+        },
+        {
+          "key": "lahm-career-germany-world-cup-year",
+          "label": "Lahm’s Germany World Cup captaincy",
+          "prompt": "In which year did Lahm captain Germany to the World Cup?",
+          "answers": [
+            "2014",
+            "two thousand fourteen"
+          ],
+          "distractors": [
+            "2006",
+            "2010",
+            "2018"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "2014",
+            "number": 2014,
+            "unit": "year"
+          },
+          "scope": "Germany's 2014 FIFA World Cup win; Lahm captained the national team",
+          "sourceKey": "global-player-lahm-profile",
+          "evidence": "Bayern Hall of Fame records Lahm as Germany’s 2014 World Cup captain."
+        }
+      ]
+    },
+    {
+      "key": "lesson-global-lahm-records",
+      "subjectKey": "entity-lahm",
+      "clubKey": "entity-bayern-munich",
+      "title": "Lahm’s Bayern honours and appearances",
+      "subtitle": "Competitive match totals and domestic cup success",
+      "story": [
+        {
+          "title": "A Bayern career counted in matches",
+          "body": "Bayern’s Hall of Fame credits Philipp Lahm with 517 competitive appearances for the club. The total is scoped to Bayern and excludes his loan matches with VfB Stuttgart."
+        },
+        {
+          "title": "League and cup titles",
+          "body": "Lahm won eight Bundesliga titles and six DFB Cups with Bayern. These domestic honours sit alongside the club’s 2013 European triumph, giving a picture of his success across league, cup and continental competition."
+        }
+      ],
+      "facts": [
+        {
+          "key": "lahm-record-competitive-appearances",
+          "label": "Lahm’s competitive Bayern appearances",
+          "prompt": "How many competitive appearances did Philipp Lahm make for Bayern?",
+          "answers": [
+            "517",
+            "five hundred seventeen",
+            "five hundred and seventeen"
+          ],
+          "distractors": [
+            "500",
+            "68",
+            "767"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "517",
+            "number": 517,
+            "unit": "competitive Bayern appearances"
+          },
+          "scope": "Philipp Lahm's Bayern Munich career; competitive club appearances, excluding his VfB Stuttgart loan matches",
+          "sourceKey": "global-player-lahm-profile",
+          "evidence": "Bayern Hall of Fame lists 517 competitive appearances."
+        },
+        {
+          "key": "lahm-record-bundesliga-titles",
+          "label": "Lahm’s Bayern Bundesliga titles",
+          "prompt": "How many Bundesliga titles did Lahm win with Bayern?",
+          "answers": [
+            "8",
+            "eight"
+          ],
+          "distractors": [
+            "6",
+            "7",
+            "9"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "8",
+            "number": 8,
+            "unit": "Bundesliga titles"
+          },
+          "scope": "Philipp Lahm's Bayern Munich career; domestic league titles",
+          "sourceKey": "global-player-lahm-profile",
+          "evidence": "Bayern Hall of Fame credits Lahm with eight Bundesliga titles."
+        },
+        {
+          "key": "lahm-record-dfb-cups",
+          "label": "Lahm’s DFB Cups with Bayern",
+          "prompt": "How many DFB Cups did Philipp Lahm win with Bayern?",
+          "answers": [
+            "6",
+            "six"
+          ],
+          "distractors": [
+            "4",
+            "5",
+            "8"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "6",
+            "number": 6,
+            "unit": "DFB Cups"
+          },
+          "scope": "Philipp Lahm's Bayern Munich career; DFB-Pokal titles",
+          "sourceKey": "global-player-lahm-profile",
+          "evidence": "Bayern Hall of Fame credits Lahm with six DFB Cups."
+        }
+      ]
+    },
+    {
+      "key": "lesson-global-schweinsteiger-career",
+      "subjectKey": "entity-schweinsteiger",
+      "clubKey": "entity-bayern-munich",
+      "title": "Schweinsteiger’s changing role",
+      "subtitle": "From the wing into Bayern’s central midfield",
+      "story": [
+        {
+          "title": "A new position",
+          "body": "Bastian Schweinsteiger began his Bayern career in a wide role. Under coach Louis van Gaal, he moved into central midfield, where he became an important organiser for the team."
+        },
+        {
+          "title": "A treble and a World Cup",
+          "body": "In 2013 Schweinsteiger was part of Bayern’s treble-winning side. The following year he was part of Germany’s World Cup-winning team. One achievement came with Bayern, the other with his national team."
+        }
+      ],
+      "facts": [
+        {
+          "key": "schweinsteiger-career-central-midfield-role",
+          "label": "Schweinsteiger’s Bayern role change",
+          "prompt": "Which position did Schweinsteiger move into under Louis van Gaal at Bayern?",
+          "answers": [
+            "Central midfield",
+            "central midfielder",
+            "Central midfielder",
+            "CM",
+            "Centre midfield",
+            "Center midfield"
+          ],
+          "distractors": [
+            "Goalkeeper",
+            "Centre-back",
+            "Centre-forward"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Central midfield",
+            "text": "Central midfield"
+          },
+          "scope": "Bastian Schweinsteiger's Bayern playing role under coach Louis van Gaal",
+          "sourceKey": "global-player-schweinsteiger-profile",
+          "evidence": "Bayern Hall of Fame says Van Gaal moved him into central midfield."
+        },
+        {
+          "key": "schweinsteiger-career-bayern-treble-year",
+          "label": "Schweinsteiger’s Bayern treble year",
+          "prompt": "In which year did Schweinsteiger win the treble with Bayern?",
+          "answers": [
+            "2013",
+            "two thousand thirteen"
+          ],
+          "distractors": [
+            "2010",
+            "2012",
+            "2014"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "2013",
+            "number": 2013,
+            "unit": "year"
+          },
+          "scope": "Bayern Munich's treble-winning season with Schweinsteiger, 2012–13; year shown as 2013",
+          "sourceKey": "global-player-schweinsteiger-profile",
+          "evidence": "Bayern Hall of Fame associates Schweinsteiger with the 2013 treble."
+        },
+        {
+          "key": "schweinsteiger-career-world-cup-year",
+          "label": "Schweinsteiger’s Germany World Cup year",
+          "prompt": "In which year was Schweinsteiger part of Germany’s World Cup-winning team?",
+          "answers": [
+            "2014",
+            "two thousand fourteen"
+          ],
+          "distractors": [
+            "2006",
+            "2010",
+            "2018"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "2014",
+            "number": 2014,
+            "unit": "year"
+          },
+          "scope": "Germany's FIFA World Cup victory; national-team achievement in 2014",
+          "sourceKey": "global-player-schweinsteiger-profile",
+          "evidence": "Bayern Hall of Fame records his part in Germany’s 2014 World Cup win."
+        }
+      ]
+    },
+    {
+      "key": "lesson-global-schweinsteiger-records",
+      "subjectKey": "entity-schweinsteiger",
+      "clubKey": "entity-bayern-munich",
+      "title": "Schweinsteiger’s Bayern record",
+      "subtitle": "Five hundred competitive matches and eight league titles",
+      "story": [
+        {
+          "title": "A long Bayern career",
+          "body": "Bayern’s Hall of Fame records 500 competitive appearances and 68 goals for Schweinsteiger. Both numbers refer to his Bayern club career, rather than his appearances or goals for Germany."
+        },
+        {
+          "title": "Domestic success",
+          "body": "Schweinsteiger won eight Bundesliga titles with Bayern. That domestic total belongs to his club honours; it is separate from the 2013 treble and his later international World Cup success with Germany."
+        }
+      ],
+      "facts": [
+        {
+          "key": "schweinsteiger-record-competitive-appearances",
+          "label": "Schweinsteiger’s competitive Bayern appearances",
+          "prompt": "How many competitive appearances did Bastian Schweinsteiger make for Bayern?",
+          "answers": [
+            "500",
+            "five hundred"
+          ],
+          "distractors": [
+            "517",
+            "68",
+            "767"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "500",
+            "number": 500,
+            "unit": "competitive Bayern appearances"
+          },
+          "scope": "Bastian Schweinsteiger's Bayern Munich career; competitive club appearances",
+          "sourceKey": "global-player-schweinsteiger-profile",
+          "evidence": "Bayern Hall of Fame lists 500 competitive appearances."
+        },
+        {
+          "key": "schweinsteiger-record-goals",
+          "label": "Schweinsteiger’s Bayern goals",
+          "prompt": "How many goals did Schweinsteiger score for Bayern?",
+          "answers": [
+            "68",
+            "sixty-eight",
+            "sixty eight"
+          ],
+          "distractors": [
+            "500",
+            "517",
+            "38"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "68",
+            "number": 68,
+            "unit": "Bayern goals"
+          },
+          "scope": "Bastian Schweinsteiger's Bayern Munich career; club goals",
+          "sourceKey": "global-player-schweinsteiger-profile",
+          "evidence": "Bayern Hall of Fame lists 68 goals for Schweinsteiger."
+        },
+        {
+          "key": "schweinsteiger-record-bundesliga-titles",
+          "label": "Schweinsteiger’s Bayern Bundesliga titles",
+          "prompt": "How many Bundesliga titles did Schweinsteiger win with Bayern?",
+          "answers": [
+            "8",
+            "eight"
+          ],
+          "distractors": [
+            "6",
+            "7",
+            "9"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "8",
+            "number": 8,
+            "unit": "Bundesliga titles"
+          },
+          "scope": "Bastian Schweinsteiger's Bayern Munich career; domestic league titles",
+          "sourceKey": "global-player-schweinsteiger-profile",
+          "evidence": "Bayern Hall of Fame records eight Bundesliga titles."
+        }
+      ]
+    }
+  ]
+}

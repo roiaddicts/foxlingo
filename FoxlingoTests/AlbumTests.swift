@@ -12,21 +12,21 @@ final class AlbumTests: XCTestCase {
         var state=LearnerState()
         state.acquiredCards=[pack.cards[0].id,UUID()]
         let collection=AlbumCollection.make(pack:pack,state:state,scope:.favorites,discoveredOnly:true,query:"")
-        XCTAssertEqual(collection.total,8);XCTAssertEqual(collection.discovered,1);XCTAssertEqual(collection.visibleCount,1)
+        XCTAssertEqual(collection.total,14);XCTAssertEqual(collection.discovered,1);XCTAssertEqual(collection.visibleCount,1)
         let search=AlbumCollection.make(pack:pack,state:state,scope:.favorites,discoveredOnly:false,query:"no such player")
-        XCTAssertEqual(search.total,8);XCTAssertEqual(search.discovered,1);XCTAssertEqual(search.visibleCount,0);XCTAssertTrue(search.sections.isEmpty)
+        XCTAssertEqual(search.total,14);XCTAssertEqual(search.discovered,1);XCTAssertEqual(search.visibleCount,0);XCTAssertTrue(search.sections.isEmpty)
     }
     func testCompetitionUsesHistoricalRoadmapMembershipAndDeduplicates() {
         let state=LearnerState()
         let all=AlbumCollection.make(pack:pack,state:state,scope:.all,discoveredOnly:false,query:"")
-        XCTAssertEqual(all.total,77)
-        XCTAssertEqual(Set(all.sections.flatMap{$0.cards.map(\.id)}).count,77)
+        XCTAssertEqual(all.total,89)
+        XCTAssertEqual(Set(all.sections.flatMap{$0.cards.map(\.id)}).count,89)
         let champions=AlbumCollection.make(pack:pack,state:state,scope:.champions,discoveredOnly:false,query:"")
         let cards=champions.sections.flatMap(\.cards)
         XCTAssertTrue(cards.contains {$0.key == "card-cristiano"})
         XCTAssertFalse(cards.contains {$0.key == "card-xolos"})
         let german=AlbumCollection.make(pack:pack,state:state,scope:.bundesliga,discoveredOnly:false,query:"")
-        XCTAssertEqual(german.total,19)
+        XCTAssertEqual(german.total,21)
     }
     func testSharedCardSearchMatchesEveryRelatedClub() throws {
         var json=try JSONSerialization.jsonObject(with:JSONEncoder().encode(pack)) as! [String:Any]
@@ -37,7 +37,7 @@ final class AlbumTests: XCTestCase {
         json["cards"]=cards
         let shared=try ContentPack.load(JSONSerialization.data(withJSONObject:json))
         let collection=AlbumCollection.make(pack:shared,state:LearnerState(),scope:.favorites,discoveredOnly:false,query:"Real Madrid")
-        XCTAssertEqual(collection.total,8)
+        XCTAssertEqual(collection.total,14)
         XCTAssertEqual(collection.sections.flatMap(\.cards).filter {$0.key == "card-riascos"}.count,1)
     }
     func testPartialCoverageAndLapsesAreDifferent() {

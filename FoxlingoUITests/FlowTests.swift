@@ -211,6 +211,18 @@ final class FlowTests: XCTestCase {
         let context=XCTAttachment(screenshot:app.screenshot());context.name="Large text timeline sources";context.lifetime = .keepAlways;add(context)
         tap("timeline-sources-done");tap("timeline-replay")
     }
+    func testNewPlayerCatalogLessonsAndAlbumEntry() {
+        start();tap("choose-XT");choosePlayer("Lionel Messi","messi")
+        XCTAssertTrue(app.staticTexts["roadmap-progress"].label.contains("0 of 2 starter lessons"))
+        completeLesson("lesson-global-messi-career")
+        completeLesson("lesson-global-messi-records")
+        XCTAssertTrue(app.staticTexts["roadmap-progress"].label.contains("2 of 2 starter lessons"))
+        app.tabBars.buttons["Album"].tap();tap("album-collection");app.buttons["All subjects"].tap();tap("card-messi")
+        XCTAssertTrue(app.buttons["card-player-roadmap"].exists)
+        let image=XCTAttachment(screenshot:app.screenshot());image.name="Messi learned career and official records";image.lifetime = .keepAlways;add(image)
+        tap("card-player-roadmap")
+        XCTAssertTrue(app.staticTexts["player-roadmap-progress"].label.contains("2 of 2 starter lessons"))
+    }
     func testPlayerRoadmapSharedProgressOptionalContextAndPersistence() {
         start();tap("choose-XT");choosePlayer("Sergio Ramos","ramos")
         XCTAssertTrue(app.staticTexts["roadmap-progress"].label.contains("0 of 2 starter lessons"))
@@ -774,9 +786,9 @@ final class FlowTests: XCTestCase {
         app.switches["album-discovered-only"].coordinate(withNormalizedOffset:CGVector(dx:0.93,dy:0.5)).tap();tap("album-show-all")
         app.tabBars.buttons["Learn"].tap();completeLesson("lesson-xolos-identity")
         app.tabBars.buttons["Album"].tap()
-        XCTAssertTrue(app.staticTexts["album-count"].label.contains("1 of 8 discovered"))
+        XCTAssertTrue(app.staticTexts["album-count"].label.contains("1 of 14 discovered"))
         app.switches["album-discovered-only"].coordinate(withNormalizedOffset:CGVector(dx:0.93,dy:0.5)).tap()
-        XCTAssertTrue(app.staticTexts["album-count"].label.contains("1 of 8 discovered"))
+        XCTAssertTrue(app.staticTexts["album-count"].label.contains("1 of 14 discovered"))
         tap("card-xolos")
         XCTAssertTrue(app.staticTexts["card-coverage"].label.contains("3 of 12 connections introduced"))
         XCTAssertTrue(app.staticTexts["card-current-recall"].label.contains("9 to discover"))
@@ -784,11 +796,11 @@ final class FlowTests: XCTestCase {
         for _ in 0..<4 {if app.buttons["album-collection"].isHittable {break};app.swipeDown()}
         tap("album-collection");app.buttons["Champions League"].tap();tap("album-show-all")
         XCTAssertTrue(app.staticTexts["album-membership-scope"].label.contains("2026/27 UEFA Champions League league phase"))
-        XCTAssertTrue(app.staticTexts["album-count"].label.contains("0 of 40 discovered"))
+        XCTAssertTrue(app.staticTexts["album-count"].label.contains("0 of 52 discovered"))
         let search=app.searchFields.firstMatch
         if !search.isHittable {app.swipeDown()};search.tap();search.typeText("Arsenal")
         XCTAssertTrue(app.staticTexts["album-results"].label.contains("1 search result"))
-        XCTAssertTrue(app.staticTexts["album-count"].label.contains("0 of 40 discovered"))
+        XCTAssertTrue(app.staticTexts["album-count"].label.contains("0 of 52 discovered"))
         tap("card-arsenal")
         XCTAssertTrue(app.staticTexts["Intro · 3 connections"].exists)
         let shot=XCTAttachment(screenshot:app.screenshot());shot.name="Album knowledge scope";shot.lifetime = .keepAlways;add(shot)

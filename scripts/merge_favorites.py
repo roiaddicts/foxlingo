@@ -4,7 +4,7 @@ import json,uuid
 ROOT=Path(__file__).resolve().parents[1]
 NS=uuid.UUID('37ac373c-bf94-43fa-bf40-bfa0283391a3')
 def uid(key):return str(uuid.uuid5(NS,key))
-def merge(pack,content_path='content/favorites-enrichment.json'):
+def merge(pack,content_path='content/favorites-enrichment.json',include_club_context=True):
  data=json.loads((ROOT/content_path).read_text())
  pack['entities'].extend(data.get('entities',[]))
  pack['sources'].extend(data['sources'])
@@ -28,7 +28,7 @@ def merge(pack,content_path='content/favorites-enrichment.json'):
   lesson=dict(id=uid(draft['key']),key=draft['key'],title=draft['title'],subtitle=draft['subtitle'],story=draft['story'],objectiveIDs=objective_ids,exerciseIDs=exercises)
   pack['lessons'].append(lesson)
   for roadmap in pack['roadmaps']:
-   if (roadmap.get('subjectID') or roadmap.get('clubID')) in {subject['id'],club['id']}:
+   if (roadmap.get('subjectID') or roadmap.get('clubID')) in ({subject['id'],club['id']} if include_club_context else {subject['id']}):
     # Favorite club paths include all their deeper stories; player paths include
     # only their own new knowledge, leaving optional club context untouched.
     chapter=next((c for c in roadmap['chapters'] if c['key'].endswith('-deeper-stories')),None)

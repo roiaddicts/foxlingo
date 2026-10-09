@@ -285,6 +285,82 @@
     "cached": true
   },
   {
+    "asset": "entity-raul",
+    "url": "https://futbol-11.com/images/58.webp",
+    "cached": true
+  },
+  {
+    "asset": "entity-benzema",
+    "url": "https://futbol-11.com/images/12.webp",
+    "cached": true
+  },
+  {
+    "asset": "entity-zidane",
+    "url": "https://i.ibb.co/1n6VWjM/zidane.webp",
+    "cached": true
+  },
+  {
+    "asset": "seed-player-150",
+    "url": "https://i.ibb.co/1n6VWjM/zidane.webp",
+    "cached": true
+  },
+  {
+    "asset": "entity-roberto-carlos",
+    "url": "https://futbol-11.com/images/303.png",
+    "cached": true
+  },
+  {
+    "asset": "entity-gerrard",
+    "url": "https://futbol-11.com/images/164.png",
+    "cached": true
+  },
+  {
+    "asset": "seed-player-164",
+    "url": "https://futbol-11.com/images/164.png",
+    "cached": true
+  },
+  {
+    "asset": "entity-rush",
+    "url": "https://backend.liverpoolfc.com/sites/default/files/styles/lg/public/2025-02/past-players-ian-rush-20022025_a4ba0d252756f6d8113ef250a30d83f3.webp?itok=ydAgcUsS&width=1680",
+    "cached": true,
+    "sourceURL": "https://www.liverpoolfc.com/info/ian-rush"
+  },
+  {
+    "asset": "entity-messi",
+    "url": "https://futbol-11.com/images/2.webp",
+    "cached": true
+  },
+  {
+    "asset": "seed-player-2",
+    "url": "https://futbol-11.com/images/2.webp",
+    "cached": true
+  },
+  {
+    "asset": "entity-xavi",
+    "url": "https://futbol-11.com/images/54.png",
+    "cached": true
+  },
+  {
+    "asset": "entity-lahm",
+    "url": "https://futbol-11.com/images/43.png",
+    "cached": true
+  },
+  {
+    "asset": "seed-player-43",
+    "url": "https://futbol-11.com/images/43.png",
+    "cached": true
+  },
+  {
+    "asset": "entity-schweinsteiger",
+    "url": "https://futbol-11.com/images/48.png",
+    "cached": true
+  },
+  {
+    "asset": "seed-player-48",
+    "url": "https://futbol-11.com/images/48.png",
+    "cached": true
+  },
+  {
     "asset": "entity-juventus",
     "url": "https://img.uefa.com/imgml/TP/teams/logos/100x100/50139.png",
     "cached": true

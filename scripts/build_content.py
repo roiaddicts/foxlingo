@@ -144,7 +144,9 @@ score_inputs=json.loads((ROOT/'content/score-inputs.json').read_text())
 for exercise in pack['exercises']:
  if exercise['key'] in score_inputs:exercise['scoreInput']=score_inputs[exercise['key']]
 if set(score_inputs) != {x['key'] for x in pack['exercises'] if x.get('scoreInput')}:raise ValueError('Missing score exercise')
-pack['contentVersion']=10
+from merge_player_catalog import compile_catalog
+compile_catalog(pack)
+pack['contentVersion']=11
 # Promote explicitly authored country values into canonical targets. Preserve
 # fact/objective IDs, wording, scope and revision: the taught claim is unchanged.
 flags=json.loads((ROOT/'content/country-artwork.json').read_text())

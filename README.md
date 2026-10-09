@@ -19,8 +19,9 @@ Minimum iOS: **17.0**. The project uses SwiftUI and Apple's frameworks, with no 
 - `Foxlingo/Resources/starter-en.json` is the bundled, validated English curriculum.
 - `scripts/build_content.py` rebuilds it with stable UUIDs. Facts retain official source references and historical scope.
 - `scripts/inventory_seeds.py` inventories embedded Futbol11 JSON without executing the source bundle. The report is `ref/seed-inventory.json`.
-- The initial 36 favorite-club objective slots share one Ramos equalizer objective. The expanded curriculum totals **284 unique review memories**.
+- The initial 36 favorite-club objective slots share one Ramos equalizer objective. The expanded curriculum totals **356 unique review memories**.
 - `content/favorites-enrichment.json` adds four sourced stories: Casillas’s honours, Ramos’s trophy record, Xolos’s early climb, and Madrid’s European titles from 2018 through 2024. Existing lesson IDs and earned tiers remain intact. See [source notes](content/favorites-enrichment-notes.md).
+- `content/player-catalog.json` adds 12 sourced player paths across Madrid, Liverpool, Barcelona and Bayern, with 24 lessons and offline portraits. The curriculum now has 119 lessons, 356 memories and 89 cards. See [player source notes](content/player-catalog-notes.md) and [authoring](docs/player-content-authoring.md).
 - `content/club-expansion.json` contains sourced club lesson drafts; `scripts/merge_expansion.py` compiles them into the starter pack without replacing existing progress IDs.
 - `Foxlingo/Resources/games-en.json` contains 3,988 namespaced player records, 158 categories, and 98 historical season squads. Namespaces may represent the same person; these are not 3,988 unique people. `scripts/build_games.py` extracts them deterministically. See [Futbol11 refresh](docs/futbol11-refresh.md) for downloading and validating the public source assets.
 - `content/club-artwork.json` and `Foxlingo/Resources/artwork-manifest.json` record badge and portrait provenance. Selected artwork is bundled; other seed portraits load over HTTPS with initials as an offline fallback.

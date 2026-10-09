@@ -36,7 +36,8 @@ public struct AlbumCollection: Sendable {
         func linkedCards(_ roadmap: Roadmap) -> [AlbumCard] {
             if pack.entity(roadmap.entityID).type == "competition" {return pack.cards.filter {$0.entityID == roadmap.entityID}}
             let lessons=Set(roadmap.chapters.flatMap(\.lessonIDs))
-            return pack.cards.filter {!lessons.isDisjoint(with:Set($0.lessonIDs))}
+            let playerSubjects=Set(pack.playerRoadmaps.filter {$0.clubID == roadmap.entityID}.map(\.entityID))
+            return pack.cards.filter {playerSubjects.contains($0.entityID) || !lessons.isDisjoint(with:Set($0.lessonIDs))}
         }
         var associatedNames=[UUID:[String]]()
         for roadmap in roadmaps {

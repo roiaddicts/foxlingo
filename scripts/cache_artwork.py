@@ -15,6 +15,15 @@ for n in [1,9,53,57,12,56,76,79,83,103,210,28,18,54,58,74,86,128,129,145,165,173
  if player and player.get('imageURL'):urls[f'seed-player-{n}']=player['imageURL']
 # Retain the exact source-to-entity linkage; no ID joins across namespaces.
 for key,n in [('cristiano',1),('casillas',53),('ramos',57),('di-stefano',1512),('bale',9)]:urls['entity-'+key]=urls[f'seed-player-{n}']
+# New authored players carry an explicit provider identity and reviewed portrait source.
+catalog=json.loads((ROOT/'content/player-catalog.json').read_text())
+for player in catalog['players']:
+ seed=next(v for v in p['players'] if v['id']==player['seedID'])
+ if seed['name'] != player['seedName']:raise ValueError('Portrait identity changed: '+player['key'])
+ image=player.get('imageURL') or seed.get('imageURL')
+ if not image:raise ValueError('Missing authored player portrait: '+player['key'])
+ urls[player['key']]=image
+ if seed.get('imageURL'):urls['seed-'+seed['id']]=seed['imageURL']
 urls['entity-juventus']='https://img.uefa.com/imgml/TP/teams/logos/100x100/50139.png'
 artworkPath=ROOT/'content/club-artwork.json'
 if artworkPath.exists():
@@ -40,6 +49,9 @@ for name,url in urls.items():
   file.unlink(missing_ok=True);manifest.append(dict(asset=name,url=url,cached=False));continue
  (folder/'Contents.json').write_text(json.dumps({'images':[{'filename':'image.png','idiom':'universal'}],'info':{'author':'xcode','version':1}},indent=2)+'\n')
  manifest.append(dict(asset=name,url=url,cached=True))
+for player in catalog['players']:
+ if player.get('portraitSourceURL'):
+  item=next(m for m in manifest if m['asset']==player['key']);item['sourceURL']=player['portraitSourceURL']
 # Keep curated career artwork (including a crest cropped from an AFC PDF).
 # These cached artifacts have their own provenance and are not raw URL images.
 for item in json.loads((ROOT/'content/player-career-artwork.json').read_text()):
