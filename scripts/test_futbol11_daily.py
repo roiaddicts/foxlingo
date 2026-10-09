@@ -46,6 +46,23 @@ class DailyTests(unittest.TestCase):
         self.assertEqual(len(modes['bingo-retro']['selection']['groups']),12)
         ny=compile_daily(SNAPSHOT,date(2026,10,9),'America/New_York')
         self.assertNotEqual(modes['pyramid']['selection']['record'],next(g for g in ny['games'] if g['id']=='pyramid')['selection']['record'])
+    def test_reveal_modes_use_general_identity_and_reviewed_visual_clue_order(self):
+        first=compile_daily(SNAPSHOT,date(2026,10,9),'America/Mexico_City')
+        modes={g['id']:g for g in first['games']};players=Archive(SNAPSHOT).roles['gamePlayers']
+        self.assertEqual(next(p for p in players if p['id']==820)['lastName'],'Savinho')
+        self.assertEqual(next(p for p in players if p['id']==282)['lastName'],'Rodriguez')
+        self.assertEqual(modes['legacy']['selection']['clueOrder'],[89,2,156,116])
+        self.assertEqual(modes['link']['selection']['clueOrder'],[910,190,661,57,417])
+        self.assertTrue(modes['statdle']['randomPlayOrder'])
+        self.assertEqual(len(first['support']['clubs']['data']),109)
+        self.assertEqual(next(c for c in first['support']['clubs']['data'] if c['id']==3)['lastName'],'Man Utd')
+        # Static table changes are allowed; executable logic changes require review.
+        original=Archive.text
+        def changed(archive,url):
+            text=original(archive,url)
+            return text+';a[0].id=999;' if url==first['support']['clubs']['sourceURL'] else text
+        with patch.object(Archive,'text',changed):
+            with self.assertRaisesRegex(ValueError,'support contract changed'):compile_daily(SNAPSHOT,date(2026,10,9),'America/Mexico_City')
     def test_new_homepage_mode_is_reported_instead_of_silently_omitted(self):
         routes=Archive(SNAPSHOT).catalog_routes()
         with patch.object(Archive,'catalog_routes',return_value=routes|{'/futbol11-new-mode'}):

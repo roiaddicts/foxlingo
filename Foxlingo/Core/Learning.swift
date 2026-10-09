@@ -101,7 +101,7 @@ public struct LearnerState: Codable, Sendable {
         reviews[objective.id] = r
     }
     @discardableResult public mutating func completeGame(id: UUID, kind: String, count: Int, now: Date) -> Bool {
-        guard ["bingo","lineup","grid","mystery","memory","timeline","wordle","connections","impostor","draft-nations","draft-clubs","draft-retro","draft-legends","draft-america","top10"].contains(kind), count > 0, !sessions.contains(where:{$0.id == id}) else {return false}
+        guard ["bingo","lineup","grid","mystery","memory","timeline","wordle","connections","impostor","draft-nations","draft-clubs","draft-retro","draft-legends","draft-america","top10","statdle","legacy","link"].contains(kind), count > 0, !sessions.contains(where:{$0.id == id}) else {return false}
         sessions.append(SessionRecord(id:id,kind:"game-"+kind,completedAt:now,attemptCount:count))
         streak.record(now,zone:homeTimeZone);return true
     }

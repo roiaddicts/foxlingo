@@ -22,5 +22,8 @@
     "bingo-retro": "1d87dec55634fec488e8e9fd66fd3a92c9692bfa4ee541b7dadd2e6620a6225e",
     "grid": "c18fb1096cd4952af00f64c1715f65681e8f42314e5497b0cc25593d30514136",
     "connections": "d3269efd0d34cc1ee7dc35c1c01425dfe0438c8294bbc3775e65f2900bdae434"
+  },
+  "supportSelectors": {
+    "clubCatalog": "1938b2da79f64a4669718ea5a3f82a6435a226c507bfa4176fb4c676ea17fd98"
   }
 }

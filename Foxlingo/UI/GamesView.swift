@@ -29,6 +29,15 @@ struct GamesHome: View {
                     }
                 }
                 if let daily=model.daily {
+                    ForEach(daily.revealRounds,id:\.mode.rawValue) {round in
+                        NavigationLink {DailyRevealView(pack:daily,round:round)} label: {
+                            HStack(spacing:16) {
+                                Image(systemName:round.mode == .statdle ? "chart.bar.xaxis":round.mode == .legacy ? "tshirt.fill":"person.2.fill").font(.title2).frame(width:50,height:60).foregroundStyle(Palette.brand)
+                                VStack(alignment:.leading,spacing:6) {Text(round.mode.title).font(.title3.bold());Text(round.mode.instruction).font(.subheadline).foregroundStyle(Palette.muted)}
+                                Spacer();Image(systemName:"chevron.right")
+                            }.padding(18).background(.white.opacity(0.8),in:RoundedRectangle(cornerRadius:20))
+                        }.buttonStyle(PressFeedback()).accessibilityIdentifier("game-"+round.mode.rawValue)
+                    }
                     NavigationLink {DailyTop10View(pack:daily)} label: {
                         HStack(spacing:16) {
                             EntityArtwork(asset:nil,url:daily.top10.flags.first,initials:"⚽",size:50)

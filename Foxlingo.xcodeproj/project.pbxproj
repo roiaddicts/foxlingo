@@ -20,6 +20,7 @@
 		2AD1BC14E7FFC0C83D7818F9 /* StudyPlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF04BE9776E9842A6456BD2C /* StudyPlan.swift */; };
 		32B491BEE492539C62CC1B91 /* StreakFire.metal in Sources */ = {isa = PBXBuildFile; fileRef = 834E16AC4A8C72946520109E /* StreakFire.metal */; };
 		3518FC19D3DC254DD426541E /* FoxlingoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CAF16169F54078C4005D08 /* FoxlingoApp.swift */; };
+		35331C00CA2C1D6B9950622C /* DailyReveal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08674D1A67FB4BEBB32B545F /* DailyReveal.swift */; };
 		46B3BF1D599171185BC5162A /* Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040EE940F8B19FB06AC7B14F /* Content.swift */; };
 		47369FEA4DBE19E21B44D699 /* games-en.json in Resources */ = {isa = PBXBuildFile; fileRef = 6D6843E51D69668BD8540FBE /* games-en.json */; };
 		47D111E9ED68E8CAF48B9CCE /* RehearsalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9B1366A7BCF1012DB573C8 /* RehearsalView.swift */; };
@@ -45,6 +46,7 @@
 		8DD514B0DD979023A88925C9 /* GamesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A787A4A96F423AD601B4AF /* GamesView.swift */; };
 		8EB98D9276AE75E20BAF7F52 /* SoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC839D51CA750F88265F29E8 /* SoundPlayer.swift */; };
 		A1005C114B258C7607A8598B /* ContentDownload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FC0FA460EC5AF74B59DD8F /* ContentDownload.swift */; };
+		A4C5594ACC500AA8E6365CB7 /* DailyRevealView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CCCC9A83AE35A3079A6E8F /* DailyRevealView.swift */; };
 		AA91E756C194CF4D3ADD5A21 /* DraftXIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76FE00149A3C9E3A3970AB7 /* DraftXIView.swift */; };
 		B16F19770BE9E039CD91B532 /* PlayerGroupsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164EF1553A2DCCE0E460298C /* PlayerGroupsView.swift */; };
 		B457BA92F3A07D2F90E8B378 /* FootballWordleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADE050C3166F8029D3AB230 /* FootballWordleView.swift */; };
@@ -79,6 +81,7 @@
 
 /* Begin PBXFileReference section */
 		040EE940F8B19FB06AC7B14F /* Content.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Content.swift; sourceTree = "<group>"; };
+		08674D1A67FB4BEBB32B545F /* DailyReveal.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DailyReveal.swift; sourceTree = "<group>"; };
 		0C9B1366A7BCF1012DB573C8 /* RehearsalView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RehearsalView.swift; sourceTree = "<group>"; };
 		0CF94E40E1DBE5E69BB7F885 /* starter-en.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; path = "starter-en.json"; sourceTree = "<group>"; };
 		14A787A4A96F423AD601B4AF /* GamesView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GamesView.swift; sourceTree = "<group>"; };
@@ -118,6 +121,7 @@
 		AE49724F121C78481AA89D89 /* PracticeView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PracticeView.swift; sourceTree = "<group>"; };
 		B001EEB9083DBCB177F147DF /* FoxlingoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoxlingoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B048B05A96BAE389A67DDA53 /* StudyPlanView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StudyPlanView.swift; sourceTree = "<group>"; };
+		B9CCCC9A83AE35A3079A6E8F /* DailyRevealView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DailyRevealView.swift; sourceTree = "<group>"; };
 		BA791A790FCB14403A8DBC23 /* AppModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
 		BC35574D37589DA87E7C5A5D /* AlbumView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AlbumView.swift; sourceTree = "<group>"; };
 		BFCB34612F32F812991157E5 /* memory-en.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; path = "memory-en.json"; sourceTree = "<group>"; };
@@ -193,6 +197,7 @@
 				1748C6C507FC54A146D6F51C /* PlayerGroups.swift */,
 				DFE9855923E0E8D93595C59C /* DraftXI.swift */,
 				77E56B339B1BD67288DEE76F /* DailyChallenges.swift */,
+				08674D1A67FB4BEBB32B545F /* DailyReveal.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -284,6 +289,7 @@
 				164EF1553A2DCCE0E460298C /* PlayerGroupsView.swift */,
 				E76FE00149A3C9E3A3970AB7 /* DraftXIView.swift */,
 				68E742E45065DB444B399B7B /* DailyTop10View.swift */,
+				B9CCCC9A83AE35A3079A6E8F /* DailyRevealView.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -448,6 +454,8 @@
 				AA91E756C194CF4D3ADD5A21 /* DraftXIView.swift in Sources */,
 				829EA4E2190693D065F4C3D3 /* DailyChallenges.swift in Sources */,
 				F5012D961E7D81E94EFE4094 /* DailyTop10View.swift in Sources */,
+				35331C00CA2C1D6B9950622C /* DailyReveal.swift in Sources */,
+				A4C5594ACC500AA8E6365CB7 /* DailyRevealView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

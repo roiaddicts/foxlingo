@@ -23,6 +23,8 @@ final class DailyChallengeTests: XCTestCase {
     }
     func testIncompleteCatalogChangedAnswerAndInvalidDateRejected() throws {
         XCTAssertThrowsError(try DailyChallengePack.load(changed {$0["gameDate"]="2026-02-30"}))
+        XCTAssertThrowsError(try DailyChallengePack.load(changed {$0["gameDate"]="2026-10-10"}))
+        XCTAssertThrowsError(try DailyChallengePack.load(changed {$0["dayOfYear"]=1}))
         XCTAssertThrowsError(try DailyChallengePack.load(changed {$0["timeZone"]="Invalid/Zone"}))
         XCTAssertThrowsError(try DailyChallengePack.load(changed {
             var games=$0["games"] as! [[String:Any]];games.removeLast();$0["games"]=games

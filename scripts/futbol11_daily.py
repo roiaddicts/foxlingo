@@ -86,6 +86,36 @@ def compile_daily(snapshot,day,zone):
         url,text=module(name,[guard]);rows=archive.rows(fields,url)
         if not 0<=ordinal<len(rows):raise ValueError('Daily index outside '+name+' source coverage')
         add(name,url,dict(record=rows[ordinal],index=ordinal,datasetRecords=len(rows)),'local-day-of-year array index')
+    # Legacy, Link and Statdle import the same inline club/kit catalog.
+    # These modes explicitly import the GENERAL player table, not the Clubs XI IDs.
+    stat_url=archive.mode('statdle');club_url=archive.imported(stat_url,'w')
+    if archive.imported(archive.mode('legacy'),'q')!=club_url:raise ValueError('Legacy club catalog binding changed')
+    club_source=archive.text(club_url)
+    if selector_digest(club_source)!=contracts.get('supportSelectors',{}).get('clubCatalog'):raise ValueError('Club catalog support contract changed')
+    club_matches=list(re.finditer(r'=\[\{id:',club_source))
+    if len(club_matches)!=1:raise ValueError('Club kit catalog changed')
+    clubs=array_at(club_source,club_matches[0].start()+1)
+    if not clubs or any(set(row)!={'id','lastName','image','country'} for row in clubs):raise ValueError('Invalid club kit catalog')
+    if len({c['id'] for c in clubs})!=len(clubs):raise ValueError('Duplicate kit catalog club IDs')
+    support=dict(clubs=dict(sourceURL=club_url,assetSHA256=archive.modules[club_url][0]['sha256'],data=clubs))
+    general=archive.roles['gamePlayers'];general_ids={p['id'] for p in general}
+    general_url=next(d['sourceURL'] for d in archive.meta['datasets'] if set(d['fields'])=={'bingo','countryID','firstName','grid','id','image','lastName','nickname'})
+    for name,alias in [('statdle','L'),('legacy','k'),('link','h')]:
+        if archive.imported(archive.mode(name),alias)!=general_url:raise ValueError('General player namespace binding changed: '+name)
+        game=next(g for g in games if g['id']==name);record=game['selection']['record']
+        if record['id'] not in general_ids:raise ValueError('Missing daily answer profile: '+name)
+        if name=='legacy':
+            ids=csv(record['clubs'])
+            order=[c['id'] for c in shuffle(clubs,ordinal) if c['id'] in ids]
+            if len(ids)!=4 or len(set(ids))!=4 or len(order)!=4:raise ValueError('Incomplete Legacy club clues')
+            game['selection']['clueOrder']=order
+        elif name=='link':
+            ids=csv(record['teammates'])
+            order=[p['id'] for p in shuffle(general,stamp) if p['id'] in ids]
+            if len(ids)!=5 or len(set(ids))!=5 or len(order)!=5 or record['id'] in ids:raise ValueError('Incomplete Link teammate clues')
+            game['selection']['clueOrder']=order
+        else:
+            game['randomPlayOrder']=True # Eight clue reveals are randomized during play.
     # Pyramid deliberately uses floor rather than the common rounded day helper.
     url,text=module('pyramid',['p=Math.floor(C/G)','let S=u1[p]','i.has(r.number)?!1:(i.add(r.number),!0)'])
     rows=archive.rows({'id','title','players'},url)
@@ -191,7 +221,7 @@ def compile_daily(snapshot,day,zone):
     expected_routes={urlsplit(g['sourceURL']).path for g in catalog['games']}
     if archive.catalog_routes()!=expected_routes:raise ValueError('Live homepage game inventory changed; review coverage')
     if actual!=expected:raise ValueError('Daily mode coverage mismatch')
-    return dict(schemaVersion=1,gameDate=day.isoformat(),timeZone=zone,dayOfYear=ordinal,elapsedDayFloor=floor_index,fetchedAt=archive.meta['fetchedAt'],compiledAt=datetime.now(timezone.utc).isoformat(),selectorContractsSHA256=hashlib.sha256((ROOT/'content/futbol11-daily-contracts.json').read_bytes()).hexdigest(),sourceSnapshotSHA256=hashlib.sha256(Path(snapshot).read_bytes()).hexdigest(),sourceURL=archive.meta['sourceURL'],datasets=archive.meta['datasets'],scope='Daily selections from the archived source. Game date is not player/stat freshness. Random offer order is not a shared daily answer.',games=games)
+    return dict(schemaVersion=1,gameDate=day.isoformat(),timeZone=zone,dayOfYear=ordinal,elapsedDayFloor=floor_index,fetchedAt=archive.meta['fetchedAt'],compiledAt=datetime.now(timezone.utc).isoformat(),selectorContractsSHA256=hashlib.sha256((ROOT/'content/futbol11-daily-contracts.json').read_bytes()).hexdigest(),sourceSnapshotSHA256=hashlib.sha256(Path(snapshot).read_bytes()).hexdigest(),sourceURL=archive.meta['sourceURL'],datasets=archive.meta['datasets'],support=support,scope='Daily selections from the archived source. Game date is not player/stat freshness. Random offer order is not a shared daily answer.',games=games)
 
 def publish(pack,destination):
     destination=Path(destination);destination.mkdir(parents=True,exist_ok=True)

@@ -17,8 +17,8 @@
       "sourceURL": "https://futbol11.com/futbol11-statdle",
       "mechanic": "Identify a season-specific player through revealed stats.",
       "requiredData": "season appearances, goals, assists, club, nation, position, value",
-      "status": "planned",
-      "notes": ""
+      "status": "native",
+      "notes": "Native daily historical-season clues, five chances, two random reveals per miss/skip, Normal and Hard with club/nation locked, saved attempts and single-win streak credit."
     },
     {
       "id": "top10",
@@ -98,8 +98,8 @@
       "sourceURL": "https://futbol11.com/futbol11-legacy",
       "mechanic": "Identify a player from four unordered career clubs.",
       "requiredData": "career-club membership and club badges",
-      "status": "planned",
-      "notes": ""
+      "status": "native",
+      "notes": "Native daily four-club mystery with source kit artwork, one reveal per miss/skip, source-shuffled nonchronological order, saved rounds and single-win streak credit."
     },
     {
       "id": "bingo-retro",
@@ -125,8 +125,8 @@
       "sourceURL": "https://futbol11.com/futbol11-link",
       "mechanic": "Identify a player from five former senior teammates.",
       "requiredData": "verified shared senior appearances, not merely squad overlap",
-      "status": "planned",
-      "notes": ""
+      "status": "native",
+      "notes": "Native daily five-teammate mystery using explicit source-authored senior connections and general player identities, source-shuffled portrait clues, saved rounds and single-win streak credit."
     },
     {
       "id": "wordle",

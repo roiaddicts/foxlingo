@@ -237,6 +237,53 @@ final class FlowTests: XCTestCase {
         }
         XCTAssertTrue(button.isHittable);button.tap()
     }
+    func revealClue(_ id: String) -> XCUIElement {
+        app.descendants(matching:.any).matching(identifier:"reveal-clue-"+id).firstMatch
+    }
+    func testDailyLegacyAndLinkVisualCluesSearchAndResume() {
+        start();tap("choose-XT");app.tabBars.buttons["Games"].tap();tap("game-legacy")
+        XCTAssertEqual(revealClue("club-89").label,"Club: PSV")
+        XCTAssertEqual(revealClue("club-2").label,"Hidden clue")
+        tap("reveal-guess")
+        let search=app.textFields["game-player-search"];XCTAssertTrue(search.waitForExistence(timeout:3))
+        search.typeText("Messi");tap("game-player-daily-general-2")
+        XCTAssertEqual(revealClue("club-2").label,"Club: Man City")
+        XCTAssertTrue(app.staticTexts["reveal-attempts"].label.contains("1 / 4"))
+        app.terminate();start(reset:false);app.tabBars.buttons["Games"].tap();tap("game-legacy")
+        XCTAssertEqual(revealClue("club-2").label,"Club: Man City")
+        tap("reveal-guess");search.typeText("Savi");tap("game-player-daily-general-820")
+        XCTAssertTrue(app.staticTexts["reveal-answer"].waitForExistence(timeout:3));XCTAssertEqual(app.staticTexts["reveal-answer"].label,"Savinho")
+        Thread.sleep(forTimeInterval:0.4)
+        let shot=XCTAttachment(screenshot:app.screenshot());shot.name="Legacy answer and club shirt clues";shot.lifetime = .keepAlways;add(shot)
+        app.terminate();start(reset:false);app.tabBars.buttons["Games"].tap();tap("game-legacy")
+        XCTAssertEqual(app.staticTexts["reveal-answer"].label,"Savinho")
+        app.navigationBars.buttons.element(boundBy:0).tap();tap("game-link")
+        XCTAssertEqual(revealClue("daily-general-910").label,"Teammate: Luis Alberto")
+        tap("reveal-skip");XCTAssertEqual(revealClue("daily-general-190").label,"Teammate: Javier Mascherano")
+        tap("reveal-guess");search.typeText("Pedro");tap("game-player-daily-general-282")
+        XCTAssertEqual(app.staticTexts["reveal-answer"].label,"Pedro Rodriguez")
+        Thread.sleep(forTimeInterval:0.4)
+        let links=XCTAttachment(screenshot:app.screenshot());links.name="Link teammate portraits";links.lifetime = .keepAlways;add(links)
+    }
+    func testDailyStatdleHardCluesFinalChanceLossAndNormalWin() {
+        start();tap("choose-XT");app.tabBars.buttons["Games"].tap();tap("game-statdle")
+        XCTAssertTrue(app.otherElements["reveal-season"].exists || app.staticTexts["Premier League · 2005/06"].exists)
+        app.segmentedControls["statdle-difficulty"].buttons["Hard"].tap()
+        XCTAssertFalse(revealClue("club").exists);XCTAssertFalse(revealClue("country").exists)
+        for _ in 0..<4 {tap("reveal-skip")}
+        XCTAssertTrue(app.staticTexts["reveal-attempts"].label.contains("4 / 5"))
+        XCTAssertFalse(app.staticTexts["reveal-answer"].exists)
+        Thread.sleep(forTimeInterval:0.3)
+        let clues=XCTAttachment(screenshot:app.screenshot());clues.name="Statdle hard historical stats final chance";clues.lifetime = .keepAlways;add(clues)
+        app.terminate();start(reset:false);app.tabBars.buttons["Games"].tap();tap("game-statdle")
+        XCTAssertTrue(app.staticTexts["reveal-attempts"].label.contains("4 / 5"))
+        tap("reveal-skip");XCTAssertEqual(app.staticTexts["reveal-answer"].label,"Wayne Rooney")
+        XCTAssertFalse(app.buttons["reveal-guess"].exists)
+        start();tap("choose-XT");app.tabBars.buttons["Games"].tap();tap("game-statdle")
+        tap("reveal-guess");let search=app.textFields["game-player-search"]
+        XCTAssertTrue(search.waitForExistence(timeout:3));search.typeText("Rooney");tap("game-player-daily-general-63")
+        XCTAssertEqual(app.staticTexts["reveal-answer"].label,"Wayne Rooney")
+    }
     func testDailyTop10SearchResumeAndCompletion() {
         start();tap("choose-XT");app.tabBars.buttons["Games"].tap();tap("game-top10")
         XCTAssertEqual(app.staticTexts["top10-title"].label,"Chelsea 2023/24 - Most matches")

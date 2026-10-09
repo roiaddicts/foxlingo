@@ -14,6 +14,7 @@ public struct DailyChallengePack: Sendable {
     public let gameDate: String
     public let timeZone: String
     public let scope: String
+    public let revealRounds: [DailyRevealRound]
     public let top10: DailyTop10
     public let digest: String
     public func isToday(_ date: Date) -> Bool {
@@ -39,6 +40,12 @@ public struct DailyChallengePack: Sendable {
               NSDictionary(dictionary:rows[index]).isEqual(to:record) else {throw fail()}
         let format=DateFormatter();format.locale=Locale(identifier:"en_US_POSIX");format.timeZone=TimeZone(identifier:zone);format.dateFormat="yyyy-MM-dd";format.isLenient=false
         guard let parsed=format.date(from:date),format.string(from:parsed) == date else {throw fail()}
+        var calendar=Calendar(identifier:.gregorian);calendar.timeZone=TimeZone(identifier:zone)!
+        let year=calendar.component(.year,from:parsed)
+        guard let jan1=calendar.date(from:DateComponents(year:year,month:1,day:1)),let jan0=calendar.date(byAdding:.day,value:-1,to:jan1) else {throw fail()}
+        let ordinal=Int(floor(parsed.timeIntervalSince(jan0)/86400+0.5))
+        guard root["dayOfYear"] as? Int == ordinal,index == ordinal else {throw fail()}
+
         let ids=csv.split(separator:",").compactMap {Int($0.trimmingCharacters(in:.whitespaces))}
         guard ids.count == 10,Set(ids).count == 10,csv.split(separator:",").count == 10 else {throw fail()}
         let playerTables=datasets.filter {Set($0["fields"] as? [String] ?? []) == Set(["bingo","countryID","firstName","grid","id","image","lastName","nickname"])}
@@ -67,7 +74,7 @@ public struct DailyChallengePack: Sendable {
         guard ids.allSatisfy({players[$0] != nil && countries[$0].flatMap {flags[$0]} != nil}) else {throw fail()}
         let digest=ContentUpdateRules.digest(data)
         let signature=ContentUpdateRules.digest(ContentUpdateRules.bytes(["daily-top10-v1",date,zone,title]+ids.flatMap {[String($0),players[$0]!.name,players[$0]!.imageURL ?? "",flags[countries[$0]!]!]}))
-        return Self(gameDate:date,timeZone:zone,scope:scope,top10:DailyTop10(title:title,rankedPlayers:ids.map {players[$0]!},flags:ids.map {flags[countries[$0]!]!},players:playerRows.compactMap {($0["id"] as? Int).flatMap {players[$0]}},signature:signature),digest:digest)
+        return Self(gameDate:date,timeZone:zone,scope:scope,revealRounds:try DailyRevealRound.load(root:root,players:playerRows.compactMap {($0["id"] as? Int).flatMap {players[$0]}}),top10:DailyTop10(title:title,rankedPlayers:ids.map {players[$0]!},flags:ids.map {flags[countries[$0]!]!},players:playerRows.compactMap {($0["id"] as? Int).flatMap {players[$0]}},signature:signature),digest:digest)
     }
 }
 public struct Top10Progress: Codable, Sendable {
@@ -89,8 +96,13 @@ public struct DailyChallengeCache: Sendable {
     public let directory: URL
     public init(directory: URL) {self.directory=directory}
     public func load(bundled: Data) throws -> DailyChallengePack {
-        if let saved=try? Data(contentsOf:directory.appendingPathComponent("daily.json")),let pack=try? DailyChallengePack.load(saved) {return pack}
-        return try DailyChallengePack.load(bundled)
+        let fallback=try? DailyChallengePack.load(bundled)
+        if let saved=try? Data(contentsOf:directory.appendingPathComponent("daily.json")),let pack=try? DailyChallengePack.load(saved) {
+            if let fallback,pack.gameDate < fallback.gameDate || (pack.gameDate == fallback.gameDate && pack.revealRounds.count < fallback.revealRounds.count) {return fallback}
+            return pack
+        }
+        if let fallback {return fallback}
+        throw ContentError.invalid("No usable daily challenge set is available.")
     }
     public func install(_ data: Data) throws -> DailyChallengePack {
         let pack=try DailyChallengePack.load(data)
