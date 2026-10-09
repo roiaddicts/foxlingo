@@ -73,6 +73,19 @@ class DailyTests(unittest.TestCase):
         self.assertEqual(sum(s['count'] for s in squad['slices']),28)
         self.assertEqual(squad['slices'][0]['countryID'],10);self.assertEqual(squad['slices'][0]['count'],13)
         self.assertEqual(squad['omittedPlayerIDs'],[])
+    def test_guesswho_catalog_uses_explicit_portrait_crosswalk_and_named_kit_join(self):
+        pack=compile_daily(SNAPSHOT,date(2026,10,9),'America/Mexico_City')
+        selected=next(g['selection'] for g in pack['games'] if g['id']=='guesswho')
+        self.assertEqual(selected['record']['id'],91);self.assertEqual(selected['record']['secID'],548)
+        catalog=selected['catalog'];self.assertEqual(catalog['portraitPlayerIDs']['91'],548)
+        self.assertEqual(catalog['portraitPlayerIDs']['1056'],2);self.assertEqual(catalog['portraitPlayerIDs']['1622'],1)
+        self.assertEqual(len(catalog['clubs']),48);self.assertEqual(len(catalog['leagues']),8)
+        clubs={c['id']:c for c in catalog['clubs']}
+        self.assertEqual(clubs[14]['name'],'Real Madrid');self.assertEqual(clubs[14]['image'],'/media/shirts/9.png')
+        self.assertEqual(clubs[24]['name'],'AC Milan');self.assertEqual(clubs[24]['image'],'/media/shirts/12.png')
+        self.assertEqual(clubs[3]['image'],'/media/shirts/3.png')
+        self.assertNotIn('image',clubs[29]) # No invented German kit URLs.
+        self.assertTrue(any(d['sourceURL']==catalog['playerSourceURL'] and d['records']==2614 for d in pack['datasets']))
     def test_new_homepage_mode_is_reported_instead_of_silently_omitted(self):
         routes=Archive(SNAPSHOT).catalog_routes()
         with patch.object(Archive,'catalog_routes',return_value=routes|{'/futbol11-new-mode'}):

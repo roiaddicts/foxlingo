@@ -8,6 +8,8 @@ final class DailyRevealTests: XCTestCase {
     private func removeNewSupport(_ root: inout [String:Any]) {
         root.removeValue(forKey:"support")
         var games=root["games"] as! [[String:Any]],i=games.firstIndex {$0["id"] as? String == "squadslice"}!
+        let mysteryIndex=games.firstIndex {$0["id"] as? String == "guesswho"}!
+        var mystery=games[mysteryIndex]["selection"] as! [String:Any];mystery.removeValue(forKey:"catalog");games[mysteryIndex]["selection"]=mystery
         var selection=games[i]["selection"] as! [String:Any]
         for key in ["slices","revealOrder","omittedPlayerIDs"] {selection.removeValue(forKey:key)}
         games[i]["selection"]=selection;root["games"]=games

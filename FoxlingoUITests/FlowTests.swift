@@ -240,6 +240,38 @@ final class FlowTests: XCTestCase {
     func revealClue(_ id: String) -> XCUIElement {
         app.descendants(matching:.any).matching(identifier:"reveal-clue-"+id).firstMatch
     }
+    func askGuessWhoOption(_ topic:String,_ name:String,_ id:Int) {
+        tap("guesswho-topic-"+topic);tap("guesswho-choose-option")
+        let search=app.textFields["guesswho-option-search"];XCTAssertTrue(search.waitForExistence(timeout:3));search.typeText(name);tap("guesswho-option-\(id)");tap("guesswho-ask")
+    }
+    func guessWhoClue(_ index:Int) -> XCUIElement {app.descendants(matching:.any).matching(identifier:"guesswho-clue-\(index)").firstMatch}
+    func testDailyGuessWhoVisualQuestionsResumeAndFinalChanceWin() {
+        start();tap("choose-XT");app.tabBars.buttons["Games"].tap();tap("game-guesswho")
+        askGuessWhoOption("club","Newcastle",4)
+        XCTAssertTrue(guessWhoClue(0).label.contains("Yes"))
+        app.swipeDown();Thread.sleep(forTimeInterval:0.3)
+        let composer=XCTAttachment(screenshot:app.screenshot());composer.name="Guess the Footballer question composer";composer.lifetime = .keepAlways;add(composer)
+        askGuessWhoOption("country","England",5)
+        XCTAssertTrue(guessWhoClue(1).label.contains("Yes"))
+        tap("guesswho-topic-position");tap("guesswho-position-3");tap("guesswho-ask")
+        XCTAssertTrue(guessWhoClue(2).label.contains("No"))
+        tap("guesswho-topic-age");app.segmentedControls["guesswho-comparison"].buttons["Over"].tap();tap("guesswho-ask")
+        XCTAssertTrue(guessWhoClue(3).label.contains("Yes"))
+        tap("guesswho-topic-height");app.segmentedControls["guesswho-comparison"].buttons["Over"].tap();tap("guesswho-ask")
+        XCTAssertTrue(guessWhoClue(4).label.contains("Yes"))
+        app.terminate();start(reset:false);app.tabBars.buttons["Games"].tap();tap("game-guesswho")
+        XCTAssertTrue(app.staticTexts["guesswho-questions"].label.contains("5 questions left"))
+        tap("guesswho-guess");let search=app.textFields["game-player-search"];XCTAssertTrue(search.waitForExistence(timeout:3));search.typeText("Messi");tap("game-player-daily-guesswho-1056")
+        tap("guesswho-guess");search.typeText("Ronaldo");tap("game-player-daily-guesswho-1622")
+        XCTAssertTrue(app.staticTexts["guesswho-guesses"].label.contains("2 / 3"))
+        tap("guesswho-guess");search.typeText("Pope");tap("game-player-daily-guesswho-91")
+        XCTAssertTrue(app.staticTexts["guesswho-answer"].waitForExistence(timeout:3));XCTAssertEqual(app.staticTexts["guesswho-answer"].label,"Nick Pope")
+        for _ in 0..<4 {app.swipeDown()}
+        Thread.sleep(forTimeInterval:0.4)
+        let shot=XCTAttachment(screenshot:app.screenshot());shot.name="Guess the Footballer portrait and yes-no clues";shot.lifetime = .keepAlways;add(shot)
+        app.terminate();start(reset:false);app.tabBars.buttons["Games"].tap();tap("game-guesswho")
+        XCTAssertEqual(app.staticTexts["guesswho-answer"].label,"Nick Pope")
+    }
     func tapPyramidSlot(_ slot:Int) {
         let button=app.buttons["pyramid-slot-\(slot)"]
         for _ in 0..<6 {

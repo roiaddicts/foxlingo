@@ -29,6 +29,11 @@ struct GamesHome: View {
                     }
                 }
                 if let daily=model.daily {
+                    if let mystery=daily.guessWho {
+                        NavigationLink {DailyGuessWhoView(pack:daily,round:mystery)} label: {
+                            HStack(spacing:16) {Image(systemName:"questionmark.bubble.fill").font(.title2).frame(width:50,height:60).foregroundStyle(Palette.brand);VStack(alignment:.leading,spacing:6) {Text("Guess the Footballer").font(.title3.bold());Text("Ten questions. Three guesses.").font(.subheadline).foregroundStyle(Palette.muted)};Spacer();Image(systemName:"chevron.right")}.padding(18).background(.white.opacity(0.8),in:RoundedRectangle(cornerRadius:20))
+                        }.buttonStyle(PressFeedback()).accessibilityIdentifier("game-guesswho")
+                    }
                     NavigationLink {DailyPyramidView(pack:daily)} label: {
                         HStack(spacing:16) {Image(systemName:"triangle.fill").font(.title2).frame(width:50,height:60).foregroundStyle(Palette.brand);VStack(alignment:.leading,spacing:6) {Text("Football Pyramid").font(.title3.bold());Text("Rank ten players. Drag to rearrange.").font(.subheadline).foregroundStyle(Palette.muted)};Spacer();Image(systemName:"chevron.right")}.padding(18).background(.white.opacity(0.8),in:RoundedRectangle(cornerRadius:20))
                     }.buttonStyle(PressFeedback()).accessibilityIdentifier("game-pyramid")

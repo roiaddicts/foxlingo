@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		29CF66FEF124865782BD4AAE /* DailyGuessWhoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B47AEAC721AC629C372BF12 /* DailyGuessWhoView.swift */; };
+		D8E80C99F1DDA1FB4F949710 /* DailyGuessWho.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5ADD6A5C909D04EA3C690A /* DailyGuessWho.swift */; };
 		0AE33D3319C8B3B14DD01D05 /* DailyRanking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626600C4441F578D70FC60AA /* DailyRanking.swift */; };
 		0DB687199F91BAC584FCE1F4 /* Mystery.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C18A5B21E37AAF8EAFEDD6 /* Mystery.swift */; };
 		0E2E56708C090FEFDB0CC103 /* PracticeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE49724F121C78481AA89D89 /* PracticeView.swift */; };
@@ -84,6 +86,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B47AEAC721AC629C372BF12 /* DailyGuessWhoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyGuessWhoView.swift; sourceTree = "<group>"; };
+		FE5ADD6A5C909D04EA3C690A /* DailyGuessWho.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyGuessWho.swift; sourceTree = "<group>"; };
 		040EE940F8B19FB06AC7B14F /* Content.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Content.swift; sourceTree = "<group>"; };
 		08674D1A67FB4BEBB32B545F /* DailyReveal.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DailyReveal.swift; sourceTree = "<group>"; };
 		0C9B1366A7BCF1012DB573C8 /* RehearsalView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RehearsalView.swift; sourceTree = "<group>"; };
@@ -207,6 +211,7 @@
 				77E56B339B1BD67288DEE76F /* DailyChallenges.swift */,
 				08674D1A67FB4BEBB32B545F /* DailyReveal.swift */,
 				626600C4441F578D70FC60AA /* DailyRanking.swift */,
+				FE5ADD6A5C909D04EA3C690A /* DailyGuessWho.swift */,
 				C5F42670E83DFD2C425C1988 /* DailySquadSlice.swift */,
 			);
 			path = Core;
@@ -301,6 +306,7 @@
 				68E742E45065DB444B399B7B /* DailyTop10View.swift */,
 				B9CCCC9A83AE35A3079A6E8F /* DailyRevealView.swift */,
 				171DB1CE51A229979E27C97B /* DailyPyramidView.swift */,
+				0B47AEAC721AC629C372BF12 /* DailyGuessWhoView.swift */,
 				9F5805FBE83EFA5E707214FA /* DailySquadSliceView.swift */,
 			);
 			path = UI;
@@ -469,6 +475,8 @@
 				35331C00CA2C1D6B9950622C /* DailyReveal.swift in Sources */,
 				A4C5594ACC500AA8E6365CB7 /* DailyRevealView.swift in Sources */,
 				0AE33D3319C8B3B14DD01D05 /* DailyRanking.swift in Sources */,
+				29CF66FEF124865782BD4AAE /* DailyGuessWhoView.swift in Sources */,
+				D8E80C99F1DDA1FB4F949710 /* DailyGuessWho.swift in Sources */,
 				52A3B34633522B38F65D8C2A /* DailySquadSlice.swift in Sources */,
 				77409B84F227F4AEB9C972F9 /* DailyPyramidView.swift in Sources */,
 				0FF94C760F9AF7CFA8224EDC /* DailySquadSliceView.swift in Sources */,

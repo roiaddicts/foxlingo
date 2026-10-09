@@ -15,9 +15,10 @@ public struct DailyChallengePack: Sendable {
     public let timeZone: String
     public let scope: String
     public let revealRounds: [DailyRevealRound]
+    public let guessWho: DailyGuessWho?
     public let pyramid: DailyPyramid
     public let squadSlice: DailySquadSlice?
-    public var supportedModeIDs: Set<String> {Set(["top10","pyramid"]+revealRounds.map { $0.mode.rawValue }+(squadSlice == nil ? []:["squadslice"]))}
+    public var supportedModeIDs: Set<String> {Set(["top10","pyramid"]+revealRounds.map { $0.mode.rawValue }+(squadSlice == nil ? []:["squadslice"])+(guessWho == nil ? []:["guesswho"]))}
     public let top10: DailyTop10
     public let digest: String
     public func isToday(_ date: Date) -> Bool {
@@ -78,7 +79,7 @@ public struct DailyChallengePack: Sendable {
         let digest=ContentUpdateRules.digest(data)
         let signature=ContentUpdateRules.digest(ContentUpdateRules.bytes(["daily-top10-v1",date,zone,title]+ids.flatMap {[String($0),players[$0]!.name,players[$0]!.imageURL ?? "",flags[countries[$0]!]!]}))
         let allPlayers=playerRows.compactMap {($0["id"] as? Int).flatMap {players[$0]}}
-        return Self(gameDate:date,timeZone:zone,scope:scope,revealRounds:try DailyRevealRound.load(root:root,players:playerRows.compactMap {($0["id"] as? Int).flatMap {players[$0]}}),pyramid:try DailyPyramid.load(root:root,players:allPlayers),squadSlice:try DailySquadSlice.load(root:root,players:allPlayers),top10:DailyTop10(title:title,rankedPlayers:ids.map {players[$0]!},flags:ids.map {flags[countries[$0]!]!},players:playerRows.compactMap {($0["id"] as? Int).flatMap {players[$0]}},signature:signature),digest:digest)
+        return Self(gameDate:date,timeZone:zone,scope:scope,revealRounds:try DailyRevealRound.load(root:root,players:playerRows.compactMap {($0["id"] as? Int).flatMap {players[$0]}}),guessWho:try DailyGuessWho.load(root:root,general:allPlayers),pyramid:try DailyPyramid.load(root:root,players:allPlayers),squadSlice:try DailySquadSlice.load(root:root,players:allPlayers),top10:DailyTop10(title:title,rankedPlayers:ids.map {players[$0]!},flags:ids.map {flags[countries[$0]!]!},players:playerRows.compactMap {($0["id"] as? Int).flatMap {players[$0]}},signature:signature),digest:digest)
     }
 }
 public struct Top10Progress: Codable, Sendable {

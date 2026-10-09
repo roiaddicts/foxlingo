@@ -147,6 +147,43 @@ def compile_daily(snapshot,day,zone):
     squad_game['selection']['revealOrder']=[r['countryID'] for r in squad_shuffle(slices,str(squad_record['clubID'])+'-'+squad_record['season'])]
     squad_game['selection']['omittedPlayerIDs']=[i for i in csv(squad_record['players']) if i not in general_map]
     if not any(c['id']==squad_record['clubID'] for c in clubs):raise ValueError('Missing squad answer club')
+    guess_game=next(g for g in games if g['id']=='guesswho');guess_url=archive.mode('guesswho');guess_text=archive.text(guess_url)
+    if archive.imported(guess_url,'Q')!=general_url or archive.imported(guess_url,'j')!=country_url:raise ValueError('GuessWho identity binding changed')
+    guess_players_url=archive.imported(guess_url,'T')
+    guess_players=archive.rows({'id','clubID','firstName','lastName','nickname','positions'},guess_players_url)
+    guess_rows=archive.rows({'birthday','height','id','name','position','previousClubs','previousLeagues','secID'},guess_url)
+    def inline_guess(name):
+        match=re.search(r'(?:const |,)'+name+r'=\[',guess_text)
+        if match is None:raise ValueError('GuessWho question catalog changed')
+        return array_at(guess_text,match.end()-1)
+    question_clubs=inline_guess('q');question_leagues=inline_guess('we')
+    if any(set(c)!={'id','name','countryID'} for c in question_clubs) or any(set(c)!={'id','name'} for c in question_leagues):raise ValueError('Invalid GuessWho catalogs')
+    aliases={'Man United':'Man Utd','Sporting CP':'Sporting'}
+    for club in question_clubs:
+        matches=[c for c in clubs if c['lastName']==aliases.get(club['name'],club['name']) and c['country']==club['countryID']]
+        if len(matches)>1:raise ValueError('Ambiguous GuessWho kit identity')
+        if matches:club['image']=matches[0]['image']
+    crosswalk={}
+    for row in guess_rows:
+        if row['secID'] not in general_ids or not any(p['id']==row['id'] for p in guess_players):raise ValueError('Missing GuessWho source identity')
+        if str(row['id']) in crosswalk and crosswalk[str(row['id'])]!=row['secID']:raise ValueError('Conflicting GuessWho portrait crosswalk')
+        crosswalk[str(row['id'])]=row['secID']
+    # Artwork-only joins require a unique full name in BOTH catalogs. Explicit
+    # source secID links take precedence; no factual membership crosses this join.
+    def full_name(player):
+        first=player.get('firstName','').strip();last=player.get('lastName','').strip()
+        return ' '.join((first+' '+last).lower().split()) if first and last else ''
+    general_names={};guess_names={}
+    for player in general:
+        name=full_name(player)
+        if name:general_names.setdefault(name,[]).append(player['id'])
+    for player in guess_players:
+        name=full_name(player)
+        if name:guess_names.setdefault(name,[]).append(player['id'])
+    for name,ids in guess_names.items():
+        matches=general_names.get(name,[])
+        if len(ids)==1 and len(matches)==1:crosswalk.setdefault(str(ids[0]),matches[0])
+    guess_game['selection']['catalog']=dict(clubs=question_clubs,leagues=question_leagues,playerSourceURL=guess_players_url,portraitPlayerIDs=crosswalk)
     # Pyramid deliberately uses floor rather than the common rounded day helper.
     url,text=module('pyramid',['p=Math.floor(C/G)','let S=u1[p]','i.has(r.number)?!1:(i.add(r.number),!0)'])
     if archive.imported(url,'a1')!=general_url:raise ValueError('Pyramid player namespace binding changed')

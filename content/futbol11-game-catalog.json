@@ -152,8 +152,8 @@
       "sourceURL": "https://futbol11.com/guess-the-footballer",
       "mechanic": "Ask yes/no profile questions before guessing a player.",
       "requiredData": "scoped club, nation, league, position, age profiles",
-      "status": "planned",
-      "notes": ""
+      "status": "native",
+      "notes": "Ten source-scoped yes/no questions across eight topics, numeric comparisons, three guesses, verified player/portrait namespace crosswalks, visual options, saved history and idempotent win credit."
     },
     {
       "id": "legends",
