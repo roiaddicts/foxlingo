@@ -58,6 +58,8 @@ The app bundles `Foxlingo/Resources/daily-en.json` as its initial offline set. I
 
 No public feed is deployed or assumed. Host the output directory from the refresh command on your HTTPS static storage and supply that `latest.json` address. To refresh the next app build's bundled set, copy the verified dated output to `Foxlingo/Resources/daily-en.json` and run the core tests.
 
+For Firebase Hosting, [daily feed deployment](daily-feed-deployment.md) describes the dedicated-site release preparer, native validation, cache headers and remaining project/scheduler setup. The preparer stages only verified JSON and does not deploy by itself.
+
 Top 10 uses the general-game player table, never Clubs/Nations numeric IDs. It preserves ranked order, nationality flag clues, source title/season and visible game date. Portraits replace flags on successful guesses. Source nicknames and HTTPS portrait URLs are supported. Saved progress is tied to the exact ranking, names, images, flags, date and timezone. Both unfinished and finished lists survive relaunch, and completion earns streak credit once per session. Wrong answers and assisted reveals record practice gaps without fabricating lesson facts.
 
 All nineteen feed selections drive native daily screens. Full goal completion still requires verification of runtime coverage, source identity and fresh delivery; a hosted feed is not configured by default.
