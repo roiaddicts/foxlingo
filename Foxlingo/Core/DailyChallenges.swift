@@ -14,6 +14,7 @@ public struct DailyChallengePack: Sendable {
     public let gameDate: String
     public let timeZone: String
     public let scope: String
+    public let connections: DailyConnections?
     public let bingo: DailyBingo?
     public let grid: DailyGrid?
     public let wordle: DailyWordle?
@@ -33,6 +34,7 @@ public struct DailyChallengePack: Sendable {
         if wordle != nil {ids.insert("wordle")}
         if grid != nil {ids.insert("grid")}
         if bingo != nil {ids.insert("bingo")}
+        if connections != nil {ids.insert("connections")}
         return ids
     }
     public let top10: DailyTop10
@@ -95,7 +97,7 @@ public struct DailyChallengePack: Sendable {
         let digest=ContentUpdateRules.digest(data)
         let signature=ContentUpdateRules.digest(ContentUpdateRules.bytes(["daily-top10-v1",date,zone,title]+ids.flatMap {[String($0),players[$0]!.name,players[$0]!.imageURL ?? "",flags[countries[$0]!]!]}))
         let allPlayers=playerRows.compactMap {($0["id"] as? Int).flatMap {players[$0]}}
-        return Self(gameDate:date,timeZone:zone,scope:scope,bingo:try DailyBingo.load(root:root,general:allPlayers),grid:try DailyGrid.load(root:root,general:allPlayers),wordle:try DailyWordle.load(root:root,general:allPlayers),bingoRetro:try DailyBingoRetro.load(root:root),revealRounds:try DailyRevealRound.load(root:root,players:playerRows.compactMap {($0["id"] as? Int).flatMap {players[$0]}}),goltexto:try DailyGoltexto.load(root:root,general:allPlayers),guessWho:try DailyGuessWho.load(root:root,general:allPlayers),pyramid:try DailyPyramid.load(root:root,players:allPlayers),squadSlice:try DailySquadSlice.load(root:root,players:allPlayers),top10:DailyTop10(title:title,rankedPlayers:ids.map {players[$0]!},flags:ids.map {flags[countries[$0]!]!},players:playerRows.compactMap {($0["id"] as? Int).flatMap {players[$0]}},signature:signature),digest:digest)
+        return Self(gameDate:date,timeZone:zone,scope:scope,connections:try DailyConnections.load(root:root,general:allPlayers),bingo:try DailyBingo.load(root:root,general:allPlayers),grid:try DailyGrid.load(root:root,general:allPlayers),wordle:try DailyWordle.load(root:root,general:allPlayers),bingoRetro:try DailyBingoRetro.load(root:root),revealRounds:try DailyRevealRound.load(root:root,players:playerRows.compactMap {($0["id"] as? Int).flatMap {players[$0]}}),goltexto:try DailyGoltexto.load(root:root,general:allPlayers),guessWho:try DailyGuessWho.load(root:root,general:allPlayers),pyramid:try DailyPyramid.load(root:root,players:allPlayers),squadSlice:try DailySquadSlice.load(root:root,players:allPlayers),top10:DailyTop10(title:title,rankedPlayers:ids.map {players[$0]!},flags:ids.map {flags[countries[$0]!]!},players:playerRows.compactMap {($0["id"] as? Int).flatMap {players[$0]}},signature:signature),digest:digest)
     }
 }
 public struct Top10Progress: Codable, Sendable {

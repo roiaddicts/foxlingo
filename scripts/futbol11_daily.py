@@ -338,15 +338,21 @@ def compile_daily(snapshot,day,zone):
     for category in categories:
         members=[p for p in csv(category['players']) if p in with_images]
         if len(members)>=4:candidates.append(dict(category,players=members))
-    selected=[];chosen=set();excluded=set()
-    for group in shuffle(candidates,stamp+'/'):
-        if chosen & set(group['players']):continue
-        picked=shuffle([p for p in group['players'] if p not in chosen|excluded],stamp+'/')[:4]
-        if len(picked)!=4:continue
-        selected.append(dict(id=group['id'],title=group['title'],playerIDs=picked));chosen.update(picked);excluded.update(group['players'])
-        if len(selected)==4:break
-    if len(selected)!=4:raise ValueError('Source Connections cannot form four groups')
-    add('connections',url,dict(groups=selected,order=shuffle([p for g in selected for p in g['playerIDs']],stamp+'/')),'MM/DD/YYYY/ seeded compatible groups; normal mode')
+    if archive.imported(url,'O')!=general_url:raise ValueError('Connections player binding changed')
+    boards=[]
+    for mode in ['normal','easy']:
+        selected=[];chosen=set();excluded=set()
+        for group in shuffle(candidates,stamp+'/'):
+            if mode=='easy' and group.get('level')!='easy':continue
+            if chosen & set(group['players']):continue
+            picked=shuffle([p for p in group['players'] if p not in chosen|excluded],stamp+'/')[:4]
+            if len(picked)!=4:continue
+            selected.append(dict(id=group['id'],title=group['title'],playerIDs=picked));chosen.update(picked);excluded.update(group['players'])
+            if len(selected)==4:break
+        if len(selected)!=4:raise ValueError('Source Connections cannot form four '+mode+' groups')
+        boards.append(dict(mode=mode,groups=selected,order=shuffle([p for g in selected for p in g['playerIDs']],stamp+'/')))
+    selection=dict(groups=boards[0]['groups'],order=boards[0]['order'],boards=boards,catalog=dict(playerSourceURL=general_url,categorySourceURL=url,boardDate=day.isoformat()))
+    add('connections',url,selection,'MM/DD/YYYY/ seeded compatible groups; Easy or Normal board; Hard uses Normal')
     catalog=json.loads((ROOT/'content/futbol11-game-catalog.json').read_text())
     expected={g['id'] for g in catalog['games']};actual={('futbol11' if g['id']=='countries' else 'guess-the-footballer' if g['id']=='guesswho' else g['id']) for g in games}
     expected_routes={urlsplit(g['sourceURL']).path for g in catalog['games']}

@@ -4,10 +4,10 @@
   "timeZone": "America/Mexico_City",
   "dayOfYear": 283,
   "elapsedDayFloor": 283,
-  "fetchedAt": "2026-10-10T07:38:19.798263+00:00",
-  "compiledAt": "2026-10-10T07:38:20.643463+00:00",
+  "fetchedAt": "2026-10-10T07:49:38.861795+00:00",
+  "compiledAt": "2026-10-10T07:49:39.693963+00:00",
   "selectorContractsSHA256": "70a323530f21998556a01f68dc72c410930eb16f29cc285e6003bc5d16ee7a94",
-  "sourceSnapshotSHA256": "a80271c935c1b631e1dc639db40202925e21579f2ba628c814725e4a052697be",
+  "sourceSnapshotSHA256": "4b7060ffcddb11b7abd6cb698d19fe8640507658f6442fee6ba478c083ccb9bc",
   "sourceURL": "https://futbol11.com/",
   "datasets": [
     {
@@ -151895,7 +151895,7 @@
     {
       "id": "connections",
       "sourceURL": "https://futbol11.com/futbol11-connections",
-      "selector": "MM/DD/YYYY/ seeded compatible groups; normal mode",
+      "selector": "MM/DD/YYYY/ seeded compatible groups; Easy or Normal board; Hard uses Normal",
       "selection": {
         "groups": [
           {
@@ -151956,7 +151956,140 @@
           1111,
           408,
           537
-        ]
+        ],
+        "boards": [
+          {
+            "mode": "normal",
+            "groups": [
+              {
+                "id": 55,
+                "title": "Played for Besiktas",
+                "playerIDs": [
+                  924,
+                  827,
+                  144,
+                  424
+                ]
+              },
+              {
+                "id": 124,
+                "title": "Pichichi Winners",
+                "playerIDs": [
+                  1111,
+                  59,
+                  31,
+                  18
+                ]
+              },
+              {
+                "id": 40,
+                "title": "Played for West Ham",
+                "playerIDs": [
+                  79,
+                  284,
+                  537,
+                  1112
+                ]
+              },
+              {
+                "id": 30,
+                "title": "From Spain",
+                "playerIDs": [
+                  29,
+                  16,
+                  113,
+                  408
+                ]
+              }
+            ],
+            "order": [
+              924,
+              827,
+              16,
+              18,
+              31,
+              113,
+              79,
+              59,
+              1112,
+              424,
+              29,
+              144,
+              284,
+              1111,
+              408,
+              537
+            ]
+          },
+          {
+            "mode": "easy",
+            "groups": [
+              {
+                "id": 30,
+                "title": "From Spain",
+                "playerIDs": [
+                  942,
+                  16,
+                  177,
+                  29
+                ]
+              },
+              {
+                "id": 109,
+                "title": "Ballon d'Or Winners",
+                "playerIDs": [
+                  2,
+                  12,
+                  180,
+                  388
+                ]
+              },
+              {
+                "id": 1,
+                "title": "Played for Arsenal",
+                "playerIDs": [
+                  80,
+                  285,
+                  7,
+                  427
+                ]
+              },
+              {
+                "id": 24,
+                "title": "From Brazil",
+                "playerIDs": [
+                  5,
+                  145,
+                  256,
+                  902
+                ]
+              }
+            ],
+            "order": [
+              942,
+              16,
+              145,
+              388,
+              180,
+              256,
+              80,
+              12,
+              427,
+              29,
+              5,
+              177,
+              285,
+              2,
+              902,
+              7
+            ]
+          }
+        ],
+        "catalog": {
+          "playerSourceURL": "https://futbol11.com/_nuxt/sF1zb7uP.js",
+          "categorySourceURL": "https://futbol11.com/_nuxt/BjcIrBVI.js",
+          "boardDate": "2026-10-10"
+        }
       },
       "sourceModule": "https://futbol11.com/_nuxt/BjcIrBVI.js",
       "sourceModuleSHA256": "89dfcd91a4d20eb0b03e62c7a90aeeca60929dede1011df5198bbb9c25937296",

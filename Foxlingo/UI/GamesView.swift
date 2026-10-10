@@ -29,6 +29,11 @@ struct GamesHome: View {
                     }
                 }
                 if let daily=model.daily {
+                    if let connections=daily.connections {
+                        NavigationLink {DailyConnectionsView(pack:daily,round:connections)} label: {
+                            HStack(spacing:16) {Image(systemName:"square.grid.4x3.fill").font(.title2).frame(width:50,height:60).foregroundStyle(Palette.brand);VStack(alignment:.leading,spacing:6) {Text("Daily Football Connections").font(.title3.bold());Text("Sixteen portraits. Four hidden groups.").font(.subheadline).foregroundStyle(Palette.muted)};Spacer();Image(systemName:"chevron.right")}.padding(18).background(.white.opacity(0.8),in:RoundedRectangle(cornerRadius:20))
+                        }.buttonStyle(PressFeedback()).accessibilityIdentifier("game-daily-connections")
+                    }
                     if let bingo=daily.bingo {
                         NavigationLink {DailyBingoRetroView(pack:daily,round:bingo)} label: {
                             HStack(spacing:16) {GameCategoryMark(category:bingo.categories[0],size:50).frame(width:50,height:60);VStack(alignment:.leading,spacing:6) {Text("Daily Football Bingo").font(.title3.bold());Text("Twelve categories. Clubs, awards and countries.").font(.subheadline).foregroundStyle(Palette.muted)};Spacer();Image(systemName:"chevron.right")}.padding(18).background(.white.opacity(0.8),in:RoundedRectangle(cornerRadius:20))
@@ -119,7 +124,7 @@ struct GamesHome: View {
                             HStack(spacing:16) {
                                 Image(systemName:mode == .connections ? "square.grid.4x3.fill" : "person.crop.circle.badge.xmark").font(.title2).frame(width:50,height:60).foregroundStyle(Palette.brand)
                                 VStack(alignment:.leading,spacing:6) {
-                                    Text(mode == .connections ? "Football Connections" : "Find the Impostors").font(.title3.bold())
+                                    Text(mode == .connections ? "Practice Connections" : "Find the Impostors").font(.title3.bold())
                                     Text(model.state.savedGame(mode.rawValue) != nil ? "Continue your saved groups." : mode == .connections ? "16 players. Find four shared countries." : "Find the four who fit. Leave the outsiders.").font(.subheadline).foregroundStyle(Palette.muted)
                                 }
                                 Spacer();Image(systemName:"chevron.right")

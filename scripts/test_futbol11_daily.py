@@ -46,6 +46,15 @@ class DailyTests(unittest.TestCase):
         self.assertEqual(len(modes['bingo-retro']['selection']['groups']),12)
         ny=compile_daily(SNAPSHOT,date(2026,10,9),'America/New_York')
         self.assertNotEqual(modes['pyramid']['selection']['record'],next(g for g in ny['games'] if g['id']=='pyramid')['selection']['record'])
+    def test_connections_easy_normal_match_independent_data_only_reference(self):
+        packet=compile_daily(SNAPSHOT,date(2026,10,10),'America/Mexico_City');s=next(g['selection'] for g in packet['games'] if g['id']=='connections')
+        groups=next(d['data'] for d in packet['datasets'] if d['sourceURL']==s['catalog']['categorySourceURL'])
+        players=next(d['data'] for d in packet['datasets'] if d['sourceURL']==s['catalog']['playerSourceURL'])
+        js="""const d=JSON.parse(require('fs').readFileSync(0,'utf8'));function mix(a,seed){let v=2166136261;for(let i=0;i<seed.length;i++){v^=seed.charCodeAt(i);v+=(v<<1)+(v<<4)+(v<<7)+(v<<8)+(v<<24);}let out=[...a];for(let i=out.length-1;i>0;i--){v+=v<<13;v^=v>>>7;v+=v<<3;v^=v>>>17;v+=v<<5;let j=Math.floor((v>>>0)/4294967296*(i+1));[out[i],out[j]]=[out[j],out[i]];}return out;}
+        const seed='10/10/2026/',pool=d.groups.map(g=>({...g,players:g.players.split(',').map(Number).filter(id=>d.players.some(p=>p.id===id&&p.image))})).filter(g=>g.players.length>=4),boards=[];
+        for(const mode of ['normal','easy']){const chosen=[],excluded=[],groups=[];for(const g of mix(pool,seed)){if(mode==='easy'&&g.level!=='easy')continue;if(g.players.some(id=>chosen.includes(id)))continue;const ids=mix(g.players.filter(id=>!chosen.includes(id)&&!excluded.includes(id)),seed).slice(0,4);if(ids.length!==4)continue;groups.push({id:g.id,title:g.title,playerIDs:ids});chosen.push(...ids);excluded.push(...g.players);if(groups.length===4)break;}boards.push({mode,groups,order:mix(groups.flatMap(g=>g.playerIDs),seed)});}console.log(JSON.stringify(boards));"""
+        actual=json.loads(subprocess.check_output(['node','-e',js],input=json.dumps(dict(groups=groups,players=players)),text=True))
+        self.assertEqual(s['boards'],actual)
     def test_bingo_catalog_bound_memberships_and_category_recipe(self):
         packet=compile_daily(SNAPSHOT,date(2026,10,9),'America/Mexico_City');selection=next(g['selection'] for g in packet['games'] if g['id']=='bingo')
         self.assertEqual(selection['catalog']['boardDate'],'2026-10-09')

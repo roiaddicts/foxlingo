@@ -241,6 +241,50 @@ final class FlowTests: XCTestCase {
     func revealClue(_ id: String) -> XCUIElement {
         app.descendants(matching:.any).matching(identifier:"reveal-clue-"+id).firstMatch
     }
+    var connectionsFixtureURL:URL {URL(fileURLWithPath:#filePath).deletingLastPathComponent().deletingLastPathComponent().appendingPathComponent("ref/futbol11-daily/2026-10-10-295a178f00bc.json")}
+    func connectionGroups(_ mode:String) throws -> [[String:Any]] {
+        let root=try JSONSerialization.jsonObject(with:Data(contentsOf:connectionsFixtureURL)) as! [String:Any]
+        let game=(root["games"] as! [[String:Any]]).first {$0["id"] as? String == "connections"}!,s=game["selection"] as! [String:Any]
+        return (s["boards"] as! [[String:Any]]).first {$0["mode"] as? String == mode}!["groups"] as! [[String:Any]]
+    }
+    func startDailyConnections(reset:Bool=true) {
+        app.launchArguments=["-ui-testing","-test-now","1800000000","-test-daily-file",connectionsFixtureURL.path]+(reset ? ["-reset-test-state"]:[]);app.launch()
+        if reset {tap("choose-XT")};app.tabBars.buttons["Games"].tap();tap("game-daily-connections")
+    }
+    func selectDailyConnection(_ id:Int) {
+        let card=app.buttons["daily-connections-player-daily-general-\(id)"]
+        for _ in 0..<10 {
+            if card.exists,card.isHittable,card.frame.minY > app.navigationBars.firstMatch.frame.maxY,card.frame.maxY < app.buttons["daily-connections-check"].frame.minY {break}
+            if card.exists,card.frame.minY < app.navigationBars.firstMatch.frame.maxY {app.swipeDown()} else {app.swipeUp()}
+        }
+        XCTAssertTrue(card.exists && card.isHittable);card.tap()
+    }
+    func testDailyConnectionsEasyNearMissResumeAndFullWin() throws {
+        let groups=try connectionGroups("easy"),first=groups[0]["playerIDs"] as! [Int],second=groups[1]["playerIDs"] as! [Int]
+        startDailyConnections();app.segmentedControls["daily-connections-level"].buttons["Easy"].tap();tap("daily-connections-start")
+        for id in Array(first.prefix(3))+[second[0]] {selectDailyConnection(id)};tap("daily-connections-check")
+        XCTAssertTrue(app.staticTexts["daily-connections-feedback"].label.contains("Three belong"));tap("daily-connections-clear")
+        for id in first {selectDailyConnection(id)};tap("daily-connections-check");XCTAssertTrue(app.staticTexts["daily-connections-count"].label.contains("1 / 4"))
+        app.terminate();startDailyConnections(reset:false);XCTAssertTrue(app.staticTexts["daily-connections-count"].label.contains("1 / 4"));XCTAssertFalse(app.segmentedControls["daily-connections-level"].exists)
+        for group in groups.dropFirst() {for id in group["playerIDs"] as! [Int] {selectDailyConnection(id)};tap("daily-connections-check")}
+        XCTAssertEqual(app.staticTexts["daily-connections-result"].label,"Every group found!")
+        app.terminate();startDailyConnections(reset:false);XCTAssertEqual(app.staticTexts["daily-connections-result"].label,"Every group found!")
+        let shot=XCTAttachment(screenshot:app.screenshot());shot.name="Daily Connections solved portrait groups";shot.lifetime = .keepAlways;add(shot)
+    }
+    func testDailyConnectionsHardFiveNearMissesLoseAndPersist() throws {
+        let groups=try connectionGroups("normal"),first=groups[0]["playerIDs"] as! [Int],second=groups[1]["playerIDs"] as! [Int]
+        startDailyConnections();app.segmentedControls["daily-connections-level"].buttons["Hard"].tap();tap("daily-connections-start");XCTAssertFalse(app.buttons["daily-connections-reveal"].exists)
+        for id in Array(first.prefix(3))+[second[0]] {selectDailyConnection(id)}
+        for _ in 0..<5 {tap("daily-connections-check")}
+        XCTAssertEqual(app.staticTexts["daily-connections-result"].label,"Five mistakes. New connections.");XCTAssertFalse(app.buttons["daily-connections-check"].exists)
+        app.terminate();startDailyConnections(reset:false);XCTAssertEqual(app.staticTexts["daily-connections-result"].label,"Five mistakes. New connections.");XCTAssertTrue(app.staticTexts["daily-connections-count"].label.contains("0 / 4"))
+    }
+    func testDailyConnectionsNormalPartialSelectionAndReveal() throws {
+        let groups=try connectionGroups("normal"),ids=groups[0]["playerIDs"] as! [Int]
+        startDailyConnections();tap("daily-connections-start");for id in ids.prefix(2) {selectDailyConnection(id)}
+        app.terminate();startDailyConnections(reset:false);for id in ids.prefix(2) {XCTAssertEqual(app.buttons["daily-connections-player-daily-general-\(id)"].value as? String,"Selected")}
+        XCTAssertFalse(app.buttons["daily-connections-check"].isEnabled);tap("daily-connections-reveal");app.sheets.buttons["Reveal groups"].tap();XCTAssertEqual(app.staticTexts["daily-connections-result"].label,"Connections to explore.");XCTAssertTrue(app.staticTexts["daily-connections-count"].label.contains("0 / 4"))
+    }
     var bingoFixtureURL:URL {URL(fileURLWithPath:#filePath).deletingLastPathComponent().deletingLastPathComponent().appendingPathComponent("ref/futbol11-daily/2026-10-10-b9670b05ffc0.json")}
     func startDailyBingo(reset:Bool=true,now:Double=1_800_000_000,staged:Bool=false) {
         app.launchArguments=["-ui-testing","-test-now",String(now),"-test-daily-file",bingoFixtureURL.path]+(reset ? ["-reset-test-state"]:[])+(staged ? ["-stage-test-daily-bingo"]:[]);app.launch()
