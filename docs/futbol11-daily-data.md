@@ -44,7 +44,7 @@ Offline tests verify all nineteen mode selections, JavaScript arithmetic compati
 
 ## Remaining app work
 
-Daily extraction covers nineteen modes; native game coverage is nineteen modes. Top 10, Statdle, Legacy, Link, Pyramid, SquadSlice, Guess the Footballer, Goltexto, Bingo Retro, Wordle and Grid consume packaged daily selections in-app. All nineteen mode screens now exist. Existing native games still need source-authored daily adapters and broader Connections/Impostor variants.
+Daily extraction covers nineteen modes; native game coverage is nineteen modes. Top 10, Statdle, Legacy, Link, Pyramid, SquadSlice, Guess the Footballer, Goltexto, Bingo Retro, Wordle, Grid and Bingo consume packaged daily selections in-app. All nineteen mode screens now exist. Existing native games still need source-authored daily adapters and broader Connections/Impostor variants.
 
 ## In-app delivery
 
@@ -54,7 +54,7 @@ No public feed is deployed or assumed. Host the output directory from the refres
 
 Top 10 uses the general-game player table, never Clubs/Nations numeric IDs. It preserves ranked order, nationality flag clues, source title/season and visible game date. Portraits replace flags on successful guesses. Source nicknames and HTTPS portrait URLs are supported. Saved progress is tied to the exact ranking, names, images, flags, date and timezone. Both unfinished and finished lists survive relaunch, and completion earns streak credit once per session. Wrong answers and assisted reveals record practice gaps without fabricating lesson facts.
 
-The feed's other eight selections are retained in the package but do not yet drive their native screens. Full goal completion requires every game to be playable and every daily adapter to preserve source identity and freshness.
+The feed's other seven selections are retained in the package but do not yet drive their native screens. Full goal completion requires every game to be playable and every daily adapter to preserve source identity and freshness.
 
 The additive `support.clubs` table preserves the source's inline club names, country IDs and kit URLs, with its module URL/digest. Its executable wrapper has a reviewed selector contract. Legacy's club clue order and Link's teammate order are compiled with the source shuffle and correct seeds. Statdle, Legacy and Link are explicitly bound to the general-game player table during compilation. Apps reject selected native record indexes that do not match the game date's local index: floor for Pyramid and rounded for the other supported modes. Older Top 10-only packages remain readable without inventing clues for the new modes. A newer bundled date, or a same-date bundle with more supported modes, takes precedence over an older cached package after an app update.
 
@@ -69,3 +69,5 @@ Bingo Retro packages its separate legend-module binding, full category table and
 Daily Wordle packages the source’s ordered 374-word array, imported module binding and general-player binding. A reviewed dictionary-wrapper contract permits literal word updates and rejects changed executable code. Native Normal mode accepts an exact uppercased whole first name, surname, nickname or dictionary word; Easy permits any ASCII letter sequence of the answer length. Partial input, difficulty, guesses and completed outcomes persist. See `docs/daily-wordle.md`.
 
 Grid consumes all four dated source boards, with unique player placements, visual category headers, undo, global player search, saved outcomes and optional active-play timers. See [Daily Grid](daily-grid.md). Regression tests use a fixed dated packet while the app bundles the newly refreshed day.
+
+Bingo now binds its general-player and category tables explicitly, verifies all twelve categories have positive matches, and consumes the dated recipe natively. Grid membership is never substituted for Bingo membership. See [Daily Bingo](daily-bingo.md).

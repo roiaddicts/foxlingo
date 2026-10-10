@@ -46,6 +46,17 @@ class DailyTests(unittest.TestCase):
         self.assertEqual(len(modes['bingo-retro']['selection']['groups']),12)
         ny=compile_daily(SNAPSHOT,date(2026,10,9),'America/New_York')
         self.assertNotEqual(modes['pyramid']['selection']['record'],next(g for g in ny['games'] if g['id']=='pyramid')['selection']['record'])
+    def test_bingo_catalog_bound_memberships_and_category_recipe(self):
+        packet=compile_daily(SNAPSHOT,date(2026,10,9),'America/Mexico_City');selection=next(g['selection'] for g in packet['games'] if g['id']=='bingo')
+        self.assertEqual(selection['catalog']['boardDate'],'2026-10-09')
+        players=next(d['data'] for d in packet['datasets'] if d['sourceURL']==selection['catalog']['playerSourceURL'])
+        groups=next(d['data'] for d in packet['datasets'] if d['sourceURL']==selection['catalog']['categorySourceURL'])
+        expected=[]
+        for types,count in [('club',4),('club2',1),('country',2),('country2|continent',1),('extra',1),('award',2),('league',1)]:
+            expected+=shuffle([g for g in groups if g['type'] in types.split('|')],'10/09/2026')[:count]
+        self.assertEqual(selection['groups'],shuffle(expected,'10/09/2026'))
+        for g in selection['groups']:
+            self.assertTrue(any(g['id'] in [int(v) for v in p.get('bingo','').split(',') if v.strip()] for p in players))
     def test_grid_four_difficulties_match_independent_data_only_reference(self):
         packet=compile_daily(SNAPSHOT,date(2026,10,9),'America/Mexico_City');selection=next(g['selection'] for g in packet['games'] if g['id']=='grid')
         groups=next(d['data'] for d in packet['datasets'] if d['sourceURL']==selection['catalog']['categorySourceURL'])

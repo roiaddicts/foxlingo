@@ -301,6 +301,12 @@ def compile_daily(snapshot,day,zone):
             selected+=shuffle([g for g in groups if g['type'] in types.split('|')],stamp)[:count]
         if len(selected)!=12:raise ValueError('Incomplete bingo board')
         selection=dict(groups=shuffle(selected,stamp))
+        if name=='bingo':
+            group_url=next(d['sourceURL'] for d in archive.meta['datasets'] if set(d['fields'])=={'id','logo','name','type'})
+            if archive.imported(url,'he')!=general_url or archive.imported(url,'p')!=group_url:raise ValueError('Bingo player/category binding changed')
+            eligible=[p for p in archive.roles['gamePlayers'] if p.get('bingo')]
+            if any(not any(g['id'] in csv(p['bingo']) for p in eligible) for g in selected):raise ValueError('Unplayable Bingo category')
+            selection['catalog']=dict(playerSourceURL=general_url,categorySourceURL=group_url,boardDate=day.isoformat())
         if name=='bingo-retro':
             legends=archive.rows({'id','name','image','groups'},url)
             if len({p['id'] for p in legends})!=len(legends) or any(not isinstance(p['groups'],list) or not p['groups'] or any(not isinstance(i,int) for i in p['groups']) for p in legends):raise ValueError('Invalid Bingo Retro player memberships')

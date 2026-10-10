@@ -241,6 +241,51 @@ final class FlowTests: XCTestCase {
     func revealClue(_ id: String) -> XCUIElement {
         app.descendants(matching:.any).matching(identifier:"reveal-clue-"+id).firstMatch
     }
+    var bingoFixtureURL:URL {URL(fileURLWithPath:#filePath).deletingLastPathComponent().deletingLastPathComponent().appendingPathComponent("ref/futbol11-daily/2026-10-10-b9670b05ffc0.json")}
+    func startDailyBingo(reset:Bool=true,now:Double=1_800_000_000,staged:Bool=false) {
+        app.launchArguments=["-ui-testing","-test-now",String(now),"-test-daily-file",bingoFixtureURL.path]+(reset ? ["-reset-test-state"]:[])+(staged ? ["-stage-test-daily-bingo"]:[]);app.launch()
+        if reset {tap("choose-XT")};app.tabBars.buttons["Games"].tap();tap("game-daily-bingo")
+    }
+    func tapDailyBingoCategory(_ id:Int) {
+        let card=app.buttons["daily-bingo-cell-daily-bingo-group-\(id)"]
+        for _ in 0..<8 {
+            if card.exists,card.isHittable,card.frame.maxY < app.buttons["daily-bingo-skip"].frame.minY {break}
+            app.swipeUp()
+        }
+        XCTAssertTrue(card.exists && card.isHittable);card.tap()
+    }
+    func testDailyBingoWrongPlacementSkipAndSavedOffer() throws {
+        let packet=try JSONSerialization.jsonObject(with:Data(contentsOf:bingoFixtureURL)) as! [String:Any]
+        let games=packet["games"] as! [[String:Any]],selected=(games.first {$0["id"] as? String == "bingo"}!["selection"] as! [String:Any])["groups"] as! [[String:Any]]
+        let rows=(packet["datasets"] as! [[String:Any]]).first {($0["fields"] as! [String]).contains("bingo")}!["data"] as! [[String:Any]]
+        func memberships(_ id:String)->Set<Int> {let raw=Int(id.split(separator:"-").last!)!;return Set((rows.first {$0["id"] as? Int == raw}!["bingo"] as! String).split(separator:",").compactMap {Int($0.trimmingCharacters(in:.whitespaces))})}
+        startDailyBingo();tap("daily-bingo-start")
+        // Source offers may initially fit no square; helpful offers bound this search.
+        var matches:[Int]=[],id=""
+        for _ in 0..<7 {
+            id=app.staticTexts["daily-bingo-offer"].value as! String;matches=selected.compactMap {$0["id"] as? Int}.filter {memberships(id).contains($0)}
+            if !matches.isEmpty {break};tap("daily-bingo-skip")
+        }
+        XCTAssertFalse(matches.isEmpty)
+        if let wrong=selected.compactMap({$0["id"] as? Int}).first(where:{!memberships(id).contains($0)}) {
+            tapDailyBingoCategory(wrong);XCTAssertTrue(app.staticTexts["daily-bingo-feedback"].label.contains("isn’t listed"));XCTAssertEqual(app.staticTexts["daily-bingo-offer"].value as? String,id)
+        }
+        tapDailyBingoCategory(matches[0]);XCTAssertTrue(app.staticTexts["daily-bingo-count"].label.contains("1 / 12"));tap("daily-bingo-skip")
+        let saved=app.staticTexts["daily-bingo-offer"].value as! String
+        app.terminate();startDailyBingo(reset:false);XCTAssertEqual(app.staticTexts["daily-bingo-offer"].value as? String,saved);XCTAssertTrue(app.staticTexts["daily-bingo-count"].label.contains("1 / 12"))
+        let shot=XCTAttachment(screenshot:app.screenshot());shot.name="Daily Bingo visual categories and large offered portrait";shot.lifetime = .keepAlways;add(shot)
+    }
+    func testDailyBingoSavedWin() throws {
+        let packet=try JSONSerialization.jsonObject(with:Data(contentsOf:bingoFixtureURL)) as! [String:Any],games=packet["games"] as! [[String:Any]]
+        let groups=(games.first {$0["id"] as? String == "bingo"}!["selection"] as! [String:Any])["groups"] as! [[String:Any]]
+        startDailyBingo(staged:true);XCTAssertTrue(app.staticTexts["daily-bingo-count"].label.contains("11 / 12"));tap("daily-bingo-cell-daily-bingo-group-\(groups[0]["id"] as! Int)")
+        XCTAssertEqual(app.staticTexts["daily-bingo-result"].label,"Full house!")
+        app.terminate();startDailyBingo(reset:false);XCTAssertEqual(app.staticTexts["daily-bingo-result"].label,"Full house!");XCTAssertFalse(app.buttons["daily-bingo-skip"].exists)
+    }
+    func testDailyBingoContinuousTimerExpiresAcrossRelaunch() {
+        startDailyBingo();app.segmentedControls["daily-bingo-timer"].buttons["60s"].tap();tap("daily-bingo-start");XCTAssertEqual(app.staticTexts["daily-bingo-clock"].label,"60s")
+        app.terminate();startDailyBingo(reset:false,now:1_800_001_000);XCTAssertEqual(app.staticTexts["daily-bingo-result"].label,"Time’s up.");XCTAssertFalse(app.buttons["daily-bingo-skip"].exists)
+    }
     func testDailyGridFullBoardSearchUndoAndSavedWin() {
         start();tap("choose-XT");app.tabBars.buttons["Games"].tap();tap("game-daily-grid");tap("daily-grid-start")
         tap("daily-grid-cell-0");let search=app.textFields["game-player-search"];search.typeText("Cristiano Ronaldo");tap("game-player-daily-general-1")
@@ -293,7 +338,7 @@ final class FlowTests: XCTestCase {
         XCTAssertTrue(app.staticTexts["bingo-retro-count"].label.contains("11 / 12"))
         XCTAssertEqual(app.staticTexts["bingo-retro-offer"].label,"Ibrahimovic")
         tap("bingo-retro-cell-daily-bingo-retro-group-2")
-        XCTAssertTrue(app.staticTexts["bingo-retro-feedback"].label.contains("doesn’t match"))
+        XCTAssertTrue(app.staticTexts["bingo-retro-feedback"].label.contains("isn’t listed"))
         tap("bingo-retro-skip")
         let offered=app.staticTexts["bingo-retro-offer"].value as? String
         app.terminate();start(reset:false);app.tabBars.buttons["Games"].tap();tap("game-bingo-retro")

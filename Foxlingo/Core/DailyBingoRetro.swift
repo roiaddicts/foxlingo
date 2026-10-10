@@ -1,6 +1,17 @@
 import Foundation
 
-public struct DailyBingoRetro:Sendable {
+public protocol DailyBingoRound:Sendable {
+    var players:[GamePlayer] {get}
+    var categories:[GameCategory] {get}
+    var signature:String {get}
+    var kind:String {get}
+    var helpRange:ClosedRange<Int> {get}
+    func player(_ id:String)->GamePlayer?
+    func accepts(_ player:String,category:String)->Bool
+}
+public struct DailyBingoRetro:DailyBingoRound {
+    public let kind="bingo-retro"
+    public let helpRange=5...12
     public let players:[GamePlayer]
     public let categories:[GameCategory]
     public let signature:String
@@ -52,26 +63,26 @@ public struct BingoRetroProgress:Codable,Sendable {
     public var helpThreshold:Int = 5
     public var mistakes:[BingoRetroMistake]=[]
     public var reviewRecorded:Bool = false
-    public init(round:DailyBingoRetro,sessionID:UUID=UUID()) {signature=round.signature;self.sessionID=sessionID}
+    public init(round:any DailyBingoRound,sessionID:UUID=UUID()) {signature=round.signature;self.sessionID=sessionID;helpThreshold=round.helpRange.lowerBound}
     public var finished:Bool {status == .won || status == .lost}
     public func remaining(at now:Date)->Int? {deadline.map {Int(max(0,min(Double(timer),ceil($0.timeIntervalSince(now)))))}}
-    public func valid(for round:DailyBingoRetro)->Bool {
-        guard signature == round.signature,[0,60,90].contains(timer),(5...12).contains(helpThreshold),(0..<helpThreshold).contains(skipsSinceHelp),placements.allSatisfy({round.accepts($0.value,category:$0.key)}),placements.count <= 12,
+    public func valid(for round:any DailyBingoRound)->Bool {
+        guard signature == round.signature,[0,60,90].contains(timer),round.helpRange.contains(helpThreshold),(0..<helpThreshold).contains(skipsSinceHelp),placements.allSatisfy({round.accepts($0.value,category:$0.key)}),placements.count <= 12,
               mistakes.count <= 250,mistakes.allSatisfy({mistake in round.player(mistake.playerID) != nil && round.categories.contains(where:{$0.id == mistake.categoryID}) && !round.accepts(mistake.playerID,category:mistake.categoryID)}),
               currentPlayerID.map({round.player($0) != nil}) ?? (status == .ready),!reviewRecorded || finished else {return false}
         if status == .ready {return timer == 0 && deadline == nil && placements.isEmpty && mistakes.isEmpty && currentPlayerID == nil}
         guard (timer == 0 && deadline == nil) || (timer != 0 && deadline?.timeIntervalSince1970.isFinite == true) else {return false}
         switch status {case .ready:return false;case .playing:return placements.count < 12;case .won:return placements.count == 12;case .lost:return timer != 0 && placements.count < 12}
     }
-    @discardableResult public mutating func start<R:RandomNumberGenerator>(round:DailyBingoRetro,timer:Int,now:Date,rng:inout R)->Bool {
+    @discardableResult public mutating func start<R:RandomNumberGenerator>(round:any DailyBingoRound,timer:Int,now:Date,rng:inout R)->Bool {
         guard valid(for:round),status == .ready,[0,60,90].contains(timer) else {return false}
         self.timer=timer;deadline=timer == 0 ? nil:now.addingTimeInterval(Double(timer));status = .playing
-        currentPlayerID=round.players.randomElement(using:&rng)!.id;helpThreshold=Int.random(in:5...12,using:&rng);return true
+        currentPlayerID=round.players.randomElement(using:&rng)!.id;helpThreshold=Int.random(in:round.helpRange,using:&rng);return true
     }
     @discardableResult public mutating func expire(at now:Date)->Bool {
         guard status == .playing,let deadline,now >= deadline else {return false};status = .lost;return true
     }
-    @discardableResult public mutating func place<R:RandomNumberGenerator>(category:String,in round:DailyBingoRetro,now:Date,rng:inout R)->Bool {
+    @discardableResult public mutating func place<R:RandomNumberGenerator>(category:String,in round:any DailyBingoRound,now:Date,rng:inout R)->Bool {
         guard valid(for:round),!expire(at:now),status == .playing,placements[category] == nil,let currentPlayerID,round.categories.contains(where:{$0.id == category}) else {return false}
         guard round.accepts(currentPlayerID,category:category) else {
             let mistake=BingoRetroMistake(playerID:currentPlayerID,categoryID:category)
@@ -82,24 +93,24 @@ public struct BingoRetroProgress:Codable,Sendable {
         if placements.count == 12 {status = .won} else {self.currentPlayerID=round.players.randomElement(using:&rng)!.id}
         return true
     }
-    @discardableResult public mutating func skip<R:RandomNumberGenerator>(in round:DailyBingoRetro,now:Date,rng:inout R)->Bool {
+    @discardableResult public mutating func skip<R:RandomNumberGenerator>(in round:any DailyBingoRound,now:Date,rng:inout R)->Bool {
         guard valid(for:round),!expire(at:now),status == .playing else {return false}
         skipsSinceHelp += 1
         let pool:[GamePlayer]
         if skipsSinceHelp == helpThreshold {
             let open=round.categories.filter {placements[$0.id] == nil}
             let eligible=Set(open.flatMap(\.playerIDs));pool=round.players.filter {eligible.contains($0.id)}
-            skipsSinceHelp=0;helpThreshold=Int.random(in:5...12,using:&rng)
+            skipsSinceHelp=0;helpThreshold=Int.random(in:round.helpRange,using:&rng)
         } else {pool=round.players}
         currentPlayerID=pool.randomElement(using:&rng)!.id;return true
     }
 }
 extension DailyChallengeCache {
-    public func progress(for round:DailyBingoRetro)->BingoRetroProgress? {
+    public func progress(for round:any DailyBingoRound)->BingoRetroProgress? {
         guard let data=try? Data(contentsOf:bingoRetroURL(round)),let p=try? JSONDecoder().decode(BingoRetroProgress.self,from:data),p.valid(for:round) else {return nil};return p
     }
-    public func save(_ p:BingoRetroProgress,for round:DailyBingoRetro) throws {
+    public func save(_ p:BingoRetroProgress,for round:any DailyBingoRound) throws {
         guard p.valid(for:round) else {throw DailySource.failure()};try FileManager.default.createDirectory(at:directory,withIntermediateDirectories:true);try JSONEncoder().encode(p).write(to:bingoRetroURL(round),options:.atomic)
     }
-    private func bingoRetroURL(_ round:DailyBingoRetro)->URL {directory.appendingPathComponent("bingo-retro-"+round.signature+".json")}
+    private func bingoRetroURL(_ round:any DailyBingoRound)->URL {directory.appendingPathComponent(round.kind+"-"+round.signature+".json")}
 }

@@ -104,6 +104,13 @@ import SwiftUI
                 p.currentPlayerID="daily-bingo-retro-1"
                 try cache.save(p,for:round)
             }
+            if bingoArgs.contains("-ui-testing"),bingoArgs.contains("-stage-test-daily-bingo"),let round=daily?.bingo {
+                var p=BingoRetroProgress(round:round),rng=SystemRandomNumberGenerator()
+                _ = p.start(round:round,timer:0,now:now,rng:&rng)
+                for category in round.categories.dropFirst() {p.placements[category.id]=category.playerIDs[0]}
+                p.currentPlayerID=round.categories[0].playerIDs[0]
+                try cache.save(p,for:round)
+            }
             #endif
         } catch {dailyMessage=error.localizedDescription}
         if let pack,let url=Bundle.main.url(forResource:"mystery-en",withExtension:"json"),let data=try? Data(contentsOf:url) {

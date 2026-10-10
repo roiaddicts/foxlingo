@@ -4,10 +4,10 @@
   "timeZone": "America/Mexico_City",
   "dayOfYear": 283,
   "elapsedDayFloor": 283,
-  "fetchedAt": "2026-10-10T07:27:11.567688+00:00",
-  "compiledAt": "2026-10-10T07:27:12.571900+00:00",
+  "fetchedAt": "2026-10-10T07:38:19.798263+00:00",
+  "compiledAt": "2026-10-10T07:38:20.643463+00:00",
   "selectorContractsSHA256": "70a323530f21998556a01f68dc72c410930eb16f29cc285e6003bc5d16ee7a94",
-  "sourceSnapshotSHA256": "0bbfaafac53c6284ee52ee55b1fa6aa5d4fb14006f10f39d5a91aec464b61896",
+  "sourceSnapshotSHA256": "a80271c935c1b631e1dc639db40202925e21579f2ba628c814725e4a052697be",
   "sourceURL": "https://futbol11.com/",
   "datasets": [
     {
@@ -151213,7 +151213,12 @@
             "logo": "/media/groups/clubc3.png",
             "type": "extra"
           }
-        ]
+        ],
+        "catalog": {
+          "playerSourceURL": "https://futbol11.com/_nuxt/sF1zb7uP.js",
+          "categorySourceURL": "https://futbol11.com/_nuxt/B-zpluk7.js",
+          "boardDate": "2026-10-10"
+        }
       },
       "sourceModule": "https://futbol11.com/_nuxt/sux99RCo.js",
       "sourceModuleSHA256": "655c20d7704ee556cd8752c17f8a8f373f2f3ec7cb7ec8cab1fee754cf0d2575",

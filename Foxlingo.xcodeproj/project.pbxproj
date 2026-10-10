@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		804293031E73B13E2AB8A9D2 /* DailyBingo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741E57FCE562A8B11D3CF457 /* DailyBingo.swift */; };
 		39050F9F1D73536D6C847F1E /* DailyGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314FF71D8C1F94BD6AF4CDB4 /* DailyGridView.swift */; };
 		1267885921801CF7509D3DB6 /* DailyGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9131A70E3C44C7018CD25E8B /* DailyGrid.swift */; };
 		7912502B2C604AC74600F639 /* DailyWordleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F151FDB6EB5A02F2E9F2896 /* DailyWordleView.swift */; };
@@ -94,6 +95,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		741E57FCE562A8B11D3CF457 /* DailyBingo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyBingo.swift; sourceTree = "<group>"; };
 		314FF71D8C1F94BD6AF4CDB4 /* DailyGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyGridView.swift; sourceTree = "<group>"; };
 		9131A70E3C44C7018CD25E8B /* DailyGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyGrid.swift; sourceTree = "<group>"; };
 		1F151FDB6EB5A02F2E9F2896 /* DailyWordleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyWordleView.swift; sourceTree = "<group>"; };
@@ -204,6 +206,7 @@
 		052BE11339FA119C1A8E6AE4 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				741E57FCE562A8B11D3CF457 /* DailyBingo.swift */,
 				9131A70E3C44C7018CD25E8B /* DailyGrid.swift */,
 				77B084E50CF27566E0DC419B /* DailyWordle.swift */,
 				DE530EDFE6389DB565E09CC0 /* DailyBingoRetro.swift */,
@@ -451,6 +454,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				804293031E73B13E2AB8A9D2 /* DailyBingo.swift in Sources */,
 				39050F9F1D73536D6C847F1E /* DailyGridView.swift in Sources */,
 				1267885921801CF7509D3DB6 /* DailyGrid.swift in Sources */,
 				7912502B2C604AC74600F639 /* DailyWordleView.swift in Sources */,
