@@ -63,7 +63,7 @@
       "mechanic": "Select all players that satisfy a category, avoiding outsiders.",
       "requiredData": "complete round-specific positive and negative membership",
       "status": "native",
-      "notes": "Country-based native boards use four explicit seed categories and exclude ambiguous cross-country membership within each board. Other source categories and authored daily variants remain to be added."
+      "notes": "Verified dated source category and explicit positive/impostor pools. Normal checks all selected players once; One by One adds source extra positives, removes the same number of trailing impostors and loses on the first wrong check. Ten large portrait cards, sticky visual clue, small marks, saved selections/results/reveal and one-time completed-win credit. Source IDs never join the older practice catalog."
     },
     {
       "id": "pyramid",

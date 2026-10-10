@@ -46,6 +46,22 @@ class DailyTests(unittest.TestCase):
         self.assertEqual(len(modes['bingo-retro']['selection']['groups']),12)
         ny=compile_daily(SNAPSHOT,date(2026,10,9),'America/New_York')
         self.assertNotEqual(modes['pyramid']['selection']['record'],next(g for g in ny['games'] if g['id']=='pyramid')['selection']['record'])
+    def test_impostor_review_rejects_wrong_player_identity(self):
+        correction=dict(id='a11e9d68-cb83-4b8b-b9ed-8313a6fa69d4',game='impostor',recordID=57,title='Played for Athletic Club',sourceCorrectPlayerIDs=[760,129,370,1029],sourceExtraCorrectPlayerIDs=[113],sourceImpostorPlayerIDs=[185,352,267,326,291,311],removeExtraPlayerIDs=[113],playerNames={'113':'Cesar Azpilicueta'},note='Incorrect player identity',reviewedAt='2026-10-10',sources=[dict(title='Career source',url='https://sevillafc.es/actualidad/noticias/cesar-azpilicueta-signs')])
+        original=Path.read_text
+        def read(path,*args,**kwargs):
+            return json.dumps(dict(schemaVersion=1,corrections=[correction])) if path.name=='futbol11-data-corrections.json' else original(path,*args,**kwargs)
+        with patch.object(Path,'read_text',read):
+            with self.assertRaisesRegex(ValueError,'player identity changed'):compile_daily(SNAPSHOT,date(2026,10,10),'America/Mexico_City')
+    def test_impostor_source_bindings_and_one_by_one_pool_transform(self):
+        packet=compile_daily(SNAPSHOT,date(2026,10,10),'America/Mexico_City');s=next(g['selection'] for g in packet['games'] if g['id']=='impostor')
+        rows=next(d['data'] for d in packet['datasets'] if d['sourceURL']==s['catalog']['recordSourceURL'])
+        self.assertEqual(s['record'],rows[s['index']]);self.assertEqual(s['index'],283);self.assertEqual(s['catalog']['boardDate'],'2026-10-10')
+        code="const r=JSON.parse(require('fs').readFileSync(0,'utf8'));let c=r.correctPl.split(',').map(Number),e=r.addcorr?r.addcorr.split(',').map(Number):[],n=r.impostors.split(',').map(Number),normal=[...n,...c];if(e.length){c.push(...e);n.splice(-e.length);}console.log(JSON.stringify({normal,hard:[...n,...c]}));"
+        pools=json.loads(subprocess.check_output(['node','-e',code],input=json.dumps(s['record']),text=True))
+        self.assertEqual(pools['normal'],s['impostorPlayerIDs']+s['correctPlayerIDs'])
+        extra=s['extraCorrectPlayerIDs'];self.assertEqual(pools['hard'],(s['impostorPlayerIDs'][:-len(extra)] if extra else s['impostorPlayerIDs'])+s['correctPlayerIDs']+extra)
+        self.assertEqual(len(set(pools['normal'])),10);self.assertEqual(len(set(pools['hard'])),10)
     def test_connections_easy_normal_match_independent_data_only_reference(self):
         packet=compile_daily(SNAPSHOT,date(2026,10,10),'America/Mexico_City');s=next(g['selection'] for g in packet['games'] if g['id']=='connections')
         groups=next(d['data'] for d in packet['datasets'] if d['sourceURL']==s['catalog']['categorySourceURL'])

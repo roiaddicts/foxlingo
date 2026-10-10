@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		91EE29A532F8E826BF17B8DA /* DailyImpostorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2F82D5A0D09C54A9A6FE3A /* DailyImpostorView.swift */; };
+		CA5E839497E1C0EFCDD412F5 /* DailyImpostor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91AEC2D03D44C511569ED52 /* DailyImpostor.swift */; };
 		1B981FD1DD2470FD6C4792FA /* DailyConnectionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C61505013AB19EB6C1BEA7 /* DailyConnectionsView.swift */; };
 		A6D97EE3A323C98B137E00D4 /* DailyConnections.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C51E4199116810BC8227D9 /* DailyConnections.swift */; };
 		804293031E73B13E2AB8A9D2 /* DailyBingo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741E57FCE562A8B11D3CF457 /* DailyBingo.swift */; };
@@ -97,6 +99,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3A2F82D5A0D09C54A9A6FE3A /* DailyImpostorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyImpostorView.swift; sourceTree = "<group>"; };
+		D91AEC2D03D44C511569ED52 /* DailyImpostor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyImpostor.swift; sourceTree = "<group>"; };
 		E7C61505013AB19EB6C1BEA7 /* DailyConnectionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyConnectionsView.swift; sourceTree = "<group>"; };
 		C4C51E4199116810BC8227D9 /* DailyConnections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyConnections.swift; sourceTree = "<group>"; };
 		741E57FCE562A8B11D3CF457 /* DailyBingo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyBingo.swift; sourceTree = "<group>"; };
@@ -210,6 +214,7 @@
 		052BE11339FA119C1A8E6AE4 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				D91AEC2D03D44C511569ED52 /* DailyImpostor.swift */,
 				C4C51E4199116810BC8227D9 /* DailyConnections.swift */,
 				741E57FCE562A8B11D3CF457 /* DailyBingo.swift */,
 				9131A70E3C44C7018CD25E8B /* DailyGrid.swift */,
@@ -308,6 +313,7 @@
 		F1FB063382B9981F813328A4 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				3A2F82D5A0D09C54A9A6FE3A /* DailyImpostorView.swift */,
 				E7C61505013AB19EB6C1BEA7 /* DailyConnectionsView.swift */,
 				314FF71D8C1F94BD6AF4CDB4 /* DailyGridView.swift */,
 				1F151FDB6EB5A02F2E9F2896 /* DailyWordleView.swift */,
@@ -460,6 +466,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91EE29A532F8E826BF17B8DA /* DailyImpostorView.swift in Sources */,
+				CA5E839497E1C0EFCDD412F5 /* DailyImpostor.swift in Sources */,
 				1B981FD1DD2470FD6C4792FA /* DailyConnectionsView.swift in Sources */,
 				A6D97EE3A323C98B137E00D4 /* DailyConnections.swift in Sources */,
 				804293031E73B13E2AB8A9D2 /* DailyBingo.swift in Sources */,

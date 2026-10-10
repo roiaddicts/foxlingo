@@ -288,7 +288,29 @@ def compile_daily(snapshot,day,zone):
     fallback=ordinal>=len(rows)
     if fallback:raise ValueError('Impostor date requires source fallback; not a dated challenge')
     row=rows[ordinal]
-    add('impostor',url,dict(record=row,index=ordinal,correctPlayerIDs=csv(row['correctPl']),extraCorrectPlayerIDs=csv(row.get('addcorr','')),impostorPlayerIDs=csv(row['impostors'])),'local-day-of-year index; normal mode',True)
+    record_url=archive.imported(url,'A')
+    if archive.imported(url,'M')!=general_url or archive.rows({'id','title','correctPl','addcorr','impostors'},record_url)!=rows:raise ValueError('Impostor player/record binding changed')
+    selection=dict(record=row,index=ordinal,correctPlayerIDs=csv(row['correctPl']),extraCorrectPlayerIDs=csv(row.get('addcorr','')),impostorPlayerIDs=csv(row['impostors']),catalog=dict(playerSourceURL=general_url,recordSourceURL=record_url,boardDate=day.isoformat()))
+    correction_path=ROOT/'content/futbol11-data-corrections.json'
+    correction_data=json.loads(correction_path.read_text())
+    if correction_data.get('schemaVersion')!=1:raise ValueError('Unsupported reviewed correction version')
+    reviews=[];removed=set()
+    for correction in correction_data['corrections']:
+        if correction['game']!='impostor' or correction['recordID']!=row['id'] or correction['title']!=row['title']:continue
+        if (correction['sourceCorrectPlayerIDs']!=selection['correctPlayerIDs'] or correction['sourceExtraCorrectPlayerIDs']!=selection['extraCorrectPlayerIDs'] or correction['sourceImpostorPlayerIDs']!=selection['impostorPlayerIDs']):raise ValueError('Reviewed Impostor source record changed')
+        removals=correction['removeExtraPlayerIDs']
+        if not removals or not set(removals)<=set(selection['extraCorrectPlayerIDs']) or removed.intersection(removals):raise ValueError('Invalid reviewed extra-player removal')
+        for player_id in removals:
+            player=next((p for p in general if p['id']==player_id),None)
+            name=' '.join(str(player.get(k,'')).strip() for k in ['firstName','lastName']).strip() if player else ''
+            if name!=correction['playerNames'].get(str(player_id)):raise ValueError('Reviewed Impostor player identity changed')
+        if not correction['sources'] or any(not source['url'].startswith('https://') for source in correction['sources']):raise ValueError('Correction requires HTTPS evidence')
+        reviews.append(correction);removed.update(removals)
+    selection['playableExtraPlayerIDs']=[p for p in selection['extraCorrectPlayerIDs'] if p not in removed]
+    selection['reviews']=reviews
+    selection['catalog']['reviewVersion']=1
+    selection['catalog']['reviewsSHA256']=hashlib.sha256(correction_path.read_bytes()).hexdigest()
+    add('impostor',url,selection,'local-day-of-year index; Normal or One by One; random card order',True)
     # Bingo boards are dated; offered players and their pacing are intentionally random.
     for name,counts in [('bingo',[('club',4),('club2',1),('country',2),('country2|continent',1),('extra',1),('award',2),('league',1)]),('bingo-retro',[('club',4),('club2',2),('country',3),('award',1),('continent',1),('other',1)])]:
         url,text=module(name,['getMonth()+1','Math.random()','type=="club"'])

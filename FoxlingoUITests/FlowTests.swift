@@ -241,6 +241,49 @@ final class FlowTests: XCTestCase {
     func revealClue(_ id: String) -> XCUIElement {
         app.descendants(matching:.any).matching(identifier:"reveal-clue-"+id).firstMatch
     }
+    var impostorFixtureURL:URL {URL(fileURLWithPath:#filePath).deletingLastPathComponent().deletingLastPathComponent().appendingPathComponent("ref/futbol11-daily/2026-10-10-ce0e2fed5287.json")}
+    func impostorSelection() throws -> [String:Any] {let root=try JSONSerialization.jsonObject(with:Data(contentsOf:impostorFixtureURL)) as! [String:Any];return (root["games"] as! [[String:Any]]).first {$0["id"] as? String == "impostor"}!["selection"] as! [String:Any]}
+    func startDailyImpostor(reset:Bool=true) {
+        app.launchArguments=["-ui-testing","-test-now","1800000000","-test-daily-file",impostorFixtureURL.path]+(reset ? ["-reset-test-state"]:[]);app.launch()
+        if reset {tap("choose-XT")};app.tabBars.buttons["Games"].tap();tap("game-daily-impostor")
+    }
+    func selectDailyImpostor(_ id:Int) {
+        let card=app.buttons["daily-impostor-player-daily-general-\(id)"]
+        for _ in 0..<10 {
+            if card.exists,card.isHittable,card.frame.minY > app.navigationBars.firstMatch.frame.maxY+64,card.frame.maxY < app.buttons["daily-impostor-check"].frame.minY {break}
+            if card.exists,card.frame.minY < app.navigationBars.firstMatch.frame.maxY+64 {app.swipeDown()} else {app.swipeUp()}
+        }
+        XCTAssertTrue(card.exists && card.isHittable);card.tap()
+    }
+    func testDailyImpostorNormalSelectionResumeAndSavedWin() throws {
+        let ids=try impostorSelection()["correctPlayerIDs"] as! [Int]
+        startDailyImpostor();tap("daily-impostor-start");selectDailyImpostor(ids[0]);selectDailyImpostor(ids[1])
+        app.terminate();startDailyImpostor(reset:false);for id in ids.prefix(2) {XCTAssertEqual(app.buttons["daily-impostor-player-daily-general-\(id)"].value as? String,"Selected")}
+        for id in ids.dropFirst(2) {selectDailyImpostor(id)};tap("daily-impostor-check");XCTAssertEqual(app.staticTexts["daily-impostor-result"].label,"Every match found!")
+        app.terminate();startDailyImpostor(reset:false);XCTAssertEqual(app.staticTexts["daily-impostor-result"].label,"Every match found!");XCTAssertFalse(app.buttons["daily-impostor-check"].exists)
+    }
+    func testDailyImpostorNormalWrongAndMissedResults() throws {
+        let s=try impostorSelection(),correct=s["correctPlayerIDs"] as! [Int],wrong=s["impostorPlayerIDs"] as! [Int]
+        startDailyImpostor();tap("daily-impostor-start");selectDailyImpostor(correct[0]);selectDailyImpostor(wrong[0]);tap("daily-impostor-check")
+        XCTAssertEqual(app.staticTexts["daily-impostor-result"].label,"A football detail to learn.");XCTAssertEqual(app.staticTexts["daily-impostor-summary"].label,"1 correct · 3 missed · 1 impostors selected")
+        XCTAssertEqual(app.buttons["daily-impostor-player-daily-general-\(correct[1])"].value as? String,"Missed source match");XCTAssertEqual(app.buttons["daily-impostor-player-daily-general-\(wrong[0])"].value as? String,"Source puzzle impostor")
+    }
+    func testDailyImpostorOneByOneExtraPlayerAndSavedWin() throws {
+        let s=try impostorSelection(),correct=s["correctPlayerIDs"] as! [Int],extra=s["extraCorrectPlayerIDs"] as! [Int],removed=(s["impostorPlayerIDs"] as! [Int]).last!
+        startDailyImpostor();app.segmentedControls["daily-impostor-level"].buttons["One by One"].tap();tap("daily-impostor-start");XCTAssertFalse(app.buttons["daily-impostor-player-daily-general-\(removed)"].exists)
+        selectDailyImpostor(correct[0]);tap("daily-impostor-check");XCTAssertFalse(app.buttons["daily-impostor-player-daily-general-\(correct[0])"].isEnabled)
+        selectDailyImpostor(extra[0]);app.terminate();startDailyImpostor(reset:false);XCTAssertEqual(app.buttons["daily-impostor-player-daily-general-\(extra[0])"].value as? String,"Selected");tap("daily-impostor-check")
+        for id in correct.dropFirst() {selectDailyImpostor(id);tap("daily-impostor-check")}
+        XCTAssertEqual(app.staticTexts["daily-impostor-result"].label,"Every match found!")
+        let shot=XCTAttachment(screenshot:app.screenshot());shot.name="Daily Impostor confirmed portraits and small status badges";shot.lifetime = .keepAlways;add(shot)
+    }
+    func testDailyImpostorOneByOneFirstErrorAndSavedReveal() throws {
+        let s=try impostorSelection(),correct=(s["correctPlayerIDs"] as! [Int])[0],wrong=(s["impostorPlayerIDs"] as! [Int])[0]
+        startDailyImpostor();app.segmentedControls["daily-impostor-level"].buttons["One by One"].tap();tap("daily-impostor-start");selectDailyImpostor(wrong);tap("daily-impostor-check")
+        XCTAssertEqual(app.staticTexts["daily-impostor-result"].label,"A football detail to learn.");XCTAssertEqual(app.buttons["daily-impostor-player-daily-general-\(correct)"].value as? String,"Not selected");tap("daily-impostor-reveal")
+        XCTAssertEqual(app.buttons["daily-impostor-player-daily-general-\(correct)"].value as? String,"Missed source match")
+        app.terminate();startDailyImpostor(reset:false);XCTAssertFalse(app.buttons["daily-impostor-reveal"].exists);XCTAssertEqual(app.buttons["daily-impostor-player-daily-general-\(correct)"].value as? String,"Missed source match")
+    }
     var connectionsFixtureURL:URL {URL(fileURLWithPath:#filePath).deletingLastPathComponent().deletingLastPathComponent().appendingPathComponent("ref/futbol11-daily/2026-10-10-295a178f00bc.json")}
     func connectionGroups(_ mode:String) throws -> [[String:Any]] {
         let root=try JSONSerialization.jsonObject(with:Data(contentsOf:connectionsFixtureURL)) as! [String:Any]

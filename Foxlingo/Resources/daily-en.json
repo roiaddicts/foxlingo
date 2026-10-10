@@ -4,10 +4,10 @@
   "timeZone": "America/Mexico_City",
   "dayOfYear": 283,
   "elapsedDayFloor": 283,
-  "fetchedAt": "2026-10-10T07:49:38.861795+00:00",
-  "compiledAt": "2026-10-10T07:49:39.693963+00:00",
+  "fetchedAt": "2026-10-10T08:18:59.358917+00:00",
+  "compiledAt": "2026-10-10T08:19:00.182428+00:00",
   "selectorContractsSHA256": "70a323530f21998556a01f68dc72c410930eb16f29cc285e6003bc5d16ee7a94",
-  "sourceSnapshotSHA256": "4b7060ffcddb11b7abd6cb698d19fe8640507658f6442fee6ba478c083ccb9bc",
+  "sourceSnapshotSHA256": "4d96db88195e7dba99fae0d35fea1d1cba4096c2b3cb7885168d6457c62ae523",
   "sourceURL": "https://futbol11.com/",
   "datasets": [
     {
@@ -151103,7 +151103,7 @@
     {
       "id": "impostor",
       "sourceURL": "https://futbol11.com/futbol11-impostor",
-      "selector": "local-day-of-year index; normal mode",
+      "selector": "local-day-of-year index; Normal or One by One; random card order",
       "selection": {
         "record": {
           "id": 57,
@@ -151129,7 +151129,18 @@
           326,
           291,
           311
-        ]
+        ],
+        "catalog": {
+          "playerSourceURL": "https://futbol11.com/_nuxt/sF1zb7uP.js",
+          "recordSourceURL": "https://futbol11.com/_nuxt/BUJJifK8.js",
+          "boardDate": "2026-10-10",
+          "reviewVersion": 1,
+          "reviewsSHA256": "284a76c86f8337887627957729f82da0b6ba5a40f6284fcd58932e882053c056"
+        },
+        "playableExtraPlayerIDs": [
+          113
+        ],
+        "reviews": []
       },
       "sourceModule": "https://futbol11.com/_nuxt/DejDfbX0.js",
       "sourceModuleSHA256": "dda9304295d6d09ffe77db29ad19d26dc3ad144eaec1f54528cd71191d8588bb",

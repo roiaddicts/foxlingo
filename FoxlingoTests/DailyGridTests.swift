@@ -7,7 +7,7 @@ final class DailyGridTests:XCTestCase {
     private func round() throws -> DailyGrid {try XCTUnwrap(DailyChallengePack.load(data()).grid)}
     func testCurrentBundledPacketLoadsWithAllCurrentAdapters() throws {
         let url=URL(fileURLWithPath:#filePath).deletingLastPathComponent().deletingLastPathComponent().appendingPathComponent("Foxlingo/Resources/daily-en.json")
-        let pack=try DailyChallengePack.load(Data(contentsOf:url));XCTAssertEqual(pack.supportedModeIDs.count,13);XCTAssertNotNil(pack.grid)
+        let pack=try DailyChallengePack.load(Data(contentsOf:url));XCTAssertEqual(pack.supportedModeIDs.count,14);XCTAssertNotNil(pack.grid)
     }
     func testFourSourceBoardsAndExplicitUnionMemberships() throws {
         let r=try round();XCTAssertEqual(r.players.count,3492);XCTAssertEqual(r.boards.count,4);XCTAssertEqual(try DailyChallengePack.load(data()).supportedModeIDs.count,11)
