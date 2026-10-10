@@ -36,7 +36,7 @@
       "mechanic": "Place distinct players at the intersection of two categories.",
       "requiredData": "category membership and player artwork",
       "status": "native",
-      "notes": ""
+      "notes": "Verified daily Easy, Normal, Hard and Legend boards; historical source catalog memberships, unique player placements, uniform portrait squares, visual category headers, global search, undo, paused active-play timers and saved outcomes. Practice Grid remains available."
     },
     {
       "id": "bingo",

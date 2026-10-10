@@ -3,10 +3,12 @@ import XCTest
 
 final class DailyRevealTests: XCTestCase {
     private func data() throws -> Data {
-        try Data(contentsOf:URL(fileURLWithPath:#filePath).deletingLastPathComponent().deletingLastPathComponent().appendingPathComponent("Foxlingo/Resources/daily-en.json"))
+        try Data(contentsOf:URL(fileURLWithPath:#filePath).deletingLastPathComponent().deletingLastPathComponent().appendingPathComponent("ref/futbol11-daily/2026-10-09-d72036ad4a75.json"))
     }
     private func removeNewSupport(_ root: inout [String:Any]) {
         root.removeValue(forKey:"support")
+        var gridModes=root["games"] as! [[String:Any]];let gridIndex=gridModes.firstIndex {$0["id"] as? String == "grid"}!
+        var grid=gridModes[gridIndex]["selection"] as! [String:Any];grid.removeValue(forKey:"catalog");gridModes[gridIndex]["selection"]=grid;root["games"]=gridModes
         var wordleModes=root["games"] as! [[String:Any]];let wordleIndex=wordleModes.firstIndex {$0["id"] as? String == "wordle"}!
         var wordle=wordleModes[wordleIndex]["selection"] as! [String:Any];wordle.removeValue(forKey:"catalog");wordleModes[wordleIndex]["selection"]=wordle;root["games"]=wordleModes
         var retroModes=root["games"] as! [[String:Any]];let retroIndex=retroModes.firstIndex {$0["id"] as? String == "bingo-retro"}!

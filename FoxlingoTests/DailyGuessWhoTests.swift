@@ -2,7 +2,7 @@ import XCTest
 @testable import FoxlingoCore
 
 final class DailyGuessWhoTests:XCTestCase {
-    private func data() throws -> Data {try Data(contentsOf:URL(fileURLWithPath:#filePath).deletingLastPathComponent().deletingLastPathComponent().appendingPathComponent("Foxlingo/Resources/daily-en.json"))}
+    private func data() throws -> Data {try Data(contentsOf:URL(fileURLWithPath:#filePath).deletingLastPathComponent().deletingLastPathComponent().appendingPathComponent("ref/futbol11-daily/2026-10-09-d72036ad4a75.json"))}
     private func round() throws -> DailyGuessWho {try XCTUnwrap(DailyChallengePack.load(data()).guessWho)}
     func testSourceIdentityCatalogCrosswalkAndPortrait() throws {
         let r=try round();XCTAssertEqual(r.answer.id,"daily-guesswho-91");XCTAssertEqual(r.answer.name,"Nick Pope");XCTAssertEqual(r.currentClub,4);XCTAssertEqual(r.country,5);XCTAssertEqual(r.height,198);XCTAssertEqual(r.age,34)

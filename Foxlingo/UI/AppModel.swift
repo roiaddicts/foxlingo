@@ -87,7 +87,14 @@ import SwiftUI
             let cache=DailyChallengeCache(directory:store.directory.appendingPathComponent("DailyChallenges"))
             dailyCache=cache
             guard let url=Bundle.main.url(forResource:"daily-en",withExtension:"json") else {throw ContentError.invalid("Daily challenges are missing.")}
-            daily=try cache.load(bundled:Data(contentsOf:url))
+            var bundledDaily=try Data(contentsOf:url)
+            #if DEBUG
+            let fixtureArgs=ProcessInfo.processInfo.arguments
+            if fixtureArgs.contains("-ui-testing"),let i=fixtureArgs.firstIndex(of:"-test-daily-file"),fixtureArgs.indices.contains(i+1) {
+                bundledDaily=try ContentImport.read(URL(fileURLWithPath:fixtureArgs[i+1]))
+            }
+            #endif
+            daily=try cache.load(bundled:bundledDaily)
             #if DEBUG
             let bingoArgs=ProcessInfo.processInfo.arguments
             if bingoArgs.contains("-ui-testing"),bingoArgs.contains("-stage-test-bingo-retro"),let round=daily?.bingoRetro {

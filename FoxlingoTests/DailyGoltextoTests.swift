@@ -2,7 +2,7 @@ import XCTest
 @testable import FoxlingoCore
 
 final class DailyGoltextoTests:XCTestCase {
-    private func data() throws -> Data {try Data(contentsOf:URL(fileURLWithPath:#filePath).deletingLastPathComponent().deletingLastPathComponent().appendingPathComponent("Foxlingo/Resources/daily-en.json"))}
+    private func data() throws -> Data {try Data(contentsOf:URL(fileURLWithPath:#filePath).deletingLastPathComponent().deletingLastPathComponent().appendingPathComponent("ref/futbol11-daily/2026-10-09-d72036ad4a75.json"))}
     private func round() throws -> DailyGoltexto {try XCTUnwrap(DailyChallengePack.load(data()).goltexto)}
     func testEveryEligibleGuessMatchesIndependentJavaScriptReference() throws {
         let r=try round(),url=try XCTUnwrap(Bundle.module.url(forResource:"goltexto-2026-10-09-oracle",withExtension:"json"))
@@ -62,6 +62,6 @@ final class DailyGoltextoTests:XCTestCase {
         selection=original;var catalog=selection["catalog"] as! [String:Any],map=catalog["portraitPlayerIDs"] as! [String:Int];map["1"]=1;catalog["portraitPlayerIDs"]=map;selection["catalog"]=catalog;games[i]["selection"]=selection;root["games"]=games
         XCTAssertThrowsError(try DailyChallengePack.load(JSONSerialization.data(withJSONObject:root)))
         selection=original;selection.removeValue(forKey:"catalog");games[i]["selection"]=selection;root["games"]=games
-        let old=try DailyChallengePack.load(JSONSerialization.data(withJSONObject:root));XCTAssertNil(old.goltexto);XCTAssertEqual(old.supportedModeIDs.count,9)
+        let old=try DailyChallengePack.load(JSONSerialization.data(withJSONObject:root));XCTAssertNil(old.goltexto);XCTAssertEqual(old.supportedModeIDs.count,10)
     }
 }

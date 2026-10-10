@@ -2,8 +2,9 @@ import XCTest
 final class FlowTests: XCTestCase {
     let app=XCUIApplication()
     override func setUp() {continueAfterFailure=false}
+    var dailyFixtureArguments:[String] {["-test-daily-file",URL(fileURLWithPath:#filePath).deletingLastPathComponent().deletingLastPathComponent().appendingPathComponent("ref/futbol11-daily/2026-10-09-d72036ad4a75.json").path]}
     func start(reset: Bool = true, now: Double = 1_800_000_000) {
-        app.launchArguments=["-ui-testing","-test-now",String(now)] + (reset ? ["-reset-test-state"] : [])
+        app.launchArguments=["-ui-testing","-test-now",String(now)] + (reset ? ["-reset-test-state"] : []) + dailyFixtureArguments
         app.launch()
     }
     func tap(_ id: String) {
@@ -240,6 +241,26 @@ final class FlowTests: XCTestCase {
     func revealClue(_ id: String) -> XCUIElement {
         app.descendants(matching:.any).matching(identifier:"reveal-clue-"+id).firstMatch
     }
+    func testDailyGridFullBoardSearchUndoAndSavedWin() {
+        start();tap("choose-XT");app.tabBars.buttons["Games"].tap();tap("game-daily-grid");tap("daily-grid-start")
+        tap("daily-grid-cell-0");let search=app.textFields["game-player-search"];search.typeText("Cristiano Ronaldo");tap("game-player-daily-general-1")
+        XCTAssertTrue(app.staticTexts["game-answer-error"].waitForExistence(timeout:3));app.buttons["Cancel"].tap()
+        func fill(_ slot:Int,_ name:String,_ id:Int) {tap("daily-grid-cell-\(slot)");search.typeText(name);tap("game-player-daily-general-\(id)")}
+        fill(0,"Emiliano Martinez",525);tap("daily-grid-undo");XCTAssertTrue(app.staticTexts["daily-grid-count"].label.contains("0 / 9"));fill(0,"Emiliano Martinez",525)
+        app.terminate();start(reset:false);app.tabBars.buttons["Games"].tap();tap("game-daily-grid");XCTAssertTrue(app.staticTexts["daily-grid-count"].label.contains("1 / 9"))
+        for (slot,name,id) in [(1,"Emmanuel Adebayor",313),(2,"Robin Van Persie",7),(3,"Hernan Crespo",169),(4,"Ivan Perisic",320),(5,"Zlatan Ibrahimovic",4),(6,"Gonzalo Higuain",32),(7,"Cristian Romero",134),(8,"Cristiano Ronaldo",1)] {fill(slot,name,id)}
+        XCTAssertEqual(app.staticTexts["daily-grid-result"].label,"Nine connections!")
+        app.terminate();start(reset:false);app.tabBars.buttons["Games"].tap();tap("game-daily-grid");XCTAssertEqual(app.staticTexts["daily-grid-result"].label,"Nine connections!")
+        let shot=XCTAttachment(screenshot:app.screenshot());shot.name="Daily Grid completed visual intersections";shot.lifetime = .keepAlways;add(shot)
+    }
+    func testDailyGridLegendTimerPausesAcrossRelaunchAndReveal() {
+        start();tap("choose-XT");app.tabBars.buttons["Games"].tap();tap("game-daily-grid")
+        app.segmentedControls["daily-grid-level"].buttons["Legend"].tap();app.segmentedControls["daily-grid-timer"].buttons["60s"].tap();tap("daily-grid-start")
+        XCTAssertEqual(app.staticTexts["daily-grid-clock"].label,"60s")
+        app.navigationBars.buttons.element(boundBy:0).tap();app.terminate();start(reset:false,now:1_800_001_000);app.tabBars.buttons["Games"].tap();tap("game-daily-grid")
+        XCTAssertEqual(app.staticTexts["daily-grid-clock"].label,"60s");tap("daily-grid-reveal");app.buttons["Reveal examples"].tap();XCTAssertEqual(app.staticTexts["daily-grid-result"].label,"Explore the matches.")
+        XCTAssertTrue(app.staticTexts["daily-grid-count"].label.contains("0 / 9"));XCTAssertFalse(app.buttons["daily-grid-search"].exists)
+    }
     func typeDailyWordle(_ text:String) {for letter in text {tap("daily-wordle-key-\(letter)")}}
     func testDailyWordleDifficultyUnknownInputPartialResumeAndWin() {
         start();tap("choose-XT");app.tabBars.buttons["Games"].tap();tap("game-daily-wordle")
@@ -267,7 +288,7 @@ final class FlowTests: XCTestCase {
         XCTAssertEqual(app.staticTexts["daily-wordle-answer"].label,"TERRY");XCTAssertEqual(app.staticTexts["daily-wordle-result"].label,"A name to remember.")
     }
     func testDailyBingoRetroWrongSkipResumeAndWin() {
-        app.launchArguments=["-ui-testing","-reset-test-state","-test-now","1800000000","-stage-test-bingo-retro"];app.launch()
+        app.launchArguments=["-ui-testing","-reset-test-state","-test-now","1800000000","-stage-test-bingo-retro"]+dailyFixtureArguments;app.launch()
         tap("choose-XT");app.tabBars.buttons["Games"].tap();tap("game-bingo-retro")
         XCTAssertTrue(app.staticTexts["bingo-retro-count"].label.contains("11 / 12"))
         XCTAssertEqual(app.staticTexts["bingo-retro-offer"].label,"Ibrahimovic")

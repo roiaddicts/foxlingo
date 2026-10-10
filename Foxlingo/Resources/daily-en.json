@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "gameDate": "2026-10-09",
+  "gameDate": "2026-10-10",
   "timeZone": "America/Mexico_City",
-  "dayOfYear": 282,
-  "elapsedDayFloor": 282,
-  "fetchedAt": "2026-10-10T00:33:58.703493+00:00",
-  "compiledAt": "2026-10-10T00:33:59.609526+00:00",
+  "dayOfYear": 283,
+  "elapsedDayFloor": 283,
+  "fetchedAt": "2026-10-10T07:27:11.567688+00:00",
+  "compiledAt": "2026-10-10T07:27:12.571900+00:00",
   "selectorContractsSHA256": "70a323530f21998556a01f68dc72c410930eb16f29cc285e6003bc5d16ee7a94",
-  "sourceSnapshotSHA256": "6db53ffb136252dae0c6f3a308864fd71d3cc558c7345a1bf8a31c966a1d1177",
+  "sourceSnapshotSHA256": "0bbfaafac53c6284ee52ee55b1fa6aa5d4fb14006f10f39d5a91aec464b61896",
   "sourceURL": "https://futbol11.com/",
   "datasets": [
     {
@@ -146426,11 +146426,11 @@
       "selector": "local-day-of-year array index",
       "selection": {
         "record": {
-          "id": 311,
-          "title": "Chelsea 2023/24 - Most matches",
-          "players": "919, 111, 846, 1188, 1035, 68, 114, 110, 256, 1025"
+          "id": 168,
+          "title": "Most games under Pochettino",
+          "players": "499, 14, 44, 505, 274, 336, 502, 335, 509, 513"
         },
-        "index": 282,
+        "index": 283,
         "datasetRecords": 405
       },
       "sourceModule": "https://futbol11.com/_nuxt/BlntJ6hI.js",
@@ -146443,10 +146443,10 @@
       "selector": "local-day-of-year array index",
       "selection": {
         "record": {
-          "id": 63,
-          "info": "Rooney,8;36,19;2005/06,5;36,16,9;F;5,3;Man Utd"
+          "id": 231,
+          "info": "Lautaro,10;25,21;2018/19,10;27,6,2;F;1,11;Inter"
         },
-        "index": 282,
+        "index": 283,
         "datasetRecords": 366
       },
       "sourceModule": "https://futbol11.com/_nuxt/D0e4dXTc.js",
@@ -146459,17 +146459,17 @@
       "selector": "local-day-of-year array index",
       "selection": {
         "record": {
-          "id": 820,
-          "player": "Savinho",
-          "clubs": "116, 89, 2, 156"
+          "id": 828,
+          "player": "Quaresma",
+          "clubs": "19, 11, 7, 96"
         },
-        "index": 282,
+        "index": 283,
         "datasetRecords": 342,
         "clueOrder": [
-          89,
-          2,
-          156,
-          116
+          7,
+          96,
+          11,
+          19
         ]
       },
       "sourceModule": "https://futbol11.com/_nuxt/YjY6Gs11.js",
@@ -146482,18 +146482,18 @@
       "selector": "local-day-of-year array index",
       "selection": {
         "record": {
-          "id": 282,
-          "player": "Pedro Rodriguez",
-          "teammates": "190, 57, 661, 910, 417"
+          "id": 1057,
+          "player": "Gyokeres",
+          "teammates": "1179, 754, 383, 1000, 1002"
         },
-        "index": 282,
+        "index": 283,
         "datasetRecords": 365,
         "clueOrder": [
-          910,
-          190,
-          661,
-          57,
-          417
+          383,
+          1179,
+          1000,
+          754,
+          1002
         ]
       },
       "sourceModule": "https://futbol11.com/_nuxt/BznPPv_6.js",
@@ -146506,127 +146506,151 @@
       "selector": "local-day-of-year array index",
       "selection": {
         "record": {
-          "clubID": 12,
-          "season": "2016/17",
-          "players": "174,408,2015,405,218,2078,741,1380,737,901,911,2043,2990,330,1904,410,895,629,620,909,309,738,2996,2997,2998,2999,3000,3001"
+          "clubID": 57,
+          "season": "2020/21",
+          "players": "537,543,541,542,84,538,535,1721,539,382,536,304,1502,1112,1072,949,2763,2764,2765,2766,2767,2768,2769,2770"
         },
-        "index": 282,
+        "index": 283,
         "datasetRecords": 450,
         "slices": [
           {
-            "countryID": 10,
+            "countryID": 5,
             "playerIDs": [
-              174,
-              2015,
-              405,
-              2078,
-              741,
-              737,
-              901,
-              410,
-              895,
-              738,
-              2999,
-              3000,
-              3001
+              543,
+              84,
+              535,
+              382,
+              1502,
+              2763,
+              2767,
+              2768
             ],
-            "count": 13
+            "count": 8
+          },
+          {
+            "countryID": 26,
+            "playerIDs": [
+              537,
+              542
+            ],
+            "count": 2
           },
           {
             "countryID": 1,
             "playerIDs": [
-              2043,
-              620,
-              2998
+              1112
             ],
-            "count": 3
-          },
-          {
-            "countryID": 7,
-            "playerIDs": [
-              408,
-              911
-            ],
-            "count": 2
-          },
-          {
-            "countryID": 19,
-            "playerIDs": [
-              218,
-              1904
-            ],
-            "count": 2
+            "count": 1
           },
           {
             "countryID": 6,
             "playerIDs": [
-              309
+              949
             ],
             "count": 1
           },
           {
-            "countryID": 13,
+            "countryID": 7,
             "playerIDs": [
-              1380
+              538
             ],
             "count": 1
           },
           {
-            "countryID": 17,
+            "countryID": 10,
             "playerIDs": [
-              2990
+              1721
             ],
             "count": 1
           },
           {
-            "countryID": 34,
+            "countryID": 16,
             "playerIDs": [
-              629
+              304
             ],
             "count": 1
           },
           {
-            "countryID": 37,
+            "countryID": 20,
             "playerIDs": [
-              2996
+              2764
             ],
             "count": 1
           },
           {
-            "countryID": 51,
+            "countryID": 24,
             "playerIDs": [
-              330
+              2770
             ],
             "count": 1
           },
           {
-            "countryID": 65,
+            "countryID": 27,
             "playerIDs": [
-              909
+              536
+            ],
+            "count": 1
+          },
+          {
+            "countryID": 29,
+            "playerIDs": [
+              541
+            ],
+            "count": 1
+          },
+          {
+            "countryID": 38,
+            "playerIDs": [
+              1072
+            ],
+            "count": 1
+          },
+          {
+            "countryID": 53,
+            "playerIDs": [
+              2769
+            ],
+            "count": 1
+          },
+          {
+            "countryID": 64,
+            "playerIDs": [
+              539
             ],
             "count": 1
           },
           {
             "countryID": 66,
             "playerIDs": [
-              2997
+              2765
+            ],
+            "count": 1
+          },
+          {
+            "countryID": 75,
+            "playerIDs": [
+              2766
             ],
             "count": 1
           }
         ],
         "revealOrder": [
-          65,
-          1,
-          13,
-          51,
+          53,
+          29,
+          16,
+          64,
           10,
+          26,
           6,
-          17,
-          34,
-          37,
+          24,
+          1,
+          27,
           7,
-          19,
-          66
+          5,
+          38,
+          75,
+          66,
+          20
         ],
         "omittedPlayerIDs": []
       },
@@ -146640,14 +146664,16 @@
       "selector": "local-day-of-year array index",
       "selection": {
         "record": {
-          "id": 91,
-          "name": "Nick Pope",
-          "position": "Goalkeeper",
-          "height": 198,
-          "birthday": "4/19/1992",
-          "secID": 548
+          "id": 2098,
+          "name": "Nwaneri",
+          "position": "Forward",
+          "previousClubs": "1",
+          "previousLeagues": "9",
+          "height": 176,
+          "birthday": "3/21/2007",
+          "secID": 1532
         },
-        "index": 282,
+        "index": 283,
         "datasetRecords": 366,
         "catalog": {
           "clubs": [
@@ -148438,51 +148464,51 @@
       "selector": "local elapsed-day floor; first unique values; day-seeded shuffle",
       "selection": {
         "record": {
-          "id": 49,
-          "title": "All Time Portugal Goals",
-          "players": "1,141.327,47.154,32.108,25.836,24.213,19.97,14.128,12.828,10.46,8.45,7.193,5.632,4.904,3.800,2"
+          "id": 51,
+          "title": "All Time Nations League Goals",
+          "players": "156,19.1,15.15,10.65,9.307,8.461,7.474,6.21,5.161,4.9,3.126,2.144,1"
         },
-        "index": 282,
+        "index": 283,
         "players": [
           {
-            "playerID": 836,
-            "value": 24
+            "playerID": 126,
+            "value": 2
           },
           {
-            "playerID": 327,
-            "value": 47
-          },
-          {
-            "playerID": 45,
-            "value": 7
-          },
-          {
-            "playerID": 632,
+            "playerID": 161,
             "value": 4
           },
           {
-            "playerID": 904,
+            "playerID": 65,
+            "value": 9
+          },
+          {
+            "playerID": 474,
+            "value": 6
+          },
+          {
+            "playerID": 1,
+            "value": 15
+          },
+          {
+            "playerID": 9,
             "value": 3
           },
           {
-            "playerID": 193,
-            "value": 5
+            "playerID": 461,
+            "value": 7
           },
           {
-            "playerID": 128,
-            "value": 12
+            "playerID": 156,
+            "value": 19
           },
           {
-            "playerID": 154,
-            "value": 32
-          },
-          {
-            "playerID": 97,
-            "value": 14
-          },
-          {
-            "playerID": 828,
+            "playerID": 15,
             "value": 10
+          },
+          {
+            "playerID": 144,
+            "value": 1
           }
         ]
       },
@@ -148495,8 +148521,8 @@
       "sourceURL": "https://futbol11.com/futbol11-wordle",
       "selector": "local-day-of-year string array index",
       "selection": {
-        "answer": "TERRY",
-        "index": 282,
+        "answer": "YASHIN",
+        "index": 283,
         "catalog": {
           "sourceURL": "https://futbol11.com/_nuxt/BpiPKEng.js",
           "assetSHA256": "21df33ed7fee4fe3cbcafce7ae4366bc433ad4122264e4976501f0cb2a6aa0fb",
@@ -148890,49 +148916,29 @@
       "selection": {
         "groups": [
           {
-            "id": 12,
-            "name": "Uruguay",
-            "logo": "/media/flags/12.webp"
+            "id": 6,
+            "name": "England",
+            "logo": "/media/flags/6.webp"
           },
           {
-            "id": 4,
-            "name": "Portugal",
-            "logo": "/media/flags/4.webp"
+            "id": 16,
+            "name": "Switzerland",
+            "logo": "/media/flags/16.webp"
           },
           {
-            "id": 27,
-            "name": "Czech Republic",
-            "logo": "/media/flags/27.webp"
+            "id": 9,
+            "name": "Netherlands",
+            "logo": "/media/flags/9.webp"
           },
           {
-            "id": 29,
-            "name": "Nigeria",
-            "logo": "/media/flags/29.webp"
+            "id": 19,
+            "name": "Mexico",
+            "logo": "/media/flags/19.webp"
           },
           {
-            "id": 18,
-            "name": "Senegal",
-            "logo": "/media/flags/18.webp"
-          },
-          {
-            "id": 17,
-            "name": "Ivory Coast",
-            "logo": "/media/flags/17.webp"
-          },
-          {
-            "id": 2,
-            "name": "Germany",
-            "logo": "/media/flags/2.webp"
-          },
-          {
-            "id": 3,
-            "name": "Belgium",
-            "logo": "/media/flags/3.webp"
-          },
-          {
-            "id": 14,
-            "name": "Croatia",
-            "logo": "/media/flags/14.webp"
+            "id": 13,
+            "name": "Sweden",
+            "logo": "/media/flags/13.webp"
           },
           {
             "id": 25,
@@ -148940,9 +148946,159 @@
             "logo": "/media/flags/25.webp"
           },
           {
-            "id": 23,
-            "name": "Austria",
-            "logo": "/media/flags/23.webp"
+            "id": 20,
+            "name": "Colombia",
+            "logo": "/media/flags/20.webp"
+          },
+          {
+            "id": 7,
+            "name": "Brazil",
+            "logo": "/media/flags/7.webp"
+          },
+          {
+            "id": 34,
+            "name": "Ecuador",
+            "logo": "/media/flags/34.webp"
+          },
+          {
+            "id": 18,
+            "name": "Senegal",
+            "logo": "/media/flags/18.webp"
+          },
+          {
+            "id": 22,
+            "name": "USA",
+            "logo": "/media/flags/22.webp"
+          }
+        ],
+        "formation": {
+          "name": "343",
+          "players": [
+            {
+              "position": "GK",
+              "player": null
+            },
+            {
+              "position": "CB",
+              "player": null
+            },
+            {
+              "position": "CB",
+              "player": null
+            },
+            {
+              "position": "CB",
+              "player": null
+            },
+            {
+              "position": "CM",
+              "player": null
+            },
+            {
+              "position": "CM",
+              "player": null
+            },
+            {
+              "position": "LM",
+              "player": null
+            },
+            {
+              "position": "RM",
+              "player": null
+            },
+            {
+              "position": "LW",
+              "player": null
+            },
+            {
+              "position": "RW",
+              "player": null
+            },
+            {
+              "position": "ST",
+              "player": null
+            }
+          ]
+        }
+      },
+      "sourceModule": "https://futbol11.com/_nuxt/BLjtmzXQ.js",
+      "sourceModuleSHA256": "e7735e4a2010a550e1460d5f2664a985351c832470f9c2ff73e8cf106c0fbc9f",
+      "randomPlayOrder": false
+    },
+    {
+      "id": "clubs",
+      "sourceURL": "https://futbol11.com/futbol11-clubs",
+      "selector": "day-of-year salted seeded shuffle",
+      "selection": {
+        "groups": [
+          {
+            "id": 14,
+            "name": "Real Madrid",
+            "logo": "/media/shirts/9.png",
+            "players": "402,415,1931,169,417,2411,404,186,1909,406,150,688,420,411,407,2413,900,1766,45,412,423,706,1057,2002,2556,2557,2600",
+            "level": "easy"
+          },
+          {
+            "id": 11,
+            "name": "Everton",
+            "logo": "/media/shirts/95.png",
+            "players": "311,2218,1842,1209,314,327,315,1879,333,2402,253,1933,2403,2219,2312,2216,2076,2144,1831,1812,42"
+          },
+          {
+            "id": 50,
+            "name": "Al Hilal",
+            "logo": "/media/shirts/115.png",
+            "players": "585,2528,1684,2346,2276,185,1904,1625,703,2091,2529,1690,2530,283,788,2345,1673,1680,2344,11,1996,1679,2531,2532,2533,2347,225,2343"
+          },
+          {
+            "id": 58,
+            "name": "Boca Juniors",
+            "logo": "/media/shirts/124.png",
+            "players": "2543,2278,2279,2280,2281,2282,1859,2283,2286,2296,2545,2291,2356,822,2292,2293,2294,2295,2357,2358,2297,2547,2299,2301,2359,2304,2548,2305,2590,2591,2623,2624"
+          },
+          {
+            "id": 51,
+            "name": "Inter Miami",
+            "logo": "/media/shirts/129.png",
+            "players": "2351,2116,2353,2354,2113,2112,1727,2534,1970,2535,488,2536,2352,1969,63,2350,1967,474,2111,2621,2538,2539,2540,2541,2622,2542,1056,2115,2349,1963,2589"
+          },
+          {
+            "id": 6,
+            "name": "Liverpool",
+            "logo": "/media/shirts/6.png",
+            "players": "613,149,2175,2152,2386,2212,152,167,2211,164,1018,2387,852,1834,1362,1026,932,1163,159,2389,2390,827,107,1067,2388,373",
+            "level": "easy"
+          },
+          {
+            "id": 20,
+            "name": "Sevilla",
+            "logo": "/media/shirts/85.png",
+            "players": "1295,497,1422,2429,2430,600,1238,2164,2417,1419,2431,1449,2180,2432,2433,2562,2136,2013,2163,2563,2011,2564,1920,1109,2604,2603"
+          },
+          {
+            "id": 22,
+            "name": "Napoli",
+            "logo": "/media/shirts/46.png",
+            "players": "2239,646,1436,2020,2237,198,2021,648,2170,659,771,647,1595,651,78,652,2448,38,2181,1780,1300,666,738,1198,2323,2608"
+          },
+          {
+            "id": 25,
+            "name": "Atalanta",
+            "logo": "/media/shirts/62.png",
+            "players": "1467,745,732,1929,1037,2567,1091,669,751,737,695,748,2453,760,712,2081,662,2171,664,2245,349,393,2609"
+          },
+          {
+            "id": 47,
+            "name": "Brighton",
+            "logo": "/media/shirts/60.png",
+            "players": "1760,1598,1609,2148,2510,1233,1588,2511,2075,2184,2064,2512,2513,1608,1791,2074,2067,1586,1592,2066,1830,2514,2515,2183,1600,2516,2550,2618,2619,2620"
+          },
+          {
+            "id": 24,
+            "name": "AC Milan",
+            "logo": "/media/shirts/12.png",
+            "players": "723,1729,2443,2444,796,2242,702,715,1927,2566,2445,1589,2241,815,620,204,2142,2446,408,717,1306,2447,210,568,1305,2169,205,2607",
+            "level": "easy"
           }
         ],
         "formation": {
@@ -148995,136 +149151,6 @@
           ]
         }
       },
-      "sourceModule": "https://futbol11.com/_nuxt/BLjtmzXQ.js",
-      "sourceModuleSHA256": "e7735e4a2010a550e1460d5f2664a985351c832470f9c2ff73e8cf106c0fbc9f",
-      "randomPlayOrder": false
-    },
-    {
-      "id": "clubs",
-      "sourceURL": "https://futbol11.com/futbol11-clubs",
-      "selector": "day-of-year salted seeded shuffle",
-      "selection": {
-        "groups": [
-          {
-            "id": 13,
-            "name": "Barcelona",
-            "logo": "/media/shirts/8.png",
-            "players": "2158,2095,808,2097,392,2405,374,384,372,837,2408,37,378,377,390,2409,2410,946,103,379,2555,1973,907,2223,10,2598,2599",
-            "level": "easy"
-          },
-          {
-            "id": 48,
-            "name": "Al Nassr",
-            "logo": "/media/shirts/114.png",
-            "players": "2068,1627,926,545,1614,2272,1629,2069,2271,1631,2526,1613,1626,2571,1618,1624,2190,2340,1623,844,849,1784,196,1622,1691,1628,2525"
-          },
-          {
-            "id": 17,
-            "name": "Real Betis",
-            "logo": "/media/shirts/90.png",
-            "players": "2161,2009,1811,2229,773,1797,1379,2230,2418,1266,2419,1785,2227,361,2319,571,1799,1376,1387,66,512,2006,2141,2560,421"
-          },
-          {
-            "id": 22,
-            "name": "Napoli",
-            "logo": "/media/shirts/46.png",
-            "players": "2239,646,1436,2020,2237,198,2021,648,2170,659,771,647,1595,651,78,652,2448,38,2181,1780,1300,666,738,1198,2323,2608"
-          },
-          {
-            "id": 23,
-            "name": "Inter",
-            "logo": "/media/shirts/11.png",
-            "players": "2017,782,1856,675,1775,52,50,847,680,1858,1359,2439,676,678,2167,170,653,679,1528,2240,682,994,2442,2166",
-            "level": "easy"
-          },
-          {
-            "id": 44,
-            "name": "Sporting CP",
-            "logo": "/media/shirts/82.png",
-            "players": "501,2580,1267,2056,1564,2487,2089,1270,2581,1894,2268,2488,1849,2489,2490,2491,2258,1285,2492,2493,2494,2495,1997,2266,2267,2496,2582,2615,2616"
-          },
-          {
-            "id": 20,
-            "name": "Sevilla",
-            "logo": "/media/shirts/85.png",
-            "players": "1295,497,1422,2429,2430,600,1238,2164,2417,1419,2431,1449,2180,2432,2433,2562,2136,2013,2163,2563,2011,2564,1920,1109,2604,2603"
-          },
-          {
-            "id": 4,
-            "name": "Newcastle",
-            "logo": "/media/shirts/4.png",
-            "players": "2549,2377,91,118,710,94,93,95,199,1813,2264,628,2380,233,101,2381,98,2382,2383,254,75,105,1979,2307,2595"
-          },
-          {
-            "id": 26,
-            "name": "Roma",
-            "logo": "/media/shirts/22.png",
-            "players": "768,728,663,954,2568,2249,754,471,2454,2246,469,1181,759,990,2457,2486,762,834,761,902,2569,1075,734"
-          },
-          {
-            "id": 24,
-            "name": "AC Milan",
-            "logo": "/media/shirts/12.png",
-            "players": "723,1729,2443,2444,796,2242,702,715,1927,2566,2445,1589,2241,815,620,204,2142,2446,408,717,1306,2447,210,568,1305,2169,205,2607",
-            "level": "easy"
-          },
-          {
-            "id": 46,
-            "name": "Galatasaray",
-            "logo": "/media/shirts/83.png",
-            "players": "2270,1343,1896,138,1323,1342,2503,1119,2505,1332,1871,2506,1806,1326,294,1897,2061,2337,39,2585,1337,2508,843,1333,2338,655,2586,2587,2588,1059,2087,709"
-          }
-        ],
-        "formation": {
-          "name": "433",
-          "players": [
-            {
-              "position": "GK",
-              "player": null
-            },
-            {
-              "position": "LB",
-              "player": null
-            },
-            {
-              "position": "CB",
-              "player": null
-            },
-            {
-              "position": "CB",
-              "player": null
-            },
-            {
-              "position": "RB",
-              "player": null
-            },
-            {
-              "position": "CM",
-              "player": null
-            },
-            {
-              "position": "CM",
-              "player": null
-            },
-            {
-              "position": "CAM",
-              "player": null
-            },
-            {
-              "position": "LW",
-              "player": null
-            },
-            {
-              "position": "ST",
-              "player": null
-            },
-            {
-              "position": "RW",
-              "player": null
-            }
-          ]
-        }
-      },
       "sourceModule": "https://futbol11.com/_nuxt/DBp21pcp.js",
       "sourceModuleSHA256": "177372b6c44d9ad5b1d1625c37370a7b02284e274a4798eba3230f0a38a6a84a",
       "randomPlayOrder": false
@@ -149136,41 +149162,6 @@
       "selection": {
         "groups": [
           {
-            "id": 33,
-            "name": "Porto 03/04",
-            "logo": "/media/classics/33.png",
-            "players": "413, 116, 427, 110, 121, 675, 426, 431, 1368, 467, 419, 416, 2208, 2209, 2210, 2211, 2212, 2213, 2214, 2215, 2216, 2217, 2218, 2219, 2220, 2221",
-            "clubID": 16
-          },
-          {
-            "id": 22,
-            "name": "Liverpool 04/05",
-            "logo": "/media/classics/22.png",
-            "players": "635, 556, 4, 1172, 373, 845, 83, 695, 1175, 1403, 1516, 1517, 1518, 1519, 1520, 1521, 1522, 1523, 1524, 1525, 1526, 1527, 1528, 1529, 1530, 1531",
-            "clubID": 11
-          },
-          {
-            "id": 42,
-            "name": "Spurs 18/19",
-            "logo": "/media/classics/42.png",
-            "players": "1013, 228, 1564, 201, 528, 17, 1299, 1102, 1674, 226, 1144, 243, 2115, 2116, 2117, 2118, 2119, 2120, 2121, 2122, 2123, 2124, 2125, 2126, 2127, 2128",
-            "clubID": 20
-          },
-          {
-            "id": 18,
-            "name": "Inter 09/10",
-            "logo": "/media/classics/18.png",
-            "players": "144, 178, 434, 1307, 131, 520, 514, 1618, 151, 1112, 653, 1080, 643, 208, 114, 1625, 1626, 1627, 1628, 1629, 1630, 1631, 1632, 1633",
-            "clubID": 8
-          },
-          {
-            "id": 71,
-            "name": "Lyon 07/08",
-            "logo": "/media/classics/71.png",
-            "players": "210, 639, 703, 1208, 709, 1147, 684, 1172, 701, 1603, 1604, 1605, 1606, 1607, 1608, 1609, 1610, 1611, 1612, 1613, 1614, 1615, 1616, 1617",
-            "clubID": 31
-          },
-          {
             "id": 87,
             "name": "PSV 04/05",
             "logo": "/media/classics/87.png",
@@ -149178,18 +149169,11 @@
             "clubID": 36
           },
           {
-            "id": 55,
-            "name": "Everton 08/09",
-            "logo": "/media/classics/55.png",
-            "players": "1571, 298, 1690, 237, 1268, 1418, 1025, 675, 1771, 1772, 1773, 1774, 1775, 1776, 1777, 1778, 1779, 1780, 1781, 1782, 1783, 1784",
-            "clubID": 25
-          },
-          {
-            "id": 40,
-            "name": "Sevilla 14/15",
-            "logo": "/media/classics/40.png",
-            "players": "1098, 196, 813, 1338, 1305, 2235, 1256, 2155, 1789, 2238, 2239, 2240, 2241, 2242, 2243, 2244, 2245, 2246, 2247, 2248, 2249, 2250",
-            "clubID": 19
+            "id": 6,
+            "name": "Atalanta 23/24",
+            "logo": "/media/classics/6.png",
+            "players": "1561, 965, 1562, 1646, 1560, 1713, 1829, 1830, 1831, 1832, 1833, 1834, 1835, 1836, 1837, 1838, 1839, 1840, 1841, 1842, 1843, 1844, 1845, 1846, 1847",
+            "clubID": 3
           },
           {
             "id": 92,
@@ -149206,11 +149190,53 @@
             "clubID": 35
           },
           {
-            "id": 66,
-            "name": "Leeds 00/01",
-            "logo": "/media/classics/66.png",
-            "players": "1619, 16, 1520, 633, 2461, 1581, 2530, 2531, 2532, 2533, 2534, 2535, 2536, 2537, 2538, 2539, 2540, 2541, 2542, 2543, 2544, 2545, 2546, 2547, 2548",
-            "clubID": 29
+            "id": 97,
+            "name": "West Ham 22/23",
+            "logo": "/media/classics/97.png",
+            "players": "1189, 852, 1207, 2231, 1382, 1380, 1675, 1562, 2237, 1164, 2385, 2386, 2387, 2388, 2389, 2390, 2391, 2392, 2393, 2394, 2395, 2396, 2397, 2398, 2399",
+            "clubID": 42
+          },
+          {
+            "id": 34,
+            "name": "PSG 24/25",
+            "logo": "/media/classics/34.png",
+            "players": "1334, 435, 343, 1289, 1481, 1482, 1483, 1484, 1485, 1486, 1487, 1488, 1489, 1490, 1491, 1492, 1493, 1494, 1495, 1496, 1497, 1498, 1499, 1500, 1501",
+            "clubID": 17
+          },
+          {
+            "id": 7,
+            "name": "Atl Madrid 15/16",
+            "logo": "/media/classics/7.png",
+            "players": "205, 95, 766, 84, 609, 778, 124, 1277, 1278, 1279, 1280, 1281, 1282, 1283, 1284, 1285, 1286, 1287, 1288, 1289, 1290, 1291, 1292, 1293",
+            "clubID": 4
+          },
+          {
+            "id": 35,
+            "name": "Real M 01/02",
+            "logo": "/media/classics/35.png",
+            "players": "406,86,529,127,1527,91,1620,207,104,660,1724,636,77,1729,1730,1734,1723,1732, 1731, 1725, 1733, 1737, 1738, 1739",
+            "clubID": 18
+          },
+          {
+            "id": 71,
+            "name": "Lyon 07/08",
+            "logo": "/media/classics/71.png",
+            "players": "210, 639, 703, 1208, 709, 1147, 684, 1172, 701, 1603, 1604, 1605, 1606, 1607, 1608, 1609, 1610, 1611, 1612, 1613, 1614, 1615, 1616, 1617",
+            "clubID": 31
+          },
+          {
+            "id": 82,
+            "name": "Newcastle 02/03",
+            "logo": "/media/classics/82.png",
+            "players": "287, 992, 2444, 2445, 2446, 2447, 2448, 2449, 2450, 2451, 2452, 2453, 2454, 2455, 2456, 2457, 2458, 2459, 2460, 2461, 2462",
+            "clubID": 34
+          },
+          {
+            "id": 98,
+            "name": "Wolves 18/19",
+            "logo": "/media/classics/98.png",
+            "players": "267, 102, 107, 1224, 1861, 1825, 2400, 2401, 2402, 2403, 2404, 2405, 2406, 2407, 2408, 2409, 2410, 2411, 2412, 2413",
+            "clubID": 43
           }
         ],
         "formation": {
@@ -149279,19 +149305,14 @@
             "logo": "/media/flags/11.webp"
           },
           {
-            "id": 15,
-            "name": "Switzerland",
-            "logo": "/media/flags/16.webp"
-          },
-          {
-            "id": 6,
-            "name": "Brazil",
-            "logo": "/media/flags/7.webp"
-          },
-          {
             "id": 5,
             "name": "Portugal",
             "logo": "/media/flags/4.webp"
+          },
+          {
+            "id": 27,
+            "name": "Czech Republic",
+            "logo": "/media/flags/27.webp"
           },
           {
             "id": 12,
@@ -149299,24 +149320,9 @@
             "logo": "/media/flags/13.webp"
           },
           {
-            "id": 25,
-            "name": "Ghana",
-            "logo": "/media/flags/32.webp"
-          },
-          {
-            "id": 7,
-            "name": "Netherlands",
-            "logo": "/media/flags/9.webp"
-          },
-          {
-            "id": 14,
-            "name": "Poland",
-            "logo": "/media/flags/30.webp"
-          },
-          {
-            "id": 17,
-            "name": "Croatia",
-            "logo": "/media/flags/14.webp"
+            "id": 13,
+            "name": "Uruguay",
+            "logo": "/media/flags/12.webp"
           },
           {
             "id": 26,
@@ -149324,9 +149330,145 @@
             "logo": "/media/flags/17.webp"
           },
           {
-            "id": 11,
-            "name": "Mexico",
-            "logo": "/media/flags/19.webp"
+            "id": 9,
+            "name": "France",
+            "logo": "/media/flags/10.webp"
+          },
+          {
+            "id": 4,
+            "name": "Spain",
+            "logo": "/media/flags/8.webp"
+          },
+          {
+            "id": 22,
+            "name": "Colombia",
+            "logo": "/media/flags/20.webp"
+          },
+          {
+            "id": 1,
+            "name": "England",
+            "logo": "/media/flags/6.webp"
+          },
+          {
+            "id": 3,
+            "name": "Germany",
+            "logo": "/media/flags/2.webp"
+          }
+        ],
+        "formation": {
+          "name": "352",
+          "players": [
+            {
+              "position": "GK",
+              "player": null
+            },
+            {
+              "position": "CB",
+              "player": null
+            },
+            {
+              "position": "CB",
+              "player": null
+            },
+            {
+              "position": "CB",
+              "player": null
+            },
+            {
+              "position": "CDM",
+              "player": null
+            },
+            {
+              "position": "CDM",
+              "player": null
+            },
+            {
+              "position": "LM",
+              "player": null
+            },
+            {
+              "position": "RM",
+              "player": null
+            },
+            {
+              "position": "CAM",
+              "player": null
+            },
+            {
+              "position": "ST",
+              "player": null
+            },
+            {
+              "position": "ST",
+              "player": null
+            }
+          ]
+        }
+      },
+      "sourceModule": "https://futbol11.com/_nuxt/B5NGYroK.js",
+      "sourceModuleSHA256": "f0c402cea4663a784bcf8d69bc478bca56aaa14a7e207f2911f495f0ba80f422",
+      "randomPlayOrder": false
+    },
+    {
+      "id": "america",
+      "sourceURL": "https://futbol11.com/futbol11-america",
+      "selector": "day-of-year salted seeded shuffle",
+      "selection": {
+        "groups": [
+          {
+            "id": 22,
+            "name": "Defensa y Justicia",
+            "logo": "https://i.ibb.co/mBvYJz5/logo-0012-22.png"
+          },
+          {
+            "id": 16,
+            "name": "CA Velez Sarsfield",
+            "logo": "https://i.ibb.co/ft2dJ1t/logo-0018-16.png"
+          },
+          {
+            "id": 29,
+            "name": "Colo Colo",
+            "logo": "https://i.ibb.co/fDC6yx1/logo-0005-29.png"
+          },
+          {
+            "id": 14,
+            "name": "Internacional",
+            "logo": "https://i.ibb.co/MVTfyhF/logo-0020-14.png"
+          },
+          {
+            "id": 7,
+            "name": "Sao Paulo",
+            "logo": "https://i.ibb.co/mXMR6tW/logo-0028-6.png"
+          },
+          {
+            "id": 17,
+            "name": "Racing Club",
+            "logo": "https://i.ibb.co/d4dV3H8/logo-0017-17.png"
+          },
+          {
+            "id": 35,
+            "name": "Estudiantes",
+            "logo": "https://i.ibb.co/bM4L2k2c/est.png"
+          },
+          {
+            "id": 30,
+            "name": "Independiente del Valle",
+            "logo": "https://i.ibb.co/2S7xD37/logo-0004-30.png"
+          },
+          {
+            "id": 33,
+            "name": "Club Libertad",
+            "logo": "https://i.ibb.co/8Dr6285/logo-0001-33.png"
+          },
+          {
+            "id": 18,
+            "name": "Club Atletico Talleres",
+            "logo": "https://i.ibb.co/f0xJ01X/logo-0016-18.png"
+          },
+          {
+            "id": 19,
+            "name": "Club Atletico Tigre",
+            "logo": "https://i.ibb.co/fp3bBfp/logo-0015-19.png"
           }
         ],
         "formation": {
@@ -149379,122 +149521,6 @@
           ]
         }
       },
-      "sourceModule": "https://futbol11.com/_nuxt/B5NGYroK.js",
-      "sourceModuleSHA256": "f0c402cea4663a784bcf8d69bc478bca56aaa14a7e207f2911f495f0ba80f422",
-      "randomPlayOrder": false
-    },
-    {
-      "id": "america",
-      "sourceURL": "https://futbol11.com/futbol11-america",
-      "selector": "day-of-year salted seeded shuffle",
-      "selection": {
-        "groups": [
-          {
-            "id": 16,
-            "name": "CA Velez Sarsfield",
-            "logo": "https://i.ibb.co/ft2dJ1t/logo-0018-16.png"
-          },
-          {
-            "id": 20,
-            "name": "San Lorenzo de Almagro",
-            "logo": "https://i.ibb.co/JWLsrnY/logo-0014-20.png"
-          },
-          {
-            "id": 10,
-            "name": "Vasco da Gama",
-            "logo": "https://i.ibb.co/wrnhvHn/logo-0025-9.png"
-          },
-          {
-            "id": 15,
-            "name": "Gremio",
-            "logo": "https://i.ibb.co/xM2Dbj6/logo-0019-15.png"
-          },
-          {
-            "id": 19,
-            "name": "Club Atletico Tigre",
-            "logo": "https://i.ibb.co/fp3bBfp/logo-0015-19.png"
-          },
-          {
-            "id": 32,
-            "name": "CS Emelec",
-            "logo": "https://i.ibb.co/JyxMPFX/logo-0002-32.png"
-          },
-          {
-            "id": 5,
-            "name": "River Plate",
-            "logo": "https://i.ibb.co/L5CsmGV/logo-0030-4.png"
-          },
-          {
-            "id": 12,
-            "name": "Botafogo",
-            "logo": "https://i.ibb.co/ryBzXcp/logo-0022-12.png"
-          },
-          {
-            "id": 30,
-            "name": "Independiente del Valle",
-            "logo": "https://i.ibb.co/2S7xD37/logo-0004-30.png"
-          },
-          {
-            "id": 4,
-            "name": "Corinthians",
-            "logo": "https://i.ibb.co/vkwRVcs/logo-0031-3.png"
-          },
-          {
-            "id": 33,
-            "name": "Club Libertad",
-            "logo": "https://i.ibb.co/8Dr6285/logo-0001-33.png"
-          }
-        ],
-        "formation": {
-          "name": "442",
-          "players": [
-            {
-              "position": "GK",
-              "player": null
-            },
-            {
-              "position": "LB",
-              "player": null
-            },
-            {
-              "position": "CB",
-              "player": null
-            },
-            {
-              "position": "CB",
-              "player": null
-            },
-            {
-              "position": "RB",
-              "player": null
-            },
-            {
-              "position": "LM",
-              "player": null
-            },
-            {
-              "position": "CM",
-              "player": null
-            },
-            {
-              "position": "CDM",
-              "player": null
-            },
-            {
-              "position": "RM",
-              "player": null
-            },
-            {
-              "position": "ST",
-              "player": null
-            },
-            {
-              "position": "ST",
-              "player": null
-            }
-          ]
-        }
-      },
       "sourceModule": "https://futbol11.com/_nuxt/BIUOWvTH.js",
       "sourceModuleSHA256": "07220ea17e7ba63b3f6f895315c0b967ad04cb23a21e2ff69cb3d4dec3aeddb6",
       "randomPlayOrder": false
@@ -149505,16 +149531,16 @@
       "selector": "constant-seeded eligible pool; local-day-of-year index",
       "selection": {
         "player": {
-          "id": 465,
-          "firstName": "Marcos",
-          "lastName": "Leonardo",
-          "ovr": "79",
-          "birthday": "May 2, 2003",
-          "clubID": 21,
-          "positions": "ST, CAM , CM",
-          "countryID": 7
+          "id": 323,
+          "firstName": "Dani",
+          "lastName": "Ceballos",
+          "ovr": "81",
+          "birthday": "August 7, 1996",
+          "clubID": 90,
+          "positions": "CM, CDM",
+          "countryID": 8
         },
-        "index": 282,
+        "index": 283,
         "orderPlayerIDs": [
           93,
           384,
@@ -151080,26 +151106,29 @@
       "selector": "local-day-of-year index; normal mode",
       "selection": {
         "record": {
-          "id": 32,
-          "title": "Scored 30+ goals in one PL season",
-          "correctPl": "83, 14, 77, 156, 78",
-          "impostors": "336, 63, 81, 61, 68"
+          "id": 57,
+          "title": "Played for Athletic Club",
+          "correctPl": "760, 129, 370, 1029",
+          "addcorr": "113",
+          "impostors": "185, 352, 267, 326, 291, 311"
         },
-        "index": 282,
+        "index": 283,
         "correctPlayerIDs": [
-          83,
-          14,
-          77,
-          156,
-          78
+          760,
+          129,
+          370,
+          1029
         ],
-        "extraCorrectPlayerIDs": [],
+        "extraCorrectPlayerIDs": [
+          113
+        ],
         "impostorPlayerIDs": [
-          336,
-          63,
-          81,
-          61,
-          68
+          185,
+          352,
+          267,
+          326,
+          291,
+          311
         ]
       },
       "sourceModule": "https://futbol11.com/_nuxt/DejDfbX0.js",
@@ -151113,22 +151142,22 @@
       "selection": {
         "groups": [
           {
-            "id": 1,
-            "name": "Arsenal",
-            "logo": "/media/shirts/1.png",
-            "type": "club"
+            "id": 97,
+            "name": "Ghana",
+            "logo": "/media/flags/32.webp",
+            "type": "country2"
           },
           {
-            "id": 40,
-            "name": "100m+ transfer",
-            "logo": "/media/groups/money2A.png",
-            "type": "extra"
+            "id": 42,
+            "name": "ESP LEAGUE",
+            "logo": "/media/groups/esplg.png",
+            "type": "league"
           },
           {
-            "id": 4,
-            "name": "Newcastle",
-            "logo": "/media/shirts/4b.png",
-            "type": "club2"
+            "id": 111,
+            "name": "Treble Winner",
+            "logo": "/media/groups/treble3.png",
+            "type": "award"
           },
           {
             "id": 13,
@@ -151137,52 +151166,52 @@
             "type": "club"
           },
           {
-            "id": 2,
-            "name": "Man City",
-            "logo": "/media/shirts/2.png",
+            "id": 20,
+            "name": "Benfica",
+            "logo": "/media/shirts/20b.png",
+            "type": "club2"
+          },
+          {
+            "id": 5,
+            "name": "Tottenham",
+            "logo": "/media/shirts/5.png",
             "type": "club"
           },
           {
-            "id": 74,
-            "name": "USA",
-            "logo": "/media/flags/22.webp",
-            "type": "country2"
-          },
-          {
-            "id": 32,
-            "name": "England",
-            "logo": "/media/flags/6.webp",
-            "type": "country"
-          },
-          {
-            "id": 105,
-            "name": "Europa winner",
-            "logo": "/media/groups/uel.png",
-            "type": "award"
-          },
-          {
-            "id": 41,
-            "name": "ENG LEAGUE",
-            "logo": "/media/groups/englg3.png",
-            "type": "league"
-          },
-          {
-            "id": 37,
-            "name": "Ballon d'Or",
-            "logo": "/media/groups/bdir3.png",
-            "type": "award"
-          },
-          {
-            "id": 11,
-            "name": "Inter",
-            "logo": "/media/shirts/11.png",
+            "id": 9,
+            "name": "Real Madrid",
+            "logo": "/media/shirts/9.png",
             "type": "club"
           },
           {
-            "id": 23,
-            "name": "Germany",
-            "logo": "/media/flags/2.webp",
+            "id": 28,
+            "name": "Portugal",
+            "logo": "/media/flags/4.webp",
             "type": "country"
+          },
+          {
+            "id": 26,
+            "name": "France",
+            "logo": "/media/flags/10.webp",
+            "type": "country"
+          },
+          {
+            "id": 104,
+            "name": "Serie A winner",
+            "logo": "/media/groups/seriea.png",
+            "type": "award"
+          },
+          {
+            "id": 10,
+            "name": "Atl Madrid",
+            "logo": "/media/shirts/10.png",
+            "type": "club"
+          },
+          {
+            "id": 110,
+            "name": "Club Capt '26",
+            "logo": "/media/groups/clubc3.png",
+            "type": "extra"
           }
         ]
       },
@@ -151197,64 +151226,34 @@
       "selection": {
         "groups": [
           {
-            "id": 2,
-            "name": "Man City",
-            "logo": "/media/classics/73.png",
-            "type": "club"
-          },
-          {
-            "id": 32,
-            "name": "England",
-            "logo": "/media/flags/6.webp",
+            "id": 29,
+            "name": "Argentina",
+            "logo": "/media/flags/1.webp",
             "type": "country"
           },
           {
-            "id": 18,
-            "name": "Monaco",
-            "logo": "/media/classics/32.png",
-            "type": "club2"
-          },
-          {
-            "id": 6,
-            "name": "Liverpool",
-            "logo": "/media/classics/22.png",
-            "type": "club"
-          },
-          {
-            "id": 11,
-            "name": "Inter",
-            "logo": "/media/classics/18.png",
-            "type": "club"
-          },
-          {
-            "id": 30,
-            "name": "Spain",
-            "logo": "/media/flags/8.webp",
-            "type": "country"
-          },
-          {
-            "id": 23,
-            "name": "Germany",
-            "logo": "/media/flags/2.webp",
-            "type": "country"
-          },
-          {
-            "id": 36,
-            "name": "South America",
-            "logo": "/media/groups/southamerica2.png",
-            "type": "continent"
-          },
-          {
-            "id": 65,
-            "name": "100+ PL Goals",
-            "logo": "/media/groups/ENG100.png",
+            "id": 66,
+            "name": "100+ La Liga Goals",
+            "logo": "/media/groups/ESP100.png",
             "type": "other"
           },
           {
-            "id": 72,
-            "name": "Treble Winner",
-            "logo": "/media/groups/treble3.png",
-            "type": "award"
+            "id": 35,
+            "name": "Africa",
+            "logo": "/media/groups/africa2.png",
+            "type": "continent"
+          },
+          {
+            "id": 1,
+            "name": "Arsenal",
+            "logo": "/media/classics/3.png",
+            "type": "club"
+          },
+          {
+            "id": 64,
+            "name": "Sporting CP",
+            "logo": "/media/classics/93.png",
+            "type": "club2"
           },
           {
             "id": 3,
@@ -151263,10 +151262,40 @@
             "type": "club"
           },
           {
-            "id": 53,
-            "name": "Feyenoord",
-            "logo": "/media/shirts/101.png",
+            "id": 63,
+            "name": "Marseille",
+            "logo": "/media/classics/75.png",
+            "type": "club"
+          },
+          {
+            "id": 50,
+            "name": "Sevilla",
+            "logo": "/media/classics/40.png",
             "type": "club2"
+          },
+          {
+            "id": 24,
+            "name": "Brazil",
+            "logo": "/media/flags/7.webp",
+            "type": "country"
+          },
+          {
+            "id": 38,
+            "name": "World Cup",
+            "logo": "/media/groups/worldcup2.png",
+            "type": "award"
+          },
+          {
+            "id": 8,
+            "name": "Barcelona",
+            "logo": "/media/classics/10.png",
+            "type": "club"
+          },
+          {
+            "id": 27,
+            "name": "Netherlands",
+            "logo": "/media/flags/9.webp",
+            "type": "country"
           }
         ],
         "catalog": {
@@ -151621,7 +151650,7 @@
               "type": "award"
             }
           ],
-          "boardDate": "2026-10-09"
+          "boardDate": "2026-10-10"
         }
       },
       "sourceModule": "https://futbol11.com/_nuxt/CEIZMPba.js",
@@ -151633,12 +151662,33 @@
       "sourceURL": "https://futbol11.com/futbol11-grid",
       "selector": "MM/DD/YYYY seeded intersections; source fallback counter",
       "selection": {
+        "mode": "easy",
         "columns": [
           {
-            "id": 29,
-            "name": "Argentina",
-            "logo": "/media/flags/1.webp",
-            "type": "country"
+            "id": 11,
+            "name": "Inter",
+            "logo": "/media/shirts/11.png",
+            "type": "club"
+          },
+          {
+            "id": 6,
+            "name": "Liverpool",
+            "logo": "/media/shirts/6.png",
+            "type": "club"
+          },
+          {
+            "id": 17,
+            "name": "PSG",
+            "logo": "/media/shirts/17.png",
+            "type": "club"
+          }
+        ],
+        "rows": [
+          {
+            "id": 3,
+            "name": "Man Utd",
+            "logo": "/media/shirts/3.png",
+            "type": "club"
           },
           {
             "id": 5,
@@ -151647,33 +151697,191 @@
             "type": "club"
           },
           {
-            "id": 3,
-            "name": "Man Utd",
-            "logo": "/media/shirts/3.png",
-            "type": "club"
+            "id": 23,
+            "name": "Germany",
+            "logo": "/media/flags/2.webp",
+            "type": "country"
           }
         ],
-        "rows": [
+        "boards": [
           {
-            "id": 1,
-            "name": "Arsenal",
-            "logo": "/media/shirts/1.png",
-            "type": "club"
+            "mode": "easy",
+            "columns": [
+              {
+                "id": 11,
+                "name": "Inter",
+                "logo": "/media/shirts/11.png",
+                "type": "club"
+              },
+              {
+                "id": 6,
+                "name": "Liverpool",
+                "logo": "/media/shirts/6.png",
+                "type": "club"
+              },
+              {
+                "id": 17,
+                "name": "PSG",
+                "logo": "/media/shirts/17.png",
+                "type": "club"
+              }
+            ],
+            "rows": [
+              {
+                "id": 3,
+                "name": "Man Utd",
+                "logo": "/media/shirts/3.png",
+                "type": "club"
+              },
+              {
+                "id": 5,
+                "name": "Tottenham",
+                "logo": "/media/shirts/5.png",
+                "type": "club"
+              },
+              {
+                "id": 23,
+                "name": "Germany",
+                "logo": "/media/flags/2.webp",
+                "type": "country"
+              }
+            ]
           },
           {
-            "id": 11,
-            "name": "Inter",
-            "logo": "/media/shirts/11.png",
-            "type": "club"
+            "mode": "normal",
+            "columns": [
+              {
+                "id": 9,
+                "name": "Real Madrid",
+                "logo": "/media/shirts/9.png",
+                "type": "club"
+              },
+              {
+                "id": 10,
+                "name": "Atl Madrid",
+                "logo": "/media/shirts/10.png",
+                "type": "club"
+              },
+              {
+                "id": 5,
+                "name": "Tottenham",
+                "logo": "/media/shirts/5.png",
+                "type": "club"
+              }
+            ],
+            "rows": [
+              {
+                "id": 8,
+                "name": "Barcelona",
+                "logo": "/media/shirts/8.png",
+                "type": "club"
+              },
+              {
+                "id": 6,
+                "name": "Liverpool",
+                "logo": "/media/shirts/6.png",
+                "type": "club"
+              },
+              {
+                "id": 3,
+                "name": "Man Utd",
+                "logo": "/media/shirts/3.png",
+                "type": "club"
+              }
+            ]
           },
           {
-            "id": 13,
-            "name": "Juventus",
-            "logo": "/media/shirts/13.png",
-            "type": "club"
+            "mode": "hard",
+            "columns": [
+              {
+                "id": 17,
+                "name": "PSG",
+                "logo": "/media/shirts/17.png",
+                "type": "club"
+              },
+              {
+                "id": 1,
+                "name": "Arsenal",
+                "logo": "/media/shirts/1.png",
+                "type": "club"
+              },
+              {
+                "id": 80,
+                "name": "Japan",
+                "logo": "/media/flags/35.webp",
+                "type": "country2"
+              }
+            ],
+            "rows": [
+              {
+                "id": 12,
+                "name": "AC Milan",
+                "logo": "/media/shirts/12.png",
+                "type": "club"
+              },
+              {
+                "id": 5,
+                "name": "Tottenham",
+                "logo": "/media/shirts/5.png",
+                "type": "club"
+              },
+              {
+                "id": 6,
+                "name": "Liverpool",
+                "logo": "/media/shirts/6.png",
+                "type": "club"
+              }
+            ]
+          },
+          {
+            "mode": "legend",
+            "columns": [
+              {
+                "id": 25,
+                "name": "Italy",
+                "logo": "/media/flags/11.webp",
+                "type": "country"
+              },
+              {
+                "id": 69,
+                "name": "Poland",
+                "logo": "/media/flags/30.webp",
+                "type": "country2"
+              },
+              {
+                "id": 73,
+                "name": "Wales",
+                "logo": "/media/flags/30w.webp",
+                "type": "country2"
+              }
+            ],
+            "rows": [
+              {
+                "id": 13,
+                "name": "Juventus",
+                "logo": "/media/shirts/13.png",
+                "type": "club"
+              },
+              {
+                "id": 6,
+                "name": "Liverpool",
+                "logo": "/media/shirts/6.png",
+                "type": "club"
+              },
+              {
+                "id": 3,
+                "name": "Man Utd",
+                "logo": "/media/shirts/3.png",
+                "type": "club"
+              }
+            ]
           }
         ],
-        "mode": "easy"
+        "catalog": {
+          "playerSourceURL": "https://futbol11.com/_nuxt/sF1zb7uP.js",
+          "categorySourceURL": "https://futbol11.com/_nuxt/B-zpluk7.js",
+          "boardDate": "2026-10-10"
+        }
       },
       "sourceModule": "https://futbol11.com/_nuxt/hrkNGYVZ.js",
       "sourceModuleSHA256": "526854f0551b61f5494475624fe95363c3d2cbbb9faeefcc6ef1087043b081a3",
@@ -151686,63 +151894,63 @@
       "selection": {
         "groups": [
           {
-            "id": 8,
-            "title": "Played for Barcelona",
+            "id": 55,
+            "title": "Played for Besiktas",
             "playerIDs": [
-              404,
-              655,
+              924,
+              827,
+              144,
+              424
+            ]
+          },
+          {
+            "id": 124,
+            "title": "Pichichi Winners",
+            "playerIDs": [
+              1111,
+              59,
+              31,
+              18
+            ]
+          },
+          {
+            "id": 40,
+            "title": "Played for West Ham",
+            "playerIDs": [
+              79,
+              284,
+              537,
+              1112
+            ]
+          },
+          {
+            "id": 30,
+            "title": "From Spain",
+            "playerIDs": [
               29,
-              1098
-            ]
-          },
-          {
-            "id": 147,
-            "title": "Played for two countries",
-            "playerIDs": [
-              407,
-              867,
-              338,
-              84
-            ]
-          },
-          {
-            "id": 70,
-            "title": "Played for Real M & Milan",
-            "playerIDs": [
-              152,
-              1239,
-              296,
-              248
-            ]
-          },
-          {
-            "id": 76,
-            "title": "Played for Bayern & Real M",
-            "playerIDs": [
-              902,
-              56,
-              352,
-              250
+              16,
+              113,
+              408
             ]
           }
         ],
         "order": [
-          352,
-          250,
-          248,
-          1239,
-          407,
-          1098,
-          152,
-          867,
-          296,
-          404,
-          902,
-          84,
-          655,
-          56,
+          924,
+          827,
+          16,
+          18,
+          31,
+          113,
+          79,
+          59,
+          1112,
+          424,
           29,
-          338
+          144,
+          284,
+          1111,
+          408,
+          537
         ]
       },
       "sourceModule": "https://futbol11.com/_nuxt/BjcIrBVI.js",

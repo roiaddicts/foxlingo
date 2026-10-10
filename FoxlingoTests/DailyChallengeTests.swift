@@ -4,7 +4,7 @@ import XCTest
 final class DailyChallengeTests: XCTestCase {
     private func data() throws -> Data {
         let root=URL(fileURLWithPath:#filePath).deletingLastPathComponent().deletingLastPathComponent()
-        return try Data(contentsOf:root.appendingPathComponent("Foxlingo/Resources/daily-en.json"))
+        return try Data(contentsOf:root.appendingPathComponent("ref/futbol11-daily/2026-10-09-d72036ad4a75.json"))
     }
     private func changed(_ edit: (inout [String:Any]) -> Void) throws -> Data {
         var root=try JSONSerialization.jsonObject(with:data()) as! [String:Any];edit(&root)

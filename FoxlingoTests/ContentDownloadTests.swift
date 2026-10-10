@@ -60,7 +60,7 @@ final class ContentDownloadTests: XCTestCase, @unchecked Sendable {
     }
     func testDailyPointerDownloadsVerifiedRelativePackageAndRejectsCorruption() async throws {
         let root=URL(fileURLWithPath:#filePath).deletingLastPathComponent().deletingLastPathComponent()
-        let raw=try Data(contentsOf:root.appendingPathComponent("Foxlingo/Resources/daily-en.json"))
+        let raw=try Data(contentsOf:root.appendingPathComponent("ref/futbol11-daily/2026-10-09-d72036ad4a75.json"))
         let digest=ContentUpdateRules.digest(raw),name="2026-10-09-\(digest.prefix(12)).json"
         let pointer=try JSONSerialization.data(withJSONObject:["file":name,"sha256":digest,"gameDate":"2026-10-09","timeZone":"America/Mexico_City","modes":19])
         let address="https://daily.example/daily/latest.json",content="https://daily.example/daily/"+name

@@ -311,14 +311,20 @@ def compile_daily(snapshot,day,zone):
     url,text=module('grid',['let a=d','s++','gameLevel:"easy"','r.footballers.some(N=>c.footballers.includes(N))','s.bingo&&s.bingo.split(",").map(Number).includes(a.id)||s.grid&&s.grid.split(",").map(Number).includes(a.id)'])
     groups=archive.rows({'id','logo','name','type'});players=archive.roles['gamePlayers']
     memberships={g['id']:set(p['id'] for p in players if g['id'] in csv(p.get('grid',''))+csv(p.get('bingo',''))) for g in groups}
-    pool=[g for g in groups if g['type'] in ['club','country']];horizontal=shuffle(pool,stamp)[:3];counter=0
-    while True:
-        candidates=[g for g in pool if g['id'] not in {r['id'] for r in horizontal} and all(memberships[g['id']] & memberships[r['id']] for r in horizontal)]
-        vertical=shuffle(candidates,stamp)[:3]
-        if len(vertical)==3:break
-        if counter>=1000:raise ValueError('No source-compatible grid after bounded search')
-        horizontal=shuffle(pool,counter)[:3];counter+=1
-    add('grid',url,dict(columns=horizontal,rows=vertical,mode='easy'),'MM/DD/YYYY seeded intersections; source fallback counter')
+    group_url=next(d['sourceURL'] for d in archive.meta['datasets'] if set(d['fields'])=={'id','logo','name','type'})
+    if archive.imported(url,'X')!=general_url or archive.imported(url,'Fe')!=group_url:raise ValueError('Grid player/category binding changed')
+    boards=[]
+    for level,types in [('easy',['club','country']),('normal',['club']),('hard',['club','country','country2']),('legend',['club','country','country2','club2'])]:
+        pool=[g for g in groups if g['type'] in types];horizontal=shuffle(pool,stamp)[:3];counter=0
+        while True:
+            candidates=[g for g in pool if g['id'] not in {r['id'] for r in horizontal} and all(memberships[g['id']] & memberships[r['id']] for r in horizontal)]
+            vertical=shuffle(candidates,stamp)[:3]
+            if len(vertical)==3:break
+            if counter>=1000:raise ValueError('No source-compatible '+level+' grid after bounded search')
+            horizontal=shuffle(pool,counter)[:3];counter+=1
+        boards.append(dict(mode=level,columns=horizontal,rows=vertical))
+    selection=dict(boards[0],boards=boards,catalog=dict(playerSourceURL=general_url,categorySourceURL=group_url,boardDate=day.isoformat()))
+    add('grid',url,selection,'MM/DD/YYYY seeded intersections; source fallback counter')
     # Connections needs mutually exclusive selected people, not merely four random categories.
     url,text=module('connections',['i[m].players.some(y=>n.value.includes(y))','!c.value.includes(y)','w=D+"/"+S+"/"+G+"/"'])
     categories=archive.rows({'id','title','level','players'},url);with_images={p['id'] for p in players if p.get('image')}

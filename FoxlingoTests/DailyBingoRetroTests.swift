@@ -7,7 +7,7 @@ final class DailyBingoRetroTests:XCTestCase {
         mutating func next()->UInt64 {state=state &* 6364136223846793005 &+ 1442695040888963407;return state}
     }
     private let now=Date(timeIntervalSince1970:1800000000)
-    private func data() throws -> Data {try Data(contentsOf:URL(fileURLWithPath:#filePath).deletingLastPathComponent().deletingLastPathComponent().appendingPathComponent("Foxlingo/Resources/daily-en.json"))}
+    private func data() throws -> Data {try Data(contentsOf:URL(fileURLWithPath:#filePath).deletingLastPathComponent().deletingLastPathComponent().appendingPathComponent("ref/futbol11-daily/2026-10-09-d72036ad4a75.json"))}
     private func round() throws -> DailyBingoRetro {try XCTUnwrap(DailyChallengePack.load(data()).bingoRetro)}
     func testSourceBoardPlayersMembershipAndSeparateIdentity() throws {
         let r=try round();XCTAssertEqual(r.players.count,251);XCTAssertEqual(r.categories.count,12)
@@ -16,7 +16,7 @@ final class DailyBingoRetroTests:XCTestCase {
         XCTAssertTrue(r.accepts("daily-bingo-retro-1",category:"daily-bingo-retro-group-3"))
         XCTAssertFalse(r.accepts("daily-general-1",category:"daily-bingo-retro-group-3"))
         XCTAssertTrue(r.categories.allSatisfy {!$0.playerIDs.isEmpty && $0.imageURL?.hasPrefix("https://") == true})
-        XCTAssertEqual(try DailyChallengePack.load(data()).supportedModeIDs.count,10)
+        XCTAssertEqual(try DailyChallengePack.load(data()).supportedModeIDs.count,11)
     }
     func testSourceOffersSkipsAndHelpfulThresholdRemainPlayable() throws {
         let r=try round();var p=BingoRetroProgress(round:r),rng=Seeded()
@@ -71,6 +71,6 @@ final class DailyBingoRetroTests:XCTestCase {
         XCTAssertThrowsError(try DailyChallengePack.load(changed {s in var c=s["catalog"] as! [String:Any];c["boardDate"]="2026-10-08";s["catalog"]=c}))
         XCTAssertThrowsError(try DailyChallengePack.load(changed {s in var groups=s["groups"] as! [[String:Any]];groups[0]["name"]="Forged";s["groups"]=groups}))
         XCTAssertThrowsError(try DailyChallengePack.load(changed {s in var groups=s["groups"] as! [[String:Any]];groups[0]=groups[1];s["groups"]=groups}))
-        let old=try DailyChallengePack.load(changed {$0.removeValue(forKey:"catalog")});XCTAssertNil(old.bingoRetro);XCTAssertEqual(old.supportedModeIDs.count,9)
+        let old=try DailyChallengePack.load(changed {$0.removeValue(forKey:"catalog")});XCTAssertNil(old.bingoRetro);XCTAssertEqual(old.supportedModeIDs.count,10)
     }
 }

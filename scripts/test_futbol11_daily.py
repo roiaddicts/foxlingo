@@ -46,6 +46,16 @@ class DailyTests(unittest.TestCase):
         self.assertEqual(len(modes['bingo-retro']['selection']['groups']),12)
         ny=compile_daily(SNAPSHOT,date(2026,10,9),'America/New_York')
         self.assertNotEqual(modes['pyramid']['selection']['record'],next(g for g in ny['games'] if g['id']=='pyramid')['selection']['record'])
+    def test_grid_four_difficulties_match_independent_data_only_reference(self):
+        packet=compile_daily(SNAPSHOT,date(2026,10,9),'America/Mexico_City');selection=next(g['selection'] for g in packet['games'] if g['id']=='grid')
+        groups=next(d['data'] for d in packet['datasets'] if d['sourceURL']==selection['catalog']['categorySourceURL'])
+        players=next(d['data'] for d in packet['datasets'] if d['sourceURL']==selection['catalog']['playerSourceURL'])
+        js="""const d=JSON.parse(require('fs').readFileSync(0,'utf8'));function mix(a,seed){let v=2166136261;for(let i=0;i<seed.length;i++){v^=seed.charCodeAt(i);v+=(v<<1)+(v<<4)+(v<<7)+(v<<8)+(v<<24);}let out=[...a];for(let i=out.length-1;i>0;i--){v+=v<<13;v^=v>>>7;v+=v<<3;v^=v>>>17;v+=v<<5;let j=Math.floor((v>>>0)/4294967296*(i+1));[out[i],out[j]]=[out[j],out[i]];}return out;}
+        const groups=d.groups.map(g=>({...g,members:d.players.filter(p=>[p.bingo,p.grid].some(csv=>csv&&csv.split(',').map(Number).includes(g.id))).map(p=>p.id)}));let result=[];
+        for(const [mode,types]of [['easy',['club','country']],['normal',['club']],['hard',['club','country','country2']],['legend',['club','country','country2','club2']]]){let pool=groups.filter(g=>types.includes(g.type)),cols=mix(pool,d.stamp).slice(0,3),rows=[],n=0;while(rows.length<3){rows=mix(pool.filter(g=>!cols.some(c=>c.id===g.id)&&cols.every(c=>g.members.some(id=>c.members.includes(id)))),d.stamp).slice(0,3);if(rows.length<3){if(n>1000)throw Error('no board');cols=mix(pool,n++).slice(0,3);}}result.push({mode,columns:cols.map(g=>g.id),rows:rows.map(g=>g.id)});}console.log(JSON.stringify(result));"""
+        reference=json.loads(subprocess.check_output(['node','-e',js],input=json.dumps(dict(groups=groups,players=players,stamp='10/09/2026')),text=True))
+        actual=[dict(mode=b['mode'],columns=[g['id'] for g in b['columns']],rows=[g['id'] for g in b['rows']]) for b in selection['boards']]
+        self.assertEqual(reference,actual);self.assertEqual(selection['catalog']['boardDate'],'2026-10-09')
     def test_wordle_dictionary_binding_and_support_contract_are_verified(self):
         packet=compile_daily(SNAPSHOT,date(2026,10,9),'America/Mexico_City')
         game=next(g for g in packet['games'] if g['id']=='wordle');selection=game['selection'];catalog=selection['catalog']

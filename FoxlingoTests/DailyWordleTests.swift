@@ -2,13 +2,13 @@ import XCTest
 @testable import FoxlingoCore
 
 final class DailyWordleTests:XCTestCase {
-    private func data() throws -> Data {try Data(contentsOf:URL(fileURLWithPath:#filePath).deletingLastPathComponent().deletingLastPathComponent().appendingPathComponent("Foxlingo/Resources/daily-en.json"))}
+    private func data() throws -> Data {try Data(contentsOf:URL(fileURLWithPath:#filePath).deletingLastPathComponent().deletingLastPathComponent().appendingPathComponent("ref/futbol11-daily/2026-10-09-d72036ad4a75.json"))}
     private func round() throws -> DailyWordle {try XCTUnwrap(DailyChallengePack.load(data()).wordle)}
     func testDailyAnswerExactWholeFieldNamesAndSourcePlayerExamples() throws {
         let r=try round();XCTAssertEqual(r.answer,"TERRY");XCTAssertEqual(r.matchingPlayers.map(\.id),["daily-general-417"]);XCTAssertEqual(r.matchingPlayers.first?.name,"John Terry")
         XCTAssertTrue(r.accepted.contains("KYLIAN"));XCTAssertTrue(r.accepted.contains("BELLINGHAM"));XCTAssertFalse(r.accepted.contains("KYLIÁN"))
         XCTAssertTrue(r.accepts("MESSI",mode:.normal));XCTAssertFalse(r.accepts("ZZZZZ",mode:.normal));XCTAssertTrue(r.accepts("ZZZZZ",mode:.easy));XCTAssertFalse(r.accepts("TÉRRY",mode:.easy));XCTAssertFalse(r.accepts("TE RY",mode:.easy));XCTAssertFalse(r.accepts("TERRYX",mode:.easy))
-        XCTAssertEqual(try DailyChallengePack.load(data()).supportedModeIDs.count,10)
+        XCTAssertEqual(try DailyChallengePack.load(data()).supportedModeIDs.count,11)
     }
     func testDifficultyLocksAfterFirstGuessUnknownNamesRetainInputAndDuplicatesAreAllowed() throws {
         let r=try round();var p=DailyWordleProgress(round:r)
@@ -43,6 +43,6 @@ final class DailyWordleTests:XCTestCase {
         XCTAssertThrowsError(try DailyChallengePack.load(changed {$0["answer"]="MESSI"}));XCTAssertThrowsError(try DailyChallengePack.load(changed {$0["index"]=281}))
         XCTAssertThrowsError(try DailyChallengePack.load(changed {s in var c=s["catalog"] as! [String:Any];c["playerSourceURL"]="https://futbol11.com/fake.js";s["catalog"]=c}))
         XCTAssertThrowsError(try DailyChallengePack.load(changed {s in var c=s["catalog"] as! [String:Any],words=c["words"] as! [String];words[0]="GÖTZE";c["words"]=words;s["catalog"]=c}))
-        let old=try DailyChallengePack.load(changed {$0.removeValue(forKey:"catalog")});XCTAssertNil(old.wordle);XCTAssertEqual(old.supportedModeIDs.count,9)
+        let old=try DailyChallengePack.load(changed {$0.removeValue(forKey:"catalog")});XCTAssertNil(old.wordle);XCTAssertEqual(old.supportedModeIDs.count,10)
     }
 }

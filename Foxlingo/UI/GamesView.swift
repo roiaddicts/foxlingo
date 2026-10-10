@@ -29,6 +29,11 @@ struct GamesHome: View {
                     }
                 }
                 if let daily=model.daily {
+                    if let grid=daily.grid {
+                        NavigationLink {DailyGridView(pack:daily,round:grid)} label: {
+                            HStack(spacing:16) {Image(systemName:"rectangle.split.3x3").font(.title2).frame(width:50,height:60).foregroundStyle(Palette.brand);VStack(alignment:.leading,spacing:6) {Text("Daily Football Grid").font(.title3.bold());Text("Four difficulties. Nine connections.").font(.subheadline).foregroundStyle(Palette.muted)};Spacer();Image(systemName:"chevron.right")}.padding(18).background(.white.opacity(0.8),in:RoundedRectangle(cornerRadius:20))
+                        }.buttonStyle(PressFeedback()).accessibilityIdentifier("game-daily-grid")
+                    }
                     if let wordle=daily.wordle {
                         NavigationLink {DailyWordleView(pack:daily,round:wordle)} label: {
                             HStack(spacing:16) {Image(systemName:"character.textbox").font(.title2).frame(width:50,height:60).foregroundStyle(Palette.brand);VStack(alignment:.leading,spacing:6) {Text("Daily Football Wordle").font(.title3.bold());Text("One name. Six chances.").font(.subheadline).foregroundStyle(Palette.muted)};Spacer();Image(systemName:"chevron.right")}.padding(18).background(.white.opacity(0.8),in:RoundedRectangle(cornerRadius:20))

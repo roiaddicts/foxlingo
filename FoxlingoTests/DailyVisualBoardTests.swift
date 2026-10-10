@@ -2,7 +2,7 @@ import XCTest
 @testable import FoxlingoCore
 
 final class DailyVisualBoardTests: XCTestCase {
-    private func data() throws -> Data {try Data(contentsOf:URL(fileURLWithPath:#filePath).deletingLastPathComponent().deletingLastPathComponent().appendingPathComponent("Foxlingo/Resources/daily-en.json"))}
+    private func data() throws -> Data {try Data(contentsOf:URL(fileURLWithPath:#filePath).deletingLastPathComponent().deletingLastPathComponent().appendingPathComponent("ref/futbol11-daily/2026-10-09-d72036ad4a75.json"))}
     private func pack() throws -> DailyChallengePack {try DailyChallengePack.load(data())}
     func testPyramidSourceSelectionsAndExactRanking() throws {
         let round=try pack().pyramid
