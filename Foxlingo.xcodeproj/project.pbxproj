@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7912502B2C604AC74600F639 /* DailyWordleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F151FDB6EB5A02F2E9F2896 /* DailyWordleView.swift */; };
+		F70142034FF69F3333F2AB0D /* DailyWordle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B084E50CF27566E0DC419B /* DailyWordle.swift */; };
 		D9FDD824B7F6F7BBF15EF7DE /* DailyBingoRetroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58618AD051A7D236FDB5901E /* DailyBingoRetroView.swift */; };
 		FC7B3E4263F104317F70A2C9 /* DailyBingoRetro.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE530EDFE6389DB565E09CC0 /* DailyBingoRetro.swift */; };
 		8BD315532B4AC9D7D08D4571 /* DailyGoltextoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F803F2AD5E5A479A23CC47D /* DailyGoltextoView.swift */; };
@@ -90,6 +92,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1F151FDB6EB5A02F2E9F2896 /* DailyWordleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyWordleView.swift; sourceTree = "<group>"; };
+		77B084E50CF27566E0DC419B /* DailyWordle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyWordle.swift; sourceTree = "<group>"; };
 		58618AD051A7D236FDB5901E /* DailyBingoRetroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyBingoRetroView.swift; sourceTree = "<group>"; };
 		DE530EDFE6389DB565E09CC0 /* DailyBingoRetro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyBingoRetro.swift; sourceTree = "<group>"; };
 		3F803F2AD5E5A479A23CC47D /* DailyGoltextoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyGoltextoView.swift; sourceTree = "<group>"; };
@@ -196,6 +200,7 @@
 		052BE11339FA119C1A8E6AE4 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				77B084E50CF27566E0DC419B /* DailyWordle.swift */,
 				DE530EDFE6389DB565E09CC0 /* DailyBingoRetro.swift */,
 				040EE940F8B19FB06AC7B14F /* Content.swift */,
 				585971EEDF1CEED7EEC0823B /* Games.swift */,
@@ -290,6 +295,7 @@
 		F1FB063382B9981F813328A4 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				1F151FDB6EB5A02F2E9F2896 /* DailyWordleView.swift */,
 				58618AD051A7D236FDB5901E /* DailyBingoRetroView.swift */,
 				BC35574D37589DA87E7C5A5D /* AlbumView.swift */,
 				BA791A790FCB14403A8DBC23 /* AppModel.swift */,
@@ -439,6 +445,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7912502B2C604AC74600F639 /* DailyWordleView.swift in Sources */,
+				F70142034FF69F3333F2AB0D /* DailyWordle.swift in Sources */,
 				D9FDD824B7F6F7BBF15EF7DE /* DailyBingoRetroView.swift in Sources */,
 				FC7B3E4263F104317F70A2C9 /* DailyBingoRetro.swift in Sources */,
 				46B3BF1D599171185BC5162A /* Content.swift in Sources */,

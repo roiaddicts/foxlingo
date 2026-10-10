@@ -29,6 +29,11 @@ struct GamesHome: View {
                     }
                 }
                 if let daily=model.daily {
+                    if let wordle=daily.wordle {
+                        NavigationLink {DailyWordleView(pack:daily,round:wordle)} label: {
+                            HStack(spacing:16) {Image(systemName:"character.textbox").font(.title2).frame(width:50,height:60).foregroundStyle(Palette.brand);VStack(alignment:.leading,spacing:6) {Text("Daily Football Wordle").font(.title3.bold());Text("One name. Six chances.").font(.subheadline).foregroundStyle(Palette.muted)};Spacer();Image(systemName:"chevron.right")}.padding(18).background(.white.opacity(0.8),in:RoundedRectangle(cornerRadius:20))
+                        }.buttonStyle(PressFeedback()).accessibilityIdentifier("game-daily-wordle")
+                    }
                     if let retro=daily.bingoRetro {
                         NavigationLink {DailyBingoRetroView(pack:daily,round:retro)} label: {
                             HStack(spacing:16) {EntityArtwork(asset:nil,url:retro.players.first?.imageURL,initials:"⚽",size:58,isPlayer:true,portraitFocus:true);VStack(alignment:.leading,spacing:6) {Text("Bingo Retro").font(.title3.bold());Text("Twelve categories. Football legends.").font(.subheadline).foregroundStyle(Palette.muted)};Spacer();Image(systemName:"chevron.right")}.padding(18).background(.white.opacity(0.8),in:RoundedRectangle(cornerRadius:20))
@@ -112,7 +117,7 @@ struct GamesHome: View {
                         }.buttonStyle(PressFeedback()).accessibilityIdentifier("game-"+mode.rawValue)
                     }
                     NavigationLink {FootballWordleView(pack:pack)} label: {
-                        HStack(spacing:16) {Image(systemName:"character.textbox").font(.title2).frame(width:50,height:60);VStack(alignment:.leading,spacing:6) {Text("Football Wordle").font(.title3.bold());Text("Six guesses. Find a football name.").font(.subheadline).foregroundStyle(Palette.muted)};Spacer();Image(systemName:"chevron.right")}.padding(18).background(.white.opacity(0.8),in:RoundedRectangle(cornerRadius:20))
+                        HStack(spacing:16) {Image(systemName:"character.textbox").font(.title2).frame(width:50,height:60);VStack(alignment:.leading,spacing:6) {Text("Practice Wordle").font(.title3.bold());Text("Six guesses. Find a football name.").font(.subheadline).foregroundStyle(Palette.muted)};Spacer();Image(systemName:"chevron.right")}.padding(18).background(.white.opacity(0.8),in:RoundedRectangle(cornerRadius:20))
                     }.buttonStyle(PressFeedback()).accessibilityIdentifier("game-wordle")
 
                     if !model.mysteries.isEmpty {

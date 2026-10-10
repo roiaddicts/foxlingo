@@ -7,6 +7,8 @@ final class DailyRevealTests: XCTestCase {
     }
     private func removeNewSupport(_ root: inout [String:Any]) {
         root.removeValue(forKey:"support")
+        var wordleModes=root["games"] as! [[String:Any]];let wordleIndex=wordleModes.firstIndex {$0["id"] as? String == "wordle"}!
+        var wordle=wordleModes[wordleIndex]["selection"] as! [String:Any];wordle.removeValue(forKey:"catalog");wordleModes[wordleIndex]["selection"]=wordle;root["games"]=wordleModes
         var retroModes=root["games"] as! [[String:Any]];let retroIndex=retroModes.firstIndex {$0["id"] as? String == "bingo-retro"}!
         var retro=retroModes[retroIndex]["selection"] as! [String:Any];retro.removeValue(forKey:"catalog");retroModes[retroIndex]["selection"]=retro;root["games"]=retroModes
         var modes=root["games"] as! [[String:Any]];let similarityIndex=modes.firstIndex {$0["id"] as? String == "goltexto"}!

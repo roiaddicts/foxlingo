@@ -46,6 +46,23 @@ class DailyTests(unittest.TestCase):
         self.assertEqual(len(modes['bingo-retro']['selection']['groups']),12)
         ny=compile_daily(SNAPSHOT,date(2026,10,9),'America/New_York')
         self.assertNotEqual(modes['pyramid']['selection']['record'],next(g for g in ny['games'] if g['id']=='pyramid')['selection']['record'])
+    def test_wordle_dictionary_binding_and_support_contract_are_verified(self):
+        packet=compile_daily(SNAPSHOT,date(2026,10,9),'America/Mexico_City')
+        game=next(g for g in packet['games'] if g['id']=='wordle');selection=game['selection'];catalog=selection['catalog']
+        self.assertEqual(selection['answer'],'TERRY');self.assertEqual(len(catalog['words']),374);self.assertEqual(catalog['words'][selection['index']],'TERRY')
+        players=next(d for d in packet['datasets'] if d['sourceURL']==catalog['playerSourceURL']);self.assertIn('bingo',players['fields'])
+        original=Archive.text
+        def changed(archive,url):
+            text=original(archive,url)
+            return text+';ke[0]="FAKE";' if url==catalog['sourceURL'] else text
+        with patch.object(Archive,'text',changed):
+            with self.assertRaisesRegex(ValueError,'dictionary support contract changed'):compile_daily(SNAPSHOT,date(2026,10,9),'America/Mexico_City')
+        def static_update(archive,url):
+            text=original(archive,url)
+            return text.replace('"SAUL"','"SANE"') if url==catalog['sourceURL'] else text
+        with patch.object(Archive,'text',static_update):
+            updated=compile_daily(SNAPSHOT,date(2026,10,9),'America/Mexico_City')
+            self.assertEqual(next(g for g in updated['games'] if g['id']=='wordle')['selection']['catalog']['words'][-1],'SANE')
     def test_bingo_retro_catalog_is_bound_and_all_selected_categories_have_source_matches(self):
         packet=compile_daily(SNAPSHOT,date(2026,10,9),'America/Mexico_City')
         game=next(g for g in packet['games'] if g['id']=='bingo-retro');selection=game['selection'];catalog=selection['catalog']

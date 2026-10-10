@@ -4,7 +4,7 @@ An offline-first iPhone football-learning app with **68 club roadmaps**, **20 pl
 
 The catalog covers the **2026/27 Champions League league phase**, **2026/27 Bundesliga**, and **Liga MX Apertura 2026**, verified as snapshots on October 8, 2026. The Games tab offers **football bingo**, a **club × country grid**, **98 classic season lineup challenges**, **Who am I?** with six sourced featured players, **Memory match**, **Football Wordle**, **Connections**, **Find the Impostors**, and draggable, illustrated **Football timelines** for Xolos and Madrid.
 
-The Games tab also includes five XI drafting modes and nine verified daily games: **Top 10**, **Statdle**, **Legacy**, **Link**, **Pyramid**, **SquadSlice** **Guess the Footballer** **Goltexto** and **Bingo Retro**. Native coverage is **19 of 19 Futbol11 modes**; the daily refresh pipeline extracts all 19. See [game coverage](docs/futbol11-game-coverage.md) and [daily data](docs/futbol11-daily-data.md).
+The Games tab also includes five XI drafting modes and ten verified daily games: **Top 10**, **Statdle**, **Legacy**, **Link**, **Pyramid**, **SquadSlice**, **Guess the Footballer**, **Goltexto**, **Bingo Retro** and **Football Wordle**. Native coverage is **19 of 19 Futbol11 modes**; the daily refresh pipeline extracts all 19. See [game coverage](docs/futbol11-game-coverage.md) and [daily data](docs/futbol11-daily-data.md).
 
 ## Run on an iPhone simulator
 

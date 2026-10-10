@@ -24,6 +24,7 @@
     "connections": "d3269efd0d34cc1ee7dc35c1c01425dfe0438c8294bbc3775e65f2900bdae434"
   },
   "supportSelectors": {
-    "clubCatalog": "1938b2da79f64a4669718ea5a3f82a6435a226c507bfa4176fb4c676ea17fd98"
+    "clubCatalog": "1938b2da79f64a4669718ea5a3f82a6435a226c507bfa4176fb4c676ea17fd98",
+    "wordleDictionary": "a4b50233f4cfd3cd5b7fa5d3b8d02eadc93565b9fa6d6ac04ec733071d7fa2d4"
   }
 }

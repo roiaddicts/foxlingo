@@ -62,6 +62,6 @@ final class DailyGoltextoTests:XCTestCase {
         selection=original;var catalog=selection["catalog"] as! [String:Any],map=catalog["portraitPlayerIDs"] as! [String:Int];map["1"]=1;catalog["portraitPlayerIDs"]=map;selection["catalog"]=catalog;games[i]["selection"]=selection;root["games"]=games
         XCTAssertThrowsError(try DailyChallengePack.load(JSONSerialization.data(withJSONObject:root)))
         selection=original;selection.removeValue(forKey:"catalog");games[i]["selection"]=selection;root["games"]=games
-        let old=try DailyChallengePack.load(JSONSerialization.data(withJSONObject:root));XCTAssertNil(old.goltexto);XCTAssertEqual(old.supportedModeIDs.count,8)
+        let old=try DailyChallengePack.load(JSONSerialization.data(withJSONObject:root));XCTAssertNil(old.goltexto);XCTAssertEqual(old.supportedModeIDs.count,9)
     }
 }

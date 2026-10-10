@@ -135,7 +135,7 @@
       "mechanic": "Guess a football name using letter position feedback.",
       "requiredData": "valid names, normalization and repeated-letter counts",
       "status": "native",
-      "notes": ""
+      "notes": "Verified source daily name and whole-field dictionary validation, Normal/Easy difficulty, six guesses with repeated guesses allowed, saved partial input and finished results, source player examples and one-time win credit. Separate practice Wordle remains replayable."
     },
     {
       "id": "futbol11",

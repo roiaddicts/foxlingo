@@ -199,10 +199,16 @@ def compile_daily(snapshot,day,zone):
     url,text=module('wordle',['b.value=B[x()]'])
     deps=[u for u in archive.dependencies(url) if '"GOTZE","ANTONY"' in archive.text(u)]
     if len(deps)!=1:raise ValueError('Wordle dictionary changed')
-    words=archive.text(deps[0]);match=re.search(r'=\["GOTZE","ANTONY"',words)
-    values=array_at(words,match.start()+1)
+    dictionary_url=deps[0]
+    if archive.import_symbol(url,'B')!=('w',dictionary_url) or archive.imported(url,'Z')!=general_url:raise ValueError('Wordle dictionary/player binding changed')
+    words=archive.text(dictionary_url);match=re.search(r'=\["GOTZE","ANTONY"',words)
+    start=match.start()+1;values,end=array_at(words,start,with_end=True)
+    wrapper=words[:start]+'["STATIC_WORDS"]'+words[end:]
+    if selector_digest(wrapper)!=contracts.get('supportSelectors',{}).get('wordleDictionary'):raise ValueError('Wordle dictionary support contract changed')
+    if not values or any(not isinstance(w,str) or re.fullmatch('[A-Z]{4,7}',w) is None for w in values):raise ValueError('Invalid Wordle dictionary')
     if not 0<=ordinal<len(values):raise ValueError('Wordle index outside dictionary')
-    add('wordle',url,dict(answer=values[ordinal],index=ordinal),'local-day-of-year string array index')
+    catalog=dict(sourceURL=dictionary_url,assetSHA256=archive.modules[dictionary_url][0]['sha256'],words=values,playerSourceURL=general_url)
+    add('wordle',url,dict(answer=values[ordinal],index=ordinal,catalog=catalog),'local-day-of-year string array index')
     # Five XI pools use the same seeded shuffle with mode-specific salts and indexes.
     form_deps=[u for u in archive.modules if len(re.findall(r'name:"442",players:',archive.text(u)))==1 and len(re.findall(r'name:"433",players:',archive.text(u)))==1]
     # Prefer the standalone formation component rather than per-mode duplicated code.

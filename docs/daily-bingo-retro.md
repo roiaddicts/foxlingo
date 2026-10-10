@@ -14,4 +14,4 @@ Core tests cover source selection, namespaces, explicit acceptance, repeated leg
 
 Run `swift test` and `python3 -m unittest discover -s scripts -p 'test_*.py'`. Xcode UI checks are `FlowTests/testDailyBingoRetroWrongSkipResumeAndWin` and `FlowTests/testDailyBingoRetroTimerExpiresAcrossRelaunch`.
 
-Native coverage is nineteen modes. Nine modes consume the published daily packet; ten existing modes still need their daily adapters. The verified refresh pipeline extracts all nineteen and preserves the previous good package on download/verification failure. Public feed hosting is not configured.
+Native coverage is nineteen modes. Ten modes consume the published daily packet; nine existing modes still need their daily adapters. The verified refresh pipeline extracts all nineteen and preserves the previous good package on download/verification failure. Public feed hosting is not configured.

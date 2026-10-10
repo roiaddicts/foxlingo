@@ -240,6 +240,32 @@ final class FlowTests: XCTestCase {
     func revealClue(_ id: String) -> XCUIElement {
         app.descendants(matching:.any).matching(identifier:"reveal-clue-"+id).firstMatch
     }
+    func typeDailyWordle(_ text:String) {for letter in text {tap("daily-wordle-key-\(letter)")}}
+    func testDailyWordleDifficultyUnknownInputPartialResumeAndWin() {
+        start();tap("choose-XT");app.tabBars.buttons["Games"].tap();tap("game-daily-wordle")
+        typeDailyWordle("ZZZZZ");tap("daily-wordle-submit")
+        XCTAssertTrue(app.staticTexts["daily-wordle-feedback"].label.contains("isn’t in the source catalog"))
+        XCTAssertTrue(app.staticTexts["daily-wordle-count"].label.contains("0 / 6"))
+        app.segmentedControls["daily-wordle-mode"].buttons["Easy"].tap();tap("daily-wordle-submit")
+        XCTAssertTrue(app.staticTexts["daily-wordle-count"].label.contains("1 / 6"));XCTAssertFalse(app.segmentedControls["daily-wordle-mode"].exists)
+        typeDailyWordle("TER");app.terminate();start(reset:false);app.tabBars.buttons["Games"].tap();tap("game-daily-wordle")
+        XCTAssertTrue(app.otherElements["daily-wordle-row-1"].label.contains("TER"))
+        typeDailyWordle("RY");tap("daily-wordle-submit")
+        XCTAssertTrue(app.staticTexts["daily-wordle-answer"].waitForExistence(timeout:3));XCTAssertEqual(app.staticTexts["daily-wordle-answer"].label,"TERRY")
+        XCTAssertEqual(app.staticTexts["daily-wordle-result"].label,"Name found!")
+        XCTAssertTrue(app.descendants(matching:.any).matching(identifier:"daily-wordle-player-daily-general-417").firstMatch.exists)
+        app.terminate();start(reset:false);app.tabBars.buttons["Games"].tap();tap("game-daily-wordle")
+        XCTAssertEqual(app.staticTexts["daily-wordle-result"].label,"Name found!");XCTAssertFalse(app.buttons["daily-wordle-submit"].exists)
+        let shot=XCTAttachment(screenshot:app.screenshot());shot.name="Daily Wordle saved win and player example";shot.lifetime = .keepAlways;add(shot)
+    }
+    func testDailyWordleNormalRepeatedNamesAndSavedLoss() {
+        start();tap("choose-XT");app.tabBars.buttons["Games"].tap();tap("game-daily-wordle")
+        for _ in 0..<6 {typeDailyWordle("MESSI");tap("daily-wordle-submit")}
+        XCTAssertTrue(app.staticTexts["daily-wordle-answer"].waitForExistence(timeout:3));XCTAssertEqual(app.staticTexts["daily-wordle-result"].label,"A name to remember.")
+        XCTAssertTrue(app.staticTexts["daily-wordle-count"].label.contains("6 / 6"))
+        app.terminate();start(reset:false);app.tabBars.buttons["Games"].tap();tap("game-daily-wordle")
+        XCTAssertEqual(app.staticTexts["daily-wordle-answer"].label,"TERRY");XCTAssertEqual(app.staticTexts["daily-wordle-result"].label,"A name to remember.")
+    }
     func testDailyBingoRetroWrongSkipResumeAndWin() {
         app.launchArguments=["-ui-testing","-reset-test-state","-test-now","1800000000","-stage-test-bingo-retro"];app.launch()
         tap("choose-XT");app.tabBars.buttons["Games"].tap();tap("game-bingo-retro")
