@@ -1,5 +1,5 @@
 """Compile auditable daily selections from a verified Futbol11 module archive."""
-import argparse,hashlib,json,math,os,re,tempfile
+import argparse,hashlib,json,math,os,re,tempfile,unicodedata
 from datetime import date,datetime,time,timedelta,timezone
 from pathlib import Path
 from zoneinfo import ZoneInfo
@@ -70,6 +70,33 @@ def day_indexes(day,zone):
 def csv(value):
     if isinstance(value,list):return [int(v) for v in value]
     return [int(v.strip()) for v in value.split(',') if v.strip()]
+
+XI_POSITIONS={'GK','LB','CB','RB','LWB','RWB','CDM','CM','CAM','LM','RM','LW','RW','ST','CF'}
+
+def xi_solution(groups,players,formation,unique=False,node_limit=100_000):
+    """Prove the exact offer list playable without replacing the source draw."""
+    positions=[p['position'] for p in formation['players']]
+    profiles={p['id']:set(v.strip() for v in p['positions'].split(',')) for p in players}
+    placed={};used=set();budget=node_limit
+    def search(pending):
+        nonlocal budget
+        if not pending:return True
+        budget-=1
+        if budget<0:return False
+        options=[];chosen=None
+        for g in pending:
+            eligible=[(slot,p) for slot,pos in enumerate(positions) if slot not in placed for p in g['playerIDs'] if (not unique or p not in used) and pos in profiles[p]]
+            if not eligible:return False
+            if chosen is None or len(eligible)<len(options):chosen=g;options=eligible
+        for slot,p in options:
+            placed[slot]=p
+            if unique:used.add(p)
+            if search([g for g in pending if g['id']!=chosen['id']]):return True
+            del placed[slot]
+            if unique:used.remove(p)
+            if budget<0:return False
+        return False
+    return search(groups)
 
 def compile_daily(snapshot,day,zone):
     archive=Archive(snapshot);main=archive.text(archive.main())
@@ -220,8 +247,19 @@ def compile_daily(snapshot,day,zone):
     unique={json.dumps(f,sort_keys=True):f for _,f in formations}
     if len(unique)!=1:raise ValueError('Formation tables changed')
     forms=next(iter(unique.values()))
+    formation_url=archive.imported(archive.mode('countries'),'ue')
+    if one_table(archive.text(formation_url),{'name','players'})!=forms:raise ValueError('XI formation binding changed')
+    if selector_digest(archive.text(formation_url))!=contracts['supportSelectors'].get('xiFormations'):raise ValueError('XI formation support contract changed')
+    if len({f['name'] for f in forms})!=5 or any(len(f['players'])!=11 or any(p['position'] not in XI_POSITIONS or p['player'] is not None for p in f['players']) for f in forms):raise ValueError('Invalid XI formations')
+    def normalized_name(row):
+        value=' '.join(filter(None,[row.get('firstName'),row.get('lastName')])).strip().casefold()
+        return ''.join(c for c in unicodedata.normalize('NFD',value) if not unicodedata.combining(c))
+    general_names={}
+    for p in general:general_names.setdefault(normalized_name(p),[]).append(p)
     for name,salt,index in [('countries','/c1fdE',1),('clubs','/CA',1),('retro','osaIS3',1),('legends','ofADI',0),('america','/CA',3)]:
         url,text=module(name,['+"'+salt+'"','.slice(0,11)'])
+        formation_alias={'countries':'ue','clubs':'de','retro':'u1','legends':'ue','america':'mi'}[name]
+        if archive.import_symbol(url,formation_alias)!=('f',formation_url):raise ValueError('XI formation namespace changed: '+name)
         if name=='countries':
             candidates=[]
             for dep in archive.dependencies(url):
@@ -230,14 +268,64 @@ def compile_daily(snapshot,day,zone):
                 if len(table)>=11 and table[0].get("id")==6 and table[0].get("name")=="England":candidates.append(table)
             if len(candidates)!=1:raise ValueError('Nations table changed')
             groups=candidates[0]
+            group_url=archive.imported(url,'z')
+            if one_table(archive.text(group_url),{'id','name','logo'})!=groups or selector_digest(archive.text(group_url))!=contracts['supportSelectors'].get('xiCountries'):raise ValueError('XI country support contract changed')
         elif name=='retro':
-            groups=archive.roles['classicSquads'];seen=set();groups=[g for g in groups if not (g['clubID'] in seen or seen.add(g['clubID']))]
+            groups=archive.roles['classicSquads'];group_url=url
             if 'e===m.findIndex(c=>c.clubID===n.clubID)' not in text:raise ValueError('Retro distinct-club selector changed')
-        else:groups=one_table(text,{'id','name','logo','players'} if name=='clubs' else {'id','name','logo'})
+        else:groups=one_table(text,{'id','name','logo','players'} if name=='clubs' else {'id','name','logo'});group_url=url
         seed=str(ordinal)+salt
         # Formation index and identical salt occur in the reviewed setup selector.
         if not re.search(re.escape('+"'+salt+'")['+str(index)+']'),text):raise ValueError('Formation index changed: '+name)
-        add(name,url,dict(groups=shuffle(groups,seed)[:11],formation=shuffle(forms,seed)[index]),'day-of-year salted seeded shuffle')
+        if name=='america':player_url=url
+        else:
+            alias,export={'countries':('O','p'),'clubs':('G','f'),'retro':('v1','p'),'legends':('F','p')}[name]
+            binding,player_url=archive.import_symbol(url,alias)
+            if binding!=export:raise ValueError('XI player export changed: '+name)
+            support_key={'countries':'xiNationPlayers','clubs':'xiClubPlayers','retro':'xiClassicPlayers','legends':'xiClassicPlayers'}[name]
+            if selector_digest(archive.text(player_url))!=contracts['supportSelectors'].get(support_key):raise ValueError('XI player support contract changed: '+name)
+        fields={'countries':{'birthday','clubID','countryID','firstName','id','lastName','nickname','ovr','positions'},'clubs':{'clubID','firstName','id','lastName','nickname','positions'},'retro':{'active','clubID','firstName','id','lastName','nickname','positions'},'legends':{'active','clubID','firstName','id','lastName','nickname','positions'},'america':{'clubID','firstName','id','lastName','positions'}}[name]
+        players=archive.rows(fields,player_url)
+        if len({p['id'] for p in players})!=len(players) or len({g['id'] for g in groups})!=len(groups):raise ValueError('Duplicate XI identities: '+name)
+        valid=[];excluded=[]
+        for p in players:
+            codes=[v.strip() for v in p.get('positions','').split(',') if v.strip()]
+            if not codes or not set(codes)<=XI_POSITIONS:excluded.append(p['id'])
+            else:valid.append(p)
+        portraits={}
+        own_names={}
+        for p in players:own_names.setdefault(normalized_name(p),[]).append(p)
+        for p in players:
+            key=normalized_name(p);matches=general_names.get(key,[])
+            if key and len(own_names[key])==1 and len(matches)==1 and matches[0].get('image'):portraits[str(p['id'])]=matches[0]['id']
+        normal=groups
+        if name=='retro':
+            seen=set();normal=[g for g in groups if not (g['clubID'] in seen or seen.add(g['clubID']))]
+        formation=shuffle(forms,seed)[index]
+        boards=[]
+        for level in ['normal','easy']:
+            pool=normal;level_seed=seed
+            if level=='easy' and name!='legends':
+                ids={'countries':[0,2,3,4,6,7,8,9,10,11,12,14],'clubs':[1,2,3,5,6,7,13,14,16,22,23,24,28,29,31,36],'america':[1,2,3,5,6,7,13,14,16,22,23,24,28,29,31,36],'retro':[12,13,16,19,63,23,70,17,24,5,27,78,34,38,43,48,81,1]}[name]
+                if '['+','.join(map(str,ids))+']' not in text:raise ValueError('XI Easy filter changed: '+name)
+                pool=[g for g in groups if g['id'] in ids]
+                if name=='retro':
+                    seen=set();pool=[g for g in pool if not (g['clubID'] in seen or seen.add(g['clubID']))]
+                if name=='countries':level_seed=str(ordinal)+'/dE'
+            chosen=shuffle(pool,level_seed)[:11];members=[]
+            for g in chosen:
+                if name in ['clubs','retro']:
+                    raw=csv(g['players'])
+                    if len(raw)!=len(set(raw)) or not set(raw)<={p['id'] for p in players}:raise ValueError('Missing XI membership: '+name)
+                    ids=[i for i in raw if i not in excluded]
+                else:
+                    field='countryID' if name=='countries' else 'clubID'
+                    ids=[p['id'] for p in valid if p.get(field)==g['id'] and (name!='legends' or level=='easy' or p.get('active')!='yes')]
+                members.append(dict(id=g['id'],playerIDs=ids))
+            if len(chosen)!=11 or not xi_solution(members,valid,formation,unique=name=='retro'):raise ValueError('Unplayable exact daily XI: '+name+' '+level)
+            boards.append(dict(level=level,groups=chosen,memberships=members))
+        catalog=dict(boardDate=day.isoformat(),playerSourceURL=player_url,groupSourceURL=group_url,groups=groups,formationSourceURL=formation_url,formations=forms,portraitPlayerIDs=portraits,excludedPositionPlayerIDs=excluded,uniquePlayers=name=='retro',timerSeconds=[0,40,60,90])
+        add(name,url,dict(groups=boards[0]['groups'],formation=formation,boards=boards,catalog=catalog),'day-of-year salted seeded shuffle')
     # Goltexto shuffles the first 366 eligible profiles with a constant seed.
     url,text=module('goltexto',['typeof a.clubID=="number"&&a.birthday).slice(0,366),"today")[x()]'])
     rows=archive.rows({'birthday','clubID','countryID','firstName','id','lastName','nickname','ovr','positions'},archive.imported(url,'L'))
@@ -265,7 +353,6 @@ def compile_daily(snapshot,day,zone):
         if len(pairs)!=len(result) or len(all_ids)!=len(set(all_ids)):raise ValueError('Ambiguous Goltexto grouping')
         return result
     if archive.imported(url,'na')!=club_url:raise ValueError('Goltexto club binding changed')
-    import unicodedata
     def normalized_full(player):
         first=player.get('firstName','').strip();last=player.get('lastName','').strip()
         if not first or not last:return ''

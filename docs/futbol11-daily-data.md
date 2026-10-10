@@ -10,6 +10,8 @@ The common source date helper rounds elapsed days since local December 31. Pyram
 
 Countries, Clubs, Retro, Legends and America use their own salts and formation indexes. Retro keeps the first squad per distinct club before shuffling, matching the daily source. Grid combines explicit bingo and grid memberships and follows the bounded source fallback search. Connections reproduces category exclusion and selected-player exclusion. Bingo and Bingo Retro provide dated category boards, while player offers are intentionally random. Impostor's hard-mode extra positives are retained separately. Grid includes Easy, Normal, Hard and Legend boards with the source category pools. Connections includes Easy and Normal boards; Hard uses the Normal board with five mistakes. Impostor includes Normal and One by One using its explicit positive, extra-positive and impostor lists.
 
+All five XI selections now package Normal/Easy boards, bound player and formation catalogs, exact positional memberships, unique-name portrait crosswalks, excluded unsupported position records and timer choices. Support program changes and unplayable exact draws reject publication. Native XI daily adapters remain pending. See [Daily XI source contract](daily-xi.md).
+
 ## Refresh and publication
 
 Run:

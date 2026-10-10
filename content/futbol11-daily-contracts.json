@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "reviewedAt": "2026-10-09",
-  "scope": "Reviewed default daily selectors. A changed program requires review; static data and module filename changes are allowed.",
+  "reviewedAt": "2026-10-10",
+  "scope": "Reviewed daily selectors and bound support programs. A changed program requires review; static data and module filename changes are allowed.",
   "selectors": {
     "countries": "6d93c977d382329a7655b82eeb9d38b7038d3d7e6d4cf1924245cebef0cac8b1",
     "clubs": "84b8c56b7312584abe80d01cb3c587db61ff206330d6149c828c66d0dd6bd1d9",
@@ -25,6 +25,11 @@
   },
   "supportSelectors": {
     "clubCatalog": "1938b2da79f64a4669718ea5a3f82a6435a226c507bfa4176fb4c676ea17fd98",
-    "wordleDictionary": "a4b50233f4cfd3cd5b7fa5d3b8d02eadc93565b9fa6d6ac04ec733071d7fa2d4"
+    "wordleDictionary": "a4b50233f4cfd3cd5b7fa5d3b8d02eadc93565b9fa6d6ac04ec733071d7fa2d4",
+    "xiFormations": "b447d7a0cac066e7a37e93ca946f2cf271f2136deef5d5432ebb47d08e6f2dd4",
+    "xiCountries": "4c6984cb866d8e6b9242c17e0f185ac6d3b12b1ef008ccdaf8abccdc5bde88d5",
+    "xiNationPlayers": "a60cfc5075b2027d441676ac96b69c4712086adbd14187b7b2b780440cdbc739",
+    "xiClubPlayers": "52f34b4921fd50950e31eb39c826ced45c02717d8005384bd7b330fea0f3c12b",
+    "xiClassicPlayers": "a60cfc5075b2027d441676ac96b69c4712086adbd14187b7b2b780440cdbc739"
   }
 }

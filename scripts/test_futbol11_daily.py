@@ -2,12 +2,70 @@ import json,subprocess,tempfile,unittest
 from datetime import date
 from pathlib import Path
 from unittest.mock import patch
-from futbol11_daily import compile_daily,day_indexes,shuffle,publish,selector_digest,squad_shuffle
+from futbol11_daily import compile_daily,day_indexes,shuffle,publish,selector_digest,squad_shuffle,xi_solution
 from futbol11_archive import Archive
 ROOT=Path(__file__).resolve().parents[1]
 SNAPSHOT=ROOT/'ref/futbol11-fixtures/current-2026-10-09/snapshot.json'
 
 class DailyTests(unittest.TestCase):
+    def test_xi_both_levels_match_independent_data_only_reference(self):
+        packet=compile_daily(SNAPSHOT,date(2026,10,10),'America/Mexico_City')
+        xi=[g for g in packet['games'] if g['id'] in ['countries','clubs','retro','legends','america']]
+        js="""const input=JSON.parse(require('fs').readFileSync(0,'utf8'));
+        function mix(a,seed){let v=2166136261;for(let i=0;i<seed.length;i++){v^=seed.charCodeAt(i);v+=(v<<1)+(v<<4)+(v<<7)+(v<<8)+(v<<24);}let out=[...a];for(let i=out.length-1;i>0;i--){v+=v<<13;v^=v>>>7;v+=v<<3;v^=v>>>17;v+=v<<5;let j=Math.floor((v>>>0)/4294967296*(i+1));[out[i],out[j]]=[out[j],out[i]];}return out;}
+        const codes=new Set(['GK','LB','CB','RB','LWB','RWB','CDM','CM','CAM','LM','RM','LW','RW','ST','CF']);
+        const config={countries:['/c1fdE',1,[0,2,3,4,6,7,8,9,10,11,12,14]],clubs:['/CA',1,[1,2,3,5,6,7,13,14,16,22,23,24,28,29,31,36]],retro:['osaIS3',1,[12,13,16,19,63,23,70,17,24,5,27,78,34,38,43,48,81,1]],legends:['ofADI',0,[]],america:['/CA',3,[1,2,3,5,6,7,13,14,16,22,23,24,28,29,31,36]]};
+        const result=input.games.map(g=>{let c=g.selection.catalog,[salt,index,easy]=config[g.id],players=input.datasets.find(t=>t.sourceURL===c.playerSourceURL).data;
+          let valid=players.filter(p=>(p.positions||'').split(',').map(x=>x.trim()).filter(Boolean).length&&(p.positions||'').split(',').map(x=>x.trim()).filter(Boolean).every(x=>codes.has(x)));
+          let boards=['normal','easy'].map(level=>{let pool=c.groups,seed='283'+salt;if(level==='easy'&&g.id!=='legends'){pool=pool.filter(x=>easy.includes(x.id));if(g.id==='countries')seed='283/dE';}if(g.id==='retro')pool=pool.filter((x,i,a)=>i===a.findIndex(y=>x.clubID===y.clubID));let groups=mix(pool,seed).slice(0,11);
+            let memberships=groups.map(x=>({id:x.id,playerIDs:['clubs','retro'].includes(g.id)?x.players.split(',').map(Number).filter(id=>valid.some(p=>p.id===id)):valid.filter(p=>p[g.id==='countries'?'countryID':'clubID']===x.id&&(g.id!=='legends'||level==='easy'||p.active!=='yes')).map(p=>p.id)}));return {level,groups,memberships};});
+          return {id:g.id,formation:mix(c.formations,'283'+salt)[index],boards,excluded:players.filter(p=>!valid.includes(p)).map(p=>p.id)};});console.log(JSON.stringify(result));"""
+        oracle=json.loads(subprocess.check_output(['node','-e',js],input=json.dumps(dict(games=xi,datasets=packet['datasets'])),text=True))
+        for g,reference in zip(xi,oracle):
+            s=g['selection'];c=s['catalog']
+            self.assertEqual(s['boards'],reference['boards']);self.assertEqual(s['formation'],reference['formation'])
+            self.assertEqual(s['groups'],s['boards'][0]['groups']);self.assertEqual(c['excludedPositionPlayerIDs'],reference['excluded'])
+            self.assertEqual(c['uniquePlayers'],g['id']=='retro');self.assertEqual(c['timerSeconds'],[0,40,60,90])
+        legends=next(g for g in xi if g['id']=='legends')['selection']['boards']
+        self.assertEqual(legends[0]['groups'],legends[1]['groups'])
+        self.assertTrue(any(len(a['playerIDs'])<len(b['playerIDs']) for a,b in zip(legends[0]['memberships'],legends[1]['memberships'])))
+
+    def test_xi_portraits_use_unique_full_names_never_numeric_id_joins(self):
+        import unicodedata
+        from collections import Counter
+        def name(p):return ''.join(c for c in unicodedata.normalize('NFD',' '.join(filter(None,[p.get('firstName'),p.get('lastName')])).strip().casefold()) if not unicodedata.combining(c))
+        packet=compile_daily(SNAPSHOT,date(2026,10,10),'America/Mexico_City')
+        general=next(t['data'] for t in packet['datasets'] if set(t['fields'])=={'bingo','countryID','firstName','grid','id','image','lastName','nickname'})
+        general_counts=Counter(map(name,general));general_ids={p['id']:p for p in general}
+        for g in packet['games']:
+            if g['id'] not in ['countries','clubs','retro','legends','america']:continue
+            c=g['selection']['catalog'];players=next(t['data'] for t in packet['datasets'] if t['sourceURL']==c['playerSourceURL'])
+            own_counts=Counter(map(name,players));own_ids={p['id']:p for p in players}
+            for identifier,portrait in c['portraitPlayerIDs'].items():
+                player=own_ids[int(identifier)];photo=general_ids[portrait]
+                self.assertTrue(name(player));self.assertEqual(name(player),name(photo));self.assertTrue(photo['image'])
+                self.assertEqual(own_counts[name(player)],1);self.assertEqual(general_counts[name(player)],1)
+        countries=next(g for g in packet['games'] if g['id']=='countries')['selection']['catalog']
+        self.assertNotEqual(countries['portraitPlayerIDs'].get('1'),1)
+
+    def test_xi_bound_support_program_drift_is_rejected(self):
+        archive=Archive(SNAPSHOT);original=Archive.text
+        targets=[archive.imported(archive.mode('countries'),a) for a in ['ue','z','O']]+[archive.imported(archive.mode('clubs'),'G'),archive.imported(archive.mode('retro'),'v1')]
+        for target in targets:
+            with self.subTest(target=target),patch.object(Archive,'text',lambda a,u:original(a,u)+(';fakeMutation();' if u==target else '')):
+                with self.assertRaisesRegex(ValueError,'support contract changed'):compile_daily(SNAPSHOT,date(2026,10,10),'America/Mexico_City')
+        target=archive.mode('clubs')
+        binding=Archive.import_symbol;wrong_url=archive.imported(archive.mode('countries'),'O')
+        with patch.object(Archive,'import_symbol',lambda a,u,l:('p',wrong_url) if u==target and l=='G' else binding(a,u,l)):
+            with self.assertRaisesRegex(ValueError,'XI player export changed'):compile_daily(SNAPSHOT,date(2026,10,10),'America/Mexico_City')
+
+    def test_xi_playability_checks_positions_and_retro_uniqueness(self):
+        groups=[dict(id=i,playerIDs=[1]) for i in range(11)]
+        formation=dict(players=[dict(position='CM') for _ in range(11)])
+        players=[dict(id=1,positions='CM')]
+        self.assertTrue(xi_solution(groups,players,formation))
+        self.assertFalse(xi_solution(groups,players,formation,unique=True))
+        self.assertFalse(xi_solution(groups,[dict(id=1,positions='GK')],formation))
     def test_contract_allows_static_data_and_filename_changes_but_rejects_code_drift(self):
         source='import{p as q}from"./a.js";const a=JSON.parse(`[{"id":1}]`);const b=[{id:1,name:"A"}];function choose(){return a[day()];}'
         updated=source.replace('./a.js','./new-hash.js').replace('"id":1','"id":2').replace('name:"A"','name:"B"')
