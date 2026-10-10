@@ -106,9 +106,9 @@
       "title": "Bingo Retro",
       "sourceURL": "https://futbol11.com/futbol11-bingo-retro",
       "mechanic": "Bingo with retired legends.",
-      "requiredData": "retirement flags and historical membership",
-      "status": "planned",
-      "notes": ""
+      "requiredData": "separate source legend catalog, explicit historical memberships and daily category recipe",
+      "status": "native",
+      "notes": "Native verified daily 3×4 board with 251 source-listed legends, random offers, skip assistance after 5–12 skips, repeated players permitted, untimed/60s/90s options, saved deadlines and one-time completed-win credit."
     },
     {
       "id": "retro",

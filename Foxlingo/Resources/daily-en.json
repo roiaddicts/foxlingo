@@ -4,10 +4,10 @@
   "timeZone": "America/Mexico_City",
   "dayOfYear": 282,
   "elapsedDayFloor": 282,
-  "fetchedAt": "2026-10-10T00:09:52.478311+00:00",
-  "compiledAt": "2026-10-10T00:09:53.291743+00:00",
+  "fetchedAt": "2026-10-10T00:22:25.313992+00:00",
+  "compiledAt": "2026-10-10T00:22:26.291173+00:00",
   "selectorContractsSHA256": "a65139d4c6efebca4955265210ef88b45d7a93257a54bf7b38bb17bea9d6e769",
-  "sourceSnapshotSHA256": "d84a0f8c1f11d96a49b3ace8df9e45760ebda365f0cb6e00f5c6c43261d82d55",
+  "sourceSnapshotSHA256": "0853e75dd75c196032b1548e997a3c3f2605240ebc1bc72a2d53683f9f0ce2fa",
   "sourceURL": "https://futbol11.com/",
   "datasets": [
     {
@@ -150887,7 +150887,361 @@
             "logo": "/media/shirts/101.png",
             "type": "club2"
           }
-        ]
+        ],
+        "catalog": {
+          "playerSourceURL": "https://futbol11.com/_nuxt/CEIZMPba.js",
+          "groups": [
+            {
+              "id": 1,
+              "name": "Arsenal",
+              "logo": "/media/classics/3.png",
+              "type": "club"
+            },
+            {
+              "id": 2,
+              "name": "Man City",
+              "logo": "/media/classics/73.png",
+              "type": "club"
+            },
+            {
+              "id": 3,
+              "name": "Man Utd",
+              "logo": "/media/classics/28.png",
+              "type": "club"
+            },
+            {
+              "id": 4,
+              "name": "Newcastle",
+              "logo": "/media/classics/82.png",
+              "type": "club2"
+            },
+            {
+              "id": 5,
+              "name": "Tottenham",
+              "logo": "/media/classics/42.png",
+              "type": "club"
+            },
+            {
+              "id": 6,
+              "name": "Liverpool",
+              "logo": "/media/classics/22.png",
+              "type": "club"
+            },
+            {
+              "id": 7,
+              "name": "Chelsea",
+              "logo": "/media/classics/53.png",
+              "type": "club"
+            },
+            {
+              "id": 8,
+              "name": "Barcelona",
+              "logo": "/media/classics/10.png",
+              "type": "club"
+            },
+            {
+              "id": 9,
+              "name": "Real Madrid",
+              "logo": "/media/classics/35.png",
+              "type": "club"
+            },
+            {
+              "id": 10,
+              "name": "Atl Madrid",
+              "logo": "/media/classics/8.png",
+              "type": "club"
+            },
+            {
+              "id": 11,
+              "name": "Inter",
+              "logo": "/media/classics/18.png",
+              "type": "club"
+            },
+            {
+              "id": 12,
+              "name": "AC Milan",
+              "logo": "/media/classics/77.png",
+              "type": "club"
+            },
+            {
+              "id": 13,
+              "name": "Juventus",
+              "logo": "/media/classics/20.png",
+              "type": "club"
+            },
+            {
+              "id": 17,
+              "name": "PSG",
+              "logo": "/media/classics/46.png",
+              "type": "club"
+            },
+            {
+              "id": 18,
+              "name": "Monaco",
+              "logo": "/media/classics/32.png",
+              "type": "club2"
+            },
+            {
+              "id": 19,
+              "name": "Porto",
+              "logo": "/media/classics/33.png",
+              "type": "club2"
+            },
+            {
+              "id": 20,
+              "name": "Benfica",
+              "logo": "/media/classics/50.png",
+              "type": "club2"
+            },
+            {
+              "id": 21,
+              "name": "Ajax",
+              "logo": "/media/classics/1.png",
+              "type": "club"
+            },
+            {
+              "id": 22,
+              "name": "Roma",
+              "logo": "/media/classics/89.png",
+              "type": "club"
+            },
+            {
+              "id": 23,
+              "name": "Germany",
+              "logo": "/media/flags/2.webp",
+              "type": "country"
+            },
+            {
+              "id": 24,
+              "name": "Brazil",
+              "logo": "/media/flags/7.webp",
+              "type": "country"
+            },
+            {
+              "id": 25,
+              "name": "Italy",
+              "logo": "/media/flags/11.webp",
+              "type": "country"
+            },
+            {
+              "id": 26,
+              "name": "France",
+              "logo": "/media/flags/10.webp",
+              "type": "country"
+            },
+            {
+              "id": 27,
+              "name": "Netherlands",
+              "logo": "/media/flags/9.webp",
+              "type": "country"
+            },
+            {
+              "id": 28,
+              "name": "Portugal",
+              "logo": "/media/flags/4.webp",
+              "type": "country"
+            },
+            {
+              "id": 29,
+              "name": "Argentina",
+              "logo": "/media/flags/1.webp",
+              "type": "country"
+            },
+            {
+              "id": 30,
+              "name": "Spain",
+              "logo": "/media/flags/8.webp",
+              "type": "country"
+            },
+            {
+              "id": 31,
+              "name": "Belgium",
+              "logo": "/media/flags/3.webp",
+              "type": "country"
+            },
+            {
+              "id": 32,
+              "name": "England",
+              "logo": "/media/flags/6.webp",
+              "type": "country"
+            },
+            {
+              "id": 33,
+              "name": "Croatia",
+              "logo": "/media/flags/14.webp",
+              "type": "country"
+            },
+            {
+              "id": 34,
+              "name": "Europe",
+              "logo": "/media/groups/europe3.png",
+              "type": "continent"
+            },
+            {
+              "id": 35,
+              "name": "Africa",
+              "logo": "/media/groups/africa2.png",
+              "type": "continent"
+            },
+            {
+              "id": 36,
+              "name": "South America",
+              "logo": "/media/groups/southamerica2.png",
+              "type": "continent"
+            },
+            {
+              "id": 37,
+              "name": "Ballon d'Or",
+              "logo": "/media/groups/bdir3.png",
+              "type": "award"
+            },
+            {
+              "id": 38,
+              "name": "World Cup",
+              "logo": "/media/groups/worldcup2.png",
+              "type": "award"
+            },
+            {
+              "id": 46,
+              "name": "Napoli",
+              "logo": "/media/classics/80.png",
+              "type": "club"
+            },
+            {
+              "id": 48,
+              "name": "Lazio",
+              "logo": "/media/classics/65.png",
+              "type": "club2"
+            },
+            {
+              "id": 49,
+              "name": "Parma",
+              "logo": "/media/shirts/140.png",
+              "type": "club2"
+            },
+            {
+              "id": 50,
+              "name": "Sevilla",
+              "logo": "/media/classics/40.png",
+              "type": "club2"
+            },
+            {
+              "id": 51,
+              "name": "Valencia",
+              "logo": "/media/classics/44.png",
+              "type": "club2"
+            },
+            {
+              "id": 52,
+              "name": "PSV",
+              "logo": "/media/classics/87.png",
+              "type": "club2"
+            },
+            {
+              "id": 53,
+              "name": "Feyenoord",
+              "logo": "/media/shirts/101.png",
+              "type": "club2"
+            },
+            {
+              "id": 54,
+              "name": "Rangers",
+              "logo": "/media/shirts/84.png",
+              "type": "club2"
+            },
+            {
+              "id": 56,
+              "name": "Galatasaray",
+              "logo": "/media/classics/58.png",
+              "type": "club2"
+            },
+            {
+              "id": 57,
+              "name": "Fenerbahce",
+              "logo": "/media/classics/57.png",
+              "type": "club2"
+            },
+            {
+              "id": 58,
+              "name": "Boca Juniors",
+              "logo": "/media/shirts/124.png",
+              "type": "club2"
+            },
+            {
+              "id": 59,
+              "name": "River Plate",
+              "logo": "/media/shirts/126.png",
+              "type": "club2"
+            },
+            {
+              "id": 60,
+              "name": "LA Galaxy",
+              "logo": "/media/shirts/128.png",
+              "type": "club2"
+            },
+            {
+              "id": 63,
+              "name": "Marseille",
+              "logo": "/media/classics/75.png",
+              "type": "club"
+            },
+            {
+              "id": 64,
+              "name": "Sporting CP",
+              "logo": "/media/classics/93.png",
+              "type": "club2"
+            },
+            {
+              "id": 65,
+              "name": "100+ PL Goals",
+              "logo": "/media/groups/ENG100.png",
+              "type": "other"
+            },
+            {
+              "id": 66,
+              "name": "100+ La Liga Goals",
+              "logo": "/media/groups/ESP100.png",
+              "type": "other"
+            },
+            {
+              "id": 67,
+              "name": "100+ Serie A Goals",
+              "logo": "/media/groups/ITA100.png",
+              "type": "other"
+            },
+            {
+              "id": 68,
+              "name": "1000+ apps",
+              "logo": "https://i.ibb.co/gmJxMYQ/1000-OFICILA.png",
+              "type": "other"
+            },
+            {
+              "id": 69,
+              "name": "30+ CL goals",
+              "logo": "/media/groups/UCL30.png",
+              "type": "other"
+            },
+            {
+              "id": 70,
+              "name": "15+ World Cup apps",
+              "logo": "https://i.ibb.co/GvMkL3s/MATCHES.png",
+              "type": "other"
+            },
+            {
+              "id": 71,
+              "name": "100+ CL apps",
+              "logo": "https://i.ibb.co/K7cQg7w/4DDS54.png",
+              "type": "other"
+            },
+            {
+              "id": 72,
+              "name": "Treble Winner",
+              "logo": "/media/groups/treble3.png",
+              "type": "award"
+            }
+          ],
+          "boardDate": "2026-10-09"
+        }
       },
       "sourceModule": "https://futbol11.com/_nuxt/CEIZMPba.js",
       "sourceModuleSHA256": "7569f19d8fd5e40d69b338947f547e606cc2436ba49cb8dddac834e67a075c7b",

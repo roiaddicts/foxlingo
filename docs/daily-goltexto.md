@@ -12,4 +12,4 @@ These attributes describe the source game catalog, not verified current club aff
 
 Run `python3 -m unittest discover -s scripts -p 'test_*.py'` and `swift test`. For simulator verification, run `FlowTests/testDailyGoltextoScoresBreakdownBudgetResumeAndWin` in the Xcode UI test target.
 
-Coverage is now 18 native modes and eight packaged daily consumers. Bingo Retro and eleven daily adapters remain. Public hosting is still unconfigured; refresh publication, HTTPS pointer import and an offline bundle are available.
+Coverage is now 19 native modes and nine packaged daily consumers. Ten daily adapters remain. Public hosting is still unconfigured; refresh publication, HTTPS pointer import and an offline bundle are available.

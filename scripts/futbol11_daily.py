@@ -294,7 +294,13 @@ def compile_daily(snapshot,day,zone):
             if not re.search(r'type=="'+types.split('|')[0]+r'"[^;]*?\.slice\(0,'+str(count)+r'\)',text):raise ValueError('Bingo type recipe changed')
             selected+=shuffle([g for g in groups if g['type'] in types.split('|')],stamp)[:count]
         if len(selected)!=12:raise ValueError('Incomplete bingo board')
-        add(name,url,dict(groups=shuffle(selected,stamp)),'MM/DD/YYYY category-specific seeded shuffle; random player offers',True)
+        selection=dict(groups=shuffle(selected,stamp))
+        if name=='bingo-retro':
+            legends=archive.rows({'id','name','image','groups'},url)
+            if len({p['id'] for p in legends})!=len(legends) or any(not isinstance(p['groups'],list) or not p['groups'] or any(not isinstance(i,int) for i in p['groups']) for p in legends):raise ValueError('Invalid Bingo Retro player memberships')
+            if any(not any(g['id'] in p['groups'] for p in legends) for g in selected):raise ValueError('Unplayable Bingo Retro category')
+            selection['catalog']=dict(playerSourceURL=url,groups=groups,boardDate=day.isoformat())
+        add(name,url,selection,'MM/DD/YYYY category-specific seeded shuffle; random player offers',True)
     # Grid creates memberships from each player's explicit grid field.
     url,text=module('grid',['let a=d','s++','gameLevel:"easy"','r.footballers.some(N=>c.footballers.includes(N))','s.bingo&&s.bingo.split(",").map(Number).includes(a.id)||s.grid&&s.grid.split(",").map(Number).includes(a.id)'])
     groups=archive.rows({'id','logo','name','type'});players=archive.roles['gamePlayers']

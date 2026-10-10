@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D9FDD824B7F6F7BBF15EF7DE /* DailyBingoRetroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58618AD051A7D236FDB5901E /* DailyBingoRetroView.swift */; };
+		FC7B3E4263F104317F70A2C9 /* DailyBingoRetro.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE530EDFE6389DB565E09CC0 /* DailyBingoRetro.swift */; };
 		8BD315532B4AC9D7D08D4571 /* DailyGoltextoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F803F2AD5E5A479A23CC47D /* DailyGoltextoView.swift */; };
 		9D58D8857C7BD87EF7244A3D /* DailyGoltexto.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19C6452921CE3D3E0F27F07 /* DailyGoltexto.swift */; };
 		29CF66FEF124865782BD4AAE /* DailyGuessWhoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B47AEAC721AC629C372BF12 /* DailyGuessWhoView.swift */; };
@@ -88,6 +90,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		58618AD051A7D236FDB5901E /* DailyBingoRetroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyBingoRetroView.swift; sourceTree = "<group>"; };
+		DE530EDFE6389DB565E09CC0 /* DailyBingoRetro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyBingoRetro.swift; sourceTree = "<group>"; };
 		3F803F2AD5E5A479A23CC47D /* DailyGoltextoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyGoltextoView.swift; sourceTree = "<group>"; };
 		F19C6452921CE3D3E0F27F07 /* DailyGoltexto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyGoltexto.swift; sourceTree = "<group>"; };
 		0B47AEAC721AC629C372BF12 /* DailyGuessWhoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyGuessWhoView.swift; sourceTree = "<group>"; };
@@ -192,6 +196,7 @@
 		052BE11339FA119C1A8E6AE4 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				DE530EDFE6389DB565E09CC0 /* DailyBingoRetro.swift */,
 				040EE940F8B19FB06AC7B14F /* Content.swift */,
 				585971EEDF1CEED7EEC0823B /* Games.swift */,
 				44549E9139E3443B66DB2E34 /* Learning.swift */,
@@ -285,6 +290,7 @@
 		F1FB063382B9981F813328A4 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				58618AD051A7D236FDB5901E /* DailyBingoRetroView.swift */,
 				BC35574D37589DA87E7C5A5D /* AlbumView.swift */,
 				BA791A790FCB14403A8DBC23 /* AppModel.swift */,
 				FD1C7ED3212E0B5D84B7C261 /* ClubLibrary.swift */,
@@ -433,6 +439,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9FDD824B7F6F7BBF15EF7DE /* DailyBingoRetroView.swift in Sources */,
+				FC7B3E4263F104317F70A2C9 /* DailyBingoRetro.swift in Sources */,
 				46B3BF1D599171185BC5162A /* Content.swift in Sources */,
 				15651C29A41D3C6A0CE3343A /* Games.swift in Sources */,
 				771846DCC4629031AA025373 /* Learning.swift in Sources */,

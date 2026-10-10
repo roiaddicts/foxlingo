@@ -46,6 +46,15 @@ class DailyTests(unittest.TestCase):
         self.assertEqual(len(modes['bingo-retro']['selection']['groups']),12)
         ny=compile_daily(SNAPSHOT,date(2026,10,9),'America/New_York')
         self.assertNotEqual(modes['pyramid']['selection']['record'],next(g for g in ny['games'] if g['id']=='pyramid')['selection']['record'])
+    def test_bingo_retro_catalog_is_bound_and_all_selected_categories_have_source_matches(self):
+        packet=compile_daily(SNAPSHOT,date(2026,10,9),'America/Mexico_City')
+        game=next(g for g in packet['games'] if g['id']=='bingo-retro');selection=game['selection'];catalog=selection['catalog']
+        self.assertEqual(catalog['boardDate'],'2026-10-09');self.assertEqual(catalog['playerSourceURL'],game['sourceModule']);self.assertEqual(len(catalog['groups']),58)
+        players=next(d['data'] for d in packet['datasets'] if d['sourceURL']==catalog['playerSourceURL'] and set(d['fields'])=={'id','name','image','groups'})
+        self.assertEqual(len(players),251);self.assertEqual([g['id'] for g in selection['groups']],[2,32,18,6,11,30,23,36,65,72,3,53])
+        for group in selection['groups']:
+            self.assertIn(group,catalog['groups']);self.assertTrue(any(group['id'] in p['groups'] for p in players))
+        ibra=next(p for p in players if p['id']==1);self.assertEqual(ibra['name'],'Ibrahimovic');self.assertNotIn(2,ibra['groups']);self.assertIn(3,ibra['groups'])
     def test_reveal_modes_use_general_identity_and_reviewed_visual_clue_order(self):
         first=compile_daily(SNAPSHOT,date(2026,10,9),'America/Mexico_City')
         modes={g['id']:g for g in first['games']};players=Archive(SNAPSHOT).roles['gamePlayers']

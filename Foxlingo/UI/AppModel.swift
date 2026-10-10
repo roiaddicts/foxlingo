@@ -88,6 +88,16 @@ import SwiftUI
             dailyCache=cache
             guard let url=Bundle.main.url(forResource:"daily-en",withExtension:"json") else {throw ContentError.invalid("Daily challenges are missing.")}
             daily=try cache.load(bundled:Data(contentsOf:url))
+            #if DEBUG
+            let bingoArgs=ProcessInfo.processInfo.arguments
+            if bingoArgs.contains("-ui-testing"),bingoArgs.contains("-stage-test-bingo-retro"),let round=daily?.bingoRetro {
+                var p=BingoRetroProgress(round:round),rng=SystemRandomNumberGenerator()
+                _ = p.start(round:round,timer:0,now:now,rng:&rng)
+                for category in round.categories where category.id != "daily-bingo-retro-group-2" {p.placements[category.id]=category.playerIDs[0]}
+                p.currentPlayerID="daily-bingo-retro-1"
+                try cache.save(p,for:round)
+            }
+            #endif
         } catch {dailyMessage=error.localizedDescription}
         if let pack,let url=Bundle.main.url(forResource:"mystery-en",withExtension:"json"),let data=try? Data(contentsOf:url) {
             mysteries=(try? MysteryDeck.load(data,pack:pack)) ?? []

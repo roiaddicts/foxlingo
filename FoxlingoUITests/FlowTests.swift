@@ -240,6 +240,43 @@ final class FlowTests: XCTestCase {
     func revealClue(_ id: String) -> XCUIElement {
         app.descendants(matching:.any).matching(identifier:"reveal-clue-"+id).firstMatch
     }
+    func testDailyBingoRetroWrongSkipResumeAndWin() {
+        app.launchArguments=["-ui-testing","-reset-test-state","-test-now","1800000000","-stage-test-bingo-retro"];app.launch()
+        tap("choose-XT");app.tabBars.buttons["Games"].tap();tap("game-bingo-retro")
+        XCTAssertTrue(app.staticTexts["bingo-retro-count"].label.contains("11 / 12"))
+        XCTAssertEqual(app.staticTexts["bingo-retro-offer"].label,"Ibrahimovic")
+        tap("bingo-retro-cell-daily-bingo-retro-group-2")
+        XCTAssertTrue(app.staticTexts["bingo-retro-feedback"].label.contains("doesn’t match"))
+        tap("bingo-retro-skip")
+        let offered=app.staticTexts["bingo-retro-offer"].value as? String
+        app.terminate();start(reset:false);app.tabBars.buttons["Games"].tap();tap("game-bingo-retro")
+        XCTAssertEqual(app.staticTexts["bingo-retro-offer"].value as? String,offered)
+        XCTAssertTrue(app.staticTexts["bingo-retro-count"].label.contains("11 / 12"))
+        // Independent source IDs for the remaining Man City category. Within
+        // twelve skips the source help rule guarantees an eligible offer.
+        let city:Set<Int>=[28,31,34,37,64,78,79,81,84,115,117,119,164,167,175,176,177,178,179,180,181,182,208,213,233]
+        for _ in 0..<13 {
+            let id=(app.staticTexts["bingo-retro-offer"].value as? String)?.split(separator:"-").last.flatMap {Int($0)}
+            if let id,city.contains(id) {break}
+            tap("bingo-retro-skip")
+        }
+        tap("bingo-retro-cell-daily-bingo-retro-group-2")
+        XCTAssertEqual(app.staticTexts["bingo-retro-result"].label,"Full house!")
+
+        tap("bingo-retro-cell-daily-bingo-retro-group-2");XCTAssertTrue(app.staticTexts["Source-listed matches"].waitForExistence(timeout:3));app.buttons["Done"].tap()
+        app.terminate();start(reset:false);app.tabBars.buttons["Games"].tap();tap("game-bingo-retro")
+        XCTAssertEqual(app.staticTexts["bingo-retro-result"].label,"Full house!")
+        let shot=XCTAttachment(screenshot:app.screenshot());shot.name="Bingo Retro completed visual board";shot.lifetime = .keepAlways;add(shot)
+    }
+    func testDailyBingoRetroTimerExpiresAcrossRelaunch() {
+        start();tap("choose-XT");app.tabBars.buttons["Games"].tap();tap("game-bingo-retro")
+        app.segmentedControls["bingo-retro-timer"].buttons["60s"].tap();tap("bingo-retro-start")
+        XCTAssertEqual(app.staticTexts["bingo-retro-clock"].label,"60s")
+        let shot=XCTAttachment(screenshot:app.screenshot());shot.name="Bingo Retro timer and legend offer";shot.lifetime = .keepAlways;add(shot)
+        app.terminate();start(reset:false,now:1_800_000_060);app.tabBars.buttons["Games"].tap();tap("game-bingo-retro")
+        XCTAssertEqual(app.staticTexts["bingo-retro-result"].label,"Time’s up.")
+        XCTAssertFalse(app.buttons["bingo-retro-skip"].exists)
+    }
     func testDailyGoltextoScoresBreakdownBudgetResumeAndWin() {
         start();tap("choose-XT");app.tabBars.buttons["Games"].tap();tap("game-goltexto")
         app.segmentedControls["goltexto-limit"].buttons["100"].tap()

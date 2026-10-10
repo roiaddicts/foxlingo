@@ -14,7 +14,7 @@ struct GamesHome: View {
         ScrollView {
             VStack(alignment:.leading,spacing:22) {
                 HStack {VStack(alignment:.leading,spacing:8) {Eyebrow(text:"The training ground");Text("Play with football").font(.largeTitle.bold())};Spacer();Leopard().frame(width:70,height:80)}
-                Text("Different ways to connect the names you know. No timer. Try, learn, and try again.").foregroundStyle(Palette.muted)
+                Text("Different ways to connect the names you know. Try, learn, and try again.").foregroundStyle(Palette.muted)
                 if let content=model.pack {
                     let suggestions=PracticeRecommendations.lessons(pack:content,gaps:model.state.practiceGaps ?? [])
                     if !suggestions.isEmpty {
@@ -29,6 +29,11 @@ struct GamesHome: View {
                     }
                 }
                 if let daily=model.daily {
+                    if let retro=daily.bingoRetro {
+                        NavigationLink {DailyBingoRetroView(pack:daily,round:retro)} label: {
+                            HStack(spacing:16) {EntityArtwork(asset:nil,url:retro.players.first?.imageURL,initials:"⚽",size:58,isPlayer:true,portraitFocus:true);VStack(alignment:.leading,spacing:6) {Text("Bingo Retro").font(.title3.bold());Text("Twelve categories. Football legends.").font(.subheadline).foregroundStyle(Palette.muted)};Spacer();Image(systemName:"chevron.right")}.padding(18).background(.white.opacity(0.8),in:RoundedRectangle(cornerRadius:20))
+                        }.buttonStyle(PressFeedback()).accessibilityIdentifier("game-bingo-retro")
+                    }
                     if let similarity=daily.goltexto {
                         NavigationLink {DailyGoltextoView(pack:daily,round:similarity)} label: {
                             HStack(spacing:16) {Image(systemName:"scope").font(.title2).frame(width:50,height:60).foregroundStyle(Palette.brand);VStack(alignment:.leading,spacing:6) {Text("Goltexto").font(.title3.bold());Text("Find the player by profile similarity.").font(.subheadline).foregroundStyle(Palette.muted)};Spacer();Image(systemName:"chevron.right")}.padding(18).background(.white.opacity(0.8),in:RoundedRectangle(cornerRadius:20))
