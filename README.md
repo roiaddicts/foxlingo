@@ -6,6 +6,8 @@ The catalog covers the **2026/27 Champions League league phase**, **2026/27 Bund
 
 The Games tab also includes nineteen verified daily games: **Top 10**, **Statdle**, **Legacy**, **Link**, **Pyramid**, **SquadSlice**, **Guess the Footballer**, **Goltexto**, **Bingo Retro**, **Football Wordle**, **Grid**, **Bingo**, **Connections**, **Impostor**, **Nations XI**, **Clubs XI**, **Retro XI**, **Legends XI** and **America XI**. Native and daily coverage is **19 of 19 Futbol11 modes**; the daily refresh pipeline extracts all 19. See [game coverage](docs/futbol11-game-coverage.md) and [daily data](docs/futbol11-daily-data.md).
 
+Daily games update from the [live Firebase feed](https://foxlingo-daily.web.app/daily/latest.json) by default and remain playable offline after download. A local Codex job publishes validated updates at 00:15 Mexico City time; the Mac must be available for publication. See [deployment and scheduling](docs/daily-feed-deployment.md).
+
 ## Run on an iPhone simulator
 
 1. Open `Foxlingo.xcodeproj` in Xcode.

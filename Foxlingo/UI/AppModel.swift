@@ -164,7 +164,11 @@ import SwiftUI
     }
     var dailyAddress: String {
         guard let cache=dailyCache else {return ""}
-        return (try? String(contentsOf:cache.directory.appendingPathComponent("feed.txt"),encoding:.utf8)) ?? ""
+        if let saved=try? String(contentsOf:cache.directory.appendingPathComponent("feed.txt"),encoding:.utf8),!saved.trimmingCharacters(in:.whitespacesAndNewlines).isEmpty {return saved}
+        #if DEBUG
+        if ProcessInfo.processInfo.arguments.contains("-ui-testing") {return ""}
+        #endif
+        return DailyChallengeFeed.defaultAddress
     }
     func importDaily(_ data: Data) async throws {
         guard let cache=dailyCache else {throw ContentError.invalid("Daily challenge storage is unavailable.")}

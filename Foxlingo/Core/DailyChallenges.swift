@@ -148,6 +148,9 @@ public struct DailyChallengeCache: Sendable {
     }
     private func progressURL(_ round: DailyTop10) -> URL {directory.appendingPathComponent("top10-"+round.signature+".json")}
 }
+public enum DailyChallengeFeed {
+    public static let defaultAddress = "https://foxlingo-daily.web.app/daily/latest.json"
+}
 public struct DailyChallengePointer: Decodable, Sendable {
     public let file: String
     public let sha256: String
