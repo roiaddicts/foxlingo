@@ -90,7 +90,7 @@
       "mechanic": "Build an XI from eleven different clubs.",
       "requiredData": "club membership, position eligibility",
       "status": "native",
-      "notes": "Archived mode-specific membership and position pools; five formations, saved XI, Undo and assisted connections. Source roster cutoff is unpublished."
+      "notes": "Native daily Normal/Easy XI with exact source formation and offer order, bound catalog memberships and positions, verified portraits or flag/season-shirt fallback, saved undo/assistance/results, optional paused 40/60/90-second timers and one-time completed-win credit. Practice drafting remains separate."
     },
     {
       "id": "legacy",
@@ -117,7 +117,7 @@
       "mechanic": "Build an XI from eleven different historical season squads.",
       "requiredData": "season squads and position eligibility",
       "status": "native",
-      "notes": "Archived mode-specific membership and position pools; five formations, saved XI, Undo and assisted connections. Source roster cutoff is unpublished. One season squad per distinct club."
+      "notes": "Native daily Normal/Easy XI with exact source formation and offer order, bound catalog memberships and positions, verified portraits or flag/season-shirt fallback, saved undo/assistance/results, optional paused 40/60/90-second timers and one-time completed-win credit. Practice drafting remains separate."
     },
     {
       "id": "link",
@@ -144,7 +144,7 @@
       "mechanic": "Build an XI from eleven different countries.",
       "requiredData": "country and position eligibility",
       "status": "native",
-      "notes": "Archived mode-specific membership and position pools; five formations, saved XI, Undo and assisted connections. Source roster cutoff is unpublished."
+      "notes": "Native daily Normal/Easy XI with exact source formation and offer order, bound catalog memberships and positions, verified portraits or flag/season-shirt fallback, saved undo/assistance/results, optional paused 40/60/90-second timers and one-time completed-win credit. Practice drafting remains separate."
     },
     {
       "id": "guess-the-footballer",
@@ -162,7 +162,7 @@
       "mechanic": "Build a nationalities XI using legendary players.",
       "requiredData": "legend pool, country and position eligibility",
       "status": "native",
-      "notes": "Archived mode-specific membership and position pools; five formations, saved XI, Undo and assisted connections. Source roster cutoff is unpublished. Excludes source records marked active; unmarked records are not a live retirement check."
+      "notes": "Native daily Normal/Easy XI with exact source formation and offer order, bound catalog memberships and positions, verified portraits or flag/season-shirt fallback, saved undo/assistance/results, optional paused 40/60/90-second timers and one-time completed-win credit. Practice drafting remains separate."
     },
     {
       "id": "america",
@@ -171,7 +171,7 @@
       "mechanic": "Build an XI from eleven different South American clubs.",
       "requiredData": "regional club membership and position eligibility",
       "status": "native",
-      "notes": "Archived mode-specific membership and position pools; five formations, saved XI, Undo and assisted connections. Source roster cutoff is unpublished."
+      "notes": "Native daily Normal/Easy XI with exact source formation and offer order, bound catalog memberships and positions, verified portraits or flag/season-shirt fallback, saved undo/assistance/results, optional paused 40/60/90-second timers and one-time completed-win credit. Practice drafting remains separate."
     }
   ]
 }

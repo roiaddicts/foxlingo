@@ -12,7 +12,7 @@ struct DailyBingoRetroView:View {
     @State private var inspected:GameCategory?
     @State private var clock=Date()
     private let ticker=Timer.publish(every:0.25,on:.main,in:.common).autoconnect()
-    private var now:Date {ProcessInfo.processInfo.arguments.contains("-ui-testing") ? model.now:clock}
+    private var now:Date {ProcessInfo.processInfo.arguments.contains("-ui-testing") && !ProcessInfo.processInfo.arguments.contains("-test-live-game-clock") ? model.now:Date()}
     private var retro:Bool {round.kind == "bingo-retro"}
     private var prefix:String {retro ? "bingo-retro":"daily-bingo"}
     var body:some View {

@@ -73,15 +73,17 @@ public struct DraftEngine: Sendable {
     public let mode: DraftMode
     public let profiles: [String:DraftProfile]
     public let groups: [String:DraftGroup]
-    public init(pack: DraftPack,mode: DraftMode) {
+    public let allowsRepeatedPlayers: Bool
+    public init(pack: DraftPack,mode: DraftMode,allowsRepeatedPlayers: Bool=false) {
         self.pack=pack;self.mode=mode
+        self.allowsRepeatedPlayers=allowsRepeatedPlayers
         profiles=Dictionary(uniqueKeysWithValues:pack.players.map {($0.person.id,$0)})
         groups=Dictionary(uniqueKeysWithValues:mode.groups.map {($0.id,$0)})
     }
     public func formation(_ board: DraftProgress) -> DraftFormation? {pack.formations.first {$0.id == board.formationID}}
     public func accepts(_ playerID: String,at slot: Int,on board: DraftProgress) -> Bool {
         guard let formation=formation(board),formation.positions.indices.contains(slot),board.placed[slot] == nil,
-              !board.placed.values.contains(where:{$0.playerID == playerID}),let id=board.offeredID,let group=groups[id],
+              (allowsRepeatedPlayers || !board.placed.values.contains(where:{$0.playerID == playerID})),let id=board.offeredID,let group=groups[id],
               group.playerIDs.contains(playerID),let player=profiles[playerID] else {return false}
         return player.positions.contains(formation.positions[slot])
     }
@@ -105,16 +107,16 @@ public struct DraftEngine: Sendable {
                 guard let group=groups[id] else {return false}
                 var eligible: [(Int,String)]=[]
                 for slot in formation.positions.indices where placed[slot] == nil {
-                    for playerID in group.playerIDs where !used.contains(playerID) && profiles[playerID]?.positions.contains(formation.positions[slot]) == true {eligible.append((slot,playerID))}
+                    for playerID in group.playerIDs where (allowsRepeatedPlayers || !used.contains(playerID)) && profiles[playerID]?.positions.contains(formation.positions[slot]) == true {eligible.append((slot,playerID))}
                 }
                 if eligible.isEmpty {return false}
                 if chosen.isEmpty || eligible.count < options.count {chosen=id;options=eligible}
             }
             let next=pending.filter {$0 != chosen}
             for (slot,player) in options {
-                placed[slot]=DraftPick(groupID:chosen,playerID:player);used.insert(player)
+                placed[slot]=DraftPick(groupID:chosen,playerID:player);if !allowsRepeatedPlayers {used.insert(player)}
                 if search(next) {return true}
-                placed.removeValue(forKey:slot);used.remove(player)
+                placed.removeValue(forKey:slot);if !allowsRepeatedPlayers {used.remove(player)}
                 if budget < 0 {return false}
             }
             return false
@@ -137,7 +139,7 @@ public struct DraftEngine: Sendable {
         guard board.modeID == mode.id,let f=formation(board),board.groupIDs.count == 11,
               Set(board.groupIDs).count == 11,board.groupIDs.allSatisfy({groups[$0] != nil}),
               Set(board.groupIDs.compactMap {groups[$0]?.distinctKey}).count == 11,
-              board.placed.count <= (allowFinished ? 11 : 10),Set(board.placed.values.map(\.playerID)).count == board.placed.count,
+              board.placed.count <= (allowFinished ? 11 : 10),(allowsRepeatedPlayers || Set(board.placed.values.map(\.playerID)).count == board.placed.count),
               board.history.count == board.placed.count,Set(board.history) == Set(board.placed.keys),board.assisted.isSubset(of:Set(board.history)) else {return false}
         for (index,slot) in board.history.enumerated() {
             guard f.positions.indices.contains(slot),let pick=board.placed[slot],pick.groupID == board.groupIDs[index],
@@ -147,7 +149,8 @@ public struct DraftEngine: Sendable {
     }
     public var signature: String {
         let ids=Set(mode.groups.flatMap(\.playerIDs))
-        return ContentUpdateRules.digest(ContentUpdateRules.bytes(mode)+ContentUpdateRules.bytes(pack.formations)+ContentUpdateRules.bytes(pack.players.filter {ids.contains($0.person.id)}))
+        let bytes=ContentUpdateRules.bytes(mode)+ContentUpdateRules.bytes(pack.formations)+ContentUpdateRules.bytes(pack.players.filter {ids.contains($0.person.id)})
+        return ContentUpdateRules.digest(allowsRepeatedPlayers ? bytes+ContentUpdateRules.bytes(["repeated-source-picks"]):bytes)
     }
     public func restore(_ saved: GameResume,completedSessions: Set<UUID>) -> DraftProgress? {
         guard saved.schemaVersion == 1,saved.signature == signature,!completedSessions.contains(saved.sessionID),

@@ -10,7 +10,7 @@ The common source date helper rounds elapsed days since local December 31. Pyram
 
 Countries, Clubs, Retro, Legends and America use their own salts and formation indexes. Retro keeps the first squad per distinct club before shuffling, matching the daily source. Grid combines explicit bingo and grid memberships and follows the bounded source fallback search. Connections reproduces category exclusion and selected-player exclusion. Bingo and Bingo Retro provide dated category boards, while player offers are intentionally random. Impostor's hard-mode extra positives are retained separately. Grid includes Easy, Normal, Hard and Legend boards with the source category pools. Connections includes Easy and Normal boards; Hard uses the Normal board with five mistakes. Impostor includes Normal and One by One using its explicit positive, extra-positive and impostor lists.
 
-All five XI selections now package Normal/Easy boards, bound player and formation catalogs, exact positional memberships, unique-name portrait crosswalks, excluded unsupported position records and timer choices. Support program changes and unplayable exact draws reject publication. Native XI daily adapters remain pending. See [Daily XI source contract](daily-xi.md).
+All five XI selections now package Normal/Easy boards, bound player and formation catalogs, exact positional memberships, unique-name portrait crosswalks, excluded unsupported position records and timer choices. Support program changes and unplayable exact draws reject publication. All five native XI daily adapters consume these boards. See [Daily XI source contract](daily-xi.md).
 
 ## Refresh and publication
 
@@ -46,7 +46,7 @@ Offline tests verify all nineteen mode selections, JavaScript arithmetic compati
 
 ## Remaining app work
 
-Daily extraction covers nineteen modes; native game coverage is nineteen modes. Top 10, Statdle, Legacy, Link, Pyramid, SquadSlice, Guess the Footballer, Goltexto, Bingo Retro, Wordle, Grid, Bingo, Connections and Impostor consume packaged daily selections in-app. All nineteen mode screens now exist. Existing native games still need source-authored daily adapters.
+Daily extraction covers nineteen modes; native game coverage is nineteen modes. Top 10, Statdle, Legacy, Link, Pyramid, SquadSlice, Guess the Footballer, Goltexto, Bingo Retro, Wordle, Grid, Bingo, Connections and Impostor consume packaged daily selections in-app. The five XI modes also consume their exact dated source boards. All nineteen mode screens now have native daily consumers.
 
 ## In-app delivery
 
@@ -56,7 +56,7 @@ No public feed is deployed or assumed. Host the output directory from the refres
 
 Top 10 uses the general-game player table, never Clubs/Nations numeric IDs. It preserves ranked order, nationality flag clues, source title/season and visible game date. Portraits replace flags on successful guesses. Source nicknames and HTTPS portrait URLs are supported. Saved progress is tied to the exact ranking, names, images, flags, date and timezone. Both unfinished and finished lists survive relaunch, and completion earns streak credit once per session. Wrong answers and assisted reveals record practice gaps without fabricating lesson facts.
 
-The feed's other five selections are retained in the package but do not yet drive their native screens. Full goal completion requires every game to be playable and every daily adapter to preserve source identity and freshness.
+All nineteen feed selections drive native daily screens. Full goal completion still requires verification of runtime coverage, source identity and fresh delivery; a hosted feed is not configured by default.
 
 The additive `support.clubs` table preserves the source's inline club names, country IDs and kit URLs, with its module URL/digest. Its executable wrapper has a reviewed selector contract. Legacy's club clue order and Link's teammate order are compiled with the source shuffle and correct seeds. Statdle, Legacy and Link are explicitly bound to the general-game player table during compilation. Apps reject selected native record indexes that do not match the game date's local index: floor for Pyramid and rounded for the other supported modes. Older Top 10-only packages remain readable without inventing clues for the new modes. A newer bundled date, or a same-date bundle with more supported modes, takes precedence over an older cached package after an app update.
 

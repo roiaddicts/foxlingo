@@ -94,6 +94,14 @@ struct GamesHome: View {
                         }.padding(18).background(.white.opacity(0.8),in:RoundedRectangle(cornerRadius:20))
                     }.buttonStyle(PressFeedback()).accessibilityIdentifier("game-top10")
                 }
+                if let daily=model.daily,!daily.xi.isEmpty {
+                    Text("Daily XI").font(.title2.bold())
+                    ForEach(daily.xi) {round in
+                        NavigationLink {DailyXIView(pack:daily,round:round)} label: {
+                            HStack(spacing:16) {EntityArtwork(asset:nil,url:round.normal.mode.groups.first?.imageURL,initials:"⚽",size:50);VStack(alignment:.leading,spacing:6) {Text(round.title).font(.title3.bold());Text("Eleven offers. One daily formation.").font(.subheadline).foregroundStyle(Palette.muted)};Spacer();Image(systemName:"chevron.right")}.padding(18).background(.white.opacity(0.8),in:RoundedRectangle(cornerRadius:20))
+                        }.buttonStyle(PressFeedback()).accessibilityIdentifier("game-daily-xi-"+round.id)
+                    }
+                }
                 NavigationLink("Daily challenge updates",destination:DailyUpdatesView()).font(.subheadline).accessibilityIdentifier("daily-updates")
                 if !model.timelines.isEmpty {
                     NavigationLink {TimelineGameView(rounds:model.timelines)} label: {
@@ -111,7 +119,7 @@ struct GamesHome: View {
                     }.buttonStyle(PressFeedback()).accessibilityIdentifier("game-memory")
                 }
                 if let drafts=model.drafts {
-                    Text("Build an XI").font(.title2.bold())
+                    Text("Practice an XI").font(.title2.bold())
                     ForEach(drafts.modes) {mode in
                         NavigationLink {DraftXIView(engine:DraftEngine(pack:drafts,mode:mode))} label: {
                             HStack(spacing:16) {

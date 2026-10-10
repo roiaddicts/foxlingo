@@ -17,7 +17,7 @@ struct DailyGridView:View {
     @State private var clock=Date()
     @State private var lastSaved=Date.distantPast
     private let ticker=Timer.publish(every:0.25,on:.main,in:.common).autoconnect()
-    private var now:Date {ProcessInfo.processInfo.arguments.contains("-ui-testing") ? model.now:clock}
+    private var now:Date {ProcessInfo.processInfo.arguments.contains("-ui-testing") && !ProcessInfo.processInfo.arguments.contains("-test-live-game-clock") ? model.now:Date()}
     private var board:DailyGridBoard {round.board(progress?.status == .ready ? level:progress?.level ?? level)}
     private var finished:Bool {progress?.finished == true}
     private var examples:[Int:String] {

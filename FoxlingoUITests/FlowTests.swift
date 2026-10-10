@@ -3,6 +3,65 @@ final class FlowTests: XCTestCase {
     let app=XCUIApplication()
     override func setUp() {continueAfterFailure=false}
     var dailyFixtureArguments:[String] {["-test-daily-file",URL(fileURLWithPath:#filePath).deletingLastPathComponent().deletingLastPathComponent().appendingPathComponent("ref/futbol11-daily/2026-10-09-d72036ad4a75.json").path]}
+    var xiFixtureURL:URL {URL(fileURLWithPath:#filePath).deletingLastPathComponent().deletingLastPathComponent().appendingPathComponent("ref/futbol11-daily/2026-10-10-a4455be33294.json")}
+    func startDailyXI(_ mode:String,reset:Bool=true,expired:Bool=false,liveClock:Bool=false) {
+        app.launchArguments=["-ui-testing","-test-now","1791640800","-test-daily-file",xiFixtureURL.path]+(reset ? ["-reset-test-state"]:[])+(expired ? ["-stage-test-daily-xi-expired"]:[])+(liveClock ? ["-test-live-game-clock"]:[]);app.launch()
+        if reset {tap("choose-XT")};app.tabBars.buttons["Games"].tap();tap("game-daily-xi-"+mode)
+    }
+    func tapDailyXISlot(_ index:Int) {
+        let b=app.buttons["daily-xi-slot-\(index)"]
+        for _ in 0..<8 {if b.exists,b.isHittable,b.frame.minY > app.navigationBars.firstMatch.frame.maxY,b.frame.maxY < app.buttons["daily-xi-search"].frame.minY {break};app.swipeUp()}
+        XCTAssertTrue(b.exists && b.isHittable);b.tap()
+    }
+    func testDailyXIAllFiveNormalModesCompleteAndSaveResults() {
+        for mode in ["countries","clubs","retro","legends","america"] {
+            startDailyXI(mode);tap("daily-xi-start")
+            for _ in 0..<11 {tap("daily-xi-help")}
+            XCTAssertEqual(app.staticTexts["daily-xi-result"].label,"Your XI is complete!");XCTAssertTrue(app.staticTexts["daily-xi-count"].label.contains("11 / 11"))
+            let screenshot=XCTAttachment(screenshot:app.screenshot());screenshot.name="Daily \(mode) XI full pitch";screenshot.lifetime = .keepAlways;add(screenshot)
+            app.terminate();startDailyXI(mode,reset:false);XCTAssertEqual(app.staticTexts["daily-xi-result"].label,"Your XI is complete!");XCTAssertFalse(app.buttons["daily-xi-start"].exists)
+        }
+    }
+    func testDailyXIAllFiveEasyModesResumeUndoAndSaveReveals() {
+        for mode in ["countries","clubs","retro","legends","america"] {
+            startDailyXI(mode);app.segmentedControls["daily-xi-level"].buttons["Easy"].tap();tap("daily-xi-start");tap("daily-xi-help");tap("daily-xi-undo");XCTAssertTrue(app.staticTexts["daily-xi-count"].label.contains("0 / 11"));tap("daily-xi-help")
+            app.terminate();startDailyXI(mode,reset:false);XCTAssertTrue(app.staticTexts["daily-xi-count"].label.contains("1 / 11"));XCTAssertFalse(app.segmentedControls["daily-xi-level"].exists)
+            tap("daily-xi-reveal");app.sheets.buttons["Reveal example XI"].tap();XCTAssertEqual(app.staticTexts["daily-xi-result"].label,"An XI to explore.")
+            app.terminate();startDailyXI(mode,reset:false);XCTAssertEqual(app.staticTexts["daily-xi-result"].label,"An XI to explore.")
+        }
+    }
+    func testDailyXINationsSearchStaysAboveKeyboardAndPlacesSourcePlayer() throws {
+        let packet=try JSONSerialization.jsonObject(with:Data(contentsOf:xiFixtureURL)) as! [String:Any],game=(packet["games"] as! [[String:Any]]).first {$0["id"] as? String == "countries"}!,selection=game["selection"] as! [String:Any],catalog=selection["catalog"] as! [String:Any]
+        let rows=(packet["datasets"] as! [[String:Any]]).first {$0["sourceURL"] as? String == catalog["playerSourceURL"] as? String}!["data"] as! [[String:Any]]
+        let memberships=((selection["boards"] as! [[String:Any]])[0]["memberships"] as! [[String:Any]])[0]["playerIDs"] as! [Int]
+        let player=rows.first {memberships.contains($0["id"] as? Int ?? -1) && ($0["positions"] as? String ?? "").split(separator:",").contains { $0.trimmingCharacters(in:.whitespaces) == "GK" }}!
+        let identifier=player["id"] as! Int,name=player["nickname"] as? String ?? ((player["firstName"] as? String ?? "")+" "+(player["lastName"] as? String ?? "")).trimmingCharacters(in:.whitespaces)
+        startDailyXI("countries");tap("daily-xi-start");tap("daily-xi-search");let field=app.textFields["game-player-search"];XCTAssertTrue(field.waitForExistence(timeout:3));field.tap();field.typeText(name)
+        let choice=app.buttons["game-player-daily-xi-countries-player-\(identifier)"];XCTAssertTrue(choice.waitForExistence(timeout:3));XCTAssertLessThan(choice.frame.maxY,field.frame.minY)
+        let screenshot=XCTAttachment(screenshot:app.screenshot());screenshot.name="Daily XI search above keyboard";screenshot.lifetime = .keepAlways;add(screenshot)
+        choice.tap();tapDailyXISlot(0);XCTAssertTrue(app.staticTexts["daily-xi-count"].label.contains("1 / 11"));XCTAssertTrue(app.buttons["daily-xi-slot-0"].label.contains(name))
+    }
+    func testDailyXILiveTimerStartsAfterSetupAndPausesOffscreen() {
+        startDailyXI("countries",liveClock:true);app.segmentedControls["daily-xi-timer"].buttons["40s"].tap()
+        // Setup time must not reduce the first active countdown tick.
+        Thread.sleep(forTimeInterval:3);tap("daily-xi-start");Thread.sleep(forTimeInterval:0.4)
+        let seconds=Int(app.staticTexts["daily-xi-clock"].label.replacingOccurrences(of:"s",with:""))!
+        XCTAssertGreaterThanOrEqual(seconds,39)
+        app.navigationBars.buttons.element(boundBy:0).tap();Thread.sleep(forTimeInterval:3);tap("game-daily-xi-countries")
+        let resumed=Int(app.staticTexts["daily-xi-clock"].label.replacingOccurrences(of:"s",with:""))!
+        XCTAssertGreaterThanOrEqual(resumed,seconds-2)
+    }
+    func testDailyXIStableCompletionPortraitLayout() {
+        startDailyXI("countries");tap("daily-xi-start");for _ in 0..<11 {tap("daily-xi-help")}
+        XCTAssertEqual(app.staticTexts["daily-xi-result"].label,"Your XI is complete!")
+        // Capture after the short completion transition, not halfway through its fade.
+        Thread.sleep(forTimeInterval:0.8)
+        let screenshot=XCTAttachment(screenshot:app.screenshot());screenshot.name="Daily XI settled portrait pitch";screenshot.lifetime = .keepAlways;add(screenshot)
+    }
+    func testDailyXIExpiredTimerShowsSavedLoss() {
+        startDailyXI("countries",expired:true);XCTAssertEqual(app.staticTexts["daily-xi-result"].label,"Time’s up.");XCTAssertFalse(app.buttons["daily-xi-search"].exists)
+        app.terminate();startDailyXI("countries",reset:false);XCTAssertEqual(app.staticTexts["daily-xi-result"].label,"Time’s up.")
+    }
     func start(reset: Bool = true, now: Double = 1_800_000_000) {
         app.launchArguments=["-ui-testing","-test-now",String(now)] + (reset ? ["-reset-test-state"] : []) + dailyFixtureArguments
         app.launch()

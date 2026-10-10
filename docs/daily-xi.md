@@ -1,6 +1,6 @@
 # Daily XI source contract
 
-The compiler packages both Normal and Easy boards for Countries, Clubs, Retro, Legends and America. Native daily adapters are still pending; the existing XI screens use their separate practice pack. Adding extraction metadata does not count these modes as connected daily consumers.
+The compiler packages both Normal and Easy boards for Countries, Clubs, Retro, Legends and America. All five native daily adapters consume these boards. The existing practice XI screens keep their separate practice pack.
 
 ## Date and selection
 
@@ -33,3 +33,13 @@ Portrait crosswalks join only full names unique in both the XI catalog and gener
 An independent Node program receives JSON data only and reconstructs every Normal/Easy group draw, membership list, exclusion list and formation. It never loads or executes downloaded JavaScript. Additional tests prove portrait identity, reject changed support programs and import exports, and exercise unsatisfiable positional pools and Retro uniqueness.
 
 Run `python3 -m unittest discover -s scripts -p test_futbol11_daily.py`. The frozen 2026-10-09 archive remains unchanged; normal live refresh uses separate ignored archives.
+
+## Native play and persistence
+
+The source draw and formation are fixed for the day. Normal/Easy and no timer/40/60/90 seconds are selected before starting and survive relaunch. Search shows the offered flag or shirt above the player results, with the search field directly above the keyboard. Every pitch slot uses the same size; verified player portraits replace offer artwork when available. Search rejects unlisted memberships or positions without inventing a negative career fact.
+
+Saved rounds retain exact offer order, placements, undo history, helped positions, remaining active-play time and won/lost/revealed outcomes. The loader revalidates catalog namespaces, explicit membership lists, position exclusions, unique-name portraits and board relationships. Saved signatures include date, timezone, source identities and portrait rows. A changed draw or catalog cannot restore an old round as today's game.
+
+Only completing all eleven placements awards streak credit, once per saved session. Helped picks and uncompleted offers generate practice gaps. Reveal and timer expiry display an independently solved example XI without converting that example into user placements or awarding a win. A legal dead end stays resumable; undo is available, and help asks the learner to undo when the remaining offers cannot fit.
+
+Core tests cover all ten mode/difficulty combinations, wrong IDs, offer order, positional rejection, timers, saved terminal states, single-win credit and forged catalog relationships. Simulator tests cover all five Normal completions, Easy resume/undo/reveal flows, keyboard-safe search and saved timer loss.

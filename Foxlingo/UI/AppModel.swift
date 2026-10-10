@@ -104,6 +104,12 @@ import SwiftUI
                 p.currentPlayerID="daily-bingo-retro-1"
                 try cache.save(p,for:round)
             }
+            if bingoArgs.contains("-ui-testing"),bingoArgs.contains("-stage-test-daily-xi-expired"),let round=daily?.xi.first {
+                var p=DailyXIProgress(round:round)
+                _ = p.start(in:round,level:.normal,timer:40,now:now)
+                _ = p.expire(at:now.addingTimeInterval(40))
+                try cache.save(p,for:round)
+            }
             if bingoArgs.contains("-ui-testing"),bingoArgs.contains("-stage-test-daily-bingo"),let round=daily?.bingo {
                 var p=BingoRetroProgress(round:round),rng=SystemRandomNumberGenerator()
                 _ = p.start(round:round,timer:0,now:now,rng:&rng)
