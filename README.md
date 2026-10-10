@@ -18,6 +18,14 @@ For a physical iPhone, choose your Apple development team under **Signing & Capa
 
 Minimum iOS: **17.0**. The project uses SwiftUI and Apple's frameworks, with no third-party runtime dependencies.
 
+## Flame playground
+
+In a Debug build, open **Settings → Development → Flame playground**. The live preview stays above the controls and shows both an enlarged flame and the actual badge size. Adjust particle count, speed, lifetime, height, base width, particle size, turbulence, brightness, and core heat. Pause to compare a frozen frame, switch the background, or generate a fresh flame.
+
+**Use in streak badge** saves your settings locally for Debug builds; **Restore original flame** clears that override. **Share settings** exports the values so a chosen look can become the release default. Release builds use the original parameters and omit the playground.
+
+For Xcode, open `Foxlingo/UI/StreakBadge.swift`, enable the preview canvas, and select **Flame playground** in live mode.
+
 ## Content and progress
 
 - `Foxlingo/Resources/starter-en.json` is the bundled, validated English curriculum.

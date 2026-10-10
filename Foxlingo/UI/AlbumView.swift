@@ -149,6 +149,12 @@ struct SettingsView: View {
             Section("Assets") {
                 NavigationLink {SoundAssetsView()} label:{Label("Sounds",systemImage:"waveform")}.accessibilityIdentifier("sound-assets")
             }
+            #if DEBUG
+            Section("Development") {
+                NavigationLink { StreakFlamePlayground() } label: { Label("Flame playground", systemImage: "flame") }
+                    .accessibilityIdentifier("flame-playground")
+            }
+            #endif
             Section("Streaks") {
                 Text("Complete a lesson or practice session to count an active day. One freeze protects one missed day between active days, without counting it as practice. Earn another freeze after seven active days, up to one at a time.")
                 LabeledContent("Home time zone",value:model.state.homeTimeZone)
