@@ -8,6 +8,23 @@ ROOT=Path(__file__).resolve().parents[1]
 SNAPSHOT=ROOT/'ref/futbol11-fixtures/current-2026-10-09/snapshot.json'
 
 class DailyTests(unittest.TestCase):
+    def test_all_bound_dataset_programs_are_pinned_and_post_parse_changes_rejected(self):
+        a=Archive(SNAPSHOT);contracts=json.loads((ROOT/'content/futbol11-daily-contracts.json').read_text());modes={a.mode(n) for n in contracts['selectors']}
+        imported=[d for d in a.meta['datasets'] if d['sourceURL'] not in modes and not d['sourceURL'].endswith(('/B_fJWyBT.js','/CgxlPKu7.js'))]
+        self.assertEqual(len(imported),7)
+        original=Archive.text
+        for d in imported:
+            self.assertIn(selector_digest(a.text(d['sourceURL'])),contracts['datasetPrograms'][','.join(sorted(d['fields']))])
+            with self.subTest(schema=d['fields']),patch.object(Archive,'text',lambda a,u:original(a,u)+(';postParseMutation();' if u==d['sourceURL'] else '')):
+                with self.assertRaisesRegex(ValueError,'support contract changed'):compile_daily(SNAPSHOT,date(2026,10,10),'America/Mexico_City')
+
+    def test_unbound_legacy_screen_program_changes_do_not_block_current_daily_games(self):
+        original=Archive.text
+        baseline=compile_daily(SNAPSHOT,date(2026,10,10),'America/Mexico_City')
+        with patch.object(Archive,'text',lambda a,u:original(a,u)+(';legacyUiChange();' if u.endswith(('/B_fJWyBT.js','/CgxlPKu7.js')) else '')):
+            updated=compile_daily(SNAPSHOT,date(2026,10,10),'America/Mexico_City')
+        self.assertEqual(updated['games'],baseline['games'])
+
     def test_xi_both_levels_match_independent_data_only_reference(self):
         packet=compile_daily(SNAPSHOT,date(2026,10,10),'America/Mexico_City')
         xi=[g for g in packet['games'] if g['id'] in ['countries','clubs','retro','legends','america']]
@@ -261,6 +278,26 @@ class DailyTests(unittest.TestCase):
                 with self.assertRaises(OSError):publish(second,directory)
             self.assertEqual((Path(directory)/'latest.json').read_bytes(),original)
             self.assertFalse(list(Path(directory).glob('.pointer-*')))
+
+    def test_corrupt_existing_immutable_packet_cannot_advance_last_good_pointer(self):
+        import hashlib
+        with tempfile.TemporaryDirectory() as directory:
+            first=compile_daily(SNAPSHOT,date(2026,10,9),'America/Mexico_City');publish(first,directory)
+            pointer=Path(directory)/'latest.json';before=pointer.read_bytes()
+            second=compile_daily(SNAPSHOT,date(2026,10,10),'America/Mexico_City')
+            raw=(json.dumps(second,ensure_ascii=False,indent=2)+'\n').encode()
+            target=Path(directory)/(second['gameDate']+'-'+hashlib.sha256(raw).hexdigest()[:12]+'.json')
+            target.write_bytes(b'corrupted partial packet')
+            with self.assertRaisesRegex(ValueError,'immutable daily package'):publish(second,directory)
+            self.assertEqual(pointer.read_bytes(),before);self.assertEqual(target.read_bytes(),b'corrupted partial packet')
+
+    def test_republishing_identical_packet_preserves_distinct_rollback_pointer(self):
+        with tempfile.TemporaryDirectory() as directory:
+            first=compile_daily(SNAPSHOT,date(2026,10,9),'America/Mexico_City');old=publish(first,directory)
+            second=compile_daily(SNAPSHOT,date(2026,10,10),'America/Mexico_City');new=publish(second,directory)
+            pointer=Path(directory)/'latest.json';before=pointer.read_bytes()
+            self.assertEqual(publish(second,directory),new);self.assertEqual(pointer.read_bytes(),before)
+            self.assertEqual(json.loads(before)['previous'],old.name)
 
 
 class DownloadTests(unittest.TestCase):

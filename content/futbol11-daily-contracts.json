@@ -31,5 +31,28 @@
     "xiNationPlayers": "a60cfc5075b2027d441676ac96b69c4712086adbd14187b7b2b780440cdbc739",
     "xiClubPlayers": "52f34b4921fd50950e31eb39c826ced45c02717d8005384bd7b330fea0f3c12b",
     "xiClassicPlayers": "a60cfc5075b2027d441676ac96b69c4712086adbd14187b7b2b780440cdbc739"
+  },
+  "datasetPrograms": {
+    "active,clubID,firstName,id,lastName,nickname,positions": [
+      "a60cfc5075b2027d441676ac96b69c4712086adbd14187b7b2b780440cdbc739"
+    ],
+    "addcorr,correctPl,id,impostors,title": [
+      "bbd7990cd811e05418ac7f9d22c00396997363f439fd94124d21317d156125bb"
+    ],
+    "bgColor,flag,id,name": [
+      "cc7a45921d7d6544463ace9bc7d42e1fe2e79c9903fdaf0c4614ae5a5ae40174"
+    ],
+    "bingo,countryID,firstName,grid,id,image,lastName,nickname": [
+      "6ae2d4e2e9c177ef8e7b97be14b525dd1f2e4209f5e39dda1873d186f73ae55f"
+    ],
+    "birthday,clubID,countryID,firstName,id,lastName,nickname,ovr,positions": [
+      "a60cfc5075b2027d441676ac96b69c4712086adbd14187b7b2b780440cdbc739"
+    ],
+    "clubID,firstName,id,lastName,nickname,positions": [
+      "52f34b4921fd50950e31eb39c826ced45c02717d8005384bd7b330fea0f3c12b"
+    ],
+    "id,logo,name,type": [
+      "029d17cf13ec005c716bc13a3379e04fb79883326ed05022dd321d0c05f6d85b"
+    ]
   }
 }

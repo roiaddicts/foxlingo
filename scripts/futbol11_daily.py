@@ -103,8 +103,10 @@ def compile_daily(snapshot,day,zone):
     if not all(h in main for h in [DATE_HELPER,RNG_HELPER,SHUFFLE_HELPER,'Fy as e','ab as s']):raise ValueError('Daily date/shuffle helper changed')
     contracts=json.loads((ROOT/'content/futbol11-daily-contracts.json').read_text())
     if contracts['schemaVersion']!=1:raise ValueError('Unsupported daily selector contract version')
+    mode_modules=set()
     for name,digest in contracts['selectors'].items():
-        if selector_digest(archive.text(archive.mode(name)))!=digest:raise ValueError('Daily selector contract changed: '+name)
+        url=archive.mode(name);mode_modules.add(url)
+        if selector_digest(archive.text(url))!=digest:raise ValueError('Daily selector contract changed: '+name)
     ordinal,floor_index=day_indexes(day,zone)
     stamp=day.strftime('%m/%d/%Y');games=[]
     def module(name,required):
@@ -467,6 +469,25 @@ def compile_daily(snapshot,day,zone):
     expected_routes={urlsplit(g['sourceURL']).path for g in catalog['games']}
     if archive.catalog_routes()!=expected_routes:raise ValueError('Live homepage game inventory changed; review coverage')
     if actual!=expected:raise ValueError('Daily mode coverage mismatch')
+    # Imported JSON can be transformed after parsing. Pin complete programs for
+    # bound data, including exports; unrelated archived legacy screens need not
+    # block a current daily refresh when only their implementation changes.
+    bound=set()
+    def bindings(value):
+        if isinstance(value,dict):
+            for key,item in value.items():
+                if (key.lower().endswith('sourceurl') or key=='sourceModule') and isinstance(item,str):bound.add(item)
+                else:bindings(item)
+        elif isinstance(value,list):
+            for item in value:bindings(item)
+    bindings(games);bindings(support)
+    for d in archive.meta['datasets']:
+        if set(d['fields'])=={'bgColor','flag','id','name'}:bound.add(d['sourceURL'])
+    for dataset in archive.meta['datasets']:
+        url=dataset['sourceURL']
+        if url in mode_modules or url not in bound:continue
+        schema=','.join(sorted(dataset['fields']))
+        if selector_digest(archive.text(url)) not in contracts.get('datasetPrograms',{}).get(schema,[]):raise ValueError('Dataset support contract changed: '+schema)
     return dict(schemaVersion=1,gameDate=day.isoformat(),timeZone=zone,dayOfYear=ordinal,elapsedDayFloor=floor_index,fetchedAt=archive.meta['fetchedAt'],compiledAt=datetime.now(timezone.utc).isoformat(),selectorContractsSHA256=hashlib.sha256((ROOT/'content/futbol11-daily-contracts.json').read_bytes()).hexdigest(),sourceSnapshotSHA256=hashlib.sha256(Path(snapshot).read_bytes()).hexdigest(),sourceURL=archive.meta['sourceURL'],datasets=archive.meta['datasets'],support=support,scope='Daily selections from the archived source. Game date is not player/stat freshness. Random offer order is not a shared daily answer.',games=games)
 
 def publish(pack,destination):
@@ -480,7 +501,10 @@ def publish(pack,destination):
             os.replace(temp,target)
         finally:
             if os.path.exists(temp):os.unlink(temp)
-    pointer=destination/'latest.json';previous=json.loads(pointer.read_text()).get('file') if pointer.exists() else None
+    elif target.read_bytes()!=raw:
+        raise ValueError('Existing immutable daily package has different bytes: '+name)
+    pointer=destination/'latest.json';old=json.loads(pointer.read_text()) if pointer.exists() else {}
+    previous=old.get('previous') if old.get('file')==name else old.get('file')
     value=dict(file=name,previous=previous,sha256=digest,gameDate=pack['gameDate'],timeZone=pack['timeZone'],modes=len(pack['games']))
     fd,temp=tempfile.mkstemp(prefix='.pointer-',dir=destination)
     try:
