@@ -56,7 +56,7 @@ struct DailyGuessWhoView: View {
         }.onChange(of:finished) {if finished {withAnimation(reduced ? nil:.snappy(duration:0.3)) {proxy.scrollTo("guesswho-top",anchor:.top)}}}
         }.journal().navigationTitle("Guess the Footballer").navigationBarTitleDisplayMode(.inline).toolbar(.hidden,for:.tabBar)
         .safeAreaInset(edge:.bottom) {if !finished {HStack {Button("Reveal",systemImage:"eye") {revealing=true}.accessibilityIdentifier("guesswho-reveal");Spacer();Button("Guess the player",systemImage:"magnifyingglass") {choosingPlayer=true}.font(.headline).accessibilityIdentifier("guesswho-guess")}.padding(16).background(.regularMaterial)}}
-        .sheet(isPresented:$choosingOption) {NavigationStack {GuessWhoOptionSheet(options:round.options(topic),title:topic.title) {picked in option=picked.id;choosingOption=false}}.presentationDetents([.large])}
+        .sheet(isPresented:$choosingOption) {NavigationStack {GuessWhoOptionSheet(options:round.options(topic),title:topic.title,isClub:topic == .club || topic == .pastClub) {picked in option=picked.id;choosingOption=false}}.presentationDetents([.large])}
         .sheet(isPresented:$choosingPlayer) {NavigationStack {PlayerAnswerSheet(players:round.players,title:"Guess the player",rejectionMessage:"You already guessed that player.") {player in guess(player)}}.presentationDetents([.large])}
         .confirmationDialog("Reveal the player and finish this round?",isPresented:$revealing,titleVisibility:.visible) {Button("Reveal player",role:.destructive) {giveUp()}}
         .onAppear {restore()}.onDisappear {persist()}.onChange(of:phase) {if phase != .active {persist()}}
@@ -78,7 +78,7 @@ struct DailyGuessWhoView: View {
                     Button {option=index} label:{Label(name,systemImage:["hand.raised.fill","shield.fill","arrow.left.arrow.right","soccerball"][index]).font(.subheadline).padding(12).frame(maxWidth:.infinity).background(option == index ? Palette.brand.opacity(0.12):.white,in:RoundedRectangle(cornerRadius:12))}.accessibilityIdentifier("guesswho-position-\(index)")
                 }}
             } else {
-                Button {choosingOption=true} label:{HStack {if let value=round.options(topic).first(where:{$0.id == option}) {EntityArtwork(asset:value.imageAsset,url:value.imageURL,initials:String(value.name.prefix(2)),size:50);Text(value.name).font(.headline)} else {Image(systemName:"magnifyingglass");Text("Choose "+topic.title.lowercased()).font(.headline)};Spacer();Image(systemName:"chevron.right")}.padding(12).background(.white,in:RoundedRectangle(cornerRadius:14))}.accessibilityIdentifier("guesswho-choose-option")
+                Button {choosingOption=true} label:{HStack {if let value=round.options(topic).first(where:{$0.id == option}) {GuessWhoOptionArtwork(option:value,isClub:topic == .club || topic == .pastClub,size:50);Text(value.name).font(.headline)} else {Image(systemName:"magnifyingglass");Text("Choose "+topic.title.lowercased()).font(.headline)};Spacer();Image(systemName:"chevron.right")}.padding(12).background(.white,in:RoundedRectangle(cornerRadius:14))}.accessibilityIdentifier("guesswho-choose-option")
             }
             if let question {Text(round.text(question)).font(.subheadline).accessibilityIdentifier("guesswho-prompt")}
             PrimaryButton(title:"Ask question",symbol:"questionmark.bubble.fill",action:ask).opacity(question == nil ? 0.45:1).disabled(question == nil).accessibilityIdentifier("guesswho-ask")
@@ -88,11 +88,11 @@ struct DailyGuessWhoView: View {
         VStack(alignment:.leading,spacing:12) {
             HStack(spacing:14) {EntityArtwork(asset:round.answer.imageAsset,url:round.answer.imageURL,initials:String(round.answer.name.prefix(2)),size:88,isPlayer:true,portraitFocus:true);VStack(alignment:.leading,spacing:5) {Text(round.answer.name).font(.title2.bold()).accessibilityIdentifier("guesswho-answer");Text(progress?.won(round) == true ? "Mystery solved!":"A new player to remember.").font(.subheadline)}}
             HStack {if let country=round.countries.first(where:{$0.id == round.country}) {EntityArtwork(asset:nil,url:country.imageURL,initials:"",size:36)};Text(DailyGuessWho.positions[round.position]);Spacer();Text("\(round.age) years · \(round.height) cm").font(.subheadline)}
-            if let club=round.clubs.first(where:{$0.id == round.currentClub}) {HStack {EntityArtwork(asset:club.imageAsset,url:club.imageURL,initials:String(club.name.prefix(2)),size:48);Text("Snapshot club: "+club.name).font(.subheadline)}}
+            if let club=round.clubs.first(where:{$0.id == round.currentClub}) {HStack {ClubBadgeArtwork(name:club.name,size:48);Text("Snapshot club: "+club.name).font(.subheadline)}}
         }
     }
     @ViewBuilder private func questionArtwork(_ q:GuessWhoQuestion,size:CGFloat) -> some View {
-        if let value=round.options(q.topic).first(where:{$0.id == q.value}) {EntityArtwork(asset:value.imageAsset,url:value.imageURL,initials:String(value.name.prefix(2)),size:size)}
+        if let value=round.options(q.topic).first(where:{$0.id == q.value}) {GuessWhoOptionArtwork(option:value,isClub:q.topic == .club || q.topic == .pastClub,size:size)}
         else {Image(systemName:q.topic.icon).font(.title3).frame(width:size,height:size).background(Palette.brand.opacity(0.08),in:RoundedRectangle(cornerRadius:10))}
     }
     private func ask() {guard var p=progress,let question,p.ask(question,in:round) else {feedback="Choose a new question; repeated questions do not use another turn.";return};progress=p;feedback="";option=nil;model.playSound(.reveal);persist()}
@@ -109,6 +109,7 @@ struct DailyGuessWhoView: View {
 private struct GuessWhoOptionSheet: View {
     let options:[GuessWhoOption]
     let title:String
+    let isClub:Bool
     let select:(GuessWhoOption)->Void
     @Environment(\.dismiss) private var dismiss
     @State private var query=""
@@ -116,10 +117,20 @@ private struct GuessWhoOptionSheet: View {
     private var filtered:[GuessWhoOption] {options.filter {query.isEmpty || Recall.normalize($0.name).contains(Recall.normalize(query))}}
     var body: some View {
         ScrollView {LazyVStack(spacing:10) {ForEach(filtered) {option in
-            Button {select(option)} label:{HStack(spacing:14) {EntityArtwork(asset:option.imageAsset,url:option.imageURL,initials:String(option.name.prefix(2)),size:58);Text(option.name).font(.headline);Spacer()}.padding(10).background(.white,in:RoundedRectangle(cornerRadius:14))}.accessibilityIdentifier("guesswho-option-\(option.id)")
+            Button {select(option)} label:{HStack(spacing:14) {GuessWhoOptionArtwork(option:option,isClub:isClub,size:58);Text(option.name).font(.headline);Spacer()}.padding(10).background(.white,in:RoundedRectangle(cornerRadius:14))}.accessibilityIdentifier("guesswho-option-\(option.id)")
         }}.padding(20)}.journal().navigationTitle(title).navigationBarTitleDisplayMode(.inline)
             .toolbar {ToolbarItem(placement:.cancellationAction) {Button("Cancel") {dismiss()}}}
             .safeAreaInset(edge:.bottom) {TextField("Search "+title.lowercased(),text:$query).textFieldStyle(.roundedBorder).focused($focused).autocorrectionDisabled().padding(16).background(.regularMaterial).accessibilityIdentifier("guesswho-option-search")}
             .onAppear {focused=true}
+    }
+}
+
+private struct GuessWhoOptionArtwork: View {
+    let option:GuessWhoOption
+    let isClub:Bool
+    let size:CGFloat
+    var body:some View {
+        if isClub {ClubBadgeArtwork(name:option.name,size:size)}
+        else {EntityArtwork(asset:option.imageAsset,url:option.imageURL,initials:String(option.name.prefix(2)),size:size)}
     }
 }

@@ -32,6 +32,8 @@ artworkPath=ROOT/'content/club-artwork.json'
 if artworkPath.exists():
  for key,value in json.loads(artworkPath.read_text()).items():
   if value.get('url'):urls.setdefault('entity-'+key,value['url'])
+for club in json.loads((ROOT/'content/club-search-artwork.json').read_text()):
+ urls.setdefault(club['asset'],club['imageURL'])
 for c in p["categories"]:
  if c.get("imageAsset") and c.get("imageURL"):urls.setdefault(c["imageAsset"],c["imageURL"])
 for competition in json.loads((ROOT/'content/competition-artwork.json').read_text()):

@@ -10,7 +10,7 @@ public struct GuessWhoOption: Identifiable, Sendable {
 public enum GuessWhoTopic: String, Codable, CaseIterable, Sendable {
     case club,league,country,position,age,height,pastClub,pastLeague
     public var title: String {switch self {case .club:"Club";case .league:"League";case .country:"Nationality";case .position:"Position";case .age:"Age";case .height:"Height";case .pastClub:"Past clubs";case .pastLeague:"Past leagues"}}
-    public var icon: String {switch self {case .club,.pastClub:"tshirt.fill";case .league,.pastLeague:"trophy.fill";case .country:"flag.fill";case .position:"sportscourt.fill";case .age:"birthday.cake.fill";case .height:"ruler.fill"}}
+    public var icon: String {switch self {case .club,.pastClub:"shield.fill";case .league,.pastLeague:"trophy.fill";case .country:"flag.fill";case .position:"sportscourt.fill";case .age:"birthday.cake.fill";case .height:"ruler.fill"}}
 }
 public enum GuessWhoComparison: String, Codable, CaseIterable, Sendable {case equal,greater,less}
 public struct GuessWhoQuestion: Codable, Hashable, Sendable {

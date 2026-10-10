@@ -4,6 +4,8 @@ This is Futbol11's question-driven deduction game, separate from Foxlingo's auth
 
 ## Source identities
 
+Club selection, selected options, clue history and the revealed snapshot club show badges rather than the source catalog's general shirts. All 48 club options resolve to cached logos. Additional badge provenance is recorded in `content/club-search-artwork.json`; badges are illustrative current identity marks, not claims about historical-season crests. These artwork-only name mappings never transfer club memberships or join provider IDs. Classic and XI lineup modes retain their separate shirt assets.
+
 The source's 2,614 candidate players use their own namespace, `daily-guesswho-ID`. Daily records connect those IDs to the general portrait catalog through `secID`. For example, Nick Pope is candidate 91 but general portrait 548; general player 91 is Thomas Partey. Those integers are never joined directly.
 
 The compiler preserves the 48-club and eight-league question catalogs. Their club IDs differ from the shirt catalog: question club 14 is Real Madrid, whose shirt is kit 9; question club 24 is AC Milan, whose shirt is kit 12. Artwork joins use reviewed name aliases and matching country. German clubs use existing bundled badges where the source shirt catalog has no corresponding entry.

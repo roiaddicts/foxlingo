@@ -37,6 +37,33 @@ struct ClubMark: View {
             .accessibilityHidden(true)
     }
 }
+/// Club identity artwork stays separate from season kits and source memberships.
+struct ClubBadgeArtwork: View {
+    let name: String
+    var size: CGFloat = 58
+    @EnvironmentObject private var model: AppModel
+    private static let assets: [String:String] = [
+        "chelsea":"entity-chelsea","tottenham":"entity-tottenham",
+        "atl madrid":"entity-atletico-madrid","dortmund":"entity-borussia-dortmund",
+        "bayer leverkusen":"entity-bayer-leverkusen","psg":"entity-psg",
+        "frankfurt":"entity-eintracht-frankfurt","bayern munich":"entity-bayern-munich",
+        "rb leipzig":"entity-leipzig",
+        "ajax":"club-badge-ajax","benfica":"club-badge-benfica",
+        "newcastle":"club-badge-newcastle","leicester":"club-badge-leicester",
+        "wolves":"club-badge-wolves","everton":"club-badge-everton",
+        "west ham":"club-badge-west-ham","brighton":"club-badge-brighton",
+        "athletic club":"club-badge-athletic-club","real sociedad":"club-badge-real-sociedad",
+        "sevilla":"club-badge-sevilla","girona":"club-badge-girona",
+        "valencia":"club-badge-valencia","atalanta":"club-badge-atalanta",
+        "lazio":"club-badge-lazio","bologna":"club-badge-bologna",
+        "fiorentina":"club-badge-fiorentina","monaco":"club-badge-monaco","lyon":"club-badge-lyon"
+    ]
+    var body: some View {
+        let club=model.pack.flatMap {AnswerArtwork.entity(name,type:"club",pack:$0)}
+        EntityArtwork(asset:Self.assets[Recall.normalize(name)] ?? club?.imageAsset,url:club?.imageURL,initials:String(name.prefix(2)),size:size)
+            .accessibilityLabel(name)
+    }
+}
 struct Eyebrow: View {
     let text: String
     var body: some View { Text(text.uppercased()).font(.caption.weight(.bold)).tracking(2).foregroundStyle(Palette.muted) }

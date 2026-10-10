@@ -1,0 +1,135 @@
+[
+  {
+    "name": "Ajax",
+    "asset": "club-badge-ajax",
+    "imageURL": "https://img.uefa.com/imgml/TP/teams/logos/100x100/50143.png",
+    "sourceURL": "https://www.uefa.com/nationalassociations/teams/50143/",
+    "scope": "Club badge illustration, not a historical-season badge."
+  },
+  {
+    "name": "Benfica",
+    "asset": "club-badge-benfica",
+    "imageURL": "https://img.uefa.com/imgml/TP/teams/logos/100x100/50147.png",
+    "sourceURL": "https://www.uefa.com/nationalassociations/teams/50147/",
+    "scope": "Club badge illustration, not a historical-season badge."
+  },
+  {
+    "name": "Newcastle",
+    "asset": "club-badge-newcastle",
+    "imageURL": "https://img.uefa.com/imgml/TP/teams/logos/100x100/59324.png",
+    "sourceURL": "https://www.uefa.com/nationalassociations/teams/59324/",
+    "scope": "Club badge illustration, not a historical-season badge."
+  },
+  {
+    "name": "Leicester",
+    "asset": "club-badge-leicester",
+    "imageURL": "https://img.uefa.com/imgml/TP/teams/logos/100x100/2608195.png",
+    "sourceURL": "https://www.uefa.com/nationalassociations/teams/2608195/",
+    "scope": "Club badge illustration, not a historical-season badge."
+  },
+  {
+    "name": "Wolves",
+    "asset": "club-badge-wolves",
+    "imageURL": "https://img.uefa.com/imgml/TP/teams/logos/100x100/53357.png",
+    "sourceURL": "https://www.uefa.com/nationalassociations/teams/53357/",
+    "scope": "Club badge illustration, not a historical-season badge."
+  },
+  {
+    "name": "Everton",
+    "asset": "club-badge-everton",
+    "imageURL": "https://img.uefa.com/imgml/TP/teams/logos/100x100/52281.png",
+    "sourceURL": "https://www.uefa.com/nationalassociations/teams/52281/",
+    "scope": "Club badge illustration, not a historical-season badge."
+  },
+  {
+    "name": "West Ham",
+    "asset": "club-badge-west-ham",
+    "imageURL": "https://img.uefa.com/imgml/TP/teams/logos/100x100/53358.png",
+    "sourceURL": "https://www.uefa.com/nationalassociations/teams/53358/",
+    "scope": "Club badge illustration, not a historical-season badge."
+  },
+  {
+    "name": "Brighton",
+    "asset": "club-badge-brighton",
+    "imageURL": "https://img.uefa.com/imgml/TP/teams/logos/100x100/2601105.png",
+    "sourceURL": "https://www.uefa.com/nationalassociations/teams/2601105/",
+    "scope": "Club badge illustration, not a historical-season badge."
+  },
+  {
+    "name": "Athletic Club",
+    "asset": "club-badge-athletic-club",
+    "imageURL": "https://img.uefa.com/imgml/TP/teams/logos/100x100/50125.png",
+    "sourceURL": "https://www.uefa.com/nationalassociations/teams/50125/",
+    "scope": "Club badge illustration, not a historical-season badge."
+  },
+  {
+    "name": "Real Sociedad",
+    "asset": "club-badge-real-sociedad",
+    "imageURL": "https://img.uefa.com/imgml/TP/teams/logos/100x100/50123.png",
+    "sourceURL": "https://www.uefa.com/nationalassociations/teams/50123/",
+    "scope": "Club badge illustration, not a historical-season badge."
+  },
+  {
+    "name": "Sevilla",
+    "asset": "club-badge-sevilla",
+    "imageURL": "https://img.uefa.com/imgml/TP/teams/logos/100x100/52714.png",
+    "sourceURL": "https://www.uefa.com/nationalassociations/teams/52714/",
+    "scope": "Club badge illustration, not a historical-season badge."
+  },
+  {
+    "name": "Girona",
+    "asset": "club-badge-girona",
+    "imageURL": "https://img.uefa.com/imgml/TP/teams/logos/100x100/2602798.png",
+    "sourceURL": "https://www.uefa.com/nationalassociations/teams/2602798/",
+    "scope": "Club badge illustration, not a historical-season badge."
+  },
+  {
+    "name": "Valencia",
+    "asset": "club-badge-valencia",
+    "imageURL": "https://img.uefa.com/imgml/TP/teams/logos/100x100/52268.png",
+    "sourceURL": "https://www.uefa.com/nationalassociations/teams/52268/",
+    "scope": "Club badge illustration, not a historical-season badge."
+  },
+  {
+    "name": "Atalanta",
+    "asset": "club-badge-atalanta",
+    "imageURL": "https://img.uefa.com/imgml/TP/teams/logos/100x100/52816.png",
+    "sourceURL": "https://www.uefa.com/nationalassociations/teams/52816/",
+    "scope": "Club badge illustration, not a historical-season badge."
+  },
+  {
+    "name": "Lazio",
+    "asset": "club-badge-lazio",
+    "imageURL": "https://img.uefa.com/imgml/TP/teams/logos/100x100/52973.png",
+    "sourceURL": "https://www.uefa.com/nationalassociations/teams/52973/",
+    "scope": "Club badge illustration, not a historical-season badge."
+  },
+  {
+    "name": "Bologna",
+    "asset": "club-badge-bologna",
+    "imageURL": "https://img.uefa.com/imgml/TP/teams/logos/100x100/52969.png",
+    "sourceURL": "https://www.uefa.com/nationalassociations/teams/52969/",
+    "scope": "Club badge illustration, not a historical-season badge."
+  },
+  {
+    "name": "Fiorentina",
+    "asset": "club-badge-fiorentina",
+    "imageURL": "https://img.uefa.com/imgml/TP/teams/logos/100x100/52817.png",
+    "sourceURL": "https://www.uefa.com/nationalassociations/teams/52817/",
+    "scope": "Club badge illustration, not a historical-season badge."
+  },
+  {
+    "name": "Monaco",
+    "asset": "club-badge-monaco",
+    "imageURL": "https://img.uefa.com/imgml/TP/teams/logos/100x100/50023.png",
+    "sourceURL": "https://www.uefa.com/nationalassociations/teams/50023/",
+    "scope": "Club badge illustration, not a historical-season badge."
+  },
+  {
+    "name": "Lyon",
+    "asset": "club-badge-lyon",
+    "imageURL": "https://img.uefa.com/imgml/TP/teams/logos/100x100/5312.png",
+    "sourceURL": "https://www.uefa.com/nationalassociations/teams/5312/",
+    "scope": "Club badge illustration, not a historical-season badge."
+  }
+]

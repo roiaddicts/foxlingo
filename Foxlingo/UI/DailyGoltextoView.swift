@@ -1,6 +1,6 @@
 import SwiftUI
 
-// Portraits, flags and shirts anchor the guesses; a signed score and expandable
+// Portraits, flags and club badges anchor the guesses; a signed score and expandable
 // breakdown explain closeness without a large mystery card hiding the search.
 struct DailyGoltextoView: View {
     let pack:DailyChallengePack
@@ -54,7 +54,7 @@ struct DailyGoltextoView: View {
     private func traits(_ player:GoltextoPlayer) -> some View {
         HStack(spacing:12) {
             if let country=round.countries.first(where:{$0.id == player.countryID}) {EntityArtwork(asset:nil,url:country.imageURL,initials:"",size:30).accessibilityLabel(country.name)}
-            if let club=round.clubs.first(where:{$0.id == player.clubID}) {EntityArtwork(asset:nil,url:club.imageURL,initials:String(club.name.prefix(2)),size:38).accessibilityLabel("Catalog club: "+club.name)}
+            if let club=round.clubs.first(where:{$0.id == player.clubID}) {ClubBadgeArtwork(name:club.name,size:38).accessibilityLabel("Catalog club: "+club.name)}
             Text(player.positions.joined(separator:" / ")).font(.caption.bold());Spacer()
             Text("\(player.age.map {String($0)+"y"} ?? "Age —") · OVR \(player.rating)").font(.caption.monospacedDigit())
         }
@@ -124,7 +124,7 @@ private struct GoltextoPlayerSearch:View {
                                 Text(profile.player.name).font(.headline)
                                 HStack(spacing:8) {
                                     EntityArtwork(asset:nil,url:country?.imageURL,initials:"",size:24)
-                                    EntityArtwork(asset:nil,url:club?.imageURL,initials:String((club?.name ?? "").prefix(2)),size:30)
+                                    ClubBadgeArtwork(name:club?.name ?? "Club unavailable",size:30)
                                     Text(profile.positions.joined(separator:" / ")).font(.caption.bold())
                                 }
                                 Text("\(profile.age.map {String($0)+"y"} ?? "Age —") · OVR \(profile.rating)").font(.caption).foregroundStyle(Palette.muted)
