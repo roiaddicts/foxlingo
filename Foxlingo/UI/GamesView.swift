@@ -29,6 +29,11 @@ struct GamesHome: View {
                     }
                 }
                 if let daily=model.daily {
+                    if let similarity=daily.goltexto {
+                        NavigationLink {DailyGoltextoView(pack:daily,round:similarity)} label: {
+                            HStack(spacing:16) {Image(systemName:"scope").font(.title2).frame(width:50,height:60).foregroundStyle(Palette.brand);VStack(alignment:.leading,spacing:6) {Text("Goltexto").font(.title3.bold());Text("Find the player by profile similarity.").font(.subheadline).foregroundStyle(Palette.muted)};Spacer();Image(systemName:"chevron.right")}.padding(18).background(.white.opacity(0.8),in:RoundedRectangle(cornerRadius:20))
+                        }.buttonStyle(PressFeedback()).accessibilityIdentifier("game-goltexto")
+                    }
                     if let mystery=daily.guessWho {
                         NavigationLink {DailyGuessWhoView(pack:daily,round:mystery)} label: {
                             HStack(spacing:16) {Image(systemName:"questionmark.bubble.fill").font(.title2).frame(width:50,height:60).foregroundStyle(Palette.brand);VStack(alignment:.leading,spacing:6) {Text("Guess the Footballer").font(.title3.bold());Text("Ten questions. Three guesses.").font(.subheadline).foregroundStyle(Palette.muted)};Spacer();Image(systemName:"chevron.right")}.padding(18).background(.white.opacity(0.8),in:RoundedRectangle(cornerRadius:20))

@@ -240,6 +240,34 @@ final class FlowTests: XCTestCase {
     func revealClue(_ id: String) -> XCUIElement {
         app.descendants(matching:.any).matching(identifier:"reveal-clue-"+id).firstMatch
     }
+    func testDailyGoltextoScoresBreakdownBudgetResumeAndWin() {
+        start();tap("choose-XT");app.tabBars.buttons["Games"].tap();tap("game-goltexto")
+        app.segmentedControls["goltexto-limit"].buttons["100"].tap()
+        tap("goltexto-guess");let search=app.textFields["game-player-search"];XCTAssertTrue(search.waitForExistence(timeout:3));search.typeText("Joao Mario")
+        XCTAssertTrue(app.buttons["game-player-daily-goltexto-610"].label.contains("age unavailable"))
+        XCTAssertTrue(app.buttons["game-player-daily-goltexto-919"].label.contains("RB, RM"))
+        let searchShot=XCTAttachment(screenshot:app.screenshot());searchShot.name="Goltexto keyboard-safe distinct profiles";searchShot.lifetime = .keepAlways;add(searchShot)
+        app.buttons["Cancel"].tap();tap("goltexto-guess");search.typeText("Mbappe");tap("game-player-daily-goltexto-1")
+        XCTAssertEqual(app.staticTexts["goltexto-score-daily-goltexto-1"].label,"-2")
+        tap("goltexto-breakdown-daily-goltexto-1")
+        XCTAssertTrue(app.descendants(matching:.any).matching(identifier:"goltexto-part-country").firstMatch.label.contains("-5"))
+        tap("goltexto-rules");XCTAssertTrue(app.staticTexts["A similarity score, not a probability."].waitForExistence(timeout:3));app.buttons["Done"].tap()
+        tap("goltexto-guess");search.typeText("Arokodare");tap("game-player-daily-goltexto-600")
+        XCTAssertEqual(app.staticTexts["goltexto-score-daily-goltexto-600"].label,"88")
+        XCTAssertTrue(app.staticTexts["goltexto-best"].label.contains("88"))
+        app.terminate();start(reset:false);app.tabBars.buttons["Games"].tap();tap("game-goltexto")
+        XCTAssertTrue(app.staticTexts["goltexto-count"].label.contains("2 / 100"))
+        XCTAssertEqual(app.staticTexts["goltexto-score-daily-goltexto-600"].label,"88")
+        Thread.sleep(forTimeInterval:0.4)
+        let clues=XCTAttachment(screenshot:app.screenshot());clues.name="Goltexto signed scores and visual profiles";clues.lifetime = .keepAlways;add(clues)
+        tap("goltexto-guess");search.typeText("Marcos Leonardo");tap("game-player-daily-goltexto-465")
+        XCTAssertTrue(app.staticTexts["goltexto-answer"].waitForExistence(timeout:3));XCTAssertEqual(app.staticTexts["goltexto-answer"].label,"Marcos Leonardo")
+        XCTAssertEqual(app.staticTexts["goltexto-score-daily-goltexto-465"].label,"100")
+        Thread.sleep(forTimeInterval:0.4)
+        let shot=XCTAttachment(screenshot:app.screenshot());shot.name="Goltexto exact identity result";shot.lifetime = .keepAlways;add(shot)
+        app.terminate();start(reset:false);app.tabBars.buttons["Games"].tap();tap("game-goltexto")
+        XCTAssertEqual(app.staticTexts["goltexto-answer"].label,"Marcos Leonardo")
+    }
     func askGuessWhoOption(_ topic:String,_ name:String,_ id:Int) {
         tap("guesswho-topic-"+topic);tap("guesswho-choose-option")
         let search=app.textFields["guesswho-option-search"];XCTAssertTrue(search.waitForExistence(timeout:3));search.typeText(name);tap("guesswho-option-\(id)");tap("guesswho-ask")

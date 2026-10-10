@@ -237,7 +237,45 @@ def compile_daily(snapshot,day,zone):
     rows=archive.rows({'birthday','clubID','countryID','firstName','id','lastName','nickname','ovr','positions'},archive.imported(url,'L'))
     eligible=[p for p in rows if isinstance(p.get('clubID'),(int,float)) and p.get('birthday')][:366]
     if not 0<=ordinal<len(eligible):raise ValueError('Goltexto index outside pool')
-    add('goltexto',url,dict(player=shuffle(eligible,'today')[ordinal],index=ordinal),'constant-seeded eligible pool; local-day-of-year index')
+    order=shuffle(eligible,'today')
+    country_export,country_module=archive.import_symbol(url,'oa');country_text=archive.text(country_module)
+    export_specs=[spec.strip().split(' as ') for match in re.finditer(r'export\{([^}]+)\}',country_text) for spec in match.group(1).split(',')]
+    locals_for_export=[spec[0] for spec in export_specs if spec[-1]==country_export]
+    if len(locals_for_export)!=1:raise ValueError('Goltexto country binding changed')
+    match=re.search(r'const '+re.escape(locals_for_export[0])+r'=\[',country_text)
+    if match is None:raise ValueError('Goltexto country table changed')
+    flags=array_at(country_text,match.end()-1)
+    extra=re.search(r'const ma=\[',text)
+    if extra is None:raise ValueError('Goltexto extra flags changed')
+    flags+=array_at(text,extra.end()-1)
+    if any(set(c)!={'id','name','logo'} for c in flags) or len({c['id'] for c in flags})!=len(flags):raise ValueError('Invalid Goltexto country catalog')
+    def groups(function):
+        match=re.search(r'(?:const |,)'+function+r'=a=>\{const i=\{(.*?)\};for',text)
+        if match is None:raise ValueError('Goltexto grouping function changed')
+        group_text=match.group(1);pairs=re.findall(r'(\d+):(\[[\d,]+\])',group_text)
+        if re.sub(r'\d+:\[[\d,]+\]','',group_text).strip(',') or not pairs:raise ValueError('Non-static Goltexto groups')
+        result={key:json.loads(value) for key,value in pairs}
+        all_ids=[i for values in result.values() for i in values]
+        if len(pairs)!=len(result) or len(all_ids)!=len(set(all_ids)):raise ValueError('Ambiguous Goltexto grouping')
+        return result
+    if archive.imported(url,'na')!=club_url:raise ValueError('Goltexto club binding changed')
+    import unicodedata
+    def normalized_full(player):
+        first=player.get('firstName','').strip();last=player.get('lastName','').strip()
+        if not first or not last:return ''
+        name=unicodedata.normalize('NFD',first+' '+last)
+        return ' '.join(''.join(c for c in name if not unicodedata.combining(c)).lower().split())
+    candidates=[p for p in rows if isinstance(p.get('clubID'),(int,float)) and p['clubID']]
+    general_names={};candidate_names={}
+    for p in general:
+        name=normalized_full(p)
+        if name:general_names.setdefault(name,[]).append(p['id'])
+    for p in candidates:
+        name=normalized_full(p)
+        if name:candidate_names.setdefault(name,[]).append(p['id'])
+    portraits={str(ids[0]):general_names[name][0] for name,ids in candidate_names.items() if len(ids)==1 and len(general_names.get(name,[]))==1}
+    catalog=dict(playerSourceURL=archive.imported(url,'L'),countries=flags,leagueGroups=groups('W'),regionGroups=groups('E'),portraitPlayerIDs=portraits)
+    add('goltexto',url,dict(player=order[ordinal],index=ordinal,orderPlayerIDs=[p['id'] for p in order],catalog=catalog),'constant-seeded eligible pool; local-day-of-year index')
     # Impostor has an explicit provider fallback when a day is not covered.
     url,text=module('impostor',['let l=A[o.value.day]','l.correctPl=l.correctPl.split(",").map(Number)'])
     rows=archive.rows({'id','title','correctPl','addcorr','impostors'})

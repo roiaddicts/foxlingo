@@ -53,8 +53,8 @@
       "sourceURL": "https://futbol11.com/futbol11-goltexto",
       "mechanic": "Find a player through trait-based similarity feedback.",
       "requiredData": "scoped player profiles and explicit similarity weights",
-      "status": "planned",
-      "notes": ""
+      "status": "native",
+      "notes": "Verified daily source selection, exact trait scoring, signed visual feedback, 10/20/100 guesses, keyboard-safe profile search, saved rounds and one-time win credit. Catalog traits retain source scope; they are not current football affiliations."
     },
     {
       "id": "impostor",

@@ -86,6 +86,22 @@ class DailyTests(unittest.TestCase):
         self.assertEqual(clubs[3]['image'],'/media/shirts/3.png')
         self.assertNotIn('image',clubs[29]) # No invented German kit URLs.
         self.assertTrue(any(d['sourceURL']==catalog['playerSourceURL'] and d['records']==2614 for d in pack['datasets']))
+    def test_goltexto_has_its_own_country_namespace_and_source_groups(self):
+        pack=compile_daily(SNAPSHOT,date(2026,10,9),'America/Mexico_City')
+        selection=next(g['selection'] for g in pack['games'] if g['id']=='goltexto');catalog=selection['catalog']
+        self.assertEqual(selection['player']['id'],465);self.assertEqual(selection['orderPlayerIDs'][282],465)
+        self.assertEqual(len(selection['orderPlayerIDs']),366)
+        countries={c['id']:c['name'] for c in catalog['countries']}
+        self.assertEqual(len(countries),71);self.assertEqual(countries[6],'England');self.assertEqual(countries[10],'France')
+        self.assertEqual(catalog['leagueGroups']['8'],[21,89]);self.assertIn(7,catalog['regionGroups']['4'])
+        self.assertNotEqual(catalog['portraitPlayerIDs']['1'],1)
+        rows=next(d['data'] for d in pack['datasets'] if d['sourceURL']==catalog['playerSourceURL'])
+        players=[p for p in rows if p.get('clubID')]
+        payload=dict(date=pack['gameDate'],answer=selection['player'],players=players,leagues=catalog['leagueGroups'],regions=catalog['regionGroups'])
+        import os
+        actual=json.loads(subprocess.check_output(['node',str(ROOT/'scripts/goltexto_reference.js')],input=json.dumps(payload),text=True,env={**os.environ,'TZ':pack['timeZone']}))
+        expected=json.loads((ROOT/'FoxlingoTests/Fixtures/goltexto-2026-10-09-oracle.json').read_text())['scores']
+        self.assertEqual(actual,expected)
     def test_new_homepage_mode_is_reported_instead_of_silently_omitted(self):
         routes=Archive(SNAPSHOT).catalog_routes()
         with patch.object(Archive,'catalog_routes',return_value=routes|{'/futbol11-new-mode'}):
