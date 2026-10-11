@@ -649,6 +649,22 @@
     "cached": true
   },
   {
+    "asset": "entity-lukas-podolski",
+    "url": "https://futbol11.com/images/321.png",
+    "cached": true
+  },
+  {
+    "asset": "entity-anthony-modeste",
+    "url": "https://assets.dfb.de/uploads/000/204/911/custom_style_1_Anthony-Modeste.jpg?1564673104",
+    "cached": true,
+    "sourceURL": "https://datencenter.dfb.de/personen/anthony-modeste/spieler/spiele-in-saison/bundesliga/2016-2017/1-fc-koeln"
+  },
+  {
+    "asset": "entity-klaas-jan-huntelaar",
+    "url": "https://futbol11.com/images/1239.webp",
+    "cached": true
+  },
+  {
     "asset": "entity-juventus",
     "url": "https://img.uefa.com/imgml/TP/teams/logos/100x100/50139.png",
     "cached": true
@@ -1111,6 +1127,21 @@
   {
     "asset": "club-badge-bradford",
     "url": "https://img.uefa.com/imgml/TP/teams/logos/100x100/72533.png",
+    "cached": true
+  },
+  {
+    "asset": "club-badge-fortuna-dusseldorf",
+    "url": "https://img.uefa.com/imgml/TP/teams/logos/100x100/5926.png",
+    "cached": true
+  },
+  {
+    "asset": "club-badge-fortuna-cologne",
+    "url": "https://assets.dfb.de/uploads/000/321/765/original_Fortuna_Koeln.jpg?1750937579",
+    "cached": true
+  },
+  {
+    "asset": "club-badge-duisburg",
+    "url": "https://img.uefa.com/imgml/TP/teams/logos/100x100/61565.png",
     "cached": true
   },
   {

@@ -217,5 +217,39 @@
     "imageURL": "https://img.uefa.com/imgml/TP/teams/logos/100x100/72533.png",
     "sourceURL": "https://www.uefa.com/nationalassociations/teams/72533--bradford/",
     "scope": "Club badge illustration, not a historical-season badge."
+  },
+  {
+    "name": "Fortuna Düsseldorf",
+    "aliases": [
+      "Fortuna Dusseldorf"
+    ],
+    "entityKey": "entity-fortuna-dusseldorf",
+    "asset": "club-badge-fortuna-dusseldorf",
+    "imageURL": "https://img.uefa.com/imgml/TP/teams/logos/100x100/5926.png",
+    "sourceURL": "https://de.uefa.com/uefaeuropaleague/clubs/5926--dusseldorf/statistics/",
+    "scope": "Club badge illustration, not a historical-season badge."
+  },
+  {
+    "name": "SC Fortuna Köln",
+    "aliases": [
+      "Fortuna Köln",
+      "Fortuna Cologne"
+    ],
+    "entityKey": "entity-fortuna-cologne",
+    "asset": "club-badge-fortuna-cologne",
+    "imageURL": "https://assets.dfb.de/uploads/000/321/765/original_Fortuna_Koeln.jpg?1750937579",
+    "sourceURL": "https://datencenter.dfb.de/teams/fortuna-koeln",
+    "scope": "Club badge illustration, not a historical-season badge."
+  },
+  {
+    "name": "MSV Duisburg",
+    "aliases": [
+      "Duisburg"
+    ],
+    "entityKey": "entity-duisburg",
+    "asset": "club-badge-duisburg",
+    "imageURL": "https://img.uefa.com/imgml/TP/teams/logos/100x100/61565.png",
+    "sourceURL": "https://www.uefa.com/nationalassociations/teams/61565--duisburg/",
+    "scope": "Club badge illustration, not a historical-season badge."
   }
 ]

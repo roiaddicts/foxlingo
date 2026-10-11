@@ -75,7 +75,7 @@ final class FlowTests: XCTestCase {
         tap(key);tap("lesson-next");tap("lesson-next")
         for index in 0..<4 {
             if app.pickerWheels.count == 2 {
-                let score = key == "lesson-curriculum-champions-uv-rooney-fenerbahce" ? ("6","2") : key == "lesson-curriculum-champions-uv-rooney-city-overhead" ? ("2","1") : key == "lesson-curriculum-netzer-moment-cup" ? ("2","1") : key == "lesson-necaxa-starter" ? ("9","0") : key == "lesson-competition-champions-league-istanbul" ? [("3","0"),("3","3"),("3","2"),("3","0")][index] : ("4","1")
+                let score = key == "lesson-curriculum-modeste-hamburg" ? ("3","0") : key == "lesson-curriculum-modeste-bremen" ? ("4","3") : key == "lesson-curriculum-champions-uv-rooney-fenerbahce" ? ("6","2") : key == "lesson-curriculum-champions-uv-rooney-city-overhead" ? ("2","1") : key == "lesson-curriculum-netzer-moment-cup" ? ("2","1") : key == "lesson-necaxa-starter" ? ("9","0") : key == "lesson-competition-champions-league-istanbul" ? [("3","0"),("3","3"),("3","2"),("3","0")][index] : ("4","1")
                 setScore(score.0,score.1);tap("check-score")
             } else {tap("answer-choice-0")}
             tap("answer-next")
@@ -840,6 +840,17 @@ final class FlowTests: XCTestCase {
         tap("timeline-sources");XCTAssertTrue(app.staticTexts["2007"].exists)
         let context=XCTAttachment(screenshot:app.screenshot());context.name="Large text timeline sources";context.lifetime = .keepAlways;add(context)
         tap("timeline-sources-done");tap("timeline-replay")
+    }
+    func testExpandedModesteCourseAndScoresPersist() {
+        start();tap("choose-XT");choosePlayer("Anthony Modeste","anthony-modeste")
+        XCTAssertTrue(app.staticTexts["roadmap-progress"].label.contains("0 of 4 starter lessons"))
+        completeLesson("lesson-curriculum-modeste-arrival")
+        completeLesson("lesson-curriculum-modeste-hamburg")
+        completeLesson("lesson-curriculum-modeste-bremen")
+        XCTAssertTrue(app.staticTexts["roadmap-progress"].label.contains("3 of 4 starter lessons"))
+        app.terminate();start(reset:false)
+        XCTAssertTrue(app.staticTexts["Anthony Modeste"].waitForExistence(timeout:5))
+        XCTAssertTrue(app.staticTexts["roadmap-progress"].label.contains("3 of 4 starter lessons"))
     }
     func testExpandedRooneyCourseScoresAndProgressPersist() {
         start();tap("choose-XT");choosePlayer("Wayne Rooney","wayne-rooney")

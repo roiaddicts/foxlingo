@@ -1,5 +1,5 @@
 {
-  "contentVersion": 18,
+  "contentVersion": 19,
   "scope": "Depth among offered club courses and authored player courses. Player course totals are not coverage of the full game catalog.",
   "clubs": [
     {
@@ -318,11 +318,17 @@
     {
       "key": "roadmap-fc-cologne",
       "name": "1. FC Köln",
-      "requiredLessons": 1,
-      "definingMomentLessons": 0,
-      "playerPaths": [],
-      "completePlayerPaths": [],
-      "complete": false
+      "requiredLessons": 12,
+      "definingMomentLessons": 2,
+      "playerPaths": [
+        "roadmap-player-anthony-modeste",
+        "roadmap-player-lukas-podolski"
+      ],
+      "completePlayerPaths": [
+        "roadmap-player-anthony-modeste",
+        "roadmap-player-lukas-podolski"
+      ],
+      "complete": true
     },
     {
       "key": "roadmap-fenerbah-e",
@@ -735,11 +741,17 @@
     {
       "key": "roadmap-schalke-04",
       "name": "FC Schalke 04",
-      "requiredLessons": 1,
-      "definingMomentLessons": 0,
-      "playerPaths": [],
-      "completePlayerPaths": [],
-      "complete": false
+      "requiredLessons": 12,
+      "definingMomentLessons": 2,
+      "playerPaths": [
+        "roadmap-player-klaas-jan-huntelaar",
+        "roadmap-player-jefferson-farfan"
+      ],
+      "completePlayerPaths": [
+        "roadmap-player-klaas-jan-huntelaar",
+        "roadmap-player-jefferson-farfan"
+      ],
+      "complete": true
     },
     {
       "key": "roadmap-shakhtar",
@@ -2164,18 +2176,70 @@
       ],
       "missingAreas": [],
       "complete": true
+    },
+    {
+      "key": "roadmap-player-lukas-podolski",
+      "name": "Lukas Podolski",
+      "entityID": "4b561e7b-9abe-55e8-95ea-6c51076cc9d3",
+      "playerLessons": 4,
+      "chapters": [
+        "Career journey",
+        "Defining moments",
+        "Records & honours"
+      ],
+      "missingAreas": [],
+      "complete": true
+    },
+    {
+      "key": "roadmap-player-anthony-modeste",
+      "name": "Anthony Modeste",
+      "entityID": "31dae0ff-84ec-552e-88d3-13ab85fe368c",
+      "playerLessons": 4,
+      "chapters": [
+        "Career journey",
+        "Defining moments",
+        "Records & honours"
+      ],
+      "missingAreas": [],
+      "complete": true
+    },
+    {
+      "key": "roadmap-player-klaas-jan-huntelaar",
+      "name": "Klaas-Jan Huntelaar",
+      "entityID": "258e283a-de20-5a8a-8f93-b9779028401f",
+      "playerLessons": 4,
+      "chapters": [
+        "Career journey",
+        "Defining moments",
+        "Records & honours"
+      ],
+      "missingAreas": [],
+      "complete": true
+    },
+    {
+      "key": "roadmap-player-jefferson-farfan",
+      "name": "Jefferson Farfan",
+      "entityID": "98b59e35-deea-5bfe-aade-1a972ab7a69c",
+      "playerLessons": 4,
+      "chapters": [
+        "Career journey",
+        "Defining moments",
+        "Records & honours"
+      ],
+      "missingAreas": [],
+      "complete": true
     }
   ],
-  "completedClubs": 42,
+  "completedClubs": 44,
   "totalClubs": 69,
-  "completedPlayers": 93,
-  "totalPlayers": 93,
+  "completedPlayers": 97,
+  "totalPlayers": 97,
   "gameCatalogPlayerCoverage": {
     "scope": "Unique supplied game-catalog player IDs with an explicit reviewed identity binding; no name-based guesses. This historical catalog is not a current squad list.",
     "totalCatalogPlayers": 5274,
-    "playersWithAuthoredPaths": 62,
-    "playersMeetingDepthRequirements": 62,
-    "playersWithoutAuthoredPaths": 5212,
+    "playersWithAuthoredPaths": 66,
+    "playersMeetingDepthRequirements": 66,
+    "playersWithoutAuthoredPaths": 5208,
     "independentPlayerPaths": [
       "roadmap-player-riascos",
       "roadmap-player-arce",

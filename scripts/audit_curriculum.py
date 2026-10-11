@@ -1,6 +1,7 @@
 """Report real club/player course depth without treating catalog records as lessons."""
 import json
 from pathlib import Path
+from catalog_identity import referenced_player_ids
 ROOT=Path(__file__).resolve().parents[1]
 
 def audit(pack, game_catalog=None):
@@ -28,11 +29,10 @@ def audit(pack, game_catalog=None):
         catalog_ids={p['id'] for p in game_catalog['players']}
         authored_ids=set();complete_ids=set();independent=[]
         for player in players:
-            ref=entities[player['entityID']].get('externalRefs',{}).get('futbol11.gamePlayers')
-            seed_id='player-'+str(ref) if ref is not None else None
-            if seed_id in catalog_ids:
-                authored_ids.add(seed_id)
-                if player['complete']:complete_ids.add(seed_id)
+            seed_ids=referenced_player_ids(entities[player['entityID']].get('externalRefs',{})) & catalog_ids
+            if seed_ids:
+                authored_ids.update(seed_ids)
+                if player['complete']:complete_ids.update(seed_ids)
             else:independent.append(player['key'])
         report['gameCatalogPlayerCoverage']=dict(
             scope='Unique supplied game-catalog player IDs with an explicit reviewed identity binding; no name-based guesses. This historical catalog is not a current squad list.',

@@ -2,6 +2,7 @@
 import json
 from pathlib import Path
 from merge_favorites import uid
+from catalog_identity import player_reference
 ROOT=Path(__file__).resolve().parents[1]
 CHAPTERS={'history':'History & identity','moments':'Defining moments','players':'Players & legacies','career':'Career journey','records':'Records & honours','legacy':'Legacy'}
 
@@ -76,7 +77,9 @@ def merge(pack):
             entity=dict(id=uid(key),key=key,type='player',name=player['name'],aliases=player['aliases'],visual=player['visual'],externalRefs={})
             image=player.get('imageURL') or (seed or {}).get('imageURL')
             if image:entity.update(imageAsset=key,imageURL=image)
-            if seed:entity['externalRefs']['futbol11.gamePlayers']=player['seedID'].removeprefix('player-')
+            if seed:
+                namespace,provider_id=player_reference(player['seedID'])
+                entity['externalRefs'][namespace]=provider_id
             pack['entities'].append(entity);entities[key]=entity
             ck='card-'+key.removeprefix('entity-')
             pack['cards'].append(dict(id=uid(ck),key=ck,entityID=entity['id'],objectiveIDs=[],lessonIDs=[],knowledgeVersion=1,caption='Career, defining moments and records'))

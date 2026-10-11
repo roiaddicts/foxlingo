@@ -81,6 +81,12 @@ with ThreadPoolExecutor(max_workers=8) as pool:
 for player in catalog['players']:
  if player.get('portraitSourceURL'):
   item=next(m for m in manifest if m['asset']==player['key']);item['sourceURL']=player['portraitSourceURL']
+# Curated replacements for missing seed portraits retain their official source.
+for name in json.loads(registry.read_text())['packs'] if registry.exists() else []:
+ for player in json.loads((ROOT/'content'/name).read_text()).get('players',[]):
+  if player.get('portraitSourceURL'):
+   item=next((m for m in manifest if m['asset']==player['key']),None)
+   if item:item['sourceURL']=player['portraitSourceURL']
 # Keep curated career artwork (including a crest cropped from an AFC PDF).
 # These cached artifacts have their own provenance and are not raw URL images.
 for item in json.loads((ROOT/'content/player-career-artwork.json').read_text()):

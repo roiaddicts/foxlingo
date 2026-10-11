@@ -1,5 +1,5 @@
 {
-  "contentVersion": 18,
+  "contentVersion": 19,
   "packs": [
     "curriculum-champions.json",
     "curriculum-bundesliga.json",
@@ -18,7 +18,8 @@
     "curriculum-bundesliga-fifth.json",
     "curriculum-bundesliga-sixth.json",
     "curriculum-champions-united-villarreal.json",
-    "curriculum-ligamx-fourth.json"
+    "curriculum-ligamx-fourth.json",
+    "curriculum-bundesliga-seventh.json"
   ],
   "cardKnowledgeVersions": {
     "card-cristiano": 4

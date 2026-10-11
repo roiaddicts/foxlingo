@@ -5,6 +5,7 @@ import unittest
 from pathlib import Path
 
 from audit_curriculum import audit
+from catalog_identity import player_reference
 
 
 class PlayerCoverageTests(unittest.TestCase):
@@ -50,6 +51,25 @@ class PlayerCoverageTests(unittest.TestCase):
         self.assertEqual(coverage['playersMeetingDepthRequirements'],1)
         self.assertEqual(coverage['playersWithoutAuthoredPaths'],1)
         self.assertNotIn('roadmap-player-gerrard',coverage['independentPlayerPaths'])
+
+    def test_classic_identity_does_not_bind_same_number_in_game_catalog(self):
+        pack=copy.deepcopy(self.pack)
+        player_id=next(p['subjectID'] for p in pack['roadmaps'] if p['key']=='roadmap-player-gerrard')
+        entity=next(e for e in pack['entities'] if e['id']==player_id)
+        namespace,provider_id=player_reference('classic-player-2497')
+        entity['externalRefs']={namespace:provider_id}
+        self.assertEqual(namespace,'futbol11.classicPlayers')
+        game_only={'players':[{'id':'player-2497','name':entity['name']}]}
+        self.assertEqual(audit(pack,game_only)['gameCatalogPlayerCoverage']['playersWithAuthoredPaths'],0)
+        mixed={'players':game_only['players']+[{'id':'classic-player-2497','name':'Reviewed classic identity'}]}
+        coverage=audit(pack,mixed)['gameCatalogPlayerCoverage']
+        self.assertEqual(coverage['playersWithAuthoredPaths'],1)
+        self.assertEqual(coverage['playersMeetingDepthRequirements'],1)
+        self.assertEqual(coverage['playersWithoutAuthoredPaths'],1)
+
+    def test_unrecognized_authored_provider_is_rejected(self):
+        with self.assertRaises(ValueError):player_reference('unknown-player-2497')
+        with self.assertRaises(ValueError):player_reference('classic-player-')
 
 
 if __name__ == '__main__':

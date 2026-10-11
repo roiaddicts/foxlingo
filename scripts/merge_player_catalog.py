@@ -2,6 +2,7 @@
 from pathlib import Path
 import json
 from merge_favorites import merge, uid
+from catalog_identity import player_reference
 
 ROOT=Path(__file__).resolve().parents[1]
 
@@ -31,7 +32,8 @@ def compile_catalog(pack):
             raise ValueError('Canonical player identity changed: '+key)
         entity['imageAsset']=key
         entity['imageURL']=player.get('imageURL') or seed.get('imageURL')
-        entity['externalRefs']['futbol11.gamePlayers']=player['seedID'].removeprefix('player-')
+        namespace,provider_id=player_reference(player['seedID'])
+        entity['externalRefs'][namespace]=provider_id
         if any(c['entityID']==entity['id'] for c in pack['cards']):
             raise ValueError('Existing player card requires explicit enrichment: '+key)
         pack['cards'].append(dict(id=uid('card-'+key.removeprefix('entity-')),key='card-'+key.removeprefix('entity-'),entityID=entity['id'],objectiveIDs=[],lessonIDs=[],knowledgeVersion=1,caption='Career connections and club records'))
