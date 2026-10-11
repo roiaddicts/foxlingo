@@ -135,4 +135,3 @@ Prepared 2026-10-10. The companion JSON contains six club lessons and sixteen pl
 - `bell-youth-title-year` — In what year did Bell’s Mainz U19 team win the German A-Junioren championship? **Answer:** 2009. **Scope:** Mainz U19 championship season. The club records Bell’s 2009 German U19 championship with Mainz. Source: `fourth-bell-career`.
 - `bell-youth-age` — How old was Bell during Mainz’s 2009 U19 championship? **Answer:** 17. **Scope:** Stefan Bell during the 2009 U19 title season. Mainz calls him a 17-year-old member of the title side. Source: `fourth-bell-career`.
 - `bell-youth-final` — Which club did Mainz defeat 2–1 in the 2009 U19 final that Bell missed through injury? **Answer:** Borussia Dortmund. **Scope:** German U19 final, June 2009. The club’s retrospective says Bell missed the final injured; Mainz beat Dortmund 2–1. Source: `fourth-bell-career`.
-

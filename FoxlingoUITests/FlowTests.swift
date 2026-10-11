@@ -75,7 +75,7 @@ final class FlowTests: XCTestCase {
         tap(key);tap("lesson-next");tap("lesson-next")
         for index in 0..<4 {
             if app.pickerWheels.count == 2 {
-                let score = key == "lesson-necaxa-starter" ? ("9","0") : key == "lesson-competition-champions-league-istanbul" ? [("3","0"),("3","3"),("3","2"),("3","0")][index] : ("4","1")
+                let score = key == "lesson-curriculum-netzer-moment-cup" ? ("2","1") : key == "lesson-necaxa-starter" ? ("9","0") : key == "lesson-competition-champions-league-istanbul" ? [("3","0"),("3","3"),("3","2"),("3","0")][index] : ("4","1")
                 setScore(score.0,score.1);tap("check-score")
             } else {tap("answer-choice-0")}
             tap("answer-next")
@@ -840,6 +840,18 @@ final class FlowTests: XCTestCase {
         tap("timeline-sources");XCTAssertTrue(app.staticTexts["2007"].exists)
         let context=XCTAttachment(screenshot:app.screenshot());context.name="Large text timeline sources";context.lifetime = .keepAlways;add(context)
         tap("timeline-sources-done");tap("timeline-replay")
+    }
+    func testExpandedNetzerCourseAndScorePersist() {
+        start();tap("choose-XT");choosePlayer("Günter Netzer","guenter-netzer")
+        XCTAssertTrue(app.staticTexts["roadmap-progress"].label.contains("0 of 4 starter lessons"))
+        completeLesson("lesson-curriculum-netzer-career")
+        completeLesson("lesson-curriculum-netzer-moment-cup")
+        completeLesson("lesson-curriculum-netzer-moment-wembley")
+        XCTAssertTrue(app.staticTexts["roadmap-progress"].label.contains("3 of 4 starter lessons"))
+        app.terminate();start(reset:false)
+        XCTAssertTrue(app.staticTexts["Günter Netzer"].waitForExistence(timeout:5))
+        XCTAssertTrue(app.staticTexts["roadmap-progress"].label.contains("3 of 4 starter lessons"))
+        let shot=XCTAttachment(screenshot:app.screenshot());shot.name="Netzer course, flags and score retain progress";shot.lifetime = .keepAlways;add(shot)
     }
     func testExpandedVanNistelrooyCourseAndScorePersist() {
         start();tap("choose-XT");choosePlayer("Ruud van Nistelrooy","ruud-van-nistelrooy")

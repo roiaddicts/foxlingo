@@ -110,7 +110,8 @@
     "asset": "club-badge-bologna",
     "imageURL": "https://img.uefa.com/imgml/TP/teams/logos/100x100/52969.png",
     "sourceURL": "https://www.uefa.com/nationalassociations/teams/52969/",
-    "scope": "Club badge illustration, not a historical-season badge."
+    "scope": "Club badge illustration, not a historical-season badge.",
+    "entityKey": "entity-bologna"
   },
   {
     "name": "Fiorentina",

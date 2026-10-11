@@ -1,5 +1,5 @@
 {
-  "contentVersion": 16,
+  "contentVersion": 17,
   "scope": "Depth among offered club courses and authored player courses. Player course totals are not coverage of the full game catalog.",
   "clubs": [
     {
@@ -141,11 +141,17 @@
     {
       "key": "roadmap-augsburg",
       "name": "FC Augsburg",
-      "requiredLessons": 1,
-      "definingMomentLessons": 0,
-      "playerPaths": [],
-      "completePlayerPaths": [],
-      "complete": false
+      "requiredLessons": 12,
+      "definingMomentLessons": 2,
+      "playerPaths": [
+        "roadmap-player-daniel-baier",
+        "roadmap-player-helmut-haller"
+      ],
+      "completePlayerPaths": [
+        "roadmap-player-daniel-baier",
+        "roadmap-player-helmut-haller"
+      ],
+      "complete": true
     },
     {
       "key": "roadmap-barcelona",
@@ -219,11 +225,17 @@
     {
       "key": "roadmap-borussia-monchengladbach",
       "name": "Borussia Mönchengladbach",
-      "requiredLessons": 1,
-      "definingMomentLessons": 0,
-      "playerPaths": [],
-      "completePlayerPaths": [],
-      "complete": false
+      "requiredLessons": 12,
+      "definingMomentLessons": 2,
+      "playerPaths": [
+        "roadmap-player-lothar-matthaus",
+        "roadmap-player-guenter-netzer"
+      ],
+      "completePlayerPaths": [
+        "roadmap-player-lothar-matthaus",
+        "roadmap-player-guenter-netzer"
+      ],
+      "complete": true
     },
     {
       "key": "roadmap-chivas",
@@ -1869,18 +1881,70 @@
       ],
       "missingAreas": [],
       "complete": true
+    },
+    {
+      "key": "roadmap-player-lothar-matthaus",
+      "name": "Lothar Matthäus",
+      "entityID": "1035c3df-48fa-5134-8da2-3d4c55291655",
+      "playerLessons": 4,
+      "chapters": [
+        "Career journey",
+        "Defining moments",
+        "Records & honours"
+      ],
+      "missingAreas": [],
+      "complete": true
+    },
+    {
+      "key": "roadmap-player-guenter-netzer",
+      "name": "Günter Netzer",
+      "entityID": "87120535-4b2d-5a65-82cd-fb78170c3d94",
+      "playerLessons": 4,
+      "chapters": [
+        "Career journey",
+        "Defining moments",
+        "Records & honours"
+      ],
+      "missingAreas": [],
+      "complete": true
+    },
+    {
+      "key": "roadmap-player-helmut-haller",
+      "name": "Helmut Haller",
+      "entityID": "9166516e-a9e2-5ec6-86be-1310bb2e5211",
+      "playerLessons": 4,
+      "chapters": [
+        "Career journey",
+        "Defining moments",
+        "Records & honours"
+      ],
+      "missingAreas": [],
+      "complete": true
+    },
+    {
+      "key": "roadmap-player-daniel-baier",
+      "name": "Daniel Baier",
+      "entityID": "00b035cc-f241-53c9-b858-f7175b826893",
+      "playerLessons": 4,
+      "chapters": [
+        "Career journey",
+        "Defining moments",
+        "Records & honours"
+      ],
+      "missingAreas": [],
+      "complete": true
     }
   ],
-  "completedClubs": 33,
+  "completedClubs": 35,
   "totalClubs": 69,
-  "completedPlayers": 75,
-  "totalPlayers": 75,
+  "completedPlayers": 79,
+  "totalPlayers": 79,
   "gameCatalogPlayerCoverage": {
     "scope": "Unique supplied game-catalog player IDs with an explicit reviewed identity binding; no name-based guesses. This historical catalog is not a current squad list.",
     "totalCatalogPlayers": 5274,
-    "playersWithAuthoredPaths": 52,
-    "playersMeetingDepthRequirements": 52,
-    "playersWithoutAuthoredPaths": 5222,
+    "playersWithAuthoredPaths": 53,
+    "playersMeetingDepthRequirements": 53,
+    "playersWithoutAuthoredPaths": 5221,
     "independentPlayerPaths": [
       "roadmap-player-riascos",
       "roadmap-player-arce",
@@ -1904,7 +1968,10 @@
       "roadmap-player-nils-petersen",
       "roadmap-player-vincenzo-grifo",
       "roadmap-player-jurgen-klopp",
-      "roadmap-player-stefan-bell"
+      "roadmap-player-stefan-bell",
+      "roadmap-player-guenter-netzer",
+      "roadmap-player-helmut-haller",
+      "roadmap-player-daniel-baier"
     ]
   }
 }
