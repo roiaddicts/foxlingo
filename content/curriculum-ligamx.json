@@ -1,0 +1,3056 @@
+{
+  "sources": [
+    {
+      "key": "ligamx-america-history",
+      "title": "Club América: The Club — more than 100 years of history",
+      "url": "https://www.clubamerica.com.mx/el-club",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "ligamx-america-1925",
+      "title": "Club América: 100 years since the first championship",
+      "url": "https://www.clubamerica.com.mx/noticias/se-cumplen-100-anos-del-primer-campeonato-del-club-america",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "ligamx-america-1980s",
+      "title": "Club América: 1981–1990 history",
+      "url": "https://www.clubamerica.com.mx/historia/1981-1990/",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "ligamx-chivas-history",
+      "title": "Chivas: Club history",
+      "url": "https://www.chivasdecorazon.com.mx/es/club/historia",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "ligamx-chivas-119",
+      "title": "Chivas: 119 facts from the club’s history",
+      "url": "https://www.chivasdecorazon.com.mx/es/noticias/39314/119-datos-de-la-historia-de-Chivas",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "ligamx-chivas-championships",
+      "title": "Chivas: Championships",
+      "url": "https://www.chivasdecorazon.com.mx/en/club/campeonatos",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "ligamx-toluca-history",
+      "title": "Toluca: Club history",
+      "url": "https://www.tolucafc.com/nuestra-historia",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "ligamx-toluca-1967",
+      "title": "Toluca: 1967–68 trophy history",
+      "url": "https://www.tolucafc.com/trofeo-1967-1968",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "ligamx-toluca-1999",
+      "title": "Toluca: Verano 1999 title history",
+      "url": "https://www.tolucafc.com/palmares-verano-1999",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "ligamx-toluca-2008",
+      "title": "Toluca: Apertura 2008 title history",
+      "url": "https://www.tolucafc.com/palmares-apertura-2008",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "am-henry-64",
+      "title": "Henry Martín ties Antonio Carlos Santos on América scoring list",
+      "url": "https://www.clubamerica.com.mx/noticias/cronica-america-vs-santos-laguna",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "am-henry-puebla",
+      "title": "Club América: Puebla vs América, 2022 quarterfinal",
+      "url": "https://www.clubamerica.com.mx/noticias/cronica-puebla-vs-america-cuartos-de-final-ida",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "am-ochoa-debut",
+      "title": "Club América: Guillermo Ochoa first-team debut (official video)",
+      "url": "https://www.youtube.com/watch?v=fiNQ_m0kRPU",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "am-ochoa-fmf",
+      "title": "FMF: Guillermo Ochoa player biography",
+      "url": "https://www.fmf.com.mx/guillermo_ochoa.htm",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "am-ochoa-tokyo",
+      "title": "Club América: Ochoa and América teammates at Tokyo 2020",
+      "url": "https://www.clubamerica.com.mx/noticias/estamos-a-un-partido-de-oler-las-medallas-guillermo-ochoa",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "am-ochoa-fifa",
+      "title": "FIFA: Guillermo Ochoa, six World Cups",
+      "url": "https://www.fifa.com/es/articles/guillermo-ochoa-ultimo-mundial-sexta-copa-mundial",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "ch-javier-100",
+      "title": "Chivas: Javier Hernández reaches 100 official matches",
+      "url": "https://www.chivasdecorazon.com.mx/es/noticias/38766/Chicharito-lleg-a-100-partidos-en-competencias-oficiales-con-Chivas",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "ch-javier-debut",
+      "title": "Chivas: Javier Hernández debut and goal-scoring title",
+      "url": "https://www.chivasdecorazon.com.mx/es/noticias/36720/Las-grandes-dinastas-rojiblancas",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "ch-salcido-25",
+      "title": "Chivas: Carlos Salcido’s first-team debut",
+      "url": "https://www.chivasdecorazon.com.mx/es/noticias/41126/A-25-aos-del-debut-de-Carlos-Salcido-con-Chivas",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "ch-salcido-retire",
+      "title": "Chivas: “Thank you, Captain!” — Carlos Salcido",
+      "url": "https://www.chivasdecorazon.com.mx/es/noticias/31193/Gracias-Capitn",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "tol-cardozo-98",
+      "title": "Toluca: Verano 1998 title",
+      "url": "https://www.tolucafc.com/palmares-verano-1998",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "tol-cristante-99",
+      "title": "Toluca: Verano 1999 final",
+      "url": "https://www.tolucafc.com/palmares-verano-1999",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "tol-cristante-08",
+      "title": "Toluca: Apertura 2008 final",
+      "url": "https://www.tolucafc.com/palmares-apertura-2008",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "am-henry-clasico",
+      "title": "Club América: América 2–1 Chivas, Apertura 2022",
+      "url": "https://www.clubamerica.com.mx/noticias/cronica-america-2-1-chivas-apertura-2022",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "ch-2017-home-final",
+      "title": "Chivas: the 2017 final returns to Estadio Chivas",
+      "url": "https://www.chivasdecorazon.com.mx/es/noticias/28711/Regres-el-Gigante",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "am-henry-xolos-bio",
+      "title": "Club Tijuana: Henry Martín player biography",
+      "url": "https://www.xolos.com.mx/jugador/85/henry-martin",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "am-henry-xolos-debut",
+      "title": "Club Tijuana: Apertura 2014 debutants",
+      "url": "https://xolos.com.mx/noticias/xoloitzcuintles/2007/el-club-tijuana-y-boing-reciben-a-futuros-fot-grafos-de-prosor.html",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "tol-cristante-bio",
+      "title": "Hernán Cristante: biography from his football school",
+      "url": "https://www.hernancristante.com.mx/biografia/",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "tol-cristante-hall",
+      "title": "International Football Hall of Fame: Hernán Cristante",
+      "url": "https://salondelafamadelfutbol.com/cristante",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "tol-cardozo-fifa",
+      "title": "FIFA: José Saturnino Cardozo’s 29-goal short-format record",
+      "url": "https://inside.fifa.com/tournaments/mens/clubworldcup/uae2018/news/challenges-aplenty-await-guadalajara-2986884",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "tol-cardozo-concacaf",
+      "title": "Concacaf: José Cardozo as Toluca’s all-time leading scorer and 2003 champion",
+      "url": "https://www.concacaf.com/champions-league/news/cardozo-wants-toluca-in-fifa-club-world-cup/",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "tol-cardozo-olympics",
+      "title": "FIFA: Paraguay and José Cardozo at Athens 2004",
+      "url": "https://inside.fifa.com/tournaments/mens/mensolympic/athens2004/news/argentinian-flame-burns-brightest-94055",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "ch-cardozo-bio",
+      "title": "Chivas welcomes José Saturnino Cardozo",
+      "url": "https://www.chivasdecorazon.com.mx/es/noticias/30357/Bienvenido-a-Chivas-Jos-Saturnino-Cardozo",
+      "verifiedAt": "2026-10-10"
+    }
+  ],
+  "players": [
+    {
+      "key": "entity-henry-martin",
+      "name": "Henry Martín",
+      "aliases": [
+        "Henry Martin"
+      ],
+      "visual": "HM",
+      "clubKey": "entity-america",
+      "seedID": "player-1160",
+      "seedName": "Henry Martin"
+    },
+    {
+      "key": "entity-guillermo-ochoa",
+      "name": "Guillermo Ochoa",
+      "aliases": [
+        "Memo Ochoa",
+        "Francisco Guillermo Ochoa Magaña"
+      ],
+      "visual": "GO",
+      "clubKey": "entity-america",
+      "seedID": "player-843",
+      "seedName": "Guillermo Ochoa"
+    },
+    {
+      "key": "entity-chicharito",
+      "name": "Javier Hernández",
+      "aliases": [
+        "Chicharito",
+        "Javier Hernández Balcázar"
+      ],
+      "visual": "JH",
+      "clubKey": "entity-chivas",
+      "seedID": "player-200",
+      "seedName": "Chicharito"
+    },
+    {
+      "key": "entity-carlos-salcido",
+      "name": "Carlos Salcido",
+      "aliases": [
+        "Carlos Arnoldo Salcido Flores"
+      ],
+      "visual": "CS",
+      "clubKey": "entity-chivas",
+      "seedID": "player-1283",
+      "seedName": "Carlos Salcido"
+    },
+    {
+      "key": "entity-jose-saturnino-cardozo",
+      "name": "José Saturnino Cardozo",
+      "aliases": [
+        "José Cardozo",
+        "Pepe Cardozo"
+      ],
+      "visual": "JC",
+      "clubKey": "entity-toluca"
+    },
+    {
+      "key": "entity-hernan-cristante",
+      "name": "Hernán Cristante",
+      "aliases": [
+        "Cristante",
+        "Nani"
+      ],
+      "visual": "HC",
+      "clubKey": "entity-toluca"
+    }
+  ],
+  "lessons": [
+    {
+      "key": "lesson-curriculum-america-origins",
+      "subjectKey": "entity-america",
+      "clubKey": "entity-america",
+      "chapter": "history",
+      "title": "From Récord to América",
+      "subtitle": "A schoolyard team became a four-time champion.",
+      "story": [
+        {
+          "title": "A team takes shape",
+          "body": "Students Rafael Garza Gutiérrez and Germán Núñez Cortina brought together classmates in 1916. The team took its name at a meeting in the Condesa neighborhood on October 12."
+        },
+        {
+          "title": "A run of titles",
+          "body": "After returning to the name América in 1920, the club won four consecutive league championships from 1924–25 through 1927–28."
+        }
+      ],
+      "facts": [
+        {
+          "key": "america-founded-year",
+          "label": "Formation",
+          "prompt": "In what year did the students form the team that became Club América?",
+          "answers": [
+            "1916"
+          ],
+          "distractors": [
+            "1906",
+            "1917",
+            "1920"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "1916",
+            "number": 1916,
+            "unit": "year"
+          },
+          "scope": "Club origins",
+          "sourceKey": "ligamx-america-history",
+          "evidence": "The official club history dates the founding gathering of the team that became América to 1916."
+        },
+        {
+          "key": "america-name-date",
+          "label": "Club identity",
+          "prompt": "On what date did the group choose the name América?",
+          "answers": [
+            "October 12, 1916",
+            "12 October 1916"
+          ],
+          "distractors": [
+            "May 8, 1906",
+            "February 12, 1917",
+            "October 31, 1917"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "October 12, 1916",
+            "text": "October 12, 1916"
+          },
+          "scope": "Club origins",
+          "sourceKey": "ligamx-america-history",
+          "evidence": "América’s official history says the team selected its name at the Condesa gathering on October 12, 1916."
+        },
+        {
+          "key": "america-fourpeat-period",
+          "label": "Early titles",
+          "prompt": "Across which seasons did América win four consecutive league championships?",
+          "answers": [
+            "1924–25 to 1927–28",
+            "1924-25 to 1927-28"
+          ],
+          "distractors": [
+            "1920–21 to 1923–24",
+            "1925–26 to 1928–29",
+            "1926–27 to 1929–30"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "1924–25 to 1927–28",
+            "text": "1924–25 to 1927–28"
+          },
+          "scope": "Amateur-era league championships",
+          "sourceKey": "ligamx-america-history",
+          "evidence": "The official history lists four consecutive championships from 1924–25 through 1927–28."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-america-first-title",
+      "subjectKey": "entity-america",
+      "clubKey": "entity-america",
+      "chapter": "moments",
+      "title": "The first star arrives",
+      "subtitle": "An unbeaten season ended with a late winner.",
+      "story": [
+        {
+          "title": "A perfect finish",
+          "body": "América’s first championship came in the amateur-era 1924–25 season. The team clinched it with a narrow win over Asturias in March 1925."
+        },
+        {
+          "title": "A measured campaign",
+          "body": "The club’s account records ten wins and two draws across twelve matches, with just four goals conceded."
+        }
+      ],
+      "facts": [
+        {
+          "key": "america-first-title-date",
+          "label": "First championship",
+          "prompt": "On what date did América clinch its first championship?",
+          "answers": [
+            "March 1, 1925",
+            "1 March 1925"
+          ],
+          "distractors": [
+            "October 12, 1916",
+            "June 5, 1927",
+            "May 28, 2017"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "March 1, 1925",
+            "text": "March 1, 1925"
+          },
+          "scope": "1924–25 amateur-era championship",
+          "sourceKey": "ligamx-america-1925",
+          "evidence": "The club’s centenary account dates the clinching match to March 1, 1925."
+        },
+        {
+          "key": "america-first-title-opponent",
+          "label": "Championship match",
+          "prompt": "Which club did América beat to secure its first championship?",
+          "answers": [
+            "Asturias"
+          ],
+          "distractors": [
+            "Aurrera",
+            "España",
+            "Atlante"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Asturias",
+            "text": "Asturias"
+          },
+          "scope": "1924–25 amateur-era championship",
+          "sourceKey": "ligamx-america-1925",
+          "evidence": "The official account identifies Asturias as América’s opponent in the title-clinching match."
+        },
+        {
+          "key": "america-first-title-record",
+          "label": "Unbeaten campaign",
+          "prompt": "How many goals did América concede in its 12-match 1924–25 championship campaign?",
+          "answers": [
+            "4",
+            "Four"
+          ],
+          "distractors": [
+            "2",
+            "6",
+            "10"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "4 goals",
+            "number": 4,
+            "unit": "goals"
+          },
+          "scope": "1924–25 amateur-era championship",
+          "sourceKey": "ligamx-america-history",
+          "evidence": "The club’s official history gives the campaign record as 10 wins, 2 draws, 21 goals scored, and 4 conceded."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-america-1980s",
+      "subjectKey": "entity-america",
+      "clubKey": "entity-america",
+      "chapter": "moments",
+      "title": "Three titles in the 1980s",
+      "subtitle": "A rivalry final opened a championship streak.",
+      "story": [
+        {
+          "title": "A final against Guadalajara",
+          "body": "América beat Guadalajara in the 1983–84 final to earn its eighth championship. The club describes that victory as the start of a three-title run."
+        },
+        {
+          "title": "Three consecutive crowns",
+          "body": "The next two league championships followed in 1984–85 and Prode 1985, turning the initial final win into a historic sequence."
+        }
+      ],
+      "facts": [
+        {
+          "key": "america-1984-final-opponent",
+          "label": "Rivalry final",
+          "prompt": "Which rival did América defeat in the 1983–84 final?",
+          "answers": [
+            "Guadalajara",
+            "Chivas"
+          ],
+          "distractors": [
+            "Cruz Azul",
+            "Pumas",
+            "Toluca"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Guadalajara",
+            "text": "Guadalajara"
+          },
+          "scope": "1983–84 league final",
+          "sourceKey": "ligamx-america-1980s",
+          "evidence": "The club’s decade history identifies Guadalajara as the opponent in the 1983–84 final."
+        },
+        {
+          "key": "america-1984-title-count",
+          "label": "Championship milestone",
+          "prompt": "What league-title number did the 1983–84 championship give América, according to the club?",
+          "answers": [
+            "8",
+            "Eight"
+          ],
+          "distractors": [
+            "6",
+            "7",
+            "9"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "8th title",
+            "number": 8,
+            "unit": "th title"
+          },
+          "scope": "Club league-title count as stated in the 1981–1990 history",
+          "sourceKey": "ligamx-america-1980s",
+          "evidence": "América’s official account calls the 1983–84 championship its eighth title."
+        },
+        {
+          "key": "america-1980s-third-season",
+          "label": "Championship run",
+          "prompt": "In which tournament did América complete the three-title run that began in 1983–84?",
+          "answers": [
+            "Prode 1985"
+          ],
+          "distractors": [
+            "Invierno 1997",
+            "Verano 1999",
+            "Apertura 2002"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Prode 1985",
+            "text": "Prode 1985"
+          },
+          "scope": "Three consecutive league championships beginning in 1983–84",
+          "sourceKey": "ligamx-america-1980s",
+          "evidence": "The club lists 1984–85 as title nine and Prode 1985 as title ten in the three-title streak."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-chivas-origins",
+      "subjectKey": "entity-chivas",
+      "clubKey": "entity-chivas",
+      "chapter": "history",
+      "title": "A Guadalajara club",
+      "subtitle": "The 1906 side grew into the Campeonísimo.",
+      "story": [
+        {
+          "title": "A long-running club",
+          "body": "Club Deportivo Guadalajara dates its foundation to May 8, 1906. The team that became known as Chivas later defined a celebrated stretch of Mexican football."
+        },
+        {
+          "title": "The Campeonísimo era",
+          "body": "From 1957 to 1970, the club’s account credits this generation with a broad collection of domestic and international honors."
+        }
+      ],
+      "facts": [
+        {
+          "key": "chivas-founded-year",
+          "label": "Founding",
+          "prompt": "In what year was Club Deportivo Guadalajara founded?",
+          "answers": [
+            "1906"
+          ],
+          "distractors": [
+            "1892",
+            "1916",
+            "1917"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "1906",
+            "number": 1906,
+            "unit": "year"
+          },
+          "scope": "Club history",
+          "sourceKey": "ligamx-chivas-119",
+          "evidence": "Chivas’s anniversary history identifies May 8, 1906 as the club’s foundation date."
+        },
+        {
+          "key": "chivas-campeonisimo-period",
+          "label": "Club era",
+          "prompt": "Which years does Chivas give for the Campeonísimo period?",
+          "answers": [
+            "1957 to 1970",
+            "1957–1970"
+          ],
+          "distractors": [
+            "1947 to 1960",
+            "1959 to 1972",
+            "1967 to 1980"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "1957–1970",
+            "text": "1957–1970"
+          },
+          "scope": "Club history",
+          "sourceKey": "ligamx-chivas-history",
+          "evidence": "The official history describes the Campeonísimo as the team representing Chivas from 1957 to 1970."
+        },
+        {
+          "key": "chivas-campeonisimo-league-titles",
+          "label": "Campeonísimo honors",
+          "prompt": "How many league titles does Chivas credit to its Campeonísimo generation?",
+          "answers": [
+            "8",
+            "Eight"
+          ],
+          "distractors": [
+            "6",
+            "7",
+            "11"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "8 league titles",
+            "number": 8,
+            "unit": "league titles"
+          },
+          "scope": "Honors won during the Campeonísimo period",
+          "sourceKey": "ligamx-chivas-history",
+          "evidence": "Chivas’s official history lists eight league titles among the Campeonísimo generation’s achievements."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-chivas-2017-double",
+      "subjectKey": "entity-chivas",
+      "clubKey": "entity-chivas",
+      "chapter": "moments",
+      "title": "The 2017 double",
+      "subtitle": "Chivas paired a league crown with the Copa MX.",
+      "story": [
+        {
+          "title": "A short-tournament first",
+          "body": "Chivas says its Clausura 2017 achievement made it the first club to complete the League-and-Cup double in the short-tournament era."
+        },
+        {
+          "title": "A league final at home",
+          "body": "The team sealed the league title against Tigres at Estadio Akron, with goals from Alan Pulido and José Juan Vázquez."
+        }
+      ],
+      "facts": [
+        {
+          "key": "chivas-double-season",
+          "label": "League and cup double",
+          "prompt": "In which tournament did Chivas complete its League-and-Cup double in the short-tournament era?",
+          "answers": [
+            "Clausura 2017"
+          ],
+          "distractors": [
+            "Apertura 2006",
+            "Clausura 2011",
+            "Apertura 2018"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Clausura 2017",
+            "text": "Clausura 2017"
+          },
+          "scope": "Men’s first-team League and Copa MX double",
+          "sourceKey": "ligamx-chivas-history",
+          "evidence": "The club dates the short-tournament-era double to Clausura 2017."
+        },
+        {
+          "key": "chivas-2017-final-opponent",
+          "label": "League final",
+          "prompt": "Which club did Chivas beat in the Clausura 2017 league final?",
+          "answers": [
+            "Tigres",
+            "Tigres UANL"
+          ],
+          "distractors": [
+            "Toluca",
+            "América",
+            "Cruz Azul"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Tigres",
+            "text": "Tigres"
+          },
+          "scope": "Clausura 2017 Liga MX final",
+          "sourceKey": "ligamx-chivas-championships",
+          "evidence": "The official championships page says Chivas defeated Tigres 2–1 in the second leg, 4–3 on aggregate."
+        },
+        {
+          "key": "chivas-2017-final-stadium",
+          "label": "Final venue",
+          "prompt": "What name did Chivas use for its home stadium during the Clausura 2017 final?",
+          "answers": [
+            "Estadio Chivas"
+          ],
+          "distractors": [
+            "Estadio Akron",
+            "Estadio Jalisco",
+            "Estadio Omnilife"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Estadio Chivas",
+            "text": "Estadio Chivas"
+          },
+          "scope": "Clausura 2017 Liga MX final",
+          "sourceKey": "ch-2017-home-final",
+          "evidence": "Chivas’s contemporary match account calls the venue Estadio Chivas; the later stadium name Estadio Akron is anachronistic for this 2017 match."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-chivas-liberators",
+      "subjectKey": "entity-chivas",
+      "clubKey": "entity-chivas",
+      "chapter": "moments",
+      "title": "Chivas on the South American stage",
+      "subtitle": "A historic run reached the 2010 Libertadores final.",
+      "story": [
+        {
+          "title": "An international campaign",
+          "body": "Chivas reached its first Copa Libertadores final in 2010 after eliminating Universidad de Chile in the semifinal."
+        },
+        {
+          "title": "A narrow defeat",
+          "body": "The final against Internacional began with Chivas in front, but the Brazilian club came back to win the trophy."
+        }
+      ],
+      "facts": [
+        {
+          "key": "chivas-libertadores-final-year",
+          "label": "International milestone",
+          "prompt": "In what year did Chivas reach its first Copa Libertadores final?",
+          "answers": [
+            "2010"
+          ],
+          "distractors": [
+            "2005",
+            "2008",
+            "2018"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "2010",
+            "number": 2010,
+            "unit": "year"
+          },
+          "scope": "Men’s first-team Copa Libertadores campaign",
+          "sourceKey": "ligamx-chivas-history",
+          "evidence": "The club history states that Guadalajara first reached the Copa Libertadores final in 2010."
+        },
+        {
+          "key": "chivas-libertadores-semi-opponent",
+          "label": "Semifinal",
+          "prompt": "Which club did Chivas eliminate to reach the 2010 Copa Libertadores final?",
+          "answers": [
+            "Universidad de Chile",
+            "U. de Chile"
+          ],
+          "distractors": [
+            "Boca Juniors",
+            "River Plate",
+            "São Paulo"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Universidad de Chile",
+            "text": "Universidad de Chile"
+          },
+          "scope": "2010 Copa Libertadores semifinal",
+          "sourceKey": "ligamx-chivas-history",
+          "evidence": "The club recounts advancing past Universidad de Chile with a 2–0 win in Chile."
+        },
+        {
+          "key": "chivas-libertadores-final-opponent",
+          "label": "Final opponent",
+          "prompt": "Which club beat Chivas in the 2010 Copa Libertadores final?",
+          "answers": [
+            "Internacional",
+            "Internacional de Porto Alegre"
+          ],
+          "distractors": [
+            "Flamengo",
+            "Boca Juniors",
+            "Santos"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Internacional",
+            "text": "Internacional"
+          },
+          "scope": "2010 Copa Libertadores final",
+          "sourceKey": "ligamx-chivas-history",
+          "evidence": "Chivas identifies Internacional de Porto Alegre as its opponent and champion in the 2010 final."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-toluca-origins",
+      "subjectKey": "entity-toluca",
+      "clubKey": "entity-toluca",
+      "chapter": "history",
+      "title": "From Toluca to the top flight",
+      "subtitle": "The Diablos turned a city club into a national power.",
+      "story": [
+        {
+          "title": "A 1917 beginning",
+          "body": "Deportivo Toluca FC was founded on February 12, 1917. Its early history moved through amateur football before the club entered the professional pyramid."
+        },
+        {
+          "title": "Promotion and progress",
+          "body": "The club joined the Second Division in 1950 and won promotion to the First Division in January 1953."
+        }
+      ],
+      "facts": [
+        {
+          "key": "toluca-founding-date",
+          "label": "Founding",
+          "prompt": "On what date was Deportivo Toluca FC founded?",
+          "answers": [
+            "February 12, 1917",
+            "12 February 1917"
+          ],
+          "distractors": [
+            "May 8, 1906",
+            "October 12, 1916",
+            "June 28, 1945"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "February 12, 1917",
+            "text": "February 12, 1917"
+          },
+          "scope": "Club history",
+          "sourceKey": "ligamx-toluca-history",
+          "evidence": "Toluca’s official history gives February 12, 1917 as its founding date."
+        },
+        {
+          "key": "toluca-second-division-year",
+          "label": "Professional era",
+          "prompt": "In what year did Toluca join Mexico’s Second Division?",
+          "answers": [
+            "1950"
+          ],
+          "distractors": [
+            "1945",
+            "1953",
+            "1967"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "1950",
+            "number": 1950,
+            "unit": "year"
+          },
+          "scope": "Club professional history",
+          "sourceKey": "ligamx-toluca-history",
+          "evidence": "The club places its move from amateur football into the Second Division in 1950."
+        },
+        {
+          "key": "toluca-promotion-date",
+          "label": "Promotion",
+          "prompt": "On what date did Toluca win promotion to the First Division?",
+          "answers": [
+            "January 18, 1953",
+            "18 January 1953"
+          ],
+          "distractors": [
+            "February 12, 1917",
+            "March 1, 1925",
+            "June 5, 1927"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "January 18, 1953",
+            "text": "January 18, 1953"
+          },
+          "scope": "Promotion to Mexico’s First Division",
+          "sourceKey": "ligamx-toluca-history",
+          "evidence": "The official timeline gives January 18, 1953 as the date Toluca won promotion."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-toluca-first-titles",
+      "subjectKey": "entity-toluca",
+      "clubKey": "entity-toluca",
+      "chapter": "history",
+      "title": "Back-to-back champions",
+      "subtitle": "Ignacio Trelles guided Toluca’s first two league crowns.",
+      "story": [
+        {
+          "title": "A first championship",
+          "body": "Toluca won its first league title in 1967 with Ignacio Trelles as coach and Amaury Epaminondas leading the tournament’s scoring."
+        },
+        {
+          "title": "A title defended",
+          "body": "The Diablos followed that success by retaining the championship in 1968, securing their first consecutive league crowns."
+        }
+      ],
+      "facts": [
+        {
+          "key": "toluca-first-league-title-year",
+          "label": "First league title",
+          "prompt": "In what year did Toluca win its first league championship?",
+          "answers": [
+            "1967"
+          ],
+          "distractors": [
+            "1953",
+            "1968",
+            "1975"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "1967",
+            "number": 1967,
+            "unit": "year"
+          },
+          "scope": "Men’s first-team league championships",
+          "sourceKey": "ligamx-toluca-history",
+          "evidence": "The official timeline identifies 1967 as Toluca’s first league championship."
+        },
+        {
+          "key": "toluca-first-title-coach",
+          "label": "Title-winning coach",
+          "prompt": "Who coached Toluca to its first league title in 1967?",
+          "answers": [
+            "Ignacio Trelles"
+          ],
+          "distractors": [
+            "Américo Gallego",
+            "Ricardo La Volpe",
+            "Antonio Mohamed"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Ignacio Trelles",
+            "text": "Ignacio Trelles"
+          },
+          "scope": "1967 league championship",
+          "sourceKey": "ligamx-toluca-history",
+          "evidence": "Toluca credits coach Ignacio Trelles with its first league title in 1967."
+        },
+        {
+          "key": "toluca-consecutive-title-year",
+          "label": "Title defense",
+          "prompt": "In what year did Toluca retain its league title for a second consecutive championship?",
+          "answers": [
+            "1968"
+          ],
+          "distractors": [
+            "1966",
+            "1969",
+            "1974"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "1968",
+            "number": 1968,
+            "unit": "year"
+          },
+          "scope": "Back-to-back league championships in 1967 and 1968",
+          "sourceKey": "ligamx-toluca-1967",
+          "evidence": "The official 1967–68 trophy history and club timeline record Toluca’s title defense in 1968."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-toluca-finals",
+      "subjectKey": "entity-toluca",
+      "clubKey": "entity-toluca",
+      "chapter": "moments",
+      "title": "Two finals, decided from the spot",
+      "subtitle": "Penalties delivered Toluca’s fifth and ninth stars.",
+      "story": [
+        {
+          "title": "A dramatic win over Atlas",
+          "body": "The 1999 final with Atlas finished level over two legs and extra time. Toluca prevailed in the sudden-death shootout when Hernán Cristante saved the decisive attempt."
+        },
+        {
+          "title": "Another shootout triumph",
+          "body": "In 2008, Toluca again needed penalties after Cruz Azul drew level on aggregate. Cristante stopped Alejandro Vela’s kick to clinch another title."
+        }
+      ],
+      "facts": [
+        {
+          "key": "toluca-1999-final-opponent",
+          "label": "Verano 1999 final",
+          "prompt": "Which club did Toluca face in the Verano 1999 final?",
+          "answers": [
+            "Atlas"
+          ],
+          "distractors": [
+            "Santos",
+            "Necaxa",
+            "Cruz Azul"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Atlas",
+            "text": "Atlas"
+          },
+          "scope": "Verano 1999 league final",
+          "sourceKey": "ligamx-toluca-1999",
+          "evidence": "Toluca’s official title account identifies Atlas as its Verano 1999 final opponent."
+        },
+        {
+          "key": "toluca-1999-shootout-saver",
+          "label": "Decisive save",
+          "prompt": "Who saved Atlas’s penalty in the sudden-death shootout of the 1999 final?",
+          "answers": [
+            "Hernán Cristante",
+            "Cristante"
+          ],
+          "distractors": [
+            "Salvador Carmona",
+            "José Cardozo",
+            "Antonio Taboada"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Hernán Cristante",
+            "text": "Hernán Cristante"
+          },
+          "scope": "Verano 1999 final shootout",
+          "sourceKey": "ligamx-toluca-1999",
+          "evidence": "The club says goalkeeper Hernán Cristante saved Atlas’s sudden-death penalty."
+        },
+        {
+          "key": "toluca-2008-saved-penalty",
+          "label": "Apertura 2008 final",
+          "prompt": "Whose penalty did Hernán Cristante save in the Apertura 2008 final shootout?",
+          "answers": [
+            "Alejandro Vela"
+          ],
+          "distractors": [
+            "Julio Estrada",
+            "Rafael Márquez",
+            "Juan Pablo Rodríguez"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Alejandro Vela",
+            "text": "Alejandro Vela"
+          },
+          "scope": "Apertura 2008 league final shootout",
+          "sourceKey": "ligamx-toluca-2008",
+          "evidence": "Toluca’s account of the Apertura 2008 final names Alejandro Vela as the penalty Cristante saved."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-henry-scoring-milestone",
+      "subjectKey": "entity-henry-martin",
+      "clubKey": "entity-america",
+      "chapter": "records",
+      "title": "A mark among América’s scorers",
+      "subtitle": "A goal against Santos put Henry Martín on a historic list.",
+      "story": [
+        {
+          "title": "A milestone in 2022",
+          "body": "Against Santos Laguna on September 15, 2022, Martín scored his 64th goal for América, tying Antonio Carlos Santos."
+        },
+        {
+          "title": "A season in motion",
+          "body": "The club said the goal was his ninth of that season; it also placed him 13th among América’s historic scorers at that point."
+        }
+      ],
+      "facts": [
+        {
+          "key": "henry-64-goals",
+          "label": "Club scoring mark",
+          "prompt": "How many América goals had Henry Martín scored when he tied Antonio Carlos Santos in September 2022?",
+          "answers": [
+            "64"
+          ],
+          "distractors": [
+            "60",
+            "62",
+            "66"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "64 goals",
+            "number": 64,
+            "unit": "goals"
+          },
+          "scope": "Club career milestone; dated tournament or event as stated in the source.",
+          "sourceKey": "am-henry-64",
+          "evidence": "The club report says Martín’s goal tied Antonio Carlos Santos at 64 América goals."
+        },
+        {
+          "key": "henry-2022-ninth",
+          "label": "Season milestone",
+          "prompt": "Which goal of Henry Martín’s 2022 season did the September 15 strike represent?",
+          "answers": [
+            "His ninth"
+          ],
+          "distractors": [
+            "His seventh",
+            "His eighth",
+            "His tenth"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Ninth goal",
+            "text": "Ninth goal"
+          },
+          "scope": "Club career milestone; dated tournament or event as stated in the source.",
+          "sourceKey": "am-henry-64",
+          "evidence": "The match report calls the Santos strike his ninth goal of that season."
+        },
+        {
+          "key": "henry-ranking-2022",
+          "label": "Scorer ranking",
+          "prompt": "What position did Martín hold among América’s all-time scorers when he reached 64 goals?",
+          "answers": [
+            "13th"
+          ],
+          "distractors": [
+            "11th",
+            "12th",
+            "14th"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "13th",
+            "text": "13th"
+          },
+          "scope": "Club career milestone; dated tournament or event as stated in the source.",
+          "sourceKey": "am-henry-64",
+          "evidence": "The club places him 13th in its historic scoring list at that 64-goal milestone."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-henry-puebla-night",
+      "subjectKey": "entity-henry-martin",
+      "clubKey": "entity-america",
+      "chapter": "moments",
+      "title": "A brace in Puebla",
+      "subtitle": "Martín scored twice as América built a 6–1 first-leg lead in the 2022 quarterfinal.",
+      "story": [
+        {
+          "title": "A brace away from home",
+          "body": "Martín struck in the 33rd minute of América’s 2022 quarterfinal first leg in Puebla."
+        },
+        {
+          "title": "A commanding result",
+          "body": "He added a second goal after halftime, helping América win 6–1."
+        }
+      ],
+      "facts": [
+        {
+          "key": "henry-puebla-first-minute",
+          "label": "Quarterfinal moment",
+          "prompt": "At what minute did Martín score his first goal against Puebla in the 2022 quarterfinal first leg?",
+          "answers": [
+            "33rd minute"
+          ],
+          "distractors": [
+            "31st minute",
+            "35th minute",
+            "39th minute"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "33rd minute",
+            "text": "33rd minute"
+          },
+          "scope": "Club career milestone; dated tournament or event as stated in the source.",
+          "sourceKey": "am-henry-puebla",
+          "evidence": "The club’s match account records Martín’s first goal at minute 33."
+        },
+        {
+          "key": "henry-puebla-second-minute",
+          "label": "Brace",
+          "prompt": "At what minute did Martín score his second goal in that match?",
+          "answers": [
+            "57th minute"
+          ],
+          "distractors": [
+            "51st minute",
+            "55th minute",
+            "62nd minute"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "57th minute",
+            "text": "57th minute"
+          },
+          "scope": "Club career milestone; dated tournament or event as stated in the source.",
+          "sourceKey": "am-henry-puebla",
+          "evidence": "The official match report says Martín completed his brace in the 57th minute."
+        },
+        {
+          "key": "henry-puebla-score",
+          "label": "Match result",
+          "prompt": "What was América’s final score against Puebla in that first-leg match?",
+          "answers": [
+            "6–1"
+          ],
+          "distractors": [
+            "4–1",
+            "5–1",
+            "6–2"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "6–1",
+            "text": "6–1"
+          },
+          "scope": "Club career milestone; dated tournament or event as stated in the source.",
+          "sourceKey": "am-henry-puebla",
+          "evidence": "The club records the quarterfinal first-leg result as a 6–1 América win."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-henry-century",
+      "subjectKey": "entity-henry-martin",
+      "clubKey": "entity-america",
+      "chapter": "career",
+      "title": "From Mérida to the first team",
+      "subtitle": "Henry Martín moved from amateur football in Yucatán into the professional game and made his Liga MX debut with Tijuana.",
+      "story": [
+        {
+          "title": "Starting in Mérida",
+          "body": "Martín began his professional path in Mérida in 2013, then joined Tijuana for the Apertura 2014."
+        },
+        {
+          "title": "A first-team start",
+          "body": "He entered Liga MX against América and started the match; his early season also brought his first league goal."
+        }
+      ],
+      "facts": [
+        {
+          "key": "henry-pro-start",
+          "label": "Professional start",
+          "prompt": "In which city did Henry Martín begin his professional football career in 2013?",
+          "answers": [
+            "Mérida"
+          ],
+          "distractors": [
+            "Tijuana",
+            "Mexico City",
+            "Guadalajara"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Mérida",
+            "text": "Mérida"
+          },
+          "scope": "Henry Martín career; professional debut stage, 2013.",
+          "sourceKey": "am-henry-xolos-bio",
+          "evidence": "Xolos’ player biography says Martín made the amateur-to-professional transition in Mérida in 2013."
+        },
+        {
+          "key": "henry-xolos-arrival",
+          "label": "Club move",
+          "prompt": "Which club did Martín join for the Apertura 2014?",
+          "answers": [
+            "Club Tijuana"
+          ],
+          "distractors": [
+            "América",
+            "Venados FC",
+            "Pachuca"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Club Tijuana",
+            "text": "Club Tijuana"
+          },
+          "scope": "Henry Martín career; Apertura 2014 transfer.",
+          "sourceKey": "am-henry-xolos-bio",
+          "evidence": "The official Xolos biography says he arrived at Club Tijuana for Apertura 2014."
+        },
+        {
+          "key": "henry-liga-debut-opponent",
+          "label": "Liga MX debut",
+          "prompt": "Against which club did Martín make his Liga MX starting debut in Apertura 2014?",
+          "answers": [
+            "América"
+          ],
+          "distractors": [
+            "Puebla",
+            "León",
+            "Monterrey"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "América",
+            "text": "América"
+          },
+          "scope": "Henry Martín, Tijuana first-team debut; Apertura 2014, Jornada 2.",
+          "sourceKey": "am-henry-xolos-debut",
+          "evidence": "Tijuana’s official report says Martín started the second-round match against América."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-henry-tricampeon-era",
+      "subjectKey": "entity-henry-martin",
+      "clubKey": "entity-america",
+      "chapter": "moments",
+      "title": "A Clásico goal against Chivas",
+      "subtitle": "Martín scored and reached ten goals in the Apertura 2022 tournament.",
+      "story": [
+        {
+          "title": "A derby penalty",
+          "body": "Martín converted a penalty against Guadalajara in the Apertura 2022 Clásico at Estadio Azteca."
+        },
+        {
+          "title": "A double-digit season",
+          "body": "The goal gave him ten for the tournament, and América held on for a 2–1 win."
+        }
+      ],
+      "facts": [
+        {
+          "key": "henry-clasico-opponent",
+          "label": "Clásico",
+          "prompt": "Which rival did América face when Martín scored his tenth Apertura 2022 goal?",
+          "answers": [
+            "Guadalajara"
+          ],
+          "distractors": [
+            "Toluca",
+            "Cruz Azul",
+            "Pumas"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Guadalajara",
+            "text": "Guadalajara"
+          },
+          "scope": "Apertura 2022 Clásico Nacional, dated to the match report.",
+          "sourceKey": "am-henry-clasico",
+          "evidence": "The match report identifies Guadalajara as América’s opponent in the Apertura 2022 Clásico."
+        },
+        {
+          "key": "henry-clasico-goal-count",
+          "label": "Season milestone",
+          "prompt": "How many tournament goals had Martín reached with his Clásico penalty?",
+          "answers": [
+            "10"
+          ],
+          "distractors": [
+            "8",
+            "9",
+            "11"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "10 goals",
+            "number": 10,
+            "unit": "goals"
+          },
+          "scope": "Apertura 2022 Clásico Nacional, dated to the match report.",
+          "sourceKey": "am-henry-clasico",
+          "evidence": "The club says the penalty was Martín’s tenth goal of the Apertura 2022 season."
+        },
+        {
+          "key": "henry-clasico-result",
+          "label": "Match result",
+          "prompt": "What was the final score in América’s Apertura 2022 Clásico win?",
+          "answers": [
+            "2–1"
+          ],
+          "distractors": [
+            "1–0",
+            "2–0",
+            "3–1"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "2–1",
+            "text": "2–1"
+          },
+          "scope": "Apertura 2022 Clásico Nacional, dated to the match report.",
+          "sourceKey": "am-henry-clasico",
+          "evidence": "The official match account records América’s win over Chivas as 2–1."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-ochoa-debut",
+      "subjectKey": "entity-guillermo-ochoa",
+      "clubKey": "entity-america",
+      "chapter": "career",
+      "title": "A teenage debut in goal",
+      "subtitle": "Ochoa’s senior story began with América in February 2004.",
+      "story": [
+        {
+          "title": "First-team call",
+          "body": "Club América’s official anniversary video dates the academy goalkeeper’s first-team debut to February 15, 2004."
+        },
+        {
+          "title": "A young starter",
+          "body": "The Mexican federation biography records that Ochoa was 18 when his professional career began with América."
+        }
+      ],
+      "facts": [
+        {
+          "key": "ochoa-debut-date",
+          "label": "Senior debut",
+          "prompt": "On what date did Guillermo Ochoa make his América debut?",
+          "answers": [
+            "February 15, 2004"
+          ],
+          "distractors": [
+            "February 12, 2004",
+            "February 18, 2004",
+            "March 15, 2004"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "February 15, 2004",
+            "text": "February 15, 2004"
+          },
+          "scope": "Club career milestone; dated tournament or event as stated in the source.",
+          "sourceKey": "am-ochoa-debut",
+          "evidence": "The club’s official video description gives February 15, 2004 as his debut date."
+        },
+        {
+          "key": "ochoa-debut-age",
+          "label": "Early career",
+          "prompt": "How old was Ochoa when he began his first-team career with América?",
+          "answers": [
+            "18"
+          ],
+          "distractors": [
+            "16",
+            "17",
+            "19"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "18 years old",
+            "text": "18 years old"
+          },
+          "scope": "Club career milestone; dated tournament or event as stated in the source.",
+          "sourceKey": "am-ochoa-fmf",
+          "evidence": "The federation biography says Ochoa began his first-team career at age 18."
+        },
+        {
+          "key": "ochoa-debut-club",
+          "label": "First team",
+          "prompt": "Which club gave Ochoa his senior debut?",
+          "answers": [
+            "América"
+          ],
+          "distractors": [
+            "Guadalajara",
+            "Toluca",
+            "Monterrey"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "América",
+            "text": "América"
+          },
+          "scope": "Club career milestone; dated tournament or event as stated in the source.",
+          "sourceKey": "am-ochoa-fmf",
+          "evidence": "The federation biography identifies América as the club where Ochoa began his professional career."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-ochoa-first-title",
+      "subjectKey": "entity-guillermo-ochoa",
+      "clubKey": "entity-america",
+      "chapter": "moments",
+      "title": "His first league championship",
+      "subtitle": "Ochoa was part of América’s Clausura 2005 title-winning side.",
+      "story": [
+        {
+          "title": "First champion’s medal",
+          "body": "The federation biography says América won the Clausura 2005 title, making it Ochoa’s first championship."
+        },
+        {
+          "title": "An unbeaten run",
+          "body": "The same account notes a 30-match unbeaten streak associated with that first championship period."
+        }
+      ],
+      "facts": [
+        {
+          "key": "ochoa-first-title-tournament",
+          "label": "First title",
+          "prompt": "Which tournament gave Ochoa his first league championship with América?",
+          "answers": [
+            "Clausura 2005"
+          ],
+          "distractors": [
+            "Apertura 2004",
+            "Apertura 2005",
+            "Clausura 2006"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Clausura 2005",
+            "text": "Clausura 2005"
+          },
+          "scope": "Club career milestone; dated tournament or event as stated in the source.",
+          "sourceKey": "am-ochoa-fmf",
+          "evidence": "The FMF biography identifies Clausura 2005 as Ochoa’s first championship."
+        },
+        {
+          "key": "ochoa-first-title-club",
+          "label": "Club title",
+          "prompt": "Which team won that Clausura 2005 title with Ochoa?",
+          "answers": [
+            "América"
+          ],
+          "distractors": [
+            "Guadalajara",
+            "Pumas",
+            "Toluca"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "América",
+            "text": "América"
+          },
+          "scope": "Club career milestone; dated tournament or event as stated in the source.",
+          "sourceKey": "am-ochoa-fmf",
+          "evidence": "The federation page says Las Águilas won the 2005 title."
+        },
+        {
+          "key": "ochoa-unbeaten-run",
+          "label": "Team run",
+          "prompt": "How long was the unbeaten streak mentioned in the federation account of Ochoa’s first title?",
+          "answers": [
+            "30 matches"
+          ],
+          "distractors": [
+            "20 matches",
+            "25 matches",
+            "32 matches"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "30 matches",
+            "number": 30,
+            "unit": "matches"
+          },
+          "scope": "Club career milestone; dated tournament or event as stated in the source.",
+          "sourceKey": "am-ochoa-fmf",
+          "evidence": "The FMF biography refers to a 30-match unbeaten run in the title context."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-ochoa-tokyo",
+      "subjectKey": "entity-guillermo-ochoa",
+      "clubKey": "entity-america",
+      "chapter": "moments",
+      "title": "Guillermo Ochoa · Captain at Tokyo 2020",
+      "subtitle": "Ochoa started Mexico’s South Africa match and spoke to his teammates as captain.",
+      "story": [
+        {
+          "title": "Guillermo Ochoa · Captain at Tokyo 2020",
+          "body": "In the 3–0 group-stage win over South Africa, Ochoa started for Mexico and then gathered his teammates as captain."
+        },
+        {
+          "title": "A captain’s message",
+          "body": "After the win, Ochoa gathered the team and told them they were one match from playing for medals. The lesson connects his starting role with his leadership in that tournament."
+        }
+      ],
+      "facts": [
+        {
+          "key": "ochoa-tokyo-opponent",
+          "label": "Starting role",
+          "prompt": "What role did Ochoa have in Mexico’s group-stage match against South Africa?",
+          "answers": [
+            "Starter",
+            "Starting goalkeeper"
+          ],
+          "distractors": [
+            "Substitute",
+            "Unused substitute",
+            "Coach"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Starter",
+            "text": "Starter"
+          },
+          "scope": "Ochoa’s participation in Mexico’s Tokyo 2020 group match against South Africa.",
+          "sourceKey": "am-ochoa-tokyo",
+          "evidence": "The Club América report says Ochoa and three teammates started against South Africa."
+        },
+        {
+          "key": "ochoa-tokyo-score",
+          "label": "Leadership role",
+          "prompt": "What role did Ochoa hold when he gathered Mexico’s teammates after the South Africa match?",
+          "answers": [
+            "Captain"
+          ],
+          "distractors": [
+            "Head coach",
+            "Assistant coach",
+            "Team doctor"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Captain",
+            "text": "Captain"
+          },
+          "scope": "Ochoa’s role after the Tokyo 2020 group-stage match.",
+          "sourceKey": "am-ochoa-tokyo",
+          "evidence": "The report identifies him as captain of América and Mexico and describes him gathering the teammates."
+        },
+        {
+          "key": "ochoa-tokyo-captain",
+          "label": "One match away",
+          "prompt": "What did Ochoa say Mexico was one match away from at Tokyo 2020?",
+          "answers": [
+            "Medals",
+            "Winning a medal"
+          ],
+          "distractors": [
+            "The final",
+            "A group-stage win",
+            "Qualifying for the tournament"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Medals",
+            "text": "Medals"
+          },
+          "scope": "Ochoa’s post-match quote after the group-stage win over South Africa.",
+          "sourceKey": "am-ochoa-tokyo",
+          "evidence": "The report quotes Ochoa saying the team was “a un partido de oler las medallas” (“one match away from smelling the medals”)."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-ochoa-world-cups",
+      "subjectKey": "entity-guillermo-ochoa",
+      "clubKey": "entity-america",
+      "chapter": "records",
+      "title": "A six-tournament World Cup run",
+      "subtitle": "FIFA traces Ochoa’s national-team World Cup story from Germany 2006 through six editions.",
+      "story": [
+        {
+          "title": "Six editions",
+          "body": "FIFA’s retrospective describes Ochoa’s sixth World Cup as the endpoint of a long international career."
+        },
+        {
+          "title": "A rare Mexican record",
+          "body": "FIFA notes that no Mexican had previously reached six consecutive World Cups as a player."
+        }
+      ],
+      "facts": [
+        {
+          "key": "ochoa-six-world-cups",
+          "label": "World Cup record",
+          "prompt": "How many editions of the World Cup did Ochoa reach with Mexico?",
+          "answers": [
+            "Six"
+          ],
+          "distractors": [
+            "Four",
+            "Five",
+            "Seven"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "Six World Cups",
+            "number": 6,
+            "unit": "World Cups"
+          },
+          "scope": "Club career milestone; dated tournament or event as stated in the source.",
+          "sourceKey": "am-ochoa-fifa",
+          "evidence": "FIFA’s profile frames his career as reaching a sixth World Cup."
+        },
+        {
+          "key": "ochoa-consecutive-world-cups",
+          "label": "International record",
+          "prompt": "How did FIFA describe the sequence of Ochoa’s six World Cup tournaments?",
+          "answers": [
+            "Consecutive"
+          ],
+          "distractors": [
+            "At alternate tournaments",
+            "All as a substitute",
+            "For two national teams"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Six consecutive editions",
+            "text": "Six consecutive editions"
+          },
+          "scope": "Club career milestone; dated tournament or event as stated in the source.",
+          "sourceKey": "am-ochoa-fifa",
+          "evidence": "FIFA says no Mexican had reached six consecutive World Cups before Ochoa."
+        },
+        {
+          "key": "ochoa-world-cup-first",
+          "label": "International debut",
+          "prompt": "At which World Cup was Ochoa included with Mexico for the first time?",
+          "answers": [
+            "Germany 2006"
+          ],
+          "distractors": [
+            "South Africa 2010",
+            "Brazil 2014",
+            "Russia 2018"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Germany 2006",
+            "text": "Germany 2006"
+          },
+          "scope": "Club career milestone; dated tournament or event as stated in the source.",
+          "sourceKey": "am-ochoa-fifa",
+          "evidence": "FIFA’s career overview begins its World Cup timeline with Germany 2006."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-chicharito-debut",
+      "subjectKey": "entity-chicharito",
+      "clubKey": "entity-chivas",
+      "chapter": "career",
+      "title": "A debut with a goal",
+      "subtitle": "Hernández’s first senior minutes for Chivas came against Necaxa.",
+      "story": [
+        {
+          "title": "September 2006",
+          "body": "At Estadio Jalisco, José Manuel de la Torre brought Hernández on against Necaxa."
+        },
+        {
+          "title": "Immediate impact",
+          "body": "Hernández scored before the match ended and joined the championship-winning squad that semester."
+        }
+      ],
+      "facts": [
+        {
+          "key": "javier-debut-date",
+          "label": "First-team debut",
+          "prompt": "On what date did Hernández make his Chivas first-division debut?",
+          "answers": [
+            "September 9, 2006"
+          ],
+          "distractors": [
+            "September 8, 2006",
+            "September 10, 2006",
+            "September 9, 2007"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "September 9, 2006",
+            "text": "September 9, 2006"
+          },
+          "scope": "Club career milestone; dated tournament or event as stated in the source.",
+          "sourceKey": "ch-javier-100",
+          "evidence": "The club dates his first-division debut to September 9, 2006."
+        },
+        {
+          "key": "javier-debut-opponent",
+          "label": "Debut match",
+          "prompt": "Which club was Chivas playing when Hernández made his debut?",
+          "answers": [
+            "Necaxa"
+          ],
+          "distractors": [
+            "Atlas",
+            "Toluca",
+            "Pumas"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Necaxa",
+            "text": "Necaxa"
+          },
+          "scope": "Club career milestone; dated tournament or event as stated in the source.",
+          "sourceKey": "ch-javier-100",
+          "evidence": "Chivas says his debut came against Necaxa at Estadio Jalisco."
+        },
+        {
+          "key": "javier-debut-first-goal",
+          "label": "First goal",
+          "prompt": "What did Hernández do in his first-team debut?",
+          "answers": [
+            "Scored a goal"
+          ],
+          "distractors": [
+            "Saved a penalty",
+            "Was sent off",
+            "Scored an own goal"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Scored a goal",
+            "text": "Scored a goal"
+          },
+          "scope": "Club career milestone; dated tournament or event as stated in the source.",
+          "sourceKey": "ch-javier-100",
+          "evidence": "The club says he scored three minutes before the end of his debut match."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-chicharito-bicentenario",
+      "subjectKey": "entity-chicharito",
+      "clubKey": "entity-chivas",
+      "chapter": "records",
+      "title": "A scoring crown in 2010",
+      "subtitle": "Hernández won the Bicentenario 2010 scoring title in limited appearances.",
+      "story": [
+        {
+          "title": "Top scorer",
+          "body": "Chivas records him as the tournament’s individual scoring champion with ten goals."
+        },
+        {
+          "title": "Efficiency",
+          "body": "He achieved the honor despite playing six fewer games than the other forwards cited by the club."
+        }
+      ],
+      "facts": [
+        {
+          "key": "javier-bicentenario-goals",
+          "label": "Scoring title",
+          "prompt": "How many goals did Hernández score to win the Bicentenario 2010 scoring title?",
+          "answers": [
+            "10"
+          ],
+          "distractors": [
+            "8",
+            "9",
+            "12"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "10 goals",
+            "number": 10,
+            "unit": "goals"
+          },
+          "scope": "Club career milestone; dated tournament or event as stated in the source.",
+          "sourceKey": "ch-javier-debut",
+          "evidence": "Chivas gives his 2010 scoring-title total as ten goals."
+        },
+        {
+          "key": "javier-bicentenario-matches",
+          "label": "Scoring title context",
+          "prompt": "How many matches did Chivas say Hernández played while scoring those ten goals?",
+          "answers": [
+            "11"
+          ],
+          "distractors": [
+            "9",
+            "10",
+            "13"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "11 matches",
+            "number": 11,
+            "unit": "matches"
+          },
+          "scope": "Club career milestone; dated tournament or event as stated in the source.",
+          "sourceKey": "ch-javier-debut",
+          "evidence": "The club says he scored ten goals in eleven matches."
+        },
+        {
+          "key": "javier-bicentenario-fewer-games",
+          "label": "Scoring distinction",
+          "prompt": "How many fewer matches had Hernández played than the other forwards when he won the title?",
+          "answers": [
+            "6"
+          ],
+          "distractors": [
+            "3",
+            "4",
+            "8"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "6 fewer matches",
+            "text": "6 fewer matches"
+          },
+          "scope": "Club career milestone; dated tournament or event as stated in the source.",
+          "sourceKey": "ch-javier-100",
+          "evidence": "The club says his scoring title came despite six fewer appearances than the other forwards."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-chicharito-akron",
+      "subjectKey": "entity-chicharito",
+      "clubKey": "entity-chivas",
+      "chapter": "moments",
+      "title": "The first goal at Estadio Omnilife",
+      "subtitle": "Hernández scored the opening goal when Chivas inaugurated its new stadium.",
+      "story": [
+        {
+          "title": "A new home opens",
+          "body": "The stadium’s July 2010 opening match paired Chivas with Manchester United, Hernández’s incoming club."
+        },
+        {
+          "title": "The first scorer",
+          "body": "Hernández scored the first goal at Estadio Omnilife, then played the second half for Manchester United."
+        }
+      ],
+      "facts": [
+        {
+          "key": "javier-akron-date",
+          "label": "Stadium opening",
+          "prompt": "On what date did Javier Hernández score the first goal at Estadio Omnilife?",
+          "answers": [
+            "July 30, 2010"
+          ],
+          "distractors": [
+            "July 29, 2010",
+            "July 31, 2010",
+            "August 30, 2010"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "July 30, 2010",
+            "text": "July 30, 2010"
+          },
+          "scope": "Club career milestone; dated tournament or event as stated in the source.",
+          "sourceKey": "ch-javier-100",
+          "evidence": "The opened 100-match retrospective dates the inaugural match to July 30, 2010 and says Hernández scored the first goal at the new stadium."
+        },
+        {
+          "key": "javier-akron-opponent",
+          "label": "Inaugural match",
+          "prompt": "Which club did Chivas face in Estadio Omnilife’s inaugural match?",
+          "answers": [
+            "Manchester United"
+          ],
+          "distractors": [
+            "Real Madrid",
+            "Everton",
+            "Liverpool"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Manchester United",
+            "text": "Manchester United"
+          },
+          "scope": "Club career milestone; dated tournament or event as stated in the source.",
+          "sourceKey": "ch-javier-100",
+          "evidence": "The opened 100-match retrospective identifies Manchester United as the opponent in the opening match."
+        },
+        {
+          "key": "javier-akron-result",
+          "label": "Inaugural result",
+          "prompt": "What was the score when Chivas won Estadio Omnilife’s inaugural match?",
+          "answers": [
+            "3–2"
+          ],
+          "distractors": [
+            "2–1",
+            "2–2",
+            "4–2"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "3–2",
+            "text": "3–2"
+          },
+          "scope": "Club career milestone; dated tournament or event as stated in the source.",
+          "sourceKey": "ch-javier-100",
+          "evidence": "The opened 100-match retrospective records Chivas’s 3–2 victory over Manchester United."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-chicharito-club-total",
+      "subjectKey": "entity-chicharito",
+      "clubKey": "entity-chivas",
+      "chapter": "records",
+      "title": "One hundred Chivas appearances",
+      "subtitle": "A return to Guadalajara brought Hernández to a century of official matches.",
+      "story": [
+        {
+          "title": "The centenary appearance",
+          "body": "Hernández reached 100 official matches for Chivas when he started against Necaxa in Clausura 2025."
+        },
+        {
+          "title": "A varied record",
+          "body": "The club’s breakdown includes league, continental, and domestic cup competitions."
+        }
+      ],
+      "facts": [
+        {
+          "key": "javier-100-match-count",
+          "label": "Club appearances",
+          "prompt": "How many official matches had Hernández played for Chivas at the milestone?",
+          "answers": [
+            "100"
+          ],
+          "distractors": [
+            "90",
+            "95",
+            "105"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "100 matches",
+            "number": 100,
+            "unit": "official matches"
+          },
+          "scope": "Club career milestone; dated tournament or event as stated in the source.",
+          "sourceKey": "ch-javier-100",
+          "evidence": "The club says his start against Necaxa made 100 official appearances."
+        },
+        {
+          "key": "javier-100-necaxa",
+          "label": "Milestone opponent",
+          "prompt": "Against whom did Hernández reach 100 official Chivas appearances?",
+          "answers": [
+            "Necaxa"
+          ],
+          "distractors": [
+            "Atlas",
+            "Toluca",
+            "Tigres"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Necaxa",
+            "text": "Necaxa"
+          },
+          "scope": "Club career milestone; dated tournament or event as stated in the source.",
+          "sourceKey": "ch-javier-100",
+          "evidence": "His 100th appearance came as a starter against Necaxa."
+        },
+        {
+          "key": "javier-chivas-goals",
+          "label": "Club scoring total",
+          "prompt": "How many goals did Chivas credit Hernández with across his 100 official club appearances?",
+          "answers": [
+            "30"
+          ],
+          "distractors": [
+            "24",
+            "28",
+            "32"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "30 goals",
+            "number": 30,
+            "unit": "goals"
+          },
+          "scope": "Club career milestone; dated tournament or event as stated in the source.",
+          "sourceKey": "ch-javier-100",
+          "evidence": "The club’s match-count breakdown lists 30 goals for his Chivas career."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-salcido-debut",
+      "subjectKey": "entity-carlos-salcido",
+      "clubKey": "entity-chivas",
+      "chapter": "career",
+      "title": "A first-team debut at the Jalisco",
+      "subtitle": "Salcido’s first senior appearance for Chivas came in July 2001.",
+      "story": [
+        {
+          "title": "From Tapatío to the first team",
+          "body": "Óscar Ruggeri gave Salcido his debut in the opening round of Invierno 2001."
+        },
+        {
+          "title": "A substitute appearance",
+          "body": "He entered for Omar Bravo in the 69th minute against La Piedad at Estadio Jalisco."
+        }
+      ],
+      "facts": [
+        {
+          "key": "salcido-debut-date",
+          "label": "First-team debut",
+          "prompt": "On what date did Salcido make his first-division debut for Chivas?",
+          "answers": [
+            "July 22, 2001"
+          ],
+          "distractors": [
+            "July 20, 2001",
+            "July 21, 2001",
+            "July 23, 2001"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "July 22, 2001",
+            "text": "July 22, 2001"
+          },
+          "scope": "Club career milestone; dated tournament or event as stated in the source.",
+          "sourceKey": "ch-salcido-25",
+          "evidence": "The club says Salcido debuted on July 22, 2001."
+        },
+        {
+          "key": "salcido-debut-opponent",
+          "label": "Debut opponent",
+          "prompt": "Which club did Chivas face in Salcido’s debut?",
+          "answers": [
+            "La Piedad"
+          ],
+          "distractors": [
+            "Necaxa",
+            "Pumas",
+            "Tigres"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "La Piedad",
+            "text": "La Piedad"
+          },
+          "scope": "Club career milestone; dated tournament or event as stated in the source.",
+          "sourceKey": "ch-salcido-25",
+          "evidence": "Chivas identifies La Piedad as the opponent in his first-team debut."
+        },
+        {
+          "key": "salcido-debut-minute",
+          "label": "Debut appearance",
+          "prompt": "At what minute did Salcido enter the match?",
+          "answers": [
+            "69th minute"
+          ],
+          "distractors": [
+            "59th minute",
+            "65th minute",
+            "75th minute"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "69th minute",
+            "text": "69th minute"
+          },
+          "scope": "Club career milestone; dated tournament or event as stated in the source.",
+          "sourceKey": "ch-salcido-25",
+          "evidence": "The official account says he entered in the 69th minute for Omar Bravo."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-salcido-return",
+      "subjectKey": "entity-carlos-salcido",
+      "clubKey": "entity-chivas",
+      "chapter": "career",
+      "title": "Europe, then home again",
+      "subtitle": "Salcido left for Europe and returned to Guadalajara in 2014.",
+      "story": [
+        {
+          "title": "A European spell",
+          "body": "Chivas recounts eight years in the Eredivisie, Premier League, and UEFA Champions League."
+        },
+        {
+          "title": "Back in red and white",
+          "body": "His return to Chivas came in Apertura 2014 after time with PSV, Fulham, and Tigres."
+        }
+      ],
+      "facts": [
+        {
+          "key": "salcido-europe-years",
+          "label": "Career span",
+          "prompt": "How many years did Salcido spend playing in Europe, according to Chivas?",
+          "answers": [
+            "8"
+          ],
+          "distractors": [
+            "5",
+            "6",
+            "10"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "8 years",
+            "number": 8,
+            "unit": "years"
+          },
+          "scope": "Club career milestone; dated tournament or event as stated in the source.",
+          "sourceKey": "ch-salcido-25",
+          "evidence": "The club describes his European career as an eight-year period."
+        },
+        {
+          "key": "salcido-return-season",
+          "label": "Return to Chivas",
+          "prompt": "In which tournament did Salcido return to Chivas?",
+          "answers": [
+            "Apertura 2014"
+          ],
+          "distractors": [
+            "Clausura 2014",
+            "Apertura 2013",
+            "Clausura 2015"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Apertura 2014",
+            "text": "Apertura 2014"
+          },
+          "scope": "Club career milestone; dated tournament or event as stated in the source.",
+          "sourceKey": "ch-salcido-retire",
+          "evidence": "Chivas says his return home took place in Apertura 2014."
+        },
+        {
+          "key": "salcido-europe-clubs",
+          "label": "European clubs",
+          "prompt": "Which English club did Salcido join during his European career?",
+          "answers": [
+            "Fulham"
+          ],
+          "distractors": [
+            "Everton",
+            "West Ham",
+            "Newcastle United"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Fulham",
+            "text": "Fulham"
+          },
+          "scope": "Club career milestone; dated tournament or event as stated in the source.",
+          "sourceKey": "ch-salcido-retire",
+          "evidence": "The club’s career summary names Fulham as his English stop."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-salcido-2017-double",
+      "subjectKey": "entity-carlos-salcido",
+      "clubKey": "entity-chivas",
+      "chapter": "moments",
+      "title": "Captain of the 2017 double",
+      "subtitle": "Salcido led Chivas during its Liga MX and Copa MX victories.",
+      "story": [
+        {
+          "title": "A captain’s season",
+          "body": "Chivas identifies Salcido as captain and a key player in the Clausura 2017 double."
+        },
+        {
+          "title": "Two domestic trophies",
+          "body": "The club’s retrospective lists one Liga MX title and two Copa MX titles during his second Chivas stage; the 2017 campaign added one of each."
+        }
+      ],
+      "facts": [
+        {
+          "key": "salcido-double-season",
+          "label": "Double-winning season",
+          "prompt": "In which tournament did Salcido help Chivas win the league and cup double?",
+          "answers": [
+            "Clausura 2017"
+          ],
+          "distractors": [
+            "Apertura 2014",
+            "Clausura 2016",
+            "Apertura 2017"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Clausura 2017",
+            "text": "Clausura 2017"
+          },
+          "scope": "Club career milestone; dated tournament or event as stated in the source.",
+          "sourceKey": "ch-salcido-25",
+          "evidence": "Chivas says Salcido was a key figure in the Clausura 2017 double."
+        },
+        {
+          "key": "salcido-double-captain",
+          "label": "Leadership",
+          "prompt": "What leadership role did Salcido hold for the 2017 double-winning side?",
+          "answers": [
+            "Captain"
+          ],
+          "distractors": [
+            "Head coach",
+            "Goalkeeper",
+            "Club president"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Captain",
+            "text": "Captain"
+          },
+          "scope": "Club career milestone; dated tournament or event as stated in the source.",
+          "sourceKey": "ch-salcido-25",
+          "evidence": "The club describes him as captain during the double-winning campaign."
+        },
+        {
+          "key": "salcido-continental-title",
+          "label": "International club honor",
+          "prompt": "Which continental title did Salcido lift with Chivas in 2018?",
+          "answers": [
+            "Concacaf Champions League"
+          ],
+          "distractors": [
+            "Copa Libertadores",
+            "Copa Sudamericana",
+            "Leagues Cup"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Concacaf Champions League",
+            "text": "Concacaf Champions League"
+          },
+          "scope": "Club career milestone; dated tournament or event as stated in the source.",
+          "sourceKey": "ch-salcido-25",
+          "evidence": "Chivas says he lifted the Concacaf Champions League trophy in 2018."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-salcido-appearance-record",
+      "subjectKey": "entity-carlos-salcido",
+      "clubKey": "entity-chivas",
+      "chapter": "records",
+      "title": "A durable Chivas career",
+      "subtitle": "Salcido’s official club count records 222 appearances, including 211 starts.",
+      "story": [
+        {
+          "title": "A long service record",
+          "body": "When he left Guadalajara, Salcido had made 222 Chivas appearances."
+        },
+        {
+          "title": "Most were starts",
+          "body": "The club records him as a starter in 211 of those matches."
+        }
+      ],
+      "facts": [
+        {
+          "key": "salcido-appearances",
+          "label": "Club appearances",
+          "prompt": "How many total appearances did Salcido make for Chivas?",
+          "answers": [
+            "222"
+          ],
+          "distractors": [
+            "204",
+            "211",
+            "229"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "222 appearances",
+            "number": 222,
+            "unit": "appearances"
+          },
+          "scope": "Club career milestone; dated tournament or event as stated in the source.",
+          "sourceKey": "ch-salcido-retire",
+          "evidence": "The farewell article records 222 appearances for Chivas."
+        },
+        {
+          "key": "salcido-starts",
+          "label": "Starts",
+          "prompt": "How many times did Salcido start in those Chivas appearances?",
+          "answers": [
+            "211"
+          ],
+          "distractors": [
+            "183",
+            "204",
+            "222"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "211 starts",
+            "number": 211,
+            "unit": "starts"
+          },
+          "scope": "Club career milestone; dated tournament or event as stated in the source.",
+          "sourceKey": "ch-salcido-retire",
+          "evidence": "The farewell article says 211 of his 222 appearances were starts."
+        },
+        {
+          "key": "salcido-club-league-goals",
+          "label": "League goals",
+          "prompt": "How many league goals did Salcido score for Chivas, according to the farewell summary?",
+          "answers": [
+            "4"
+          ],
+          "distractors": [
+            "2",
+            "3",
+            "7"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "4 goals",
+            "text": "4 goals"
+          },
+          "scope": "Club career milestone; dated tournament or event as stated in the source.",
+          "sourceKey": "ch-salcido-retire",
+          "evidence": "The club lists four Guadalajara league goals and names their opponents."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-cardozo-verano98",
+      "subjectKey": "entity-jose-saturnino-cardozo",
+      "clubKey": "entity-toluca",
+      "chapter": "moments",
+      "title": "A key figure in the 1998 revival",
+      "subtitle": "Cardozo’s performances helped Toluca turn its 1998 campaign into a title.",
+      "story": [
+        {
+          "title": "The goleo title already secured",
+          "body": "Toluca says the team had won the regular-season scoring honors before the final."
+        },
+        {
+          "title": "A decisive final",
+          "body": "The club beat Necaxa 5–2 on aggregate, highlighting Cardozo and José Manuel Abundis."
+        }
+      ],
+      "facts": [
+        {
+          "key": "cardozo-98-final-opponent",
+          "label": "Verano 1998 final",
+          "prompt": "Which club did Toluca defeat in the Verano 1998 final?",
+          "answers": [
+            "Necaxa"
+          ],
+          "distractors": [
+            "Atlas",
+            "Santos",
+            "Morelia"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Necaxa",
+            "text": "Necaxa"
+          },
+          "scope": "Club career milestone; dated tournament or event as stated in the source.",
+          "sourceKey": "tol-cardozo-98",
+          "evidence": "Toluca identifies Necaxa as its Verano 1998 final opponent."
+        },
+        {
+          "key": "cardozo-98-home-leg-score",
+          "label": "Final result",
+          "prompt": "What was Toluca’s score in the home leg of the Verano 1998 final against Necaxa?",
+          "answers": [
+            "5–2"
+          ],
+          "distractors": [
+            "4–2",
+            "5–3",
+            "6–2"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "5–2",
+            "text": "5–2"
+          },
+          "scope": "Verano 1998 final, home return leg; 5–2 is the match score, not the two-leg aggregate.",
+          "sourceKey": "tol-cardozo-98",
+          "evidence": "Toluca’s official account says Necaxa won the first leg 2–1, then Toluca won the home return 5–2; the 5–2 is the return-leg score, not the aggregate."
+        },
+        {
+          "key": "cardozo-98-partner",
+          "label": "Attacking partner",
+          "prompt": "Which forward is named alongside Cardozo for his performance in that final?",
+          "answers": [
+            "José Manuel Abundis"
+          ],
+          "distractors": [
+            "Amaury Epaminondas",
+            "Carlos María Morales",
+            "Alexis Vega"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "José Manuel Abundis",
+            "text": "José Manuel Abundis"
+          },
+          "scope": "Club career milestone; dated tournament or event as stated in the source.",
+          "sourceKey": "tol-cardozo-98",
+          "evidence": "The club highlights Cardozo and José Manuel Abundis in its account of the final."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-cardozo-career",
+      "subjectKey": "entity-jose-saturnino-cardozo",
+      "clubKey": "entity-toluca",
+      "chapter": "career",
+      "title": "José Cardozo · A playing career across five countries",
+      "subtitle": "His playing career ran from Olimpia to a decade at Toluca, then to San Lorenzo.",
+      "story": [
+        {
+          "title": "José Cardozo · A playing career across five countries",
+          "body": "Chivas’s 2018 biography traces Cardozo’s playing career from Olimpia in Paraguay (1993–1995), through Toluca (1995–2005), to San Lorenzo in Argentina (2005–2006)."
+        },
+        {
+          "title": "Before and after Toluca",
+          "body": "The cited career timeline places Olimpia before Cardozo’s 1995–2005 Toluca spell, and San Lorenzo after it. Keep these playing clubs separate from his later coaching jobs."
+        }
+      ],
+      "facts": [
+        {
+          "key": "cardozo-career-before-toluca",
+          "label": "Before Toluca",
+          "prompt": "Which Paraguayan club did Cardozo play for immediately before Toluca?",
+          "answers": [
+            "Olimpia"
+          ],
+          "distractors": [
+            "Cerro Porteño",
+            "Libertad",
+            "Guaraní"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Olimpia",
+            "text": "Olimpia"
+          },
+          "scope": "Playing club immediately preceding Toluca in the Chivas biography’s career timeline.",
+          "sourceKey": "ch-cardozo-bio",
+          "evidence": "Chivas lists Olimpia (1993–1995) before Toluca (1995–2005)."
+        },
+        {
+          "key": "cardozo-career-toluca-years",
+          "label": "Toluca spell",
+          "prompt": "During which years does Chivas list Cardozo as a Toluca player?",
+          "answers": [
+            "1995–2005"
+          ],
+          "distractors": [
+            "1993–2003",
+            "1996–2006",
+            "1998–2008"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "1995–2005",
+            "text": "1995–2005"
+          },
+          "scope": "Playing career dates as listed in the Chivas biography.",
+          "sourceKey": "ch-cardozo-bio",
+          "evidence": "Chivas lists Toluca (1995–2005)."
+        },
+        {
+          "key": "cardozo-career-after-toluca",
+          "label": "After Toluca",
+          "prompt": "Which Argentine club did Cardozo join after his Toluca playing spell?",
+          "answers": [
+            "San Lorenzo"
+          ],
+          "distractors": [
+            "River Plate",
+            "Boca Juniors",
+            "Newell’s Old Boys"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "San Lorenzo",
+            "text": "San Lorenzo"
+          },
+          "scope": "Playing club after Toluca in the Chivas biography’s career timeline.",
+          "sourceKey": "ch-cardozo-bio",
+          "evidence": "Chivas lists San Lorenzo de Argentina (2005–2006) after Toluca."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-cardozo-toluca-titles",
+      "subjectKey": "entity-jose-saturnino-cardozo",
+      "clubKey": "entity-toluca",
+      "chapter": "records",
+      "title": "Cardozo’s scoring records",
+      "subtitle": "FIFA, Liga MX and Concacaf accounts describe the marks behind Cardozo’s Toluca legacy.",
+      "story": [
+        {
+          "title": "An extraordinary campaign",
+          "body": "Cardozo set the short-format Mexican league record with 29 goals in one campaign."
+        },
+        {
+          "title": "A Toluca standard",
+          "body": "League and Concacaf accounts also identify him as the club’s leading scorer and a four-time league scoring champion."
+        }
+      ],
+      "facts": [
+        {
+          "key": "cardozo-short-tournament-record",
+          "label": "Season record",
+          "prompt": "How many goals did Cardozo score to set the Mexican short-format league campaign record?",
+          "answers": [
+            "29"
+          ],
+          "distractors": [
+            "24",
+            "27",
+            "31"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "29",
+            "number": 29,
+            "unit": "goals"
+          },
+          "scope": "José Saturnino Cardozo’s Mexican short-format league campaign record; FIFA account published July 20, 2018.",
+          "sourceKey": "tol-cardozo-fifa",
+          "evidence": "FIFA states Cardozo set the record for most goals in a short-format Mexican league campaign with 29."
+        },
+        {
+          "key": "cardozo-league-scoring-titles",
+          "label": "Scoring crowns",
+          "prompt": "How many times did Cardozo win the league’s individual top-scorer award, according to Liga MX?",
+          "answers": [
+            "4",
+            "Four"
+          ],
+          "distractors": [
+            "2",
+            "3",
+            "5"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "4",
+            "number": 4,
+            "unit": "awards"
+          },
+          "scope": "Cardozo’s Mexican league individual scoring honours as reported by Liga MX.",
+          "sourceKey": "ch-cardozo-bio",
+          "evidence": "Chivas’s official biography lists four Liga MX scoring titles, naming Verano 1998, Verano 1999, Apertura 2002 and Clausura 2003."
+        },
+        {
+          "key": "cardozo-toluca-all-time-scorer",
+          "label": "Club record",
+          "prompt": "What all-time scoring distinction did Concacaf give Cardozo at Toluca?",
+          "answers": [
+            "Toluca’s all-time leading scorer"
+          ],
+          "distractors": [
+            "Toluca’s all-time appearance leader",
+            "Toluca’s all-time assist leader",
+            "Toluca’s all-time clean-sheet leader"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Toluca’s all-time leading scorer",
+            "text": "Toluca’s all-time leading scorer"
+          },
+          "scope": "José Saturnino Cardozo’s standing as Toluca’s all-time leading scorer in Concacaf’s 2014 account.",
+          "sourceKey": "tol-cardozo-concacaf",
+          "evidence": "Concacaf identifies Cardozo as Toluca’s all-time leading goalscorer."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-cardozo-shootout",
+      "subjectKey": "entity-jose-saturnino-cardozo",
+      "clubKey": "entity-toluca",
+      "chapter": "moments",
+      "title": "Five goals at Athens 2004",
+      "subtitle": "Cardozo led Paraguay’s scoring as the team reached the Olympic final.",
+      "story": [
+        {
+          "title": "A strong tournament",
+          "body": "At Athens 2004, Cardozo scored five of Paraguay’s twelve goals on the way to the final."
+        },
+        {
+          "title": "A silver finish",
+          "body": "Paraguay lost the final to Argentina by one goal and finished with the silver medal."
+        }
+      ],
+      "facts": [
+        {
+          "key": "cardozo-olympic-team",
+          "label": "National team",
+          "prompt": "Which national team did Cardozo represent at the Athens 2004 Olympic tournament?",
+          "answers": [
+            "Paraguay"
+          ],
+          "distractors": [
+            "Argentina",
+            "Uruguay",
+            "Chile"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Paraguay",
+            "text": "Paraguay"
+          },
+          "scope": "José Cardozo at the Athens 2004 Olympic Football Tournament.",
+          "sourceKey": "tol-cardozo-olympics",
+          "evidence": "FIFA’s tournament report identifies Cardozo as a Paraguayan player."
+        },
+        {
+          "key": "cardozo-olympic-goals",
+          "label": "Tournament goals",
+          "prompt": "How many goals did Cardozo score for Paraguay at the Athens 2004 Olympic tournament?",
+          "answers": [
+            "5",
+            "Five"
+          ],
+          "distractors": [
+            "3",
+            "4",
+            "6"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "5",
+            "number": 5,
+            "unit": "goals"
+          },
+          "scope": "José Cardozo’s scoring total at Athens 2004.",
+          "sourceKey": "tol-cardozo-olympics",
+          "evidence": "FIFA states that five of Paraguay’s twelve tournament goals came from Cardozo."
+        },
+        {
+          "key": "cardozo-olympic-final-opponent",
+          "label": "Final opponent",
+          "prompt": "Which team defeated Paraguay in the Athens 2004 Olympic final?",
+          "answers": [
+            "Argentina"
+          ],
+          "distractors": [
+            "Iraq",
+            "Italy",
+            "Ghana"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Argentina",
+            "text": "Argentina"
+          },
+          "scope": "Paraguay’s Athens 2004 Olympic final; Cardozo’s tournament.",
+          "sourceKey": "tol-cardozo-olympics",
+          "evidence": "FIFA says Paraguay lost the final to Argentina by one goal."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-cristante-verano99",
+      "subjectKey": "entity-hernan-cristante",
+      "clubKey": "entity-toluca",
+      "chapter": "career",
+      "title": "A goalkeeper’s path from La Plata",
+      "subtitle": "Cristante’s own biography traces his early commitment to goalkeeping and later coaching education.",
+      "story": [
+        {
+          "title": "A keeper from childhood",
+          "body": "Born in La Plata, Cristante says he wanted to play goalkeeper from the beginning and began taking professional football seriously as a teenager."
+        },
+        {
+          "title": "Learning beyond playing",
+          "body": "Alongside his playing career, he completed coach training in 2002."
+        }
+      ],
+      "facts": [
+        {
+          "key": "cristante-birthplace",
+          "label": "Birthplace",
+          "prompt": "In which Argentine city was Hernán Cristante born?",
+          "answers": [
+            "La Plata"
+          ],
+          "distractors": [
+            "Rosario",
+            "Buenos Aires",
+            "Córdoba"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "La Plata",
+            "text": "La Plata"
+          },
+          "scope": "Hernán Cristante biography; birth on September 16, 1969.",
+          "sourceKey": "tol-cristante-bio",
+          "evidence": "Cristante’s biography names La Plata, Buenos Aires Province, as his birthplace."
+        },
+        {
+          "key": "cristante-position-choice",
+          "label": "Early football",
+          "prompt": "Which position did Cristante say he wanted to play from the start?",
+          "answers": [
+            "Goalkeeper"
+          ],
+          "distractors": [
+            "Striker",
+            "Defender",
+            "Midfielder"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Goalkeeper",
+            "text": "Goalkeeper"
+          },
+          "scope": "Hernán Cristante biography; childhood football development.",
+          "sourceKey": "tol-cristante-bio",
+          "evidence": "His biography says his desire from the outset was to be a goalkeeper."
+        },
+        {
+          "key": "cristante-coach-course",
+          "label": "Coaching education",
+          "prompt": "In what year did Cristante complete his studies to become a coach?",
+          "answers": [
+            "2002"
+          ],
+          "distractors": [
+            "1999",
+            "2000",
+            "2005"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "2002",
+            "number": 2002,
+            "unit": "year"
+          },
+          "scope": "Hernán Cristante; coaching qualification, 2002.",
+          "sourceKey": "tol-cristante-bio",
+          "evidence": "The biography states that he completed his coaching studies in 2002."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-cristante-ap08",
+      "subjectKey": "entity-hernan-cristante",
+      "clubKey": "entity-toluca",
+      "chapter": "moments",
+      "title": "The 2008 final against Cruz Azul",
+      "subtitle": "Toluca carried a first-leg lead into a return match that leveled the tie.",
+      "story": [
+        {
+          "title": "A two-goal first-leg lead",
+          "body": "Toluca took a 2–0 advantage into the return match against Cruz Azul."
+        },
+        {
+          "title": "The final went to penalties",
+          "body": "Cruz Azul drew the aggregate level, but Cristante saved Alejandro Vela’s attempt."
+        }
+      ],
+      "facts": [
+        {
+          "key": "cristante-08-opponent",
+          "label": "Apertura 2008 final",
+          "prompt": "Which club did Toluca face in the Apertura 2008 final?",
+          "answers": [
+            "Cruz Azul"
+          ],
+          "distractors": [
+            "Atlas",
+            "Morelia",
+            "Monterrey"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Cruz Azul",
+            "text": "Cruz Azul"
+          },
+          "scope": "Hernán Cristante career milestone; dated tournament or event as stated in the source.",
+          "sourceKey": "tol-cristante-08",
+          "evidence": "The club identifies Cruz Azul as Toluca’s Apertura 2008 final opponent."
+        },
+        {
+          "key": "cristante-08-first-leg",
+          "label": "First-leg score",
+          "prompt": "What was Toluca’s first-leg score in the Apertura 2008 final?",
+          "answers": [
+            "2–0"
+          ],
+          "distractors": [
+            "1–0",
+            "2–1",
+            "3–0"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "2–0",
+            "text": "2–0"
+          },
+          "scope": "Hernán Cristante career milestone; dated tournament or event as stated in the source.",
+          "sourceKey": "tol-cristante-08",
+          "evidence": "Toluca’s account says the first leg ended 2–0 in its favor."
+        },
+        {
+          "key": "cristante-08-tie",
+          "label": "The return-leg tie",
+          "prompt": "What did Cruz Azul do in the second leg to the aggregate score?",
+          "answers": [
+            "Leveled it"
+          ],
+          "distractors": [
+            "Won by three goals",
+            "Left Toluca ahead by two",
+            "Forced a replay before extra time"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Leveled it",
+            "text": "Leveled it"
+          },
+          "scope": "Hernán Cristante career milestone; dated tournament or event as stated in the source.",
+          "sourceKey": "tol-cristante-08",
+          "evidence": "Toluca’s page says Cruz Azul equalized the aggregate in the return leg, which led to extra time."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-cristante-championships",
+      "subjectKey": "entity-hernan-cristante",
+      "clubKey": "entity-toluca",
+      "chapter": "records",
+      "title": "Cristante’s title-winning saves",
+      "subtitle": "Two final shootouts show how his goalkeeping helped settle Toluca championships.",
+      "story": [
+        {
+          "title": "Decisive in 1999",
+          "body": "Cristante stopped Julio Estrada in sudden death as Toluca won the Verano title."
+        },
+        {
+          "title": "Decisive again in 2008",
+          "body": "In another final shootout, he stopped Alejandro Vela to secure Toluca’s ninth league crown."
+        }
+      ],
+      "facts": [
+        {
+          "key": "cristante-league-titles",
+          "label": "Honours",
+          "prompt": "How many Mexican league championships does the Hall of Fame list for Cristante: two Clausura and three Apertura titles?",
+          "answers": [
+            "5"
+          ],
+          "distractors": [
+            "3",
+            "4",
+            "6"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "5",
+            "number": 5,
+            "unit": "titles"
+          },
+          "scope": "Hernán Cristante’s Mexican league honours listed by the International Football Hall of Fame.",
+          "sourceKey": "tol-cristante-hall",
+          "evidence": "The Hall page lists two Clausura and three Apertura championship honours, totaling five."
+        },
+        {
+          "key": "cristante-deciding-saves",
+          "label": "Finals record",
+          "prompt": "How many Toluca league-final shootouts did Cristante decide with a saved penalty in the club’s 1999 and 2008 accounts?",
+          "answers": [
+            "2"
+          ],
+          "distractors": [
+            "1",
+            "3",
+            "4"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "2",
+            "number": 2,
+            "unit": "finals"
+          },
+          "scope": "Hernán Cristante’s decisive penalty saves in Toluca league finals, 1999 and 2008.",
+          "sourceKey": "tol-cristante-99",
+          "evidence": "Toluca’s official 1999 and 2008 accounts name Cristante’s decisive penalty saves in each final."
+        },
+        {
+          "key": "cristante-08-final-save",
+          "label": "Apertura 2008 final",
+          "prompt": "Whose penalty did Cristante stop in the Apertura 2008 shootout?",
+          "answers": [
+            "Alejandro Vela"
+          ],
+          "distractors": [
+            "Yosgart Gutiérrez",
+            "Miguel Sabah",
+            "César Villaluz"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Alejandro Vela",
+            "text": "Alejandro Vela"
+          },
+          "scope": "Toluca vs Cruz Azul, Apertura 2008 final shootout.",
+          "sourceKey": "tol-cristante-08",
+          "evidence": "Toluca’s retrospective identifies Alejandro Vela as the penalty Cristante saved."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-cristante-role",
+      "subjectKey": "entity-hernan-cristante",
+      "clubKey": "entity-toluca",
+      "chapter": "legacy",
+      "title": "A rebound and a final save in 2008",
+      "subtitle": "Two unusual moments shaped the shootout that gave Toluca the title.",
+      "story": [
+        {
+          "title": "A shootout swing",
+          "body": "During the Apertura 2008 shootout, a shot struck Cruz Azul goalkeeper Yosgart Gutiérrez and rebounded into the net, prolonging the series."
+        },
+        {
+          "title": "The final stop",
+          "body": "Cristante then saved Alejandro Vela’s penalty, and Toluca celebrated its ninth league title."
+        }
+      ],
+      "facts": [
+        {
+          "key": "cristante-08-rebound-keeper",
+          "label": "Cruz Azul’s goalkeeper",
+          "prompt": "Which Cruz Azul goalkeeper was involved in the rebound that prolonged the 2008 shootout?",
+          "answers": [
+            "Yosgart Gutiérrez"
+          ],
+          "distractors": [
+            "Óscar Pérez",
+            "Jesús Corona",
+            "Alfredo Talavera"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Yosgart Gutiérrez",
+            "text": "Yosgart Gutiérrez"
+          },
+          "scope": "Hernán Cristante career milestone; dated tournament or event as stated in the source.",
+          "sourceKey": "tol-cristante-08",
+          "evidence": "Toluca’s official account names Yosgart Gutiérrez as the keeper whose back redirected the shot into the net."
+        },
+        {
+          "key": "cristante-08-rebound-effect",
+          "label": "Shootout reprieve",
+          "prompt": "What did the rebound off Yosgart Gutiérrez’s back do to the penalty shootout?",
+          "answers": [
+            "Prolonged it"
+          ],
+          "distractors": [
+            "Ended it for Cruz Azul",
+            "Forced the final to be replayed",
+            "Sent the match back to extra time"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Prolonged it",
+            "text": "Prolonged it"
+          },
+          "scope": "Hernán Cristante career milestone; dated tournament or event as stated in the source.",
+          "sourceKey": "tol-cristante-08",
+          "evidence": "The club says the ball entered after hitting Gutiérrez, prolonging the penalty series."
+        },
+        {
+          "key": "cristante-08-title-number",
+          "label": "Ninth title",
+          "prompt": "Which league-title number did Toluca secure after Cristante stopped Alejandro Vela’s penalty?",
+          "answers": [
+            "9th",
+            "Ninth"
+          ],
+          "distractors": [
+            "7th",
+            "8th",
+            "10th"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "9th",
+            "text": "9th"
+          },
+          "scope": "Toluca’s Apertura 2008 championship, decided after Cristante saved Alejandro Vela’s kick.",
+          "sourceKey": "tol-cristante-08",
+          "evidence": "The club says Cristante saved Vela’s penalty and the celebrations marked Toluca’s ninth title."
+        }
+      ]
+    }
+  ]
+}

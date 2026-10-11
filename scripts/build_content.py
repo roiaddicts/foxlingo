@@ -146,7 +146,18 @@ for exercise in pack['exercises']:
 if set(score_inputs) != {x['key'] for x in pack['exercises'] if x.get('scoreInput')}:raise ValueError('Missing score exercise')
 from merge_player_catalog import compile_catalog
 compile_catalog(pack)
-pack['contentVersion']=12
+werder=next(e for e in pack['entities'] if e['key']=='entity-werder-bremen')
+werder['aliases']=list(dict.fromkeys(werder['aliases']+['Werder Bremen','Werder']))
+for key in ['xolos','madrid','cristiano','ramos','casillas','arce','saucedo','riascos','di-stefano']:
+ next(e for e in pack['entities'] if e['key']=='entity-'+key)['imageAsset']='entity-'+key
+from merge_curriculum import merge as merge_curriculum
+# Supporting opponents have badges but do not acquire invented learning paths.
+for club in json.loads((ROOT/'content/club-search-artwork.json').read_text()):
+ if club.get('entityKey') and not any(e['key']==club['entityKey'] for e in pack['entities']):
+  pack['entities'].append(dict(id=uid(club['entityKey']),key=club['entityKey'],type='club',name=club['name'],aliases=club.get('aliases',[]),visual=club.get('visual',club['name'][:3]),externalRefs={},imageAsset=club['asset'],imageURL=club['imageURL']))
+  pack['sources'].append(dict(key='artwork-'+club['entityKey'],title=club['name']+' · official club badge',url=club['sourceURL'],verifiedAt='2026-10-10'))
+curriculum_lessons=merge_curriculum(pack)
+pack['contentVersion']=json.loads((ROOT/'content/curriculum-packs.json').read_text())['contentVersion'] if curriculum_lessons else 12
 # Promote explicitly authored country values into canonical targets. Preserve
 # fact/objective IDs, wording, scope and revision: the taught claim is unchanged.
 flags=json.loads((ROOT/'content/country-artwork.json').read_text())

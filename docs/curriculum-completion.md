@@ -1,0 +1,21 @@
+# Curriculum completion
+
+The active objective is to fill the learning curriculum, not just increase the game catalog. The scope includes every club already offered in the Champions League, Bundesliga and Liga MX catalog, the existing twenty player paths, and additional notable-player paths that give each club a useful historical starting point.
+
+A completed introductory club course must have a sourced history chapter, at least two distinct defining-moment lessons, and a Players & legacies chapter connecting at least two notable players to their own courses. The existing one-lesson introductions remain foundations; they do not count as completed courses. Xolos and Madrid retain their existing content and receive deeper player coverage where needed.
+
+Each completed player course needs at least four player-specific lessons spanning career, defining moments and dated records or honours. Optional club-context lessons do not count toward that depth. Facts must carry opened source evidence and historical scope. Identically worded or paraphrased facts do not become new knowledge merely by assigning another key. Current squads, valuations and totals require explicit dates and reliable sources rather than seed membership assumptions.
+
+Primary club, competition, federation and league publications are preferred. A seed portrait can illustrate an independently sourced person only through a reviewed identity binding. Óscar Cardozo is not José Saturnino Cardozo; Bryan Cristante is not Hernán Cristante. Missing seed players use independent canonical IDs and verified official portraits where available.
+
+Content is authored in `content/curriculum-*.json`. Only packs explicitly listed in `content/curriculum-packs.json` are compiled by `scripts/merge_curriculum.py`; drafts being researched do not silently enter a release. Additive chapters retain previous fact, objective, lesson and roadmap IDs. Club and player paths can share the same new canonical lessons. Increasing a card's knowledge set preserves earned tiers while adding the new material to its progression.
+
+`content/curriculum-progress.json` is generated from the actual compiled pack. It identifies complete and unfinished courses; it is evidence of remaining work, not a declaration that a partial batch finishes the goal. Completion additionally requires source review, distinct useful facts, correct choices, cached visuals, native validation, migration checks and normal iPhone verification.
+
+## Integration checkpoint — 10 October 2026
+
+The version 13 working bundle contains 269 lessons, 806 objectives, 69 club courses and 36 player courses. The topic/depth audit passes 13 club courses and all 36 player courses; this does not certify complete source review or finish the broader objective. Juventus now has an authored course rather than merely an entity. Xolos has 17 shared lessons and Madrid has 29; player paths contain four required lessons, except Xavi's five, with club context remaining optional.
+
+The native decoder and update-transition validator accept the bundle against version 12. All 377 previous facts and objectives, 126 lessons and 582 exercises are unchanged as parsed JSON objects. The iPhone simulator build succeeded; the picker visibly offers 36 player paths, Del Piero's course opens with his portrait, and previously saved Madrid progress survives. A stale two-lesson player summary found during simulator inspection was corrected in the compiler.
+
+Source notes retain explicit limitations for official indexed extracts and inaccessible pages. Further source checks and lesson interaction checks remain necessary. The 251-test Swift run exposed 12 assertions in three affected suites; after fixing the artwork alias and stale expectations, all 51 tests in those suites plus the new curriculum suite passed. Two Python audit regressions passed. The normal iPhone Del Piero lesson-completion/relaunch test also passed. These checks validate this incremental batch, not complete coverage of all clubs or all source-retrieval limitations. Next, reviewed Liga MX/Bundesliga packs and the remaining offered clubs must be integrated, with independent checks of useful player-specific facts and source support.

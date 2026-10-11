@@ -131,5 +131,17 @@
     "imageURL": "https://img.uefa.com/imgml/TP/teams/logos/100x100/5312.png",
     "sourceURL": "https://www.uefa.com/nationalassociations/teams/5312/",
     "scope": "Club badge illustration, not a historical-season badge."
+  },
+  {
+    "name": "VfL Wolfsburg",
+    "entityKey": "entity-wolfsburg",
+    "aliases": [
+      "Wolfsburg"
+    ],
+    "visual": "WOB",
+    "asset": "entity-wolfsburg",
+    "imageURL": "https://img.uefa.com/imgml/TP/teams/logos/100x100/64332.png",
+    "sourceURL": "https://www.uefa.com/uefachampionsleague/history/clubs/64332--wolfsburg/",
+    "scope": "Club badge illustration, not a historical-season badge."
   }
 ]

@@ -58,7 +58,7 @@ final class CompetitionTests: XCTestCase {
         XCTAssertEqual(favorites.total,14)
         XCTAssertFalse(favorites.sections.flatMap(\.cards).contains {pack.entity($0.entityID).type == "competition"})
         let league=AlbumCollection.make(pack:pack,state:state,scope:.bundesliga,discoveredOnly:false,query:"German league")
-        XCTAssertEqual(league.total,21);XCTAssertEqual(league.visibleCount,1)
+        XCTAssertEqual(league.total,25);XCTAssertEqual(league.visibleCount,1)
     }
     func testMissingSubjectAndFalseClubContextAreRejected() throws {
         let base=try JSONSerialization.jsonObject(with:JSONEncoder().encode(pack)) as! [String:Any]

@@ -1,0 +1,3017 @@
+{
+  "sources": [
+    {
+      "key": "curriculum-italy-juve-history",
+      "title": "The story of a legend — Juventus",
+      "url": "https://www.juventus.com/en/club/history/the-story-of-a-legend",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "curriculum-italy-juve-1905",
+      "title": "On this day in 1905: Juventus seal first Scudetto title",
+      "url": "https://www.juventus.com/en/news/articles/onthisday-in-1905-juventus-seal-first-scudetto-title",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "curriculum-italy-juve-cups",
+      "title": "Cup wins and champions — Juventus",
+      "url": "https://www.juventus.com/en/news/articles/cup-wins-and-champions",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "curriculum-italy-delpiero-profile",
+      "title": "Alessandro Del Piero — Juventus Hall of Fame",
+      "url": "https://halloffame.juventus.com/en/hall-of-fame/alessandro-del-piero",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "curriculum-italy-delpiero-debut",
+      "title": "A 20 anni dall’esordio di Del Piero — Juventus",
+      "url": "https://www.juventus.com/it/news/articoli/a-20-anni-dall-esordio-di-del-piero",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "curriculum-italy-delpiero-germany",
+      "title": "Italy-Germany matches — FIFA",
+      "url": "https://www.fifa.com/en/tournaments/mens/worldcup/articles/italy-germany-matches",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "curriculum-italy-buffon-20",
+      "title": "Buffon: 20 years a champion — Juventus",
+      "url": "https://www.juventus.com/en/news/articles/buffon-20-years-a-champion",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "curriculum-italy-buffon-648",
+      "title": "Buffon sets record: 648th Serie A appearance — Juventus",
+      "url": "https://www.juventus.com/en/news/articles/buffon-sets-record-648th-serie-a-appearance",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "curriculum-italy-inter-history",
+      "title": "115 years of Inter: the rest is history — Inter",
+      "url": "https://www.inter.it/en/news/inter-115",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "curriculum-italy-inter-europe",
+      "title": "27 May, the date of two European Cups for Inter",
+      "url": "https://www.inter.it/en/news/2020-05-27-27-may-inter-european-cups-1964-and-1965",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "curriculum-italy-inter-treble",
+      "title": "Anniversary: 22 May 2010, Champions League — Inter",
+      "url": "https://www.inter.it/en/news/anniversary-22-may-2010-champions-league-16-years-on",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "curriculum-italy-zanetti-debut",
+      "title": "Zanetti’s Inter debut against Vicenza — Inter",
+      "url": "https://www.inter.it/en/news/2020-08-27-zanetti-debut-inter-vicenza-1995",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "curriculum-italy-zanetti-profile",
+      "title": "Javier Zanetti — Inter Hall of Fame",
+      "url": "https://www.inter.it/en/club/hall-of-fame/javier-zanetti",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "curriculum-italy-milito-goals",
+      "title": "All of Milito’s goals: Inter 2009/10 — Inter",
+      "url": "https://www.inter.it/en/news/2020-05-08-all-of-militos-goals-inter-2009-2010",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "curriculum-italy-milito-profile",
+      "title": "Diego Milito — Inter Hall of Fame",
+      "url": "https://www.inter.it/en/club/hall-of-fame/diego-milito",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "curriculum-italy-napoli-history",
+      "title": "SSC Napoli opens its 100th anniversary season — SSC Napoli",
+      "url": "https://sscnapoli.it/en/ssc-napoli-opens-its-100th-anniversary-season/",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "curriculum-italy-napoli-1987",
+      "title": "When Milan and Napoli ruled Italy — UEFA",
+      "url": "https://www.uefa.com/news-media/news/0253-0d7bc9881aaf-ce043045587c-1000--when-milan-and-napoli-ruled-italy/",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "curriculum-italy-napoli-2023",
+      "title": "Udinese-Napoli 1-1: we are champions of Italy — SSC Napoli",
+      "url": "https://sscnapoli.it/en/udinese-napoli-1-1-gol-di-osimhen-al-dacia-arena-siamo-campioni-ditalia/",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "curriculum-italy-maradona-uefa-cup",
+      "title": "1988/89: Maradona leads the way for Napoli — UEFA",
+      "url": "https://www.uefa.com/uefaeuropaleague/news/00ea-0e6a0cc871e7-6a9bd3c50681-1000--1988-89-maradona-leads-the-way-for-napoli/",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "curriculum-italy-maradona-profile",
+      "title": "Napoli remembers Maradona’s greatest European performances — UEFA",
+      "url": "https://www.uefa.com/news-media/news/0263-10f1fecd826a-620d5ad4272d-1000--naples-remembers-maradona-s-greatest-european-performances/",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "curriculum-italy-maradona-worldcup",
+      "title": "Remembering Maradona’s golden moments — FIFA",
+      "url": "https://www.fifa.com/en/tournaments/mens/worldcup/articles/remembering-maradona-golden-moments-argentina-mexico-1986",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "curriculum-italy-hamsik-profile",
+      "title": "How brilliant is Napoli and Slovakia’s Marek Hamšík? — UEFA",
+      "url": "https://www.uefa.com/uefachampionsleague/news/0247-0e98eda903ca-2f4fd7c39511-1000--how-brilliant-is-napoli-and-slovakia-s-marek-hamsik/",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "curriculum-italy-hamsik-legacy",
+      "title": "Napoli’s Legacy: Marek Hamšík’s legendary brace — SSC Napoli",
+      "url": "https://sscnapoli.it/napolis-legacy-la-leggendaria-doppietta-di-marek-hamsik/",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "curriculum-italy-delpiero-arrival",
+      "title": "On This Day: Alessandro Del Piero’s first day in black and white — Juventus",
+      "url": "https://www.juventus.com/it/news/articoli/mercato-juventus-del-piero",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "curriculum-italy-buffon-fifa",
+      "title": "FIFA World Cup Golden Glove winners: Gianluigi Buffon",
+      "url": "https://www.fifa.com/it/tournaments/mens/worldcup/articles/golden-glove-vincitori-portieri-highlights",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "curriculum-italy-hamsik-goals",
+      "title": "UEFA top scorers for Italy’s four Champions League clubs",
+      "url": "https://it.uefa.com/uefachampionsleague/news/0256-0e99f6171560-6a085638318d-1000--i-migliori-marcatori-delle-quattro-italiane/",
+      "verifiedAt": "2026-10-10"
+    }
+  ],
+  "players": [
+    {
+      "key": "entity-del-piero",
+      "name": "Alessandro Del Piero",
+      "aliases": [
+        "Del Piero",
+        "Alex"
+      ],
+      "visual": "AD",
+      "clubKey": "entity-juventus",
+      "seedID": "player-183",
+      "seedName": "Alessandro Del Piero"
+    },
+    {
+      "key": "entity-buffon",
+      "name": "Gianluigi Buffon",
+      "aliases": [
+        "Buffon",
+        "Gigi Buffon"
+      ],
+      "visual": "GB",
+      "clubKey": "entity-juventus",
+      "seedID": "player-49",
+      "seedName": "Gianluigi Buffon"
+    },
+    {
+      "key": "entity-zanetti",
+      "name": "Javier Zanetti",
+      "aliases": [
+        "Zanetti",
+        "Pupi"
+      ],
+      "visual": "JZ",
+      "clubKey": "entity-inter",
+      "seedID": "player-727",
+      "seedName": "Javier Zanetti"
+    },
+    {
+      "key": "entity-milito",
+      "name": "Diego Milito",
+      "aliases": [
+        "Milito",
+        "El Príncipe"
+      ],
+      "visual": "DM",
+      "clubKey": "entity-inter",
+      "seedID": "player-295",
+      "seedName": "Diego Milito"
+    },
+    {
+      "key": "entity-maradona",
+      "name": "Diego Maradona",
+      "aliases": [
+        "Maradona"
+      ],
+      "visual": "DM",
+      "clubKey": "entity-napoli",
+      "seedID": "player-41",
+      "seedName": "Diego Maradona"
+    },
+    {
+      "key": "entity-hamsik",
+      "name": "Marek Hamšík",
+      "aliases": [
+        "Marek Hamsik",
+        "Hamšík",
+        "Hamsik"
+      ],
+      "visual": "MH",
+      "clubKey": "entity-napoli",
+      "seedID": "player-775",
+      "seedName": "Marek Hamsik"
+    }
+  ],
+  "lessons": [
+    {
+      "key": "lesson-curriculum-italy-juve-origins",
+      "subjectKey": "entity-juventus",
+      "clubKey": "entity-juventus",
+      "title": "Juve’s first colors and ground",
+      "subtitle": "From pink shirts to the Parade Ground",
+      "chapter": "history",
+      "story": [
+        {
+          "title": "A schoolboy idea",
+          "body": "A group of Turin schoolboys created Juventus in 1897. Its first home ground was Piazza d’Armi, and its first shirts were pink."
+        },
+        {
+          "title": "A change in identity",
+          "body": "The club moved from pink to black and white in 1903; the Juventus history says those colors came from Nottingham."
+        }
+      ],
+      "facts": [
+        {
+          "key": "juve-first-ground",
+          "label": "First ground",
+          "prompt": "Where did Juventus play in its earliest years?",
+          "answers": [
+            "Piazza d’Armi"
+          ],
+          "distractors": [
+            "Corso Marsiglia",
+            "Stadio Comunale",
+            "Campo di Corso Re Umberto"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Piazza d’Armi",
+            "text": "Piazza d’Armi"
+          },
+          "scope": "The club’s first ground, as described in Juventus’s official history.",
+          "sourceKey": "curriculum-italy-juve-history",
+          "evidence": "Juventus identifies Piazza d’Armi as its first ground."
+        },
+        {
+          "key": "juve-first-shirt",
+          "label": "Original shirt color",
+          "prompt": "What color did Juventus wear at first?",
+          "answers": [
+            "pink"
+          ],
+          "distractors": [
+            "black and white",
+            "red and blue",
+            "yellow and blue"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Pink",
+            "text": "Pink"
+          },
+          "scope": "The club’s earliest kit, before it adopted black and white in 1903.",
+          "sourceKey": "curriculum-italy-juve-history",
+          "evidence": "The club history says Juventus started out wearing pink."
+        },
+        {
+          "key": "juve-bianconeri-year",
+          "label": "Black-and-white change",
+          "prompt": "In which year did Juventus begin using its black-and-white colors?",
+          "answers": [
+            "1903"
+          ],
+          "distractors": [
+            "1897",
+            "1900",
+            "1905"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "1903",
+            "number": 1903,
+            "unit": "year"
+          },
+          "scope": "The club history dates the adoption of the Bianconeri colors to three years after 1900.",
+          "sourceKey": "curriculum-italy-juve-history",
+          "evidence": "Juventus states that the black-and-white colors were in use three years after its 1900 national-championship debut."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-italy-juve-first-title",
+      "subjectKey": "entity-juventus",
+      "clubKey": "entity-juventus",
+      "title": "The first Scudetto",
+      "subtitle": "A six-match title race in 1905",
+      "chapter": "moments",
+      "story": [
+        {
+          "title": "A compact championship",
+          "body": "Juventus entered the final round of the 1905 championship at the top of the table."
+        },
+        {
+          "title": "A first national crown",
+          "body": "The club secured its first Italian championship on 9 April 1905, beginning its long list of league titles."
+        }
+      ],
+      "facts": [
+        {
+          "key": "juve-first-title-date",
+          "label": "Title date",
+          "prompt": "On what date did Juventus seal its first Scudetto?",
+          "answers": [
+            "9 April 1905"
+          ],
+          "distractors": [
+            "9 April 1897",
+            "22 May 1996",
+            "1 November 1897"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "9 April 1905",
+            "text": "9 April 1905"
+          },
+          "scope": "Juventus’s first Italian championship, decided in the 1905 competition.",
+          "sourceKey": "curriculum-italy-juve-1905",
+          "evidence": "The official account dates the title to 9 April 1905."
+        },
+        {
+          "key": "juve-first-title-format",
+          "label": "Competition format",
+          "prompt": "How many fixtures made up the 1905 championship competition?",
+          "answers": [
+            "six"
+          ],
+          "distractors": [
+            "four",
+            "eight",
+            "twelve"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Six fixtures",
+            "text": "Six fixtures"
+          },
+          "scope": "The championship schedule in which Juventus won its first title.",
+          "sourceKey": "curriculum-italy-juve-1905",
+          "evidence": "Juventus describes the competition as a six-fixture contest."
+        },
+        {
+          "key": "juve-first-title-points",
+          "label": "Final-round position",
+          "prompt": "How many points did Juventus have before the final round of the 1905 title race?",
+          "answers": [
+            "6"
+          ],
+          "distractors": [
+            "4",
+            "8",
+            "10"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "6 points",
+            "number": 6,
+            "unit": "points"
+          },
+          "scope": "Juventus’s position entering the final round of its first title race.",
+          "sourceKey": "curriculum-italy-juve-1905",
+          "evidence": "The club says two wins and two draws had put Juventus on six points before the final round."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-italy-juve-1996-final",
+      "subjectKey": "entity-juventus",
+      "clubKey": "entity-juventus",
+      "title": "Rome, 1996: Europe decided on penalties",
+      "subtitle": "Juventus edge Ajax after extra time",
+      "chapter": "moments",
+      "story": [
+        {
+          "title": "A level final",
+          "body": "On 22 May 1996, Juventus met defending champions Ajax in the Champions League final in Rome."
+        },
+        {
+          "title": "Peruzzi and Jugović",
+          "body": "After a 1–1 draw through extra time, Angelo Peruzzi saved twice and Vladimir Jugović converted the winning penalty."
+        }
+      ],
+      "facts": [
+        {
+          "key": "juve-1996-opponent",
+          "label": "Final opponent",
+          "prompt": "Which club did Juventus face in the 1996 Champions League final?",
+          "answers": [
+            "Ajax"
+          ],
+          "distractors": [
+            "Real Madrid",
+            "Borussia Dortmund",
+            "River Plate"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Ajax",
+            "text": "Ajax"
+          },
+          "scope": "The opponent in the 22 May 1996 final.",
+          "sourceKey": "curriculum-italy-juve-cups",
+          "evidence": "Juventus identifies Ajax as the opponent in Rome."
+        },
+        {
+          "key": "juve-1996-after-extra",
+          "label": "Score after extra time",
+          "prompt": "What was the score after extra time in the 1996 final?",
+          "answers": [
+            "1–1"
+          ],
+          "distractors": [
+            "0–0",
+            "2–1",
+            "3–3"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "1–1",
+            "text": "1–1"
+          },
+          "scope": "The score before the penalty shoot-out in the 1996 final.",
+          "sourceKey": "curriculum-italy-juve-cups",
+          "evidence": "The official account says the teams were level 1–1 after extra time."
+        },
+        {
+          "key": "juve-1996-winner",
+          "label": "Winning penalty",
+          "prompt": "Who scored Juventus’s winning penalty in the shoot-out?",
+          "answers": [
+            "Vladimir Jugović"
+          ],
+          "distractors": [
+            "Angelo Peruzzi",
+            "Alessandro Del Piero",
+            "Gianluca Vialli"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Vladimir Jugović",
+            "text": "Vladimir Jugović"
+          },
+          "scope": "The decisive kick in the 1996 final shoot-out.",
+          "sourceKey": "curriculum-italy-juve-cups",
+          "evidence": "The club says Jugović converted the kick that crowned Juventus champions."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-italy-delpiero-arrival",
+      "subjectKey": "entity-del-piero",
+      "clubKey": "entity-juventus",
+      "title": "Del Piero’s arrival from Padova",
+      "subtitle": "Juventus signed the young Padova talent in June 1993; his first-team debut followed that September.",
+      "chapter": "career",
+      "story": [
+        {
+          "title": "A move that began a long spell",
+          "body": "Juventus signed the young Padova talent in June 1993; his first-team debut followed that September."
+        },
+        {
+          "title": "From transfer to debut",
+          "body": "Del Piero arrived from Padova on 28 June 1993. His first Juventus appearance came at Foggia on 12 September 1993."
+        }
+      ],
+      "facts": [
+        {
+          "key": "delpiero-arrival-date",
+          "label": "Transfer date",
+          "prompt": "On what date did Juventus announce Del Piero’s arrival from Padova?",
+          "answers": [
+            "28 June 1993"
+          ],
+          "distractors": [
+            "28 June 1992",
+            "12 September 1993",
+            "28 July 1993"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "28 June 1993",
+            "text": "28 June 1993"
+          },
+          "scope": "Del Piero’s transfer from Padova to Juventus.",
+          "sourceKey": "curriculum-italy-delpiero-arrival",
+          "evidence": "Juventus dates his first day in black and white to 28 June 1993."
+        },
+        {
+          "key": "delpiero-arrival-club",
+          "label": "Previous club",
+          "prompt": "Which club did Del Piero join Juventus from?",
+          "answers": [
+            "Padova"
+          ],
+          "distractors": [
+            "Foggia",
+            "Sampdoria",
+            "Torino"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Padova",
+            "text": "Padova"
+          },
+          "scope": "Del Piero’s arrival at Juventus in 1993.",
+          "sourceKey": "curriculum-italy-delpiero-arrival",
+          "evidence": "Juventus describes him as a young talent recruited from Padova."
+        },
+        {
+          "key": "delpiero-first-team-date",
+          "label": "First-team debut",
+          "prompt": "On what date did Del Piero make his Juventus first-team debut?",
+          "answers": [
+            "12 September 1993"
+          ],
+          "distractors": [
+            "12 September 1992",
+            "12 October 1993",
+            "28 June 1993"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "12 September 1993",
+            "text": "12 September 1993"
+          },
+          "scope": "Del Piero’s first Juventus appearance, at Foggia.",
+          "sourceKey": "curriculum-italy-delpiero-debut",
+          "evidence": "Juventus dates his debut at Foggia to 12 September 1993."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-italy-delpiero-2006-semi",
+      "subjectKey": "entity-del-piero",
+      "clubKey": "entity-juventus",
+      "title": "Del Piero’s extra-time strike in Dortmund",
+      "subtitle": "Italy reach the 2006 World Cup final",
+      "chapter": "moments",
+      "story": [
+        {
+          "title": "A tense semi-final",
+          "body": "Italy and Germany were goalless late in extra time in their 2006 World Cup semi-final in Dortmund."
+        },
+        {
+          "title": "A decisive finish",
+          "body": "Alessandro Del Piero scored Italy’s second goal in a 2–0 win, sealing a place in the final."
+        }
+      ],
+      "facts": [
+        {
+          "key": "delpiero-2006-opponent",
+          "label": "Semi-final opponent",
+          "prompt": "Which host nation did Italy defeat in the 2006 World Cup semi-final?",
+          "answers": [
+            "Germany"
+          ],
+          "distractors": [
+            "France",
+            "Portugal",
+            "Brazil"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Germany",
+            "text": "Germany"
+          },
+          "scope": "Italy’s 2006 World Cup semi-final in Dortmund.",
+          "sourceKey": "curriculum-italy-delpiero-germany",
+          "evidence": "FIFA records the semi-final as Italy against Germany."
+        },
+        {
+          "key": "delpiero-2006-score",
+          "label": "Semi-final score",
+          "prompt": "What was the final score when Italy beat Germany in extra time?",
+          "answers": [
+            "2–0"
+          ],
+          "distractors": [
+            "1–0",
+            "2–1",
+            "3–1"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "2–0",
+            "text": "2–0"
+          },
+          "scope": "The 2006 World Cup semi-final after extra time.",
+          "sourceKey": "curriculum-italy-delpiero-germany",
+          "evidence": "FIFA records Italy’s 2–0 victory."
+        },
+        {
+          "key": "delpiero-2006-goal-time",
+          "label": "Del Piero’s goal",
+          "prompt": "At what minute did Del Piero score Italy’s second goal?",
+          "answers": [
+            "120th minute"
+          ],
+          "distractors": [
+            "90th minute",
+            "105th minute",
+            "118th minute"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "120th minute",
+            "text": "120th minute"
+          },
+          "scope": "Del Piero’s late extra-time goal against Germany in the 2006 semi-final.",
+          "sourceKey": "curriculum-italy-delpiero-germany",
+          "evidence": "FIFA lists Del Piero as a 120th-minute scorer."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-italy-delpiero-juve-record",
+      "subjectKey": "entity-del-piero",
+      "clubKey": "entity-juventus",
+      "title": "Del Piero’s Juventus record",
+      "subtitle": "A long career in black and white",
+      "chapter": "records",
+      "story": [
+        {
+          "title": "Nineteen seasons",
+          "body": "Del Piero’s Juventus career stretched from 1993 to 2012 and covered 19 seasons."
+        },
+        {
+          "title": "A club benchmark",
+          "body": "He finished with 705 appearances, the club record cited by Juventus, and won eight league championships with the side."
+        }
+      ],
+      "facts": [
+        {
+          "key": "delpiero-apps",
+          "label": "Juventus appearances",
+          "prompt": "How many Juventus appearances did Del Piero make?",
+          "answers": [
+            "705"
+          ],
+          "distractors": [
+            "648",
+            "858",
+            "520"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "705 appearances",
+            "number": 705,
+            "unit": "appearances"
+          },
+          "scope": "His complete Juventus playing record, 1993–2012.",
+          "sourceKey": "curriculum-italy-delpiero-profile",
+          "evidence": "The Juventus Hall of Fame lists 705 appearances."
+        },
+        {
+          "key": "delpiero-seasons",
+          "label": "Seasons at Juventus",
+          "prompt": "How many seasons did Del Piero spend with Juventus?",
+          "answers": [
+            "19"
+          ],
+          "distractors": [
+            "12",
+            "16",
+            "21"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "19 seasons",
+            "number": 19,
+            "unit": "seasons"
+          },
+          "scope": "His Juventus career from 1993 to 2012.",
+          "sourceKey": "curriculum-italy-delpiero-profile",
+          "evidence": "The Hall of Fame records 19 seasons."
+        },
+        {
+          "key": "delpiero-league-titles",
+          "label": "League championships",
+          "prompt": "How many league championships does Juventus credit to Del Piero?",
+          "answers": [
+            "8"
+          ],
+          "distractors": [
+            "5",
+            "6",
+            "10"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "8 championships",
+            "number": 8,
+            "unit": "championships"
+          },
+          "scope": "The honours listed on Del Piero’s Juventus Hall of Fame profile.",
+          "sourceKey": "curriculum-italy-delpiero-profile",
+          "evidence": "The profile lists eight championships."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-italy-delpiero-legacy",
+      "subjectKey": "entity-del-piero",
+      "clubKey": "entity-juventus",
+      "title": "Del Piero’s lasting Juventus legacy",
+      "subtitle": "The club’s record-holder and captain",
+      "chapter": "legacy",
+      "story": [
+        {
+          "title": "Record-holder",
+          "body": "Juventus identifies Del Piero as its appearances record-holder, goals record-holder and honours record-holder."
+        },
+        {
+          "title": "An artist’s nickname",
+          "body": "Gianni Agnelli gave him the nickname “Pinturicchio,” comparing the forward’s style to an artist."
+        }
+      ],
+      "facts": [
+        {
+          "key": "delpiero-record-honour",
+          "label": "Club record",
+          "prompt": "Which three Juventus records does the club say Del Piero holds?",
+          "answers": [
+            "Appearances, goals and honours"
+          ],
+          "distractors": [
+            "Appearances, assists and clean sheets",
+            "Goals, saves and captaincies",
+            "Titles, penalties and derbies"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Appearances, goals and honours",
+            "text": "Appearances, goals and honours"
+          },
+          "scope": "The official Juventus Hall of Fame description of Del Piero’s club records.",
+          "sourceKey": "curriculum-italy-delpiero-profile",
+          "evidence": "The profile names him holder of the appearances, goals and honours records."
+        },
+        {
+          "key": "delpiero-nickname",
+          "label": "Nickname",
+          "prompt": "What nickname did Gianni Agnelli give Del Piero?",
+          "answers": [
+            "Pinturicchio"
+          ],
+          "distractors": [
+            "Il Pinturicchio",
+            "Il Capitano",
+            "Bianconero"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Pinturicchio",
+            "text": "Pinturicchio"
+          },
+          "scope": "Agnelli’s nickname for Del Piero, as quoted by Juventus.",
+          "sourceKey": "curriculum-italy-delpiero-profile",
+          "evidence": "The Hall of Fame attributes “Pinturicchio” to Agnelli."
+        },
+        {
+          "key": "delpiero-career-end",
+          "label": "Last Juventus season",
+          "prompt": "In what year did Del Piero’s Juventus career end?",
+          "answers": [
+            "2012"
+          ],
+          "distractors": [
+            "2006",
+            "2010",
+            "2014"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "2012",
+            "number": 2012,
+            "unit": "year"
+          },
+          "scope": "The end of Del Piero’s Juventus career, following his 1993 arrival.",
+          "sourceKey": "curriculum-italy-delpiero-profile",
+          "evidence": "The Hall of Fame timeline runs from 1993 to 2012."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-italy-buffon-parma-debut",
+      "subjectKey": "entity-buffon",
+      "clubKey": "entity-juventus",
+      "title": "Buffon’s teenage Serie A debut",
+      "subtitle": "At 17, Buffon made his Parma debut against Milan and kept a clean sheet.",
+      "chapter": "career",
+      "story": [
+        {
+          "title": "A remarkable beginning",
+          "body": "At 17, Buffon made his Parma debut against Milan and kept a clean sheet."
+        },
+        {
+          "title": "The first Serie A match",
+          "body": "On 19 November 1995, Parma gave the 17-year-old Buffon his first Serie A appearance at the Stadio Tardini against Milan."
+        }
+      ],
+      "facts": [
+        {
+          "key": "buffon-debut-age",
+          "label": "Debut age",
+          "prompt": "How old was Buffon when he made his Serie A debut for Parma?",
+          "answers": [
+            "17"
+          ],
+          "distractors": [
+            "16",
+            "18",
+            "19"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "17 years old",
+            "number": 17,
+            "unit": "years old"
+          },
+          "scope": "Buffon’s Serie A debut for Parma against Milan on 19 November 1995.",
+          "sourceKey": "curriculum-italy-buffon-20",
+          "evidence": "Juventus states Buffon made his Serie A debut at age 17."
+        },
+        {
+          "key": "buffon-debut-opponent",
+          "label": "First opponent",
+          "prompt": "Which club did Parma face in Buffon’s Serie A debut?",
+          "answers": [
+            "Milan"
+          ],
+          "distractors": [
+            "Juventus",
+            "Inter",
+            "Napoli"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Milan",
+            "text": "Milan"
+          },
+          "scope": "Buffon’s first Serie A match, played at the Stadio Tardini.",
+          "sourceKey": "curriculum-italy-buffon-20",
+          "evidence": "The club names Milan as Parma’s opponent."
+        },
+        {
+          "key": "buffon-debut-date",
+          "label": "Debut date",
+          "prompt": "On what date did Buffon make his Serie A debut for Parma?",
+          "answers": [
+            "19 November 1995"
+          ],
+          "distractors": [
+            "19 November 1994",
+            "19 October 1995",
+            "19 November 1996"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "19 November 1995",
+            "text": "19 November 1995"
+          },
+          "scope": "Buffon’s first Serie A appearance, for Parma against Milan.",
+          "sourceKey": "curriculum-italy-buffon-20",
+          "evidence": "Juventus dates the debut to 19 November 1995."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-italy-buffon-juve-arrival",
+      "subjectKey": "entity-buffon",
+      "clubKey": "entity-juventus",
+      "title": "Buffon joins Juventus",
+      "subtitle": "A record transfer from Parma",
+      "chapter": "moments",
+      "story": [
+        {
+          "title": "A move to Turin",
+          "body": "Buffon joined Juventus from Parma in July 2001, arriving as one of the leading goalkeepers in Italy."
+        },
+        {
+          "title": "A long run of appearances",
+          "body": "He went on to make hundreds of appearances for Juventus, with the club marking his 648th Serie A appearance in 2020."
+        }
+      ],
+      "facts": [
+        {
+          "key": "buffon-juve-year",
+          "label": "Juventus arrival",
+          "prompt": "In what year did Buffon join Juventus from Parma?",
+          "answers": [
+            "2001"
+          ],
+          "distractors": [
+            "1995",
+            "2000",
+            "2006"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "2001",
+            "number": 2001,
+            "unit": "year"
+          },
+          "scope": "Buffon’s transfer from Parma to Juventus.",
+          "sourceKey": "curriculum-italy-buffon-20",
+          "evidence": "Juventus dates his arrival from Parma to 2001."
+        },
+        {
+          "key": "buffon-juve-origin",
+          "label": "Previous club",
+          "prompt": "Which club did Buffon join Juventus from?",
+          "answers": [
+            "Parma"
+          ],
+          "distractors": [
+            "Milan",
+            "Inter",
+            "Genoa"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Parma",
+            "text": "Parma"
+          },
+          "scope": "The transfer that brought Buffon to Juventus in 2001.",
+          "sourceKey": "curriculum-italy-buffon-20",
+          "evidence": "The club biography says he joined from Parma."
+        },
+        {
+          "key": "buffon-juve-arrival-age",
+          "label": "Age at arrival",
+          "prompt": "How old was Buffon when he arrived in Turin?",
+          "answers": [
+            "23"
+          ],
+          "distractors": [
+            "21",
+            "22",
+            "24"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "23",
+            "number": 23,
+            "unit": "years old"
+          },
+          "scope": "Buffon’s 2001 move from Parma to Juventus.",
+          "sourceKey": "curriculum-italy-buffon-20",
+          "evidence": "The Juventus retrospective describes him as a 23-year-old on arrival in Turin."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-italy-buffon-648-record",
+      "subjectKey": "entity-buffon",
+      "clubKey": "entity-juventus",
+      "title": "Buffon’s Serie A milestone",
+      "subtitle": "A dated appearance record",
+      "chapter": "records",
+      "story": [
+        {
+          "title": "A landmark appearance",
+          "body": "On 4 July 2020, Buffon reached 648 appearances in Serie A."
+        },
+        {
+          "title": "A domestic league benchmark",
+          "body": "The Juventus report marked the appearance as a record at that time; it is a dated milestone, not a final career total."
+        }
+      ],
+      "facts": [
+        {
+          "key": "buffon-648-count",
+          "label": "Appearance milestone",
+          "prompt": "How many Serie A appearances had Buffon reached at the July 2020 milestone?",
+          "answers": [
+            "648"
+          ],
+          "distractors": [
+            "6480",
+            "685",
+            "705"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "648 appearances",
+            "number": 648,
+            "unit": "appearances"
+          },
+          "scope": "Buffon’s milestone announced by Juventus on 4 July 2020.",
+          "sourceKey": "curriculum-italy-buffon-648",
+          "evidence": "The headline and article identify his 648th Serie A appearance."
+        },
+        {
+          "key": "buffon-juve-apps",
+          "label": "Juventus league total",
+          "prompt": "How many Serie A appearances had Buffon made for Juventus by July 2020?",
+          "answers": [
+            "480"
+          ],
+          "distractors": [
+            "460",
+            "470",
+            "490"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "480",
+            "number": 480,
+            "unit": "appearances"
+          },
+          "scope": "Juventus-only Serie A appearances, as reported on 4 July 2020.",
+          "sourceKey": "curriculum-italy-buffon-648",
+          "evidence": "The article distinguishes his 480 Serie A appearances in a Juventus shirt from his all-time top-flight total."
+        },
+        {
+          "key": "buffon-unbeaten-minutes",
+          "label": "Unbeaten run",
+          "prompt": "How many minutes was the unbeaten run without conceding cited by Juventus in July 2020?",
+          "answers": [
+            "974"
+          ],
+          "distractors": [
+            "874",
+            "924",
+            "984"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "974",
+            "number": 974,
+            "unit": "minutes"
+          },
+          "scope": "A 974-minute run without conceding, as cited in Juventus's 4 July 2020 article.",
+          "sourceKey": "curriculum-italy-buffon-648",
+          "evidence": "Juventus's article cites a 974-minute run without conceding."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-italy-buffon-world-cup-legacy",
+      "subjectKey": "entity-buffon",
+      "clubKey": "entity-juventus",
+      "title": "Buffon’s 2006 World Cup record",
+      "subtitle": "Buffon was named best goalkeeper at Germany 2006 after a tournament with five clean sheets and only two goals conceded.",
+      "chapter": "legacy",
+      "story": [
+        {
+          "title": "A defensive landmark",
+          "body": "Buffon was named best goalkeeper at Germany 2006 after a tournament with five clean sheets and only two goals conceded."
+        },
+        {
+          "title": "Read the tournament totals carefully",
+          "body": "His five clean sheets and two conceded goals cover Italy’s seven matches at Germany 2006. Shootout penalties are excluded from goals conceded. FIFA awarded him the Lev Yashin Award."
+        }
+      ],
+      "facts": [
+        {
+          "key": "buffon-worldcup-clean-sheets",
+          "label": "Clean sheets",
+          "prompt": "How many clean sheets did Buffon record at the 2006 World Cup?",
+          "answers": [
+            "5"
+          ],
+          "distractors": [
+            "3",
+            "4",
+            "6"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "5",
+            "number": 5,
+            "unit": "clean sheets"
+          },
+          "scope": "Italy’s seven matches at Germany 2006.",
+          "sourceKey": "curriculum-italy-buffon-fifa",
+          "evidence": "FIFA’s tournament statistics list 7 appearances and 5 clean sheets."
+        },
+        {
+          "key": "buffon-worldcup-conceded",
+          "label": "Goals conceded",
+          "prompt": "How many goals did Buffon concede at the 2006 World Cup?",
+          "answers": [
+            "2"
+          ],
+          "distractors": [
+            "0",
+            "1",
+            "3"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "2",
+            "number": 2,
+            "unit": "goals"
+          },
+          "scope": "Buffon’s Germany 2006 tournament, excluding shootout penalties.",
+          "sourceKey": "curriculum-italy-buffon-fifa",
+          "evidence": "FIFA lists two goals conceded in seven appearances."
+        },
+        {
+          "key": "buffon-worldcup-award",
+          "label": "Individual award",
+          "prompt": "Which award did Buffon receive as the tournament’s best goalkeeper in 2006?",
+          "answers": [
+            "Lev Yashin Award"
+          ],
+          "distractors": [
+            "adidas Golden Glove",
+            "Golden Ball",
+            "Golden Boot"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Lev Yashin Award",
+            "text": "Lev Yashin Award"
+          },
+          "scope": "FIFA World Cup Germany 2006 goalkeeper award.",
+          "sourceKey": "curriculum-italy-buffon-fifa",
+          "evidence": "FIFA’s historical award list names Buffon as the 2006 Lev Yashin Award winner."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-italy-inter-origins",
+      "subjectKey": "entity-inter",
+      "clubKey": "entity-inter",
+      "title": "Inter is born in Milan",
+      "subtitle": "The founding meeting at the Orologio",
+      "chapter": "history",
+      "story": [
+        {
+          "title": "A new association",
+          "body": "Fifteen people met at the Orologio restaurant in Milan on 9 March 1908 to establish a new football club."
+        },
+        {
+          "title": "An international name",
+          "body": "They chose Foot-ball Club Internazionale - Milano, a name that expressed the founders’ international outlook."
+        }
+      ],
+      "facts": [
+        {
+          "key": "inter-founding-date",
+          "label": "Founding date",
+          "prompt": "On what date was Inter founded?",
+          "answers": [
+            "9 March 1908"
+          ],
+          "distractors": [
+            "9 March 1906",
+            "1 August 1926",
+            "1 November 1897"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "9 March 1908",
+            "text": "9 March 1908"
+          },
+          "scope": "Inter’s founding meeting in Milan.",
+          "sourceKey": "curriculum-italy-inter-history",
+          "evidence": "Inter dates its founding to 9 March 1908."
+        },
+        {
+          "key": "inter-founding-venue",
+          "label": "Founding venue",
+          "prompt": "At which restaurant did the founding members formally establish Inter?",
+          "answers": [
+            "Orologio restaurant"
+          ],
+          "distractors": [
+            "Spaten brewery",
+            "Fiaschetteria Toscana",
+            "Teatro alla Scala"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Orologio restaurant",
+            "text": "Orologio restaurant"
+          },
+          "scope": "The founding meeting in central Milan.",
+          "sourceKey": "curriculum-italy-inter-history",
+          "evidence": "Inter says the club was officially founded at the Orologio restaurant."
+        },
+        {
+          "key": "inter-original-name",
+          "label": "Original name",
+          "prompt": "What name did the founders choose for the new club?",
+          "answers": [
+            "Foot-ball Club Internazionale - Milano"
+          ],
+          "distractors": [
+            "Football Club Milanese",
+            "Associazione Calcio Milano",
+            "Società Sportiva Internazionale"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Foot-ball Club Internazionale - Milano",
+            "text": "Foot-ball Club Internazionale - Milano"
+          },
+          "scope": "The name recorded at Inter’s founding meeting.",
+          "sourceKey": "curriculum-italy-inter-history",
+          "evidence": "The club reproduces the founders’ selected name."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-italy-inter-europe-1964",
+      "subjectKey": "entity-inter",
+      "clubKey": "entity-inter",
+      "title": "Inter’s first European Cup",
+      "subtitle": "A 3–1 final victory over Real Madrid",
+      "chapter": "moments",
+      "story": [
+        {
+          "title": "A landmark final",
+          "body": "Inter met Real Madrid in the European Cup final on 27 May 1964."
+        },
+        {
+          "title": "Mazzola’s brace",
+          "body": "Sandro Mazzola scored twice as Inter won 3–1 and claimed the first European Cup in the club’s history."
+        }
+      ],
+      "facts": [
+        {
+          "key": "inter-1964-final-opponent",
+          "label": "Final opponent",
+          "prompt": "Which club did Inter beat in the 1964 European Cup final?",
+          "answers": [
+            "Real Madrid"
+          ],
+          "distractors": [
+            "Benfica",
+            "Ajax",
+            "Bayern Munich"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Real Madrid",
+            "text": "Real Madrid"
+          },
+          "scope": "Inter’s first European Cup final, played on 27 May 1964.",
+          "sourceKey": "curriculum-italy-inter-europe",
+          "evidence": "The official club account names Real Madrid as the opponent."
+        },
+        {
+          "key": "inter-1964-score",
+          "label": "Final score",
+          "prompt": "What was the score in Inter’s 1964 European Cup final win?",
+          "answers": [
+            "3–1"
+          ],
+          "distractors": [
+            "1–0",
+            "2–0",
+            "4–1"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "3–1",
+            "text": "3–1"
+          },
+          "scope": "The 1964 final against Real Madrid.",
+          "sourceKey": "curriculum-italy-inter-europe",
+          "evidence": "Inter records a 3–1 victory."
+        },
+        {
+          "key": "inter-1964-scorer",
+          "label": "Two-goal scorer",
+          "prompt": "Which Inter player scored twice in the 1964 final?",
+          "answers": [
+            "Sandro Mazzola"
+          ],
+          "distractors": [
+            "Jair",
+            "Luis Suárez",
+            "Giacinto Facchetti"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Sandro Mazzola",
+            "text": "Sandro Mazzola"
+          },
+          "scope": "Inter’s 1964 European Cup final against Real Madrid.",
+          "sourceKey": "curriculum-italy-inter-europe",
+          "evidence": "The club account credits Mazzola with a brace."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-italy-inter-europe-1965",
+      "subjectKey": "entity-inter",
+      "clubKey": "entity-inter",
+      "title": "Inter defend their European crown",
+      "subtitle": "Jair decides the 1965 final",
+      "chapter": "moments",
+      "story": [
+        {
+          "title": "Another final on 27 May",
+          "body": "One year after its first triumph, Inter faced Benfica in the 1965 European Cup final."
+        },
+        {
+          "title": "A single goal was enough",
+          "body": "Jair scored the only goal as Inter won 1–0 to retain the trophy."
+        }
+      ],
+      "facts": [
+        {
+          "key": "inter-1965-opponent",
+          "label": "Final opponent",
+          "prompt": "Which club did Inter face in the 1965 European Cup final?",
+          "answers": [
+            "Benfica"
+          ],
+          "distractors": [
+            "Real Madrid",
+            "Ajax",
+            "Celtic"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Benfica",
+            "text": "Benfica"
+          },
+          "scope": "Inter’s second consecutive European Cup final.",
+          "sourceKey": "curriculum-italy-inter-europe",
+          "evidence": "The official report identifies Benfica as the opponent in 1965."
+        },
+        {
+          "key": "inter-1965-scorer",
+          "label": "Final scorer",
+          "prompt": "Who scored the only goal in Inter’s 1965 final win?",
+          "answers": [
+            "Jair"
+          ],
+          "distractors": [
+            "Sandro Mazzola",
+            "Luis Suárez",
+            "Mario Corso"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Jair",
+            "text": "Jair"
+          },
+          "scope": "The decisive goal in the final against Benfica.",
+          "sourceKey": "curriculum-italy-inter-europe",
+          "evidence": "Inter credits Jair with the winning goal."
+        },
+        {
+          "key": "inter-1965-score",
+          "label": "Final score",
+          "prompt": "What was the score when Inter retained the European Cup in 1965?",
+          "answers": [
+            "1–0"
+          ],
+          "distractors": [
+            "2–0",
+            "2–1",
+            "3–1"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "1–0",
+            "text": "1–0"
+          },
+          "scope": "The final against Benfica on 27 May 1965.",
+          "sourceKey": "curriculum-italy-inter-europe",
+          "evidence": "The club records a 1–0 Inter victory."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-italy-zanetti-debut",
+      "subjectKey": "entity-zanetti",
+      "clubKey": "entity-inter",
+      "title": "Zanetti’s first match for Inter",
+      "subtitle": "A 1–0 win over Vicenza",
+      "chapter": "career",
+      "story": [
+        {
+          "title": "A move from Argentina",
+          "body": "Javier Zanetti arrived at Inter from Banfield in 1995."
+        },
+        {
+          "title": "First appearance",
+          "body": "On 27 August, he made his debut in a 1–0 win against Vicenza, the first of 858 appearances for the club."
+        }
+      ],
+      "facts": [
+        {
+          "key": "zanetti-debut-date",
+          "label": "Inter debut date",
+          "prompt": "On what date did Zanetti make his Inter debut?",
+          "answers": [
+            "27 August 1995"
+          ],
+          "distractors": [
+            "27 August 1994",
+            "9 March 1995",
+            "22 May 2010"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "27 August 1995",
+            "text": "27 August 1995"
+          },
+          "scope": "Zanetti’s first match after joining Inter from Banfield.",
+          "sourceKey": "curriculum-italy-zanetti-debut",
+          "evidence": "Inter dates his debut to 27 August 1995."
+        },
+        {
+          "key": "zanetti-debut-opponent",
+          "label": "Debut opponent",
+          "prompt": "Which team did Inter face in Zanetti’s first appearance?",
+          "answers": [
+            "Vicenza"
+          ],
+          "distractors": [
+            "Banfield",
+            "Sampdoria",
+            "Bayern Munich"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Vicenza",
+            "text": "Vicenza"
+          },
+          "scope": "Inter’s 1–0 match on 27 August 1995.",
+          "sourceKey": "curriculum-italy-zanetti-debut",
+          "evidence": "The official account says the debut was against Vicenza."
+        },
+        {
+          "key": "zanetti-arrival-club",
+          "label": "Previous club",
+          "prompt": "Which Argentine club did Zanetti join Inter from?",
+          "answers": [
+            "Banfield"
+          ],
+          "distractors": [
+            "Racing Club",
+            "Boca Juniors",
+            "River Plate"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Banfield",
+            "text": "Banfield"
+          },
+          "scope": "Zanetti’s move to Inter in 1995.",
+          "sourceKey": "curriculum-italy-zanetti-debut",
+          "evidence": "Inter says Zanetti arrived from Banfield."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-italy-zanetti-treble-moment",
+      "subjectKey": "entity-zanetti",
+      "clubKey": "entity-inter",
+      "title": "Zanetti captains the treble",
+      "subtitle": "Inter’s 2010 Champions League final",
+      "chapter": "moments",
+      "story": [
+        {
+          "title": "A captain on the biggest stage",
+          "body": "Javier Zanetti captained Inter in the Champions League final against Bayern Munich on 22 May 2010."
+        },
+        {
+          "title": "A historic season",
+          "body": "Inter won 2–0, completing the Italian club’s first treble of Serie A, Coppa Italia and Champions League."
+        }
+      ],
+      "facts": [
+        {
+          "key": "zanetti-final-opponent",
+          "label": "Final opponent",
+          "prompt": "Which club did Inter beat in the 2010 Champions League final?",
+          "answers": [
+            "Bayern Munich"
+          ],
+          "distractors": [
+            "Barcelona",
+            "Chelsea",
+            "Real Madrid"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Bayern Munich",
+            "text": "Bayern Munich"
+          },
+          "scope": "The final in Madrid on 22 May 2010, with Zanetti as Inter captain.",
+          "sourceKey": "curriculum-italy-inter-treble",
+          "evidence": "Inter names Bayern Munich as the opponent."
+        },
+        {
+          "key": "zanetti-final-score",
+          "label": "Final score",
+          "prompt": "What was the score in Inter’s 2010 Champions League final victory?",
+          "answers": [
+            "2–0"
+          ],
+          "distractors": [
+            "1–0",
+            "2–1",
+            "3–0"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "2–0",
+            "text": "2–0"
+          },
+          "scope": "Inter’s Champions League final against Bayern in 2010.",
+          "sourceKey": "curriculum-italy-inter-treble",
+          "evidence": "The club records a 2–0 win."
+        },
+        {
+          "key": "zanetti-treble-components",
+          "label": "Treble components",
+          "prompt": "Which three competitions made up Inter’s 2010 treble?",
+          "answers": [
+            "Serie A, Coppa Italia and Champions League"
+          ],
+          "distractors": [
+            "Serie A, UEFA Cup and Club World Cup",
+            "Coppa Italia, Supercoppa and Europa League",
+            "Serie A, Coppa Italia and UEFA Super Cup"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Serie A, Coppa Italia and Champions League",
+            "text": "Serie A, Coppa Italia and Champions League"
+          },
+          "scope": "The trophies won in the 2009/10 season, completed with the Champions League final.",
+          "sourceKey": "curriculum-italy-inter-treble",
+          "evidence": "Inter identifies the treble as Coppa Italia, Serie A and Champions League."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-italy-zanetti-record",
+      "subjectKey": "entity-zanetti",
+      "clubKey": "entity-inter",
+      "title": "Zanetti’s Inter appearance record",
+      "subtitle": "858 matches in black and blue",
+      "chapter": "records",
+      "story": [
+        {
+          "title": "A rare total",
+          "body": "Zanetti finished his Inter career with 858 appearances, the club record listed in his Hall of Fame profile."
+        },
+        {
+          "title": "Across Europe too",
+          "body": "The profile counts 160 European appearances and 47 Milan derbies among his Inter matches."
+        }
+      ],
+      "facts": [
+        {
+          "key": "zanetti-appearances",
+          "label": "Inter appearances",
+          "prompt": "How many appearances did Zanetti make for Inter?",
+          "answers": [
+            "858"
+          ],
+          "distractors": [
+            "705",
+            "685",
+            "520"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "858 appearances",
+            "number": 858,
+            "unit": "appearances"
+          },
+          "scope": "Zanetti’s complete Inter appearance record.",
+          "sourceKey": "curriculum-italy-zanetti-profile",
+          "evidence": "Inter’s Hall of Fame lists 858 appearances."
+        },
+        {
+          "key": "zanetti-european-apps",
+          "label": "European appearances",
+          "prompt": "How many European appearances does Inter list for Zanetti?",
+          "answers": [
+            "160"
+          ],
+          "distractors": [
+            "47",
+            "21",
+            "68"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "160 appearances",
+            "number": 160,
+            "unit": "appearances"
+          },
+          "scope": "European matches for Inter, as recorded in his Hall of Fame profile.",
+          "sourceKey": "curriculum-italy-zanetti-profile",
+          "evidence": "The profile lists 160 European appearances."
+        },
+        {
+          "key": "zanetti-derbies",
+          "label": "Milan derbies",
+          "prompt": "How many Milan derbies did Zanetti play for Inter?",
+          "answers": [
+            "47"
+          ],
+          "distractors": [
+            "17",
+            "64",
+            "85"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "47 derbies",
+            "number": 47,
+            "unit": "derbies"
+          },
+          "scope": "Derby appearances recorded in Zanetti’s Inter Hall of Fame profile.",
+          "sourceKey": "curriculum-italy-zanetti-profile",
+          "evidence": "The profile lists 47 derbies."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-italy-zanetti-legacy",
+      "subjectKey": "entity-zanetti",
+      "clubKey": "entity-inter",
+      "title": "Zanetti: captain and club symbol",
+      "subtitle": "Leadership across a long Inter career",
+      "chapter": "legacy",
+      "story": [
+        {
+          "title": "A long-serving captain",
+          "body": "Inter records that Zanetti captained the side for 13 years."
+        },
+        {
+          "title": "A decorated career",
+          "body": "He retired at 41 with 16 winners’ medals, according to the club’s Hall of Fame account."
+        }
+      ],
+      "facts": [
+        {
+          "key": "zanetti-captain-years",
+          "label": "Captaincy",
+          "prompt": "For how many years did Zanetti captain Inter?",
+          "answers": [
+            "13"
+          ],
+          "distractors": [
+            "8",
+            "10",
+            "16"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "13 years",
+            "number": 13,
+            "unit": "years"
+          },
+          "scope": "The captaincy duration recorded by Inter’s Hall of Fame.",
+          "sourceKey": "curriculum-italy-zanetti-profile",
+          "evidence": "Inter states that he was captain for 13 years."
+        },
+        {
+          "key": "zanetti-medals",
+          "label": "Winners’ medals",
+          "prompt": "How many winners’ medals does Inter list for Zanetti?",
+          "answers": [
+            "16"
+          ],
+          "distractors": [
+            "13",
+            "21",
+            "47"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "16 medals",
+            "number": 16,
+            "unit": "medals"
+          },
+          "scope": "The winners’ medals recorded in his Inter Hall of Fame profile.",
+          "sourceKey": "curriculum-italy-zanetti-profile",
+          "evidence": "The profile lists 16 winners’ medals."
+        },
+        {
+          "key": "zanetti-retirement-age",
+          "label": "Retirement age",
+          "prompt": "How old was Zanetti when he retired?",
+          "answers": [
+            "41"
+          ],
+          "distractors": [
+            "38",
+            "40",
+            "43"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "41 years old",
+            "number": 41,
+            "unit": "years old"
+          },
+          "scope": "Zanetti’s age at retirement from playing, per Inter’s profile.",
+          "sourceKey": "curriculum-italy-zanetti-profile",
+          "evidence": "Inter’s Hall of Fame says he retired aged 41."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-italy-milito-inter-arrival",
+      "subjectKey": "entity-milito",
+      "clubKey": "entity-inter",
+      "title": "Milito’s route back to Italy",
+      "subtitle": "After spells with Genoa and Zaragoza, Milito returned to Genoa before joining Inter for the 2009/10 treble season.",
+      "chapter": "career",
+      "story": [
+        {
+          "title": "A European club journey",
+          "body": "After spells with Genoa and Zaragoza, Milito returned to Genoa before joining Inter for the 2009/10 treble season."
+        },
+        {
+          "title": "The route to Inter",
+          "body": "Real Zaragoza was Milito’s Spanish club. Genoa was the club he left to join Inter in 2009; these are different stages of his career."
+        }
+      ],
+      "facts": [
+        {
+          "key": "milito-inter-year",
+          "label": "Inter arrival",
+          "prompt": "In what year did Milito join Inter?",
+          "answers": [
+            "2009"
+          ],
+          "distractors": [
+            "2004",
+            "2008",
+            "2010"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "2009",
+            "number": 2009,
+            "unit": "year"
+          },
+          "scope": "Milito’s move to Inter ahead of the 2009/10 season.",
+          "sourceKey": "curriculum-italy-milito-profile",
+          "evidence": "Inter’s Hall of Fame identifies 2010 as his first season and records his arrival in 2009."
+        },
+        {
+          "key": "milito-spain-club",
+          "label": "Spanish club",
+          "prompt": "Which Spanish club did Milito play for before returning to Genoa and joining Inter?",
+          "answers": [
+            "Real Zaragoza"
+          ],
+          "distractors": [
+            "Real Madrid",
+            "Barcelona",
+            "Valencia"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Real Zaragoza",
+            "text": "Real Zaragoza"
+          },
+          "scope": "Milito’s club journey before his 2009 Inter move.",
+          "sourceKey": "curriculum-italy-milito-profile",
+          "evidence": "Inter’s Hall of Fame recounts his route through Genoa, Zaragoza and back to Genoa before Inter."
+        },
+        {
+          "key": "milito-joined-from",
+          "label": "Inter arrival",
+          "prompt": "Which club did Milito join Inter from in 2009?",
+          "answers": [
+            "Genoa"
+          ],
+          "distractors": [
+            "Real Zaragoza",
+            "Racing Club",
+            "Parma"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Genoa",
+            "text": "Genoa"
+          },
+          "scope": "Milito’s transfer to Inter before the 2009/10 season.",
+          "sourceKey": "curriculum-italy-milito-profile",
+          "evidence": "Inter’s Hall of Fame says his European journey included Genoa, Zaragoza, then another season with Genoa before Inter."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-italy-milito-final",
+      "subjectKey": "entity-milito",
+      "clubKey": "entity-inter",
+      "title": "Milito’s brace in Madrid",
+      "subtitle": "Inter beat Bayern in the 2010 final",
+      "chapter": "moments",
+      "story": [
+        {
+          "title": "The decisive night",
+          "body": "Inter faced Bayern Munich in the Champions League final on 22 May 2010."
+        },
+        {
+          "title": "Two goals, one trophy",
+          "body": "Milito scored both goals in a 2–0 win, securing Inter’s first Champions League title since 1965."
+        }
+      ],
+      "facts": [
+        {
+          "key": "milito-final-date",
+          "label": "Final date",
+          "prompt": "On what date did Milito score twice in the Champions League final?",
+          "answers": [
+            "22 May 2010"
+          ],
+          "distractors": [
+            "27 May 1965",
+            "4 July 2006",
+            "9 March 1908"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "22 May 2010",
+            "text": "22 May 2010"
+          },
+          "scope": "The Champions League final against Bayern Munich.",
+          "sourceKey": "curriculum-italy-inter-treble",
+          "evidence": "Inter dates the Champions League triumph to 22 May 2010."
+        },
+        {
+          "key": "milito-final-goals",
+          "label": "Final goals",
+          "prompt": "How many goals did Milito score in the final?",
+          "answers": [
+            "2"
+          ],
+          "distractors": [
+            "1",
+            "3",
+            "4"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "2 goals",
+            "number": 2,
+            "unit": "goals"
+          },
+          "scope": "Milito’s contribution to Inter’s 2010 Champions League final.",
+          "sourceKey": "curriculum-italy-inter-treble",
+          "evidence": "Inter reports that Milito scored both goals."
+        },
+        {
+          "key": "milito-final-opponent",
+          "label": "Final opponent",
+          "prompt": "Which team did Inter beat in the final?",
+          "answers": [
+            "Bayern Munich"
+          ],
+          "distractors": [
+            "Chelsea",
+            "Real Madrid",
+            "Manchester United"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Bayern Munich",
+            "text": "Bayern Munich"
+          },
+          "scope": "Inter’s Champions League final in Madrid.",
+          "sourceKey": "curriculum-italy-inter-treble",
+          "evidence": "The club names Bayern as the opponent."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-italy-milito-season-record",
+      "subjectKey": "entity-milito",
+      "clubKey": "entity-inter",
+      "title": "Milito’s 2009/10 scoring season",
+      "subtitle": "Thirty goals across three competitions",
+      "chapter": "records",
+      "story": [
+        {
+          "title": "A 30-goal season",
+          "body": "Milito scored 30 times in 52 appearances for Inter in 2009/10."
+        },
+        {
+          "title": "Three competitions",
+          "body": "His total comprised 22 league goals, six in the Champions League and two in the Coppa Italia."
+        }
+      ],
+      "facts": [
+        {
+          "key": "milito-season-goals",
+          "label": "Season goals",
+          "prompt": "How many goals did Milito score for Inter in 2009/10?",
+          "answers": [
+            "30"
+          ],
+          "distractors": [
+            "22",
+            "28",
+            "52"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "30 goals",
+            "number": 30,
+            "unit": "goals"
+          },
+          "scope": "All competitions for Inter in the 2009/10 season.",
+          "sourceKey": "curriculum-italy-milito-goals",
+          "evidence": "Inter lists 30 goals in 52 appearances."
+        },
+        {
+          "key": "milito-seriea-goals",
+          "label": "League goals",
+          "prompt": "How many Serie A goals were included in Milito’s 2009/10 Inter total?",
+          "answers": [
+            "22"
+          ],
+          "distractors": [
+            "6",
+            "2",
+            "30"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "22 goals",
+            "number": 22,
+            "unit": "goals"
+          },
+          "scope": "Milito’s 2009/10 league total, including four penalties.",
+          "sourceKey": "curriculum-italy-milito-goals",
+          "evidence": "Inter breaks down his total as 22 Serie A goals."
+        },
+        {
+          "key": "milito-ucl-goals",
+          "label": "Champions League goals",
+          "prompt": "How many Champions League goals did Milito score in that Inter season?",
+          "answers": [
+            "6"
+          ],
+          "distractors": [
+            "2",
+            "4",
+            "8"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "6 goals",
+            "number": 6,
+            "unit": "goals"
+          },
+          "scope": "Milito’s 2009/10 Champions League campaign.",
+          "sourceKey": "curriculum-italy-milito-goals",
+          "evidence": "Inter’s breakdown credits him with six Champions League goals."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-italy-milito-inter-legacy",
+      "subjectKey": "entity-milito",
+      "clubKey": "entity-inter",
+      "title": "Milito’s Inter record",
+      "subtitle": "A central figure in the 2010 triumph",
+      "chapter": "legacy",
+      "story": [
+        {
+          "title": "A short, decisive spell",
+          "body": "Milito scored 75 goals in 171 appearances for Inter."
+        },
+        {
+          "title": "An immediate impact",
+          "body": "In his first season, he scored in the decisive matches that brought Inter the league, cup and European titles."
+        }
+      ],
+      "facts": [
+        {
+          "key": "milito-inter-goals",
+          "label": "Inter goals",
+          "prompt": "How many goals did Milito score for Inter?",
+          "answers": [
+            "75"
+          ],
+          "distractors": [
+            "30",
+            "52",
+            "115"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "75 goals",
+            "number": 75,
+            "unit": "goals"
+          },
+          "scope": "Milito’s Inter career total, as recorded in the club’s Hall of Fame.",
+          "sourceKey": "curriculum-italy-milito-profile",
+          "evidence": "Inter records 75 goals in 171 appearances."
+        },
+        {
+          "key": "milito-inter-apps",
+          "label": "Inter appearances",
+          "prompt": "How many Inter appearances did Milito make?",
+          "answers": [
+            "171"
+          ],
+          "distractors": [
+            "52",
+            "160",
+            "201"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "171 appearances",
+            "number": 171,
+            "unit": "appearances"
+          },
+          "scope": "Milito’s Inter career total, as recorded in the club’s Hall of Fame.",
+          "sourceKey": "curriculum-italy-milito-profile",
+          "evidence": "The profile lists 171 appearances."
+        },
+        {
+          "key": "milito-inter-trophies",
+          "label": "Trophies",
+          "prompt": "How many trophies does Inter’s Hall of Fame list for Milito?",
+          "answers": [
+            "6"
+          ],
+          "distractors": [
+            "4",
+            "5",
+            "7"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "6",
+            "number": 6,
+            "unit": "trophies"
+          },
+          "scope": "Trophies won with Inter.",
+          "sourceKey": "curriculum-italy-milito-profile",
+          "evidence": "Inter’s Hall of Fame lists six trophies."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-italy-napoli-roots",
+      "subjectKey": "entity-napoli",
+      "clubKey": "entity-napoli",
+      "title": "Napoli’s layered beginnings",
+      "subtitle": "A club formed through earlier football sides",
+      "chapter": "history",
+      "story": [
+        {
+          "title": "Football in Naples",
+          "body": "The modern club’s story grew from earlier Naples teams, including Naples Cricket & Football Club and Internazionale Napoli."
+        },
+        {
+          "title": "A new name in 1926",
+          "body": "The club’s official account places its symbolic foundation on 1 August 1926 and records the adoption of Associazione Calcio Napoli later that month."
+        }
+      ],
+      "facts": [
+        {
+          "key": "napoli-symbolic-date",
+          "label": "Symbolic founding date",
+          "prompt": "What date does SSC Napoli use as its symbolic founding date?",
+          "answers": [
+            "1 August 1926"
+          ],
+          "distractors": [
+            "25 August 1926",
+            "1 August 1906",
+            "9 March 1908"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "1 August 1926",
+            "text": "1 August 1926"
+          },
+          "scope": "SSC Napoli’s symbolic foundation date, as described in its centenary-season history.",
+          "sourceKey": "curriculum-italy-napoli-history",
+          "evidence": "The club says its centenary season marks 1 August 1926."
+        },
+        {
+          "key": "napoli-1926-name",
+          "label": "1926 club name",
+          "prompt": "What name did the club adopt at its 25 August 1926 meeting?",
+          "answers": [
+            "Associazione Calcio Napoli"
+          ],
+          "distractors": [
+            "Foot-Ball Club Internazionale-Naples",
+            "Naples Cricket & Football Club",
+            "Società Sportiva Calcio Napoli"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Associazione Calcio Napoli",
+            "text": "Associazione Calcio Napoli"
+          },
+          "scope": "The name chosen at the 1926 meeting, before the 1964 renaming.",
+          "sourceKey": "curriculum-italy-napoli-history",
+          "evidence": "SSC Napoli says the meeting on 25 August 1926 changed the name to Associazione Calcio Napoli."
+        },
+        {
+          "key": "napoli-1964-name",
+          "label": "1964 name",
+          "prompt": "In what year did Associazione Calcio Napoli become SSC Napoli?",
+          "answers": [
+            "1964"
+          ],
+          "distractors": [
+            "1922",
+            "1926",
+            "1987"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "1964",
+            "number": 1964,
+            "unit": "year"
+          },
+          "scope": "The later name change recorded in the club’s history.",
+          "sourceKey": "curriculum-italy-napoli-history",
+          "evidence": "The club’s historical account says the name SSC Napoli dates from 1964."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-italy-napoli-first-scudetto",
+      "subjectKey": "entity-napoli",
+      "clubKey": "entity-napoli",
+      "title": "Napoli win their first Scudetto",
+      "subtitle": "A 2–1 win over Milan in 1987",
+      "chapter": "moments",
+      "story": [
+        {
+          "title": "A defining league night",
+          "body": "Napoli beat Milan 2–1 on 26 April 1987, moving toward the first league title in the club’s history."
+        },
+        {
+          "title": "Maradona and Carnevale",
+          "body": "Andrea Carnevale opened the scoring before Diego Maradona added Napoli’s second goal. The title was confirmed two weeks later."
+        }
+      ],
+      "facts": [
+        {
+          "key": "napoli-1987-date",
+          "label": "Match date",
+          "prompt": "On what date did Napoli beat Milan 2–1 in the 1987 title run?",
+          "answers": [
+            "26 April 1987"
+          ],
+          "distractors": [
+            "26 April 1986",
+            "4 May 2023",
+            "22 May 1989"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "26 April 1987",
+            "text": "26 April 1987"
+          },
+          "scope": "Napoli’s 2–1 league win over Milan during its first Scudetto campaign.",
+          "sourceKey": "curriculum-italy-napoli-1987",
+          "evidence": "UEFA dates the Napoli-Milan match to 26 April 1987."
+        },
+        {
+          "key": "napoli-1987-opponent",
+          "label": "Opponent",
+          "prompt": "Which team did Napoli beat 2–1 in this key 1987 match?",
+          "answers": [
+            "Milan"
+          ],
+          "distractors": [
+            "Juventus",
+            "Udinese",
+            "Stuttgart"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Milan",
+            "text": "Milan"
+          },
+          "scope": "The match that helped Napoli move toward its first Scudetto.",
+          "sourceKey": "curriculum-italy-napoli-1987",
+          "evidence": "UEFA identifies Milan as the opponent."
+        },
+        {
+          "key": "napoli-1987-second-scorer",
+          "label": "Second Napoli scorer",
+          "prompt": "Who scored Napoli’s second goal in the 2–1 victory?",
+          "answers": [
+            "Diego Maradona"
+          ],
+          "distractors": [
+            "Andrea Carnevale",
+            "Careca",
+            "Bruno Giordano"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Diego Maradona",
+            "text": "Diego Maradona"
+          },
+          "scope": "Napoli’s second goal in the 26 April 1987 match against Milan.",
+          "sourceKey": "curriculum-italy-napoli-1987",
+          "evidence": "UEFA says Maradona scored Napoli’s second goal after Carnevale."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-italy-napoli-third-scudetto",
+      "subjectKey": "entity-napoli",
+      "clubKey": "entity-napoli",
+      "title": "Napoli clinch a third Scudetto",
+      "subtitle": "A draw at Udinese ends the wait",
+      "chapter": "moments",
+      "story": [
+        {
+          "title": "The title is secured",
+          "body": "Napoli drew 1–1 away to Udinese in May 2023, securing the club’s third Italian championship."
+        },
+        {
+          "title": "Osimhen makes the difference",
+          "body": "Victor Osimhen scored Napoli’s equaliser in the second half, setting off celebrations among the travelling supporters."
+        }
+      ],
+      "facts": [
+        {
+          "key": "napoli-2023-opponent",
+          "label": "Title-clinching opponent",
+          "prompt": "Which team did Napoli draw with to clinch the 2023 title?",
+          "answers": [
+            "Udinese"
+          ],
+          "distractors": [
+            "Milan",
+            "Sampdoria",
+            "Juventus"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Udinese",
+            "text": "Udinese"
+          },
+          "scope": "The away match in which Napoli secured its third Scudetto.",
+          "sourceKey": "curriculum-italy-napoli-2023",
+          "evidence": "The club report identifies Udinese as the opponent."
+        },
+        {
+          "key": "napoli-2023-score",
+          "label": "Match score",
+          "prompt": "What was the score when Napoli clinched the 2023 title?",
+          "answers": [
+            "1–1"
+          ],
+          "distractors": [
+            "1–0",
+            "2–1",
+            "0–0"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "1–1",
+            "text": "1–1"
+          },
+          "scope": "The title-clinching match against Udinese.",
+          "sourceKey": "curriculum-italy-napoli-2023",
+          "evidence": "The official match report gives the score as 1–1."
+        },
+        {
+          "key": "napoli-2023-goalscorer",
+          "label": "Napoli goalscorer",
+          "prompt": "Who scored Napoli’s title-clinching goal against Udinese?",
+          "answers": [
+            "Victor Osimhen"
+          ],
+          "distractors": [
+            "Khvicha Kvaratskhelia",
+            "Dries Mertens",
+            "Lorenzo Insigne"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Victor Osimhen",
+            "text": "Victor Osimhen"
+          },
+          "scope": "The equaliser that secured Napoli’s third Scudetto.",
+          "sourceKey": "curriculum-italy-napoli-2023",
+          "evidence": "The club report credits Osimhen with Napoli’s goal."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-italy-maradona-napoli-arrival",
+      "subjectKey": "entity-maradona",
+      "clubKey": "entity-napoli",
+      "title": "Maradona’s Napoli chapter",
+      "subtitle": "From Barcelona to southern Italy",
+      "chapter": "career",
+      "story": [
+        {
+          "title": "A major signing",
+          "body": "Diego Maradona joined Napoli in 1984 after playing for Barcelona."
+        },
+        {
+          "title": "A lasting influence",
+          "body": "His time at the club included two Serie A titles and the 1989 UEFA Cup, achievements that reshaped Napoli’s standing in Italian and European football."
+        }
+      ],
+      "facts": [
+        {
+          "key": "maradona-napoli-year",
+          "label": "Napoli arrival",
+          "prompt": "In what year did Maradona join Napoli?",
+          "answers": [
+            "1984"
+          ],
+          "distractors": [
+            "1982",
+            "1986",
+            "1989"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "1984",
+            "number": 1984,
+            "unit": "year"
+          },
+          "scope": "Maradona’s move to Napoli after his spell at Barcelona.",
+          "sourceKey": "curriculum-italy-maradona-profile",
+          "evidence": "UEFA says Maradona joined Napoli in 1984."
+        },
+        {
+          "key": "maradona-prior-club",
+          "label": "Previous club",
+          "prompt": "Which club did Maradona leave to join Napoli?",
+          "answers": [
+            "Barcelona"
+          ],
+          "distractors": [
+            "Boca Juniors",
+            "Sevilla",
+            "Newell’s Old Boys"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Barcelona",
+            "text": "Barcelona"
+          },
+          "scope": "Maradona’s move to Napoli in 1984.",
+          "sourceKey": "curriculum-italy-maradona-profile",
+          "evidence": "UEFA identifies Barcelona as his previous club."
+        },
+        {
+          "key": "maradona-napoli-era-end",
+          "label": "Napoli departure year",
+          "prompt": "In what year did Maradona’s Napoli spell end?",
+          "answers": [
+            "1991"
+          ],
+          "distractors": [
+            "1989",
+            "1990",
+            "1992"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "1991",
+            "number": 1991,
+            "unit": "year"
+          },
+          "scope": "UEFA describes Maradona’s Napoli period as 1984–1991.",
+          "sourceKey": "curriculum-italy-maradona-profile",
+          "evidence": "UEFA states that he played for Napoli from 1984 to 1991."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-italy-maradona-uefa-cup-final",
+      "subjectKey": "entity-maradona",
+      "clubKey": "entity-napoli",
+      "title": "Maradona leads Napoli to the UEFA Cup",
+      "subtitle": "The 1989 final against Stuttgart",
+      "chapter": "moments",
+      "story": [
+        {
+          "title": "A two-leg final",
+          "body": "Napoli faced Stuttgart in the 1989 UEFA Cup final. Maradona scored from the penalty spot in the first leg."
+        },
+        {
+          "title": "A European breakthrough",
+          "body": "Napoli won the tie 5–4 on aggregate after a 2–1 home win and a 3–3 draw in Germany."
+        }
+      ],
+      "facts": [
+        {
+          "key": "maradona-final-opponent",
+          "label": "Final opponent",
+          "prompt": "Which club did Napoli face in the 1989 UEFA Cup final?",
+          "answers": [
+            "Stuttgart"
+          ],
+          "distractors": [
+            "Bayern Munich",
+            "Real Madrid",
+            "Benfica"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Stuttgart",
+            "text": "Stuttgart"
+          },
+          "scope": "Napoli’s two-leg European final in 1989.",
+          "sourceKey": "curriculum-italy-maradona-uefa-cup",
+          "evidence": "UEFA names Stuttgart as Napoli’s final opponent."
+        },
+        {
+          "key": "maradona-first-leg-score",
+          "label": "First-leg score",
+          "prompt": "What was the score in Napoli’s home leg of the final?",
+          "answers": [
+            "2–1"
+          ],
+          "distractors": [
+            "1–0",
+            "2–0",
+            "3–1"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "2–1",
+            "text": "2–1"
+          },
+          "scope": "The first leg of the 1989 UEFA Cup final at Napoli.",
+          "sourceKey": "curriculum-italy-maradona-uefa-cup",
+          "evidence": "UEFA records a 2–1 first-leg win for Napoli."
+        },
+        {
+          "key": "maradona-aggregate",
+          "label": "Aggregate score",
+          "prompt": "What was the aggregate score when Napoli won the 1989 final?",
+          "answers": [
+            "5–4"
+          ],
+          "distractors": [
+            "4–3",
+            "5–3",
+            "6–4"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "5–4",
+            "text": "5–4"
+          },
+          "scope": "The two-leg 1989 UEFA Cup final against Stuttgart.",
+          "sourceKey": "curriculum-italy-maradona-uefa-cup",
+          "evidence": "UEFA reports Napoli’s 5–4 aggregate victory."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-italy-maradona-napoli-record",
+      "subjectKey": "entity-maradona",
+      "clubKey": "entity-napoli",
+      "title": "Maradona’s Napoli honours",
+      "subtitle": "Two league titles and a European Cup",
+      "chapter": "records",
+      "story": [
+        {
+          "title": "A historic run",
+          "body": "Maradona’s Napoli years brought the club its first Scudetto in 1987 and a second in 1990."
+        },
+        {
+          "title": "Europe follows",
+          "body": "Napoli also won the 1989 UEFA Cup during his spell, completing a rare run of domestic and continental success."
+        }
+      ],
+      "facts": [
+        {
+          "key": "maradona-napoli-league-titles",
+          "label": "Serie A titles",
+          "prompt": "How many Serie A titles did Napoli win during Maradona’s time at the club?",
+          "answers": [
+            "2"
+          ],
+          "distractors": [
+            "1",
+            "3",
+            "4"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "2 titles",
+            "number": 2,
+            "unit": "titles"
+          },
+          "scope": "Napoli’s league championships during Maradona’s 1984–1991 spell.",
+          "sourceKey": "curriculum-italy-maradona-profile",
+          "evidence": "UEFA lists two Serie A titles among his Napoli achievements."
+        },
+        {
+          "key": "maradona-second-scudetto",
+          "label": "Second Scudetto",
+          "prompt": "In what year did Napoli win its second Scudetto during Maradona’s spell?",
+          "answers": [
+            "1990"
+          ],
+          "distractors": [
+            "1987",
+            "1989",
+            "1991"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "1990",
+            "number": 1990,
+            "unit": "year"
+          },
+          "scope": "Napoli’s second Serie A title during Maradona’s 1984–1991 spell.",
+          "sourceKey": "curriculum-italy-maradona-profile",
+          "evidence": "UEFA identifies Napoli titles in 1987 and again in 1990."
+        },
+        {
+          "key": "maradona-european-trophy",
+          "label": "European trophy",
+          "prompt": "Which European trophy did Napoli win in 1989 during Maradona’s spell?",
+          "answers": [
+            "UEFA Cup"
+          ],
+          "distractors": [
+            "European Cup",
+            "Cup Winners’ Cup",
+            "UEFA Super Cup"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "UEFA Cup",
+            "text": "UEFA Cup"
+          },
+          "scope": "Napoli’s 1989 two-leg final against Stuttgart.",
+          "sourceKey": "curriculum-italy-maradona-uefa-cup",
+          "evidence": "UEFA identifies the competition as the UEFA Cup."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-italy-maradona-worldcup-legacy",
+      "subjectKey": "entity-maradona",
+      "clubKey": "entity-napoli",
+      "title": "Maradona’s 1986 World Cup",
+      "subtitle": "Captain of champions",
+      "chapter": "legacy",
+      "story": [
+        {
+          "title": "Argentina lift the trophy",
+          "body": "Maradona captained Argentina to the 1986 FIFA World Cup title in Mexico."
+        },
+        {
+          "title": "A leading contribution",
+          "body": "He scored five goals and provided four assists during the tournament, helping Argentina become world champions."
+        }
+      ],
+      "facts": [
+        {
+          "key": "maradona-worldcup-year",
+          "label": "World Cup year",
+          "prompt": "In what year did Maradona captain Argentina to the World Cup title?",
+          "answers": [
+            "1986"
+          ],
+          "distractors": [
+            "1978",
+            "1982",
+            "1990"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "1986",
+            "number": 1986,
+            "unit": "year"
+          },
+          "scope": "Argentina’s championship campaign in Mexico.",
+          "sourceKey": "curriculum-italy-maradona-worldcup",
+          "evidence": "FIFA identifies Maradona as captain and talisman of Argentina’s 1986 champions."
+        },
+        {
+          "key": "maradona-worldcup-goals",
+          "label": "Tournament goals",
+          "prompt": "How many goals did Maradona score at the 1986 World Cup?",
+          "answers": [
+            "5"
+          ],
+          "distractors": [
+            "3",
+            "4",
+            "6"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "5 goals",
+            "number": 5,
+            "unit": "goals"
+          },
+          "scope": "Maradona’s scoring total at the 1986 tournament.",
+          "sourceKey": "curriculum-italy-maradona-worldcup",
+          "evidence": "FIFA records five goals."
+        },
+        {
+          "key": "maradona-worldcup-assists",
+          "label": "Tournament assists",
+          "prompt": "How many assists did Maradona provide at the 1986 World Cup?",
+          "answers": [
+            "4"
+          ],
+          "distractors": [
+            "2",
+            "3",
+            "5"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "4 assists",
+            "number": 4,
+            "unit": "assists"
+          },
+          "scope": "Maradona’s assist total at the 1986 tournament.",
+          "sourceKey": "curriculum-italy-maradona-worldcup",
+          "evidence": "FIFA records four assists."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-italy-hamsik-arrival",
+      "subjectKey": "entity-hamsik",
+      "clubKey": "entity-napoli",
+      "title": "Hamšík’s route from Slovakia to Naples",
+      "subtitle": "Hamšík left Slovan Bratislava for Italy as a teenager, developed at Brescia, then joined Napoli in 2007.",
+      "chapter": "career",
+      "story": [
+        {
+          "title": "A gradual rise",
+          "body": "Hamšík left Slovan Bratislava for Italy as a teenager, developed at Brescia, then joined Napoli in 2007."
+        },
+        {
+          "title": "Two stages in Italy",
+          "body": "Hamšík moved to Brescia at 17. Napoli signed him in 2007, after his development at his first Italian club."
+        }
+      ],
+      "facts": [
+        {
+          "key": "hamsik-italy-age",
+          "label": "Move to Italy",
+          "prompt": "How old was Hamšík when he moved from Slovan Bratislava to Italy?",
+          "answers": [
+            "17"
+          ],
+          "distractors": [
+            "15",
+            "16",
+            "18"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "17",
+            "number": 17,
+            "unit": "years old"
+          },
+          "scope": "Hamšík’s move from Slovakia to Brescia in 2004.",
+          "sourceKey": "curriculum-italy-hamsik-profile",
+          "evidence": "UEFA says he transferred to Italy aged 17."
+        },
+        {
+          "key": "hamsik-first-italy-club",
+          "label": "First Italian club",
+          "prompt": "Which club signed Hamšík in Italy in 2004?",
+          "answers": [
+            "Brescia"
+          ],
+          "distractors": [
+            "Napoli",
+            "Genoa",
+            "Palermo"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Brescia",
+            "text": "Brescia"
+          },
+          "scope": "Hamšík’s first Italian club before Napoli.",
+          "sourceKey": "curriculum-italy-hamsik-profile",
+          "evidence": "UEFA says Brescia signed him in 2004."
+        },
+        {
+          "key": "hamsik-arrival-napoli",
+          "label": "Napoli arrival",
+          "prompt": "In what year did Napoli buy Hamšík from Brescia?",
+          "answers": [
+            "2007"
+          ],
+          "distractors": [
+            "2005",
+            "2006",
+            "2008"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "2007",
+            "number": 2007,
+            "unit": "year"
+          },
+          "scope": "Hamšík’s transfer from Brescia to Napoli.",
+          "sourceKey": "curriculum-italy-hamsik-profile",
+          "evidence": "UEFA says ten Serie B goals in 2006/07 convinced Napoli to buy him."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-italy-hamsik-coppa-final",
+      "subjectKey": "entity-hamsik",
+      "clubKey": "entity-napoli",
+      "title": "Hamšík scores in the 2012 Coppa final",
+      "subtitle": "Napoli defeat Juventus in Rome",
+      "chapter": "moments",
+      "story": [
+        {
+          "title": "A final against Juventus",
+          "body": "Napoli met Juventus in the Coppa Italia final on 20 May 2012."
+        },
+        {
+          "title": "A 2–0 win",
+          "body": "Hamšík scored as Napoli beat Juventus 2–0, lifting the club’s first trophy since 1990."
+        }
+      ],
+      "facts": [
+        {
+          "key": "hamsik-final-date",
+          "label": "Final date",
+          "prompt": "On what date did Hamšík score in the Coppa Italia final against Juventus?",
+          "answers": [
+            "20 May 2012"
+          ],
+          "distractors": [
+            "20 May 2010",
+            "22 May 2012",
+            "26 April 1987"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "20 May 2012",
+            "text": "20 May 2012"
+          },
+          "scope": "Napoli’s 2012 Coppa Italia final win over Juventus.",
+          "sourceKey": "curriculum-italy-hamsik-profile",
+          "evidence": "UEFA dates the final to 20 May 2012."
+        },
+        {
+          "key": "hamsik-final-opponent",
+          "label": "Final opponent",
+          "prompt": "Which club did Napoli beat in the 2012 Coppa Italia final?",
+          "answers": [
+            "Juventus"
+          ],
+          "distractors": [
+            "Sampdoria",
+            "Milan",
+            "Roma"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Juventus",
+            "text": "Juventus"
+          },
+          "scope": "The final in which Hamšík scored for Napoli.",
+          "sourceKey": "curriculum-italy-hamsik-profile",
+          "evidence": "UEFA says Napoli defeated Juventus."
+        },
+        {
+          "key": "hamsik-final-score",
+          "label": "Final score",
+          "prompt": "What was the score when Napoli beat Juventus in the final?",
+          "answers": [
+            "2–0"
+          ],
+          "distractors": [
+            "1–0",
+            "2–1",
+            "3–0"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "2–0",
+            "text": "2–0"
+          },
+          "scope": "The 2012 Coppa Italia final.",
+          "sourceKey": "curriculum-italy-hamsik-profile",
+          "evidence": "UEFA records Napoli’s 2–0 victory."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-italy-hamsik-napoli-record",
+      "subjectKey": "entity-hamsik",
+      "clubKey": "entity-napoli",
+      "title": "Hamšík’s Napoli records",
+      "subtitle": "Goals and appearances at the end of his spell",
+      "chapter": "records",
+      "story": [
+        {
+          "title": "The goals benchmark",
+          "body": "Hamšík finished his Napoli career with 121 goals, moving past Diego Maradona’s total of 115."
+        },
+        {
+          "title": "A long-serving presence",
+          "body": "He also made 520 appearances and spent 12 seasons at the club, as Napoli’s retrospective records."
+        }
+      ],
+      "facts": [
+        {
+          "key": "hamsik-goals",
+          "label": "Napoli goals",
+          "prompt": "How many goals did Hamšík score for Napoli?",
+          "answers": [
+            "121"
+          ],
+          "distractors": [
+            "115",
+            "120",
+            "125"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "121",
+            "number": 121,
+            "unit": "goals"
+          },
+          "scope": "Hamšík’s completed Napoli scoring record as reported by UEFA on 28 October 2019.",
+          "sourceKey": "curriculum-italy-hamsik-goals",
+          "evidence": "UEFA’s Napoli all-time scoring table lists Marek Hamšík on 121 goals, ahead of Maradona on 115."
+        },
+        {
+          "key": "hamsik-appearances",
+          "label": "Napoli appearances",
+          "prompt": "How many appearances did Hamšík make for Napoli?",
+          "answers": [
+            "520"
+          ],
+          "distractors": [
+            "502",
+            "515",
+            "528"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "520 appearances",
+            "number": 520,
+            "unit": "appearances"
+          },
+          "scope": "His completed Napoli appearance total.",
+          "sourceKey": "curriculum-italy-hamsik-legacy",
+          "evidence": "SSC Napoli’s retrospective identifies 520 appearances."
+        },
+        {
+          "key": "hamsik-seasons",
+          "label": "Napoli seasons",
+          "prompt": "How many seasons did Hamšík spend with Napoli?",
+          "answers": [
+            "12"
+          ],
+          "distractors": [
+            "9",
+            "10",
+            "15"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "12 seasons",
+            "number": 12,
+            "unit": "seasons"
+          },
+          "scope": "Hamšík’s Napoli career from 2007 to 2019.",
+          "sourceKey": "curriculum-italy-hamsik-legacy",
+          "evidence": "The club describes him as an emblematic figure for 12 seasons."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-italy-hamsik-slovakia-legacy",
+      "subjectKey": "entity-hamsik",
+      "clubKey": "entity-napoli",
+      "title": "Hamšík leads Slovakia",
+      "subtitle": "A captain at the 2010 World Cup",
+      "chapter": "legacy",
+      "story": [
+        {
+          "title": "A national-team leader",
+          "body": "Hamšík captained Slovakia at the country’s first World Cup, in 2010."
+        },
+        {
+          "title": "A tournament milestone",
+          "body": "Slovakia reached the round of 16, a landmark in the country’s first appearance at the tournament."
+        }
+      ],
+      "facts": [
+        {
+          "key": "hamsik-worldcup-year",
+          "label": "World Cup year",
+          "prompt": "In what year did Hamšík captain Slovakia at its first World Cup?",
+          "answers": [
+            "2010"
+          ],
+          "distractors": [
+            "2006",
+            "2014",
+            "2018"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "2010",
+            "number": 2010,
+            "unit": "year"
+          },
+          "scope": "Slovakia’s first World Cup appearance with Hamšík as captain.",
+          "sourceKey": "curriculum-italy-hamsik-profile",
+          "evidence": "UEFA says Slovakia’s first World Cup was in 2010 and that Hamšík captained the side."
+        },
+        {
+          "key": "hamsik-worldcup-stage",
+          "label": "Slovakia finish",
+          "prompt": "What stage did Slovakia reach at the 2010 World Cup?",
+          "answers": [
+            "Round of 16"
+          ],
+          "distractors": [
+            "Group stage",
+            "Quarter-finals",
+            "Semi-finals"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Round of 16",
+            "text": "Round of 16"
+          },
+          "scope": "Slovakia’s first World Cup campaign.",
+          "sourceKey": "curriculum-italy-hamsik-profile",
+          "evidence": "UEFA records that Slovakia reached the round of 16."
+        },
+        {
+          "key": "hamsik-euro-year",
+          "label": "First European Championship",
+          "prompt": "In what year did Slovakia make its European Championship debut with Hamšík?",
+          "answers": [
+            "2016"
+          ],
+          "distractors": [
+            "2012",
+            "2014",
+            "2020"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "2016",
+            "text": "2016"
+          },
+          "scope": "Slovakia’s first UEFA European Championship appearance.",
+          "sourceKey": "curriculum-italy-hamsik-profile",
+          "evidence": "UEFA states that Slovakia made its EURO debut in 2016."
+        }
+      ]
+    }
+  ]
+}

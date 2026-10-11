@@ -19,14 +19,14 @@ final class AlbumTests: XCTestCase {
     func testCompetitionUsesHistoricalRoadmapMembershipAndDeduplicates() {
         let state=LearnerState()
         let all=AlbumCollection.make(pack:pack,state:state,scope:.all,discoveredOnly:false,query:"")
-        XCTAssertEqual(all.total,92)
-        XCTAssertEqual(Set(all.sections.flatMap{$0.cards.map(\.id)}).count,92)
+        XCTAssertEqual(all.total,109)
+        XCTAssertEqual(Set(all.sections.flatMap{$0.cards.map(\.id)}).count,109)
         let champions=AlbumCollection.make(pack:pack,state:state,scope:.champions,discoveredOnly:false,query:"")
         let cards=champions.sections.flatMap(\.cards)
         XCTAssertTrue(cards.contains {$0.key == "card-cristiano"})
         XCTAssertFalse(cards.contains {$0.key == "card-xolos"})
         let german=AlbumCollection.make(pack:pack,state:state,scope:.bundesliga,discoveredOnly:false,query:"")
-        XCTAssertEqual(german.total,21)
+        XCTAssertEqual(german.total,25)
     }
     func testSharedCardSearchMatchesEveryRelatedClub() throws {
         var json=try JSONSerialization.jsonObject(with:JSONEncoder().encode(pack)) as! [String:Any]
@@ -45,10 +45,10 @@ final class AlbumTests: XCTestCase {
         let lesson=pack.lessons[0],card=pack.cards.first {$0.key == "card-xolos"}!
         state.completeLesson(lesson,pack:pack,sessionID:UUID(),attempts:[],now:now)
         let partial=CardReadiness.make(card:card,pack:pack,state:state,now:now.addingTimeInterval(86401))
-        XCTAssertEqual(partial.introduced,3);XCTAssertEqual(partial.missing,9);XCTAssertEqual(partial.due,3);XCTAssertNil(partial.currentStage)
+        XCTAssertEqual(partial.introduced,3);XCTAssertEqual(partial.missing,30);XCTAssertEqual(partial.due,3);XCTAssertNil(partial.currentStage)
         let intro=pack.cards.first {$0.key == "card-atlas"}!
         XCTAssertEqual(CardReadiness.scopeLabel(card:intro,pack:pack),"Intro · 3 connections")
-        XCTAssertEqual(CardReadiness.scopeLabel(card:card,pack:pack),"Club foundations · 12 connections")
+        XCTAssertEqual(CardReadiness.scopeLabel(card:card,pack:pack),"Club foundations · 33 connections")
     }
     func testCorrectedFactsRequireRefreshUntilIndependentDueRecall() throws {
         var state=LearnerState();let card=pack.cards.first {$0.key == "card-riascos"}!

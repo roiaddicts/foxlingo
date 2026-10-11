@@ -27,6 +27,14 @@ for player in catalog['players']:
  if not image:raise ValueError('Missing authored player portrait: '+player['key'])
  urls[player['key']]=image
  if seed.get('imageURL'):urls['seed-'+seed['id']]=seed['imageURL']
+# Only released curriculum packs can introduce additional player portraits.
+registry=ROOT/'content/curriculum-packs.json'
+for name in json.loads(registry.read_text())['packs'] if registry.exists() else []:
+ for player in json.loads((ROOT/'content'/name).read_text()).get('players',[]):
+  seed=next((v for v in p['players'] if v['id']==player.get('seedID')),None)
+  if player.get('seedID') and (not seed or seed['name']!=player.get('seedName')):raise ValueError('Curriculum portrait identity changed: '+player['key'])
+  image=player.get('imageURL') or (seed or {}).get('imageURL')
+  if image:urls[player['key']]=image
 urls['entity-juventus']='https://img.uefa.com/imgml/TP/teams/logos/100x100/50139.png'
 artworkPath=ROOT/'content/club-artwork.json'
 if artworkPath.exists():

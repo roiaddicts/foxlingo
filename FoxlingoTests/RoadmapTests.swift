@@ -10,12 +10,13 @@ final class RoadmapTests: XCTestCase {
     }
     func roadmap(_ key:String) -> Roadmap {pack.roadmaps.first {$0.key == key}!}
     func testPlayerPathsUseCanonicalLessonsAndOptionalContext() {
-        XCTAssertEqual(pack.clubRoadmaps.count,68);XCTAssertEqual(pack.playerRoadmaps.count,20)
-        XCTAssertEqual(pack.lessons.count,126);XCTAssertEqual(pack.objectives.count,377);XCTAssertEqual(pack.cards.count,92)
+        XCTAssertEqual(pack.clubRoadmaps.count,69);XCTAssertEqual(pack.playerRoadmaps.count,36)
+        XCTAssertEqual(pack.lessons.count,269);XCTAssertEqual(pack.objectives.count,806);XCTAssertEqual(pack.cards.count,109)
         for path in pack.playerRoadmaps {
             let progress=RoadmapProgress.make(roadmap:path,pack:pack,state:LearnerState())
-            XCTAssertEqual(progress.requiredLessonIDs.count,2);XCTAssertEqual(progress.optionalLessonIDs.count,1)
-            XCTAssertEqual(progress.requiredObjectiveIDs.count,6)
+            let expectedLessons = path.key == "roadmap-player-xavi" ? 5 : 4
+            XCTAssertEqual(progress.requiredLessonIDs.count,expectedLessons);XCTAssertEqual(progress.optionalLessonIDs.count,1)
+            XCTAssertEqual(progress.requiredObjectiveIDs.count,expectedLessons*3)
             XCTAssertTrue(path.chapters.first {$0.isOptional == true}!.note!.contains("player-specific"))
             let club=pack.clubRoadmaps.first {$0.clubID == path.clubID}!
             let optional=path.chapters.filter {$0.isOptional == true}.flatMap(\.lessonIDs)
@@ -56,15 +57,19 @@ final class RoadmapTests: XCTestCase {
         XCTAssertFalse(RoadmapProgress.make(roadmap:path,pack:pack,state:state).isComplete)
         let honours=path.chapters.last!.lessonIDs[0]
         state.completeLesson(pack.lesson(honours),pack:pack,sessionID:UUID(),attempts:[],now:now)
+        XCTAssertFalse(RoadmapProgress.make(roadmap:path,pack:pack,state:state).isComplete)
+        for id in RoadmapProgress.make(roadmap:path,pack:pack,state:state).requiredLessonIDs where !state.completedLessons.contains(id) {
+            state.completeLesson(pack.lesson(id),pack:pack,sessionID:UUID(),attempts:[],now:now)
+        }
         let progress=RoadmapProgress.make(roadmap:path,pack:pack,state:state)
-        XCTAssertTrue(progress.isComplete);XCTAssertEqual(progress.completedRequired,2);XCTAssertEqual(progress.completedOptional,0)
+        XCTAssertTrue(progress.isComplete);XCTAssertEqual(progress.completedRequired,4);XCTAssertEqual(progress.completedOptional,0)
         XCTAssertNil(DailyStudyPlan.make(pack:pack,state:state,now:now).lessonID)
         let clubProgress=RoadmapProgress.make(roadmap:roadmap("roadmap-madrid"),pack:pack,state:state)
-        XCTAssertEqual(clubProgress.completedRequired,2)
-        XCTAssertEqual(state.reviews.count,6);XCTAssertEqual(state.acquiredCards.count,1)
+        XCTAssertEqual(clubProgress.completedRequired,4)
+        XCTAssertEqual(state.reviews.count,12);XCTAssertEqual(state.acquiredCards.count,2)
         let existingDue=state.reviews.mapValues(\.due)
         state.completeLesson(pack.lesson(required),pack:pack,sessionID:UUID(),attempts:[],now:now.addingTimeInterval(3600))
-        XCTAssertEqual(state.reviews.mapValues(\.due),existingDue);XCTAssertEqual(state.reviews.count,6)
+        XCTAssertEqual(state.reviews.mapValues(\.due),existingDue);XCTAssertEqual(state.reviews.count,12)
     }
     func testCrossPathResumeAndOptionalResumeShareOneSession() {
         var state=LearnerState();let player=roadmap("roadmap-player-casillas"),lesson=player.chapters[0].lessonIDs[0]
@@ -85,9 +90,9 @@ final class RoadmapTests: XCTestCase {
         json["roadmaps"]=all.filter {$0["subjectID"] != nil}+all.filter {$0["subjectID"] == nil}
         let reordered=try ContentPack.load(JSONSerialization.data(withJSONObject:json))
         let coverage=try CoverageStudyPack.make(pack:reordered,firstID:roadmap("roadmap-xolos").clubID!,secondID:roadmap("roadmap-madrid").clubID!)
-        XCTAssertEqual(coverage.first.lessonIDs.count,10);XCTAssertEqual(coverage.second.lessonIDs.count,10)
+        XCTAssertEqual(coverage.first.lessonIDs.count,17);XCTAssertEqual(coverage.second.lessonIDs.count,29)
         let album=AlbumCollection.make(pack:reordered,state:LearnerState(),scope:.all,discoveredOnly:false,query:"")
-        XCTAssertEqual(album.total,92);XCTAssertEqual(album.sections.count,72)
+        XCTAssertEqual(album.total,109);XCTAssertEqual(album.sections.count,73)
         var state=LearnerState();state.selectClub(roadmap("roadmap-madrid").clubID!)
         XCTAssertEqual(state.activeRoadmap(reordered)?.key,"roadmap-madrid")
     }
@@ -112,7 +117,7 @@ final class RoadmapTests: XCTestCase {
         for i in rows.indices {rows[i].removeValue(forKey:"summary")}
         json["roadmaps"]=rows
         let old=try ContentPack.load(JSONSerialization.data(withJSONObject:json))
-        XCTAssertEqual(old.clubRoadmaps.count,68);XCTAssertTrue(old.playerRoadmaps.isEmpty)
+        XCTAssertEqual(old.clubRoadmaps.count,69);XCTAssertTrue(old.playerRoadmaps.isEmpty)
         XCTAssertEqual(old.roadmaps[0].entityID,old.roadmaps[0].clubID)
     }
 }

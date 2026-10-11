@@ -1,0 +1,674 @@
+{
+  "sources": [
+    {
+      "key": "curriculum-xolos-semifinal-leon",
+      "title": "¡El Caliente sí pesa! Xolos reach the Apertura 2012 final",
+      "url": "https://xolos.com.mx/noticias/primer-equipo/8041",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "curriculum-riascos-atlas",
+      "title": "¡Vibra la frontera! Club Tijuana 1–1 Atlas, Apertura 2012",
+      "url": "https://xolos.com.mx/noticias/primer-equipo/7050",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "curriculum-riascos-morelia",
+      "title": "¡Hegemonía Xoloitzcuintle en la Liga MX! Monarcas Morelia 1–1 Club Tijuana, Apertura 2012",
+      "url": "https://xolos.com.mx/noticias/primer-equipo/6227",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "curriculum-saucedo-clausura2012",
+      "title": "Cirilo Saucedo y Egidio Arévalo nominados al Balón de Oro Clausura 2012",
+      "url": "https://xolos.com.mx/noticias/xoloitzcuintles/2189/www.codersmx.com",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "curriculum-saucedo-captaincy",
+      "title": "¡Con carácter! Club Tijuana 2–0 Atlante FC, Clausura 2013",
+      "url": "https://xolos.com.mx/noticias/primer-equipo/1797",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "curriculum-arce-puebla",
+      "title": "Iniciaron con el pie derecho: Club Tijuana 2–0 Puebla, Apertura 2012",
+      "url": "https://xolos.com.mx/noticias/primer-equipo/1314",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "curriculum-arce-santos",
+      "title": "Acción a la frontera: first Xolos win in Primera División",
+      "url": "https://xolos.com.mx/noticias/primer-equipo/2099",
+      "verifiedAt": "2026-10-10"
+    }
+  ],
+  "players": [],
+  "lessons": [
+    {
+      "key": "lesson-curriculum-xolos-semifinal-leon",
+      "subjectKey": "entity-xolos",
+      "clubKey": "entity-xolos",
+      "chapter": "moments",
+      "title": "A comeback sends Xolos to the 2012 final",
+      "subtitle": "Tijuana overturned a two-goal first-leg deficit against León in a charged semifinal return.",
+      "story": [
+        {
+          "title": "Back from León",
+          "body": "After losing the first leg 2–0, Xolos returned to Estadio Caliente needing a response in the Apertura 2012 semifinal."
+        },
+        {
+          "title": "The turn",
+          "body": "A 3–0 home win reversed the tie 3–2 on aggregate and sent Club Tijuana into its first top-flight final."
+        }
+      ],
+      "facts": [
+        {
+          "key": "xolos-leon-opponent",
+          "label": "Semifinal rival",
+          "prompt": "Which team did Xolos face in the Apertura 2012 semifinal return?",
+          "answers": [
+            "León"
+          ],
+          "distractors": [
+            "Toluca",
+            "Monterrey",
+            "Santos Laguna"
+          ],
+          "value": {
+            "kind": "entity",
+            "display": "León",
+            "entityKey": "entity-leon"
+          },
+          "scope": "Apertura 2012 semifinal, second leg; 25 November 2012.",
+          "sourceKey": "curriculum-xolos-semifinal-leon",
+          "evidence": "The official match report identifies Club León as the semifinal opponent."
+        },
+        {
+          "key": "xolos-leon-return-score",
+          "label": "Return-leg score",
+          "prompt": "What was the score in Xolos’s semifinal return against León?",
+          "answers": [
+            "3–0"
+          ],
+          "distractors": [
+            "2–0",
+            "3–1",
+            "4–0"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "3–0",
+            "text": "3–0"
+          },
+          "scope": "Apertura 2012 semifinal return; 25 November 2012.",
+          "sourceKey": "curriculum-xolos-semifinal-leon",
+          "evidence": "Xolos won the home return 3–0.",
+          "scoreInput": {
+            "leftClubKey": "entity-xolos",
+            "rightClubKey": "entity-leon",
+            "leftGoals": 3,
+            "rightGoals": 0
+          }
+        },
+        {
+          "key": "xolos-leon-aggregate",
+          "label": "Aggregate result",
+          "prompt": "What aggregate score sent Xolos through to the Apertura 2012 final?",
+          "answers": [
+            "3–2"
+          ],
+          "distractors": [
+            "2–1",
+            "3–1",
+            "4–2"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "3–2",
+            "text": "3–2"
+          },
+          "scope": "Apertura 2012 semifinal, two legs; 25 November 2012.",
+          "sourceKey": "curriculum-xolos-semifinal-leon",
+          "evidence": "The club says the return win produced a 3–2 aggregate victory after overturning a 2–0 first-leg loss.",
+          "scoreInput": {
+            "leftClubKey": "entity-xolos",
+            "rightClubKey": "entity-leon",
+            "leftGoals": 3,
+            "rightGoals": 2
+          }
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-xolos-riascos-atlas-equalizer",
+      "subjectKey": "entity-riascos",
+      "clubKey": "entity-xolos",
+      "chapter": "moments",
+      "title": "Riascos rescues a point against Atlas",
+      "subtitle": "A September 2012 equalizer kept Xolos unbeaten at home through five Apertura matches.",
+      "story": [
+        {
+          "title": "A difficult afternoon",
+          "body": "Atlas took the lead at Estadio Caliente, but Riascos kept attacking and drew Xolos level late in the match."
+        },
+        {
+          "title": "A home draw",
+          "body": "His 75th-minute finish made it 1–1 on September 22, 2012, in Apertura matchday nine."
+        }
+      ],
+      "facts": [
+        {
+          "key": "riascos-atlas-opponent",
+          "label": "Opponent",
+          "prompt": "Which club did Riascos score against in Xolos’s 1–1 Apertura 2012 draw?",
+          "answers": [
+            "Atlas"
+          ],
+          "distractors": [
+            "Toluca",
+            "Atlante",
+            "Real Madrid"
+          ],
+          "value": {
+            "kind": "entity",
+            "display": "Atlas",
+            "entityKey": "entity-atlas"
+          },
+          "scope": "Apertura 2012, matchday 9; 22 September 2012.",
+          "sourceKey": "curriculum-riascos-atlas",
+          "evidence": "The official match report names Atlas as the opponent."
+        },
+        {
+          "key": "riascos-atlas-minute",
+          "label": "Equalizing goal",
+          "prompt": "At what minute did Riascos score the equalizer against Atlas?",
+          "answers": [
+            "75"
+          ],
+          "distractors": [
+            "29",
+            "66",
+            "88"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "75th minute",
+            "number": 75,
+            "unit": "minute"
+          },
+          "scope": "Apertura 2012, matchday 9; 22 September 2012.",
+          "sourceKey": "curriculum-riascos-atlas",
+          "evidence": "The club records Riascos’s equalizer in the 75th minute."
+        },
+        {
+          "key": "riascos-atlas-result",
+          "label": "Final score",
+          "prompt": "What was the final score between Xolos and Atlas?",
+          "answers": [
+            "1–1"
+          ],
+          "distractors": [
+            "2–1",
+            "0–0",
+            "2–2"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "1–1",
+            "text": "1–1"
+          },
+          "scope": "Apertura 2012, matchday 9; 22 September 2012.",
+          "sourceKey": "curriculum-riascos-atlas",
+          "evidence": "The match ended level at 1–1.",
+          "scoreInput": {
+            "leftClubKey": "entity-xolos",
+            "rightClubKey": "entity-atlas",
+            "leftGoals": 1,
+            "rightGoals": 1
+          }
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-xolos-riascos-morelia-record",
+      "subjectKey": "entity-riascos",
+      "clubKey": "entity-xolos",
+      "chapter": "records",
+      "title": "A dated scoring mark in Morelia",
+      "subtitle": "Riascos reached two personal Xolos milestones during a 1–1 draw on October 27, 2012.",
+      "story": [
+        {
+          "title": "A goal in the ninth minute",
+          "body": "Riascos opened the scoring at Morelia on October 27, 2012, with his seventh league goal of that season."
+        },
+        {
+          "title": "A club scoring mark",
+          "body": "That goal brought him to 12 Xolos goals across his first two top-flight campaigns, level with José Sand as the club’s leading Primera División scorers at the time."
+        }
+      ],
+      "facts": [
+        {
+          "key": "riascos-morelia-season-goal",
+          "label": "Season goal count",
+          "prompt": "Which season goal did Riascos score against Morelia on October 27, 2012?",
+          "answers": [
+            "His seventh"
+          ],
+          "distractors": [
+            "His fifth",
+            "His sixth",
+            "His ninth"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "His seventh",
+            "text": "His seventh"
+          },
+          "scope": "Apertura 2012, matchday 15; as reported on 27 October 2012.",
+          "sourceKey": "curriculum-riascos-morelia",
+          "evidence": "The match report says the ninth-minute goal was Riascos’s seventh of the season."
+        },
+        {
+          "key": "riascos-morelia-two-campaigns",
+          "label": "Two-campaign total",
+          "prompt": "How many Xolos goals had Riascos scored across his last two Primera División campaigns by this match?",
+          "answers": [
+            "12"
+          ],
+          "distractors": [
+            "8",
+            "10",
+            "15"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "12",
+            "text": "12"
+          },
+          "scope": "Club Tijuana Primera División goals across two campaigns, through 27 October 2012.",
+          "sourceKey": "curriculum-riascos-morelia",
+          "evidence": "The report credits Riascos with 12 Xolos goals across the preceding two top-flight campaigns."
+        },
+        {
+          "key": "riascos-morelia-tied-player",
+          "label": "Scoring comparison",
+          "prompt": "Which former Xolos forward did the club name alongside Riascos at that two-campaign scoring mark?",
+          "answers": [
+            "José Sand"
+          ],
+          "distractors": [
+            "Raúl Enríquez",
+            "Mauro Gerk",
+            "Dayro Moreno"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "José Sand",
+            "text": "José Sand"
+          },
+          "scope": "Club Tijuana Primera División scoring comparison, through 27 October 2012.",
+          "sourceKey": "curriculum-riascos-morelia",
+          "evidence": "The club said the 12-goal total put Riascos alongside former Xolos forward José Sand as the club’s top Primera División scorers at that point."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-xolos-saucedo-clausura-record",
+      "subjectKey": "entity-saucedo",
+      "clubKey": "entity-xolos",
+      "chapter": "records",
+      "title": "Saucedo’s Clausura 2012 goalkeeping record",
+      "subtitle": "He was the least scored-on goalkeeper in the regular phase and received an award nomination.",
+      "story": [
+        {
+          "title": "A low-conceding campaign",
+          "body": "In the Clausura 2012 regular phase, Saucedo appeared in all 17 matches and conceded 11 goals."
+        },
+        {
+          "title": "Across 19 appearances",
+          "body": "Including the quarterfinals, he played 19 times and kept eight clean sheets. The federation named him among the candidates for the tournament’s goalkeeper award."
+        }
+      ],
+      "facts": [
+        {
+          "key": "saucedo-cl12-lowest-conceded",
+          "label": "Regular-phase distinction",
+          "prompt": "What goalkeeper distinction did Saucedo earn in the Clausura 2012 regular phase?",
+          "answers": [
+            "Least goals conceded",
+            "Fewest goals conceded",
+            "Least scored-on goalkeeper"
+          ],
+          "distractors": [
+            "Most saves",
+            "Most clean sheets",
+            "Top goal scorer"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Least goals conceded",
+            "text": "Least goals conceded"
+          },
+          "scope": "Club Tijuana; Clausura 2012 regular phase (17 matches).",
+          "sourceKey": "curriculum-saucedo-clausura2012",
+          "evidence": "The club calls Saucedo the tournament’s least-scored-on goalkeeper in the regular phase."
+        },
+        {
+          "key": "saucedo-cl12-clean-sheets",
+          "label": "Clean sheets",
+          "prompt": "In how many of his 19 Clausura 2012 appearances did Saucedo keep a clean sheet?",
+          "answers": [
+            "8"
+          ],
+          "distractors": [
+            "5",
+            "11",
+            "17"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "8 clean sheets",
+            "number": 8,
+            "unit": "clean sheets"
+          },
+          "scope": "Club Tijuana; Clausura 2012, regular phase and quarterfinals combined (19 appearances).",
+          "sourceKey": "curriculum-saucedo-clausura2012",
+          "evidence": "The club says he kept eight clean sheets in 19 appearances across the regular phase and quarterfinal series."
+        },
+        {
+          "key": "saucedo-cl12-award",
+          "label": "Award shortlist",
+          "prompt": "For which individual award was Saucedo nominated after Clausura 2012?",
+          "answers": [
+            "Balón de Oro goalkeeper award"
+          ],
+          "distractors": [
+            "Best midfielder",
+            "Golden Boot",
+            "Rookie of the tournament"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Balón de Oro goalkeeper award",
+            "text": "Balón de Oro goalkeeper award"
+          },
+          "scope": "Clausura 2012 award nominations.",
+          "sourceKey": "curriculum-saucedo-clausura2012",
+          "evidence": "The club says Saucedo was among the candidates for the Clausura 2012 goalkeeper Balón de Oro."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-xolos-saucedo-first-captaincy",
+      "subjectKey": "entity-saucedo",
+      "clubKey": "entity-xolos",
+      "chapter": "moments",
+      "title": "A first captain’s armband at match 66",
+      "subtitle": "Saucedo led Xolos for the first time in a 2–0 home win during Clausura 2013.",
+      "story": [
+        {
+          "title": "A milestone match",
+          "body": "Saucedo started in goal against Atlante in Clausura 2013, his 66th appearance for Club Tijuana."
+        },
+        {
+          "title": "First time as captain",
+          "body": "He wore the Xolos captain’s armband for the first time as the team won 2–0 and recorded its third clean sheet of that campaign."
+        }
+      ],
+      "facts": [
+        {
+          "key": "saucedo-atlante-appearance",
+          "label": "Club appearance",
+          "prompt": "How many Xolos appearances had Saucedo made when he first wore the captain’s armband?",
+          "answers": [
+            "66"
+          ],
+          "distractors": [
+            "56",
+            "65",
+            "67"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "66 appearances",
+            "number": 66,
+            "unit": "appearances"
+          },
+          "scope": "Club Tijuana vs Atlante, Clausura 2013, matchday 8.",
+          "sourceKey": "curriculum-saucedo-captaincy",
+          "evidence": "The match report calls this Saucedo’s 66th game as a Xoloitzcuintle."
+        },
+        {
+          "key": "saucedo-atlante-captaincy",
+          "label": "Leadership milestone",
+          "prompt": "What did Saucedo do for the first time in that match?",
+          "answers": [
+            "Wear the captain’s armband"
+          ],
+          "distractors": [
+            "Score a goal",
+            "Take a penalty",
+            "Start a league match"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Wear the captain’s armband",
+            "text": "Wear the captain’s armband"
+          },
+          "scope": "Club Tijuana vs Atlante, Clausura 2013, matchday 8.",
+          "sourceKey": "curriculum-saucedo-captaincy",
+          "evidence": "The club says he wore the captain’s armband for the first time in his 66th appearance."
+        },
+        {
+          "key": "saucedo-atlante-score",
+          "label": "Match result",
+          "prompt": "What was the final score of the match in which Saucedo first captained Xolos?",
+          "answers": [
+            "2–0"
+          ],
+          "distractors": [
+            "1–0",
+            "2–1",
+            "3–0"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "2–0",
+            "text": "2–0"
+          },
+          "scope": "Club Tijuana vs Atlante, Clausura 2013, matchday 8.",
+          "sourceKey": "curriculum-saucedo-captaincy",
+          "evidence": "Xolos defeated Atlante 2–0.",
+          "scoreInput": {
+            "leftClubKey": "entity-xolos",
+            "rightClubKey": "entity-atlante",
+            "leftGoals": 2,
+            "rightGoals": 0
+          }
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-xolos-arce-puebla-401",
+      "subjectKey": "entity-arce",
+      "clubKey": "entity-xolos",
+      "chapter": "records",
+      "title": "A free kick in Arce’s 401st league appearance",
+      "subtitle": "Arce scored from distance in Xolos’s Apertura 2012 opening win over Puebla.",
+      "story": [
+        {
+          "title": "A milestone opener",
+          "body": "On July 20, 2012, Xolos began Apertura with a 2–0 victory over Puebla. Arce opened the scoring from a free kick."
+        },
+        {
+          "title": "A landmark appearance",
+          "body": "The goal came in Arce’s 401st Primera División match, making a league-career milestone part of the club’s first win of the tournament."
+        }
+      ],
+      "facts": [
+        {
+          "key": "arce-puebla-appearance",
+          "label": "League appearance",
+          "prompt": "In which Primera División appearance did Arce score against Puebla?",
+          "answers": [
+            "401st"
+          ],
+          "distractors": [
+            "301st",
+            "400th",
+            "410th"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "401st appearance",
+            "number": 401,
+            "unit": "appearance"
+          },
+          "scope": "Apertura 2012, matchday 1; 20 July 2012.",
+          "sourceKey": "curriculum-arce-puebla",
+          "evidence": "The report identifies it as Arce’s 401st Primera División match."
+        },
+        {
+          "key": "arce-puebla-goal-minute",
+          "label": "Goal minute",
+          "prompt": "At what minute did Arce score his free kick against Puebla?",
+          "answers": [
+            "12"
+          ],
+          "distractors": [
+            "2",
+            "27",
+            "69"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "12th minute",
+            "number": 12,
+            "unit": "minute"
+          },
+          "scope": "Apertura 2012, matchday 1; 20 July 2012.",
+          "sourceKey": "curriculum-arce-puebla",
+          "evidence": "The club reports that Arce’s direct free kick opened the score in the 12th minute."
+        },
+        {
+          "key": "arce-puebla-score",
+          "label": "Final score",
+          "prompt": "What was the final score in Xolos’s Apertura 2012 opener against Puebla?",
+          "answers": [
+            "2–0"
+          ],
+          "distractors": [
+            "1–0",
+            "2–1",
+            "3–0"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "2–0",
+            "text": "2–0"
+          },
+          "scope": "Apertura 2012, matchday 1; 20 July 2012.",
+          "sourceKey": "curriculum-arce-puebla",
+          "evidence": "The official report lists the match as Club Tijuana 2–0 Puebla.",
+          "scoreInput": {
+            "leftClubKey": "entity-xolos",
+            "rightClubKey": "entity-puebla",
+            "leftGoals": 2,
+            "rightGoals": 0
+          }
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-xolos-arce-first-topflight-win",
+      "subjectKey": "entity-arce",
+      "clubKey": "entity-xolos",
+      "chapter": "moments",
+      "title": "Arce scores in Xolos’s first top-flight win",
+      "subtitle": "His goal helped deliver a 3–1 victory away to Santos in August 2011.",
+      "story": [
+        {
+          "title": "A first win",
+          "body": "Xolos earned their first victory in Mexico’s top division on August 6, 2011, away to Santos Laguna."
+        },
+        {
+          "title": "Arce on the scoresheet",
+          "body": "Arce scored in the 43rd minute as Club Tijuana rallied to a 3–1 result in Torreón."
+        }
+      ],
+      "facts": [
+        {
+          "key": "arce-santos-opponent",
+          "label": "Opponent",
+          "prompt": "Against which club did Xolos earn their first Primera División win?",
+          "answers": [
+            "Santos Laguna"
+          ],
+          "distractors": [
+            "Monterrey",
+            "Pachuca",
+            "Atlante"
+          ],
+          "value": {
+            "kind": "entity",
+            "display": "Santos Laguna",
+            "entityKey": "entity-santos-laguna"
+          },
+          "scope": "First top-flight victory; Apertura 2011, matchday 4; 6 August 2011.",
+          "sourceKey": "curriculum-arce-santos",
+          "evidence": "The club identifies Santos as the opponent in its first Primera División victory."
+        },
+        {
+          "key": "arce-santos-goal-minute",
+          "label": "Arce goal minute",
+          "prompt": "At what minute did Arce score in Xolos’s first top-flight win?",
+          "answers": [
+            "43"
+          ],
+          "distractors": [
+            "32",
+            "54",
+            "64"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "43rd minute",
+            "number": 43,
+            "unit": "minute"
+          },
+          "scope": "First top-flight victory; Apertura 2011, matchday 4; 6 August 2011.",
+          "sourceKey": "curriculum-arce-santos",
+          "evidence": "The match account lists Arce’s goal at 43 minutes."
+        },
+        {
+          "key": "arce-santos-score",
+          "label": "Final score",
+          "prompt": "What was the score when Xolos beat Santos in their first Primera División victory?",
+          "answers": [
+            "3–1"
+          ],
+          "distractors": [
+            "2–0",
+            "2–1",
+            "4–1"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "3–1",
+            "text": "3–1"
+          },
+          "scope": "First top-flight victory; Apertura 2011, matchday 4; 6 August 2011.",
+          "sourceKey": "curriculum-arce-santos",
+          "evidence": "The official match history records Santos 1–3 Club Tijuana.",
+          "scoreInput": {
+            "leftClubKey": "entity-xolos",
+            "rightClubKey": "entity-santos-laguna",
+            "leftGoals": 3,
+            "rightGoals": 1
+          }
+        }
+      ]
+    }
+  ]
+}

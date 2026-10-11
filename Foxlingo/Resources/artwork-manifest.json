@@ -469,6 +469,61 @@
     "requestedURL": "https://futbol11.com/images/839.png"
   },
   {
+    "asset": "entity-patrik-schick",
+    "url": "https://i.ibb.co/tmnXhz2/schick.webp",
+    "cached": true
+  },
+  {
+    "asset": "entity-marco-reus",
+    "url": "https://futbol11.com/images/187.png",
+    "cached": true
+  },
+  {
+    "asset": "entity-robert-lewandowski",
+    "url": "https://futbol11.com/images/18.webp",
+    "cached": true
+  },
+  {
+    "asset": "entity-del-piero",
+    "url": "https://futbol11.com/images/183.png",
+    "cached": true
+  },
+  {
+    "asset": "entity-buffon",
+    "url": "https://futbol11.com/images/49.png",
+    "cached": true
+  },
+  {
+    "asset": "entity-zanetti",
+    "url": "https://futbol11.com/images/727.png",
+    "cached": true
+  },
+  {
+    "asset": "entity-milito",
+    "url": "https://futbol11.com/images/295.png",
+    "cached": true
+  },
+  {
+    "asset": "entity-maradona",
+    "url": "https://futbol11.com/images/41.png",
+    "cached": true
+  },
+  {
+    "asset": "entity-hamsik",
+    "url": "https://futbol11.com/images/775.png",
+    "cached": true
+  },
+  {
+    "asset": "entity-guillermo-ochoa",
+    "url": "https://futbol11.com/images/843.png",
+    "cached": true
+  },
+  {
+    "asset": "entity-chicharito",
+    "url": "https://futbol11.com/images/200.png",
+    "cached": true
+  },
+  {
     "asset": "entity-juventus",
     "url": "https://img.uefa.com/imgml/TP/teams/logos/100x100/50139.png",
     "cached": true
@@ -806,6 +861,106 @@
   {
     "asset": "entity-ac-milan",
     "url": "https://img.uefa.com/imgml/TP/teams/logos/100x100/50058.png",
+    "cached": true
+  },
+  {
+    "asset": "club-badge-ajax",
+    "url": "https://img.uefa.com/imgml/TP/teams/logos/100x100/50143.png",
+    "cached": true
+  },
+  {
+    "asset": "club-badge-benfica",
+    "url": "https://img.uefa.com/imgml/TP/teams/logos/100x100/50147.png",
+    "cached": true
+  },
+  {
+    "asset": "club-badge-newcastle",
+    "url": "https://img.uefa.com/imgml/TP/teams/logos/100x100/59324.png",
+    "cached": true
+  },
+  {
+    "asset": "club-badge-leicester",
+    "url": "https://img.uefa.com/imgml/TP/teams/logos/100x100/2608195.png",
+    "cached": true
+  },
+  {
+    "asset": "club-badge-wolves",
+    "url": "https://img.uefa.com/imgml/TP/teams/logos/100x100/53357.png",
+    "cached": true
+  },
+  {
+    "asset": "club-badge-everton",
+    "url": "https://img.uefa.com/imgml/TP/teams/logos/100x100/52281.png",
+    "cached": true
+  },
+  {
+    "asset": "club-badge-west-ham",
+    "url": "https://img.uefa.com/imgml/TP/teams/logos/100x100/53358.png",
+    "cached": true
+  },
+  {
+    "asset": "club-badge-brighton",
+    "url": "https://img.uefa.com/imgml/TP/teams/logos/100x100/2601105.png",
+    "cached": true
+  },
+  {
+    "asset": "club-badge-athletic-club",
+    "url": "https://img.uefa.com/imgml/TP/teams/logos/100x100/50125.png",
+    "cached": true
+  },
+  {
+    "asset": "club-badge-real-sociedad",
+    "url": "https://img.uefa.com/imgml/TP/teams/logos/100x100/50123.png",
+    "cached": true
+  },
+  {
+    "asset": "club-badge-sevilla",
+    "url": "https://img.uefa.com/imgml/TP/teams/logos/100x100/52714.png",
+    "cached": true
+  },
+  {
+    "asset": "club-badge-girona",
+    "url": "https://img.uefa.com/imgml/TP/teams/logos/100x100/2602798.png",
+    "cached": true
+  },
+  {
+    "asset": "club-badge-valencia",
+    "url": "https://img.uefa.com/imgml/TP/teams/logos/100x100/52268.png",
+    "cached": true
+  },
+  {
+    "asset": "club-badge-atalanta",
+    "url": "https://img.uefa.com/imgml/TP/teams/logos/100x100/52816.png",
+    "cached": true
+  },
+  {
+    "asset": "club-badge-lazio",
+    "url": "https://img.uefa.com/imgml/TP/teams/logos/100x100/52973.png",
+    "cached": true
+  },
+  {
+    "asset": "club-badge-bologna",
+    "url": "https://img.uefa.com/imgml/TP/teams/logos/100x100/52969.png",
+    "cached": true
+  },
+  {
+    "asset": "club-badge-fiorentina",
+    "url": "https://img.uefa.com/imgml/TP/teams/logos/100x100/52817.png",
+    "cached": true
+  },
+  {
+    "asset": "club-badge-monaco",
+    "url": "https://img.uefa.com/imgml/TP/teams/logos/100x100/50023.png",
+    "cached": true
+  },
+  {
+    "asset": "club-badge-lyon",
+    "url": "https://img.uefa.com/imgml/TP/teams/logos/100x100/5312.png",
+    "cached": true
+  },
+  {
+    "asset": "entity-wolfsburg",
+    "url": "https://img.uefa.com/imgml/TP/teams/logos/100x100/64332.png",
     "cached": true
   },
   {

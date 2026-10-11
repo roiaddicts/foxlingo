@@ -841,6 +841,16 @@ final class FlowTests: XCTestCase {
         let context=XCTAttachment(screenshot:app.screenshot());context.name="Large text timeline sources";context.lifetime = .keepAlways;add(context)
         tap("timeline-sources-done");tap("timeline-replay")
     }
+    func testExpandedDelPieroCourseCompletesAndPersists() {
+        start();tap("choose-XT");choosePlayer("Alessandro Del Piero","del-piero")
+        XCTAssertTrue(app.staticTexts["roadmap-progress"].label.contains("0 of 4 starter lessons"))
+        completeLesson("lesson-curriculum-italy-delpiero-arrival")
+        XCTAssertTrue(app.staticTexts["roadmap-progress"].label.contains("1 of 4 starter lessons"))
+        app.terminate();start(reset:false)
+        XCTAssertTrue(app.staticTexts["Alessandro Del Piero"].exists)
+        XCTAssertTrue(app.staticTexts["roadmap-progress"].label.contains("1 of 4 starter lessons"))
+        let shot=XCTAttachment(screenshot:app.screenshot());shot.name="Expanded Del Piero course retains progress";shot.lifetime = .keepAlways;add(shot)
+    }
     func testNewPlayerCatalogLessonsAndAlbumEntry() {
         start();tap("choose-XT");choosePlayer("Lionel Messi","messi")
         XCTAssertTrue(app.staticTexts["roadmap-progress"].label.contains("0 of 2 starter lessons"))

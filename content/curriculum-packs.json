@@ -1,0 +1,11 @@
+{
+  "contentVersion": 13,
+  "packs": [
+    "curriculum-champions.json",
+    "curriculum-bundesliga.json",
+    "curriculum-xolos.json",
+    "curriculum-madrid.json",
+    "curriculum-champions-italy.json",
+    "curriculum-ligamx.json"
+  ]
+}

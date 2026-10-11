@@ -1,0 +1,1231 @@
+{
+  "contentVersion": 13,
+  "scope": "Existing club courses and authored player courses; game catalogs are excluded.",
+  "clubs": [
+    {
+      "key": "roadmap-xolos",
+      "name": "Club Tijuana",
+      "requiredLessons": 17,
+      "definingMomentLessons": 2,
+      "playerPaths": [
+        "roadmap-player-riascos",
+        "roadmap-player-saucedo",
+        "roadmap-player-arce"
+      ],
+      "completePlayerPaths": [
+        "roadmap-player-riascos",
+        "roadmap-player-saucedo",
+        "roadmap-player-arce"
+      ],
+      "complete": true
+    },
+    {
+      "key": "roadmap-madrid",
+      "name": "Real Madrid",
+      "requiredLessons": 29,
+      "definingMomentLessons": 2,
+      "playerPaths": [
+        "roadmap-player-roberto-carlos",
+        "roadmap-player-di-stefano",
+        "roadmap-player-raul",
+        "roadmap-player-benzema",
+        "roadmap-player-cristiano",
+        "roadmap-player-zidane",
+        "roadmap-player-bale",
+        "roadmap-player-casillas",
+        "roadmap-player-ramos"
+      ],
+      "completePlayerPaths": [
+        "roadmap-player-roberto-carlos",
+        "roadmap-player-di-stefano",
+        "roadmap-player-raul",
+        "roadmap-player-benzema",
+        "roadmap-player-cristiano",
+        "roadmap-player-zidane",
+        "roadmap-player-bale",
+        "roadmap-player-casillas",
+        "roadmap-player-ramos"
+      ],
+      "complete": true
+    },
+    {
+      "key": "roadmap-aek-athens",
+      "name": "AEK Athens",
+      "requiredLessons": 1,
+      "definingMomentLessons": 0,
+      "playerPaths": [],
+      "completePlayerPaths": [],
+      "complete": false
+    },
+    {
+      "key": "roadmap-america",
+      "name": "Club América",
+      "requiredLessons": 12,
+      "definingMomentLessons": 2,
+      "playerPaths": [
+        "roadmap-player-henry-martin",
+        "roadmap-player-guillermo-ochoa"
+      ],
+      "completePlayerPaths": [
+        "roadmap-player-henry-martin",
+        "roadmap-player-guillermo-ochoa"
+      ],
+      "complete": true
+    },
+    {
+      "key": "roadmap-arsenal",
+      "name": "Arsenal",
+      "requiredLessons": 8,
+      "definingMomentLessons": 2,
+      "playerPaths": [
+        "roadmap-player-thierry-henry",
+        "roadmap-player-dennis-bergkamp"
+      ],
+      "completePlayerPaths": [
+        "roadmap-player-thierry-henry",
+        "roadmap-player-dennis-bergkamp"
+      ],
+      "complete": true
+    },
+    {
+      "key": "roadmap-aston-villa",
+      "name": "Aston Villa",
+      "requiredLessons": 1,
+      "definingMomentLessons": 0,
+      "playerPaths": [],
+      "completePlayerPaths": [],
+      "complete": false
+    },
+    {
+      "key": "roadmap-atlante",
+      "name": "Atlante",
+      "requiredLessons": 1,
+      "definingMomentLessons": 0,
+      "playerPaths": [],
+      "completePlayerPaths": [],
+      "complete": false
+    },
+    {
+      "key": "roadmap-atlas",
+      "name": "Atlas",
+      "requiredLessons": 1,
+      "definingMomentLessons": 0,
+      "playerPaths": [],
+      "completePlayerPaths": [],
+      "complete": false
+    },
+    {
+      "key": "roadmap-atletico-madrid",
+      "name": "Atlético de Madrid",
+      "requiredLessons": 1,
+      "definingMomentLessons": 0,
+      "playerPaths": [],
+      "completePlayerPaths": [],
+      "complete": false
+    },
+    {
+      "key": "roadmap-atletico-san-luis",
+      "name": "Atlético de San Luis",
+      "requiredLessons": 1,
+      "definingMomentLessons": 0,
+      "playerPaths": [],
+      "completePlayerPaths": [],
+      "complete": false
+    },
+    {
+      "key": "roadmap-augsburg",
+      "name": "FC Augsburg",
+      "requiredLessons": 1,
+      "definingMomentLessons": 0,
+      "playerPaths": [],
+      "completePlayerPaths": [],
+      "complete": false
+    },
+    {
+      "key": "roadmap-barcelona",
+      "name": "Barcelona",
+      "requiredLessons": 9,
+      "definingMomentLessons": 2,
+      "playerPaths": [
+        "roadmap-player-xavi",
+        "roadmap-player-messi"
+      ],
+      "completePlayerPaths": [
+        "roadmap-player-xavi",
+        "roadmap-player-messi"
+      ],
+      "complete": true
+    },
+    {
+      "key": "roadmap-bayer-leverkusen",
+      "name": "Bayer 04 Leverkusen",
+      "requiredLessons": 12,
+      "definingMomentLessons": 2,
+      "playerPaths": [
+        "roadmap-player-stefan-kiessling",
+        "roadmap-player-patrik-schick"
+      ],
+      "completePlayerPaths": [
+        "roadmap-player-stefan-kiessling",
+        "roadmap-player-patrik-schick"
+      ],
+      "complete": true
+    },
+    {
+      "key": "roadmap-bayern-munich",
+      "name": "Bayern München",
+      "requiredLessons": 8,
+      "definingMomentLessons": 2,
+      "playerPaths": [
+        "roadmap-player-schweinsteiger",
+        "roadmap-player-lahm"
+      ],
+      "completePlayerPaths": [
+        "roadmap-player-schweinsteiger",
+        "roadmap-player-lahm"
+      ],
+      "complete": true
+    },
+    {
+      "key": "roadmap-bodo-glimt",
+      "name": "Bodø/Glimt",
+      "requiredLessons": 1,
+      "definingMomentLessons": 0,
+      "playerPaths": [],
+      "completePlayerPaths": [],
+      "complete": false
+    },
+    {
+      "key": "roadmap-borussia-dortmund",
+      "name": "Borussia Dortmund",
+      "requiredLessons": 12,
+      "definingMomentLessons": 2,
+      "playerPaths": [
+        "roadmap-player-marco-reus",
+        "roadmap-player-robert-lewandowski"
+      ],
+      "completePlayerPaths": [
+        "roadmap-player-marco-reus",
+        "roadmap-player-robert-lewandowski"
+      ],
+      "complete": true
+    },
+    {
+      "key": "roadmap-borussia-monchengladbach",
+      "name": "Borussia Mönchengladbach",
+      "requiredLessons": 1,
+      "definingMomentLessons": 0,
+      "playerPaths": [],
+      "completePlayerPaths": [],
+      "complete": false
+    },
+    {
+      "key": "roadmap-chivas",
+      "name": "Guadalajara",
+      "requiredLessons": 12,
+      "definingMomentLessons": 2,
+      "playerPaths": [
+        "roadmap-player-carlos-salcido",
+        "roadmap-player-chicharito"
+      ],
+      "completePlayerPaths": [
+        "roadmap-player-carlos-salcido",
+        "roadmap-player-chicharito"
+      ],
+      "complete": true
+    },
+    {
+      "key": "roadmap-club-brugge",
+      "name": "Club Brugge",
+      "requiredLessons": 1,
+      "definingMomentLessons": 0,
+      "playerPaths": [],
+      "completePlayerPaths": [],
+      "complete": false
+    },
+    {
+      "key": "roadmap-como",
+      "name": "Como",
+      "requiredLessons": 1,
+      "definingMomentLessons": 0,
+      "playerPaths": [],
+      "completePlayerPaths": [],
+      "complete": false
+    },
+    {
+      "key": "roadmap-cruz-azul",
+      "name": "Cruz Azul",
+      "requiredLessons": 1,
+      "definingMomentLessons": 0,
+      "playerPaths": [],
+      "completePlayerPaths": [],
+      "complete": false
+    },
+    {
+      "key": "roadmap-eintracht-frankfurt",
+      "name": "Eintracht Frankfurt",
+      "requiredLessons": 1,
+      "definingMomentLessons": 0,
+      "playerPaths": [],
+      "completePlayerPaths": [],
+      "complete": false
+    },
+    {
+      "key": "roadmap-elversberg",
+      "name": "SV Elversberg",
+      "requiredLessons": 1,
+      "definingMomentLessons": 0,
+      "playerPaths": [],
+      "completePlayerPaths": [],
+      "complete": false
+    },
+    {
+      "key": "roadmap-fc-cologne",
+      "name": "1. FC Köln",
+      "requiredLessons": 1,
+      "definingMomentLessons": 0,
+      "playerPaths": [],
+      "completePlayerPaths": [],
+      "complete": false
+    },
+    {
+      "key": "roadmap-fenerbah-e",
+      "name": "Fenerbahçe",
+      "requiredLessons": 1,
+      "definingMomentLessons": 0,
+      "playerPaths": [],
+      "completePlayerPaths": [],
+      "complete": false
+    },
+    {
+      "key": "roadmap-feyenoord",
+      "name": "Feyenoord",
+      "requiredLessons": 1,
+      "definingMomentLessons": 0,
+      "playerPaths": [],
+      "completePlayerPaths": [],
+      "complete": false
+    },
+    {
+      "key": "roadmap-freiburg",
+      "name": "Sport-Club Freiburg",
+      "requiredLessons": 1,
+      "definingMomentLessons": 0,
+      "playerPaths": [],
+      "completePlayerPaths": [],
+      "complete": false
+    },
+    {
+      "key": "roadmap-galatasaray",
+      "name": "Galatasaray",
+      "requiredLessons": 1,
+      "definingMomentLessons": 0,
+      "playerPaths": [],
+      "completePlayerPaths": [],
+      "complete": false
+    },
+    {
+      "key": "roadmap-hamburger-sv",
+      "name": "Hamburger SV",
+      "requiredLessons": 1,
+      "definingMomentLessons": 0,
+      "playerPaths": [],
+      "completePlayerPaths": [],
+      "complete": false
+    },
+    {
+      "key": "roadmap-hoffenheim",
+      "name": "TSG Hoffenheim",
+      "requiredLessons": 1,
+      "definingMomentLessons": 0,
+      "playerPaths": [],
+      "completePlayerPaths": [],
+      "complete": false
+    },
+    {
+      "key": "roadmap-inter",
+      "name": "Inter",
+      "requiredLessons": 12,
+      "definingMomentLessons": 2,
+      "playerPaths": [
+        "roadmap-player-milito",
+        "roadmap-player-zanetti"
+      ],
+      "completePlayerPaths": [
+        "roadmap-player-milito",
+        "roadmap-player-zanetti"
+      ],
+      "complete": true
+    },
+    {
+      "key": "roadmap-juarez",
+      "name": "FC Juárez",
+      "requiredLessons": 1,
+      "definingMomentLessons": 0,
+      "playerPaths": [],
+      "completePlayerPaths": [],
+      "complete": false
+    },
+    {
+      "key": "roadmap-lask",
+      "name": "LASK",
+      "requiredLessons": 1,
+      "definingMomentLessons": 0,
+      "playerPaths": [],
+      "completePlayerPaths": [],
+      "complete": false
+    },
+    {
+      "key": "roadmap-leipzig",
+      "name": "Leipzig",
+      "requiredLessons": 1,
+      "definingMomentLessons": 0,
+      "playerPaths": [],
+      "completePlayerPaths": [],
+      "complete": false
+    },
+    {
+      "key": "roadmap-lens",
+      "name": "Lens",
+      "requiredLessons": 1,
+      "definingMomentLessons": 0,
+      "playerPaths": [],
+      "completePlayerPaths": [],
+      "complete": false
+    },
+    {
+      "key": "roadmap-leon",
+      "name": "Club León",
+      "requiredLessons": 1,
+      "definingMomentLessons": 0,
+      "playerPaths": [],
+      "completePlayerPaths": [],
+      "complete": false
+    },
+    {
+      "key": "roadmap-lille",
+      "name": "Lille",
+      "requiredLessons": 1,
+      "definingMomentLessons": 0,
+      "playerPaths": [],
+      "completePlayerPaths": [],
+      "complete": false
+    },
+    {
+      "key": "roadmap-liverpool",
+      "name": "Liverpool",
+      "requiredLessons": 8,
+      "definingMomentLessons": 2,
+      "playerPaths": [
+        "roadmap-player-gerrard",
+        "roadmap-player-rush"
+      ],
+      "completePlayerPaths": [
+        "roadmap-player-gerrard",
+        "roadmap-player-rush"
+      ],
+      "complete": true
+    },
+    {
+      "key": "roadmap-mainz-05",
+      "name": "1. FSV Mainz 05",
+      "requiredLessons": 1,
+      "definingMomentLessons": 0,
+      "playerPaths": [],
+      "completePlayerPaths": [],
+      "complete": false
+    },
+    {
+      "key": "roadmap-manchester-city",
+      "name": "Man City",
+      "requiredLessons": 1,
+      "definingMomentLessons": 0,
+      "playerPaths": [],
+      "completePlayerPaths": [],
+      "complete": false
+    },
+    {
+      "key": "roadmap-manchester-united",
+      "name": "Man United",
+      "requiredLessons": 1,
+      "definingMomentLessons": 0,
+      "playerPaths": [],
+      "completePlayerPaths": [],
+      "complete": false
+    },
+    {
+      "key": "roadmap-monterrey",
+      "name": "Monterrey",
+      "requiredLessons": 1,
+      "definingMomentLessons": 0,
+      "playerPaths": [],
+      "completePlayerPaths": [],
+      "complete": false
+    },
+    {
+      "key": "roadmap-napoli",
+      "name": "Napoli",
+      "requiredLessons": 12,
+      "definingMomentLessons": 2,
+      "playerPaths": [
+        "roadmap-player-hamsik",
+        "roadmap-player-maradona"
+      ],
+      "completePlayerPaths": [
+        "roadmap-player-hamsik",
+        "roadmap-player-maradona"
+      ],
+      "complete": true
+    },
+    {
+      "key": "roadmap-necaxa",
+      "name": "Necaxa",
+      "requiredLessons": 1,
+      "definingMomentLessons": 0,
+      "playerPaths": [],
+      "completePlayerPaths": [],
+      "complete": false
+    },
+    {
+      "key": "roadmap-pachuca",
+      "name": "Pachuca",
+      "requiredLessons": 1,
+      "definingMomentLessons": 0,
+      "playerPaths": [],
+      "completePlayerPaths": [],
+      "complete": false
+    },
+    {
+      "key": "roadmap-paderborn-07",
+      "name": "SC Paderborn 07",
+      "requiredLessons": 1,
+      "definingMomentLessons": 0,
+      "playerPaths": [],
+      "completePlayerPaths": [],
+      "complete": false
+    },
+    {
+      "key": "roadmap-porto",
+      "name": "Porto",
+      "requiredLessons": 1,
+      "definingMomentLessons": 0,
+      "playerPaths": [],
+      "completePlayerPaths": [],
+      "complete": false
+    },
+    {
+      "key": "roadmap-psg",
+      "name": "Paris",
+      "requiredLessons": 1,
+      "definingMomentLessons": 0,
+      "playerPaths": [],
+      "completePlayerPaths": [],
+      "complete": false
+    },
+    {
+      "key": "roadmap-psv",
+      "name": "PSV",
+      "requiredLessons": 1,
+      "definingMomentLessons": 0,
+      "playerPaths": [],
+      "completePlayerPaths": [],
+      "complete": false
+    },
+    {
+      "key": "roadmap-puebla",
+      "name": "Puebla",
+      "requiredLessons": 1,
+      "definingMomentLessons": 0,
+      "playerPaths": [],
+      "completePlayerPaths": [],
+      "complete": false
+    },
+    {
+      "key": "roadmap-pumas",
+      "name": "Pumas UNAM",
+      "requiredLessons": 1,
+      "definingMomentLessons": 0,
+      "playerPaths": [],
+      "completePlayerPaths": [],
+      "complete": false
+    },
+    {
+      "key": "roadmap-queretaro",
+      "name": "Querétaro",
+      "requiredLessons": 1,
+      "definingMomentLessons": 0,
+      "playerPaths": [],
+      "completePlayerPaths": [],
+      "complete": false
+    },
+    {
+      "key": "roadmap-real-betis",
+      "name": "Real Betis",
+      "requiredLessons": 1,
+      "definingMomentLessons": 0,
+      "playerPaths": [],
+      "completePlayerPaths": [],
+      "complete": false
+    },
+    {
+      "key": "roadmap-roma",
+      "name": "Roma",
+      "requiredLessons": 1,
+      "definingMomentLessons": 0,
+      "playerPaths": [],
+      "completePlayerPaths": [],
+      "complete": false
+    },
+    {
+      "key": "roadmap-sabah",
+      "name": "Sabah",
+      "requiredLessons": 1,
+      "definingMomentLessons": 0,
+      "playerPaths": [],
+      "completePlayerPaths": [],
+      "complete": false
+    },
+    {
+      "key": "roadmap-santos-laguna",
+      "name": "Santos Laguna",
+      "requiredLessons": 1,
+      "definingMomentLessons": 0,
+      "playerPaths": [],
+      "completePlayerPaths": [],
+      "complete": false
+    },
+    {
+      "key": "roadmap-schalke-04",
+      "name": "FC Schalke 04",
+      "requiredLessons": 1,
+      "definingMomentLessons": 0,
+      "playerPaths": [],
+      "completePlayerPaths": [],
+      "complete": false
+    },
+    {
+      "key": "roadmap-shakhtar",
+      "name": "Shakhtar",
+      "requiredLessons": 1,
+      "definingMomentLessons": 0,
+      "playerPaths": [],
+      "completePlayerPaths": [],
+      "complete": false
+    },
+    {
+      "key": "roadmap-slavia-prague",
+      "name": "Slavia Praha",
+      "requiredLessons": 1,
+      "definingMomentLessons": 0,
+      "playerPaths": [],
+      "completePlayerPaths": [],
+      "complete": false
+    },
+    {
+      "key": "roadmap-slovan-bratislava",
+      "name": "Slovan Bratislava",
+      "requiredLessons": 1,
+      "definingMomentLessons": 0,
+      "playerPaths": [],
+      "completePlayerPaths": [],
+      "complete": false
+    },
+    {
+      "key": "roadmap-sporting-cp",
+      "name": "Sporting CP",
+      "requiredLessons": 1,
+      "definingMomentLessons": 0,
+      "playerPaths": [],
+      "completePlayerPaths": [],
+      "complete": false
+    },
+    {
+      "key": "roadmap-stuttgart",
+      "name": "Stuttgart",
+      "requiredLessons": 1,
+      "definingMomentLessons": 0,
+      "playerPaths": [],
+      "completePlayerPaths": [],
+      "complete": false
+    },
+    {
+      "key": "roadmap-tigres-uanl",
+      "name": "Tigres UANL",
+      "requiredLessons": 1,
+      "definingMomentLessons": 0,
+      "playerPaths": [],
+      "completePlayerPaths": [],
+      "complete": false
+    },
+    {
+      "key": "roadmap-toluca",
+      "name": "Toluca",
+      "requiredLessons": 12,
+      "definingMomentLessons": 1,
+      "playerPaths": [
+        "roadmap-player-hernan-cristante",
+        "roadmap-player-jose-saturnino-cardozo"
+      ],
+      "completePlayerPaths": [
+        "roadmap-player-hernan-cristante",
+        "roadmap-player-jose-saturnino-cardozo"
+      ],
+      "complete": false
+    },
+    {
+      "key": "roadmap-union-berlin",
+      "name": "1. FC Union Berlin",
+      "requiredLessons": 1,
+      "definingMomentLessons": 0,
+      "playerPaths": [],
+      "completePlayerPaths": [],
+      "complete": false
+    },
+    {
+      "key": "roadmap-viking",
+      "name": "Viking",
+      "requiredLessons": 1,
+      "definingMomentLessons": 0,
+      "playerPaths": [],
+      "completePlayerPaths": [],
+      "complete": false
+    },
+    {
+      "key": "roadmap-villarreal",
+      "name": "Villarreal",
+      "requiredLessons": 1,
+      "definingMomentLessons": 0,
+      "playerPaths": [],
+      "completePlayerPaths": [],
+      "complete": false
+    },
+    {
+      "key": "roadmap-werder-bremen",
+      "name": "SV Werder Bremen",
+      "requiredLessons": 1,
+      "definingMomentLessons": 0,
+      "playerPaths": [],
+      "completePlayerPaths": [],
+      "complete": false
+    },
+    {
+      "key": "roadmap-juventus",
+      "name": "Juventus",
+      "requiredLessons": 11,
+      "definingMomentLessons": 2,
+      "playerPaths": [
+        "roadmap-player-buffon",
+        "roadmap-player-del-piero"
+      ],
+      "completePlayerPaths": [
+        "roadmap-player-buffon",
+        "roadmap-player-del-piero"
+      ],
+      "complete": true
+    }
+  ],
+  "players": [
+    {
+      "key": "roadmap-player-riascos",
+      "name": "Duvier Riascos",
+      "entityID": "8a32d77b-d409-5435-9516-5adccb2b059a",
+      "playerLessons": 4,
+      "chapters": [
+        "Player foundations",
+        "Deeper stories",
+        "Defining moments",
+        "Records & honours"
+      ],
+      "missingAreas": [],
+      "complete": true
+    },
+    {
+      "key": "roadmap-player-arce",
+      "name": "Fernando Arce",
+      "entityID": "d3ac3035-32f6-5d96-bc18-d3f683b7708b",
+      "playerLessons": 4,
+      "chapters": [
+        "Player foundations",
+        "Deeper stories",
+        "Records & honours",
+        "Defining moments"
+      ],
+      "missingAreas": [],
+      "complete": true
+    },
+    {
+      "key": "roadmap-player-saucedo",
+      "name": "Cirilo Saucedo",
+      "entityID": "8dc70c1f-7491-530f-9c92-3e48cd54f665",
+      "playerLessons": 4,
+      "chapters": [
+        "Player foundations",
+        "Deeper stories",
+        "Records & honours",
+        "Defining moments"
+      ],
+      "missingAreas": [],
+      "complete": true
+    },
+    {
+      "key": "roadmap-player-cristiano",
+      "name": "Cristiano Ronaldo",
+      "entityID": "6d957fed-48cd-5e99-8e09-2758304bba08",
+      "playerLessons": 4,
+      "chapters": [
+        "Player foundations",
+        "Deeper stories",
+        "Defining moments",
+        "Records & honours"
+      ],
+      "missingAreas": [],
+      "complete": true
+    },
+    {
+      "key": "roadmap-player-ramos",
+      "name": "Sergio Ramos",
+      "entityID": "bd1a5c77-15cc-5bde-bd77-b3a9679f8e95",
+      "playerLessons": 4,
+      "chapters": [
+        "Player foundations",
+        "Deeper stories",
+        "Defining moments",
+        "Records & honours"
+      ],
+      "missingAreas": [],
+      "complete": true
+    },
+    {
+      "key": "roadmap-player-casillas",
+      "name": "Iker Casillas",
+      "entityID": "b63b8e8c-5e58-54f5-815d-9e37d56baf32",
+      "playerLessons": 4,
+      "chapters": [
+        "Player foundations",
+        "Deeper stories",
+        "Defining moments",
+        "Records & honours"
+      ],
+      "missingAreas": [],
+      "complete": true
+    },
+    {
+      "key": "roadmap-player-raul",
+      "name": "Raúl",
+      "entityID": "4e69fd40-4a9e-5e10-9519-bdedf329fc5a",
+      "playerLessons": 4,
+      "chapters": [
+        "Career connections",
+        "Club record",
+        "Defining moments",
+        "Legacy"
+      ],
+      "missingAreas": [],
+      "complete": true
+    },
+    {
+      "key": "roadmap-player-benzema",
+      "name": "Karim Benzema",
+      "entityID": "516dc90c-1930-55c9-8451-222e2f978492",
+      "playerLessons": 4,
+      "chapters": [
+        "Career connections",
+        "Club record",
+        "Defining moments",
+        "Legacy"
+      ],
+      "missingAreas": [],
+      "complete": true
+    },
+    {
+      "key": "roadmap-player-zidane",
+      "name": "Zinedine Zidane",
+      "entityID": "854aaf92-2049-5d52-84ae-fda49a4db06b",
+      "playerLessons": 4,
+      "chapters": [
+        "Career connections",
+        "Club record",
+        "Defining moments",
+        "Legacy"
+      ],
+      "missingAreas": [],
+      "complete": true
+    },
+    {
+      "key": "roadmap-player-bale",
+      "name": "Gareth Bale",
+      "entityID": "8dffe727-4d2b-57e0-9d4a-01cbc5c11750",
+      "playerLessons": 4,
+      "chapters": [
+        "Career connections",
+        "Club record",
+        "Defining moments",
+        "Legacy"
+      ],
+      "missingAreas": [],
+      "complete": true
+    },
+    {
+      "key": "roadmap-player-roberto-carlos",
+      "name": "Roberto Carlos",
+      "entityID": "37cc2db9-2bd3-5c73-9db8-dd6eb12a965f",
+      "playerLessons": 4,
+      "chapters": [
+        "Career connections",
+        "Club record",
+        "Defining moments",
+        "Legacy"
+      ],
+      "missingAreas": [],
+      "complete": true
+    },
+    {
+      "key": "roadmap-player-di-stefano",
+      "name": "Alfredo Di Stéfano",
+      "entityID": "3a30414f-c384-57b6-99e8-0942bba4f3c2",
+      "playerLessons": 4,
+      "chapters": [
+        "Career connections",
+        "Club record",
+        "Defining moments",
+        "Legacy"
+      ],
+      "missingAreas": [],
+      "complete": true
+    },
+    {
+      "key": "roadmap-player-gerrard",
+      "name": "Steven Gerrard",
+      "entityID": "c51f3b5d-f99c-58de-b4c1-2f817143ee50",
+      "playerLessons": 4,
+      "chapters": [
+        "Career connections",
+        "Club record",
+        "Defining moments",
+        "Records & honours"
+      ],
+      "missingAreas": [],
+      "complete": true
+    },
+    {
+      "key": "roadmap-player-rush",
+      "name": "Ian Rush",
+      "entityID": "d066463b-055b-59d9-954e-88626cd227b5",
+      "playerLessons": 4,
+      "chapters": [
+        "Career connections",
+        "Club record",
+        "Defining moments",
+        "Records & honours"
+      ],
+      "missingAreas": [],
+      "complete": true
+    },
+    {
+      "key": "roadmap-player-messi",
+      "name": "Lionel Messi",
+      "entityID": "b90eba0f-1daa-5ff8-bd41-975717c7b031",
+      "playerLessons": 4,
+      "chapters": [
+        "Career connections",
+        "Club record",
+        "Records & honours",
+        "Defining moments"
+      ],
+      "missingAreas": [],
+      "complete": true
+    },
+    {
+      "key": "roadmap-player-xavi",
+      "name": "Xavi Hernández",
+      "entityID": "35490236-9116-5478-8f88-b64c8765422a",
+      "playerLessons": 5,
+      "chapters": [
+        "Career connections",
+        "Club record",
+        "Records & honours",
+        "Career journey",
+        "Defining moments"
+      ],
+      "missingAreas": [],
+      "complete": true
+    },
+    {
+      "key": "roadmap-player-lahm",
+      "name": "Philipp Lahm",
+      "entityID": "b6304872-540d-5ab6-a2bd-d27fdd54cec8",
+      "playerLessons": 4,
+      "chapters": [
+        "Career connections",
+        "Club record",
+        "Defining moments"
+      ],
+      "missingAreas": [],
+      "complete": true
+    },
+    {
+      "key": "roadmap-player-schweinsteiger",
+      "name": "Bastian Schweinsteiger",
+      "entityID": "31468ad2-f7d9-5f1c-9e3c-79bd6e6accb9",
+      "playerLessons": 4,
+      "chapters": [
+        "Career connections",
+        "Club record",
+        "Defining moments"
+      ],
+      "missingAreas": [],
+      "complete": true
+    },
+    {
+      "key": "roadmap-player-thierry-henry",
+      "name": "Thierry Henry",
+      "entityID": "0fee3ca7-d6fd-55ec-8791-2b7d89786068",
+      "playerLessons": 4,
+      "chapters": [
+        "Career connections",
+        "Club record",
+        "Defining moments",
+        "Records & honours"
+      ],
+      "missingAreas": [],
+      "complete": true
+    },
+    {
+      "key": "roadmap-player-dennis-bergkamp",
+      "name": "Dennis Bergkamp",
+      "entityID": "48fc2cd4-e278-5a1b-8e75-827169520b41",
+      "playerLessons": 4,
+      "chapters": [
+        "Career connections",
+        "Club record",
+        "Defining moments",
+        "Records & honours"
+      ],
+      "missingAreas": [],
+      "complete": true
+    },
+    {
+      "key": "roadmap-player-stefan-kiessling",
+      "name": "Stefan Kießling",
+      "entityID": "4010807c-d653-5ec2-9751-6c0996e4e016",
+      "playerLessons": 4,
+      "chapters": [
+        "Career journey",
+        "Defining moments",
+        "Records & honours",
+        "Legacy"
+      ],
+      "missingAreas": [],
+      "complete": true
+    },
+    {
+      "key": "roadmap-player-patrik-schick",
+      "name": "Patrik Schick",
+      "entityID": "9089e6de-6f68-5300-91ef-fc116796720a",
+      "playerLessons": 4,
+      "chapters": [
+        "Career journey",
+        "Defining moments",
+        "Records & honours",
+        "Legacy"
+      ],
+      "missingAreas": [],
+      "complete": true
+    },
+    {
+      "key": "roadmap-player-marco-reus",
+      "name": "Marco Reus",
+      "entityID": "0d5fc0eb-1fe1-5ccc-8914-d1e92f755ebc",
+      "playerLessons": 4,
+      "chapters": [
+        "Career journey",
+        "Defining moments",
+        "Records & honours",
+        "Legacy"
+      ],
+      "missingAreas": [],
+      "complete": true
+    },
+    {
+      "key": "roadmap-player-robert-lewandowski",
+      "name": "Robert Lewandowski",
+      "entityID": "2494ebb4-6f39-54db-a26d-096951e94d2f",
+      "playerLessons": 4,
+      "chapters": [
+        "Career journey",
+        "Defining moments",
+        "Records & honours",
+        "Legacy"
+      ],
+      "missingAreas": [],
+      "complete": true
+    },
+    {
+      "key": "roadmap-player-del-piero",
+      "name": "Alessandro Del Piero",
+      "entityID": "898e2d56-5e93-57f3-b6f5-956b6c3b94e9",
+      "playerLessons": 4,
+      "chapters": [
+        "Career journey",
+        "Defining moments",
+        "Records & honours",
+        "Legacy"
+      ],
+      "missingAreas": [],
+      "complete": true
+    },
+    {
+      "key": "roadmap-player-buffon",
+      "name": "Gianluigi Buffon",
+      "entityID": "83ad18c8-a55d-5f72-8bb3-5128e8645bd6",
+      "playerLessons": 4,
+      "chapters": [
+        "Career journey",
+        "Defining moments",
+        "Records & honours",
+        "Legacy"
+      ],
+      "missingAreas": [],
+      "complete": true
+    },
+    {
+      "key": "roadmap-player-zanetti",
+      "name": "Javier Zanetti",
+      "entityID": "ad462461-0900-529f-a05d-885e9715fa50",
+      "playerLessons": 4,
+      "chapters": [
+        "Career journey",
+        "Defining moments",
+        "Records & honours",
+        "Legacy"
+      ],
+      "missingAreas": [],
+      "complete": true
+    },
+    {
+      "key": "roadmap-player-milito",
+      "name": "Diego Milito",
+      "entityID": "91d21d1b-2fe3-556f-b7db-eb3f86cf7c94",
+      "playerLessons": 4,
+      "chapters": [
+        "Career journey",
+        "Defining moments",
+        "Records & honours",
+        "Legacy"
+      ],
+      "missingAreas": [],
+      "complete": true
+    },
+    {
+      "key": "roadmap-player-maradona",
+      "name": "Diego Maradona",
+      "entityID": "63edd321-f754-5b4a-a4a5-95a6189643e6",
+      "playerLessons": 4,
+      "chapters": [
+        "Career journey",
+        "Defining moments",
+        "Records & honours",
+        "Legacy"
+      ],
+      "missingAreas": [],
+      "complete": true
+    },
+    {
+      "key": "roadmap-player-hamsik",
+      "name": "Marek Hamšík",
+      "entityID": "10061c34-4fb8-5e16-accb-c06cdbf40fbe",
+      "playerLessons": 4,
+      "chapters": [
+        "Career journey",
+        "Defining moments",
+        "Records & honours",
+        "Legacy"
+      ],
+      "missingAreas": [],
+      "complete": true
+    },
+    {
+      "key": "roadmap-player-henry-martin",
+      "name": "Henry Martín",
+      "entityID": "093d3ddc-9a9f-5823-8d15-2b882ab92c73",
+      "playerLessons": 4,
+      "chapters": [
+        "Records & honours",
+        "Defining moments",
+        "Career journey"
+      ],
+      "missingAreas": [],
+      "complete": true
+    },
+    {
+      "key": "roadmap-player-guillermo-ochoa",
+      "name": "Guillermo Ochoa",
+      "entityID": "7e28a7e2-5cf6-53f5-9040-e00db0018e54",
+      "playerLessons": 4,
+      "chapters": [
+        "Career journey",
+        "Defining moments",
+        "Records & honours"
+      ],
+      "missingAreas": [],
+      "complete": true
+    },
+    {
+      "key": "roadmap-player-chicharito",
+      "name": "Javier Hernández",
+      "entityID": "dffb40d2-26a3-5e4f-8f9e-3b61a984237f",
+      "playerLessons": 4,
+      "chapters": [
+        "Career journey",
+        "Records & honours",
+        "Defining moments"
+      ],
+      "missingAreas": [],
+      "complete": true
+    },
+    {
+      "key": "roadmap-player-carlos-salcido",
+      "name": "Carlos Salcido",
+      "entityID": "25071451-a973-549e-b5ac-66f4534c203c",
+      "playerLessons": 4,
+      "chapters": [
+        "Career journey",
+        "Defining moments",
+        "Records & honours"
+      ],
+      "missingAreas": [],
+      "complete": true
+    },
+    {
+      "key": "roadmap-player-jose-saturnino-cardozo",
+      "name": "José Saturnino Cardozo",
+      "entityID": "7c3d1a93-4af5-568e-a9bb-ff8976b63aaa",
+      "playerLessons": 4,
+      "chapters": [
+        "Defining moments",
+        "Career journey",
+        "Records & honours"
+      ],
+      "missingAreas": [],
+      "complete": true
+    },
+    {
+      "key": "roadmap-player-hernan-cristante",
+      "name": "Hernán Cristante",
+      "entityID": "77291959-13f6-5725-9a26-4fcbe46da9ad",
+      "playerLessons": 4,
+      "chapters": [
+        "Career journey",
+        "Defining moments",
+        "Records & honours",
+        "Legacy"
+      ],
+      "missingAreas": [],
+      "complete": true
+    }
+  ],
+  "completedClubs": 13,
+  "totalClubs": 69,
+  "completedPlayers": 36,
+  "totalPlayers": 36
+}

@@ -1,0 +1,2699 @@
+{
+  "sources": [
+    {
+      "key": "bayern-history",
+      "title": "Bayern history: 1966–1979, the golden years",
+      "url": "https://fcbayern.com/en/club/history/mile-stones/1966-to-1979-golden-years",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "bayern-treble",
+      "title": "Bayern Munich: the historic treble",
+      "url": "https://fcbayern.com/en/club/history/mile-stones/2010-to-2013-the-historic-treble",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "bayern-lahm",
+      "title": "Philipp Lahm | FC Bayern Hall of Fame",
+      "url": "https://fcbayern.com/en/club/hall-of-fame/philipp-lahm",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "bayern-schwein",
+      "title": "Bastian Schweinsteiger | FC Bayern Hall of Fame",
+      "url": "https://fcbayern.com/en/club/hall-of-fame/bastian-schweinsteiger",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "bayern-2013",
+      "title": "Dominance and trophies",
+      "url": "https://fcbayern.com/en/club/history/mile-stones/2013-to-2019-dominance-and-trophies",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "bvb-history",
+      "title": "1989 – The Peak",
+      "url": "https://www.bvb.de/de/en/borussia-dortmund/history/decades/1989.html",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "bvb-2009",
+      "title": "2009 – Departure and ambitions",
+      "url": "https://www.bvb.de/de/en/borussia-dortmund/history/decades/2009.html",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "bvb-1997",
+      "title": "A victory against all the odds, a triumph for the ages",
+      "url": "https://www.bvb.de/de/en/news/news-overview/news.html/eng/News/Overview/A-victory-against-all-the-odds-a-triumph-for-the-ages.html",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "bvb-reus",
+      "title": "Marco Reus: A great career in numbers",
+      "url": "https://www.bvb.de/de/en/news/news-overview/news.html/eng/News/Overview/Marco-Reus-A-great-career-in-numbers.html",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "bvb-reus2",
+      "title": "Marco Reus contract extension and career figures",
+      "url": "https://www.bvb.de/de/en/news/news-overview/news.html/eng/News/Overview/Marco-Reus-signs-long-term-contract-extension-until-2023.html",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "bvb-lewy",
+      "title": "Robert Lewandowski joins BVB",
+      "url": "https://www.bvb.de/de/de/aktuelles/news/news.html/News/Uebersicht/Robert-Lewandowski-kommt-zum-BVB.html",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "bvb-lewy103",
+      "title": "All 103 BVB goals scored by Robert Lewandowski",
+      "url": "https://tv.bvb.de/en/videos/2024-2025/news/all-103-bvb-goals-scored-by-robert-lewandowski/",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "bvb-double",
+      "title": "Dortmund at the Double: history in the making in 2012",
+      "url": "https://www.bvb.de/de/en/news/news-overview/news.html/eng/News/Overview/BVB-rewrote-history-in-2012-with-stunning-cup-final-win.html",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "bayer-history",
+      "title": "120 years of Bayer 04 Leverkusen: Timeline",
+      "url": "https://www.bayer04.de/en-us/news/bayer04/120-years-of-bayer-04-leverkusen-timeline",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "bayer-1988",
+      "title": "The background to the miracle of Leverkusen – 35 years on",
+      "url": "https://www.bayer04.de/en-us/news/bayer04/miscellaneous-the-background-to-the-miracle-of-leverkusen-35-years-on",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "bayer-2024",
+      "title": "Bayer 04 Bundesliga 2023/24 season",
+      "url": "https://www.bayer04.de/en-us/competition/202324-season-1/bundesliga",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "bayer-kies",
+      "title": "Legends: Stefan Kießling - goalscorer, team player and club idol",
+      "url": "https://www.bayer04.de/en-us/news/bayer04/legends-stefan-kiessling-goalscorer-team-player-and-club-idol",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "bayer-schick",
+      "title": "World class striker Patrik Schick signs new deal",
+      "url": "https://www.bayer04.de/en-us/news/bayer04/world-class-striker-patrik-schick-signs-new-deal",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "bayer-schick4",
+      "title": "Schick scores four in record 7-1 home win",
+      "url": "https://www.bayer04.de/en-us/news/bundesliga/schick-scores-four-in-record-7-1-home-win",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "bayer-schickseason",
+      "title": "Player of the season 2021/22: Schick at the top",
+      "url": "https://www.bayer04.de/de-de/news/bayer04/spieler-der-saison-202122-schick-an-der-spitze",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "bayern-cwc",
+      "title": "Winner 2013 · FIFA Club World Cup",
+      "url": "https://fcbayern.com/en/club/honours/fifa-club-world-cup/winner-2013",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "bayern-wolfsburg-2015",
+      "title": "Bayern 5–1 Wolfsburg, 22 September 2015 match report",
+      "url": "https://fcbayern.com/en/news/matchreports/2015/09/match-report-fc-bayern---vfl-wolfsburg-220915",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "bayer-2024-cup-final",
+      "title": "Werkself beat Kaiserslautern 1-0 to win 2023/24 DFB Pokal",
+      "url": "https://www.bayer04.de/en-us/news/dfb-pokal/werkself-beat-kaiserslautern-1-0-to-win-202324-dfb-pokal",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "bvb-reus-footballer-award",
+      "title": "Marco Reus ist Fußballer des Jahres",
+      "url": "https://www.bvb.de/de/de/aktuelles/news/news.html/News/Uebersicht/Marco-Reus-ist-Fussballer-des-Jahres.html",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "bayer-2024-title-review",
+      "title": "Review of the double-winning season, part two: Everlasting success",
+      "url": "https://www.bayer04.de/en-us/news/bayer04/review-of-the-double-winning-season-part-two-everlasting-success",
+      "verifiedAt": "2026-10-10"
+    }
+  ],
+  "players": [
+    {
+      "key": "entity-stefan-kiessling",
+      "name": "Stefan Kießling",
+      "aliases": [
+        "Stefan Kiessling",
+        "Kießling",
+        "Kiessling"
+      ],
+      "visual": "SK",
+      "clubKey": "entity-bayer-leverkusen",
+      "seedID": "player-386",
+      "seedName": "Stefan Kiessling"
+    },
+    {
+      "key": "entity-patrik-schick",
+      "name": "Patrik Schick",
+      "aliases": [
+        "Patrick Schick",
+        "Schick"
+      ],
+      "visual": "PS",
+      "clubKey": "entity-bayer-leverkusen",
+      "seedID": "player-11",
+      "seedName": "Patrick Schick"
+    },
+    {
+      "key": "entity-marco-reus",
+      "name": "Marco Reus",
+      "aliases": [
+        "Reus"
+      ],
+      "visual": "MR",
+      "clubKey": "entity-borussia-dortmund",
+      "seedID": "player-187",
+      "seedName": "Marco Reus"
+    },
+    {
+      "key": "entity-robert-lewandowski",
+      "name": "Robert Lewandowski",
+      "aliases": [
+        "Lewandowski"
+      ],
+      "visual": "RL",
+      "clubKey": "entity-borussia-dortmund",
+      "seedID": "player-18",
+      "seedName": "Robert Lewandowski"
+    }
+  ],
+  "lessons": [
+    {
+      "key": "lesson-curriculum-bayern-history-era",
+      "subjectKey": "entity-bayern-munich",
+      "clubKey": "entity-bayern-munich",
+      "title": "Bayern · building a European powerhouse",
+      "subtitle": "Bayern’s club timeline moves from its early success into the modern European era. The 1970s bec",
+      "chapter": "history",
+      "story": [
+        {
+          "title": "Set the scene",
+          "body": "Bayern’s club timeline moves from its early success into the modern European era. The 1970s became a defining period as domestic titles and European Cups brought a Munich side onto the continent’s biggest stage."
+        },
+        {
+          "title": "Remember the detail",
+          "body": "The club’s milestones point to 1974, 1975 and 1976 as a three-year European Cup run. Those wins made the team of Beckenbauer, Maier and Müller a lasting reference point."
+        }
+      ],
+      "facts": [
+        {
+          "key": "bayern-history-era-f1",
+          "label": "First European Cup",
+          "prompt": "In what year did Bayern win its first European Cup?",
+          "answers": [
+            "1974"
+          ],
+          "distractors": [
+            "1972",
+            "1976",
+            "1982"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "1974",
+            "number": 1974,
+            "unit": "year"
+          },
+          "scope": "Bayern first European Cup win.",
+          "sourceKey": "bayern-history",
+          "evidence": "The club timeline lists Bayern as European Cup winners in 1974."
+        },
+        {
+          "key": "bayern-history-era-f2",
+          "label": "Consecutive European wins",
+          "prompt": "How many European Cups did Bayern win consecutively from 1974 through 1976?",
+          "answers": [
+            "3"
+          ],
+          "distractors": [
+            "2",
+            "4",
+            "5"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "3",
+            "number": 3,
+            "unit": "titles"
+          },
+          "scope": "Bayern European Cups in 1974, 1975 and 1976.",
+          "sourceKey": "bayern-history",
+          "evidence": "The timeline records titles in 1974, 1975 and 1976."
+        },
+        {
+          "key": "bayern-history-era-f3",
+          "label": "First Bundesliga title",
+          "prompt": "In what year did Bayern win their first Bundesliga championship?",
+          "answers": [
+            "1969"
+          ],
+          "distractors": [
+            "1965",
+            "1972",
+            "1974"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "1969",
+            "number": 1969,
+            "unit": "year"
+          },
+          "scope": "Bayern first Bundesliga title.",
+          "sourceKey": "bayern-history",
+          "evidence": "The club history identifies 1969 as the first Bundesliga title."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-bayern-treble-moment",
+      "subjectKey": "entity-bayern-munich",
+      "clubKey": "entity-bayern-munich",
+      "title": "Bayern · the 2013 treble",
+      "subtitle": "Jupp Heynckes’s Bayern turned the 2012/13 season into the club’s first treble: Bundesliga, DFB ",
+      "chapter": "moments",
+      "story": [
+        {
+          "title": "Set the scene",
+          "body": "Jupp Heynckes’s Bayern turned the 2012/13 season into the club’s first treble: Bundesliga, DFB Cup and Champions League. A strong league campaign had its title wrapped up early."
+        },
+        {
+          "title": "Remember the detail",
+          "body": "The European final at Wembley against Borussia Dortmund supplied the season’s defining night. Arjen Robben scored the late winner, sealing the Champions League and completing the set."
+        }
+      ],
+      "facts": [
+        {
+          "key": "bayern-treble-moment-f1",
+          "label": "League clinching matchday",
+          "prompt": "On which matchday did Bayern secure the 2012/13 Bundesliga title?",
+          "answers": [
+            "28"
+          ],
+          "distractors": [
+            "26",
+            "30",
+            "34"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "28",
+            "number": 28,
+            "unit": "matchday"
+          },
+          "scope": "2012/13 Bundesliga title clinch.",
+          "sourceKey": "bayern-treble",
+          "evidence": "Bayern’s historic treble account says the first trophy was secured after 28 Bundesliga games."
+        },
+        {
+          "key": "bayern-treble-moment-f2",
+          "label": "Champions League final opponent",
+          "prompt": "Which German club did Bayern beat in the 2013 Champions League final?",
+          "answers": [
+            "Borussia Dortmund"
+          ],
+          "distractors": [
+            "Bayer 04 Leverkusen",
+            "FC Schalke 04",
+            "SV Werder Bremen"
+          ],
+          "value": {
+            "kind": "entity",
+            "display": "Borussia Dortmund",
+            "entityKey": "entity-borussia-dortmund"
+          },
+          "scope": "2013 UEFA Champions League final opponent.",
+          "sourceKey": "bayern-treble",
+          "evidence": "The club account describes the Wembley final against Borussia Dortmund."
+        },
+        {
+          "key": "bayern-treble-moment-f3",
+          "label": "Treble season",
+          "prompt": "In which season did Bayern complete the club’s first treble?",
+          "answers": [
+            "2012/13"
+          ],
+          "distractors": [
+            "2010/11",
+            "2011/12",
+            "2013/14"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "2012/13",
+            "text": "2012/13"
+          },
+          "scope": "Bayern first treble season.",
+          "sourceKey": "bayern-treble",
+          "evidence": "The milestone chapter names 2012/13 as the historic treble season."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-bayern-2015-wolfsburg",
+      "subjectKey": "entity-bayern-munich",
+      "clubKey": "entity-bayern-munich",
+      "title": "Bayern · five goals in nine minutes",
+      "subtitle": "On 22 September 2015, Bayern trailed Wolfsburg at half-time. Robert Lewandowski entered from th",
+      "chapter": "moments",
+      "story": [
+        {
+          "title": "Set the scene",
+          "body": "On 22 September 2015, Bayern trailed Wolfsburg at half-time. Robert Lewandowski entered from the bench and changed the match in a burst that became one of the Bundesliga’s most famous scoring feats."
+        },
+        {
+          "title": "Remember the detail",
+          "body": "His goals came in minutes 51, 52, 54, 57 and 60. The five-goal spell turned a 0–1 deficit into a 5–1 Bayern win."
+        }
+      ],
+      "facts": [
+        {
+          "key": "bayern-2015-wolfsburg-f1",
+          "label": "Opponent",
+          "prompt": "Which team was Bayern playing when Lewandowski scored five times in nine minutes?",
+          "answers": [
+            "VfL Wolfsburg"
+          ],
+          "distractors": [
+            "Borussia Dortmund",
+            "Mainz 05",
+            "Hamburger SV"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "VfL Wolfsburg",
+            "text": "VfL Wolfsburg"
+          },
+          "scope": "Bayern match on 22 September 2015.",
+          "sourceKey": "bayern-wolfsburg-2015",
+          "evidence": "The official match report identifies Wolfsburg as Bayern’s opponent."
+        },
+        {
+          "key": "bayern-2015-wolfsburg-f2",
+          "label": "First goal minute",
+          "prompt": "In which minute did Lewandowski score the first of his five goals?",
+          "answers": [
+            "51"
+          ],
+          "distractors": [
+            "49",
+            "52",
+            "54"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "51",
+            "number": 51,
+            "unit": "minute"
+          },
+          "scope": "Lewandowski five-goal performance.",
+          "sourceKey": "bayern-wolfsburg-2015",
+          "evidence": "The match report lists his goals in the 51st, 52nd, 54th, 57th and 60th minutes."
+        },
+        {
+          "key": "bayern-2015-wolfsburg-f3",
+          "label": "Match result",
+          "prompt": "What was the final score of Bayern’s match against Wolfsburg?",
+          "answers": [
+            "5–1"
+          ],
+          "distractors": [
+            "4–1",
+            "5–0",
+            "6–1"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "5–1",
+            "text": "5–1"
+          },
+          "scope": "22 September 2015 Bundesliga match.",
+          "sourceKey": "bayern-wolfsburg-2015",
+          "evidence": "The official report headline and scoreline give Bayern 5, Wolfsburg 1.",
+          "scoreInput": {
+            "leftClubKey": "entity-bayern-munich",
+            "rightClubKey": "entity-wolfsburg",
+            "leftGoals": 5,
+            "rightGoals": 1
+          }
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-philipp-lahm-moments",
+      "subjectKey": "entity-lahm",
+      "clubKey": "entity-bayern-munich",
+      "title": "Philipp Lahm · leadership and beginnings",
+      "subtitle": "Lahm became Bayern captain in 2011 and led the club through its 2013 Champions League victory.",
+      "chapter": "moments",
+      "story": [
+        {
+          "title": "A steady captain",
+          "body": "Lahm became Bayern captain in 2011 and led the club through its 2013 Champions League victory."
+        },
+        {
+          "title": "From youth football",
+          "body": "He joined Bayern from FT Gern at age eleven and spent over two decades connected with the club, including a loan at Stuttgart."
+        }
+      ],
+      "facts": [
+        {
+          "key": "lahm-extra-captain-year",
+          "label": "Captaincy",
+          "prompt": "In what year did Lahm become Bayern captain?",
+          "answers": [
+            "2011"
+          ],
+          "distractors": [
+            "2009",
+            "2010",
+            "2012"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "2011",
+            "number": 2011,
+            "unit": "year"
+          },
+          "scope": "Lahm became Bayern captain in 2011.",
+          "sourceKey": "bayern-lahm",
+          "evidence": "Bayern states his Munich leadership role began in 2011."
+        },
+        {
+          "key": "lahm-extra-youth-age",
+          "label": "Youth arrival",
+          "prompt": "How old was Lahm when he joined Bayern from FT Gern?",
+          "answers": [
+            "11"
+          ],
+          "distractors": [
+            "9",
+            "10",
+            "13"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "11",
+            "number": 11,
+            "unit": "years old"
+          },
+          "scope": "Lahm joined Bayern youth from FT Gern.",
+          "sourceKey": "bayern-lahm",
+          "evidence": "The club biography says he joined FT Gern at age eleven."
+        },
+        {
+          "key": "lahm-extra-club-world-cup-final",
+          "label": "Club World Cup final opponent",
+          "prompt": "Which club did Bayern defeat in the 2013 FIFA Club World Cup final, with Lahm in the starting XI?",
+          "answers": [
+            "Raja Casablanca"
+          ],
+          "distractors": [
+            "Al Ahly",
+            "Guangzhou Evergrande",
+            "Monterrey"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Raja Casablanca",
+            "text": "Raja Casablanca"
+          },
+          "scope": "FIFA Club World Cup final played on 21 December 2013 in Marrakesh.",
+          "sourceKey": "bayern-cwc",
+          "evidence": "Bayern’s official final report gives the 2–0 scoreline against Raja Casablanca and lists Lahm in Bayern’s starting XI."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-bastian-schweinsteiger-moments",
+      "subjectKey": "entity-schweinsteiger",
+      "clubKey": "entity-bayern-munich",
+      "title": "Bastian Schweinsteiger · final setbacks and return",
+      "subtitle": "The 2012 Champions League final at Bayern’s home ground ended with a penalty miss for Schweinst",
+      "chapter": "moments",
+      "story": [
+        {
+          "title": "A painful final",
+          "body": "The 2012 Champions League final at Bayern’s home ground ended with a penalty miss for Schweinsteiger. He faced the setback again a year later at Wembley."
+        },
+        {
+          "title": "Back at the summit",
+          "body": "Bayern’s 2013 Champions League win completed his return from the previous final. In 2015, after 17 years at the club, he left for Manchester United."
+        }
+      ],
+      "facts": [
+        {
+          "key": "schwein-extra-2012-final",
+          "label": "Final setback",
+          "prompt": "Which club beat Bayern in the 2012 Champions League final after a penalty shootout?",
+          "answers": [
+            "Chelsea"
+          ],
+          "distractors": [
+            "Manchester United",
+            "Inter",
+            "Real Madrid"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Chelsea",
+            "text": "Chelsea"
+          },
+          "scope": "2012 Champions League final at Bayern’s home ground.",
+          "sourceKey": "bayern-schwein",
+          "evidence": "Bayern records his penalty miss in the final against Chelsea."
+        },
+        {
+          "key": "schwein-extra-2015-titles",
+          "label": "Titles at Bayern departure",
+          "prompt": "How many titles had Schweinsteiger won at Bayern by the time he left in 2015?",
+          "answers": [
+            "20"
+          ],
+          "distractors": [
+            "18",
+            "19",
+            "22"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "20",
+            "number": 20,
+            "unit": "titles"
+          },
+          "scope": "Schweinsteiger’s Bayern career when he moved to Manchester United in July 2015.",
+          "sourceKey": "bayern-2013",
+          "evidence": "Bayern’s 2013–19 history article says Schweinsteiger left after 17 years, 20 trophies and 500 competitive games."
+        },
+        {
+          "key": "schwein-extra-departure",
+          "label": "Bayern departure",
+          "prompt": "After how many years at Bayern did Schweinsteiger leave in 2015?",
+          "answers": [
+            "17"
+          ],
+          "distractors": [
+            "15",
+            "16",
+            "18"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "17",
+            "number": 17,
+            "unit": "years"
+          },
+          "scope": "Bayern playing career ended in 2015.",
+          "sourceKey": "bayern-schwein",
+          "evidence": "The Hall of Fame describes his Bayern tenure as 17 years."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-bvb-1997-era",
+      "subjectKey": "entity-borussia-dortmund",
+      "clubKey": "entity-borussia-dortmund",
+      "title": "Dortmund · the Hitzfeld ascent",
+      "subtitle": "Ottmar Hitzfeld’s Dortmund rose through the Bundesliga in the 1990s. The club won consecutive l",
+      "chapter": "history",
+      "story": [
+        {
+          "title": "Set the scene",
+          "body": "Ottmar Hitzfeld’s Dortmund rose through the Bundesliga in the 1990s. The club won consecutive league titles before reaching the summit of Europe in 1997."
+        },
+        {
+          "title": "Remember the detail",
+          "body": "The Champions League final paired Dortmund with defending champions Juventus in Munich. Dortmund won 3–1, becoming the first German club to win the competition in its then-current Champions League format."
+        }
+      ],
+      "facts": [
+        {
+          "key": "bvb-1997-era-f1",
+          "label": "First league title in era",
+          "prompt": "In which year did Dortmund first win the Bundesliga under this 1990s title run?",
+          "answers": [
+            "1995"
+          ],
+          "distractors": [
+            "1992",
+            "1994",
+            "1996"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "1995",
+            "number": 1995,
+            "unit": "year"
+          },
+          "scope": "Dortmund Bundesliga title in Hitzfeld era.",
+          "sourceKey": "bvb-1997",
+          "evidence": "BVB history dates the championship return to 1995."
+        },
+        {
+          "key": "bvb-1997-era-f2",
+          "label": "European final opponent",
+          "prompt": "Which club did Dortmund defeat in the 1997 Champions League final?",
+          "answers": [
+            "Juventus"
+          ],
+          "distractors": [
+            "Man United",
+            "Real Madrid",
+            "Toluca"
+          ],
+          "value": {
+            "kind": "entity",
+            "display": "Juventus",
+            "entityKey": "entity-juventus"
+          },
+          "scope": "1997 Champions League final.",
+          "sourceKey": "bvb-1997",
+          "evidence": "BVB’s official retrospective names Juventus as the opponent."
+        },
+        {
+          "key": "bvb-1997-era-f3",
+          "label": "Final score",
+          "prompt": "What was the score in Dortmund’s 1997 Champions League final win?",
+          "answers": [
+            "3–1"
+          ],
+          "distractors": [
+            "2–0",
+            "2–1",
+            "4–1"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "3–1",
+            "text": "3–1"
+          },
+          "scope": "1997 final score.",
+          "sourceKey": "bvb-1997",
+          "evidence": "The club account records a 3–1 victory.",
+          "scoreInput": {
+            "leftClubKey": "entity-borussia-dortmund",
+            "rightClubKey": "entity-juventus",
+            "leftGoals": 3,
+            "rightGoals": 1
+          }
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-bvb-2012-double",
+      "subjectKey": "entity-borussia-dortmund",
+      "clubKey": "entity-borussia-dortmund",
+      "title": "Dortmund · a record-setting double",
+      "subtitle": "Dortmund defended the Bundesliga title in 2012 and then won the DFB Pokal final against Bayern.",
+      "chapter": "moments",
+      "story": [
+        {
+          "title": "Set the scene",
+          "body": "Dortmund defended the Bundesliga title in 2012 and then won the DFB Pokal final against Bayern. It was the club’s first domestic double."
+        },
+        {
+          "title": "Remember the detail",
+          "body": "The league campaign closed with 81 points, then a Bundesliga record. In Berlin, Robert Lewandowski scored a hat-trick as Dortmund beat Bayern 5–2."
+        }
+      ],
+      "facts": [
+        {
+          "key": "bvb-2012-double-f1",
+          "label": "League points",
+          "prompt": "How many points did Dortmund collect in the 2011/12 Bundesliga season?",
+          "answers": [
+            "81"
+          ],
+          "distractors": [
+            "75",
+            "78",
+            "84"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "81",
+            "number": 81,
+            "unit": "points"
+          },
+          "scope": "2011/12 Bundesliga campaign.",
+          "sourceKey": "bvb-double",
+          "evidence": "BVB describes the 81-point total as an all-time Bundesliga record at the time."
+        },
+        {
+          "key": "bvb-2012-double-f2",
+          "label": "Cup final opponent",
+          "prompt": "Which team did Dortmund beat 5–2 in the 2012 DFB Pokal final?",
+          "answers": [
+            "Bayern Munich"
+          ],
+          "distractors": [
+            "Bayer 04 Leverkusen",
+            "FC Schalke 04",
+            "SV Werder Bremen"
+          ],
+          "value": {
+            "kind": "entity",
+            "display": "Bayern Munich",
+            "entityKey": "entity-bayern-munich"
+          },
+          "scope": "2012 DFB Pokal final.",
+          "sourceKey": "bvb-double",
+          "evidence": "The official report names Bayern as the final opponent."
+        },
+        {
+          "key": "bvb-2012-double-f3",
+          "label": "First domestic double",
+          "prompt": "In which year did Dortmund win the club’s first league-and-cup double?",
+          "answers": [
+            "2012"
+          ],
+          "distractors": [
+            "1997",
+            "2011",
+            "2013"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "2012",
+            "number": 2012,
+            "unit": "year"
+          },
+          "scope": "Dortmund first Bundesliga and DFB Pokal double.",
+          "sourceKey": "bvb-double",
+          "evidence": "BVB states it achieved its first double in 2012."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-bvb-2013-final",
+      "subjectKey": "entity-borussia-dortmund",
+      "clubKey": "entity-borussia-dortmund",
+      "title": "Dortmund · Wembley’s all-German final",
+      "subtitle": "Dortmund’s 2012/13 European run carried Jürgen Klopp’s side to Wembley. A 4–1 first-leg win ove",
+      "chapter": "moments",
+      "story": [
+        {
+          "title": "Set the scene",
+          "body": "Dortmund’s 2012/13 European run carried Jürgen Klopp’s side to Wembley. A 4–1 first-leg win over Real Madrid in the semi-final put them within reach of the Champions League final."
+        },
+        {
+          "title": "Remember the detail",
+          "body": "The final became the first all-German pairing in the competition. Bayern won 2–1 with a late Arjen Robben goal, leaving Dortmund as runners-up."
+        }
+      ],
+      "facts": [
+        {
+          "key": "bvb-2013-final-f1",
+          "label": "Semi-final first leg",
+          "prompt": "What was Dortmund’s score against Real Madrid in the semi-final first leg?",
+          "answers": [
+            "4–1"
+          ],
+          "distractors": [
+            "3–0",
+            "3–1",
+            "4–0"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "4–1",
+            "text": "4–1"
+          },
+          "scope": "2012/13 Champions League semi-final first leg.",
+          "sourceKey": "bvb-2009",
+          "evidence": "BVB’s history account reports the 4–1 first-leg victory.",
+          "scoreInput": {
+            "leftClubKey": "entity-borussia-dortmund",
+            "rightClubKey": "entity-madrid",
+            "leftGoals": 4,
+            "rightGoals": 1
+          }
+        },
+        {
+          "key": "bvb-2013-final-f2",
+          "label": "Final opponent",
+          "prompt": "Which club beat Dortmund in the 2013 Champions League final?",
+          "answers": [
+            "Bayern Munich"
+          ],
+          "distractors": [
+            "Real Madrid",
+            "Juventus",
+            "Toluca"
+          ],
+          "value": {
+            "kind": "entity",
+            "display": "Bayern Munich",
+            "entityKey": "entity-bayern-munich"
+          },
+          "scope": "2013 Champions League final.",
+          "sourceKey": "bvb-2009",
+          "evidence": "The BVB account says they lost 1–2 to Bayern in Wembley."
+        },
+        {
+          "key": "bvb-2013-final-f3",
+          "label": "Final score",
+          "prompt": "What was the score in the 2013 final?",
+          "answers": [
+            "2–1"
+          ],
+          "distractors": [
+            "1–0",
+            "3–1",
+            "2–0"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "2–1",
+            "text": "2–1"
+          },
+          "scope": "2013 UEFA Champions League final.",
+          "sourceKey": "bvb-2009",
+          "evidence": "BVB’s retrospective records a 1–2 defeat.",
+          "scoreInput": {
+            "leftClubKey": "entity-bayern-munich",
+            "rightClubKey": "entity-borussia-dortmund",
+            "leftGoals": 2,
+            "rightGoals": 1
+          }
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-marco-reus-career",
+      "subjectKey": "entity-marco-reus",
+      "clubKey": "entity-borussia-dortmund",
+      "title": "Marco Reus · career",
+      "subtitle": "Marco Reus arrived in Dortmund from Borussia Mönchengladbach in 2012.",
+      "chapter": "career",
+      "story": [
+        {
+          "title": "Set the scene",
+          "body": "Marco Reus arrived in Dortmund from Borussia Mönchengladbach in 2012."
+        },
+        {
+          "title": "Remember the detail",
+          "body": "The starting points of a player’s club story help anchor the later goals and honors."
+        }
+      ],
+      "facts": [
+        {
+          "key": "marco-reus-career-f1",
+          "label": "Previous club",
+          "prompt": "Which club did Reus join Dortmund from in 2012?",
+          "answers": [
+            "Borussia Mönchengladbach"
+          ],
+          "distractors": [
+            "Bayern München",
+            "Bayer 04 Leverkusen",
+            "FC Schalke 04"
+          ],
+          "value": {
+            "kind": "entity",
+            "display": "Borussia Mönchengladbach",
+            "entityKey": "entity-borussia-monchengladbach"
+          },
+          "scope": "Reus transfer to Dortmund in summer 2012.",
+          "sourceKey": "bvb-reus",
+          "evidence": "BVB’s career-in-numbers feature says he moved from Borussia Mönchengladbach."
+        },
+        {
+          "key": "marco-reus-career-f2",
+          "label": "First home goal opponent",
+          "prompt": "Against whom did Reus score his first home goal for Dortmund?",
+          "answers": [
+            "Werder Bremen"
+          ],
+          "distractors": [
+            "Hamburger SV",
+            "Real Madrid",
+            "Toluca"
+          ],
+          "value": {
+            "kind": "entity",
+            "display": "Werder Bremen",
+            "entityKey": "entity-werder-bremen"
+          },
+          "scope": "First home goal, 24 August 2012.",
+          "sourceKey": "bvb-reus",
+          "evidence": "The BVB account identifies the 1–0 goal against Werder."
+        },
+        {
+          "key": "marco-reus-career-f3",
+          "label": "First home goal year",
+          "prompt": "In what year did Reus score his first home goal for Dortmund?",
+          "answers": [
+            "2012"
+          ],
+          "distractors": [
+            "2011",
+            "2013",
+            "2014"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "2012",
+            "number": 2012,
+            "unit": "year"
+          },
+          "scope": "First home goal for BVB.",
+          "sourceKey": "bvb-reus",
+          "evidence": "The club dates the match to 24 August 2012."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-marco-reus-moments",
+      "subjectKey": "entity-marco-reus",
+      "clubKey": "entity-borussia-dortmund",
+      "title": "Reus’s bittersweet 2017 cup final",
+      "subtitle": "A first major BVB trophy came with a serious injury.",
+      "chapter": "moments",
+      "story": [
+        {
+          "title": "The first major trophy",
+          "body": "Reus won his first major title with Dortmund in the 2017 DFB-Pokal final against Eintracht Frankfurt."
+        },
+        {
+          "title": "Success and setback",
+          "body": "He suffered a cruciate ligament tear in that same final. BVB’s 2018 contract announcement looks back on the trophy and the recovery together."
+        }
+      ],
+      "facts": [
+        {
+          "key": "marco-reus-moments-f1",
+          "label": "First major trophy",
+          "prompt": "Which competition gave Reus his first major title with BVB in 2017?",
+          "answers": [
+            "DFB-Pokal"
+          ],
+          "distractors": [
+            "Bundesliga",
+            "Champions League",
+            "DFB Supercup"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "DFB-Pokal",
+            "text": "DFB-Pokal"
+          },
+          "scope": "Reus’s first major BVB trophy, 2017 cup final.",
+          "sourceKey": "bvb-reus2",
+          "evidence": "BVB’s 2018 extension article describes his first major title in the 2017 cup final."
+        },
+        {
+          "key": "marco-reus-moments-f2",
+          "label": "Final opponent",
+          "prompt": "Who faced Reus’s Dortmund in the 2017 DFB-Pokal final?",
+          "answers": [
+            "Eintracht Frankfurt",
+            "Frankfurt"
+          ],
+          "distractors": [
+            "Bayern München",
+            "Real Madrid",
+            "Bayer 04 Leverkusen"
+          ],
+          "value": {
+            "kind": "entity",
+            "display": "Eintracht Frankfurt",
+            "entityKey": "entity-eintracht-frankfurt"
+          },
+          "scope": "2017 DFB-Pokal final, not his 2012 debut.",
+          "sourceKey": "bvb-reus2",
+          "evidence": "The extension article names Eintracht Frankfurt as the cup-final opponent."
+        },
+        {
+          "key": "marco-reus-moments-f3",
+          "label": "Cup final injury year",
+          "prompt": "In what year did Reus tear his cruciate ligament in the DFB Cup final?",
+          "answers": [
+            "2017"
+          ],
+          "distractors": [
+            "2015",
+            "2016",
+            "2018"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "2017",
+            "number": 2017,
+            "unit": "year"
+          },
+          "scope": "2017 DFB Cup final.",
+          "sourceKey": "bvb-reus2",
+          "evidence": "BVB’s contract account says he tore his cruciate ligament in the 2017 final."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-marco-reus-records",
+      "subjectKey": "entity-marco-reus",
+      "clubKey": "entity-borussia-dortmund",
+      "title": "Marco Reus · records",
+      "subtitle": "Marco Reus left measurable marks in Dortmund’s record book and in the club’s defining matches.",
+      "chapter": "records",
+      "story": [
+        {
+          "title": "Set the scene",
+          "body": "Marco Reus left measurable marks in Dortmund’s record book and in the club’s defining matches."
+        },
+        {
+          "title": "Remember the detail",
+          "body": "The figures here refer to the documented Dortmund context and the dated club retrospectives."
+        }
+      ],
+      "facts": [
+        {
+          "key": "marco-reus-records-f1",
+          "label": "Competitive goals before farewell",
+          "prompt": "How many competitive goals had Reus scored before his final home game in 2024?",
+          "answers": [
+            "169"
+          ],
+          "distractors": [
+            "159",
+            "179",
+            "189"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "169",
+            "number": 169,
+            "unit": "goals"
+          },
+          "scope": "BVB competitive total reported before his final home game.",
+          "sourceKey": "bvb-reus",
+          "evidence": "BVB reported 169 goals in 427 competitive games before the Darmstadt match."
+        },
+        {
+          "key": "marco-reus-records-f2",
+          "label": "Competitive appearances before farewell",
+          "prompt": "How many competitive games had Reus played before his final home game?",
+          "answers": [
+            "427"
+          ],
+          "distractors": [
+            "407",
+            "417",
+            "447"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "427",
+            "number": 427,
+            "unit": "games"
+          },
+          "scope": "BVB total before Darmstadt home farewell.",
+          "sourceKey": "bvb-reus",
+          "evidence": "The same BVB career feature states 427 competitive games."
+        },
+        {
+          "key": "marco-reus-records-f3",
+          "label": "Bundesliga openers",
+          "prompt": "How many of Reus’s Bundesliga goals for BVB were the opening goal at time of the club retrospective?",
+          "answers": [
+            "47"
+          ],
+          "distractors": [
+            "39",
+            "42",
+            "52"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "47",
+            "number": 47,
+            "unit": "goals"
+          },
+          "scope": "BVB Bundesliga goals through 2024 career retrospective.",
+          "sourceKey": "bvb-reus",
+          "evidence": "BVB says 47 of 119 league goals were openers."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-marco-reus-legacy",
+      "subjectKey": "entity-marco-reus",
+      "clubKey": "entity-borussia-dortmund",
+      "title": "Marco Reus · legacy",
+      "subtitle": "Marco Reus became part of a defining Dortmund era through both individual achievements and team",
+      "chapter": "legacy",
+      "story": [
+        {
+          "title": "Set the scene",
+          "body": "Marco Reus became part of a defining Dortmund era through both individual achievements and team success."
+        },
+        {
+          "title": "Remember the detail",
+          "body": "He earned Germany’s Footballer of the Year award in 2012 and again after 2018/19. The separate 2018 figure of 101 Bundesliga goal contributions is a dated Dortmund total, not his eventual career total."
+        }
+      ],
+      "facts": [
+        {
+          "key": "marco-reus-legacy-f1",
+          "label": "Germany Footballer of the Year",
+          "prompt": "In which year did Reus first win Germany’s Footballer of the Year award?",
+          "answers": [
+            "2012"
+          ],
+          "distractors": [
+            "2011",
+            "2013",
+            "2014"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "2012",
+            "number": 2012,
+            "unit": "year"
+          },
+          "scope": "First award in 2012 while playing for Borussia Mönchengladbach.",
+          "sourceKey": "bvb-reus-footballer-award",
+          "evidence": "BVB’s 2019 award article explicitly identifies 2012 as his first award."
+        },
+        {
+          "key": "marco-reus-legacy-f2",
+          "label": "Repeated individual award",
+          "prompt": "How many Germany Footballer of the Year awards had Reus won after the 2018/19 season?",
+          "answers": [
+            "2"
+          ],
+          "distractors": [
+            "1",
+            "3",
+            "4"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "2",
+            "number": 2,
+            "unit": "awards"
+          },
+          "scope": "Awards in 2012 and 2019, as reported by BVB after 2018/19.",
+          "sourceKey": "bvb-reus-footballer-award",
+          "evidence": "The official 2019 article calls it his second award after 2012."
+        },
+        {
+          "key": "marco-reus-legacy-f3",
+          "label": "Bundesliga goal contributions",
+          "prompt": "How many Bundesliga goals had Reus scored or assisted for BVB since his 2012 return, as reported in 2018?",
+          "answers": [
+            "101"
+          ],
+          "distractors": [
+            "92",
+            "97",
+            "119"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "101",
+            "number": 101,
+            "unit": "goal contributions"
+          },
+          "scope": "BVB Bundesliga goals plus assists since summer 2012, as of 2018 report.",
+          "sourceKey": "bvb-reus2",
+          "evidence": "BVB’s extension article says he scored or assisted 101 league goals."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-robert-lewandowski-career",
+      "subjectKey": "entity-robert-lewandowski",
+      "clubKey": "entity-borussia-dortmund",
+      "title": "Robert Lewandowski · career",
+      "subtitle": "Lewandowski arrived from Lech Poznań as a 21-year-old Poland international in 2010.",
+      "chapter": "career",
+      "story": [
+        {
+          "title": "Set the scene",
+          "body": "Lewandowski arrived from Lech Poznań as a 21-year-old Poland international in 2010."
+        },
+        {
+          "title": "Remember the detail",
+          "body": "The starting points of a player’s club story help anchor the later goals and honors."
+        }
+      ],
+      "facts": [
+        {
+          "key": "robert-lewandowski-career-f1",
+          "label": "Previous club",
+          "prompt": "Which club did Lewandowski join Dortmund from?",
+          "answers": [
+            "Lech Poznań"
+          ],
+          "distractors": [
+            "Legia Warsaw",
+            "Bayern Munich",
+            "Ajax"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Lech Poznań",
+            "text": "Lech Poznań"
+          },
+          "scope": "2010 transfer to Borussia Dortmund.",
+          "sourceKey": "bvb-lewy",
+          "evidence": "BVB announcement says he transferred from Lech Poznań."
+        },
+        {
+          "key": "robert-lewandowski-career-f2",
+          "label": "Age at signing",
+          "prompt": "How old was Lewandowski when Dortmund announced his signing?",
+          "answers": [
+            "21"
+          ],
+          "distractors": [
+            "19",
+            "20",
+            "23"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "21",
+            "number": 21,
+            "unit": "years old"
+          },
+          "scope": "Age in 2010 announcement.",
+          "sourceKey": "bvb-lewy",
+          "evidence": "The official transfer announcement calls him 21 years old."
+        },
+        {
+          "key": "robert-lewandowski-career-f3",
+          "label": "Contract end date",
+          "prompt": "What was the end date of Lewandowski’s initial four-year BVB contract?",
+          "answers": [
+            "30 June 2014"
+          ],
+          "distractors": [
+            "30 June 2013",
+            "30 June 2015",
+            "30 June 2016"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "30 June 2014",
+            "text": "30 June 2014"
+          },
+          "scope": "Initial contract announced in summer 2010.",
+          "sourceKey": "bvb-lewy",
+          "evidence": "BVB says the four-year contract ran until 30 June 2014."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-robert-lewandowski-moments",
+      "subjectKey": "entity-robert-lewandowski",
+      "clubKey": "entity-borussia-dortmund",
+      "title": "Robert Lewandowski · moments",
+      "subtitle": "Robert Lewandowski built an identifiable run of turning points at Dortmund, from early mileston",
+      "chapter": "moments",
+      "story": [
+        {
+          "title": "Set the scene",
+          "body": "Robert Lewandowski built an identifiable run of turning points at Dortmund, from early milestones to cup-final moments."
+        },
+        {
+          "title": "Remember the detail",
+          "body": "Attach each event to its competition and season to keep the memory specific."
+        }
+      ],
+      "facts": [
+        {
+          "key": "robert-lewandowski-moments-f1",
+          "label": "First Bundesliga title year",
+          "prompt": "In which year did Lewandowski win his first Bundesliga title with Dortmund?",
+          "answers": [
+            "2011"
+          ],
+          "distractors": [
+            "2010",
+            "2012",
+            "2013"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "2011",
+            "number": 2011,
+            "unit": "year"
+          },
+          "scope": "Dortmund title during Lewandowski’s BVB career.",
+          "sourceKey": "bvb-double",
+          "evidence": "BVB history dates its return to the championship to 2011."
+        },
+        {
+          "key": "robert-lewandowski-moments-f2",
+          "label": "Hat-trick final year",
+          "prompt": "In what year did Lewandowski score a hat-trick in the DFB Pokal final against Bayern?",
+          "answers": [
+            "2012"
+          ],
+          "distractors": [
+            "2011",
+            "2013",
+            "2014"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "2012",
+            "number": 2012,
+            "unit": "year"
+          },
+          "scope": "Dortmund 5–2 final win over Bayern.",
+          "sourceKey": "bvb-double",
+          "evidence": "BVB states Lewandowski completed his hat-trick in the 2012 final."
+        },
+        {
+          "key": "robert-lewandowski-moments-f3",
+          "label": "2012 final goals",
+          "prompt": "How many goals did Lewandowski score in the 2012 DFB Pokal final?",
+          "answers": [
+            "3"
+          ],
+          "distractors": [
+            "2",
+            "4",
+            "5"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "3",
+            "number": 3,
+            "unit": "goals"
+          },
+          "scope": "DFB Pokal final versus Bayern, 2012.",
+          "sourceKey": "bvb-double",
+          "evidence": "The club report says he completed a hat-trick."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-robert-lewandowski-records",
+      "subjectKey": "entity-robert-lewandowski",
+      "clubKey": "entity-borussia-dortmund",
+      "title": "Robert Lewandowski · records",
+      "subtitle": "Robert Lewandowski left measurable marks in Dortmund’s record book and in the club’s defining m",
+      "chapter": "records",
+      "story": [
+        {
+          "title": "Set the scene",
+          "body": "Robert Lewandowski left measurable marks in Dortmund’s record book and in the club’s defining matches."
+        },
+        {
+          "title": "Remember the detail",
+          "body": "The figures here refer to the documented Dortmund context and the dated club retrospectives."
+        }
+      ],
+      "facts": [
+        {
+          "key": "robert-lewandowski-records-f1",
+          "label": "BVB career goals",
+          "prompt": "How many goals did Lewandowski score for Borussia Dortmund?",
+          "answers": [
+            "103"
+          ],
+          "distractors": [
+            "89",
+            "98",
+            "113"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "103",
+            "number": 103,
+            "unit": "goals"
+          },
+          "scope": "Completed Borussia Dortmund scoring total.",
+          "sourceKey": "bvb-lewy103",
+          "evidence": "BVB’s official archive describes the video collection as all 103 goals Lewandowski scored for the club."
+        },
+        {
+          "key": "robert-lewandowski-records-f2",
+          "label": "Double final score",
+          "prompt": "What was the score in Dortmund’s 2012 cup final win in which Lewandowski scored a hat-trick?",
+          "answers": [
+            "5–2"
+          ],
+          "distractors": [
+            "4–1",
+            "4–2",
+            "6–2"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "5–2",
+            "text": "5–2"
+          },
+          "scope": "2012 DFB Pokal final.",
+          "sourceKey": "bvb-double",
+          "evidence": "BVB’s retrospective reports a 5–2 win over Bayern.",
+          "scoreInput": {
+            "leftClubKey": "entity-borussia-dortmund",
+            "rightClubKey": "entity-bayern-munich",
+            "leftGoals": 5,
+            "rightGoals": 2
+          }
+        },
+        {
+          "key": "robert-lewandowski-records-f3",
+          "label": "League titles with Dortmund",
+          "prompt": "How many consecutive Bundesliga titles did Dortmund win during Lewandowski’s spell?",
+          "answers": [
+            "2"
+          ],
+          "distractors": [
+            "1",
+            "3",
+            "4"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "2",
+            "number": 2,
+            "unit": "titles"
+          },
+          "scope": "Dortmund won in 2011 and 2012.",
+          "sourceKey": "bvb-double",
+          "evidence": "BVB records titles in consecutive seasons 2011 and 2012."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-robert-lewandowski-legacy",
+      "subjectKey": "entity-robert-lewandowski",
+      "clubKey": "entity-borussia-dortmund",
+      "title": "Robert Lewandowski · legacy",
+      "subtitle": "Robert Lewandowski became part of a defining Dortmund era through both individual achievements ",
+      "chapter": "legacy",
+      "story": [
+        {
+          "title": "Set the scene",
+          "body": "Robert Lewandowski became part of a defining Dortmund era through both individual achievements and team success."
+        },
+        {
+          "title": "Remember the detail",
+          "body": "These details connect his personal story with the larger club history."
+        }
+      ],
+      "facts": [
+        {
+          "key": "robert-lewandowski-legacy-f1",
+          "label": "Polish national identity",
+          "prompt": "Which country’s national team did Lewandowski represent when he joined Dortmund?",
+          "answers": [
+            "Poland"
+          ],
+          "distractors": [
+            "Germany",
+            "Czech Republic",
+            "Austria"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Poland",
+            "text": "Poland"
+          },
+          "scope": "National identity in BVB transfer announcement.",
+          "sourceKey": "bvb-lewy",
+          "evidence": "The BVB announcement identifies him as a Polish international."
+        },
+        {
+          "key": "robert-lewandowski-legacy-f2",
+          "label": "International experience before BVB",
+          "prompt": "How many senior Poland appearances did Lewandowski have when BVB announced his signing in 2010?",
+          "answers": [
+            "20"
+          ],
+          "distractors": [
+            "6",
+            "12",
+            "40"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "20",
+            "number": 20,
+            "unit": "senior international appearances"
+          },
+          "scope": "Poland senior appearances at the June 2010 BVB signing announcement",
+          "sourceKey": "bvb-lewy",
+          "evidence": "The signing announcement reports 20 senior internationals for Poland at that point."
+        },
+        {
+          "key": "robert-lewandowski-legacy-f3",
+          "label": "An early cup honour",
+          "prompt": "In which year did Lewandowski win the Polish Cup with Lech Poznań before joining Dortmund?",
+          "answers": [
+            "2009"
+          ],
+          "distractors": [
+            "2007",
+            "2008",
+            "2011"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "2009",
+            "number": 2009,
+            "unit": "year"
+          },
+          "scope": "Lech Poznań Polish Cup honour reported at the 2010 BVB signing",
+          "sourceKey": "bvb-lewy",
+          "evidence": "BVB lists his Polish Cup win in 2009, separately from his 2010 league and scoring titles."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-bayer-1988-history",
+      "subjectKey": "entity-bayer-leverkusen",
+      "clubKey": "entity-bayer-leverkusen",
+      "title": "Leverkusen · the 1988 UEFA Cup miracle",
+      "subtitle": "Leverkusen’s first major trophy came in the 1988 UEFA Cup. Espanyol won the first leg 3–0, leav",
+      "chapter": "history",
+      "story": [
+        {
+          "title": "Set the scene",
+          "body": "Leverkusen’s first major trophy came in the 1988 UEFA Cup. Espanyol won the first leg 3–0, leaving the German side with a daunting task at home."
+        },
+        {
+          "title": "Remember the detail",
+          "body": "At the Ulrich Haberland Stadium on 18 May, Leverkusen matched the aggregate score and then won the shootout. The comeback became known as the Miracle of Leverkusen."
+        }
+      ],
+      "facts": [
+        {
+          "key": "bayer-1988-history-f1",
+          "label": "First-leg deficit",
+          "prompt": "By how many goals did Leverkusen trail after the first leg of the 1988 UEFA Cup final?",
+          "answers": [
+            "3"
+          ],
+          "distractors": [
+            "1",
+            "2",
+            "4"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "3",
+            "number": 3,
+            "unit": "goals"
+          },
+          "scope": "First leg at Espanyol in the 1988 UEFA Cup final.",
+          "sourceKey": "bayer-1988",
+          "evidence": "The club retrospective says Leverkusen lost the first leg 3–0."
+        },
+        {
+          "key": "bayer-1988-history-f2",
+          "label": "Return leg date",
+          "prompt": "On what date did Leverkusen win the return leg of the 1988 UEFA Cup final?",
+          "answers": [
+            "18 May 1988"
+          ],
+          "distractors": [
+            "4 May 1988",
+            "15 May 1988",
+            "25 May 1988"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "18 May 1988",
+            "text": "18 May 1988"
+          },
+          "scope": "UEFA Cup final second leg.",
+          "sourceKey": "bayer-1988",
+          "evidence": "The official club history dates the decisive home leg to 18 May 1988."
+        },
+        {
+          "key": "bayer-1988-history-f3",
+          "label": "Opponent",
+          "prompt": "Which club did Leverkusen defeat in the 1988 UEFA Cup final?",
+          "answers": [
+            "Espanyol"
+          ],
+          "distractors": [
+            "Barcelona",
+            "Werder Bremen",
+            "Feyenoord"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Espanyol",
+            "text": "Espanyol"
+          },
+          "scope": "1988 UEFA Cup final opponent.",
+          "sourceKey": "bayer-1988",
+          "evidence": "Bayer’s account identifies Espanyol as the two-legged final opponent."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-bayer-first-title",
+      "subjectKey": "entity-bayer-leverkusen",
+      "clubKey": "entity-bayer-leverkusen",
+      "title": "Leverkusen · first German championship",
+      "subtitle": "Bayer 04’s first Bundesliga championship arrived in 2024, ending Bayern Munich’s run of 11 cons",
+      "chapter": "moments",
+      "story": [
+        {
+          "title": "The title-clinching day",
+          "body": "On 14 April 2024, Leverkusen beat Werder Bremen 5–0 to clinch its first Bundesliga title."
+        },
+        {
+          "title": "Finish the league unbeaten",
+          "body": "The final matchday win against Augsburg completed the unbeaten league campaign. Keep that season-ending match separate from the earlier title-clinching win over Bremen."
+        }
+      ],
+      "facts": [
+        {
+          "key": "bayer-first-title-f1",
+          "label": "Title date",
+          "prompt": "On what date did Leverkusen clinch the 2023/24 Bundesliga title?",
+          "answers": [
+            "14 April 2024"
+          ],
+          "distractors": [
+            "7 April 2024",
+            "21 April 2024",
+            "18 May 2024"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "14 April 2024",
+            "text": "14 April 2024"
+          },
+          "scope": "First Bundesliga title clinched against Werder Bremen.",
+          "sourceKey": "bayer-2024-title-review",
+          "evidence": "Bayer’s match retrospective calls 14 April 2024 the historic title day."
+        },
+        {
+          "key": "bayer-first-title-f2",
+          "label": "Final match opponent",
+          "prompt": "Which team did Leverkusen beat on the final matchday to finish the league season unbeaten?",
+          "answers": [
+            "Augsburg"
+          ],
+          "distractors": [
+            "Werder Bremen",
+            "Mainz 05",
+            "Stuttgart"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Augsburg",
+            "text": "Augsburg"
+          },
+          "scope": "Final Bundesliga match of 2023/24.",
+          "sourceKey": "bayer-2024",
+          "evidence": "The club says its 2–1 win over Augsburg ensured the unbeaten campaign."
+        },
+        {
+          "key": "bayer-first-title-f3",
+          "label": "Title-clinching result",
+          "prompt": "What was Leverkusen’s score against Werder Bremen when it clinched the 2023/24 title?",
+          "answers": [
+            "5–0",
+            "5-0"
+          ],
+          "distractors": [
+            "3–0",
+            "4–1",
+            "2–0"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "5–0",
+            "text": "5–0"
+          },
+          "scope": "Bayer 04 first, Werder Bremen second; 14 April 2024 Bundesliga match.",
+          "sourceKey": "bayer-2024",
+          "evidence": "The official season results list Bayer 04 5–0 Werder Bremen on 14 April 2024.",
+          "scoreInput": {
+            "leftClubKey": "entity-bayer-leverkusen",
+            "rightClubKey": "entity-werder-bremen",
+            "leftGoals": 5,
+            "rightGoals": 0
+          }
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-bayer-2024-double",
+      "subjectKey": "entity-bayer-leverkusen",
+      "clubKey": "entity-bayer-leverkusen",
+      "title": "Leverkusen · the cup final seals the double",
+      "subtitle": "Xhaka’s strike secured the second half of the domestic double.",
+      "chapter": "moments",
+      "story": [
+        {
+          "title": "One goal in Berlin",
+          "body": "Leverkusen beat Kaiserslautern 1–0 in the 2023/24 DFB-Pokal final. Granit Xhaka scored the winner after 16 minutes."
+        },
+        {
+          "title": "A second cup",
+          "body": "This was Leverkusen’s second DFB-Pokal title. Paired with its first Bundesliga championship, the win completed the domestic double."
+        }
+      ],
+      "facts": [
+        {
+          "key": "bayer-2024-double-f1",
+          "label": "Cup-final scorer",
+          "prompt": "Who scored Leverkusen’s winner in the 2023/24 DFB-Pokal final?",
+          "answers": [
+            "Granit Xhaka",
+            "Xhaka"
+          ],
+          "distractors": [
+            "Florian Wirtz",
+            "Patrik Schick",
+            "Jeremie Frimpong"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Granit Xhaka",
+            "text": "Granit Xhaka"
+          },
+          "scope": "2023/24 DFB-Pokal final against Kaiserslautern.",
+          "sourceKey": "bayer-2024-cup-final",
+          "evidence": "The official match report identifies Xhaka as the winning scorer."
+        },
+        {
+          "key": "bayer-2024-double-f2",
+          "label": "DFB Pokal title count",
+          "prompt": "How many DFB Pokal titles had Leverkusen won by the end of 2023/24?",
+          "answers": [
+            "2"
+          ],
+          "distractors": [
+            "1",
+            "3",
+            "4"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "2",
+            "number": 2,
+            "unit": "titles"
+          },
+          "scope": "DFB Pokal wins in 1993 and 2024.",
+          "sourceKey": "bayer-2024-cup-final",
+          "evidence": "Bayer’s history profile states the club won the cup for the second time after 1993."
+        },
+        {
+          "key": "bayer-2024-double-f3",
+          "label": "Winning goal minute",
+          "prompt": "In which minute did Xhaka score in the 2023/24 DFB-Pokal final?",
+          "answers": [
+            "16"
+          ],
+          "distractors": [
+            "8",
+            "32",
+            "64"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "16",
+            "number": 16,
+            "unit": "minute"
+          },
+          "scope": "Xhaka’s winning goal against Kaiserslautern, 2023/24 DFB-Pokal final.",
+          "sourceKey": "bayer-2024-cup-final",
+          "evidence": "The official report and goals list give Xhaka’s goal as minute 16."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-stefan-kießling-career",
+      "subjectKey": "entity-stefan-kiessling",
+      "clubKey": "entity-bayer-leverkusen",
+      "title": "Stefan Kießling · career",
+      "subtitle": "Stefan Kießling built a memorable Bayer 04 story through a mix of personal milestones and defin",
+      "chapter": "career",
+      "story": [
+        {
+          "title": "Set the scene",
+          "body": "Stefan Kießling built a memorable Bayer 04 story through a mix of personal milestones and defining matchdays."
+        },
+        {
+          "title": "Remember the detail",
+          "body": "The dated details keep each achievement tied to its season, competition and Leverkusen context."
+        }
+      ],
+      "facts": [
+        {
+          "key": "stefan-kießling-career-f1",
+          "label": "Birthplace",
+          "prompt": "Where was Kießling born?",
+          "answers": [
+            "Lichtenfels"
+          ],
+          "distractors": [
+            "Leverkusen",
+            "Nuremberg",
+            "Riesa"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Lichtenfels",
+            "text": "Lichtenfels"
+          },
+          "scope": "Kießling birthplace.",
+          "sourceKey": "bayer-kies",
+          "evidence": "The Bayer profile identifies Lichtenfels in Franconia as his birthplace."
+        },
+        {
+          "key": "stefan-kießling-career-f2",
+          "label": "Previous club",
+          "prompt": "Which club did Kießling join Bayer 04 from?",
+          "answers": [
+            "1. FC Nürnberg"
+          ],
+          "distractors": [
+            "Dynamo Dresden",
+            "Bayern Munich",
+            "Borussia Dortmund"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "1. FC Nürnberg",
+            "text": "1. FC Nürnberg"
+          },
+          "scope": "Transfer to Leverkusen in 2006.",
+          "sourceKey": "bayer-kies",
+          "evidence": "The official profile lists Nürnberg as his previous club from 2001 to 2006."
+        },
+        {
+          "key": "stefan-kießling-career-f3",
+          "label": "Arrival at Bayer",
+          "prompt": "In which year did Kießling move from Nürnberg to Bayer 04?",
+          "answers": [
+            "2006"
+          ],
+          "distractors": [
+            "2004",
+            "2008",
+            "2010"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "2006",
+            "number": 2006,
+            "unit": "year"
+          },
+          "scope": "Kießling transfer to Bayer 04, recalled by the club in January 2026",
+          "sourceKey": "bayer-kies",
+          "evidence": "The official retrospective dates his move to Bayer 04 to 2006; it does not specify an exact transfer day."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-stefan-kießling-moments",
+      "subjectKey": "entity-stefan-kiessling",
+      "clubKey": "entity-bayer-leverkusen",
+      "title": "Stefan Kießling · moments",
+      "subtitle": "Stefan Kießling built a memorable Bayer 04 story through a mix of personal milestones and defin",
+      "chapter": "moments",
+      "story": [
+        {
+          "title": "Set the scene",
+          "body": "Stefan Kießling built a memorable Bayer 04 story through a mix of personal milestones and defining matchdays."
+        },
+        {
+          "title": "Remember the detail",
+          "body": "The dated details keep each achievement tied to its season, competition and Leverkusen context."
+        }
+      ],
+      "facts": [
+        {
+          "key": "stefan-kießling-moments-f1",
+          "label": "Top scorer season",
+          "prompt": "In which season did Kießling become Bundesliga top scorer?",
+          "answers": [
+            "2012/13"
+          ],
+          "distractors": [
+            "2010/11",
+            "2011/12",
+            "2013/14"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "2012/13",
+            "text": "2012/13"
+          },
+          "scope": "Bundesliga top scorer award.",
+          "sourceKey": "bayer-kies",
+          "evidence": "Bayer states he was top scorer in 2013 with 25 goals."
+        },
+        {
+          "key": "stefan-kießling-moments-f2",
+          "label": "The goalkeeper at Hamburg",
+          "prompt": "Which goalkeeper did Kießling beat for his decisive goal at Hamburg on the final day of 2012/13?",
+          "answers": [
+            "René Adler",
+            "Rene Adler"
+          ],
+          "distractors": [
+            "Manuel Neuer",
+            "Roman Weidenfeller",
+            "Jens Lehmann"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "René Adler",
+            "text": "René Adler"
+          },
+          "scope": "Last matchday of the 2012/13 Bundesliga season",
+          "sourceKey": "bayer-kies",
+          "evidence": "The club retrospective names his former teammate René Adler as the goalkeeper beaten by the decisive late goal."
+        },
+        {
+          "key": "stefan-kießling-moments-f3",
+          "label": "Goals in top-scoring season",
+          "prompt": "How many Bundesliga goals did Kießling score in 2012/13?",
+          "answers": [
+            "25"
+          ],
+          "distractors": [
+            "21",
+            "23",
+            "27"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "25",
+            "number": 25,
+            "unit": "goals"
+          },
+          "scope": "2012/13 Bundesliga season.",
+          "sourceKey": "bayer-kies",
+          "evidence": "Bayer’s official feature records 25 goals."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-stefan-kießling-records",
+      "subjectKey": "entity-stefan-kiessling",
+      "clubKey": "entity-bayer-leverkusen",
+      "title": "Stefan Kießling · records",
+      "subtitle": "Stefan Kießling built a memorable Bayer 04 story through a mix of personal milestones and defin",
+      "chapter": "records",
+      "story": [
+        {
+          "title": "Set the scene",
+          "body": "Stefan Kießling built a memorable Bayer 04 story through a mix of personal milestones and defining matchdays."
+        },
+        {
+          "title": "Remember the detail",
+          "body": "The dated details keep each achievement tied to its season, competition and Leverkusen context."
+        }
+      ],
+      "facts": [
+        {
+          "key": "stefan-kießling-records-f1",
+          "label": "Bayer appearances, all competitions",
+          "prompt": "How many total appearances did Kießling make for Bayer 04 across all competitions?",
+          "answers": [
+            "443"
+          ],
+          "distractors": [
+            "421",
+            "438",
+            "451"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "443",
+            "number": 443,
+            "unit": "appearances in all competitions"
+          },
+          "scope": "Completed Bayer 04 career through his final playing season in 2017/18; all competitions.",
+          "sourceKey": "bayer-kies",
+          "evidence": "Bayer’s 2026 legends retrospective reports 443 total Werkself games."
+        },
+        {
+          "key": "stefan-kießling-records-f2",
+          "label": "Bayer goals, all competitions",
+          "prompt": "How many goals did Kießling score for Bayer 04 across all competitions?",
+          "answers": [
+            "162"
+          ],
+          "distractors": [
+            "158",
+            "164",
+            "171"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "162",
+            "number": 162,
+            "unit": "goals in all competitions"
+          },
+          "scope": "Completed Bayer 04 career through his final playing season in 2017/18; all competitions.",
+          "sourceKey": "bayer-kies",
+          "evidence": "Bayer’s 2026 legends retrospective reports 162 Werkself goals."
+        },
+        {
+          "key": "stefan-kiessling-bundesliga-games",
+          "label": "Bayer Bundesliga appearances",
+          "prompt": "How many Bundesliga matches did Kießling play for Bayer 04?",
+          "answers": [
+            "344"
+          ],
+          "distractors": [
+            "334",
+            "350",
+            "354"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "344",
+            "number": 344,
+            "unit": "Bundesliga appearances"
+          },
+          "scope": "Completed Bayer 04 Bundesliga career, 2006–2018; league matches only.",
+          "sourceKey": "bayer-kies",
+          "evidence": "Bayer’s 2026 legends retrospective states he played 344 Bundesliga games for the Werkself."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-stefan-kießling-legacy",
+      "subjectKey": "entity-stefan-kiessling",
+      "clubKey": "entity-bayer-leverkusen",
+      "title": "Stefan Kießling · legacy",
+      "subtitle": "Stefan Kießling built a memorable Bayer 04 story through a mix of personal milestones and defin",
+      "chapter": "legacy",
+      "story": [
+        {
+          "title": "Set the scene",
+          "body": "Stefan Kießling built a memorable Bayer 04 story through a mix of personal milestones and defining matchdays."
+        },
+        {
+          "title": "Remember the detail",
+          "body": "The dated details keep each achievement tied to its season, competition and Leverkusen context."
+        }
+      ],
+      "facts": [
+        {
+          "key": "kiessling-retirement-year",
+          "label": "Final playing season",
+          "prompt": "In what year did Kießling’s playing career end?",
+          "answers": [
+            "2018"
+          ],
+          "distractors": [
+            "2016",
+            "2017",
+            "2019"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "2018",
+            "number": 2018,
+            "unit": "year"
+          },
+          "scope": "Kießling’s Bayer 04 playing career ended in May 2018.",
+          "sourceKey": "bayer-kies",
+          "evidence": "Bayer’s legends retrospective says his playing career ended in May 2018."
+        },
+        {
+          "key": "stefan-kießling-legacy-f2",
+          "label": "Team awards as top scorer",
+          "prompt": "For whom did Kießling have small replicas of the top-scorer trophy made?",
+          "answers": [
+            "His teammates and staff"
+          ],
+          "distractors": [
+            "Only the coaching staff",
+            "Only the supporters",
+            "His former club Nürnberg"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "His teammates and staff",
+            "text": "His teammates and staff"
+          },
+          "scope": "Kießling’s 2012/13 top-scorer recognition.",
+          "sourceKey": "bayer-kies",
+          "evidence": "Bayer recounts that he had a small duplicate made for each teammate and staff member."
+        },
+        {
+          "key": "stefan-kießling-legacy-f3",
+          "label": "Club role after retirement",
+          "prompt": "What honorary role did Kießling hold at Bayer 04 after his playing career?",
+          "answers": [
+            "Club representative"
+          ],
+          "distractors": [
+            "Head coach",
+            "Sporting director",
+            "Academy manager"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Club representative",
+            "text": "Club representative"
+          },
+          "scope": "Post-playing club role.",
+          "sourceKey": "bayer-kies",
+          "evidence": "Bayer announced him as official club representative in 2023."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-patrik-schick-career",
+      "subjectKey": "entity-patrik-schick",
+      "clubKey": "entity-bayer-leverkusen",
+      "title": "Patrik Schick · career",
+      "subtitle": "Patrik Schick built a memorable Bayer 04 story through a mix of personal milestones and definin",
+      "chapter": "career",
+      "story": [
+        {
+          "title": "Set the scene",
+          "body": "Patrik Schick built a memorable Bayer 04 story through a mix of personal milestones and defining matchdays."
+        },
+        {
+          "title": "Remember the detail",
+          "body": "The dated details keep each achievement tied to its season, competition and Leverkusen context."
+        }
+      ],
+      "facts": [
+        {
+          "key": "patrik-schick-career-f1",
+          "label": "Nationality",
+          "prompt": "Which country does Schick represent internationally?",
+          "answers": [
+            "Czech Republic"
+          ],
+          "distractors": [
+            "Germany",
+            "Poland",
+            "Slovakia"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Czech Republic",
+            "text": "Czech Republic"
+          },
+          "scope": "Schick national-team identity.",
+          "sourceKey": "bayer-schick",
+          "evidence": "Bayer identifies Schick as a Czech Republic international."
+        },
+        {
+          "key": "patrik-schick-career-f2",
+          "label": "From Roma to Leverkusen",
+          "prompt": "Which club did Bayer sign Schick from after his loan at RB Leipzig?",
+          "answers": [
+            "AS Roma",
+            "Roma"
+          ],
+          "distractors": [
+            "Sampdoria",
+            "Sparta Prague",
+            "Borussia Dortmund"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "AS Roma",
+            "text": "AS Roma"
+          },
+          "scope": "Schick transfer to Bayer in 2020, recounted in the 27 May 2022 extension article",
+          "sourceKey": "bayer-schick",
+          "evidence": "The club says Schick was signed from AS Roma after a loan at RB Leipzig."
+        },
+        {
+          "key": "patrik-schick-career-f3",
+          "label": "Contract extension year",
+          "prompt": "In which year did Bayer announce Schick’s contract extension through 2027?",
+          "answers": [
+            "2022"
+          ],
+          "distractors": [
+            "2020",
+            "2021",
+            "2023"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "2022",
+            "number": 2022,
+            "unit": "year"
+          },
+          "scope": "Contract announcement.",
+          "sourceKey": "bayer-schick",
+          "evidence": "The club announced the extension on 27 May 2022."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-patrik-schick-moments",
+      "subjectKey": "entity-patrik-schick",
+      "clubKey": "entity-bayer-leverkusen",
+      "title": "Patrik Schick · moments",
+      "subtitle": "Patrik Schick built a memorable Bayer 04 story through a mix of personal milestones and definin",
+      "chapter": "moments",
+      "story": [
+        {
+          "title": "Set the scene",
+          "body": "Patrik Schick built a memorable Bayer 04 story through a mix of personal milestones and defining matchdays."
+        },
+        {
+          "title": "Remember the detail",
+          "body": "The dated details keep each achievement tied to its season, competition and Leverkusen context."
+        }
+      ],
+      "facts": [
+        {
+          "key": "patrik-schick-moments-f1",
+          "label": "Four-goal match date",
+          "prompt": "On what date did Schick score four goals against Greuther Fürth?",
+          "answers": [
+            "4 December 2021"
+          ],
+          "distractors": [
+            "24 October 2021",
+            "11 December 2021",
+            "4 January 2022"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "4 December 2021",
+            "text": "4 December 2021"
+          },
+          "scope": "Bayer 7–1 home win.",
+          "sourceKey": "bayer-schick4",
+          "evidence": "Bayer’s match report dates the record win to 4 December 2021."
+        },
+        {
+          "key": "patrik-schick-moments-f2",
+          "label": "Four-goal opponent",
+          "prompt": "Against which club did Schick score four in a Bundesliga match?",
+          "answers": [
+            "SpVgg Greuther Fürth"
+          ],
+          "distractors": [
+            "FC Köln",
+            "RB Leipzig",
+            "VfL Wolfsburg"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "SpVgg Greuther Fürth",
+            "text": "SpVgg Greuther Fürth"
+          },
+          "scope": "Bayer’s biggest home Bundesliga win.",
+          "sourceKey": "bayer-schick4",
+          "evidence": "The club report identifies Greuther Fürth as the opponent."
+        },
+        {
+          "key": "patrik-schick-moments-f3",
+          "label": "Scoring milestone",
+          "prompt": "What distinction did Schick achieve with those four goals?",
+          "answers": [
+            "First Bayer 04 player to score four goals in a Bundesliga match"
+          ],
+          "distractors": [
+            "First Bayer player with a hat-trick in Europe",
+            "First Bayer player to score five in a match",
+            "Fastest Bayer goal in Bundesliga history"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "First Bayer 04 player to score four goals in a Bundesliga match",
+            "text": "First Bayer 04 player to score four goals in a Bundesliga match"
+          },
+          "scope": "Bundesliga single-match club milestone.",
+          "sourceKey": "bayer-schick4",
+          "evidence": "Bayer says Schick was the first club player to score four in a Bundesliga match."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-patrik-schick-records",
+      "subjectKey": "entity-patrik-schick",
+      "clubKey": "entity-bayer-leverkusen",
+      "title": "Patrik Schick · records",
+      "subtitle": "Patrik Schick built a memorable Bayer 04 story through a mix of personal milestones and definin",
+      "chapter": "records",
+      "story": [
+        {
+          "title": "Set the scene",
+          "body": "Patrik Schick built a memorable Bayer 04 story through a mix of personal milestones and defining matchdays."
+        },
+        {
+          "title": "Remember the detail",
+          "body": "The dated details keep each achievement tied to its season, competition and Leverkusen context."
+        }
+      ],
+      "facts": [
+        {
+          "key": "patrik-schick-records-f1",
+          "label": "League goals",
+          "prompt": "How many Bundesliga goals did Schick score in 2021/22?",
+          "answers": [
+            "24"
+          ],
+          "distractors": [
+            "20",
+            "22",
+            "27"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "24",
+            "number": 24,
+            "unit": "goals"
+          },
+          "scope": "Bayer Bundesliga output in 2021/22.",
+          "sourceKey": "bayer-schick",
+          "evidence": "Bayer records 24 goals in 27 appearances."
+        },
+        {
+          "key": "patrik-schick-records-f2",
+          "label": "Appearances",
+          "prompt": "In how many Bundesliga appearances did Schick score those 24 goals?",
+          "answers": [
+            "27"
+          ],
+          "distractors": [
+            "24",
+            "29",
+            "32"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "27",
+            "number": 27,
+            "unit": "appearances"
+          },
+          "scope": "2021/22 Bundesliga season.",
+          "sourceKey": "bayer-schick",
+          "evidence": "Bayer’s contract announcement specifies 24 goals in 27 games."
+        },
+        {
+          "key": "patrik-schick-records-f3",
+          "label": "Foreign scorer in one Bundesliga season",
+          "prompt": "What single-season scoring distinction did Schick achieve among foreign Bayer players with 24 Bundesliga goals in 2021/22?",
+          "answers": [
+            "Most prolific foreign goalscorer in one Bayer Bundesliga season"
+          ],
+          "distractors": [
+            "Most Bundesliga appearances by a foreign Bayer player",
+            "Most Bayer goals in a DFB Pokal season",
+            "Most assists by a foreign Bayer player"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Most prolific foreign goalscorer in one Bayer Bundesliga season",
+            "text": "Most prolific foreign goalscorer in one Bayer Bundesliga season"
+          },
+          "scope": "Patrik Schick’s 2021/22 Bayer Bundesliga campaign only; this is a single-season distinction, not a completed-career all-time total.",
+          "sourceKey": "bayer-schick",
+          "evidence": "Bayer’s 2022 announcement ties “most prolific foreign goalscorer” to the immediately preceding clause: 24 goals in 27 Bundesliga games in the 2021/22 season."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-patrik-schick-legacy",
+      "subjectKey": "entity-patrik-schick",
+      "clubKey": "entity-bayer-leverkusen",
+      "title": "Patrik Schick · legacy",
+      "subtitle": "Patrik Schick built a memorable Bayer 04 story through a mix of personal milestones and definin",
+      "chapter": "legacy",
+      "story": [
+        {
+          "title": "Set the scene",
+          "body": "Patrik Schick built a memorable Bayer 04 story through a mix of personal milestones and defining matchdays."
+        },
+        {
+          "title": "Remember the detail",
+          "body": "The dated details keep each achievement tied to its season, competition and Leverkusen context."
+        }
+      ],
+      "facts": [
+        {
+          "key": "patrik-schick-legacy-f1",
+          "label": "Werkself season record rank",
+          "prompt": "Where did Schick’s 24-goal season rank in Bayer’s single-season Bundesliga history?",
+          "answers": [
+            "Second"
+          ],
+          "distractors": [
+            "First",
+            "Third",
+            "Fourth"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Second",
+            "text": "Second"
+          },
+          "scope": "Club single-season scoring rank in 2021/22.",
+          "sourceKey": "bayer-schickseason",
+          "evidence": "Bayer says only Kießling scored more in a Werkself Bundesliga season."
+        },
+        {
+          "key": "patrik-schick-legacy-f2",
+          "label": "2021/22 player of season",
+          "prompt": "Which club’s supporters voted Schick their 2021/22 player of the season?",
+          "answers": [
+            "Bayer 04"
+          ],
+          "distractors": [
+            "Lech Poznań",
+            "RB Leipzig",
+            "Roma"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Bayer 04",
+            "text": "Bayer 04"
+          },
+          "scope": "Supporter award for Bayer 04 2021/22.",
+          "sourceKey": "bayer-schickseason",
+          "evidence": "Bayer’s 17 June 2022 announcement says fans and members voted Schick the 2021/22 player of the season."
+        },
+        {
+          "key": "patrik-schick-legacy-f3",
+          "label": "Goals per match interval",
+          "prompt": "On average, how often did Schick score a Bundesliga goal in 2021/22?",
+          "answers": [
+            "Every 87 minutes"
+          ],
+          "distractors": [
+            "Every 75 minutes",
+            "Every 94 minutes",
+            "Every 105 minutes"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Every 87 minutes",
+            "text": "Every 87 minutes"
+          },
+          "scope": "Schick’s 2021/22 league scoring rate.",
+          "sourceKey": "bayer-schickseason",
+          "evidence": "Bayer’s season award feature says he scored every 87 minutes."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-lahm-longevity-honours",
+      "subjectKey": "entity-lahm",
+      "clubKey": "entity-bayern-munich",
+      "title": "Philipp Lahm · longevity and honours",
+      "subtitle": "The lasting scale of a two-decade Bayern career",
+      "chapter": "moments",
+      "story": [
+        {
+          "title": "A long Bayern chapter",
+          "body": "Lahm spent more than twenty years connected to Bayern, beginning in the youth ranks and ending his playing career at 33."
+        },
+        {
+          "title": "A collection of titles",
+          "body": "Across 22 years with the club, he won 21 honours. The count shows the scale of the era he helped lead."
+        }
+      ],
+      "facts": [
+        {
+          "key": "lahm-extra-duration-honours",
+          "label": "Honours",
+          "prompt": "How many honours did Lahm win during his 22 years with Bayern?",
+          "answers": [
+            "21"
+          ],
+          "distractors": [
+            "18",
+            "20",
+            "23"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "21",
+            "number": 21,
+            "unit": "honours"
+          },
+          "scope": "Bayern honours across Lahm’s 22-year connection to the club.",
+          "sourceKey": "bayern-lahm",
+          "evidence": "Bayern’s Hall of Fame opens by noting he won 21 honours in 22 years with the club."
+        },
+        {
+          "key": "lahm-extra-retirement-age",
+          "label": "Retirement age",
+          "prompt": "How old was Lahm when he ended his playing career?",
+          "answers": [
+            "33"
+          ],
+          "distractors": [
+            "31",
+            "32",
+            "35"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "33",
+            "number": 33,
+            "unit": "years old"
+          },
+          "scope": "Age at end of playing career.",
+          "sourceKey": "bayern-lahm",
+          "evidence": "Bayern says he left a huge pair of shoes to fill at the end of his career aged 33."
+        },
+        {
+          "key": "lahm-extra-club-connection",
+          "label": "Bayern connection",
+          "prompt": "For how many years did Lahm have a connection with Bayern?",
+          "answers": [
+            "22"
+          ],
+          "distractors": [
+            "18",
+            "20",
+            "24"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "22",
+            "number": 22,
+            "unit": "years"
+          },
+          "scope": "Youth and senior connection to Bayern.",
+          "sourceKey": "bayern-lahm",
+          "evidence": "Bayern describes his honours over 22 years with the club."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-schweinsteiger-youth-to-first-team",
+      "subjectKey": "entity-schweinsteiger",
+      "clubKey": "entity-bayern-munich",
+      "title": "Bastian Schweinsteiger · from youth to first team",
+      "subtitle": "A teenage academy arrival grew into the Bayern senior side",
+      "chapter": "moments",
+      "story": [
+        {
+          "title": "Youth move",
+          "body": "At 13, Schweinsteiger moved from TSV 1860 Rosenheim to Bayern’s Säbener Straße academy. He collected titles with both the U17 and U19 teams."
+        },
+        {
+          "title": "First-team step",
+          "body": "The midfielder made his first-team debut at 18. His path from academy player to a central figure in the senior team started early."
+        }
+      ],
+      "facts": [
+        {
+          "key": "schwein-extra-youth-age",
+          "label": "Academy arrival",
+          "prompt": "How old was Schweinsteiger when he joined Bayern from TSV 1860 Rosenheim?",
+          "answers": [
+            "13"
+          ],
+          "distractors": [
+            "11",
+            "12",
+            "15"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "13",
+            "number": 13,
+            "unit": "years old"
+          },
+          "scope": "Bayern youth arrival.",
+          "sourceKey": "bayern-schwein",
+          "evidence": "The official Hall of Fame biography says he moved to Bayern at age 13."
+        },
+        {
+          "key": "schwein-extra-youth-titles",
+          "label": "Youth championships",
+          "prompt": "How many Bayern youth age groups did Schweinsteiger win a German championship with?",
+          "answers": [
+            "2"
+          ],
+          "distractors": [
+            "1",
+            "3",
+            "4"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "2",
+            "number": 2,
+            "unit": "age groups"
+          },
+          "scope": "He won German titles with both U17 and U19.",
+          "sourceKey": "bayern-schwein",
+          "evidence": "The biography says he won the German league title with the U19 and U17."
+        },
+        {
+          "key": "schwein-extra-debut-age",
+          "label": "First-team debut age",
+          "prompt": "How old was Schweinsteiger when he made his Bayern first-team debut?",
+          "answers": [
+            "18"
+          ],
+          "distractors": [
+            "16",
+            "17",
+            "20"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "18",
+            "number": 18,
+            "unit": "years old"
+          },
+          "scope": "Bayern first-team debut.",
+          "sourceKey": "bayern-schwein",
+          "evidence": "The biography says the midfielder made his first-team debut at age 18."
+        }
+      ]
+    }
+  ]
+}
