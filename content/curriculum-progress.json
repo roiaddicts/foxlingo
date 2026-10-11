@@ -1,6 +1,6 @@
 {
-  "contentVersion": 13,
-  "scope": "Existing club courses and authored player courses; game catalogs are excluded.",
+  "contentVersion": 14,
+  "scope": "Depth among offered club courses and authored player courses. Player course totals are not coverage of the full game catalog.",
   "clubs": [
     {
       "key": "roadmap-xolos",
@@ -117,11 +117,17 @@
     {
       "key": "roadmap-atletico-madrid",
       "name": "Atlético de Madrid",
-      "requiredLessons": 1,
-      "definingMomentLessons": 0,
-      "playerPaths": [],
-      "completePlayerPaths": [],
-      "complete": false
+      "requiredLessons": 12,
+      "definingMomentLessons": 2,
+      "playerPaths": [
+        "roadmap-player-fernando-torres",
+        "roadmap-player-griezmann"
+      ],
+      "completePlayerPaths": [
+        "roadmap-player-fernando-torres",
+        "roadmap-player-griezmann"
+      ],
+      "complete": true
     },
     {
       "key": "roadmap-atletico-san-luis",
@@ -264,11 +270,17 @@
     {
       "key": "roadmap-eintracht-frankfurt",
       "name": "Eintracht Frankfurt",
-      "requiredLessons": 1,
-      "definingMomentLessons": 0,
-      "playerPaths": [],
-      "completePlayerPaths": [],
-      "complete": false
+      "requiredLessons": 12,
+      "definingMomentLessons": 2,
+      "playerPaths": [
+        "roadmap-player-filip-kostic",
+        "roadmap-player-luka-jovic"
+      ],
+      "completePlayerPaths": [
+        "roadmap-player-filip-kostic",
+        "roadmap-player-luka-jovic"
+      ],
+      "complete": true
     },
     {
       "key": "roadmap-elversberg",
@@ -378,11 +390,17 @@
     {
       "key": "roadmap-leipzig",
       "name": "Leipzig",
-      "requiredLessons": 1,
-      "definingMomentLessons": 0,
-      "playerPaths": [],
-      "completePlayerPaths": [],
-      "complete": false
+      "requiredLessons": 12,
+      "definingMomentLessons": 2,
+      "playerPaths": [
+        "roadmap-player-timo-werner",
+        "roadmap-player-emil-forsberg"
+      ],
+      "completePlayerPaths": [
+        "roadmap-player-timo-werner",
+        "roadmap-player-emil-forsberg"
+      ],
+      "complete": true
     },
     {
       "key": "roadmap-lens",
@@ -438,11 +456,17 @@
     {
       "key": "roadmap-manchester-city",
       "name": "Man City",
-      "requiredLessons": 1,
-      "definingMomentLessons": 0,
-      "playerPaths": [],
-      "completePlayerPaths": [],
-      "complete": false
+      "requiredLessons": 12,
+      "definingMomentLessons": 2,
+      "playerPaths": [
+        "roadmap-player-david-silva",
+        "roadmap-player-aguero"
+      ],
+      "completePlayerPaths": [
+        "roadmap-player-david-silva",
+        "roadmap-player-aguero"
+      ],
+      "complete": true
     },
     {
       "key": "roadmap-manchester-united",
@@ -456,11 +480,17 @@
     {
       "key": "roadmap-monterrey",
       "name": "Monterrey",
-      "requiredLessons": 1,
-      "definingMomentLessons": 0,
-      "playerPaths": [],
-      "completePlayerPaths": [],
-      "complete": false
+      "requiredLessons": 12,
+      "definingMomentLessons": 2,
+      "playerPaths": [
+        "roadmap-player-rogelio-funes-mori",
+        "roadmap-player-humberto-suazo"
+      ],
+      "completePlayerPaths": [
+        "roadmap-player-rogelio-funes-mori",
+        "roadmap-player-humberto-suazo"
+      ],
+      "complete": true
     },
     {
       "key": "roadmap-napoli",
@@ -489,11 +519,17 @@
     {
       "key": "roadmap-pachuca",
       "name": "Pachuca",
-      "requiredLessons": 1,
-      "definingMomentLessons": 0,
-      "playerPaths": [],
-      "completePlayerPaths": [],
-      "complete": false
+      "requiredLessons": 12,
+      "definingMomentLessons": 2,
+      "playerPaths": [
+        "roadmap-player-miguel-calero",
+        "roadmap-player-hirving-lozano"
+      ],
+      "completePlayerPaths": [
+        "roadmap-player-miguel-calero",
+        "roadmap-player-hirving-lozano"
+      ],
+      "complete": true
     },
     {
       "key": "roadmap-paderborn-07",
@@ -516,11 +552,17 @@
     {
       "key": "roadmap-psg",
       "name": "Paris",
-      "requiredLessons": 1,
-      "definingMomentLessons": 0,
-      "playerPaths": [],
-      "completePlayerPaths": [],
-      "complete": false
+      "requiredLessons": 12,
+      "definingMomentLessons": 2,
+      "playerPaths": [
+        "roadmap-player-ibrahimovic",
+        "roadmap-player-mbappe"
+      ],
+      "completePlayerPaths": [
+        "roadmap-player-ibrahimovic",
+        "roadmap-player-mbappe"
+      ],
+      "complete": true
     },
     {
       "key": "roadmap-psv",
@@ -642,20 +684,32 @@
     {
       "key": "roadmap-stuttgart",
       "name": "Stuttgart",
-      "requiredLessons": 1,
-      "definingMomentLessons": 0,
-      "playerPaths": [],
-      "completePlayerPaths": [],
-      "complete": false
+      "requiredLessons": 12,
+      "definingMomentLessons": 2,
+      "playerPaths": [
+        "roadmap-player-jurgen-klinsmann",
+        "roadmap-player-mario-gomez"
+      ],
+      "completePlayerPaths": [
+        "roadmap-player-jurgen-klinsmann",
+        "roadmap-player-mario-gomez"
+      ],
+      "complete": true
     },
     {
       "key": "roadmap-tigres-uanl",
       "name": "Tigres UANL",
-      "requiredLessons": 1,
-      "definingMomentLessons": 0,
-      "playerPaths": [],
-      "completePlayerPaths": [],
-      "complete": false
+      "requiredLessons": 12,
+      "definingMomentLessons": 2,
+      "playerPaths": [
+        "roadmap-player-nahuel-guzman",
+        "roadmap-player-andre-pierre-gignac"
+      ],
+      "completePlayerPaths": [
+        "roadmap-player-nahuel-guzman",
+        "roadmap-player-andre-pierre-gignac"
+      ],
+      "complete": true
     },
     {
       "key": "roadmap-toluca",
@@ -1222,10 +1276,275 @@
       ],
       "missingAreas": [],
       "complete": true
+    },
+    {
+      "key": "roadmap-player-timo-werner",
+      "name": "Timo Werner",
+      "entityID": "d33cfc27-bf30-58fe-9067-ffbf5a783052",
+      "playerLessons": 4,
+      "chapters": [
+        "Career journey",
+        "Defining moments",
+        "Records & honours"
+      ],
+      "missingAreas": [],
+      "complete": true
+    },
+    {
+      "key": "roadmap-player-emil-forsberg",
+      "name": "Emil Forsberg",
+      "entityID": "fb97c811-8026-5fad-8c77-68e75a83c476",
+      "playerLessons": 4,
+      "chapters": [
+        "Career journey",
+        "Defining moments",
+        "Records & honours"
+      ],
+      "missingAreas": [],
+      "complete": true
+    },
+    {
+      "key": "roadmap-player-luka-jovic",
+      "name": "Luka Jović",
+      "entityID": "a229e7b3-a0a5-53ac-b524-baa161aa0255",
+      "playerLessons": 4,
+      "chapters": [
+        "Career journey",
+        "Defining moments",
+        "Records & honours",
+        "Legacy"
+      ],
+      "missingAreas": [],
+      "complete": true
+    },
+    {
+      "key": "roadmap-player-filip-kostic",
+      "name": "Filip Kostić",
+      "entityID": "99844757-bb4d-5a15-9f32-59a2c37d1fd0",
+      "playerLessons": 4,
+      "chapters": [
+        "Career journey",
+        "Defining moments",
+        "Records & honours"
+      ],
+      "missingAreas": [],
+      "complete": true
+    },
+    {
+      "key": "roadmap-player-mario-gomez",
+      "name": "Mario Gomez",
+      "entityID": "f79d349b-5015-5309-9541-4b4df5da8709",
+      "playerLessons": 4,
+      "chapters": [
+        "Career journey",
+        "Defining moments",
+        "Records & honours"
+      ],
+      "missingAreas": [],
+      "complete": true
+    },
+    {
+      "key": "roadmap-player-jurgen-klinsmann",
+      "name": "Jürgen Klinsmann",
+      "entityID": "23483445-a363-5901-8f3f-6a819147ba66",
+      "playerLessons": 4,
+      "chapters": [
+        "Career journey",
+        "Defining moments",
+        "Records & honours"
+      ],
+      "missingAreas": [],
+      "complete": true
+    },
+    {
+      "key": "roadmap-player-andre-pierre-gignac",
+      "name": "André-Pierre Gignac",
+      "entityID": "800c3eaa-1264-5ae1-8b9c-da6f778df4ff",
+      "playerLessons": 4,
+      "chapters": [
+        "Career journey",
+        "Records & honours",
+        "Legacy",
+        "Defining moments"
+      ],
+      "missingAreas": [],
+      "complete": true
+    },
+    {
+      "key": "roadmap-player-nahuel-guzman",
+      "name": "Nahuel Guzmán",
+      "entityID": "24d299a9-5826-57e1-8aef-64d1f55ec074",
+      "playerLessons": 4,
+      "chapters": [
+        "Career journey",
+        "Defining moments",
+        "Records & honours"
+      ],
+      "missingAreas": [],
+      "complete": true
+    },
+    {
+      "key": "roadmap-player-hirving-lozano",
+      "name": "Hirving Lozano",
+      "entityID": "a23e7afd-b5a9-56ae-8754-cf01334a3828",
+      "playerLessons": 4,
+      "chapters": [
+        "Records & honours",
+        "Career journey",
+        "Defining moments"
+      ],
+      "missingAreas": [],
+      "complete": true
+    },
+    {
+      "key": "roadmap-player-humberto-suazo",
+      "name": "Humberto Suazo",
+      "entityID": "b2f7678b-790d-5036-b89f-68d9cfc16394",
+      "playerLessons": 4,
+      "chapters": [
+        "Career journey",
+        "Defining moments",
+        "Records & honours"
+      ],
+      "missingAreas": [],
+      "complete": true
+    },
+    {
+      "key": "roadmap-player-rogelio-funes-mori",
+      "name": "Rogelio Funes Mori",
+      "entityID": "180c6153-6985-528f-b281-39969549f4d2",
+      "playerLessons": 4,
+      "chapters": [
+        "Career journey",
+        "Defining moments",
+        "Records & honours",
+        "Legacy"
+      ],
+      "missingAreas": [],
+      "complete": true
+    },
+    {
+      "key": "roadmap-player-miguel-calero",
+      "name": "Miguel Calero",
+      "entityID": "03e4171d-2437-5c2c-8a1c-45409d1f6ca7",
+      "playerLessons": 4,
+      "chapters": [
+        "Career journey",
+        "Defining moments",
+        "Records & honours"
+      ],
+      "missingAreas": [],
+      "complete": true
+    },
+    {
+      "key": "roadmap-player-mbappe",
+      "name": "Kylian Mbappé",
+      "entityID": "95d311b6-9095-5a99-8d16-1d6bd9873ac7",
+      "playerLessons": 4,
+      "chapters": [
+        "Career journey",
+        "Defining moments",
+        "Records & honours",
+        "Legacy"
+      ],
+      "missingAreas": [],
+      "complete": true
+    },
+    {
+      "key": "roadmap-player-ibrahimovic",
+      "name": "Zlatan Ibrahimović",
+      "entityID": "30515234-a983-574b-b5c2-7e66dc0b0152",
+      "playerLessons": 4,
+      "chapters": [
+        "Career journey",
+        "Defining moments",
+        "Records & honours",
+        "Legacy"
+      ],
+      "missingAreas": [],
+      "complete": true
+    },
+    {
+      "key": "roadmap-player-aguero",
+      "name": "Sergio Agüero",
+      "entityID": "abeb986f-f751-5215-9afc-e720e6fab2f1",
+      "playerLessons": 4,
+      "chapters": [
+        "Career journey",
+        "Defining moments",
+        "Records & honours",
+        "Legacy"
+      ],
+      "missingAreas": [],
+      "complete": true
+    },
+    {
+      "key": "roadmap-player-david-silva",
+      "name": "David Silva",
+      "entityID": "9006cd2c-28ac-5fac-b496-c356ab555ae0",
+      "playerLessons": 4,
+      "chapters": [
+        "Career journey",
+        "Defining moments",
+        "Records & honours",
+        "Legacy"
+      ],
+      "missingAreas": [],
+      "complete": true
+    },
+    {
+      "key": "roadmap-player-fernando-torres",
+      "name": "Fernando Torres",
+      "entityID": "657a0328-d32c-5161-8617-a929d7bd1c11",
+      "playerLessons": 4,
+      "chapters": [
+        "Career journey",
+        "Defining moments",
+        "Records & honours",
+        "Legacy"
+      ],
+      "missingAreas": [],
+      "complete": true
+    },
+    {
+      "key": "roadmap-player-griezmann",
+      "name": "Antoine Griezmann",
+      "entityID": "f0cc57fa-9f92-54a7-a391-670991f30316",
+      "playerLessons": 4,
+      "chapters": [
+        "Career journey",
+        "Defining moments",
+        "Records & honours",
+        "Legacy"
+      ],
+      "missingAreas": [],
+      "complete": true
     }
   ],
-  "completedClubs": 13,
+  "completedClubs": 22,
   "totalClubs": 69,
-  "completedPlayers": 36,
-  "totalPlayers": 36
+  "completedPlayers": 54,
+  "totalPlayers": 54,
+  "gameCatalogPlayerCoverage": {
+    "scope": "Unique supplied game-catalog player IDs with an explicit reviewed identity binding; no name-based guesses. This historical catalog is not a current squad list.",
+    "totalCatalogPlayers": 5274,
+    "playersWithAuthoredPaths": 41,
+    "playersMeetingDepthRequirements": 41,
+    "playersWithoutAuthoredPaths": 5233,
+    "independentPlayerPaths": [
+      "roadmap-player-riascos",
+      "roadmap-player-arce",
+      "roadmap-player-saucedo",
+      "roadmap-player-cristiano",
+      "roadmap-player-ramos",
+      "roadmap-player-casillas",
+      "roadmap-player-jose-saturnino-cardozo",
+      "roadmap-player-hernan-cristante",
+      "roadmap-player-andre-pierre-gignac",
+      "roadmap-player-nahuel-guzman",
+      "roadmap-player-humberto-suazo",
+      "roadmap-player-rogelio-funes-mori",
+      "roadmap-player-miguel-calero"
+    ]
+  }
 }

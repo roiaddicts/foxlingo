@@ -5,7 +5,7 @@ final class CurriculumExpansionTests: XCTestCase {
     func testNewPlayerCoursesTeachTheirOwnFactsAndShareCanonicalClubLessons() throws {
         let root=URL(fileURLWithPath:#filePath).deletingLastPathComponent().deletingLastPathComponent()
         let pack=try ContentPack.load(Data(contentsOf:root.appendingPathComponent("Foxlingo/Resources/starter-en.json")))
-        for key in ["entity-marco-reus","entity-patrik-schick","entity-buffon","entity-del-piero","entity-guillermo-ochoa","entity-jose-saturnino-cardozo","entity-hernan-cristante"] {
+        for key in ["entity-marco-reus","entity-patrik-schick","entity-buffon","entity-del-piero","entity-guillermo-ochoa","entity-jose-saturnino-cardozo","entity-hernan-cristante","entity-timo-werner","entity-mario-gomez","entity-hirving-lozano","entity-miguel-calero","entity-mbappe","entity-ibrahimovic","entity-aguero","entity-griezmann"] {
             let player=try XCTUnwrap(pack.entities.first {$0.key == key})
             let route=try XCTUnwrap(pack.playerRoadmaps.first {$0.entityID == player.id})
             let club=try XCTUnwrap(pack.clubRoadmaps.first {$0.clubID == route.clubID})

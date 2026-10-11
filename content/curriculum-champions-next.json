@@ -1,0 +1,3103 @@
+{
+  "sources": [
+    {
+      "key": "curriculum-next-psg-origin",
+      "title": "Where it all began: PSG’s origins",
+      "url": "https://www.psg.fr/en/content/the-paris-derby-where-it-all-began-psg-history-ligue-1-2025-2026",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "curriculum-next-psg-cup",
+      "title": "Il y a 30 ans, Paris remportait la Coupe des Vainqueurs de Coupe",
+      "url": "https://www.psg.fr/content/il-y-a-30-ans-paris-remportait-la-coupe-des-vainqueurs-de-coupe",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "curriculum-next-psg-1996",
+      "title": "25 years ago...Europe belongs to Paris",
+      "url": "https://en.psg.fr/teams/club/content/25-years-agoeurope-belongs-to-paris-saint-germain-sk-rapid-vienne-1995-1996",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "curriculum-next-psg-barca",
+      "title": "Brilliant Paris blow Barcelona away",
+      "url": "https://www.uefa.com/uefachampionsleague/news/0236-0e963887c498-42bc424b301f-1000--brilliant-paris-blow-barcelona-away/",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "curriculum-next-psg-mbappe",
+      "title": "Kylian Mbappé profile",
+      "url": "https://en.psg.fr/teams/first-team/squad/kylian-mbappe",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "curriculum-next-psg-mbappe201",
+      "title": "Kylian Mbappé becomes Paris Saint-Germain’s all-time top scorer",
+      "url": "https://en.psg.fr/teams/first-team/content/kylian-mbappe-becomes-paris-saint-germains-all-time-top-scorer-2022-2023",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "curriculum-next-psg-mbappe-barca",
+      "title": "Barcelona 1-4 Paris: Mbappé hits stunning hat-trick",
+      "url": "https://www.uefa.com/uefachampionsleague/news/0266-1197f34a1ce0-99c2ccf20bea-1000/",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "curriculum-next-psg-mbappe-final",
+      "title": "Paris 0-1 Bayern: Coman scores Champions League final winner",
+      "url": "https://www.uefa.com/uefachampionsleague/news/0260-1033c96091a1-3d127374ef80-1000--paris-0-1-bayern-coman-scores-champions-league-final-winner/",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "curriculum-next-psg-ibra",
+      "title": "Came like a king, left like a legend... Thanks, Zlatan!",
+      "url": "https://en.psg.fr/teams/club/content/came-like-a-king-left-like-a-legend-thanks-zlatan-ibrahimovic-paris-saint-germain-2022-2023",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "curriculum-next-psg-ibra-season",
+      "title": "2016, record season!",
+      "url": "https://en.psg.fr/teams/first-team/content/2016-record-season",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "curriculum-next-psg-ibra-cup",
+      "title": "La photo du jour: 21 mai... 2016!",
+      "url": "https://www.psg.fr/content/la-photo-du-jour-21-mai-2016-paris-saint-germain-histoire-2025-2026",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "curriculum-next-city-history",
+      "title": "Manchester City Honours And History",
+      "url": "https://www.mancity.com/club/manchester-city-history",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "curriculum-next-city-aguero",
+      "title": "Sergio Aguero",
+      "url": "https://www.mancity.com/mancitylegends/aguero-sergio",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "curriculum-next-city-aguero-final",
+      "title": "Aguero relives the QPR goal",
+      "url": "https://www.mancity.com/news/mens/sergio-aguero-relives-the-qpr-goal-and-names-his-second-favourite-season-63791231",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "curriculum-next-city-plrecords",
+      "title": "Premier League Club, Manager & Player Records",
+      "url": "https://www.premierleague.com/en/stats/records",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "curriculum-next-city-silva",
+      "title": "David Silva",
+      "url": "https://www.mancity.com/mancitylegends/silva-david",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "curriculum-next-city-silva-milestone",
+      "title": "Silva moves into all-time City top 10",
+      "url": "https://www.mancity.com/news/mens/david-silva-appearance-milestone-63733121",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "curriculum-next-city-silva-statue",
+      "title": "Silva’s 10-year City stay honoured with Etihad statue",
+      "url": "https://www.mancity.com/news/mens/david-silva-statue-khaldoon-al-mubarak-63733257",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "curriculum-next-city-silva-derby",
+      "title": "A City Decade: Silva Service - 10 years of magic",
+      "url": "https://www.mancity.com/news/first-team/first-team-news/2020/january/man-city-decade-david-silva-impact-stats",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "curriculum-next-city-ucl",
+      "title": "Man City win Champions League: Rodri goal secures victory against Inter and completes treble",
+      "url": "https://www.uefa.com/uefachampionsleague/news/0282-1839b24603ef-36e94e63621d-1000--highlights-report-man-city-win-champions-league/",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "curriculum-next-city-fa",
+      "title": "On this day: FA Cup winners!",
+      "url": "https://www.mancity.com/news/mens/on-this-day-14-may-man-city-win-fa-cup-2011-63724967",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "curriculum-next-atleti-intercontinental",
+      "title": "Campeón de la Intercontinental en el Calderón",
+      "url": "https://www.atleticodemadrid.com/noticias/campeon-de-la-intercontinental-en-el-calderon",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "curriculum-next-atleti-origin",
+      "title": "123 años de pasión",
+      "url": "https://www.atleticodemadrid.com/noticias/123-anos-de-pasion",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "curriculum-next-atleti-history",
+      "title": "Se cumplen 118 años de nuestro primer partido",
+      "url": "https://www.atleticodemadrid.com/noticias/se-cumplen-118-anos-de-nuestro-primer-partido",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "curriculum-next-atleti-title",
+      "title": "Godín heads Atlético to Liga title",
+      "url": "https://www.uefa.com/news-media/news/0215-0e8adc597e0f-6bf435e52eab-1000--godin-heads-atletico-to-liga-title/",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "curriculum-next-atleti-final",
+      "title": "Griezmann inspires Atlético to Europa League glory",
+      "url": "https://www.uefa.com/uefaeuropaleague/news/0245-0e98ccf1cec2-0418a5d239cc-1000--griezmann-inspires-atletico-to-europa-league-glory/",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "curriculum-next-atleti-torres",
+      "title": "See you soon, Fernando Torres",
+      "url": "https://en.atleticodemadrid.com/noticias/see-you-soon-fernando-torres",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "curriculum-next-atleti-torres-debut",
+      "title": "21 years since Fernando Torres made his debut",
+      "url": "https://www.atleticodemadrid.com/noticias/se-cumplen-21-anos-del-debut-de-fernando-torres",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "curriculum-next-atleti-griezmann",
+      "title": "Welcome back, Griezmann!",
+      "url": "https://en.atleticodemadrid.com/noticias/welcome-back-griezmann",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "curriculum-next-atleti-griezmann-record",
+      "title": "Antoine Griezmann equals Luis Aragonés as Atlético’s all-time leading scorer",
+      "url": "https://www.atleticodemadrid.com/noticias/antoine-griezmann-iguala-a-luis-aragones-como-maximo-goleador-historico",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "curriculum-next-atleti-griezmann-final",
+      "title": "Griezmann named official man of the match",
+      "url": "https://www.uefa.com/uefaeuropaleague/news/0245-0e98ccf1bf02-d01429ca84a2-1000--griezmann-named-official-man-of-the-match/",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "curriculum-next-ligue1-mbappe-monaco",
+      "title": "Rétro : Kylian Mbappé, une éclosion princière",
+      "url": "https://ligue1.com/fr/articles/l1_article_336-retro-kylian-mbappe-une-eclosion-princiere",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "curriculum-next-ligue1-awards",
+      "title": "Trophées UNFP : Palmarès des meilleurs joueurs",
+      "url": "https://ligue1.com/en/articles/l1_article_285-",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "curriculum-next-ligue1-topscorers",
+      "title": "History and Records of the Ligue 1 McDonald's Top Scorers",
+      "url": "https://ligue1.com/en/articles/l1_article_2588-",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "curriculum-next-ligue1-ibra",
+      "title": "Ibrahimovic, un passage marquant au PSG",
+      "url": "https://ligue1.com/en/articles/l1_article_283-ibrahimovic-un-passage-marquant-au-psg",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "curriculum-next-ligue1-ibra-180",
+      "title": "Happy Birthday, Zlatan Ibrahimovic!",
+      "url": "https://ligue1.com/en/articles/l1_article_3385-",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "curriculum-next-uefa-ibra-sign",
+      "title": "PSG prise Ibrahimović away from Milan",
+      "url": "https://www.uefa.com/uefachampionsleague/news/01ff-0e7e6cc852e1-a3921304caa3-1000--psg-prise-ibrahimovic-away-from-milan/",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "curriculum-next-fff-ibra-final",
+      "title": "2016 - Olympique de Marseille - Paris-SG (2-4)",
+      "url": "https://ffftv.fff.fr/video/6165212730001/2016-olympique-de-marseille-paris-sg-2-4",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "curriculum-next-atleti-firstmatch",
+      "title": "Se cumplen 118 años de nuestro primer partido",
+      "url": "https://www.atleticodemadrid.com/noticias/se-cumplen-118-anos-de-nuestro-primer-partido",
+      "verifiedAt": "2026-10-10"
+    }
+  ],
+  "players": [
+    {
+      "key": "entity-mbappe",
+      "name": "Kylian Mbappé",
+      "aliases": [
+        "Mbappé",
+        "Kylian Mbappe"
+      ],
+      "visual": "KM",
+      "clubKey": "entity-psg",
+      "seedID": "player-20",
+      "seedName": "Kylian Mbappe"
+    },
+    {
+      "key": "entity-ibrahimovic",
+      "name": "Zlatan Ibrahimović",
+      "aliases": [
+        "Ibrahimović",
+        "Zlatan"
+      ],
+      "visual": "ZI",
+      "clubKey": "entity-psg",
+      "seedID": "player-4",
+      "seedName": "Zlatan Ibrahimovic"
+    },
+    {
+      "key": "entity-aguero",
+      "name": "Sergio Agüero",
+      "aliases": [
+        "Agüero",
+        "Kun Agüero"
+      ],
+      "visual": "SA",
+      "clubKey": "entity-manchester-city",
+      "seedID": "player-62",
+      "seedName": "Sergio Aguero"
+    },
+    {
+      "key": "entity-david-silva",
+      "name": "David Silva",
+      "aliases": [
+        "Silva",
+        "El Mago"
+      ],
+      "visual": "DS",
+      "clubKey": "entity-manchester-city",
+      "seedID": "player-255",
+      "seedName": "David Silva"
+    },
+    {
+      "key": "entity-fernando-torres",
+      "name": "Fernando Torres",
+      "aliases": [
+        "Torres",
+        "El Niño"
+      ],
+      "visual": "FT",
+      "clubKey": "entity-atletico",
+      "seedID": "player-177",
+      "seedName": "Fernando Torres"
+    },
+    {
+      "key": "entity-griezmann",
+      "name": "Antoine Griezmann",
+      "aliases": [
+        "Griezmann"
+      ],
+      "visual": "AG",
+      "clubKey": "entity-atletico",
+      "seedID": "player-142",
+      "seedName": "Antoine Griezmann"
+    }
+  ],
+  "lessons": [
+    {
+      "key": "lesson-curriculum-champions-next-psg-birth",
+      "subjectKey": "entity-psg",
+      "clubKey": "entity-psg",
+      "title": "A Paris club is born",
+      "subtitle": "A merger gave the capital a new team",
+      "chapter": "history",
+      "story": [
+        {
+          "title": "A club wanted by Paris",
+          "body": "With no Parisian side in the top division, a campaign for a major Paris club drew support from 66,000 people."
+        },
+        {
+          "title": "A merger made it possible",
+          "body": "Paris Football Club joined with Stade Sangermanois. The merged club earned promotion in its first season."
+        }
+      ],
+      "facts": [
+        {
+          "key": "psg-support",
+          "label": "Public support",
+          "prompt": "How many people backed the project for a major Paris club?",
+          "answers": [
+            "66,000"
+          ],
+          "distractors": [
+            "6,600",
+            "16,000",
+            "60,000"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "66,000",
+            "number": 66000,
+            "unit": "people"
+          },
+          "scope": "The official PSG history reports this number for the public consultation before the club was created.",
+          "sourceKey": "curriculum-next-psg-origin",
+          "evidence": "The article says 66,000 people supported the project."
+        },
+        {
+          "key": "psg-merger",
+          "label": "Merger partner",
+          "prompt": "Which club merged with Paris Football Club to form PSG?",
+          "answers": [
+            "Stade Sangermanois"
+          ],
+          "distractors": [
+            "Red Star",
+            "Racing Club de France",
+            "Paris FC"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Stade Sangermanois",
+            "text": "Stade Sangermanois"
+          },
+          "scope": "The club named in PSG’s official account of its 1970 formation.",
+          "sourceKey": "curriculum-next-psg-origin",
+          "evidence": "The article says PFC was forced to merge with Stade Sangermanois."
+        },
+        {
+          "key": "psg-first-season",
+          "label": "First-season achievement",
+          "prompt": "What did PSG achieve in its first season?",
+          "answers": [
+            "National Championship title and promotion"
+          ],
+          "distractors": [
+            "Ligue 1 title only",
+            "Coupe de France title",
+            "European qualification"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "National Championship title and promotion",
+            "text": "National Championship title and promotion"
+          },
+          "scope": "The club’s first season after its 1970 creation.",
+          "sourceKey": "curriculum-next-psg-origin",
+          "evidence": "PSG records a National Championship title and promotion to the first division."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-champions-next-psg-cup-winners",
+      "subjectKey": "entity-psg",
+      "clubKey": "entity-psg",
+      "title": "Brussels brings a European first",
+      "subtitle": "N’Gotty’s strike made history",
+      "chapter": "moments",
+      "story": [
+        {
+          "title": "A final in Brussels",
+          "body": "On 8 May 1996, PSG met Rapid Vienna in the Cup Winners’ Cup final at the Stade du Roi Baudouin."
+        },
+        {
+          "title": "One free kick decided it",
+          "body": "Bruno N’Gotty struck from a long-range free kick before half-time. PSG held on for a 1–0 win and its first European trophy."
+        }
+      ],
+      "facts": [
+        {
+          "key": "psg-1996-opponent",
+          "label": "Final opponent",
+          "prompt": "Which club did PSG defeat in the 1996 Cup Winners’ Cup final?",
+          "answers": [
+            "Rapid Vienna"
+          ],
+          "distractors": [
+            "Parma",
+            "Deportivo La Coruña",
+            "Barcelona"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Rapid Vienna",
+            "text": "Rapid Vienna"
+          },
+          "scope": "The opponent in the 8 May 1996 final.",
+          "sourceKey": "curriculum-next-psg-cup",
+          "evidence": "The UEFA final report lists Paris Saint-Germain 1–0 SK Rapid Wien."
+        },
+        {
+          "key": "psg-1996-scorer",
+          "label": "Final scorer",
+          "prompt": "Who scored the only goal of the 1996 final?",
+          "answers": [
+            "Bruno N’Gotty"
+          ],
+          "distractors": [
+            "Youri Djorkaeff",
+            "Patrice Loko",
+            "Raí"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Bruno N’Gotty",
+            "text": "Bruno N’Gotty"
+          },
+          "scope": "PSG’s scorer in its 1–0 final win.",
+          "sourceKey": "curriculum-next-psg-cup",
+          "evidence": "UEFA identifies N’Gotty as the scorer after a Djorkaeff touch from a free kick."
+        },
+        {
+          "key": "psg-1996-date",
+          "label": "Final date",
+          "prompt": "On what date did PSG win the Cup Winners’ Cup in Brussels?",
+          "answers": [
+            "8 May 1996"
+          ],
+          "distractors": [
+            "8 May 1995",
+            "8 June 1996",
+            "18 May 1996"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "8 May 1996",
+            "text": "8 May 1996"
+          },
+          "scope": "The date in PSG’s official final summary.",
+          "sourceKey": "curriculum-next-psg-1996",
+          "evidence": "PSG dates the Brussels final to Wednesday 8 May 1996."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-champions-next-psg-barcelona-four",
+      "subjectKey": "entity-psg",
+      "clubKey": "entity-psg",
+      "title": "Four past Barcelona",
+      "subtitle": "A first-leg masterclass at the Parc",
+      "chapter": "moments",
+      "story": [
+        {
+          "title": "A fast start",
+          "body": "On 14 February 2017, PSG overwhelmed Barcelona in the first leg of their Champions League round-of-16 tie."
+        },
+        {
+          "title": "Two from Di María",
+          "body": "Ángel Di María scored twice; Julian Draxler and Edinson Cavani added one apiece in the 4–0 win."
+        }
+      ],
+      "facts": [
+        {
+          "key": "psg-barca-score",
+          "label": "First-leg score",
+          "prompt": "What was the score when PSG hosted Barcelona on 14 February 2017?",
+          "answers": [
+            "4–0"
+          ],
+          "distractors": [
+            "3–0",
+            "4–1",
+            "2–0"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "4–0",
+            "text": "4–0"
+          },
+          "scope": "The first leg of the 2016/17 Champions League round of 16 at the Parc des Princes.",
+          "sourceKey": "curriculum-next-psg-barca",
+          "evidence": "UEFA says PSG won 4–0.",
+          "scoreInput": {
+            "leftClubKey": "entity-psg",
+            "rightClubKey": "entity-barcelona",
+            "leftGoals": 4,
+            "rightGoals": 0
+          }
+        },
+        {
+          "key": "psg-barca-brace",
+          "label": "Two-goal scorer",
+          "prompt": "Which PSG player scored twice that night?",
+          "answers": [
+            "Ángel Di María"
+          ],
+          "distractors": [
+            "Edinson Cavani",
+            "Julian Draxler",
+            "Blaise Matuidi"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Ángel Di María",
+            "text": "Ángel Di María"
+          },
+          "scope": "The PSG player with a brace in the 2017 first leg.",
+          "sourceKey": "curriculum-next-psg-barca",
+          "evidence": "UEFA names Di María as the two-goal scorer."
+        },
+        {
+          "key": "psg-barca-draxler",
+          "label": "Second scorer",
+          "prompt": "Who scored PSG’s second goal?",
+          "answers": [
+            "Julian Draxler"
+          ],
+          "distractors": [
+            "Ángel Di María",
+            "Edinson Cavani",
+            "Marco Verratti"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Julian Draxler",
+            "text": "Julian Draxler"
+          },
+          "scope": "The player who made it 2–0 just before half-time.",
+          "sourceKey": "curriculum-next-psg-barca",
+          "evidence": "UEFA describes Verratti setting up Draxler’s finish."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-champions-next-mbappe-paris-arrival",
+      "subjectKey": "entity-mbappe",
+      "clubKey": "entity-psg",
+      "title": "A prodigy rises at Monaco",
+      "subtitle": "A late-season surge helped deliver the league title",
+      "chapter": "career",
+      "story": [
+        {
+          "title": "A first taste",
+          "body": "Mbappé made his Ligue 1 debut for Monaco in December 2015. His first half-season brought 11 league appearances, one goal and one assist."
+        },
+        {
+          "title": "A decisive run",
+          "body": "In 2016/17, the 17-year-old became central to Monaco’s title race. Across 13 closing matches, he scored 12 goals and assisted three, including the title-clinching goal on 17 May 2017."
+        }
+      ],
+      "facts": [
+        {
+          "key": "mbappe-born",
+          "label": "Ligue 1 debut",
+          "prompt": "In which month and year did Mbappé make his Ligue 1 debut?",
+          "answers": [
+            "December 2015"
+          ],
+          "distractors": [
+            "December 2014",
+            "December 2016",
+            "January 2015"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "December 2015",
+            "text": "December 2015"
+          },
+          "scope": "Mbappé’s first Ligue 1 appearance for Monaco, in the 2015/16 season.",
+          "sourceKey": "curriculum-next-ligue1-mbappe-monaco",
+          "evidence": "Ligue 1’s retrospective says he discovered the league in December 2015."
+        },
+        {
+          "key": "mbappe-psg-sign",
+          "label": "First half-season",
+          "prompt": "How many Ligue 1 goals did Mbappé score in his first half-season with Monaco?",
+          "answers": [
+            "1"
+          ],
+          "distractors": [
+            "0",
+            "2",
+            "3"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "1",
+            "number": 1,
+            "unit": "goal"
+          },
+          "scope": "His 11 Ligue 1 appearances in the first half of 2015/16.",
+          "sourceKey": "curriculum-next-ligue1-mbappe-monaco",
+          "evidence": "The league retrospective records 11 appearances, one goal and one assist in his first half-season."
+        },
+        {
+          "key": "mbappe-monaco-title",
+          "label": "Title-clinching goal",
+          "prompt": "On what date did Mbappé score the goal that clinched Monaco’s 2016/17 league title?",
+          "answers": [
+            "17 May 2017"
+          ],
+          "distractors": [
+            "17 May 2016",
+            "27 May 2017",
+            "17 April 2017"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "17 May 2017",
+            "text": "17 May 2017"
+          },
+          "scope": "The delayed league match against Saint-Étienne that secured Monaco’s 2016/17 Ligue 1 title.",
+          "sourceKey": "curriculum-next-ligue1-mbappe-monaco",
+          "evidence": "Ligue 1 dates the title-clinching goal against ASSE to 17 May 2017."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-champions-next-mbappe-camp-nou",
+      "subjectKey": "entity-mbappe",
+      "clubKey": "entity-psg",
+      "title": "A hat-trick at Camp Nou",
+      "subtitle": "Mbappé turns the tie around",
+      "chapter": "moments",
+      "story": [
+        {
+          "title": "Paris responds",
+          "body": "On 16 February 2021, Barcelona scored first at Camp Nou. Mbappé equalised before Paris took control."
+        },
+        {
+          "title": "Three goals away",
+          "body": "Mbappé scored a treble in a 4–1 first-leg win. UEFA named him Player of the Match."
+        }
+      ],
+      "facts": [
+        {
+          "key": "mbappe-barca-date",
+          "label": "Match date",
+          "prompt": "When did Mbappé score his Camp Nou hat-trick?",
+          "answers": [
+            "16 February 2021"
+          ],
+          "distractors": [
+            "14 February 2017",
+            "10 March 2020",
+            "6 April 2021"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "16 February 2021",
+            "text": "16 February 2021"
+          },
+          "scope": "The first leg of PSG’s Champions League round-of-16 tie.",
+          "sourceKey": "curriculum-next-psg-mbappe-barca",
+          "evidence": "UEFA dates the match Tuesday, 16 February 2021."
+        },
+        {
+          "key": "mbappe-barca-treble",
+          "label": "Goals scored",
+          "prompt": "How many goals did Mbappé score against Barcelona in that match?",
+          "answers": [
+            "3"
+          ],
+          "distractors": [
+            "1",
+            "2",
+            "4"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "3",
+            "number": 3,
+            "unit": "goals"
+          },
+          "scope": "His total in PSG’s 4–1 win at Camp Nou.",
+          "sourceKey": "curriculum-next-psg-mbappe-barca",
+          "evidence": "UEFA reports Mbappé’s treble."
+        },
+        {
+          "key": "mbappe-barca-award",
+          "label": "UEFA match award",
+          "prompt": "What match award did UEFA give Mbappé after the Barcelona game?",
+          "answers": [
+            "Player of the Match"
+          ],
+          "distractors": [
+            "Young Player of the Tournament",
+            "Goalkeeper of the Match",
+            "Man of the Year"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Player of the Match",
+            "text": "Player of the Match"
+          },
+          "scope": "UEFA’s designation for his performance in the 4–1 victory.",
+          "sourceKey": "curriculum-next-psg-mbappe-barca",
+          "evidence": "The report lists Kylian Mbappé as Player of the Match."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-champions-next-mbappe-201-goal",
+      "subjectKey": "entity-mbappe",
+      "clubKey": "entity-psg",
+      "title": "Goal 201 makes history",
+      "subtitle": "A personal milestone against Nantes",
+      "chapter": "records",
+      "story": [
+        {
+          "title": "A record at the Parc",
+          "body": "On 4 March 2023, Mbappé scored his 201st PSG goal against Nantes in a 4–2 league win."
+        },
+        {
+          "title": "The new leading scorer",
+          "body": "At 24 years and 2 months, he passed Edinson Cavani’s club record, reaching the mark in 247 appearances."
+        }
+      ],
+      "facts": [
+        {
+          "key": "mbappe-201-date",
+          "label": "Record date",
+          "prompt": "When did Mbappé score his 201st PSG goal?",
+          "answers": [
+            "4 March 2023"
+          ],
+          "distractors": [
+            "4 March 2022",
+            "12 March 2023",
+            "4 May 2023"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "4 March 2023",
+            "text": "4 March 2023"
+          },
+          "scope": "His record-breaking goal against Nantes.",
+          "sourceKey": "curriculum-next-psg-mbappe201",
+          "evidence": "PSG dates the goal Saturday 4 March 2023."
+        },
+        {
+          "key": "mbappe-201-games",
+          "label": "Appearances at milestone",
+          "prompt": "How many matches had Mbappé played for PSG when he reached 201 goals?",
+          "answers": [
+            "247"
+          ],
+          "distractors": [
+            "180",
+            "201",
+            "301"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "247",
+            "number": 247,
+            "unit": "matches"
+          },
+          "scope": "His appearances through the 4 March 2023 Nantes match.",
+          "sourceKey": "curriculum-next-psg-mbappe201",
+          "evidence": "The PSG report states 201 goals in 247 matches."
+        },
+        {
+          "key": "mbappe-201-age",
+          "label": "Age at milestone",
+          "prompt": "How old was Mbappé when he became PSG’s leading scorer?",
+          "answers": [
+            "24 years, 2 months and 12 days"
+          ],
+          "distractors": [
+            "23 years, 2 months and 12 days",
+            "24 years, 12 months and 2 days",
+            "25 years, 2 months and 12 days"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "24 years, 2 months and 12 days",
+            "text": "24 years, 2 months and 12 days"
+          },
+          "scope": "Age reported by the club at the 201-goal milestone.",
+          "sourceKey": "curriculum-next-psg-mbappe201",
+          "evidence": "PSG states his age as 24 years, 2 months and 12 days."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-champions-next-mbappe-psg-honours",
+      "subjectKey": "entity-mbappe",
+      "clubKey": "entity-psg",
+      "title": "A record run of league honours",
+      "subtitle": "Mbappé’s individual awards set new Ligue 1 marks",
+      "chapter": "legacy",
+      "story": [
+        {
+          "title": "Five best-player awards",
+          "body": "Ligue 1’s official honours list credits Mbappé with five Player of the Year awards: 2019 and four straight from 2021 through 2024."
+        },
+        {
+          "title": "Six scoring crowns",
+          "body": "He became the first player to win the Ligue 1 top-scorer title six times, leading the league every season from 2019 through 2024. His PSG side also reached the 2020 Champions League final."
+        }
+      ],
+      "facts": [
+        {
+          "key": "mbappe-player-awards",
+          "label": "Ligue 1 player award",
+          "prompt": "How many Ligue 1 Player of the Year awards does the league list for Mbappé?",
+          "answers": [
+            "5"
+          ],
+          "distractors": [
+            "3",
+            "4",
+            "6"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "5",
+            "number": 5,
+            "unit": "awards"
+          },
+          "scope": "Five awards listed through the 2023/24 season: 2019 and 2021–2024.",
+          "sourceKey": "curriculum-next-ligue1-awards",
+          "evidence": "The LFP honours list names Mbappé as winner in 2019, 2021, 2022, 2023 and 2024."
+        },
+        {
+          "key": "mbappe-top-scorer",
+          "label": "League top-scorer seasons",
+          "prompt": "How many consecutive Ligue 1 top-scorer titles did Mbappé win from 2019 to 2024?",
+          "answers": [
+            "6"
+          ],
+          "distractors": [
+            "4",
+            "5",
+            "7"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "6",
+            "number": 6,
+            "unit": "titles"
+          },
+          "scope": "Six consecutive seasonal titles from 2018/19 through 2023/24.",
+          "sourceKey": "curriculum-next-ligue1-topscorers",
+          "evidence": "Ligue 1 calls him the first six-time top scorer and lists the six winning years 2019–2024."
+        },
+        {
+          "key": "mbappe-final-date",
+          "label": "Champions League final",
+          "prompt": "In which year did Mbappé play the final PSG lost 1–0 to Bayern?",
+          "answers": [
+            "2020"
+          ],
+          "distractors": [
+            "2019",
+            "2021",
+            "2022"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "2020",
+            "number": 2020,
+            "unit": "year"
+          },
+          "scope": "The Lisbon final in which Kingsley Coman scored for Bayern.",
+          "sourceKey": "curriculum-next-psg-mbappe-final",
+          "evidence": "UEFA dates the Paris–Bayern final to August 2020."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-champions-next-ibra-paris-career",
+      "subjectKey": "entity-ibrahimovic",
+      "clubKey": "entity-psg",
+      "title": "Ibrahimović joins PSG",
+      "subtitle": "A transfer from Milan began four seasons in Paris",
+      "chapter": "career",
+      "story": [
+        {
+          "title": "From Milan to Paris",
+          "body": "PSG signed Ibrahimović from AC Milan on 18 July 2012. UEFA reported that the striker agreed to a three-year contract."
+        },
+        {
+          "title": "His longest club stay",
+          "body": "Paris became Ibrahimović’s longest spell at one club. Ligue 1 records 180 appearances for PSG in all competitions, more than he made for any other side."
+        }
+      ],
+      "facts": [
+        {
+          "key": "ibra-sign-date",
+          "label": "Signing date",
+          "prompt": "On what date did UEFA report Ibrahimović’s move from Milan to PSG?",
+          "answers": [
+            "18 July 2012"
+          ],
+          "distractors": [
+            "18 July 2011",
+            "18 August 2012",
+            "8 July 2012"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "18 July 2012",
+            "text": "18 July 2012"
+          },
+          "scope": "The date UEFA reported PSG had signed the player from AC Milan.",
+          "sourceKey": "curriculum-next-uefa-ibra-sign",
+          "evidence": "UEFA’s transfer report dates the agreement to 18 July 2012 and identifies AC Milan as his previous club."
+        },
+        {
+          "key": "ibra-contract",
+          "label": "Contract length",
+          "prompt": "How long was the contract in UEFA’s signing report?",
+          "answers": [
+            "Three years"
+          ],
+          "distractors": [
+            "One year",
+            "Two years",
+            "Five years"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Three years",
+            "text": "Three years"
+          },
+          "scope": "The contract length announced with the July 2012 transfer.",
+          "sourceKey": "curriculum-next-uefa-ibra-sign",
+          "evidence": "UEFA reports Ibrahimović agreed a three-year contract."
+        },
+        {
+          "key": "ibra-games",
+          "label": "PSG appearances",
+          "prompt": "How many total appearances did Ibrahimović make for PSG?",
+          "answers": [
+            "180"
+          ],
+          "distractors": [
+            "156",
+            "150",
+            "122"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "180",
+            "number": 180,
+            "unit": "appearances"
+          },
+          "scope": "All-competition PSG appearances across his four-year spell.",
+          "sourceKey": "curriculum-next-ligue1-ibra-180",
+          "evidence": "Ligue 1’s retrospective says 180 appearances, his highest total at any club."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-champions-next-ibra-lille",
+      "subjectKey": "entity-ibrahimovic",
+      "clubKey": "entity-psg",
+      "title": "An immediate impact in Paris",
+      "subtitle": "Ibrahimović rescued PSG on his league debut",
+      "chapter": "moments",
+      "story": [
+        {
+          "title": "A debut brace",
+          "body": "Ibrahimović’s first PSG league appearance came at the Parc des Princes on 11 August 2012 against Lorient. After PSG fell two goals behind, his first Ligue 1 brace brought them back level."
+        },
+        {
+          "title": "A four-year run",
+          "body": "The comeback launched a four-season Paris stay. He went on to score 113 Ligue 1 goals in 122 appearances and lead the league in scoring three times."
+        }
+      ],
+      "facts": [
+        {
+          "key": "ibra-lille-date",
+          "label": "Lille match date",
+          "prompt": "On what date did Ibrahimović make his first Ligue 1 appearance for PSG?",
+          "answers": [
+            "11 August 2012"
+          ],
+          "distractors": [
+            "11 August 2011",
+            "18 July 2012",
+            "21 August 2012"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "11 August 2012",
+            "text": "11 August 2012"
+          },
+          "scope": "His first PSG Ligue 1 appearance, at home against Lorient.",
+          "sourceKey": "curriculum-next-ligue1-ibra",
+          "evidence": "Ligue 1 dates his first Paris appearance to 11 August 2012 against FC Lorient."
+        },
+        {
+          "key": "ibra-lille-time",
+          "label": "Debut opponent",
+          "prompt": "Which club did PSG face in Ibrahimović’s first league appearance?",
+          "answers": [
+            "Lorient"
+          ],
+          "distractors": [
+            "Lille",
+            "Troyes",
+            "Marseille"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Lorient",
+            "text": "Lorient"
+          },
+          "scope": "The opponent in his PSG Ligue 1 debut on 11 August 2012.",
+          "sourceKey": "curriculum-next-ligue1-ibra",
+          "evidence": "Ligue 1 identifies FC Lorient as the opponent in his first PSG league appearance."
+        },
+        {
+          "key": "ibra-30first",
+          "label": "Season milestone",
+          "prompt": "How many goals did PSG trail by before Ibrahimović’s debut brace rescued a draw?",
+          "answers": [
+            "2"
+          ],
+          "distractors": [
+            "1",
+            "3",
+            "4"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "2",
+            "number": 2,
+            "unit": "goals"
+          },
+          "scope": "The score deficit overcome in the 11 August 2012 league match against Lorient.",
+          "sourceKey": "curriculum-next-ligue1-ibra",
+          "evidence": "Ligue 1 says his brace rescued PSG after the team fell two goals behind."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-champions-next-ibra-record-season",
+      "subjectKey": "entity-ibrahimovic",
+      "clubKey": "entity-psg",
+      "title": "A historic scoring season",
+      "subtitle": "His final Ligue 1 campaign set a personal peak",
+      "chapter": "records",
+      "story": [
+        {
+          "title": "Thirty-eight goals",
+          "body": "In 2015/16 Ibrahimović scored 38 Ligue 1 goals in 31 appearances. It was the league’s third-highest single-season total at the time."
+        },
+        {
+          "title": "A rare four-goal match",
+          "body": "On 13 March 2016, he scored four times in PSG’s 9–0 win at Troyes, as the club secured the title with eight league matches remaining."
+        }
+      ],
+      "facts": [
+        {
+          "key": "ibra-ligue-goals",
+          "label": "League goals",
+          "prompt": "How many Ligue 1 goals did Ibrahimović score in the 2015/16 season?",
+          "answers": [
+            "38"
+          ],
+          "distractors": [
+            "30",
+            "36",
+            "40"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "38",
+            "number": 38,
+            "unit": "goals"
+          },
+          "scope": "His 2015/16 Ligue 1 season total, scored in 31 appearances.",
+          "sourceKey": "curriculum-next-ligue1-ibra",
+          "evidence": "Ligue 1 records 38 goals in 31 matches for 2015/16."
+        },
+        {
+          "key": "ibra-ligue-assists",
+          "label": "League assists",
+          "prompt": "What place did his 38-goal 2015/16 total hold in Ligue 1 single-season history?",
+          "answers": [
+            "Third"
+          ],
+          "distractors": [
+            "First",
+            "Second",
+            "Fourth"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Third",
+            "text": "Third"
+          },
+          "scope": "Historical league ranking cited by Ligue 1 for his 2015/16 tally.",
+          "sourceKey": "curriculum-next-ligue1-ibra",
+          "evidence": "Ligue 1 describes 38 goals as the third-highest total in the championship’s history."
+        },
+        {
+          "key": "ibra-troyes-goals",
+          "label": "Troyes goals",
+          "prompt": "How many goals did Ibrahimović score in PSG’s 9–0 win at Troyes?",
+          "answers": [
+            "4"
+          ],
+          "distractors": [
+            "2",
+            "3",
+            "5"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "4",
+            "number": 4,
+            "unit": "goals"
+          },
+          "scope": "PSG’s Ligue 1 away win at Troyes on 13 March 2016.",
+          "sourceKey": "curriculum-next-ligue1-ibra",
+          "evidence": "Ligue 1’s season retrospective calls the four-goal performance a quadruple."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-champions-next-ibra-final-honours",
+      "subjectKey": "entity-ibrahimovic",
+      "clubKey": "entity-psg",
+      "title": "A final match with a brace",
+      "subtitle": "Ibrahimović signed off with a Coupe de France win",
+      "chapter": "legacy",
+      "story": [
+        {
+          "title": "A cup final farewell",
+          "body": "Ibrahimović’s final PSG match was the Coupe de France final on 21 May 2016 against Marseille. PSG won 4–2 at the Stade de France."
+        },
+        {
+          "title": "A decisive finish",
+          "body": "The Swedish striker scored twice in the final. The victory gave PSG its tenth Coupe de France, matching Marseille’s tally at the time."
+        }
+      ],
+      "facts": [
+        {
+          "key": "ibra-last-match-date",
+          "label": "Final match date",
+          "prompt": "On what date did Ibrahimović score twice in PSG’s Coupe de France final against Marseille?",
+          "answers": [
+            "21 May 2016"
+          ],
+          "distractors": [
+            "21 May 2015",
+            "28 May 2016",
+            "21 April 2016"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "21 May 2016",
+            "text": "21 May 2016"
+          },
+          "scope": "The 2016 Coupe de France final, which was Ibrahimović’s last PSG match.",
+          "sourceKey": "curriculum-next-fff-ibra-final",
+          "evidence": "The FFF archive dates the final to 21 May 2016 and identifies it as PSG–Marseille."
+        },
+        {
+          "key": "ibra-final-opponent",
+          "label": "Final opponent",
+          "prompt": "Which club did PSG beat in Ibrahimović’s final match?",
+          "answers": [
+            "Marseille"
+          ],
+          "distractors": [
+            "Lyon",
+            "Monaco",
+            "Lille"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Marseille",
+            "text": "Marseille"
+          },
+          "scope": "The opponent in the 2016 Coupe de France final.",
+          "sourceKey": "curriculum-next-fff-ibra-final",
+          "evidence": "The FFF archive identifies Olympique de Marseille as the opponent."
+        },
+        {
+          "key": "ibra-paris-goals",
+          "label": "Career total",
+          "prompt": "How many goals did Ibrahimović score in the final?",
+          "answers": [
+            "2"
+          ],
+          "distractors": [
+            "1",
+            "3",
+            "4"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "2",
+            "number": 2,
+            "unit": "goals"
+          },
+          "scope": "His scoring total in the 21 May 2016 Coupe de France final.",
+          "sourceKey": "curriculum-next-fff-ibra-final",
+          "evidence": "The FFF final archive says Ibrahimović scored a brace in PSG’s 4–2 win."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-champions-next-city-stmarks",
+      "subjectKey": "entity-manchester-city",
+      "clubKey": "entity-manchester-city",
+      "title": "From St Mark’s to Manchester City",
+      "subtitle": "A church team evolved into a city club",
+      "chapter": "history",
+      "story": [
+        {
+          "title": "A local beginning",
+          "body": "St Mark’s Church formed a football team in 1880. That team would eventually become Manchester City."
+        },
+        {
+          "title": "A name for the whole city",
+          "body": "The team became Ardwick in 1887, then reorganised as Manchester City Football Club in 1894."
+        }
+      ],
+      "facts": [
+        {
+          "key": "city-formation",
+          "label": "Founding church",
+          "prompt": "Which church formed the team that evolved into Manchester City?",
+          "answers": [
+            "St Mark’s Church",
+            "St Marks Church",
+            "St Mark’s"
+          ],
+          "distractors": [
+            "St Paul’s Church",
+            "St Peter’s Church",
+            "St George’s Church"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "St Mark’s Church",
+            "text": "St Mark’s Church"
+          },
+          "scope": "Manchester City’s origins in West Gorton, 1880.",
+          "sourceKey": "curriculum-next-city-history",
+          "evidence": "City’s club-history timeline identifies St Mark’s Church as the origin of the team."
+        },
+        {
+          "key": "city-ardwick",
+          "label": "Ardwick year",
+          "prompt": "In what year did St Mark’s evolve into Ardwick AFC?",
+          "answers": [
+            "1887"
+          ],
+          "distractors": [
+            "1880",
+            "1892",
+            "1894"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "1887",
+            "number": 1887,
+            "unit": "year"
+          },
+          "scope": "The name and ground move listed in the official timeline.",
+          "sourceKey": "curriculum-next-city-history",
+          "evidence": "The history says the team became Ardwick AFC in 1887."
+        },
+        {
+          "key": "city-name",
+          "label": "Manchester City name",
+          "prompt": "In what year did Ardwick reform as Manchester City Football Club?",
+          "answers": [
+            "1894"
+          ],
+          "distractors": [
+            "1887",
+            "1892",
+            "1904"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "1894",
+            "number": 1894,
+            "unit": "year"
+          },
+          "scope": "The club’s reorganisation to represent the whole city.",
+          "sourceKey": "curriculum-next-city-history",
+          "evidence": "Manchester City dates this change to 1894."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-champions-next-city-fa-cup",
+      "subjectKey": "entity-manchester-city",
+      "clubKey": "entity-manchester-city",
+      "title": "A trophy after 35 years",
+      "subtitle": "Yaya Touré’s Wembley goal ends the wait",
+      "chapter": "moments",
+      "story": [
+        {
+          "title": "A Wembley final",
+          "body": "On 14 May 2011, City faced Stoke in the FA Cup final, looking to end a 35-year wait for a major trophy."
+        },
+        {
+          "title": "One strike settled it",
+          "body": "Yaya Touré scored in the 74th minute for a 1–0 win. The cup began a new successful period for the club."
+        }
+      ],
+      "facts": [
+        {
+          "key": "city-fa-date",
+          "label": "Final date",
+          "prompt": "When did City beat Stoke in the 2011 FA Cup final?",
+          "answers": [
+            "14 May 2011"
+          ],
+          "distractors": [
+            "14 May 2010",
+            "16 April 2011",
+            "14 May 2012"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "14 May 2011",
+            "text": "14 May 2011"
+          },
+          "scope": "The Wembley final that ended City’s 35-year wait for a major trophy.",
+          "sourceKey": "curriculum-next-city-fa",
+          "evidence": "The official club retrospective lists 14 May 2011."
+        },
+        {
+          "key": "city-fa-score",
+          "label": "Final score",
+          "prompt": "What was the score against Stoke in the FA Cup final?",
+          "answers": [
+            "1–0"
+          ],
+          "distractors": [
+            "2–0",
+            "2–1",
+            "1–1"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "1–0",
+            "text": "1–0"
+          },
+          "scope": "The result that gave City the cup.",
+          "sourceKey": "curriculum-next-city-fa",
+          "evidence": "Manchester City records a 1–0 win over Stoke."
+        },
+        {
+          "key": "city-fa-scorer",
+          "label": "Final scorer",
+          "prompt": "Who scored the only goal in the final?",
+          "answers": [
+            "Yaya Touré"
+          ],
+          "distractors": [
+            "Carlos Tevez",
+            "Mario Balotelli",
+            "David Silva"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Yaya Touré",
+            "text": "Yaya Touré"
+          },
+          "scope": "The scorer of the 74th-minute goal.",
+          "sourceKey": "curriculum-next-city-fa",
+          "evidence": "The club says Touré scored the winner 16 minutes from time."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-champions-next-city-europe",
+      "subjectKey": "entity-manchester-city",
+      "clubKey": "entity-manchester-city",
+      "title": "City completes the Treble",
+      "subtitle": "Rodri’s strike brings a first Champions League",
+      "chapter": "moments",
+      "story": [
+        {
+          "title": "A first European Cup",
+          "body": "On 10 June 2023, City faced Inter in Istanbul in its first Champions League final."
+        },
+        {
+          "title": "One goal was enough",
+          "body": "Rodri scored in the second half for a 1–0 win. City completed the Treble with its first Champions League crown."
+        }
+      ],
+      "facts": [
+        {
+          "key": "city-inter-date",
+          "label": "Final date",
+          "prompt": "When did City beat Inter to win its first Champions League?",
+          "answers": [
+            "10 June 2023"
+          ],
+          "distractors": [
+            "10 June 2022",
+            "10 May 2023",
+            "11 June 2023"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "10 June 2023",
+            "text": "10 June 2023"
+          },
+          "scope": "The final in Istanbul.",
+          "sourceKey": "curriculum-next-city-ucl",
+          "evidence": "UEFA dates the final Saturday 10 June 2023."
+        },
+        {
+          "key": "city-inter-scorer",
+          "label": "Final scorer",
+          "prompt": "Who scored the only goal against Inter?",
+          "answers": [
+            "Rodri"
+          ],
+          "distractors": [
+            "Erling Haaland",
+            "Kevin De Bruyne",
+            "Ilkay Gündogan"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Rodri",
+            "text": "Rodri"
+          },
+          "scope": "The scorer in the 1–0 Champions League final.",
+          "sourceKey": "curriculum-next-city-ucl",
+          "evidence": "UEFA identifies Rodri as the second-half scorer."
+        },
+        {
+          "key": "city-treble",
+          "label": "Achievement",
+          "prompt": "What major English football achievement did City complete with the win?",
+          "answers": [
+            "The Treble"
+          ],
+          "distractors": [
+            "The Double",
+            "A quadruple",
+            "A domestic treble"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "The Treble",
+            "text": "The Treble"
+          },
+          "scope": "City’s league, FA Cup and Champions League success in 2022/23.",
+          "sourceKey": "curriculum-next-city-ucl",
+          "evidence": "UEFA describes the Champions League win as completing a treble."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-champions-next-aguero-arrival",
+      "subjectKey": "entity-aguero",
+      "clubKey": "entity-manchester-city",
+      "title": "Agüero joins City",
+      "subtitle": "An immediate impact from his debut",
+      "chapter": "career",
+      "story": [
+        {
+          "title": "A new signing",
+          "body": "Agüero joined Manchester City on 27 July 2011 after five seasons at Atlético Madrid."
+        },
+        {
+          "title": "A fast introduction",
+          "body": "He made his City debut against Swansea on 15 August and scored 30 times in his first season."
+        }
+      ],
+      "facts": [
+        {
+          "key": "aguero-join-date",
+          "label": "Signing date",
+          "prompt": "On what date did Agüero join Manchester City?",
+          "answers": [
+            "27 July 2011"
+          ],
+          "distractors": [
+            "27 July 2010",
+            "15 August 2011",
+            "1 August 2011"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "27 July 2011",
+            "text": "27 July 2011"
+          },
+          "scope": "His joining date in the club’s official biography.",
+          "sourceKey": "curriculum-next-city-aguero",
+          "evidence": "The City profile says he joined on 27 July 2011."
+        },
+        {
+          "key": "aguero-debut-opponent",
+          "label": "Debut opponent",
+          "prompt": "Which team did Agüero face on his City debut?",
+          "answers": [
+            "Swansea City"
+          ],
+          "distractors": [
+            "QPR",
+            "Atlético Madrid",
+            "Fulham"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Swansea City",
+            "text": "Swansea City"
+          },
+          "scope": "The Etihad match on 15 August 2011.",
+          "sourceKey": "curriculum-next-city-aguero",
+          "evidence": "City identifies Swansea as his debut opponent."
+        },
+        {
+          "key": "aguero-first-season",
+          "label": "First-season goals",
+          "prompt": "How many goals did Agüero score in his first City season?",
+          "answers": [
+            "30"
+          ],
+          "distractors": [
+            "20",
+            "26",
+            "38"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "30",
+            "number": 30,
+            "unit": "goals"
+          },
+          "scope": "His 2011/12 first season at City.",
+          "sourceKey": "curriculum-next-city-aguero",
+          "evidence": "The club biography says he scored 30 times."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-champions-next-aguero-9320",
+      "subjectKey": "entity-aguero",
+      "clubKey": "entity-manchester-city",
+      "title": "The 93:20 winner",
+      "subtitle": "Agüero turns a title race around",
+      "chapter": "moments",
+      "story": [
+        {
+          "title": "A late comeback",
+          "body": "On 13 May 2012, QPR led City 2–1 late in stoppage time while City needed a win to be champions."
+        },
+        {
+          "title": "A decisive finish",
+          "body": "Agüero scored at 93:20 to make it 3–2 and secure City’s first Premier League title."
+        }
+      ],
+      "facts": [
+        {
+          "key": "aguero-qpr-day",
+          "label": "Title-winning date",
+          "prompt": "On what date did Agüero score the 93:20 goal?",
+          "answers": [
+            "13 May 2012"
+          ],
+          "distractors": [
+            "12 May 2012",
+            "13 May 2011",
+            "20 May 2012"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "13 May 2012",
+            "text": "13 May 2012"
+          },
+          "scope": "The final day of the 2011/12 Premier League season.",
+          "sourceKey": "curriculum-next-city-aguero-final",
+          "evidence": "City identifies the QPR win as the last day of the 2011/12 campaign."
+        },
+        {
+          "key": "aguero-qpr-score",
+          "label": "Final score",
+          "prompt": "What was the final score when City beat QPR with Agüero’s goal?",
+          "answers": [
+            "3–2"
+          ],
+          "distractors": [
+            "2–1",
+            "2–2",
+            "4–2"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "3–2",
+            "text": "3–2"
+          },
+          "scope": "The comeback victory at the Etihad.",
+          "sourceKey": "curriculum-next-city-aguero-final",
+          "evidence": "City’s retrospective describes the 3–2 win after City had trailed 2–1."
+        },
+        {
+          "key": "aguero-qpr-time",
+          "label": "Goal time",
+          "prompt": "At what time did Agüero score the title-winning goal?",
+          "answers": [
+            "93:20"
+          ],
+          "distractors": [
+            "90:00",
+            "92:10",
+            "94:00"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "93:20",
+            "text": "93:20"
+          },
+          "scope": "The match clock for the famous goal.",
+          "sourceKey": "curriculum-next-city-aguero",
+          "evidence": "City and the Premier League refer to the goal as 93:20."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-champions-next-aguero-records",
+      "subjectKey": "entity-aguero",
+      "clubKey": "entity-manchester-city",
+      "title": "A record City goalscorer",
+      "subtitle": "His 260 goals came in 390 games",
+      "chapter": "records",
+      "story": [
+        {
+          "title": "An all-time club record",
+          "body": "Agüero finished his City career with 260 goals in 390 appearances, the club record at the time of his departure."
+        },
+        {
+          "title": "A Premier League mark",
+          "body": "He also set the league record for most hat-tricks, with 12, across his City seasons."
+        }
+      ],
+      "facts": [
+        {
+          "key": "aguero-city-goals",
+          "label": "City goals",
+          "prompt": "How many goals did Agüero score for City?",
+          "answers": [
+            "260"
+          ],
+          "distractors": [
+            "201",
+            "230",
+            "290"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "260",
+            "number": 260,
+            "unit": "goals"
+          },
+          "scope": "His final club total in the City legend profile.",
+          "sourceKey": "curriculum-next-city-aguero",
+          "evidence": "Manchester City records 260 goals."
+        },
+        {
+          "key": "aguero-city-apps",
+          "label": "City appearances",
+          "prompt": "How many City appearances did Agüero make?",
+          "answers": [
+            "390"
+          ],
+          "distractors": [
+            "260",
+            "436",
+            "404"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "390",
+            "number": 390,
+            "unit": "appearances"
+          },
+          "scope": "His total for the club across 2011–2021.",
+          "sourceKey": "curriculum-next-city-aguero",
+          "evidence": "The City profile lists 390 appearances."
+        },
+        {
+          "key": "aguero-pl-trebles",
+          "label": "Premier League hat-tricks",
+          "prompt": "How many Premier League hat-tricks did Agüero score, a league record?",
+          "answers": [
+            "12"
+          ],
+          "distractors": [
+            "9",
+            "10",
+            "15"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "12",
+            "number": 12,
+            "unit": "hat-tricks"
+          },
+          "scope": "His Premier League career total in the competition’s record table.",
+          "sourceKey": "curriculum-next-city-plrecords",
+          "evidence": "The Premier League record list identifies Agüero with 12."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-champions-next-aguero-honours",
+      "subjectKey": "entity-aguero",
+      "clubKey": "entity-manchester-city",
+      "title": "A medal-winning City era",
+      "subtitle": "Five league titles among his honours",
+      "chapter": "legacy",
+      "story": [
+        {
+          "title": "A decorated spell",
+          "body": "City lists 14 medals for Agüero: five Premier League titles, five League Cups, one FA Cup and three Community Shields."
+        },
+        {
+          "title": "More than a goal",
+          "body": "The honours came during a decade in which Agüero became the club’s leading scorer and an emblem of its rise."
+        }
+      ],
+      "facts": [
+        {
+          "key": "aguero-pl-titles",
+          "label": "League titles",
+          "prompt": "How many Premier League titles did Agüero win with City?",
+          "answers": [
+            "5"
+          ],
+          "distractors": [
+            "3",
+            "4",
+            "6"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "5",
+            "number": 5,
+            "unit": "titles"
+          },
+          "scope": "The medal count in his official club profile.",
+          "sourceKey": "curriculum-next-city-aguero",
+          "evidence": "City lists five Premier League medals."
+        },
+        {
+          "key": "aguero-league-cups",
+          "label": "League Cups",
+          "prompt": "How many League Cup medals does City list for Agüero?",
+          "answers": [
+            "5"
+          ],
+          "distractors": [
+            "2",
+            "3",
+            "4"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "5",
+            "number": 5,
+            "unit": "cups"
+          },
+          "scope": "The honours tally on the official biography.",
+          "sourceKey": "curriculum-next-city-aguero",
+          "evidence": "City lists five Carabao Cup medals."
+        },
+        {
+          "key": "aguero-total-medals",
+          "label": "Total medals",
+          "prompt": "How many total medals does the City profile list for Agüero?",
+          "answers": [
+            "14"
+          ],
+          "distractors": [
+            "12",
+            "13",
+            "15"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "14",
+            "number": 14,
+            "unit": "medals"
+          },
+          "scope": "The total across his City honours in the club biography.",
+          "sourceKey": "curriculum-next-city-aguero",
+          "evidence": "City says he has 14 medals."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-champions-next-silva-arrival",
+      "subjectKey": "entity-david-silva",
+      "clubKey": "entity-manchester-city",
+      "title": "A World Cup winner arrives",
+      "subtitle": "Silva joins from Valencia in 2010",
+      "chapter": "career",
+      "story": [
+        {
+          "title": "From Gran Canaria",
+          "body": "David Silva was born in Arguineguín, Gran Canaria, on 8 January 1986."
+        },
+        {
+          "title": "A summer move",
+          "body": "A World Cup winner with Spain, he moved from Valencia to Manchester City in July 2010."
+        }
+      ],
+      "facts": [
+        {
+          "key": "silva-born",
+          "label": "Birthplace",
+          "prompt": "Where was David Silva born?",
+          "answers": [
+            "Arguineguín, Gran Canaria"
+          ],
+          "distractors": [
+            "Madrid",
+            "Valencia",
+            "Barcelona"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Arguineguín, Gran Canaria",
+            "text": "Arguineguín, Gran Canaria"
+          },
+          "scope": "The birthplace given in Manchester City’s official profile.",
+          "sourceKey": "curriculum-next-city-silva",
+          "evidence": "City says Silva was born in Arguineguín, Gran Canaria."
+        },
+        {
+          "key": "silva-city-arrival",
+          "label": "City arrival year",
+          "prompt": "In which year did Silva arrive at Manchester City?",
+          "answers": [
+            "2010"
+          ],
+          "distractors": [
+            "2008",
+            "2009",
+            "2011"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "2010",
+            "number": 2010,
+            "unit": "year"
+          },
+          "scope": "His transfer from Valencia to City.",
+          "sourceKey": "curriculum-next-city-silva",
+          "evidence": "The club biography places his arrival in July 2010."
+        },
+        {
+          "key": "silva-from-club",
+          "label": "Previous club",
+          "prompt": "Which club did Silva join City from?",
+          "answers": [
+            "Valencia"
+          ],
+          "distractors": [
+            "Barcelona",
+            "Real Sociedad",
+            "Sevilla"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Valencia",
+            "text": "Valencia"
+          },
+          "scope": "The Spanish club he left before joining City.",
+          "sourceKey": "curriculum-next-city-silva",
+          "evidence": "The official profile says he arrived from Valencia."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-champions-next-silva-derby",
+      "subjectKey": "entity-david-silva",
+      "clubKey": "entity-manchester-city",
+      "title": "A derby remembered in passes",
+      "subtitle": "Silva assists Džeko in the 6–1 win",
+      "chapter": "moments",
+      "story": [
+        {
+          "title": "Old Trafford, October 2011",
+          "body": "City beat Manchester United 6–1 away in a landmark Premier League derby."
+        },
+        {
+          "title": "A creator’s contribution",
+          "body": "The club later singled out Silva’s vision and execution in his assist for Edin Džeko as an example of his playmaking."
+        }
+      ],
+      "facts": [
+        {
+          "key": "silva-derby-year",
+          "label": "Derby year",
+          "prompt": "In what year did City win 6–1 at Old Trafford with Silva assisting Džeko?",
+          "answers": [
+            "2011"
+          ],
+          "distractors": [
+            "2009",
+            "2010",
+            "2012"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "2011",
+            "number": 2011,
+            "unit": "year"
+          },
+          "scope": "The away derby highlighted in City’s Silva tribute.",
+          "sourceKey": "curriculum-next-city-silva-derby",
+          "evidence": "City’s article describes the 6–1 defeat of United in 2011."
+        },
+        {
+          "key": "silva-derby-score",
+          "label": "Derby score",
+          "prompt": "What was the score when David Silva’s Manchester City won at Old Trafford on 23 October 2011?",
+          "answers": [
+            "6–1"
+          ],
+          "distractors": [
+            "5–1",
+            "4–1",
+            "6–0"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "6–1",
+            "text": "6–1"
+          },
+          "scope": "The Premier League derby result.",
+          "sourceKey": "curriculum-next-city-silva-derby",
+          "evidence": "The club tribute calls it the 6–1 defeat of arch-rivals United.",
+          "scoreInput": {
+            "leftClubKey": "entity-manchester-city",
+            "rightClubKey": "entity-manchester-united",
+            "leftGoals": 6,
+            "rightGoals": 1
+          }
+        },
+        {
+          "key": "silva-assist-recipient",
+          "label": "Assist recipient",
+          "prompt": "Who received Silva’s notable pass for a goal in that derby?",
+          "answers": [
+            "Edin Džeko"
+          ],
+          "distractors": [
+            "Sergio Agüero",
+            "Mario Balotelli",
+            "Yaya Touré"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Edin Džeko",
+            "text": "Edin Džeko"
+          },
+          "scope": "The City player whose goal followed Silva’s pass.",
+          "sourceKey": "curriculum-next-city-silva-derby",
+          "evidence": "City’s retrospective names Silva’s assist to Edin Džeko."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-champions-next-silva-appearances",
+      "subjectKey": "entity-david-silva",
+      "clubKey": "entity-manchester-city",
+      "title": "A decade of City appearances",
+      "subtitle": "436 games and a European milestone",
+      "chapter": "records",
+      "story": [
+        {
+          "title": "A top-ten career",
+          "body": "Silva’s 436th City appearance, against Lyon, moved him into the club’s all-time top ten in August 2020."
+        },
+        {
+          "title": "A European high",
+          "body": "That Lyon match was his 70th European appearance for City, then a club record."
+        }
+      ],
+      "facts": [
+        {
+          "key": "silva-total-apps",
+          "label": "City appearances",
+          "prompt": "How many appearances did Silva make for Manchester City?",
+          "answers": [
+            "436"
+          ],
+          "distractors": [
+            "390",
+            "404",
+            "460"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "436",
+            "number": 436,
+            "unit": "appearances"
+          },
+          "scope": "His all-competitions total at the end of his City spell.",
+          "sourceKey": "curriculum-next-city-silva-milestone",
+          "evidence": "City lists 436 appearances."
+        },
+        {
+          "key": "silva-lyon-apps",
+          "label": "European appearances",
+          "prompt": "How many European appearances did Silva have after the Lyon match?",
+          "answers": [
+            "70"
+          ],
+          "distractors": [
+            "60",
+            "65",
+            "77"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "70",
+            "number": 70,
+            "unit": "appearances"
+          },
+          "scope": "His tally in European matches for City after facing Lyon.",
+          "sourceKey": "curriculum-next-city-silva-milestone",
+          "evidence": "City says the Lyon fixture took him to 70 European appearances."
+        },
+        {
+          "key": "silva-goals",
+          "label": "City goals",
+          "prompt": "How many goals did Silva score for City?",
+          "answers": [
+            "77"
+          ],
+          "distractors": [
+            "70",
+            "92",
+            "121"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "77",
+            "number": 77,
+            "unit": "goals"
+          },
+          "scope": "His total for Manchester City in the club profile.",
+          "sourceKey": "curriculum-next-city-silva",
+          "evidence": "The official profile gives 77 goals."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-champions-next-silva-trophies",
+      "subjectKey": "entity-david-silva",
+      "clubKey": "entity-manchester-city",
+      "title": "Honours across a decade",
+      "subtitle": "Four Premier League titles and more",
+      "chapter": "legacy",
+      "story": [
+        {
+          "title": "A long list of silverware",
+          "body": "Across ten years, Silva won four Premier League titles, two FA Cups and five League Cups with City."
+        },
+        {
+          "title": "A lasting tribute",
+          "body": "The club announced a statue and a training pitch mosaic to honour his contribution."
+        }
+      ],
+      "facts": [
+        {
+          "key": "silva-leagues",
+          "label": "Premier League titles",
+          "prompt": "How many Premier League titles did Silva win with City?",
+          "answers": [
+            "4"
+          ],
+          "distractors": [
+            "2",
+            "3",
+            "5"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "4",
+            "number": 4,
+            "unit": "titles"
+          },
+          "scope": "The title count in City’s honours announcement.",
+          "sourceKey": "curriculum-next-city-silva-statue",
+          "evidence": "City lists four Premier League titles."
+        },
+        {
+          "key": "silva-fa-cups",
+          "label": "FA Cups",
+          "prompt": "How many FA Cups did Silva win with City?",
+          "answers": [
+            "2"
+          ],
+          "distractors": [
+            "1",
+            "3",
+            "5"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "2",
+            "number": 2,
+            "unit": "cups"
+          },
+          "scope": "His club honours across the decade.",
+          "sourceKey": "curriculum-next-city-silva-statue",
+          "evidence": "City lists two FA Cups."
+        },
+        {
+          "key": "silva-league-cups",
+          "label": "League Cups",
+          "prompt": "How many League Cups did Silva win with City?",
+          "answers": [
+            "5"
+          ],
+          "distractors": [
+            "2",
+            "4",
+            "6"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "5",
+            "number": 5,
+            "unit": "cups"
+          },
+          "scope": "The club’s honours count.",
+          "sourceKey": "curriculum-next-city-silva-statue",
+          "evidence": "City lists five League Cups."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-champions-next-atleti-origins",
+      "subjectKey": "entity-atletico",
+      "clubKey": "entity-atletico",
+      "title": "Athletic Club de Madrid begins",
+      "subtitle": "Students start a club in 1903",
+      "chapter": "history",
+      "story": [
+        {
+          "title": "A group of students",
+          "body": "Young Basque students living in Madrid founded Athletic Club de Madrid on 26 April 1903."
+        },
+        {
+          "title": "A pitch by the Retiro",
+          "body": "The club’s first field stood behind the Retiro walls; members played the first match on 2 May."
+        }
+      ],
+      "facts": [
+        {
+          "key": "atleti-found-date",
+          "label": "Foundation date",
+          "prompt": "On what date was Athletic Club de Madrid founded?",
+          "answers": [
+            "26 April 1903"
+          ],
+          "distractors": [
+            "2 May 1903",
+            "26 April 1904",
+            "13 May 1923"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "26 April 1903",
+            "text": "26 April 1903"
+          },
+          "scope": "The official foundation date stated by Atlético.",
+          "sourceKey": "curriculum-next-atleti-origin",
+          "evidence": "The club’s anniversary article identifies 26 April 1903."
+        },
+        {
+          "key": "atleti-founders",
+          "label": "Founders",
+          "prompt": "Who founded Athletic Club de Madrid?",
+          "answers": [
+            "Young Basque students living in Madrid"
+          ],
+          "distractors": [
+            "Former Real Madrid players",
+            "English railway workers",
+            "A group of Barcelona supporters"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Young Basque students living in Madrid",
+            "text": "Young Basque students living in Madrid"
+          },
+          "scope": "The people identified in the official anniversary account.",
+          "sourceKey": "curriculum-next-atleti-origin",
+          "evidence": "Atlético describes the founders as young Basque students based in Madrid."
+        },
+        {
+          "key": "atleti-first-match",
+          "label": "First match",
+          "prompt": "When did members play the club’s first match?",
+          "answers": [
+            "2 May 1903"
+          ],
+          "distractors": [
+            "26 April 1903",
+            "13 May 1923",
+            "22 January 1911"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "2 May 1903",
+            "text": "2 May 1903"
+          },
+          "scope": "The members’ first club match, played at Campo del Retiro on 2 May 1903.",
+          "sourceKey": "curriculum-next-atleti-history",
+          "evidence": "The club’s official first-match retrospective says the first game took place on 2 May 1903 at Campo del Retiro."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-champions-next-atleti-liga-2014",
+      "subjectKey": "entity-atletico",
+      "clubKey": "entity-atletico",
+      "title": "A title secured at Camp Nou",
+      "subtitle": "Godín’s header earns the point",
+      "chapter": "moments",
+      "story": [
+        {
+          "title": "A final-day decider",
+          "body": "On 17 May 2014, Atlético visited Barcelona knowing a draw would secure the league title."
+        },
+        {
+          "title": "A header after the break",
+          "body": "Diego Godín rose to meet Koke’s corner. The 1–1 draw gave Atlético its tenth Spanish league championship."
+        }
+      ],
+      "facts": [
+        {
+          "key": "atleti-title-date",
+          "label": "Title date",
+          "prompt": "When did Atlético secure the 2013/14 league title at Barcelona?",
+          "answers": [
+            "17 May 2014"
+          ],
+          "distractors": [
+            "17 May 2013",
+            "24 May 2014",
+            "17 June 2014"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "17 May 2014",
+            "text": "17 May 2014"
+          },
+          "scope": "The final league match of the title-winning season.",
+          "sourceKey": "curriculum-next-atleti-title",
+          "evidence": "UEFA dates the match Saturday 17 May 2014."
+        },
+        {
+          "key": "atleti-equalizer",
+          "label": "Equaliser scorer",
+          "prompt": "Who scored Atlético’s equaliser at Camp Nou?",
+          "answers": [
+            "Diego Godín"
+          ],
+          "distractors": [
+            "Koke",
+            "Diego Costa",
+            "Gabi"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Diego Godín",
+            "text": "Diego Godín"
+          },
+          "scope": "The header that made the score 1–1.",
+          "sourceKey": "curriculum-next-atleti-title",
+          "evidence": "UEFA identifies Godín as the second-half scorer."
+        },
+        {
+          "key": "atleti-league-count",
+          "label": "League title number",
+          "prompt": "How many Spanish league titles did this win give Atlético?",
+          "answers": [
+            "10"
+          ],
+          "distractors": [
+            "8",
+            "9",
+            "11"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "10",
+            "number": 10,
+            "unit": "titles"
+          },
+          "scope": "The club’s 2014 title count.",
+          "sourceKey": "curriculum-next-atleti-title",
+          "evidence": "UEFA says the draw secured Atlético’s tenth Liga title."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-champions-next-atleti-intercontinental",
+      "subjectKey": "entity-atletico",
+      "clubKey": "entity-atletico",
+      "title": "An Intercontinental comeback",
+      "subtitle": "Atlético overturns Independiente’s first-leg lead",
+      "chapter": "moments",
+      "story": [
+        {
+          "title": "A return at the Calderón",
+          "body": "On 10 April 1975, Atlético hosted Independiente in the decisive second leg of the Intercontinental Cup."
+        },
+        {
+          "title": "Two goals turn the tie",
+          "body": "Atlético won 2–0 after losing the first leg 1–0. Irureta scored at 21 minutes and Ayala struck at 86."
+        }
+      ],
+      "facts": [
+        {
+          "key": "atleti-ic-date",
+          "label": "Decisive-leg date",
+          "prompt": "When did Atlético win the decisive Intercontinental Cup match?",
+          "answers": [
+            "10 April 1975"
+          ],
+          "distractors": [
+            "10 April 1974",
+            "10 May 1975",
+            "24 May 1975"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "10 April 1975",
+            "text": "10 April 1975"
+          },
+          "scope": "The second leg of the two-match final at the Vicente Calderón.",
+          "sourceKey": "curriculum-next-atleti-intercontinental",
+          "evidence": "Atlético dates its 2–0 win over Independiente to 10 April 1975."
+        },
+        {
+          "key": "atleti-ic-opponent",
+          "label": "Opponent",
+          "prompt": "Which club did Atlético beat to win the Intercontinental Cup?",
+          "answers": [
+            "Independiente"
+          ],
+          "distractors": [
+            "Bayern Munich",
+            "Real Madrid",
+            "Ajax"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Independiente",
+            "text": "Independiente"
+          },
+          "scope": "The Argentine opponent in the two-legged tie.",
+          "sourceKey": "curriculum-next-atleti-intercontinental",
+          "evidence": "The club identifies Independiente de Avellaneda as its opponent."
+        },
+        {
+          "key": "atleti-ic-comeback",
+          "label": "Second-leg score",
+          "prompt": "What was Atlético’s score in the home leg that completed the comeback?",
+          "answers": [
+            "2–0"
+          ],
+          "distractors": [
+            "1–0",
+            "2–1",
+            "3–0"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "2–0",
+            "text": "2–0"
+          },
+          "scope": "Atlético first lost the away match 1–0 before the return leg.",
+          "sourceKey": "curriculum-next-atleti-intercontinental",
+          "evidence": "The club says Atlético won the second match by two goals to nil."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-champions-next-torres-academy",
+      "subjectKey": "entity-fernando-torres",
+      "clubKey": "entity-atletico",
+      "title": "Torres rises from the academy",
+      "subtitle": "A teenager earns his first-team place",
+      "chapter": "career",
+      "story": [
+        {
+          "title": "An academy boy",
+          "body": "Torres joined Atlético’s academy at 11 and made his senior debut against Leganés on 27 May 2001."
+        },
+        {
+          "title": "First goal a week later",
+          "body": "He scored his first senior goal against Albacete seven days after his debut."
+        }
+      ],
+      "facts": [
+        {
+          "key": "torres-academy-age",
+          "label": "Academy age",
+          "prompt": "How old was Torres when he joined Atlético’s academy?",
+          "answers": [
+            "11"
+          ],
+          "distractors": [
+            "9",
+            "13",
+            "15"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "11",
+            "text": "11"
+          },
+          "scope": "The age given in the club’s farewell biography.",
+          "sourceKey": "curriculum-next-atleti-torres",
+          "evidence": "Atlético says he joined the academy at 11."
+        },
+        {
+          "key": "torres-debut-date",
+          "label": "Senior debut date",
+          "prompt": "When did Torres make his first-team debut?",
+          "answers": [
+            "27 May 2001"
+          ],
+          "distractors": [
+            "27 May 2000",
+            "3 June 2001",
+            "27 June 2001"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "27 May 2001",
+            "text": "27 May 2001"
+          },
+          "scope": "His official debut against Leganés.",
+          "sourceKey": "curriculum-next-atleti-torres-debut",
+          "evidence": "Atlético dates the debut to 27 May 2001."
+        },
+        {
+          "key": "torres-first-goal",
+          "label": "First senior goal opponent",
+          "prompt": "Against whom did Torres score his first senior Atlético goal?",
+          "answers": [
+            "Albacete"
+          ],
+          "distractors": [
+            "Leganés",
+            "Eibar",
+            "Roma"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Albacete",
+            "text": "Albacete"
+          },
+          "scope": "The opponent seven days after his debut.",
+          "sourceKey": "curriculum-next-atleti-torres",
+          "evidence": "The club says his first goal came against Albacete."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-champions-next-torres-calderon",
+      "subjectKey": "entity-fernando-torres",
+      "clubKey": "entity-atletico",
+      "title": "A farewell brace",
+      "subtitle": "Torres scores twice at the Calderón goodbye",
+      "chapter": "moments",
+      "story": [
+        {
+          "title": "A stadium’s last match",
+          "body": "At the Vicente Calderón farewell match, Torres scored two of Atlético’s three goals against Athletic Club."
+        },
+        {
+          "title": "A fitting send-off",
+          "body": "The boy who had debuted at the ground returned to score a brace in its farewell game."
+        }
+      ],
+      "facts": [
+        {
+          "key": "torres-farewell-opponent",
+          "label": "Farewell opponent",
+          "prompt": "Which team did Atlético face in Torres’s Calderón farewell match?",
+          "answers": [
+            "Athletic Club"
+          ],
+          "distractors": [
+            "Eibar",
+            "Albacete",
+            "Leganés"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Athletic Club",
+            "text": "Athletic Club"
+          },
+          "scope": "The opponent in the stadium farewell match.",
+          "sourceKey": "curriculum-next-atleti-torres",
+          "evidence": "Atlético says Torres scored twice against Athletic Club."
+        },
+        {
+          "key": "torres-farewell-goals",
+          "label": "Farewell goals",
+          "prompt": "How many goals did Torres score in the Calderón farewell match?",
+          "answers": [
+            "2"
+          ],
+          "distractors": [
+            "1",
+            "3",
+            "4"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "2",
+            "number": 2,
+            "unit": "goals"
+          },
+          "scope": "His brace in the final match at the ground.",
+          "sourceKey": "curriculum-next-atleti-torres",
+          "evidence": "The club records two of the three goals as Torres’s."
+        },
+        {
+          "key": "torres-farewell-stadium",
+          "label": "Farewell ground",
+          "prompt": "Which stadium hosted the farewell match where Torres scored a brace?",
+          "answers": [
+            "Vicente Calderón"
+          ],
+          "distractors": [
+            "Wanda Metropolitano",
+            "Camp Nou",
+            "Estadio de Lyon"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Vicente Calderón",
+            "text": "Vicente Calderón"
+          },
+          "scope": "The stadium where Torres made his debut and scored in the farewell fixture.",
+          "sourceKey": "curriculum-next-atleti-torres",
+          "evidence": "Atlético calls it the Vicente Calderón farewell match."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-champions-next-torres-milestones",
+      "subjectKey": "entity-fernando-torres",
+      "clubKey": "entity-atletico",
+      "title": "A century of Atlético goals",
+      "subtitle": "Torres reaches 100 against Eibar",
+      "chapter": "records",
+      "story": [
+        {
+          "title": "A round number",
+          "body": "On 6 February 2016, Torres scored his 100th goal for Atlético against Eibar in a 3–1 win."
+        },
+        {
+          "title": "A lasting total",
+          "body": "He ended his Atlético career with 404 appearances and 129 goals."
+        }
+      ],
+      "facts": [
+        {
+          "key": "torres-hundred-date",
+          "label": "100th goal date",
+          "prompt": "When did Torres score his 100th Atlético goal?",
+          "answers": [
+            "6 February 2016"
+          ],
+          "distractors": [
+            "6 February 2015",
+            "16 February 2016",
+            "6 March 2016"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "6 February 2016",
+            "text": "6 February 2016"
+          },
+          "scope": "The Eibar match in which he reached 100 goals.",
+          "sourceKey": "curriculum-next-atleti-torres",
+          "evidence": "Atlético dates the milestone 6 February 2016."
+        },
+        {
+          "key": "torres-final-apps",
+          "label": "Career appearances",
+          "prompt": "How many appearances did Torres make for Atlético?",
+          "answers": [
+            "404"
+          ],
+          "distractors": [
+            "370",
+            "400",
+            "420"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "404",
+            "number": 404,
+            "unit": "appearances"
+          },
+          "scope": "His completed total at the end of his 2017/18 spell.",
+          "sourceKey": "curriculum-next-atleti-torres",
+          "evidence": "The club farewell reports 404 matches."
+        },
+        {
+          "key": "torres-final-goals",
+          "label": "Career goals",
+          "prompt": "How many goals did Torres score for Atlético?",
+          "answers": [
+            "129"
+          ],
+          "distractors": [
+            "100",
+            "127",
+            "173"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "129",
+            "number": 129,
+            "unit": "goals"
+          },
+          "scope": "His final club total in all competitions.",
+          "sourceKey": "curriculum-next-atleti-torres",
+          "evidence": "Atlético records 129 goals."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-champions-next-torres-honours",
+      "subjectKey": "entity-fernando-torres",
+      "clubKey": "entity-atletico",
+      "title": "A childhood dream fulfilled",
+      "subtitle": "Torres lifts the Europa League with Atleti",
+      "chapter": "legacy",
+      "story": [
+        {
+          "title": "The final in Lyon",
+          "body": "Torres came on late in the 2018 Europa League final as Atlético beat Marseille 3–0."
+        },
+        {
+          "title": "A title at last",
+          "body": "Atlético’s retrospective says winning that trophy fulfilled the dream he had held since childhood."
+        }
+      ],
+      "facts": [
+        {
+          "key": "torres-europa-year",
+          "label": "Europa League year",
+          "prompt": "In what year did Torres win the Europa League with Atlético?",
+          "answers": [
+            "2018"
+          ],
+          "distractors": [
+            "2012",
+            "2014",
+            "2020"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "2018",
+            "text": "2018"
+          },
+          "scope": "The final against Marseille in Lyon.",
+          "sourceKey": "curriculum-next-atleti-torres",
+          "evidence": "Atlético says he won the Europa League in Lyon in 2018."
+        },
+        {
+          "key": "torres-europa-opponent",
+          "label": "Final opponent",
+          "prompt": "Which team did Atlético beat in the final Torres won?",
+          "answers": [
+            "Marseille"
+          ],
+          "distractors": [
+            "Chelsea",
+            "Athletic Club",
+            "Real Madrid"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Marseille",
+            "text": "Marseille"
+          },
+          "scope": "The opponent in Lyon.",
+          "sourceKey": "curriculum-next-atleti-torres",
+          "evidence": "The club identifies Olympique de Marseille as the final opponent."
+        },
+        {
+          "key": "torres-euro-2008",
+          "label": "National team final",
+          "prompt": "Which country did Torres score against in the Euro 2008 final?",
+          "answers": [
+            "Germany"
+          ],
+          "distractors": [
+            "Italy",
+            "Netherlands",
+            "France"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Germany",
+            "text": "Germany"
+          },
+          "scope": "His international final goal cited in Atlético’s Torres career retrospective.",
+          "sourceKey": "curriculum-next-atleti-torres-debut",
+          "evidence": "Atlético says he scored the winning goal against Germany in the 1–0 final."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-champions-next-griezmann-return",
+      "subjectKey": "entity-griezmann",
+      "clubKey": "entity-atletico",
+      "title": "Griezmann’s first Atleti spell",
+      "subtitle": "A debut and first goal in 2014",
+      "chapter": "career",
+      "story": [
+        {
+          "title": "A summer arrival",
+          "body": "Griezmann joined Atlético ahead of the 2014/15 season and debuted in the Spanish Super Cup on 10 August 2014."
+        },
+        {
+          "title": "A European first",
+          "body": "His first Atlético goal came in a Champions League match against Olympiacos in September."
+        }
+      ],
+      "facts": [
+        {
+          "key": "griezmann-first-season",
+          "label": "Joining season",
+          "prompt": "Before which season did Griezmann first join Atlético?",
+          "answers": [
+            "2014/15"
+          ],
+          "distractors": [
+            "2013/14",
+            "2015/16",
+            "2016/17"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "2014/15",
+            "text": "2014/15"
+          },
+          "scope": "The first season of his original Atlético spell.",
+          "sourceKey": "curriculum-next-atleti-griezmann",
+          "evidence": "Atlético says he joined ahead of 2014/15."
+        },
+        {
+          "key": "griezmann-debut-date",
+          "label": "Atlético debut",
+          "prompt": "When did Griezmann make his Atlético debut?",
+          "answers": [
+            "10 August 2014"
+          ],
+          "distractors": [
+            "10 August 2013",
+            "16 September 2014",
+            "10 September 2014"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "10 August 2014",
+            "text": "10 August 2014"
+          },
+          "scope": "His Spanish Super Cup debut.",
+          "sourceKey": "curriculum-next-atleti-griezmann",
+          "evidence": "Atlético dates his debut to 10 August 2014."
+        },
+        {
+          "key": "griezmann-first-goal-opponent",
+          "label": "First goal opponent",
+          "prompt": "Against whom did Griezmann score his first Atlético goal?",
+          "answers": [
+            "Olympiacos"
+          ],
+          "distractors": [
+            "Marseille",
+            "Getafe",
+            "Barcelona"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Olympiacos",
+            "text": "Olympiacos"
+          },
+          "scope": "His first goal for the club in the Champions League.",
+          "sourceKey": "curriculum-next-atleti-griezmann",
+          "evidence": "The club identifies Olympiacos as the opponent."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-champions-next-griezmann-europa-final",
+      "subjectKey": "entity-griezmann",
+      "clubKey": "entity-atletico",
+      "title": "A brace on home soil",
+      "subtitle": "Griezmann’s two goals power a final win",
+      "chapter": "moments",
+      "story": [
+        {
+          "title": "Back in France",
+          "body": "On 16 May 2018, Griezmann returned to France for the Europa League final against Marseille in Lyon."
+        },
+        {
+          "title": "Two goals, one trophy",
+          "body": "He scored Atlético’s first two goals in a 3–0 win and was named the final’s official man of the match."
+        }
+      ],
+      "facts": [
+        {
+          "key": "griezmann-final-date",
+          "label": "Final date",
+          "prompt": "When did Griezmann score twice in the Europa League final?",
+          "answers": [
+            "16 May 2018"
+          ],
+          "distractors": [
+            "16 May 2017",
+            "16 June 2018",
+            "24 May 2018"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "16 May 2018",
+            "text": "16 May 2018"
+          },
+          "scope": "The Atlético–Marseille final in Lyon.",
+          "sourceKey": "curriculum-next-atleti-griezmann-final",
+          "evidence": "UEFA dates the final Wednesday 16 May 2018."
+        },
+        {
+          "key": "griezmann-final-score",
+          "label": "Final score",
+          "prompt": "What was the score in Atlético’s win over Marseille?",
+          "answers": [
+            "3–0"
+          ],
+          "distractors": [
+            "2–0",
+            "3–1",
+            "1–0"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "3–0",
+            "text": "3–0"
+          },
+          "scope": "The final result in Lyon.",
+          "sourceKey": "curriculum-next-atleti-final",
+          "evidence": "UEFA records a 3–0 Atlético victory."
+        },
+        {
+          "key": "griezmann-man-match",
+          "label": "Final award",
+          "prompt": "What award did Griezmann receive for the final?",
+          "answers": [
+            "Official man of the match"
+          ],
+          "distractors": [
+            "Golden Boot",
+            "Player of the Tournament",
+            "Best Young Player"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Official man of the match",
+            "text": "Official man of the match"
+          },
+          "scope": "UEFA’s award following his brace.",
+          "sourceKey": "curriculum-next-atleti-griezmann-final",
+          "evidence": "UEFA named him official man of the match."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-champions-next-griezmann-goals-record",
+      "subjectKey": "entity-griezmann",
+      "clubKey": "entity-atletico",
+      "title": "Level with Luis Aragonés",
+      "subtitle": "173 goals in two Atlético spells",
+      "chapter": "records",
+      "story": [
+        {
+          "title": "A landmark against Getafe",
+          "body": "On 19 December 2023, Griezmann scored twice against Getafe to draw level with Luis Aragonés on 173 Atlético goals."
+        },
+        {
+          "title": "The tally behind the mark",
+          "body": "He reached that total in 364 matches across two spells, from 2014–19 and from 2021 onward."
+        }
+      ],
+      "facts": [
+        {
+          "key": "griezmann-record-date",
+          "label": "Record date",
+          "prompt": "When did Griezmann equal the Atlético scoring record?",
+          "answers": [
+            "19 December 2023"
+          ],
+          "distractors": [
+            "19 December 2022",
+            "19 January 2024",
+            "19 November 2023"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "19 December 2023",
+            "text": "19 December 2023"
+          },
+          "scope": "The Getafe match in which he equalled Luis Aragonés.",
+          "sourceKey": "curriculum-next-atleti-griezmann-record",
+          "evidence": "The club report dates the record tie to 19 December."
+        },
+        {
+          "key": "griezmann-record-goals",
+          "label": "Goals at record tie",
+          "prompt": "How many Atlético goals had Griezmann scored when he equalled Luis Aragonés?",
+          "answers": [
+            "173"
+          ],
+          "distractors": [
+            "170",
+            "172",
+            "175"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "173",
+            "number": 173,
+            "unit": "goals"
+          },
+          "scope": "The shared club record after his two goals against Getafe.",
+          "sourceKey": "curriculum-next-atleti-griezmann-record",
+          "evidence": "Atlético says he equalled the record with 173 goals."
+        },
+        {
+          "key": "griezmann-record-games",
+          "label": "Matches at record tie",
+          "prompt": "How many matches had Griezmann played across his two Atlético spells at that milestone?",
+          "answers": [
+            "364"
+          ],
+          "distractors": [
+            "257",
+            "370",
+            "404"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "364",
+            "number": 364,
+            "unit": "matches"
+          },
+          "scope": "His appearances through the record-tying Getafe fixture.",
+          "sourceKey": "curriculum-next-atleti-griezmann-record",
+          "evidence": "The club says his 173 goals came in 364 matches."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-champions-next-griezmann-honours",
+      "subjectKey": "entity-griezmann",
+      "clubKey": "entity-atletico",
+      "title": "Club and country honours",
+      "subtitle": "A Europa League champion and World Cup winner",
+      "chapter": "legacy",
+      "story": [
+        {
+          "title": "Success in 2018",
+          "body": "Griezmann won the Europa League with Atlético and the World Cup with France in 2018."
+        },
+        {
+          "title": "Individual recognition",
+          "body": "He finished third in the 2018 Ballon d’Or, the same year as those two major titles."
+        }
+      ],
+      "facts": [
+        {
+          "key": "griezmann-atleti-titles",
+          "label": "Atleti titles",
+          "prompt": "How many Europa League titles did Griezmann win with Atlético in his first spell?",
+          "answers": [
+            "1"
+          ],
+          "distractors": [
+            "0",
+            "2",
+            "3"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "1",
+            "number": 1,
+            "unit": "titles"
+          },
+          "scope": "The club’s return announcement itemises his honours over 257 matches.",
+          "sourceKey": "curriculum-next-atleti-griezmann",
+          "evidence": "Atlético lists one Europa League title."
+        },
+        {
+          "key": "griezmann-world-cup",
+          "label": "World Cup year",
+          "prompt": "In which year did Griezmann win the World Cup with France?",
+          "answers": [
+            "2018"
+          ],
+          "distractors": [
+            "2014",
+            "2016",
+            "2022"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "2018",
+            "number": 2018,
+            "unit": "year"
+          },
+          "scope": "The national-team honour noted by Atlético.",
+          "sourceKey": "curriculum-next-atleti-griezmann",
+          "evidence": "The club says he won the World Cup in 2018."
+        },
+        {
+          "key": "griezmann-ballon",
+          "label": "Ballon d’Or placing",
+          "prompt": "What was Griezmann’s placing in the 2018 Ballon d’Or?",
+          "answers": [
+            "Third"
+          ],
+          "distractors": [
+            "First",
+            "Second",
+            "Fourth"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Third",
+            "text": "Third"
+          },
+          "scope": "His individual recognition in the same year as his major titles.",
+          "sourceKey": "curriculum-next-atleti-griezmann",
+          "evidence": "Atlético says he came third in the 2018 award."
+        }
+      ]
+    }
+  ]
+}
