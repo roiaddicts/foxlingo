@@ -692,6 +692,11 @@
     "cached": true
   },
   {
+    "asset": "entity-dwight-yorke",
+    "url": "https://futbol11.com/images/457.png",
+    "cached": true
+  },
+  {
     "asset": "entity-juventus",
     "url": "https://img.uefa.com/imgml/TP/teams/logos/100x100/50139.png",
     "cached": true
@@ -1229,6 +1234,16 @@
   {
     "asset": "club-badge-boca-juniors",
     "url": "https://cdn.prod.website-files.com/67d2f0b0dcad350660fe43ac/69bab0e66a03ade52a19c3f1_logo-boca.svg",
+    "cached": true
+  },
+  {
+    "asset": "club-badge-leeds-united",
+    "url": "https://img.uefa.com/imgml/TP/teams/logos/100x100/53361.png",
+    "cached": true
+  },
+  {
+    "asset": "club-badge-st-patricks-athletic",
+    "url": "https://img.uefa.com/imgml/TP/teams/logos/100x100/50133.png",
     "cached": true
   },
   {
@@ -1989,6 +2004,16 @@
   {
     "asset": "flag-australia",
     "url": "https://futbol11.com/media/flags/52.webp",
+    "cached": true
+  },
+  {
+    "asset": "flag-ireland",
+    "url": "https://futbol11.com/media/flags/53.webp",
+    "cached": true
+  },
+  {
+    "asset": "flag-trinidad-and-tobago",
+    "url": "https://futbol11.com/media/flags/58.webp",
     "cached": true
   },
   {

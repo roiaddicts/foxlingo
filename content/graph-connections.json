@@ -37,6 +37,52 @@
       "externalRefs": {},
       "imageAsset": "flag-australia",
       "imageURL": "https://futbol11.com/media/flags/52.webp"
+    },
+    {
+      "id": "e6c011eb-d595-53ee-bf14-e06478d68ff7",
+      "key": "entity-country-ireland",
+      "type": "country",
+      "name": "Ireland",
+      "aliases": [
+        "Republic of Ireland"
+      ],
+      "visual": "IR",
+      "externalRefs": {},
+      "imageAsset": "flag-ireland",
+      "imageURL": "https://futbol11.com/media/flags/53.webp"
+    },
+    {
+      "id": "2bdfe531-1134-5128-84d8-5063ef7a6b2a",
+      "key": "entity-country-trinidad-and-tobago",
+      "type": "country",
+      "name": "Trinidad and Tobago",
+      "aliases": [],
+      "visual": "TR",
+      "externalRefs": {},
+      "imageAsset": "flag-trinidad-and-tobago",
+      "imageURL": "https://futbol11.com/media/flags/58.webp"
+    },
+    {
+      "id": "0b0f2ec4-48e7-57ca-8e8c-f376068a5e2f",
+      "key": "entity-country-sweden",
+      "type": "country",
+      "name": "Sweden",
+      "aliases": [],
+      "visual": "SW",
+      "externalRefs": {},
+      "imageAsset": "flag-sweden",
+      "imageURL": "https://futbol11.com/media/flags/13.webp"
+    },
+    {
+      "id": "e9413144-9b53-5144-988e-c08d81c3a46a",
+      "key": "entity-country-italy",
+      "type": "country",
+      "name": "Italy",
+      "aliases": [],
+      "visual": "IT",
+      "externalRefs": {},
+      "imageAsset": "flag-italy",
+      "imageURL": "https://futbol11.com/media/flags/11.webp"
     }
   ],
   "relationships": [

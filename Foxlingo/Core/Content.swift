@@ -187,7 +187,7 @@ public struct ContentPack: Codable, Sendable {
             try require(!x.objectiveIDs.isEmpty && Set(x.objectiveIDs).isSubset(of:oi), "Broken exercise objective.")
             if let score=x.scoreInput {
                 try require(x.kind == "choice" && score.leftEntityID != score.rightEntityID && ei.contains(score.leftEntityID) && ei.contains(score.rightEntityID),"Broken score teams.")
-                try require([score.leftEntityID,score.rightEntityID].allSatisfy {entity($0).type == "club" && entity($0).imageAsset != nil},"Score teams need club artwork.")
+                try require([score.leftEntityID,score.rightEntityID].allSatisfy {["club","country"].contains(entity($0).type) && entity($0).imageAsset != nil},"Score teams need club or country artwork.")
                 try require((10...99).contains(score.maximum) && (0...score.maximum).contains(score.leftGoals) && (0...score.maximum).contains(score.rightGoals),"Invalid score range.")
                 let expected=[score.leftGoals,score.rightGoals]
                 let correctChoices=x.choices.filter {x.answerIDs.contains($0.id)}
@@ -253,7 +253,7 @@ public struct FileContentRepository: ContentRepository {
 }
 
 public enum AnswerArtwork {
-    public static let flags = ["australia":"flag-australia","ecuador":"flag-ecuador","spain":"flag-spain","mexico":"flag-mexico","germany":"flag-germany","brazil":"flag-brazil","portugal":"flag-portugal","argentina":"flag-argentina","france":"flag-france","england":"flag-england","colombia":"flag-colombia","austria":"flag-austria","azerbaijan":"flag-azerbaijan","belgium":"flag-belgium","greece":"flag-greece","italy":"flag-italy","netherlands":"flag-netherlands","norway":"flag-norway","finland":"flag-finland","denmark":"flag-denmark","sweden":"flag-sweden","slovakia":"flag-slovakia","ukraine":"flag-ukraine","uruguay":"flag-uruguay","chile":"flag-chile","czechia":"flag-czech-republic","turkiye":"flag-turkey","turkey":"flag-turkey"]
+    public static let flags = ["ireland":"flag-ireland","republic of ireland":"flag-ireland","trinidad and tobago":"flag-trinidad-and-tobago","australia":"flag-australia","ecuador":"flag-ecuador","spain":"flag-spain","mexico":"flag-mexico","germany":"flag-germany","brazil":"flag-brazil","portugal":"flag-portugal","argentina":"flag-argentina","france":"flag-france","england":"flag-england","colombia":"flag-colombia","austria":"flag-austria","azerbaijan":"flag-azerbaijan","belgium":"flag-belgium","greece":"flag-greece","italy":"flag-italy","netherlands":"flag-netherlands","norway":"flag-norway","finland":"flag-finland","denmark":"flag-denmark","sweden":"flag-sweden","slovakia":"flag-slovakia","ukraine":"flag-ukraine","uruguay":"flag-uruguay","chile":"flag-chile","czechia":"flag-czech-republic","turkiye":"flag-turkey","turkey":"flag-turkey"]
     public static func entity(_ text: String,type: String,pack: ContentPack) -> Entity? {
         guard ["club","player"].contains(type) else {return nil}
         return pack.entities.first {e in e.type == type && e.imageAsset != nil && ([e.name]+e.aliases).contains {Recall.normalize($0) == Recall.normalize(text)} }

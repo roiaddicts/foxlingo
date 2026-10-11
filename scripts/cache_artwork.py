@@ -49,7 +49,7 @@ for competition in json.loads((ROOT/'content/competition-artwork.json').read_tex
 for squad in p['lineups']:
  if squad.get('imageAsset') and squad.get('imageURL'):urls[squad['imageAsset']]=squad['imageURL']
 countries=json.loads((ROOT/'content/country-artwork.json').read_text())
-for key in ['ecuador','spain','mexico','germany','brazil','portugal','argentina','france','england','colombia','austria','azerbaijan','belgium','czechia','greece','italy','netherlands','norway','slovakia','turkiye','ukraine','uruguay','chile','finland','denmark','sweden','australia']:
+for key in ['ecuador','spain','mexico','germany','brazil','portugal','argentina','france','england','colombia','austria','azerbaijan','belgium','czechia','greece','italy','netherlands','norway','slovakia','turkiye','ukraine','uruguay','chile','finland','denmark','sweden','australia','ireland','trinidad and tobago']:
  c=countries[key];urls[c['imageAsset']]=c['imageURL']
 draft_path=ROOT/'Foxlingo/Resources/drafts-en.json'
 if draft_path.exists():

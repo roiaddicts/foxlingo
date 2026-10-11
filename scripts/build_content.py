@@ -155,7 +155,7 @@ from merge_curriculum import merge as merge_curriculum
 for club in json.loads((ROOT/'content/club-search-artwork.json').read_text()):
  if club.get('entityKey') and not any(e['key']==club['entityKey'] for e in pack['entities']):
   pack['entities'].append(dict(id=uid(club['entityKey']),key=club['entityKey'],type='club',name=club['name'],aliases=club.get('aliases',[]),visual=club.get('visual',club['name'][:3]),externalRefs={},imageAsset=club['asset'],imageURL=club['imageURL']))
-  pack['sources'].append(dict(key='artwork-'+club['entityKey'],title=club['name']+' · official club badge',url=club['sourceURL'],verifiedAt='2026-10-10'))
+  pack['sources'].append(dict(key='artwork-'+club['entityKey'],title=club['name']+' · official club badge',url=club['sourceURL'],verifiedAt=club.get('verifiedAt','2026-10-10')))
 curriculum_lessons=merge_curriculum(pack)
 pack['contentVersion']=json.loads((ROOT/'content/curriculum-packs.json').read_text())['contentVersion'] if curriculum_lessons else 12
 # Promote explicitly authored country values into canonical targets. Preserve

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "key": "foxlingo-favorites-en",
-  "contentVersion": 21,
+  "contentVersion": 22,
   "language": "en",
   "entities": [
     {
@@ -1138,6 +1138,52 @@
       "imageURL": "https://futbol11.com/media/flags/52.webp"
     },
     {
+      "id": "e6c011eb-d595-53ee-bf14-e06478d68ff7",
+      "key": "entity-country-ireland",
+      "type": "country",
+      "name": "Ireland",
+      "aliases": [
+        "Republic of Ireland"
+      ],
+      "visual": "IR",
+      "externalRefs": {},
+      "imageAsset": "flag-ireland",
+      "imageURL": "https://futbol11.com/media/flags/53.webp"
+    },
+    {
+      "id": "2bdfe531-1134-5128-84d8-5063ef7a6b2a",
+      "key": "entity-country-trinidad-and-tobago",
+      "type": "country",
+      "name": "Trinidad and Tobago",
+      "aliases": [],
+      "visual": "TR",
+      "externalRefs": {},
+      "imageAsset": "flag-trinidad-and-tobago",
+      "imageURL": "https://futbol11.com/media/flags/58.webp"
+    },
+    {
+      "id": "0b0f2ec4-48e7-57ca-8e8c-f376068a5e2f",
+      "key": "entity-country-sweden",
+      "type": "country",
+      "name": "Sweden",
+      "aliases": [],
+      "visual": "SW",
+      "externalRefs": {},
+      "imageAsset": "flag-sweden",
+      "imageURL": "https://futbol11.com/media/flags/13.webp"
+    },
+    {
+      "id": "e9413144-9b53-5144-988e-c08d81c3a46a",
+      "key": "entity-country-italy",
+      "type": "country",
+      "name": "Italy",
+      "aliases": [],
+      "visual": "IT",
+      "externalRefs": {},
+      "imageAsset": "flag-italy",
+      "imageURL": "https://futbol11.com/media/flags/11.webp"
+    },
+    {
       "id": "466d4f14-d18c-545e-acce-a2545249b62b",
       "key": "entity-irapuato",
       "type": "club",
@@ -1895,6 +1941,32 @@
       "externalRefs": {},
       "imageAsset": "club-badge-boca-juniors",
       "imageURL": "https://cdn.prod.website-files.com/67d2f0b0dcad350660fe43ac/69bab0e66a03ade52a19c3f1_logo-boca.svg"
+    },
+    {
+      "id": "e4b2cfc7-b170-5b40-a22f-dbf9e6f85aee",
+      "key": "entity-leeds-united",
+      "type": "club",
+      "name": "Leeds United",
+      "aliases": [
+        "Leeds United"
+      ],
+      "visual": "LEE",
+      "externalRefs": {},
+      "imageAsset": "club-badge-leeds-united",
+      "imageURL": "https://img.uefa.com/imgml/TP/teams/logos/100x100/53361.png"
+    },
+    {
+      "id": "7e7b2930-088a-5a6b-a359-3a94b7d46836",
+      "key": "entity-st-patricks-athletic",
+      "type": "club",
+      "name": "St Patrick’s Athletic",
+      "aliases": [
+        "St Patrick's Athletic"
+      ],
+      "visual": "SPA",
+      "externalRefs": {},
+      "imageAsset": "club-badge-st-patricks-athletic",
+      "imageURL": "https://img.uefa.com/imgml/TP/teams/logos/100x100/50133.png"
     },
     {
       "id": "4010807c-d653-5ec2-9751-6c0996e4e016",
@@ -3072,6 +3144,32 @@
       "imageURL": "https://futbol11.com/images/790.png"
     },
     {
+      "id": "d72eeff5-883e-562e-b449-793522947421",
+      "key": "entity-paul-mcgrath",
+      "type": "player",
+      "name": "Paul McGrath",
+      "aliases": [
+        "Paul McGrath"
+      ],
+      "visual": "PM",
+      "externalRefs": {}
+    },
+    {
+      "id": "20bc323d-9a30-5ffe-b055-6d81f7bb540c",
+      "key": "entity-dwight-yorke",
+      "type": "player",
+      "name": "Dwight Yorke",
+      "aliases": [
+        "Dwight Yorke"
+      ],
+      "visual": "DY",
+      "externalRefs": {
+        "futbol11.gamePlayers": "457"
+      },
+      "imageAsset": "entity-dwight-yorke",
+      "imageURL": "https://futbol11.com/images/457.png"
+    },
+    {
       "id": "544551ae-f6d2-5492-8278-b79ebab76843",
       "key": "entity-country-greece",
       "type": "country",
@@ -3136,17 +3234,6 @@
       "externalRefs": {},
       "imageAsset": "flag-belgium",
       "imageURL": "https://futbol11.com/media/flags/3.webp"
-    },
-    {
-      "id": "e9413144-9b53-5144-988e-c08d81c3a46a",
-      "key": "entity-country-italy",
-      "type": "country",
-      "name": "Italy",
-      "aliases": [],
-      "visual": "IT",
-      "externalRefs": {},
-      "imageAsset": "flag-italy",
-      "imageURL": "https://futbol11.com/media/flags/11.webp"
     },
     {
       "id": "07fbddbb-e1d2-56dd-bcb1-0bcd138f7500",
@@ -4195,6 +4282,18 @@
       "title": "Boca Juniors · official club badge",
       "url": "https://www.bocajuniors.com.ar/identidad",
       "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "artwork-entity-leeds-united",
+      "title": "Leeds United · official club badge",
+      "url": "https://www.uefa.com/uefachampionsleague/history/clubs/53361--leeds/",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "artwork-entity-st-patricks-athletic",
+      "title": "St Patrick’s Athletic · official club badge",
+      "url": "https://www.uefa.com/uefaeuropaleague/history/clubs/50133--st-patrick-s/",
+      "verifiedAt": "2026-10-11"
     },
     {
       "key": "arsenal-origins",
@@ -7074,6 +7173,114 @@
       "key": "roma-1984-final-uefa",
       "title": "1983/84 European Cup season — UEFA",
       "url": "https://www.uefa.com/uefachampionsleague/history/seasons/1983/",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "villa-next-history",
+      "title": "Aston Villa Timeline",
+      "url": "https://www.avfc.co.uk/history/timeline/",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "villa-next-ucl-1982",
+      "title": "Aston Villa vs Bayern München: 1981/82 European Cup final",
+      "url": "https://www.uefa.com/uefachampionsleague/match/63804--aston-villa-vs-bayern-munchen/",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "villa-next-uefa-finals",
+      "title": "UEFA Champions League finals results and line-ups",
+      "url": "https://www.uefa.com/newsfiles/461370.pdf",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "villa-next-yorke-profile",
+      "title": "Dwight Yorke: Premier League player profile",
+      "url": "https://www.premierleague.com/en/players/1829/dwight-yorke/stats",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "villa-next-stpats-profile",
+      "title": "Paul McGrath — St Patrick’s Athletic player profile",
+      "url": "https://www.stpatsfc.com/profile.php?id=195",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "villa-next-stpats-history",
+      "title": "St Pat’s History: The 1980s",
+      "url": "https://www.stpatsfc.com/news.php?id=8802",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "villa-next-derby-mcgrath",
+      "title": "The Jim Smith Era: A Top-Flight Legacy",
+      "url": "https://www.dcfc.co.uk/news/2025/06/feature-the-jim-smith-era-a-premiership-legacy-june-2025",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "villa-next-fai-mcgrath",
+      "title": "McGrath and O’Brien inducted into FAI Hall of Fame",
+      "url": "https://www.stpatsfc.com/news.php?id=8749",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "villa-next-fifa-mcgrath-italy",
+      "title": "Paul McGrath’s masterclass: FIFA World Cup 1994",
+      "url": "https://www.fifa.com/en/tournaments/mens/worldcup/articles/paul-mcgrath-performance-usa-1994",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "villa-next-yorke-united-treble",
+      "title": "May: Team spirit inspired Man Utd treble",
+      "url": "https://www.premierleague.com/en/news/59576",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "villa-next-fifa-yorke-2006",
+      "title": "Hart: Make the T&T players feel wanted",
+      "url": "https://inside.fifa.com/tournaments/mens/worldcup/2018russia/news/hart-make-the-t-t-players-feel-wanted-2856671",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "villa-next-fifa-yorke-captain",
+      "title": "England–Trinidad and Tobago, FIFA World Cup 2006",
+      "url": "https://collect.fifa.com/marketplace/sog-d-08",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "villa-next-yorke-three-seasons",
+      "title": "Preview: A trip across the Midlands to Molineux",
+      "url": "https://www.avfc.co.uk/news/2025/february/01/preview--a-trip-across-the-midlands-to-molineux/",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "villa-next-uefa-mcgrath-worldcups",
+      "title": "Italy and Ireland meet 18 years on",
+      "url": "https://www.uefa.com/uefaeuro/history/news/0254-0d7da204b332-f70175e08ec7-1000--italy-and-ireland-meet-18-years-on/",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "villa-next-efl-previous-finals",
+      "title": "Carabao Cup previous finals",
+      "url": "https://www.efl.com/competitions/carabao-cup/previous-finals/",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "villa-next-yorke-ucl-scorers",
+      "title": "UEFA Champions League 1998/99: top scorers",
+      "url": "https://www.uefa.com/uefachampionsleague/history/seasons/1998/",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "villa-next-yorke-golden-boot",
+      "title": "Premier League Golden Boot winners",
+      "url": "https://www.premierleague.com/en/news/1206108",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "villa-next-uefa-sweden2006",
+      "title": "UEFA EURO 2008 final draw facts: Sweden, page 42",
+      "url": "https://www.uefa.com/newsfiles/630400.pdf",
       "verifiedAt": "2026-10-11"
     }
   ],
@@ -39264,6 +39471,548 @@
         "de-rossi-career"
       ],
       "evidence": "The club lists one Supercoppa title, won in 2007."
+    },
+    {
+      "id": "470210ff-ed8a-522b-b347-67a70b575bbe",
+      "key": "fact-enrichment-villa-history-foundation-year",
+      "subjectID": "eb776548-b0db-5f30-ab1b-b47dabd128a5",
+      "predicate": "villa-history-foundation-year",
+      "value": {
+        "kind": "number",
+        "display": "1874",
+        "number": 1874,
+        "unit": "year"
+      },
+      "scope": "Aston Villa’s formation, as dated in the club timeline.",
+      "sourceKeys": [
+        "villa-next-history"
+      ],
+      "evidence": "The club timeline dates the four founders’ decision to create a football club to 1874."
+    },
+    {
+      "id": "eef53745-4e41-52e4-ab9f-aedc6103c719",
+      "key": "fact-enrichment-villa-history-league-founder",
+      "subjectID": "eb776548-b0db-5f30-ab1b-b47dabd128a5",
+      "predicate": "villa-history-league-founder",
+      "value": {
+        "kind": "text",
+        "display": "William McGregor",
+        "text": "William McGregor"
+      },
+      "scope": "The Football League’s formation in 1888.",
+      "sourceKeys": [
+        "villa-next-history"
+      ],
+      "evidence": "Aston Villa’s history credits committee member William McGregor with writing to other clubs to propose organized home-and-away fixtures."
+    },
+    {
+      "id": "18266f07-92a4-5519-9cb4-1a927aa77472",
+      "key": "fact-enrichment-villa-history-first-league-title",
+      "subjectID": "eb776548-b0db-5f30-ab1b-b47dabd128a5",
+      "predicate": "villa-history-first-league-title",
+      "value": {
+        "kind": "number",
+        "display": "1894",
+        "number": 1894,
+        "unit": "year"
+      },
+      "scope": "Aston Villa’s club history.",
+      "sourceKeys": [
+        "villa-next-history"
+      ],
+      "evidence": "The club timeline states its first League title was secured in 1894."
+    },
+    {
+      "id": "10cd65bd-1bb6-590a-b136-f53e1721ad45",
+      "key": "fact-enrichment-villa-1957-final-date",
+      "subjectID": "eb776548-b0db-5f30-ab1b-b47dabd128a5",
+      "predicate": "villa-1957-final-date",
+      "value": {
+        "kind": "text",
+        "display": "4 May 1957",
+        "text": "4 May 1957"
+      },
+      "scope": "Aston Villa–Manchester United, 1957 FA Cup Final.",
+      "sourceKeys": [
+        "villa-next-history"
+      ],
+      "evidence": "The club timeline dates the Wembley final to 4 May 1957."
+    },
+    {
+      "id": "1cb89598-5fc5-5265-8d86-68c4e3ba28ad",
+      "key": "fact-enrichment-villa-1957-opponent",
+      "subjectID": "eb776548-b0db-5f30-ab1b-b47dabd128a5",
+      "predicate": "villa-1957-opponent",
+      "value": {
+        "kind": "entity",
+        "display": "Manchester United",
+        "entityID": "1e1c96fa-0f06-58dc-8ad8-29d7fb8ae5c4"
+      },
+      "scope": "Aston Villa’s 1957 FA Cup Final.",
+      "sourceKeys": [
+        "villa-next-history"
+      ],
+      "evidence": "The club’s final account identifies Matt Busby’s Manchester United as Villa’s opponent."
+    },
+    {
+      "id": "98704087-7afb-5fd6-864d-52fbb296d32e",
+      "key": "fact-enrichment-villa-1957-mcparland-goals",
+      "subjectID": "eb776548-b0db-5f30-ab1b-b47dabd128a5",
+      "predicate": "villa-1957-mcparland-goals",
+      "value": {
+        "kind": "number",
+        "display": "2",
+        "number": 2,
+        "unit": "goals"
+      },
+      "scope": "Peter McParland’s scoring in the 1957 FA Cup Final.",
+      "sourceKeys": [
+        "villa-next-history"
+      ],
+      "evidence": "The club timeline describes McParland’s 68th-minute header and his second goal five minutes later."
+    },
+    {
+      "id": "4a1df707-ea79-506e-a715-b8a8b0e4d425",
+      "key": "fact-enrichment-villa-1982-final-date",
+      "subjectID": "eb776548-b0db-5f30-ab1b-b47dabd128a5",
+      "predicate": "villa-1982-final-date",
+      "value": {
+        "kind": "text",
+        "display": "26 May 1982",
+        "text": "26 May 1982"
+      },
+      "scope": "1981/82 European Cup Final, played at De Kuip in Rotterdam.",
+      "sourceKeys": [
+        "villa-next-uefa-finals"
+      ],
+      "evidence": "UEFA’s official finals publication lists the Aston Villa–Bayern final on 26 May 1982."
+    },
+    {
+      "id": "46a1ec09-c74e-5cbc-b5f9-f59c964ab9a9",
+      "key": "fact-enrichment-villa-1982-final-score",
+      "subjectID": "eb776548-b0db-5f30-ab1b-b47dabd128a5",
+      "predicate": "villa-1982-final-score",
+      "value": {
+        "kind": "text",
+        "display": "1–0",
+        "text": "1–0"
+      },
+      "scope": "1982 European Cup final; Aston Villa listed before Bayern München.",
+      "sourceKeys": [
+        "villa-next-uefa-finals"
+      ],
+      "evidence": "UEFA’s official final record lists Aston Villa 1–0 Bayern München."
+    },
+    {
+      "id": "df5c0a5b-32c4-5674-bbb1-a5c9bb167083",
+      "key": "fact-enrichment-villa-1982-withe-minute",
+      "subjectID": "eb776548-b0db-5f30-ab1b-b47dabd128a5",
+      "predicate": "villa-1982-withe-minute",
+      "value": {
+        "kind": "number",
+        "display": "67th minute",
+        "number": 67,
+        "unit": "minute"
+      },
+      "scope": "Peter Withe’s goal for Aston Villa against Bayern Munich in the 1982 European Cup Final.",
+      "sourceKeys": [
+        "villa-next-uefa-finals"
+      ],
+      "evidence": "UEFA’s official final line-up and results record credits Withe with the 67th-minute goal."
+    },
+    {
+      "id": "8325f780-d988-5681-8891-7dea4cf8e29d",
+      "key": "fact-enrichment-villa-mcgrath-first-club",
+      "subjectID": "d72eeff5-883e-562e-b449-793522947421",
+      "predicate": "villa-mcgrath-first-club",
+      "value": {
+        "kind": "entity",
+        "display": "St Patrick’s Athletic",
+        "entityID": "7e7b2930-088a-5a6b-a359-3a94b7d46836"
+      },
+      "scope": "Paul McGrath’s move from Dalkey United in 1981.",
+      "sourceKeys": [
+        "villa-next-stpats-profile"
+      ],
+      "evidence": "St Patrick’s Athletic states that it signed McGrath from Dalkey United in summer 1981."
+    },
+    {
+      "id": "4e7364ed-5817-5ff2-a251-a5a5eb85550e",
+      "key": "fact-enrichment-villa-mcgrath-next-club",
+      "subjectID": "d72eeff5-883e-562e-b449-793522947421",
+      "predicate": "villa-mcgrath-next-club",
+      "value": {
+        "kind": "entity",
+        "display": "Manchester United",
+        "entityID": "1e1c96fa-0f06-58dc-8ad8-29d7fb8ae5c4"
+      },
+      "scope": "Paul McGrath’s transfer from St Patrick’s Athletic after the 1981–82 season.",
+      "sourceKeys": [
+        "villa-next-stpats-profile"
+      ],
+      "evidence": "The St Pat’s profile says he was transferred to Manchester United at the end of 1981–82."
+    },
+    {
+      "id": "b3306746-90ba-5bf7-83b4-2f804cc0cf6a",
+      "key": "fact-enrichment-villa-mcgrath-derby-arrival",
+      "subjectID": "d72eeff5-883e-562e-b449-793522947421",
+      "predicate": "villa-mcgrath-derby-arrival",
+      "value": {
+        "kind": "text",
+        "display": "October 1996",
+        "text": "October 1996"
+      },
+      "scope": "Paul McGrath’s transfer from Aston Villa to Derby County.",
+      "sourceKeys": [
+        "villa-next-derby-mcgrath"
+      ],
+      "evidence": "Derby County states he arrived from Aston Villa in October 1996."
+    },
+    {
+      "id": "9783f546-d800-599a-9bc3-a7f1862bb781",
+      "key": "fact-enrichment-villa-mcgrath-pfai-award",
+      "subjectID": "d72eeff5-883e-562e-b449-793522947421",
+      "predicate": "villa-mcgrath-pfai-award",
+      "value": {
+        "kind": "text",
+        "display": "PFAI Player of the Year",
+        "text": "PFAI Player of the Year"
+      },
+      "scope": "Paul McGrath’s 1981–82 season with St Patrick’s Athletic.",
+      "sourceKeys": [
+        "villa-next-stpats-history"
+      ],
+      "evidence": "St Patrick’s Athletic calls him the winner of the second-ever PFAI Player of the Year award in 1981–82."
+    },
+    {
+      "id": "281b71f0-404e-5331-984f-f765b2e9cc84",
+      "key": "fact-enrichment-villa-mcgrath-ireland-caps",
+      "subjectID": "d72eeff5-883e-562e-b449-793522947421",
+      "predicate": "villa-mcgrath-ireland-caps",
+      "value": {
+        "kind": "number",
+        "display": "83 caps",
+        "number": 83,
+        "unit": "caps"
+      },
+      "scope": "Paul McGrath’s senior appearances for Ireland.",
+      "sourceKeys": [
+        "villa-next-fai-mcgrath"
+      ],
+      "evidence": "The FAI Hall of Fame announcement states that McGrath won 83 senior caps."
+    },
+    {
+      "id": "db8a50dd-8481-5b77-a55d-0086eeac406c",
+      "key": "fact-enrichment-villa-mcgrath-hall-of-fame",
+      "subjectID": "d72eeff5-883e-562e-b449-793522947421",
+      "predicate": "villa-mcgrath-hall-of-fame",
+      "value": {
+        "kind": "text",
+        "display": "Football Association of Ireland",
+        "text": "Football Association of Ireland"
+      },
+      "scope": "Paul McGrath: 2019 FAI International Awards edition, reported on 8 August 2020.",
+      "sourceKeys": [
+        "villa-next-fai-mcgrath"
+      ],
+      "evidence": "The club article dated 8 August 2020 describes McGrath receiving the Hall of Fame award as part of the 2019 Three FAI International Awards; it does not establish a 2019 presentation date."
+    },
+    {
+      "id": "17e2887d-1d84-5868-a548-1faf571ce446",
+      "key": "fact-enrichment-villa-mcgrath-italy-score",
+      "subjectID": "d72eeff5-883e-562e-b449-793522947421",
+      "predicate": "villa-mcgrath-italy-score",
+      "value": {
+        "kind": "text",
+        "text": "1–0",
+        "display": "1–0"
+      },
+      "scope": "Republic of Ireland–Italy, 1994 FIFA World Cup group match; teams stated Ireland first.",
+      "sourceKeys": [
+        "villa-next-fifa-mcgrath-italy"
+      ],
+      "evidence": "FIFA’s retrospective states Ireland beat Italy 1–0."
+    },
+    {
+      "id": "25dddc0e-5b2c-5869-a277-1e6560cfd07d",
+      "key": "fact-enrichment-villa-mcgrath-italy-headers",
+      "subjectID": "d72eeff5-883e-562e-b449-793522947421",
+      "predicate": "villa-mcgrath-italy-headers",
+      "value": {
+        "kind": "number",
+        "display": "15 headers",
+        "number": 15,
+        "unit": "headers"
+      },
+      "scope": "Paul McGrath’s defensive work in Ireland’s 1–0 win over Italy at USA 1994.",
+      "sourceKeys": [
+        "villa-next-fifa-mcgrath-italy"
+      ],
+      "evidence": "FIFA lists 15 headers won in McGrath’s match performance."
+    },
+    {
+      "id": "dbeeaf6e-e7cd-5767-b45e-5f4e29c3c45f",
+      "key": "fact-enrichment-villa-mcgrath-italy-interceptions",
+      "subjectID": "d72eeff5-883e-562e-b449-793522947421",
+      "predicate": "villa-mcgrath-italy-interceptions",
+      "value": {
+        "kind": "number",
+        "display": "5 interceptions",
+        "number": 5,
+        "unit": "interceptions"
+      },
+      "scope": "Paul McGrath’s defensive statistics in Ireland–Italy at USA 1994.",
+      "sourceKeys": [
+        "villa-next-fifa-mcgrath-italy"
+      ],
+      "evidence": "FIFA lists five interceptions among McGrath’s defensive actions."
+    },
+    {
+      "id": "f9072441-79e3-599c-9646-cca357a24068",
+      "key": "fact-enrichment-villa-mcgrath-1990-appearance",
+      "subjectID": "d72eeff5-883e-562e-b449-793522947421",
+      "predicate": "villa-mcgrath-1990-appearance",
+      "value": {
+        "kind": "number",
+        "display": "1990",
+        "number": 1990,
+        "unit": "year"
+      },
+      "scope": "Paul McGrath’s appearance in Ireland’s 1990 FIFA World Cup quarter-final.",
+      "sourceKeys": [
+        "villa-next-uefa-mcgrath-worldcups"
+      ],
+      "evidence": "UEFA’s match line-up for Italy–Ireland lists McGrath in the Ireland starting XI."
+    },
+    {
+      "id": "a641527b-e5f6-5b9d-b22a-543ffaf8a522",
+      "key": "fact-enrichment-villa-mcgrath-1990-stage",
+      "subjectID": "d72eeff5-883e-562e-b449-793522947421",
+      "predicate": "villa-mcgrath-1990-stage",
+      "value": {
+        "kind": "text",
+        "display": "Quarter-final",
+        "text": "Quarter-final"
+      },
+      "scope": "Italy–Ireland at Italia 90.",
+      "sourceKeys": [
+        "villa-next-uefa-mcgrath-worldcups"
+      ],
+      "evidence": "UEFA identifies the match as the 1990 World Cup quarter-final."
+    },
+    {
+      "id": "fb8ca62a-634c-5be3-ad2b-5dfd461bc6dd",
+      "key": "fact-enrichment-villa-mcgrath-1990-goalscorer",
+      "subjectID": "d72eeff5-883e-562e-b449-793522947421",
+      "predicate": "villa-mcgrath-1990-goalscorer",
+      "value": {
+        "kind": "text",
+        "display": "Salvatore Schillaci",
+        "text": "Salvatore Schillaci"
+      },
+      "scope": "Italy–Ireland, 1990 FIFA World Cup quarter-final.",
+      "sourceKeys": [
+        "villa-next-uefa-mcgrath-worldcups"
+      ],
+      "evidence": "UEFA’s match account records Schillaci scoring in the 38th minute."
+    },
+    {
+      "id": "95eebace-b3d9-567f-9c6b-15b4d12f90f2",
+      "key": "fact-enrichment-villa-yorke-move-to-united",
+      "subjectID": "20bc323d-9a30-5ffe-b055-6d81f7bb540c",
+      "predicate": "villa-yorke-move-to-united",
+      "value": {
+        "kind": "entity",
+        "display": "Manchester United",
+        "entityID": "1e1c96fa-0f06-58dc-8ad8-29d7fb8ae5c4"
+      },
+      "scope": "Dwight Yorke’s 1998 transfer from Aston Villa.",
+      "sourceKeys": [
+        "villa-next-yorke-united-treble"
+      ],
+      "evidence": "The Premier League states that Yorke arrived at Manchester United from Aston Villa in August 1998."
+    },
+    {
+      "id": "61ba2fd6-e5aa-5503-bef1-a0474f5cb200",
+      "key": "fact-enrichment-villa-yorke-first-17",
+      "subjectID": "20bc323d-9a30-5ffe-b055-6d81f7bb540c",
+      "predicate": "villa-yorke-first-17",
+      "value": {
+        "kind": "number",
+        "display": "17 goals",
+        "number": 17,
+        "unit": "goals"
+      },
+      "scope": "Dwight Yorke’s Aston Villa Premier League record for 1995/96.",
+      "sourceKeys": [
+        "villa-next-yorke-profile"
+      ],
+      "evidence": "The Premier League player profile’s season table lists 17 goals for Yorke in 1995/96."
+    },
+    {
+      "id": "debe19b2-2bca-598c-b7bc-4803af441e39",
+      "key": "fact-enrichment-villa-yorke-three-seasons",
+      "subjectID": "20bc323d-9a30-5ffe-b055-6d81f7bb540c",
+      "predicate": "villa-yorke-three-seasons",
+      "value": {
+        "kind": "number",
+        "display": "3 seasons",
+        "number": 3,
+        "unit": "seasons"
+      },
+      "scope": "Yorke’s Premier League goal involvements from 1995/96 through 1997/98.",
+      "sourceKeys": [
+        "villa-next-yorke-three-seasons"
+      ],
+      "evidence": "Aston Villa identifies Yorke among the players with 15+ involvements in each of three consecutive seasons, 1995/96 to 1997/98."
+    },
+    {
+      "id": "687e98c0-9601-5e3c-afe3-850839cf8174",
+      "key": "fact-enrichment-villa-yorke-1996-final-score",
+      "subjectID": "20bc323d-9a30-5ffe-b055-6d81f7bb540c",
+      "predicate": "villa-yorke-1996-final-score",
+      "value": {
+        "kind": "text",
+        "display": "3–0",
+        "text": "3–0"
+      },
+      "scope": "1996 League Cup final; Aston Villa listed before Leeds United.",
+      "sourceKeys": [
+        "villa-next-efl-previous-finals"
+      ],
+      "evidence": "The EFL finals record gives Aston Villa 3–0 Leeds United."
+    },
+    {
+      "id": "8a812006-b149-5ffa-8bef-5af3bd8e02b8",
+      "key": "fact-enrichment-villa-yorke-1996-goal-minute",
+      "subjectID": "20bc323d-9a30-5ffe-b055-6d81f7bb540c",
+      "predicate": "villa-yorke-1996-goal-minute",
+      "value": {
+        "kind": "text",
+        "display": "88th minute",
+        "text": "88th minute"
+      },
+      "scope": "Dwight Yorke’s goal in Aston Villa–Leeds United, 1996 League Cup final.",
+      "sourceKeys": [
+        "villa-next-efl-previous-finals"
+      ],
+      "evidence": "The EFL finals record lists Dwight Yorke as Villa’s scorer in the 88th minute."
+    },
+    {
+      "id": "a259a454-a2ef-5067-8ce7-228f95630915",
+      "key": "fact-enrichment-villa-yorke-1996-competition",
+      "subjectID": "20bc323d-9a30-5ffe-b055-6d81f7bb540c",
+      "predicate": "villa-yorke-1996-competition",
+      "value": {
+        "kind": "text",
+        "display": "League Cup",
+        "text": "League Cup"
+      },
+      "scope": "Aston Villa’s 1996 final against Leeds United.",
+      "sourceKeys": [
+        "villa-next-efl-previous-finals"
+      ],
+      "evidence": "The EFL page identifies the match as the 1996 League Cup final."
+    },
+    {
+      "id": "ac89853b-17de-5891-a3c7-934bdc1105cf",
+      "key": "fact-enrichment-villa-yorke-treble-total",
+      "subjectID": "20bc323d-9a30-5ffe-b055-6d81f7bb540c",
+      "predicate": "villa-yorke-treble-total",
+      "value": {
+        "kind": "number",
+        "display": "29 goals",
+        "number": 29,
+        "unit": "goals"
+      },
+      "scope": "Dwight Yorke’s first Manchester United season, 1998/99; all competitions.",
+      "sourceKeys": [
+        "villa-next-yorke-united-treble"
+      ],
+      "evidence": "The Premier League says Yorke scored 29 times after arriving from Villa in August 1998."
+    },
+    {
+      "id": "2af38adc-9cea-5996-8a56-125402a8d8bf",
+      "key": "fact-enrichment-villa-yorke-premier-league-golden-boot",
+      "subjectID": "20bc323d-9a30-5ffe-b055-6d81f7bb540c",
+      "predicate": "villa-yorke-premier-league-golden-boot",
+      "value": {
+        "kind": "number",
+        "display": "18 goals",
+        "number": 18,
+        "unit": "goals"
+      },
+      "scope": "Dwight Yorke’s Manchester United Premier League campaign in 1998/99.",
+      "sourceKeys": [
+        "villa-next-yorke-golden-boot"
+      ],
+      "evidence": "The Premier League’s winners table lists Yorke, Owen and Hasselbaink jointly on 18 goals for 1998/99."
+    },
+    {
+      "id": "aa17a027-a458-524a-8040-8b4124d370a9",
+      "key": "fact-enrichment-villa-yorke-champions-league-goals",
+      "subjectID": "20bc323d-9a30-5ffe-b055-6d81f7bb540c",
+      "predicate": "villa-yorke-champions-league-goals",
+      "value": {
+        "kind": "number",
+        "display": "8 goals",
+        "number": 8,
+        "unit": "goals"
+      },
+      "scope": "Dwight Yorke’s 1998/99 UEFA Champions League campaign for Manchester United.",
+      "sourceKeys": [
+        "villa-next-yorke-ucl-scorers"
+      ],
+      "evidence": "UEFA’s 1998/99 season overview lists Yorke and Shevchenko as joint top scorers with eight goals each."
+    },
+    {
+      "id": "42f7f31c-ea0f-5730-ad01-6d64e821f24c",
+      "key": "fact-enrichment-villa-yorke-world-cup-country",
+      "subjectID": "20bc323d-9a30-5ffe-b055-6d81f7bb540c",
+      "predicate": "villa-yorke-world-cup-country",
+      "value": {
+        "kind": "entity",
+        "display": "Trinidad and Tobago",
+        "entityID": "2bdfe531-1134-5128-84d8-5063ef7a6b2a"
+      },
+      "scope": "Dwight Yorke’s captaincy at Germany 2006.",
+      "sourceKeys": [
+        "villa-next-fifa-yorke-captain"
+      ],
+      "evidence": "FIFA’s official tournament collectible identifies Yorke as Trinidad and Tobago’s captain."
+    },
+    {
+      "id": "b781254c-b35d-5715-84a4-f822aa10f1e1",
+      "key": "fact-enrichment-villa-yorke-first-world-cup",
+      "subjectID": "20bc323d-9a30-5ffe-b055-6d81f7bb540c",
+      "predicate": "villa-yorke-first-world-cup",
+      "value": {
+        "kind": "number",
+        "display": "2006",
+        "number": 2006,
+        "unit": "year"
+      },
+      "scope": "Trinidad and Tobago’s first FIFA World Cup appearance, captained by Yorke.",
+      "sourceKeys": [
+        "villa-next-fifa-yorke-2006"
+      ],
+      "evidence": "FIFA says the country’s only World Cup appearance came at Germany 2006."
+    },
+    {
+      "id": "1cf126ec-d454-5d2b-b0b2-9649fe12a676",
+      "key": "fact-enrichment-villa-yorke-sweden-result",
+      "subjectID": "20bc323d-9a30-5ffe-b055-6d81f7bb540c",
+      "predicate": "villa-yorke-sweden-result",
+      "value": {
+        "kind": "text",
+        "text": "0–0",
+        "display": "0–0"
+      },
+      "scope": "Trinidad and Tobago–Sweden, 2006 FIFA World Cup group stage.",
+      "sourceKeys": [
+        "villa-next-uefa-sweden2006"
+      ],
+      "evidence": "UEFA’s final-draw facts, page 42, list Sweden’s 2006 World Cup group results: Trinidad and Tobago 0–0, Paraguay 1–0, England 2–2."
     }
   ],
   "objectives": [
@@ -65457,6 +66206,435 @@
       ],
       "feedback": "Roma Supercoppa wins: One title. Context: Roma honours through his departure in 2019..",
       "revision": 1
+    },
+    {
+      "id": "de9ee15e-fa4f-536e-a018-fc7c69b0a974",
+      "key": "objective-enrichment-villa-history-foundation-year",
+      "factIDs": [
+        "470210ff-ed8a-522b-b347-67a70b575bbe"
+      ],
+      "prompt": "In what year does Aston Villa trace its formation?",
+      "answers": [
+        "1874"
+      ],
+      "feedback": "Villa’s founding year: 1874. Context: Aston Villa’s formation, as dated in the club timeline..",
+      "revision": 1
+    },
+    {
+      "id": "2a2b1218-2fc3-5c62-b9f4-10454716d880",
+      "key": "objective-enrichment-villa-history-league-founder",
+      "factIDs": [
+        "eef53745-4e41-52e4-ab9f-aedc6103c719"
+      ],
+      "prompt": "Which Aston Villa committee member proposed a home-and-away league to other clubs?",
+      "answers": [
+        "William McGregor"
+      ],
+      "feedback": "Villa’s Football League organizer: William McGregor. Context: The Football League’s formation in 1888..",
+      "revision": 1
+    },
+    {
+      "id": "d2009602-93eb-51da-833f-399a29a4f5e8",
+      "key": "objective-enrichment-villa-history-first-league-title",
+      "factIDs": [
+        "18266f07-92a4-5519-9cb4-1a927aa77472"
+      ],
+      "prompt": "In which year did Aston Villa secure its first League title?",
+      "answers": [
+        "1894"
+      ],
+      "feedback": "Villa’s first league title: 1894. Context: Aston Villa’s club history..",
+      "revision": 1
+    },
+    {
+      "id": "ec332c45-34fa-56f9-a8a2-db0b9c0d1230",
+      "key": "objective-enrichment-villa-1957-final-date",
+      "factIDs": [
+        "10cd65bd-1bb6-590a-b136-f53e1721ad45"
+      ],
+      "prompt": "On what date was Aston Villa’s 1957 FA Cup Final against Manchester United played?",
+      "answers": [
+        "4 May 1957"
+      ],
+      "feedback": "1957 FA Cup final date: 4 May 1957. Context: Aston Villa–Manchester United, 1957 FA Cup Final..",
+      "revision": 1
+    },
+    {
+      "id": "e5eef20c-2ca4-5f45-8bfb-68e616592f96",
+      "key": "objective-enrichment-villa-1957-opponent",
+      "factIDs": [
+        "1cb89598-5fc5-5265-8d86-68c4e3ba28ad"
+      ],
+      "prompt": "Who did Aston Villa face in the 1957 FA Cup Final?",
+      "answers": [
+        "Manchester United"
+      ],
+      "feedback": "1957 final opponent: Manchester United. Context: Aston Villa’s 1957 FA Cup Final..",
+      "revision": 1
+    },
+    {
+      "id": "cacc2548-4bd3-5fa0-affe-331a6bb698f1",
+      "key": "objective-enrichment-villa-1957-mcparland-goals",
+      "factIDs": [
+        "98704087-7afb-5fd6-864d-52fbb296d32e"
+      ],
+      "prompt": "How many goals did Peter McParland score for Aston Villa in the 1957 FA Cup Final?",
+      "answers": [
+        "Two"
+      ],
+      "feedback": "McParland’s final goals: 2. Context: Peter McParland’s scoring in the 1957 FA Cup Final..",
+      "revision": 1
+    },
+    {
+      "id": "76dd7b83-4888-5925-8567-a4a79601ee39",
+      "key": "objective-enrichment-villa-1982-final-date",
+      "factIDs": [
+        "4a1df707-ea79-506e-a715-b8a8b0e4d425"
+      ],
+      "prompt": "On what date did Aston Villa play Bayern Munich in the European Cup final?",
+      "answers": [
+        "26 May 1982"
+      ],
+      "feedback": "European Cup final date: 26 May 1982. Context: 1981/82 European Cup Final, played at De Kuip in Rotterdam..",
+      "revision": 1
+    },
+    {
+      "id": "eaba7a84-9d09-53ad-a7c1-574b9ab87456",
+      "key": "objective-enrichment-villa-1982-final-score",
+      "factIDs": [
+        "46a1ec09-c74e-5cbc-b5f9-f59c964ab9a9"
+      ],
+      "prompt": "What was the score in the 1982 European Cup Final, with Aston Villa listed first?",
+      "answers": [
+        "1–0"
+      ],
+      "feedback": "European Cup final score: 1–0. Context: 1982 European Cup final; Aston Villa listed before Bayern München..",
+      "revision": 1
+    },
+    {
+      "id": "9ec38737-8c6d-53ca-a6ba-e9198825fd17",
+      "key": "objective-enrichment-villa-1982-withe-minute",
+      "factIDs": [
+        "df5c0a5b-32c4-5674-bbb1-a5c9bb167083"
+      ],
+      "prompt": "In which minute did Peter Withe score Aston Villa’s winning goal in the 1982 European Cup Final?",
+      "answers": [
+        "67th minute"
+      ],
+      "feedback": "Withe’s winning-goal minute: 67th minute. Context: Peter Withe’s goal for Aston Villa against Bayern Munich in the 1982 European Cup Final..",
+      "revision": 1
+    },
+    {
+      "id": "c3b109ed-80f6-567a-ad83-c1752fbd2c8a",
+      "key": "objective-enrichment-villa-mcgrath-first-club",
+      "factIDs": [
+        "8325f780-d988-5681-8891-7dea4cf8e29d"
+      ],
+      "prompt": "Which Dublin club signed Paul McGrath from Dalkey United in 1981?",
+      "answers": [
+        "St Patrick’s Athletic"
+      ],
+      "feedback": "McGrath’s first senior club: St Patrick’s Athletic. Context: Paul McGrath’s move from Dalkey United in 1981..",
+      "revision": 1
+    },
+    {
+      "id": "c15928a8-79b6-57fc-8ccf-8ddcdd29039b",
+      "key": "objective-enrichment-villa-mcgrath-next-club",
+      "factIDs": [
+        "4e7364ed-5817-5ff2-a251-a5a5eb85550e"
+      ],
+      "prompt": "Which English club did McGrath join after the 1981–82 season?",
+      "answers": [
+        "Manchester United"
+      ],
+      "feedback": "McGrath’s 1982 destination: Manchester United. Context: Paul McGrath’s transfer from St Patrick’s Athletic after the 1981–82 season..",
+      "revision": 1
+    },
+    {
+      "id": "f6e35f6e-2ac1-5d88-80cc-38709be0c1f3",
+      "key": "objective-enrichment-villa-mcgrath-derby-arrival",
+      "factIDs": [
+        "b3306746-90ba-5bf7-83b4-2f804cc0cf6a"
+      ],
+      "prompt": "In what month and year did Derby County say McGrath arrived from Aston Villa?",
+      "answers": [
+        "October 1996"
+      ],
+      "feedback": "McGrath’s Derby move: October 1996. Context: Paul McGrath’s transfer from Aston Villa to Derby County..",
+      "revision": 1
+    },
+    {
+      "id": "f214702a-56c9-5eab-8ec3-7bbab4435581",
+      "key": "objective-enrichment-villa-mcgrath-pfai-award",
+      "factIDs": [
+        "9783f546-d800-599a-9bc3-a7f1862bb781"
+      ],
+      "prompt": "Which PFAI award did McGrath win in 1981–82?",
+      "answers": [
+        "PFAI Player of the Year"
+      ],
+      "feedback": "McGrath’s first major individual honour: PFAI Player of the Year. Context: Paul McGrath’s 1981–82 season with St Patrick’s Athletic..",
+      "revision": 1
+    },
+    {
+      "id": "4d00da4c-0769-5a51-af3f-29cfc7808d36",
+      "key": "objective-enrichment-villa-mcgrath-ireland-caps",
+      "factIDs": [
+        "281b71f0-404e-5331-984f-f765b2e9cc84"
+      ],
+      "prompt": "How many senior caps does the FAI Hall of Fame announcement credit to McGrath?",
+      "answers": [
+        "83"
+      ],
+      "feedback": "McGrath’s Ireland total: 83 caps. Context: Paul McGrath’s senior appearances for Ireland..",
+      "revision": 1
+    },
+    {
+      "id": "c6528c3b-d16e-5efd-9188-15706e8dd659",
+      "key": "objective-enrichment-villa-mcgrath-hall-of-fame",
+      "factIDs": [
+        "db8a50dd-8481-5b77-a55d-0086eeac406c"
+      ],
+      "prompt": "Which association honoured Paul McGrath with a Hall of Fame award in its 2019 awards edition?",
+      "answers": [
+        "Football Association of Ireland"
+      ],
+      "feedback": "A national honour: Football Association of Ireland. Context: Paul McGrath: 2019 FAI International Awards edition, reported on 8 August 2020..",
+      "revision": 1
+    },
+    {
+      "id": "f3828ac9-84ef-5d7a-ae44-7e2cd3b40ef5",
+      "key": "objective-enrichment-villa-mcgrath-italy-score",
+      "factIDs": [
+        "17e2887d-1d84-5868-a548-1faf571ce446"
+      ],
+      "prompt": "What was the score in the 1994 World Cup match, with Ireland listed first and Italy second?",
+      "answers": [
+        "1–0"
+      ],
+      "feedback": "Ireland’s 1994 World Cup result: 1–0. Context: Republic of Ireland–Italy, 1994 FIFA World Cup group match; teams stated Ireland first..",
+      "revision": 1
+    },
+    {
+      "id": "afbb2c52-53dd-5c55-a80e-d12c166f9eeb",
+      "key": "objective-enrichment-villa-mcgrath-italy-headers",
+      "factIDs": [
+        "25dddc0e-5b2c-5869-a277-1e6560cfd07d"
+      ],
+      "prompt": "How many headers does FIFA credit McGrath with winning against Italy in 1994?",
+      "answers": [
+        "15"
+      ],
+      "feedback": "McGrath’s headers won: 15 headers. Context: Paul McGrath’s defensive work in Ireland’s 1–0 win over Italy at USA 1994..",
+      "revision": 1
+    },
+    {
+      "id": "11996731-f3e1-5b59-aa83-1798fd99f056",
+      "key": "objective-enrichment-villa-mcgrath-italy-interceptions",
+      "factIDs": [
+        "dbeeaf6e-e7cd-5767-b45e-5f4e29c3c45f"
+      ],
+      "prompt": "How many interceptions does FIFA list for McGrath against Italy?",
+      "answers": [
+        "5"
+      ],
+      "feedback": "McGrath’s interceptions: 5 interceptions. Context: Paul McGrath’s defensive statistics in Ireland–Italy at USA 1994..",
+      "revision": 1
+    },
+    {
+      "id": "885e30fe-287e-5b27-bb10-9d8b5bcbdc89",
+      "key": "objective-enrichment-villa-mcgrath-1990-appearance",
+      "factIDs": [
+        "f9072441-79e3-599c-9646-cca357a24068"
+      ],
+      "prompt": "In which year did McGrath start Ireland’s World Cup quarter-final against Italy?",
+      "answers": [
+        "1990"
+      ],
+      "feedback": "McGrath at Italia 90: 1990. Context: Paul McGrath’s appearance in Ireland’s 1990 FIFA World Cup quarter-final..",
+      "revision": 1
+    },
+    {
+      "id": "dba15135-1383-55b9-9598-e4f355b59358",
+      "key": "objective-enrichment-villa-mcgrath-1990-stage",
+      "factIDs": [
+        "a641527b-e5f6-5b9d-b22a-543ffaf8a522"
+      ],
+      "prompt": "At what stage did Ireland meet Italy at the 1990 World Cup?",
+      "answers": [
+        "Quarter-final"
+      ],
+      "feedback": "Ireland’s tournament run: Quarter-final. Context: Italy–Ireland at Italia 90..",
+      "revision": 1
+    },
+    {
+      "id": "aa53ec71-9bdc-56f3-8aea-573e95bd0e7e",
+      "key": "objective-enrichment-villa-mcgrath-1990-goalscorer",
+      "factIDs": [
+        "fb8ca62a-634c-5be3-ad2b-5dfd461bc6dd"
+      ],
+      "prompt": "Who scored the only goal in Italy’s 1–0 quarter-final win over Ireland?",
+      "answers": [
+        "Salvatore Schillaci"
+      ],
+      "feedback": "The match’s only goal: Salvatore Schillaci. Context: Italy–Ireland, 1990 FIFA World Cup quarter-final..",
+      "revision": 1
+    },
+    {
+      "id": "35129eec-f094-5e80-b51c-395045bdfc18",
+      "key": "objective-enrichment-villa-yorke-move-to-united",
+      "factIDs": [
+        "95eebace-b3d9-567f-9c6b-15b4d12f90f2"
+      ],
+      "prompt": "Which club signed Yorke from Aston Villa in 1998?",
+      "answers": [
+        "Manchester United"
+      ],
+      "feedback": "Yorke’s next club: Manchester United. Context: Dwight Yorke’s 1998 transfer from Aston Villa..",
+      "revision": 1
+    },
+    {
+      "id": "3e65b854-c7bc-5270-b9a3-05319c769594",
+      "key": "objective-enrichment-villa-yorke-first-17",
+      "factIDs": [
+        "61ba2fd6-e5aa-5503-bef1-a0474f5cb200"
+      ],
+      "prompt": "How many Premier League goals did Yorke score for Aston Villa in 1995/96?",
+      "answers": [
+        "17"
+      ],
+      "feedback": "A prolific league season: 17 goals. Context: Dwight Yorke’s Aston Villa Premier League record for 1995/96..",
+      "revision": 1
+    },
+    {
+      "id": "ca66411e-4eeb-5017-996e-320b04556d66",
+      "key": "objective-enrichment-villa-yorke-three-seasons",
+      "factIDs": [
+        "debe19b2-2bca-598c-b7bc-4803af441e39"
+      ],
+      "prompt": "Across how many consecutive seasons did Yorke reach 15 or more Premier League goal involvements for Villa, according to the club?",
+      "answers": [
+        "Three"
+      ],
+      "feedback": "A sustained run of form: 3 seasons. Context: Yorke’s Premier League goal involvements from 1995/96 through 1997/98..",
+      "revision": 1
+    },
+    {
+      "id": "c25f6055-2c99-5477-96b3-94a603c3220c",
+      "key": "objective-enrichment-villa-yorke-1996-final-score",
+      "factIDs": [
+        "687e98c0-9601-5e3c-afe3-850839cf8174"
+      ],
+      "prompt": "What was the score in the 1996 League Cup final, with Aston Villa listed first?",
+      "answers": [
+        "3–0"
+      ],
+      "feedback": "The final result: 3–0. Context: 1996 League Cup final; Aston Villa listed before Leeds United..",
+      "revision": 1
+    },
+    {
+      "id": "507e1ccc-f725-5b1f-93ca-805e22c2b2f2",
+      "key": "objective-enrichment-villa-yorke-1996-goal-minute",
+      "factIDs": [
+        "8a812006-b149-5ffa-8bef-5af3bd8e02b8"
+      ],
+      "prompt": "In which minute did Yorke score Villa’s third goal in the 1996 League Cup final?",
+      "answers": [
+        "88th minute"
+      ],
+      "feedback": "Yorke’s Wembley goal: 88th minute. Context: Dwight Yorke’s goal in Aston Villa–Leeds United, 1996 League Cup final..",
+      "revision": 1
+    },
+    {
+      "id": "9f706bf2-c8b3-508f-8a98-e611eceb9519",
+      "key": "objective-enrichment-villa-yorke-1996-competition",
+      "factIDs": [
+        "a259a454-a2ef-5067-8ce7-228f95630915"
+      ],
+      "prompt": "Which competition’s final did Aston Villa win against Leeds United in 1996?",
+      "answers": [
+        "League Cup"
+      ],
+      "feedback": "The Wembley honour: League Cup. Context: Aston Villa’s 1996 final against Leeds United..",
+      "revision": 1
+    },
+    {
+      "id": "706cc1db-96a1-5650-82df-b1154b85141d",
+      "key": "objective-enrichment-villa-yorke-treble-total",
+      "factIDs": [
+        "ac89853b-17de-5891-a3c7-934bdc1105cf"
+      ],
+      "prompt": "How many goals does the Premier League credit Yorke with scoring in all competitions after joining United in 1998?",
+      "answers": [
+        "29"
+      ],
+      "feedback": "Yorke’s treble-season total: 29 goals. Context: Dwight Yorke’s first Manchester United season, 1998/99; all competitions..",
+      "revision": 1
+    },
+    {
+      "id": "568bfd1a-82f3-5a41-ad86-0050a158358e",
+      "key": "objective-enrichment-villa-yorke-premier-league-golden-boot",
+      "factIDs": [
+        "2af38adc-9cea-5996-8a56-125402a8d8bf"
+      ],
+      "prompt": "How many Premier League goals did Yorke score in United’s 1998/99 campaign?",
+      "answers": [
+        "18"
+      ],
+      "feedback": "Yorke’s league scoring honour: 18 goals. Context: Dwight Yorke’s Manchester United Premier League campaign in 1998/99..",
+      "revision": 1
+    },
+    {
+      "id": "030a4916-a7e8-56b2-b89d-85dc012328ea",
+      "key": "objective-enrichment-villa-yorke-champions-league-goals",
+      "factIDs": [
+        "aa17a027-a458-524a-8040-8b4124d370a9"
+      ],
+      "prompt": "How many Champions League goals did Dwight Yorke score in United’s 1998/99 winning campaign?",
+      "answers": [
+        "Eight"
+      ],
+      "feedback": "Yorke’s European scoring: 8 goals. Context: Dwight Yorke’s 1998/99 UEFA Champions League campaign for Manchester United..",
+      "revision": 1
+    },
+    {
+      "id": "5903a752-140c-5d4c-a4a1-9dd3d6f08000",
+      "key": "objective-enrichment-villa-yorke-world-cup-country",
+      "factIDs": [
+        "42f7f31c-ea0f-5730-ad01-6d64e821f24c"
+      ],
+      "prompt": "Which country did Dwight Yorke captain at the 2006 FIFA World Cup?",
+      "answers": [
+        "Trinidad and Tobago"
+      ],
+      "feedback": "Yorke’s national team: Trinidad and Tobago. Context: Dwight Yorke’s captaincy at Germany 2006..",
+      "revision": 1
+    },
+    {
+      "id": "2ad9a85c-d7fb-5d6f-8bd1-50b8610fc602",
+      "key": "objective-enrichment-villa-yorke-first-world-cup",
+      "factIDs": [
+        "b781254c-b35d-5715-84a4-f822aa10f1e1"
+      ],
+      "prompt": "In which year did Trinidad and Tobago make its first FIFA World Cup appearance?",
+      "answers": [
+        "2006"
+      ],
+      "feedback": "T&T’s World Cup debut: 2006. Context: Trinidad and Tobago’s first FIFA World Cup appearance, captained by Yorke..",
+      "revision": 1
+    },
+    {
+      "id": "42b4ec49-ecab-50e5-90a0-175eb47f00fe",
+      "key": "objective-enrichment-villa-yorke-sweden-result",
+      "factIDs": [
+        "1cf126ec-d454-5d2b-b0b2-9649fe12a676"
+      ],
+      "prompt": "What was the result of Trinidad and Tobago’s opening match against Sweden at the 2006 World Cup?",
+      "answers": [
+        "0–0"
+      ],
+      "feedback": "T&T’s opening match: 0–0. Context: Trinidad and Tobago–Sweden, 2006 FIFA World Cup group stage..",
+      "revision": 1
     }
   ],
   "roadmaps": [
@@ -65698,6 +66876,35 @@
           "title": "Meet the club",
           "lessonIDs": [
             "5b2d66ac-7311-5230-a722-a6d7be1b21ac"
+          ]
+        },
+        {
+          "key": "roadmap-aston-villa-curriculum-history",
+          "title": "History & identity",
+          "lessonIDs": [
+            "d6984c5e-ef9e-594c-b193-401ca61fd9bd"
+          ]
+        },
+        {
+          "key": "roadmap-aston-villa-curriculum-moments",
+          "title": "Defining moments",
+          "lessonIDs": [
+            "5373ce49-7c86-57a8-97c7-39fd7b8d696d",
+            "36b064da-8e75-520d-8e0f-81728c51c8ba"
+          ]
+        },
+        {
+          "key": "roadmap-aston-villa-curriculum-players",
+          "title": "Players & legacies",
+          "lessonIDs": [
+            "0f298633-0908-5f62-8bef-816293b5e486",
+            "f158b55f-4899-5123-8619-1ebfbf4078e5",
+            "c72cebd0-6d2b-52cf-9aac-649ca1a0b34b",
+            "11e96fc3-d3b3-5343-8150-94be3ef335a8",
+            "1e5cefc2-28fc-5d8c-be7f-95ee227f4d74",
+            "1c1d63d2-d89e-5737-9ea2-53aa3b681f54",
+            "d6e10d99-3013-5512-80c6-7318f7c90e32",
+            "a617cbe5-5631-5202-b55e-7fd6b8e54742"
           ]
         }
       ]
@@ -72615,6 +73822,92 @@
           "note": "Optional shared club history; it does not count toward player-specific learning.",
           "lessonIDs": [
             "cbc0bf6d-31cf-521e-876e-47831883d653"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "7c5b8d62-cb7d-586c-8a40-08a5d01813e9",
+      "key": "roadmap-player-paul-mcgrath",
+      "subjectID": "d72eeff5-883e-562e-b449-793522947421",
+      "clubID": "eb776548-b0db-5f30-ab1b-b47dabd128a5",
+      "summary": "Career stories, defining moments and dated records across 4 player-specific lessons, plus an optional club story.",
+      "chapters": [
+        {
+          "key": "roadmap-player-paul-mcgrath-curriculum-career",
+          "title": "Career journey",
+          "lessonIDs": [
+            "0f298633-0908-5f62-8bef-816293b5e486"
+          ]
+        },
+        {
+          "key": "roadmap-player-paul-mcgrath-curriculum-records",
+          "title": "Records & honours",
+          "lessonIDs": [
+            "f158b55f-4899-5123-8619-1ebfbf4078e5"
+          ]
+        },
+        {
+          "key": "roadmap-player-paul-mcgrath-curriculum-moments",
+          "title": "Defining moments",
+          "lessonIDs": [
+            "c72cebd0-6d2b-52cf-9aac-649ca1a0b34b"
+          ]
+        },
+        {
+          "key": "roadmap-player-paul-mcgrath-curriculum-legacy",
+          "title": "Legacy",
+          "lessonIDs": [
+            "11e96fc3-d3b3-5343-8150-94be3ef335a8"
+          ]
+        },
+        {
+          "key": "roadmap-player-paul-mcgrath-club-context",
+          "title": "Club context",
+          "isOptional": true,
+          "note": "Optional shared club history; it does not count toward player-specific learning.",
+          "lessonIDs": [
+            "5b2d66ac-7311-5230-a722-a6d7be1b21ac"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cf5f6bc4-5ac2-5e9d-9121-e1c0a170035d",
+      "key": "roadmap-player-dwight-yorke",
+      "subjectID": "20bc323d-9a30-5ffe-b055-6d81f7bb540c",
+      "clubID": "eb776548-b0db-5f30-ab1b-b47dabd128a5",
+      "summary": "Career stories, defining moments and dated records across 4 player-specific lessons, plus an optional club story.",
+      "chapters": [
+        {
+          "key": "roadmap-player-dwight-yorke-curriculum-career",
+          "title": "Career journey",
+          "lessonIDs": [
+            "1e5cefc2-28fc-5d8c-be7f-95ee227f4d74"
+          ]
+        },
+        {
+          "key": "roadmap-player-dwight-yorke-curriculum-moments",
+          "title": "Defining moments",
+          "lessonIDs": [
+            "1c1d63d2-d89e-5737-9ea2-53aa3b681f54",
+            "a617cbe5-5631-5202-b55e-7fd6b8e54742"
+          ]
+        },
+        {
+          "key": "roadmap-player-dwight-yorke-curriculum-records",
+          "title": "Records & honours",
+          "lessonIDs": [
+            "d6e10d99-3013-5512-80c6-7318f7c90e32"
+          ]
+        },
+        {
+          "key": "roadmap-player-dwight-yorke-club-context",
+          "title": "Club context",
+          "isOptional": true,
+          "note": "Optional shared club history; it does not count toward player-specific learning.",
+          "lessonIDs": [
+            "5b2d66ac-7311-5230-a722-a6d7be1b21ac"
           ]
         }
       ]
@@ -90463,6 +91756,303 @@
         "97162cc0-0dda-5834-8429-d4c1c1937a84",
         "458e923a-dec3-5709-a4b7-155c60e316bf",
         "7ecce647-86c5-5a62-af7a-79758b6cf77a"
+      ]
+    },
+    {
+      "id": "d6984c5e-ef9e-594c-b193-401ca61fd9bd",
+      "key": "lesson-curriculum-villa-next-history",
+      "title": "Aston Villa’s origins",
+      "subtitle": "Follow a local idea as it grew into a football institution.",
+      "story": [
+        {
+          "title": "A football club takes shape",
+          "body": "Four members of Aston Villa Wesleyan Chapel’s Male Adult Bible Class chose association football in 1874. They had considered rugby after watching a colleague play, but decided it was too physical."
+        },
+        {
+          "title": "A league-making club",
+          "body": "Villa committee member William McGregor proposed a structured home-and-away competition to leading clubs. The Football League was formed in 1888, and Villa finished second in its first season."
+        }
+      ],
+      "objectiveIDs": [
+        "de9ee15e-fa4f-536e-a018-fc7c69b0a974",
+        "2a2b1218-2fc3-5c62-b9f4-10454716d880",
+        "d2009602-93eb-51da-833f-399a29a4f5e8"
+      ],
+      "exerciseIDs": [
+        "a3094016-2f91-5981-9fc0-d85e35a38ea1",
+        "ebecc86a-72d9-5892-b7b4-e7b1c335e4bf",
+        "35805864-4edf-599b-bffe-286b70535dd0",
+        "56a80426-02df-5704-b567-1f96623cee6c"
+      ]
+    },
+    {
+      "id": "5373ce49-7c86-57a8-97c7-39fd7b8d696d",
+      "key": "lesson-curriculum-villa-next-1957-fa-cup",
+      "title": "A Wembley final remembered",
+      "subtitle": "A cup final turned on a pair of goals.",
+      "story": [
+        {
+          "title": "Underdogs at Wembley",
+          "body": "Aston Villa met Matt Busby’s Manchester United in the 1957 FA Cup Final, played at Wembley on 4 May. United were chasing the Double."
+        },
+        {
+          "title": "McParland makes history",
+          "body": "Peter McParland headed Villa ahead in the 68th minute, then scored again five minutes later. Villa held on for their seventh FA Cup and first major trophy in about 37 years."
+        }
+      ],
+      "objectiveIDs": [
+        "ec332c45-34fa-56f9-a8a2-db0b9c0d1230",
+        "e5eef20c-2ca4-5f45-8bfb-68e616592f96",
+        "cacc2548-4bd3-5fa0-affe-331a6bb698f1"
+      ],
+      "exerciseIDs": [
+        "e15f97b8-ada5-5c8c-9b7b-2c3c8ec2eca4",
+        "ee45dfe2-3c47-5b1b-a903-5173b161c774",
+        "568fffd2-a4cd-5bd8-9980-66e14ec2e056",
+        "550e7bc8-7b76-5753-8c7a-0c1d3951d2ba"
+      ]
+    },
+    {
+      "id": "36b064da-8e75-520d-8e0f-81728c51c8ba",
+      "key": "lesson-curriculum-villa-next-europe-1982",
+      "title": "A night in Rotterdam",
+      "subtitle": "One substitution changed the shape of a European final.",
+      "story": [
+        {
+          "title": "A sudden change in goal",
+          "body": "Aston Villa played Bayern Munich at Rotterdam’s De Kuip on 26 May 1982. Jimmy Rimmer was injured after nine minutes, and Nigel Spink came on for only his second senior Villa appearance."
+        },
+        {
+          "title": "One decisive finish",
+          "body": "Tony Morley’s cross found Peter Withe, who scored in the 67th minute. Villa won the European Cup final 1–0 and captain Dennis Mortimer lifted the trophy."
+        }
+      ],
+      "objectiveIDs": [
+        "76dd7b83-4888-5925-8567-a4a79601ee39",
+        "eaba7a84-9d09-53ad-a7c1-574b9ab87456",
+        "9ec38737-8c6d-53ca-a6ba-e9198825fd17"
+      ],
+      "exerciseIDs": [
+        "8bba0333-884f-573d-8eab-0fcd0244b251",
+        "2cf791b9-672b-5f63-8f62-47680fef6fbd",
+        "f6474431-e2e5-58da-94f1-d864b8ac15d4",
+        "90215564-3273-54e9-a751-a9d4d8d46af1"
+      ]
+    },
+    {
+      "id": "0f298633-0908-5f62-8bef-816293b5e486",
+      "key": "lesson-curriculum-villa-next-mcgrath-career",
+      "title": "From Ireland to England",
+      "subtitle": "An evolving path across several club chapters.",
+      "story": [
+        {
+          "title": "From Dalkey to Inchicore",
+          "body": "St Patrick’s Athletic says it signed McGrath from Dalkey United in 1981. The club first considered him as a centre-forward, then recognized his ability at centre-half."
+        },
+        {
+          "title": "A move to England",
+          "body": "St Pat’s records that McGrath transferred to Manchester United after the 1981–82 season and later moved on to Aston Villa. Derby County dates his arrival from Villa to October 1996."
+        }
+      ],
+      "objectiveIDs": [
+        "c3b109ed-80f6-567a-ad83-c1752fbd2c8a",
+        "c15928a8-79b6-57fc-8ccf-8ddcdd29039b",
+        "f6e35f6e-2ac1-5d88-80cc-38709be0c1f3"
+      ],
+      "exerciseIDs": [
+        "290873ba-721d-5a32-8fb2-e3067e024755",
+        "833ee6d2-e181-5b0f-9ce6-5dbf332aaeb3",
+        "b2bdcc9b-6fca-5715-bc2e-fb6ea0aa7c62",
+        "4381422d-6987-5e4f-86a6-63ef65dd3cee"
+      ]
+    },
+    {
+      "id": "f158b55f-4899-5123-8619-1ebfbf4078e5",
+      "key": "lesson-curriculum-villa-next-mcgrath-honours",
+      "title": "Recognition across a career",
+      "subtitle": "Club and international chapters brought lasting recognition.",
+      "story": [
+        {
+          "title": "An early individual award",
+          "body": "St Patrick’s Athletic records McGrath as the 1981–82 PFAI Player of the Year. The award came during his season at Richmond Park before his move to Manchester United."
+        },
+        {
+          "title": "An international legacy",
+          "body": "The club’s report, published in August 2020, credits McGrath with 83 senior caps and describes his Hall of Fame recognition as part of the 2019 FAI International Awards edition."
+        }
+      ],
+      "objectiveIDs": [
+        "f214702a-56c9-5eab-8ec3-7bbab4435581",
+        "4d00da4c-0769-5a51-af3f-29cfc7808d36",
+        "c6528c3b-d16e-5efd-9188-15706e8dd659"
+      ],
+      "exerciseIDs": [
+        "91a9435d-c3a8-5ed0-b649-d056155f4a50",
+        "a21b7fd3-7c0a-51d7-9551-c50cd35e65de",
+        "b601c691-f26d-5975-9a1c-3edf0a69bb1b",
+        "06d0206a-1706-5c88-b319-8c0eaaa73122"
+      ]
+    },
+    {
+      "id": "c72cebd0-6d2b-52cf-9aac-649ca1a0b34b",
+      "key": "lesson-curriculum-villa-next-mcgrath-records",
+      "title": "A World Cup defensive display",
+      "subtitle": "FIFA’s match account shows the work behind a landmark result.",
+      "story": [
+        {
+          "title": "A landmark result",
+          "body": "Ireland beat Italy 1–0 in their 1994 World Cup group match. Ray Houghton scored the only goal in the 11th minute."
+        },
+        {
+          "title": "A defensive masterclass",
+          "body": "FIFA’s match retrospective credits McGrath with 15 headers won, six clearances, five interceptions, three blocks, and two tackles as he marked Roberto Baggio and Italy."
+        }
+      ],
+      "objectiveIDs": [
+        "f3828ac9-84ef-5d7a-ae44-7e2cd3b40ef5",
+        "afbb2c52-53dd-5c55-a80e-d12c166f9eeb",
+        "11996731-f3e1-5b59-aa83-1798fd99f056"
+      ],
+      "exerciseIDs": [
+        "53e6ee98-e2c2-5ebc-9658-40cbd4863a48",
+        "2068f9c2-9d48-527c-9813-643eca957bab",
+        "637eb486-3888-5d4d-9e31-74b97d8c42be",
+        "7a6f6d83-c97d-5357-a5de-4feabf8267f1"
+      ]
+    },
+    {
+      "id": "11e96fc3-d3b3-5343-8150-94be3ef335a8",
+      "key": "lesson-curriculum-villa-next-mcgrath-1990-world-cup",
+      "title": "A World Cup quarter-final",
+      "subtitle": "A tournament run reached a defining knockout match.",
+      "story": [
+        {
+          "title": "A place in the last eight",
+          "body": "UEFA’s match account lists McGrath in Ireland’s starting line-up for the 1990 World Cup quarter-final against Italy. The match was Ireland’s first appearance in a major-tournament quarter-final."
+        },
+        {
+          "title": "A narrow result",
+          "body": "Salvatore Schillaci scored the only goal in Rome. Italy advanced after a 1–0 win over Ireland."
+        }
+      ],
+      "objectiveIDs": [
+        "885e30fe-287e-5b27-bb10-9d8b5bcbdc89",
+        "dba15135-1383-55b9-9598-e4f355b59358",
+        "aa53ec71-9bdc-56f3-8aea-573e95bd0e7e"
+      ],
+      "exerciseIDs": [
+        "91c181a4-8389-51b6-ae62-8fdd8e19fad5",
+        "be6431ba-45b0-5e14-819a-52cdea1b5369",
+        "0237699a-2238-5c04-94b3-1d1f1036bcd2",
+        "4beb2c7a-b879-5dd6-9705-39aa8665dda7"
+      ]
+    },
+    {
+      "id": "1e5cefc2-28fc-5d8c-be7f-95ee227f4d74",
+      "key": "lesson-curriculum-villa-next-yorke-career",
+      "title": "A rise through the ranks",
+      "subtitle": "Villa performances led to a new chapter at Old Trafford.",
+      "story": [
+        {
+          "title": "A high-profile move",
+          "body": "The Premier League records Yorke arriving at Manchester United from Aston Villa in August 1998. The transfer came after a prolific run at Villa Park."
+        },
+        {
+          "title": "A productive Villa spell",
+          "body": "The Premier League season record shows 17 Villa goals in 1995/96. Aston Villa later noted that Yorke reached at least 15 league goal involvements in three successive seasons from 1995/96 through 1997/98."
+        }
+      ],
+      "objectiveIDs": [
+        "35129eec-f094-5e80-b51c-395045bdfc18",
+        "3e65b854-c7bc-5270-b9a3-05319c769594",
+        "ca66411e-4eeb-5017-996e-320b04556d66"
+      ],
+      "exerciseIDs": [
+        "caa9b1da-3032-554f-a394-7d7a5804158e",
+        "30781647-b310-50d2-b6a3-49b96f19c3d9",
+        "13c0c266-ef47-58d8-8b43-9014a3776b70",
+        "2cd28563-3196-5240-aeae-8d7dcd2b91d2"
+      ]
+    },
+    {
+      "id": "1c1d63d2-d89e-5737-9ea2-53aa3b681f54",
+      "key": "lesson-curriculum-villa-next-yorke-breakthrough",
+      "title": "A Wembley afternoon",
+      "subtitle": "A cup final gave Yorke a memorable moment.",
+      "story": [
+        {
+          "title": "A final against Leeds",
+          "body": "The EFL’s official finals record lists Aston Villa’s 3–0 win over Leeds United in the 1996 League Cup final. It names Dwight Yorke as the scorer of Villa’s third goal in the 88th minute."
+        },
+        {
+          "title": "A personal contribution",
+          "body": "Yorke’s late goal completed the scoring at Wembley. The EFL record confirms his part in the final rather than only the club’s trophy result."
+        }
+      ],
+      "objectiveIDs": [
+        "c25f6055-2c99-5477-96b3-94a603c3220c",
+        "507e1ccc-f725-5b1f-93ca-805e22c2b2f2",
+        "9f706bf2-c8b3-508f-8a98-e611eceb9519"
+      ],
+      "exerciseIDs": [
+        "82b933dd-c6e5-560c-8569-cf46b850160b",
+        "1aa50900-881c-561e-af78-327f5b02da72",
+        "f2496b34-4bb3-5837-a982-685f451e509d",
+        "002a38d8-4845-59d1-8e6c-e315fade56f6"
+      ]
+    },
+    {
+      "id": "d6e10d99-3013-5512-80c6-7318f7c90e32",
+      "key": "lesson-curriculum-villa-next-yorke-records",
+      "title": "A high-profile transfer",
+      "subtitle": "A new chapter began with an extraordinary first season.",
+      "story": [
+        {
+          "title": "A move to Old Trafford",
+          "body": "Yorke joined United from Aston Villa in August 1998. His first season brought 29 goals in all competitions and an 18-goal Premier League campaign."
+        },
+        {
+          "title": "A huge first season",
+          "body": "The Premier League reports 29 goals in all competitions during Yorke’s first United season. Its Golden Boot table lists his 18 league goals alongside joint winners Michael Owen and Jimmy Floyd Hasselbaink. UEFA lists Yorke and Andriy Shevchenko as joint Champions League top scorers with eight goals each."
+        }
+      ],
+      "objectiveIDs": [
+        "706cc1db-96a1-5650-82df-b1154b85141d",
+        "568bfd1a-82f3-5a41-ad86-0050a158358e",
+        "030a4916-a7e8-56b2-b89d-85dc012328ea"
+      ],
+      "exerciseIDs": [
+        "d5e4aa7e-baa7-5f67-98fd-ae007e33bfcf",
+        "c430f98d-dbcd-51bf-a8d8-ea8c8d70944a",
+        "ed77344d-da4d-5183-a88f-453079384931",
+        "c75fa81d-6ad7-5307-b9f5-5bb241731510"
+      ]
+    },
+    {
+      "id": "a617cbe5-5631-5202-b55e-7fd6b8e54742",
+      "key": "lesson-curriculum-villa-next-yorke-transfer",
+      "title": "On football’s biggest stage",
+      "subtitle": "A national team made history in Germany.",
+      "story": [
+        {
+          "title": "A historic qualification",
+          "body": "Trinidad and Tobago made its first FIFA World Cup appearance at Germany 2006. FIFA’s retrospective describes the tournament as the country’s only World Cup appearance at the time."
+        },
+        {
+          "title": "Captain on the world stage",
+          "body": "FIFA identifies Yorke as Trinidad and Tobago captain. The team opened with a goalless draw against Sweden before meeting England and Paraguay."
+        }
+      ],
+      "objectiveIDs": [
+        "5903a752-140c-5d4c-a4a1-9dd3d6f08000",
+        "2ad9a85c-d7fb-5d6f-8bd1-50b8610fc602",
+        "42b4ec49-ecab-50e5-90a0-175eb47f00fe"
+      ],
+      "exerciseIDs": [
+        "fc774ef2-4a33-5064-a8b7-f8d7adc818a8",
+        "9c8bbbfa-9429-5256-9c3b-b0d74e45352b",
+        "3715b892-d6de-55fb-b120-0280f89f9371",
+        "ce962da5-3b2e-5fdd-94d1-95e2eb086fc6"
       ]
     }
   ],
@@ -185008,6 +186598,1544 @@
       "left": [],
       "right": [],
       "pairs": []
+    },
+    {
+      "id": "a3094016-2f91-5981-9fc0-d85e35a38ea1",
+      "key": "exercise-curriculum-villa-next-history-choice-0",
+      "kind": "choice",
+      "objectiveIDs": [
+        "de9ee15e-fa4f-536e-a018-fc7c69b0a974"
+      ],
+      "prompt": "In what year does Aston Villa trace its formation?",
+      "feedback": "Villa’s founding year: 1874. Context: Aston Villa’s formation, as dated in the club timeline..",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "1874"
+        },
+        {
+          "id": "choice-1",
+          "text": "1872"
+        },
+        {
+          "id": "choice-2",
+          "text": "1876"
+        },
+        {
+          "id": "choice-3",
+          "text": "1888"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "ebecc86a-72d9-5892-b7b4-e7b1c335e4bf",
+      "key": "exercise-curriculum-villa-next-history-choice-1",
+      "kind": "choice",
+      "objectiveIDs": [
+        "2a2b1218-2fc3-5c62-b9f4-10454716d880"
+      ],
+      "prompt": "Which Aston Villa committee member proposed a home-and-away league to other clubs?",
+      "feedback": "Villa’s Football League organizer: William McGregor. Context: The Football League’s formation in 1888..",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "William McGregor"
+        },
+        {
+          "id": "choice-1",
+          "text": "George Ramsay"
+        },
+        {
+          "id": "choice-2",
+          "text": "John Hughes"
+        },
+        {
+          "id": "choice-3",
+          "text": "George Matthews"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "35805864-4edf-599b-bffe-286b70535dd0",
+      "key": "exercise-curriculum-villa-next-history-choice-2",
+      "kind": "choice",
+      "objectiveIDs": [
+        "d2009602-93eb-51da-833f-399a29a4f5e8"
+      ],
+      "prompt": "In which year did Aston Villa secure its first League title?",
+      "feedback": "Villa’s first league title: 1894. Context: Aston Villa’s club history..",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "1894"
+        },
+        {
+          "id": "choice-1",
+          "text": "1889"
+        },
+        {
+          "id": "choice-2",
+          "text": "1892"
+        },
+        {
+          "id": "choice-3",
+          "text": "1896"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "56a80426-02df-5704-b567-1f96623cee6c",
+      "key": "exercise-curriculum-villa-next-history-choice-3",
+      "kind": "choice",
+      "objectiveIDs": [
+        "de9ee15e-fa4f-536e-a018-fc7c69b0a974"
+      ],
+      "prompt": "In what year does Aston Villa trace its formation?",
+      "feedback": "Villa’s founding year: 1874. Context: Aston Villa’s formation, as dated in the club timeline..",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "1874"
+        },
+        {
+          "id": "choice-1",
+          "text": "1872"
+        },
+        {
+          "id": "choice-2",
+          "text": "1876"
+        },
+        {
+          "id": "choice-3",
+          "text": "1888"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "e15f97b8-ada5-5c8c-9b7b-2c3c8ec2eca4",
+      "key": "exercise-curriculum-villa-next-1957-fa-cup-choice-0",
+      "kind": "choice",
+      "objectiveIDs": [
+        "ec332c45-34fa-56f9-a8a2-db0b9c0d1230"
+      ],
+      "prompt": "On what date was Aston Villa’s 1957 FA Cup Final against Manchester United played?",
+      "feedback": "1957 FA Cup final date: 4 May 1957. Context: Aston Villa–Manchester United, 1957 FA Cup Final..",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "4 May 1957"
+        },
+        {
+          "id": "choice-1",
+          "text": "4 May 1956"
+        },
+        {
+          "id": "choice-2",
+          "text": "11 May 1957"
+        },
+        {
+          "id": "choice-3",
+          "text": "25 May 1957"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "ee45dfe2-3c47-5b1b-a903-5173b161c774",
+      "key": "exercise-curriculum-villa-next-1957-fa-cup-choice-1",
+      "kind": "choice",
+      "objectiveIDs": [
+        "e5eef20c-2ca4-5f45-8bfb-68e616592f96"
+      ],
+      "prompt": "Who did Aston Villa face in the 1957 FA Cup Final?",
+      "feedback": "1957 final opponent: Manchester United. Context: Aston Villa’s 1957 FA Cup Final..",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "Manchester United"
+        },
+        {
+          "id": "choice-1",
+          "text": "Arsenal"
+        },
+        {
+          "id": "choice-2",
+          "text": "Liverpool"
+        },
+        {
+          "id": "choice-3",
+          "text": "Leeds United"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "568fffd2-a4cd-5bd8-9980-66e14ec2e056",
+      "key": "exercise-curriculum-villa-next-1957-fa-cup-choice-2",
+      "kind": "choice",
+      "objectiveIDs": [
+        "cacc2548-4bd3-5fa0-affe-331a6bb698f1"
+      ],
+      "prompt": "How many goals did Peter McParland score for Aston Villa in the 1957 FA Cup Final?",
+      "feedback": "McParland’s final goals: 2. Context: Peter McParland’s scoring in the 1957 FA Cup Final..",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "Two"
+        },
+        {
+          "id": "choice-1",
+          "text": "One"
+        },
+        {
+          "id": "choice-2",
+          "text": "Three"
+        },
+        {
+          "id": "choice-3",
+          "text": "Four"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "550e7bc8-7b76-5753-8c7a-0c1d3951d2ba",
+      "key": "exercise-curriculum-villa-next-1957-fa-cup-choice-3",
+      "kind": "choice",
+      "objectiveIDs": [
+        "ec332c45-34fa-56f9-a8a2-db0b9c0d1230"
+      ],
+      "prompt": "On what date was Aston Villa’s 1957 FA Cup Final against Manchester United played?",
+      "feedback": "1957 FA Cup final date: 4 May 1957. Context: Aston Villa–Manchester United, 1957 FA Cup Final..",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "4 May 1957"
+        },
+        {
+          "id": "choice-1",
+          "text": "4 May 1956"
+        },
+        {
+          "id": "choice-2",
+          "text": "11 May 1957"
+        },
+        {
+          "id": "choice-3",
+          "text": "25 May 1957"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "8bba0333-884f-573d-8eab-0fcd0244b251",
+      "key": "exercise-curriculum-villa-next-europe-1982-choice-0",
+      "kind": "choice",
+      "objectiveIDs": [
+        "76dd7b83-4888-5925-8567-a4a79601ee39"
+      ],
+      "prompt": "On what date did Aston Villa play Bayern Munich in the European Cup final?",
+      "feedback": "European Cup final date: 26 May 1982. Context: 1981/82 European Cup Final, played at De Kuip in Rotterdam..",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "26 May 1982"
+        },
+        {
+          "id": "choice-1",
+          "text": "26 May 1981"
+        },
+        {
+          "id": "choice-2",
+          "text": "28 May 1982"
+        },
+        {
+          "id": "choice-3",
+          "text": "26 May 1983"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "2cf791b9-672b-5f63-8f62-47680fef6fbd",
+      "key": "exercise-curriculum-villa-next-europe-1982-choice-1",
+      "kind": "choice",
+      "objectiveIDs": [
+        "eaba7a84-9d09-53ad-a7c1-574b9ab87456"
+      ],
+      "prompt": "What was the score in the 1982 European Cup Final, with Aston Villa listed first?",
+      "feedback": "European Cup final score: 1–0. Context: 1982 European Cup final; Aston Villa listed before Bayern München..",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "1–0"
+        },
+        {
+          "id": "choice-1",
+          "text": "Aston Villa 2–0 Bayern Munich"
+        },
+        {
+          "id": "choice-2",
+          "text": "Aston Villa 1–1 Bayern Munich"
+        },
+        {
+          "id": "choice-3",
+          "text": "Aston Villa 0–1 Bayern Munich"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": [],
+      "scoreInput": {
+        "leftEntityID": "eb776548-b0db-5f30-ab1b-b47dabd128a5",
+        "rightEntityID": "2f365de6-6307-5e8d-a80e-d4459c58787a",
+        "leftGoals": 1,
+        "rightGoals": 0,
+        "maximum": 20
+      }
+    },
+    {
+      "id": "f6474431-e2e5-58da-94f1-d864b8ac15d4",
+      "key": "exercise-curriculum-villa-next-europe-1982-choice-2",
+      "kind": "choice",
+      "objectiveIDs": [
+        "9ec38737-8c6d-53ca-a6ba-e9198825fd17"
+      ],
+      "prompt": "In which minute did Peter Withe score Aston Villa’s winning goal in the 1982 European Cup Final?",
+      "feedback": "Withe’s winning-goal minute: 67th minute. Context: Peter Withe’s goal for Aston Villa against Bayern Munich in the 1982 European Cup Final..",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "67th minute"
+        },
+        {
+          "id": "choice-1",
+          "text": "57th minute"
+        },
+        {
+          "id": "choice-2",
+          "text": "62nd minute"
+        },
+        {
+          "id": "choice-3",
+          "text": "77th minute"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "90215564-3273-54e9-a751-a9d4d8d46af1",
+      "key": "exercise-curriculum-villa-next-europe-1982-choice-3",
+      "kind": "choice",
+      "objectiveIDs": [
+        "76dd7b83-4888-5925-8567-a4a79601ee39"
+      ],
+      "prompt": "On what date did Aston Villa play Bayern Munich in the European Cup final?",
+      "feedback": "European Cup final date: 26 May 1982. Context: 1981/82 European Cup Final, played at De Kuip in Rotterdam..",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "26 May 1982"
+        },
+        {
+          "id": "choice-1",
+          "text": "26 May 1981"
+        },
+        {
+          "id": "choice-2",
+          "text": "28 May 1982"
+        },
+        {
+          "id": "choice-3",
+          "text": "26 May 1983"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "290873ba-721d-5a32-8fb2-e3067e024755",
+      "key": "exercise-curriculum-villa-next-mcgrath-career-choice-0",
+      "kind": "choice",
+      "objectiveIDs": [
+        "c3b109ed-80f6-567a-ad83-c1752fbd2c8a"
+      ],
+      "prompt": "Which Dublin club signed Paul McGrath from Dalkey United in 1981?",
+      "feedback": "McGrath’s first senior club: St Patrick’s Athletic. Context: Paul McGrath’s move from Dalkey United in 1981..",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "St Patrick’s Athletic"
+        },
+        {
+          "id": "choice-1",
+          "text": "Leeds United"
+        },
+        {
+          "id": "choice-2",
+          "text": "Arsenal"
+        },
+        {
+          "id": "choice-3",
+          "text": "Liverpool"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "833ee6d2-e181-5b0f-9ce6-5dbf332aaeb3",
+      "key": "exercise-curriculum-villa-next-mcgrath-career-choice-1",
+      "kind": "choice",
+      "objectiveIDs": [
+        "c15928a8-79b6-57fc-8ccf-8ddcdd29039b"
+      ],
+      "prompt": "Which English club did McGrath join after the 1981–82 season?",
+      "feedback": "McGrath’s 1982 destination: Manchester United. Context: Paul McGrath’s transfer from St Patrick’s Athletic after the 1981–82 season..",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "Manchester United"
+        },
+        {
+          "id": "choice-1",
+          "text": "Arsenal"
+        },
+        {
+          "id": "choice-2",
+          "text": "Liverpool"
+        },
+        {
+          "id": "choice-3",
+          "text": "Leeds United"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "b2bdcc9b-6fca-5715-bc2e-fb6ea0aa7c62",
+      "key": "exercise-curriculum-villa-next-mcgrath-career-choice-2",
+      "kind": "choice",
+      "objectiveIDs": [
+        "f6e35f6e-2ac1-5d88-80cc-38709be0c1f3"
+      ],
+      "prompt": "In what month and year did Derby County say McGrath arrived from Aston Villa?",
+      "feedback": "McGrath’s Derby move: October 1996. Context: Paul McGrath’s transfer from Aston Villa to Derby County..",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "October 1996"
+        },
+        {
+          "id": "choice-1",
+          "text": "October 1995"
+        },
+        {
+          "id": "choice-2",
+          "text": "August 1996"
+        },
+        {
+          "id": "choice-3",
+          "text": "January 1997"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "4381422d-6987-5e4f-86a6-63ef65dd3cee",
+      "key": "exercise-curriculum-villa-next-mcgrath-career-choice-3",
+      "kind": "choice",
+      "objectiveIDs": [
+        "c3b109ed-80f6-567a-ad83-c1752fbd2c8a"
+      ],
+      "prompt": "Which Dublin club signed Paul McGrath from Dalkey United in 1981?",
+      "feedback": "McGrath’s first senior club: St Patrick’s Athletic. Context: Paul McGrath’s move from Dalkey United in 1981..",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "St Patrick’s Athletic"
+        },
+        {
+          "id": "choice-1",
+          "text": "Leeds United"
+        },
+        {
+          "id": "choice-2",
+          "text": "Arsenal"
+        },
+        {
+          "id": "choice-3",
+          "text": "Liverpool"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "91a9435d-c3a8-5ed0-b649-d056155f4a50",
+      "key": "exercise-curriculum-villa-next-mcgrath-honours-choice-0",
+      "kind": "choice",
+      "objectiveIDs": [
+        "f214702a-56c9-5eab-8ec3-7bbab4435581"
+      ],
+      "prompt": "Which PFAI award did McGrath win in 1981–82?",
+      "feedback": "McGrath’s first major individual honour: PFAI Player of the Year. Context: Paul McGrath’s 1981–82 season with St Patrick’s Athletic..",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "PFAI Player of the Year"
+        },
+        {
+          "id": "choice-1",
+          "text": "PFAI Young Player of the Year"
+        },
+        {
+          "id": "choice-2",
+          "text": "FAI International Player of the Year"
+        },
+        {
+          "id": "choice-3",
+          "text": "PFAI Goalkeeper of the Year"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "a21b7fd3-7c0a-51d7-9551-c50cd35e65de",
+      "key": "exercise-curriculum-villa-next-mcgrath-honours-choice-1",
+      "kind": "choice",
+      "objectiveIDs": [
+        "4d00da4c-0769-5a51-af3f-29cfc7808d36"
+      ],
+      "prompt": "How many senior caps does the FAI Hall of Fame announcement credit to McGrath?",
+      "feedback": "McGrath’s Ireland total: 83 caps. Context: Paul McGrath’s senior appearances for Ireland..",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "83"
+        },
+        {
+          "id": "choice-1",
+          "text": "78"
+        },
+        {
+          "id": "choice-2",
+          "text": "81"
+        },
+        {
+          "id": "choice-3",
+          "text": "86"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "b601c691-f26d-5975-9a1c-3edf0a69bb1b",
+      "key": "exercise-curriculum-villa-next-mcgrath-honours-choice-2",
+      "kind": "choice",
+      "objectiveIDs": [
+        "c6528c3b-d16e-5efd-9188-15706e8dd659"
+      ],
+      "prompt": "Which association honoured Paul McGrath with a Hall of Fame award in its 2019 awards edition?",
+      "feedback": "A national honour: Football Association of Ireland. Context: Paul McGrath: 2019 FAI International Awards edition, reported on 8 August 2020..",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "Football Association of Ireland"
+        },
+        {
+          "id": "choice-1",
+          "text": "Football Association of Wales"
+        },
+        {
+          "id": "choice-2",
+          "text": "Scottish Football Association"
+        },
+        {
+          "id": "choice-3",
+          "text": "English Football Association"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "06d0206a-1706-5c88-b319-8c0eaaa73122",
+      "key": "exercise-curriculum-villa-next-mcgrath-honours-choice-3",
+      "kind": "choice",
+      "objectiveIDs": [
+        "f214702a-56c9-5eab-8ec3-7bbab4435581"
+      ],
+      "prompt": "Which PFAI award did McGrath win in 1981–82?",
+      "feedback": "McGrath’s first major individual honour: PFAI Player of the Year. Context: Paul McGrath’s 1981–82 season with St Patrick’s Athletic..",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "PFAI Player of the Year"
+        },
+        {
+          "id": "choice-1",
+          "text": "PFAI Young Player of the Year"
+        },
+        {
+          "id": "choice-2",
+          "text": "FAI International Player of the Year"
+        },
+        {
+          "id": "choice-3",
+          "text": "PFAI Goalkeeper of the Year"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "53e6ee98-e2c2-5ebc-9658-40cbd4863a48",
+      "key": "exercise-curriculum-villa-next-mcgrath-records-choice-0",
+      "kind": "choice",
+      "objectiveIDs": [
+        "f3828ac9-84ef-5d7a-ae44-7e2cd3b40ef5"
+      ],
+      "prompt": "What was the score in the 1994 World Cup match, with Ireland listed first and Italy second?",
+      "feedback": "Ireland’s 1994 World Cup result: 1–0. Context: Republic of Ireland–Italy, 1994 FIFA World Cup group match; teams stated Ireland first..",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "1–0"
+        },
+        {
+          "id": "choice-1",
+          "text": "0–1"
+        },
+        {
+          "id": "choice-2",
+          "text": "0–0"
+        },
+        {
+          "id": "choice-3",
+          "text": "2–1"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": [],
+      "scoreInput": {
+        "leftEntityID": "e6c011eb-d595-53ee-bf14-e06478d68ff7",
+        "rightEntityID": "e9413144-9b53-5144-988e-c08d81c3a46a",
+        "leftGoals": 1,
+        "rightGoals": 0,
+        "maximum": 20
+      }
+    },
+    {
+      "id": "2068f9c2-9d48-527c-9813-643eca957bab",
+      "key": "exercise-curriculum-villa-next-mcgrath-records-choice-1",
+      "kind": "choice",
+      "objectiveIDs": [
+        "afbb2c52-53dd-5c55-a80e-d12c166f9eeb"
+      ],
+      "prompt": "How many headers does FIFA credit McGrath with winning against Italy in 1994?",
+      "feedback": "McGrath’s headers won: 15 headers. Context: Paul McGrath’s defensive work in Ireland’s 1–0 win over Italy at USA 1994..",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "15"
+        },
+        {
+          "id": "choice-1",
+          "text": "10"
+        },
+        {
+          "id": "choice-2",
+          "text": "12"
+        },
+        {
+          "id": "choice-3",
+          "text": "18"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "637eb486-3888-5d4d-9e31-74b97d8c42be",
+      "key": "exercise-curriculum-villa-next-mcgrath-records-choice-2",
+      "kind": "choice",
+      "objectiveIDs": [
+        "11996731-f3e1-5b59-aa83-1798fd99f056"
+      ],
+      "prompt": "How many interceptions does FIFA list for McGrath against Italy?",
+      "feedback": "McGrath’s interceptions: 5 interceptions. Context: Paul McGrath’s defensive statistics in Ireland–Italy at USA 1994..",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "5"
+        },
+        {
+          "id": "choice-1",
+          "text": "3"
+        },
+        {
+          "id": "choice-2",
+          "text": "4"
+        },
+        {
+          "id": "choice-3",
+          "text": "6"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "7a6f6d83-c97d-5357-a5de-4feabf8267f1",
+      "key": "exercise-curriculum-villa-next-mcgrath-records-choice-3",
+      "kind": "choice",
+      "objectiveIDs": [
+        "f3828ac9-84ef-5d7a-ae44-7e2cd3b40ef5"
+      ],
+      "prompt": "What was the score in the 1994 World Cup match, with Ireland listed first and Italy second?",
+      "feedback": "Ireland’s 1994 World Cup result: 1–0. Context: Republic of Ireland–Italy, 1994 FIFA World Cup group match; teams stated Ireland first..",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "1–0"
+        },
+        {
+          "id": "choice-1",
+          "text": "0–1"
+        },
+        {
+          "id": "choice-2",
+          "text": "0–0"
+        },
+        {
+          "id": "choice-3",
+          "text": "2–1"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": [],
+      "scoreInput": {
+        "leftEntityID": "e6c011eb-d595-53ee-bf14-e06478d68ff7",
+        "rightEntityID": "e9413144-9b53-5144-988e-c08d81c3a46a",
+        "leftGoals": 1,
+        "rightGoals": 0,
+        "maximum": 20
+      }
+    },
+    {
+      "id": "91c181a4-8389-51b6-ae62-8fdd8e19fad5",
+      "key": "exercise-curriculum-villa-next-mcgrath-1990-world-cup-choice-0",
+      "kind": "choice",
+      "objectiveIDs": [
+        "885e30fe-287e-5b27-bb10-9d8b5bcbdc89"
+      ],
+      "prompt": "In which year did McGrath start Ireland’s World Cup quarter-final against Italy?",
+      "feedback": "McGrath at Italia 90: 1990. Context: Paul McGrath’s appearance in Ireland’s 1990 FIFA World Cup quarter-final..",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "1990"
+        },
+        {
+          "id": "choice-1",
+          "text": "1986"
+        },
+        {
+          "id": "choice-2",
+          "text": "1994"
+        },
+        {
+          "id": "choice-3",
+          "text": "1998"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "be6431ba-45b0-5e14-819a-52cdea1b5369",
+      "key": "exercise-curriculum-villa-next-mcgrath-1990-world-cup-choice-1",
+      "kind": "choice",
+      "objectiveIDs": [
+        "dba15135-1383-55b9-9598-e4f355b59358"
+      ],
+      "prompt": "At what stage did Ireland meet Italy at the 1990 World Cup?",
+      "feedback": "Ireland’s tournament run: Quarter-final. Context: Italy–Ireland at Italia 90..",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "Quarter-final"
+        },
+        {
+          "id": "choice-1",
+          "text": "Group stage"
+        },
+        {
+          "id": "choice-2",
+          "text": "Round of 16"
+        },
+        {
+          "id": "choice-3",
+          "text": "Semi-final"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "0237699a-2238-5c04-94b3-1d1f1036bcd2",
+      "key": "exercise-curriculum-villa-next-mcgrath-1990-world-cup-choice-2",
+      "kind": "choice",
+      "objectiveIDs": [
+        "aa53ec71-9bdc-56f3-8aea-573e95bd0e7e"
+      ],
+      "prompt": "Who scored the only goal in Italy’s 1–0 quarter-final win over Ireland?",
+      "feedback": "The match’s only goal: Salvatore Schillaci. Context: Italy–Ireland, 1990 FIFA World Cup quarter-final..",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "Salvatore Schillaci"
+        },
+        {
+          "id": "choice-1",
+          "text": "Roberto Baggio"
+        },
+        {
+          "id": "choice-2",
+          "text": "Gianluca Vialli"
+        },
+        {
+          "id": "choice-3",
+          "text": "Marco Tardelli"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "4beb2c7a-b879-5dd6-9705-39aa8665dda7",
+      "key": "exercise-curriculum-villa-next-mcgrath-1990-world-cup-choice-3",
+      "kind": "choice",
+      "objectiveIDs": [
+        "885e30fe-287e-5b27-bb10-9d8b5bcbdc89"
+      ],
+      "prompt": "In which year did McGrath start Ireland’s World Cup quarter-final against Italy?",
+      "feedback": "McGrath at Italia 90: 1990. Context: Paul McGrath’s appearance in Ireland’s 1990 FIFA World Cup quarter-final..",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "1990"
+        },
+        {
+          "id": "choice-1",
+          "text": "1986"
+        },
+        {
+          "id": "choice-2",
+          "text": "1994"
+        },
+        {
+          "id": "choice-3",
+          "text": "1998"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "caa9b1da-3032-554f-a394-7d7a5804158e",
+      "key": "exercise-curriculum-villa-next-yorke-career-choice-0",
+      "kind": "choice",
+      "objectiveIDs": [
+        "35129eec-f094-5e80-b51c-395045bdfc18"
+      ],
+      "prompt": "Which club signed Yorke from Aston Villa in 1998?",
+      "feedback": "Yorke’s next club: Manchester United. Context: Dwight Yorke’s 1998 transfer from Aston Villa..",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "Manchester United"
+        },
+        {
+          "id": "choice-1",
+          "text": "Arsenal"
+        },
+        {
+          "id": "choice-2",
+          "text": "Liverpool"
+        },
+        {
+          "id": "choice-3",
+          "text": "Leeds United"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "30781647-b310-50d2-b6a3-49b96f19c3d9",
+      "key": "exercise-curriculum-villa-next-yorke-career-choice-1",
+      "kind": "choice",
+      "objectiveIDs": [
+        "3e65b854-c7bc-5270-b9a3-05319c769594"
+      ],
+      "prompt": "How many Premier League goals did Yorke score for Aston Villa in 1995/96?",
+      "feedback": "A prolific league season: 17 goals. Context: Dwight Yorke’s Aston Villa Premier League record for 1995/96..",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "17"
+        },
+        {
+          "id": "choice-1",
+          "text": "12"
+        },
+        {
+          "id": "choice-2",
+          "text": "15"
+        },
+        {
+          "id": "choice-3",
+          "text": "18"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "13c0c266-ef47-58d8-8b43-9014a3776b70",
+      "key": "exercise-curriculum-villa-next-yorke-career-choice-2",
+      "kind": "choice",
+      "objectiveIDs": [
+        "ca66411e-4eeb-5017-996e-320b04556d66"
+      ],
+      "prompt": "Across how many consecutive seasons did Yorke reach 15 or more Premier League goal involvements for Villa, according to the club?",
+      "feedback": "A sustained run of form: 3 seasons. Context: Yorke’s Premier League goal involvements from 1995/96 through 1997/98..",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "Three"
+        },
+        {
+          "id": "choice-1",
+          "text": "Two"
+        },
+        {
+          "id": "choice-2",
+          "text": "Four"
+        },
+        {
+          "id": "choice-3",
+          "text": "Five"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "2cd28563-3196-5240-aeae-8d7dcd2b91d2",
+      "key": "exercise-curriculum-villa-next-yorke-career-choice-3",
+      "kind": "choice",
+      "objectiveIDs": [
+        "35129eec-f094-5e80-b51c-395045bdfc18"
+      ],
+      "prompt": "Which club signed Yorke from Aston Villa in 1998?",
+      "feedback": "Yorke’s next club: Manchester United. Context: Dwight Yorke’s 1998 transfer from Aston Villa..",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "Manchester United"
+        },
+        {
+          "id": "choice-1",
+          "text": "Arsenal"
+        },
+        {
+          "id": "choice-2",
+          "text": "Liverpool"
+        },
+        {
+          "id": "choice-3",
+          "text": "Leeds United"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "82b933dd-c6e5-560c-8569-cf46b850160b",
+      "key": "exercise-curriculum-villa-next-yorke-breakthrough-choice-0",
+      "kind": "choice",
+      "objectiveIDs": [
+        "c25f6055-2c99-5477-96b3-94a603c3220c"
+      ],
+      "prompt": "What was the score in the 1996 League Cup final, with Aston Villa listed first?",
+      "feedback": "The final result: 3–0. Context: 1996 League Cup final; Aston Villa listed before Leeds United..",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "3–0"
+        },
+        {
+          "id": "choice-1",
+          "text": "2–0"
+        },
+        {
+          "id": "choice-2",
+          "text": "3–1"
+        },
+        {
+          "id": "choice-3",
+          "text": "0–3"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": [],
+      "scoreInput": {
+        "leftEntityID": "eb776548-b0db-5f30-ab1b-b47dabd128a5",
+        "rightEntityID": "e4b2cfc7-b170-5b40-a22f-dbf9e6f85aee",
+        "leftGoals": 3,
+        "rightGoals": 0,
+        "maximum": 20
+      }
+    },
+    {
+      "id": "1aa50900-881c-561e-af78-327f5b02da72",
+      "key": "exercise-curriculum-villa-next-yorke-breakthrough-choice-1",
+      "kind": "choice",
+      "objectiveIDs": [
+        "507e1ccc-f725-5b1f-93ca-805e22c2b2f2"
+      ],
+      "prompt": "In which minute did Yorke score Villa’s third goal in the 1996 League Cup final?",
+      "feedback": "Yorke’s Wembley goal: 88th minute. Context: Dwight Yorke’s goal in Aston Villa–Leeds United, 1996 League Cup final..",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "88th minute"
+        },
+        {
+          "id": "choice-1",
+          "text": "55th minute"
+        },
+        {
+          "id": "choice-2",
+          "text": "67th minute"
+        },
+        {
+          "id": "choice-3",
+          "text": "90th minute"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "f2496b34-4bb3-5837-a982-685f451e509d",
+      "key": "exercise-curriculum-villa-next-yorke-breakthrough-choice-2",
+      "kind": "choice",
+      "objectiveIDs": [
+        "9f706bf2-c8b3-508f-8a98-e611eceb9519"
+      ],
+      "prompt": "Which competition’s final did Aston Villa win against Leeds United in 1996?",
+      "feedback": "The Wembley honour: League Cup. Context: Aston Villa’s 1996 final against Leeds United..",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "League Cup"
+        },
+        {
+          "id": "choice-1",
+          "text": "FA Cup"
+        },
+        {
+          "id": "choice-2",
+          "text": "UEFA Cup"
+        },
+        {
+          "id": "choice-3",
+          "text": "Intertoto Cup"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "002a38d8-4845-59d1-8e6c-e315fade56f6",
+      "key": "exercise-curriculum-villa-next-yorke-breakthrough-choice-3",
+      "kind": "choice",
+      "objectiveIDs": [
+        "c25f6055-2c99-5477-96b3-94a603c3220c"
+      ],
+      "prompt": "What was the score in the 1996 League Cup final, with Aston Villa listed first?",
+      "feedback": "The final result: 3–0. Context: 1996 League Cup final; Aston Villa listed before Leeds United..",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "3–0"
+        },
+        {
+          "id": "choice-1",
+          "text": "2–0"
+        },
+        {
+          "id": "choice-2",
+          "text": "3–1"
+        },
+        {
+          "id": "choice-3",
+          "text": "0–3"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": [],
+      "scoreInput": {
+        "leftEntityID": "eb776548-b0db-5f30-ab1b-b47dabd128a5",
+        "rightEntityID": "e4b2cfc7-b170-5b40-a22f-dbf9e6f85aee",
+        "leftGoals": 3,
+        "rightGoals": 0,
+        "maximum": 20
+      }
+    },
+    {
+      "id": "d5e4aa7e-baa7-5f67-98fd-ae007e33bfcf",
+      "key": "exercise-curriculum-villa-next-yorke-records-choice-0",
+      "kind": "choice",
+      "objectiveIDs": [
+        "706cc1db-96a1-5650-82df-b1154b85141d"
+      ],
+      "prompt": "How many goals does the Premier League credit Yorke with scoring in all competitions after joining United in 1998?",
+      "feedback": "Yorke’s treble-season total: 29 goals. Context: Dwight Yorke’s first Manchester United season, 1998/99; all competitions..",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "29"
+        },
+        {
+          "id": "choice-1",
+          "text": "18"
+        },
+        {
+          "id": "choice-2",
+          "text": "24"
+        },
+        {
+          "id": "choice-3",
+          "text": "32"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "c430f98d-dbcd-51bf-a8d8-ea8c8d70944a",
+      "key": "exercise-curriculum-villa-next-yorke-records-choice-1",
+      "kind": "choice",
+      "objectiveIDs": [
+        "568bfd1a-82f3-5a41-ad86-0050a158358e"
+      ],
+      "prompt": "How many Premier League goals did Yorke score in United’s 1998/99 campaign?",
+      "feedback": "Yorke’s league scoring honour: 18 goals. Context: Dwight Yorke’s Manchester United Premier League campaign in 1998/99..",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "18"
+        },
+        {
+          "id": "choice-1",
+          "text": "16"
+        },
+        {
+          "id": "choice-2",
+          "text": "17"
+        },
+        {
+          "id": "choice-3",
+          "text": "20"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "ed77344d-da4d-5183-a88f-453079384931",
+      "key": "exercise-curriculum-villa-next-yorke-records-choice-2",
+      "kind": "choice",
+      "objectiveIDs": [
+        "030a4916-a7e8-56b2-b89d-85dc012328ea"
+      ],
+      "prompt": "How many Champions League goals did Dwight Yorke score in United’s 1998/99 winning campaign?",
+      "feedback": "Yorke’s European scoring: 8 goals. Context: Dwight Yorke’s 1998/99 UEFA Champions League campaign for Manchester United..",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "Eight"
+        },
+        {
+          "id": "choice-1",
+          "text": "Six"
+        },
+        {
+          "id": "choice-2",
+          "text": "Seven"
+        },
+        {
+          "id": "choice-3",
+          "text": "Nine"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "c75fa81d-6ad7-5307-b9f5-5bb241731510",
+      "key": "exercise-curriculum-villa-next-yorke-records-choice-3",
+      "kind": "choice",
+      "objectiveIDs": [
+        "706cc1db-96a1-5650-82df-b1154b85141d"
+      ],
+      "prompt": "How many goals does the Premier League credit Yorke with scoring in all competitions after joining United in 1998?",
+      "feedback": "Yorke’s treble-season total: 29 goals. Context: Dwight Yorke’s first Manchester United season, 1998/99; all competitions..",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "29"
+        },
+        {
+          "id": "choice-1",
+          "text": "18"
+        },
+        {
+          "id": "choice-2",
+          "text": "24"
+        },
+        {
+          "id": "choice-3",
+          "text": "32"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "fc774ef2-4a33-5064-a8b7-f8d7adc818a8",
+      "key": "exercise-curriculum-villa-next-yorke-transfer-choice-0",
+      "kind": "choice",
+      "objectiveIDs": [
+        "5903a752-140c-5d4c-a4a1-9dd3d6f08000"
+      ],
+      "prompt": "Which country did Dwight Yorke captain at the 2006 FIFA World Cup?",
+      "feedback": "Yorke’s national team: Trinidad and Tobago. Context: Dwight Yorke’s captaincy at Germany 2006..",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "Trinidad and Tobago"
+        },
+        {
+          "id": "choice-1",
+          "text": "Brazil"
+        },
+        {
+          "id": "choice-2",
+          "text": "Mexico"
+        },
+        {
+          "id": "choice-3",
+          "text": "Colombia"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "9c8bbbfa-9429-5256-9c3b-b0d74e45352b",
+      "key": "exercise-curriculum-villa-next-yorke-transfer-choice-1",
+      "kind": "choice",
+      "objectiveIDs": [
+        "2ad9a85c-d7fb-5d6f-8bd1-50b8610fc602"
+      ],
+      "prompt": "In which year did Trinidad and Tobago make its first FIFA World Cup appearance?",
+      "feedback": "T&T’s World Cup debut: 2006. Context: Trinidad and Tobago’s first FIFA World Cup appearance, captained by Yorke..",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "2006"
+        },
+        {
+          "id": "choice-1",
+          "text": "1998"
+        },
+        {
+          "id": "choice-2",
+          "text": "2002"
+        },
+        {
+          "id": "choice-3",
+          "text": "2010"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "3715b892-d6de-55fb-b120-0280f89f9371",
+      "key": "exercise-curriculum-villa-next-yorke-transfer-choice-2",
+      "kind": "choice",
+      "objectiveIDs": [
+        "42b4ec49-ecab-50e5-90a0-175eb47f00fe"
+      ],
+      "prompt": "What was the result of Trinidad and Tobago’s opening match against Sweden at the 2006 World Cup?",
+      "feedback": "T&T’s opening match: 0–0. Context: Trinidad and Tobago–Sweden, 2006 FIFA World Cup group stage..",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "0–0"
+        },
+        {
+          "id": "choice-1",
+          "text": "1–0"
+        },
+        {
+          "id": "choice-2",
+          "text": "0–1"
+        },
+        {
+          "id": "choice-3",
+          "text": "1–1"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": [],
+      "scoreInput": {
+        "leftEntityID": "2bdfe531-1134-5128-84d8-5063ef7a6b2a",
+        "rightEntityID": "0b0f2ec4-48e7-57ca-8e8c-f376068a5e2f",
+        "leftGoals": 0,
+        "rightGoals": 0,
+        "maximum": 20
+      }
+    },
+    {
+      "id": "ce962da5-3b2e-5fdd-94d1-95e2eb086fc6",
+      "key": "exercise-curriculum-villa-next-yorke-transfer-choice-3",
+      "kind": "choice",
+      "objectiveIDs": [
+        "5903a752-140c-5d4c-a4a1-9dd3d6f08000"
+      ],
+      "prompt": "Which country did Dwight Yorke captain at the 2006 FIFA World Cup?",
+      "feedback": "Yorke’s national team: Trinidad and Tobago. Context: Dwight Yorke’s captaincy at Germany 2006..",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "Trinidad and Tobago"
+        },
+        {
+          "id": "choice-1",
+          "text": "Brazil"
+        },
+        {
+          "id": "choice-2",
+          "text": "Mexico"
+        },
+        {
+          "id": "choice-3",
+          "text": "Colombia"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
     }
   ],
   "cards": [
@@ -185471,12 +188599,56 @@
       "objectiveIDs": [
         "f22512d5-89a7-516a-8113-3aac086edef2",
         "c7b8f5f7-62b5-5d85-beab-6ac9afb888db",
-        "93b62411-88ec-5db1-80ce-31980f3333b8"
+        "93b62411-88ec-5db1-80ce-31980f3333b8",
+        "de9ee15e-fa4f-536e-a018-fc7c69b0a974",
+        "2a2b1218-2fc3-5c62-b9f4-10454716d880",
+        "d2009602-93eb-51da-833f-399a29a4f5e8",
+        "ec332c45-34fa-56f9-a8a2-db0b9c0d1230",
+        "e5eef20c-2ca4-5f45-8bfb-68e616592f96",
+        "cacc2548-4bd3-5fa0-affe-331a6bb698f1",
+        "76dd7b83-4888-5925-8567-a4a79601ee39",
+        "eaba7a84-9d09-53ad-a7c1-574b9ab87456",
+        "9ec38737-8c6d-53ca-a6ba-e9198825fd17",
+        "c3b109ed-80f6-567a-ad83-c1752fbd2c8a",
+        "c15928a8-79b6-57fc-8ccf-8ddcdd29039b",
+        "f6e35f6e-2ac1-5d88-80cc-38709be0c1f3",
+        "f214702a-56c9-5eab-8ec3-7bbab4435581",
+        "4d00da4c-0769-5a51-af3f-29cfc7808d36",
+        "c6528c3b-d16e-5efd-9188-15706e8dd659",
+        "f3828ac9-84ef-5d7a-ae44-7e2cd3b40ef5",
+        "afbb2c52-53dd-5c55-a80e-d12c166f9eeb",
+        "11996731-f3e1-5b59-aa83-1798fd99f056",
+        "885e30fe-287e-5b27-bb10-9d8b5bcbdc89",
+        "dba15135-1383-55b9-9598-e4f355b59358",
+        "aa53ec71-9bdc-56f3-8aea-573e95bd0e7e",
+        "35129eec-f094-5e80-b51c-395045bdfc18",
+        "3e65b854-c7bc-5270-b9a3-05319c769594",
+        "ca66411e-4eeb-5017-996e-320b04556d66",
+        "c25f6055-2c99-5477-96b3-94a603c3220c",
+        "507e1ccc-f725-5b1f-93ca-805e22c2b2f2",
+        "9f706bf2-c8b3-508f-8a98-e611eceb9519",
+        "706cc1db-96a1-5650-82df-b1154b85141d",
+        "568bfd1a-82f3-5a41-ad86-0050a158358e",
+        "030a4916-a7e8-56b2-b89d-85dc012328ea",
+        "5903a752-140c-5d4c-a4a1-9dd3d6f08000",
+        "2ad9a85c-d7fb-5d6f-8bd1-50b8610fc602",
+        "42b4ec49-ecab-50e5-90a0-175eb47f00fe"
       ],
       "lessonIDs": [
-        "5b2d66ac-7311-5230-a722-a6d7be1b21ac"
+        "5b2d66ac-7311-5230-a722-a6d7be1b21ac",
+        "d6984c5e-ef9e-594c-b193-401ca61fd9bd",
+        "5373ce49-7c86-57a8-97c7-39fd7b8d696d",
+        "36b064da-8e75-520d-8e0f-81728c51c8ba",
+        "0f298633-0908-5f62-8bef-816293b5e486",
+        "f158b55f-4899-5123-8619-1ebfbf4078e5",
+        "c72cebd0-6d2b-52cf-9aac-649ca1a0b34b",
+        "11e96fc3-d3b3-5343-8150-94be3ef335a8",
+        "1e5cefc2-28fc-5d8c-be7f-95ee227f4d74",
+        "1c1d63d2-d89e-5737-9ea2-53aa3b681f54",
+        "d6e10d99-3013-5512-80c6-7318f7c90e32",
+        "a617cbe5-5631-5202-b55e-7fd6b8e54742"
       ],
-      "knowledgeVersion": 1,
+      "knowledgeVersion": 2,
       "caption": "The first chapter"
     },
     {
@@ -191148,6 +194320,60 @@
         "525d3cbf-4759-55af-ac57-f17ea6a9ad73",
         "df6326e1-5f73-562c-8737-7ab936884cc8",
         "aecd38d4-72f4-5a35-9a59-13f724ed9529"
+      ],
+      "knowledgeVersion": 1,
+      "caption": "Career, defining moments and records"
+    },
+    {
+      "id": "a11cd1d1-c45c-5e13-ab91-b8ef1d95579d",
+      "key": "card-paul-mcgrath",
+      "entityID": "d72eeff5-883e-562e-b449-793522947421",
+      "objectiveIDs": [
+        "c3b109ed-80f6-567a-ad83-c1752fbd2c8a",
+        "c15928a8-79b6-57fc-8ccf-8ddcdd29039b",
+        "f6e35f6e-2ac1-5d88-80cc-38709be0c1f3",
+        "f214702a-56c9-5eab-8ec3-7bbab4435581",
+        "4d00da4c-0769-5a51-af3f-29cfc7808d36",
+        "c6528c3b-d16e-5efd-9188-15706e8dd659",
+        "f3828ac9-84ef-5d7a-ae44-7e2cd3b40ef5",
+        "afbb2c52-53dd-5c55-a80e-d12c166f9eeb",
+        "11996731-f3e1-5b59-aa83-1798fd99f056",
+        "885e30fe-287e-5b27-bb10-9d8b5bcbdc89",
+        "dba15135-1383-55b9-9598-e4f355b59358",
+        "aa53ec71-9bdc-56f3-8aea-573e95bd0e7e"
+      ],
+      "lessonIDs": [
+        "0f298633-0908-5f62-8bef-816293b5e486",
+        "f158b55f-4899-5123-8619-1ebfbf4078e5",
+        "c72cebd0-6d2b-52cf-9aac-649ca1a0b34b",
+        "11e96fc3-d3b3-5343-8150-94be3ef335a8"
+      ],
+      "knowledgeVersion": 1,
+      "caption": "Career, defining moments and records"
+    },
+    {
+      "id": "7e934249-0033-5852-be29-53f7a2f3b94a",
+      "key": "card-dwight-yorke",
+      "entityID": "20bc323d-9a30-5ffe-b055-6d81f7bb540c",
+      "objectiveIDs": [
+        "35129eec-f094-5e80-b51c-395045bdfc18",
+        "3e65b854-c7bc-5270-b9a3-05319c769594",
+        "ca66411e-4eeb-5017-996e-320b04556d66",
+        "c25f6055-2c99-5477-96b3-94a603c3220c",
+        "507e1ccc-f725-5b1f-93ca-805e22c2b2f2",
+        "9f706bf2-c8b3-508f-8a98-e611eceb9519",
+        "706cc1db-96a1-5650-82df-b1154b85141d",
+        "568bfd1a-82f3-5a41-ad86-0050a158358e",
+        "030a4916-a7e8-56b2-b89d-85dc012328ea",
+        "5903a752-140c-5d4c-a4a1-9dd3d6f08000",
+        "2ad9a85c-d7fb-5d6f-8bd1-50b8610fc602",
+        "42b4ec49-ecab-50e5-90a0-175eb47f00fe"
+      ],
+      "lessonIDs": [
+        "1e5cefc2-28fc-5d8c-be7f-95ee227f4d74",
+        "1c1d63d2-d89e-5737-9ea2-53aa3b681f54",
+        "d6e10d99-3013-5512-80c6-7318f7c90e32",
+        "a617cbe5-5631-5202-b55e-7fd6b8e54742"
       ],
       "knowledgeVersion": 1,
       "caption": "Career, defining moments and records"

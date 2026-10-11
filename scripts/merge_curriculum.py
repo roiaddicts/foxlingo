@@ -52,7 +52,7 @@ def merge(pack):
                 if score:=row.get('scoreInput'):
                     for side in ['left','right']:
                         team=entities.get(score[side+'ClubKey'])
-                        if not team or team['type']!='club' or not team.get('imageAsset'):raise ValueError('Score team needs a canonical club badge: '+key)
+                        if not team or team['type'] not in ['club','country'] or not team.get('imageAsset'):raise ValueError('Score team needs canonical club or country artwork: '+key)
                         goals=score[side+'Goals']
                         if type(goals)!=int or not 0<=goals<=20:raise ValueError('Invalid score: '+key)
                     if f"{score['leftGoals']}–{score['rightGoals']}" not in row['answers']:raise ValueError('Score orientation disagrees with accepted answer: '+key)

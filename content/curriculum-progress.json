@@ -1,5 +1,5 @@
 {
-  "contentVersion": 21,
+  "contentVersion": 22,
   "scope": "Depth among offered club courses and authored player courses. Player course totals are not coverage of the full game catalog.",
   "clubs": [
     {
@@ -90,11 +90,17 @@
     {
       "key": "roadmap-aston-villa",
       "name": "Aston Villa",
-      "requiredLessons": 1,
-      "definingMomentLessons": 0,
-      "playerPaths": [],
-      "completePlayerPaths": [],
-      "complete": false
+      "requiredLessons": 12,
+      "definingMomentLessons": 2,
+      "playerPaths": [
+        "roadmap-player-dwight-yorke",
+        "roadmap-player-paul-mcgrath"
+      ],
+      "completePlayerPaths": [
+        "roadmap-player-dwight-yorke",
+        "roadmap-player-paul-mcgrath"
+      ],
+      "complete": true
     },
     {
       "key": "roadmap-atlante",
@@ -2371,18 +2377,45 @@
       ],
       "missingAreas": [],
       "complete": true
+    },
+    {
+      "key": "roadmap-player-paul-mcgrath",
+      "name": "Paul McGrath",
+      "entityID": "d72eeff5-883e-562e-b449-793522947421",
+      "playerLessons": 4,
+      "chapters": [
+        "Career journey",
+        "Records & honours",
+        "Defining moments",
+        "Legacy"
+      ],
+      "missingAreas": [],
+      "complete": true
+    },
+    {
+      "key": "roadmap-player-dwight-yorke",
+      "name": "Dwight Yorke",
+      "entityID": "20bc323d-9a30-5ffe-b055-6d81f7bb540c",
+      "playerLessons": 4,
+      "chapters": [
+        "Career journey",
+        "Defining moments",
+        "Records & honours"
+      ],
+      "missingAreas": [],
+      "complete": true
     }
   ],
-  "completedClubs": 49,
+  "completedClubs": 50,
   "totalClubs": 70,
-  "completedPlayers": 105,
-  "totalPlayers": 105,
+  "completedPlayers": 107,
+  "totalPlayers": 107,
   "gameCatalogPlayerCoverage": {
     "scope": "Unique supplied game-catalog player IDs with an explicit reviewed identity binding; no name-based guesses. This historical catalog is not a current squad list.",
     "totalCatalogPlayers": 5274,
-    "playersWithAuthoredPaths": 69,
-    "playersMeetingDepthRequirements": 69,
-    "playersWithoutAuthoredPaths": 5205,
+    "playersWithAuthoredPaths": 70,
+    "playersMeetingDepthRequirements": 70,
+    "playersWithoutAuthoredPaths": 5204,
     "independentPlayerPaths": [
       "roadmap-player-riascos",
       "roadmap-player-arce",
@@ -2419,7 +2452,8 @@
       "roadmap-player-ivo-basay",
       "roadmap-player-tiago-volpi",
       "roadmap-player-camilo-sanvezzo",
-      "roadmap-player-fernando-aristeguieta"
+      "roadmap-player-fernando-aristeguieta",
+      "roadmap-player-paul-mcgrath"
     ]
   }
 }

@@ -85,6 +85,9 @@ final class FlowTests: XCTestCase {
     }
     func lessonScore(_ key: String,index: Int) -> (String,String) {
         switch key {
+        case "lesson-curriculum-villa-next-mcgrath-records": return ("1","0")
+        case "lesson-curriculum-villa-next-yorke-transfer": return ("0","0")
+        case "lesson-curriculum-villa-next-yorke-breakthrough": return ("3","0")
         case "lesson-curriculum-toluca-next-2000": return [("2","0"),("7","1"),("2","0"),("2","0")][index]
         case "lesson-curriculum-toluca-next-2005": return [("3","3"),("3","0"),("3","3"),("3","3")][index]
         case "lesson-curriculum-roma-de-rossi-moments": return ("3","0")
@@ -856,6 +859,20 @@ final class FlowTests: XCTestCase {
         tap("timeline-sources");XCTAssertTrue(app.staticTexts["2007"].exists)
         let context=XCTAttachment(screenshot:app.screenshot());context.name="Large text timeline sources";context.lifetime = .keepAlways;add(context)
         tap("timeline-sources-done");tap("timeline-replay")
+    }
+    func testVillaPersonalCoursesFlagsScoresAndProgressPersist() {
+        start();tap("choose-XT");choosePlayer("Paul McGrath","paul-mcgrath")
+        completeLesson("lesson-curriculum-villa-next-mcgrath-career")
+        completeLesson("lesson-curriculum-villa-next-mcgrath-honours")
+        completeLesson("lesson-curriculum-villa-next-mcgrath-records")
+        XCTAssertTrue(app.staticTexts["roadmap-progress"].label.contains("3 of 4 starter lessons"))
+        app.terminate();start(reset:false)
+        XCTAssertTrue(app.staticTexts["Paul McGrath"].waitForExistence(timeout:5))
+        XCTAssertTrue(app.staticTexts["roadmap-progress"].label.contains("3 of 4 starter lessons"))
+        choosePlayer("Dwight Yorke","dwight-yorke")
+        completeLesson("lesson-curriculum-villa-next-yorke-breakthrough")
+        completeLesson("lesson-curriculum-villa-next-yorke-transfer")
+        XCTAssertTrue(app.staticTexts["roadmap-progress"].label.contains("2 of 4 starter lessons"))
     }
     func testExpandedTottiCareerVisualAnswersAndProgressPersist() {
         start();tap("choose-XT");choosePlayer("Francesco Totti","francesco-totti")
