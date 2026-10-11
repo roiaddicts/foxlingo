@@ -1,0 +1,2019 @@
+{
+  "sources": [
+    {
+      "key": "third-werder-history",
+      "title": "Werder Bremen Bundesliga historical guide",
+      "url": "https://www.bundesliga.com/en/bundesliga/news/werder-bremen-bundesliga-club-by-club-historical-guide-ozil-pizarro-rehhagel-24116",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "third-pizarro-career",
+      "title": "Claudio Pizarro: Bundesliga career and records",
+      "url": "https://www.bundesliga.com/en/bundesliga/news/when-claudio-pizarro-finally-called-it-a-day-bayern-munich-werder-bremen-cologne-24339",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "third-klose-werder",
+      "title": "Miroslav Klose: Werder career retrospective",
+      "url": "https://www.werder.de/news/maenner/2017-2018/geburtstag-miroslav-klose-09052018",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "third-klose-bundesliga",
+      "title": "Miroslav Klose: goalscoring legend",
+      "url": "https://www.bundesliga.com/en/bundesliga/news/miroslav-klose-germany-fifa-world-cup-legend-bayern-munich-lazio-werder-bremen-17848/",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "third-hsv-history",
+      "title": "The history of Hamburger SV",
+      "url": "https://www.hsv.de/unser-hsv/historie/die-geschichte-des-hsv",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "third-hsv-uefa83",
+      "title": "1982/83: Magath thunderbolt downs Juve",
+      "url": "https://www.uefa.com/uefachampionsleague/news/00a1-0e6a0ac0571c-8d8943df8967-1000--1982-83-magath-thunderbolt-downs-juve/",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "third-hsv-keegan",
+      "title": "HSV profile: Kevin Keegan’s career and honours",
+      "url": "https://www.hsv.de/en/news/hsv-send-their-support-to-kevin-keegan",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "third-hsv-seeler",
+      "title": "Uwe Seeler: HSV club history and career",
+      "url": "https://www.hsv.de/unser-hsv/historie/die-geschichte-des-hsv",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "third-seeler-league",
+      "title": "Bundesliga top scorers: Uwe Seeler",
+      "url": "https://www.bundesliga.com/en/bundesliga/news/all-top-scorers-bundesliga-muller-lewandowski-dzeko-nkunku-klinsmann-heynckes-fullkrug-24227",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "third-hsv-final1960",
+      "title": "HSV history: 1960 championship final and Seeler",
+      "url": "https://www.hsv.de/unser-hsv/historie/die-geschichte-des-hsv",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "third-hsv-cup1963",
+      "title": "HSV history: Seeler hat-trick in 1963 cup final",
+      "url": "https://www.hsv.de/unser-hsv/historie/die-geschichte-des-hsv",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "third-werder-dfb-1992",
+      "title": "DFB Datencenter: Werder Bremen–AS Monaco, 1992 Cup Winners’ Cup final",
+      "url": "https://datencenter.dfb.de/datencenter/ec-der-pokalsieger/1991-1992/finale/1931491",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "third-klose-cologne",
+      "title": "Werder: 2006 retrospective on the 6–0 win over Cologne",
+      "url": "https://www.werder.de/news/maenner/berichte-archiv/bundesliga/importiert/importierte-news-9857",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "third-pizarro-age-record",
+      "title": "Bundesliga records: Pizarro oldest goalscorer milestones",
+      "url": "https://www.bundesliga.com/en/bundesliga/news/bundesliga-records-goals-titles-attendances-for-players-and-clubs-10555",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "third-pizarro-leipzig-match",
+      "title": "Werder match report: 2–1 win over Leipzig, 18 May 2019",
+      "url": "https://www.werder.de/news/maenner/2018-2019/spielberichte/bundesliga/spielbericht-leipzig-18052019",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "third-uefa-madrid-comeback",
+      "title": "UEFA: Hamburg 5–1 Real Madrid comeback, 1979/80 European Cup semi-final",
+      "url": "https://www.uefa.com/uefachampionsleague/news/0237-0e845df532af-d78eb7db880d-1000--real-madrid-s-germany-hoodoo-four-wins-in-30/",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "third-keegan-dfb-league",
+      "title": "DFB Datencenter: Kevin Keegan competition and season totals",
+      "url": "https://datencenter.dfb.de/personen/kevin-keegan/spieler",
+      "verifiedAt": "2026-10-10"
+    }
+  ],
+  "players": [
+    {
+      "key": "entity-claudio-pizarro",
+      "name": "Claudio Pizarro",
+      "aliases": [
+        "Pizarro"
+      ],
+      "visual": "CP",
+      "clubKey": "entity-werder-bremen",
+      "seedID": "player-1492",
+      "seedName": "Claudio Pizarro"
+    },
+    {
+      "key": "entity-miroslav-klose",
+      "name": "Miroslav Klose",
+      "aliases": [
+        "Klose"
+      ],
+      "visual": "MK",
+      "clubKey": "entity-werder-bremen",
+      "seedID": "player-34",
+      "seedName": "Miroslav Klose"
+    },
+    {
+      "key": "entity-uwe-seeler",
+      "name": "Uwe Seeler",
+      "aliases": [
+        "Seeler"
+      ],
+      "visual": "US",
+      "clubKey": "entity-hamburger-sv",
+      "seedID": "player-40",
+      "seedName": "Uwe Seeler"
+    },
+    {
+      "key": "entity-kevin-keegan",
+      "name": "Kevin Keegan",
+      "aliases": [
+        "Keegan"
+      ],
+      "visual": "KK",
+      "clubKey": "entity-hamburger-sv"
+    }
+  ],
+  "lessons": [
+    {
+      "key": "lesson-curriculum-bundesliga-third-werder-history",
+      "subjectKey": "entity-werder-bremen",
+      "clubKey": "entity-werder-bremen",
+      "title": "Werder’s long Bundesliga story",
+      "subtitle": "A founding member, an early champion and a four-time winner",
+      "chapter": "history",
+      "story": [
+        {
+          "title": "A founding member",
+          "body": "Werder qualified as one of the northern Oberliga representatives when the Bundesliga began in 1963. It finished tenth in that first season."
+        },
+        {
+          "title": "Early success and returns",
+          "body": "The club won its first Bundesliga title in 1964/65 and ultimately collected four. After relegations in 1980 and 2021, Werder returned immediately each time."
+        }
+      ],
+      "facts": [
+        {
+          "key": "third-werder-hist-firsttitle",
+          "label": "In which season did Werder win its first Bundesliga championship",
+          "prompt": "In which season did Werder win its first Bundesliga championship?",
+          "answers": [
+            "1964/65"
+          ],
+          "distractors": [
+            "1963/64",
+            "1965/66",
+            "1966/67"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "1964/65",
+            "text": "1964/65"
+          },
+          "scope": "Werder Bremen’s first Bundesliga title season.",
+          "sourceKey": "third-werder-history",
+          "evidence": "The Bundesliga historical guide says Werder finished tenth in 1963/64 and won the title in 1964/65."
+        },
+        {
+          "key": "third-werder-hist-bundesliga",
+          "label": "In what year did Werder become a founding Bundesliga member",
+          "prompt": "In what year did Werder become a founding Bundesliga member?",
+          "answers": [
+            "1963"
+          ],
+          "distractors": [
+            "1961",
+            "1965",
+            "1967"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "1963",
+            "number": 1963,
+            "unit": "year"
+          },
+          "scope": "Bundesliga membership, not the club’s founding year.",
+          "sourceKey": "third-werder-history",
+          "evidence": "The Bundesliga guide identifies Werder as a founding member when the league began in 1963."
+        },
+        {
+          "key": "third-werder-hist-relegations",
+          "label": "How many times had Werder been relegated from the Bundesliga by 2021",
+          "prompt": "How many times had Werder been relegated from the Bundesliga by 2021?",
+          "answers": [
+            "2"
+          ],
+          "distractors": [
+            "1",
+            "3",
+            "4"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "2",
+            "number": 2,
+            "unit": "relegations"
+          },
+          "scope": "Werder’s Bundesliga history through the 2021 relegation.",
+          "sourceKey": "third-werder-history",
+          "evidence": "The Bundesliga guide identifies relegations in 1980 and 2021, with an immediate return after each."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-bundesliga-third-werder-1992-cup",
+      "subjectKey": "entity-werder-bremen",
+      "clubKey": "entity-werder-bremen",
+      "title": "Allofs and Rufer seal a European cup",
+      "subtitle": "Werder beat Monaco 2–0 in the 1992 final",
+      "chapter": "moments",
+      "story": [
+        {
+          "title": "A final in Lisbon",
+          "body": "On 6 May 1992, Werder Bremen met AS Monaco at Lisbon’s Estádio da Luz in the Cup Winners’ Cup final."
+        },
+        {
+          "title": "Two goals, one trophy",
+          "body": "Klaus Allofs opened the scoring before Wynton Rufer doubled Werder’s lead in the second half. The 2–0 win secured the European trophy."
+        }
+      ],
+      "facts": [
+        {
+          "key": "third-werder-1992-trophy",
+          "label": "Which trophy did Werder win by defeating Monaco in 1992",
+          "prompt": "Which trophy did Werder win by defeating Monaco in 1992?",
+          "answers": [
+            "UEFA Cup Winners’ Cup"
+          ],
+          "distractors": [
+            "UEFA Cup",
+            "European Cup",
+            "UEFA Super Cup"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "UEFA Cup Winners’ Cup",
+            "text": "UEFA Cup Winners’ Cup"
+          },
+          "scope": "UEFA Cup Winners’ Cup final, 6 May 1992.",
+          "sourceKey": "third-werder-dfb-1992",
+          "evidence": "The DFB Datencenter records Werder’s 2–0 win over AS Monaco in the 1991/92 Cup Winners’ Cup final."
+        },
+        {
+          "key": "third-werder-1992-firstscorer",
+          "label": "Who scored Werder’s first goal in the 1992 final against Monaco",
+          "prompt": "Who scored Werder’s first goal in the 1992 final against Monaco?",
+          "answers": [
+            "Klaus Allofs"
+          ],
+          "distractors": [
+            "Wynton Rufer",
+            "Marco Bode",
+            "Manfred Bockenfeld"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Klaus Allofs",
+            "text": "Klaus Allofs"
+          },
+          "scope": "Werder’s opening goal in the 1991/92 final.",
+          "sourceKey": "third-werder-dfb-1992",
+          "evidence": "The DFB match record lists Klaus Allofs as the 41st-minute scorer of Werder’s opening goal."
+        },
+        {
+          "key": "third-werder-1992-secondscorer",
+          "label": "Who scored Werder’s second goal in the 2–0 final victory",
+          "prompt": "Who scored Werder’s second goal in the 2–0 final victory?",
+          "answers": [
+            "Wynton Rufer"
+          ],
+          "distractors": [
+            "Klaus Allofs",
+            "Marco Bode",
+            "Manfred Bockenfeld"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Wynton Rufer",
+            "text": "Wynton Rufer"
+          },
+          "scope": "Werder’s second goal in the 1991/92 final.",
+          "sourceKey": "third-werder-dfb-1992",
+          "evidence": "The DFB match record lists Wynton Rufer as the scorer of Werder’s second goal in the 54th minute."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-bundesliga-third-werder-2009-cup",
+      "subjectKey": "entity-werder-bremen",
+      "clubKey": "entity-werder-bremen",
+      "title": "Özil decides the 2009 DFB Cup final",
+      "subtitle": "Werder beat Leverkusen to lift the club’s sixth cup",
+      "chapter": "moments",
+      "story": [
+        {
+          "title": "A second trophy that decade",
+          "body": "Five years after the domestic double, Werder reached the 2009 DFB Cup final against Bayer Leverkusen."
+        },
+        {
+          "title": "One goal was enough",
+          "body": "Mesut Özil scored the only goal in the final, completing a cup run that followed a dramatic semi-final win over Hamburg."
+        }
+      ],
+      "facts": [
+        {
+          "key": "third-werder-cup-year",
+          "label": "In what year did Werder win the DFB Cup final against Leverkusen",
+          "prompt": "In what year did Werder win the DFB Cup final against Leverkusen?",
+          "answers": [
+            "2009"
+          ],
+          "distractors": [
+            "2007",
+            "2008",
+            "2010"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "2009",
+            "number": 2009,
+            "unit": "year"
+          },
+          "scope": "Werder’s 2009 DFB Cup final victory.",
+          "sourceKey": "third-werder-history",
+          "evidence": "The Bundesliga’s club history places Werder’s DFB Cup victory in 2009."
+        },
+        {
+          "key": "third-werder-cup-opponent",
+          "label": "Which club did Werder face in the 2009 DFB Cup final",
+          "prompt": "Which club did Werder face in the 2009 DFB Cup final?",
+          "answers": [
+            "Bayer 04 Leverkusen",
+            "Bayer Leverkusen"
+          ],
+          "distractors": [
+            "Hamburger SV",
+            "Bayern München",
+            "Borussia Dortmund"
+          ],
+          "value": {
+            "kind": "entity",
+            "display": "Bayer 04 Leverkusen",
+            "entityKey": "entity-bayer-leverkusen"
+          },
+          "scope": "Bayer Leverkusen as Werder’s opponent in the 2009 DFB Cup final.",
+          "sourceKey": "third-werder-history",
+          "evidence": "The league history identifies Bayer Leverkusen as the final opponent."
+        },
+        {
+          "key": "third-werder-cup-scorer",
+          "label": "Who scored the only goal in the 2009 DFB Cup final",
+          "prompt": "Who scored the only goal in the 2009 DFB Cup final?",
+          "answers": [
+            "Mesut Özil"
+          ],
+          "distractors": [
+            "Claudio Pizarro",
+            "Diego",
+            "Marko Marin"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Mesut Özil",
+            "text": "Mesut Özil"
+          },
+          "scope": "Mesut Özil’s only goal in the 2009 DFB Cup final.",
+          "sourceKey": "third-werder-history",
+          "evidence": "The Bundesliga guide says Özil scored the final’s only goal."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-bundesliga-third-hsv-history",
+      "subjectKey": "entity-hamburger-sv",
+      "clubKey": "entity-hamburger-sv",
+      "title": "A club formed through Hamburg’s football history",
+      "subtitle": "Several Hamburg predecessors came together under the HSV name",
+      "chapter": "history",
+      "story": [
+        {
+          "title": "Roots before the name",
+          "body": "HSV’s current official foundation year is 1887, taken from SC Germania; the modern club’s predecessor organizations joined across 1914 and 1919."
+        },
+        {
+          "title": "A decorated German club",
+          "body": "Hamburg won national championships before the Bundesliga, became a founding member in 1963, and later built a European-winning era."
+        }
+      ],
+      "facts": [
+        {
+          "key": "third-hsv-hist-year",
+          "label": "What year does HSV recognize as its official foundation year",
+          "prompt": "What year does HSV recognize as its official foundation year?",
+          "answers": [
+            "1887"
+          ],
+          "distractors": [
+            "1885",
+            "1888",
+            "1919"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "1887",
+            "number": 1887,
+            "unit": "year"
+          },
+          "scope": "HSV’s officially adopted foundation year; not the merger year.",
+          "sourceKey": "third-hsv-history",
+          "evidence": "The club says it adopted SC Germania’s 29 September 1887 founding date as HSV’s official foundation year in 1932."
+        },
+        {
+          "key": "third-hsv-hist-merger",
+          "label": "In what year did HSV incorporate FC Falke 06 and SC Germania into the association",
+          "prompt": "In what year did HSV incorporate FC Falke 06 and SC Germania into the association?",
+          "answers": [
+            "1919"
+          ],
+          "distractors": [
+            "1914",
+            "1923",
+            "1932"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "1919",
+            "number": 1919,
+            "unit": "year"
+          },
+          "scope": "Association history and predecessor clubs.",
+          "sourceKey": "third-hsv-history",
+          "evidence": "HSV’s history says the Hamburger Sport-Verein took in FC Falke 06 and then SC Germania during spring and summer 1919."
+        },
+        {
+          "key": "third-hsv-hist-bundesliga",
+          "label": "In what year did HSV become a founding member of the Bundesliga",
+          "prompt": "In what year did HSV become a founding member of the Bundesliga?",
+          "answers": [
+            "1963"
+          ],
+          "distractors": [
+            "1960",
+            "1961",
+            "1965"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "1963",
+            "number": 1963,
+            "unit": "year"
+          },
+          "scope": "HSV’s Bundesliga entry.",
+          "sourceKey": "third-hsv-history",
+          "evidence": "The club history identifies HSV as a founding member and records its first Bundesliga match in 1963."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-bundesliga-third-hsv-1960-final",
+      "subjectKey": "entity-hamburger-sv",
+      "clubKey": "entity-hamburger-sv",
+      "title": "Seeler and the 1960 championship final",
+      "subtitle": "HSV edged Cologne 3–2 to win a third national title",
+      "chapter": "moments",
+      "story": [
+        {
+          "title": "A decisive final",
+          "body": "The club dates the final to 25 June 1960, when HSV faced 1. FC Köln for the German championship."
+        },
+        {
+          "title": "Homegrown strength",
+          "body": "Seven HSV players came from the club’s youth ranks in the 3–2 victory; Uwe Seeler was later named Germany’s first Footballer of the Year."
+        }
+      ],
+      "facts": [
+        {
+          "key": "third-hsv-1960-date",
+          "label": "On what date did HSV beat Cologne to win the 1960 German championship",
+          "prompt": "On what date did HSV beat Cologne to win the 1960 German championship?",
+          "answers": [
+            "25 June 1960"
+          ],
+          "distractors": [
+            "25 June 1959",
+            "25 June 1961",
+            "30 May 1960"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "25 June 1960",
+            "text": "25 June 1960"
+          },
+          "scope": "German championship final, 1960.",
+          "sourceKey": "third-hsv-final1960",
+          "evidence": "HSV’s history dates the final and title to 25 June 1960."
+        },
+        {
+          "key": "third-hsv-1960-opponent",
+          "label": "Which team did HSV defeat 3–2 in the 1960 championship final",
+          "prompt": "Which team did HSV defeat 3–2 in the 1960 championship final?",
+          "answers": [
+            "1. FC Köln"
+          ],
+          "distractors": [
+            "Borussia Dortmund",
+            "FC Schalke 04",
+            "Bayern München"
+          ],
+          "value": {
+            "kind": "entity",
+            "display": "1. FC Köln",
+            "entityKey": "entity-fc-cologne"
+          },
+          "scope": "Opponent in the 1960 final.",
+          "sourceKey": "third-hsv-final1960",
+          "evidence": "HSV’s history names 1. FC Köln as the opponent in the final."
+        },
+        {
+          "key": "third-hsv-1960-academy",
+          "label": "How many HSV youth-developed players appeared in the 1960 final-winning team",
+          "prompt": "How many HSV youth-developed players appeared in the 1960 final-winning team?",
+          "answers": [
+            "7"
+          ],
+          "distractors": [
+            "5",
+            "6",
+            "9"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "7",
+            "number": 7,
+            "unit": "players"
+          },
+          "scope": "Players from HSV youth system in the final-winning team.",
+          "sourceKey": "third-hsv-final1960",
+          "evidence": "The club says the final-winning side featured seven players from its youth ranks."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-bundesliga-third-hsv-1983-europe",
+      "subjectKey": "entity-hamburger-sv",
+      "clubKey": "entity-hamburger-sv",
+      "title": "Magath’s shot puts Hamburg on Europe’s throne",
+      "subtitle": "HSV beat Juventus in the 1983 European Cup final in Athens",
+      "chapter": "moments",
+      "story": [
+        {
+          "title": "The European Cup final",
+          "body": "Hamburg met Juventus on 25 May 1983 at Athens’ Olympic Stadium."
+        },
+        {
+          "title": "One early strike",
+          "body": "Felix Magath scored in the ninth minute. HSV held on for a 1–0 win and its first European Cup title."
+        }
+      ],
+      "facts": [
+        {
+          "key": "third-hsv-1983-date",
+          "label": "On what date did HSV defeat Juventus in the European Cup final",
+          "prompt": "On what date did HSV defeat Juventus in the European Cup final?",
+          "answers": [
+            "25 May 1983"
+          ],
+          "distractors": [
+            "25 May 1982",
+            "25 May 1984",
+            "30 May 1983"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "25 May 1983",
+            "text": "25 May 1983"
+          },
+          "scope": "European Cup final date.",
+          "sourceKey": "third-hsv-uefa83",
+          "evidence": "UEFA dates the final to Wednesday, 25 May 1983."
+        },
+        {
+          "key": "third-hsv-1983-scorer",
+          "label": "Who scored Hamburg’s winning goal against Juventus",
+          "prompt": "Who scored Hamburg’s winning goal against Juventus?",
+          "answers": [
+            "Felix Magath"
+          ],
+          "distractors": [
+            "Horst Hrubesch",
+            "Manfred Kaltz",
+            "Jürgen Milewski"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Felix Magath",
+            "text": "Felix Magath"
+          },
+          "scope": "Final scorer.",
+          "sourceKey": "third-hsv-uefa83",
+          "evidence": "UEFA identifies Magath as the scorer of the early winning goal."
+        },
+        {
+          "key": "third-hsv-1983-minute",
+          "label": "In which minute did Magath score the only goal",
+          "prompt": "In which minute did Magath score the only goal?",
+          "answers": [
+            "9th minute"
+          ],
+          "distractors": [
+            "4th minute",
+            "17th minute",
+            "28th minute"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "9th minute",
+            "text": "9th minute"
+          },
+          "scope": "Goal time in the 1983 final.",
+          "sourceKey": "third-hsv-uefa83",
+          "evidence": "UEFA’s match summary lists Magath’s goal at minute nine."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-bundesliga-third-claudio-career",
+      "subjectKey": "entity-claudio-pizarro",
+      "clubKey": "entity-werder-bremen",
+      "title": "From Lima to repeated returns to Bremen",
+      "subtitle": "Pizarro’s German career began at Werder and repeatedly brought him back",
+      "chapter": "career",
+      "story": [
+        {
+          "title": "First move to Germany",
+          "body": "Claudio Pizarro left Alianza Lima for Werder Bremen in 1999, aged 20. Two seasons and 29 Bundesliga goals later, Bayern signed him."
+        },
+        {
+          "title": "A long route back",
+          "body": "After Chelsea, he returned to Werder in 2008, later moved through Bayern and Cologne, then finished his career in Bremen in 2020."
+        }
+      ],
+      "facts": [
+        {
+          "key": "third-pizarro-firstclub",
+          "label": "Which club did Pizarro join from Alianza Lima in 1999",
+          "prompt": "Which club did Pizarro join from Alianza Lima in 1999?",
+          "answers": [
+            "SV Werder Bremen",
+            "Werder Bremen"
+          ],
+          "distractors": [
+            "Bayern München",
+            "Hamburger SV",
+            "1. FC Köln"
+          ],
+          "value": {
+            "kind": "entity",
+            "display": "SV Werder Bremen",
+            "entityKey": "entity-werder-bremen"
+          },
+          "scope": "Pizarro’s first Bundesliga club.",
+          "sourceKey": "third-pizarro-career",
+          "evidence": "The Bundesliga profile says Pizarro transferred from Alianza Lima to Werder in summer 1999."
+        },
+        {
+          "key": "third-pizarro-afterwerder",
+          "label": "Which club signed Pizarro after his first two Bundesliga seasons at Werder",
+          "prompt": "Which club signed Pizarro after his first two Bundesliga seasons at Werder?",
+          "answers": [
+            "Bayern München",
+            "Bayern Munich"
+          ],
+          "distractors": [
+            "Borussia Dortmund",
+            "RB Leipzig",
+            "1. FC Köln"
+          ],
+          "value": {
+            "kind": "entity",
+            "display": "Bayern München",
+            "entityKey": "entity-bayern-munich"
+          },
+          "scope": "Next club after first Werder stint.",
+          "sourceKey": "third-pizarro-career",
+          "evidence": "After two seasons and 29 Bundesliga goals, Bayern brought him from Bremen."
+        },
+        {
+          "key": "third-pizarro-end",
+          "label": "At which club did Pizarro retire in 2020",
+          "prompt": "At which club did Pizarro retire in 2020?",
+          "answers": [
+            "SV Werder Bremen",
+            "Werder Bremen"
+          ],
+          "distractors": [
+            "Bayern München",
+            "1. FC Köln",
+            "Borussia Dortmund"
+          ],
+          "value": {
+            "kind": "entity",
+            "display": "SV Werder Bremen",
+            "entityKey": "entity-werder-bremen"
+          },
+          "scope": "Final club and retirement location.",
+          "sourceKey": "third-pizarro-career",
+          "evidence": "The Bundesliga profile says Pizarro retired in Bremen in 2020."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-bundesliga-third-claudio-moment",
+      "subjectKey": "entity-claudio-pizarro",
+      "clubKey": "entity-werder-bremen",
+      "title": "Pizarro extends the age record at 40",
+      "subtitle": "A late winner in Bremen carried his Bundesliga longevity record further",
+      "chapter": "moments",
+      "story": [
+        {
+          "title": "The first record",
+          "body": "Pizarro first became the Bundesliga’s oldest goalscorer with a late equaliser against Hertha in February 2019, aged 40 years and 136 days."
+        },
+        {
+          "title": "A record extended",
+          "body": "On 18 May, his 88th-minute winner against Leipzig extended the record: Pizarro was 40 years and 227 days old."
+        }
+      ],
+      "facts": [
+        {
+          "key": "third-pizarro-first-record-age",
+          "label": "At what age did Pizarro first replace Mirko Votava as the Bundesliga’s oldest goalscorer",
+          "prompt": "At what age did Pizarro first replace Mirko Votava as the Bundesliga’s oldest goalscorer against Hertha in February 2019?",
+          "answers": [
+            "40 years and 136 days"
+          ],
+          "distractors": [
+            "40 years and 121 days",
+            "40 years and 225 days",
+            "40 years and 227 days"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "40 years and 136 days",
+            "text": "40 years and 136 days"
+          },
+          "scope": "Age when Pizarro first broke the Bundesliga oldest-goalscorer record against Hertha, 16 February 2019.",
+          "sourceKey": "third-pizarro-age-record",
+          "evidence": "The Bundesliga records article says Pizarro replaced Mirko Votava after scoring in the 1–1 at Hertha aged 40 years and 136 days."
+        },
+        {
+          "key": "third-pizarro-lastgoal-opponent",
+          "label": "Against which club did Pizarro extend his oldest-goalscorer record on 18 May 2019",
+          "prompt": "Against which club did Pizarro extend his Bundesliga oldest-goalscorer record with a late goal on 18 May 2019?",
+          "answers": [
+            "RB Leipzig",
+            "Leipzig"
+          ],
+          "distractors": [
+            "Hertha Berlin",
+            "Bayern Munich",
+            "1. FC Köln"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "RB Leipzig",
+            "text": "RB Leipzig"
+          },
+          "scope": "Opponent for Pizarro’s record-extending goal on the final matchday of 2018/19.",
+          "sourceKey": "third-pizarro-leipzig-match",
+          "evidence": "Werder’s direct match report identifies Leipzig as the opponent and dates the 2–1 home win to 18 May 2019."
+        },
+        {
+          "key": "third-pizarro-record-age",
+          "label": "How old was Pizarro when his 18 May 2019 goal extended the Bundesliga age record",
+          "prompt": "How old was Pizarro when his 18 May 2019 goal against Leipzig extended his own Bundesliga oldest-goalscorer record?",
+          "answers": [
+            "40 years and 227 days"
+          ],
+          "distractors": [
+            "40 years and 136 days",
+            "40 years and 225 days",
+            "40 years and 121 days"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "40 years and 227 days",
+            "text": "40 years and 227 days"
+          },
+          "scope": "Age on 18 May 2019 when his Leipzig goal extended the Bundesliga oldest-goalscorer record.",
+          "sourceKey": "third-pizarro-age-record",
+          "evidence": "The Bundesliga record entry states that he broke his own record against Leipzig at 40 years and 227 days."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-bundesliga-third-claudio-records",
+      "subjectKey": "entity-claudio-pizarro",
+      "clubKey": "entity-werder-bremen",
+      "title": "A Bundesliga record scorer for Werder",
+      "subtitle": "Four Bremen spells brought Pizarro 109 league goals",
+      "chapter": "records",
+      "story": [
+        {
+          "title": "The club’s leading Bundesliga scorer",
+          "body": "Werder’s official record table lists Pizarro first with 109 league goals, ahead of Marco Bode on 101."
+        },
+        {
+          "title": "A durable scoring career",
+          "body": "Across the Bundesliga, Pizarro scored in 21 consecutive calendar years and appeared in 490 matches, then a foreign-player appearance record."
+        }
+      ],
+      "facts": [
+        {
+          "key": "third-pizarro-werdergoals",
+          "label": "How many Bundesliga goals did Pizarro score for Werder Bremen",
+          "prompt": "How many Bundesliga goals did Pizarro score for Werder Bremen?",
+          "answers": [
+            "109"
+          ],
+          "distractors": [
+            "97",
+            "101",
+            "115"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "109",
+            "number": 109,
+            "unit": "goals"
+          },
+          "scope": "Werder Bundesliga goals only.",
+          "sourceKey": "third-pizarro-career",
+          "evidence": "The Bundesliga historical guide lists Pizarro as Werder’s Bundesliga record scorer with 109 goals."
+        },
+        {
+          "key": "third-pizarro-consecutiveyears",
+          "label": "For how many consecutive calendar years did Pizarro score in the Bundesliga",
+          "prompt": "For how many consecutive calendar years did Pizarro score in the Bundesliga?",
+          "answers": [
+            "21"
+          ],
+          "distractors": [
+            "18",
+            "19",
+            "23"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "21",
+            "number": 21,
+            "unit": "years"
+          },
+          "scope": "Consecutive calendar years with at least one Bundesliga goal.",
+          "sourceKey": "third-pizarro-career",
+          "evidence": "The Bundesliga profile records a goal in 21 consecutive calendar years."
+        },
+        {
+          "key": "third-pizarro-appearances",
+          "label": "How many Bundesliga appearances did Pizarro finish with",
+          "prompt": "How many Bundesliga appearances did Pizarro finish with?",
+          "answers": [
+            "490"
+          ],
+          "distractors": [
+            "450",
+            "476",
+            "500"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "490",
+            "number": 490,
+            "unit": "appearances"
+          },
+          "scope": "Career Bundesliga appearances.",
+          "sourceKey": "third-pizarro-career",
+          "evidence": "The Bundesliga profile totals 490 appearances for Pizarro."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-bundesliga-third-claudio-honours",
+      "subjectKey": "entity-claudio-pizarro",
+      "clubKey": "entity-werder-bremen",
+      "title": "Six Bundesliga titles and a European treble",
+      "subtitle": "Pizarro collected major honors across Bayern and Werder spells",
+      "chapter": "legacy",
+      "story": [
+        {
+          "title": "Trophy years",
+          "body": "Pizarro won six Bundesliga titles, all with Bayern, and lifted the DFB Cup six times, including once with Werder."
+        },
+        {
+          "title": "A continental first",
+          "body": "In 2012/13 he completed Bayern’s Bundesliga, DFB Cup and Champions League treble and became the first Peruvian to win the European Cup."
+        }
+      ],
+      "facts": [
+        {
+          "key": "third-pizarro-league-titles",
+          "label": "How many Bundesliga titles did Pizarro win during his career",
+          "prompt": "How many Bundesliga titles did Pizarro win during his career?",
+          "answers": [
+            "6"
+          ],
+          "distractors": [
+            "4",
+            "5",
+            "7"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "6",
+            "number": 6,
+            "unit": "titles"
+          },
+          "scope": "Senior Bundesliga championships.",
+          "sourceKey": "third-pizarro-career",
+          "evidence": "The Bundesliga profile says Pizarro won six German league titles, all with Bayern."
+        },
+        {
+          "key": "third-pizarro-cup",
+          "label": "How many DFB Cups did Pizarro win",
+          "prompt": "How many DFB Cups did Pizarro win?",
+          "answers": [
+            "6"
+          ],
+          "distractors": [
+            "3",
+            "5",
+            "7"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "6",
+            "number": 6,
+            "unit": "cups"
+          },
+          "scope": "DFB Cup honors.",
+          "sourceKey": "third-pizarro-career",
+          "evidence": "The profile records six DFB Cup wins, five with Bayern and one with Werder."
+        },
+        {
+          "key": "third-pizarro-peruvian",
+          "label": "What distinction did Pizarro achieve in the 2012/13 Champions League win",
+          "prompt": "What distinction did Pizarro achieve in the 2012/13 Champions League win?",
+          "answers": [
+            "First Peruvian to lift the European Cup"
+          ],
+          "distractors": [
+            "First Peruvian to score in a final",
+            "First Peruvian to captain Bayern",
+            "First Peruvian to win the Bundesliga"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "First Peruvian to lift the European Cup",
+            "text": "First Peruvian to lift the European Cup"
+          },
+          "scope": "Peruvian milestone in European competition.",
+          "sourceKey": "third-pizarro-career",
+          "evidence": "Bundesliga states he became the first Peruvian to lift the European Cup as part of Bayern’s 2012/13 treble."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-bundesliga-third-klose-career",
+      "subjectKey": "entity-miroslav-klose",
+      "clubKey": "entity-werder-bremen",
+      "title": "From Kaiserslautern to the Weser",
+      "subtitle": "Klose developed into a leading Bundesliga scorer at Werder",
+      "chapter": "career",
+      "story": [
+        {
+          "title": "A route through the German tiers",
+          "body": "Klose moved through FC 08 Homburg before reaching Kaiserslautern, where he made his Bundesliga breakthrough."
+        },
+        {
+          "title": "A Bremen peak",
+          "body": "After joining Werder in 2004, he scored 53 goals in 89 league matches and moved to Bayern after three seasons."
+        }
+      ],
+      "facts": [
+        {
+          "key": "third-klose-first-bundesliga",
+          "label": "Which club did Klose join Kaiserslautern from before his Bundesliga breakthrough",
+          "prompt": "Which club did Klose move from to Kaiserslautern before making his Bundesliga debut?",
+          "answers": [
+            "FC 08 Homburg",
+            "Homburg"
+          ],
+          "distractors": [
+            "Werder Bremen",
+            "Bayern Munich",
+            "1. FC Köln"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "FC 08 Homburg",
+            "text": "FC 08 Homburg"
+          },
+          "scope": "Klose’s club immediately before Kaiserslautern.",
+          "sourceKey": "third-klose-werder",
+          "evidence": "Werder’s retrospective traces Klose’s route through FC 08 Homburg to Kaiserslautern before his 2000 Bundesliga debut."
+        },
+        {
+          "key": "third-klose-prior",
+          "label": "Which Bundesliga club did Klose leave to join Werder in 2004",
+          "prompt": "Which Bundesliga club did Klose leave to join Werder in 2004?",
+          "answers": [
+            "1. FC Kaiserslautern"
+          ],
+          "distractors": [
+            "Homburg",
+            "Bayern Munich",
+            "Borussia Dortmund"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "1. FC Kaiserslautern",
+            "text": "1. FC Kaiserslautern"
+          },
+          "scope": "Kaiserslautern as Klose’s last club before Werder, 2004.",
+          "sourceKey": "third-klose-werder",
+          "evidence": "Werder’s career article traces his move from Kaiserslautern to Bremen in 2004."
+        },
+        {
+          "key": "third-klose-next",
+          "label": "Which club did Klose join after three seasons at Werder",
+          "prompt": "Which club did Klose join after three seasons at Werder?",
+          "answers": [
+            "Bayern München",
+            "Bayern Munich"
+          ],
+          "distractors": [
+            "Borussia Dortmund",
+            "Hamburger SV",
+            "1. FC Köln"
+          ],
+          "value": {
+            "kind": "entity",
+            "display": "Bayern München",
+            "entityKey": "entity-bayern-munich"
+          },
+          "scope": "Klose’s next club after three Werder seasons.",
+          "sourceKey": "third-klose-werder",
+          "evidence": "Werder’s profile says he moved to Bayern after his Bremen spell."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-bundesliga-third-klose-moment",
+      "subjectKey": "entity-miroslav-klose",
+      "clubKey": "entity-werder-bremen",
+      "title": "Klose’s volley in a 6–0 Werder win",
+      "subtitle": "A brace and a left-footed volley stood out against Cologne",
+      "chapter": "moments",
+      "story": [
+        {
+          "title": "A big result late in the season",
+          "body": "On the penultimate matchday of 2005/06, Werder overwhelmed Cologne 6–0; Klose and two teammates each scored twice."
+        },
+        {
+          "title": "The goal that stood out",
+          "body": "Klose’s second goal made it 2–0: after a deflection from Lukas Podolski, he struck the dropping ball left-footed into the upper-right corner."
+        }
+      ],
+      "facts": [
+        {
+          "key": "third-klose-cologne-provider",
+          "label": "Who provided the deflection before Klose’s 2–0 volley against Cologne",
+          "prompt": "Who provided the deflection that Klose volleyed into the net for Werder’s 2–0 against Cologne?",
+          "answers": [
+            "Lukas Podolski",
+            "Podolski"
+          ],
+          "distractors": [
+            "Tim Borowski",
+            "Ivan Klasnić",
+            "Torsten Frings"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Lukas Podolski",
+            "text": "Lukas Podolski"
+          },
+          "scope": "The player whose miscued ball dropped for Klose’s 2–0 volley in Werder’s 6–0 win over Cologne.",
+          "sourceKey": "third-klose-cologne",
+          "evidence": "Werder’s retrospective says the ball came from a deflection by Klose’s national-team teammate Lukas Podolski."
+        },
+        {
+          "key": "third-klose-cologne-volley-foot",
+          "label": "Which foot did Klose use for his 2–0 volley against Cologne",
+          "prompt": "Which foot did Klose use to volley the dropping ball into the upper-right corner for Werder’s 2–0 against Cologne?",
+          "answers": [
+            "Left foot",
+            "Left"
+          ],
+          "distractors": [
+            "Right foot",
+            "Header",
+            "Right-footed half-volley"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Left foot",
+            "text": "Left foot"
+          },
+          "scope": "Technique of Klose’s second goal in Werder’s 6–0 win over Cologne.",
+          "sourceKey": "third-klose-cologne",
+          "evidence": "Werder describes Klose taking the dropping ball out of the air with his left foot and driving it into the right top corner."
+        },
+        {
+          "key": "third-klose-cologne-goals",
+          "label": "How many goals did Klose score in Werder’s 6–0 win over Cologne",
+          "prompt": "How many goals did Klose score in Werder’s 6–0 win over Cologne?",
+          "answers": [
+            "2",
+            "Two"
+          ],
+          "distractors": [
+            "1",
+            "3",
+            "4"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "2",
+            "number": 2,
+            "unit": "goals"
+          },
+          "scope": "Klose’s goals in Werder’s single 6–0 match against 1. FC Köln.",
+          "sourceKey": "third-klose-cologne",
+          "evidence": "Werder’s retrospective says Klose scored twice in the 6–0 win."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-bundesliga-third-klose-records",
+      "subjectKey": "entity-miroslav-klose",
+      "clubKey": "entity-werder-bremen",
+      "title": "A scoring crown at Bremen",
+      "subtitle": "Klose’s 2005/06 Bundesliga season produced 25 goals",
+      "chapter": "records",
+      "story": [
+        {
+          "title": "A league-leading season",
+          "body": "Klose scored 25 goals in 26 Bundesliga appearances for Werder in 2005/06 and won the scoring crown."
+        },
+        {
+          "title": "More than finishing",
+          "body": "Across the 2005/06 and 2006/07 seasons, he also led the Bundesliga in assists with 28 combined."
+        }
+      ],
+      "facts": [
+        {
+          "key": "third-klose-season-goals",
+          "label": "How many Bundesliga goals did Klose score for Werder in 2005/06",
+          "prompt": "How many Bundesliga goals did Klose score for Werder in 2005/06?",
+          "answers": [
+            "25"
+          ],
+          "distractors": [
+            "20",
+            "23",
+            "28"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "25",
+            "number": 25,
+            "unit": "goals"
+          },
+          "scope": "Klose at Werder, 2005/06 Bundesliga.",
+          "sourceKey": "third-klose-werder",
+          "evidence": "Werder reports 25 goals in 26 games; Bundesliga records his scoring title."
+        },
+        {
+          "key": "third-klose-season-games",
+          "label": "In how many Bundesliga matches did Klose score those 25 goals",
+          "prompt": "In how many Bundesliga matches did Klose score those 25 goals?",
+          "answers": [
+            "26"
+          ],
+          "distractors": [
+            "24",
+            "27",
+            "30"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "26",
+            "number": 26,
+            "unit": "matches"
+          },
+          "scope": "Klose at Werder, 2005/06 Bundesliga appearances.",
+          "sourceKey": "third-klose-werder",
+          "evidence": "Werder’s retrospective specifies 25 goals in 26 appearances."
+        },
+        {
+          "key": "third-klose-assists",
+          "label": "How many assists did Klose record across the 2005/06 and 2006/07 Bundesliga seasons",
+          "prompt": "How many assists did Klose record across the 2005/06 and 2006/07 Bundesliga seasons?",
+          "answers": [
+            "28"
+          ],
+          "distractors": [
+            "22",
+            "25",
+            "31"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "28",
+            "number": 28,
+            "unit": "assists"
+          },
+          "scope": "Two-season Bundesliga assist total.",
+          "sourceKey": "third-klose-bundesliga",
+          "evidence": "Bundesliga notes he was top provider in both seasons with 28 assists combined."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-bundesliga-third-klose-honours",
+      "subjectKey": "entity-miroslav-klose",
+      "clubKey": "entity-werder-bremen",
+      "title": "A World Cup winner from Werder’s attack",
+      "subtitle": "Klose paired German honors with a club-player award",
+      "chapter": "legacy",
+      "story": [
+        {
+          "title": "A fan-voted distinction",
+          "body": "Werder museum visitors chose Klose as their Player of the Season for 2005/06, giving him 45.68% of the vote."
+        },
+        {
+          "title": "A later career peak",
+          "body": "With Germany, he won the 2014 World Cup, the defining international title of his playing career."
+        }
+      ],
+      "facts": [
+        {
+          "key": "third-klose-clubaward",
+          "label": "Which club award did Werder museum visitors give Klose for the 2005/06 season",
+          "prompt": "Which club award did Werder museum visitors give Klose for the 2005/06 season?",
+          "answers": [
+            "Werder Player of the Season"
+          ],
+          "distractors": [
+            "DFB Player of the Year",
+            "Bundesliga Player of the Month",
+            "Golden Boy"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Werder Player of the Season",
+            "text": "Werder Player of the Season"
+          },
+          "scope": "Werder Player of the Season for 2005/06, selected by museum visitors.",
+          "sourceKey": "third-klose-werder",
+          "evidence": "Werder says 45.68% of museum visitors chose Klose as its Player of the Season for 2005/06."
+        },
+        {
+          "key": "third-klose-wc",
+          "label": "In what year did Klose win the World Cup with Germany",
+          "prompt": "In what year did Klose win the World Cup with Germany?",
+          "answers": [
+            "2014"
+          ],
+          "distractors": [
+            "2006",
+            "2010",
+            "2018"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "2014",
+            "number": 2014,
+            "unit": "year"
+          },
+          "scope": "Germany’s World Cup title year.",
+          "sourceKey": "third-klose-werder",
+          "evidence": "Werder’s retrospective identifies Brazil 2014 as Klose’s World Cup victory."
+        },
+        {
+          "key": "third-klose-wc-goals",
+          "label": "How many goals did Klose score across four World Cups",
+          "prompt": "How many goals did Klose score across four World Cups?",
+          "answers": [
+            "16"
+          ],
+          "distractors": [
+            "14",
+            "15",
+            "18"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "16",
+            "number": 16,
+            "unit": "goals"
+          },
+          "scope": "FIFA World Cup career total.",
+          "sourceKey": "third-klose-bundesliga",
+          "evidence": "Bundesliga records 16 goals in 24 appearances over four World Cups."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-bundesliga-third-seeler-career",
+      "subjectKey": "entity-uwe-seeler",
+      "clubKey": "entity-hamburger-sv",
+      "title": "A teenager begins the Seeler era",
+      "subtitle": "Uwe Seeler debuted for HSV at 16 and scored immediately",
+      "chapter": "career",
+      "story": [
+        {
+          "title": "First team at sixteen",
+          "body": "HSV’s history dates Seeler’s first appearance to August 1953, when he was only 16."
+        },
+        {
+          "title": "A goal from the start",
+          "body": "He opened his Oberliga Nord account in his debut and soon made his Germany debut."
+        }
+      ],
+      "facts": [
+        {
+          "key": "third-seeler-debutyear",
+          "label": "In what year did Seeler make his first HSV appearance",
+          "prompt": "In what year did Seeler make his first HSV appearance?",
+          "answers": [
+            "1953"
+          ],
+          "distractors": [
+            "1951",
+            "1955",
+            "1957"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "1953",
+            "number": 1953,
+            "unit": "year"
+          },
+          "scope": "Senior debut year.",
+          "sourceKey": "third-hsv-seeler",
+          "evidence": "HSV dates the start of Seeler’s first-team era to August 1953."
+        },
+        {
+          "key": "third-seeler-age",
+          "label": "How old was Seeler when he first appeared for HSV",
+          "prompt": "How old was Seeler when he first appeared for HSV?",
+          "answers": [
+            "16"
+          ],
+          "distractors": [
+            "14",
+            "15",
+            "18"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "16",
+            "number": 16,
+            "unit": "years old"
+          },
+          "scope": "Age at HSV debut.",
+          "sourceKey": "third-hsv-seeler",
+          "evidence": "HSV describes him as 16 at his first appearance."
+        },
+        {
+          "key": "third-seeler-firstgoal",
+          "label": "What did Seeler achieve in his Oberliga Nord debut",
+          "prompt": "What did Seeler achieve in his Oberliga Nord debut?",
+          "answers": [
+            "Scored a goal"
+          ],
+          "distractors": [
+            "Saved a penalty",
+            "Was sent off",
+            "Provided two assists"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Scored a goal",
+            "text": "Scored a goal"
+          },
+          "scope": "Debut match achievement.",
+          "sourceKey": "third-hsv-seeler",
+          "evidence": "HSV says he made his Oberliga debut with a first goal."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-bundesliga-third-seeler-1963-cup-moment",
+      "subjectKey": "entity-uwe-seeler",
+      "clubKey": "entity-hamburger-sv",
+      "title": "A hat-trick in the first DFB Cup triumph",
+      "subtitle": "Seeler scored all three goals against Dortmund in 1963",
+      "chapter": "moments",
+      "story": [
+        {
+          "title": "A first cup",
+          "body": "Just days before the Bundesliga began in 1963, HSV met Borussia Dortmund in the DFB Cup final."
+        },
+        {
+          "title": "Seeler decides it",
+          "body": "Uwe Seeler scored a hat-trick in the 3–0 win, sealing the first DFB Cup in the club’s history."
+        }
+      ],
+      "facts": [
+        {
+          "key": "third-seeler-1963-trophy",
+          "label": "What did Seeler’s three goals against Dortmund secure for HSV in 1963",
+          "prompt": "What did Seeler’s three goals against Dortmund secure for HSV in 1963?",
+          "answers": [
+            "The club’s first DFB Cup"
+          ],
+          "distractors": [
+            "The 1960 German championship",
+            "The club’s first European Cup",
+            "The 1964 Bundesliga title"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "The club’s first DFB Cup",
+            "text": "The club’s first DFB Cup"
+          },
+          "scope": "The first DFB Cup secured by Seeler’s hat-trick in the 1963 final.",
+          "sourceKey": "third-hsv-cup1963",
+          "evidence": "HSV says Seeler scored a hat-trick in the 3–0 win over Dortmund that secured the club’s first DFB Cup."
+        },
+        {
+          "key": "third-seeler-1963-opponent",
+          "label": "Which team did Seeler’s HSV defeat in the 1963 DFB Cup final",
+          "prompt": "Which team did Seeler’s HSV defeat in the 1963 DFB Cup final?",
+          "answers": [
+            "Borussia Dortmund"
+          ],
+          "distractors": [
+            "1. FC Köln",
+            "Bayern München",
+            "RB Leipzig"
+          ],
+          "value": {
+            "kind": "entity",
+            "display": "Borussia Dortmund",
+            "entityKey": "entity-borussia-dortmund"
+          },
+          "scope": "Borussia Dortmund as HSV’s opponent in the 1963 DFB Cup final.",
+          "sourceKey": "third-hsv-cup1963",
+          "evidence": "HSV identifies Dortmund as the opponent in the 3–0 cup-final victory."
+        },
+        {
+          "key": "third-seeler-1963-score",
+          "label": "What was the score in HSV’s first DFB Cup final victory",
+          "prompt": "What was the score in HSV’s first DFB Cup final victory?",
+          "answers": [
+            "3–0"
+          ],
+          "distractors": [
+            "2–0",
+            "3–1",
+            "4–0"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "3–0",
+            "text": "3–0"
+          },
+          "scope": "The score of HSV’s 1963 DFB Cup final win over Dortmund.",
+          "sourceKey": "third-hsv-cup1963",
+          "evidence": "HSV says Seeler’s hat-trick powered a 3–0 victory."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-bundesliga-third-seeler-records",
+      "subjectKey": "entity-uwe-seeler",
+      "clubKey": "entity-hamburger-sv",
+      "title": "The Bundesliga’s first scoring champion",
+      "subtitle": "Seeler scored 30 in the league’s first season",
+      "chapter": "records",
+      "story": [
+        {
+          "title": "A first scoring crown",
+          "body": "In 1963/64, the first Bundesliga season, Seeler became its first top scorer with 30 goals in 30 matches."
+        },
+        {
+          "title": "HSV’s leading league scorer",
+          "body": "He finished with 137 Bundesliga goals for Hamburg, a club record in the league."
+        }
+      ],
+      "facts": [
+        {
+          "key": "third-seeler-topscore-season",
+          "label": "In which season did Seeler become the Bundesliga’s first top scorer",
+          "prompt": "In which season did Seeler become the Bundesliga’s first top scorer?",
+          "answers": [
+            "1963/64"
+          ],
+          "distractors": [
+            "1962/63",
+            "1964/65",
+            "1965/66"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "1963/64",
+            "text": "1963/64"
+          },
+          "scope": "First Bundesliga top-scoring season.",
+          "sourceKey": "third-seeler-league",
+          "evidence": "Bundesliga lists Seeler as inaugural-season top scorer in 1963/64."
+        },
+        {
+          "key": "third-seeler-topscore-goals",
+          "label": "How many goals did Seeler score to claim the first Bundesliga scoring crown",
+          "prompt": "How many goals did Seeler score to claim the first Bundesliga scoring crown?",
+          "answers": [
+            "30"
+          ],
+          "distractors": [
+            "25",
+            "28",
+            "32"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "30",
+            "number": 30,
+            "unit": "goals"
+          },
+          "scope": "1963/64 Bundesliga goals.",
+          "sourceKey": "third-seeler-league",
+          "evidence": "He scored 30 times in 30 games in the 1963/64 season."
+        },
+        {
+          "key": "third-seeler-hsv-goals",
+          "label": "How many Bundesliga goals did Seeler score for Hamburg in total",
+          "prompt": "How many Bundesliga goals did Seeler score for Hamburg in total?",
+          "answers": [
+            "137"
+          ],
+          "distractors": [
+            "121",
+            "130",
+            "144"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "137",
+            "number": 137,
+            "unit": "goals"
+          },
+          "scope": "HSV Bundesliga career goals.",
+          "sourceKey": "third-seeler-league",
+          "evidence": "Bundesliga’s record profile credits Seeler with 137 Hamburg league goals."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-bundesliga-third-seeler-honours",
+      "subjectKey": "entity-uwe-seeler",
+      "clubKey": "entity-hamburger-sv",
+      "title": "A loyal career crowned in Hamburg",
+      "subtitle": "Seeler won club honors and seven northern scoring crowns",
+      "chapter": "legacy",
+      "story": [
+        {
+          "title": "A long HSV career",
+          "body": "Seeler played his entire senior club career with Hamburg and retired in 1972 after his farewell match at Volksparkstadion."
+        },
+        {
+          "title": "Individual honors",
+          "body": "HSV credits him with seven northern scoring titles and three Germany Footballer of the Year awards."
+        }
+      ],
+      "facts": [
+        {
+          "key": "third-seeler-farewell",
+          "label": "On what date did Seeler play his HSV farewell match",
+          "prompt": "On what date did Seeler play his HSV farewell match?",
+          "answers": [
+            "1 May 1972"
+          ],
+          "distractors": [
+            "1 May 1970",
+            "1 May 1971",
+            "1 May 1973"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "1 May 1972",
+            "text": "1 May 1972"
+          },
+          "scope": "Farewell appearance.",
+          "sourceKey": "third-hsv-seeler",
+          "evidence": "HSV dates his career farewell at Volksparkstadion to 1 May 1972."
+        },
+        {
+          "key": "third-seeler-north",
+          "label": "How many northern Oberliga scoring titles did Seeler win",
+          "prompt": "How many northern Oberliga scoring titles did Seeler win?",
+          "answers": [
+            "7"
+          ],
+          "distractors": [
+            "5",
+            "6",
+            "8"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "7",
+            "number": 7,
+            "unit": "titles"
+          },
+          "scope": "Northern Oberliga scoring titles.",
+          "sourceKey": "third-hsv-seeler",
+          "evidence": "HSV says the 1954/55 crown was the first of seven northern top-scorer awards."
+        },
+        {
+          "key": "third-seeler-playeroftheyear",
+          "label": "How many times was Seeler named Germany’s Footballer of the Year",
+          "prompt": "How many times was Seeler named Germany’s Footballer of the Year?",
+          "answers": [
+            "3"
+          ],
+          "distractors": [
+            "1",
+            "2",
+            "4"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "3",
+            "number": 3,
+            "unit": "awards"
+          },
+          "scope": "German Footballer of the Year awards.",
+          "sourceKey": "third-hsv-seeler",
+          "evidence": "HSV says he received the award in 1960, 1964 and 1970."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-bundesliga-third-keegan-career",
+      "subjectKey": "entity-kevin-keegan",
+      "clubKey": "entity-hamburger-sv",
+      "title": "Liverpool star makes a new start in Hamburg",
+      "subtitle": "Keegan’s path took him from Scunthorpe through Liverpool to HSV",
+      "chapter": "career",
+      "story": [
+        {
+          "title": "A different challenge",
+          "body": "After five seasons at Scunthorpe and six at Liverpool, Keegan left England in 1977 for Hamburg."
+        },
+        {
+          "title": "Three years with HSV",
+          "body": "The club profile records 90 league appearances and 32 goals in Hamburg before his 1980 return to England with Southampton."
+        }
+      ],
+      "facts": [
+        {
+          "key": "third-keegan-hsv-arrival",
+          "label": "In what year did Keegan move from Liverpool to Hamburg",
+          "prompt": "In what year did Keegan move from Liverpool to Hamburg?",
+          "answers": [
+            "1977"
+          ],
+          "distractors": [
+            "1975",
+            "1976",
+            "1979"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "1977",
+            "number": 1977,
+            "unit": "year"
+          },
+          "scope": "Arrival at HSV.",
+          "sourceKey": "third-hsv-keegan",
+          "evidence": "HSV dates the transfer from Liverpool to 1977."
+        },
+        {
+          "key": "third-keegan-prior",
+          "label": "Which English club did Keegan represent immediately before HSV",
+          "prompt": "Which English club did Keegan represent immediately before HSV?",
+          "answers": [
+            "Liverpool"
+          ],
+          "distractors": [
+            "Bayern München",
+            "Borussia Dortmund",
+            "RB Leipzig"
+          ],
+          "value": {
+            "kind": "entity",
+            "display": "Liverpool",
+            "entityKey": "entity-liverpool"
+          },
+          "scope": "Immediate prior club.",
+          "sourceKey": "third-hsv-keegan",
+          "evidence": "HSV identifies Liverpool as Keegan’s previous club before he moved to Hamburg."
+        },
+        {
+          "key": "third-keegan-next",
+          "label": "Which club did Keegan join after leaving HSV in 1980",
+          "prompt": "Which club did Keegan join after leaving HSV in 1980?",
+          "answers": [
+            "Southampton"
+          ],
+          "distractors": [
+            "Liverpool",
+            "Newcastle United",
+            "Scunthorpe United"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Southampton",
+            "text": "Southampton"
+          },
+          "scope": "Next club after HSV.",
+          "sourceKey": "third-hsv-keegan",
+          "evidence": "HSV reports that Keegan returned to England with Southampton in summer 1980."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-bundesliga-third-keegan-1979-moment",
+      "subjectKey": "entity-kevin-keegan",
+      "clubKey": "entity-hamburger-sv",
+      "title": "A championship season in Hamburg",
+      "subtitle": "Keegan scored 17 league goals as HSV won the 1978/79 title",
+      "chapter": "moments",
+      "story": [
+        {
+          "title": "A stronger second season",
+          "body": "After 12 Bundesliga goals in his first campaign, Keegan found his rhythm under new coach Branko Zebec."
+        },
+        {
+          "title": "Title and individual honor",
+          "body": "His 17 goals helped HSV win its first Bundesliga title, and Keegan collected the European Footballer of the Year award for a second straight year."
+        }
+      ],
+      "facts": [
+        {
+          "key": "third-keegan-1979-goals",
+          "label": "How many league goals did Keegan score for HSV in the 1978/79 title season",
+          "prompt": "How many league goals did Keegan score for HSV in the 1978/79 title season?",
+          "answers": [
+            "17"
+          ],
+          "distractors": [
+            "12",
+            "15",
+            "20"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "17",
+            "number": 17,
+            "unit": "goals"
+          },
+          "scope": "Keegan’s HSV goals in the championship season.",
+          "sourceKey": "third-hsv-keegan",
+          "evidence": "HSV’s profile states Keegan scored 17 league goals in 1978/79."
+        },
+        {
+          "key": "third-keegan-firstseason",
+          "label": "How many league goals did Keegan score in his first Bundesliga season with HSV",
+          "prompt": "How many league goals did Keegan score in his first Bundesliga season with HSV?",
+          "answers": [
+            "12"
+          ],
+          "distractors": [
+            "9",
+            "10",
+            "17"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "12",
+            "number": 12,
+            "unit": "goals"
+          },
+          "scope": "First HSV Bundesliga season, 1977/78.",
+          "sourceKey": "third-hsv-keegan",
+          "evidence": "HSV says his first season ended with 12 league goals."
+        },
+        {
+          "key": "third-keegan-manager",
+          "label": "Who coached HSV when Keegan’s 1978/79 title-winning season began",
+          "prompt": "Who coached HSV when Keegan’s 1978/79 title-winning season began?",
+          "answers": [
+            "Branko Zebec"
+          ],
+          "distractors": [
+            "Ernst Happel",
+            "Günter Netzer",
+            "Felix Magath"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Branko Zebec",
+            "text": "Branko Zebec"
+          },
+          "scope": "HSV head coach, 1978/79.",
+          "sourceKey": "third-hsv-keegan",
+          "evidence": "HSV identifies Zebec as the coach who took charge for 1978/79."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-bundesliga-third-keegan-europe-moment",
+      "subjectKey": "entity-kevin-keegan",
+      "clubKey": "entity-hamburger-sv",
+      "title": "A European final after a famous comeback",
+      "subtitle": "Hamburg erased a two-goal deficit to reach the European Cup final",
+      "chapter": "moments",
+      "story": [
+        {
+          "title": "A semi-final surge",
+          "body": "After a 2–0 defeat in Madrid, HSV overturned the semi-final against Real Madrid with a 5–1 home win; Caspar Memering scored the late goal that completed the comeback."
+        },
+        {
+          "title": "One step short",
+          "body": "Keegan stayed for a final attempt at European glory, but Nottingham Forest beat Hamburg at the Bernabéu before he returned to England."
+        }
+      ],
+      "facts": [
+        {
+          "key": "third-keegan-madrid-score",
+          "label": "What score did HSV record against Real Madrid in the 1980 European Cup semi-final return leg",
+          "prompt": "What score did HSV record against Real Madrid in the 1980 European Cup semi-final return leg?",
+          "answers": [
+            "5–1"
+          ],
+          "distractors": [
+            "4–1",
+            "5–0",
+            "6–2"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "5–1",
+            "text": "5–1"
+          },
+          "scope": "1980 European Cup semi-final, Hamburg leg.",
+          "sourceKey": "third-hsv-keegan",
+          "evidence": "HSV’s profile recalls the 5–1 return-leg win that sent the club to the final."
+        },
+        {
+          "key": "third-keegan-final-opponent",
+          "label": "Which player scored Hamburg’s last-minute goal that completed the 1980 comeback",
+          "prompt": "Which Hamburg player scored the last-minute goal that completed the 5–1 European Cup semi-final comeback against Real Madrid in 1980?",
+          "answers": [
+            "Caspar Memering"
+          ],
+          "distractors": [
+            "Felix Magath",
+            "Horst Hrubesch",
+            "Kevin Keegan"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Caspar Memering",
+            "text": "Caspar Memering"
+          },
+          "scope": "Decisive late scorer for HSV in the 1980 European Cup semi-final second leg.",
+          "sourceKey": "third-uefa-madrid-comeback",
+          "evidence": "UEFA says Caspar Memering’s last-minute strike capped Hamburg’s 5–1 victory over Real Madrid."
+        },
+        {
+          "key": "third-keegan-firstleg-deficit",
+          "label": "What was Real Madrid’s first-leg lead before Hamburg’s 1980 semi-final comeback",
+          "prompt": "By what score had Real Madrid beaten Hamburg in the first leg before HSV’s 5–1 comeback in 1980?",
+          "answers": [
+            "2–0",
+            "2-0"
+          ],
+          "distractors": [
+            "1–0",
+            "3–1",
+            "2–1"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "2–0",
+            "text": "2–0"
+          },
+          "scope": "First-leg score in the 1979/80 European Cup semi-final.",
+          "sourceKey": "third-uefa-madrid-comeback",
+          "evidence": "UEFA records Real Madrid’s 2–0 first-leg win before Hamburg overturned the tie."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-bundesliga-third-keegan-honours",
+      "subjectKey": "entity-kevin-keegan",
+      "clubKey": "entity-hamburger-sv",
+      "title": "European honors and a Hamburg scoring record",
+      "subtitle": "Two Ballon d’Ors and 90 Bundesliga appearances for HSV",
+      "chapter": "records",
+      "story": [
+        {
+          "title": "Consecutive European honors",
+          "body": "While at HSV, Keegan won the Ballon d’Or in 1978 and 1979, the European Footballer of the Year award in consecutive years."
+        },
+        {
+          "title": "A three-year spell",
+          "body": "Across his 1977–1980 Hamburg spell, Keegan made 90 Bundesliga appearances and scored 32 league goals. These are league totals, rather than totals across every competition."
+        }
+      ],
+      "facts": [
+        {
+          "key": "third-keegan-ballon-count",
+          "label": "How many Ballon d’Or awards did Keegan win",
+          "prompt": "How many Ballon d’Or awards did Keegan win?",
+          "answers": [
+            "2"
+          ],
+          "distractors": [
+            "1",
+            "3",
+            "4"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "2",
+            "number": 2,
+            "unit": "awards"
+          },
+          "scope": "Keegan’s two Ballon d’Or awards in 1978 and 1979.",
+          "sourceKey": "third-hsv-keegan",
+          "evidence": "HSV’s official profile says Keegan won the Ballon d’Or in 1978 and 1979."
+        },
+        {
+          "key": "third-keegan-appearances",
+          "label": "HSV Bundesliga appearances",
+          "prompt": "How many Bundesliga appearances did Keegan make for HSV?",
+          "answers": [
+            "90"
+          ],
+          "distractors": [
+            "68",
+            "78",
+            "100"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "90",
+            "number": 90,
+            "unit": "appearances"
+          },
+          "scope": "Bundesliga only, Hamburger SV, 1977–1980; excludes cup and European matches.",
+          "sourceKey": "third-keegan-dfb-league",
+          "evidence": "DFB separates the Bundesliga row: 90 appearances and 32 goals; the season rows sum to the same totals."
+        },
+        {
+          "key": "third-keegan-hsvgoals",
+          "label": "HSV Bundesliga goals",
+          "prompt": "How many Bundesliga goals did Keegan score for HSV?",
+          "answers": [
+            "32"
+          ],
+          "distractors": [
+            "24",
+            "28",
+            "37"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "32",
+            "number": 32,
+            "unit": "goals"
+          },
+          "scope": "Bundesliga only, Hamburger SV, 1977–1980; excludes cup and European matches.",
+          "sourceKey": "third-keegan-dfb-league",
+          "evidence": "DFB separates the Bundesliga row: 90 appearances and 32 goals; the season rows sum to the same totals."
+        }
+      ]
+    }
+  ]
+}

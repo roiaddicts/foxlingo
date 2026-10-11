@@ -1,5 +1,5 @@
 {
-  "contentVersion": 15,
+  "contentVersion": 16,
   "scope": "Depth among offered club courses and authored player courses. Player course totals are not coverage of the full game catalog.",
   "clubs": [
     {
@@ -318,20 +318,32 @@
     {
       "key": "roadmap-feyenoord",
       "name": "Feyenoord",
-      "requiredLessons": 1,
-      "definingMomentLessons": 0,
-      "playerPaths": [],
-      "completePlayerPaths": [],
-      "complete": false
+      "requiredLessons": 12,
+      "definingMomentLessons": 2,
+      "playerPaths": [
+        "roadmap-player-robin-van-persie",
+        "roadmap-player-dirk-kuyt"
+      ],
+      "completePlayerPaths": [
+        "roadmap-player-robin-van-persie",
+        "roadmap-player-dirk-kuyt"
+      ],
+      "complete": true
     },
     {
       "key": "roadmap-freiburg",
       "name": "Sport-Club Freiburg",
-      "requiredLessons": 1,
-      "definingMomentLessons": 0,
-      "playerPaths": [],
-      "completePlayerPaths": [],
-      "complete": false
+      "requiredLessons": 12,
+      "definingMomentLessons": 2,
+      "playerPaths": [
+        "roadmap-player-vincenzo-grifo",
+        "roadmap-player-nils-petersen"
+      ],
+      "completePlayerPaths": [
+        "roadmap-player-vincenzo-grifo",
+        "roadmap-player-nils-petersen"
+      ],
+      "complete": true
     },
     {
       "key": "roadmap-galatasaray",
@@ -345,11 +357,17 @@
     {
       "key": "roadmap-hamburger-sv",
       "name": "Hamburger SV",
-      "requiredLessons": 1,
-      "definingMomentLessons": 0,
-      "playerPaths": [],
-      "completePlayerPaths": [],
-      "complete": false
+      "requiredLessons": 12,
+      "definingMomentLessons": 2,
+      "playerPaths": [
+        "roadmap-player-kevin-keegan",
+        "roadmap-player-uwe-seeler"
+      ],
+      "completePlayerPaths": [
+        "roadmap-player-kevin-keegan",
+        "roadmap-player-uwe-seeler"
+      ],
+      "complete": true
     },
     {
       "key": "roadmap-hoffenheim",
@@ -459,11 +477,17 @@
     {
       "key": "roadmap-mainz-05",
       "name": "1. FSV Mainz 05",
-      "requiredLessons": 1,
-      "definingMomentLessons": 0,
-      "playerPaths": [],
-      "completePlayerPaths": [],
-      "complete": false
+      "requiredLessons": 12,
+      "definingMomentLessons": 2,
+      "playerPaths": [
+        "roadmap-player-stefan-bell",
+        "roadmap-player-jurgen-klopp"
+      ],
+      "completePlayerPaths": [
+        "roadmap-player-stefan-bell",
+        "roadmap-player-jurgen-klopp"
+      ],
+      "complete": true
     },
     {
       "key": "roadmap-manchester-city",
@@ -585,11 +609,17 @@
     {
       "key": "roadmap-psv",
       "name": "PSV",
-      "requiredLessons": 1,
-      "definingMomentLessons": 0,
-      "playerPaths": [],
-      "completePlayerPaths": [],
-      "complete": false
+      "requiredLessons": 12,
+      "definingMomentLessons": 2,
+      "playerPaths": [
+        "roadmap-player-arjen-robben",
+        "roadmap-player-ruud-van-nistelrooy"
+      ],
+      "completePlayerPaths": [
+        "roadmap-player-arjen-robben",
+        "roadmap-player-ruud-van-nistelrooy"
+      ],
+      "complete": true
     },
     {
       "key": "roadmap-puebla",
@@ -786,11 +816,17 @@
     {
       "key": "roadmap-werder-bremen",
       "name": "SV Werder Bremen",
-      "requiredLessons": 1,
-      "definingMomentLessons": 0,
-      "playerPaths": [],
-      "completePlayerPaths": [],
-      "complete": false
+      "requiredLessons": 12,
+      "definingMomentLessons": 2,
+      "playerPaths": [
+        "roadmap-player-claudio-pizarro",
+        "roadmap-player-miroslav-klose"
+      ],
+      "completePlayerPaths": [
+        "roadmap-player-claudio-pizarro",
+        "roadmap-player-miroslav-klose"
+      ],
+      "complete": true
     },
     {
       "key": "roadmap-juventus",
@@ -1670,18 +1706,181 @@
       ],
       "missingAreas": [],
       "complete": true
+    },
+    {
+      "key": "roadmap-player-claudio-pizarro",
+      "name": "Claudio Pizarro",
+      "entityID": "1ab0a5f4-f7f2-5724-a69b-39442540e15a",
+      "playerLessons": 4,
+      "chapters": [
+        "Career journey",
+        "Defining moments",
+        "Records & honours",
+        "Legacy"
+      ],
+      "missingAreas": [],
+      "complete": true
+    },
+    {
+      "key": "roadmap-player-miroslav-klose",
+      "name": "Miroslav Klose",
+      "entityID": "92c2d10c-4491-5620-98ae-e30b83d8daad",
+      "playerLessons": 4,
+      "chapters": [
+        "Career journey",
+        "Defining moments",
+        "Records & honours",
+        "Legacy"
+      ],
+      "missingAreas": [],
+      "complete": true
+    },
+    {
+      "key": "roadmap-player-uwe-seeler",
+      "name": "Uwe Seeler",
+      "entityID": "b111a62a-38bf-5128-ac3d-babcd00259c8",
+      "playerLessons": 4,
+      "chapters": [
+        "Career journey",
+        "Defining moments",
+        "Records & honours",
+        "Legacy"
+      ],
+      "missingAreas": [],
+      "complete": true
+    },
+    {
+      "key": "roadmap-player-kevin-keegan",
+      "name": "Kevin Keegan",
+      "entityID": "854583d7-a304-55e8-a281-398e50c25ca1",
+      "playerLessons": 4,
+      "chapters": [
+        "Career journey",
+        "Defining moments",
+        "Records & honours"
+      ],
+      "missingAreas": [],
+      "complete": true
+    },
+    {
+      "key": "roadmap-player-nils-petersen",
+      "name": "Nils Petersen",
+      "entityID": "9281380c-46df-5d50-9798-d064a4f1d1e6",
+      "playerLessons": 4,
+      "chapters": [
+        "Career journey",
+        "Defining moments",
+        "Records & honours",
+        "Legacy"
+      ],
+      "missingAreas": [],
+      "complete": true
+    },
+    {
+      "key": "roadmap-player-vincenzo-grifo",
+      "name": "Vincenzo Grifo",
+      "entityID": "39acec2b-f3a5-5d19-a853-3eda1edaf00e",
+      "playerLessons": 4,
+      "chapters": [
+        "Career journey",
+        "Defining moments",
+        "Records & honours",
+        "Legacy"
+      ],
+      "missingAreas": [],
+      "complete": true
+    },
+    {
+      "key": "roadmap-player-jurgen-klopp",
+      "name": "Jürgen Klopp",
+      "entityID": "f86d868d-d339-54cf-904b-8da4ec4a5498",
+      "playerLessons": 4,
+      "chapters": [
+        "Career journey",
+        "Defining moments",
+        "Records & honours",
+        "Legacy"
+      ],
+      "missingAreas": [],
+      "complete": true
+    },
+    {
+      "key": "roadmap-player-stefan-bell",
+      "name": "Stefan Bell",
+      "entityID": "2bca6a1e-bacc-583b-bb16-bab1f24b4f7c",
+      "playerLessons": 4,
+      "chapters": [
+        "Career journey",
+        "Defining moments",
+        "Records & honours",
+        "Legacy"
+      ],
+      "missingAreas": [],
+      "complete": true
+    },
+    {
+      "key": "roadmap-player-ruud-van-nistelrooy",
+      "name": "Ruud van Nistelrooij",
+      "entityID": "445ba4c2-e315-5e6e-9df1-3ff994aa1f15",
+      "playerLessons": 4,
+      "chapters": [
+        "Career journey",
+        "Defining moments",
+        "Records & honours"
+      ],
+      "missingAreas": [],
+      "complete": true
+    },
+    {
+      "key": "roadmap-player-arjen-robben",
+      "name": "Arjen Robben",
+      "entityID": "36e8571d-7780-5209-9c32-f203d1d9036c",
+      "playerLessons": 4,
+      "chapters": [
+        "Career journey",
+        "Defining moments",
+        "Records & honours"
+      ],
+      "missingAreas": [],
+      "complete": true
+    },
+    {
+      "key": "roadmap-player-dirk-kuyt",
+      "name": "Dirk Kuyt",
+      "entityID": "c94d9d3f-ddb7-59d5-a133-46b34254e29c",
+      "playerLessons": 4,
+      "chapters": [
+        "Career journey",
+        "Defining moments",
+        "Records & honours"
+      ],
+      "missingAreas": [],
+      "complete": true
+    },
+    {
+      "key": "roadmap-player-robin-van-persie",
+      "name": "Robin van Persie",
+      "entityID": "1a8065b4-1053-589b-9f59-3984742e32e1",
+      "playerLessons": 4,
+      "chapters": [
+        "Career journey",
+        "Defining moments",
+        "Records & honours"
+      ],
+      "missingAreas": [],
+      "complete": true
     }
   ],
-  "completedClubs": 27,
+  "completedClubs": 33,
   "totalClubs": 69,
-  "completedPlayers": 63,
-  "totalPlayers": 63,
+  "completedPlayers": 75,
+  "totalPlayers": 75,
   "gameCatalogPlayerCoverage": {
     "scope": "Unique supplied game-catalog player IDs with an explicit reviewed identity binding; no name-based guesses. This historical catalog is not a current squad list.",
     "totalCatalogPlayers": 5274,
-    "playersWithAuthoredPaths": 45,
-    "playersMeetingDepthRequirements": 45,
-    "playersWithoutAuthoredPaths": 5229,
+    "playersWithAuthoredPaths": 52,
+    "playersMeetingDepthRequirements": 52,
+    "playersWithoutAuthoredPaths": 5222,
     "independentPlayerPaths": [
       "roadmap-player-riascos",
       "roadmap-player-arce",
@@ -1700,7 +1899,12 @@
       "roadmap-player-oscar-perez",
       "roadmap-player-jorge-campos",
       "roadmap-player-victor-davila",
-      "roadmap-player-fidel-ambriz"
+      "roadmap-player-fidel-ambriz",
+      "roadmap-player-kevin-keegan",
+      "roadmap-player-nils-petersen",
+      "roadmap-player-vincenzo-grifo",
+      "roadmap-player-jurgen-klopp",
+      "roadmap-player-stefan-bell"
     ]
   }
 }

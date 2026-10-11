@@ -19,14 +19,14 @@ final class AlbumTests: XCTestCase {
     func testCompetitionUsesHistoricalRoadmapMembershipAndDeduplicates() {
         let state=LearnerState()
         let all=AlbumCollection.make(pack:pack,state:state,scope:.all,discoveredOnly:false,query:"")
-        XCTAssertEqual(all.total,136)
-        XCTAssertEqual(Set(all.sections.flatMap{$0.cards.map(\.id)}).count,136)
+        XCTAssertEqual(all.total,148)
+        XCTAssertEqual(Set(all.sections.flatMap{$0.cards.map(\.id)}).count,148)
         let champions=AlbumCollection.make(pack:pack,state:state,scope:.champions,discoveredOnly:false,query:"")
         let cards=champions.sections.flatMap(\.cards)
         XCTAssertTrue(cards.contains {$0.key == "card-cristiano"})
         XCTAssertFalse(cards.contains {$0.key == "card-xolos"})
         let german=AlbumCollection.make(pack:pack,state:state,scope:.bundesliga,discoveredOnly:false,query:"")
-        XCTAssertEqual(german.total,31)
+        XCTAssertEqual(german.total,39)
     }
     func testSharedCardSearchMatchesEveryRelatedClub() throws {
         var json=try JSONSerialization.jsonObject(with:JSONEncoder().encode(pack)) as! [String:Any]

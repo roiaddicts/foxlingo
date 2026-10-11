@@ -584,6 +584,36 @@
     "cached": true
   },
   {
+    "asset": "entity-claudio-pizarro",
+    "url": "https://futbol11.com/images/1492.webp",
+    "cached": true
+  },
+  {
+    "asset": "entity-miroslav-klose",
+    "url": "https://futbol11.com/images/34.png",
+    "cached": true
+  },
+  {
+    "asset": "entity-ruud-van-nistelrooy",
+    "url": "https://futbol11.com/images/181.webp",
+    "cached": true
+  },
+  {
+    "asset": "entity-arjen-robben",
+    "url": "https://futbol11.com/images/8.png",
+    "cached": true
+  },
+  {
+    "asset": "entity-dirk-kuyt",
+    "url": "https://futbol11.com/images/341.png",
+    "cached": true
+  },
+  {
+    "asset": "entity-robin-van-persie",
+    "url": "https://futbol11.com/images/7.png",
+    "cached": true
+  },
+  {
     "asset": "entity-juventus",
     "url": "https://img.uefa.com/imgml/TP/teams/logos/100x100/50139.png",
     "cached": true
@@ -1021,6 +1051,11 @@
   {
     "asset": "entity-wolfsburg",
     "url": "https://img.uefa.com/imgml/TP/teams/logos/100x100/64332.png",
+    "cached": true
+  },
+  {
+    "asset": "club-badge-sparta-praha",
+    "url": "https://img.uefa.com/imgml/TP/teams/logos/100x100/50033.png",
     "cached": true
   },
   {

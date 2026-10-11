@@ -11,7 +11,8 @@
     "asset": "club-badge-benfica",
     "imageURL": "https://img.uefa.com/imgml/TP/teams/logos/100x100/50147.png",
     "sourceURL": "https://www.uefa.com/nationalassociations/teams/50147/",
-    "scope": "Club badge illustration, not a historical-season badge."
+    "scope": "Club badge illustration, not a historical-season badge.",
+    "entityKey": "entity-benfica"
   },
   {
     "name": "Newcastle",
@@ -142,6 +143,17 @@
     "asset": "entity-wolfsburg",
     "imageURL": "https://img.uefa.com/imgml/TP/teams/logos/100x100/64332.png",
     "sourceURL": "https://www.uefa.com/uefachampionsleague/history/clubs/64332--wolfsburg/",
+    "scope": "Club badge illustration, not a historical-season badge."
+  },
+  {
+    "name": "Sparta Praha",
+    "entityKey": "entity-sparta-praha",
+    "aliases": [
+      "AC Sparta Praha"
+    ],
+    "asset": "club-badge-sparta-praha",
+    "imageURL": "https://img.uefa.com/imgml/TP/teams/logos/100x100/50033.png",
+    "sourceURL": "https://www.uefa.com/nationalassociations/teams/50033--sparta-praha/",
     "scope": "Club badge illustration, not a historical-season badge."
   }
 ]

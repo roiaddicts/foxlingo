@@ -841,6 +841,18 @@ final class FlowTests: XCTestCase {
         let context=XCTAttachment(screenshot:app.screenshot());context.name="Large text timeline sources";context.lifetime = .keepAlways;add(context)
         tap("timeline-sources-done");tap("timeline-replay")
     }
+    func testExpandedVanNistelrooyCourseAndScorePersist() {
+        start();tap("choose-XT");choosePlayer("Ruud van Nistelrooy","ruud-van-nistelrooy")
+        XCTAssertTrue(app.staticTexts["roadmap-progress"].label.contains("0 of 4 starter lessons"))
+        completeLesson("lesson-curriculum-netherlands-ruud-psv-goals")
+        completeLesson("lesson-curriculum-netherlands-ruud-ajax-comeback")
+        completeLesson("lesson-curriculum-netherlands-ruud-four-sparta")
+        XCTAssertTrue(app.staticTexts["roadmap-progress"].label.contains("3 of 4 starter lessons"))
+        app.terminate();start(reset:false)
+        XCTAssertTrue(app.staticTexts["Ruud van Nistelrooij"].waitForExistence(timeout:5))
+        XCTAssertTrue(app.staticTexts["roadmap-progress"].label.contains("3 of 4 starter lessons"))
+        let shot=XCTAttachment(screenshot:app.screenshot());shot.name="Van Nistelrooy course and score retain progress";shot.lifetime = .keepAlways;add(shot)
+    }
     func testExpandedFigoCourseCompletesAndPersists() {
         start();tap("choose-XT");choosePlayer("Luís Figo","luis-figo")
         XCTAssertTrue(app.staticTexts["roadmap-progress"].label.contains("0 of 4 starter lessons"))
