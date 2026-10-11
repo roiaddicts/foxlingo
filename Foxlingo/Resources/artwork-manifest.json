@@ -619,6 +619,36 @@
     "cached": true
   },
   {
+    "asset": "entity-niklas-sule",
+    "url": "https://i.ibb.co/ySZBVWP/sule.webp",
+    "cached": true
+  },
+  {
+    "asset": "entity-wayne-rooney",
+    "url": "https://futbol11.com/images/63.png",
+    "cached": true
+  },
+  {
+    "asset": "entity-paul-scholes",
+    "url": "https://futbol11.com/images/349.png",
+    "cached": true
+  },
+  {
+    "asset": "entity-diego-forlan",
+    "url": "https://futbol11.com/images/31.png",
+    "cached": true
+  },
+  {
+    "asset": "entity-marcos-senna",
+    "url": "https://futbol11.com/images/627.png",
+    "cached": true
+  },
+  {
+    "asset": "entity-rafael-marquez",
+    "url": "https://futbol11.com/images/1092.png",
+    "cached": true
+  },
+  {
     "asset": "entity-juventus",
     "url": "https://img.uefa.com/imgml/TP/teams/logos/100x100/50139.png",
     "cached": true
@@ -1061,6 +1091,26 @@
   {
     "asset": "club-badge-sparta-praha",
     "url": "https://img.uefa.com/imgml/TP/teams/logos/100x100/50033.png",
+    "cached": true
+  },
+  {
+    "asset": "club-badge-kaiserslautern",
+    "url": "https://img.uefa.com/imgml/TP/teams/logos/100x100/3695.png",
+    "cached": true
+  },
+  {
+    "asset": "club-badge-carl-zeiss-jena",
+    "url": "https://img.uefa.com/imgml/TP/teams/logos/100x100/50071.png",
+    "cached": true
+  },
+  {
+    "asset": "club-badge-bochum",
+    "url": "https://img.uefa.com/imgml/TP/teams/logos/100x100/52939.png",
+    "cached": true
+  },
+  {
+    "asset": "club-badge-bradford",
+    "url": "https://img.uefa.com/imgml/TP/teams/logos/100x100/72533.png",
     "cached": true
   },
   {
@@ -1804,6 +1854,16 @@
     "requestedURL": "https://futbol11.com/media/flags/34c.webp"
   },
   {
+    "asset": "flag-finland",
+    "url": "https://futbol11.com/media/flags/60.webp",
+    "cached": true
+  },
+  {
+    "asset": "flag-denmark",
+    "url": "https://futbol11.com/media/flags/15.webp",
+    "cached": true
+  },
+  {
     "asset": "flag-sweden",
     "url": "https://futbol11.com/media/flags/13.webp",
     "cached": true
@@ -1811,11 +1871,6 @@
   {
     "asset": "flag-croatia",
     "url": "https://futbol11.com/media/flags/14.webp",
-    "cached": true
-  },
-  {
-    "asset": "flag-denmark",
-    "url": "https://futbol11.com/media/flags/15.webp",
     "cached": true
   },
   {

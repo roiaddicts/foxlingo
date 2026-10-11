@@ -28,7 +28,7 @@ final class CurriculumExpansionTests: XCTestCase {
     func testNewPlayerCoursesTeachTheirOwnFactsAndShareCanonicalClubLessons() throws {
         let root=URL(fileURLWithPath:#filePath).deletingLastPathComponent().deletingLastPathComponent()
         let pack=try ContentPack.load(Data(contentsOf:root.appendingPathComponent("Foxlingo/Resources/starter-en.json")))
-        for key in ["entity-marco-reus","entity-patrik-schick","entity-buffon","entity-del-piero","entity-guillermo-ochoa","entity-jose-saturnino-cardozo","entity-hernan-cristante","entity-timo-werner","entity-mario-gomez","entity-hirving-lozano","entity-miguel-calero","entity-mbappe","entity-ibrahimovic","entity-aguero","entity-griezmann","entity-carlos-hermosillo","entity-oscar-perez","entity-hugo-sanchez","entity-jorge-campos","entity-victor-davila","entity-fidel-ambriz","entity-deco","entity-vitor-baia","entity-luis-figo","entity-claudio-pizarro","entity-miroslav-klose","entity-uwe-seeler","entity-kevin-keegan","entity-nils-petersen","entity-vincenzo-grifo","entity-jurgen-klopp","entity-stefan-bell","entity-ruud-van-nistelrooy","entity-arjen-robben","entity-dirk-kuyt","entity-robin-van-persie","entity-lothar-matthaus","entity-guenter-netzer","entity-helmut-haller","entity-daniel-baier"] {
+        for key in ["entity-marco-reus","entity-patrik-schick","entity-buffon","entity-del-piero","entity-guillermo-ochoa","entity-jose-saturnino-cardozo","entity-hernan-cristante","entity-timo-werner","entity-mario-gomez","entity-hirving-lozano","entity-miguel-calero","entity-mbappe","entity-ibrahimovic","entity-aguero","entity-griezmann","entity-carlos-hermosillo","entity-oscar-perez","entity-hugo-sanchez","entity-jorge-campos","entity-victor-davila","entity-fidel-ambriz","entity-deco","entity-vitor-baia","entity-luis-figo","entity-claudio-pizarro","entity-miroslav-klose","entity-uwe-seeler","entity-kevin-keegan","entity-nils-petersen","entity-vincenzo-grifo","entity-jurgen-klopp","entity-stefan-bell","entity-ruud-van-nistelrooy","entity-arjen-robben","entity-dirk-kuyt","entity-robin-van-persie","entity-lothar-matthaus","entity-guenter-netzer","entity-helmut-haller","entity-daniel-baier","entity-andrej-kramaric","entity-niklas-sule","entity-maximilian-kruse","entity-taiwo-awoniyi","entity-wayne-rooney","entity-paul-scholes","entity-diego-forlan","entity-marcos-senna","entity-rafael-marquez","entity-camilo-vargas","entity-jared-borgetti","entity-oswaldo-sanchez","entity-joaquin-velazquez","entity-benito-pardo"] {
             let player=try XCTUnwrap(pack.entities.first {$0.key == key})
             let route=try XCTUnwrap(pack.playerRoadmaps.first {$0.entityID == player.id})
             let club=try XCTUnwrap(pack.clubRoadmaps.first {$0.clubID == route.clubID})
@@ -58,4 +58,27 @@ final class CurriculumExpansionTests: XCTestCase {
         XCTAssertNotNil(wolfsburg.imageAsset)
         XCTAssertFalse(pack.clubRoadmaps.contains {$0.clubID == wolfsburg.id})
     }
+    func testNewMatchScoresUseCorrectOrientationAndCachedVisualAnswers() throws {
+        let root=URL(fileURLWithPath:#filePath).deletingLastPathComponent().deletingLastPathComponent()
+        let pack=try ContentPack.load(Data(contentsOf:root.appendingPathComponent("Foxlingo/Resources/starter-en.json")))
+        for (key,left,right,a,b) in [("hoffenheim-playoff-second-leg","entity-kaiserslautern","entity-hoffenheim",1,2),("hoffenheim-playoff-aggregate","entity-hoffenheim","entity-kaiserslautern",5,2),("uv-villarreal-arsenal-aggregate","entity-villarreal","entity-arsenal",0,1),("santos-2012-aggregate","entity-monterrey","entity-santos-laguna",3,2)] {
+            let objective=try XCTUnwrap(pack.objectives.first {$0.key == "objective-enrichment-"+key})
+            let exercise=try XCTUnwrap(pack.exercises.first {$0.objectiveIDs.contains(objective.id) && $0.scoreInput != nil})
+            let score=try XCTUnwrap(exercise.scoreInput)
+            XCTAssertEqual(pack.entity(score.leftEntityID).key,left)
+            XCTAssertEqual(pack.entity(score.rightEntityID).key,right)
+            XCTAssertTrue(score.accepts(left:a,right:b));XCTAssertFalse(score.accepts(left:b,right:a))
+        }
+        let subjects=Set(["entity-hoffenheim","entity-union-berlin","entity-manchester-united","entity-villarreal","entity-atlas","entity-santos-laguna","entity-puebla","entity-andrej-kramaric","entity-niklas-sule","entity-maximilian-kruse","entity-taiwo-awoniyi","entity-wayne-rooney","entity-paul-scholes","entity-diego-forlan","entity-marcos-senna","entity-rafael-marquez","entity-camilo-vargas","entity-jared-borgetti","entity-oswaldo-sanchez","entity-joaquin-velazquez","entity-benito-pardo"])
+        for fact in pack.facts where subjects.contains(pack.entity(fact.subjectID).key) {
+            let objective=try XCTUnwrap(pack.objectives.first {$0.factIDs.contains(fact.id)})
+            guard let type=AnswerArtwork.type(objectiveID:objective.id,pack:pack) else {continue}
+            for choice in pack.exercises.filter({$0.objectiveIDs.contains(objective.id)}).flatMap(\.choices) {
+                XCTAssertTrue(AnswerArtwork.canShow(choice.text,type:type,pack:pack),fact.key+": "+choice.text)
+                let asset=type == "country" ? AnswerArtwork.flags[Recall.normalize(choice.text)] : AnswerArtwork.entity(choice.text,type:type,pack:pack)?.imageAsset
+                if let asset {XCTAssertTrue(FileManager.default.fileExists(atPath:root.appendingPathComponent("Foxlingo/Resources/Assets.xcassets/"+asset+".imageset/image.png").path),asset)}
+            }
+        }
+    }
+
 }

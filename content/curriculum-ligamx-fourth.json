@@ -1,0 +1,2983 @@
+{
+  "sources": [
+    {
+      "key": "fourth-atlas-history",
+      "title": "Atlas FC: 110 years: For La Fiel, by La Fiel, with La Fiel",
+      "url": "https://www.atlasfc.com.mx/post/110-anos-para-la-fiel-por-la-fiel-y-con-la-fiel",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "fourth-atlas-camilo",
+      "title": "Atlas FC: Camilo Vargas, an eternal goalkeeper",
+      "url": "https://www.atlasfc.com.mx/post/https-www-atlasfc-com-mx-articles-camilo-vargas-3a-un-guardi-c3-a1n-eterno-31663",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "fourth-atlas-structure",
+      "title": "Atlas FC: Official statement on club structure and the 2021–22 transformation",
+      "url": "https://www.atlasfc.com.mx/post/https-www-atlasfc-com-mx-articles-comunicado-oficial-3a-estructura-de-atlas-fc-28203",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "fourth-atlas-rafa",
+      "title": "Atlas FC: Rafael Márquez and Mexico’s national team begin club tour at Atlas",
+      "url": "https://www.atlasfc.com.mx/post/rafael-marquez-y-la-seleccion-nacional-iniciaron-en-atlas-fc-su-gira-por-los-clubes-de-la-liga-mx",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "fourth-barca-rafa",
+      "title": "FC Barcelona: Rafa Márquez legend profile",
+      "url": "https://www.fcbarcelona.com/en/football/barca-legends/players/4288674/marquez",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "fourth-santos-trophies",
+      "title": "Santos Laguna: Trophy history",
+      "url": "https://www.clubsantos.mx/trofeos",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "fourth-santos-honor",
+      "title": "Santos Laguna: Guerreros de Honor biographies",
+      "url": "https://www.clubsantos.mx/guerreros-de-honor",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "fourth-puebla-history",
+      "title": "Club Puebla: Official club history",
+      "url": "https://www.clubpuebla.com/lafranja/historia",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "fourth-puebla-joaquin",
+      "title": "Club Puebla: Memorable moments — Joaquín Velázquez",
+      "url": "https://www.clubpuebla.com/noticias/81",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "fourth-puebla-benito",
+      "title": "Club Puebla: Camino Enfranjado — Benito Pardo",
+      "url": "https://www.clubpuebla.com/noticias/72",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "fourth-atlas-110-night",
+      "title": "Atlas FC: The night that honored 110 years of love for these colors",
+      "url": "https://www.atlasfc.com.mx/post/la-noche-que-honro-110-anos-de-amor-por-estos-colores",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "fourth-barca-2006-final",
+      "title": "FC Barcelona: 20 years ago...",
+      "url": "https://www.fcbarcelona.com/en/news/4498096/20-years-ago",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "fourth-concacaf-memorable",
+      "title": "Concacaf: Memorable games and figures of the Concacaf Champions Cup",
+      "url": "https://es.concacaf.com/news/memorable-games-and-figures-of-the-concacaf-champions-cup",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "fourth-concacaf-statistics",
+      "title": "Concacaf: Global statistics from the Concacaf Champions Cup finals",
+      "url": "https://www.concacaf.com/news/global-statistics-from-the-concacaf-champions-cup-finals",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "fourth-concacaf-oswaldo",
+      "title": "Concacaf: Oswaldo Sánchez reflects on Mexico’s Gold Cup success",
+      "url": "https://www.concacaf.com/news/oswaldo-sanchez-the-comeback-vs-the-u-s-reflected-the-personality-of-the-mexican-people",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "fourth-concacaf-history",
+      "title": "Concacaf Champions League history and final results",
+      "url": "https://qa.concacaf.com/es/copa-de-campeones/historia/",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "fourth-fifa-borgetti",
+      "title": "Chicharito top of the Tri — FIFA",
+      "url": "https://inside.fifa.com/en/tournaments/mens/confederationscup/russia2017/news/chicharito-top-of-the-tri-2890037",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "fourth-copa-vargas-final",
+      "title": "CONMEBOL Copa América: Argentina–Colombia 2024 final report and lineup",
+      "url": "https://copaamerica.com/es/novedades/argentina-campeon-colombia-copa-america-lautaro-martinez",
+      "verifiedAt": "2026-10-11"
+    }
+  ],
+  "players": [
+    {
+      "key": "entity-rafael-marquez",
+      "name": "Rafael Márquez",
+      "aliases": [
+        "Rafa Márquez"
+      ],
+      "visual": "RM",
+      "clubKey": "entity-atlas",
+      "seedID": "player-1092",
+      "seedName": "Rafa Marquez"
+    },
+    {
+      "key": "entity-camilo-vargas",
+      "name": "Camilo Vargas",
+      "aliases": [],
+      "visual": "CV",
+      "clubKey": "entity-atlas"
+    },
+    {
+      "key": "entity-jared-borgetti",
+      "name": "Jared Borgetti",
+      "aliases": [
+        "Jared Francisco Borgetti"
+      ],
+      "visual": "JB",
+      "clubKey": "entity-santos-laguna"
+    },
+    {
+      "key": "entity-oswaldo-sanchez",
+      "name": "Oswaldo Sánchez",
+      "aliases": [
+        "Oswaldo Javier Sánchez Ibarra"
+      ],
+      "visual": "OS",
+      "clubKey": "entity-santos-laguna"
+    },
+    {
+      "key": "entity-joaquin-velazquez",
+      "name": "Joaquín Velázquez",
+      "aliases": [],
+      "visual": "JV",
+      "clubKey": "entity-puebla"
+    },
+    {
+      "key": "entity-benito-pardo",
+      "name": "Benito Pardo",
+      "aliases": [],
+      "visual": "BP",
+      "clubKey": "entity-puebla"
+    }
+  ],
+  "lessons": [
+    {
+      "key": "lesson-curriculum-atlas-la-fiel",
+      "subjectKey": "entity-atlas",
+      "clubKey": "entity-atlas",
+      "chapter": "history",
+      "title": "Atlas’s name and colors take root",
+      "subtitle": "The club traces its identity to a Guadalajara café and an English school.",
+      "story": [
+        {
+          "title": "A name from mythology",
+          "body": "Atlas says its founders chose the name of the Titan and adopted red and black after the tradition of Ampleforth College in England."
+        },
+        {
+          "title": "A Guadalajara beginning",
+          "body": "The club’s anniversary account dates its foundation to 15 August 1916 at Café Rimans, placing its earliest story in the city where it began."
+        }
+      ],
+      "facts": [
+        {
+          "key": "atlas-origin-date",
+          "label": "Foundation date",
+          "prompt": "On what date does Atlas FC’s anniversary account say the club was founded at Café Rimans?",
+          "answers": [
+            "15 August 1916",
+            "August 15, 1916",
+            "15 de agosto de 1916"
+          ],
+          "distractors": [
+            "15 August 1915",
+            "15 August 1917",
+            "15 August 1921"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "15 August 1916",
+            "text": "15 August 1916"
+          },
+          "scope": "Atlas FC founding date",
+          "sourceKey": "fourth-atlas-history",
+          "evidence": "The official account states that Atlas FC was founded on 15 August 1916 at Café Rimans in Guadalajara."
+        },
+        {
+          "key": "atlas-name-origin",
+          "label": "Club name",
+          "prompt": "Which mythological figure does Atlas FC name as the source of its club name?",
+          "answers": [
+            "The Titan Atlas"
+          ],
+          "distractors": [
+            "Prometheus",
+            "Hercules",
+            "Odysseus"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "The Titan Atlas",
+            "text": "The Titan Atlas"
+          },
+          "scope": "Atlas FC name origin",
+          "sourceKey": "fourth-atlas-history",
+          "evidence": "Atlas FC says it took its name from the Titan Atlas."
+        },
+        {
+          "key": "atlas-colors-origin",
+          "label": "Club colors",
+          "prompt": "Which English school tradition does Atlas FC credit for its red-and-black colors?",
+          "answers": [
+            "Ampleforth College"
+          ],
+          "distractors": [
+            "Eton College",
+            "Oxford University",
+            "Cambridge University"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Ampleforth College",
+            "text": "Ampleforth College"
+          },
+          "scope": "Atlas FC colors origin",
+          "sourceKey": "fourth-atlas-history",
+          "evidence": "Atlas FC says its red-and-black colors were inspired by the tradition of Ampleforth College in England."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-atlas-first-star",
+      "subjectKey": "entity-atlas",
+      "clubKey": "entity-atlas",
+      "chapter": "moments",
+      "title": "Camilo Vargas’s penalty saves end a seven-decade wait",
+      "subtitle": "Atlas credits Vargas’s penalty saves with helping end a 70-year wait for another Liga MX title.",
+      "story": [
+        {
+          "title": "A drought broken",
+          "body": "Atlas says Camilo Vargas stopped penalty kicks at the decisive point in its Liga MX title run, ending a 70-year championship drought."
+        },
+        {
+          "title": "A keeper at the turning point",
+          "body": "The club credits those saves with guiding Atlas to the league title. The official profile records the defining action as penalty stops."
+        }
+      ],
+      "facts": [
+        {
+          "key": "atlas-final-drought",
+          "label": "Title drought",
+          "prompt": "How many years without a Liga MX title did Atlas FC say Camilo Vargas’s penalty saves helped end?",
+          "answers": [
+            "70 years",
+            "Seventy years"
+          ],
+          "distractors": [
+            "50 years",
+            "60 years",
+            "80 years"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "70",
+            "number": 70,
+            "unit": "years"
+          },
+          "scope": "Atlas league-title drought before the Apertura 2021 breakthrough",
+          "sourceKey": "fourth-atlas-camilo",
+          "evidence": "Atlas says Vargas stopped penalties that broke a 70-year title drought."
+        },
+        {
+          "key": "atlas-final-keeper",
+          "label": "Decisive goalkeeper",
+          "prompt": "Which Atlas FC goalkeeper does the club credit with penalty saves that helped end its 70-year Liga MX title drought?",
+          "answers": [
+            "Camilo Vargas"
+          ],
+          "distractors": [
+            "Franco Costanzo",
+            "José Hernández",
+            "Miguel Fraga"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Camilo Vargas",
+            "text": "Camilo Vargas"
+          },
+          "scope": "Atlas Apertura 2021 title run",
+          "sourceKey": "fourth-atlas-camilo",
+          "evidence": "The official Camilo Vargas feature names him as the keeper whose penalty saves guided Atlas to the title."
+        },
+        {
+          "key": "atlas-final-action",
+          "label": "Title-deciding action",
+          "prompt": "What decisive action does Atlas FC say Camilo Vargas took during the Liga MX title run that ended the club’s 70-year drought?",
+          "answers": [
+            "Stopping penalty kicks",
+            "Penalty saves"
+          ],
+          "distractors": [
+            "Scoring a free kick",
+            "Assisting the winning goal",
+            "Saving a penalty during regular time"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Penalty saves",
+            "text": "Penalty saves"
+          },
+          "scope": "Atlas’s league-title run ending the club’s 70-year drought; Atlas’s May 2026 profile attributes the key action to Vargas’s penalty saves.",
+          "sourceKey": "fourth-atlas-camilo",
+          "evidence": "Atlas says Vargas stopped penalties that broke the 70-year title drought and guided the club to the Liga MX title."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-atlas-bicampeonato",
+      "subjectKey": "entity-atlas",
+      "clubKey": "entity-atlas",
+      "chapter": "moments",
+      "title": "Atlas turns one crown into a dynasty",
+      "subtitle": "The club’s 2021–22 run paired consecutive league titles with a further national trophy.",
+      "story": [
+        {
+          "title": "A repeat achieved",
+          "body": "Atlas describes Camilo Vargas as central to the extraordinary Liga MX bicampeonato, a repeat league-title achievement."
+        },
+        {
+          "title": "A further trophy",
+          "body": "The club says the consecutive league crowns were sealed with a Campeón de Campeones trophy, carrying the run beyond the league itself."
+        }
+      ],
+      "facts": [
+        {
+          "key": "atlas-transform-period",
+          "label": "Title era",
+          "prompt": "Which two-season period does Atlas FC cite for the organizational transformation that led to its historic bicampeonato?",
+          "answers": [
+            "2021–22",
+            "2021–2022"
+          ],
+          "distractors": [
+            "2018–19",
+            "2019–20",
+            "2023–24"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "2021–22",
+            "text": "2021–22"
+          },
+          "scope": "Atlas bicampeonato period",
+          "sourceKey": "fourth-atlas-structure",
+          "evidence": "Atlas identifies 2021–22 as the period of the transformation that led to its historic bicampeonato."
+        },
+        {
+          "key": "atlas-repeat-honor",
+          "label": "Consecutive league crowns",
+          "prompt": "What does Atlas FC call its consecutive Liga MX title achievement in the 2021–22 period?",
+          "answers": [
+            "Bicampeonato"
+          ],
+          "distractors": [
+            "Tricampeonato",
+            "Campeón de Campeones",
+            "Superliderato"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Bicampeonato",
+            "text": "Bicampeonato"
+          },
+          "scope": "Atlas league titles in consecutive seasons",
+          "sourceKey": "fourth-atlas-camilo",
+          "evidence": "Atlas calls the achievement a Liga MX bicampeonato."
+        },
+        {
+          "key": "atlas-extra-cup",
+          "label": "Trophy that sealed the run",
+          "prompt": "Which trophy does Atlas FC say sealed its consecutive-title bicampeonato after the 2021–22 transformation?",
+          "answers": [
+            "Campeón de Campeones"
+          ],
+          "distractors": [
+            "Copa MX",
+            "Leagues Cup",
+            "CONCACAF Champions Cup"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Campeón de Campeones",
+            "text": "Campeón de Campeones"
+          },
+          "scope": "Atlas post-bicampeonato trophy",
+          "sourceKey": "fourth-atlas-camilo",
+          "evidence": "The club says the bicampeonato was sealed with the Campeón de Campeones trophy."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-rafael-marquez-roots",
+      "subjectKey": "entity-rafael-marquez",
+      "clubKey": "entity-atlas",
+      "chapter": "career",
+      "title": "From Zamora to Atlas",
+      "subtitle": "Márquez’s path began in Michoacán and returned to the club that framed his playing story.",
+      "story": [
+        {
+          "title": "Home and first club",
+          "body": "FC Barcelona lists Zamora de Hidalgo as Márquez’s birthplace. Atlas says he began and concluded his professional playing history with the Rojinegros."
+        },
+        {
+          "title": "A European move",
+          "body": "Barcelona signed him from Monaco in 2003, at age 24, after four seasons in France."
+        }
+      ],
+      "facts": [
+        {
+          "key": "rafa-born",
+          "label": "Birthplace",
+          "prompt": "In which city was Rafael Márquez born, according to FC Barcelona?",
+          "answers": [
+            "Zamora de Hidalgo"
+          ],
+          "distractors": [
+            "Guadalajara",
+            "Monterrey",
+            "Mexico City"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Zamora de Hidalgo",
+            "text": "Zamora de Hidalgo"
+          },
+          "scope": "Rafael Márquez biography",
+          "sourceKey": "fourth-barca-rafa",
+          "evidence": "The Barcelona profile lists Zamora de Hidalgo, Mexico as his place of birth."
+        },
+        {
+          "key": "rafa-atlas-bookends",
+          "label": "Club bookends",
+          "prompt": "Which Mexican club does Atlas FC say began and concluded Rafael Márquez’s professional playing career?",
+          "answers": [
+            "Atlas",
+            "Atlas FC"
+          ],
+          "distractors": [
+            "Club León",
+            "Monterrey",
+            "Pachuca"
+          ],
+          "value": {
+            "kind": "entity",
+            "entityKey": "entity-atlas",
+            "display": "Atlas"
+          },
+          "scope": "Atlas career connection",
+          "sourceKey": "fourth-atlas-rafa",
+          "evidence": "Atlas’s article says his professional football story began and ended at Atlas."
+        },
+        {
+          "key": "rafa-monaco-to-barca",
+          "label": "Transfer",
+          "prompt": "From which club did Rafael Márquez join FC Barcelona in 2003?",
+          "answers": [
+            "Monaco"
+          ],
+          "distractors": [
+            "Lyon",
+            "Porto",
+            "Ajax"
+          ],
+          "value": {
+            "kind": "entity",
+            "entityKey": "entity-monaco",
+            "display": "Monaco"
+          },
+          "scope": "Barcelona arrival, summer 2003",
+          "sourceKey": "fourth-barca-rafa",
+          "evidence": "Barcelona says Márquez arrived from Monaco in summer 2003, aged 24."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-rafael-marquez-barca-role",
+      "subjectKey": "entity-rafael-marquez",
+      "clubKey": "entity-atlas",
+      "chapter": "moments",
+      "title": "Márquez starts in the 2006 Champions League final",
+      "subtitle": "He was in Barcelona’s starting lineup for the comeback win over Arsenal in Paris.",
+      "story": [
+        {
+          "title": "A final in Paris",
+          "body": "On 17 May 2006, Barcelona beat Arsenal 2–1 at the Stade de France. Barcelona’s match article lists Rafael Márquez in the starting XI."
+        },
+        {
+          "title": "A comeback completed",
+          "body": "After Sol Campbell put Arsenal ahead, Samuel Eto’o equalised and Juliano Belletti scored the winner. The official lineup confirms Márquez began the final."
+        }
+      ],
+      "facts": [
+        {
+          "key": "rafa-final-date",
+          "label": "Final date",
+          "prompt": "On what date did Rafael Márquez start FC Barcelona’s 2006 UEFA Champions League final against Arsenal?",
+          "answers": [
+            "17 May 2006",
+            "May 17, 2006"
+          ],
+          "distractors": [
+            "17 May 2005",
+            "17 May 2007",
+            "27 May 2006"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "17 May 2006",
+            "text": "17 May 2006"
+          },
+          "scope": "2006 UEFA Champions League final",
+          "sourceKey": "fourth-barca-2006-final",
+          "evidence": "Barcelona’s official match article dates the final 17 May 2006 and lists Márquez in the starting XI."
+        },
+        {
+          "key": "rafa-final-opponent",
+          "label": "Final opponent",
+          "prompt": "Which club did FC Barcelona defeat in the 2006 UEFA Champions League final that Rafael Márquez started?",
+          "answers": [
+            "Arsenal",
+            "Arsenal FC"
+          ],
+          "distractors": [
+            "Atlas",
+            "Liverpool",
+            "Man United"
+          ],
+          "value": {
+            "kind": "entity",
+            "entityKey": "entity-arsenal",
+            "display": "Arsenal"
+          },
+          "scope": "2006 UEFA Champions League final",
+          "sourceKey": "fourth-barca-2006-final",
+          "evidence": "The official result is FC Barcelona 2–1 Arsenal FC."
+        },
+        {
+          "key": "rafa-final-score",
+          "label": "Final score",
+          "prompt": "What was the final score in FC Barcelona’s 2006 UEFA Champions League win over Arsenal, started by Rafael Márquez?",
+          "answers": [
+            "2–1",
+            "2-1",
+            "Barcelona 2–1 Arsenal"
+          ],
+          "distractors": [
+            "1–0",
+            "3–1",
+            "2–0"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "2–1",
+            "text": "2–1"
+          },
+          "scope": "FC Barcelona vs Arsenal, 17 May 2006",
+          "sourceKey": "fourth-barca-2006-final",
+          "evidence": "Barcelona’s official match record gives the score as FC Barcelona 2–1 Arsenal FC.",
+          "scoreInput": {
+            "leftClubKey": "entity-barcelona",
+            "rightClubKey": "entity-arsenal",
+            "leftGoals": 2,
+            "rightGoals": 1
+          }
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-rafael-marquez-honors",
+      "subjectKey": "entity-rafael-marquez",
+      "clubKey": "entity-atlas",
+      "chapter": "records",
+      "title": "Two major European crowns",
+      "subtitle": "Márquez collected a substantial honors list during seven seasons with Barcelona.",
+      "story": [
+        {
+          "title": "League consistency",
+          "body": "The club credits him with four Spanish league titles, won in 2005, 2006, 2009 and 2010."
+        },
+        {
+          "title": "Continental success",
+          "body": "Two Champions League victories sit among those honors, including the 2006 and 2009 triumphs."
+        }
+      ],
+      "facts": [
+        {
+          "key": "rafa-leagues",
+          "label": "League titles",
+          "prompt": "How many La Liga titles does FC Barcelona credit Rafael Márquez with winning during his career?",
+          "answers": [
+            "4"
+          ],
+          "distractors": [
+            "2",
+            "3",
+            "5"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "4",
+            "number": 4,
+            "unit": "titles"
+          },
+          "scope": "FC Barcelona honors",
+          "sourceKey": "fourth-barca-rafa",
+          "evidence": "Barcelona lists four league titles: 2005, 2006, 2009 and 2010."
+        },
+        {
+          "key": "rafa-ucl",
+          "label": "Champions League titles",
+          "prompt": "How many UEFA Champions League titles did Rafael Márquez win with FC Barcelona?",
+          "answers": [
+            "2"
+          ],
+          "distractors": [
+            "1",
+            "3",
+            "4"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "2",
+            "number": 2,
+            "unit": "titles"
+          },
+          "scope": "FC Barcelona honors",
+          "sourceKey": "fourth-barca-rafa",
+          "evidence": "Barcelona lists Champions League titles in 2006 and 2009."
+        },
+        {
+          "key": "rafa-copa",
+          "label": "Copa del Rey",
+          "prompt": "In which year did Rafael Márquez win the Copa del Rey with FC Barcelona?",
+          "answers": [
+            "2009"
+          ],
+          "distractors": [
+            "2006",
+            "2008",
+            "2010"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "2009",
+            "number": 2009,
+            "unit": "year"
+          },
+          "scope": "Barcelona Copa del Rey honor",
+          "sourceKey": "fourth-barca-rafa",
+          "evidence": "The official honors list records the Copa del Rey in 2009."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-rafael-marquez-international",
+      "subjectKey": "entity-rafael-marquez",
+      "clubKey": "entity-atlas",
+      "chapter": "records",
+      "title": "A five-World-Cup international career",
+      "subtitle": "Márquez’s national-team record stretched across multiple generations of Mexico squads.",
+      "story": [
+        {
+          "title": "A long international service",
+          "body": "Barcelona records 147 appearances and 17 goals for Mexico."
+        },
+        {
+          "title": "A rare tournament span",
+          "body": "The profile notes appearances at five World Cups, from 2002 through 2018."
+        }
+      ],
+      "facts": [
+        {
+          "key": "rafa-mex-caps",
+          "label": "Mexico appearances",
+          "prompt": "How many appearances for Mexico does FC Barcelona record for Rafael Márquez?",
+          "answers": [
+            "147"
+          ],
+          "distractors": [
+            "127",
+            "137",
+            "157"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "147",
+            "number": 147,
+            "unit": "appearances"
+          },
+          "scope": "Mexico senior team career",
+          "sourceKey": "fourth-barca-rafa",
+          "evidence": "The official profile states 147 appearances for Mexico."
+        },
+        {
+          "key": "rafa-mex-goals",
+          "label": "Mexico goals",
+          "prompt": "How many goals for Mexico does FC Barcelona list for Rafael Márquez?",
+          "answers": [
+            "17"
+          ],
+          "distractors": [
+            "12",
+            "15",
+            "20"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "17",
+            "number": 17,
+            "unit": "goals"
+          },
+          "scope": "Mexico senior team career",
+          "sourceKey": "fourth-barca-rafa",
+          "evidence": "The profile lists 17 goals for Mexico."
+        },
+        {
+          "key": "rafa-world-cups",
+          "label": "World Cups",
+          "prompt": "At how many FIFA World Cup tournaments did Rafael Márquez play for Mexico?",
+          "answers": [
+            "5"
+          ],
+          "distractors": [
+            "3",
+            "4",
+            "6"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "5",
+            "number": 5,
+            "unit": "tournaments"
+          },
+          "scope": "2002–2018 FIFA World Cups",
+          "sourceKey": "fourth-barca-rafa",
+          "evidence": "Barcelona says he played in five World Cups."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-camilo-vargas-arrival",
+      "subjectKey": "entity-camilo-vargas",
+      "clubKey": "entity-atlas",
+      "chapter": "career",
+      "title": "The Colombian keeper arrives",
+      "subtitle": "Vargas joined Atlas in 2019 and became a defining figure in the club’s new era.",
+      "story": [
+        {
+          "title": "A Bogotá beginning",
+          "body": "Atlas identifies Vargas as born in Bogotá and dates his arrival to July 5, 2019."
+        },
+        {
+          "title": "The work adds up",
+          "body": "The club’s May 2026 profile gives a dated career snapshot of his Atlas workload across competitions."
+        }
+      ],
+      "facts": [
+        {
+          "key": "camilo-birth",
+          "label": "Birth city",
+          "prompt": "In which city does Atlas FC say Camilo Vargas was born?",
+          "answers": [
+            "Bogotá"
+          ],
+          "distractors": [
+            "Medellín",
+            "Cali",
+            "Barranquilla"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Bogotá",
+            "text": "Bogotá"
+          },
+          "scope": "Camilo Vargas identity",
+          "sourceKey": "fourth-atlas-camilo",
+          "evidence": "The club biography describes Vargas as born in Bogotá."
+        },
+        {
+          "key": "camilo-arrival-date",
+          "label": "Atlas arrival",
+          "prompt": "On what date does Atlas FC say Camilo Vargas joined the club?",
+          "answers": [
+            "July 5, 2019"
+          ],
+          "distractors": [
+            "July 5, 2018",
+            "June 5, 2019",
+            "July 15, 2019"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "July 5, 2019",
+            "text": "July 5, 2019"
+          },
+          "scope": "Atlas arrival date",
+          "sourceKey": "fourth-atlas-camilo",
+          "evidence": "The official article dates his arrival to July 5, 2019."
+        },
+        {
+          "key": "camilo-snapshot-games",
+          "label": "Atlas workload",
+          "prompt": "How many matches had Camilo Vargas played for Atlas FC by the club profile dated 13 May 2026?",
+          "answers": [
+            "238"
+          ],
+          "distractors": [
+            "218",
+            "228",
+            "248"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "238",
+            "number": 238,
+            "unit": "matches"
+          },
+          "scope": "Atlas career snapshot dated May 13, 2026",
+          "sourceKey": "fourth-atlas-camilo",
+          "evidence": "The club’s May 13, 2026 article states that he had defended Atlas in 238 matches."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-camilo-vargas-title",
+      "subjectKey": "entity-camilo-vargas",
+      "clubKey": "entity-atlas",
+      "chapter": "moments",
+      "title": "A penalty save on Atlas’s 110th anniversary",
+      "subtitle": "On a celebratory night against Tigres, Vargas protected a 2–1 lead and reached a Liga MX milestone.",
+      "story": [
+        {
+          "title": "One decisive save",
+          "body": "In Atlas’s anniversary match with Tigres, Camilo Vargas stopped a Juan Francisco Brunetta penalty in the 82nd minute."
+        },
+        {
+          "title": "A recorded milestone",
+          "body": "The club counted it as Vargas’s 19th Liga MX penalty save. Atlas held on to win 2–1."
+        }
+      ],
+      "facts": [
+        {
+          "key": "camilo-110-match-rival",
+          "label": "Anniversary opponent",
+          "prompt": "Which club did Atlas FC defeat 2–1 in its 110th-anniversary match featuring Camilo Vargas’s penalty save?",
+          "answers": [
+            "Tigres UANL"
+          ],
+          "distractors": [
+            "Monterrey",
+            "Pumas UNAM",
+            "Guadalajara"
+          ],
+          "value": {
+            "kind": "entity",
+            "entityKey": "entity-tigres-uanl",
+            "display": "Tigres UANL"
+          },
+          "scope": "Atlas 110th-anniversary match, August 2026",
+          "sourceKey": "fourth-atlas-110-night",
+          "evidence": "Atlas’s official report identifies Tigres as the opponent and gives the final score as 2–1."
+        },
+        {
+          "key": "camilo-110-minute",
+          "label": "Penalty-save minute",
+          "prompt": "In which minute did Camilo Vargas save Juan Francisco Brunetta’s penalty for Atlas FC against Tigres in the 110th-anniversary match?",
+          "answers": [
+            "82nd minute"
+          ],
+          "distractors": [
+            "68th minute",
+            "80th minute",
+            "90th minute"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "82nd minute",
+            "text": "82nd minute"
+          },
+          "scope": "Atlas 110th-anniversary match, August 2026",
+          "sourceKey": "fourth-atlas-110-night",
+          "evidence": "The club’s match account says the penalty was awarded and saved in minute 82."
+        },
+        {
+          "key": "camilo-110-league-save-count",
+          "label": "Liga MX penalty milestone",
+          "prompt": "After Camilo Vargas saved Juan Francisco Brunetta’s penalty against Tigres, how many Liga MX penalties had Vargas saved in his career?",
+          "answers": [
+            "19"
+          ],
+          "distractors": [
+            "17",
+            "18",
+            "20"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "19",
+            "number": 19,
+            "unit": "penalties"
+          },
+          "scope": "Career Liga MX penalty saves as reported by Atlas in August 2026",
+          "sourceKey": "fourth-atlas-110-night",
+          "evidence": "Atlas says this was the 19th penalty Vargas had saved in his Liga MX career."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-camilo-vargas-records",
+      "subjectKey": "entity-camilo-vargas",
+      "clubKey": "entity-atlas",
+      "chapter": "records",
+      "title": "Records between the posts",
+      "subtitle": "Atlas’s official feature describes Vargas’s club and league benchmarks.",
+      "story": [
+        {
+          "title": "A league benchmark",
+          "body": "The club calls him the foreign player with the most penalty saves in Liga MX history."
+        },
+        {
+          "title": "An Atlas benchmark",
+          "body": "It also identifies him as the club’s record-holder for clean sheets and names his individual honors."
+        }
+      ],
+      "facts": [
+        {
+          "key": "camilo-foreign-pens",
+          "label": "League penalty record",
+          "prompt": "Which Liga MX penalty-saving distinction does Atlas FC assign to Camilo Vargas?",
+          "answers": [
+            "Most penalty saves by a foreign player"
+          ],
+          "distractors": [
+            "Most penalty saves by a Mexican player",
+            "Most goals by a foreign goalkeeper",
+            "Most appearances by a foreign defender"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Most penalty saves by a foreign player",
+            "text": "Most penalty saves by a foreign player"
+          },
+          "scope": "Liga MX historical record as described by Atlas",
+          "sourceKey": "fourth-atlas-camilo",
+          "evidence": "Atlas calls Vargas the foreigner with the most penalty saves in Liga MX history."
+        },
+        {
+          "key": "camilo-clean-sheets",
+          "label": "Atlas clean sheets",
+          "prompt": "Which Atlas FC goalkeeper record does the club say Camilo Vargas holds for clean sheets?",
+          "answers": [
+            "Most clean sheets"
+          ],
+          "distractors": [
+            "Most league goals",
+            "Most assists",
+            "Most consecutive starts"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Most clean sheets",
+            "text": "Most clean sheets"
+          },
+          "scope": "Atlas goalkeeper record",
+          "sourceKey": "fourth-atlas-camilo",
+          "evidence": "The club says he holds its record for clean sheets."
+        },
+        {
+          "key": "camilo-awards",
+          "label": "Individual recognition",
+          "prompt": "Which two individual Liga MX awards does Atlas FC list for Camilo Vargas?",
+          "answers": [
+            "Liga MX MVP and Golden Ball Best Goalkeeper"
+          ],
+          "distractors": [
+            "Golden Boot and Rookie of the Year",
+            "CONCACAF MVP and Best Defender",
+            "Copa MX MVP and Best Forward"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Liga MX MVP and Golden Ball Best Goalkeeper",
+            "text": "Liga MX MVP and Golden Ball Best Goalkeeper"
+          },
+          "scope": "Atlas award summary",
+          "sourceKey": "fourth-atlas-camilo",
+          "evidence": "Atlas states that his recognition included Liga MX MVP and the Golden Ball for Best Goalkeeper."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-camilo-vargas-legacy",
+      "subjectKey": "entity-camilo-vargas",
+      "clubKey": "entity-atlas",
+      "chapter": "moments",
+      "title": "Vargas on the Copa América final stage",
+      "subtitle": "His saves helped Colombia hold Argentina until extra time.",
+      "story": [
+        {
+          "title": "A final for Colombia",
+          "body": "Camilo Vargas started in goal for Colombia against Argentina in the 2024 Copa América final. In the 57th minute, he diverted Ángel Di María’s powerful shot for a corner."
+        },
+        {
+          "title": "The extra-time breakthrough",
+          "body": "The match remained scoreless through normal time. Vargas made another save in extra time, but Lautaro Martínez eventually beat him in the 112th minute to decide the final."
+        }
+      ],
+      "facts": [
+        {
+          "key": "camilo-copa-final-opponent-country",
+          "label": "Copa América final opponent",
+          "prompt": "Which country did Camilo Vargas face as Colombia’s starting goalkeeper in the 2024 Copa América final?",
+          "answers": [
+            "Argentina"
+          ],
+          "distractors": [
+            "Brazil",
+            "Uruguay",
+            "Chile"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Argentina",
+            "text": "Argentina"
+          },
+          "scope": "Camilo Vargas, Colombia, 2024 Copa América final against Argentina.",
+          "sourceKey": "fourth-copa-vargas-final",
+          "evidence": "CONMEBOL lists Vargas as Colombia’s starting goalkeeper against Argentina."
+        },
+        {
+          "key": "camilo-copa-final-save-minute",
+          "label": "Di María save",
+          "prompt": "In which minute did Vargas divert Ángel Di María’s powerful shot for a corner in the 2024 Copa América final?",
+          "answers": [
+            "57"
+          ],
+          "distractors": [
+            "47",
+            "67",
+            "77"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "57",
+            "number": 57,
+            "unit": "minute"
+          },
+          "scope": "Camilo Vargas, Colombia, 2024 Copa América final against Argentina.",
+          "sourceKey": "fourth-copa-vargas-final",
+          "evidence": "The match report locates the save at 57 minutes."
+        },
+        {
+          "key": "camilo-copa-final-goalscorer",
+          "label": "Extra-time breakthrough",
+          "prompt": "Which Argentina forward beat Camilo Vargas for the winning goal in the 112th minute of the 2024 Copa América final?",
+          "answers": [
+            "Lautaro Martínez"
+          ],
+          "distractors": [
+            "Julián Álvarez",
+            "Lionel Messi",
+            "Ángel Di María"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Lautaro Martínez",
+            "text": "Lautaro Martínez"
+          },
+          "scope": "Camilo Vargas, Colombia, 2024 Copa América final against Argentina.",
+          "sourceKey": "fourth-copa-vargas-final",
+          "evidence": "The report and scoring log identify Lautaro Martínez at 112 minutes."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-santos-rise",
+      "subjectKey": "entity-santos-laguna",
+      "clubKey": "entity-santos-laguna",
+      "chapter": "history",
+      "title": "From Segunda B to a summer crown",
+      "subtitle": "Santos’s official trophy chronology traces the club from a lower-division cup to later league titles.",
+      "story": [
+        {
+          "title": "An early trophy",
+          "body": "Santos’s trophy record starts with the 1983/84 Segunda División B title, an early marker in the club’s competitive history."
+        },
+        {
+          "title": "A new level of success",
+          "body": "The chronology later includes the 2001 Torneo de Verano title and the 2008 Clausura crown, showing the club’s later league successes."
+        }
+      ],
+      "facts": [
+        {
+          "key": "santos-early-cup",
+          "label": "Early competition",
+          "prompt": "Which competition did Santos Laguna win in the 1983/84 season, according to its official trophy list?",
+          "answers": [
+            "Segunda División B",
+            "Second Division B"
+          ],
+          "distractors": [
+            "Torneo de Verano",
+            "Torneo de Invierno",
+            "Clausura"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Segunda División B",
+            "text": "Segunda División B"
+          },
+          "scope": "Santos 1983/84 trophy history",
+          "sourceKey": "fourth-santos-trophies",
+          "evidence": "Santos’s official trophy list identifies its 1983/84 trophy as Torneo Segunda División B."
+        },
+        {
+          "key": "santos-summer-crown",
+          "label": "Summer title",
+          "prompt": "Which tournament does Santos Laguna list for its 2001 league championship?",
+          "answers": [
+            "Torneo de Verano",
+            "Summer Tournament"
+          ],
+          "distractors": [
+            "Torneo de Invierno",
+            "Clausura",
+            "Apertura"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Torneo de Verano",
+            "text": "Torneo de Verano"
+          },
+          "scope": "Santos 2001 league title",
+          "sourceKey": "fourth-santos-trophies",
+          "evidence": "Santos’s official trophy chronology lists Torneo de Verano in 2001."
+        },
+        {
+          "key": "santos-clausura-2008",
+          "label": "Later league title",
+          "prompt": "Which tournament does Santos Laguna list for its 2008 league title?",
+          "answers": [
+            "Clausura",
+            "Torneo Clausura"
+          ],
+          "distractors": [
+            "Apertura",
+            "Torneo de Verano",
+            "Torneo de Invierno"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Clausura",
+            "text": "Clausura"
+          },
+          "scope": "Santos 2008 league title",
+          "sourceKey": "fourth-santos-trophies",
+          "evidence": "Santos’s official trophy chronology lists Torneo Clausura in 2008."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-santos-2012-final",
+      "subjectKey": "entity-santos-laguna",
+      "clubKey": "entity-santos-laguna",
+      "chapter": "moments",
+      "title": "Santos wins the return leg but loses the 2011/12 Concacaf final",
+      "subtitle": "Santos beat Monterrey in Torreón, but Monterrey advanced on the 3–2 aggregate score.",
+      "story": [
+        {
+          "title": "A home-leg win",
+          "body": "In the 2011/12 Concacaf Champions League final return leg, Santos defeated Monterrey 2–1 at Estadio Corona on 25 April 2012."
+        },
+        {
+          "title": "The aggregate decides it",
+          "body": "Daniel Ludueña scored Santos’s opener, but Monterrey advanced 3–2 on aggregate and won the tournament."
+        }
+      ],
+      "facts": [
+        {
+          "key": "santos-2012-final-date",
+          "label": "Final date",
+          "prompt": "On what date did Santos Laguna host CF Monterrey in the 2011/12 Concacaf Champions League final return leg?",
+          "answers": [
+            "25 April 2012",
+            "April 25, 2012"
+          ],
+          "distractors": [
+            "13 May 2012",
+            "27 May 2012",
+            "20 May 2011"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "25 April 2012",
+            "text": "25 April 2012"
+          },
+          "scope": "2011/12 Concacaf Champions League final, return leg at Estadio Corona.",
+          "sourceKey": "fourth-concacaf-history",
+          "evidence": "Concacaf’s official history dates the return leg to 25 April 2012 at Estadio Corona."
+        },
+        {
+          "key": "santos-2012-first-scorer",
+          "label": "Santos opening scorer",
+          "prompt": "Who scored Santos Laguna’s opening goal against CF Monterrey in the 25 April 2012 Concacaf Champions League final return leg?",
+          "answers": [
+            "Daniel Ludueña"
+          ],
+          "distractors": [
+            "Oribe Peralta",
+            "Aldo de Nigris",
+            "Darwin Quintero"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Daniel Ludueña",
+            "text": "Daniel Ludueña"
+          },
+          "scope": "Santos–Monterrey, 2011/12 Concacaf Champions League final return leg.",
+          "sourceKey": "fourth-concacaf-history",
+          "evidence": "Concacaf’s official history lists Daniel Ludueña as Santos’s 45th-minute scorer in the 2–1 return-leg win."
+        },
+        {
+          "key": "santos-2012-aggregate",
+          "label": "Aggregate result",
+          "prompt": "What aggregate score did CF Monterrey post against Santos Laguna to win the 2011/12 Concacaf Champions League final?",
+          "answers": [
+            "3–2",
+            "Monterrey 3–2 Santos Laguna"
+          ],
+          "distractors": [
+            "2–1",
+            "2–2",
+            "4–2"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "3–2",
+            "text": "Monterrey 3–2 Santos Laguna"
+          },
+          "scope": "Two-leg 2011/12 Concacaf Champions League final; Santos won the second leg 2–1 but lost 3–2 aggregate.",
+          "sourceKey": "fourth-concacaf-history",
+          "evidence": "Concacaf’s official history records Santos 2–1 Monterrey in the return leg and Monterrey advancing 3–2 on aggregate.",
+          "scoreInput": {
+            "leftClubKey": "entity-monterrey",
+            "rightClubKey": "entity-santos-laguna",
+            "leftGoals": 3,
+            "rightGoals": 2
+          }
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-santos-title-era",
+      "subjectKey": "entity-santos-laguna",
+      "clubKey": "entity-santos-laguna",
+      "chapter": "moments",
+      "title": "Monterrey overturns Santos’s 2013 first-leg lead",
+      "subtitle": "A 4–2 return-leg win turned the Concacaf final after Santos had led by two goals.",
+      "story": [
+        {
+          "title": "A two-goal advantage",
+          "body": "Santos had won the first leg 2–0 in the 2013 Concacaf final. Monterrey needed a major response in the return leg."
+        },
+        {
+          "title": "The comeback lands",
+          "body": "On 1 May 2013, Monterrey won the return match 4–2. Aldo de Nigris scored twice as Rayados secured a third consecutive tournament title."
+        }
+      ],
+      "facts": [
+        {
+          "key": "santos-2013-date",
+          "label": "Return-leg date",
+          "prompt": "On what date did CF Monterrey complete its comeback against Santos Laguna in the 2012/13 Concacaf Champions League final?",
+          "answers": [
+            "1 May 2013",
+            "May 1, 2013",
+            "1 de mayo de 2013"
+          ],
+          "distractors": [
+            "24 April 2013",
+            "8 May 2013",
+            "1 May 2012"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "1 May 2013",
+            "text": "1 May 2013"
+          },
+          "scope": "CF Monterrey vs Santos Laguna, 2013 Concacaf final return leg",
+          "sourceKey": "fourth-concacaf-memorable",
+          "evidence": "Concacaf dates the return-leg comeback to 1 May 2013."
+        },
+        {
+          "key": "santos-2013-score",
+          "label": "Return-leg score",
+          "prompt": "What was CF Monterrey’s score against Santos Laguna in the return leg of the 2012/13 Concacaf Champions League final?",
+          "answers": [
+            "4–2",
+            "4-2"
+          ],
+          "distractors": [
+            "3–2",
+            "2–1",
+            "4–1"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "4–2",
+            "text": "4–2"
+          },
+          "scope": "CF Monterrey vs Santos Laguna, 2013 Concacaf final return leg",
+          "sourceKey": "fourth-concacaf-memorable",
+          "evidence": "Concacaf reports Monterrey won the return leg 4–2.",
+          "scoreInput": {
+            "leftClubKey": "entity-monterrey",
+            "rightClubKey": "entity-santos-laguna",
+            "leftGoals": 4,
+            "rightGoals": 2
+          }
+        },
+        {
+          "key": "santos-2013-brace",
+          "label": "Monterrey scorer",
+          "prompt": "Which CF Monterrey forward scored twice against Santos Laguna in the 2012/13 Concacaf Champions League final return leg?",
+          "answers": [
+            "Aldo de Nigris"
+          ],
+          "distractors": [
+            "Humberto Suazo",
+            "Neri Cardozo",
+            "Oribe Peralta"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Aldo de Nigris",
+            "text": "Aldo de Nigris"
+          },
+          "scope": "CF Monterrey vs Santos Laguna, 2013 Concacaf final return leg",
+          "sourceKey": "fourth-concacaf-memorable",
+          "evidence": "Concacaf says Aldo de Nigris scored a brace in the 4–2 return-leg win."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-borgetti-arrival",
+      "subjectKey": "entity-jared-borgetti",
+      "clubKey": "entity-santos-laguna",
+      "chapter": "career",
+      "title": "Borgetti’s Santos spell spans eight years",
+      "subtitle": "His official club biography traces his run from a move out of Atlas through Clausura 2004.",
+      "story": [
+        {
+          "title": "A move from Atlas",
+          "body": "Santos records that Borgetti joined from Atlas for Invierno 1996, the start of a long spell with the Guerreros."
+        },
+        {
+          "title": "A long run in La Laguna",
+          "body": "The club lists his Santos seasons from Invierno 1996 through Clausura 2004. This lesson follows that career span rather than repeating his 16-goal first campaign."
+        }
+      ],
+      "facts": [
+        {
+          "key": "borgetti-transfer",
+          "label": "Previous club",
+          "prompt": "From which club was Jared Borgetti transferred to Santos Laguna for Invierno 1996?",
+          "answers": [
+            "Atlas"
+          ],
+          "distractors": [
+            "Puebla",
+            "Monterrey",
+            "Toluca"
+          ],
+          "value": {
+            "kind": "entity",
+            "entityKey": "entity-atlas",
+            "display": "Atlas"
+          },
+          "scope": "Jared Borgetti arrival",
+          "sourceKey": "fourth-santos-honor",
+          "evidence": "The club says Borgetti came through Atlas and was transferred to Santos for Invierno 1996."
+        },
+        {
+          "key": "borgetti-season-arrival",
+          "label": "Arrival tournament",
+          "prompt": "In which Liga MX tournament did Jared Borgetti join Santos Laguna from Atlas?",
+          "answers": [
+            "Invierno 1996"
+          ],
+          "distractors": [
+            "Verano 1996",
+            "Invierno 1997",
+            "Verano 1998"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Invierno 1996",
+            "text": "Invierno 1996"
+          },
+          "scope": "Jared Borgetti arrival",
+          "sourceKey": "fourth-santos-honor",
+          "evidence": "His official biography dates the transfer to Invierno 1996."
+        },
+        {
+          "key": "borgetti-santos-last-season",
+          "label": "Last Santos season",
+          "prompt": "Which Liga MX tournament does Santos Laguna list as Jared Borgetti’s final season with the club?",
+          "answers": [
+            "Clausura 2004"
+          ],
+          "distractors": [
+            "Apertura 2003",
+            "Clausura 2003",
+            "Apertura 2004"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Clausura 2004",
+            "text": "Clausura 2004"
+          },
+          "scope": "Santos Laguna career span, Invierno 1996–Clausura 2004",
+          "sourceKey": "fourth-santos-honor",
+          "evidence": "Santos’s official biography lists Borgetti’s seasons as Invierno 1996 through Clausura 2004."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-borgetti-goleo",
+      "subjectKey": "entity-jared-borgetti",
+      "clubKey": "entity-santos-laguna",
+      "chapter": "moments",
+      "title": "Two scoring crowns",
+      "subtitle": "Borgetti won consecutive Santos scoring titles across Invierno 2000 and Verano 2001.",
+      "story": [
+        {
+          "title": "Two seasons at the top",
+          "body": "The club records his scoring championships in both tournaments."
+        },
+        {
+          "title": "A 22-goal summer",
+          "body": "His Verano 2001 campaign included 22 goals, as noted in Santos’s official account."
+        }
+      ],
+      "facts": [
+        {
+          "key": "borgetti-goleo-one",
+          "label": "First scoring crown",
+          "prompt": "In which Liga MX tournament did Jared Borgetti win his first Santos Laguna scoring title?",
+          "answers": [
+            "Invierno 2000"
+          ],
+          "distractors": [
+            "Verano 2000",
+            "Invierno 2001",
+            "Verano 2002"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Invierno 2000",
+            "text": "Invierno 2000"
+          },
+          "scope": "Santos scoring titles",
+          "sourceKey": "fourth-santos-honor",
+          "evidence": "The club names Invierno 2000 as one of his two scoring-title tournaments."
+        },
+        {
+          "key": "borgetti-goleo-two",
+          "label": "Second scoring crown",
+          "prompt": "In which later Liga MX tournament did Jared Borgetti win his second Santos Laguna scoring title?",
+          "answers": [
+            "Verano 2001"
+          ],
+          "distractors": [
+            "Invierno 2001",
+            "Verano 2000",
+            "Invierno 2002"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Verano 2001",
+            "text": "Verano 2001"
+          },
+          "scope": "Santos scoring titles",
+          "sourceKey": "fourth-santos-honor",
+          "evidence": "The official biography lists Verano 2001 as his second scoring title."
+        },
+        {
+          "key": "borgetti-22",
+          "label": "Verano 2001 goals",
+          "prompt": "How many goals did Jared Borgetti score for Santos Laguna in the Verano 2001 scoring-title campaign?",
+          "answers": [
+            "22"
+          ],
+          "distractors": [
+            "18",
+            "20",
+            "24"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "22",
+            "number": 22,
+            "unit": "goals"
+          },
+          "scope": "Verano 2001 scoring title",
+          "sourceKey": "fourth-santos-honor",
+          "evidence": "Santos states that he scored 22 goals in Verano 2001."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-borgetti-club-records",
+      "subjectKey": "entity-jared-borgetti",
+      "clubKey": "entity-santos-laguna",
+      "chapter": "records",
+      "title": "A club scoring landmark",
+      "subtitle": "Santos’s history page distinguishes Borgetti’s league figures from his broader club totals.",
+      "story": [
+        {
+          "title": "League record",
+          "body": "The club credits him with 189 goals in 295 league appearances and calls him its all-time leading scorer."
+        },
+        {
+          "title": "All competitions",
+          "body": "Across his full Santos record the article gives 314 matches and 205 goals."
+        }
+      ],
+      "facts": [
+        {
+          "key": "borgetti-league-goals",
+          "label": "League goals",
+          "prompt": "How many Liga MX goals did Jared Borgetti score for Santos Laguna, according to the club profile?",
+          "answers": [
+            "189"
+          ],
+          "distractors": [
+            "169",
+            "179",
+            "199"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "189",
+            "number": 189,
+            "unit": "goals"
+          },
+          "scope": "Santos league record",
+          "sourceKey": "fourth-santos-honor",
+          "evidence": "The club records 189 goals in 295 league matches."
+        },
+        {
+          "key": "borgetti-league-apps",
+          "label": "League appearances",
+          "prompt": "How many Liga MX appearances does Santos Laguna credit Jared Borgetti with?",
+          "answers": [
+            "295"
+          ],
+          "distractors": [
+            "275",
+            "285",
+            "305"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "295",
+            "number": 295,
+            "unit": "appearances"
+          },
+          "scope": "Santos league record",
+          "sourceKey": "fourth-santos-honor",
+          "evidence": "The club lists 295 league matches for Borgetti."
+        },
+        {
+          "key": "borgetti-all-goals",
+          "label": "All-competition goals",
+          "prompt": "How many goals does Santos Laguna list for Jared Borgetti across his 314 appearances in all competitions?",
+          "answers": [
+            "205"
+          ],
+          "distractors": [
+            "185",
+            "195",
+            "215"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "205",
+            "number": 205,
+            "unit": "goals"
+          },
+          "scope": "Santos all-competition record",
+          "sourceKey": "fourth-santos-honor",
+          "evidence": "The club says his total Santos record was 314 matches and 205 goals."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-borgetti-honors",
+      "subjectKey": "entity-jared-borgetti",
+      "clubKey": "entity-santos-laguna",
+      "chapter": "legacy",
+      "title": "Individual honors beyond the club",
+      "subtitle": "Borgetti’s Santos profile records domestic honors and his Mexico scoring total at the time of publication.",
+      "story": [
+        {
+          "title": "Recognition in Mexico",
+          "body": "Santos says he was named Mexican football’s best player and best forward in 2000 and 2001, then best forward again in 2002."
+        },
+        {
+          "title": "National-team milestone",
+          "body": "The same profile records 46 Mexico goals and lists the major tournaments he played while a Santos player."
+        }
+      ],
+      "facts": [
+        {
+          "key": "borgetti-best-player",
+          "label": "Best player awards",
+          "prompt": "In which two calendar years does Santos Laguna say Jared Borgetti was named Mexican football’s best player?",
+          "answers": [
+            "2000 and 2001"
+          ],
+          "distractors": [
+            "1998 and 1999",
+            "2001 and 2002",
+            "2002 and 2003"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "2000 and 2001",
+            "text": "2000 and 2001"
+          },
+          "scope": "Santos-published honors history",
+          "sourceKey": "fourth-santos-honor",
+          "evidence": "The club states he was distinguished as best player in 2000 and 2001."
+        },
+        {
+          "key": "borgetti-forward-2002",
+          "label": "Best forward award",
+          "prompt": "In which calendar year does Santos Laguna list Jared Borgetti as Mexico’s best forward?",
+          "answers": [
+            "2002"
+          ],
+          "distractors": [
+            "2000",
+            "2001",
+            "2003"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "2002",
+            "number": 2002,
+            "unit": "year"
+          },
+          "scope": "Santos-published honors history",
+          "sourceKey": "fourth-santos-honor",
+          "evidence": "The profile names him best forward in 2002."
+        },
+        {
+          "key": "borgetti-mexico-goals",
+          "label": "Mexico goals",
+          "prompt": "According to FIFA’s 28 May 2017 report, how many Mexico goals had Jared Borgetti scored before Javier Hernández surpassed him?",
+          "answers": [
+            "46"
+          ],
+          "distractors": [
+            "36",
+            "41",
+            "51"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "46 goals",
+            "number": 46,
+            "unit": "goals"
+          },
+          "scope": "Mexico senior international goals, as a historical record snapshot immediately before Javier Hernández reached 47 goals on 27 May 2017.",
+          "sourceKey": "fourth-fifa-borgetti",
+          "evidence": "FIFA reports that Hernández’s 47th international goal moved him past Borgetti and calls 46 the former Mexico scoring record."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-oswaldo-arrival",
+      "subjectKey": "entity-oswaldo-sanchez",
+      "clubKey": "entity-santos-laguna",
+      "chapter": "career",
+      "title": "A goalkeeper arrives to steady Santos",
+      "subtitle": "Santos recruited Oswaldo for a specific challenge in Clausura 2007.",
+      "story": [
+        {
+          "title": "A mission in 2007",
+          "body": "Santos says Sánchez joined in Clausura 2007 to help the side remain in the First Division."
+        },
+        {
+          "title": "A Guadalajara native",
+          "body": "The official biography identifies his birthplace and gives his birth date."
+        }
+      ],
+      "facts": [
+        {
+          "key": "oswaldo-born-city",
+          "label": "Birthplace",
+          "prompt": "In which city does Santos Laguna say goalkeeper Oswaldo Javier Sánchez was born?",
+          "answers": [
+            "Guadalajara, Jalisco"
+          ],
+          "distractors": [
+            "Torreón, Coahuila",
+            "Monterrey, Nuevo León",
+            "Mexico City"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Guadalajara, Jalisco",
+            "text": "Guadalajara, Jalisco"
+          },
+          "scope": "Oswaldo Sánchez identity",
+          "sourceKey": "fourth-santos-honor",
+          "evidence": "The club profile lists Guadalajara, Jalisco as his birthplace."
+        },
+        {
+          "key": "oswaldo-born-date",
+          "label": "Birth date",
+          "prompt": "What birth date does Santos Laguna list for goalkeeper Oswaldo Javier Sánchez?",
+          "answers": [
+            "September 21, 1973"
+          ],
+          "distractors": [
+            "September 12, 1973",
+            "September 21, 1972",
+            "October 21, 1973"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "September 21, 1973",
+            "text": "September 21, 1973"
+          },
+          "scope": "Oswaldo Sánchez identity",
+          "sourceKey": "fourth-santos-honor",
+          "evidence": "The official biography lists 09/21/1973."
+        },
+        {
+          "key": "oswaldo-arrival",
+          "label": "Santos arrival",
+          "prompt": "In which Liga MX tournament did goalkeeper Oswaldo Sánchez join Santos Laguna?",
+          "answers": [
+            "Clausura 2007"
+          ],
+          "distractors": [
+            "Apertura 2006",
+            "Apertura 2007",
+            "Clausura 2008"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Clausura 2007",
+            "text": "Clausura 2007"
+          },
+          "scope": "Santos career arrival",
+          "sourceKey": "fourth-santos-honor",
+          "evidence": "Santos says he joined the club in Clausura 2007."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-oswaldo-service",
+      "subjectKey": "entity-oswaldo-sanchez",
+      "clubKey": "entity-santos-laguna",
+      "chapter": "records",
+      "title": "Oswaldo Sánchez’s Santos service records",
+      "subtitle": "Santos’s dated profile records his captaincy, matches and playing time.",
+      "story": [
+        {
+          "title": "A captain for sixteen tournaments",
+          "body": "Santos Laguna records Sánchez as its starting goalkeeper and captain for 16 tournaments."
+        },
+        {
+          "title": "A substantial club career",
+          "body": "The club profile lists 296 appearances and more than 26,000 minutes for the goalkeeper."
+        }
+      ],
+      "facts": [
+        {
+          "key": "oswaldo-tournaments",
+          "label": "Tournaments",
+          "prompt": "For how many Liga MX tournaments does Santos Laguna list Oswaldo Sánchez as its starting goalkeeper and captain?",
+          "answers": [
+            "16"
+          ],
+          "distractors": [
+            "12",
+            "14",
+            "18"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "16",
+            "number": 16,
+            "unit": "tournaments"
+          },
+          "scope": "Santos tenure",
+          "sourceKey": "fourth-santos-honor",
+          "evidence": "The club profile says he held those roles during 16 tournaments."
+        },
+        {
+          "key": "oswaldo-matches",
+          "label": "Matches",
+          "prompt": "How many total club matches does Santos Laguna list for goalkeeper Oswaldo Sánchez?",
+          "answers": [
+            "296"
+          ],
+          "distractors": [
+            "269",
+            "286",
+            "306"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "296",
+            "number": 296,
+            "unit": "matches"
+          },
+          "scope": "Santos tenure",
+          "sourceKey": "fourth-santos-honor",
+          "evidence": "The biography gives 296 total matches."
+        },
+        {
+          "key": "oswaldo-minutes",
+          "label": "Minutes",
+          "prompt": "More than how many minutes does Santos Laguna say goalkeeper Oswaldo Sánchez played for the club?",
+          "answers": [
+            "26000"
+          ],
+          "distractors": [
+            "16000",
+            "22000",
+            "30000"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "26000",
+            "number": 26000,
+            "unit": "minutes"
+          },
+          "scope": "Santos tenure",
+          "sourceKey": "fourth-santos-honor",
+          "evidence": "The profile says he played more than 26,000 minutes."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-oswaldo-championships",
+      "subjectKey": "entity-oswaldo-sanchez",
+      "clubKey": "entity-santos-laguna",
+      "chapter": "moments",
+      "title": "Two championship celebrations",
+      "subtitle": "Sánchez was captain and lifted Santos trophies in two Clausura tournaments.",
+      "story": [
+        {
+          "title": "Clausura 2008",
+          "body": "The club’s honor roll records 2008 as a title year and names Sánchez as the player who lifted the trophy."
+        },
+        {
+          "title": "A second title",
+          "body": "Sánchez lifted another Santos league trophy in Clausura 2012. In the following 2012/13 Concacaf Champions League campaign, he earned the Golden Glove as the competition’s best goalkeeper."
+        }
+      ],
+      "facts": [
+        {
+          "key": "oswaldo-first-title",
+          "label": "First trophy year",
+          "prompt": "In which year did Santos Laguna captain Oswaldo Sánchez first lift a league trophy with the club?",
+          "answers": [
+            "2008"
+          ],
+          "distractors": [
+            "2006",
+            "2010",
+            "2012"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "2008",
+            "number": 2008,
+            "unit": "year"
+          },
+          "scope": "Santos title honors",
+          "sourceKey": "fourth-santos-honor",
+          "evidence": "The club says he lifted the Clausura 2008 and Clausura 2012 trophies."
+        },
+        {
+          "key": "oswaldo-second-title",
+          "label": "Second trophy year",
+          "prompt": "In which Liga MX tournament did Santos Laguna captain Oswaldo Sánchez lift his later league trophy?",
+          "answers": [
+            "2012"
+          ],
+          "distractors": [
+            "2009",
+            "2011",
+            "2014"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "2012",
+            "number": 2012,
+            "unit": "year"
+          },
+          "scope": "Santos title honors",
+          "sourceKey": "fourth-santos-honor",
+          "evidence": "The official biography names Clausura 2012 as a championship he lifted."
+        },
+        {
+          "key": "oswaldo-concacaf-golden-glove",
+          "label": "Concacaf Champions League Golden Glove",
+          "prompt": "Which individual goalkeeper award did Oswaldo Sánchez receive in the 2012/13 Concacaf Champions League?",
+          "answers": [
+            "Golden Glove",
+            "Best Goalkeeper"
+          ],
+          "distractors": [
+            "Golden Boot",
+            "Golden Ball",
+            "Best Young Player"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Golden Glove",
+            "text": "Golden Glove"
+          },
+          "scope": "Concacaf Champions League 2012/13 individual award; distinct from Sánchez’s 2003 Gold Cup Best Goalkeeper award.",
+          "sourceKey": "fourth-concacaf-statistics",
+          "evidence": "Concacaf’s official finals statistics lists Oswaldo Sánchez (Santos Laguna) as the 2012/13 Golden Glove winner."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-oswaldo-finals",
+      "subjectKey": "entity-oswaldo-sanchez",
+      "clubKey": "entity-santos-laguna",
+      "chapter": "moments",
+      "title": "Sánchez wins the 2003 Gold Cup final",
+      "subtitle": "Mexico defeated Brazil, and Sánchez earned the tournament’s goalkeeper award.",
+      "story": [
+        {
+          "title": "A final against Brazil",
+          "body": "Oswaldo Sánchez was part of Mexico’s 2003 Gold Cup team that beat Brazil in the final, a win he later recalled as an important moment in his national-team career."
+        },
+        {
+          "title": "An individual distinction",
+          "body": "Concacaf reports that Sánchez also received the tournament’s Best Goalkeeper award, adding an individual honour to Mexico’s title."
+        }
+      ],
+      "facts": [
+        {
+          "key": "oswaldo-2003-final-opponent-country",
+          "label": "Final opponent",
+          "prompt": "Which national team did Mexico defeat in the 2003 Concacaf Gold Cup final, in which Oswaldo Sánchez played?",
+          "answers": [
+            "Brazil"
+          ],
+          "distractors": [
+            "Colombia",
+            "Uruguay",
+            "Argentina"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Brazil",
+            "text": "Brazil"
+          },
+          "scope": "Mexico vs Brazil, 2003 Gold Cup final",
+          "sourceKey": "fourth-concacaf-oswaldo",
+          "evidence": "Concacaf says Mexico beat Brazil 1–0 in the 2003 Gold Cup final."
+        },
+        {
+          "key": "oswaldo-2003-final-score",
+          "label": "Final score",
+          "prompt": "What was Mexico’s score against Brazil in the 2003 Concacaf Gold Cup final, in which Oswaldo Sánchez played?",
+          "answers": [
+            "1–0",
+            "1-0"
+          ],
+          "distractors": [
+            "2–0",
+            "2–1",
+            "3–1"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "1–0",
+            "text": "1–0"
+          },
+          "scope": "Mexico vs Brazil, 2003 Gold Cup final",
+          "sourceKey": "fourth-concacaf-oswaldo",
+          "evidence": "Concacaf records Mexico’s 2003 Gold Cup final win over Brazil as 1–0."
+        },
+        {
+          "key": "oswaldo-2003-award",
+          "label": "Individual award",
+          "prompt": "Which individual goalkeeper award did Oswaldo Sánchez earn during Mexico’s 2003 Concacaf Gold Cup triumph?",
+          "answers": [
+            "Best Goalkeeper",
+            "Best goalkeeper of the tournament"
+          ],
+          "distractors": [
+            "Golden Boot",
+            "Best Player",
+            "Best Young Player"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Best Goalkeeper",
+            "text": "Best Goalkeeper"
+          },
+          "scope": "Oswaldo Sánchez, 2003 Gold Cup",
+          "sourceKey": "fourth-concacaf-oswaldo",
+          "evidence": "Concacaf says Sánchez won the Best Goalkeeper award in the 2003 Gold Cup."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-puebla-rebuilding",
+      "subjectKey": "entity-puebla",
+      "clubKey": "entity-puebla",
+      "chapter": "history",
+      "title": "A pause, then a return",
+      "subtitle": "Puebla’s early success was followed by financial hardship and a temporary withdrawal from professional football.",
+      "story": [
+        {
+          "title": "The second cup",
+          "body": "The club records a second Copa México in 1952–53, beating León in the final."
+        },
+        {
+          "title": "A difficult interruption",
+          "body": "Puebla says financial crisis and the Parque El Mirador fire forced it to pause; eight years later it returned in the Second Division."
+        }
+      ],
+      "facts": [
+        {
+          "key": "puebla-second-cup-season",
+          "label": "Second Copa México",
+          "prompt": "In which season did Club Puebla win its second Copa México title?",
+          "answers": [
+            "1952–53"
+          ],
+          "distractors": [
+            "1950–51",
+            "1951–52",
+            "1953–54"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "1952–53",
+            "text": "1952–53"
+          },
+          "scope": "Puebla early trophy history",
+          "sourceKey": "fourth-puebla-history",
+          "evidence": "The official history names the second Copa title as 1952–1953."
+        },
+        {
+          "key": "puebla-second-cup-opponent",
+          "label": "Cup final opponent",
+          "prompt": "Which club did Club Puebla defeat 4–1 in the 1953 Copa México final?",
+          "answers": [
+            "Club León",
+            "León"
+          ],
+          "distractors": [
+            "Club América",
+            "Atlas",
+            "Tigres UANL"
+          ],
+          "value": {
+            "kind": "entity",
+            "entityKey": "entity-leon",
+            "display": "Club León"
+          },
+          "scope": "Copa México 1952–53",
+          "sourceKey": "fourth-puebla-history",
+          "evidence": "The club says Puebla beat León 4–1 on May 31, 1953."
+        },
+        {
+          "key": "puebla-return-division",
+          "label": "Return division",
+          "prompt": "In which division did Club Puebla resume professional football after its temporary withdrawal?",
+          "answers": [
+            "Second Division"
+          ],
+          "distractors": [
+            "First Division",
+            "Tercera División",
+            "Segunda División B"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Second Division",
+            "text": "Second Division"
+          },
+          "scope": "Puebla return from interruption",
+          "sourceKey": "fourth-puebla-history",
+          "evidence": "The club says it returned to activity eight years later in the Segunda División."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-puebla-1983-final",
+      "subjectKey": "entity-puebla",
+      "clubKey": "entity-puebla",
+      "chapter": "moments",
+      "title": "The first league title goes to penalties",
+      "subtitle": "In 1983, Puebla and Guadalajara remained level over two legs before a shootout settled the final.",
+      "story": [
+        {
+          "title": "A tied final",
+          "body": "Puebla’s history says the aggregate score was 2–2 against Guadalajara."
+        },
+        {
+          "title": "One kick at a time",
+          "body": "At Estadio Cuauhtémoc, Puebla won the shootout 7–6 for its first professional-era league title."
+        }
+      ],
+      "facts": [
+        {
+          "key": "puebla-1983-opponent",
+          "label": "Final opponent",
+          "prompt": "Which club did Club Puebla face in the 1983 Liga final that ended with a penalty shootout?",
+          "answers": [
+            "Guadalajara"
+          ],
+          "distractors": [
+            "Club León",
+            "Club América",
+            "Toluca"
+          ],
+          "value": {
+            "kind": "entity",
+            "entityKey": "entity-chivas",
+            "display": "Guadalajara"
+          },
+          "scope": "1982–83 Liga final",
+          "sourceKey": "fourth-puebla-history",
+          "evidence": "The official history identifies Guadalajara as Puebla’s final opponent."
+        },
+        {
+          "key": "puebla-1983-shootout",
+          "label": "Shootout score",
+          "prompt": "What was the penalty-shootout score when Club Puebla defeated Guadalajara in the 1983 league final?",
+          "answers": [
+            "7–6"
+          ],
+          "distractors": [
+            "5–4",
+            "6–5",
+            "8–7"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "7–6",
+            "text": "7–6"
+          },
+          "scope": "1983 final at Estadio Cuauhtémoc",
+          "sourceKey": "fourth-puebla-history",
+          "evidence": "The club says it won the penalty shootout 7–6."
+        },
+        {
+          "key": "puebla-1983-date",
+          "label": "Final date",
+          "prompt": "On what date did Club Puebla win its first professional-era league title against Guadalajara?",
+          "answers": [
+            "May 29, 1983"
+          ],
+          "distractors": [
+            "May 19, 1983",
+            "May 29, 1982",
+            "June 29, 1983"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "May 29, 1983",
+            "text": "May 29, 1983"
+          },
+          "scope": "1982–83 Liga final",
+          "sourceKey": "fourth-puebla-history",
+          "evidence": "The club dates the title and shootout to Sunday, May 29, 1983."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-puebla-concacaf",
+      "subjectKey": "entity-puebla",
+      "clubKey": "entity-puebla",
+      "chapter": "moments",
+      "title": "Puebla wins its first international title",
+      "subtitle": "In September 1991, the Franja completed a two-leg continental final against Trinidad and Tobago’s Police Sports Club.",
+      "story": [
+        {
+          "title": "A lead at home",
+          "body": "Puebla won the first leg 3–1 at Estadio Cuauhtémoc."
+        },
+        {
+          "title": "A draw seals it",
+          "body": "A 1–1 draw in Port of Spain on September 24 secured the CONCACAF title."
+        }
+      ],
+      "facts": [
+        {
+          "key": "puebla-91-opponent",
+          "label": "International opponent",
+          "prompt": "Which club faced Club Puebla in the 1991 Concacaf Champions’ Cup final?",
+          "answers": [
+            "Police Sports Club"
+          ],
+          "distractors": [
+            "W Connection",
+            "Defence Force",
+            "San Juan Jabloteh"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Police Sports Club",
+            "text": "Police Sports Club"
+          },
+          "scope": "1991 CONCACAF final",
+          "sourceKey": "fourth-puebla-history",
+          "evidence": "The club names Police Sports Club of Trinidad and Tobago as its opponent."
+        },
+        {
+          "key": "puebla-91-away-score",
+          "label": "Away-leg score",
+          "prompt": "What was the score when Club Puebla clinched the 1991 Concacaf Champions’ Cup title against Police Sports Club in the second leg?",
+          "answers": [
+            "1–1"
+          ],
+          "distractors": [
+            "0–0",
+            "2–1",
+            "2–2"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "1–1",
+            "text": "1–1"
+          },
+          "scope": "1991 CONCACAF final second leg",
+          "sourceKey": "fourth-puebla-history",
+          "evidence": "Puebla says the September 24 second leg ended 1–1."
+        },
+        {
+          "key": "puebla-91-venue",
+          "label": "Second-leg city",
+          "prompt": "In which city did Club Puebla draw Police Sports Club in the second leg of the 1991 Concacaf Champions’ Cup final?",
+          "answers": [
+            "Port of Spain"
+          ],
+          "distractors": [
+            "San Fernando",
+            "Puebla City",
+            "Kingston"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Port of Spain",
+            "text": "Port of Spain"
+          },
+          "scope": "1991 CONCACAF final",
+          "sourceKey": "fourth-puebla-history",
+          "evidence": "The official history places the deciding draw in Port of Spain."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-joaquin-velazquez-start",
+      "subjectKey": "entity-joaquin-velazquez",
+      "clubKey": "entity-puebla",
+      "chapter": "career",
+      "title": "A Puebla defender returns from Santos",
+      "subtitle": "Velázquez debuted in 1995–96, left for Santos the next year, then returned to La Franja.",
+      "story": [
+        {
+          "title": "A first appearance",
+          "body": "Puebla dates his debut to Jornada 1 against Toros Neza."
+        },
+        {
+          "title": "A route through La Laguna",
+          "body": "The club says he was loaned to Santos in 1996 and came back in Invierno 1998, the first Puebla player to arrive from Santos."
+        }
+      ],
+      "facts": [
+        {
+          "key": "joaquin-debut-season",
+          "label": "Debut season",
+          "prompt": "In which Liga MX season did Joaquín Velázquez make his Club Puebla debut?",
+          "answers": [
+            "1995–96"
+          ],
+          "distractors": [
+            "1994–95",
+            "1996–97",
+            "1997–98"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "1995–96",
+            "text": "1995–96"
+          },
+          "scope": "Joaquín Velázquez career",
+          "sourceKey": "fourth-puebla-joaquin",
+          "evidence": "The club dates his debut to Jornada 1 of 1995–1996."
+        },
+        {
+          "key": "joaquin-debut-rival",
+          "label": "Debut opponent",
+          "prompt": "Which team did Club Puebla face when Joaquín Velázquez made his league debut in Jornada 1 of 1995–96?",
+          "answers": [
+            "Toros Neza"
+          ],
+          "distractors": [
+            "Santos Laguna",
+            "Tigres",
+            "Cruz Azul"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Toros Neza",
+            "text": "Toros Neza"
+          },
+          "scope": "Jornada 1, 1995–96",
+          "sourceKey": "fourth-puebla-joaquin",
+          "evidence": "Puebla says he debuted against Toros Neza."
+        },
+        {
+          "key": "joaquin-return",
+          "label": "Return tournament",
+          "prompt": "In which tournament did Joaquín Velázquez return to Club Puebla from Santos Laguna?",
+          "answers": [
+            "Invierno 1998"
+          ],
+          "distractors": [
+            "Verano 1997",
+            "Invierno 1997",
+            "Verano 1999"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Invierno 1998",
+            "text": "Invierno 1998"
+          },
+          "scope": "Joaquín Velázquez career",
+          "sourceKey": "fourth-puebla-joaquin",
+          "evidence": "The retrospective dates his return to Invierno 1998."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-joaquin-ascenso",
+      "subjectKey": "entity-joaquin-velazquez",
+      "clubKey": "entity-puebla",
+      "chapter": "moments",
+      "title": "Captain on Puebla’s road back",
+      "subtitle": "Velázquez captained Puebla to a second-tier title and then to promotion.",
+      "story": [
+        {
+          "title": "A captain’s championship",
+          "body": "The club credits him with winning the Primera División A Apertura 2006 as captain."
+        },
+        {
+          "title": "The next step",
+          "body": "Puebla secured promotion in Clausura 2007, restoring its place in the top division."
+        }
+      ],
+      "facts": [
+        {
+          "key": "joaquin-captain-title",
+          "label": "Second-tier title",
+          "prompt": "Which Primera División A tournament did Joaquín Velázquez win as Club Puebla captain?",
+          "answers": [
+            "Apertura 2006"
+          ],
+          "distractors": [
+            "Clausura 2006",
+            "Apertura 2005",
+            "Clausura 2007"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Apertura 2006",
+            "text": "Apertura 2006"
+          },
+          "scope": "Puebla promotion campaign",
+          "sourceKey": "fourth-puebla-joaquin",
+          "evidence": "Puebla says he captained the club to the Primera División A championship in Apertura 2006."
+        },
+        {
+          "key": "joaquin-ascenso-season",
+          "label": "Promotion season",
+          "prompt": "In which tournament did Club Puebla earn promotion to the Primera División with Joaquín Velázquez?",
+          "answers": [
+            "Clausura 2007"
+          ],
+          "distractors": [
+            "Apertura 2006",
+            "Clausura 2006",
+            "Apertura 2007"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Clausura 2007",
+            "text": "Clausura 2007"
+          },
+          "scope": "Puebla promotion campaign",
+          "sourceKey": "fourth-puebla-joaquin",
+          "evidence": "The retrospective places the promotion in Clausura 2007."
+        },
+        {
+          "key": "joaquin-returning-club",
+          "label": "Club he returned from",
+          "prompt": "From which club did Joaquín Velázquez return to Club Puebla before the Apertura 2006 title and Clausura 2007 promotion?",
+          "answers": [
+            "Santos Laguna"
+          ],
+          "distractors": [
+            "Atlas",
+            "Pachuca",
+            "Cruz Azul"
+          ],
+          "value": {
+            "kind": "entity",
+            "entityKey": "entity-santos-laguna",
+            "display": "Santos Laguna"
+          },
+          "scope": "Velázquez’s return to Puebla in Invierno 1998 after a 1996 loan to Santos Laguna.",
+          "sourceKey": "fourth-puebla-joaquin",
+          "evidence": "Puebla says Velázquez was loaned to Santos Laguna in 1996 and returned to the club during Invierno 1998."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-joaquin-appearances",
+      "subjectKey": "entity-joaquin-velazquez",
+      "clubKey": "entity-puebla",
+      "chapter": "records",
+      "title": "A long Puebla service",
+      "subtitle": "Velázquez’s Puebla totals place him among the club’s heavily used players.",
+      "story": [
+        {
+          "title": "Games and minutes",
+          "body": "The official retrospective credits him with 254 appearances and 21,144 minutes."
+        },
+        {
+          "title": "A defender who scored",
+          "body": "It also records nine goals, four of which decided wins."
+        }
+      ],
+      "facts": [
+        {
+          "key": "joaquin-matches",
+          "label": "Appearances",
+          "prompt": "How many matches does Club Puebla credit Joaquín Velázquez with playing for La Franja?",
+          "answers": [
+            "254"
+          ],
+          "distractors": [
+            "224",
+            "244",
+            "264"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "254",
+            "number": 254,
+            "unit": "matches"
+          },
+          "scope": "Puebla player totals",
+          "sourceKey": "fourth-puebla-joaquin",
+          "evidence": "The club says he played 254 matches for La Franja."
+        },
+        {
+          "key": "joaquin-minutes",
+          "label": "Playing time",
+          "prompt": "How many minutes does Club Puebla record for defender Joaquín Velázquez?",
+          "answers": [
+            "21144"
+          ],
+          "distractors": [
+            "20144",
+            "21104",
+            "22144"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "21144",
+            "number": 21144,
+            "unit": "minutes"
+          },
+          "scope": "Puebla player totals",
+          "sourceKey": "fourth-puebla-joaquin",
+          "evidence": "The retrospective lists 21,144 minutes."
+        },
+        {
+          "key": "joaquin-winning-goals",
+          "label": "Match-winning goals",
+          "prompt": "How many of Joaquín Velázquez’s nine Club Puebla goals did the club call decisive for wins?",
+          "answers": [
+            "4"
+          ],
+          "distractors": [
+            "2",
+            "3",
+            "5"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "4",
+            "number": 4,
+            "unit": "goals"
+          },
+          "scope": "Puebla goal record",
+          "sourceKey": "fourth-puebla-joaquin",
+          "evidence": "The club says four of his nine goals secured victories."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-joaquin-goals-farewell",
+      "subjectKey": "entity-joaquin-velazquez",
+      "clubKey": "entity-puebla",
+      "chapter": "records",
+      "title": "First goal, last goal, final match",
+      "subtitle": "Puebla’s chronology traces three separate landmarks in Velázquez’s attacking and playing record.",
+      "story": [
+        {
+          "title": "A first and a last",
+          "body": "His first Puebla goal came against Pachuca in Invierno 1998; his final goal came against Cruz Azul in Bicentenario 2010."
+        },
+        {
+          "title": "One last appearance",
+          "body": "His final match as a Puebla player was against Tigres in Apertura 2010."
+        }
+      ],
+      "facts": [
+        {
+          "key": "joaquin-first-goal-opponent",
+          "label": "First goal opponent",
+          "prompt": "Which club did Joaquín Velázquez score against for his first Club Puebla goal in Invierno 1998?",
+          "answers": [
+            "Pachuca"
+          ],
+          "distractors": [
+            "Cruz Azul",
+            "Tigres UANL",
+            "Atlas"
+          ],
+          "value": {
+            "kind": "entity",
+            "entityKey": "entity-pachuca",
+            "display": "Pachuca"
+          },
+          "scope": "Puebla goal chronology",
+          "sourceKey": "fourth-puebla-joaquin",
+          "evidence": "The club identifies Pachuca as the opponent for his first Puebla goal in Invierno 1998."
+        },
+        {
+          "key": "joaquin-last-goal-season",
+          "label": "Last-goal tournament",
+          "prompt": "In which tournament did Joaquín Velázquez score his last Club Puebla goal against Cruz Azul?",
+          "answers": [
+            "Bicentenario 2010"
+          ],
+          "distractors": [
+            "Apertura 2009",
+            "Clausura 2010",
+            "Apertura 2010"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Bicentenario 2010",
+            "text": "Bicentenario 2010"
+          },
+          "scope": "Puebla goal chronology",
+          "sourceKey": "fourth-puebla-joaquin",
+          "evidence": "The retrospective dates his last goal against Cruz Azul to Bicentenario 2010."
+        },
+        {
+          "key": "joaquin-final-rival",
+          "label": "Final match opponent",
+          "prompt": "Which team did Club Puebla face in Joaquín Velázquez’s final appearance for La Franja in Apertura 2010?",
+          "answers": [
+            "Tigres UANL",
+            "Tigres"
+          ],
+          "distractors": [
+            "Pachuca",
+            "Cruz Azul",
+            "Santos Laguna"
+          ],
+          "value": {
+            "kind": "entity",
+            "entityKey": "entity-tigres-uanl",
+            "display": "Tigres UANL"
+          },
+          "scope": "Puebla final appearance",
+          "sourceKey": "fourth-puebla-joaquin",
+          "evidence": "Puebla says his last match was against Tigres in Apertura 2010."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-benito-pardo-profile",
+      "subjectKey": "entity-benito-pardo",
+      "clubKey": "entity-puebla",
+      "chapter": "career",
+      "title": "A Spanish forward joins early Puebla",
+      "subtitle": "Pardo’s profile captures a link between Pachuca and Puebla in the club’s early decades.",
+      "story": [
+        {
+          "title": "A first from Pachuca",
+          "body": "Puebla calls Pardo the first footballer to come from Pachuca and play for the Franja."
+        },
+        {
+          "title": "A place in the squad’s history",
+          "body": "The club also calls him its thirteenth Spanish player and lists two seasons in the Puebla shirt."
+        }
+      ],
+      "facts": [
+        {
+          "key": "benito-origin-club",
+          "label": "Previous club",
+          "prompt": "From which club did Benito Pardo arrive before becoming the first player from there to represent Club Puebla?",
+          "answers": [
+            "Pachuca"
+          ],
+          "distractors": [
+            "Club León",
+            "Atlas",
+            "Toluca"
+          ],
+          "value": {
+            "kind": "entity",
+            "entityKey": "entity-pachuca",
+            "display": "Pachuca"
+          },
+          "scope": "Benito Pardo identity and transfer",
+          "sourceKey": "fourth-puebla-benito",
+          "evidence": "The Puebla profile identifies him as the first player from Pachuca to represent the club."
+        },
+        {
+          "key": "benito-spanish-order",
+          "label": "Spanish-player sequence",
+          "prompt": "What number Spanish player to wear Club Puebla’s shirt does the club call Benito Pardo?",
+          "answers": [
+            "13"
+          ],
+          "distractors": [
+            "11",
+            "12",
+            "14"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "13",
+            "number": 13,
+            "unit": "player"
+          },
+          "scope": "Puebla player history",
+          "sourceKey": "fourth-puebla-benito",
+          "evidence": "The retrospective describes him as the thirteenth Spanish player to represent Puebla."
+        },
+        {
+          "key": "benito-seasons",
+          "label": "Puebla seasons",
+          "prompt": "Which two seasons does Club Puebla list for Benito Pardo’s first-team playing spell?",
+          "answers": [
+            "1970–71 and 1971–72"
+          ],
+          "distractors": [
+            "1968–69 and 1969–70",
+            "1971–72 and 1972–73",
+            "1972–73 and 1973–74"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "1970–71 and 1971–72",
+            "text": "1970–71 and 1971–72"
+          },
+          "scope": "Benito Pardo Puebla spell",
+          "sourceKey": "fourth-puebla-benito",
+          "evidence": "The official article says his Puebla spell covered 1970–71 and 1971–72."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-benito-pardo-debut",
+      "subjectKey": "entity-benito-pardo",
+      "clubKey": "entity-puebla",
+      "chapter": "moments",
+      "title": "A debut on a historic home win",
+      "subtitle": "Pardo’s first Puebla appearance came in a win at the newly opened Estadio Cuauhtémoc.",
+      "story": [
+        {
+          "title": "A fourth-round debut",
+          "body": "Puebla dates the forward’s debut to Jornada 4 against Cruz Azul."
+        },
+        {
+          "title": "A first at the new home",
+          "body": "He scored in a 2–0 win that the club identifies as the first official Puebla victory at Estadio Cuauhtémoc."
+        }
+      ],
+      "facts": [
+        {
+          "key": "benito-debut-round",
+          "label": "Debut round",
+          "prompt": "In which matchday of the 1970–71 season does Club Puebla say Benito Pardo made his debut against Cruz Azul?",
+          "answers": [
+            "4"
+          ],
+          "distractors": [
+            "2",
+            "3",
+            "5"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "4",
+            "number": 4,
+            "unit": "matchday"
+          },
+          "scope": "Benito Pardo debut",
+          "sourceKey": "fourth-puebla-benito",
+          "evidence": "The club says he debuted in the fourth round."
+        },
+        {
+          "key": "benito-debut-opponent",
+          "label": "Debut opponent",
+          "prompt": "Which club did Club Puebla face when Benito Pardo made his Jornada 4 debut?",
+          "answers": [
+            "Cruz Azul"
+          ],
+          "distractors": [
+            "Toluca",
+            "Club León",
+            "Santos Laguna"
+          ],
+          "value": {
+            "kind": "entity",
+            "entityKey": "entity-cruz-azul",
+            "display": "Cruz Azul"
+          },
+          "scope": "Benito Pardo debut",
+          "sourceKey": "fourth-puebla-benito",
+          "evidence": "Puebla identifies Cruz Azul as the opponent in his fourth-round debut."
+        },
+        {
+          "key": "benito-first-win-score",
+          "label": "Historic home result",
+          "prompt": "What was the score when Benito Pardo scored in Club Puebla’s first official Estadio Cuauhtémoc home victory?",
+          "answers": [
+            "2–0"
+          ],
+          "distractors": [
+            "1–0",
+            "2–1",
+            "3–0"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "2–0",
+            "text": "2–0"
+          },
+          "scope": "First official Puebla win at Estadio Cuauhtémoc",
+          "sourceKey": "fourth-puebla-benito",
+          "evidence": "The club says Pardo scored in the first official home victory, a 2–0 result.",
+          "scoreInput": {
+            "leftClubKey": "entity-puebla",
+            "rightClubKey": "entity-cruz-azul",
+            "leftGoals": 2,
+            "rightGoals": 0
+          }
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-benito-pardo-numbers",
+      "subjectKey": "entity-benito-pardo",
+      "clubKey": "entity-puebla",
+      "chapter": "records",
+      "title": "Goals and starts in two league seasons",
+      "subtitle": "Puebla’s retrospective records his appearances, complete starts, and scoring total.",
+      "story": [
+        {
+          "title": "A regular in the side",
+          "body": "Pardo appeared in 61 league matches for Puebla, starting and completing 52."
+        },
+        {
+          "title": "A forward’s return",
+          "body": "The club records 23 goals across his time in the Franja shirt."
+        }
+      ],
+      "facts": [
+        {
+          "key": "benito-league-apps",
+          "label": "League appearances",
+          "prompt": "How many first-division league matches does Club Puebla list for Benito Pardo?",
+          "answers": [
+            "61"
+          ],
+          "distractors": [
+            "51",
+            "56",
+            "66"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "61",
+            "number": 61,
+            "unit": "appearances"
+          },
+          "scope": "Puebla league totals",
+          "sourceKey": "fourth-puebla-benito",
+          "evidence": "The club lists 61 league appearances."
+        },
+        {
+          "key": "benito-full-starts",
+          "label": "Full starts",
+          "prompt": "How many first-division league appearances did Benito Pardo start and complete for Club Puebla?",
+          "answers": [
+            "52"
+          ],
+          "distractors": [
+            "42",
+            "47",
+            "57"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "52",
+            "number": 52,
+            "unit": "appearances"
+          },
+          "scope": "Puebla league totals",
+          "sourceKey": "fourth-puebla-benito",
+          "evidence": "The official article says 52 appearances were as a starter who completed the match."
+        },
+        {
+          "key": "benito-goals",
+          "label": "Puebla goals",
+          "prompt": "How many first-team goals does Club Puebla credit Benito Pardo with scoring?",
+          "answers": [
+            "23"
+          ],
+          "distractors": [
+            "18",
+            "20",
+            "26"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "23",
+            "number": 23,
+            "unit": "goals"
+          },
+          "scope": "Puebla career total",
+          "sourceKey": "fourth-puebla-benito",
+          "evidence": "The retrospective records 23 goals in the Franja shirt."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-benito-pardo-legacy",
+      "subjectKey": "entity-benito-pardo",
+      "clubKey": "entity-puebla",
+      "chapter": "legacy",
+      "title": "Benito Pardo’s cup record and club leadership",
+      "subtitle": "Puebla’s retrospective records Pardo’s Copa MX appearances and his later service as club president.",
+      "story": [
+        {
+          "title": "Cup appearances",
+          "body": "Across Pardo’s Club Puebla spell, the club records six Copa MX appearances, three of them completed from start to finish."
+        },
+        {
+          "title": "Beyond the pitch",
+          "body": "Puebla says Pardo’s relationship with the institution continued after his playing career and that he later became club president."
+        }
+      ],
+      "facts": [
+        {
+          "key": "benito-copa-apps",
+          "label": "Copa MX appearances",
+          "prompt": "How many Copa México matches does Club Puebla list for Benito Pardo?",
+          "answers": [
+            "6"
+          ],
+          "distractors": [
+            "4",
+            "5",
+            "8"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "6",
+            "number": 6,
+            "unit": "matches"
+          },
+          "scope": "Copa MX matches for Club Puebla during Pardo’s playing spell.",
+          "sourceKey": "fourth-puebla-benito",
+          "evidence": "Puebla’s official retrospective lists six Copa MX appearances."
+        },
+        {
+          "key": "benito-copa-full-matches",
+          "label": "Complete Copa MX matches",
+          "prompt": "How many Copa México matches did Benito Pardo complete for Club Puebla?",
+          "answers": [
+            "3"
+          ],
+          "distractors": [
+            "1",
+            "2",
+            "4"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "3",
+            "number": 3,
+            "unit": "matches"
+          },
+          "scope": "Copa MX appearances completed from start to finish during Pardo’s Puebla spell.",
+          "sourceKey": "fourth-puebla-benito",
+          "evidence": "Puebla’s official retrospective says three of Pardo’s six Copa MX appearances were completed matches."
+        },
+        {
+          "key": "benito-later-role",
+          "label": "Post-playing role",
+          "prompt": "Which leadership role did Benito Pardo hold at Club Puebla after his playing career?",
+          "answers": [
+            "Club president"
+          ],
+          "distractors": [
+            "Head coach",
+            "Technical director",
+            "Academy goalkeeper coach"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Club president",
+            "text": "Club president"
+          },
+          "scope": "Benito Pardo club service",
+          "sourceKey": "fourth-puebla-benito",
+          "evidence": "Puebla says his contribution later led him to become president of the institution."
+        }
+      ]
+    }
+  ]
+}

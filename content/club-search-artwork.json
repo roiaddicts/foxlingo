@@ -4,7 +4,8 @@
     "asset": "club-badge-ajax",
     "imageURL": "https://img.uefa.com/imgml/TP/teams/logos/100x100/50143.png",
     "sourceURL": "https://www.uefa.com/nationalassociations/teams/50143/",
-    "scope": "Club badge illustration, not a historical-season badge."
+    "scope": "Club badge illustration, not a historical-season badge.",
+    "entityKey": "entity-ajax"
   },
   {
     "name": "Benfica",
@@ -26,7 +27,11 @@
     "asset": "club-badge-leicester",
     "imageURL": "https://img.uefa.com/imgml/TP/teams/logos/100x100/2608195.png",
     "sourceURL": "https://www.uefa.com/nationalassociations/teams/2608195/",
-    "scope": "Club badge illustration, not a historical-season badge."
+    "scope": "Club badge illustration, not a historical-season badge.",
+    "entityKey": "entity-leicester",
+    "aliases": [
+      "Leicester City"
+    ]
   },
   {
     "name": "Wolves",
@@ -40,14 +45,19 @@
     "asset": "club-badge-everton",
     "imageURL": "https://img.uefa.com/imgml/TP/teams/logos/100x100/52281.png",
     "sourceURL": "https://www.uefa.com/nationalassociations/teams/52281/",
-    "scope": "Club badge illustration, not a historical-season badge."
+    "scope": "Club badge illustration, not a historical-season badge.",
+    "entityKey": "entity-everton"
   },
   {
     "name": "West Ham",
     "asset": "club-badge-west-ham",
     "imageURL": "https://img.uefa.com/imgml/TP/teams/logos/100x100/53358.png",
     "sourceURL": "https://www.uefa.com/nationalassociations/teams/53358/",
-    "scope": "Club badge illustration, not a historical-season badge."
+    "scope": "Club badge illustration, not a historical-season badge.",
+    "entityKey": "entity-west-ham",
+    "aliases": [
+      "West Ham United"
+    ]
   },
   {
     "name": "Brighton",
@@ -75,7 +85,8 @@
     "asset": "club-badge-sevilla",
     "imageURL": "https://img.uefa.com/imgml/TP/teams/logos/100x100/52714.png",
     "sourceURL": "https://www.uefa.com/nationalassociations/teams/52714/",
-    "scope": "Club badge illustration, not a historical-season badge."
+    "scope": "Club badge illustration, not a historical-season badge.",
+    "entityKey": "entity-sevilla"
   },
   {
     "name": "Girona",
@@ -89,7 +100,8 @@
     "asset": "club-badge-valencia",
     "imageURL": "https://img.uefa.com/imgml/TP/teams/logos/100x100/52268.png",
     "sourceURL": "https://www.uefa.com/nationalassociations/teams/52268/",
-    "scope": "Club badge illustration, not a historical-season badge."
+    "scope": "Club badge illustration, not a historical-season badge.",
+    "entityKey": "entity-valencia"
   },
   {
     "name": "Atalanta",
@@ -125,14 +137,16 @@
     "asset": "club-badge-monaco",
     "imageURL": "https://img.uefa.com/imgml/TP/teams/logos/100x100/50023.png",
     "sourceURL": "https://www.uefa.com/nationalassociations/teams/50023/",
-    "scope": "Club badge illustration, not a historical-season badge."
+    "scope": "Club badge illustration, not a historical-season badge.",
+    "entityKey": "entity-monaco"
   },
   {
     "name": "Lyon",
     "asset": "club-badge-lyon",
     "imageURL": "https://img.uefa.com/imgml/TP/teams/logos/100x100/5312.png",
     "sourceURL": "https://www.uefa.com/nationalassociations/teams/5312/",
-    "scope": "Club badge illustration, not a historical-season badge."
+    "scope": "Club badge illustration, not a historical-season badge.",
+    "entityKey": "entity-lyon"
   },
   {
     "name": "VfL Wolfsburg",
@@ -155,6 +169,53 @@
     "asset": "club-badge-sparta-praha",
     "imageURL": "https://img.uefa.com/imgml/TP/teams/logos/100x100/50033.png",
     "sourceURL": "https://www.uefa.com/nationalassociations/teams/50033--sparta-praha/",
+    "scope": "Club badge illustration, not a historical-season badge."
+  },
+  {
+    "name": "1. FC Kaiserslautern",
+    "entityKey": "entity-kaiserslautern",
+    "aliases": [
+      "Kaiserslautern"
+    ],
+    "asset": "club-badge-kaiserslautern",
+    "imageURL": "https://img.uefa.com/imgml/TP/teams/logos/100x100/3695.png",
+    "sourceURL": "https://www.uefa.com/uefachampionsleague/history/clubs/3695/",
+    "scope": "Current club badge illustration; not a historical-season badge."
+  },
+  {
+    "name": "FC Carl Zeiss Jena",
+    "entityKey": "entity-carl-zeiss-jena",
+    "aliases": [
+      "Carl Zeiss Jena",
+      "Jena"
+    ],
+    "asset": "club-badge-carl-zeiss-jena",
+    "imageURL": "https://img.uefa.com/imgml/TP/teams/logos/100x100/50071.png",
+    "sourceURL": "https://www.uefa.com/uefachampionsleague/history/clubs/50071/",
+    "scope": "Current club badge illustration; not a historical-season badge."
+  },
+  {
+    "name": "VfL Bochum 1848",
+    "entityKey": "entity-bochum",
+    "aliases": [
+      "Bochum",
+      "VfL Bochum"
+    ],
+    "asset": "club-badge-bochum",
+    "imageURL": "https://img.uefa.com/imgml/TP/teams/logos/100x100/52939.png",
+    "sourceURL": "https://www.uefa.com/uefachampionsleague/history/clubs/52939/",
+    "scope": "Current club badge illustration; not a historical-season badge."
+  },
+  {
+    "name": "Bradford City AFC",
+    "aliases": [
+      "Bradford",
+      "Bradford City"
+    ],
+    "entityKey": "entity-bradford",
+    "asset": "club-badge-bradford",
+    "imageURL": "https://img.uefa.com/imgml/TP/teams/logos/100x100/72533.png",
+    "sourceURL": "https://www.uefa.com/nationalassociations/teams/72533--bradford/",
     "scope": "Club badge illustration, not a historical-season badge."
   }
 ]

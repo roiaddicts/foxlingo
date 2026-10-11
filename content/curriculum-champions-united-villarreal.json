@@ -1,0 +1,2076 @@
+{
+  "sources": [
+    {
+      "key": "curriculum-uv-forlan",
+      "title": "Forlán, a golden goalscorer (English profile)",
+      "url": "https://villarrealcf.es/en/forlan-a-golden-goalscorer/",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "curriculum-uv-forlan-es",
+      "title": "Forlán, a golden goalscorer (Spanish profile)",
+      "url": "https://villarrealcf.es/es/forlan-un-goleador-de-oro/",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "curriculum-uv-pl-rooney-record",
+      "title": "Premier League: Rooney breaks two records with goal at Stoke",
+      "url": "https://www.premierleague.com/en/news/314752",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "curriculum-uv-pl-rooney-total",
+      "title": "PFA: Wayne Rooney retires",
+      "url": "https://www.thepfa.com/news/2021/1/15/wayne-rooney-retires",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "curriculum-uv-pl-scholes-profile",
+      "title": "Premier League Hall of Fame: Paul Scholes",
+      "url": "https://www.premierleague.com/en/events/hall-of-fame/inductees/paul-scholes",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "curriculum-uv-rooney-career",
+      "title": "Why Wayne Rooney decided to sign for United",
+      "url": "https://www.manutd.com/en/news/utd-podcast-why-wayne-rooney-decided-to-sign-for-man-utd?t=y",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "curriculum-uv-rooney-city",
+      "title": "How to watch United 2–1 Man City in full",
+      "url": "https://www.manutd.com/en/news/web-watch-live-stream-man-utd-2-man-city-1-from-12-february-2011",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "curriculum-uv-rooney-fener-uefa",
+      "title": "UEFA: Rampant Rooney starts in style",
+      "url": "https://www.uefa.com/uefachampionsleague/news/01a1-0e6b1d358b17-67dccbc7e97c-1000--rampant-rooney-starts-in-style/",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "curriculum-uv-rooney-unveiled",
+      "title": "Wayne Rooney unveiled as a Manchester United player in 2004",
+      "url": "https://www.manutd.com/en/mutv/videos/detail/mutv-archive-wayne-rooney-unveiled-as-a-man-utd-player-in-2004",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "curriculum-uv-scholes-barcelona",
+      "title": "Highlights: Man United 1 Barcelona 0, 29 April 2008",
+      "url": "https://www.manutd.com/en/mutv/videos/detail/highlights-of-man-united-1-barcelona-0-at-old-trafford-on-29-april-2008",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "curriculum-uv-scholes-bradford",
+      "title": "Scholesy’s take on the Valley Parade volley",
+      "url": "https://www.manutd.com/en/news/paul-scholes-says-bradford-volley-was-unrehearsed",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "curriculum-uv-scholes-comeback",
+      "title": "Manchester United history by decade: 2010 onwards",
+      "url": "https://www.manutd.com/en/club/history/history-by-decade/2010-onwards",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "curriculum-uv-scholes-debut",
+      "title": "Manchester United youth team debutants",
+      "url": "https://www.manutd.com/en/academy/youth-team-debutants",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "curriculum-uv-scholes-port-vale",
+      "title": "Goal of the Day: Scholes v Port Vale",
+      "url": "https://www.manutd.com/en/mutv/videos/detail/goal-of-the-day-21-september-2021-paul-scholes-v-port-vale",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "curriculum-uv-senna-career",
+      "title": "Eternal captain Marcos Senna",
+      "url": "https://villarrealcf.es/en/eternal-captain-marcos-senna/",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "curriculum-uv-senna-records",
+      "title": "Marcos Senna returns to Villarreal CF",
+      "url": "https://villarrealcf.es/en/marcos-senna-returns-to-villarreal-cf/",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "curriculum-uv-senna-spain",
+      "title": "Red and yellow",
+      "url": "https://villarrealcf.es/en/red-and-yellow/",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "curriculum-uv-united-1950s",
+      "title": "Manchester United history by decade: 1950–1959",
+      "url": "https://www.manutd.com/en/club/history/history-by-decade/1950-1959",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "curriculum-uv-united-2013",
+      "title": "United 3 Aston Villa 0: 22 April 2013 highlights",
+      "url": "https://www.manutd.com/en/mutv/videos/detail/man-utd-3-aston-villa-0-extended-highlights-premier-league-2012-13",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "curriculum-uv-united-origin",
+      "title": "Manchester United history by decade: 1878–1909",
+      "url": "https://www.manutd.com/en/club/history/history-by-decade/1878-1909",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "curriculum-uv-villarreal-arsenal",
+      "title": "Arsenal joy as Villarreal pay price",
+      "url": "https://www.uefa.com/uefachampionsleague/news/01b4-0ea859ad425c-8a4fa7bab58c-1000--arsenal-joy-as-villarreal-pay-price/",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "curriculum-uv-villarreal-final",
+      "title": "Villarreal 1–1 Manchester United: 2021 Europa League final",
+      "url": "https://www.uefa.com/uefaeuropaleague/news/0269-125f1aaaeb0d-c59e8a06ac14-1000--highlights-2021-final/",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "curriculum-uv-villarreal-history",
+      "title": "Villarreal CF Foundation and history",
+      "url": "https://villarrealcf.es/en/fundacion/",
+      "verifiedAt": "2026-10-11"
+    }
+  ],
+  "players": [
+    {
+      "key": "entity-wayne-rooney",
+      "name": "Wayne Rooney",
+      "aliases": [
+        "Rooney",
+        "Wayne Mark Rooney"
+      ],
+      "clubKey": "entity-manchester-united",
+      "seedID": "player-63",
+      "seedName": "Wayne Rooney",
+      "visual": "WR"
+    },
+    {
+      "key": "entity-paul-scholes",
+      "name": "Paul Scholes",
+      "aliases": [
+        "Scholes"
+      ],
+      "clubKey": "entity-manchester-united",
+      "seedID": "player-349",
+      "seedName": "Paul Scholes",
+      "visual": "PS"
+    },
+    {
+      "key": "entity-diego-forlan",
+      "name": "Diego Forlán",
+      "aliases": [
+        "Forlán",
+        "Diego Forlán",
+        "Diego Forlan",
+        "Forlan"
+      ],
+      "clubKey": "entity-villarreal",
+      "seedID": "player-31",
+      "seedName": "Diego Forlan",
+      "visual": "DF"
+    },
+    {
+      "key": "entity-marcos-senna",
+      "name": "Marcos Senna",
+      "aliases": [
+        "Senna"
+      ],
+      "clubKey": "entity-villarreal",
+      "seedID": "player-627",
+      "seedName": "Marcos Senna",
+      "visual": "MS"
+    }
+  ],
+  "lessons": [
+    {
+      "key": "lesson-curriculum-champions-uv-united-history",
+      "subjectKey": "entity-manchester-united",
+      "clubKey": "entity-manchester-united",
+      "title": "A railway works side becomes United",
+      "subtitle": "Newton Heath’s long road to a new name",
+      "chapter": "history",
+      "story": [
+        {
+          "title": "A team from the works",
+          "body": "Workers at the Lancashire and Yorkshire Railway depot in Newton Heath formed a football team in 1878. The club entered the Football League in 1892 as Newton Heath."
+        },
+        {
+          "title": "A name and a first title",
+          "body": "After financial collapse, new investment and a new identity came in 1902. The club then won its first league championship in 1907/08."
+        }
+      ],
+      "facts": [
+        {
+          "key": "uv-united-football-league-entry",
+          "label": "League entry level",
+          "prompt": "At which division level did Newton Heath enter the Football League in 1892?",
+          "answers": [
+            "Division One"
+          ],
+          "distractors": [
+            "Division Two",
+            "Division Three",
+            "Division Four"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Division One",
+            "text": "Division One"
+          },
+          "scope": "Newton Heath’s 1892 entry into the Football League.",
+          "sourceKey": "curriculum-uv-united-origin",
+          "evidence": "Manchester United’s official history says Newton Heath joined the Football League at Division One level in 1892."
+        },
+        {
+          "key": "uv-united-name-year",
+          "label": "Name change",
+          "prompt": "In what year was the Manchester United name adopted after the club was saved from extinction?",
+          "answers": [
+            "1902"
+          ],
+          "distractors": [
+            "1892",
+            "1908",
+            "1910"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "1902",
+            "text": "1902"
+          },
+          "scope": "The club’s formal change from Newton Heath to Manchester United.",
+          "sourceKey": "curriculum-uv-united-origin",
+          "evidence": "The club chronology says John Henry Davies invested in the financially troubled Newton Heath and Manchester United was born in April/May 1902."
+        },
+        {
+          "key": "uv-united-first-league-title",
+          "label": "First league championship",
+          "prompt": "Which season brought Manchester United its first league championship?",
+          "answers": [
+            "1907/08"
+          ],
+          "distractors": [
+            "1892/93",
+            "1902/03",
+            "1908/09"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "1907/08",
+            "text": "1907/08"
+          },
+          "scope": "The first Football League championship won under the Manchester United name.",
+          "sourceKey": "curriculum-uv-united-origin",
+          "evidence": "The club’s 1878–1909 history records its first league title in 1907/08."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-champions-uv-united-arsenal-1958",
+      "subjectKey": "entity-manchester-united",
+      "clubKey": "entity-manchester-united",
+      "title": "The Babes’ last match on English soil",
+      "subtitle": "A nine-goal Highbury classic before Munich",
+      "chapter": "moments",
+      "story": [
+        {
+          "title": "A remarkable afternoon",
+          "body": "On 1 February 1958, Manchester United beat Arsenal at Highbury in front of 63,578 spectators. The official club history calls it the team’s greatest game on English soil."
+        },
+        {
+          "title": "The last journey",
+          "body": "The Busby Babes left Highbury for the European Cup tie in Belgrade. Their flight home stopped in Munich, where the crash killed players, staff and others connected with the club."
+        }
+      ],
+      "facts": [
+        {
+          "key": "uv-united-1958-opponent",
+          "label": "Opponent",
+          "prompt": "Which London club did United beat at Highbury in the Babes’ final match on English soil?",
+          "answers": [
+            "Arsenal"
+          ],
+          "distractors": [
+            "Liverpool",
+            "Juventus",
+            "West Ham"
+          ],
+          "value": {
+            "kind": "entity",
+            "entityKey": "entity-arsenal",
+            "display": "Arsenal"
+          },
+          "scope": "Manchester United’s final game in England before the Munich air disaster.",
+          "sourceKey": "curriculum-uv-united-1950s",
+          "evidence": "The club’s history names Arsenal as the opponent at Highbury on 1 February 1958."
+        },
+        {
+          "key": "uv-united-1958-crowd",
+          "label": "Highbury attendance",
+          "prompt": "How many spectators watched the 1 February 1958 Highbury match?",
+          "answers": [
+            "63,578"
+          ],
+          "distractors": [
+            "53,678",
+            "65,738",
+            "73,586"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "63,578",
+            "text": "63,578"
+          },
+          "scope": "Attendance at the 5–4 match against Arsenal.",
+          "sourceKey": "curriculum-uv-united-1950s",
+          "evidence": "The club history gives the crowd as 63,578."
+        },
+        {
+          "key": "uv-united-1958-goals",
+          "label": "Nine-goal match",
+          "prompt": "How many goals were scored in the Highbury match that United won before travelling to Belgrade?",
+          "answers": [
+            "Nine"
+          ],
+          "distractors": [
+            "Seven",
+            "Eight",
+            "Ten"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Nine",
+            "text": "Nine"
+          },
+          "scope": "Combined goals in United’s 5–4 win at Arsenal.",
+          "sourceKey": "curriculum-uv-united-1950s",
+          "evidence": "The official club account describes the 5–4 game as a nine-goal thriller."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-champions-uv-united-villa-title",
+      "subjectKey": "entity-manchester-united",
+      "clubKey": "entity-manchester-united",
+      "title": "Van Persie seals the twentieth",
+      "subtitle": "A hat-trick settled the title at Old Trafford",
+      "chapter": "moments",
+      "story": [
+        {
+          "title": "Title night",
+          "body": "United hosted Aston Villa on 22 April 2013 knowing a win would secure the Premier League. Robin van Persie scored all three in a 3–0 victory."
+        },
+        {
+          "title": "A landmark crown",
+          "body": "The result gave United its 20th English league championship, four matches before the season ended."
+        }
+      ],
+      "facts": [
+        {
+          "key": "uv-united-villa-date",
+          "label": "Match date",
+          "prompt": "On what date did United clinch the 2012/13 title by beating Aston Villa?",
+          "answers": [
+            "22 April 2013"
+          ],
+          "distractors": [
+            "13 April 2013",
+            "22 March 2013",
+            "5 May 2013"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "22 April 2013",
+            "text": "22 April 2013"
+          },
+          "scope": "The decisive Premier League match at Old Trafford.",
+          "sourceKey": "curriculum-uv-united-2013",
+          "evidence": "Manchester United’s match page dates the 3–0 Villa win to 22 April 2013."
+        },
+        {
+          "key": "uv-united-villa-score",
+          "label": "Final score",
+          "prompt": "What was Manchester United’s score against Aston Villa when it clinched the Premier League title on 22 April 2013?",
+          "answers": [
+            "3–0"
+          ],
+          "distractors": [
+            "2–0",
+            "3–1",
+            "4–0"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "3–0",
+            "text": "3–0"
+          },
+          "scope": "Manchester United v Aston Villa, 22 April 2013.",
+          "sourceKey": "curriculum-uv-united-2013",
+          "evidence": "The official match title and highlights give the result as United 3, Aston Villa 0.",
+          "scoreInput": {
+            "leftClubKey": "entity-manchester-united",
+            "rightClubKey": "entity-aston-villa",
+            "leftGoals": 3,
+            "rightGoals": 0
+          }
+        },
+        {
+          "key": "uv-united-villa-scorer",
+          "label": "Hat-trick scorer",
+          "prompt": "Which United player scored the hat-trick that night?",
+          "answers": [
+            "Robin van Persie"
+          ],
+          "distractors": [
+            "Wayne Rooney",
+            "Javier Hernández",
+            "Danny Welbeck"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Robin van Persie",
+            "text": "Robin van Persie"
+          },
+          "scope": "Manchester United’s title-clinching home win over Aston Villa.",
+          "sourceKey": "curriculum-uv-united-2013",
+          "evidence": "The club states that Robin van Persie scored the hat-trick on the night United were crowned champions for a 20th time."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-champions-uv-rooney-career",
+      "subjectKey": "entity-wayne-rooney",
+      "clubKey": "entity-manchester-united",
+      "title": "A teenage signing makes an instant impact",
+      "subtitle": "Rooney’s first United season",
+      "chapter": "career",
+      "story": [
+        {
+          "title": "A major move",
+          "body": "Rooney joined Manchester United from Everton in 2004, choosing the club after interest from other teams. He arrived as an 18-year-old forward with a reputation already built in English football."
+        },
+        {
+          "title": "Goals straight away",
+          "body": "His United debut included a Champions League hat-trick. He added 14 more goals that season and ended 2004/05 as the team’s leading scorer with 17."
+        }
+      ],
+      "facts": [
+        {
+          "key": "uv-rooney-sign-year",
+          "label": "Transfer year",
+          "prompt": "In what year did Wayne Rooney sign for Manchester United from Everton?",
+          "answers": [
+            "2004"
+          ],
+          "distractors": [
+            "2002",
+            "2003",
+            "2005"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "2004",
+            "text": "2004"
+          },
+          "scope": "Rooney’s transfer from Everton to Manchester United.",
+          "sourceKey": "curriculum-uv-rooney-career",
+          "evidence": "Rooney’s United podcast says he signed in 2004 and discusses his decision to choose the club."
+        },
+        {
+          "key": "uv-rooney-debut-age",
+          "label": "Age at transfer",
+          "prompt": "How old was Rooney when he joined United in 2004?",
+          "answers": [
+            "18"
+          ],
+          "distractors": [
+            "16",
+            "17",
+            "19"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "18",
+            "text": "18"
+          },
+          "scope": "Rooney’s age when he moved to Manchester United.",
+          "sourceKey": "curriculum-uv-rooney-unveiled",
+          "evidence": "United’s 2004 unveiling video identifies Rooney as 18 when he signed; its signing feature confirms the 2004 transfer."
+        },
+        {
+          "key": "uv-rooney-first-season-goals",
+          "label": "First-season total",
+          "prompt": "How many goals did Rooney score in all competitions for United in 2004/05?",
+          "answers": [
+            "17"
+          ],
+          "distractors": [
+            "14",
+            "16",
+            "20"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "17",
+            "text": "17"
+          },
+          "scope": "Rooney’s total United goals in his first season, including his debut hat-trick.",
+          "sourceKey": "curriculum-uv-rooney-career",
+          "evidence": "The United podcast says he added 14 after his debut treble to finish as the team’s prime marksman with 17."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-champions-uv-rooney-fenerbahce",
+      "subjectKey": "entity-wayne-rooney",
+      "clubKey": "entity-manchester-united",
+      "title": "Three goals on debut",
+      "subtitle": "Fenerbahçe felt Rooney’s arrival",
+      "chapter": "moments",
+      "story": [
+        {
+          "title": "A first appearance",
+          "body": "Rooney made his Manchester United debut against Fenerbahçe in the Champions League on 28 September 2004. He scored three times in a 6–2 win."
+        },
+        {
+          "title": "A statement entrance",
+          "body": "He became the first player to score a hat-trick on a United European debut. A late free-kick completed the treble, immediately announcing his arrival to the home crowd."
+        }
+      ],
+      "facts": [
+        {
+          "key": "uv-rooney-fener-date",
+          "label": "Debut date",
+          "prompt": "When did Rooney make his Manchester United debut against Fenerbahçe?",
+          "answers": [
+            "28 September 2004"
+          ],
+          "distractors": [
+            "14 September 2004",
+            "28 October 2004",
+            "9 March 2005"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "28 September 2004",
+            "text": "28 September 2004"
+          },
+          "scope": "Rooney’s first appearance for United, against Fenerbahçe in the Champions League.",
+          "sourceKey": "curriculum-uv-rooney-fener-uefa",
+          "evidence": "The official United match feature identifies 28 September 2004 as Rooney’s debut and hat-trick match."
+        },
+        {
+          "key": "uv-rooney-fener-score",
+          "label": "Match result",
+          "prompt": "What was the final score in Rooney’s Champions League debut against Fenerbahçe?",
+          "answers": [
+            "6–2"
+          ],
+          "distractors": [
+            "5–1",
+            "4–2",
+            "6–1"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "6–2",
+            "text": "6–2"
+          },
+          "scope": "Manchester United versus Fenerbahçe, Rooney’s 2004 debut match.",
+          "sourceKey": "curriculum-uv-rooney-fener-uefa",
+          "evidence": "UEFA identifies the match as Manchester United 6–2 Fenerbahçe.",
+          "scoreInput": {
+            "leftClubKey": "entity-manchester-united",
+            "rightClubKey": "entity-fenerbah-e",
+            "leftGoals": 6,
+            "rightGoals": 2
+          }
+        },
+        {
+          "key": "uv-rooney-fener-hattrick",
+          "label": "Debut scoring feat",
+          "prompt": "How many goals did Rooney score in that first United appearance?",
+          "answers": [
+            "Three"
+          ],
+          "distractors": [
+            "One",
+            "Two",
+            "Four"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Three",
+            "text": "Three"
+          },
+          "scope": "Rooney’s Champions League debut against Fenerbahçe.",
+          "sourceKey": "curriculum-uv-rooney-fener-uefa",
+          "evidence": "UEFA says Rooney scored a debut hat-trick and describes the free-kick that completed it."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-champions-uv-rooney-city-overhead",
+      "subjectKey": "entity-wayne-rooney",
+      "clubKey": "entity-manchester-united",
+      "title": "The derby overhead kick",
+      "subtitle": "An improvised winner against City",
+      "chapter": "moments",
+      "story": [
+        {
+          "title": "A vital derby",
+          "body": "On 12 February 2011, United beat Manchester City 2–1 at Old Trafford. Rooney’s acrobatic strike came from Nani’s deflected cross and proved the winner."
+        },
+        {
+          "title": "A landmark goal",
+          "body": "The victory helped United on the way to a 19th league title. Rooney’s overhead kick became one of the defining goals of the Premier League era."
+        }
+      ],
+      "facts": [
+        {
+          "key": "uv-rooney-city-opponent",
+          "label": "Derby opponent",
+          "prompt": "Which local rival did United beat when Rooney scored his famous overhead kick in 2011?",
+          "answers": [
+            "Man City",
+            "Manchester City"
+          ],
+          "distractors": [
+            "Liverpool",
+            "Arsenal",
+            "Juventus"
+          ],
+          "value": {
+            "kind": "entity",
+            "entityKey": "entity-manchester-city",
+            "display": "Man City"
+          },
+          "scope": "United’s 2–1 Old Trafford win on 12 February 2011.",
+          "sourceKey": "curriculum-uv-rooney-city",
+          "evidence": "The official United match retrospective identifies the goal as Rooney’s effort against Manchester City."
+        },
+        {
+          "key": "uv-rooney-city-score",
+          "label": "Derby score",
+          "prompt": "What was the score in the 2011 Manchester derby decided by Rooney’s overhead kick?",
+          "answers": [
+            "2–1"
+          ],
+          "distractors": [
+            "1–0",
+            "3–1",
+            "2–2"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "2–1",
+            "text": "2–1"
+          },
+          "scope": "Manchester United v Manchester City at Old Trafford, 12 February 2011.",
+          "sourceKey": "curriculum-uv-rooney-city",
+          "evidence": "The club’s account calls it a 2–1 United win.",
+          "scoreInput": {
+            "leftClubKey": "entity-manchester-united",
+            "rightClubKey": "entity-manchester-city",
+            "leftGoals": 2,
+            "rightGoals": 1
+          }
+        },
+        {
+          "key": "uv-rooney-city-technique",
+          "label": "Goal technique",
+          "prompt": "What kind of strike did Rooney use for his winning goal against City?",
+          "answers": [
+            "Overhead kick"
+          ],
+          "distractors": [
+            "Header",
+            "Direct free-kick",
+            "Outside-of-the-foot volley"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Overhead kick",
+            "text": "Overhead kick"
+          },
+          "scope": "Rooney’s winning goal in the 2011 Manchester derby.",
+          "sourceKey": "curriculum-uv-rooney-city",
+          "evidence": "United’s goal retrospective explicitly describes the effort as an overhead kick."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-champions-uv-rooney-record",
+      "subjectKey": "entity-wayne-rooney",
+      "clubKey": "entity-manchester-united",
+      "title": "United’s all-time leading scorer",
+      "subtitle": "From the 250th to 253 goals",
+      "chapter": "records",
+      "story": [
+        {
+          "title": "The record falls",
+          "body": "Rooney’s goal at Stoke on 21 January 2017 was his 250th for Manchester United. It moved him past Sir Bobby Charlton as the club’s all-time leading scorer."
+        },
+        {
+          "title": "A lasting total",
+          "body": "He finished his United career with 253 goals in 559 appearances, a scoring record built across 13 seasons at Old Trafford."
+        }
+      ],
+      "facts": [
+        {
+          "key": "uv-rooney-250-date",
+          "label": "Milestone date",
+          "prompt": "When did Rooney score his record-breaking 250th goal for United?",
+          "answers": [
+            "21 January 2017"
+          ],
+          "distractors": [
+            "7 January 2017",
+            "21 February 2017",
+            "15 May 2016"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "21 January 2017",
+            "text": "21 January 2017"
+          },
+          "scope": "Rooney’s 250th goal for Manchester United, scored at Stoke City.",
+          "sourceKey": "curriculum-uv-pl-rooney-record",
+          "evidence": "The Premier League dates the event to 21 January 2017 and reports that his 250th United goal made him the club’s record scorer."
+        },
+        {
+          "key": "uv-rooney-final-goal-total",
+          "label": "Career goals",
+          "prompt": "How many goals did Rooney score in his 559 Manchester United appearances?",
+          "answers": [
+            "253"
+          ],
+          "distractors": [
+            "250",
+            "251",
+            "260"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "253",
+            "text": "253"
+          },
+          "scope": "Rooney’s completed Manchester United career total.",
+          "sourceKey": "curriculum-uv-pl-rooney-total",
+          "evidence": "The Professional Footballers’ Association records Rooney’s departure in 2017 with 253 goals in 559 appearances for United."
+        },
+        {
+          "key": "uv-rooney-record-predecessor",
+          "label": "Previous record holder",
+          "prompt": "Whose club scoring record did Rooney pass to become United’s leading scorer?",
+          "answers": [
+            "Sir Bobby Charlton"
+          ],
+          "distractors": [
+            "Denis Law",
+            "George Best",
+            "Jack Rowley"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Sir Bobby Charlton",
+            "text": "Sir Bobby Charlton"
+          },
+          "scope": "Manchester United’s all-time goalscoring record before Rooney’s milestone.",
+          "sourceKey": "curriculum-uv-pl-rooney-record",
+          "evidence": "The Premier League states the 250th goal took Rooney above Sir Bobby Charlton for Manchester United."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-champions-uv-scholes-career",
+      "subjectKey": "entity-paul-scholes",
+      "clubKey": "entity-manchester-united",
+      "title": "Scholes across eras",
+      "subtitle": "Scholes’s first senior appearance",
+      "chapter": "career",
+      "story": [
+        {
+          "title": "A United debut",
+          "body": "Paul Scholes came through Manchester United’s youth system and made his first-team debut at Port Vale on 21 September 1994, aged 19."
+        },
+        {
+          "title": "A return to the pitch",
+          "body": "United’s official history places Scholes’s return in its 2011/12 season account. He ended his playing career for good in 2013."
+        }
+      ],
+      "facts": [
+        {
+          "key": "uv-scholes-debut-date",
+          "label": "First-team debut",
+          "prompt": "On what date did Paul Scholes make his Manchester United debut at Port Vale?",
+          "answers": [
+            "21 September 1994"
+          ],
+          "distractors": [
+            "14 September 1994",
+            "21 October 1994",
+            "3 November 1994"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "21 September 1994",
+            "text": "21 September 1994"
+          },
+          "scope": "Scholes’s senior debut for Manchester United in the League Cup.",
+          "sourceKey": "curriculum-uv-scholes-debut",
+          "evidence": "United’s academy debutants list gives 21 September 1994, Port Vale, age 19."
+        },
+        {
+          "key": "uv-scholes-comeback-season",
+          "label": "Comeback season",
+          "prompt": "During which season did Scholes return to Manchester United after retirement?",
+          "answers": [
+            "2011/12"
+          ],
+          "distractors": [
+            "2010/11",
+            "2012/13",
+            "2013/14"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "2011/12",
+            "text": "2011/12"
+          },
+          "scope": "Paul Scholes’s return to the United squad after retirement.",
+          "sourceKey": "curriculum-uv-scholes-comeback",
+          "evidence": "United’s 2010 onwards history places his return in its narrative of the 2011/12 season."
+        },
+        {
+          "key": "uv-scholes-final-retirement",
+          "label": "Final retirement",
+          "prompt": "In what year did Scholes end his playing career for good after returning to United?",
+          "answers": [
+            "2013"
+          ],
+          "distractors": [
+            "2011",
+            "2012",
+            "2014"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "2013",
+            "number": 2013,
+            "unit": "year"
+          },
+          "scope": "Scholes’s final end to his playing career after returning to United.",
+          "sourceKey": "curriculum-uv-pl-scholes-profile",
+          "evidence": "The Premier League Hall of Fame profile dates Scholes’s United playing career from 1994 through 2013."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-champions-uv-scholes-barcelona",
+      "subjectKey": "entity-paul-scholes",
+      "clubKey": "entity-manchester-united",
+      "title": "A strike sends United to Moscow",
+      "subtitle": "The 2008 semi-final against Barcelona",
+      "chapter": "moments",
+      "story": [
+        {
+          "title": "A tense second leg",
+          "body": "After a goalless first leg in Barcelona, United hosted the return match on 29 April 2008. Scholes struck in the first half to give the home side a 1–0 win."
+        },
+        {
+          "title": "A place in the final",
+          "body": "That goal settled the tie and sent United to the Champions League final, where they would face Chelsea in Moscow."
+        }
+      ],
+      "facts": [
+        {
+          "key": "uv-scholes-barca-date",
+          "label": "Semi-final date",
+          "prompt": "On what date did Scholes score the goal that eliminated Barcelona in 2008?",
+          "answers": [
+            "29 April 2008"
+          ],
+          "distractors": [
+            "23 April 2008",
+            "6 May 2008",
+            "21 May 2008"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "29 April 2008",
+            "text": "29 April 2008"
+          },
+          "scope": "The second leg of the 2007/08 Champions League semi-final.",
+          "sourceKey": "curriculum-uv-scholes-barcelona",
+          "evidence": "The official United match highlight labels the Barcelona 1–0 match as 29 April 2008."
+        },
+        {
+          "key": "uv-scholes-barca-score",
+          "label": "Second-leg score",
+          "prompt": "What was the score when United beat Barcelona at Old Trafford in the 2008 semi-final?",
+          "answers": [
+            "1–0"
+          ],
+          "distractors": [
+            "2–0",
+            "1–1",
+            "2–1"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "1–0",
+            "text": "1–0"
+          },
+          "scope": "Manchester United v Barcelona, second leg of the 2008 Champions League semi-final.",
+          "sourceKey": "curriculum-uv-scholes-barcelona",
+          "evidence": "The official highlights are titled Man United 1 Barcelona 0.",
+          "scoreInput": {
+            "leftClubKey": "entity-manchester-united",
+            "rightClubKey": "entity-barcelona",
+            "leftGoals": 1,
+            "rightGoals": 0
+          }
+        },
+        {
+          "key": "uv-scholes-barca-qualifier",
+          "label": "Tie outcome",
+          "prompt": "What did Scholes’s goal earn Manchester United against Barcelona?",
+          "answers": [
+            "A place in the Champions League final"
+          ],
+          "distractors": [
+            "A replay",
+            "A place in the UEFA Cup final",
+            "A domestic cup final place"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "A place in the Champions League final",
+            "text": "A place in the Champions League final"
+          },
+          "scope": "The outcome of the 2008 Champions League semi-final tie.",
+          "sourceKey": "curriculum-uv-scholes-barcelona",
+          "evidence": "United’s account says Scholes’s strike sent United through to the Champions League final."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-champions-uv-scholes-bradford",
+      "subjectKey": "entity-paul-scholes",
+      "clubKey": "entity-manchester-united",
+      "title": "The Valley Parade volley",
+      "subtitle": "Scholes turns a corner into a classic",
+      "chapter": "moments",
+      "story": [
+        {
+          "title": "A two-goal lead",
+          "body": "United were already 2–0 up at Bradford City when Beckham took a corner. Scholes moved into space and met the delivery with a volley."
+        },
+        {
+          "title": "A four-goal win",
+          "body": "The goal came in a 4–0 away victory on 25 March 2000, during United’s successful title defence."
+        }
+      ],
+      "facts": [
+        {
+          "key": "uv-scholes-bradford-assist",
+          "label": "Corner taker",
+          "prompt": "Who delivered the corner that Scholes volleyed in the 2000 match at Bradford?",
+          "answers": [
+            "David Beckham"
+          ],
+          "distractors": [
+            "Ryan Giggs",
+            "Roy Keane",
+            "Teddy Sheringham"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "David Beckham",
+            "text": "David Beckham"
+          },
+          "scope": "The set-piece that led to Scholes’s goal at Valley Parade.",
+          "sourceKey": "curriculum-uv-scholes-bradford",
+          "evidence": "The official club feature says Beckham delivered the corner before Scholes struck."
+        },
+        {
+          "key": "uv-scholes-bradford-scorestate",
+          "label": "Score before goal",
+          "prompt": "What was Manchester United’s score against Bradford immediately after Paul Scholes’s volley on 25 March 2000?",
+          "answers": [
+            "2–0",
+            "United led 2–0"
+          ],
+          "distractors": [
+            "The teams were level 0–0",
+            "United led 1–0",
+            "Bradford led 2–0"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "United led 2–0",
+            "text": "United led 2–0"
+          },
+          "scope": "Match state before Scholes’s goal in United’s 4–0 win.",
+          "sourceKey": "curriculum-uv-scholes-bradford",
+          "evidence": "The club retrospective says two Dwight Yorke goals had put United 2–0 ahead before the volley.",
+          "scoreInput": {
+            "leftClubKey": "entity-manchester-united",
+            "rightClubKey": "entity-bradford",
+            "leftGoals": 2,
+            "rightGoals": 0
+          }
+        },
+        {
+          "key": "uv-scholes-bradford-result",
+          "label": "Final result",
+          "prompt": "What was the final score of United’s away match at Bradford in March 2000?",
+          "answers": [
+            "4–0"
+          ],
+          "distractors": [
+            "3–0",
+            "4–1",
+            "5–0"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "4–0",
+            "text": "4–0"
+          },
+          "scope": "Manchester United’s visit to Bradford City on 25 March 2000.",
+          "sourceKey": "curriculum-uv-scholes-bradford",
+          "evidence": "United’s official feature records the final score as 4–0."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-champions-uv-scholes-records",
+      "subjectKey": "entity-paul-scholes",
+      "clubKey": "entity-manchester-united",
+      "title": "Service, scoring and silverware",
+      "subtitle": "Scholes’s Premier League record and United goal total",
+      "chapter": "records",
+      "story": [
+        {
+          "title": "A long United career",
+          "body": "Scholes made 499 Premier League appearances for United and scored 107 league goals. The Premier League records those totals across his career in the competition."
+        },
+        {
+          "title": "Recognition beyond Old Trafford",
+          "body": "Scholes won 11 Premier League titles with United, including a title after his return from retirement. He also scored 155 goals for the club in all competitions."
+        }
+      ],
+      "facts": [
+        {
+          "key": "uv-scholes-league-apps",
+          "label": "Top-flight appearances",
+          "prompt": "How many Premier League appearances did Scholes make for Manchester United?",
+          "answers": [
+            "499"
+          ],
+          "distractors": [
+            "479",
+            "489",
+            "509"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "499",
+            "text": "499"
+          },
+          "scope": "Scholes’s appearances in the Premier League, which are fewer than his all-competition appearances.",
+          "sourceKey": "curriculum-uv-pl-scholes-profile",
+          "evidence": "The Premier League Hall of Fame profile gives Scholes 499 league appearances."
+        },
+        {
+          "key": "uv-scholes-pl-titles",
+          "label": "Premier League titles",
+          "prompt": "How many Premier League titles did Scholes win with Manchester United over his career?",
+          "answers": [
+            "11"
+          ],
+          "distractors": [
+            "9",
+            "10",
+            "12"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "11",
+            "text": "11"
+          },
+          "scope": "Scholes’s Premier League titles with United, including the title won after his 2011 retirement and 2012 return.",
+          "sourceKey": "curriculum-uv-pl-scholes-profile",
+          "evidence": "The Premier League Hall of Fame profile says Scholes helped United to 11 Premier League titles."
+        },
+        {
+          "key": "uv-scholes-total-goals",
+          "label": "United goals",
+          "prompt": "How many goals did Scholes score for Manchester United in all competitions?",
+          "answers": [
+            "155"
+          ],
+          "distractors": [
+            "145",
+            "150",
+            "160"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "155",
+            "text": "155"
+          },
+          "scope": "Scholes’s Manchester United career total across competitions, not his Premier League-only total.",
+          "sourceKey": "curriculum-uv-scholes-port-vale",
+          "evidence": "Manchester United’s official goal clip calls the Port Vale debut strike the first of Scholes’s 155 United goals."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-champions-uv-villarreal-history",
+      "subjectKey": "entity-villarreal",
+      "clubKey": "entity-villarreal",
+      "title": "A club born in Vila-real",
+      "subtitle": "Early decisions gave Villarreal its identity",
+      "chapter": "history",
+      "story": [
+        {
+          "title": "The founding",
+          "body": "A group of local football enthusiasts founded Club Deportivo Villarreal on 10 March 1923. Pharmacist José Calduch was among the club’s driving forces."
+        },
+        {
+          "title": "The first colours",
+          "body": "The new club selected white shirts and black shorts for its first kits. Yellow shirts arrived in 1946 and became an enduring part of the club’s identity."
+        }
+      ],
+      "facts": [
+        {
+          "key": "uv-villarreal-found-date",
+          "label": "Founding date",
+          "prompt": "On what date was Club Deportivo Villarreal founded?",
+          "answers": [
+            "10 March 1923"
+          ],
+          "distractors": [
+            "17 June 1923",
+            "10 March 1922",
+            "24 May 1923"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "10 March 1923",
+            "text": "10 March 1923"
+          },
+          "scope": "Foundation of CD Villarreal, predecessor of Villarreal CF.",
+          "sourceKey": "curriculum-uv-villarreal-history",
+          "evidence": "The club’s foundation history dates CD Villarreal’s formation to 10 March 1923."
+        },
+        {
+          "key": "uv-villarreal-founder",
+          "label": "Driving force",
+          "prompt": "Which local pharmacist was among the driving forces behind the founding of CD Villarreal?",
+          "answers": [
+            "José Calduch"
+          ],
+          "distractors": [
+            "Manuel Vilanova",
+            "Vicente Peris",
+            "Fernando Roig"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "José Calduch",
+            "text": "José Calduch"
+          },
+          "scope": "The 1923 foundation of the club.",
+          "sourceKey": "curriculum-uv-villarreal-history",
+          "evidence": "Villarreal’s official history identifies pharmacist José Calduch as a leading founder and first president."
+        },
+        {
+          "key": "uv-villarreal-yellow-year",
+          "label": "Yellow shirts",
+          "prompt": "In what year did Villarreal’s shirts change from white to yellow?",
+          "answers": [
+            "1946"
+          ],
+          "distractors": [
+            "1936",
+            "1942",
+            "1956"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "1946",
+            "text": "1946"
+          },
+          "scope": "The club’s shirt colour change from its original white and black kit.",
+          "sourceKey": "curriculum-uv-villarreal-history",
+          "evidence": "The club history says the original white shirts remained until 1946, when they changed to yellow."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-champions-uv-villarreal-arsenal-semi",
+      "subjectKey": "entity-villarreal",
+      "clubKey": "entity-villarreal",
+      "title": "Riquelme’s last-minute penalty",
+      "subtitle": "Villarreal’s 2006 European run ends at the spot",
+      "chapter": "moments",
+      "story": [
+        {
+          "title": "A narrow deficit",
+          "body": "Villarreal hosted Arsenal in the second leg of the 2005/06 Champions League semi-final on 25 April 2006, trailing 1–0 from London. The match remained goalless."
+        },
+        {
+          "title": "One final chance",
+          "body": "In the 89th minute, Juan Román Riquelme took a penalty that could have levelled the aggregate score. Jens Lehmann saved it, and Arsenal advanced 1–0 on aggregate."
+        }
+      ],
+      "facts": [
+        {
+          "key": "uv-villarreal-arsenal-date",
+          "label": "Semi-final date",
+          "prompt": "On what date did Villarreal host Arsenal in the second leg of the 2006 Champions League semi-final?",
+          "answers": [
+            "25 April 2006"
+          ],
+          "distractors": [
+            "19 April 2006",
+            "26 April 2006",
+            "2 May 2006"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "25 April 2006",
+            "text": "25 April 2006"
+          },
+          "scope": "Villarreal v Arsenal, second leg of the 2005/06 Champions League semi-final.",
+          "sourceKey": "curriculum-uv-villarreal-arsenal",
+          "evidence": "UEFA dates the match report to Tuesday, 25 April 2006."
+        },
+        {
+          "key": "uv-villarreal-arsenal-penalty",
+          "label": "Penalty taker",
+          "prompt": "Which Villarreal player took the 89th-minute penalty against Arsenal?",
+          "answers": [
+            "Juan Román Riquelme"
+          ],
+          "distractors": [
+            "Diego Forlán",
+            "Marcos Senna",
+            "Juan Pablo Sorín"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Juan Román Riquelme",
+            "text": "Juan Román Riquelme"
+          },
+          "scope": "The late penalty in the second leg at El Madrigal.",
+          "sourceKey": "curriculum-uv-villarreal-arsenal",
+          "evidence": "UEFA states Riquelme stepped up in the 89th minute and had his spot-kick saved."
+        },
+        {
+          "key": "uv-villarreal-arsenal-aggregate",
+          "label": "Aggregate result",
+          "prompt": "What was Villarreal’s aggregate score against Arsenal when the 2006 semi-final ended?",
+          "answers": [
+            "0–1",
+            "Villarreal lost 0–1 on aggregate"
+          ],
+          "distractors": [
+            "Villarreal won 1–0 on aggregate",
+            "Arsenal won 2–1 on aggregate",
+            "The tie ended 1–1 on aggregate"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Villarreal lost 0–1 on aggregate",
+            "text": "Villarreal lost 0–1 on aggregate"
+          },
+          "scope": "Villarreal’s aggregate result in the two-leg 2006 Champions League semi-final.",
+          "sourceKey": "curriculum-uv-villarreal-arsenal",
+          "evidence": "UEFA reports Arsenal’s 1–0 first-leg win and a 0–0 second leg; Villarreal therefore lost 0–1 on aggregate.",
+          "scoreInput": {
+            "leftClubKey": "entity-villarreal",
+            "rightClubKey": "entity-arsenal",
+            "leftGoals": 0,
+            "rightGoals": 1
+          }
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-champions-uv-villarreal-europa-final",
+      "subjectKey": "entity-villarreal",
+      "clubKey": "entity-villarreal",
+      "title": "Twenty-two kicks to a first European crown",
+      "subtitle": "Rulli decides the 2021 final shoot-out",
+      "chapter": "moments",
+      "story": [
+        {
+          "title": "A final that stayed level",
+          "body": "Villarreal and Manchester United drew 1–1 after extra time in Gdańsk on 26 May 2021. Gerard Moreno opened the scoring and Edinson Cavani equalised."
+        },
+        {
+          "title": "The goalkeeper decides it",
+          "body": "After the first 20 penalties were converted, Gerónimo Rulli scored and then saved David de Gea’s attempt. Villarreal won the shoot-out 11–10 and its first major European trophy."
+        }
+      ],
+      "facts": [
+        {
+          "key": "uv-villarreal-final-date",
+          "label": "Final date",
+          "prompt": "When did Villarreal beat Manchester United in the Europa League final?",
+          "answers": [
+            "26 May 2021"
+          ],
+          "distractors": [
+            "19 May 2021",
+            "26 June 2021",
+            "29 May 2021"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "26 May 2021",
+            "text": "26 May 2021"
+          },
+          "scope": "The 2020/21 UEFA Europa League final in Gdańsk.",
+          "sourceKey": "curriculum-uv-villarreal-final",
+          "evidence": "UEFA dates the final to Wednesday, 26 May 2021."
+        },
+        {
+          "key": "uv-villarreal-final-score",
+          "label": "After extra time",
+          "prompt": "What was Villarreal’s score against Manchester United after extra time in the 2021 Europa League final?",
+          "answers": [
+            "1–1"
+          ],
+          "distractors": [
+            "0–0",
+            "2–1 Villarreal",
+            "1–0 Manchester United"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "1–1",
+            "text": "1–1"
+          },
+          "scope": "Villarreal v Manchester United, before the penalty shoot-out.",
+          "sourceKey": "curriculum-uv-villarreal-final",
+          "evidence": "UEFA’s final report gives the match as 1–1 after extra time.",
+          "scoreInput": {
+            "leftClubKey": "entity-villarreal",
+            "rightClubKey": "entity-manchester-united",
+            "leftGoals": 1,
+            "rightGoals": 1
+          }
+        },
+        {
+          "key": "uv-villarreal-final-saver",
+          "label": "Winning save",
+          "prompt": "Which goalkeeper saved the decisive Manchester United penalty in the shoot-out?",
+          "answers": [
+            "Gerónimo Rulli"
+          ],
+          "distractors": [
+            "David de Gea",
+            "Sergio Asenjo",
+            "Unai Simón"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Gerónimo Rulli",
+            "text": "Gerónimo Rulli"
+          },
+          "scope": "The 22nd penalty in the 2021 Europa League final shoot-out.",
+          "sourceKey": "curriculum-uv-villarreal-final",
+          "evidence": "UEFA says Rulli saved the 22nd kick from De Gea to give Villarreal the trophy."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-champions-uv-forlan-career",
+      "subjectKey": "entity-diego-forlan",
+      "clubKey": "entity-villarreal",
+      "title": "Three seasons in yellow",
+      "subtitle": "Forlán’s Villarreal career, 2004–07",
+      "chapter": "career",
+      "story": [
+        {
+          "title": "A fresh start",
+          "body": "Diego Forlán arrived at Villarreal from Manchester United in summer 2004. He quickly became the focal point of the attack and formed a strong partnership with Juan Román Riquelme."
+        },
+        {
+          "title": "Three prolific seasons",
+          "body": "Forlán scored 59 goals in three seasons for Villarreal before moving to Atlético Madrid in summer 2007. His first campaign brought both a European scoring honour and a club scoring milestone."
+        }
+      ],
+      "facts": [
+        {
+          "key": "uv-forlan-arrival",
+          "label": "Previous club",
+          "prompt": "Which club did Forlán leave to join Villarreal in summer 2004?",
+          "answers": [
+            "Man United",
+            "Manchester United"
+          ],
+          "distractors": [
+            "Everton",
+            "Atlético de Madrid",
+            "Inter"
+          ],
+          "value": {
+            "kind": "entity",
+            "entityKey": "entity-manchester-united",
+            "display": "Man United"
+          },
+          "scope": "Forlán’s arrival at Villarreal in 2004.",
+          "sourceKey": "curriculum-uv-forlan",
+          "evidence": "Villarreal’s player retrospective says he signed from Manchester United in summer 2004."
+        },
+        {
+          "key": "uv-forlan-tenure",
+          "label": "Seasons at Villarreal",
+          "prompt": "How many seasons did Forlán play for Villarreal before leaving in 2007?",
+          "answers": [
+            "Three"
+          ],
+          "distractors": [
+            "One",
+            "Two",
+            "Four"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Three",
+            "text": "Three"
+          },
+          "scope": "Forlán’s Villarreal spell ending with his 2007 transfer.",
+          "sourceKey": "curriculum-uv-forlan",
+          "evidence": "The club describes his transfer as occurring three years after his 2004 arrival, in summer 2007; this means three seasons with Villarreal."
+        },
+        {
+          "key": "uv-forlan-destination",
+          "label": "Next club",
+          "prompt": "Which club signed Forlán from Villarreal in summer 2007?",
+          "answers": [
+            "Atlético de Madrid",
+            "Atlético Madrid"
+          ],
+          "distractors": [
+            "Barcelona",
+            "Liverpool",
+            "Valencia"
+          ],
+          "value": {
+            "kind": "entity",
+            "entityKey": "entity-atletico",
+            "display": "Atlético de Madrid"
+          },
+          "scope": "Forlán’s move after three Villarreal seasons.",
+          "sourceKey": "curriculum-uv-forlan",
+          "evidence": "Villarreal reports it sold Forlán to Atlético Madrid in summer 2007."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-champions-uv-forlan-inter-goal",
+      "subjectKey": "entity-diego-forlan",
+      "clubKey": "entity-villarreal",
+      "title": "Forlán strikes in Milan",
+      "subtitle": "Forlán strikes at the Giuseppe Meazza",
+      "chapter": "moments",
+      "story": [
+        {
+          "title": "Quarter-final pressure",
+          "body": "In the 2005/06 Champions League quarter-final against Inter, Forlán scored in the opening seconds at the Giuseppe Meazza. Villarreal’s official retrospective remembers the goal as coming after just 45 seconds."
+        },
+        {
+          "title": "A memorable away strike",
+          "body": "It was one of two important goals Forlán scored during Villarreal’s run to the semi-finals that season, a campaign in which the club came close to reaching the final."
+        }
+      ],
+      "facts": [
+        {
+          "key": "uv-forlan-inter-opponent",
+          "label": "Quarter-final opponent",
+          "prompt": "Which Italian club did Villarreal face when Forlán scored at the Giuseppe Meazza in 2006?",
+          "answers": [
+            "Inter",
+            "Inter Milan"
+          ],
+          "distractors": [
+            "AC Milan",
+            "Juventus",
+            "Roma"
+          ],
+          "value": {
+            "kind": "entity",
+            "entityKey": "entity-inter",
+            "display": "Inter"
+          },
+          "scope": "The 2005/06 Champions League quarter-final away leg.",
+          "sourceKey": "curriculum-uv-forlan",
+          "evidence": "The club’s Forlán feature identifies the quarter-final opponent as Inter Milan."
+        },
+        {
+          "key": "uv-forlan-inter-venue",
+          "label": "Stadium",
+          "prompt": "At which stadium did Forlán score his rapid quarter-final goal against Inter?",
+          "answers": [
+            "Giuseppe Meazza"
+          ],
+          "distractors": [
+            "Stadio Olimpico",
+            "Allianz Stadium",
+            "Stadio Artemio Franchi"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Giuseppe Meazza",
+            "text": "Giuseppe Meazza"
+          },
+          "scope": "Villarreal’s away quarter-final match against Inter.",
+          "sourceKey": "curriculum-uv-forlan",
+          "evidence": "The official account places the goal at the Giuseppe Meazza. Distractors are distinct stadiums; San Siro is treated as a synonym and therefore excluded below."
+        },
+        {
+          "key": "uv-forlan-inter-time",
+          "label": "Time to goal",
+          "prompt": "How soon did Forlán score at Inter’s stadium in that Champions League tie?",
+          "answers": [
+            "45 seconds"
+          ],
+          "distractors": [
+            "5 minutes",
+            "12 minutes",
+            "45 minutes"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "45 seconds",
+            "text": "45 seconds"
+          },
+          "scope": "The opening phase of Villarreal’s 2005/06 quarter-final at Inter.",
+          "sourceKey": "curriculum-uv-forlan",
+          "evidence": "Villarreal’s official retrospective says the goal came after just 45 seconds."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-champions-uv-forlan-camp-nou",
+      "subjectKey": "entity-diego-forlan",
+      "clubKey": "entity-villarreal",
+      "title": "A hat-trick at Camp Nou",
+      "subtitle": "Forlán’s first LaLiga treble for Villarreal",
+      "chapter": "moments",
+      "story": [
+        {
+          "title": "A statement away performance",
+          "body": "Forlán scored his first LaLiga hat-trick for Villarreal at Camp Nou during the 2004/05 season. The match finished 3–3 against Barcelona."
+        },
+        {
+          "title": "A rare club mark",
+          "body": "Villarreal’s Spanish profile identifies two LaLiga hat-tricks for Forlán: this 3–3 at Camp Nou in 2004/05 and another against Osasuna in 2006/07."
+        }
+      ],
+      "facts": [
+        {
+          "key": "uv-forlan-camp-nou-opponent",
+          "label": "Opponent",
+          "prompt": "Which team was Villarreal playing when Forlán scored his first LaLiga hat-trick for the club?",
+          "answers": [
+            "Barcelona"
+          ],
+          "distractors": [
+            "Real Madrid",
+            "Valencia",
+            "Sevilla"
+          ],
+          "value": {
+            "kind": "entity",
+            "entityKey": "entity-barcelona",
+            "display": "Barcelona"
+          },
+          "scope": "Forlán’s first Villarreal LaLiga hat-trick, played at Camp Nou.",
+          "sourceKey": "curriculum-uv-forlan-es",
+          "evidence": "Villarreal’s Spanish profile names the first of Forlán’s two LaLiga hat-tricks as the 3–3 at Camp Nou."
+        },
+        {
+          "key": "uv-forlan-camp-nou-score",
+          "label": "Final score",
+          "prompt": "What was Barcelona’s score against Villarreal in Diego Forlán’s Camp Nou hat-trick match on 22 May 2005?",
+          "answers": [
+            "3–3"
+          ],
+          "distractors": [
+            "3–2 Barcelona",
+            "2–2",
+            "4–3 Villarreal"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "3–3",
+            "text": "3–3"
+          },
+          "scope": "Villarreal’s 2004/05 LaLiga match at Barcelona.",
+          "sourceKey": "curriculum-uv-forlan-es",
+          "evidence": "The Spanish official profile gives the Camp Nou match as 3–3.",
+          "scoreInput": {
+            "leftClubKey": "entity-barcelona",
+            "rightClubKey": "entity-villarreal",
+            "leftGoals": 3,
+            "rightGoals": 3
+          }
+        },
+        {
+          "key": "uv-forlan-camp-nou-season",
+          "label": "Season",
+          "prompt": "In which season did Forlán score that first Villarreal LaLiga hat-trick?",
+          "answers": [
+            "2004/05"
+          ],
+          "distractors": [
+            "2003/04",
+            "2005/06",
+            "2006/07"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "2004/05",
+            "text": "2004/05"
+          },
+          "scope": "Forlán’s first LaLiga treble for Villarreal.",
+          "sourceKey": "curriculum-uv-forlan-es",
+          "evidence": "The Spanish official profile dates Forlán’s first Villarreal LaLiga hat-trick to 2004/05."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-champions-uv-forlan-records",
+      "subjectKey": "entity-diego-forlan",
+      "clubKey": "entity-villarreal",
+      "title": "Europe’s leading scorer",
+      "subtitle": "A first-season scoring record and rare club mark",
+      "chapter": "records",
+      "story": [
+        {
+          "title": "A prolific league campaign",
+          "body": "Forlán scored 25 domestic goals in 2004/05, making him the top scorer across Europe that season. Villarreal’s retrospective calls this the campaign’s Golden Ball; the lesson focuses on the precise scoring record and the club’s stated hat-trick mark."
+        },
+        {
+          "title": "A lasting club mark",
+          "body": "Across three seasons in yellow he scored 59 times. Villarreal’s Spanish profile says he was the only player in club history to score two LaLiga hat-tricks."
+        }
+      ],
+      "facts": [
+        {
+          "key": "uv-forlan-domestic-goals",
+          "label": "Domestic goals",
+          "prompt": "How many domestic goals did Forlán score for Villarreal in the 2004/05 season?",
+          "answers": [
+            "25"
+          ],
+          "distractors": [
+            "21",
+            "23",
+            "27"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "25",
+            "text": "25"
+          },
+          "scope": "Forlán’s 2004/05 domestic season for Villarreal.",
+          "sourceKey": "curriculum-uv-forlan",
+          "evidence": "The club says his 25 domestic strikes made him the top scorer across the continent."
+        },
+        {
+          "key": "uv-forlan-hattricks",
+          "label": "LaLiga hat-tricks",
+          "prompt": "How many LaLiga hat-tricks did Forlán score for Villarreal, according to the club’s Spanish profile?",
+          "answers": [
+            "Two"
+          ],
+          "distractors": [
+            "One",
+            "Three",
+            "Four"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Two",
+            "text": "Two"
+          },
+          "scope": "Forlán’s LaLiga hat-tricks for Villarreal, as described in the club’s retrospective.",
+          "sourceKey": "curriculum-uv-forlan-es",
+          "evidence": "Villarreal’s Spanish-language official profile says Forlán was the only player in club history to score two Primera División hat-tricks, naming Camp Nou in 2004/05 and Osasuna in 2006/07. The English translation incorrectly says three."
+        },
+        {
+          "key": "uv-forlan-villarreal-goals",
+          "label": "Villarreal goals",
+          "prompt": "How many goals did Forlán score in his three seasons at Villarreal?",
+          "answers": [
+            "59"
+          ],
+          "distractors": [
+            "49",
+            "54",
+            "64"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "59",
+            "text": "59"
+          },
+          "scope": "Forlán’s completed Villarreal scoring total across three seasons.",
+          "sourceKey": "curriculum-uv-forlan",
+          "evidence": "The club’s profile records 59 goals in his three seasons as a Yellow."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-champions-uv-senna-career",
+      "subjectKey": "entity-marcos-senna",
+      "clubKey": "entity-villarreal",
+      "title": "A long-serving captain in yellow",
+      "subtitle": "Senna’s arrival and Villarreal career",
+      "chapter": "career",
+      "story": [
+        {
+          "title": "A Brazilian arrival",
+          "body": "Marcos Senna joined Villarreal in summer 2002 from São Caetano. After overcoming two serious knee injuries early in his time at the club, he became a midfield cornerstone."
+        },
+        {
+          "title": "A club emblem",
+          "body": "He wore Villarreal’s shirt for 11 seasons, captained the team and scored 33 goals despite playing as a holding midfielder."
+        }
+      ],
+      "facts": [
+        {
+          "key": "uv-senna-joined-year",
+          "label": "Arrival year",
+          "prompt": "In what year did Senna join Villarreal from São Caetano?",
+          "answers": [
+            "2002"
+          ],
+          "distractors": [
+            "2000",
+            "2001",
+            "2003"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "2002",
+            "text": "2002"
+          },
+          "scope": "Senna’s transfer from São Caetano to Villarreal.",
+          "sourceKey": "curriculum-uv-senna-career",
+          "evidence": "Villarreal’s biography says Senna arrived in summer 2002 from São Caetano."
+        },
+        {
+          "key": "uv-senna-seasons",
+          "label": "Seasons in yellow",
+          "prompt": "How many seasons did Senna represent Villarreal?",
+          "answers": [
+            "11"
+          ],
+          "distractors": [
+            "8",
+            "9",
+            "13"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "11",
+            "text": "11"
+          },
+          "scope": "Senna’s first-team tenure with Villarreal.",
+          "sourceKey": "curriculum-uv-senna-career",
+          "evidence": "The club says he wore the yellow shirt for 11 seasons."
+        },
+        {
+          "key": "uv-senna-goals",
+          "label": "Goals as a midfielder",
+          "prompt": "How many goals did Senna score for Villarreal?",
+          "answers": [
+            "33"
+          ],
+          "distractors": [
+            "23",
+            "29",
+            "38"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "33",
+            "text": "33"
+          },
+          "scope": "Senna’s goals for Villarreal, where he played as a holding midfielder.",
+          "sourceKey": "curriculum-uv-senna-career",
+          "evidence": "The official profile records 33 goals for the Yellows."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-champions-uv-senna-stay",
+      "subjectKey": "entity-marcos-senna",
+      "clubKey": "entity-villarreal",
+      "title": "He stayed to help Villarreal rise again",
+      "subtitle": "Senna’s response to relegation",
+      "chapter": "moments",
+      "story": [
+        {
+          "title": "A difficult fall",
+          "body": "Villarreal dropped from the top flight after the 2011/12 season. Senna chose to extend his contract rather than leave and stayed for another season."
+        },
+        {
+          "title": "Back to Primera",
+          "body": "The club returned to the top division after the 2012/13 campaign. Villarreal’s account remembers Senna as a committed leader who helped the team regain its place in the top flight."
+        }
+      ],
+      "facts": [
+        {
+          "key": "uv-senna-relegation-season",
+          "label": "Relegation season",
+          "prompt": "After which season did Villarreal suffer the relegation that Senna stayed to respond to?",
+          "answers": [
+            "2011/12"
+          ],
+          "distractors": [
+            "2010/11",
+            "2012/13",
+            "2013/14"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "2011/12",
+            "text": "2011/12"
+          },
+          "scope": "Villarreal’s drop to Segunda División before the promotion season.",
+          "sourceKey": "curriculum-uv-senna-career",
+          "evidence": "The club’s historical table shows Villarreal 18th in Primera in 2011/12; Senna’s profile says he stayed after relegation."
+        },
+        {
+          "key": "uv-senna-decision",
+          "label": "Senna’s choice",
+          "prompt": "What did Senna decide to do after Villarreal were relegated?",
+          "answers": [
+            "Extend his contract and stay another season"
+          ],
+          "distractors": [
+            "Retire immediately",
+            "Join New York Cosmos",
+            "Move to São Caetano"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Extend his contract and stay another season",
+            "text": "Extend his contract and stay another season"
+          },
+          "scope": "Senna’s decision after Villarreal went down to Segunda.",
+          "sourceKey": "curriculum-uv-senna-career",
+          "evidence": "The club says he extended his contract and stayed one more season to help return Villarreal to the top flight."
+        },
+        {
+          "key": "uv-senna-next-club",
+          "label": "Next club",
+          "prompt": "After Villarreal returned to the top flight, which club did Senna join to finish his playing career?",
+          "answers": [
+            "New York Cosmos"
+          ],
+          "distractors": [
+            "São Caetano",
+            "Valencia",
+            "Orlando City"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "New York Cosmos",
+            "text": "New York Cosmos"
+          },
+          "scope": "Senna’s move after he stayed one additional season and helped Villarreal return to the top flight.",
+          "sourceKey": "curriculum-uv-senna-career",
+          "evidence": "Villarreal says Senna left after the promotion season to end his career in the United States with New York Cosmos."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-champions-uv-senna-records",
+      "subjectKey": "entity-marcos-senna",
+      "clubKey": "entity-villarreal",
+      "title": "A long Villarreal career",
+      "subtitle": "Official match totals",
+      "chapter": "records",
+      "story": [
+        {
+          "title": "Across competitions",
+          "body": "Senna played 363 official matches for Villarreal. That tally included 292 LaLiga matches and appearances in several European and domestic cups."
+        },
+        {
+          "title": "A benchmark in yellow",
+          "body": "When Villarreal welcomed Senna back in 2015, the club described him as its record-holder for official appearances. His total remains 363, although the club later reported that Bruno Soriano surpassed the mark."
+        }
+      ],
+      "facts": [
+        {
+          "key": "uv-senna-total-apps",
+          "label": "Official appearances",
+          "prompt": "How many official matches did Senna play for Villarreal across competitions?",
+          "answers": [
+            "363"
+          ],
+          "distractors": [
+            "333",
+            "353",
+            "373"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "363",
+            "text": "363"
+          },
+          "scope": "Senna’s total official Villarreal appearances at the time of the club’s tribute.",
+          "sourceKey": "curriculum-uv-senna-records",
+          "evidence": "The club lists 363 total official appearances and identifies him as the record holder at that time."
+        },
+        {
+          "key": "uv-senna-laliga-apps",
+          "label": "League appearances",
+          "prompt": "How many of Senna’s Villarreal matches were in LaLiga?",
+          "answers": [
+            "292"
+          ],
+          "distractors": [
+            "272",
+            "282",
+            "302"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "292",
+            "text": "292"
+          },
+          "scope": "Senna’s LaLiga appearances within his 363-match Villarreal total.",
+          "sourceKey": "curriculum-uv-senna-records",
+          "evidence": "The club breaks his appearances down and lists 292 in the Spanish first division."
+        },
+        {
+          "key": "uv-senna-ucl-apps",
+          "label": "Champions League appearances",
+          "prompt": "How many Champions League matches did Senna play for Villarreal?",
+          "answers": [
+            "27"
+          ],
+          "distractors": [
+            "17",
+            "22",
+            "32"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "27",
+            "text": "27"
+          },
+          "scope": "Senna’s Villarreal appearances in the UEFA Champions League.",
+          "sourceKey": "curriculum-uv-senna-records",
+          "evidence": "The club’s competition breakdown gives Senna 27 Champions League appearances."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-champions-uv-senna-spain-legacy",
+      "subjectKey": "entity-marcos-senna",
+      "clubKey": "entity-villarreal",
+      "title": "From São Paulo to European champion",
+      "subtitle": "Senna’s Spain international legacy",
+      "chapter": "legacy",
+      "story": [
+        {
+          "title": "Spain career",
+          "body": "Villarreal records 28 matches for Spain, including two at the 2006 World Cup. Senna made his national-team debut in 2006."
+        },
+        {
+          "title": "A European champion",
+          "body": "Senna helped Spain win UEFA EURO 2008, a defining achievement in his international career."
+        }
+      ],
+      "facts": [
+        {
+          "key": "uv-senna-spain-caps",
+          "label": "Spain appearances",
+          "prompt": "How many Spain appearances did Senna make while playing for Villarreal, according to the club’s 2019 count?",
+          "answers": [
+            "28"
+          ],
+          "distractors": [
+            "26",
+            "27",
+            "29"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "28",
+            "number": 28,
+            "unit": "Spain appearances"
+          },
+          "scope": "Senna’s Spain appearances while he was a Villarreal player, as listed in the club’s 2019 article.",
+          "sourceKey": "curriculum-uv-senna-spain",
+          "evidence": "Villarreal’s 2019 official article lists Marcos Senna with 28 matches among players who represented Spain while at the club."
+        },
+        {
+          "key": "uv-senna-spain-debut",
+          "label": "Spain debut year",
+          "prompt": "In what year did Senna make his debut for Spain?",
+          "answers": [
+            "2006"
+          ],
+          "distractors": [
+            "2005",
+            "2007",
+            "2008"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "2006",
+            "text": "2006"
+          },
+          "scope": "Senna’s first appearance for the Spanish national team.",
+          "sourceKey": "curriculum-uv-senna-career",
+          "evidence": "Villarreal’s official profile states Senna debuted for Spain in 2006."
+        },
+        {
+          "key": "uv-senna-euro-title",
+          "label": "International honour",
+          "prompt": "Which major international tournament did Senna win with Spain in 2008?",
+          "answers": [
+            "UEFA European Championship / UEFA EURO"
+          ],
+          "distractors": [
+            "FIFA World Cup",
+            "FIFA Confederations Cup",
+            "UEFA Nations League"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "UEFA European Championship / UEFA EURO",
+            "text": "UEFA European Championship / UEFA EURO"
+          },
+          "scope": "Senna’s international title with Spain in 2008.",
+          "sourceKey": "curriculum-uv-senna-records",
+          "evidence": "Villarreal’s official retrospective says Senna won the UEFA European Championship with Spain in 2008."
+        }
+      ]
+    }
+  ]
+}

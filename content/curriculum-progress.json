@@ -1,5 +1,5 @@
 {
-  "contentVersion": 17,
+  "contentVersion": 18,
   "scope": "Depth among offered club courses and authored player courses. Player course totals are not coverage of the full game catalog.",
   "clubs": [
     {
@@ -108,11 +108,17 @@
     {
       "key": "roadmap-atlas",
       "name": "Atlas",
-      "requiredLessons": 1,
-      "definingMomentLessons": 0,
-      "playerPaths": [],
-      "completePlayerPaths": [],
-      "complete": false
+      "requiredLessons": 12,
+      "definingMomentLessons": 2,
+      "playerPaths": [
+        "roadmap-player-camilo-vargas",
+        "roadmap-player-rafael-marquez"
+      ],
+      "completePlayerPaths": [
+        "roadmap-player-camilo-vargas",
+        "roadmap-player-rafael-marquez"
+      ],
+      "complete": true
     },
     {
       "key": "roadmap-atletico-madrid",
@@ -384,11 +390,17 @@
     {
       "key": "roadmap-hoffenheim",
       "name": "TSG Hoffenheim",
-      "requiredLessons": 1,
-      "definingMomentLessons": 0,
-      "playerPaths": [],
-      "completePlayerPaths": [],
-      "complete": false
+      "requiredLessons": 12,
+      "definingMomentLessons": 2,
+      "playerPaths": [
+        "roadmap-player-niklas-sule",
+        "roadmap-player-andrej-kramaric"
+      ],
+      "completePlayerPaths": [
+        "roadmap-player-niklas-sule",
+        "roadmap-player-andrej-kramaric"
+      ],
+      "complete": true
     },
     {
       "key": "roadmap-inter",
@@ -519,11 +531,17 @@
     {
       "key": "roadmap-manchester-united",
       "name": "Man United",
-      "requiredLessons": 1,
-      "definingMomentLessons": 0,
-      "playerPaths": [],
-      "completePlayerPaths": [],
-      "complete": false
+      "requiredLessons": 12,
+      "definingMomentLessons": 2,
+      "playerPaths": [
+        "roadmap-player-wayne-rooney",
+        "roadmap-player-paul-scholes"
+      ],
+      "completePlayerPaths": [
+        "roadmap-player-wayne-rooney",
+        "roadmap-player-paul-scholes"
+      ],
+      "complete": true
     },
     {
       "key": "roadmap-monterrey",
@@ -636,11 +654,17 @@
     {
       "key": "roadmap-puebla",
       "name": "Puebla",
-      "requiredLessons": 1,
-      "definingMomentLessons": 0,
-      "playerPaths": [],
-      "completePlayerPaths": [],
-      "complete": false
+      "requiredLessons": 12,
+      "definingMomentLessons": 2,
+      "playerPaths": [
+        "roadmap-player-benito-pardo",
+        "roadmap-player-joaquin-velazquez"
+      ],
+      "completePlayerPaths": [
+        "roadmap-player-benito-pardo",
+        "roadmap-player-joaquin-velazquez"
+      ],
+      "complete": true
     },
     {
       "key": "roadmap-pumas",
@@ -696,11 +720,17 @@
     {
       "key": "roadmap-santos-laguna",
       "name": "Santos Laguna",
-      "requiredLessons": 1,
-      "definingMomentLessons": 0,
-      "playerPaths": [],
-      "completePlayerPaths": [],
-      "complete": false
+      "requiredLessons": 12,
+      "definingMomentLessons": 2,
+      "playerPaths": [
+        "roadmap-player-oswaldo-sanchez",
+        "roadmap-player-jared-borgetti"
+      ],
+      "completePlayerPaths": [
+        "roadmap-player-oswaldo-sanchez",
+        "roadmap-player-jared-borgetti"
+      ],
+      "complete": true
     },
     {
       "key": "roadmap-schalke-04",
@@ -801,11 +831,17 @@
     {
       "key": "roadmap-union-berlin",
       "name": "1. FC Union Berlin",
-      "requiredLessons": 1,
-      "definingMomentLessons": 0,
-      "playerPaths": [],
-      "completePlayerPaths": [],
-      "complete": false
+      "requiredLessons": 12,
+      "definingMomentLessons": 2,
+      "playerPaths": [
+        "roadmap-player-maximilian-kruse",
+        "roadmap-player-taiwo-awoniyi"
+      ],
+      "completePlayerPaths": [
+        "roadmap-player-maximilian-kruse",
+        "roadmap-player-taiwo-awoniyi"
+      ],
+      "complete": true
     },
     {
       "key": "roadmap-viking",
@@ -819,11 +855,17 @@
     {
       "key": "roadmap-villarreal",
       "name": "Villarreal",
-      "requiredLessons": 1,
-      "definingMomentLessons": 0,
-      "playerPaths": [],
-      "completePlayerPaths": [],
-      "complete": false
+      "requiredLessons": 12,
+      "definingMomentLessons": 2,
+      "playerPaths": [
+        "roadmap-player-diego-forlan",
+        "roadmap-player-marcos-senna"
+      ],
+      "completePlayerPaths": [
+        "roadmap-player-diego-forlan",
+        "roadmap-player-marcos-senna"
+      ],
+      "complete": true
     },
     {
       "key": "roadmap-werder-bremen",
@@ -1933,18 +1975,207 @@
       ],
       "missingAreas": [],
       "complete": true
+    },
+    {
+      "key": "roadmap-player-andrej-kramaric",
+      "name": "Andrej Kramaric",
+      "entityID": "a04809d3-3cbd-585a-a705-6e8fdcdaccef",
+      "playerLessons": 4,
+      "chapters": [
+        "Career journey",
+        "Defining moments",
+        "Records & honours",
+        "Legacy"
+      ],
+      "missingAreas": [],
+      "complete": true
+    },
+    {
+      "key": "roadmap-player-niklas-sule",
+      "name": "Niklas Sule",
+      "entityID": "582225cb-f040-5e6e-8bf5-383832fda0ea",
+      "playerLessons": 4,
+      "chapters": [
+        "Career journey",
+        "Defining moments",
+        "Records & honours",
+        "Legacy"
+      ],
+      "missingAreas": [],
+      "complete": true
+    },
+    {
+      "key": "roadmap-player-maximilian-kruse",
+      "name": "Max Kruse",
+      "entityID": "200a6ff6-d78a-5b22-9c64-354d15e3db0e",
+      "playerLessons": 4,
+      "chapters": [
+        "Career journey",
+        "Defining moments",
+        "Records & honours",
+        "Legacy"
+      ],
+      "missingAreas": [],
+      "complete": true
+    },
+    {
+      "key": "roadmap-player-taiwo-awoniyi",
+      "name": "Taiwo Awoniyi",
+      "entityID": "9a7268e8-9a8f-5281-8a5b-95ba43cc4356",
+      "playerLessons": 4,
+      "chapters": [
+        "Career journey",
+        "Defining moments",
+        "Records & honours",
+        "Legacy"
+      ],
+      "missingAreas": [],
+      "complete": true
+    },
+    {
+      "key": "roadmap-player-wayne-rooney",
+      "name": "Wayne Rooney",
+      "entityID": "78f2dd45-4bbe-5de8-b329-44e0d154f89c",
+      "playerLessons": 4,
+      "chapters": [
+        "Career journey",
+        "Defining moments",
+        "Records & honours"
+      ],
+      "missingAreas": [],
+      "complete": true
+    },
+    {
+      "key": "roadmap-player-paul-scholes",
+      "name": "Paul Scholes",
+      "entityID": "7ae99879-4dd0-5a48-932a-ab6f0b32e2ed",
+      "playerLessons": 4,
+      "chapters": [
+        "Career journey",
+        "Defining moments",
+        "Records & honours"
+      ],
+      "missingAreas": [],
+      "complete": true
+    },
+    {
+      "key": "roadmap-player-diego-forlan",
+      "name": "Diego Forlán",
+      "entityID": "8dc7daa0-1a39-5b40-8af0-c55fa86f2cba",
+      "playerLessons": 4,
+      "chapters": [
+        "Career journey",
+        "Defining moments",
+        "Records & honours"
+      ],
+      "missingAreas": [],
+      "complete": true
+    },
+    {
+      "key": "roadmap-player-marcos-senna",
+      "name": "Marcos Senna",
+      "entityID": "9ba6bd23-e51b-5fef-bad5-cc6f67a8fefc",
+      "playerLessons": 4,
+      "chapters": [
+        "Career journey",
+        "Defining moments",
+        "Records & honours",
+        "Legacy"
+      ],
+      "missingAreas": [],
+      "complete": true
+    },
+    {
+      "key": "roadmap-player-rafael-marquez",
+      "name": "Rafael Márquez",
+      "entityID": "f0933dcf-bd5d-5ec6-a4ea-126a704ec482",
+      "playerLessons": 4,
+      "chapters": [
+        "Career journey",
+        "Defining moments",
+        "Records & honours"
+      ],
+      "missingAreas": [],
+      "complete": true
+    },
+    {
+      "key": "roadmap-player-camilo-vargas",
+      "name": "Camilo Vargas",
+      "entityID": "8210f52b-0181-5049-9728-b66ad01af2c3",
+      "playerLessons": 4,
+      "chapters": [
+        "Career journey",
+        "Defining moments",
+        "Records & honours"
+      ],
+      "missingAreas": [],
+      "complete": true
+    },
+    {
+      "key": "roadmap-player-jared-borgetti",
+      "name": "Jared Borgetti",
+      "entityID": "d5a9ac96-8cbb-51c6-92d4-4ef6cf8e88f6",
+      "playerLessons": 4,
+      "chapters": [
+        "Career journey",
+        "Defining moments",
+        "Records & honours",
+        "Legacy"
+      ],
+      "missingAreas": [],
+      "complete": true
+    },
+    {
+      "key": "roadmap-player-oswaldo-sanchez",
+      "name": "Oswaldo Sánchez",
+      "entityID": "7089283c-39de-5633-b64c-9ff67cedcb68",
+      "playerLessons": 4,
+      "chapters": [
+        "Career journey",
+        "Records & honours",
+        "Defining moments"
+      ],
+      "missingAreas": [],
+      "complete": true
+    },
+    {
+      "key": "roadmap-player-joaquin-velazquez",
+      "name": "Joaquín Velázquez",
+      "entityID": "98ad9c3e-b365-5fe7-a9d1-b80bd65b5f58",
+      "playerLessons": 4,
+      "chapters": [
+        "Career journey",
+        "Defining moments",
+        "Records & honours"
+      ],
+      "missingAreas": [],
+      "complete": true
+    },
+    {
+      "key": "roadmap-player-benito-pardo",
+      "name": "Benito Pardo",
+      "entityID": "81e42b20-3b2f-5507-86cf-802d3be229e1",
+      "playerLessons": 4,
+      "chapters": [
+        "Career journey",
+        "Defining moments",
+        "Records & honours",
+        "Legacy"
+      ],
+      "missingAreas": [],
+      "complete": true
     }
   ],
-  "completedClubs": 35,
+  "completedClubs": 42,
   "totalClubs": 69,
-  "completedPlayers": 79,
-  "totalPlayers": 79,
+  "completedPlayers": 93,
+  "totalPlayers": 93,
   "gameCatalogPlayerCoverage": {
     "scope": "Unique supplied game-catalog player IDs with an explicit reviewed identity binding; no name-based guesses. This historical catalog is not a current squad list.",
     "totalCatalogPlayers": 5274,
-    "playersWithAuthoredPaths": 53,
-    "playersMeetingDepthRequirements": 53,
-    "playersWithoutAuthoredPaths": 5221,
+    "playersWithAuthoredPaths": 62,
+    "playersMeetingDepthRequirements": 62,
+    "playersWithoutAuthoredPaths": 5212,
     "independentPlayerPaths": [
       "roadmap-player-riascos",
       "roadmap-player-arce",
@@ -1971,7 +2202,12 @@
       "roadmap-player-stefan-bell",
       "roadmap-player-guenter-netzer",
       "roadmap-player-helmut-haller",
-      "roadmap-player-daniel-baier"
+      "roadmap-player-daniel-baier",
+      "roadmap-player-camilo-vargas",
+      "roadmap-player-jared-borgetti",
+      "roadmap-player-oswaldo-sanchez",
+      "roadmap-player-joaquin-velazquez",
+      "roadmap-player-benito-pardo"
     ]
   }
 }

@@ -75,7 +75,7 @@ final class FlowTests: XCTestCase {
         tap(key);tap("lesson-next");tap("lesson-next")
         for index in 0..<4 {
             if app.pickerWheels.count == 2 {
-                let score = key == "lesson-curriculum-netzer-moment-cup" ? ("2","1") : key == "lesson-necaxa-starter" ? ("9","0") : key == "lesson-competition-champions-league-istanbul" ? [("3","0"),("3","3"),("3","2"),("3","0")][index] : ("4","1")
+                let score = key == "lesson-curriculum-champions-uv-rooney-fenerbahce" ? ("6","2") : key == "lesson-curriculum-champions-uv-rooney-city-overhead" ? ("2","1") : key == "lesson-curriculum-netzer-moment-cup" ? ("2","1") : key == "lesson-necaxa-starter" ? ("9","0") : key == "lesson-competition-champions-league-istanbul" ? [("3","0"),("3","3"),("3","2"),("3","0")][index] : ("4","1")
                 setScore(score.0,score.1);tap("check-score")
             } else {tap("answer-choice-0")}
             tap("answer-next")
@@ -840,6 +840,28 @@ final class FlowTests: XCTestCase {
         tap("timeline-sources");XCTAssertTrue(app.staticTexts["2007"].exists)
         let context=XCTAttachment(screenshot:app.screenshot());context.name="Large text timeline sources";context.lifetime = .keepAlways;add(context)
         tap("timeline-sources-done");tap("timeline-replay")
+    }
+    func testExpandedRooneyCourseScoresAndProgressPersist() {
+        start();tap("choose-XT");choosePlayer("Wayne Rooney","wayne-rooney")
+        XCTAssertTrue(app.staticTexts["roadmap-progress"].label.contains("0 of 4 starter lessons"))
+        completeLesson("lesson-curriculum-champions-uv-rooney-fenerbahce")
+        completeLesson("lesson-curriculum-champions-uv-rooney-city-overhead")
+        completeLesson("lesson-curriculum-champions-uv-rooney-record")
+        XCTAssertTrue(app.staticTexts["roadmap-progress"].label.contains("3 of 4 starter lessons"))
+        app.terminate();start(reset:false)
+        XCTAssertTrue(app.staticTexts["Wayne Rooney"].waitForExistence(timeout:5))
+        XCTAssertTrue(app.staticTexts["roadmap-progress"].label.contains("3 of 4 starter lessons"))
+    }
+    func testExpandedSuleAndVargasVisualLessons() {
+        start();tap("choose-XT");choosePlayer("Niklas Süle","niklas-sule")
+        completeLesson("lesson-curriculum-sule-germany-debut")
+        XCTAssertTrue(app.staticTexts["roadmap-progress"].label.contains("1 of 4 starter lessons"))
+        choosePlayer("Camilo Vargas","camilo-vargas")
+        completeLesson("lesson-curriculum-camilo-vargas-legacy")
+        XCTAssertTrue(app.staticTexts["roadmap-progress"].label.contains("1 of 4 starter lessons"))
+        app.terminate();start(reset:false)
+        XCTAssertTrue(app.staticTexts["Camilo Vargas"].waitForExistence(timeout:5))
+        XCTAssertTrue(app.staticTexts["roadmap-progress"].label.contains("1 of 4 starter lessons"))
     }
     func testExpandedNetzerCourseAndScorePersist() {
         start();tap("choose-XT");choosePlayer("Günter Netzer","guenter-netzer")
