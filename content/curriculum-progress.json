@@ -1,5 +1,5 @@
 {
-  "contentVersion": 14,
+  "contentVersion": 15,
   "scope": "Depth among offered club courses and authored player courses. Player course totals are not coverage of the full game catalog.",
   "clubs": [
     {
@@ -261,11 +261,17 @@
     {
       "key": "roadmap-cruz-azul",
       "name": "Cruz Azul",
-      "requiredLessons": 1,
-      "definingMomentLessons": 0,
-      "playerPaths": [],
-      "completePlayerPaths": [],
-      "complete": false
+      "requiredLessons": 12,
+      "definingMomentLessons": 2,
+      "playerPaths": [
+        "roadmap-player-carlos-hermosillo",
+        "roadmap-player-oscar-perez"
+      ],
+      "completePlayerPaths": [
+        "roadmap-player-carlos-hermosillo",
+        "roadmap-player-oscar-perez"
+      ],
+      "complete": true
     },
     {
       "key": "roadmap-eintracht-frankfurt",
@@ -414,11 +420,17 @@
     {
       "key": "roadmap-leon",
       "name": "Club León",
-      "requiredLessons": 1,
-      "definingMomentLessons": 0,
-      "playerPaths": [],
-      "completePlayerPaths": [],
-      "complete": false
+      "requiredLessons": 12,
+      "definingMomentLessons": 2,
+      "playerPaths": [
+        "roadmap-player-fidel-ambriz",
+        "roadmap-player-victor-davila"
+      ],
+      "completePlayerPaths": [
+        "roadmap-player-fidel-ambriz",
+        "roadmap-player-victor-davila"
+      ],
+      "complete": true
     },
     {
       "key": "roadmap-lille",
@@ -543,11 +555,17 @@
     {
       "key": "roadmap-porto",
       "name": "Porto",
-      "requiredLessons": 1,
-      "definingMomentLessons": 0,
-      "playerPaths": [],
-      "completePlayerPaths": [],
-      "complete": false
+      "requiredLessons": 12,
+      "definingMomentLessons": 2,
+      "playerPaths": [
+        "roadmap-player-vitor-baia",
+        "roadmap-player-deco"
+      ],
+      "completePlayerPaths": [
+        "roadmap-player-vitor-baia",
+        "roadmap-player-deco"
+      ],
+      "complete": true
     },
     {
       "key": "roadmap-psg",
@@ -585,11 +603,17 @@
     {
       "key": "roadmap-pumas",
       "name": "Pumas UNAM",
-      "requiredLessons": 1,
-      "definingMomentLessons": 0,
-      "playerPaths": [],
-      "completePlayerPaths": [],
-      "complete": false
+      "requiredLessons": 12,
+      "definingMomentLessons": 2,
+      "playerPaths": [
+        "roadmap-player-jorge-campos",
+        "roadmap-player-hugo-sanchez"
+      ],
+      "completePlayerPaths": [
+        "roadmap-player-jorge-campos",
+        "roadmap-player-hugo-sanchez"
+      ],
+      "complete": true
     },
     {
       "key": "roadmap-queretaro",
@@ -675,11 +699,17 @@
     {
       "key": "roadmap-sporting-cp",
       "name": "Sporting CP",
-      "requiredLessons": 1,
-      "definingMomentLessons": 0,
-      "playerPaths": [],
-      "completePlayerPaths": [],
-      "complete": false
+      "requiredLessons": 12,
+      "definingMomentLessons": 2,
+      "playerPaths": [
+        "roadmap-player-luis-figo",
+        "roadmap-player-cristiano"
+      ],
+      "completePlayerPaths": [
+        "roadmap-player-luis-figo",
+        "roadmap-player-cristiano"
+      ],
+      "complete": true
     },
     {
       "key": "roadmap-stuttgart",
@@ -825,12 +855,13 @@
       "key": "roadmap-player-cristiano",
       "name": "Cristiano Ronaldo",
       "entityID": "6d957fed-48cd-5e99-8e09-2758304bba08",
-      "playerLessons": 4,
+      "playerLessons": 8,
       "chapters": [
         "Player foundations",
         "Deeper stories",
         "Defining moments",
-        "Records & honours"
+        "Records & honours",
+        "Career journey"
       ],
       "missingAreas": [],
       "complete": true
@@ -1519,18 +1550,138 @@
       ],
       "missingAreas": [],
       "complete": true
+    },
+    {
+      "key": "roadmap-player-carlos-hermosillo",
+      "name": "Carlos Hermosillo",
+      "entityID": "2380af9f-2b6c-5fc5-b8a3-df144f1051b5",
+      "playerLessons": 4,
+      "chapters": [
+        "Career journey",
+        "Records & honours",
+        "Defining moments",
+        "Legacy"
+      ],
+      "missingAreas": [],
+      "complete": true
+    },
+    {
+      "key": "roadmap-player-oscar-perez",
+      "name": "Óscar Pérez",
+      "entityID": "5593452a-b128-553a-b072-e0b95fa3da71",
+      "playerLessons": 4,
+      "chapters": [
+        "Career journey",
+        "Records & honours",
+        "Defining moments"
+      ],
+      "missingAreas": [],
+      "complete": true
+    },
+    {
+      "key": "roadmap-player-hugo-sanchez",
+      "name": "Hugo Sánchez",
+      "entityID": "b88c3525-1c0c-559c-9120-55e99fbea857",
+      "playerLessons": 4,
+      "chapters": [
+        "Career journey",
+        "Records & honours",
+        "Defining moments"
+      ],
+      "missingAreas": [],
+      "complete": true
+    },
+    {
+      "key": "roadmap-player-jorge-campos",
+      "name": "Jorge Campos",
+      "entityID": "01e85f61-7197-5eef-8b2a-93b4d574d953",
+      "playerLessons": 4,
+      "chapters": [
+        "Career journey",
+        "Records & honours",
+        "Defining moments"
+      ],
+      "missingAreas": [],
+      "complete": true
+    },
+    {
+      "key": "roadmap-player-victor-davila",
+      "name": "Víctor Dávila",
+      "entityID": "e9366413-4b13-5044-b2af-8594bced74f4",
+      "playerLessons": 4,
+      "chapters": [
+        "Career journey",
+        "Defining moments",
+        "Records & honours",
+        "Legacy"
+      ],
+      "missingAreas": [],
+      "complete": true
+    },
+    {
+      "key": "roadmap-player-fidel-ambriz",
+      "name": "Fidel Ambriz",
+      "entityID": "2a1561b5-efaa-5b5f-994e-efb95acf2052",
+      "playerLessons": 4,
+      "chapters": [
+        "Career journey",
+        "Defining moments",
+        "Records & honours"
+      ],
+      "missingAreas": [],
+      "complete": true
+    },
+    {
+      "key": "roadmap-player-deco",
+      "name": "Deco",
+      "entityID": "64c74d97-2609-5f99-b7df-6f63da1da7f6",
+      "playerLessons": 4,
+      "chapters": [
+        "Career journey",
+        "Defining moments",
+        "Records & honours"
+      ],
+      "missingAreas": [],
+      "complete": true
+    },
+    {
+      "key": "roadmap-player-vitor-baia",
+      "name": "Vítor Baía",
+      "entityID": "61fe3366-4972-5ec2-9f5a-f7b1df61f594",
+      "playerLessons": 4,
+      "chapters": [
+        "Career journey",
+        "Defining moments",
+        "Records & honours",
+        "Legacy"
+      ],
+      "missingAreas": [],
+      "complete": true
+    },
+    {
+      "key": "roadmap-player-luis-figo",
+      "name": "Luís Figo",
+      "entityID": "6c4de0d9-eff4-52a9-a278-dfdbbd835268",
+      "playerLessons": 4,
+      "chapters": [
+        "Career journey",
+        "Defining moments",
+        "Records & honours"
+      ],
+      "missingAreas": [],
+      "complete": true
     }
   ],
-  "completedClubs": 22,
+  "completedClubs": 27,
   "totalClubs": 69,
-  "completedPlayers": 54,
-  "totalPlayers": 54,
+  "completedPlayers": 63,
+  "totalPlayers": 63,
   "gameCatalogPlayerCoverage": {
     "scope": "Unique supplied game-catalog player IDs with an explicit reviewed identity binding; no name-based guesses. This historical catalog is not a current squad list.",
     "totalCatalogPlayers": 5274,
-    "playersWithAuthoredPaths": 41,
-    "playersMeetingDepthRequirements": 41,
-    "playersWithoutAuthoredPaths": 5233,
+    "playersWithAuthoredPaths": 45,
+    "playersMeetingDepthRequirements": 45,
+    "playersWithoutAuthoredPaths": 5229,
     "independentPlayerPaths": [
       "roadmap-player-riascos",
       "roadmap-player-arce",
@@ -1544,7 +1695,12 @@
       "roadmap-player-nahuel-guzman",
       "roadmap-player-humberto-suazo",
       "roadmap-player-rogelio-funes-mori",
-      "roadmap-player-miguel-calero"
+      "roadmap-player-miguel-calero",
+      "roadmap-player-carlos-hermosillo",
+      "roadmap-player-oscar-perez",
+      "roadmap-player-jorge-campos",
+      "roadmap-player-victor-davila",
+      "roadmap-player-fidel-ambriz"
     ]
   }
 }

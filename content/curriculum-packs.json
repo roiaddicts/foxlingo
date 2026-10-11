@@ -1,5 +1,5 @@
 {
-  "contentVersion": 14,
+  "contentVersion": 15,
   "packs": [
     "curriculum-champions.json",
     "curriculum-bundesliga.json",
@@ -9,6 +9,11 @@
     "curriculum-ligamx.json",
     "curriculum-bundesliga-next.json",
     "curriculum-ligamx-next.json",
-    "curriculum-champions-next.json"
-  ]
+    "curriculum-champions-next.json",
+    "curriculum-ligamx-third.json",
+    "curriculum-champions-portugal.json"
+  ],
+  "cardKnowledgeVersions": {
+    "card-cristiano": 4
+  }
 }

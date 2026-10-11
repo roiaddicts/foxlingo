@@ -7,7 +7,8 @@ CHAPTERS={'history':'History & identity','moments':'Defining moments','players':
 
 def merge(pack):
     registry=ROOT/'content/curriculum-packs.json'
-    names=json.loads(registry.read_text())['packs'] if registry.exists() else []
+    settings=json.loads(registry.read_text()) if registry.exists() else {}
+    names=settings.get('packs',[])
     if len(names)!=len(set(names)) or any(Path(name).name!=name or not name.startswith('curriculum-') or not name.endswith('.json') for name in names):raise ValueError('Invalid curriculum pack registry')
     paths=[ROOT/'content'/name for name in names]
     documents=[json.loads(path.read_text()) for path in paths]
@@ -114,6 +115,14 @@ def merge(pack):
                 card['lessonIDs'].append(lesson['id']);card['objectiveIDs'].extend(oids);changed_cards.add(entity_id)
     for card in pack['cards']:
         if card['entityID'] in changed_cards:card['knowledgeVersion']=old_cards.get(card['entityID'],0)+1
+    # Rebuilding all packs starts from the original card versions. Persist later
+    # expansions explicitly so an existing earned card can accept new knowledge.
+    cards_by_key={card['key']:card for card in pack['cards']}
+    for key,version in settings.get('cardKnowledgeVersions',{}).items():
+        card=cards_by_key.get(key)
+        if card is None or type(version)!=int or version<card['knowledgeVersion']:
+            raise ValueError('Invalid card knowledge version: '+key)
+        card['knowledgeVersion']=version
     for path in pack['roadmaps']:
         if path.get('subjectID'):
             count=sum(len(c['lessonIDs']) for c in path['chapters'] if not c.get('isOptional'))

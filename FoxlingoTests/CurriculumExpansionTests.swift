@@ -2,10 +2,33 @@ import XCTest
 @testable import FoxlingoCore
 
 final class CurriculumExpansionTests: XCTestCase {
+    func testCristianoCareerSharesSportingProgressWithoutDuplicatingThePlayer() throws {
+        let root=URL(fileURLWithPath:#filePath).deletingLastPathComponent().deletingLastPathComponent()
+        let pack=try ContentPack.load(Data(contentsOf:root.appendingPathComponent("Foxlingo/Resources/starter-en.json")))
+        let player=try XCTUnwrap(pack.entities.first {$0.key == "entity-cristiano"})
+        let routes=pack.playerRoadmaps.filter {$0.entityID == player.id}
+        XCTAssertEqual(routes.count,1)
+        let route=try XCTUnwrap(routes.first)
+        let sporting=try XCTUnwrap(pack.clubRoadmaps.first {$0.key == "roadmap-sporting-cp"})
+        let madrid=try XCTUnwrap(pack.clubRoadmaps.first {$0.key == "roadmap-madrid"})
+        let lesson=try XCTUnwrap(pack.lessons.first {$0.key == "lesson-curriculum-portugal-cristiano-career"})
+        var state=LearnerState()
+        state.completeLesson(lesson,pack:pack,sessionID:UUID(),attempts:[],now:Date())
+        XCTAssertEqual(RoadmapProgress.make(roadmap:route,pack:pack,state:state).completedRequired,1)
+        XCTAssertEqual(RoadmapProgress.make(roadmap:sporting,pack:pack,state:state).completedRequired,1)
+        XCTAssertEqual(RoadmapProgress.make(roadmap:madrid,pack:pack,state:state).completedRequired,0)
+        let card=try XCTUnwrap(pack.cards.first {$0.entityID == player.id})
+        XCTAssertEqual(card.knowledgeVersion,4)
+        XCTAssertEqual(Set(card.lessonIDs).count,8)
+        XCTAssertTrue(Set(lesson.objectiveIDs).isSubset(of:Set(card.objectiveIDs)))
+        let due=state.reviews.mapValues(\.due)
+        state.completeLesson(lesson,pack:pack,sessionID:UUID(),attempts:[],now:Date())
+        XCTAssertEqual(state.reviews.mapValues(\.due),due)
+    }
     func testNewPlayerCoursesTeachTheirOwnFactsAndShareCanonicalClubLessons() throws {
         let root=URL(fileURLWithPath:#filePath).deletingLastPathComponent().deletingLastPathComponent()
         let pack=try ContentPack.load(Data(contentsOf:root.appendingPathComponent("Foxlingo/Resources/starter-en.json")))
-        for key in ["entity-marco-reus","entity-patrik-schick","entity-buffon","entity-del-piero","entity-guillermo-ochoa","entity-jose-saturnino-cardozo","entity-hernan-cristante","entity-timo-werner","entity-mario-gomez","entity-hirving-lozano","entity-miguel-calero","entity-mbappe","entity-ibrahimovic","entity-aguero","entity-griezmann"] {
+        for key in ["entity-marco-reus","entity-patrik-schick","entity-buffon","entity-del-piero","entity-guillermo-ochoa","entity-jose-saturnino-cardozo","entity-hernan-cristante","entity-timo-werner","entity-mario-gomez","entity-hirving-lozano","entity-miguel-calero","entity-mbappe","entity-ibrahimovic","entity-aguero","entity-griezmann","entity-carlos-hermosillo","entity-oscar-perez","entity-hugo-sanchez","entity-jorge-campos","entity-victor-davila","entity-fidel-ambriz","entity-deco","entity-vitor-baia","entity-luis-figo"] {
             let player=try XCTUnwrap(pack.entities.first {$0.key == key})
             let route=try XCTUnwrap(pack.playerRoadmaps.first {$0.entityID == player.id})
             let club=try XCTUnwrap(pack.clubRoadmaps.first {$0.clubID == route.clubID})

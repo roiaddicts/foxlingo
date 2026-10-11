@@ -17,7 +17,7 @@ final class PlayerEnrichmentTests: XCTestCase {
             let club=pack.clubRoadmaps.first {$0.entityID == player.clubID}!
             for path in [player,club] {XCTAssertTrue(RoadmapProgress.make(roadmap:path,pack:pack,state:LearnerState()).requiredLessonIDs.contains(lesson.id))}
             let card=pack.cards.first {$0.entityID == player.entityID}!
-            XCTAssertEqual(card.knowledgeVersion,3);XCTAssertEqual(card.objectiveIDs.count,12)
+            XCTAssertEqual(card.knowledgeVersion,player.key == "roadmap-player-cristiano" ? 4 : 3);XCTAssertEqual(card.objectiveIDs.count,player.key == "roadmap-player-cristiano" ? 24 : 12)
             XCTAssertTrue(Set(lesson.objectiveIDs).isSubset(of:Set(card.objectiveIDs)))
             XCTAssertTrue(card.objectiveIDs.allSatisfy {pack.objective($0).factIDs.allSatisfy {id in pack.facts.first {$0.id == id}?.subjectID == player.entityID}})
             var state=LearnerState();state.selectRoadmap(player,pack:pack)
@@ -136,7 +136,7 @@ final class PlayerEnrichmentTests: XCTestCase {
 
     func testScoreWheelsHaveExplicitTeamsAndRejectReversedGoals() throws {
         let scores=pack.exercises.compactMap(\.scoreInput)
-        XCTAssertEqual(scores.count,30)
+        XCTAssertEqual(scores.count,37)
         let aggregate=pack.exercises.first {$0.key == "exercise-xolos-final-choice-1"}!.scoreInput!
         XCTAssertEqual(pack.entity(aggregate.leftEntityID).name,"Club Tijuana")
         XCTAssertEqual(pack.entity(aggregate.rightEntityID).name,"Toluca")
