@@ -75,13 +75,29 @@ final class FlowTests: XCTestCase {
         tap(key);tap("lesson-next");tap("lesson-next")
         for index in 0..<4 {
             if app.pickerWheels.count == 2 {
-                let score = key == "lesson-curriculum-ligamx-fifth-camilo-hattrick" ? ("3","3") : key == "lesson-curriculum-ligamx-fifth-mazatlan-cup2024" ? [("2","2"),("3","1"),("2","2"),("2","2")][index] : key == "lesson-curriculum-modeste-hamburg" ? ("3","0") : key == "lesson-curriculum-modeste-bremen" ? ("4","3") : key == "lesson-curriculum-champions-uv-rooney-fenerbahce" ? ("6","2") : key == "lesson-curriculum-champions-uv-rooney-city-overhead" ? ("2","1") : key == "lesson-curriculum-netzer-moment-cup" ? ("2","1") : key == "lesson-necaxa-starter" ? ("9","0") : key == "lesson-competition-champions-league-istanbul" ? [("3","0"),("3","3"),("3","2"),("3","0")][index] : ("4","1")
+                let score = lessonScore(key,index:index)
                 setScore(score.0,score.1);tap("check-score")
             } else {tap("answer-choice-0")}
             tap("answer-next")
         }
         XCTAssertTrue(app.staticTexts["lesson-complete"].waitForExistence(timeout:3))
         tap("back-roadmap")
+    }
+    func lessonScore(_ key: String,index: Int) -> (String,String) {
+        switch key {
+        case "lesson-curriculum-toluca-next-2000": return [("2","0"),("7","1"),("2","0"),("2","0")][index]
+        case "lesson-curriculum-toluca-next-2005": return [("3","3"),("3","0"),("3","3"),("3","3")][index]
+        case "lesson-curriculum-roma-de-rossi-moments": return ("3","0")
+        case "lesson-curriculum-ligamx-fifth-camilo-hattrick": return ("3","3")
+        case "lesson-curriculum-ligamx-fifth-mazatlan-cup2024": return [("2","2"),("3","1"),("2","2"),("2","2")][index]
+        case "lesson-curriculum-modeste-hamburg": return ("3","0")
+        case "lesson-curriculum-modeste-bremen": return ("4","3")
+        case "lesson-curriculum-champions-uv-rooney-fenerbahce": return ("6","2")
+        case "lesson-curriculum-champions-uv-rooney-city-overhead","lesson-curriculum-netzer-moment-cup": return ("2","1")
+        case "lesson-necaxa-starter": return ("9","0")
+        case "lesson-competition-champions-league-istanbul": return [("3","0"),("3","3"),("3","2"),("3","0")][index]
+        default: return ("4","1")
+        }
     }
     func setScore(_ left: String,_ right: String) {
         let first=app.pickerWheels["score-left"].exists ? app.pickerWheels["score-left"] : app.pickerWheels.element(boundBy:0)
@@ -840,6 +856,30 @@ final class FlowTests: XCTestCase {
         tap("timeline-sources");XCTAssertTrue(app.staticTexts["2007"].exists)
         let context=XCTAttachment(screenshot:app.screenshot());context.name="Large text timeline sources";context.lifetime = .keepAlways;add(context)
         tap("timeline-sources-done");tap("timeline-replay")
+    }
+    func testExpandedTottiCareerVisualAnswersAndProgressPersist() {
+        start();tap("choose-XT");choosePlayer("Francesco Totti","francesco-totti")
+        XCTAssertTrue(app.staticTexts["roadmap-progress"].label.contains("0 of 4 starter lessons"))
+        completeLesson("lesson-curriculum-roma-totti-career")
+        completeLesson("lesson-curriculum-roma-totti-moments")
+        completeLesson("lesson-curriculum-roma-totti-records")
+        XCTAssertTrue(app.staticTexts["roadmap-progress"].label.contains("3 of 4 starter lessons"))
+        app.terminate();start(reset:false)
+        XCTAssertTrue(app.staticTexts["Francesco Totti"].waitForExistence(timeout:5))
+        XCTAssertTrue(app.staticTexts["roadmap-progress"].label.contains("3 of 4 starter lessons"))
+    }
+    func testTolucaAwayAndAggregateScoresAndDeRossiComeback() {
+        start();tap("choose-XT");tap("switch-club")
+        let search=app.searchFields.firstMatch;search.tap();search.typeText("Toluca")
+        tap("club-entity-toluca")
+        completeLesson("lesson-curriculum-toluca-next-2000")
+        completeLesson("lesson-curriculum-toluca-next-2005")
+        choosePlayer("Daniele De Rossi","daniele-de-rossi")
+        completeLesson("lesson-curriculum-roma-de-rossi-moments")
+        XCTAssertTrue(app.staticTexts["roadmap-progress"].label.contains("1 of 4 starter lessons"))
+        app.terminate();start(reset:false)
+        XCTAssertTrue(app.staticTexts["Daniele De Rossi"].waitForExistence(timeout:5))
+        XCTAssertTrue(app.staticTexts["roadmap-progress"].label.contains("1 of 4 starter lessons"))
     }
     func testExpandedCamiloSanvezzoCourseAndScoresPersist() {
         start();tap("choose-XT");choosePlayer("Camilo Sanvezzo","camilo-sanvezzo")

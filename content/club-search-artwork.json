@@ -330,5 +330,59 @@
     "imageURL": "https://images.mlssoccer.com/image/upload/t_q-best/v1747755405/assets/logos/mls-clubs/Club_Logo-Miami_tyqe64.png",
     "sourceURL": "https://www.mlssoccer.com/clubs/inter-miami-cf/",
     "scope": "Official club badge illustration, not a historical-season badge or a current squad assertion."
+  },
+  {
+    "entityKey": "entity-brescia",
+    "name": "Brescia",
+    "aliases": [],
+    "visual": "BRE",
+    "asset": "club-badge-brescia",
+    "imageURL": "https://img.uefa.com/imgml/TP/teams/logos/100x100/64105.png",
+    "sourceURL": "https://www.uefa.com/nationalassociations/teams/64105/",
+    "scope": "Official UEFA club illustration for historical lesson answers; no current squad or season badge is asserted."
+  },
+  {
+    "entityKey": "entity-parma",
+    "name": "Parma",
+    "aliases": [],
+    "visual": "PAR",
+    "asset": "club-badge-parma",
+    "imageURL": "https://img.uefa.com/imgml/TP/teams/logos/100x100/54262.png",
+    "sourceURL": "https://www.uefa.com/uefaeuropaleague/history/clubs/54262--parma/",
+    "scope": "Official UEFA club illustration for historical lesson answers; no current squad or season badge is asserted."
+  },
+  {
+    "entityKey": "entity-anderlecht",
+    "name": "Anderlecht",
+    "aliases": [],
+    "visual": "AND",
+    "asset": "club-badge-anderlecht",
+    "imageURL": "https://img.uefa.com/imgml/TP/teams/logos/100x100/50074.png",
+    "sourceURL": "https://www.uefa.com/uefachampionsleague/history/clubs/50074--anderlecht/",
+    "scope": "Official UEFA club illustration for historical lesson answers; no current squad or season badge is asserted."
+  },
+  {
+    "entityKey": "entity-foggia",
+    "name": "Foggia",
+    "aliases": [
+      "Foggia Calcio"
+    ],
+    "visual": "FOG",
+    "asset": "club-badge-foggia",
+    "imageURL": "https://www.calciofoggia1920.net/wp-content/uploads/2017/01/foggia.png",
+    "sourceURL": "https://www.calciofoggia1920.net/history/",
+    "scope": "Current club-site illustration for the historical Foggia name; no legal-entity continuity or exact 1994 badge is asserted."
+  },
+  {
+    "entityKey": "entity-boca-juniors",
+    "name": "Boca Juniors",
+    "aliases": [
+      "Boca"
+    ],
+    "visual": "BOC",
+    "asset": "club-badge-boca-juniors",
+    "imageURL": "https://cdn.prod.website-files.com/67d2f0b0dcad350660fe43ac/69bab0e66a03ade52a19c3f1_logo-boca.svg",
+    "sourceURL": "https://www.bocajuniors.com.ar/identidad",
+    "scope": "Official current identity-page crest, rendered from its SVG; illustrative, not asserted to be the badge worn during De Rossi’s 2019 spell."
   }
 ]

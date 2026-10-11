@@ -26,6 +26,17 @@
       "visual": "2012",
       "aliases": [],
       "externalRefs": {}
+    },
+    {
+      "id": "876c341b-d8e1-5623-90db-571ca8741e15",
+      "key": "entity-country-australia",
+      "name": "Australia",
+      "type": "country",
+      "aliases": [],
+      "visual": "AU",
+      "externalRefs": {},
+      "imageAsset": "flag-australia",
+      "imageURL": "https://futbol11.com/media/flags/52.webp"
     }
   ],
   "relationships": [

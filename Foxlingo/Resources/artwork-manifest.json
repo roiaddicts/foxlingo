@@ -682,6 +682,16 @@
     "sourceURL": "https://www.philadelphiaunion.com/players/fernando-aristeguieta/"
   },
   {
+    "asset": "entity-francesco-totti",
+    "url": "https://futbol11.com/images/197.png",
+    "cached": true
+  },
+  {
+    "asset": "entity-daniele-de-rossi",
+    "url": "https://futbol11.com/images/790.png",
+    "cached": true
+  },
+  {
     "asset": "entity-juventus",
     "url": "https://img.uefa.com/imgml/TP/teams/logos/100x100/50139.png",
     "cached": true
@@ -1194,6 +1204,31 @@
   {
     "asset": "club-badge-inter-miami",
     "url": "https://images.mlssoccer.com/image/upload/t_q-best/v1747755405/assets/logos/mls-clubs/Club_Logo-Miami_tyqe64.png",
+    "cached": true
+  },
+  {
+    "asset": "club-badge-brescia",
+    "url": "https://img.uefa.com/imgml/TP/teams/logos/100x100/64105.png",
+    "cached": true
+  },
+  {
+    "asset": "club-badge-parma",
+    "url": "https://img.uefa.com/imgml/TP/teams/logos/100x100/54262.png",
+    "cached": true
+  },
+  {
+    "asset": "club-badge-anderlecht",
+    "url": "https://img.uefa.com/imgml/TP/teams/logos/100x100/50074.png",
+    "cached": true
+  },
+  {
+    "asset": "club-badge-foggia",
+    "url": "https://www.calciofoggia1920.net/wp-content/uploads/2017/01/foggia.png",
+    "cached": true
+  },
+  {
+    "asset": "club-badge-boca-juniors",
+    "url": "https://cdn.prod.website-files.com/67d2f0b0dcad350660fe43ac/69bab0e66a03ade52a19c3f1_logo-boca.svg",
     "cached": true
   },
   {
@@ -1949,6 +1984,11 @@
   {
     "asset": "flag-sweden",
     "url": "https://futbol11.com/media/flags/13.webp",
+    "cached": true
+  },
+  {
+    "asset": "flag-australia",
+    "url": "https://futbol11.com/media/flags/52.webp",
     "cached": true
   },
   {

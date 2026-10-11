@@ -1,5 +1,5 @@
 {
-  "contentVersion": 20,
+  "contentVersion": 21,
   "scope": "Depth among offered club courses and authored player courses. Player course totals are not coverage of the full game catalog.",
   "clubs": [
     {
@@ -720,11 +720,17 @@
     {
       "key": "roadmap-roma",
       "name": "Roma",
-      "requiredLessons": 1,
-      "definingMomentLessons": 0,
-      "playerPaths": [],
-      "completePlayerPaths": [],
-      "complete": false
+      "requiredLessons": 12,
+      "definingMomentLessons": 2,
+      "playerPaths": [
+        "roadmap-player-francesco-totti",
+        "roadmap-player-daniele-de-rossi"
+      ],
+      "completePlayerPaths": [
+        "roadmap-player-francesco-totti",
+        "roadmap-player-daniele-de-rossi"
+      ],
+      "complete": true
     },
     {
       "key": "roadmap-sabah",
@@ -840,8 +846,8 @@
     {
       "key": "roadmap-toluca",
       "name": "Toluca",
-      "requiredLessons": 12,
-      "definingMomentLessons": 1,
+      "requiredLessons": 16,
+      "definingMomentLessons": 5,
       "playerPaths": [
         "roadmap-player-hernan-cristante",
         "roadmap-player-jose-saturnino-cardozo"
@@ -850,7 +856,7 @@
         "roadmap-player-hernan-cristante",
         "roadmap-player-jose-saturnino-cardozo"
       ],
-      "complete": false
+      "complete": true
     },
     {
       "key": "roadmap-union-berlin",
@@ -2337,18 +2343,46 @@
       ],
       "missingAreas": [],
       "complete": true
+    },
+    {
+      "key": "roadmap-player-francesco-totti",
+      "name": "Francesco Totti",
+      "entityID": "1c3f27d7-c350-5e51-bb0d-f315b368a66f",
+      "playerLessons": 4,
+      "chapters": [
+        "Career journey",
+        "Defining moments",
+        "Records & honours",
+        "Legacy"
+      ],
+      "missingAreas": [],
+      "complete": true
+    },
+    {
+      "key": "roadmap-player-daniele-de-rossi",
+      "name": "Daniele De Rossi",
+      "entityID": "6075fb97-4979-5418-91eb-d5657008b590",
+      "playerLessons": 4,
+      "chapters": [
+        "Career journey",
+        "Defining moments",
+        "Records & honours",
+        "Legacy"
+      ],
+      "missingAreas": [],
+      "complete": true
     }
   ],
-  "completedClubs": 47,
+  "completedClubs": 49,
   "totalClubs": 70,
-  "completedPlayers": 103,
-  "totalPlayers": 103,
+  "completedPlayers": 105,
+  "totalPlayers": 105,
   "gameCatalogPlayerCoverage": {
     "scope": "Unique supplied game-catalog player IDs with an explicit reviewed identity binding; no name-based guesses. This historical catalog is not a current squad list.",
     "totalCatalogPlayers": 5274,
-    "playersWithAuthoredPaths": 67,
-    "playersMeetingDepthRequirements": 67,
-    "playersWithoutAuthoredPaths": 5207,
+    "playersWithAuthoredPaths": 69,
+    "playersMeetingDepthRequirements": 69,
+    "playersWithoutAuthoredPaths": 5205,
     "independentPlayerPaths": [
       "roadmap-player-riascos",
       "roadmap-player-arce",

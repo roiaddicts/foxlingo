@@ -1,0 +1,394 @@
+{
+  "sources": [
+    {
+      "key": "toluca-next-first-title",
+      "title": "Toluca: Trofeo 1966–1967",
+      "url": "https://www.tolucafc.com/trofeo-1966-1967",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "toluca-next-third-title",
+      "title": "Toluca: Trofeo 1974–1975",
+      "url": "https://www.tolucafc.com/trofeo-1974-1975",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "toluca-next-verano2000",
+      "title": "Toluca: Verano 2000",
+      "url": "https://www.tolucafc.com/palmares-verano-2000",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "toluca-next-apertura2005",
+      "title": "Toluca: Apertura 2005",
+      "url": "https://www.tolucafc.com/palmares-apertura-2005",
+      "verifiedAt": "2026-10-11"
+    }
+  ],
+  "lessons": [
+    {
+      "key": "lesson-curriculum-toluca-next-1967",
+      "subjectKey": "entity-toluca",
+      "clubKey": "entity-toluca",
+      "chapter": "moments",
+      "title": "The closing sprint for a first crown",
+      "subtitle": "A tied title race became a decisive winning run.",
+      "story": [
+        {
+          "title": "A race still open",
+          "body": "With three fixtures left in 1966–67, Toluca and América were level on points. América drew twice while Toluca won each remaining match."
+        },
+        {
+          "title": "Dosal delivers",
+          "body": "Juan Dosal scored twice against Necaxa in the clinching victory. Toluca had its first league crown after fourteen years in the top division."
+        }
+      ],
+      "facts": [
+        {
+          "key": "toluca-next-1967-rival",
+          "label": "Rival in the closing title race",
+          "prompt": "Which club was level on points with Toluca with three matches remaining in the 1966–67 title race?",
+          "answers": [
+            "Club América"
+          ],
+          "distractors": [
+            "Cruz Azul",
+            "Pumas UNAM",
+            "Guadalajara"
+          ],
+          "value": {
+            "kind": "entity",
+            "display": "Club América",
+            "entityKey": "entity-america"
+          },
+          "scope": "1966–67 league title race; three matches remaining.",
+          "sourceKey": "toluca-next-first-title",
+          "evidence": "The club identifies América as level with Toluca before the final three fixtures."
+        },
+        {
+          "key": "toluca-next-1967-run",
+          "label": "Closing winning run",
+          "prompt": "How many consecutive victories closed Toluca’s first league-winning campaign in 1966–67?",
+          "answers": [
+            "3"
+          ],
+          "distractors": [
+            "2",
+            "4",
+            "5"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "3 wins",
+            "number": 3,
+            "unit": "wins"
+          },
+          "scope": "Final three fixtures of the 1966–67 league campaign.",
+          "sourceKey": "toluca-next-first-title",
+          "evidence": "Toluca’s account records three straight wins."
+        },
+        {
+          "key": "toluca-next-1967-dosal",
+          "label": "Scorer in the title-clinching match",
+          "prompt": "Who scored twice for Toluca against Necaxa to seal the club’s first league title?",
+          "answers": [
+            "Juan Dosal"
+          ],
+          "distractors": [
+            "Vicente Pereda",
+            "Ítalo Estupiñán",
+            "José Saturnino Cardozo"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Juan Dosal",
+            "text": "Juan Dosal"
+          },
+          "scope": "Toluca’s title-clinching match in the 1966–67 league campaign.",
+          "sourceKey": "toluca-next-first-title",
+          "evidence": "The retrospective attributes both goals to Juan Dosal."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-toluca-next-1975",
+      "subjectKey": "entity-toluca",
+      "clubKey": "entity-toluca",
+      "chapter": "moments",
+      "title": "A third crown in a different format",
+      "subtitle": "A points-based final group decided the championship.",
+      "story": [
+        {
+          "title": "Four clubs, one title",
+          "body": "In 1974–75, Toluca entered a final group with Atlético Español, León and Curtidores. Each club faced its three rivals twice; the points leader would take the championship."
+        },
+        {
+          "title": "Estupiñán’s decisive finish",
+          "body": "An Ítalo Estupiñán goal beat León at home. Toluca reached eight points and secured its third league title with a fixture still to play."
+        }
+      ],
+      "facts": [
+        {
+          "key": "toluca-next-1975-score",
+          "label": "Score that clinched the third title",
+          "prompt": "What was Toluca’s score against León in the home match that clinched its 1974–75 league title?",
+          "answers": [
+            "1–0"
+          ],
+          "distractors": [
+            "2–0",
+            "1–1",
+            "0–1"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "1–0",
+            "text": "1–0"
+          },
+          "scope": "Title-clinching home match, 1974–75 final-stage group; not an aggregate.",
+          "sourceKey": "toluca-next-third-title",
+          "evidence": "The club records a one-goal home win over León.",
+          "scoreInput": {
+            "leftClubKey": "entity-toluca",
+            "rightClubKey": "entity-leon",
+            "leftGoals": 1,
+            "rightGoals": 0
+          }
+        },
+        {
+          "key": "toluca-next-1975-scorer",
+          "label": "Scorer of the decisive goal",
+          "prompt": "Who scored Toluca’s decisive goal against León in the 1974–75 title-clinching match?",
+          "answers": [
+            "Ítalo Estupiñán"
+          ],
+          "distractors": [
+            "Juan Dosal",
+            "José Saturnino Cardozo",
+            "José Manuel Abundis"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Ítalo Estupiñán",
+            "text": "Ítalo Estupiñán"
+          },
+          "scope": "Toluca’s 1974–75 title-clinching home match against León.",
+          "sourceKey": "toluca-next-third-title",
+          "evidence": "The club names Ecuadorian forward Ítalo Estupiñán as the scorer."
+        },
+        {
+          "key": "toluca-next-1975-points",
+          "label": "Points at clinching",
+          "prompt": "How many final-stage group points had Toluca accumulated when it clinched the 1974–75 title?",
+          "answers": [
+            "8"
+          ],
+          "distractors": [
+            "6",
+            "10",
+            "12"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "8 points",
+            "number": 8,
+            "unit": "points"
+          },
+          "scope": "Points at the title-clinching moment, with one fixture still pending; not the final season total.",
+          "sourceKey": "toluca-next-third-title",
+          "evidence": "The retrospective gives eight points and one match still to play."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-toluca-next-2000",
+      "subjectKey": "entity-toluca",
+      "clubKey": "entity-toluca",
+      "chapter": "moments",
+      "title": "A commanding start to the millennium",
+      "subtitle": "Two final legs brought another title.",
+      "story": [
+        {
+          "title": "The league leader advances",
+          "body": "Enrique Meza’s Toluca topped the Verano 2000 regular season. It eliminated Puebla and Guadalajara to reach another final."
+        },
+        {
+          "title": "A decisive two-leg finish",
+          "body": "Toluca won away at Santos before completing the final at the Nemesio Díez. The aggregate secured the club’s sixth league title."
+        }
+      ],
+      "facts": [
+        {
+          "key": "toluca-next-2000-away",
+          "label": "Away final-leg score",
+          "prompt": "What was Toluca’s score away to Santos Laguna in the first leg of the Verano 2000 final?",
+          "answers": [
+            "2–0"
+          ],
+          "distractors": [
+            "1–0",
+            "2–1",
+            "0–2"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "2–0",
+            "text": "2–0"
+          },
+          "scope": "Verano 2000 final, away first leg; Toluca shown first.",
+          "sourceKey": "toluca-next-verano2000",
+          "evidence": "The account gives a two-goal away victory.",
+          "scoreInput": {
+            "leftClubKey": "entity-toluca",
+            "rightClubKey": "entity-santos-laguna",
+            "leftGoals": 2,
+            "rightGoals": 0
+          }
+        },
+        {
+          "key": "toluca-next-2000-aggregate",
+          "label": "Final aggregate",
+          "prompt": "What was Toluca’s aggregate score against Santos Laguna across the Verano 2000 final?",
+          "answers": [
+            "7–1"
+          ],
+          "distractors": [
+            "6–1",
+            "7–2",
+            "5–1"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "7–1",
+            "text": "7–1"
+          },
+          "scope": "Verano 2000 two-leg final aggregate; Toluca shown first.",
+          "sourceKey": "toluca-next-verano2000",
+          "evidence": "The club states a 7–1 aggregate.",
+          "scoreInput": {
+            "leftClubKey": "entity-toluca",
+            "rightClubKey": "entity-santos-laguna",
+            "leftGoals": 7,
+            "rightGoals": 1
+          }
+        },
+        {
+          "key": "toluca-next-2000-coach",
+          "label": "Coach of the championship team",
+          "prompt": "Who coached Toluca’s Verano 2000 league-winning team?",
+          "answers": [
+            "Enrique Meza"
+          ],
+          "distractors": [
+            "Ignacio Trelles",
+            "Américo Gallego",
+            "José Manuel de la Torre"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Enrique Meza",
+            "text": "Enrique Meza"
+          },
+          "scope": "Verano 2000 championship campaign.",
+          "sourceKey": "toluca-next-verano2000",
+          "evidence": "The team is identified as coached by Enrique Meza."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-toluca-next-2005",
+      "subjectKey": "entity-toluca",
+      "clubKey": "entity-toluca",
+      "chapter": "moments",
+      "title": "Bringing the trophy home from Monterrey",
+      "subtitle": "A level first leg left everything to play for away.",
+      "story": [
+        {
+          "title": "An open final",
+          "body": "Toluca eliminated Cruz Azul and Pachuca in the Apertura 2005 playoffs. Monterrey then drew the first final leg at the Nemesio Díez."
+        },
+        {
+          "title": "Sánchez makes the difference",
+          "body": "Vicente Sánchez stood out in the away-leg victory. Toluca secured its eighth league title and, in the club’s account, its first championship clinched away from home."
+        }
+      ],
+      "facts": [
+        {
+          "key": "toluca-next-2005-home",
+          "label": "Home final-leg score",
+          "prompt": "What was Toluca’s score at home to Monterrey in the first leg of the Apertura 2005 final?",
+          "answers": [
+            "3–3"
+          ],
+          "distractors": [
+            "2–2",
+            "3–2",
+            "1–1"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "3–3",
+            "text": "3–3"
+          },
+          "scope": "Apertura 2005 final, home first leg; Toluca shown first.",
+          "sourceKey": "toluca-next-apertura2005",
+          "evidence": "The first leg finished 3–3.",
+          "scoreInput": {
+            "leftClubKey": "entity-toluca",
+            "rightClubKey": "entity-monterrey",
+            "leftGoals": 3,
+            "rightGoals": 3
+          }
+        },
+        {
+          "key": "toluca-next-2005-away",
+          "label": "Away final-leg score",
+          "prompt": "What was Toluca’s score away to Monterrey in the second leg of the Apertura 2005 final?",
+          "answers": [
+            "3–0"
+          ],
+          "distractors": [
+            "2–0",
+            "3–1",
+            "0–3"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "3–0",
+            "text": "3–0"
+          },
+          "scope": "Apertura 2005 final, away second leg; Toluca shown first.",
+          "sourceKey": "toluca-next-apertura2005",
+          "evidence": "The club records a 3–0 victory in Monterrey.",
+          "scoreInput": {
+            "leftClubKey": "entity-toluca",
+            "rightClubKey": "entity-monterrey",
+            "leftGoals": 3,
+            "rightGoals": 0
+          }
+        },
+        {
+          "key": "toluca-next-2005-sanchez",
+          "label": "Standout player in the away leg",
+          "prompt": "Which Toluca player does the club’s account single out for his performance in the Apertura 2005 final away leg?",
+          "answers": [
+            "Vicente Sánchez"
+          ],
+          "distractors": [
+            "José Saturnino Cardozo",
+            "José Manuel Abundis",
+            "Juan Dosal"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Vicente Sánchez",
+            "text": "Vicente Sánchez"
+          },
+          "scope": "Official Toluca retrospective of the Apertura 2005 second leg; no individual goal total inferred.",
+          "sourceKey": "toluca-next-apertura2005",
+          "evidence": "The club credits an outstanding Vicente Sánchez performance."
+        }
+      ]
+    }
+  ]
+}

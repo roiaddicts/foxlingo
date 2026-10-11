@@ -1,0 +1,1024 @@
+{
+  "sources": [
+    {
+      "key": "roma-history",
+      "title": "From 1927 to today — AS Roma",
+      "url": "https://www.asroma.com/en/club/history/a-brief-history-of-as-roma",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "totti-profile",
+      "title": "Francesco Totti — AS Roma Hall of Fame",
+      "url": "https://www.asroma.com/en/club/history/hall-of-fame/15259/francesco-totti",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "totti-honours",
+      "title": "AS Roma induct Totti into Hall of Fame",
+      "url": "https://www.asroma.com/en/news/41457/as-roma-induct-totti-into-hall-of-fame",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "de-rossi-career",
+      "title": "De Rossi to play final Roma match against Parma — AS Roma",
+      "url": "https://www.asroma.com/en/news/55425/de-rossi-to-play-final-roma-match-against-parma",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "de-rossi-numbers",
+      "title": "In Numbers: Daniele De Rossi's Roma career — AS Roma",
+      "url": "https://www.asroma.com/en/news/55708/in-numbers-daniele-de-rossis-roma-career",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "de-rossi-debut",
+      "title": "On This Day: Daniele De Rossi makes his debut! — AS Roma",
+      "url": "https://www.asroma.com/en/news/59093/on-this-day-daniele-de-rossi-makes-his-debut",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "roma-barcelona",
+      "title": "Roma 3-0 Barcelona: Match report, reaction and key statistics — AS Roma",
+      "url": "https://www.asroma.com/en/news/39930/roma-3-0-barcelona-match-report-reaction-and-key-statistics",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "de-rossi-retirement",
+      "title": "De Rossi announces retirement — AS Roma",
+      "url": "https://www.asroma.com/en/news/56777/de-rossi-announces-retirement",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "roma-1984-final-uefa",
+      "title": "1983/84 European Cup season — UEFA",
+      "url": "https://www.uefa.com/uefachampionsleague/history/seasons/1983/",
+      "verifiedAt": "2026-10-11"
+    }
+  ],
+  "players": [
+    {
+      "key": "entity-francesco-totti",
+      "name": "Francesco Totti",
+      "aliases": [
+        "Totti"
+      ],
+      "visual": "FT",
+      "clubKey": "entity-roma",
+      "seedID": "player-197",
+      "seedName": "Francesco Totti"
+    },
+    {
+      "key": "entity-daniele-de-rossi",
+      "name": "Daniele De Rossi",
+      "aliases": [
+        "De Rossi"
+      ],
+      "visual": "DDR",
+      "clubKey": "entity-roma",
+      "seedID": "player-790",
+      "seedName": "Daniele De Rossi"
+    }
+  ],
+  "lessons": [
+    {
+      "key": "lesson-curriculum-roma-history",
+      "subjectKey": "entity-roma",
+      "clubKey": "entity-roma",
+      "title": "A Roman club takes shape",
+      "subtitle": "Discover the city clubs and symbols behind Roma’s identity.",
+      "chapter": "history",
+      "story": [
+        {
+          "title": "A club for Rome",
+          "body": "Roma was formed when Fortitudo-ProRoma, Football Club di Roma and Alba-Audace merged in 1927."
+        },
+        {
+          "title": "A new emblem and colours",
+          "body": "The Capitoline Wolf and the city colours, yellow and red, gave the new club an identity."
+        }
+      ],
+      "facts": [
+        {
+          "key": "roma-hist-founding",
+          "label": "Roma founding year",
+          "prompt": "In what year was Associazione Sportiva Roma formed?",
+          "answers": [
+            "1927"
+          ],
+          "distractors": [
+            "1925",
+            "1926",
+            "1928"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "1927",
+            "number": 1927,
+            "unit": "year"
+          },
+          "scope": "The year AS Roma was formed from three Rome clubs.",
+          "sourceKey": "roma-history",
+          "evidence": "The history states Roma was born in spring 1927 after the merger of the three named clubs."
+        },
+        {
+          "key": "roma-hist-clubs",
+          "label": "Founding clubs",
+          "prompt": "Which three clubs merged to form Roma?",
+          "answers": [
+            "Fortitudo-ProRoma, Football Club di Roma and Alba-Audace"
+          ],
+          "distractors": [
+            "Lazio, Roman and Alba-Audace",
+            "Fortitudo-ProRoma, Lazio and Modena",
+            "Alba-Audace, Juventus and Football Club di Roma"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Fortitudo-ProRoma, Football Club di Roma and Alba-Audace",
+            "text": "Fortitudo-ProRoma, Football Club di Roma and Alba-Audace"
+          },
+          "scope": "The merger that formed AS Roma in 1927.",
+          "sourceKey": "roma-history",
+          "evidence": "The official history names Fortitudo-ProRoma, Football Club di Roma, and Alba-Audace as the merging clubs."
+        },
+        {
+          "key": "roma-hist-symbol",
+          "label": "Club symbol",
+          "prompt": "Which symbol did Roma adopt for its crest at its formation?",
+          "answers": [
+            "The Capitoline Wolf"
+          ],
+          "distractors": [
+            "A golden eagle",
+            "A red cross",
+            "A crowned lion"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "The Capitoline Wolf",
+            "text": "The Capitoline Wolf"
+          },
+          "scope": "Roma’s original club identity described in its official history.",
+          "sourceKey": "roma-history",
+          "evidence": "The club history says the new club took on the Capitoline Wolf symbol for its crest."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-roma-1984-final",
+      "subjectKey": "entity-roma",
+      "clubKey": "entity-roma",
+      "title": "The 1984 European Cup final in Rome",
+      "subtitle": "A home-city final tested Roma on Europe’s biggest stage.",
+      "chapter": "moments",
+      "story": [
+        {
+          "title": "Home advantage",
+          "body": "Roma reached the 1984 European Cup final after victories over Göteborg, CSKA Sofia, Dinamo Berlin and Dundee United."
+        },
+        {
+          "title": "A final decided on penalties",
+          "body": "Pruzzo cancelled Phil Neal’s opener at the Stadio Olimpico, but Liverpool won the shootout."
+        }
+      ],
+      "facts": [
+        {
+          "key": "roma-mom-84-opponent",
+          "label": "European Cup final opponent",
+          "prompt": "Which club did Roma face in the 1984 European Cup final at the Stadio Olimpico?",
+          "answers": [
+            "Liverpool"
+          ],
+          "distractors": [
+            "Bayern Munich",
+            "Juventus",
+            "Manchester United"
+          ],
+          "value": {
+            "kind": "entity",
+            "display": "Liverpool",
+            "entityKey": "entity-liverpool"
+          },
+          "scope": "The 1984 European Cup final in Rome.",
+          "sourceKey": "roma-history",
+          "evidence": "The official history says Roma faced English champions Liverpool in the European Cup final at the Stadio Olimpico."
+        },
+        {
+          "key": "roma-mom-84-score",
+          "label": "European Cup final score",
+          "prompt": "What was the score after extra time in Roma’s 1984 European Cup final against Liverpool?",
+          "answers": [
+            "1–1"
+          ],
+          "distractors": [
+            "0–0",
+            "2–1",
+            "1–0"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "1–1",
+            "text": "1–1"
+          },
+          "scope": "The final score before the penalty shootout; Liverpool won 4-2 on penalties.",
+          "sourceKey": "roma-1984-final-uefa",
+          "evidence": "UEFA’s official season overview records the final as Liverpool 1-1 Roma, with Liverpool winning 4-2 on penalties.",
+          "scoreInput": {
+            "leftClubKey": "entity-roma",
+            "rightClubKey": "entity-liverpool",
+            "leftGoals": 1,
+            "rightGoals": 1
+          }
+        },
+        {
+          "key": "roma-mom-84-venue",
+          "label": "Roma’s 1984 European Cup final venue",
+          "prompt": "At which stadium did Roma host Liverpool in the 1984 European Cup final?",
+          "answers": [
+            "Stadio Olimpico"
+          ],
+          "distractors": [
+            "Campo Testaccio",
+            "Stadio Flaminio",
+            "San Siro"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Stadio Olimpico",
+            "text": "Stadio Olimpico"
+          },
+          "scope": "The venue of Roma’s 1984 European Cup final against Liverpool.",
+          "sourceKey": "roma-history",
+          "evidence": "The official history notes Roma enjoyed home advantage at the Stadio Olimpico for the final."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-roma-2001-title",
+      "subjectKey": "entity-roma",
+      "clubKey": "entity-roma",
+      "title": "A capital celebrates the Scudetto",
+      "subtitle": "A title-winning team leaves its mark on the capital.",
+      "chapter": "moments",
+      "story": [
+        {
+          "title": "A season-long lead",
+          "body": "Roma finished the 2000-01 campaign with 75 points and secured the title on the final day."
+        },
+        {
+          "title": "Three Scudetti",
+          "body": "The championship was Roma’s third league title, after the 1942 and 1983 wins."
+        }
+      ],
+      "facts": [
+        {
+          "key": "roma-mom-01-points",
+          "label": "Roma 2000-01 points",
+          "prompt": "How many points did Roma collect in its 2000-01 title-winning league season?",
+          "answers": [
+            "75"
+          ],
+          "distractors": [
+            "70",
+            "72",
+            "78"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "75 points",
+            "number": 75,
+            "unit": "points"
+          },
+          "scope": "Roma’s points total in the completed 2000–01 Serie A season.",
+          "sourceKey": "roma-history",
+          "evidence": "The official history says Roma ended the season with 75 points, then the record for an 18-team championship."
+        },
+        {
+          "key": "roma-mom-01-batistuta",
+          "label": "Top scorer in Roma title side",
+          "prompt": "Who scored 20 goals for Roma during the 2000-01 Scudetto season?",
+          "answers": [
+            "Gabriel Batistuta"
+          ],
+          "distractors": [
+            "Francesco Totti",
+            "Vincenzo Montella",
+            "Marco Delvecchio"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Gabriel Batistuta",
+            "text": "Gabriel Batistuta"
+          },
+          "scope": "Roma’s leading scorer in the 2000-01 title season, as described in the club history.",
+          "sourceKey": "roma-history",
+          "evidence": "The history states Batistuta scored 20 goals and names him among the title-winning heroes."
+        },
+        {
+          "key": "roma-mom-01-titlecount",
+          "label": "Roma Scudetto count",
+          "prompt": "The 2000-01 title was which Scudetto in Roma’s history?",
+          "answers": [
+            "Third"
+          ],
+          "distractors": [
+            "Second",
+            "Fourth",
+            "Fifth"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Third",
+            "text": "Third"
+          },
+          "scope": "The league title Roma secured on 17 June 2001.",
+          "sourceKey": "roma-history",
+          "evidence": "The history section calls this “A third Scudetto” and says the title was won in 2000-01."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-roma-totti-career",
+      "subjectKey": "entity-francesco-totti",
+      "clubKey": "entity-roma",
+      "title": "From Lodigiani to Roma’s first team",
+      "subtitle": "Follow Totti from youth football to his first senior milestones.",
+      "chapter": "career",
+      "story": [
+        {
+          "title": "Roma youth pathway",
+          "body": "Totti played youth football at Fortitudo, SMIT Trastevere and Lodigiani before joining Roma."
+        },
+        {
+          "title": "A senior debut",
+          "body": "He made his Serie A debut away to Brescia in March 1993, then scored his first league goal against Foggia."
+        }
+      ],
+      "facts": [
+        {
+          "key": "totti-career-roma",
+          "label": "Roma registration date",
+          "prompt": "On what date did Roma register Francesco Totti with the Italian FA?",
+          "answers": [
+            "20 July 1989"
+          ],
+          "distractors": [
+            "20 July 1988",
+            "20 July 1990",
+            "28 March 1993"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "20 July 1989",
+            "text": "20 July 1989"
+          },
+          "scope": "The date his Roma journey began as a registered youth player.",
+          "sourceKey": "totti-profile",
+          "evidence": "The profile states Roma registered Totti with the Italian FA on 20 July 1989."
+        },
+        {
+          "key": "totti-career-debut",
+          "label": "Serie A debut opponent",
+          "prompt": "Against which club did Totti make his Serie A debut in March 1993?",
+          "answers": [
+            "Brescia"
+          ],
+          "distractors": [
+            "Foggia",
+            "Inter",
+            "Juventus"
+          ],
+          "value": {
+            "kind": "entity",
+            "display": "Brescia",
+            "entityKey": "entity-brescia"
+          },
+          "scope": "Totti’s Serie A debut on 28 March 1993.",
+          "sourceKey": "totti-profile",
+          "evidence": "The profile says his Serie A debut came against Brescia at Stadio Rigamonti on 28 March."
+        },
+        {
+          "key": "totti-career-firstgoal",
+          "label": "First Serie A goal opponent",
+          "prompt": "Against which club did Totti score his first Serie A goal on 4 September 1994?",
+          "answers": [
+            "Foggia"
+          ],
+          "distractors": [
+            "Brescia",
+            "Parma",
+            "Juventus"
+          ],
+          "value": {
+            "kind": "entity",
+            "display": "Foggia",
+            "entityKey": "entity-foggia"
+          },
+          "scope": "Totti’s first Serie A goal, scored after joining Roma’s first-team preseason.",
+          "sourceKey": "totti-profile",
+          "evidence": "The profile states he scored his first Serie A goal against Foggia on 4 September 1994."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-roma-totti-moments",
+      "subjectKey": "entity-francesco-totti",
+      "clubKey": "entity-roma",
+      "title": "A captain in defining moments",
+      "subtitle": "A captain makes his mark for club and country.",
+      "chapter": "moments",
+      "story": [
+        {
+          "title": "The title-day opener",
+          "body": "Totti scored first in the decisive match against Parma as Roma secured the 2000-01 title."
+        },
+        {
+          "title": "A century of league goals",
+          "body": "Totti reached his hundredth Serie A goal against Inter in October 2004. He later recovered from a serious injury to join Italy’s World Cup squad and convert a vital knockout-round penalty."
+        }
+      ],
+      "facts": [
+        {
+          "key": "totti-mom-parma",
+          "label": "Roma title-day opponent",
+          "prompt": "Against which club did Totti open the scoring in Roma’s 17 June 2001 title-clinching match?",
+          "answers": [
+            "Parma"
+          ],
+          "distractors": [
+            "Juventus",
+            "Inter",
+            "AC Milan"
+          ],
+          "value": {
+            "kind": "entity",
+            "display": "Parma",
+            "entityKey": "entity-parma"
+          },
+          "scope": "The final day of the 2000-01 Serie A season, when Roma secured the Scudetto.",
+          "sourceKey": "totti-profile",
+          "evidence": "The profile says Totti opened the scoring in the decisive game against Parma on 17 June 2001."
+        },
+        {
+          "key": "totti-mom-australia",
+          "label": "World Cup penalty opponent",
+          "prompt": "Against which national team did Totti score a crucial penalty in the 2006 World Cup round of 16?",
+          "answers": [
+            "Australia"
+          ],
+          "distractors": [
+            "Germany",
+            "France",
+            "Ukraine"
+          ],
+          "value": {
+            "kind": "entity",
+            "display": "Australia",
+            "entityKey": "entity-country-australia"
+          },
+          "scope": "Italy’s 2006 World Cup round-of-16 match on its route to the final.",
+          "sourceKey": "totti-profile",
+          "evidence": "The profile identifies Totti’s crucial Round of 16 penalty as being against Australia."
+        },
+        {
+          "key": "totti-mom-hundredth",
+          "label": "Opponent for Totti’s hundredth Serie A goal",
+          "prompt": "Against which club did Totti score his hundredth Serie A goal on 3 October 2004?",
+          "answers": [
+            "Inter"
+          ],
+          "distractors": [
+            "Juventus",
+            "AC Milan",
+            "Liverpool"
+          ],
+          "value": {
+            "kind": "entity",
+            "display": "Inter",
+            "entityKey": "entity-inter"
+          },
+          "scope": "Totti’s hundredth Serie A goal, 3 October 2004.",
+          "sourceKey": "totti-profile",
+          "evidence": "The Hall of Fame biography identifies Inter as the opponent for his hundredth Serie A goal."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-roma-totti-records",
+      "subjectKey": "entity-francesco-totti",
+      "clubKey": "entity-roma",
+      "title": "Totti’s Roma record book",
+      "subtitle": "Separate Totti’s league records from his totals across competitions.",
+      "chapter": "records",
+      "story": [
+        {
+          "title": "Unmatched longevity",
+          "body": "Totti’s final competitive Roma appearance came in May 2017, after a 24-year first-team career."
+        },
+        {
+          "title": "A prolific scorer",
+          "body": "His club Hall of Fame profile lists totals across Serie A, domestic cups and European competitions."
+        }
+      ],
+      "facts": [
+        {
+          "key": "totti-rec-apps",
+          "label": "Roma appearances",
+          "prompt": "How many competitive appearances did Totti make for Roma?",
+          "answers": [
+            "786"
+          ],
+          "distractors": [
+            "776",
+            "780",
+            "796"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "786 appearances",
+            "number": 786,
+            "unit": "appearances"
+          },
+          "scope": "Totti’s final all-competition Roma total in the club Hall of Fame profile.",
+          "sourceKey": "totti-profile",
+          "evidence": "The profile’s competition table gives the total as 786 appearances."
+        },
+        {
+          "key": "totti-rec-goals",
+          "label": "Roma goals",
+          "prompt": "How many goals did Totti score for Roma in all competitions?",
+          "answers": [
+            "307"
+          ],
+          "distractors": [
+            "297",
+            "300",
+            "317"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "307 goals",
+            "number": 307,
+            "unit": "goals"
+          },
+          "scope": "Totti’s final all-competition Roma total in the club Hall of Fame profile.",
+          "sourceKey": "totti-profile",
+          "evidence": "The profile’s competition table totals his goals at 307."
+        },
+        {
+          "key": "totti-rec-seriea",
+          "label": "Serie A goals",
+          "prompt": "How many Serie A goals did Totti score for Roma?",
+          "answers": [
+            "250"
+          ],
+          "distractors": [
+            "240",
+            "245",
+            "255"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "250 goals",
+            "number": 250,
+            "unit": "goals"
+          },
+          "scope": "His Serie A scoring total for Roma, listed in the Hall of Fame competition table.",
+          "sourceKey": "totti-profile",
+          "evidence": "The profile lists 619 Serie A appearances and 250 goals."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-roma-totti-honours",
+      "subjectKey": "entity-francesco-totti",
+      "clubKey": "entity-roma",
+      "title": "Totti’s club and individual honours",
+      "subtitle": "Explore team trophies and an individual scoring award.",
+      "chapter": "legacy",
+      "story": [
+        {
+          "title": "Two cup competitions",
+          "body": "Totti lifted the Coppa Italia twice and the Italian Super Cup twice with Roma."
+        },
+        {
+          "title": "An individual prize",
+          "body": "In 2006-07, he finished as Serie A’s top scorer and won the European Golden Shoe."
+        }
+      ],
+      "facts": [
+        {
+          "key": "totti-honour-coppa",
+          "label": "Roma Coppa Italia titles",
+          "prompt": "How many Coppa Italia titles did Totti win with Roma?",
+          "answers": [
+            "Two"
+          ],
+          "distractors": [
+            "One",
+            "Three",
+            "Four"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "Two",
+            "number": 2,
+            "unit": "titles"
+          },
+          "scope": "Roma team honours listed in the club Hall of Fame article.",
+          "sourceKey": "totti-honours",
+          "evidence": "The club Hall of Fame account lists two Coppa Italia titles for Totti."
+        },
+        {
+          "key": "totti-honour-supercoppa",
+          "label": "Roma Italian Super Cups",
+          "prompt": "How many Italian Super Cup titles did Totti win with Roma?",
+          "answers": [
+            "Two"
+          ],
+          "distractors": [
+            "One",
+            "Three",
+            "Four"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "Two",
+            "number": 2,
+            "unit": "titles"
+          },
+          "scope": "Roma team honours listed in the club Hall of Fame article.",
+          "sourceKey": "totti-honours",
+          "evidence": "The club Hall of Fame account lists two Italian Super Cups for Totti."
+        },
+        {
+          "key": "totti-honour-golden-shoe",
+          "label": "European Golden Shoe season",
+          "prompt": "In which season did Totti win the European Golden Shoe?",
+          "answers": [
+            "2006-07"
+          ],
+          "distractors": [
+            "2005-06",
+            "2007-08",
+            "2008-09"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "2006-07",
+            "text": "2006-07"
+          },
+          "scope": "The European Golden Shoe award season listed in the club Hall of Fame article.",
+          "sourceKey": "totti-honours",
+          "evidence": "The article identifies the European Golden Shoe as his 2006-07 individual accolade."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-roma-de-rossi-career",
+      "subjectKey": "entity-daniele-de-rossi",
+      "clubKey": "entity-roma",
+      "title": "A Roma academy graduate",
+      "subtitle": "Follow De Rossi from the academy to his last playing chapter.",
+      "chapter": "career",
+      "story": [
+        {
+          "title": "A boyhood club",
+          "body": "The Rome-born academy graduate joined the club he supported as a teenager in 2000."
+        },
+        {
+          "title": "From debut to departure",
+          "body": "He debuted in the Champions League in October 2001 and later spent the final six months of his playing career with Boca Juniors."
+        }
+      ],
+      "facts": [
+        {
+          "key": "derossi-career-joined",
+          "label": "Joined Roma year",
+          "prompt": "In what year did De Rossi join the club he supported as a teenager?",
+          "answers": [
+            "2000"
+          ],
+          "distractors": [
+            "1998",
+            "1999",
+            "2001"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "2000",
+            "number": 2000,
+            "unit": "year"
+          },
+          "scope": "The year De Rossi joined Roma before making his first-team debut.",
+          "sourceKey": "de-rossi-career",
+          "evidence": "The club’s 2019 announcement says he joined Roma in 2000."
+        },
+        {
+          "key": "derossi-career-debut",
+          "label": "First-team debut opponent",
+          "prompt": "Against which club did De Rossi make his Roma first-team debut on 30 October 2001?",
+          "answers": [
+            "Anderlecht"
+          ],
+          "distractors": [
+            "Barcelona",
+            "Juventus",
+            "Liverpool"
+          ],
+          "value": {
+            "kind": "entity",
+            "display": "Anderlecht",
+            "entityKey": "entity-anderlecht"
+          },
+          "scope": "The Champions League group-stage debut at the Stadio Olimpico.",
+          "sourceKey": "de-rossi-debut",
+          "evidence": "The official debut retrospective identifies Anderlecht as the opponent."
+        },
+        {
+          "key": "derossi-career-finalclub",
+          "label": "Final playing club",
+          "prompt": "At which club did De Rossi finish his professional playing career after Roma?",
+          "answers": [
+            "Boca Juniors"
+          ],
+          "distractors": [
+            "Juventus",
+            "AC Milan",
+            "Liverpool"
+          ],
+          "value": {
+            "kind": "entity",
+            "display": "Boca Juniors",
+            "entityKey": "entity-boca-juniors"
+          },
+          "scope": "The six-month final playing spell referenced in De Rossi’s 2020 retirement announcement.",
+          "sourceKey": "de-rossi-retirement",
+          "evidence": "The retirement announcement says De Rossi ended his career after a six-month spell with Argentine side Boca Juniors."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-roma-de-rossi-moments",
+      "subjectKey": "entity-daniele-de-rossi",
+      "clubKey": "entity-roma",
+      "title": "Leadership and a night in Rome",
+      "subtitle": "Captaincy and a remarkable European comeback.",
+      "chapter": "moments",
+      "story": [
+        {
+          "title": "The armband",
+          "body": "He captained Roma for the first time from kick-off against Middlesbrough in March 2006."
+        },
+        {
+          "title": "A famous comeback",
+          "body": "In 2018, he scored Roma’s second goal as the team overturned Barcelona’s 4-1 first-leg lead."
+        }
+      ],
+      "facts": [
+        {
+          "key": "derossi-mom-firstcap",
+          "label": "First captaincy date",
+          "prompt": "On what date did De Rossi first captain Roma from kick-off?",
+          "answers": [
+            "15 March 2006"
+          ],
+          "distractors": [
+            "15 March 2005",
+            "15 March 2007",
+            "25 March 2006"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "15 March 2006",
+            "text": "15 March 2006"
+          },
+          "scope": "The UEFA Cup last-16 second leg against Middlesbrough.",
+          "sourceKey": "de-rossi-debut",
+          "evidence": "The debut retrospective dates his first captaincy to 15 March 2006."
+        },
+        {
+          "key": "derossi-mom-barca-minute",
+          "label": "Minute of De Rossi’s comeback penalty",
+          "prompt": "In which minute did De Rossi score his penalty in Roma’s 2018 Champions League comeback against Barcelona?",
+          "answers": [
+            "58"
+          ],
+          "distractors": [
+            "48",
+            "68",
+            "78"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "58th minute",
+            "number": 58,
+            "unit": "minute"
+          },
+          "scope": "Roma–Barcelona second leg, 10 April 2018; minute listed in the official match report.",
+          "sourceKey": "roma-barcelona",
+          "evidence": "The club’s event log lists De Rossi’s penalty at minute 58."
+        },
+        {
+          "key": "derossi-mom-barca-score",
+          "label": "Roma-Barcelona second-leg score",
+          "prompt": "What was Roma’s score against Barcelona in the 10 April 2018 Champions League second leg?",
+          "answers": [
+            "3–0"
+          ],
+          "distractors": [
+            "2–0",
+            "3–1",
+            "4–0"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "3–0",
+            "text": "3–0"
+          },
+          "scope": "Second leg only; Roma drew 4-4 on aggregate and advanced on away goals.",
+          "sourceKey": "roma-barcelona",
+          "evidence": "The match report headline and final match line record Roma 3-0 Barcelona; aggregate and away-goal outcome are stated separately.",
+          "scoreInput": {
+            "leftClubKey": "entity-roma",
+            "rightClubKey": "entity-barcelona",
+            "leftGoals": 3,
+            "rightGoals": 0
+          }
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-roma-de-rossi-records",
+      "subjectKey": "entity-daniele-de-rossi",
+      "clubKey": "entity-roma",
+      "title": "A Roma mainstay in the numbers",
+      "subtitle": "Explore De Rossi’s appearances, goals and leadership record.",
+      "chapter": "records",
+      "story": [
+        {
+          "title": "A long service",
+          "body": "Across 18 years, De Rossi made more than six hundred appearances for Roma."
+        },
+        {
+          "title": "Midfielder and captain",
+          "body": "His club retrospective records goals and captaincy totals alongside appearances."
+        }
+      ],
+      "facts": [
+        {
+          "key": "derossi-rec-apps",
+          "label": "Roma appearances",
+          "prompt": "How many appearances did De Rossi make for Roma in all competitions?",
+          "answers": [
+            "616"
+          ],
+          "distractors": [
+            "606",
+            "615",
+            "626"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "616 appearances",
+            "number": 616,
+            "unit": "appearances"
+          },
+          "scope": "His completed Roma total, as listed in the club’s 2020 career retrospective.",
+          "sourceKey": "de-rossi-retirement",
+          "evidence": "The retirement announcement says he made 616 appearances for Roma."
+        },
+        {
+          "key": "derossi-rec-goals",
+          "label": "Roma goals",
+          "prompt": "How many goals did De Rossi score for Roma in all competitions?",
+          "answers": [
+            "63"
+          ],
+          "distractors": [
+            "53",
+            "60",
+            "66"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "63 goals",
+            "number": 63,
+            "unit": "goals"
+          },
+          "scope": "His Roma goal total across competitions.",
+          "sourceKey": "de-rossi-debut",
+          "evidence": "The club’s debut retrospective states 616 appearances and 63 goals; the 2019 departure article confirms 63 goals."
+        },
+        {
+          "key": "derossi-rec-captain",
+          "label": "Roma matches as captain",
+          "prompt": "How many times did De Rossi captain Roma?",
+          "answers": [
+            "207"
+          ],
+          "distractors": [
+            "197",
+            "206",
+            "217"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "207 matches",
+            "number": 207,
+            "unit": "matches"
+          },
+          "scope": "De Rossi’s Roma captaincy total, in the club’s 2020 debut retrospective.",
+          "sourceKey": "de-rossi-debut",
+          "evidence": "The article gives 207 as the number of Roma appearances as captain."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-roma-de-rossi-honours",
+      "subjectKey": "entity-daniele-de-rossi",
+      "clubKey": "entity-roma",
+      "title": "De Rossi’s international and club honours",
+      "subtitle": "Club trophies and international success across De Rossi’s career.",
+      "chapter": "legacy",
+      "story": [
+        {
+          "title": "A world champion",
+          "body": "De Rossi played in the 2006 World Cup final as Italy won the tournament."
+        },
+        {
+          "title": "Roma silverware",
+          "body": "His Roma honours included consecutive Coppa Italia titles and a 2007 Supercoppa."
+        }
+      ],
+      "facts": [
+        {
+          "key": "derossi-honour-worldcup",
+          "label": "World Cup year",
+          "prompt": "In what year did De Rossi win the FIFA World Cup with Italy?",
+          "answers": [
+            "2006"
+          ],
+          "distractors": [
+            "2002",
+            "2004",
+            "2010"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "2006",
+            "number": 2006,
+            "unit": "year"
+          },
+          "scope": "His international senior-team World Cup win.",
+          "sourceKey": "de-rossi-career",
+          "evidence": "The club states De Rossi was part of Italy’s 2006 World Cup-winning side and played in the final."
+        },
+        {
+          "key": "derossi-honour-coppa",
+          "label": "Roma Coppa Italia titles",
+          "prompt": "How many Coppa Italia titles did De Rossi win with Roma?",
+          "answers": [
+            "Two"
+          ],
+          "distractors": [
+            "One",
+            "Three",
+            "Four"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "Two titles",
+            "number": 2,
+            "unit": "titles"
+          },
+          "scope": "Roma honours through his departure in 2019.",
+          "sourceKey": "de-rossi-career",
+          "evidence": "The 2019 announcement lists Coppa Italia wins in 2007 and 2008."
+        },
+        {
+          "key": "derossi-honour-supercoppa",
+          "label": "Roma Supercoppa wins",
+          "prompt": "How many Supercoppa titles did De Rossi win with Roma?",
+          "answers": [
+            "One"
+          ],
+          "distractors": [
+            "None",
+            "Two",
+            "Three"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "One title",
+            "number": 1,
+            "unit": "title"
+          },
+          "scope": "Roma honours through his departure in 2019.",
+          "sourceKey": "de-rossi-career",
+          "evidence": "The club lists one Supercoppa title, won in 2007."
+        }
+      ]
+    }
+  ]
+}

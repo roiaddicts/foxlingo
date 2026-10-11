@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "key": "foxlingo-favorites-en",
-  "contentVersion": 20,
+  "contentVersion": 21,
   "language": "en",
   "entities": [
     {
@@ -1127,6 +1127,17 @@
       "externalRefs": {}
     },
     {
+      "id": "876c341b-d8e1-5623-90db-571ca8741e15",
+      "key": "entity-country-australia",
+      "name": "Australia",
+      "type": "country",
+      "aliases": [],
+      "visual": "AU",
+      "externalRefs": {},
+      "imageAsset": "flag-australia",
+      "imageURL": "https://futbol11.com/media/flags/52.webp"
+    },
+    {
       "id": "466d4f14-d18c-545e-acce-a2545249b62b",
       "key": "entity-irapuato",
       "type": "club",
@@ -1825,6 +1836,65 @@
       "externalRefs": {},
       "imageAsset": "club-badge-inter-miami",
       "imageURL": "https://images.mlssoccer.com/image/upload/t_q-best/v1747755405/assets/logos/mls-clubs/Club_Logo-Miami_tyqe64.png"
+    },
+    {
+      "id": "0fd45c85-66b8-51e2-9a28-d4752a8986a6",
+      "key": "entity-brescia",
+      "type": "club",
+      "name": "Brescia",
+      "aliases": [],
+      "visual": "BRE",
+      "externalRefs": {},
+      "imageAsset": "club-badge-brescia",
+      "imageURL": "https://img.uefa.com/imgml/TP/teams/logos/100x100/64105.png"
+    },
+    {
+      "id": "26ab5fee-ed93-5bfd-9383-ca47f51917d1",
+      "key": "entity-parma",
+      "type": "club",
+      "name": "Parma",
+      "aliases": [],
+      "visual": "PAR",
+      "externalRefs": {},
+      "imageAsset": "club-badge-parma",
+      "imageURL": "https://img.uefa.com/imgml/TP/teams/logos/100x100/54262.png"
+    },
+    {
+      "id": "aa1b80b4-c478-55fe-aae6-f8352b18e36e",
+      "key": "entity-anderlecht",
+      "type": "club",
+      "name": "Anderlecht",
+      "aliases": [],
+      "visual": "AND",
+      "externalRefs": {},
+      "imageAsset": "club-badge-anderlecht",
+      "imageURL": "https://img.uefa.com/imgml/TP/teams/logos/100x100/50074.png"
+    },
+    {
+      "id": "bd8c1d4e-5ffc-55b9-8172-9db58fb33ff2",
+      "key": "entity-foggia",
+      "type": "club",
+      "name": "Foggia",
+      "aliases": [
+        "Foggia Calcio"
+      ],
+      "visual": "FOG",
+      "externalRefs": {},
+      "imageAsset": "club-badge-foggia",
+      "imageURL": "https://www.calciofoggia1920.net/wp-content/uploads/2017/01/foggia.png"
+    },
+    {
+      "id": "16430ace-d2f2-55a6-bff8-047c9116308c",
+      "key": "entity-boca-juniors",
+      "type": "club",
+      "name": "Boca Juniors",
+      "aliases": [
+        "Boca"
+      ],
+      "visual": "BOC",
+      "externalRefs": {},
+      "imageAsset": "club-badge-boca-juniors",
+      "imageURL": "https://cdn.prod.website-files.com/67d2f0b0dcad350660fe43ac/69bab0e66a03ade52a19c3f1_logo-boca.svg"
     },
     {
       "id": "4010807c-d653-5ec2-9751-6c0996e4e016",
@@ -2972,6 +3042,36 @@
       "imageURL": "https://images.mlssoccer.com/image/private/t_thumb_squared/f_auto/mls-phi-prd/gukodxt73klohfgnkbdh.jpg"
     },
     {
+      "id": "1c3f27d7-c350-5e51-bb0d-f315b368a66f",
+      "key": "entity-francesco-totti",
+      "type": "player",
+      "name": "Francesco Totti",
+      "aliases": [
+        "Totti"
+      ],
+      "visual": "FT",
+      "externalRefs": {
+        "futbol11.gamePlayers": "197"
+      },
+      "imageAsset": "entity-francesco-totti",
+      "imageURL": "https://futbol11.com/images/197.png"
+    },
+    {
+      "id": "6075fb97-4979-5418-91eb-d5657008b590",
+      "key": "entity-daniele-de-rossi",
+      "type": "player",
+      "name": "Daniele De Rossi",
+      "aliases": [
+        "De Rossi"
+      ],
+      "visual": "DDR",
+      "externalRefs": {
+        "futbol11.gamePlayers": "790"
+      },
+      "imageAsset": "entity-daniele-de-rossi",
+      "imageURL": "https://futbol11.com/images/790.png"
+    },
+    {
       "id": "544551ae-f6d2-5492-8278-b79ebab76843",
       "key": "entity-country-greece",
       "type": "country",
@@ -4064,6 +4164,36 @@
       "key": "artwork-entity-inter-miami",
       "title": "Inter Miami CF · official club badge",
       "url": "https://www.mlssoccer.com/clubs/inter-miami-cf/",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "artwork-entity-brescia",
+      "title": "Brescia · official club badge",
+      "url": "https://www.uefa.com/nationalassociations/teams/64105/",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "artwork-entity-parma",
+      "title": "Parma · official club badge",
+      "url": "https://www.uefa.com/uefaeuropaleague/history/clubs/54262--parma/",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "artwork-entity-anderlecht",
+      "title": "Anderlecht · official club badge",
+      "url": "https://www.uefa.com/uefachampionsleague/history/clubs/50074--anderlecht/",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "artwork-entity-foggia",
+      "title": "Foggia · official club badge",
+      "url": "https://www.calciofoggia1920.net/history/",
+      "verifiedAt": "2026-10-10"
+    },
+    {
+      "key": "artwork-entity-boca-juniors",
+      "title": "Boca Juniors · official club badge",
+      "url": "https://www.bocajuniors.com.ar/identidad",
       "verifiedAt": "2026-10-10"
     },
     {
@@ -6866,6 +6996,84 @@
       "key": "fifth-mazatlan-cup2024",
       "title": "Leagues Cup: Mazatlán advances against Cruz Azul",
       "url": "https://www.leaguescup.com/news/match-recap-mazatlan-survives-a-thriller-against-cruz-azul-to-advance-to-the-leagues-cup-quarter-finals",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "toluca-next-first-title",
+      "title": "Toluca: Trofeo 1966–1967",
+      "url": "https://www.tolucafc.com/trofeo-1966-1967",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "toluca-next-third-title",
+      "title": "Toluca: Trofeo 1974–1975",
+      "url": "https://www.tolucafc.com/trofeo-1974-1975",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "toluca-next-verano2000",
+      "title": "Toluca: Verano 2000",
+      "url": "https://www.tolucafc.com/palmares-verano-2000",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "toluca-next-apertura2005",
+      "title": "Toluca: Apertura 2005",
+      "url": "https://www.tolucafc.com/palmares-apertura-2005",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "roma-history",
+      "title": "From 1927 to today — AS Roma",
+      "url": "https://www.asroma.com/en/club/history/a-brief-history-of-as-roma",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "totti-profile",
+      "title": "Francesco Totti — AS Roma Hall of Fame",
+      "url": "https://www.asroma.com/en/club/history/hall-of-fame/15259/francesco-totti",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "totti-honours",
+      "title": "AS Roma induct Totti into Hall of Fame",
+      "url": "https://www.asroma.com/en/news/41457/as-roma-induct-totti-into-hall-of-fame",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "de-rossi-career",
+      "title": "De Rossi to play final Roma match against Parma — AS Roma",
+      "url": "https://www.asroma.com/en/news/55425/de-rossi-to-play-final-roma-match-against-parma",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "de-rossi-numbers",
+      "title": "In Numbers: Daniele De Rossi's Roma career — AS Roma",
+      "url": "https://www.asroma.com/en/news/55708/in-numbers-daniele-de-rossis-roma-career",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "de-rossi-debut",
+      "title": "On This Day: Daniele De Rossi makes his debut! — AS Roma",
+      "url": "https://www.asroma.com/en/news/59093/on-this-day-daniele-de-rossi-makes-his-debut",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "roma-barcelona",
+      "title": "Roma 3-0 Barcelona: Match report, reaction and key statistics — AS Roma",
+      "url": "https://www.asroma.com/en/news/39930/roma-3-0-barcelona-match-report-reaction-and-key-statistics",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "de-rossi-retirement",
+      "title": "De Rossi announces retirement — AS Roma",
+      "url": "https://www.asroma.com/en/news/56777/de-rossi-announces-retirement",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "roma-1984-final-uefa",
+      "title": "1983/84 European Cup season — UEFA",
+      "url": "https://www.uefa.com/uefachampionsleague/history/seasons/1983/",
       "verifiedAt": "2026-10-11"
     }
   ],
@@ -38319,6 +38527,743 @@
         "fifth-caracas-aristeguieta"
       ],
       "evidence": "Caracas identifies 2023 as his third stage with the club."
+    },
+    {
+      "id": "88ddfb31-c021-5e2f-b335-dd7b853b247a",
+      "key": "fact-enrichment-toluca-next-1967-rival",
+      "subjectID": "a6e9d25d-0c7c-5012-bbe3-75cc36a86bda",
+      "predicate": "toluca-next-1967-rival",
+      "value": {
+        "kind": "entity",
+        "display": "Club América",
+        "entityID": "b1147571-f9c2-5291-ae3e-c439a952a914"
+      },
+      "scope": "1966–67 league title race; three matches remaining.",
+      "sourceKeys": [
+        "toluca-next-first-title"
+      ],
+      "evidence": "The club identifies América as level with Toluca before the final three fixtures."
+    },
+    {
+      "id": "57be2bf0-60aa-5d72-a231-5536289072ef",
+      "key": "fact-enrichment-toluca-next-1967-run",
+      "subjectID": "a6e9d25d-0c7c-5012-bbe3-75cc36a86bda",
+      "predicate": "toluca-next-1967-run",
+      "value": {
+        "kind": "number",
+        "display": "3 wins",
+        "number": 3,
+        "unit": "wins"
+      },
+      "scope": "Final three fixtures of the 1966–67 league campaign.",
+      "sourceKeys": [
+        "toluca-next-first-title"
+      ],
+      "evidence": "Toluca’s account records three straight wins."
+    },
+    {
+      "id": "ab562355-a1fb-54d8-9333-fbc6c418b074",
+      "key": "fact-enrichment-toluca-next-1967-dosal",
+      "subjectID": "a6e9d25d-0c7c-5012-bbe3-75cc36a86bda",
+      "predicate": "toluca-next-1967-dosal",
+      "value": {
+        "kind": "text",
+        "display": "Juan Dosal",
+        "text": "Juan Dosal"
+      },
+      "scope": "Toluca’s title-clinching match in the 1966–67 league campaign.",
+      "sourceKeys": [
+        "toluca-next-first-title"
+      ],
+      "evidence": "The retrospective attributes both goals to Juan Dosal."
+    },
+    {
+      "id": "ebf63782-bfd9-570e-bcb0-fa4c8da4ab49",
+      "key": "fact-enrichment-toluca-next-1975-score",
+      "subjectID": "a6e9d25d-0c7c-5012-bbe3-75cc36a86bda",
+      "predicate": "toluca-next-1975-score",
+      "value": {
+        "kind": "text",
+        "display": "1–0",
+        "text": "1–0"
+      },
+      "scope": "Title-clinching home match, 1974–75 final-stage group; not an aggregate.",
+      "sourceKeys": [
+        "toluca-next-third-title"
+      ],
+      "evidence": "The club records a one-goal home win over León."
+    },
+    {
+      "id": "02dbe640-4b72-54b4-8bb7-94c48c8c5ac8",
+      "key": "fact-enrichment-toluca-next-1975-scorer",
+      "subjectID": "a6e9d25d-0c7c-5012-bbe3-75cc36a86bda",
+      "predicate": "toluca-next-1975-scorer",
+      "value": {
+        "kind": "text",
+        "display": "Ítalo Estupiñán",
+        "text": "Ítalo Estupiñán"
+      },
+      "scope": "Toluca’s 1974–75 title-clinching home match against León.",
+      "sourceKeys": [
+        "toluca-next-third-title"
+      ],
+      "evidence": "The club names Ecuadorian forward Ítalo Estupiñán as the scorer."
+    },
+    {
+      "id": "70f36d8b-21bb-5ae2-a04f-fca7f9dc802b",
+      "key": "fact-enrichment-toluca-next-1975-points",
+      "subjectID": "a6e9d25d-0c7c-5012-bbe3-75cc36a86bda",
+      "predicate": "toluca-next-1975-points",
+      "value": {
+        "kind": "number",
+        "display": "8 points",
+        "number": 8,
+        "unit": "points"
+      },
+      "scope": "Points at the title-clinching moment, with one fixture still pending; not the final season total.",
+      "sourceKeys": [
+        "toluca-next-third-title"
+      ],
+      "evidence": "The retrospective gives eight points and one match still to play."
+    },
+    {
+      "id": "d124de44-261f-565f-a9a6-26f05f6bd3c7",
+      "key": "fact-enrichment-toluca-next-2000-away",
+      "subjectID": "a6e9d25d-0c7c-5012-bbe3-75cc36a86bda",
+      "predicate": "toluca-next-2000-away",
+      "value": {
+        "kind": "text",
+        "display": "2–0",
+        "text": "2–0"
+      },
+      "scope": "Verano 2000 final, away first leg; Toluca shown first.",
+      "sourceKeys": [
+        "toluca-next-verano2000"
+      ],
+      "evidence": "The account gives a two-goal away victory."
+    },
+    {
+      "id": "e5ffc57e-632f-5514-a754-da6e6c6b882b",
+      "key": "fact-enrichment-toluca-next-2000-aggregate",
+      "subjectID": "a6e9d25d-0c7c-5012-bbe3-75cc36a86bda",
+      "predicate": "toluca-next-2000-aggregate",
+      "value": {
+        "kind": "text",
+        "display": "7–1",
+        "text": "7–1"
+      },
+      "scope": "Verano 2000 two-leg final aggregate; Toluca shown first.",
+      "sourceKeys": [
+        "toluca-next-verano2000"
+      ],
+      "evidence": "The club states a 7–1 aggregate."
+    },
+    {
+      "id": "3c9a7a4b-5a2b-573f-9f1a-2b73b9ddd5eb",
+      "key": "fact-enrichment-toluca-next-2000-coach",
+      "subjectID": "a6e9d25d-0c7c-5012-bbe3-75cc36a86bda",
+      "predicate": "toluca-next-2000-coach",
+      "value": {
+        "kind": "text",
+        "display": "Enrique Meza",
+        "text": "Enrique Meza"
+      },
+      "scope": "Verano 2000 championship campaign.",
+      "sourceKeys": [
+        "toluca-next-verano2000"
+      ],
+      "evidence": "The team is identified as coached by Enrique Meza."
+    },
+    {
+      "id": "e2d90edf-69b6-57d8-8db6-2677150343ff",
+      "key": "fact-enrichment-toluca-next-2005-home",
+      "subjectID": "a6e9d25d-0c7c-5012-bbe3-75cc36a86bda",
+      "predicate": "toluca-next-2005-home",
+      "value": {
+        "kind": "text",
+        "display": "3–3",
+        "text": "3–3"
+      },
+      "scope": "Apertura 2005 final, home first leg; Toluca shown first.",
+      "sourceKeys": [
+        "toluca-next-apertura2005"
+      ],
+      "evidence": "The first leg finished 3–3."
+    },
+    {
+      "id": "6d814ff3-2be6-58a6-bd28-19f598e0eb0f",
+      "key": "fact-enrichment-toluca-next-2005-away",
+      "subjectID": "a6e9d25d-0c7c-5012-bbe3-75cc36a86bda",
+      "predicate": "toluca-next-2005-away",
+      "value": {
+        "kind": "text",
+        "display": "3–0",
+        "text": "3–0"
+      },
+      "scope": "Apertura 2005 final, away second leg; Toluca shown first.",
+      "sourceKeys": [
+        "toluca-next-apertura2005"
+      ],
+      "evidence": "The club records a 3–0 victory in Monterrey."
+    },
+    {
+      "id": "6f02efe2-387e-5161-adf4-fc60a73d76b6",
+      "key": "fact-enrichment-toluca-next-2005-sanchez",
+      "subjectID": "a6e9d25d-0c7c-5012-bbe3-75cc36a86bda",
+      "predicate": "toluca-next-2005-sanchez",
+      "value": {
+        "kind": "text",
+        "display": "Vicente Sánchez",
+        "text": "Vicente Sánchez"
+      },
+      "scope": "Official Toluca retrospective of the Apertura 2005 second leg; no individual goal total inferred.",
+      "sourceKeys": [
+        "toluca-next-apertura2005"
+      ],
+      "evidence": "The club credits an outstanding Vicente Sánchez performance."
+    },
+    {
+      "id": "840adb3c-ce65-53c3-9cde-9c94481a1972",
+      "key": "fact-enrichment-roma-hist-founding",
+      "subjectID": "bfbeecff-e46e-5cae-a7d8-a09e05bf7d9b",
+      "predicate": "roma-hist-founding",
+      "value": {
+        "kind": "number",
+        "display": "1927",
+        "number": 1927,
+        "unit": "year"
+      },
+      "scope": "The year AS Roma was formed from three Rome clubs.",
+      "sourceKeys": [
+        "roma-history"
+      ],
+      "evidence": "The history states Roma was born in spring 1927 after the merger of the three named clubs."
+    },
+    {
+      "id": "b6bb0adc-1ce2-5d88-9c70-2e6d5916cfc8",
+      "key": "fact-enrichment-roma-hist-clubs",
+      "subjectID": "bfbeecff-e46e-5cae-a7d8-a09e05bf7d9b",
+      "predicate": "roma-hist-clubs",
+      "value": {
+        "kind": "text",
+        "display": "Fortitudo-ProRoma, Football Club di Roma and Alba-Audace",
+        "text": "Fortitudo-ProRoma, Football Club di Roma and Alba-Audace"
+      },
+      "scope": "The merger that formed AS Roma in 1927.",
+      "sourceKeys": [
+        "roma-history"
+      ],
+      "evidence": "The official history names Fortitudo-ProRoma, Football Club di Roma, and Alba-Audace as the merging clubs."
+    },
+    {
+      "id": "37ab2ba8-a143-5304-b87c-45cbc70db825",
+      "key": "fact-enrichment-roma-hist-symbol",
+      "subjectID": "bfbeecff-e46e-5cae-a7d8-a09e05bf7d9b",
+      "predicate": "roma-hist-symbol",
+      "value": {
+        "kind": "text",
+        "display": "The Capitoline Wolf",
+        "text": "The Capitoline Wolf"
+      },
+      "scope": "Roma’s original club identity described in its official history.",
+      "sourceKeys": [
+        "roma-history"
+      ],
+      "evidence": "The club history says the new club took on the Capitoline Wolf symbol for its crest."
+    },
+    {
+      "id": "bc6a770b-51e1-5d06-b021-b7b96d7065c7",
+      "key": "fact-enrichment-roma-mom-84-opponent",
+      "subjectID": "bfbeecff-e46e-5cae-a7d8-a09e05bf7d9b",
+      "predicate": "roma-mom-84-opponent",
+      "value": {
+        "kind": "entity",
+        "display": "Liverpool",
+        "entityID": "8b6a2a49-f861-5aa6-8bc9-f9d5ed889507"
+      },
+      "scope": "The 1984 European Cup final in Rome.",
+      "sourceKeys": [
+        "roma-history"
+      ],
+      "evidence": "The official history says Roma faced English champions Liverpool in the European Cup final at the Stadio Olimpico."
+    },
+    {
+      "id": "6cd07f0a-26c1-5e9a-9b36-493f0a471876",
+      "key": "fact-enrichment-roma-mom-84-score",
+      "subjectID": "bfbeecff-e46e-5cae-a7d8-a09e05bf7d9b",
+      "predicate": "roma-mom-84-score",
+      "value": {
+        "kind": "text",
+        "display": "1–1",
+        "text": "1–1"
+      },
+      "scope": "The final score before the penalty shootout; Liverpool won 4-2 on penalties.",
+      "sourceKeys": [
+        "roma-1984-final-uefa"
+      ],
+      "evidence": "UEFA’s official season overview records the final as Liverpool 1-1 Roma, with Liverpool winning 4-2 on penalties."
+    },
+    {
+      "id": "2ad07bc1-918f-5977-bffb-4c1a0fe12d01",
+      "key": "fact-enrichment-roma-mom-84-venue",
+      "subjectID": "bfbeecff-e46e-5cae-a7d8-a09e05bf7d9b",
+      "predicate": "roma-mom-84-venue",
+      "value": {
+        "kind": "text",
+        "display": "Stadio Olimpico",
+        "text": "Stadio Olimpico"
+      },
+      "scope": "The venue of Roma’s 1984 European Cup final against Liverpool.",
+      "sourceKeys": [
+        "roma-history"
+      ],
+      "evidence": "The official history notes Roma enjoyed home advantage at the Stadio Olimpico for the final."
+    },
+    {
+      "id": "40eeb0ec-2464-5bf7-81c1-8f6034842909",
+      "key": "fact-enrichment-roma-mom-01-points",
+      "subjectID": "bfbeecff-e46e-5cae-a7d8-a09e05bf7d9b",
+      "predicate": "roma-mom-01-points",
+      "value": {
+        "kind": "number",
+        "display": "75 points",
+        "number": 75,
+        "unit": "points"
+      },
+      "scope": "Roma’s points total in the completed 2000–01 Serie A season.",
+      "sourceKeys": [
+        "roma-history"
+      ],
+      "evidence": "The official history says Roma ended the season with 75 points, then the record for an 18-team championship."
+    },
+    {
+      "id": "d96d1f92-10c3-583b-ab94-6b878aa17bf1",
+      "key": "fact-enrichment-roma-mom-01-batistuta",
+      "subjectID": "bfbeecff-e46e-5cae-a7d8-a09e05bf7d9b",
+      "predicate": "roma-mom-01-batistuta",
+      "value": {
+        "kind": "text",
+        "display": "Gabriel Batistuta",
+        "text": "Gabriel Batistuta"
+      },
+      "scope": "Roma’s leading scorer in the 2000-01 title season, as described in the club history.",
+      "sourceKeys": [
+        "roma-history"
+      ],
+      "evidence": "The history states Batistuta scored 20 goals and names him among the title-winning heroes."
+    },
+    {
+      "id": "ab166179-f95a-55c6-9631-818ff4d14eab",
+      "key": "fact-enrichment-roma-mom-01-titlecount",
+      "subjectID": "bfbeecff-e46e-5cae-a7d8-a09e05bf7d9b",
+      "predicate": "roma-mom-01-titlecount",
+      "value": {
+        "kind": "text",
+        "display": "Third",
+        "text": "Third"
+      },
+      "scope": "The league title Roma secured on 17 June 2001.",
+      "sourceKeys": [
+        "roma-history"
+      ],
+      "evidence": "The history section calls this “A third Scudetto” and says the title was won in 2000-01."
+    },
+    {
+      "id": "c6bca401-ba18-5efb-9b3c-2df52b9daf7e",
+      "key": "fact-enrichment-totti-career-roma",
+      "subjectID": "1c3f27d7-c350-5e51-bb0d-f315b368a66f",
+      "predicate": "totti-career-roma",
+      "value": {
+        "kind": "text",
+        "display": "20 July 1989",
+        "text": "20 July 1989"
+      },
+      "scope": "The date his Roma journey began as a registered youth player.",
+      "sourceKeys": [
+        "totti-profile"
+      ],
+      "evidence": "The profile states Roma registered Totti with the Italian FA on 20 July 1989."
+    },
+    {
+      "id": "ece48e69-d3da-51b7-9763-e6fe96b2a2da",
+      "key": "fact-enrichment-totti-career-debut",
+      "subjectID": "1c3f27d7-c350-5e51-bb0d-f315b368a66f",
+      "predicate": "totti-career-debut",
+      "value": {
+        "kind": "entity",
+        "display": "Brescia",
+        "entityID": "0fd45c85-66b8-51e2-9a28-d4752a8986a6"
+      },
+      "scope": "Totti’s Serie A debut on 28 March 1993.",
+      "sourceKeys": [
+        "totti-profile"
+      ],
+      "evidence": "The profile says his Serie A debut came against Brescia at Stadio Rigamonti on 28 March."
+    },
+    {
+      "id": "2eaee0dd-df4e-507a-b182-e1fbdfd2d96f",
+      "key": "fact-enrichment-totti-career-firstgoal",
+      "subjectID": "1c3f27d7-c350-5e51-bb0d-f315b368a66f",
+      "predicate": "totti-career-firstgoal",
+      "value": {
+        "kind": "entity",
+        "display": "Foggia",
+        "entityID": "bd8c1d4e-5ffc-55b9-8172-9db58fb33ff2"
+      },
+      "scope": "Totti’s first Serie A goal, scored after joining Roma’s first-team preseason.",
+      "sourceKeys": [
+        "totti-profile"
+      ],
+      "evidence": "The profile states he scored his first Serie A goal against Foggia on 4 September 1994."
+    },
+    {
+      "id": "b53c3db0-0404-5b1e-b340-f4e00e5195af",
+      "key": "fact-enrichment-totti-mom-parma",
+      "subjectID": "1c3f27d7-c350-5e51-bb0d-f315b368a66f",
+      "predicate": "totti-mom-parma",
+      "value": {
+        "kind": "entity",
+        "display": "Parma",
+        "entityID": "26ab5fee-ed93-5bfd-9383-ca47f51917d1"
+      },
+      "scope": "The final day of the 2000-01 Serie A season, when Roma secured the Scudetto.",
+      "sourceKeys": [
+        "totti-profile"
+      ],
+      "evidence": "The profile says Totti opened the scoring in the decisive game against Parma on 17 June 2001."
+    },
+    {
+      "id": "d5b2d08a-a723-5713-9de2-c904b01e34d1",
+      "key": "fact-enrichment-totti-mom-australia",
+      "subjectID": "1c3f27d7-c350-5e51-bb0d-f315b368a66f",
+      "predicate": "totti-mom-australia",
+      "value": {
+        "kind": "entity",
+        "display": "Australia",
+        "entityID": "876c341b-d8e1-5623-90db-571ca8741e15"
+      },
+      "scope": "Italy’s 2006 World Cup round-of-16 match on its route to the final.",
+      "sourceKeys": [
+        "totti-profile"
+      ],
+      "evidence": "The profile identifies Totti’s crucial Round of 16 penalty as being against Australia."
+    },
+    {
+      "id": "15fd6376-53f7-5558-b32b-82866ba03e2a",
+      "key": "fact-enrichment-totti-mom-hundredth",
+      "subjectID": "1c3f27d7-c350-5e51-bb0d-f315b368a66f",
+      "predicate": "totti-mom-hundredth",
+      "value": {
+        "kind": "entity",
+        "display": "Inter",
+        "entityID": "7b12f9cf-a10f-5220-8a93-9121d3d85474"
+      },
+      "scope": "Totti’s hundredth Serie A goal, 3 October 2004.",
+      "sourceKeys": [
+        "totti-profile"
+      ],
+      "evidence": "The Hall of Fame biography identifies Inter as the opponent for his hundredth Serie A goal."
+    },
+    {
+      "id": "08f4a218-0e85-5b10-83b8-8a3f15b45c34",
+      "key": "fact-enrichment-totti-rec-apps",
+      "subjectID": "1c3f27d7-c350-5e51-bb0d-f315b368a66f",
+      "predicate": "totti-rec-apps",
+      "value": {
+        "kind": "number",
+        "display": "786 appearances",
+        "number": 786,
+        "unit": "appearances"
+      },
+      "scope": "Totti’s final all-competition Roma total in the club Hall of Fame profile.",
+      "sourceKeys": [
+        "totti-profile"
+      ],
+      "evidence": "The profile’s competition table gives the total as 786 appearances."
+    },
+    {
+      "id": "a7cb9fd7-4ffa-549c-a364-60fe2a3b6ef0",
+      "key": "fact-enrichment-totti-rec-goals",
+      "subjectID": "1c3f27d7-c350-5e51-bb0d-f315b368a66f",
+      "predicate": "totti-rec-goals",
+      "value": {
+        "kind": "number",
+        "display": "307 goals",
+        "number": 307,
+        "unit": "goals"
+      },
+      "scope": "Totti’s final all-competition Roma total in the club Hall of Fame profile.",
+      "sourceKeys": [
+        "totti-profile"
+      ],
+      "evidence": "The profile’s competition table totals his goals at 307."
+    },
+    {
+      "id": "3a5ecda5-12c2-5409-b424-7129d3103afb",
+      "key": "fact-enrichment-totti-rec-seriea",
+      "subjectID": "1c3f27d7-c350-5e51-bb0d-f315b368a66f",
+      "predicate": "totti-rec-seriea",
+      "value": {
+        "kind": "number",
+        "display": "250 goals",
+        "number": 250,
+        "unit": "goals"
+      },
+      "scope": "His Serie A scoring total for Roma, listed in the Hall of Fame competition table.",
+      "sourceKeys": [
+        "totti-profile"
+      ],
+      "evidence": "The profile lists 619 Serie A appearances and 250 goals."
+    },
+    {
+      "id": "a3463143-4d8a-5e40-8bee-53b5271b873c",
+      "key": "fact-enrichment-totti-honour-coppa",
+      "subjectID": "1c3f27d7-c350-5e51-bb0d-f315b368a66f",
+      "predicate": "totti-honour-coppa",
+      "value": {
+        "kind": "number",
+        "display": "Two",
+        "number": 2,
+        "unit": "titles"
+      },
+      "scope": "Roma team honours listed in the club Hall of Fame article.",
+      "sourceKeys": [
+        "totti-honours"
+      ],
+      "evidence": "The club Hall of Fame account lists two Coppa Italia titles for Totti."
+    },
+    {
+      "id": "3eada7a9-9457-568f-bc8e-e92c0de7b7cc",
+      "key": "fact-enrichment-totti-honour-supercoppa",
+      "subjectID": "1c3f27d7-c350-5e51-bb0d-f315b368a66f",
+      "predicate": "totti-honour-supercoppa",
+      "value": {
+        "kind": "number",
+        "display": "Two",
+        "number": 2,
+        "unit": "titles"
+      },
+      "scope": "Roma team honours listed in the club Hall of Fame article.",
+      "sourceKeys": [
+        "totti-honours"
+      ],
+      "evidence": "The club Hall of Fame account lists two Italian Super Cups for Totti."
+    },
+    {
+      "id": "a44613c8-aeae-5454-af5e-2f52c8559cdd",
+      "key": "fact-enrichment-totti-honour-golden-shoe",
+      "subjectID": "1c3f27d7-c350-5e51-bb0d-f315b368a66f",
+      "predicate": "totti-honour-golden-shoe",
+      "value": {
+        "kind": "text",
+        "display": "2006-07",
+        "text": "2006-07"
+      },
+      "scope": "The European Golden Shoe award season listed in the club Hall of Fame article.",
+      "sourceKeys": [
+        "totti-honours"
+      ],
+      "evidence": "The article identifies the European Golden Shoe as his 2006-07 individual accolade."
+    },
+    {
+      "id": "f36782ed-718c-5165-a49e-d6c11eca5a91",
+      "key": "fact-enrichment-derossi-career-joined",
+      "subjectID": "6075fb97-4979-5418-91eb-d5657008b590",
+      "predicate": "derossi-career-joined",
+      "value": {
+        "kind": "number",
+        "display": "2000",
+        "number": 2000,
+        "unit": "year"
+      },
+      "scope": "The year De Rossi joined Roma before making his first-team debut.",
+      "sourceKeys": [
+        "de-rossi-career"
+      ],
+      "evidence": "The club’s 2019 announcement says he joined Roma in 2000."
+    },
+    {
+      "id": "0823d462-fbc6-5887-a74c-2b798f64c0c9",
+      "key": "fact-enrichment-derossi-career-debut",
+      "subjectID": "6075fb97-4979-5418-91eb-d5657008b590",
+      "predicate": "derossi-career-debut",
+      "value": {
+        "kind": "entity",
+        "display": "Anderlecht",
+        "entityID": "aa1b80b4-c478-55fe-aae6-f8352b18e36e"
+      },
+      "scope": "The Champions League group-stage debut at the Stadio Olimpico.",
+      "sourceKeys": [
+        "de-rossi-debut"
+      ],
+      "evidence": "The official debut retrospective identifies Anderlecht as the opponent."
+    },
+    {
+      "id": "f37e6ee9-d902-54e7-a6a2-1310eb7d3f98",
+      "key": "fact-enrichment-derossi-career-finalclub",
+      "subjectID": "6075fb97-4979-5418-91eb-d5657008b590",
+      "predicate": "derossi-career-finalclub",
+      "value": {
+        "kind": "entity",
+        "display": "Boca Juniors",
+        "entityID": "16430ace-d2f2-55a6-bff8-047c9116308c"
+      },
+      "scope": "The six-month final playing spell referenced in De Rossi’s 2020 retirement announcement.",
+      "sourceKeys": [
+        "de-rossi-retirement"
+      ],
+      "evidence": "The retirement announcement says De Rossi ended his career after a six-month spell with Argentine side Boca Juniors."
+    },
+    {
+      "id": "50100029-17dd-5faa-b72b-00b157bf48c9",
+      "key": "fact-enrichment-derossi-mom-firstcap",
+      "subjectID": "6075fb97-4979-5418-91eb-d5657008b590",
+      "predicate": "derossi-mom-firstcap",
+      "value": {
+        "kind": "text",
+        "display": "15 March 2006",
+        "text": "15 March 2006"
+      },
+      "scope": "The UEFA Cup last-16 second leg against Middlesbrough.",
+      "sourceKeys": [
+        "de-rossi-debut"
+      ],
+      "evidence": "The debut retrospective dates his first captaincy to 15 March 2006."
+    },
+    {
+      "id": "fe2386be-76b0-537a-b56a-91189f155530",
+      "key": "fact-enrichment-derossi-mom-barca-minute",
+      "subjectID": "6075fb97-4979-5418-91eb-d5657008b590",
+      "predicate": "derossi-mom-barca-minute",
+      "value": {
+        "kind": "number",
+        "display": "58th minute",
+        "number": 58,
+        "unit": "minute"
+      },
+      "scope": "Roma–Barcelona second leg, 10 April 2018; minute listed in the official match report.",
+      "sourceKeys": [
+        "roma-barcelona"
+      ],
+      "evidence": "The club’s event log lists De Rossi’s penalty at minute 58."
+    },
+    {
+      "id": "4a220266-12e8-5c49-bbfc-2434f471284a",
+      "key": "fact-enrichment-derossi-mom-barca-score",
+      "subjectID": "6075fb97-4979-5418-91eb-d5657008b590",
+      "predicate": "derossi-mom-barca-score",
+      "value": {
+        "kind": "text",
+        "display": "3–0",
+        "text": "3–0"
+      },
+      "scope": "Second leg only; Roma drew 4-4 on aggregate and advanced on away goals.",
+      "sourceKeys": [
+        "roma-barcelona"
+      ],
+      "evidence": "The match report headline and final match line record Roma 3-0 Barcelona; aggregate and away-goal outcome are stated separately."
+    },
+    {
+      "id": "a005671d-eedc-5e92-9a0f-cc1dffca47ce",
+      "key": "fact-enrichment-derossi-rec-apps",
+      "subjectID": "6075fb97-4979-5418-91eb-d5657008b590",
+      "predicate": "derossi-rec-apps",
+      "value": {
+        "kind": "number",
+        "display": "616 appearances",
+        "number": 616,
+        "unit": "appearances"
+      },
+      "scope": "His completed Roma total, as listed in the club’s 2020 career retrospective.",
+      "sourceKeys": [
+        "de-rossi-retirement"
+      ],
+      "evidence": "The retirement announcement says he made 616 appearances for Roma."
+    },
+    {
+      "id": "f323786d-0fa2-5ae4-801d-361ca3fd41d8",
+      "key": "fact-enrichment-derossi-rec-goals",
+      "subjectID": "6075fb97-4979-5418-91eb-d5657008b590",
+      "predicate": "derossi-rec-goals",
+      "value": {
+        "kind": "number",
+        "display": "63 goals",
+        "number": 63,
+        "unit": "goals"
+      },
+      "scope": "His Roma goal total across competitions.",
+      "sourceKeys": [
+        "de-rossi-debut"
+      ],
+      "evidence": "The club’s debut retrospective states 616 appearances and 63 goals; the 2019 departure article confirms 63 goals."
+    },
+    {
+      "id": "1c7d520d-2bcf-5b9e-b70f-58ac7e5a7a9c",
+      "key": "fact-enrichment-derossi-rec-captain",
+      "subjectID": "6075fb97-4979-5418-91eb-d5657008b590",
+      "predicate": "derossi-rec-captain",
+      "value": {
+        "kind": "number",
+        "display": "207 matches",
+        "number": 207,
+        "unit": "matches"
+      },
+      "scope": "De Rossi’s Roma captaincy total, in the club’s 2020 debut retrospective.",
+      "sourceKeys": [
+        "de-rossi-debut"
+      ],
+      "evidence": "The article gives 207 as the number of Roma appearances as captain."
+    },
+    {
+      "id": "66132e47-6a5c-56b1-818b-00eebdd2ca48",
+      "key": "fact-enrichment-derossi-honour-worldcup",
+      "subjectID": "6075fb97-4979-5418-91eb-d5657008b590",
+      "predicate": "derossi-honour-worldcup",
+      "value": {
+        "kind": "number",
+        "display": "2006",
+        "number": 2006,
+        "unit": "year"
+      },
+      "scope": "His international senior-team World Cup win.",
+      "sourceKeys": [
+        "de-rossi-career"
+      ],
+      "evidence": "The club states De Rossi was part of Italy’s 2006 World Cup-winning side and played in the final."
+    },
+    {
+      "id": "b648078d-d306-5970-97b0-9b352f5e81c9",
+      "key": "fact-enrichment-derossi-honour-coppa",
+      "subjectID": "6075fb97-4979-5418-91eb-d5657008b590",
+      "predicate": "derossi-honour-coppa",
+      "value": {
+        "kind": "number",
+        "display": "Two titles",
+        "number": 2,
+        "unit": "titles"
+      },
+      "scope": "Roma honours through his departure in 2019.",
+      "sourceKeys": [
+        "de-rossi-career"
+      ],
+      "evidence": "The 2019 announcement lists Coppa Italia wins in 2007 and 2008."
+    },
+    {
+      "id": "0b65df2d-8b18-55b9-be7c-d3b2b41092f0",
+      "key": "fact-enrichment-derossi-honour-supercoppa",
+      "subjectID": "6075fb97-4979-5418-91eb-d5657008b590",
+      "predicate": "derossi-honour-supercoppa",
+      "value": {
+        "kind": "number",
+        "display": "One title",
+        "number": 1,
+        "unit": "title"
+      },
+      "scope": "Roma honours through his departure in 2019.",
+      "sourceKeys": [
+        "de-rossi-career"
+      ],
+      "evidence": "The club lists one Supercoppa title, won in 2007."
     }
   ],
   "objectives": [
@@ -63927,6 +64872,591 @@
       ],
       "feedback": "Caracas return spell: Third spell. Context: Aristeguieta’s professional career with Caracas..",
       "revision": 1
+    },
+    {
+      "id": "8af7ebb1-36ad-5438-9008-8d0d46846799",
+      "key": "objective-enrichment-toluca-next-1967-rival",
+      "factIDs": [
+        "88ddfb31-c021-5e2f-b335-dd7b853b247a"
+      ],
+      "prompt": "Which club was level on points with Toluca with three matches remaining in the 1966–67 title race?",
+      "answers": [
+        "Club América"
+      ],
+      "feedback": "Rival in the closing title race: Club América. Context: 1966–67 league title race; three matches remaining..",
+      "revision": 1
+    },
+    {
+      "id": "3b498350-6822-5def-8e06-11324aea8799",
+      "key": "objective-enrichment-toluca-next-1967-run",
+      "factIDs": [
+        "57be2bf0-60aa-5d72-a231-5536289072ef"
+      ],
+      "prompt": "How many consecutive victories closed Toluca’s first league-winning campaign in 1966–67?",
+      "answers": [
+        "3"
+      ],
+      "feedback": "Closing winning run: 3 wins. Context: Final three fixtures of the 1966–67 league campaign..",
+      "revision": 1
+    },
+    {
+      "id": "7aeed73f-d720-5328-9974-7f2def641d31",
+      "key": "objective-enrichment-toluca-next-1967-dosal",
+      "factIDs": [
+        "ab562355-a1fb-54d8-9333-fbc6c418b074"
+      ],
+      "prompt": "Who scored twice for Toluca against Necaxa to seal the club’s first league title?",
+      "answers": [
+        "Juan Dosal"
+      ],
+      "feedback": "Scorer in the title-clinching match: Juan Dosal. Context: Toluca’s title-clinching match in the 1966–67 league campaign..",
+      "revision": 1
+    },
+    {
+      "id": "cce12dd5-dc82-5df4-8a2f-69f409d41236",
+      "key": "objective-enrichment-toluca-next-1975-score",
+      "factIDs": [
+        "ebf63782-bfd9-570e-bcb0-fa4c8da4ab49"
+      ],
+      "prompt": "What was Toluca’s score against León in the home match that clinched its 1974–75 league title?",
+      "answers": [
+        "1–0"
+      ],
+      "feedback": "Score that clinched the third title: 1–0. Context: Title-clinching home match, 1974–75 final-stage group; not an aggregate..",
+      "revision": 1
+    },
+    {
+      "id": "12055287-7cb7-58c0-9107-e666fe2ed95b",
+      "key": "objective-enrichment-toluca-next-1975-scorer",
+      "factIDs": [
+        "02dbe640-4b72-54b4-8bb7-94c48c8c5ac8"
+      ],
+      "prompt": "Who scored Toluca’s decisive goal against León in the 1974–75 title-clinching match?",
+      "answers": [
+        "Ítalo Estupiñán"
+      ],
+      "feedback": "Scorer of the decisive goal: Ítalo Estupiñán. Context: Toluca’s 1974–75 title-clinching home match against León..",
+      "revision": 1
+    },
+    {
+      "id": "30b54744-4d08-584b-9174-b475c028bcde",
+      "key": "objective-enrichment-toluca-next-1975-points",
+      "factIDs": [
+        "70f36d8b-21bb-5ae2-a04f-fca7f9dc802b"
+      ],
+      "prompt": "How many final-stage group points had Toluca accumulated when it clinched the 1974–75 title?",
+      "answers": [
+        "8"
+      ],
+      "feedback": "Points at clinching: 8 points. Context: Points at the title-clinching moment, with one fixture still pending; not the final season total..",
+      "revision": 1
+    },
+    {
+      "id": "e74ffa61-0a66-548d-a687-3ab69005fff7",
+      "key": "objective-enrichment-toluca-next-2000-away",
+      "factIDs": [
+        "d124de44-261f-565f-a9a6-26f05f6bd3c7"
+      ],
+      "prompt": "What was Toluca’s score away to Santos Laguna in the first leg of the Verano 2000 final?",
+      "answers": [
+        "2–0"
+      ],
+      "feedback": "Away final-leg score: 2–0. Context: Verano 2000 final, away first leg; Toluca shown first..",
+      "revision": 1
+    },
+    {
+      "id": "e43551e3-9489-54b5-b0f5-aa854ef617f9",
+      "key": "objective-enrichment-toluca-next-2000-aggregate",
+      "factIDs": [
+        "e5ffc57e-632f-5514-a754-da6e6c6b882b"
+      ],
+      "prompt": "What was Toluca’s aggregate score against Santos Laguna across the Verano 2000 final?",
+      "answers": [
+        "7–1"
+      ],
+      "feedback": "Final aggregate: 7–1. Context: Verano 2000 two-leg final aggregate; Toluca shown first..",
+      "revision": 1
+    },
+    {
+      "id": "81c87c58-1795-55aa-a77f-98c1ab15cc7c",
+      "key": "objective-enrichment-toluca-next-2000-coach",
+      "factIDs": [
+        "3c9a7a4b-5a2b-573f-9f1a-2b73b9ddd5eb"
+      ],
+      "prompt": "Who coached Toluca’s Verano 2000 league-winning team?",
+      "answers": [
+        "Enrique Meza"
+      ],
+      "feedback": "Coach of the championship team: Enrique Meza. Context: Verano 2000 championship campaign..",
+      "revision": 1
+    },
+    {
+      "id": "c61c4f32-bf8f-564c-9ffa-e38fb22176c5",
+      "key": "objective-enrichment-toluca-next-2005-home",
+      "factIDs": [
+        "e2d90edf-69b6-57d8-8db6-2677150343ff"
+      ],
+      "prompt": "What was Toluca’s score at home to Monterrey in the first leg of the Apertura 2005 final?",
+      "answers": [
+        "3–3"
+      ],
+      "feedback": "Home final-leg score: 3–3. Context: Apertura 2005 final, home first leg; Toluca shown first..",
+      "revision": 1
+    },
+    {
+      "id": "5ef6cc9d-691a-5911-a640-a1ba477d9add",
+      "key": "objective-enrichment-toluca-next-2005-away",
+      "factIDs": [
+        "6d814ff3-2be6-58a6-bd28-19f598e0eb0f"
+      ],
+      "prompt": "What was Toluca’s score away to Monterrey in the second leg of the Apertura 2005 final?",
+      "answers": [
+        "3–0"
+      ],
+      "feedback": "Away final-leg score: 3–0. Context: Apertura 2005 final, away second leg; Toluca shown first..",
+      "revision": 1
+    },
+    {
+      "id": "f175f7d7-ec0f-569f-b3f9-9fcda13e4408",
+      "key": "objective-enrichment-toluca-next-2005-sanchez",
+      "factIDs": [
+        "6f02efe2-387e-5161-adf4-fc60a73d76b6"
+      ],
+      "prompt": "Which Toluca player does the club’s account single out for his performance in the Apertura 2005 final away leg?",
+      "answers": [
+        "Vicente Sánchez"
+      ],
+      "feedback": "Standout player in the away leg: Vicente Sánchez. Context: Official Toluca retrospective of the Apertura 2005 second leg; no individual goal total inferred..",
+      "revision": 1
+    },
+    {
+      "id": "a827a6ae-1d36-548b-801d-8b977aa5bfe7",
+      "key": "objective-enrichment-roma-hist-founding",
+      "factIDs": [
+        "840adb3c-ce65-53c3-9cde-9c94481a1972"
+      ],
+      "prompt": "In what year was Associazione Sportiva Roma formed?",
+      "answers": [
+        "1927"
+      ],
+      "feedback": "Roma founding year: 1927. Context: The year AS Roma was formed from three Rome clubs..",
+      "revision": 1
+    },
+    {
+      "id": "b3941586-e849-5ec4-9301-afbafd08b70b",
+      "key": "objective-enrichment-roma-hist-clubs",
+      "factIDs": [
+        "b6bb0adc-1ce2-5d88-9c70-2e6d5916cfc8"
+      ],
+      "prompt": "Which three clubs merged to form Roma?",
+      "answers": [
+        "Fortitudo-ProRoma, Football Club di Roma and Alba-Audace"
+      ],
+      "feedback": "Founding clubs: Fortitudo-ProRoma, Football Club di Roma and Alba-Audace. Context: The merger that formed AS Roma in 1927..",
+      "revision": 1
+    },
+    {
+      "id": "8a1daf98-1ec0-5cb6-92a1-42a95e650e0d",
+      "key": "objective-enrichment-roma-hist-symbol",
+      "factIDs": [
+        "37ab2ba8-a143-5304-b87c-45cbc70db825"
+      ],
+      "prompt": "Which symbol did Roma adopt for its crest at its formation?",
+      "answers": [
+        "The Capitoline Wolf"
+      ],
+      "feedback": "Club symbol: The Capitoline Wolf. Context: Roma’s original club identity described in its official history..",
+      "revision": 1
+    },
+    {
+      "id": "84b917a6-86a1-5049-bed0-f2c659f29f8a",
+      "key": "objective-enrichment-roma-mom-84-opponent",
+      "factIDs": [
+        "bc6a770b-51e1-5d06-b021-b7b96d7065c7"
+      ],
+      "prompt": "Which club did Roma face in the 1984 European Cup final at the Stadio Olimpico?",
+      "answers": [
+        "Liverpool"
+      ],
+      "feedback": "European Cup final opponent: Liverpool. Context: The 1984 European Cup final in Rome..",
+      "revision": 1
+    },
+    {
+      "id": "f9b6e026-fdb9-5bcd-b8a6-a573ddce37b8",
+      "key": "objective-enrichment-roma-mom-84-score",
+      "factIDs": [
+        "6cd07f0a-26c1-5e9a-9b36-493f0a471876"
+      ],
+      "prompt": "What was the score after extra time in Roma’s 1984 European Cup final against Liverpool?",
+      "answers": [
+        "1–1"
+      ],
+      "feedback": "European Cup final score: 1–1. Context: The final score before the penalty shootout; Liverpool won 4-2 on penalties..",
+      "revision": 1
+    },
+    {
+      "id": "f3b9c244-8edd-5b86-b60e-d2766395b4e5",
+      "key": "objective-enrichment-roma-mom-84-venue",
+      "factIDs": [
+        "2ad07bc1-918f-5977-bffb-4c1a0fe12d01"
+      ],
+      "prompt": "At which stadium did Roma host Liverpool in the 1984 European Cup final?",
+      "answers": [
+        "Stadio Olimpico"
+      ],
+      "feedback": "Roma’s 1984 European Cup final venue: Stadio Olimpico. Context: The venue of Roma’s 1984 European Cup final against Liverpool..",
+      "revision": 1
+    },
+    {
+      "id": "5679f522-8389-5320-a9c6-d661d11fd390",
+      "key": "objective-enrichment-roma-mom-01-points",
+      "factIDs": [
+        "40eeb0ec-2464-5bf7-81c1-8f6034842909"
+      ],
+      "prompt": "How many points did Roma collect in its 2000-01 title-winning league season?",
+      "answers": [
+        "75"
+      ],
+      "feedback": "Roma 2000-01 points: 75 points. Context: Roma’s points total in the completed 2000–01 Serie A season..",
+      "revision": 1
+    },
+    {
+      "id": "4e4b9ebd-088b-546f-be52-de551aa897ff",
+      "key": "objective-enrichment-roma-mom-01-batistuta",
+      "factIDs": [
+        "d96d1f92-10c3-583b-ab94-6b878aa17bf1"
+      ],
+      "prompt": "Who scored 20 goals for Roma during the 2000-01 Scudetto season?",
+      "answers": [
+        "Gabriel Batistuta"
+      ],
+      "feedback": "Top scorer in Roma title side: Gabriel Batistuta. Context: Roma’s leading scorer in the 2000-01 title season, as described in the club history..",
+      "revision": 1
+    },
+    {
+      "id": "59bace7c-486f-5e77-b03c-c4710ee5b8bc",
+      "key": "objective-enrichment-roma-mom-01-titlecount",
+      "factIDs": [
+        "ab166179-f95a-55c6-9631-818ff4d14eab"
+      ],
+      "prompt": "The 2000-01 title was which Scudetto in Roma’s history?",
+      "answers": [
+        "Third"
+      ],
+      "feedback": "Roma Scudetto count: Third. Context: The league title Roma secured on 17 June 2001..",
+      "revision": 1
+    },
+    {
+      "id": "79429e7d-fe4b-52e4-8b1b-a72e14a5e677",
+      "key": "objective-enrichment-totti-career-roma",
+      "factIDs": [
+        "c6bca401-ba18-5efb-9b3c-2df52b9daf7e"
+      ],
+      "prompt": "On what date did Roma register Francesco Totti with the Italian FA?",
+      "answers": [
+        "20 July 1989"
+      ],
+      "feedback": "Roma registration date: 20 July 1989. Context: The date his Roma journey began as a registered youth player..",
+      "revision": 1
+    },
+    {
+      "id": "6f6b6705-09a5-5dba-9182-42c8c13de846",
+      "key": "objective-enrichment-totti-career-debut",
+      "factIDs": [
+        "ece48e69-d3da-51b7-9763-e6fe96b2a2da"
+      ],
+      "prompt": "Against which club did Totti make his Serie A debut in March 1993?",
+      "answers": [
+        "Brescia"
+      ],
+      "feedback": "Serie A debut opponent: Brescia. Context: Totti’s Serie A debut on 28 March 1993..",
+      "revision": 1
+    },
+    {
+      "id": "76ed8959-0715-5e84-ae42-ce04f20704da",
+      "key": "objective-enrichment-totti-career-firstgoal",
+      "factIDs": [
+        "2eaee0dd-df4e-507a-b182-e1fbdfd2d96f"
+      ],
+      "prompt": "Against which club did Totti score his first Serie A goal on 4 September 1994?",
+      "answers": [
+        "Foggia"
+      ],
+      "feedback": "First Serie A goal opponent: Foggia. Context: Totti’s first Serie A goal, scored after joining Roma’s first-team preseason..",
+      "revision": 1
+    },
+    {
+      "id": "8c23436c-6783-533f-8bb5-35a6c9327da8",
+      "key": "objective-enrichment-totti-mom-parma",
+      "factIDs": [
+        "b53c3db0-0404-5b1e-b340-f4e00e5195af"
+      ],
+      "prompt": "Against which club did Totti open the scoring in Roma’s 17 June 2001 title-clinching match?",
+      "answers": [
+        "Parma"
+      ],
+      "feedback": "Roma title-day opponent: Parma. Context: The final day of the 2000-01 Serie A season, when Roma secured the Scudetto..",
+      "revision": 1
+    },
+    {
+      "id": "94178f9c-f92c-52ff-860a-5b3c2dad3c3e",
+      "key": "objective-enrichment-totti-mom-australia",
+      "factIDs": [
+        "d5b2d08a-a723-5713-9de2-c904b01e34d1"
+      ],
+      "prompt": "Against which national team did Totti score a crucial penalty in the 2006 World Cup round of 16?",
+      "answers": [
+        "Australia"
+      ],
+      "feedback": "World Cup penalty opponent: Australia. Context: Italy’s 2006 World Cup round-of-16 match on its route to the final..",
+      "revision": 1
+    },
+    {
+      "id": "662cd185-2b29-5831-8ef5-6fb7a932bd7c",
+      "key": "objective-enrichment-totti-mom-hundredth",
+      "factIDs": [
+        "15fd6376-53f7-5558-b32b-82866ba03e2a"
+      ],
+      "prompt": "Against which club did Totti score his hundredth Serie A goal on 3 October 2004?",
+      "answers": [
+        "Inter"
+      ],
+      "feedback": "Opponent for Totti’s hundredth Serie A goal: Inter. Context: Totti’s hundredth Serie A goal, 3 October 2004..",
+      "revision": 1
+    },
+    {
+      "id": "e27f25d9-7c41-5f2a-89aa-9fbf4c766a4a",
+      "key": "objective-enrichment-totti-rec-apps",
+      "factIDs": [
+        "08f4a218-0e85-5b10-83b8-8a3f15b45c34"
+      ],
+      "prompt": "How many competitive appearances did Totti make for Roma?",
+      "answers": [
+        "786"
+      ],
+      "feedback": "Roma appearances: 786 appearances. Context: Totti’s final all-competition Roma total in the club Hall of Fame profile..",
+      "revision": 1
+    },
+    {
+      "id": "3eae1926-0f72-51e3-9b9d-b4ded39763a5",
+      "key": "objective-enrichment-totti-rec-goals",
+      "factIDs": [
+        "a7cb9fd7-4ffa-549c-a364-60fe2a3b6ef0"
+      ],
+      "prompt": "How many goals did Totti score for Roma in all competitions?",
+      "answers": [
+        "307"
+      ],
+      "feedback": "Roma goals: 307 goals. Context: Totti’s final all-competition Roma total in the club Hall of Fame profile..",
+      "revision": 1
+    },
+    {
+      "id": "0d47ef07-7b2c-508e-9baa-c778ae842725",
+      "key": "objective-enrichment-totti-rec-seriea",
+      "factIDs": [
+        "3a5ecda5-12c2-5409-b424-7129d3103afb"
+      ],
+      "prompt": "How many Serie A goals did Totti score for Roma?",
+      "answers": [
+        "250"
+      ],
+      "feedback": "Serie A goals: 250 goals. Context: His Serie A scoring total for Roma, listed in the Hall of Fame competition table..",
+      "revision": 1
+    },
+    {
+      "id": "612a45d2-0f34-5106-8110-21133a74894f",
+      "key": "objective-enrichment-totti-honour-coppa",
+      "factIDs": [
+        "a3463143-4d8a-5e40-8bee-53b5271b873c"
+      ],
+      "prompt": "How many Coppa Italia titles did Totti win with Roma?",
+      "answers": [
+        "Two"
+      ],
+      "feedback": "Roma Coppa Italia titles: Two. Context: Roma team honours listed in the club Hall of Fame article..",
+      "revision": 1
+    },
+    {
+      "id": "09c1a98b-5628-5212-b487-6bbdb2c0900a",
+      "key": "objective-enrichment-totti-honour-supercoppa",
+      "factIDs": [
+        "3eada7a9-9457-568f-bc8e-e92c0de7b7cc"
+      ],
+      "prompt": "How many Italian Super Cup titles did Totti win with Roma?",
+      "answers": [
+        "Two"
+      ],
+      "feedback": "Roma Italian Super Cups: Two. Context: Roma team honours listed in the club Hall of Fame article..",
+      "revision": 1
+    },
+    {
+      "id": "73a97652-f89a-5d06-a52f-10ad31697b85",
+      "key": "objective-enrichment-totti-honour-golden-shoe",
+      "factIDs": [
+        "a44613c8-aeae-5454-af5e-2f52c8559cdd"
+      ],
+      "prompt": "In which season did Totti win the European Golden Shoe?",
+      "answers": [
+        "2006-07"
+      ],
+      "feedback": "European Golden Shoe season: 2006-07. Context: The European Golden Shoe award season listed in the club Hall of Fame article..",
+      "revision": 1
+    },
+    {
+      "id": "5a8fc141-87d3-5db9-bec6-3c80bf66eef6",
+      "key": "objective-enrichment-derossi-career-joined",
+      "factIDs": [
+        "f36782ed-718c-5165-a49e-d6c11eca5a91"
+      ],
+      "prompt": "In what year did De Rossi join the club he supported as a teenager?",
+      "answers": [
+        "2000"
+      ],
+      "feedback": "Joined Roma year: 2000. Context: The year De Rossi joined Roma before making his first-team debut..",
+      "revision": 1
+    },
+    {
+      "id": "dbcaf89b-b223-5040-94f3-c839ed70cb75",
+      "key": "objective-enrichment-derossi-career-debut",
+      "factIDs": [
+        "0823d462-fbc6-5887-a74c-2b798f64c0c9"
+      ],
+      "prompt": "Against which club did De Rossi make his Roma first-team debut on 30 October 2001?",
+      "answers": [
+        "Anderlecht"
+      ],
+      "feedback": "First-team debut opponent: Anderlecht. Context: The Champions League group-stage debut at the Stadio Olimpico..",
+      "revision": 1
+    },
+    {
+      "id": "61a3bb44-fb90-534a-b0ae-0725de972df4",
+      "key": "objective-enrichment-derossi-career-finalclub",
+      "factIDs": [
+        "f37e6ee9-d902-54e7-a6a2-1310eb7d3f98"
+      ],
+      "prompt": "At which club did De Rossi finish his professional playing career after Roma?",
+      "answers": [
+        "Boca Juniors"
+      ],
+      "feedback": "Final playing club: Boca Juniors. Context: The six-month final playing spell referenced in De Rossi’s 2020 retirement announcement..",
+      "revision": 1
+    },
+    {
+      "id": "5be8e6a6-6d43-5472-913f-7d81e00bef1f",
+      "key": "objective-enrichment-derossi-mom-firstcap",
+      "factIDs": [
+        "50100029-17dd-5faa-b72b-00b157bf48c9"
+      ],
+      "prompt": "On what date did De Rossi first captain Roma from kick-off?",
+      "answers": [
+        "15 March 2006"
+      ],
+      "feedback": "First captaincy date: 15 March 2006. Context: The UEFA Cup last-16 second leg against Middlesbrough..",
+      "revision": 1
+    },
+    {
+      "id": "faff09c3-b953-5b27-8df4-518f4a26fe76",
+      "key": "objective-enrichment-derossi-mom-barca-minute",
+      "factIDs": [
+        "fe2386be-76b0-537a-b56a-91189f155530"
+      ],
+      "prompt": "In which minute did De Rossi score his penalty in Roma’s 2018 Champions League comeback against Barcelona?",
+      "answers": [
+        "58"
+      ],
+      "feedback": "Minute of De Rossi’s comeback penalty: 58th minute. Context: Roma–Barcelona second leg, 10 April 2018; minute listed in the official match report..",
+      "revision": 1
+    },
+    {
+      "id": "298fb805-36b5-5f17-b1dc-78e2f5e78115",
+      "key": "objective-enrichment-derossi-mom-barca-score",
+      "factIDs": [
+        "4a220266-12e8-5c49-bbfc-2434f471284a"
+      ],
+      "prompt": "What was Roma’s score against Barcelona in the 10 April 2018 Champions League second leg?",
+      "answers": [
+        "3–0"
+      ],
+      "feedback": "Roma-Barcelona second-leg score: 3–0. Context: Second leg only; Roma drew 4-4 on aggregate and advanced on away goals..",
+      "revision": 1
+    },
+    {
+      "id": "f724937e-edc9-503b-b58f-70f6b0b123fa",
+      "key": "objective-enrichment-derossi-rec-apps",
+      "factIDs": [
+        "a005671d-eedc-5e92-9a0f-cc1dffca47ce"
+      ],
+      "prompt": "How many appearances did De Rossi make for Roma in all competitions?",
+      "answers": [
+        "616"
+      ],
+      "feedback": "Roma appearances: 616 appearances. Context: His completed Roma total, as listed in the club’s 2020 career retrospective..",
+      "revision": 1
+    },
+    {
+      "id": "2b50c52b-9f3b-5e53-b0e4-0701356a44f4",
+      "key": "objective-enrichment-derossi-rec-goals",
+      "factIDs": [
+        "f323786d-0fa2-5ae4-801d-361ca3fd41d8"
+      ],
+      "prompt": "How many goals did De Rossi score for Roma in all competitions?",
+      "answers": [
+        "63"
+      ],
+      "feedback": "Roma goals: 63 goals. Context: His Roma goal total across competitions..",
+      "revision": 1
+    },
+    {
+      "id": "ee5d6de2-071a-54ab-80a8-67abcf30b703",
+      "key": "objective-enrichment-derossi-rec-captain",
+      "factIDs": [
+        "1c7d520d-2bcf-5b9e-b70f-58ac7e5a7a9c"
+      ],
+      "prompt": "How many times did De Rossi captain Roma?",
+      "answers": [
+        "207"
+      ],
+      "feedback": "Roma matches as captain: 207 matches. Context: De Rossi’s Roma captaincy total, in the club’s 2020 debut retrospective..",
+      "revision": 1
+    },
+    {
+      "id": "d23d2725-c8fa-5292-ac5f-3438a3105473",
+      "key": "objective-enrichment-derossi-honour-worldcup",
+      "factIDs": [
+        "66132e47-6a5c-56b1-818b-00eebdd2ca48"
+      ],
+      "prompt": "In what year did De Rossi win the FIFA World Cup with Italy?",
+      "answers": [
+        "2006"
+      ],
+      "feedback": "World Cup year: 2006. Context: His international senior-team World Cup win..",
+      "revision": 1
+    },
+    {
+      "id": "4e8d3e37-ef77-5729-9c57-1594fdb8bc11",
+      "key": "objective-enrichment-derossi-honour-coppa",
+      "factIDs": [
+        "b648078d-d306-5970-97b0-9b352f5e81c9"
+      ],
+      "prompt": "How many Coppa Italia titles did De Rossi win with Roma?",
+      "answers": [
+        "Two"
+      ],
+      "feedback": "Roma Coppa Italia titles: Two titles. Context: Roma honours through his departure in 2019..",
+      "revision": 1
+    },
+    {
+      "id": "3b9b2b7d-537f-57c1-a5c5-3bcec4da0d38",
+      "key": "objective-enrichment-derossi-honour-supercoppa",
+      "factIDs": [
+        "0b65df2d-8b18-55b9-be7c-d3b2b41092f0"
+      ],
+      "prompt": "How many Supercoppa titles did De Rossi win with Roma?",
+      "answers": [
+        "One"
+      ],
+      "feedback": "Roma Supercoppa wins: One title. Context: Roma honours through his departure in 2019..",
+      "revision": 1
     }
   ],
   "roadmaps": [
@@ -65787,6 +67317,35 @@
           "lessonIDs": [
             "cbc0bf6d-31cf-521e-876e-47831883d653"
           ]
+        },
+        {
+          "key": "roadmap-roma-curriculum-history",
+          "title": "History & identity",
+          "lessonIDs": [
+            "3d9554d4-3452-5ecf-bc65-17d554dccca1"
+          ]
+        },
+        {
+          "key": "roadmap-roma-curriculum-moments",
+          "title": "Defining moments",
+          "lessonIDs": [
+            "7b22c153-c1c0-5cdd-b0d9-941b65a30c65",
+            "7aea65d5-05d0-5d71-8837-ad9e5401e895"
+          ]
+        },
+        {
+          "key": "roadmap-roma-curriculum-players",
+          "title": "Players & legacies",
+          "lessonIDs": [
+            "90b35aee-f04e-534d-a40e-3e7d29a2d62f",
+            "316f2019-1a3c-5f6a-81fa-acc140bd5037",
+            "04221ebc-1ad7-5ee2-b246-d91531b38be6",
+            "bdfe0f17-ca9f-5032-8067-77e5c263dd88",
+            "f6650335-c160-54e8-844b-7a88099c3a53",
+            "525d3cbf-4759-55af-ac57-f17ea6a9ad73",
+            "df6326e1-5f73-562c-8737-7ab936884cc8",
+            "aecd38d4-72f4-5a35-9a59-13f724ed9529"
+          ]
         }
       ]
     },
@@ -66085,7 +67644,11 @@
           "key": "roadmap-toluca-curriculum-moments",
           "title": "Defining moments",
           "lessonIDs": [
-            "9ccc851d-0d3d-566e-9c40-377ab38e2020"
+            "9ccc851d-0d3d-566e-9c40-377ab38e2020",
+            "476a6800-e00a-5e32-99cb-ab7a28b15a9f",
+            "23fe5ca5-164a-5f86-8b9b-089cc5404089",
+            "41cbbbf7-c5ec-5c12-a155-ba69dee48109",
+            "bb8bcecd-dc02-5963-b10c-1ebf3bbd5009"
           ]
         },
         {
@@ -70960,6 +72523,98 @@
           "note": "Optional shared club history; it does not count toward player-specific learning.",
           "lessonIDs": [
             "28d122c1-9ce4-59b7-a4e2-f105aaf3c65c"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "8460e43e-7d83-53a3-a22c-caf04c95b901",
+      "key": "roadmap-player-francesco-totti",
+      "subjectID": "1c3f27d7-c350-5e51-bb0d-f315b368a66f",
+      "clubID": "bfbeecff-e46e-5cae-a7d8-a09e05bf7d9b",
+      "summary": "Career stories, defining moments and dated records across 4 player-specific lessons, plus an optional club story.",
+      "chapters": [
+        {
+          "key": "roadmap-player-francesco-totti-curriculum-career",
+          "title": "Career journey",
+          "lessonIDs": [
+            "90b35aee-f04e-534d-a40e-3e7d29a2d62f"
+          ]
+        },
+        {
+          "key": "roadmap-player-francesco-totti-curriculum-moments",
+          "title": "Defining moments",
+          "lessonIDs": [
+            "316f2019-1a3c-5f6a-81fa-acc140bd5037"
+          ]
+        },
+        {
+          "key": "roadmap-player-francesco-totti-curriculum-records",
+          "title": "Records & honours",
+          "lessonIDs": [
+            "04221ebc-1ad7-5ee2-b246-d91531b38be6"
+          ]
+        },
+        {
+          "key": "roadmap-player-francesco-totti-curriculum-legacy",
+          "title": "Legacy",
+          "lessonIDs": [
+            "bdfe0f17-ca9f-5032-8067-77e5c263dd88"
+          ]
+        },
+        {
+          "key": "roadmap-player-francesco-totti-club-context",
+          "title": "Club context",
+          "isOptional": true,
+          "note": "Optional shared club history; it does not count toward player-specific learning.",
+          "lessonIDs": [
+            "cbc0bf6d-31cf-521e-876e-47831883d653"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "d1fdd0a1-7823-5e6b-8962-a3f61ab5ff37",
+      "key": "roadmap-player-daniele-de-rossi",
+      "subjectID": "6075fb97-4979-5418-91eb-d5657008b590",
+      "clubID": "bfbeecff-e46e-5cae-a7d8-a09e05bf7d9b",
+      "summary": "Career stories, defining moments and dated records across 4 player-specific lessons, plus an optional club story.",
+      "chapters": [
+        {
+          "key": "roadmap-player-daniele-de-rossi-curriculum-career",
+          "title": "Career journey",
+          "lessonIDs": [
+            "f6650335-c160-54e8-844b-7a88099c3a53"
+          ]
+        },
+        {
+          "key": "roadmap-player-daniele-de-rossi-curriculum-moments",
+          "title": "Defining moments",
+          "lessonIDs": [
+            "525d3cbf-4759-55af-ac57-f17ea6a9ad73"
+          ]
+        },
+        {
+          "key": "roadmap-player-daniele-de-rossi-curriculum-records",
+          "title": "Records & honours",
+          "lessonIDs": [
+            "df6326e1-5f73-562c-8737-7ab936884cc8"
+          ]
+        },
+        {
+          "key": "roadmap-player-daniele-de-rossi-curriculum-legacy",
+          "title": "Legacy",
+          "lessonIDs": [
+            "aecd38d4-72f4-5a35-9a59-13f724ed9529"
+          ]
+        },
+        {
+          "key": "roadmap-player-daniele-de-rossi-club-context",
+          "title": "Club context",
+          "isOptional": true,
+          "note": "Optional shared club history; it does not count toward player-specific learning.",
+          "lessonIDs": [
+            "cbc0bf6d-31cf-521e-876e-47831883d653"
           ]
         }
       ]
@@ -88403,6 +90058,411 @@
         "8b476085-0c3f-504e-8f63-9fa9909627e5",
         "49831572-68d2-5b6f-9ff7-37ab55a4feeb",
         "efec1511-fe92-5a07-a7f4-995f2a4b769c"
+      ]
+    },
+    {
+      "id": "476a6800-e00a-5e32-99cb-ab7a28b15a9f",
+      "key": "lesson-curriculum-toluca-next-1967",
+      "title": "The closing sprint for a first crown",
+      "subtitle": "A tied title race became a decisive winning run.",
+      "story": [
+        {
+          "title": "A race still open",
+          "body": "With three fixtures left in 1966–67, Toluca and América were level on points. América drew twice while Toluca won each remaining match."
+        },
+        {
+          "title": "Dosal delivers",
+          "body": "Juan Dosal scored twice against Necaxa in the clinching victory. Toluca had its first league crown after fourteen years in the top division."
+        }
+      ],
+      "objectiveIDs": [
+        "8af7ebb1-36ad-5438-9008-8d0d46846799",
+        "3b498350-6822-5def-8e06-11324aea8799",
+        "7aeed73f-d720-5328-9974-7f2def641d31"
+      ],
+      "exerciseIDs": [
+        "1029c514-f198-5429-8a81-660cce7e315d",
+        "ef62e43a-1531-591c-9a68-52e828e06ec8",
+        "67432c7f-1ef0-594a-b549-0a6914627fbe",
+        "775676d7-5ec2-581c-8a8a-ec0019e614fc"
+      ]
+    },
+    {
+      "id": "23fe5ca5-164a-5f86-8b9b-089cc5404089",
+      "key": "lesson-curriculum-toluca-next-1975",
+      "title": "A third crown in a different format",
+      "subtitle": "A points-based final group decided the championship.",
+      "story": [
+        {
+          "title": "Four clubs, one title",
+          "body": "In 1974–75, Toluca entered a final group with Atlético Español, León and Curtidores. Each club faced its three rivals twice; the points leader would take the championship."
+        },
+        {
+          "title": "Estupiñán’s decisive finish",
+          "body": "An Ítalo Estupiñán goal beat León at home. Toluca reached eight points and secured its third league title with a fixture still to play."
+        }
+      ],
+      "objectiveIDs": [
+        "cce12dd5-dc82-5df4-8a2f-69f409d41236",
+        "12055287-7cb7-58c0-9107-e666fe2ed95b",
+        "30b54744-4d08-584b-9174-b475c028bcde"
+      ],
+      "exerciseIDs": [
+        "733fc832-16ec-5065-a432-2770acd14a9c",
+        "0f36b386-b2b9-56e5-90c1-e8bf77b63c57",
+        "ff8d1e8c-6eb4-56a2-b7b9-3806fe45d52a",
+        "18cd5022-1ab7-5322-a94f-8e4519801be0"
+      ]
+    },
+    {
+      "id": "41cbbbf7-c5ec-5c12-a155-ba69dee48109",
+      "key": "lesson-curriculum-toluca-next-2000",
+      "title": "A commanding start to the millennium",
+      "subtitle": "Two final legs brought another title.",
+      "story": [
+        {
+          "title": "The league leader advances",
+          "body": "Enrique Meza’s Toluca topped the Verano 2000 regular season. It eliminated Puebla and Guadalajara to reach another final."
+        },
+        {
+          "title": "A decisive two-leg finish",
+          "body": "Toluca won away at Santos before completing the final at the Nemesio Díez. The aggregate secured the club’s sixth league title."
+        }
+      ],
+      "objectiveIDs": [
+        "e74ffa61-0a66-548d-a687-3ab69005fff7",
+        "e43551e3-9489-54b5-b0f5-aa854ef617f9",
+        "81c87c58-1795-55aa-a77f-98c1ab15cc7c"
+      ],
+      "exerciseIDs": [
+        "0e0829a1-9c70-5023-b5a4-54ef1a5c2995",
+        "7964e285-03f1-553c-bce3-4bacb3c8d115",
+        "0c3ef3d4-8870-5bce-994d-886d8d313105",
+        "6a127db9-dcb4-50a7-bbfb-af6d625448e3"
+      ]
+    },
+    {
+      "id": "bb8bcecd-dc02-5963-b10c-1ebf3bbd5009",
+      "key": "lesson-curriculum-toluca-next-2005",
+      "title": "Bringing the trophy home from Monterrey",
+      "subtitle": "A level first leg left everything to play for away.",
+      "story": [
+        {
+          "title": "An open final",
+          "body": "Toluca eliminated Cruz Azul and Pachuca in the Apertura 2005 playoffs. Monterrey then drew the first final leg at the Nemesio Díez."
+        },
+        {
+          "title": "Sánchez makes the difference",
+          "body": "Vicente Sánchez stood out in the away-leg victory. Toluca secured its eighth league title and, in the club’s account, its first championship clinched away from home."
+        }
+      ],
+      "objectiveIDs": [
+        "c61c4f32-bf8f-564c-9ffa-e38fb22176c5",
+        "5ef6cc9d-691a-5911-a640-a1ba477d9add",
+        "f175f7d7-ec0f-569f-b3f9-9fcda13e4408"
+      ],
+      "exerciseIDs": [
+        "72f93689-36a9-5e00-a19f-11836a7a5af7",
+        "be418e11-979d-545a-9461-9ce3d2ff1543",
+        "62e70d30-498d-5c83-869a-c17c6ac78369",
+        "2f1904a6-e0e0-5e73-b9c3-bf1c8ad55b49"
+      ]
+    },
+    {
+      "id": "3d9554d4-3452-5ecf-bc65-17d554dccca1",
+      "key": "lesson-curriculum-roma-history",
+      "title": "A Roman club takes shape",
+      "subtitle": "Discover the city clubs and symbols behind Roma’s identity.",
+      "story": [
+        {
+          "title": "A club for Rome",
+          "body": "Roma was formed when Fortitudo-ProRoma, Football Club di Roma and Alba-Audace merged in 1927."
+        },
+        {
+          "title": "A new emblem and colours",
+          "body": "The Capitoline Wolf and the city colours, yellow and red, gave the new club an identity."
+        }
+      ],
+      "objectiveIDs": [
+        "a827a6ae-1d36-548b-801d-8b977aa5bfe7",
+        "b3941586-e849-5ec4-9301-afbafd08b70b",
+        "8a1daf98-1ec0-5cb6-92a1-42a95e650e0d"
+      ],
+      "exerciseIDs": [
+        "e0c25c24-2680-5416-b3e9-cfe7c7154332",
+        "534acbce-d2ae-5596-8605-3f6063530025",
+        "27be8acb-09ee-57ba-9c95-68e87c4176b5",
+        "9339fd58-d813-5fc1-bb2c-9434374f4125"
+      ]
+    },
+    {
+      "id": "7b22c153-c1c0-5cdd-b0d9-941b65a30c65",
+      "key": "lesson-curriculum-roma-1984-final",
+      "title": "The 1984 European Cup final in Rome",
+      "subtitle": "A home-city final tested Roma on Europe’s biggest stage.",
+      "story": [
+        {
+          "title": "Home advantage",
+          "body": "Roma reached the 1984 European Cup final after victories over Göteborg, CSKA Sofia, Dinamo Berlin and Dundee United."
+        },
+        {
+          "title": "A final decided on penalties",
+          "body": "Pruzzo cancelled Phil Neal’s opener at the Stadio Olimpico, but Liverpool won the shootout."
+        }
+      ],
+      "objectiveIDs": [
+        "84b917a6-86a1-5049-bed0-f2c659f29f8a",
+        "f9b6e026-fdb9-5bcd-b8a6-a573ddce37b8",
+        "f3b9c244-8edd-5b86-b60e-d2766395b4e5"
+      ],
+      "exerciseIDs": [
+        "bff0a1e1-0e22-569b-aff0-8151b26dedc8",
+        "e60bd6b4-b3d3-5e9e-b7c9-7b0135e07010",
+        "8471cad2-4b5b-5ccf-b2c4-3a93384cba92",
+        "57c8e611-3f60-517b-a453-a3a93fb9118f"
+      ]
+    },
+    {
+      "id": "7aea65d5-05d0-5d71-8837-ad9e5401e895",
+      "key": "lesson-curriculum-roma-2001-title",
+      "title": "A capital celebrates the Scudetto",
+      "subtitle": "A title-winning team leaves its mark on the capital.",
+      "story": [
+        {
+          "title": "A season-long lead",
+          "body": "Roma finished the 2000-01 campaign with 75 points and secured the title on the final day."
+        },
+        {
+          "title": "Three Scudetti",
+          "body": "The championship was Roma’s third league title, after the 1942 and 1983 wins."
+        }
+      ],
+      "objectiveIDs": [
+        "5679f522-8389-5320-a9c6-d661d11fd390",
+        "4e4b9ebd-088b-546f-be52-de551aa897ff",
+        "59bace7c-486f-5e77-b03c-c4710ee5b8bc"
+      ],
+      "exerciseIDs": [
+        "754fa9d4-27c0-5d24-afe0-af31c8f82445",
+        "0fd8d14a-6ad4-5d56-b29b-adb9c644c839",
+        "ee73df92-74d3-5570-8b83-2e66a2e1e4a9",
+        "898a214a-1aae-5e12-af41-2d78dbf1d94e"
+      ]
+    },
+    {
+      "id": "90b35aee-f04e-534d-a40e-3e7d29a2d62f",
+      "key": "lesson-curriculum-roma-totti-career",
+      "title": "From Lodigiani to Roma’s first team",
+      "subtitle": "Follow Totti from youth football to his first senior milestones.",
+      "story": [
+        {
+          "title": "Roma youth pathway",
+          "body": "Totti played youth football at Fortitudo, SMIT Trastevere and Lodigiani before joining Roma."
+        },
+        {
+          "title": "A senior debut",
+          "body": "He made his Serie A debut away to Brescia in March 1993, then scored his first league goal against Foggia."
+        }
+      ],
+      "objectiveIDs": [
+        "79429e7d-fe4b-52e4-8b1b-a72e14a5e677",
+        "6f6b6705-09a5-5dba-9182-42c8c13de846",
+        "76ed8959-0715-5e84-ae42-ce04f20704da"
+      ],
+      "exerciseIDs": [
+        "7a045259-9ca8-5672-bacb-85dbd322478d",
+        "4f334b18-2162-52ee-a7e3-4ff636422697",
+        "1ee174b2-bfb7-53f3-b0b0-c16603a98d3c",
+        "036f0459-b263-594b-965b-80c75730b439"
+      ]
+    },
+    {
+      "id": "316f2019-1a3c-5f6a-81fa-acc140bd5037",
+      "key": "lesson-curriculum-roma-totti-moments",
+      "title": "A captain in defining moments",
+      "subtitle": "A captain makes his mark for club and country.",
+      "story": [
+        {
+          "title": "The title-day opener",
+          "body": "Totti scored first in the decisive match against Parma as Roma secured the 2000-01 title."
+        },
+        {
+          "title": "A century of league goals",
+          "body": "Totti reached his hundredth Serie A goal against Inter in October 2004. He later recovered from a serious injury to join Italy’s World Cup squad and convert a vital knockout-round penalty."
+        }
+      ],
+      "objectiveIDs": [
+        "8c23436c-6783-533f-8bb5-35a6c9327da8",
+        "94178f9c-f92c-52ff-860a-5b3c2dad3c3e",
+        "662cd185-2b29-5831-8ef5-6fb7a932bd7c"
+      ],
+      "exerciseIDs": [
+        "9060bd0d-89f6-5b8f-b249-75c159e21320",
+        "4e46bd1e-7df3-50b7-9aea-f9351209f7ec",
+        "dc185851-4400-51b2-aaa1-419a9719a168",
+        "0f318c33-b63a-528e-94f8-c078d7e4d57e"
+      ]
+    },
+    {
+      "id": "04221ebc-1ad7-5ee2-b246-d91531b38be6",
+      "key": "lesson-curriculum-roma-totti-records",
+      "title": "Totti’s Roma record book",
+      "subtitle": "Separate Totti’s league records from his totals across competitions.",
+      "story": [
+        {
+          "title": "Unmatched longevity",
+          "body": "Totti’s final competitive Roma appearance came in May 2017, after a 24-year first-team career."
+        },
+        {
+          "title": "A prolific scorer",
+          "body": "His club Hall of Fame profile lists totals across Serie A, domestic cups and European competitions."
+        }
+      ],
+      "objectiveIDs": [
+        "e27f25d9-7c41-5f2a-89aa-9fbf4c766a4a",
+        "3eae1926-0f72-51e3-9b9d-b4ded39763a5",
+        "0d47ef07-7b2c-508e-9baa-c778ae842725"
+      ],
+      "exerciseIDs": [
+        "b9f46cea-235f-5390-b4c5-13ba65d35d6d",
+        "412d0f44-15eb-5614-b1d8-c4a6f3484aec",
+        "1e3c2b94-c1ff-5e51-8851-fa77446fab5d",
+        "cf511507-f65f-5204-ab6b-b18279b26120"
+      ]
+    },
+    {
+      "id": "bdfe0f17-ca9f-5032-8067-77e5c263dd88",
+      "key": "lesson-curriculum-roma-totti-honours",
+      "title": "Totti’s club and individual honours",
+      "subtitle": "Explore team trophies and an individual scoring award.",
+      "story": [
+        {
+          "title": "Two cup competitions",
+          "body": "Totti lifted the Coppa Italia twice and the Italian Super Cup twice with Roma."
+        },
+        {
+          "title": "An individual prize",
+          "body": "In 2006-07, he finished as Serie A’s top scorer and won the European Golden Shoe."
+        }
+      ],
+      "objectiveIDs": [
+        "612a45d2-0f34-5106-8110-21133a74894f",
+        "09c1a98b-5628-5212-b487-6bbdb2c0900a",
+        "73a97652-f89a-5d06-a52f-10ad31697b85"
+      ],
+      "exerciseIDs": [
+        "efc6ce24-eca1-5085-a67f-42ef25b99080",
+        "d14e8db2-566f-5c9c-8694-fc41c64c42c0",
+        "ed6e475f-42eb-5b03-9449-7e3f0b74809a",
+        "3e0ba21f-4f8e-5fdc-bce4-2f06f852133d"
+      ]
+    },
+    {
+      "id": "f6650335-c160-54e8-844b-7a88099c3a53",
+      "key": "lesson-curriculum-roma-de-rossi-career",
+      "title": "A Roma academy graduate",
+      "subtitle": "Follow De Rossi from the academy to his last playing chapter.",
+      "story": [
+        {
+          "title": "A boyhood club",
+          "body": "The Rome-born academy graduate joined the club he supported as a teenager in 2000."
+        },
+        {
+          "title": "From debut to departure",
+          "body": "He debuted in the Champions League in October 2001 and later spent the final six months of his playing career with Boca Juniors."
+        }
+      ],
+      "objectiveIDs": [
+        "5a8fc141-87d3-5db9-bec6-3c80bf66eef6",
+        "dbcaf89b-b223-5040-94f3-c839ed70cb75",
+        "61a3bb44-fb90-534a-b0ae-0725de972df4"
+      ],
+      "exerciseIDs": [
+        "ff572b75-fffb-572c-9f48-b6d66d474e5b",
+        "41c0251c-a1dd-5a9b-87da-5ceecab639cf",
+        "ff840e9b-76bf-5de1-8bbf-3492928e0066",
+        "38916d58-630d-5a52-86df-ce27bd8b42ca"
+      ]
+    },
+    {
+      "id": "525d3cbf-4759-55af-ac57-f17ea6a9ad73",
+      "key": "lesson-curriculum-roma-de-rossi-moments",
+      "title": "Leadership and a night in Rome",
+      "subtitle": "Captaincy and a remarkable European comeback.",
+      "story": [
+        {
+          "title": "The armband",
+          "body": "He captained Roma for the first time from kick-off against Middlesbrough in March 2006."
+        },
+        {
+          "title": "A famous comeback",
+          "body": "In 2018, he scored Roma’s second goal as the team overturned Barcelona’s 4-1 first-leg lead."
+        }
+      ],
+      "objectiveIDs": [
+        "5be8e6a6-6d43-5472-913f-7d81e00bef1f",
+        "faff09c3-b953-5b27-8df4-518f4a26fe76",
+        "298fb805-36b5-5f17-b1dc-78e2f5e78115"
+      ],
+      "exerciseIDs": [
+        "c717ef33-305e-505d-af69-8d0677e15934",
+        "315a8c38-fa7e-527d-a38d-4faab9f9c0ad",
+        "808475bf-f144-56bb-83f7-7785fcaaed13",
+        "8f7c9c67-cdb2-57e7-a382-44c8149addb8"
+      ]
+    },
+    {
+      "id": "df6326e1-5f73-562c-8737-7ab936884cc8",
+      "key": "lesson-curriculum-roma-de-rossi-records",
+      "title": "A Roma mainstay in the numbers",
+      "subtitle": "Explore De Rossi’s appearances, goals and leadership record.",
+      "story": [
+        {
+          "title": "A long service",
+          "body": "Across 18 years, De Rossi made more than six hundred appearances for Roma."
+        },
+        {
+          "title": "Midfielder and captain",
+          "body": "His club retrospective records goals and captaincy totals alongside appearances."
+        }
+      ],
+      "objectiveIDs": [
+        "f724937e-edc9-503b-b58f-70f6b0b123fa",
+        "2b50c52b-9f3b-5e53-b0e4-0701356a44f4",
+        "ee5d6de2-071a-54ab-80a8-67abcf30b703"
+      ],
+      "exerciseIDs": [
+        "a458fd32-9b87-5150-8243-cbae33aa843a",
+        "3673e1e1-9929-5936-bf4d-a634bdc9b293",
+        "3325c92e-b601-56a5-9d8c-cc2510298d1a",
+        "ef365bd0-4136-50a9-8031-ba1b57be2989"
+      ]
+    },
+    {
+      "id": "aecd38d4-72f4-5a35-9a59-13f724ed9529",
+      "key": "lesson-curriculum-roma-de-rossi-honours",
+      "title": "De Rossi’s international and club honours",
+      "subtitle": "Club trophies and international success across De Rossi’s career.",
+      "story": [
+        {
+          "title": "A world champion",
+          "body": "De Rossi played in the 2006 World Cup final as Italy won the tournament."
+        },
+        {
+          "title": "Roma silverware",
+          "body": "His Roma honours included consecutive Coppa Italia titles and a 2007 Supercoppa."
+        }
+      ],
+      "objectiveIDs": [
+        "d23d2725-c8fa-5292-ac5f-3438a3105473",
+        "4e8d3e37-ef77-5729-9c57-1594fdb8bc11",
+        "3b9b2b7d-537f-57c1-a5c5-3bcec4da0d38"
+      ],
+      "exerciseIDs": [
+        "ea3361c8-1a15-5171-afaf-ab580c774618",
+        "97162cc0-0dda-5834-8429-d4c1c1937a84",
+        "458e923a-dec3-5709-a4b7-155c60e316bf",
+        "7ecce647-86c5-5a62-af7a-79758b6cf77a"
       ]
     }
   ],
@@ -180838,6 +182898,2116 @@
       "left": [],
       "right": [],
       "pairs": []
+    },
+    {
+      "id": "1029c514-f198-5429-8a81-660cce7e315d",
+      "key": "exercise-curriculum-toluca-next-1967-choice-0",
+      "kind": "choice",
+      "objectiveIDs": [
+        "8af7ebb1-36ad-5438-9008-8d0d46846799"
+      ],
+      "prompt": "Which club was level on points with Toluca with three matches remaining in the 1966–67 title race?",
+      "feedback": "Rival in the closing title race: Club América. Context: 1966–67 league title race; three matches remaining..",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "Club América"
+        },
+        {
+          "id": "choice-1",
+          "text": "Cruz Azul"
+        },
+        {
+          "id": "choice-2",
+          "text": "Pumas UNAM"
+        },
+        {
+          "id": "choice-3",
+          "text": "Guadalajara"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "ef62e43a-1531-591c-9a68-52e828e06ec8",
+      "key": "exercise-curriculum-toluca-next-1967-choice-1",
+      "kind": "choice",
+      "objectiveIDs": [
+        "3b498350-6822-5def-8e06-11324aea8799"
+      ],
+      "prompt": "How many consecutive victories closed Toluca’s first league-winning campaign in 1966–67?",
+      "feedback": "Closing winning run: 3 wins. Context: Final three fixtures of the 1966–67 league campaign..",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "3"
+        },
+        {
+          "id": "choice-1",
+          "text": "2"
+        },
+        {
+          "id": "choice-2",
+          "text": "4"
+        },
+        {
+          "id": "choice-3",
+          "text": "5"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "67432c7f-1ef0-594a-b549-0a6914627fbe",
+      "key": "exercise-curriculum-toluca-next-1967-choice-2",
+      "kind": "choice",
+      "objectiveIDs": [
+        "7aeed73f-d720-5328-9974-7f2def641d31"
+      ],
+      "prompt": "Who scored twice for Toluca against Necaxa to seal the club’s first league title?",
+      "feedback": "Scorer in the title-clinching match: Juan Dosal. Context: Toluca’s title-clinching match in the 1966–67 league campaign..",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "Juan Dosal"
+        },
+        {
+          "id": "choice-1",
+          "text": "Vicente Pereda"
+        },
+        {
+          "id": "choice-2",
+          "text": "Ítalo Estupiñán"
+        },
+        {
+          "id": "choice-3",
+          "text": "José Saturnino Cardozo"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "775676d7-5ec2-581c-8a8a-ec0019e614fc",
+      "key": "exercise-curriculum-toluca-next-1967-choice-3",
+      "kind": "choice",
+      "objectiveIDs": [
+        "8af7ebb1-36ad-5438-9008-8d0d46846799"
+      ],
+      "prompt": "Which club was level on points with Toluca with three matches remaining in the 1966–67 title race?",
+      "feedback": "Rival in the closing title race: Club América. Context: 1966–67 league title race; three matches remaining..",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "Club América"
+        },
+        {
+          "id": "choice-1",
+          "text": "Cruz Azul"
+        },
+        {
+          "id": "choice-2",
+          "text": "Pumas UNAM"
+        },
+        {
+          "id": "choice-3",
+          "text": "Guadalajara"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "733fc832-16ec-5065-a432-2770acd14a9c",
+      "key": "exercise-curriculum-toluca-next-1975-choice-0",
+      "kind": "choice",
+      "objectiveIDs": [
+        "cce12dd5-dc82-5df4-8a2f-69f409d41236"
+      ],
+      "prompt": "What was Toluca’s score against León in the home match that clinched its 1974–75 league title?",
+      "feedback": "Score that clinched the third title: 1–0. Context: Title-clinching home match, 1974–75 final-stage group; not an aggregate..",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "1–0"
+        },
+        {
+          "id": "choice-1",
+          "text": "2–0"
+        },
+        {
+          "id": "choice-2",
+          "text": "1–1"
+        },
+        {
+          "id": "choice-3",
+          "text": "0–1"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": [],
+      "scoreInput": {
+        "leftEntityID": "a6e9d25d-0c7c-5012-bbe3-75cc36a86bda",
+        "rightEntityID": "d43add7c-1561-5585-892c-08893bbf9599",
+        "leftGoals": 1,
+        "rightGoals": 0,
+        "maximum": 20
+      }
+    },
+    {
+      "id": "0f36b386-b2b9-56e5-90c1-e8bf77b63c57",
+      "key": "exercise-curriculum-toluca-next-1975-choice-1",
+      "kind": "choice",
+      "objectiveIDs": [
+        "12055287-7cb7-58c0-9107-e666fe2ed95b"
+      ],
+      "prompt": "Who scored Toluca’s decisive goal against León in the 1974–75 title-clinching match?",
+      "feedback": "Scorer of the decisive goal: Ítalo Estupiñán. Context: Toluca’s 1974–75 title-clinching home match against León..",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "Ítalo Estupiñán"
+        },
+        {
+          "id": "choice-1",
+          "text": "Juan Dosal"
+        },
+        {
+          "id": "choice-2",
+          "text": "José Saturnino Cardozo"
+        },
+        {
+          "id": "choice-3",
+          "text": "José Manuel Abundis"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "ff8d1e8c-6eb4-56a2-b7b9-3806fe45d52a",
+      "key": "exercise-curriculum-toluca-next-1975-choice-2",
+      "kind": "choice",
+      "objectiveIDs": [
+        "30b54744-4d08-584b-9174-b475c028bcde"
+      ],
+      "prompt": "How many final-stage group points had Toluca accumulated when it clinched the 1974–75 title?",
+      "feedback": "Points at clinching: 8 points. Context: Points at the title-clinching moment, with one fixture still pending; not the final season total..",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "8"
+        },
+        {
+          "id": "choice-1",
+          "text": "6"
+        },
+        {
+          "id": "choice-2",
+          "text": "10"
+        },
+        {
+          "id": "choice-3",
+          "text": "12"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "18cd5022-1ab7-5322-a94f-8e4519801be0",
+      "key": "exercise-curriculum-toluca-next-1975-choice-3",
+      "kind": "choice",
+      "objectiveIDs": [
+        "cce12dd5-dc82-5df4-8a2f-69f409d41236"
+      ],
+      "prompt": "What was Toluca’s score against León in the home match that clinched its 1974–75 league title?",
+      "feedback": "Score that clinched the third title: 1–0. Context: Title-clinching home match, 1974–75 final-stage group; not an aggregate..",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "1–0"
+        },
+        {
+          "id": "choice-1",
+          "text": "2–0"
+        },
+        {
+          "id": "choice-2",
+          "text": "1–1"
+        },
+        {
+          "id": "choice-3",
+          "text": "0–1"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": [],
+      "scoreInput": {
+        "leftEntityID": "a6e9d25d-0c7c-5012-bbe3-75cc36a86bda",
+        "rightEntityID": "d43add7c-1561-5585-892c-08893bbf9599",
+        "leftGoals": 1,
+        "rightGoals": 0,
+        "maximum": 20
+      }
+    },
+    {
+      "id": "0e0829a1-9c70-5023-b5a4-54ef1a5c2995",
+      "key": "exercise-curriculum-toluca-next-2000-choice-0",
+      "kind": "choice",
+      "objectiveIDs": [
+        "e74ffa61-0a66-548d-a687-3ab69005fff7"
+      ],
+      "prompt": "What was Toluca’s score away to Santos Laguna in the first leg of the Verano 2000 final?",
+      "feedback": "Away final-leg score: 2–0. Context: Verano 2000 final, away first leg; Toluca shown first..",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "2–0"
+        },
+        {
+          "id": "choice-1",
+          "text": "1–0"
+        },
+        {
+          "id": "choice-2",
+          "text": "2–1"
+        },
+        {
+          "id": "choice-3",
+          "text": "0–2"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": [],
+      "scoreInput": {
+        "leftEntityID": "a6e9d25d-0c7c-5012-bbe3-75cc36a86bda",
+        "rightEntityID": "9be46993-bdaa-5647-9a5a-1dbdb434f23b",
+        "leftGoals": 2,
+        "rightGoals": 0,
+        "maximum": 20
+      }
+    },
+    {
+      "id": "7964e285-03f1-553c-bce3-4bacb3c8d115",
+      "key": "exercise-curriculum-toluca-next-2000-choice-1",
+      "kind": "choice",
+      "objectiveIDs": [
+        "e43551e3-9489-54b5-b0f5-aa854ef617f9"
+      ],
+      "prompt": "What was Toluca’s aggregate score against Santos Laguna across the Verano 2000 final?",
+      "feedback": "Final aggregate: 7–1. Context: Verano 2000 two-leg final aggregate; Toluca shown first..",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "7–1"
+        },
+        {
+          "id": "choice-1",
+          "text": "6–1"
+        },
+        {
+          "id": "choice-2",
+          "text": "7–2"
+        },
+        {
+          "id": "choice-3",
+          "text": "5–1"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": [],
+      "scoreInput": {
+        "leftEntityID": "a6e9d25d-0c7c-5012-bbe3-75cc36a86bda",
+        "rightEntityID": "9be46993-bdaa-5647-9a5a-1dbdb434f23b",
+        "leftGoals": 7,
+        "rightGoals": 1,
+        "maximum": 20
+      }
+    },
+    {
+      "id": "0c3ef3d4-8870-5bce-994d-886d8d313105",
+      "key": "exercise-curriculum-toluca-next-2000-choice-2",
+      "kind": "choice",
+      "objectiveIDs": [
+        "81c87c58-1795-55aa-a77f-98c1ab15cc7c"
+      ],
+      "prompt": "Who coached Toluca’s Verano 2000 league-winning team?",
+      "feedback": "Coach of the championship team: Enrique Meza. Context: Verano 2000 championship campaign..",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "Enrique Meza"
+        },
+        {
+          "id": "choice-1",
+          "text": "Ignacio Trelles"
+        },
+        {
+          "id": "choice-2",
+          "text": "Américo Gallego"
+        },
+        {
+          "id": "choice-3",
+          "text": "José Manuel de la Torre"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "6a127db9-dcb4-50a7-bbfb-af6d625448e3",
+      "key": "exercise-curriculum-toluca-next-2000-choice-3",
+      "kind": "choice",
+      "objectiveIDs": [
+        "e74ffa61-0a66-548d-a687-3ab69005fff7"
+      ],
+      "prompt": "What was Toluca’s score away to Santos Laguna in the first leg of the Verano 2000 final?",
+      "feedback": "Away final-leg score: 2–0. Context: Verano 2000 final, away first leg; Toluca shown first..",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "2–0"
+        },
+        {
+          "id": "choice-1",
+          "text": "1–0"
+        },
+        {
+          "id": "choice-2",
+          "text": "2–1"
+        },
+        {
+          "id": "choice-3",
+          "text": "0–2"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": [],
+      "scoreInput": {
+        "leftEntityID": "a6e9d25d-0c7c-5012-bbe3-75cc36a86bda",
+        "rightEntityID": "9be46993-bdaa-5647-9a5a-1dbdb434f23b",
+        "leftGoals": 2,
+        "rightGoals": 0,
+        "maximum": 20
+      }
+    },
+    {
+      "id": "72f93689-36a9-5e00-a19f-11836a7a5af7",
+      "key": "exercise-curriculum-toluca-next-2005-choice-0",
+      "kind": "choice",
+      "objectiveIDs": [
+        "c61c4f32-bf8f-564c-9ffa-e38fb22176c5"
+      ],
+      "prompt": "What was Toluca’s score at home to Monterrey in the first leg of the Apertura 2005 final?",
+      "feedback": "Home final-leg score: 3–3. Context: Apertura 2005 final, home first leg; Toluca shown first..",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "3–3"
+        },
+        {
+          "id": "choice-1",
+          "text": "2–2"
+        },
+        {
+          "id": "choice-2",
+          "text": "3–2"
+        },
+        {
+          "id": "choice-3",
+          "text": "1–1"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": [],
+      "scoreInput": {
+        "leftEntityID": "a6e9d25d-0c7c-5012-bbe3-75cc36a86bda",
+        "rightEntityID": "535f1abf-2d7d-5690-8179-98856d792855",
+        "leftGoals": 3,
+        "rightGoals": 3,
+        "maximum": 20
+      }
+    },
+    {
+      "id": "be418e11-979d-545a-9461-9ce3d2ff1543",
+      "key": "exercise-curriculum-toluca-next-2005-choice-1",
+      "kind": "choice",
+      "objectiveIDs": [
+        "5ef6cc9d-691a-5911-a640-a1ba477d9add"
+      ],
+      "prompt": "What was Toluca’s score away to Monterrey in the second leg of the Apertura 2005 final?",
+      "feedback": "Away final-leg score: 3–0. Context: Apertura 2005 final, away second leg; Toluca shown first..",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "3–0"
+        },
+        {
+          "id": "choice-1",
+          "text": "2–0"
+        },
+        {
+          "id": "choice-2",
+          "text": "3–1"
+        },
+        {
+          "id": "choice-3",
+          "text": "0–3"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": [],
+      "scoreInput": {
+        "leftEntityID": "a6e9d25d-0c7c-5012-bbe3-75cc36a86bda",
+        "rightEntityID": "535f1abf-2d7d-5690-8179-98856d792855",
+        "leftGoals": 3,
+        "rightGoals": 0,
+        "maximum": 20
+      }
+    },
+    {
+      "id": "62e70d30-498d-5c83-869a-c17c6ac78369",
+      "key": "exercise-curriculum-toluca-next-2005-choice-2",
+      "kind": "choice",
+      "objectiveIDs": [
+        "f175f7d7-ec0f-569f-b3f9-9fcda13e4408"
+      ],
+      "prompt": "Which Toluca player does the club’s account single out for his performance in the Apertura 2005 final away leg?",
+      "feedback": "Standout player in the away leg: Vicente Sánchez. Context: Official Toluca retrospective of the Apertura 2005 second leg; no individual goal total inferred..",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "Vicente Sánchez"
+        },
+        {
+          "id": "choice-1",
+          "text": "José Saturnino Cardozo"
+        },
+        {
+          "id": "choice-2",
+          "text": "José Manuel Abundis"
+        },
+        {
+          "id": "choice-3",
+          "text": "Juan Dosal"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "2f1904a6-e0e0-5e73-b9c3-bf1c8ad55b49",
+      "key": "exercise-curriculum-toluca-next-2005-choice-3",
+      "kind": "choice",
+      "objectiveIDs": [
+        "c61c4f32-bf8f-564c-9ffa-e38fb22176c5"
+      ],
+      "prompt": "What was Toluca’s score at home to Monterrey in the first leg of the Apertura 2005 final?",
+      "feedback": "Home final-leg score: 3–3. Context: Apertura 2005 final, home first leg; Toluca shown first..",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "3–3"
+        },
+        {
+          "id": "choice-1",
+          "text": "2–2"
+        },
+        {
+          "id": "choice-2",
+          "text": "3–2"
+        },
+        {
+          "id": "choice-3",
+          "text": "1–1"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": [],
+      "scoreInput": {
+        "leftEntityID": "a6e9d25d-0c7c-5012-bbe3-75cc36a86bda",
+        "rightEntityID": "535f1abf-2d7d-5690-8179-98856d792855",
+        "leftGoals": 3,
+        "rightGoals": 3,
+        "maximum": 20
+      }
+    },
+    {
+      "id": "e0c25c24-2680-5416-b3e9-cfe7c7154332",
+      "key": "exercise-curriculum-roma-history-choice-0",
+      "kind": "choice",
+      "objectiveIDs": [
+        "a827a6ae-1d36-548b-801d-8b977aa5bfe7"
+      ],
+      "prompt": "In what year was Associazione Sportiva Roma formed?",
+      "feedback": "Roma founding year: 1927. Context: The year AS Roma was formed from three Rome clubs..",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "1927"
+        },
+        {
+          "id": "choice-1",
+          "text": "1925"
+        },
+        {
+          "id": "choice-2",
+          "text": "1926"
+        },
+        {
+          "id": "choice-3",
+          "text": "1928"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "534acbce-d2ae-5596-8605-3f6063530025",
+      "key": "exercise-curriculum-roma-history-choice-1",
+      "kind": "choice",
+      "objectiveIDs": [
+        "b3941586-e849-5ec4-9301-afbafd08b70b"
+      ],
+      "prompt": "Which three clubs merged to form Roma?",
+      "feedback": "Founding clubs: Fortitudo-ProRoma, Football Club di Roma and Alba-Audace. Context: The merger that formed AS Roma in 1927..",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "Fortitudo-ProRoma, Football Club di Roma and Alba-Audace"
+        },
+        {
+          "id": "choice-1",
+          "text": "Lazio, Roman and Alba-Audace"
+        },
+        {
+          "id": "choice-2",
+          "text": "Fortitudo-ProRoma, Lazio and Modena"
+        },
+        {
+          "id": "choice-3",
+          "text": "Alba-Audace, Juventus and Football Club di Roma"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "27be8acb-09ee-57ba-9c95-68e87c4176b5",
+      "key": "exercise-curriculum-roma-history-choice-2",
+      "kind": "choice",
+      "objectiveIDs": [
+        "8a1daf98-1ec0-5cb6-92a1-42a95e650e0d"
+      ],
+      "prompt": "Which symbol did Roma adopt for its crest at its formation?",
+      "feedback": "Club symbol: The Capitoline Wolf. Context: Roma’s original club identity described in its official history..",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "The Capitoline Wolf"
+        },
+        {
+          "id": "choice-1",
+          "text": "A golden eagle"
+        },
+        {
+          "id": "choice-2",
+          "text": "A red cross"
+        },
+        {
+          "id": "choice-3",
+          "text": "A crowned lion"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "9339fd58-d813-5fc1-bb2c-9434374f4125",
+      "key": "exercise-curriculum-roma-history-choice-3",
+      "kind": "choice",
+      "objectiveIDs": [
+        "a827a6ae-1d36-548b-801d-8b977aa5bfe7"
+      ],
+      "prompt": "In what year was Associazione Sportiva Roma formed?",
+      "feedback": "Roma founding year: 1927. Context: The year AS Roma was formed from three Rome clubs..",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "1927"
+        },
+        {
+          "id": "choice-1",
+          "text": "1925"
+        },
+        {
+          "id": "choice-2",
+          "text": "1926"
+        },
+        {
+          "id": "choice-3",
+          "text": "1928"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "bff0a1e1-0e22-569b-aff0-8151b26dedc8",
+      "key": "exercise-curriculum-roma-1984-final-choice-0",
+      "kind": "choice",
+      "objectiveIDs": [
+        "84b917a6-86a1-5049-bed0-f2c659f29f8a"
+      ],
+      "prompt": "Which club did Roma face in the 1984 European Cup final at the Stadio Olimpico?",
+      "feedback": "European Cup final opponent: Liverpool. Context: The 1984 European Cup final in Rome..",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "Liverpool"
+        },
+        {
+          "id": "choice-1",
+          "text": "Bayern Munich"
+        },
+        {
+          "id": "choice-2",
+          "text": "Juventus"
+        },
+        {
+          "id": "choice-3",
+          "text": "Manchester United"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "e60bd6b4-b3d3-5e9e-b7c9-7b0135e07010",
+      "key": "exercise-curriculum-roma-1984-final-choice-1",
+      "kind": "choice",
+      "objectiveIDs": [
+        "f9b6e026-fdb9-5bcd-b8a6-a573ddce37b8"
+      ],
+      "prompt": "What was the score after extra time in Roma’s 1984 European Cup final against Liverpool?",
+      "feedback": "European Cup final score: 1–1. Context: The final score before the penalty shootout; Liverpool won 4-2 on penalties..",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "1–1"
+        },
+        {
+          "id": "choice-1",
+          "text": "0–0"
+        },
+        {
+          "id": "choice-2",
+          "text": "2–1"
+        },
+        {
+          "id": "choice-3",
+          "text": "1–0"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": [],
+      "scoreInput": {
+        "leftEntityID": "bfbeecff-e46e-5cae-a7d8-a09e05bf7d9b",
+        "rightEntityID": "8b6a2a49-f861-5aa6-8bc9-f9d5ed889507",
+        "leftGoals": 1,
+        "rightGoals": 1,
+        "maximum": 20
+      }
+    },
+    {
+      "id": "8471cad2-4b5b-5ccf-b2c4-3a93384cba92",
+      "key": "exercise-curriculum-roma-1984-final-choice-2",
+      "kind": "choice",
+      "objectiveIDs": [
+        "f3b9c244-8edd-5b86-b60e-d2766395b4e5"
+      ],
+      "prompt": "At which stadium did Roma host Liverpool in the 1984 European Cup final?",
+      "feedback": "Roma’s 1984 European Cup final venue: Stadio Olimpico. Context: The venue of Roma’s 1984 European Cup final against Liverpool..",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "Stadio Olimpico"
+        },
+        {
+          "id": "choice-1",
+          "text": "Campo Testaccio"
+        },
+        {
+          "id": "choice-2",
+          "text": "Stadio Flaminio"
+        },
+        {
+          "id": "choice-3",
+          "text": "San Siro"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "57c8e611-3f60-517b-a453-a3a93fb9118f",
+      "key": "exercise-curriculum-roma-1984-final-choice-3",
+      "kind": "choice",
+      "objectiveIDs": [
+        "84b917a6-86a1-5049-bed0-f2c659f29f8a"
+      ],
+      "prompt": "Which club did Roma face in the 1984 European Cup final at the Stadio Olimpico?",
+      "feedback": "European Cup final opponent: Liverpool. Context: The 1984 European Cup final in Rome..",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "Liverpool"
+        },
+        {
+          "id": "choice-1",
+          "text": "Bayern Munich"
+        },
+        {
+          "id": "choice-2",
+          "text": "Juventus"
+        },
+        {
+          "id": "choice-3",
+          "text": "Manchester United"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "754fa9d4-27c0-5d24-afe0-af31c8f82445",
+      "key": "exercise-curriculum-roma-2001-title-choice-0",
+      "kind": "choice",
+      "objectiveIDs": [
+        "5679f522-8389-5320-a9c6-d661d11fd390"
+      ],
+      "prompt": "How many points did Roma collect in its 2000-01 title-winning league season?",
+      "feedback": "Roma 2000-01 points: 75 points. Context: Roma’s points total in the completed 2000–01 Serie A season..",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "75"
+        },
+        {
+          "id": "choice-1",
+          "text": "70"
+        },
+        {
+          "id": "choice-2",
+          "text": "72"
+        },
+        {
+          "id": "choice-3",
+          "text": "78"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "0fd8d14a-6ad4-5d56-b29b-adb9c644c839",
+      "key": "exercise-curriculum-roma-2001-title-choice-1",
+      "kind": "choice",
+      "objectiveIDs": [
+        "4e4b9ebd-088b-546f-be52-de551aa897ff"
+      ],
+      "prompt": "Who scored 20 goals for Roma during the 2000-01 Scudetto season?",
+      "feedback": "Top scorer in Roma title side: Gabriel Batistuta. Context: Roma’s leading scorer in the 2000-01 title season, as described in the club history..",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "Gabriel Batistuta"
+        },
+        {
+          "id": "choice-1",
+          "text": "Francesco Totti"
+        },
+        {
+          "id": "choice-2",
+          "text": "Vincenzo Montella"
+        },
+        {
+          "id": "choice-3",
+          "text": "Marco Delvecchio"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "ee73df92-74d3-5570-8b83-2e66a2e1e4a9",
+      "key": "exercise-curriculum-roma-2001-title-choice-2",
+      "kind": "choice",
+      "objectiveIDs": [
+        "59bace7c-486f-5e77-b03c-c4710ee5b8bc"
+      ],
+      "prompt": "The 2000-01 title was which Scudetto in Roma’s history?",
+      "feedback": "Roma Scudetto count: Third. Context: The league title Roma secured on 17 June 2001..",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "Third"
+        },
+        {
+          "id": "choice-1",
+          "text": "Second"
+        },
+        {
+          "id": "choice-2",
+          "text": "Fourth"
+        },
+        {
+          "id": "choice-3",
+          "text": "Fifth"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "898a214a-1aae-5e12-af41-2d78dbf1d94e",
+      "key": "exercise-curriculum-roma-2001-title-choice-3",
+      "kind": "choice",
+      "objectiveIDs": [
+        "5679f522-8389-5320-a9c6-d661d11fd390"
+      ],
+      "prompt": "How many points did Roma collect in its 2000-01 title-winning league season?",
+      "feedback": "Roma 2000-01 points: 75 points. Context: Roma’s points total in the completed 2000–01 Serie A season..",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "75"
+        },
+        {
+          "id": "choice-1",
+          "text": "70"
+        },
+        {
+          "id": "choice-2",
+          "text": "72"
+        },
+        {
+          "id": "choice-3",
+          "text": "78"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "7a045259-9ca8-5672-bacb-85dbd322478d",
+      "key": "exercise-curriculum-roma-totti-career-choice-0",
+      "kind": "choice",
+      "objectiveIDs": [
+        "79429e7d-fe4b-52e4-8b1b-a72e14a5e677"
+      ],
+      "prompt": "On what date did Roma register Francesco Totti with the Italian FA?",
+      "feedback": "Roma registration date: 20 July 1989. Context: The date his Roma journey began as a registered youth player..",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "20 July 1989"
+        },
+        {
+          "id": "choice-1",
+          "text": "20 July 1988"
+        },
+        {
+          "id": "choice-2",
+          "text": "20 July 1990"
+        },
+        {
+          "id": "choice-3",
+          "text": "28 March 1993"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "4f334b18-2162-52ee-a7e3-4ff636422697",
+      "key": "exercise-curriculum-roma-totti-career-choice-1",
+      "kind": "choice",
+      "objectiveIDs": [
+        "6f6b6705-09a5-5dba-9182-42c8c13de846"
+      ],
+      "prompt": "Against which club did Totti make his Serie A debut in March 1993?",
+      "feedback": "Serie A debut opponent: Brescia. Context: Totti’s Serie A debut on 28 March 1993..",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "Brescia"
+        },
+        {
+          "id": "choice-1",
+          "text": "Foggia"
+        },
+        {
+          "id": "choice-2",
+          "text": "Inter"
+        },
+        {
+          "id": "choice-3",
+          "text": "Juventus"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "1ee174b2-bfb7-53f3-b0b0-c16603a98d3c",
+      "key": "exercise-curriculum-roma-totti-career-choice-2",
+      "kind": "choice",
+      "objectiveIDs": [
+        "76ed8959-0715-5e84-ae42-ce04f20704da"
+      ],
+      "prompt": "Against which club did Totti score his first Serie A goal on 4 September 1994?",
+      "feedback": "First Serie A goal opponent: Foggia. Context: Totti’s first Serie A goal, scored after joining Roma’s first-team preseason..",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "Foggia"
+        },
+        {
+          "id": "choice-1",
+          "text": "Brescia"
+        },
+        {
+          "id": "choice-2",
+          "text": "Parma"
+        },
+        {
+          "id": "choice-3",
+          "text": "Juventus"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "036f0459-b263-594b-965b-80c75730b439",
+      "key": "exercise-curriculum-roma-totti-career-choice-3",
+      "kind": "choice",
+      "objectiveIDs": [
+        "79429e7d-fe4b-52e4-8b1b-a72e14a5e677"
+      ],
+      "prompt": "On what date did Roma register Francesco Totti with the Italian FA?",
+      "feedback": "Roma registration date: 20 July 1989. Context: The date his Roma journey began as a registered youth player..",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "20 July 1989"
+        },
+        {
+          "id": "choice-1",
+          "text": "20 July 1988"
+        },
+        {
+          "id": "choice-2",
+          "text": "20 July 1990"
+        },
+        {
+          "id": "choice-3",
+          "text": "28 March 1993"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "9060bd0d-89f6-5b8f-b249-75c159e21320",
+      "key": "exercise-curriculum-roma-totti-moments-choice-0",
+      "kind": "choice",
+      "objectiveIDs": [
+        "8c23436c-6783-533f-8bb5-35a6c9327da8"
+      ],
+      "prompt": "Against which club did Totti open the scoring in Roma’s 17 June 2001 title-clinching match?",
+      "feedback": "Roma title-day opponent: Parma. Context: The final day of the 2000-01 Serie A season, when Roma secured the Scudetto..",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "Parma"
+        },
+        {
+          "id": "choice-1",
+          "text": "Juventus"
+        },
+        {
+          "id": "choice-2",
+          "text": "Inter"
+        },
+        {
+          "id": "choice-3",
+          "text": "AC Milan"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "4e46bd1e-7df3-50b7-9aea-f9351209f7ec",
+      "key": "exercise-curriculum-roma-totti-moments-choice-1",
+      "kind": "choice",
+      "objectiveIDs": [
+        "94178f9c-f92c-52ff-860a-5b3c2dad3c3e"
+      ],
+      "prompt": "Against which national team did Totti score a crucial penalty in the 2006 World Cup round of 16?",
+      "feedback": "World Cup penalty opponent: Australia. Context: Italy’s 2006 World Cup round-of-16 match on its route to the final..",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "Australia"
+        },
+        {
+          "id": "choice-1",
+          "text": "Germany"
+        },
+        {
+          "id": "choice-2",
+          "text": "France"
+        },
+        {
+          "id": "choice-3",
+          "text": "Ukraine"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "dc185851-4400-51b2-aaa1-419a9719a168",
+      "key": "exercise-curriculum-roma-totti-moments-choice-2",
+      "kind": "choice",
+      "objectiveIDs": [
+        "662cd185-2b29-5831-8ef5-6fb7a932bd7c"
+      ],
+      "prompt": "Against which club did Totti score his hundredth Serie A goal on 3 October 2004?",
+      "feedback": "Opponent for Totti’s hundredth Serie A goal: Inter. Context: Totti’s hundredth Serie A goal, 3 October 2004..",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "Inter"
+        },
+        {
+          "id": "choice-1",
+          "text": "Juventus"
+        },
+        {
+          "id": "choice-2",
+          "text": "AC Milan"
+        },
+        {
+          "id": "choice-3",
+          "text": "Liverpool"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "0f318c33-b63a-528e-94f8-c078d7e4d57e",
+      "key": "exercise-curriculum-roma-totti-moments-choice-3",
+      "kind": "choice",
+      "objectiveIDs": [
+        "8c23436c-6783-533f-8bb5-35a6c9327da8"
+      ],
+      "prompt": "Against which club did Totti open the scoring in Roma’s 17 June 2001 title-clinching match?",
+      "feedback": "Roma title-day opponent: Parma. Context: The final day of the 2000-01 Serie A season, when Roma secured the Scudetto..",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "Parma"
+        },
+        {
+          "id": "choice-1",
+          "text": "Juventus"
+        },
+        {
+          "id": "choice-2",
+          "text": "Inter"
+        },
+        {
+          "id": "choice-3",
+          "text": "AC Milan"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "b9f46cea-235f-5390-b4c5-13ba65d35d6d",
+      "key": "exercise-curriculum-roma-totti-records-choice-0",
+      "kind": "choice",
+      "objectiveIDs": [
+        "e27f25d9-7c41-5f2a-89aa-9fbf4c766a4a"
+      ],
+      "prompt": "How many competitive appearances did Totti make for Roma?",
+      "feedback": "Roma appearances: 786 appearances. Context: Totti’s final all-competition Roma total in the club Hall of Fame profile..",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "786"
+        },
+        {
+          "id": "choice-1",
+          "text": "776"
+        },
+        {
+          "id": "choice-2",
+          "text": "780"
+        },
+        {
+          "id": "choice-3",
+          "text": "796"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "412d0f44-15eb-5614-b1d8-c4a6f3484aec",
+      "key": "exercise-curriculum-roma-totti-records-choice-1",
+      "kind": "choice",
+      "objectiveIDs": [
+        "3eae1926-0f72-51e3-9b9d-b4ded39763a5"
+      ],
+      "prompt": "How many goals did Totti score for Roma in all competitions?",
+      "feedback": "Roma goals: 307 goals. Context: Totti’s final all-competition Roma total in the club Hall of Fame profile..",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "307"
+        },
+        {
+          "id": "choice-1",
+          "text": "297"
+        },
+        {
+          "id": "choice-2",
+          "text": "300"
+        },
+        {
+          "id": "choice-3",
+          "text": "317"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "1e3c2b94-c1ff-5e51-8851-fa77446fab5d",
+      "key": "exercise-curriculum-roma-totti-records-choice-2",
+      "kind": "choice",
+      "objectiveIDs": [
+        "0d47ef07-7b2c-508e-9baa-c778ae842725"
+      ],
+      "prompt": "How many Serie A goals did Totti score for Roma?",
+      "feedback": "Serie A goals: 250 goals. Context: His Serie A scoring total for Roma, listed in the Hall of Fame competition table..",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "250"
+        },
+        {
+          "id": "choice-1",
+          "text": "240"
+        },
+        {
+          "id": "choice-2",
+          "text": "245"
+        },
+        {
+          "id": "choice-3",
+          "text": "255"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "cf511507-f65f-5204-ab6b-b18279b26120",
+      "key": "exercise-curriculum-roma-totti-records-choice-3",
+      "kind": "choice",
+      "objectiveIDs": [
+        "e27f25d9-7c41-5f2a-89aa-9fbf4c766a4a"
+      ],
+      "prompt": "How many competitive appearances did Totti make for Roma?",
+      "feedback": "Roma appearances: 786 appearances. Context: Totti’s final all-competition Roma total in the club Hall of Fame profile..",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "786"
+        },
+        {
+          "id": "choice-1",
+          "text": "776"
+        },
+        {
+          "id": "choice-2",
+          "text": "780"
+        },
+        {
+          "id": "choice-3",
+          "text": "796"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "efc6ce24-eca1-5085-a67f-42ef25b99080",
+      "key": "exercise-curriculum-roma-totti-honours-choice-0",
+      "kind": "choice",
+      "objectiveIDs": [
+        "612a45d2-0f34-5106-8110-21133a74894f"
+      ],
+      "prompt": "How many Coppa Italia titles did Totti win with Roma?",
+      "feedback": "Roma Coppa Italia titles: Two. Context: Roma team honours listed in the club Hall of Fame article..",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "Two"
+        },
+        {
+          "id": "choice-1",
+          "text": "One"
+        },
+        {
+          "id": "choice-2",
+          "text": "Three"
+        },
+        {
+          "id": "choice-3",
+          "text": "Four"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "d14e8db2-566f-5c9c-8694-fc41c64c42c0",
+      "key": "exercise-curriculum-roma-totti-honours-choice-1",
+      "kind": "choice",
+      "objectiveIDs": [
+        "09c1a98b-5628-5212-b487-6bbdb2c0900a"
+      ],
+      "prompt": "How many Italian Super Cup titles did Totti win with Roma?",
+      "feedback": "Roma Italian Super Cups: Two. Context: Roma team honours listed in the club Hall of Fame article..",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "Two"
+        },
+        {
+          "id": "choice-1",
+          "text": "One"
+        },
+        {
+          "id": "choice-2",
+          "text": "Three"
+        },
+        {
+          "id": "choice-3",
+          "text": "Four"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "ed6e475f-42eb-5b03-9449-7e3f0b74809a",
+      "key": "exercise-curriculum-roma-totti-honours-choice-2",
+      "kind": "choice",
+      "objectiveIDs": [
+        "73a97652-f89a-5d06-a52f-10ad31697b85"
+      ],
+      "prompt": "In which season did Totti win the European Golden Shoe?",
+      "feedback": "European Golden Shoe season: 2006-07. Context: The European Golden Shoe award season listed in the club Hall of Fame article..",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "2006-07"
+        },
+        {
+          "id": "choice-1",
+          "text": "2005-06"
+        },
+        {
+          "id": "choice-2",
+          "text": "2007-08"
+        },
+        {
+          "id": "choice-3",
+          "text": "2008-09"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "3e0ba21f-4f8e-5fdc-bce4-2f06f852133d",
+      "key": "exercise-curriculum-roma-totti-honours-choice-3",
+      "kind": "choice",
+      "objectiveIDs": [
+        "612a45d2-0f34-5106-8110-21133a74894f"
+      ],
+      "prompt": "How many Coppa Italia titles did Totti win with Roma?",
+      "feedback": "Roma Coppa Italia titles: Two. Context: Roma team honours listed in the club Hall of Fame article..",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "Two"
+        },
+        {
+          "id": "choice-1",
+          "text": "One"
+        },
+        {
+          "id": "choice-2",
+          "text": "Three"
+        },
+        {
+          "id": "choice-3",
+          "text": "Four"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "ff572b75-fffb-572c-9f48-b6d66d474e5b",
+      "key": "exercise-curriculum-roma-de-rossi-career-choice-0",
+      "kind": "choice",
+      "objectiveIDs": [
+        "5a8fc141-87d3-5db9-bec6-3c80bf66eef6"
+      ],
+      "prompt": "In what year did De Rossi join the club he supported as a teenager?",
+      "feedback": "Joined Roma year: 2000. Context: The year De Rossi joined Roma before making his first-team debut..",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "2000"
+        },
+        {
+          "id": "choice-1",
+          "text": "1998"
+        },
+        {
+          "id": "choice-2",
+          "text": "1999"
+        },
+        {
+          "id": "choice-3",
+          "text": "2001"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "41c0251c-a1dd-5a9b-87da-5ceecab639cf",
+      "key": "exercise-curriculum-roma-de-rossi-career-choice-1",
+      "kind": "choice",
+      "objectiveIDs": [
+        "dbcaf89b-b223-5040-94f3-c839ed70cb75"
+      ],
+      "prompt": "Against which club did De Rossi make his Roma first-team debut on 30 October 2001?",
+      "feedback": "First-team debut opponent: Anderlecht. Context: The Champions League group-stage debut at the Stadio Olimpico..",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "Anderlecht"
+        },
+        {
+          "id": "choice-1",
+          "text": "Barcelona"
+        },
+        {
+          "id": "choice-2",
+          "text": "Juventus"
+        },
+        {
+          "id": "choice-3",
+          "text": "Liverpool"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "ff840e9b-76bf-5de1-8bbf-3492928e0066",
+      "key": "exercise-curriculum-roma-de-rossi-career-choice-2",
+      "kind": "choice",
+      "objectiveIDs": [
+        "61a3bb44-fb90-534a-b0ae-0725de972df4"
+      ],
+      "prompt": "At which club did De Rossi finish his professional playing career after Roma?",
+      "feedback": "Final playing club: Boca Juniors. Context: The six-month final playing spell referenced in De Rossi’s 2020 retirement announcement..",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "Boca Juniors"
+        },
+        {
+          "id": "choice-1",
+          "text": "Juventus"
+        },
+        {
+          "id": "choice-2",
+          "text": "AC Milan"
+        },
+        {
+          "id": "choice-3",
+          "text": "Liverpool"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "38916d58-630d-5a52-86df-ce27bd8b42ca",
+      "key": "exercise-curriculum-roma-de-rossi-career-choice-3",
+      "kind": "choice",
+      "objectiveIDs": [
+        "5a8fc141-87d3-5db9-bec6-3c80bf66eef6"
+      ],
+      "prompt": "In what year did De Rossi join the club he supported as a teenager?",
+      "feedback": "Joined Roma year: 2000. Context: The year De Rossi joined Roma before making his first-team debut..",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "2000"
+        },
+        {
+          "id": "choice-1",
+          "text": "1998"
+        },
+        {
+          "id": "choice-2",
+          "text": "1999"
+        },
+        {
+          "id": "choice-3",
+          "text": "2001"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "c717ef33-305e-505d-af69-8d0677e15934",
+      "key": "exercise-curriculum-roma-de-rossi-moments-choice-0",
+      "kind": "choice",
+      "objectiveIDs": [
+        "5be8e6a6-6d43-5472-913f-7d81e00bef1f"
+      ],
+      "prompt": "On what date did De Rossi first captain Roma from kick-off?",
+      "feedback": "First captaincy date: 15 March 2006. Context: The UEFA Cup last-16 second leg against Middlesbrough..",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "15 March 2006"
+        },
+        {
+          "id": "choice-1",
+          "text": "15 March 2005"
+        },
+        {
+          "id": "choice-2",
+          "text": "15 March 2007"
+        },
+        {
+          "id": "choice-3",
+          "text": "25 March 2006"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "315a8c38-fa7e-527d-a38d-4faab9f9c0ad",
+      "key": "exercise-curriculum-roma-de-rossi-moments-choice-1",
+      "kind": "choice",
+      "objectiveIDs": [
+        "faff09c3-b953-5b27-8df4-518f4a26fe76"
+      ],
+      "prompt": "In which minute did De Rossi score his penalty in Roma’s 2018 Champions League comeback against Barcelona?",
+      "feedback": "Minute of De Rossi’s comeback penalty: 58th minute. Context: Roma–Barcelona second leg, 10 April 2018; minute listed in the official match report..",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "58"
+        },
+        {
+          "id": "choice-1",
+          "text": "48"
+        },
+        {
+          "id": "choice-2",
+          "text": "68"
+        },
+        {
+          "id": "choice-3",
+          "text": "78"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "808475bf-f144-56bb-83f7-7785fcaaed13",
+      "key": "exercise-curriculum-roma-de-rossi-moments-choice-2",
+      "kind": "choice",
+      "objectiveIDs": [
+        "298fb805-36b5-5f17-b1dc-78e2f5e78115"
+      ],
+      "prompt": "What was Roma’s score against Barcelona in the 10 April 2018 Champions League second leg?",
+      "feedback": "Roma-Barcelona second-leg score: 3–0. Context: Second leg only; Roma drew 4-4 on aggregate and advanced on away goals..",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "3–0"
+        },
+        {
+          "id": "choice-1",
+          "text": "2–0"
+        },
+        {
+          "id": "choice-2",
+          "text": "3–1"
+        },
+        {
+          "id": "choice-3",
+          "text": "4–0"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": [],
+      "scoreInput": {
+        "leftEntityID": "bfbeecff-e46e-5cae-a7d8-a09e05bf7d9b",
+        "rightEntityID": "cee52a7d-c1dc-5eef-98ef-fa8a218ad413",
+        "leftGoals": 3,
+        "rightGoals": 0,
+        "maximum": 20
+      }
+    },
+    {
+      "id": "8f7c9c67-cdb2-57e7-a382-44c8149addb8",
+      "key": "exercise-curriculum-roma-de-rossi-moments-choice-3",
+      "kind": "choice",
+      "objectiveIDs": [
+        "5be8e6a6-6d43-5472-913f-7d81e00bef1f"
+      ],
+      "prompt": "On what date did De Rossi first captain Roma from kick-off?",
+      "feedback": "First captaincy date: 15 March 2006. Context: The UEFA Cup last-16 second leg against Middlesbrough..",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "15 March 2006"
+        },
+        {
+          "id": "choice-1",
+          "text": "15 March 2005"
+        },
+        {
+          "id": "choice-2",
+          "text": "15 March 2007"
+        },
+        {
+          "id": "choice-3",
+          "text": "25 March 2006"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "a458fd32-9b87-5150-8243-cbae33aa843a",
+      "key": "exercise-curriculum-roma-de-rossi-records-choice-0",
+      "kind": "choice",
+      "objectiveIDs": [
+        "f724937e-edc9-503b-b58f-70f6b0b123fa"
+      ],
+      "prompt": "How many appearances did De Rossi make for Roma in all competitions?",
+      "feedback": "Roma appearances: 616 appearances. Context: His completed Roma total, as listed in the club’s 2020 career retrospective..",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "616"
+        },
+        {
+          "id": "choice-1",
+          "text": "606"
+        },
+        {
+          "id": "choice-2",
+          "text": "615"
+        },
+        {
+          "id": "choice-3",
+          "text": "626"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "3673e1e1-9929-5936-bf4d-a634bdc9b293",
+      "key": "exercise-curriculum-roma-de-rossi-records-choice-1",
+      "kind": "choice",
+      "objectiveIDs": [
+        "2b50c52b-9f3b-5e53-b0e4-0701356a44f4"
+      ],
+      "prompt": "How many goals did De Rossi score for Roma in all competitions?",
+      "feedback": "Roma goals: 63 goals. Context: His Roma goal total across competitions..",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "63"
+        },
+        {
+          "id": "choice-1",
+          "text": "53"
+        },
+        {
+          "id": "choice-2",
+          "text": "60"
+        },
+        {
+          "id": "choice-3",
+          "text": "66"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "3325c92e-b601-56a5-9d8c-cc2510298d1a",
+      "key": "exercise-curriculum-roma-de-rossi-records-choice-2",
+      "kind": "choice",
+      "objectiveIDs": [
+        "ee5d6de2-071a-54ab-80a8-67abcf30b703"
+      ],
+      "prompt": "How many times did De Rossi captain Roma?",
+      "feedback": "Roma matches as captain: 207 matches. Context: De Rossi’s Roma captaincy total, in the club’s 2020 debut retrospective..",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "207"
+        },
+        {
+          "id": "choice-1",
+          "text": "197"
+        },
+        {
+          "id": "choice-2",
+          "text": "206"
+        },
+        {
+          "id": "choice-3",
+          "text": "217"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "ef365bd0-4136-50a9-8031-ba1b57be2989",
+      "key": "exercise-curriculum-roma-de-rossi-records-choice-3",
+      "kind": "choice",
+      "objectiveIDs": [
+        "f724937e-edc9-503b-b58f-70f6b0b123fa"
+      ],
+      "prompt": "How many appearances did De Rossi make for Roma in all competitions?",
+      "feedback": "Roma appearances: 616 appearances. Context: His completed Roma total, as listed in the club’s 2020 career retrospective..",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "616"
+        },
+        {
+          "id": "choice-1",
+          "text": "606"
+        },
+        {
+          "id": "choice-2",
+          "text": "615"
+        },
+        {
+          "id": "choice-3",
+          "text": "626"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "ea3361c8-1a15-5171-afaf-ab580c774618",
+      "key": "exercise-curriculum-roma-de-rossi-honours-choice-0",
+      "kind": "choice",
+      "objectiveIDs": [
+        "d23d2725-c8fa-5292-ac5f-3438a3105473"
+      ],
+      "prompt": "In what year did De Rossi win the FIFA World Cup with Italy?",
+      "feedback": "World Cup year: 2006. Context: His international senior-team World Cup win..",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "2006"
+        },
+        {
+          "id": "choice-1",
+          "text": "2002"
+        },
+        {
+          "id": "choice-2",
+          "text": "2004"
+        },
+        {
+          "id": "choice-3",
+          "text": "2010"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "97162cc0-0dda-5834-8429-d4c1c1937a84",
+      "key": "exercise-curriculum-roma-de-rossi-honours-choice-1",
+      "kind": "choice",
+      "objectiveIDs": [
+        "4e8d3e37-ef77-5729-9c57-1594fdb8bc11"
+      ],
+      "prompt": "How many Coppa Italia titles did De Rossi win with Roma?",
+      "feedback": "Roma Coppa Italia titles: Two titles. Context: Roma honours through his departure in 2019..",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "Two"
+        },
+        {
+          "id": "choice-1",
+          "text": "One"
+        },
+        {
+          "id": "choice-2",
+          "text": "Three"
+        },
+        {
+          "id": "choice-3",
+          "text": "Four"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "458e923a-dec3-5709-a4b7-155c60e316bf",
+      "key": "exercise-curriculum-roma-de-rossi-honours-choice-2",
+      "kind": "choice",
+      "objectiveIDs": [
+        "3b9b2b7d-537f-57c1-a5c5-3bcec4da0d38"
+      ],
+      "prompt": "How many Supercoppa titles did De Rossi win with Roma?",
+      "feedback": "Roma Supercoppa wins: One title. Context: Roma honours through his departure in 2019..",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "One"
+        },
+        {
+          "id": "choice-1",
+          "text": "None"
+        },
+        {
+          "id": "choice-2",
+          "text": "Two"
+        },
+        {
+          "id": "choice-3",
+          "text": "Three"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
+    },
+    {
+      "id": "7ecce647-86c5-5a62-af7a-79758b6cf77a",
+      "key": "exercise-curriculum-roma-de-rossi-honours-choice-3",
+      "kind": "choice",
+      "objectiveIDs": [
+        "d23d2725-c8fa-5292-ac5f-3438a3105473"
+      ],
+      "prompt": "In what year did De Rossi win the FIFA World Cup with Italy?",
+      "feedback": "World Cup year: 2006. Context: His international senior-team World Cup win..",
+      "choices": [
+        {
+          "id": "choice-0",
+          "text": "2006"
+        },
+        {
+          "id": "choice-1",
+          "text": "2002"
+        },
+        {
+          "id": "choice-2",
+          "text": "2004"
+        },
+        {
+          "id": "choice-3",
+          "text": "2010"
+        }
+      ],
+      "answerIDs": [
+        "choice-0"
+      ],
+      "left": [],
+      "right": [],
+      "pairs": []
     }
   ],
   "cards": [
@@ -183429,12 +187599,56 @@
       "objectiveIDs": [
         "33867116-21bc-522c-a96b-da60a3d0a04a",
         "3f087e64-6135-5c63-9e3a-200aa6f22086",
-        "382287a5-b19a-5edf-ae96-825bed1cae48"
+        "382287a5-b19a-5edf-ae96-825bed1cae48",
+        "a827a6ae-1d36-548b-801d-8b977aa5bfe7",
+        "b3941586-e849-5ec4-9301-afbafd08b70b",
+        "8a1daf98-1ec0-5cb6-92a1-42a95e650e0d",
+        "84b917a6-86a1-5049-bed0-f2c659f29f8a",
+        "f9b6e026-fdb9-5bcd-b8a6-a573ddce37b8",
+        "f3b9c244-8edd-5b86-b60e-d2766395b4e5",
+        "5679f522-8389-5320-a9c6-d661d11fd390",
+        "4e4b9ebd-088b-546f-be52-de551aa897ff",
+        "59bace7c-486f-5e77-b03c-c4710ee5b8bc",
+        "79429e7d-fe4b-52e4-8b1b-a72e14a5e677",
+        "6f6b6705-09a5-5dba-9182-42c8c13de846",
+        "76ed8959-0715-5e84-ae42-ce04f20704da",
+        "8c23436c-6783-533f-8bb5-35a6c9327da8",
+        "94178f9c-f92c-52ff-860a-5b3c2dad3c3e",
+        "662cd185-2b29-5831-8ef5-6fb7a932bd7c",
+        "e27f25d9-7c41-5f2a-89aa-9fbf4c766a4a",
+        "3eae1926-0f72-51e3-9b9d-b4ded39763a5",
+        "0d47ef07-7b2c-508e-9baa-c778ae842725",
+        "612a45d2-0f34-5106-8110-21133a74894f",
+        "09c1a98b-5628-5212-b487-6bbdb2c0900a",
+        "73a97652-f89a-5d06-a52f-10ad31697b85",
+        "5a8fc141-87d3-5db9-bec6-3c80bf66eef6",
+        "dbcaf89b-b223-5040-94f3-c839ed70cb75",
+        "61a3bb44-fb90-534a-b0ae-0725de972df4",
+        "5be8e6a6-6d43-5472-913f-7d81e00bef1f",
+        "faff09c3-b953-5b27-8df4-518f4a26fe76",
+        "298fb805-36b5-5f17-b1dc-78e2f5e78115",
+        "f724937e-edc9-503b-b58f-70f6b0b123fa",
+        "2b50c52b-9f3b-5e53-b0e4-0701356a44f4",
+        "ee5d6de2-071a-54ab-80a8-67abcf30b703",
+        "d23d2725-c8fa-5292-ac5f-3438a3105473",
+        "4e8d3e37-ef77-5729-9c57-1594fdb8bc11",
+        "3b9b2b7d-537f-57c1-a5c5-3bcec4da0d38"
       ],
       "lessonIDs": [
-        "cbc0bf6d-31cf-521e-876e-47831883d653"
+        "cbc0bf6d-31cf-521e-876e-47831883d653",
+        "3d9554d4-3452-5ecf-bc65-17d554dccca1",
+        "7b22c153-c1c0-5cdd-b0d9-941b65a30c65",
+        "7aea65d5-05d0-5d71-8837-ad9e5401e895",
+        "90b35aee-f04e-534d-a40e-3e7d29a2d62f",
+        "316f2019-1a3c-5f6a-81fa-acc140bd5037",
+        "04221ebc-1ad7-5ee2-b246-d91531b38be6",
+        "bdfe0f17-ca9f-5032-8067-77e5c263dd88",
+        "f6650335-c160-54e8-844b-7a88099c3a53",
+        "525d3cbf-4759-55af-ac57-f17ea6a9ad73",
+        "df6326e1-5f73-562c-8737-7ab936884cc8",
+        "aecd38d4-72f4-5a35-9a59-13f724ed9529"
       ],
-      "knowledgeVersion": 1,
+      "knowledgeVersion": 2,
       "caption": "The first chapter"
     },
     {
@@ -183832,7 +188046,19 @@
         "dfde1bab-e66b-598c-b653-ac6ed5e48657",
         "528abcce-6a56-5bb2-bd10-06d6bf744239",
         "a8283f00-ff29-53b6-a3eb-7f577052cf1a",
-        "0dd2b416-3e19-5d21-a1ee-b8de19b33409"
+        "0dd2b416-3e19-5d21-a1ee-b8de19b33409",
+        "8af7ebb1-36ad-5438-9008-8d0d46846799",
+        "3b498350-6822-5def-8e06-11324aea8799",
+        "7aeed73f-d720-5328-9974-7f2def641d31",
+        "cce12dd5-dc82-5df4-8a2f-69f409d41236",
+        "12055287-7cb7-58c0-9107-e666fe2ed95b",
+        "30b54744-4d08-584b-9174-b475c028bcde",
+        "e74ffa61-0a66-548d-a687-3ab69005fff7",
+        "e43551e3-9489-54b5-b0f5-aa854ef617f9",
+        "81c87c58-1795-55aa-a77f-98c1ab15cc7c",
+        "c61c4f32-bf8f-564c-9ffa-e38fb22176c5",
+        "5ef6cc9d-691a-5911-a640-a1ba477d9add",
+        "f175f7d7-ec0f-569f-b3f9-9fcda13e4408"
       ],
       "lessonIDs": [
         "fefc503c-2f61-55e8-abea-77adf73d5954",
@@ -183846,9 +188072,13 @@
         "f5fc76dc-9037-5893-b1dc-8d0628b191d2",
         "bbcc4fc5-8ae1-55ca-951f-7ed15cd5d5c2",
         "9b8da3ee-2692-59b2-9ea1-94e1c9c8b9ba",
-        "d78c4aae-33a9-5223-9336-a1066ac7c189"
+        "d78c4aae-33a9-5223-9336-a1066ac7c189",
+        "476a6800-e00a-5e32-99cb-ab7a28b15a9f",
+        "23fe5ca5-164a-5f86-8b9b-089cc5404089",
+        "41cbbbf7-c5ec-5c12-a155-ba69dee48109",
+        "bb8bcecd-dc02-5963-b10c-1ebf3bbd5009"
       ],
-      "knowledgeVersion": 2,
+      "knowledgeVersion": 3,
       "caption": "The first chapter"
     },
     {
@@ -186864,6 +191094,60 @@
         "26e1608e-27e9-5a39-b75d-06793b2a1f71",
         "4dd2ccbf-a3cf-5458-9ab1-6e48a0f966c6",
         "b2a98a18-411a-59f3-88f5-f513f2179313"
+      ],
+      "knowledgeVersion": 1,
+      "caption": "Career, defining moments and records"
+    },
+    {
+      "id": "e6356367-d7c9-5bda-9b88-7b60ecf524cd",
+      "key": "card-francesco-totti",
+      "entityID": "1c3f27d7-c350-5e51-bb0d-f315b368a66f",
+      "objectiveIDs": [
+        "79429e7d-fe4b-52e4-8b1b-a72e14a5e677",
+        "6f6b6705-09a5-5dba-9182-42c8c13de846",
+        "76ed8959-0715-5e84-ae42-ce04f20704da",
+        "8c23436c-6783-533f-8bb5-35a6c9327da8",
+        "94178f9c-f92c-52ff-860a-5b3c2dad3c3e",
+        "662cd185-2b29-5831-8ef5-6fb7a932bd7c",
+        "e27f25d9-7c41-5f2a-89aa-9fbf4c766a4a",
+        "3eae1926-0f72-51e3-9b9d-b4ded39763a5",
+        "0d47ef07-7b2c-508e-9baa-c778ae842725",
+        "612a45d2-0f34-5106-8110-21133a74894f",
+        "09c1a98b-5628-5212-b487-6bbdb2c0900a",
+        "73a97652-f89a-5d06-a52f-10ad31697b85"
+      ],
+      "lessonIDs": [
+        "90b35aee-f04e-534d-a40e-3e7d29a2d62f",
+        "316f2019-1a3c-5f6a-81fa-acc140bd5037",
+        "04221ebc-1ad7-5ee2-b246-d91531b38be6",
+        "bdfe0f17-ca9f-5032-8067-77e5c263dd88"
+      ],
+      "knowledgeVersion": 1,
+      "caption": "Career, defining moments and records"
+    },
+    {
+      "id": "fea0a28e-ef9e-599c-a69d-99067a479dd8",
+      "key": "card-daniele-de-rossi",
+      "entityID": "6075fb97-4979-5418-91eb-d5657008b590",
+      "objectiveIDs": [
+        "5a8fc141-87d3-5db9-bec6-3c80bf66eef6",
+        "dbcaf89b-b223-5040-94f3-c839ed70cb75",
+        "61a3bb44-fb90-534a-b0ae-0725de972df4",
+        "5be8e6a6-6d43-5472-913f-7d81e00bef1f",
+        "faff09c3-b953-5b27-8df4-518f4a26fe76",
+        "298fb805-36b5-5f17-b1dc-78e2f5e78115",
+        "f724937e-edc9-503b-b58f-70f6b0b123fa",
+        "2b50c52b-9f3b-5e53-b0e4-0701356a44f4",
+        "ee5d6de2-071a-54ab-80a8-67abcf30b703",
+        "d23d2725-c8fa-5292-ac5f-3438a3105473",
+        "4e8d3e37-ef77-5729-9c57-1594fdb8bc11",
+        "3b9b2b7d-537f-57c1-a5c5-3bcec4da0d38"
+      ],
+      "lessonIDs": [
+        "f6650335-c160-54e8-844b-7a88099c3a53",
+        "525d3cbf-4759-55af-ac57-f17ea6a9ad73",
+        "df6326e1-5f73-562c-8737-7ab936884cc8",
+        "aecd38d4-72f4-5a35-9a59-13f724ed9529"
       ],
       "knowledgeVersion": 1,
       "caption": "Career, defining moments and records"
