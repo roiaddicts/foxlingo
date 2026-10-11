@@ -1,0 +1,1998 @@
+{
+  "sources": [
+    {
+      "key": "eighth-elversberg-history",
+      "title": "SV Elversberg: club history and DFB-Pokal record",
+      "url": "https://sv07elversberg.de/die-sve/historie/",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "eighth-schnellbacher-extension",
+      "title": "Luca Schnellbacher stays with SV Elversberg until 2028",
+      "url": "https://www.bundesliga.com/de/2bundesliga/news/luca-schnellbacher-sv-elversberg-transfer-vertrag-32203",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "eighth-feil-career",
+      "title": "Manuel Feil extends his SV Elversberg contract",
+      "url": "https://sv07elversberg.de/manuel-feil-wird-ueber-die-saison-hinaus-im-sve-trikot-auflaufen/",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "eighth-feil-aalen",
+      "title": "SV Elversberg wins 4–1 at VfR Aalen",
+      "url": "https://sv07elversberg.de/auswaertssieg-in-aalen-die-elv-siegt-beim-vfr-mit-41/",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "eighth-feil-final",
+      "title": "SV Elversberg wins the 2023 Saarland Cup final and the double",
+      "url": "https://sv07elversberg.de/pokalfinale-23-die-elv-gewinnt-gegen-den-fcs-und-schnappt-sich-das-begehrte-double/",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "eighth-paderborn-history",
+      "title": "Bundesliga club-by-club historical guide: SC Paderborn 07",
+      "url": "https://www.bundesliga.com/en/bundesliga/news/paderborn-club-by-club-historical-guide-furthest-goal-stoppelkamp-24305",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "eighth-paderborn-promotion",
+      "title": "SC Paderborn: 2013/14 season of records and first Bundesliga promotion",
+      "url": "https://www.scp07.de/Newsarchiv/Saison-der-Rekorde.html",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "eighth-stoppelkamp-allee",
+      "title": "SC Paderborn unveils Stoppelkamp-Allee",
+      "url": "https://www.scp07.de/Newsarchiv/Besonderes-Ereignis.html",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "eighth-saglik-union",
+      "title": "Mahir Sağlık scores twice in Paderborn’s 2009 match at Union Berlin",
+      "url": "https://www.scp07.de/Newsarchiv/Niederlage-bei-Union.html",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "eighth-saglik-duesseldorf",
+      "title": "Mahir Sağlık scores four in Paderborn’s 6–1 win at Fortuna Düsseldorf",
+      "url": "https://www.scp07.de/Newsarchiv/6%3A1-in-Duesseldorf.html",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "eighth-huenemeier-freiburg",
+      "title": "Paderborn 1–1 Freiburg: Hünemeier returns from injury",
+      "url": "https://www.scp07.de/Newsarchiv/1%3A1-gegen-Freiburg.html",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "eighth-saglik-bochum",
+      "title": "Paderborn 4–1 Bochum: Sağlık scores the final goal",
+      "url": "https://www.scp07.de/Newsarchiv/4%3A1-gegen-Bochum.html",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "eighth-huenemeier-return-career",
+      "title": "Uwe Hünemeier returns to Paderborn after Brighton",
+      "url": "https://www.scp07.de/Teams/Profis/News-Profis/Viel-Erfahrung.html",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "eighth-huenemeier-retirement",
+      "title": "Uwe Hünemeier ends his playing career and remains at Paderborn",
+      "url": "https://www.scp07.de/Newsarchiv/Huenemeier-hoert-auf-1.html",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "eighth-huenemeier-brighton-transfer",
+      "title": "Uwe Hünemeier leaves Paderborn for Brighton",
+      "url": "https://www.scp07.de/Teams/Profis/News-Profis/Transfer-ist-fix.html",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "eighth-saglik-dfb-profile",
+      "title": "Mahir Sağlık: DFB player profile, club career and scoring titles",
+      "url": "https://datencenter.dfb.de/personen/mahir-saglik/spieler/spiele-in-saison/2-bundesliga/2003-2004/rot-weiss-ahlen",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "eighth-feil-dfb-profile",
+      "title": "Manuel Feil: DFB player profile, titles and competition totals",
+      "url": "https://datencenter.dfb.de/datencenter/personen/manuel-feil/spieler/spiele-in-saison/dfb-pokal/2021-22/sv-elversberg",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "eighth-schnellbacher-dfb-profile",
+      "title": "Luca Schnellbacher · official DFB career profile",
+      "url": "https://datencenter.dfb.de/datencenter/personen/luca-schnellbacher/spieler",
+      "verifiedAt": "2026-10-11"
+    }
+  ],
+  "players": [
+    {
+      "key": "entity-luca-schnellbacher",
+      "name": "Luca Schnellbacher",
+      "aliases": [],
+      "visual": "LS",
+      "clubKey": "entity-elversberg",
+      "imageURL": "https://assets.dfb.de/uploads/000/203/584/custom_style_1_Luca-Schnellbacher.jpg?1563480191",
+      "portraitSourceURL": "https://datencenter.dfb.de/datencenter/personen/luca-schnellbacher/spieler"
+    },
+    {
+      "key": "entity-manuel-feil",
+      "name": "Manuel Feil",
+      "aliases": [],
+      "visual": "MF",
+      "clubKey": "entity-elversberg",
+      "imageURL": "https://assets.dfb.de/uploads/000/175/989/custom_style_1_sve_feil_portrait.jpg?1533025934",
+      "portraitSourceURL": "https://datencenter.dfb.de/datencenter/personen/manuel-feil/spieler/spiele-in-saison/dfb-pokal/2021-22/sv-elversberg"
+    },
+    {
+      "key": "entity-uwe-huenemeier",
+      "name": "Uwe Hünemeier",
+      "aliases": [
+        "Uwe Huenemeier"
+      ],
+      "visual": "UH",
+      "clubKey": "entity-paderborn-07",
+      "imageURL": "https://www.scp07.de/medium/Verpflichtung_Huenemeier_4.5.jpg?m=17832&w=630&h=300&g=0",
+      "portraitSourceURL": "https://www.scp07.de/Teams/Profis/News-Profis/Viel-Erfahrung.html"
+    },
+    {
+      "key": "entity-mahir-saglik",
+      "name": "Mahir Sağlık",
+      "aliases": [
+        "Mahir Saglik"
+      ],
+      "visual": "MS",
+      "clubKey": "entity-paderborn-07"
+    }
+  ],
+  "lessons": [
+    {
+      "key": "lesson-curriculum-bundesliga-eighth-elversberg-history",
+      "subjectKey": "entity-elversberg",
+      "clubKey": "entity-elversberg",
+      "chapter": "history",
+      "title": "From FC Germania to SV Elversberg",
+      "subtitle": "The club’s early identity took shape through a wartime interruption and a new name.",
+      "story": [
+        {
+          "title": "A club begins",
+          "body": "SV Elversberg’s own chronology dates its founding to 1907, when it was called FC Germania Elversberg."
+        },
+        {
+          "title": "A name returns",
+          "body": "The club dissolved in 1914 during the First World War and was re-founded in 1918 as Sportvereinigung Elversberg VfB."
+        }
+      ],
+      "facts": [
+        {
+          "key": "eighth-elv-history-founded",
+          "label": "Elversberg founding year",
+          "prompt": "In what year does SV Elversberg date its founding?",
+          "answers": [
+            "1907"
+          ],
+          "distractors": [
+            "1905",
+            "1910",
+            "1918"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "1907",
+            "text": "1907"
+          },
+          "scope": "Club founding year, as given by SV Elversberg.",
+          "sourceKey": "eighth-elversberg-history",
+          "evidence": "The official club chronology says SV Elversberg was founded in 1907."
+        },
+        {
+          "key": "eighth-elv-history-first-name",
+          "label": "Elversberg’s first name",
+          "prompt": "What name did Elversberg use when the club was founded in 1907?",
+          "answers": [
+            "FC Germania Elversberg"
+          ],
+          "distractors": [
+            "Sportgemeinde Elversberg",
+            "SV 07 Elversberg e.V.",
+            "Sportvereinigung Elversberg VfB"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "FC Germania Elversberg",
+            "text": "FC Germania Elversberg"
+          },
+          "scope": "Founding name, not a later legal name.",
+          "sourceKey": "eighth-elversberg-history",
+          "evidence": "The club history identifies FC Germania Elversberg as the name used at its 1907 founding."
+        },
+        {
+          "key": "eighth-elv-history-reformed",
+          "label": "Elversberg’s 1918 re-founding name",
+          "prompt": "Under what name was the club re-founded in 1918?",
+          "answers": [
+            "Sportvereinigung Elversberg VfB"
+          ],
+          "distractors": [
+            "FC Germania Saarbrücken",
+            "Sportgemeinde Elversberg",
+            "SV Elversberg 07"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Sportvereinigung Elversberg VfB",
+            "text": "Sportvereinigung Elversberg VfB"
+          },
+          "scope": "Name at the 1918 re-founding.",
+          "sourceKey": "eighth-elversberg-history",
+          "evidence": "The club chronology says it was re-founded four years after its 1914 dissolution under the name Sportvereinigung Elversberg VfB."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-bundesliga-eighth-elversberg-hannover-cup",
+      "subjectKey": "entity-elversberg",
+      "clubKey": "entity-elversberg",
+      "chapter": "moments",
+      "title": "Elversberg knocks out Hannover 96",
+      "subtitle": "A 2010/11 cup tie gave the club a first-round win over a Bundesliga opponent.",
+      "story": [
+        {
+          "title": "The draw",
+          "body": "In the first round of the 2010/11 DFB-Pokal, Elversberg faced Bundesliga side Hannover 96."
+        },
+        {
+          "title": "A shoot-out win",
+          "body": "Elversberg won the tie 5–4 on penalties, then reached the second round, where it lost 0–3 to 1. FC Nürnberg."
+        }
+      ],
+      "facts": [
+        {
+          "key": "eighth-elv-hannover-season",
+          "label": "Hannover cup tie season",
+          "prompt": "In which DFB-Pokal season did Elversberg beat Hannover 96?",
+          "answers": [
+            "2010/11"
+          ],
+          "distractors": [
+            "2009/10",
+            "2011/12",
+            "2012/13"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "2010/11",
+            "text": "2010/11"
+          },
+          "scope": "DFB-Pokal season, not calendar year.",
+          "sourceKey": "eighth-elversberg-history",
+          "evidence": "The club lists the Hannover match under 2010/2011."
+        },
+        {
+          "key": "eighth-elv-hannover-opponent",
+          "label": "Elversberg’s first-round opponent",
+          "prompt": "Which Bundesliga club did Elversberg face in that 2010/11 first round?",
+          "answers": [
+            "Hannover 96"
+          ],
+          "distractors": [
+            "1. FSV Mainz 05",
+            "Borussia Dortmund",
+            "Sport-Club Freiburg"
+          ],
+          "value": {
+            "kind": "entity",
+            "entityKey": "entity-hannover-96",
+            "display": "Hannover 96"
+          },
+          "scope": "First-round opponent in the 2010/11 DFB-Pokal.",
+          "sourceKey": "eighth-elversberg-history",
+          "evidence": "The club history names Hannover 96 as Elversberg’s first-round opponent."
+        },
+        {
+          "key": "eighth-elv-hannover-penalties",
+          "label": "Elversberg’s shoot-out result",
+          "prompt": "How did Elversberg decide the 2010/11 cup tie after facing Hannover 96?",
+          "answers": [
+            "A penalty shoot-out"
+          ],
+          "distractors": [
+            "A replay",
+            "An extra-time golden goal",
+            "A coin toss"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "A penalty shoot-out",
+            "text": "A penalty shoot-out"
+          },
+          "scope": "Method of deciding the first-round cup tie after regulation play.",
+          "sourceKey": "eighth-elversberg-history",
+          "evidence": "The club history states that Elversberg eliminated Hannover in a penalty shoot-out; the numerical shoot-out score is not used as a text-answer exercise."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-bundesliga-eighth-elversberg-leverkusen-cup",
+      "subjectKey": "entity-elversberg",
+      "clubKey": "entity-elversberg",
+      "chapter": "moments",
+      "title": "A cup upset against Bayer Leverkusen",
+      "subtitle": "Elversberg’s 2022/23 DFB-Pokal run included a 4–3 first-round win and a narrow next-round exit.",
+      "story": [
+        {
+          "title": "The first round",
+          "body": "In the 2022/23 DFB-Pokal, Elversberg beat Bundesliga side Bayer 04 Leverkusen 4–3."
+        },
+        {
+          "title": "One round later",
+          "body": "The club’s history records a 0–1 defeat by VfL Bochum in the second round."
+        }
+      ],
+      "facts": [
+        {
+          "key": "eighth-elv-lev-season",
+          "label": "Leverkusen cup upset season",
+          "prompt": "In which DFB-Pokal season did Elversberg beat Bayer 04 Leverkusen 4–3?",
+          "answers": [
+            "2022/23"
+          ],
+          "distractors": [
+            "2020/21",
+            "2021/22",
+            "2023/24"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "2022/23",
+            "text": "2022/23"
+          },
+          "scope": "DFB-Pokal season.",
+          "sourceKey": "eighth-elversberg-history",
+          "evidence": "The club lists the Leverkusen result in the 2022/23 DFB-Pokal entry."
+        },
+        {
+          "key": "eighth-elv-lev-score",
+          "label": "Leverkusen cup result",
+          "prompt": "What was the score when Elversberg eliminated Bayer 04 Leverkusen in the 2022/23 first round?",
+          "answers": [
+            "4–3"
+          ],
+          "distractors": [
+            "3–2",
+            "4–2",
+            "5–3"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "4–3",
+            "text": "4–3"
+          },
+          "scope": "Final score in the first-round cup tie.",
+          "sourceKey": "eighth-elversberg-history",
+          "evidence": "SV Elversberg records a 4–3 first-round win over Leverkusen.",
+          "scoreInput": {
+            "leftClubKey": "entity-elversberg",
+            "rightClubKey": "entity-bayer-leverkusen",
+            "leftGoals": 4,
+            "rightGoals": 3
+          }
+        },
+        {
+          "key": "eighth-elv-lev-next",
+          "label": "Elversberg’s next cup opponent",
+          "prompt": "Which club eliminated Elversberg in the 2022/23 DFB-Pokal second round?",
+          "answers": [
+            "VfL Bochum"
+          ],
+          "distractors": [
+            "1. FSV Mainz 05",
+            "Borussia Dortmund",
+            "Sport-Club Freiburg"
+          ],
+          "value": {
+            "kind": "entity",
+            "entityKey": "entity-bochum",
+            "display": "VfL Bochum"
+          },
+          "scope": "Second-round opponent in the same cup season.",
+          "sourceKey": "eighth-elversberg-history",
+          "evidence": "The club history identifies VfL Bochum as the second-round opponent; its 0–1 result is only mentioned in the source context, not asked as a score."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-bundesliga-eighth-paderborn-history",
+      "subjectKey": "entity-paderborn-07",
+      "clubKey": "entity-paderborn-07",
+      "chapter": "history",
+      "title": "Roots and a modern merger",
+      "subtitle": "Paderborn’s current club identity grew from early local football and a later merger.",
+      "story": [
+        {
+          "title": "A 1907 beginning",
+          "body": "The Bundesliga’s historical guide traces SC Paderborn’s history to 1907."
+        },
+        {
+          "title": "The present club takes shape",
+          "body": "The guide says the club as known today resulted from a 1985 merger and began life in the third tier."
+        }
+      ],
+      "facts": [
+        {
+          "key": "eighth-pad-history-roots",
+          "label": "Paderborn history begins",
+          "prompt": "To which year does the Bundesliga historical guide trace Paderborn’s football history?",
+          "answers": [
+            "1907"
+          ],
+          "distractors": [
+            "1905",
+            "1908",
+            "1912"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "1907",
+            "text": "1907"
+          },
+          "scope": "Historical roots, not the founding date of the modern merged club.",
+          "sourceKey": "eighth-paderborn-history",
+          "evidence": "The Bundesliga guide says SC Paderborn traces its history back to 1907."
+        },
+        {
+          "key": "eighth-pad-history-merger",
+          "label": "Modern Paderborn merger",
+          "prompt": "In what year did the merger that created the club as known today take place?",
+          "answers": [
+            "1985"
+          ],
+          "distractors": [
+            "1978",
+            "1980",
+            "1990"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "1985",
+            "text": "1985"
+          },
+          "scope": "Merger year cited in the 2023 Bundesliga retrospective.",
+          "sourceKey": "eighth-paderborn-history",
+          "evidence": "The Bundesliga guide dates the merger that produced the modern club to 1985."
+        },
+        {
+          "key": "eighth-pad-history-tier",
+          "label": "Paderborn after the 1985 merger",
+          "prompt": "At which level did the merged club begin, according to the Bundesliga guide?",
+          "answers": [
+            "The third tier"
+          ],
+          "distractors": [
+            "The first tier",
+            "The second tier",
+            "The fourth tier"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "The third tier",
+            "text": "The third tier"
+          },
+          "scope": "League level after the 1985 merger, using the guide’s retrospective terminology.",
+          "sourceKey": "eighth-paderborn-history",
+          "evidence": "The guide says the merged team began life in the third tier."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-bundesliga-eighth-paderborn-first-promotion",
+      "subjectKey": "entity-paderborn-07",
+      "clubKey": "entity-paderborn-07",
+      "chapter": "moments",
+      "title": "A first promotion secured by the 100th win",
+      "subtitle": "Paderborn’s record-setting 2013/14 season ended with a 2–1 win over VfR Aalen and entry to the Bundesliga.",
+      "story": [
+        {
+          "title": "A milestone match",
+          "body": "The club’s season recap says the 2–1 win over VfR Aalen was Paderborn’s 100th victory in the 2. Bundesliga."
+        },
+        {
+          "title": "A first arrival",
+          "body": "That win secured the club’s first promotion to the Bundesliga; the season also produced club-best second-tier totals of 62 points and 63 goals."
+        }
+      ],
+      "facts": [
+        {
+          "key": "eighth-pad-promotion-opponent",
+          "label": "Paderborn promotion match opponent",
+          "prompt": "Which club did Paderborn beat 2–1 to secure promotion in 2013/14?",
+          "answers": [
+            "VfR Aalen"
+          ],
+          "distractors": [
+            "Fortuna Düsseldorf",
+            "1. FC Köln",
+            "Sport-Club Freiburg"
+          ],
+          "value": {
+            "kind": "entity",
+            "entityKey": "entity-vfr-aalen",
+            "display": "VfR Aalen"
+          },
+          "scope": "Final match result in the 2013/14 promotion context.",
+          "sourceKey": "eighth-paderborn-promotion",
+          "evidence": "The club’s season recap identifies VfR Aalen as the opponent in the 2–1 promotion-clinching win."
+        },
+        {
+          "key": "eighth-pad-promotion-milestone",
+          "label": "Paderborn’s 100th second-tier win",
+          "prompt": "What milestone did Paderborn reach with the 2–1 win over VfR Aalen?",
+          "answers": [
+            "Its 100th 2. Bundesliga win"
+          ],
+          "distractors": [
+            "Its 50th Bundesliga win",
+            "Its 100th home win in all competitions",
+            "Its 200th league match"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Its 100th 2. Bundesliga win",
+            "text": "Its 100th 2. Bundesliga win"
+          },
+          "scope": "Second-tier wins, as stated in the May 2014 club retrospective.",
+          "sourceKey": "eighth-paderborn-promotion",
+          "evidence": "The club says promotion came with its 100th win in the 2. Bundesliga."
+        },
+        {
+          "key": "eighth-pad-promotion-first",
+          "label": "Paderborn’s 2014 achievement",
+          "prompt": "What did Paderborn secure with that 2013/14 victory?",
+          "answers": [
+            "Its first promotion to the Bundesliga"
+          ],
+          "distractors": [
+            "Its first DFB-Pokal title",
+            "Its first promotion to 2. Bundesliga",
+            "Its first Regionalliga championship"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Its first promotion to the Bundesliga",
+            "text": "Its first promotion to the Bundesliga"
+          },
+          "scope": "First promotion to Germany’s top division, not a current league status.",
+          "sourceKey": "eighth-paderborn-history",
+          "evidence": "The Bundesliga guide describes 2014 as Paderborn’s historic first Bundesliga promotion."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-bundesliga-eighth-paderborn-stoppelkamp-goal",
+      "subjectKey": "entity-paderborn-07",
+      "clubKey": "entity-paderborn-07",
+      "chapter": "moments",
+      "title": "Stoppelkamp’s 82.3-metre Bundesliga record",
+      "subtitle": "A late clearance against Hannover became a record goal and briefly sent Paderborn top of the table.",
+      "story": [
+        {
+          "title": "A record distance",
+          "body": "On 20 September 2014, Moritz Stoppelkamp scored from 82.3 metres against Hannover 96."
+        },
+        {
+          "title": "A 2–0 finish",
+          "body": "The goal arrived in added time, sealed a 2–0 home win and put Paderborn top of the Bundesliga table at that point."
+        }
+      ],
+      "facts": [
+        {
+          "key": "eighth-pad-stop-date",
+          "label": "Stoppelkamp’s record-goal date",
+          "prompt": "On what date did Stoppelkamp score his 82.3-metre goal against Hannover 96?",
+          "answers": [
+            "20 September 2014"
+          ],
+          "distractors": [
+            "20 August 2014",
+            "20 October 2014",
+            "20 September 2015"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "20 September 2014",
+            "text": "20 September 2014"
+          },
+          "scope": "Date of the 2014/15 Bundesliga match.",
+          "sourceKey": "eighth-paderborn-history",
+          "evidence": "The Bundesliga guide dates the goal to 20 September 2014."
+        },
+        {
+          "key": "eighth-pad-stop-distance",
+          "label": "Stoppelkamp’s record distance",
+          "prompt": "How far away was Stoppelkamp when he scored the Bundesliga record goal?",
+          "answers": [
+            "82.3 metres"
+          ],
+          "distractors": [
+            "72.3 metres",
+            "80.2 metres",
+            "84.3 metres"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "82.3 metres",
+            "text": "82.3 metres"
+          },
+          "scope": "Distance reported for this Bundesliga goal.",
+          "sourceKey": "eighth-paderborn-history",
+          "evidence": "The league guide and Paderborn’s own Stoppelkamp-Allee report identify the distance as 82.3 metres."
+        },
+        {
+          "key": "eighth-pad-stop-score",
+          "label": "Paderborn–Hannover final score",
+          "prompt": "Which individual award did Stoppelkamp’s long-range goal receive after the Hannover match?",
+          "answers": [
+            "ARD Sportschau Goal of the Month"
+          ],
+          "distractors": [
+            "German Footballer of the Year",
+            "Bundesliga Goal of the Season",
+            "DFB-Pokal Goal of the Tournament"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "ARD Sportschau Goal of the Month",
+            "text": "ARD Sportschau Goal of the Month"
+          },
+          "scope": "Award for the September 2014 Bundesliga goal, as stated in Paderborn’s 31 October 2014 announcement.",
+          "sourceKey": "eighth-stoppelkamp-allee",
+          "evidence": "Paderborn says Stoppelkamp’s goal received a clear vote for ARD Sportschau’s Goal of the Month."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-bundesliga-eighth-schnellbacher-arrival",
+      "subjectKey": "entity-luca-schnellbacher",
+      "clubKey": "entity-elversberg",
+      "chapter": "career",
+      "title": "A move to the Saarland",
+      "subtitle": "Schnellbacher joined Elversberg in 2020 after earlier senior spells, then became part of the club’s rise through the German divisions.",
+      "story": [
+        {
+          "title": "A new chapter",
+          "body": "The Bundesliga’s 2025 retrospective says Schnellbacher arrived in summer 2020 after senior stops including Wiesbaden, Aalen and Münster."
+        },
+        {
+          "title": "A long stay",
+          "body": "By May 2025 he had made 172 competitive appearances for Elversberg and signed a deal through 2028."
+        }
+      ],
+      "facts": [
+        {
+          "key": "eighth-schnell-arrival-year",
+          "label": "Schnellbacher’s move",
+          "prompt": "In which year did Luca Schnellbacher join SV Elversberg?",
+          "answers": [
+            "2020"
+          ],
+          "distractors": [
+            "2018",
+            "2019",
+            "2021"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "2020",
+            "text": "2020"
+          },
+          "scope": "Transfer timing reported in the Bundesliga retrospective published 14 May 2025.",
+          "sourceKey": "eighth-schnellbacher-extension",
+          "evidence": "The Bundesliga report says Schnellbacher joined Elversberg in summer 2020."
+        },
+        {
+          "key": "eighth-schnell-from-muenster",
+          "label": "The club before Elversberg",
+          "prompt": "Which club did Schnellbacher leave immediately before joining Elversberg in summer 2020?",
+          "answers": [
+            "Preußen Münster"
+          ],
+          "distractors": [
+            "VfR Aalen",
+            "SC Paderborn 07",
+            "Sport-Club Freiburg"
+          ],
+          "value": {
+            "kind": "entity",
+            "entityKey": "entity-preussen-muenster",
+            "display": "Preußen Münster"
+          },
+          "scope": "Immediate move in August 2020, as recorded by the DFB career profile.",
+          "sourceKey": "eighth-schnellbacher-dfb-profile",
+          "evidence": "The DFB profile dates his Münster spell through 4 August 2020 and his Elversberg spell from 5 August 2020."
+        },
+        {
+          "key": "eighth-schnell-contract",
+          "label": "Schnellbacher’s new deal",
+          "prompt": "Through which summer did the deal announced in May 2025 run?",
+          "answers": [
+            "Summer 2028"
+          ],
+          "distractors": [
+            "Summer 2026",
+            "Summer 2027",
+            "Summer 2029"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Summer 2028",
+            "text": "Summer 2028"
+          },
+          "scope": "Contract horizon at the time of the May 2025 announcement.",
+          "sourceKey": "eighth-schnellbacher-extension",
+          "evidence": "The report states that Schnellbacher would remain through 2028."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-bundesliga-eighth-schnellbacher-cup-moments",
+      "subjectKey": "entity-luca-schnellbacher",
+      "clubKey": "entity-elversberg",
+      "chapter": "moments",
+      "title": "Two cup nights to remember",
+      "subtitle": "Schnellbacher scored a brace against St. Pauli and later helped eliminate Bundesliga side Bayer Leverkusen.",
+      "story": [
+        {
+          "title": "At St. Pauli",
+          "body": "The 2020 DFB-Pokal tie saw Schnellbacher score twice in Elversberg’s win over St. Pauli."
+        },
+        {
+          "title": "Against Leverkusen",
+          "body": "Two years later, he scored in Elversberg’s first-round upset of Bayer 04 Leverkusen."
+        }
+      ],
+      "facts": [
+        {
+          "key": "eighth-schnell-pauli-brace",
+          "label": "The St. Pauli brace",
+          "prompt": "How many goals did Schnellbacher score against FC St. Pauli in the 2020 DFB-Pokal?",
+          "answers": [
+            "Two"
+          ],
+          "distractors": [
+            "One",
+            "Three",
+            "Four"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Two",
+            "text": "Two"
+          },
+          "scope": "Individual goals by Schnellbacher in the 2020 DFB-Pokal match.",
+          "sourceKey": "eighth-schnellbacher-extension",
+          "evidence": "The report says Schnellbacher contributed two goals in Elversberg’s 4–2 win."
+        },
+        {
+          "key": "eighth-schnell-lev-score",
+          "label": "Elversberg’s Leverkusen result",
+          "prompt": "What was the score when Elversberg eliminated Bayer 04 Leverkusen in the 2022/23 DFB-Pokal first round?",
+          "answers": [
+            "4–3"
+          ],
+          "distractors": [
+            "3–2",
+            "3–1",
+            "5–3"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "4–3",
+            "text": "4–3"
+          },
+          "scope": "Final score in the first-round cup tie.",
+          "sourceKey": "eighth-schnellbacher-extension",
+          "evidence": "The Bundesliga report records Elversberg’s 4–3 first-round upset; both clubs have cached visual entities.",
+          "scoreInput": {
+            "leftClubKey": "entity-elversberg",
+            "rightClubKey": "entity-bayer-leverkusen",
+            "leftGoals": 4,
+            "rightGoals": 3
+          }
+        },
+        {
+          "key": "eighth-schnell-lev-contribution",
+          "label": "Schnellbacher against Leverkusen",
+          "prompt": "What did Schnellbacher contribute in the 2022 Leverkusen cup upset?",
+          "answers": [
+            "A decisive goal"
+          ],
+          "distractors": [
+            "A penalty save",
+            "Two assists",
+            "The winning penalty"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "A decisive goal",
+            "text": "A decisive goal"
+          },
+          "scope": "Player contribution in Elversberg’s 2022 cup match.",
+          "sourceKey": "eighth-schnellbacher-extension",
+          "evidence": "The Bundesliga report says Schnellbacher scored a decisive goal in the 4–3 upset."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-bundesliga-eighth-schnellbacher-records",
+      "subjectKey": "entity-luca-schnellbacher",
+      "clubKey": "entity-elversberg",
+      "chapter": "records",
+      "title": "Across two division changes",
+      "subtitle": "A May 2025 career retrospective gives season-bounded figures from Schnellbacher’s early Elversberg years and his later 2. Bundesliga spell.",
+      "story": [
+        {
+          "title": "Regionalliga numbers",
+          "body": "Across 2020/21 and 2021/22, Schnellbacher recorded 38 goal involvements in 68 games."
+        },
+        {
+          "title": "Second-tier return",
+          "body": "The same retrospective counted 22 goal involvements in his first 58 2. Bundesliga appearances for Elversberg."
+        }
+      ],
+      "facts": [
+        {
+          "key": "eighth-schnell-regional-apps",
+          "label": "Regionalliga appearances",
+          "prompt": "How many games did Schnellbacher play across Elversberg’s 2020/21 and 2021/22 Regionalliga seasons?",
+          "answers": [
+            "68"
+          ],
+          "distractors": [
+            "58",
+            "62",
+            "72"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "68",
+            "text": "68"
+          },
+          "scope": "Combined appearances across the two specified Regionalliga seasons.",
+          "sourceKey": "eighth-schnellbacher-extension",
+          "evidence": "The report records 68 games across the two Regionalliga campaigns."
+        },
+        {
+          "key": "eighth-schnell-regional-contributions",
+          "label": "Regionalliga goal involvements",
+          "prompt": "How many goals plus assists did Schnellbacher record for Elversberg across the 2020/21 and 2021/22 Regionalliga seasons?",
+          "answers": [
+            "38"
+          ],
+          "distractors": [
+            "28",
+            "34",
+            "42"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "38",
+            "text": "38"
+          },
+          "scope": "Goals plus assists across 2020/21 and 2021/22.",
+          "sourceKey": "eighth-schnellbacher-extension",
+          "evidence": "The Bundesliga report credits him with 38 goal involvements over 68 games."
+        },
+        {
+          "key": "eighth-schnell-second-tier-contributions",
+          "label": "Second-tier goal involvements",
+          "prompt": "How many goal involvements did the report count in Schnellbacher’s first 58 Elversberg appearances in the 2. Bundesliga?",
+          "answers": [
+            "22"
+          ],
+          "distractors": [
+            "18",
+            "20",
+            "26"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "22",
+            "text": "22"
+          },
+          "scope": "Snapshot published in May 2025; covers his first 58 Elversberg appearances in the 2. Bundesliga.",
+          "sourceKey": "eighth-schnellbacher-extension",
+          "evidence": "The report says Schnellbacher had contributed to 22 goals in 58 second-tier appearances."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-bundesliga-eighth-schnellbacher-legacy",
+      "subjectKey": "entity-luca-schnellbacher",
+      "clubKey": "entity-elversberg",
+      "chapter": "records",
+      "title": "A title and lasting contributions",
+      "subtitle": "A dated league honour, promotion-season contributions and a club appearance milestone.",
+      "story": [
+        {
+          "title": "Third-tier contribution",
+          "body": "In the 2022/23 3. Liga championship season, Schnellbacher produced 21 goal involvements in 27 appearances."
+        },
+        {
+          "title": "A dated milestone",
+          "body": "The 14 May 2025 retrospective records 172 competitive appearances for Elversberg. These figures belong to that historical snapshot."
+        }
+      ],
+      "facts": [
+        {
+          "key": "eighth-schnell-third-tier-title",
+          "label": "2022/23 league honour",
+          "prompt": "Which league title did Schnellbacher win with Elversberg in 2022/23?",
+          "answers": [
+            "3. Liga"
+          ],
+          "distractors": [
+            "Regionalliga Südwest",
+            "2. Bundesliga",
+            "Bundesliga"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "3. Liga",
+            "text": "3. Liga"
+          },
+          "sourceKey": "eighth-schnellbacher-dfb-profile",
+          "scope": "DFB player profile’s 2022/23 championship honour.",
+          "evidence": "The named DFB profile explicitly lists Schnellbacher as Meister 3. Liga in 2022/2023."
+        },
+        {
+          "key": "eighth-schnell-appearance-snapshot",
+          "label": "Competitive appearances by May 2025",
+          "prompt": "How many competitive appearances had Schnellbacher made for Elversberg by the May 2025 report?",
+          "answers": [
+            "172"
+          ],
+          "distractors": [
+            "152",
+            "162",
+            "182"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "172",
+            "text": "172"
+          },
+          "scope": "Club-competition appearance count reported 14 May 2025.",
+          "sourceKey": "eighth-schnellbacher-extension",
+          "evidence": "The Bundesliga report states that he had played 172 competitive matches for Elversberg."
+        },
+        {
+          "key": "eighth-schnell-third-tier-contributions",
+          "label": "2022/23 goal involvements",
+          "prompt": "How many goals plus assists did Schnellbacher contribute in Elversberg’s 2022/23 3. Liga season?",
+          "answers": [
+            "21"
+          ],
+          "distractors": [
+            "17",
+            "19",
+            "25"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "21",
+            "text": "21"
+          },
+          "sourceKey": "eighth-schnellbacher-extension",
+          "scope": "Goals plus assists in the 2022/23 3. Liga season.",
+          "evidence": "The 14 May 2025 league report gives 21 goal involvements over 27 appearances."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-bundesliga-eighth-feil-career-route",
+      "subjectKey": "entity-manuel-feil",
+      "clubKey": "entity-elversberg",
+      "chapter": "career",
+      "title": "A route into the professional game",
+      "subtitle": "Feil came through clubs around his home region, played three years for Nürnberg II, then built a long Elversberg spell.",
+      "story": [
+        {
+          "title": "Regional beginnings",
+          "body": "The club’s 2023 career retrospective traces Feil from youth football in Bavaria to Nürnberg II at age 20."
+        },
+        {
+          "title": "From reserve side to Elversberg",
+          "body": "After 82 Regionalliga games in three years at Nürnberg II, he moved to Elversberg in summer 2018."
+        }
+      ],
+      "facts": [
+        {
+          "key": "eighth-feil-birthplace",
+          "label": "Feil’s birthplace",
+          "prompt": "In which city was Manuel Feil born?",
+          "answers": [
+            "Augsburg"
+          ],
+          "distractors": [
+            "Nürnberg",
+            "Münster",
+            "Saarbrücken"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Augsburg",
+            "text": "Augsburg"
+          },
+          "scope": "Biographical detail in Elversberg’s 20 January 2023 contract announcement.",
+          "sourceKey": "eighth-feil-career",
+          "evidence": "The club identifies Feil as born in Augsburg."
+        },
+        {
+          "key": "eighth-feil-nuernberg-matches",
+          "label": "Nürnberg II spell",
+          "prompt": "How many Regionalliga matches did Feil play for Nürnberg II over three years?",
+          "answers": [
+            "82"
+          ],
+          "distractors": [
+            "72",
+            "78",
+            "88"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "82",
+            "text": "82"
+          },
+          "scope": "Nürnberg II Regionalliga appearances before his 2018 move.",
+          "sourceKey": "eighth-feil-career",
+          "evidence": "Elversberg’s article gives 82 appearances over three years."
+        },
+        {
+          "key": "eighth-feil-arrival-year",
+          "label": "Move to Elversberg",
+          "prompt": "In which year did Feil move from Nürnberg II to Elversberg?",
+          "answers": [
+            "2018"
+          ],
+          "distractors": [
+            "2016",
+            "2017",
+            "2019"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "2018",
+            "text": "2018"
+          },
+          "scope": "Transfer year, as stated in the January 2023 story.",
+          "sourceKey": "eighth-feil-career",
+          "evidence": "The club says Feil joined Elversberg in summer 2018."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-bundesliga-eighth-feil-aalen-brace",
+      "subjectKey": "entity-manuel-feil",
+      "clubKey": "entity-elversberg",
+      "chapter": "moments",
+      "title": "A first-half brace at Aalen",
+      "subtitle": "Feil scored twice in a Regionalliga Südwest away match, with both goals arriving before the interval.",
+      "story": [
+        {
+          "title": "The opening strike",
+          "body": "Elversberg’s October 2021 report describes Feil scoring the 2–0 goal at VfR Aalen in the 27th minute."
+        },
+        {
+          "title": "A second before halftime",
+          "body": "He scored again seven minutes later, making it a personal brace in the first half."
+        }
+      ],
+      "facts": [
+        {
+          "key": "eighth-feil-aalen-opponent",
+          "label": "The away opponent",
+          "prompt": "Against which club did Feil score twice in Elversberg’s October 2021 away match?",
+          "answers": [
+            "VfR Aalen"
+          ],
+          "distractors": [
+            "1. FC Köln",
+            "Sport-Club Freiburg",
+            "Fortuna Düsseldorf"
+          ],
+          "value": {
+            "kind": "entity",
+            "entityKey": "entity-vfr-aalen",
+            "display": "VfR Aalen"
+          },
+          "scope": "Opponent in the 2021 Regionalliga Südwest match.",
+          "sourceKey": "eighth-feil-aalen",
+          "evidence": "The official match report names VfR Aalen."
+        },
+        {
+          "key": "eighth-feil-aalen-minute",
+          "label": "The second Elversberg goal",
+          "prompt": "In which minute did Feil score Elversberg’s second goal at Aalen?",
+          "answers": [
+            "27th"
+          ],
+          "distractors": [
+            "17th",
+            "34th",
+            "42nd"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "27th",
+            "text": "27th"
+          },
+          "scope": "Minute of the match’s second goal.",
+          "sourceKey": "eighth-feil-aalen",
+          "evidence": "The report says Feil scored the 2–0 goal in the 27th minute."
+        },
+        {
+          "key": "eighth-feil-aalen-brace",
+          "label": "The second Feil goal",
+          "prompt": "How many goals did Feil score in the first half at Aalen?",
+          "answers": [
+            "Two"
+          ],
+          "distractors": [
+            "One",
+            "Three",
+            "Four"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Two",
+            "text": "Two"
+          },
+          "scope": "Individual first-half goals by Feil in the match.",
+          "sourceKey": "eighth-feil-aalen",
+          "evidence": "The report records Feil goals in the 27th and 34th minutes."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-bundesliga-eighth-feil-records",
+      "subjectKey": "entity-manuel-feil",
+      "clubKey": "entity-elversberg",
+      "chapter": "records",
+      "title": "Two seasons with championship medals",
+      "subtitle": "The DFB player profile records Feil’s team titles and his 2022/23 third-tier match totals.",
+      "story": [
+        {
+          "title": "Successive league titles",
+          "body": "DFB lists Feil as a 2021/22 Regionalliga Südwest and 2022/23 3. Liga champion."
+        },
+        {
+          "title": "A full league campaign",
+          "body": "The DFB season row records 38 league appearances in the 2022/23 championship campaign. This does not include cup matches."
+        }
+      ],
+      "facts": [
+        {
+          "key": "eighth-feil-regional-title",
+          "label": "Regionalliga championship",
+          "prompt": "In which season did Feil win the Regionalliga Südwest with Elversberg?",
+          "answers": [
+            "2021/22"
+          ],
+          "distractors": [
+            "2019/20",
+            "2020/21",
+            "2022/23"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "2021/22",
+            "text": "2021/22"
+          },
+          "scope": "DFB player profile’s title listing.",
+          "sourceKey": "eighth-feil-dfb-profile",
+          "evidence": "The DFB profile lists Feil as Regionalliga Südwest champion in 2021/22."
+        },
+        {
+          "key": "eighth-feil-3liga-title",
+          "label": "3. Liga championship",
+          "prompt": "In which season did Feil win the 3. Liga title with Elversberg?",
+          "answers": [
+            "2022/23"
+          ],
+          "distractors": [
+            "2020/21",
+            "2021/22",
+            "2023/24"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "2022/23",
+            "text": "2022/23"
+          },
+          "scope": "DFB player profile’s title listing.",
+          "sourceKey": "eighth-feil-dfb-profile",
+          "evidence": "The DFB profile lists Feil as 3. Liga champion in 2022/23."
+        },
+        {
+          "key": "eighth-feil-3liga-apps",
+          "label": "Third-tier appearances",
+          "prompt": "How many 3. Liga appearances did Feil make in the 2022/23 championship season, according to the DFB profile?",
+          "answers": [
+            "38"
+          ],
+          "distractors": [
+            "22",
+            "30",
+            "34"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "38",
+            "text": "38"
+          },
+          "scope": "League appearances in the 2022/23 season only, not all competitions.",
+          "sourceKey": "eighth-feil-dfb-profile",
+          "evidence": "The DFB 2022/23 3. Liga row lists 38 matches; 22 is the wins column, not appearances."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-bundesliga-eighth-feil-final-legacy",
+      "subjectKey": "entity-manuel-feil",
+      "clubKey": "entity-elversberg",
+      "chapter": "moments",
+      "title": "A contribution to the cup double",
+      "subtitle": "Feil’s cross helped create the penalty in the 2023 Saarland Cup final.",
+      "story": [
+        {
+          "title": "The cross that mattered",
+          "body": "Early in the second half against Saarbrücken on 3 June 2023, Feil crossed from the right. Marcel Gaus handled the ball, and Elversberg received a penalty."
+        },
+        {
+          "title": "A trophy contribution",
+          "body": "Nick Woltemade converted in the 50th minute. Elversberg went on to win 3–2 after extra time and lift the Saarland Cup alongside its league title."
+        }
+      ],
+      "facts": [
+        {
+          "key": "eighth-feil-final-cross",
+          "label": "Penalty creation",
+          "prompt": "What did Feil’s cross lead to early in the second half of the 2023 Saarland Cup final?",
+          "answers": [
+            "A handball penalty"
+          ],
+          "distractors": [
+            "A corner only",
+            "An offside decision",
+            "A direct free kick"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "A handball penalty",
+            "text": "A handball penalty"
+          },
+          "sourceKey": "eighth-feil-final",
+          "scope": "Feil’s contribution against Saarbrücken on 3 June 2023.",
+          "evidence": "The official final report states that Feil crossed from the right and Marcel Gaus handled the ball, leading to a penalty."
+        },
+        {
+          "key": "eighth-feil-final-penalty-minute",
+          "label": "Penalty conversion minute",
+          "prompt": "In which minute was the penalty created by Feil’s cross converted in the 2023 Saarland Cup final?",
+          "answers": [
+            "50th"
+          ],
+          "distractors": [
+            "40th",
+            "60th",
+            "70th"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "50th",
+            "text": "50th"
+          },
+          "sourceKey": "eighth-feil-final",
+          "scope": "Minute of Woltemade’s penalty after Feil’s cross on 3 June 2023.",
+          "evidence": "The final report records Woltemade’s penalty goal in minute 50."
+        },
+        {
+          "key": "eighth-feil-double-cup",
+          "label": "Cup honour",
+          "prompt": "Which trophy did Feil help Elversberg win in the June 2023 final against Saarbrücken?",
+          "answers": [
+            "Saarland Cup"
+          ],
+          "distractors": [
+            "Saxony Cup",
+            "Bavarian Cup",
+            "Lower Saxony Cup"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Saarland Cup",
+            "text": "Saarland Cup"
+          },
+          "sourceKey": "eighth-feil-final",
+          "scope": "The 3 June 2023 Saarland Cup final; Feil’s crossing contribution is explicitly described.",
+          "evidence": "The official final report records the Saarland Cup win and Feil’s cross before the second-half penalty."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-bundesliga-eighth-huenemeier-career-route",
+      "subjectKey": "entity-uwe-huenemeier",
+      "clubKey": "entity-paderborn-07",
+      "chapter": "career",
+      "title": "From Dortmund to a return home",
+      "subtitle": "Hünemeier moved from Borussia Dortmund to Energie Cottbus, then Paderborn, Brighton and back to Paderborn.",
+      "story": [
+        {
+          "title": "First senior stations",
+          "body": "Paderborn’s 2018 announcement traces Hünemeier’s earlier stops at Borussia Dortmund and Energie Cottbus before his first Paderborn spell."
+        },
+        {
+          "title": "An English chapter, then return",
+          "body": "He left Paderborn for Brighton in 2015, helped Brighton reach the Premier League in 2017, and returned to Paderborn in 2018."
+        }
+      ],
+      "facts": [
+        {
+          "key": "eighth-hue-first-club",
+          "label": "First major club",
+          "prompt": "Which club did Paderborn identify as Hünemeier’s first major club before his 2010 move to Cottbus?",
+          "answers": [
+            "Borussia Dortmund"
+          ],
+          "distractors": [
+            "Brighton & Hove Albion",
+            "SC Paderborn 07",
+            "VfL Bochum"
+          ],
+          "value": {
+            "kind": "entity",
+            "entityKey": "entity-borussia-dortmund",
+            "display": "Borussia Dortmund"
+          },
+          "scope": "Club timeline reported by Paderborn in May 2018.",
+          "sourceKey": "eighth-huenemeier-return-career",
+          "evidence": "The announcement lists Borussia Dortmund from 2000 to 2010, then Energie Cottbus from 2010 to 2013."
+        },
+        {
+          "key": "eighth-hue-england-club",
+          "label": "English chapter",
+          "prompt": "Which English club did Hünemeier join when he left Paderborn in 2015?",
+          "answers": [
+            "Brighton & Hove Albion"
+          ],
+          "distractors": [
+            "Manchester United",
+            "Leeds United",
+            "West Ham United"
+          ],
+          "value": {
+            "kind": "entity",
+            "entityKey": "entity-brighton",
+            "display": "Brighton & Hove Albion"
+          },
+          "scope": "Transfer announced 12 August 2015.",
+          "sourceKey": "eighth-huenemeier-brighton-transfer",
+          "evidence": "Paderborn’s transfer announcement says Hünemeier moved to Brighton & Hove Albion."
+        },
+        {
+          "key": "eighth-hue-return-year",
+          "label": "Back at Paderborn",
+          "prompt": "In which year did Hünemeier return to Paderborn after his three-year Brighton spell?",
+          "answers": [
+            "2018"
+          ],
+          "distractors": [
+            "2016",
+            "2017",
+            "2019"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "2018",
+            "text": "2018"
+          },
+          "scope": "Return year stated in the club announcement.",
+          "sourceKey": "eighth-huenemeier-return-career",
+          "evidence": "Paderborn announced his return for the 2018/19 season after three years at Brighton."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-bundesliga-eighth-huenemeier-freiburg-return",
+      "subjectKey": "entity-uwe-huenemeier",
+      "clubKey": "entity-paderborn-07",
+      "chapter": "moments",
+      "title": "Back in the side against Freiburg",
+      "subtitle": "After an injury absence, Hünemeier returned to Paderborn’s defense for a late-equalizer match in December 2014.",
+      "story": [
+        {
+          "title": "A return to the back four",
+          "body": "Paderborn’s report says Hünemeier returned after injury against Freiburg on 6 December 2014."
+        },
+        {
+          "title": "A late response",
+          "body": "Felix Klaus went down in a duel with Hünemeier, and Vladimir Darida scored the resulting penalty. Elias Kachunga’s 89th-minute equaliser rescued a 1–1 draw."
+        }
+      ],
+      "facts": [
+        {
+          "key": "eighth-hue-freiburg-date",
+          "label": "Return date",
+          "prompt": "On what date did Hünemeier return from injury against Freiburg?",
+          "answers": [
+            "6 December 2014"
+          ],
+          "distractors": [
+            "22 November 2014",
+            "13 December 2014",
+            "6 January 2015"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "6 December 2014",
+            "text": "6 December 2014"
+          },
+          "scope": "Date of the 14th matchday of the 2014/15 Bundesliga season.",
+          "sourceKey": "eighth-huenemeier-freiburg",
+          "evidence": "Paderborn’s report is dated 6 December 2014 and says Hünemeier returned after injury."
+        },
+        {
+          "key": "eighth-hue-freiburg-penalty",
+          "label": "A setback on his return",
+          "prompt": "Which incident involved Hünemeier before Freiburg’s opening goal on 6 December 2014?",
+          "answers": [
+            "A foul that led to a penalty"
+          ],
+          "distractors": [
+            "A clearance off the line",
+            "An own goal",
+            "A red card"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "A foul that led to a penalty",
+            "text": "A foul that led to a penalty"
+          },
+          "sourceKey": "eighth-huenemeier-freiburg",
+          "scope": "Hünemeier’s defensive involvement in Paderborn–Freiburg on 6 December 2014.",
+          "evidence": "The match report describes Felix Klaus going down in a duel with Hünemeier, followed by Darida’s penalty in minute 18."
+        },
+        {
+          "key": "eighth-hue-freiburg-score",
+          "label": "Final score against Freiburg",
+          "prompt": "What was the final score when Hünemeier returned against Freiburg?",
+          "answers": [
+            "1–1"
+          ],
+          "distractors": [
+            "0–0",
+            "2–1",
+            "1–2"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "1–1",
+            "text": "1–1"
+          },
+          "scope": "Final score on 6 December 2014.",
+          "sourceKey": "eighth-huenemeier-freiburg",
+          "evidence": "Paderborn’s report records a 1–1 draw; both clubs have cached visual entities.",
+          "scoreInput": {
+            "leftClubKey": "entity-paderborn-07",
+            "rightClubKey": "entity-freiburg",
+            "leftGoals": 1,
+            "rightGoals": 1
+          }
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-bundesliga-eighth-huenemeier-records",
+      "subjectKey": "entity-uwe-huenemeier",
+      "clubKey": "entity-paderborn-07",
+      "chapter": "records",
+      "title": "A top-flight mark and a long club career",
+      "subtitle": "A Bundesliga historical guide and Paderborn’s retirement announcement document Hünemeier’s top-flight and club appearance records.",
+      "story": [
+        {
+          "title": "Top-flight appearances",
+          "body": "Hünemeier made 48 Bundesliga appearances for Paderborn across 2014/15 and 2019/20. In his earlier 2013–15 spell, the club records four goals in 67 league appearances."
+        },
+        {
+          "title": "Long service",
+          "body": "At his April 2023 retirement announcement, the club reported 192 Paderborn appearances and placed him among its top ten appearance-makers since the 1985 merger. This was an announcement-day snapshot, not his final career total."
+        }
+      ],
+      "facts": [
+        {
+          "key": "eighth-hue-first-spell-goals",
+          "label": "Goals before Brighton",
+          "prompt": "How many league goals did Hünemeier score in his first Paderborn spell, from July 2013 to June 2015?",
+          "answers": [
+            "4"
+          ],
+          "distractors": [
+            "2",
+            "6",
+            "8"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "4",
+            "text": "4"
+          },
+          "scope": "League goals for Paderborn from 1 July 2013 to 30 June 2015, as reported on 4 May 2018.",
+          "sourceKey": "eighth-huenemeier-return-career",
+          "evidence": "Paderborn’s 4 May 2018 return announcement records 67 league appearances and four goals in his first spell."
+        },
+        {
+          "key": "eighth-hue-bundesliga-appearances",
+          "label": "Top-flight appearances",
+          "prompt": "How many Bundesliga appearances did Hünemeier make for Paderborn across the 2014/15 and 2019/20 seasons?",
+          "answers": [
+            "48"
+          ],
+          "distractors": [
+            "38",
+            "42",
+            "52"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "48",
+            "text": "48"
+          },
+          "scope": "Paderborn Bundesliga appearances across 2014/15 and 2019/20.",
+          "sourceKey": "eighth-paderborn-history",
+          "evidence": "The guide names Hünemeier as Paderborn’s most-used Bundesliga player with 48 appearances."
+        },
+        {
+          "key": "eighth-hue-paderborn-appearances",
+          "label": "Paderborn appearances at retirement",
+          "prompt": "How many total Paderborn appearances did the club report when Hünemeier announced his retirement in 2023?",
+          "answers": [
+            "192"
+          ],
+          "distractors": [
+            "172",
+            "182",
+            "202"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "192",
+            "text": "192"
+          },
+          "scope": "Club appearances as reported on 26 April 2023.",
+          "sourceKey": "eighth-huenemeier-retirement",
+          "evidence": "Paderborn reported 192 appearances across his two spells."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-bundesliga-eighth-huenemeier-legacy",
+      "subjectKey": "entity-uwe-huenemeier",
+      "clubKey": "entity-paderborn-07",
+      "chapter": "legacy",
+      "title": "Two promotions and a role beyond playing",
+      "subtitle": "Hünemeier’s Paderborn career included two Bundesliga promotions, Brighton’s promotion to the Premier League, and a post-playing role at Paderborn.",
+      "story": [
+        {
+          "title": "A career of promotions",
+          "body": "Paderborn listed his 2014 and 2019 Bundesliga promotions among the highlights of his playing career; Brighton also reached England’s top division during his spell there."
+        },
+        {
+          "title": "Staying with the club",
+          "body": "In April 2023, Paderborn said Hünemeier would remain in a sporting role after retirement. Its precise duties were still to be defined."
+        }
+      ],
+      "facts": [
+        {
+          "key": "eighth-hue-promotion-year",
+          "label": "First Paderborn promotion",
+          "prompt": "In which year did Hünemeier first help Paderborn earn promotion to the Bundesliga?",
+          "answers": [
+            "2014"
+          ],
+          "distractors": [
+            "2012",
+            "2013",
+            "2015"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "2014",
+            "text": "2014"
+          },
+          "scope": "Promotion years explicitly named by Paderborn when he retired.",
+          "sourceKey": "eighth-huenemeier-retirement",
+          "evidence": "The club identifies the 2014 and 2019 Bundesliga promotions as career highlights."
+        },
+        {
+          "key": "eighth-hue-brighton-promotion",
+          "label": "Brighton’s achievement",
+          "prompt": "Which division did Brighton reach in summer 2017 during Hünemeier’s spell?",
+          "answers": [
+            "Premier League"
+          ],
+          "distractors": [
+            "Championship",
+            "League One",
+            "League Two"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Premier League",
+            "text": "Premier League"
+          },
+          "scope": "Brighton team achievement during his 2015–18 spell.",
+          "sourceKey": "eighth-huenemeier-return-career",
+          "evidence": "Paderborn says Brighton achieved promotion to the Premier League in summer 2017."
+        },
+        {
+          "key": "eighth-hue-after-retirement",
+          "label": "After the playing career",
+          "prompt": "In which area did Paderborn say Hünemeier would continue working after retirement?",
+          "answers": [
+            "The sporting department"
+          ],
+          "distractors": [
+            "Ticketing",
+            "Groundskeeping",
+            "Youth-team refereeing"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "The sporting department",
+            "text": "The sporting department"
+          },
+          "scope": "Post-playing role announced in April 2023; exact duties were still to be defined.",
+          "sourceKey": "eighth-huenemeier-retirement",
+          "evidence": "The retirement report says he would remain at the club in a role in the sporting area."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-bundesliga-eighth-saglik-career-route",
+      "subjectKey": "entity-mahir-saglik",
+      "clubKey": "entity-paderborn-07",
+      "chapter": "career",
+      "title": "A forward’s many club chapters",
+      "subtitle": "The DFB career profile traces Sağlık from an early Paderborn spell through several clubs and back to Paderborn in 2013.",
+      "story": [
+        {
+          "title": "Early Paderborn years",
+          "body": "The DFB profile records Sağlık at Paderborn from 2000 to 2004, followed by a season with Borussia Dortmund II."
+        },
+        {
+          "title": "A return to Paderborn",
+          "body": "After later spells including Wolfsburg, Karlsruhe, Bochum and St. Pauli, he returned to Paderborn in January 2013."
+        }
+      ],
+      "facts": [
+        {
+          "key": "eighth-saglik-first-spell",
+          "label": "First Paderborn spell",
+          "prompt": "Which club did Sağlık represent from 2000 to 2004 at the start of his recorded senior career?",
+          "answers": [
+            "SC Paderborn 07"
+          ],
+          "distractors": [
+            "VfL Bochum",
+            "Borussia Dortmund II",
+            "VfL Wolfsburg"
+          ],
+          "value": {
+            "kind": "entity",
+            "entityKey": "entity-paderborn-07",
+            "display": "SC Paderborn 07"
+          },
+          "scope": "DFB club-history dates for the first listed Paderborn spell.",
+          "sourceKey": "eighth-saglik-dfb-profile",
+          "evidence": "The DFB profile records Sağlık at SC Paderborn 07 from 1 July 2000 to 30 June 2004."
+        },
+        {
+          "key": "eighth-saglik-next-club",
+          "label": "After his first Paderborn spell",
+          "prompt": "Which club did Sağlık join for the 2004/05 season after leaving Paderborn?",
+          "answers": [
+            "Borussia Dortmund II"
+          ],
+          "distractors": [
+            "VfL Wolfsburg",
+            "Brighton & Hove Albion",
+            "VfL Bochum"
+          ],
+          "value": {
+            "kind": "entity",
+            "entityKey": "entity-borussia-dortmund-ii",
+            "display": "Borussia Dortmund II"
+          },
+          "scope": "Next club listed in the DFB career history.",
+          "sourceKey": "eighth-saglik-dfb-profile",
+          "evidence": "The DFB profile lists Borussia Dortmund II from July 2004 through June 2005."
+        },
+        {
+          "key": "eighth-saglik-return-club",
+          "label": "A 2013 return",
+          "prompt": "Which club did Sağlık rejoin in January 2013?",
+          "answers": [
+            "SC Paderborn 07"
+          ],
+          "distractors": [
+            "VfL Bochum",
+            "Borussia Dortmund II",
+            "Manchester United"
+          ],
+          "value": {
+            "kind": "entity",
+            "entityKey": "entity-paderborn-07",
+            "display": "SC Paderborn 07"
+          },
+          "scope": "Club entry beginning 7 January 2013.",
+          "sourceKey": "eighth-saglik-dfb-profile",
+          "evidence": "The DFB profile records a Paderborn spell from 7 January 2013 through June 2016."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-bundesliga-eighth-saglik-defining-matches",
+      "subjectKey": "entity-mahir-saglik",
+      "clubKey": "entity-paderborn-07",
+      "chapter": "moments",
+      "title": "Three scoring nights in Paderborn colors",
+      "subtitle": "Sağlık scored a brace in a 2009 match at Union Berlin, four goals at Düsseldorf in 2013, and a late penalty against Bochum in 2014.",
+      "story": [
+        {
+          "title": "A brace at Union",
+          "body": "In September 2009, Sağlık scored twice in Paderborn’s high-scoring away match at Union Berlin."
+        },
+        {
+          "title": "Four at Düsseldorf",
+          "body": "In October 2013, he scored Paderborn’s first four goals in a 2. Bundesliga away win at Fortuna Düsseldorf."
+        }
+      ],
+      "facts": [
+        {
+          "key": "eighth-saglik-union-date",
+          "label": "Union Berlin match date",
+          "prompt": "On what date did Sağlık score twice against Union Berlin?",
+          "answers": [
+            "13 September 2009"
+          ],
+          "distractors": [
+            "6 September 2009",
+            "20 September 2009",
+            "13 September 2010"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "13 September 2009",
+            "text": "13 September 2009"
+          },
+          "scope": "Date of the 2. Bundesliga match.",
+          "sourceKey": "eighth-saglik-union",
+          "evidence": "The Paderborn match report dates it to Sunday, 13 September 2009."
+        },
+        {
+          "key": "eighth-saglik-duesseldorf-goals",
+          "label": "Düsseldorf goal count",
+          "prompt": "How many goals did Sağlık score at Fortuna Düsseldorf in October 2013?",
+          "answers": [
+            "Four"
+          ],
+          "distractors": [
+            "Two",
+            "Three",
+            "Five"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Four",
+            "text": "Four"
+          },
+          "scope": "Individual goals scored by Sağlık in the 2. Bundesliga match.",
+          "sourceKey": "eighth-saglik-duesseldorf",
+          "evidence": "Paderborn says Sağlık scored the first four goals of the match."
+        },
+        {
+          "key": "eighth-saglik-bochum-minute",
+          "label": "Late Bochum penalty",
+          "prompt": "In which minute did Sağlık convert the penalty against Bochum in February 2014?",
+          "answers": [
+            "79th"
+          ],
+          "distractors": [
+            "69th",
+            "74th",
+            "89th"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "79th",
+            "text": "79th"
+          },
+          "scope": "Minute of his penalty in the 2. Bundesliga match.",
+          "sourceKey": "eighth-saglik-bochum",
+          "evidence": "The club’s match report lists his penalty as the 79th-minute goal."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-bundesliga-eighth-saglik-records",
+      "subjectKey": "entity-mahir-saglik",
+      "clubKey": "entity-paderborn-07",
+      "chapter": "records",
+      "title": "A prolific 2013/14 season",
+      "subtitle": "The DFB records Sağlık’s 2013/14 league total and the surrounding appearance record for his Paderborn season.",
+      "story": [
+        {
+          "title": "A recorded career total",
+          "body": "The DFB profile’s German-club records contain 389 appearances and 149 goals at the 11 October 2026 review. These are the database’s recorded competitions, not a complete worldwide career total."
+        },
+        {
+          "title": "The promotion campaign",
+          "body": "In the 2013/14 Paderborn league season, DFB records 29 appearances and 15 goals."
+        }
+      ],
+      "facts": [
+        {
+          "key": "eighth-saglik-career-appearances",
+          "label": "Recorded German-club appearances",
+          "prompt": "How many German-club appearances were recorded in Sağlık’s DFB profile at the October 2026 review?",
+          "answers": [
+            "389"
+          ],
+          "distractors": [
+            "349",
+            "369",
+            "409"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "389",
+            "text": "389"
+          },
+          "scope": "DFB-recorded appearances for German clubs; the profile does not present this as an all-world career total. Profile checked 11 October 2026.",
+          "sourceKey": "eighth-saglik-dfb-profile",
+          "evidence": "The profile’s total row lists 389 appearances for German clubs."
+        },
+        {
+          "key": "eighth-saglik-career-goals",
+          "label": "Recorded German-club goals",
+          "prompt": "How many German-club goals were recorded in Sağlık’s DFB profile at the October 2026 review?",
+          "answers": [
+            "149"
+          ],
+          "distractors": [
+            "129",
+            "139",
+            "159"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "149",
+            "text": "149"
+          },
+          "scope": "DFB-recorded German-club goals, checked 11 October 2026; not a complete worldwide career total.",
+          "sourceKey": "eighth-saglik-dfb-profile",
+          "evidence": "The goal column gives 149; 147 is the wins column."
+        },
+        {
+          "key": "eighth-saglik-2013-appearances",
+          "label": "2013/14 league appearances",
+          "prompt": "How many 2. Bundesliga appearances did Sağlık make for Paderborn in 2013/14?",
+          "answers": [
+            "29"
+          ],
+          "distractors": [
+            "25",
+            "27",
+            "31"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "29",
+            "text": "29"
+          },
+          "sourceKey": "eighth-saglik-dfb-profile",
+          "scope": "League appearances in the 2013/14 Paderborn season.",
+          "evidence": "The DFB row lists 29 games and 15 goals; it does not label the three disciplinary entries as assists."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-bundesliga-eighth-saglik-honors",
+      "subjectKey": "entity-mahir-saglik",
+      "clubKey": "entity-paderborn-07",
+      "chapter": "legacy",
+      "title": "Two individual scoring crowns",
+      "subtitle": "The DFB player profile lists Sağlık as a top scorer in two different German competitions, years apart.",
+      "story": [
+        {
+          "title": "Regionalliga honor",
+          "body": "In 2007/08, Sağlık was the Regionalliga Nord’s leading scorer with Wuppertaler SV."
+        },
+        {
+          "title": "Second-tier honor",
+          "body": "Six seasons later he topped the 2. Bundesliga scoring list with Paderborn."
+        }
+      ],
+      "facts": [
+        {
+          "key": "eighth-saglik-regionalliga-crown",
+          "label": "Regionalliga Nord honor",
+          "prompt": "In which season did Sağlık become Regionalliga Nord top scorer?",
+          "answers": [
+            "2007/08"
+          ],
+          "distractors": [
+            "2005/06",
+            "2006/07",
+            "2008/09"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "2007/08",
+            "text": "2007/08"
+          },
+          "scope": "Official DFB top-scorer listing.",
+          "sourceKey": "eighth-saglik-dfb-profile",
+          "evidence": "The DFB player profile lists him as Regionalliga Nord top scorer in 2007/08."
+        },
+        {
+          "key": "eighth-saglik-regionalliga-goals",
+          "label": "Regionalliga Nord total",
+          "prompt": "How many goals did Sağlık score to win the Regionalliga Nord scoring title?",
+          "answers": [
+            "27"
+          ],
+          "distractors": [
+            "21",
+            "24",
+            "30"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "27",
+            "text": "27"
+          },
+          "scope": "Competition goal total for the 2007/08 top-scorer honor.",
+          "sourceKey": "eighth-saglik-dfb-profile",
+          "evidence": "The DFB profile lists 27 goals for that award."
+        },
+        {
+          "key": "eighth-saglik-second-tier-crown",
+          "label": "2. Bundesliga honor",
+          "prompt": "In which season did Sağlık become 2. Bundesliga top scorer?",
+          "answers": [
+            "2013/14"
+          ],
+          "distractors": [
+            "2011/12",
+            "2012/13",
+            "2014/15"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "2013/14",
+            "text": "2013/14"
+          },
+          "scope": "Official DFB top-scorer listing.",
+          "sourceKey": "eighth-saglik-dfb-profile",
+          "evidence": "The DFB profile lists him as 2. Bundesliga top scorer in 2013/14 with 15 goals."
+        }
+      ]
+    }
+  ]
+}

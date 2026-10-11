@@ -1,5 +1,5 @@
 {
-  "contentVersion": 22,
+  "contentVersion": 23,
   "scope": "Depth among offered club courses and authored player courses. Player course totals are not coverage of the full game catalog.",
   "clubs": [
     {
@@ -315,11 +315,17 @@
     {
       "key": "roadmap-elversberg",
       "name": "SV Elversberg",
-      "requiredLessons": 1,
-      "definingMomentLessons": 0,
-      "playerPaths": [],
-      "completePlayerPaths": [],
-      "complete": false
+      "requiredLessons": 12,
+      "definingMomentLessons": 2,
+      "playerPaths": [
+        "roadmap-player-luca-schnellbacher",
+        "roadmap-player-manuel-feil"
+      ],
+      "completePlayerPaths": [
+        "roadmap-player-luca-schnellbacher",
+        "roadmap-player-manuel-feil"
+      ],
+      "complete": true
     },
     {
       "key": "roadmap-fc-cologne",
@@ -618,11 +624,17 @@
     {
       "key": "roadmap-paderborn-07",
       "name": "SC Paderborn 07",
-      "requiredLessons": 1,
-      "definingMomentLessons": 0,
-      "playerPaths": [],
-      "completePlayerPaths": [],
-      "complete": false
+      "requiredLessons": 12,
+      "definingMomentLessons": 2,
+      "playerPaths": [
+        "roadmap-player-uwe-huenemeier",
+        "roadmap-player-mahir-saglik"
+      ],
+      "completePlayerPaths": [
+        "roadmap-player-uwe-huenemeier",
+        "roadmap-player-mahir-saglik"
+      ],
+      "complete": true
     },
     {
       "key": "roadmap-porto",
@@ -2404,12 +2416,66 @@
       ],
       "missingAreas": [],
       "complete": true
+    },
+    {
+      "key": "roadmap-player-luca-schnellbacher",
+      "name": "Luca Schnellbacher",
+      "entityID": "5ff0ee7d-7c44-5bb1-a819-d7ffc93830ab",
+      "playerLessons": 4,
+      "chapters": [
+        "Career journey",
+        "Defining moments",
+        "Records & honours"
+      ],
+      "missingAreas": [],
+      "complete": true
+    },
+    {
+      "key": "roadmap-player-manuel-feil",
+      "name": "Manuel Feil",
+      "entityID": "e3784b88-f0db-50af-bb86-f51814692990",
+      "playerLessons": 4,
+      "chapters": [
+        "Career journey",
+        "Defining moments",
+        "Records & honours"
+      ],
+      "missingAreas": [],
+      "complete": true
+    },
+    {
+      "key": "roadmap-player-uwe-huenemeier",
+      "name": "Uwe Hünemeier",
+      "entityID": "dca779bb-5381-529e-b8db-fd4b34dd2c41",
+      "playerLessons": 4,
+      "chapters": [
+        "Career journey",
+        "Defining moments",
+        "Records & honours",
+        "Legacy"
+      ],
+      "missingAreas": [],
+      "complete": true
+    },
+    {
+      "key": "roadmap-player-mahir-saglik",
+      "name": "Mahir Sağlık",
+      "entityID": "ebcbb656-db0e-58ea-b39b-65bd02ae6747",
+      "playerLessons": 4,
+      "chapters": [
+        "Career journey",
+        "Defining moments",
+        "Records & honours",
+        "Legacy"
+      ],
+      "missingAreas": [],
+      "complete": true
     }
   ],
-  "completedClubs": 50,
+  "completedClubs": 52,
   "totalClubs": 70,
-  "completedPlayers": 107,
-  "totalPlayers": 107,
+  "completedPlayers": 111,
+  "totalPlayers": 111,
   "gameCatalogPlayerCoverage": {
     "scope": "Unique supplied game-catalog player IDs with an explicit reviewed identity binding; no name-based guesses. This historical catalog is not a current squad list.",
     "totalCatalogPlayers": 5274,
@@ -2453,7 +2519,11 @@
       "roadmap-player-tiago-volpi",
       "roadmap-player-camilo-sanvezzo",
       "roadmap-player-fernando-aristeguieta",
-      "roadmap-player-paul-mcgrath"
+      "roadmap-player-paul-mcgrath",
+      "roadmap-player-luca-schnellbacher",
+      "roadmap-player-manuel-feil",
+      "roadmap-player-uwe-huenemeier",
+      "roadmap-player-mahir-saglik"
     ]
   }
 }

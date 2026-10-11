@@ -25,7 +25,7 @@ final class LearningTests: XCTestCase {
         return try ContentPack.load(JSONSerialization.data(withJSONObject:json))
     }
     func testCompletePackAndSharedFact() {
-        XCTAssertEqual(pack.lessons.count,669);XCTAssertEqual(pack.cards.count,181);XCTAssertEqual(pack.objectives.count,2006)
+        XCTAssertEqual(pack.lessons.count,691);XCTAssertEqual(pack.cards.count,185);XCTAssertEqual(pack.objectives.count,2072)
         XCTAssertEqual(pack.lessons.prefix(12).flatMap(\.objectiveIDs).count,36)
         XCTAssertEqual(pack.roadmaps.prefix(2).map{$0.chapters.flatMap(\.lessonIDs).count},[17,29])
         XCTAssertEqual(pack.lessons[8].objectiveIDs[2],pack.lessons[10].objectiveIDs[1])
@@ -37,7 +37,7 @@ final class LearningTests: XCTestCase {
             XCTAssertTrue(entities.allSatisfy{club in pack.roadmaps.contains{$0.clubID == club.id}})
         }
         XCTAssertEqual(pack.entities.filter{$0.name == "Atlético de Madrid"}.count,1)
-        XCTAssertEqual(pack.clubRoadmaps.count,70);XCTAssertEqual(pack.playerRoadmaps.count,107)
+        XCTAssertEqual(pack.clubRoadmaps.count,70);XCTAssertEqual(pack.playerRoadmaps.count,111)
     }
     func testRejectInvalidSchemaAndDuplicateIDs() {
         XCTAssertThrowsError(try mutatePack{$0["schemaVersion"]=2})

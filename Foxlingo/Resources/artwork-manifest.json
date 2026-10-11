@@ -697,6 +697,24 @@
     "cached": true
   },
   {
+    "asset": "entity-luca-schnellbacher",
+    "url": "https://assets.dfb.de/uploads/000/203/584/custom_style_1_Luca-Schnellbacher.jpg?1563480191",
+    "cached": true,
+    "sourceURL": "https://datencenter.dfb.de/datencenter/personen/luca-schnellbacher/spieler"
+  },
+  {
+    "asset": "entity-manuel-feil",
+    "url": "https://assets.dfb.de/uploads/000/175/989/custom_style_1_sve_feil_portrait.jpg?1533025934",
+    "cached": true,
+    "sourceURL": "https://datencenter.dfb.de/datencenter/personen/manuel-feil/spieler/spiele-in-saison/dfb-pokal/2021-22/sv-elversberg"
+  },
+  {
+    "asset": "entity-uwe-huenemeier",
+    "url": "https://www.scp07.de/medium/Verpflichtung_Huenemeier_4.5.jpg?m=17832&w=630&h=300&g=0",
+    "cached": true,
+    "sourceURL": "https://www.scp07.de/Teams/Profis/News-Profis/Viel-Erfahrung.html"
+  },
+  {
     "asset": "entity-juventus",
     "url": "https://img.uefa.com/imgml/TP/teams/logos/100x100/50139.png",
     "cached": true
@@ -1244,6 +1262,26 @@
   {
     "asset": "club-badge-st-patricks-athletic",
     "url": "https://img.uefa.com/imgml/TP/teams/logos/100x100/50133.png",
+    "cached": true
+  },
+  {
+    "asset": "club-badge-preussen-muenster",
+    "url": "https://assets.dfb.de/uploads/000/323/551/original_Preussen_Muenster.jpg?1756903050",
+    "cached": true
+  },
+  {
+    "asset": "club-badge-vfr-aalen",
+    "url": "https://assets.dfb.de/uploads/000/018/155/original_VfR_Aalen.jpg?1493059515",
+    "cached": true
+  },
+  {
+    "asset": "club-badge-hannover-96",
+    "url": "https://assets.dfb.de/uploads/000/018/128/original_Hannover_96.jpg?1493059506",
+    "cached": true
+  },
+  {
+    "asset": "club-badge-borussia-dortmund-ii",
+    "url": "https://assets.dfb.de/uploads/000/018/112/original_Borussia_Dortmund.jpg?1493059502",
     "cached": true
   },
   {

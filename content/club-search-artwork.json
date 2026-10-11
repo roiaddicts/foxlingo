@@ -64,7 +64,11 @@
     "asset": "club-badge-brighton",
     "imageURL": "https://img.uefa.com/imgml/TP/teams/logos/100x100/2601105.png",
     "sourceURL": "https://www.uefa.com/nationalassociations/teams/2601105/",
-    "scope": "Club badge illustration, not a historical-season badge."
+    "scope": "Club badge illustration, not a historical-season badge.",
+    "entityKey": "entity-brighton",
+    "aliases": [
+      "Brighton & Hove Albion"
+    ]
   },
   {
     "name": "Athletic Club",
@@ -408,5 +412,41 @@
     "imageURL": "https://img.uefa.com/imgml/TP/teams/logos/100x100/50133.png",
     "sourceURL": "https://www.uefa.com/uefaeuropaleague/history/clubs/50133--st-patrick-s/",
     "verifiedAt": "2026-10-11"
+  },
+  {
+    "entityKey": "entity-preussen-muenster",
+    "name": "Preußen Münster",
+    "asset": "club-badge-preussen-muenster",
+    "imageURL": "https://assets.dfb.de/uploads/000/323/551/original_Preussen_Muenster.jpg?1756903050",
+    "sourceURL": "https://datencenter.dfb.de/clubs/sc-preussen-06-e-v-muenster",
+    "verifiedAt": "2026-10-11",
+    "scope": "Current official illustrative crest, not a claimed historical-season image."
+  },
+  {
+    "entityKey": "entity-vfr-aalen",
+    "name": "VfR Aalen",
+    "asset": "club-badge-vfr-aalen",
+    "imageURL": "https://assets.dfb.de/uploads/000/018/155/original_VfR_Aalen.jpg?1493059515",
+    "sourceURL": "https://datencenter.dfb.de/teams/vfr-aalen?datacenter_name=datencenter",
+    "verifiedAt": "2026-10-11",
+    "scope": "Current official illustrative crest, not a claimed historical-season image."
+  },
+  {
+    "entityKey": "entity-hannover-96",
+    "name": "Hannover 96",
+    "asset": "club-badge-hannover-96",
+    "imageURL": "https://assets.dfb.de/uploads/000/018/128/original_Hannover_96.jpg?1493059506",
+    "sourceURL": "https://datencenter.dfb.de/teams/hannover-96",
+    "verifiedAt": "2026-10-11",
+    "scope": "Current official illustrative crest, not a claimed historical-season image."
+  },
+  {
+    "entityKey": "entity-borussia-dortmund-ii",
+    "name": "Borussia Dortmund II",
+    "asset": "club-badge-borussia-dortmund-ii",
+    "imageURL": "https://assets.dfb.de/uploads/000/018/112/original_Borussia_Dortmund.jpg?1493059502",
+    "sourceURL": "https://datencenter.dfb.de/teams/borussia-dortmund-ii",
+    "verifiedAt": "2026-10-11",
+    "scope": "Current official illustrative crest, not a claimed historical-season image."
   }
 ]

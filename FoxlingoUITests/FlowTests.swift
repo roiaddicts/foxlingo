@@ -85,6 +85,8 @@ final class FlowTests: XCTestCase {
     }
     func lessonScore(_ key: String,index: Int) -> (String,String) {
         switch key {
+        case "lesson-curriculum-bundesliga-eighth-huenemeier-freiburg-return": return ("1","1")
+        case "lesson-curriculum-bundesliga-eighth-schnellbacher-cup-moments": return ("4","3")
         case "lesson-curriculum-villa-next-mcgrath-records": return ("1","0")
         case "lesson-curriculum-villa-next-yorke-transfer": return ("0","0")
         case "lesson-curriculum-villa-next-yorke-breakthrough": return ("3","0")
@@ -859,6 +861,20 @@ final class FlowTests: XCTestCase {
         tap("timeline-sources");XCTAssertTrue(app.staticTexts["2007"].exists)
         let context=XCTAttachment(screenshot:app.screenshot());context.name="Large text timeline sources";context.lifetime = .keepAlways;add(context)
         tap("timeline-sources-done");tap("timeline-replay")
+    }
+    func testElversbergAndPaderbornPlayerLessonsVisualsScoresAndProgressPersist() {
+        start();tap("choose-XT");choosePlayer("Manuel Feil","manuel-feil")
+        completeLesson("lesson-curriculum-bundesliga-eighth-feil-career-route")
+        completeLesson("lesson-curriculum-bundesliga-eighth-feil-aalen-brace")
+        completeLesson("lesson-curriculum-bundesliga-eighth-feil-records")
+        XCTAssertTrue(app.staticTexts["roadmap-progress"].label.contains("3 of 4 starter lessons"))
+        app.terminate();start(reset:false)
+        XCTAssertTrue(app.staticTexts["Manuel Feil"].waitForExistence(timeout:5))
+        XCTAssertTrue(app.staticTexts["roadmap-progress"].label.contains("3 of 4 starter lessons"))
+        choosePlayer("Uwe Hünemeier","uwe-huenemeier")
+        completeLesson("lesson-curriculum-bundesliga-eighth-huenemeier-career-route")
+        completeLesson("lesson-curriculum-bundesliga-eighth-huenemeier-freiburg-return")
+        XCTAssertTrue(app.staticTexts["roadmap-progress"].label.contains("2 of 4 starter lessons"))
     }
     func testVillaPersonalCoursesFlagsScoresAndProgressPersist() {
         start();tap("choose-XT");choosePlayer("Paul McGrath","paul-mcgrath")
