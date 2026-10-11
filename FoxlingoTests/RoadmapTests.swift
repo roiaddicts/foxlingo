@@ -10,8 +10,8 @@ final class RoadmapTests: XCTestCase {
     }
     func roadmap(_ key:String) -> Roadmap {pack.roadmaps.first {$0.key == key}!}
     func testPlayerPathsUseCanonicalLessonsAndOptionalContext() {
-        XCTAssertEqual(pack.clubRoadmaps.count,69);XCTAssertEqual(pack.playerRoadmaps.count,97)
-        XCTAssertEqual(pack.lessons.count,610);XCTAssertEqual(pack.objectives.count,1829);XCTAssertEqual(pack.cards.count,170)
+        XCTAssertEqual(pack.clubRoadmaps.count,70);XCTAssertEqual(pack.playerRoadmaps.count,103)
+        XCTAssertEqual(pack.lessons.count,643);XCTAssertEqual(pack.objectives.count,1928);XCTAssertEqual(pack.cards.count,177)
         for path in pack.playerRoadmaps {
             let progress=RoadmapProgress.make(roadmap:path,pack:pack,state:LearnerState())
             let expectedLessons = path.key == "roadmap-player-cristiano" ? 8 : (path.key == "roadmap-player-xavi" ? 5 : 4)
@@ -92,7 +92,7 @@ final class RoadmapTests: XCTestCase {
         let coverage=try CoverageStudyPack.make(pack:reordered,firstID:roadmap("roadmap-xolos").clubID!,secondID:roadmap("roadmap-madrid").clubID!)
         XCTAssertEqual(coverage.first.lessonIDs.count,17);XCTAssertEqual(coverage.second.lessonIDs.count,29)
         let album=AlbumCollection.make(pack:reordered,state:LearnerState(),scope:.all,discoveredOnly:false,query:"")
-        XCTAssertEqual(album.total,170);XCTAssertEqual(album.sections.count,73)
+        XCTAssertEqual(album.total,177);XCTAssertEqual(album.sections.count,74)
         var state=LearnerState();state.selectClub(roadmap("roadmap-madrid").clubID!)
         XCTAssertEqual(state.activeRoadmap(reordered)?.key,"roadmap-madrid")
     }
@@ -117,7 +117,7 @@ final class RoadmapTests: XCTestCase {
         for i in rows.indices {rows[i].removeValue(forKey:"summary")}
         json["roadmaps"]=rows
         let old=try ContentPack.load(JSONSerialization.data(withJSONObject:json))
-        XCTAssertEqual(old.clubRoadmaps.count,69);XCTAssertTrue(old.playerRoadmaps.isEmpty)
+        XCTAssertEqual(old.clubRoadmaps.count,70);XCTAssertTrue(old.playerRoadmaps.isEmpty)
         XCTAssertEqual(old.roadmaps[0].entityID,old.roadmaps[0].clubID)
     }
 }

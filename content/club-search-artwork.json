@@ -251,5 +251,84 @@
     "imageURL": "https://img.uefa.com/imgml/TP/teams/logos/100x100/61565.png",
     "sourceURL": "https://www.uefa.com/nationalassociations/teams/61565--duisburg/",
     "scope": "Club badge illustration, not a historical-season badge."
+  },
+  {
+    "name": "Mazatlán FC",
+    "aliases": [
+      "Mazatlán",
+      "Mazatlan",
+      "Mazatlan FC"
+    ],
+    "entityKey": "entity-mazatlan",
+    "visual": "MAZ",
+    "asset": "club-badge-mazatlan",
+    "imageURL": "https://images.mlssoccer.com/image/upload/t_q-best/v1678298693/assets/competitions/liga-mx/Liga_MX_Logo-MAZ-480x480_jjpj81.png",
+    "sourceURL": "https://www.mlssoccer.com/clubs/mazatlan/",
+    "scope": "Badge for the historical Mazatlán course; no current league membership or squad is asserted."
+  },
+  {
+    "name": "Philadelphia Union",
+    "aliases": [],
+    "entityKey": "entity-philadelphia-union",
+    "asset": "club-badge-philadelphia-union",
+    "imageURL": "https://images.mlssoccer.com/image/upload/t_q-best/v1747769446/assets/logos/mls-clubs/Club_Logo-Philadelphia_im7pqg.png",
+    "sourceURL": "https://www.mlssoccer.com/clubs/philadelphia-union/",
+    "scope": "Official club badge illustration, not a historical-season badge or a current squad assertion."
+  },
+  {
+    "name": "Vancouver Whitecaps FC",
+    "aliases": [
+      "Vancouver",
+      "Whitecaps"
+    ],
+    "entityKey": "entity-vancouver",
+    "asset": "club-badge-vancouver",
+    "imageURL": "https://images.mlssoccer.com/image/upload/t_q-best/v1748265547/assets/logos/mls-clubs/Club_Logo-Vancouver_ao9phl.png",
+    "sourceURL": "https://www.mlssoccer.com/clubs/vancouver-whitecaps-fc/",
+    "scope": "Official club badge illustration, not a historical-season badge or a current squad assertion."
+  },
+  {
+    "name": "Sporting Kansas City",
+    "aliases": [
+      "Sporting KC"
+    ],
+    "entityKey": "entity-sporting-kansas-city",
+    "asset": "club-badge-sporting-kansas-city",
+    "imageURL": "https://images.mlssoccer.com/image/upload/t_q-best/v1747754918/assets/logos/mls-clubs/Club_Logo-Kansas_City_cnhd75.png",
+    "sourceURL": "https://www.mlssoccer.com/clubs/sporting-kansas-city/",
+    "scope": "Official club badge illustration, not a historical-season badge or a current squad assertion."
+  },
+  {
+    "name": "Columbus Crew",
+    "aliases": [
+      "Columbus"
+    ],
+    "entityKey": "entity-columbus-crew",
+    "asset": "club-badge-columbus-crew",
+    "imageURL": "https://images.mlssoccer.com/image/upload/t_q-best/v1789610472/assets/mnp/club-logos/Club_Logo-Columbus_light_z3eq8l_riisbt.png",
+    "sourceURL": "https://www.mlssoccer.com/clubs/columbus-crew/",
+    "scope": "Official club badge illustration, not a historical-season badge or a current squad assertion."
+  },
+  {
+    "name": "Los Angeles Football Club",
+    "aliases": [
+      "LAFC"
+    ],
+    "entityKey": "entity-lafc",
+    "asset": "club-badge-lafc",
+    "imageURL": "https://images.mlssoccer.com/image/upload/t_q-best/v1747755309/assets/logos/mls-clubs/Club_Logo-LAFC_djrhru.png",
+    "sourceURL": "https://www.mlssoccer.com/clubs/los-angeles-football-club/",
+    "scope": "Official club badge illustration, not a historical-season badge or a current squad assertion."
+  },
+  {
+    "name": "Inter Miami CF",
+    "aliases": [
+      "Inter Miami"
+    ],
+    "entityKey": "entity-inter-miami",
+    "asset": "club-badge-inter-miami",
+    "imageURL": "https://images.mlssoccer.com/image/upload/t_q-best/v1747755405/assets/logos/mls-clubs/Club_Logo-Miami_tyqe64.png",
+    "sourceURL": "https://www.mlssoccer.com/clubs/inter-miami-cf/",
+    "scope": "Official club badge illustration, not a historical-season badge or a current squad assertion."
   }
 ]

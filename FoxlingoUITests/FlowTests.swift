@@ -75,7 +75,7 @@ final class FlowTests: XCTestCase {
         tap(key);tap("lesson-next");tap("lesson-next")
         for index in 0..<4 {
             if app.pickerWheels.count == 2 {
-                let score = key == "lesson-curriculum-modeste-hamburg" ? ("3","0") : key == "lesson-curriculum-modeste-bremen" ? ("4","3") : key == "lesson-curriculum-champions-uv-rooney-fenerbahce" ? ("6","2") : key == "lesson-curriculum-champions-uv-rooney-city-overhead" ? ("2","1") : key == "lesson-curriculum-netzer-moment-cup" ? ("2","1") : key == "lesson-necaxa-starter" ? ("9","0") : key == "lesson-competition-champions-league-istanbul" ? [("3","0"),("3","3"),("3","2"),("3","0")][index] : ("4","1")
+                let score = key == "lesson-curriculum-ligamx-fifth-camilo-hattrick" ? ("3","3") : key == "lesson-curriculum-ligamx-fifth-mazatlan-cup2024" ? [("2","2"),("3","1"),("2","2"),("2","2")][index] : key == "lesson-curriculum-modeste-hamburg" ? ("3","0") : key == "lesson-curriculum-modeste-bremen" ? ("4","3") : key == "lesson-curriculum-champions-uv-rooney-fenerbahce" ? ("6","2") : key == "lesson-curriculum-champions-uv-rooney-city-overhead" ? ("2","1") : key == "lesson-curriculum-netzer-moment-cup" ? ("2","1") : key == "lesson-necaxa-starter" ? ("9","0") : key == "lesson-competition-champions-league-istanbul" ? [("3","0"),("3","3"),("3","2"),("3","0")][index] : ("4","1")
                 setScore(score.0,score.1);tap("check-score")
             } else {tap("answer-choice-0")}
             tap("answer-next")
@@ -840,6 +840,24 @@ final class FlowTests: XCTestCase {
         tap("timeline-sources");XCTAssertTrue(app.staticTexts["2007"].exists)
         let context=XCTAttachment(screenshot:app.screenshot());context.name="Large text timeline sources";context.lifetime = .keepAlways;add(context)
         tap("timeline-sources-done");tap("timeline-replay")
+    }
+    func testExpandedCamiloSanvezzoCourseAndScoresPersist() {
+        start();tap("choose-XT");choosePlayer("Camilo Sanvezzo","camilo-sanvezzo")
+        XCTAssertTrue(app.staticTexts["roadmap-progress"].label.contains("0 of 4 starter lessons"))
+        completeLesson("lesson-curriculum-ligamx-fifth-camilo-career")
+        completeLesson("lesson-curriculum-ligamx-fifth-camilo-hattrick")
+        completeLesson("lesson-curriculum-ligamx-fifth-camilo-record")
+        XCTAssertTrue(app.staticTexts["roadmap-progress"].label.contains("3 of 4 starter lessons"))
+        app.terminate();start(reset:false)
+        XCTAssertTrue(app.staticTexts["Camilo Sanvezzo"].waitForExistence(timeout:5))
+        XCTAssertTrue(app.staticTexts["roadmap-progress"].label.contains("3 of 4 starter lessons"))
+    }
+    func testHistoricalMazatlanCourseAndShootout() {
+        start();tap("choose-XT");tap("switch-club")
+        let search=app.searchFields.firstMatch;search.tap();search.typeText("Mazatlán")
+        tap("club-entity-mazatlan")
+        completeLesson("lesson-curriculum-ligamx-fifth-mazatlan-cup2024")
+        let shot=XCTAttachment(screenshot:app.screenshot());shot.name="Historical Mazatlán roadmap";shot.lifetime = .keepAlways;add(shot)
     }
     func testExpandedModesteCourseAndScoresPersist() {
         start();tap("choose-XT");choosePlayer("Anthony Modeste","anthony-modeste")

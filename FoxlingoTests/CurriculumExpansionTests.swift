@@ -28,7 +28,7 @@ final class CurriculumExpansionTests: XCTestCase {
     func testNewPlayerCoursesTeachTheirOwnFactsAndShareCanonicalClubLessons() throws {
         let root=URL(fileURLWithPath:#filePath).deletingLastPathComponent().deletingLastPathComponent()
         let pack=try ContentPack.load(Data(contentsOf:root.appendingPathComponent("Foxlingo/Resources/starter-en.json")))
-        for key in ["entity-marco-reus","entity-patrik-schick","entity-buffon","entity-del-piero","entity-guillermo-ochoa","entity-jose-saturnino-cardozo","entity-hernan-cristante","entity-timo-werner","entity-mario-gomez","entity-hirving-lozano","entity-miguel-calero","entity-mbappe","entity-ibrahimovic","entity-aguero","entity-griezmann","entity-carlos-hermosillo","entity-oscar-perez","entity-hugo-sanchez","entity-jorge-campos","entity-victor-davila","entity-fidel-ambriz","entity-deco","entity-vitor-baia","entity-luis-figo","entity-claudio-pizarro","entity-miroslav-klose","entity-uwe-seeler","entity-kevin-keegan","entity-nils-petersen","entity-vincenzo-grifo","entity-jurgen-klopp","entity-stefan-bell","entity-ruud-van-nistelrooy","entity-arjen-robben","entity-dirk-kuyt","entity-robin-van-persie","entity-lothar-matthaus","entity-guenter-netzer","entity-helmut-haller","entity-daniel-baier","entity-andrej-kramaric","entity-niklas-sule","entity-maximilian-kruse","entity-taiwo-awoniyi","entity-wayne-rooney","entity-paul-scholes","entity-diego-forlan","entity-marcos-senna","entity-rafael-marquez","entity-camilo-vargas","entity-jared-borgetti","entity-oswaldo-sanchez","entity-joaquin-velazquez","entity-benito-pardo","entity-lukas-podolski","entity-anthony-modeste","entity-klaas-jan-huntelaar","entity-jefferson-farfan"] {
+        for key in ["entity-marco-reus","entity-patrik-schick","entity-buffon","entity-del-piero","entity-guillermo-ochoa","entity-jose-saturnino-cardozo","entity-hernan-cristante","entity-timo-werner","entity-mario-gomez","entity-hirving-lozano","entity-miguel-calero","entity-mbappe","entity-ibrahimovic","entity-aguero","entity-griezmann","entity-carlos-hermosillo","entity-oscar-perez","entity-hugo-sanchez","entity-jorge-campos","entity-victor-davila","entity-fidel-ambriz","entity-deco","entity-vitor-baia","entity-luis-figo","entity-claudio-pizarro","entity-miroslav-klose","entity-uwe-seeler","entity-kevin-keegan","entity-nils-petersen","entity-vincenzo-grifo","entity-jurgen-klopp","entity-stefan-bell","entity-ruud-van-nistelrooy","entity-arjen-robben","entity-dirk-kuyt","entity-robin-van-persie","entity-lothar-matthaus","entity-guenter-netzer","entity-helmut-haller","entity-daniel-baier","entity-andrej-kramaric","entity-niklas-sule","entity-maximilian-kruse","entity-taiwo-awoniyi","entity-wayne-rooney","entity-paul-scholes","entity-diego-forlan","entity-marcos-senna","entity-rafael-marquez","entity-camilo-vargas","entity-jared-borgetti","entity-oswaldo-sanchez","entity-joaquin-velazquez","entity-benito-pardo","entity-lukas-podolski","entity-anthony-modeste","entity-klaas-jan-huntelaar","entity-jefferson-farfan","entity-horacio-casarin","entity-ivo-basay","entity-ronaldinho","entity-tiago-volpi","entity-camilo-sanvezzo","entity-fernando-aristeguieta"] {
             let player=try XCTUnwrap(pack.entities.first {$0.key == key})
             let route=try XCTUnwrap(pack.playerRoadmaps.first {$0.entityID == player.id})
             let club=try XCTUnwrap(pack.clubRoadmaps.first {$0.clubID == route.clubID})
@@ -96,6 +96,29 @@ final class CurriculumExpansionTests: XCTestCase {
         let portrait=try XCTUnwrap(artwork.first {$0["asset"] as? String == modeste.imageAsset})
         XCTAssertEqual(portrait["cached"] as? Bool,true)
         XCTAssertTrue((portrait["sourceURL"] as? String)?.contains("datencenter.dfb.de/personen/anthony-modeste/") == true)
+    }
+
+    func testHistoricalMazatlanCourseAndDistinctShootoutScores() throws {
+        let root=URL(fileURLWithPath:#filePath).deletingLastPathComponent().deletingLastPathComponent()
+        let pack=try ContentPack.load(Data(contentsOf:root.appendingPathComponent("Foxlingo/Resources/starter-en.json")))
+        let club=try XCTUnwrap(pack.entities.first {$0.key == "entity-mazatlan"})
+        XCTAssertNil(club.competitions)
+        XCTAssertNotNil(club.imageAsset)
+        XCTAssertNotNil(pack.clubRoadmaps.first {$0.clubID == club.id})
+        for (key,left,right) in [("fifth-maz-cup2024-regulation",2,2),("fifth-maz-cup2024-shootout",3,1)] {
+            let objective=try XCTUnwrap(pack.objectives.first {$0.key == "objective-enrichment-"+key})
+            let exercise=try XCTUnwrap(pack.exercises.first {$0.objectiveIDs.contains(objective.id) && $0.scoreInput != nil})
+            let score=try XCTUnwrap(exercise.scoreInput)
+            XCTAssertEqual(pack.entity(score.leftEntityID).key,"entity-mazatlan")
+            XCTAssertEqual(pack.entity(score.rightEntityID).key,"entity-cruz-azul")
+            XCTAssertTrue(score.accepts(left:left,right:right))
+            if left != right {XCTAssertFalse(score.accepts(left:right,right:left))}
+        }
+        for key in ["entity-camilo-sanvezzo","entity-fernando-aristeguieta"] {
+            let player=try XCTUnwrap(pack.entities.first {$0.key == key})
+            XCTAssertNotNil(player.imageAsset)
+            XCTAssertTrue(player.externalRefs.isEmpty)
+        }
     }
 
 }

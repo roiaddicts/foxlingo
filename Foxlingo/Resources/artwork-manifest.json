@@ -665,6 +665,23 @@
     "cached": true
   },
   {
+    "asset": "entity-ronaldinho",
+    "url": "https://futbol11.com/images/165.webp",
+    "cached": true
+  },
+  {
+    "asset": "entity-camilo-sanvezzo",
+    "url": "https://images.mlssoccer.com/image/private/t_thumb_squared/f_auto/mls-van-prd/hoi0kxpmsyztkpmvikfz.jpg",
+    "cached": true,
+    "sourceURL": "https://www.whitecapsfc.com/players/camilo/"
+  },
+  {
+    "asset": "entity-fernando-aristeguieta",
+    "url": "https://images.mlssoccer.com/image/private/t_thumb_squared/f_auto/mls-phi-prd/gukodxt73klohfgnkbdh.jpg",
+    "cached": true,
+    "sourceURL": "https://www.philadelphiaunion.com/players/fernando-aristeguieta/"
+  },
+  {
     "asset": "entity-juventus",
     "url": "https://img.uefa.com/imgml/TP/teams/logos/100x100/50139.png",
     "cached": true
@@ -1142,6 +1159,41 @@
   {
     "asset": "club-badge-duisburg",
     "url": "https://img.uefa.com/imgml/TP/teams/logos/100x100/61565.png",
+    "cached": true
+  },
+  {
+    "asset": "club-badge-mazatlan",
+    "url": "https://images.mlssoccer.com/image/upload/t_q-best/v1678298693/assets/competitions/liga-mx/Liga_MX_Logo-MAZ-480x480_jjpj81.png",
+    "cached": true
+  },
+  {
+    "asset": "club-badge-philadelphia-union",
+    "url": "https://images.mlssoccer.com/image/upload/t_q-best/v1747769446/assets/logos/mls-clubs/Club_Logo-Philadelphia_im7pqg.png",
+    "cached": true
+  },
+  {
+    "asset": "club-badge-vancouver",
+    "url": "https://images.mlssoccer.com/image/upload/t_q-best/v1748265547/assets/logos/mls-clubs/Club_Logo-Vancouver_ao9phl.png",
+    "cached": true
+  },
+  {
+    "asset": "club-badge-sporting-kansas-city",
+    "url": "https://images.mlssoccer.com/image/upload/t_q-best/v1747754918/assets/logos/mls-clubs/Club_Logo-Kansas_City_cnhd75.png",
+    "cached": true
+  },
+  {
+    "asset": "club-badge-columbus-crew",
+    "url": "https://images.mlssoccer.com/image/upload/t_q-best/v1789610472/assets/mnp/club-logos/Club_Logo-Columbus_light_z3eq8l_riisbt.png",
+    "cached": true
+  },
+  {
+    "asset": "club-badge-lafc",
+    "url": "https://images.mlssoccer.com/image/upload/t_q-best/v1747755309/assets/logos/mls-clubs/Club_Logo-LAFC_djrhru.png",
+    "cached": true
+  },
+  {
+    "asset": "club-badge-inter-miami",
+    "url": "https://images.mlssoccer.com/image/upload/t_q-best/v1747755405/assets/logos/mls-clubs/Club_Logo-Miami_tyqe64.png",
     "cached": true
   },
   {

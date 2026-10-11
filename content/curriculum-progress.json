@@ -1,5 +1,5 @@
 {
-  "contentVersion": 19,
+  "contentVersion": 20,
   "scope": "Depth among offered club courses and authored player courses. Player course totals are not coverage of the full game catalog.",
   "clubs": [
     {
@@ -582,11 +582,17 @@
     {
       "key": "roadmap-necaxa",
       "name": "Necaxa",
-      "requiredLessons": 1,
-      "definingMomentLessons": 0,
-      "playerPaths": [],
-      "completePlayerPaths": [],
-      "complete": false
+      "requiredLessons": 12,
+      "definingMomentLessons": 2,
+      "playerPaths": [
+        "roadmap-player-ivo-basay",
+        "roadmap-player-horacio-casarin"
+      ],
+      "completePlayerPaths": [
+        "roadmap-player-ivo-basay",
+        "roadmap-player-horacio-casarin"
+      ],
+      "complete": true
     },
     {
       "key": "roadmap-pachuca",
@@ -690,11 +696,17 @@
     {
       "key": "roadmap-queretaro",
       "name": "Querétaro",
-      "requiredLessons": 1,
-      "definingMomentLessons": 0,
-      "playerPaths": [],
-      "completePlayerPaths": [],
-      "complete": false
+      "requiredLessons": 12,
+      "definingMomentLessons": 2,
+      "playerPaths": [
+        "roadmap-player-tiago-volpi",
+        "roadmap-player-ronaldinho"
+      ],
+      "completePlayerPaths": [
+        "roadmap-player-tiago-volpi",
+        "roadmap-player-ronaldinho"
+      ],
+      "complete": true
     },
     {
       "key": "roadmap-real-betis",
@@ -906,6 +918,21 @@
       "completePlayerPaths": [
         "roadmap-player-buffon",
         "roadmap-player-del-piero"
+      ],
+      "complete": true
+    },
+    {
+      "key": "roadmap-mazatlan",
+      "name": "Mazatlán FC",
+      "requiredLessons": 11,
+      "definingMomentLessons": 2,
+      "playerPaths": [
+        "roadmap-player-fernando-aristeguieta",
+        "roadmap-player-camilo-sanvezzo"
+      ],
+      "completePlayerPaths": [
+        "roadmap-player-fernando-aristeguieta",
+        "roadmap-player-camilo-sanvezzo"
       ],
       "complete": true
     }
@@ -2228,18 +2255,100 @@
       ],
       "missingAreas": [],
       "complete": true
+    },
+    {
+      "key": "roadmap-player-horacio-casarin",
+      "name": "Horacio Casarín",
+      "entityID": "dd2de1e9-208d-540f-b4a6-41751c8d6681",
+      "playerLessons": 4,
+      "chapters": [
+        "Career journey",
+        "Records & honours",
+        "Defining moments"
+      ],
+      "missingAreas": [],
+      "complete": true
+    },
+    {
+      "key": "roadmap-player-ivo-basay",
+      "name": "Ivo Basay",
+      "entityID": "4c586035-79ec-536b-aa1b-eedb761fb848",
+      "playerLessons": 4,
+      "chapters": [
+        "Career journey",
+        "Defining moments",
+        "Records & honours",
+        "Legacy"
+      ],
+      "missingAreas": [],
+      "complete": true
+    },
+    {
+      "key": "roadmap-player-ronaldinho",
+      "name": "Ronaldinho",
+      "entityID": "90546772-f8bf-5c38-894d-61cfcda293ff",
+      "playerLessons": 4,
+      "chapters": [
+        "Career journey",
+        "Defining moments",
+        "Records & honours",
+        "Legacy"
+      ],
+      "missingAreas": [],
+      "complete": true
+    },
+    {
+      "key": "roadmap-player-tiago-volpi",
+      "name": "Tiago Volpi",
+      "entityID": "2d95cfd9-e138-5e84-b8cf-66a72eefad60",
+      "playerLessons": 4,
+      "chapters": [
+        "Career journey",
+        "Defining moments",
+        "Records & honours"
+      ],
+      "missingAreas": [],
+      "complete": true
+    },
+    {
+      "key": "roadmap-player-camilo-sanvezzo",
+      "name": "Camilo Sanvezzo",
+      "entityID": "c9cceb96-30d5-51dc-8561-c0362135010f",
+      "playerLessons": 4,
+      "chapters": [
+        "Career journey",
+        "Defining moments",
+        "Records & honours",
+        "Legacy"
+      ],
+      "missingAreas": [],
+      "complete": true
+    },
+    {
+      "key": "roadmap-player-fernando-aristeguieta",
+      "name": "Fernando Aristeguieta",
+      "entityID": "0bfabffb-c5cc-58a4-b94c-27273037cb13",
+      "playerLessons": 4,
+      "chapters": [
+        "Career journey",
+        "Defining moments",
+        "Records & honours",
+        "Legacy"
+      ],
+      "missingAreas": [],
+      "complete": true
     }
   ],
-  "completedClubs": 44,
-  "totalClubs": 69,
-  "completedPlayers": 97,
-  "totalPlayers": 97,
+  "completedClubs": 47,
+  "totalClubs": 70,
+  "completedPlayers": 103,
+  "totalPlayers": 103,
   "gameCatalogPlayerCoverage": {
     "scope": "Unique supplied game-catalog player IDs with an explicit reviewed identity binding; no name-based guesses. This historical catalog is not a current squad list.",
     "totalCatalogPlayers": 5274,
-    "playersWithAuthoredPaths": 66,
-    "playersMeetingDepthRequirements": 66,
-    "playersWithoutAuthoredPaths": 5208,
+    "playersWithAuthoredPaths": 67,
+    "playersMeetingDepthRequirements": 67,
+    "playersWithoutAuthoredPaths": 5207,
     "independentPlayerPaths": [
       "roadmap-player-riascos",
       "roadmap-player-arce",
@@ -2271,7 +2380,12 @@
       "roadmap-player-jared-borgetti",
       "roadmap-player-oswaldo-sanchez",
       "roadmap-player-joaquin-velazquez",
-      "roadmap-player-benito-pardo"
+      "roadmap-player-benito-pardo",
+      "roadmap-player-horacio-casarin",
+      "roadmap-player-ivo-basay",
+      "roadmap-player-tiago-volpi",
+      "roadmap-player-camilo-sanvezzo",
+      "roadmap-player-fernando-aristeguieta"
     ]
   }
 }

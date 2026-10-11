@@ -136,7 +136,7 @@ final class PlayerEnrichmentTests: XCTestCase {
 
     func testScoreWheelsHaveExplicitTeamsAndRejectReversedGoals() throws {
         let scores=pack.exercises.compactMap(\.scoreInput)
-        XCTAssertEqual(scores.count,81)
+        XCTAssertEqual(scores.count,88)
         let aggregate=pack.exercises.first {$0.key == "exercise-xolos-final-choice-1"}!.scoreInput!
         XCTAssertEqual(pack.entity(aggregate.leftEntityID).name,"Club Tijuana")
         XCTAssertEqual(pack.entity(aggregate.rightEntityID).name,"Toluca")
