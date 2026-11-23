@@ -10,7 +10,13 @@ struct RootView: View {
     @Environment(\.scenePhase) private var scenePhase
     var body: some View {
         Group {
-            if let error = model.contentError {
+            if model.isLoading {
+                VStack(spacing: 20) {
+                    Leopard().frame(width: 88, height: 100)
+                    ProgressView("Preparing your football stories…")
+                }.frame(maxWidth: .infinity, maxHeight: .infinity).journal()
+                    .accessibilityIdentifier("startup-loading")
+            } else if let error = model.contentError {
                 ContentUnavailableView("Lessons unavailable",systemImage:"book.closed",description:Text(error)).journal()
             } else if model.recoveryRequired {
                 NavigationStack { VStack(spacing:24) { Leopard().frame(height:110); Text("Let's recover your progress").font(.title.bold()); Text(model.message ?? "Saved progress needs attention."); PrimaryButton(title:"Retry",action:{model.recoveryRequired=false;model.load()}); Button("Settings") { settings=true } }.padding(24).journal() }
@@ -24,7 +30,16 @@ struct RootView: View {
                     NavigationStack { AlbumView().toolbar { Button {settings=true} label:{Image(systemName:"gearshape")}.accessibilityLabel("Settings") } }.tabItem { Label("Album",systemImage:"rectangle.stack") }
                 }
             }
-        }.onChange(of:scenePhase) { if scenePhase == .active {model.objectWillChange.send();Task {await model.refreshDailyIfNeeded()}} else {model.stopSounds()} }.onChange(of:model.state.sound) {if !model.state.sound {model.stopSounds()}}.sheet(isPresented:$settings) { NavigationStack { SettingsView() } }
+        }.modifier(StreakSuccessOverlay())
+        .onChange(of: model.state.streak.activeDays) { previous, current in
+            let today = StreakState.dayKey(model.now, zone: model.state.homeTimeZone)
+            if current.contains(today) && !previous.contains(today) {
+                var prior = model.state.streak
+                prior.activeDays = previous
+                model.streakSuccess = StreakSuccess(days: model.state.streak.current(at: model.now, zone: model.state.homeTimeZone),
+                                                   previousDays: prior.current(at: model.now, zone: model.state.homeTimeZone))
+            }
+        }.environment(\.streakFlameAnimationsEnabled,!settings && model.streakSuccess == nil).onChange(of:scenePhase) { if scenePhase == .active {model.objectWillChange.send();Task {await model.refreshDailyIfNeeded()}} else {model.stopSounds()} }.onChange(of:model.state.sound) {if !model.state.sound {model.stopSounds()}}.sheet(isPresented:$settings) { NavigationStack { SettingsView() } }
         .alert("Progress notice",isPresented:Binding(get:{model.message != nil && !model.recoveryRequired},set:{if !$0 {model.message=nil}})) { Button("OK") { model.message=nil } } message:{Text(model.message ?? "")}
     }
 }

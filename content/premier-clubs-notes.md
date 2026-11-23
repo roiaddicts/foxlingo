@@ -1,0 +1,11 @@
+# Premier League club expansion draft
+
+Prepared 2026-10-09. The official Premier League 2026/27 club guide was used to verify the complete 20-club membership snapshot. Its published list includes the three promoted clubs—Coventry City, Hull City and Ipswich Town—and the 17 returning clubs. The separate season-start announcement corroborates the promoted-club transition. Membership is stored independently from club lessons so the five clubs that already have starter roadmaps are not duplicated.
+
+The starter pack already has club roadmaps for Arsenal, Aston Villa, Liverpool, Manchester City and Manchester United. This draft therefore contains 15 new club rows, each with one two-page starter lesson and three multiple-choice facts (45 facts total). The membership array contains all 20 teams and points to the existing canonical entity keys for those five existing club rows; the 15 newly proposed identities use `entity-{clubKey}` keys consistent with the club-expansion merger.
+
+Research used the Firecrawl skill guidance, but the Firecrawl CLI was unavailable in this workspace. I used the built-in web search and page extraction fallback, then recorded the official Premier League or club page URL and a short supporting excerpt for each fact. All source records carry the verification date. The lessons use stable historical milestones or completed-season scopes; they avoid live rosters, current standings and ratings.
+
+Source quality notes: most historical claims come from official club histories or the Premier League’s own season and history archive. Coventry’s 1987 FA Cup milestone is supported by a Premier League retrospective, its inaugural-league participation by the Premier League history page, and its 2025/26 title by Coventry City’s official club article. Forest’s founding year comes from the Premier League club directory and European Cup seasons from a Premier League history article. Sunderland’s title-season list comes from the Premier League’s official Sunderland guide. No unsupported founding detail was added where the available official evidence was weaker.
+
+Club keys are stable content slugs, not external database IDs. Artwork/logo URLs were omitted because this request focuses on sourced lesson coverage and no image was verified for this draft.

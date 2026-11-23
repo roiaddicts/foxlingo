@@ -1,0 +1,2951 @@
+{
+  "sources": [
+    {
+      "key": "chivas-atlante-history",
+      "title": "Chivas: El rival: Atlante",
+      "url": "https://www.chivasdecorazon.com.mx/es/noticias/19706/el-rival-atlante",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "pumas-atlante-history",
+      "title": "Pumas: Historia",
+      "url": "https://pumas.mx/historia",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "concacaf-vilar",
+      "title": "Concacaf: GK Vilar retires, won first-ever SCCL with Atlante",
+      "url": "https://www.concacaf.com/champions-cup/news/gk-vilar-retires-won-first-ever-sccl-with-atlante/",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "concacaf-semis",
+      "title": "Concacaf: SCCL All-Time Semifinal Results & Scorers",
+      "url": "https://www.concacaf.com/concacaf-league/article/sccl-all-time-semifinal-results-scorers/",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "concacaf-rafael",
+      "title": "Concacaf: Mexico int’l Marquez Lugo announces retirement",
+      "url": "https://www.concacaf.com/news/mexico-int-l-marquez-lugo-announces-retirement",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "adsl-history",
+      "title": "Atlético de San Luis: Nuestra Historia",
+      "url": "https://cmsadsl.atleticodesanluis.mx/contenidos/historia",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "adsl-2019-final",
+      "title": "Atlético de San Luis: 5 de mayo del 2019, un día histórico para nuestro equipo",
+      "url": "https://www.atleticodesanluis.mx/noticias/591/5-de-mayo-del-2019-un-da-histrico-para-nuestro-equipo-",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "adsl-unai-100",
+      "title": "Atlético de San Luis: ¡100 partidos de Unai Bilbao!",
+      "url": "https://www.atleticodesanluis.mx/noticias/455/100-partidos-de-Unai-Bilbao",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "adsl-unai-exit",
+      "title": "Atlético de San Luis: Comunicado Oficial: Unai Bilbao",
+      "url": "https://www.atleticodesanluis.mx/noticias/1282/Comunicado-Oficial-Unai-Bilbao",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "adsl-media-guide-unai",
+      "title": "Atlético de San Luis: Guía de medios (player biographies)",
+      "url": "https://storage.atleticodesanluis.mx/files/504_GUIA_DE_MEDIOS_ATL%C3%89TICO_DE_SAN_LUIS_2.pdf",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "adsl-goals",
+      "title": "Atlético de San Luis: Goleadores históricos del futbol potosino",
+      "url": "https://www.atleticodesanluis.mx/noticias/2115/GOLEADORES-HISTRICOS-DEL-FUTBOL-POTOSINO",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "adsl-berterame-azteca",
+      "title": "Atlético de San Luis: ADSL gana en el Azteca",
+      "url": "https://www.atleticodesanluis.mx/noticias/46/ADSL-gana-en-el-Azteca",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "fcj-history",
+      "title": "FC Juárez: Nuestra Historia Varonil",
+      "url": "https://fcjuarez.com/nuestra-historia-varonil/",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "fcj-appearance-table",
+      "title": "FC Juárez: Javier Nevárez llega a 100 partidos con FC Juárez",
+      "url": "https://fcjuarez.com/javier-nevarez-llega-a-100-partidos-con-fc-juarez/",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "fcj-denzell-debuts",
+      "title": "FC Juárez: Antonio Carmona debuta en Primera División",
+      "url": "https://fcjuarez.com/antonio-carmona-debuta-en-primera-division/",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "fcj-denzell-selection",
+      "title": "FC Juárez: Convocan a Denzell García a la Selección Mexicana",
+      "url": "https://fcjuarez.com/convocan-a-denzell-garcia-a-la-seleccion-mexicana/",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "fcj-denzell-mazatlan",
+      "title": "FC Juárez: Canteranos anotan y le dan el triunfo a Bravos en Mazatlán",
+      "url": "https://fcjuarez.com/canteranos-anotan-y-le-dan-el-triunfo-a-bravos-en-mazatlan/",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "fcj-denzell-atlas",
+      "title": "FC Juárez: Triunfa Bravos en casa al derrotar a Atlas",
+      "url": "https://fcjuarez.com/triunfa-bravos-en-casa-al-derrotar-a-atlas/",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "fcj-aquino",
+      "title": "FC Juárez: Experiencia y jerarquía se suman al plantel; Javier Aquino es Bravo",
+      "url": "https://fcjuarez.com/experiencia-y-jerarquia-se-suman-al-plantel-javier-aquino-es-bravo/",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "adsl-tunita",
+      "title": "Atlético de San Luis: ¡Bienvenida, Tunita!",
+      "url": "https://www.atleticodesanluis.mx/noticias/925/BIENVENIDA-TUNITA",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "olympic-aquino-match",
+      "title": "London 2012 Organising Committee: Mexico–Korea match report",
+      "url": "https://digital.la84.org/digital/api/collection/p17103coll8/id/82163/download",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "fcj-aquino-world-cup",
+      "title": "FC Juárez: Javier Aquino es Bravo",
+      "url": "https://fcjuarez.com/experiencia-y-jerarquia-se-suman-al-plantel-javier-aquino-es-bravo/",
+      "verifiedAt": "2026-10-11"
+    }
+  ],
+  "players": [
+    {
+      "key": "entity-federico-vilar-sixth",
+      "name": "Federico Vilar",
+      "aliases": [
+        "Federico Vilar Baudena"
+      ],
+      "visual": "FV",
+      "clubKey": "entity-atlante"
+    },
+    {
+      "key": "entity-rafael-marquez-lugo-sixth",
+      "name": "Rafael Márquez Lugo",
+      "aliases": [
+        "Rafael Márquez Lugo"
+      ],
+      "visual": "RML",
+      "clubKey": "entity-atlante"
+    },
+    {
+      "key": "entity-unai-bilbao-sixth",
+      "name": "Unai Bilbao",
+      "aliases": [
+        "Unai Bilbao Arteta"
+      ],
+      "visual": "UB",
+      "clubKey": "entity-atletico-san-luis"
+    },
+    {
+      "key": "entity-german-berterame-sixth",
+      "name": "Germán Berterame",
+      "aliases": [
+        "Germán Berterame"
+      ],
+      "visual": "GB",
+      "clubKey": "entity-atletico-san-luis"
+    },
+    {
+      "key": "entity-denzell-garcia-sixth",
+      "name": "Denzell García",
+      "aliases": [
+        "Denzell García Bojórquez"
+      ],
+      "visual": "DG",
+      "clubKey": "entity-juarez"
+    },
+    {
+      "key": "entity-javier-aquino-sixth",
+      "name": "Javier Aquino",
+      "aliases": [
+        "Javier Ignacio Aquino Carmona"
+      ],
+      "visual": "JA",
+      "clubKey": "entity-juarez"
+    }
+  ],
+  "lessons": [
+    {
+      "key": "lesson-curriculum-ligamx-sixth-atlante-history",
+      "subjectKey": "entity-atlante",
+      "clubKey": "entity-atlante",
+      "chapter": "history",
+      "title": "A club shaped by its first names",
+      "subtitle": "Atlante’s early identity grew from neighborhood football in Mexico City.",
+      "story": [
+        {
+          "title": "A corner in 1916",
+          "body": "Chivas’ historical account places the beginning on 18 April 1916, near the corner of Sinaloa and Valladolid streets, where brothers Trinidad and Refugio Martínez led a group of young players."
+        },
+        {
+          "title": "Names before Atlante",
+          "body": "The side first called itself Sinaloa, then Lusitania and U-53. Refugio Martínez proposed Atlante as the team’s enduring name."
+        }
+      ],
+      "facts": [
+        {
+          "key": "s6-atlante-founded",
+          "label": "Atlante founding date",
+          "prompt": "On what date does Atlante’s history account place the club’s beginning?",
+          "answers": [
+            "18 April 1916"
+          ],
+          "distractors": [
+            "18 April 1915",
+            "18 May 1916",
+            "18 April 1917"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "18 April 1916",
+            "text": "18 April 1916"
+          },
+          "scope": "The Chivas historical article’s stated date for the club’s origin.",
+          "sourceKey": "chivas-atlante-history",
+          "evidence": "The article says the history began on 18 April 1916 near Sinaloa and Valladolid."
+        },
+        {
+          "key": "s6-atlante-first-name",
+          "label": "Atlante first name",
+          "prompt": "What name did the group use first before later becoming Atlante?",
+          "answers": [
+            "Sinaloa"
+          ],
+          "distractors": [
+            "Lusitania",
+            "U-53",
+            "Potros de Hierro"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Sinaloa",
+            "text": "Sinaloa"
+          },
+          "scope": "The first club name in the opponent-club historical account.",
+          "sourceKey": "chivas-atlante-history",
+          "evidence": "The account traces the sequence from Sinaloa to Lusitania and U-53 before Atlante."
+        },
+        {
+          "key": "s6-atlante-name-proposer",
+          "label": "Atlante name proposer",
+          "prompt": "Who proposed the name Atlante after the earlier names were dropped?",
+          "answers": [
+            "Refugio “El Vaquero” Martínez"
+          ],
+          "distractors": [
+            "Trinidad Martínez",
+            "Horacio Casarín",
+            "William H. Fraser"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Refugio “El Vaquero” Martínez",
+            "text": "Refugio “El Vaquero” Martínez"
+          },
+          "scope": "Name change in the origin story.",
+          "sourceKey": "chivas-atlante-history",
+          "evidence": "The source attributes the proposal to Refugio Martínez, nicknamed “El Vaquero”."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-ligamx-sixth-atlante-1947",
+      "subjectKey": "entity-atlante",
+      "clubKey": "entity-atlante",
+      "chapter": "moments",
+      "title": "The first league crown",
+      "subtitle": "Atlante’s 1946–47 title preceded its later Cancún-era championships.",
+      "story": [
+        {
+          "title": "A champion eleven",
+          "body": "Atlante’s first Liga title came in the 1946–47 season. The historical account names Horacio Casarín among the players in that champion side."
+        },
+        {
+          "title": "Before the modern era",
+          "body": "This title came decades before Atlante’s 1992–93 and Apertura 2007 league crowns."
+        }
+      ],
+      "facts": [
+        {
+          "key": "s6-atlante-1947-season",
+          "label": "Atlante first league crown",
+          "prompt": "Which season does the historical account name for Atlante’s first Liga championship?",
+          "answers": [
+            "1946–47"
+          ],
+          "distractors": [
+            "1945–46",
+            "1947–48",
+            "1950–51"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "1946–47",
+            "text": "1946–47"
+          },
+          "scope": "Atlante’s first league championship season.",
+          "sourceKey": "chivas-atlante-history",
+          "evidence": "The article identifies 1946–47 as the club’s first league title."
+        },
+        {
+          "key": "s6-atlante-1947-player",
+          "label": "Named player in 1946–47 side",
+          "prompt": "Which forward appears in the source’s named 1946–47 champion lineup?",
+          "answers": [
+            "Horacio Casarín"
+          ],
+          "distractors": [
+            "Cabinho",
+            "Federico Vilar",
+            "Giancarlo Maldonado"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Horacio Casarín",
+            "text": "Horacio Casarín"
+          },
+          "scope": "Named player in the historical champion lineup.",
+          "sourceKey": "chivas-atlante-history",
+          "evidence": "Horacio Casarín is included in the eleven-name champion lineup."
+        },
+        {
+          "key": "s6-atlante-league-titles",
+          "label": "Other Atlante league title",
+          "prompt": "Which of these later seasons is listed as an Atlante league title by the source?",
+          "answers": [
+            "1992–93"
+          ],
+          "distractors": [
+            "1991–92",
+            "1993–94",
+            "1994–95"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "1992–93",
+            "text": "1992–93"
+          },
+          "scope": "A later league title, distinct from 1946–47.",
+          "sourceKey": "chivas-atlante-history",
+          "evidence": "The title list names 1992–93 and Apertura 2007 after 1946–47."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-ligamx-sixth-atlante-2007",
+      "subjectKey": "entity-atlante",
+      "clubKey": "entity-atlante",
+      "chapter": "moments",
+      "title": "A title in the first Cancún season",
+      "subtitle": "A change of home was followed by a championship run in Apertura 2007.",
+      "story": [
+        {
+          "title": "New home, same club",
+          "body": "Atlante announced its move to Quintana Roo in May 2007. Its first tournament in Cancún ended with a home final against Pumas."
+        },
+        {
+          "title": "The decisive return",
+          "body": "After a scoreless first leg, Atlante won the return 2–1 and earned its third league championship."
+        }
+      ],
+      "facts": [
+        {
+          "key": "s6-atlante-move-date",
+          "label": "Move announcement date",
+          "prompt": "In which month and year did Atlante announce it would play in Quintana Roo?",
+          "answers": [
+            "May 2007"
+          ],
+          "distractors": [
+            "March 2007",
+            "August 2007",
+            "May 2008"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "May 2007",
+            "text": "May 2007"
+          },
+          "scope": "Announcement date for the move, as reported in the historical account.",
+          "sourceKey": "chivas-atlante-history",
+          "evidence": "The article dates the announcement to 14 May 2007."
+        },
+        {
+          "key": "s6-atlante-pumas-away",
+          "label": "Apertura 2007 return score",
+          "prompt": "What was the score in Atlante’s Apertura 2007 final return against Pumas?",
+          "answers": [
+            "2–1"
+          ],
+          "distractors": [
+            "1–0",
+            "2–0",
+            "3–1"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "2–1",
+            "text": "2–1"
+          },
+          "scope": "Return-leg score only; this is not the aggregate. Atlante is listed first.",
+          "sourceKey": "pumas-atlante-history",
+          "evidence": "Pumas’ official history says Atlante won the return 2–1 at Estadio Andrés Quintana Roo.",
+          "scoreInput": {
+            "leftClubKey": "entity-atlante",
+            "rightClubKey": "entity-pumas",
+            "leftGoals": 2,
+            "rightGoals": 1
+          }
+        },
+        {
+          "key": "s6-atlante-2007-title-count",
+          "label": "Atlante title count",
+          "prompt": "How did the 2007 championship rank among Atlante’s Liga titles in the historical account?",
+          "answers": [
+            "Third"
+          ],
+          "distractors": [
+            "First",
+            "Second",
+            "Fourth"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Third",
+            "text": "Third"
+          },
+          "scope": "The 2007 crown’s position in the club’s league-title sequence.",
+          "sourceKey": "chivas-atlante-history",
+          "evidence": "The source calls the Apertura 2007 crown Atlante’s third league championship."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-ligamx-sixth-vilar-career",
+      "subjectKey": "entity-federico-vilar-sixth",
+      "clubKey": "entity-atlante",
+      "chapter": "career",
+      "title": "A long top-flight career",
+      "subtitle": "Federico Vilar’s Atlante years formed one chapter of a Mexican career spanning several clubs.",
+      "story": [
+        {
+          "title": "Seven seasons in Cancún",
+          "body": "Concacaf records Vilar at Atlante from 2003 to 2010, after which he played for Morelia and Atlas before ending his career with Tijuana."
+        },
+        {
+          "title": "The final count",
+          "body": "At retirement in 2017, the goalkeeper had made 519 appearances in Mexico’s top division."
+        }
+      ],
+      "facts": [
+        {
+          "key": "s6-vilar-atlante-years",
+          "label": "Vilar’s Atlante span",
+          "prompt": "Between which years does Concacaf place Federico Vilar’s Atlante spell?",
+          "answers": [
+            "2003–2010"
+          ],
+          "distractors": [
+            "2001–2008",
+            "2004–2011",
+            "2005–2012"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "2003–2010",
+            "text": "2003–2010"
+          },
+          "scope": "Atlante tenure as listed in Concacaf’s retirement profile.",
+          "sourceKey": "concacaf-vilar",
+          "evidence": "The article gives his Atlante period as 2003–10."
+        },
+        {
+          "key": "s6-vilar-retirement-club",
+          "label": "Vilar final Mexican club",
+          "prompt": "Which Mexican club did Vilar represent when he announced his retirement?",
+          "answers": [
+            "Tijuana"
+          ],
+          "distractors": [
+            "Atlante",
+            "Morelia",
+            "Atlas"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Tijuana",
+            "text": "Tijuana"
+          },
+          "scope": "Club named in the retirement report.",
+          "sourceKey": "concacaf-vilar",
+          "evidence": "The article describes Vilar as a Club Tijuana goalkeeper when he announced retirement."
+        },
+        {
+          "key": "s6-vilar-career-appearances",
+          "label": "Vilar top-flight appearances",
+          "prompt": "How many Mexican top-flight games had Vilar played by his 2017 retirement announcement?",
+          "answers": [
+            "519"
+          ],
+          "distractors": [
+            "419",
+            "509",
+            "591"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "519",
+            "text": "519"
+          },
+          "scope": "Career total reported at retirement, not an Atlante-only total.",
+          "sourceKey": "concacaf-vilar",
+          "evidence": "The article states he retired after 519 games in the Mexican top flight."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-ligamx-sixth-vilar-moments",
+      "subjectKey": "entity-federico-vilar-sixth",
+      "clubKey": "entity-atlante",
+      "chapter": "moments",
+      "title": "A keeper on the world stage",
+      "subtitle": "Vilar’s Atlante career included continental silverware and three Club World Cup matches.",
+      "story": [
+        {
+          "title": "Cancún and the continental final",
+          "body": "Vilar helped Atlante win the inaugural Concacaf Champions League in 2008–09 after the club had won Liga MX in Apertura 2007."
+        },
+        {
+          "title": "Three matches in Abu Dhabi",
+          "body": "At the 2009 FIFA Club World Cup, Atlante shut out Auckland City 3–0 before losing 3–1 to Barcelona after leading for 30 minutes."
+        }
+      ],
+      "facts": [
+        {
+          "key": "s6-vilar-first-concacaf",
+          "label": "Vilar’s Concacaf title season",
+          "prompt": "In which season did Atlante win the inaugural Concacaf Champions League with Vilar?",
+          "answers": [
+            "2008–09"
+          ],
+          "distractors": [
+            "2007–08",
+            "2009–10",
+            "2010–11"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "2008–09",
+            "text": "2008–09"
+          },
+          "scope": "The inaugural edition title season.",
+          "sourceKey": "concacaf-vilar",
+          "evidence": "Concacaf says Atlante won the inaugural competition in 2008/09 and Vilar played a key role."
+        },
+        {
+          "key": "s6-vilar-auckland",
+          "label": "Auckland City quarterfinal result",
+          "prompt": "What was Atlante’s score against Auckland City in the 2009 Club World Cup quarterfinal?",
+          "answers": [
+            "3–0"
+          ],
+          "distractors": [
+            "2–0",
+            "3–1",
+            "4–0"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "3–0",
+            "text": "3–0"
+          },
+          "scope": "Single quarterfinal match result.",
+          "sourceKey": "concacaf-vilar",
+          "evidence": "The article says Vilar helped Atlante shut out Auckland City, 3–0."
+        },
+        {
+          "key": "s6-vilar-barcelona",
+          "label": "Barcelona semifinal score",
+          "prompt": "What was Atlante’s score against Barcelona in the 2009 Club World Cup semifinal?",
+          "answers": [
+            "1–3"
+          ],
+          "distractors": [
+            "0–2",
+            "2–3",
+            "1–4"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "1–3",
+            "text": "1–3"
+          },
+          "scope": "Single semifinal result; Atlante’s goals are listed first.",
+          "sourceKey": "concacaf-vilar",
+          "evidence": "Concacaf reports a 3–1 Barcelona win and notes Atlante led for 30 minutes.",
+          "scoreInput": {
+            "leftClubKey": "entity-atlante",
+            "rightClubKey": "entity-barcelona",
+            "leftGoals": 1,
+            "rightGoals": 3
+          }
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-ligamx-sixth-vilar-records",
+      "subjectKey": "entity-federico-vilar-sixth",
+      "clubKey": "entity-atlante",
+      "chapter": "records",
+      "title": "A goalkeeper’s dated records",
+      "subtitle": "Vilar’s individual totals span his Atlante and later Tijuana periods.",
+      "story": [
+        {
+          "title": "A Tijuana season",
+          "body": "In Apertura 2016, Vilar kept eight clean sheets during Tijuana’s 17-match regular season."
+        },
+        {
+          "title": "Measured across the career",
+          "body": "His 519 top-flight appearances are a career total, not an Atlante statistic."
+        }
+      ],
+      "facts": [
+        {
+          "key": "s6-vilar-clean-sheets",
+          "label": "Vilar clean sheets",
+          "prompt": "How many clean sheets did Vilar record for Tijuana in the Apertura 2016 regular season?",
+          "answers": [
+            "Eight"
+          ],
+          "distractors": [
+            "Six",
+            "Seven",
+            "Nine"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Eight",
+            "text": "Eight"
+          },
+          "scope": "Tijuana regular-season clean sheets across 17 matches in Apertura 2016.",
+          "sourceKey": "concacaf-vilar",
+          "evidence": "Concacaf says Vilar kept eight clean sheets in the 17-game campaign."
+        },
+        {
+          "key": "s6-vilar-clean-sheet-match-count",
+          "label": "Tijuana campaign length",
+          "prompt": "How many matches made up Tijuana’s Apertura 2016 regular-season campaign described in the article?",
+          "answers": [
+            "17"
+          ],
+          "distractors": [
+            "15",
+            "16",
+            "18"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "17",
+            "text": "17"
+          },
+          "scope": "Regular-season match count in the same 2016 campaign.",
+          "sourceKey": "concacaf-vilar",
+          "evidence": "The source explicitly calls it a 17-game campaign."
+        },
+        {
+          "key": "s6-vilar-aldos",
+          "label": "Atlante title year",
+          "prompt": "Which Atlante league title did Concacaf list in Vilar’s honors?",
+          "answers": [
+            "Apertura 2007"
+          ],
+          "distractors": [
+            "Clausura 2006",
+            "Apertura 2008",
+            "Clausura 2009"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Apertura 2007",
+            "text": "Apertura 2007"
+          },
+          "scope": "Personal honor recorded for Vilar’s Atlante period.",
+          "sourceKey": "concacaf-vilar",
+          "evidence": "The article names the 2007 Apertura Liga MX crown among his Atlante honors."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-ligamx-sixth-vilar-legacy",
+      "subjectKey": "entity-federico-vilar-sixth",
+      "clubKey": "entity-atlante",
+      "chapter": "legacy",
+      "title": "A record remembered at retirement",
+      "subtitle": "Vilar’s legacy combines early Atlante success with a lengthy Mexican top-flight career.",
+      "story": [
+        {
+          "title": "A multi-club career",
+          "body": "Concacaf identifies four Mexican teams in Vilar’s career and dates his spells at Atlante, Morelia and Atlas."
+        },
+        {
+          "title": "A final chapter",
+          "body": "The 2017 retirement announcement followed a career that included the first Concacaf Champions League title won by Atlante."
+        }
+      ],
+      "facts": [
+        {
+          "key": "s6-vilar-mexican-clubs",
+          "label": "Mexican clubs in Vilar’s profile",
+          "prompt": "How many different Mexican clubs does Concacaf say Vilar represented?",
+          "answers": [
+            "Four"
+          ],
+          "distractors": [
+            "Three",
+            "Five",
+            "Six"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Four",
+            "text": "Four"
+          },
+          "scope": "Number of Mexican teams in the retirement profile.",
+          "sourceKey": "concacaf-vilar",
+          "evidence": "The article says he played for four different teams in Mexico."
+        },
+        {
+          "key": "s6-vilar-morelia-years",
+          "label": "Vilar’s Morelia years",
+          "prompt": "Which years does Concacaf give for Vilar at Morelia?",
+          "answers": [
+            "2010–2013"
+          ],
+          "distractors": [
+            "2008–2011",
+            "2011–2014",
+            "2012–2015"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "2010–2013",
+            "text": "2010–2013"
+          },
+          "scope": "Morelia tenure as listed in the career chronology.",
+          "sourceKey": "concacaf-vilar",
+          "evidence": "The source lists Morelia from 2010 to 2013."
+        },
+        {
+          "key": "s6-vilar-atlas-years",
+          "label": "Vilar’s Atlas years",
+          "prompt": "Which years does Concacaf give for Vilar at Atlas?",
+          "answers": [
+            "2014–2015"
+          ],
+          "distractors": [
+            "2012–2013",
+            "2013–2014",
+            "2015–2016"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "2014–2015",
+            "text": "2014–2015"
+          },
+          "scope": "Atlas tenure as listed in the career chronology.",
+          "sourceKey": "concacaf-vilar",
+          "evidence": "The article lists Atlas (2014–15)."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-ligamx-sixth-rafael-career",
+      "subjectKey": "entity-rafael-marquez-lugo-sixth",
+      "clubKey": "entity-atlante",
+      "chapter": "career",
+      "title": "Eight clubs in fourteen years",
+      "subtitle": "Rafael Márquez Lugo built a Mexican top-flight career across eight clubs.",
+      "story": [
+        {
+          "title": "Atlante in the middle",
+          "body": "The forward joined Atlante for 2009–10, after spells with several Liga MX sides and before his final run with Guadalajara."
+        },
+        {
+          "title": "A career in Mexico",
+          "body": "Concacaf described his full 14-year career as being spent in Mexico."
+        }
+      ],
+      "facts": [
+        {
+          "key": "s6-rafael-career-length",
+          "label": "Márquez Lugo career length",
+          "prompt": "How long did Concacaf describe Rafael Márquez Lugo’s professional career as lasting?",
+          "answers": [
+            "14 years"
+          ],
+          "distractors": [
+            "12 years",
+            "13 years",
+            "15 years"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "14 years",
+            "text": "14 years"
+          },
+          "scope": "Length as described in the 2015 retirement report.",
+          "sourceKey": "concacaf-rafael",
+          "evidence": "The article says he spent a 14-year career entirely in Mexico."
+        },
+        {
+          "key": "s6-rafael-atlante-years",
+          "label": "Márquez Lugo at Atlante",
+          "prompt": "Which seasons does the career profile list for Márquez Lugo at Atlante?",
+          "answers": [
+            "2009–2010"
+          ],
+          "distractors": [
+            "2007–2008",
+            "2008–2009",
+            "2010–2011"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "2009–2010",
+            "text": "2009–2010"
+          },
+          "scope": "Atlante spell in the eight-club chronology.",
+          "sourceKey": "concacaf-rafael",
+          "evidence": "The source lists Atlante (2009–10)."
+        },
+        {
+          "key": "s6-rafael-final-club",
+          "label": "Márquez Lugo final club",
+          "prompt": "Which club did Márquez Lugo represent in the last three years of his career?",
+          "answers": [
+            "Guadalajara"
+          ],
+          "distractors": [
+            "Atlante",
+            "Pumas",
+            "Morelia"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Guadalajara",
+            "text": "Guadalajara"
+          },
+          "scope": "Final three seasons as stated in the retirement account.",
+          "sourceKey": "concacaf-rafael",
+          "evidence": "The article says the last three years were with Guadalajara."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-ligamx-sixth-rafael-moments",
+      "subjectKey": "entity-rafael-marquez-lugo-sixth",
+      "clubKey": "entity-atlante",
+      "chapter": "moments",
+      "title": "Two continental nights",
+      "subtitle": "Márquez Lugo scored in Atlante’s 2009 Concacaf semifinal and the FIFA Club World Cup.",
+      "story": [
+        {
+          "title": "A brace against Santos",
+          "body": "In the second leg on 8 April 2009, Márquez Lugo scored in the 42nd and 90th minutes as Atlante beat Santos 3–1 and advanced 4–3 on aggregate."
+        },
+        {
+          "title": "A goal in Abu Dhabi",
+          "body": "Concacaf records one goal from him in three Atlante matches at the 2009 FIFA Club World Cup."
+        }
+      ],
+      "facts": [
+        {
+          "key": "s6-rafael-semi-first-goal",
+          "label": "First Santos semifinal goal minute",
+          "prompt": "In what minute did Márquez Lugo score his first goal against Santos in the 8 April 2009 semifinal return?",
+          "answers": [
+            "42nd"
+          ],
+          "distractors": [
+            "32nd",
+            "52nd",
+            "62nd"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "42nd",
+            "text": "42nd"
+          },
+          "scope": "Individual goal minute in the second-leg match.",
+          "sourceKey": "concacaf-semis",
+          "evidence": "The official archive lists Márquez Lugo goals at 42 and 90 minutes."
+        },
+        {
+          "key": "s6-rafael-semi-second-goal",
+          "label": "Second Santos semifinal goal minute",
+          "prompt": "In what minute did Márquez Lugo score his second goal in that Santos return leg?",
+          "answers": [
+            "90th"
+          ],
+          "distractors": [
+            "80th",
+            "88th",
+            "90+2nd"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "90th",
+            "text": "90th"
+          },
+          "scope": "Individual goal minute; not the aggregate.",
+          "sourceKey": "concacaf-semis",
+          "evidence": "The archive records his brace at 42 and 90 minutes."
+        },
+        {
+          "key": "s6-rafael-club-world-cup",
+          "label": "Márquez Lugo Club World Cup goals",
+          "prompt": "How many goals did Márquez Lugo score in Atlante’s 2009 FIFA Club World Cup matches?",
+          "answers": [
+            "One"
+          ],
+          "distractors": [
+            "Zero",
+            "Two",
+            "Three"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "One",
+            "text": "One"
+          },
+          "scope": "His individual Club World Cup total across three appearances.",
+          "sourceKey": "concacaf-rafael",
+          "evidence": "Concacaf reports one goal in three Club World Cup games with Atlante."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-ligamx-sixth-rafael-records",
+      "subjectKey": "entity-rafael-marquez-lugo-sixth",
+      "clubKey": "entity-atlante",
+      "chapter": "records",
+      "title": "A compact international record",
+      "subtitle": "Márquez Lugo’s Mexico record and 2004 Olympic appearance are separately documented.",
+      "story": [
+        {
+          "title": "Senior Mexico appearances",
+          "body": "The retirement report credits the forward with 16 Mexico matches and one international goal."
+        },
+        {
+          "title": "Olympic participation",
+          "body": "He also appeared at the 2004 Olympic Football Tournament."
+        }
+      ],
+      "facts": [
+        {
+          "key": "s6-rafael-mexico-caps",
+          "label": "Márquez Lugo Mexico appearances",
+          "prompt": "How many matches did Márquez Lugo play for Mexico’s senior team, according to Concacaf?",
+          "answers": [
+            "16"
+          ],
+          "distractors": [
+            "14",
+            "15",
+            "18"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "16",
+            "text": "16"
+          },
+          "scope": "Senior international appearance count in the retirement profile.",
+          "sourceKey": "concacaf-rafael",
+          "evidence": "The source states one goal in 16 matches for Mexico."
+        },
+        {
+          "key": "s6-rafael-mexico-goals",
+          "label": "Márquez Lugo Mexico goals",
+          "prompt": "How many goals did Márquez Lugo score in those Mexico senior appearances?",
+          "answers": [
+            "One"
+          ],
+          "distractors": [
+            "Zero",
+            "Two",
+            "Three"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "One",
+            "text": "One"
+          },
+          "scope": "Senior international goal count.",
+          "sourceKey": "concacaf-rafael",
+          "evidence": "The article records one goal in his 16 Mexico matches."
+        },
+        {
+          "key": "s6-rafael-olympics",
+          "label": "Olympic tournament appearance",
+          "prompt": "In which Olympic football tournament did Márquez Lugo appear?",
+          "answers": [
+            "2004 Athens Olympics"
+          ],
+          "distractors": [
+            "2000 Sydney Olympics",
+            "2008 Beijing Olympics",
+            "2012 London Olympics"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "2004 Athens Olympics",
+            "text": "2004 Athens Olympics"
+          },
+          "scope": "Tournament appearance listed in the official retirement report.",
+          "sourceKey": "concacaf-rafael",
+          "evidence": "Concacaf says he appeared in the 2004 Olympic Football Tournament."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-ligamx-sixth-rafael-legacy",
+      "subjectKey": "entity-rafael-marquez-lugo-sixth",
+      "clubKey": "entity-atlante",
+      "chapter": "legacy",
+      "title": "A career across Mexico’s national-team calendar",
+      "subtitle": "His international résumé included continental and global tournaments before injury ended his playing career.",
+      "story": [
+        {
+          "title": "Tournament appearances",
+          "body": "Concacaf lists two Gold Cups, one Copa América and one Confederations Cup in Márquez Lugo’s Mexico career."
+        },
+        {
+          "title": "Leaving the game",
+          "body": "He announced retirement in April 2015 at age 33 after persistent left-knee trouble and several surgeries."
+        }
+      ],
+      "facts": [
+        {
+          "key": "s6-rafael-gold-cups",
+          "label": "Gold Cup editions",
+          "prompt": "Which Gold Cup editions did Márquez Lugo play in?",
+          "answers": [
+            "2005 and 2013"
+          ],
+          "distractors": [
+            "2003 and 2009",
+            "2007 and 2011",
+            "2011 and 2015"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "2005 and 2013",
+            "text": "2005 and 2013"
+          },
+          "scope": "The two Gold Cup editions named in the retirement article.",
+          "sourceKey": "concacaf-rafael",
+          "evidence": "The report lists Gold Cups in 2005 and 2013."
+        },
+        {
+          "key": "s6-rafael-copa-america",
+          "label": "Copa América edition",
+          "prompt": "Which Copa América edition does the source list for Márquez Lugo?",
+          "answers": [
+            "2011"
+          ],
+          "distractors": [
+            "2007",
+            "2015",
+            "2016"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "2011",
+            "text": "2011"
+          },
+          "scope": "Tournament year in the official career account.",
+          "sourceKey": "concacaf-rafael",
+          "evidence": "Concacaf lists one Copa América, in 2011."
+        },
+        {
+          "key": "s6-rafael-retirement",
+          "label": "Márquez Lugo retirement age",
+          "prompt": "How old was Márquez Lugo when he announced his retirement in 2015?",
+          "answers": [
+            "33"
+          ],
+          "distractors": [
+            "31",
+            "32",
+            "34"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "33",
+            "text": "33"
+          },
+          "scope": "Age at the date of retirement announcement.",
+          "sourceKey": "concacaf-rafael",
+          "evidence": "The retirement article identifies him as 33 and cites the left-knee injury."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-ligamx-sixth-adsl-history",
+      "subjectKey": "entity-atletico-san-luis",
+      "clubKey": "entity-atletico-san-luis",
+      "chapter": "history",
+      "title": "A new San Luis club begins",
+      "subtitle": "The present Atlético de San Luis franchise dates its origin to 2017.",
+      "story": [
+        {
+          "title": "A franchise agreement",
+          "body": "Atlético de Madrid formalized the Mexican expansion agreement on 15 April 2017; Atlético de San Luis began operations nine days later."
+        },
+        {
+          "title": "First match",
+          "body": "The club’s first Ascenso MX appearance came on 22 July 2017 in Oaxaca, with its official history naming the starting eleven."
+        }
+      ],
+      "facts": [
+        {
+          "key": "s6-adsl-agreement",
+          "label": "Franchise agreement date",
+          "prompt": "On what date did Atlético de Madrid’s council formalize the Mexican franchise expansion agreement?",
+          "answers": [
+            "15 April 2017"
+          ],
+          "distractors": [
+            "15 March 2017",
+            "24 April 2017",
+            "15 May 2017"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "15 April 2017",
+            "text": "15 April 2017"
+          },
+          "scope": "Date of the expansion agreement, not the later operational anniversary.",
+          "sourceKey": "adsl-history",
+          "evidence": "The official history gives 15 April 2017 for the agreement."
+        },
+        {
+          "key": "s6-adsl-operations",
+          "label": "Operations start date",
+          "prompt": "On what date did Atlético de San Luis begin operations and mark its anniversary?",
+          "answers": [
+            "24 April 2017"
+          ],
+          "distractors": [
+            "15 April 2017",
+            "22 July 2017",
+            "24 May 2017"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "24 April 2017",
+            "text": "24 April 2017"
+          },
+          "scope": "Operational start, distinct from the agreement date and debut.",
+          "sourceKey": "adsl-history",
+          "evidence": "The club says operations began 24 April and celebrates that anniversary."
+        },
+        {
+          "key": "s6-adsl-debut",
+          "label": "First Ascenso appearance",
+          "prompt": "On what date did Atlético de San Luis make its first appearance in the Ascenso division?",
+          "answers": [
+            "22 July 2017"
+          ],
+          "distractors": [
+            "22 June 2017",
+            "15 April 2017",
+            "24 July 2017"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "22 July 2017",
+            "text": "22 July 2017"
+          },
+          "scope": "First match date in the silver division.",
+          "sourceKey": "adsl-history",
+          "evidence": "The official history dates its debut to 22 July 2017 at the Instituto Tecnológico de Oaxaca."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-ligamx-sixth-adsl-2018",
+      "subjectKey": "entity-atletico-san-luis",
+      "clubKey": "entity-atletico-san-luis",
+      "chapter": "moments",
+      "title": "A comeback for the first crown",
+      "subtitle": "Atlético de San Luis reversed a first-leg deficit to win the Apertura 2018 final.",
+      "story": [
+        {
+          "title": "A final against Dorados",
+          "body": "After eliminating Cimarrones and Atlante, San Luis met Dorados in the final. It lost the first leg by one goal in Culiacán."
+        },
+        {
+          "title": "Four goals at home",
+          "body": "On 2 December, goals by Nicolás Ibáñez, Ian González and Leandro Torres powered a 4–2 win and a 4–3 aggregate title."
+        }
+      ],
+      "facts": [
+        {
+          "key": "s6-adsl-2018-final-date",
+          "label": "Apertura 2018 final return date",
+          "prompt": "On what date did Atlético de San Luis host the Apertura 2018 final return?",
+          "answers": [
+            "2 December 2018"
+          ],
+          "distractors": [
+            "30 November 2018",
+            "1 December 2018",
+            "3 December 2018"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "2 December 2018",
+            "text": "2 December 2018"
+          },
+          "scope": "Second-leg date, not aggregate date.",
+          "sourceKey": "adsl-history",
+          "evidence": "The club history dates the home return to 2 December 2018."
+        },
+        {
+          "key": "s6-adsl-final-opponent",
+          "label": "Atlético 2018 final opponent",
+          "prompt": "Which club did Atlético de San Luis defeat to win the Apertura 2018 final?",
+          "answers": [
+            "Dorados de Sinaloa"
+          ],
+          "distractors": [
+            "Cimarrones de Sonora",
+            "Atlante",
+            "Mineros de Zacatecas"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Dorados de Sinaloa",
+            "text": "Dorados de Sinaloa"
+          },
+          "scope": "Two-leg Apertura 2018 final; opponent name only, not a match or aggregate score.",
+          "sourceKey": "adsl-history",
+          "evidence": "The official history identifies Dorados as Atlético de San Luis’s opponent in the final."
+        },
+        {
+          "key": "s6-adsl-2018-scorers",
+          "label": "2018 final scorers",
+          "prompt": "Which trio scored Atlético de San Luis’s goals in the 2018 final return?",
+          "answers": [
+            "Nicolás Ibáñez, Ian González and Leandro Torres"
+          ],
+          "distractors": [
+            "Nicolás Ibáñez, Unai Bilbao and Ian González",
+            "Ian González, Juan Castro and Leandro Torres",
+            "Nicolás Ibáñez, Juan Castro and Unai Bilbao"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Nicolás Ibáñez, Ian González and Leandro Torres",
+            "text": "Nicolás Ibáñez, Ian González and Leandro Torres"
+          },
+          "scope": "Named San Luis scorers in the home leg.",
+          "sourceKey": "adsl-history",
+          "evidence": "The article names Ibáñez, Ian González and Leandro “Chino” Torres as the scorers."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-ligamx-sixth-adsl-2019",
+      "subjectKey": "entity-atletico-san-luis",
+      "clubKey": "entity-atletico-san-luis",
+      "chapter": "moments",
+      "title": "Promotion decided in extra time",
+      "subtitle": "A second consecutive title brought Atlético de San Luis to the top division in 2019.",
+      "story": [
+        {
+          "title": "Another final with Dorados",
+          "body": "The Clausura 2019 final followed a 1–1 first leg. The return remained goalless through regulation."
+        },
+        {
+          "title": "A 104th-minute goal",
+          "body": "Unai Bilbao scored in extra time on 5 May 2019; San Luis won the match 1–0 and secured direct promotion."
+        }
+      ],
+      "facts": [
+        {
+          "key": "s6-adsl-2019-date",
+          "label": "Promotion final date",
+          "prompt": "On what date did Atlético de San Luis play the Clausura 2019 final return?",
+          "answers": [
+            "5 May 2019"
+          ],
+          "distractors": [
+            "4 May 2019",
+            "6 May 2019",
+            "5 April 2019"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "5 May 2019",
+            "text": "5 May 2019"
+          },
+          "scope": "Second-leg date.",
+          "sourceKey": "adsl-2019-final",
+          "evidence": "The official retrospective dates the final return to 5 May 2019."
+        },
+        {
+          "key": "s6-adsl-2019-goal-minute",
+          "label": "Unai Bilbao goal minute",
+          "prompt": "In what minute did Unai Bilbao score the promotion-winning goal?",
+          "answers": [
+            "104th"
+          ],
+          "distractors": [
+            "94th",
+            "100th",
+            "110th"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "104th",
+            "text": "104th"
+          },
+          "scope": "Extra-time goal minute, not a regulation-time score.",
+          "sourceKey": "adsl-2019-final",
+          "evidence": "The club’s 2025 retrospective gives the goal at minute 104."
+        },
+        {
+          "key": "s6-adsl-2019-outcome",
+          "label": "2019 final outcome",
+          "prompt": "What did Atlético de San Luis earn by winning the Clausura 2019 final?",
+          "answers": [
+            "Direct promotion to the first division"
+          ],
+          "distractors": [
+            "A place in a promotion playoff",
+            "A place in the Copa MX final",
+            "A third-leg replay"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Direct promotion to the first division",
+            "text": "Direct promotion to the first division"
+          },
+          "scope": "Competition consequence of the title.",
+          "sourceKey": "adsl-history",
+          "evidence": "The official history says the win secured a direct ticket to the first division after an unbeaten tournament."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-ligamx-sixth-unai-career",
+      "subjectKey": "entity-unai-bilbao-sixth",
+      "clubKey": "entity-atletico-san-luis",
+      "chapter": "career",
+      "title": "From Bilbao Athletic to San Luis",
+      "subtitle": "Unai Bilbao’s career included Spanish development football, Necaxa and Atlético de San Luis.",
+      "story": [
+        {
+          "title": "Professional debut in Spain",
+          "body": "The club’s media guide dates Bilbao’s professional debut with Bilbao Athletic to 24 August 2015."
+        },
+        {
+          "title": "A path through three cities",
+          "body": "His listed senior pathway ran through Bilbao Athletic, Necaxa and Atlético de San Luis; he joined San Luis in 2018."
+        }
+      ],
+      "facts": [
+        {
+          "key": "s6-unai-pro-debut",
+          "label": "Unai professional debut",
+          "prompt": "For which side did Unai Bilbao make his professional debut?",
+          "answers": [
+            "Bilbao Athletic"
+          ],
+          "distractors": [
+            "Necaxa",
+            "Barakaldo CF",
+            "Atlético de San Luis"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Bilbao Athletic",
+            "text": "Bilbao Athletic"
+          },
+          "scope": "Professional debut club in the official media guide.",
+          "sourceKey": "adsl-media-guide-unai",
+          "evidence": "The media guide says Bilbao Athletic on 24 August 2015."
+        },
+        {
+          "key": "s6-unai-debut-date",
+          "label": "Unai professional debut date",
+          "prompt": "On what date did Bilbao make that professional debut?",
+          "answers": [
+            "24 August 2015"
+          ],
+          "distractors": [
+            "24 August 2014",
+            "24 September 2015",
+            "24 August 2016"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "24 August 2015",
+            "text": "24 August 2015"
+          },
+          "scope": "Professional debut date.",
+          "sourceKey": "adsl-media-guide-unai",
+          "evidence": "The media guide lists 24 August 2015."
+        },
+        {
+          "key": "s6-unai-join-adsl",
+          "label": "Unai arrival at San Luis",
+          "prompt": "In which year did Bilbao join Atlético de San Luis?",
+          "answers": [
+            "2018"
+          ],
+          "distractors": [
+            "2016",
+            "2017",
+            "2019"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "2018",
+            "text": "2018"
+          },
+          "scope": "San Luis arrival year as given by the club.",
+          "sourceKey": "adsl-unai-100",
+          "evidence": "The milestone article says he arrived for the 2018 Apertura Ascenso MX tournament."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-ligamx-sixth-unai-moments",
+      "subjectKey": "entity-unai-bilbao-sixth",
+      "clubKey": "entity-atletico-san-luis",
+      "chapter": "moments",
+      "title": "The goal that carried San Luis up",
+      "subtitle": "Bilbao’s defining San Luis moment came in the 2019 promotion final.",
+      "story": [
+        {
+          "title": "A close return leg",
+          "body": "After a 1–1 first leg, the 5 May return against Dorados required extra time."
+        },
+        {
+          "title": "The decisive finish",
+          "body": "Following a corner and a goalkeeper rebound, Bilbao scored in the 104th minute to take San Luis back to the first division."
+        }
+      ],
+      "facts": [
+        {
+          "key": "s6-unai-promotion-rival",
+          "label": "Unai promotion-final opponent",
+          "prompt": "Which club faced San Luis in the 5 May 2019 promotion final?",
+          "answers": [
+            "Dorados de Sinaloa"
+          ],
+          "distractors": [
+            "Cimarrones de Sonora",
+            "Atlante",
+            "Necaxa"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Dorados de Sinaloa",
+            "text": "Dorados de Sinaloa"
+          },
+          "scope": "Opponent in the final where Bilbao scored.",
+          "sourceKey": "adsl-2019-final",
+          "evidence": "The article identifies Dorados as San Luis’s opponent in the second consecutive final."
+        },
+        {
+          "key": "s6-unai-goal-build-up",
+          "label": "Unai goal sequence",
+          "prompt": "What immediate event preceded Bilbao’s promotion-winning finish?",
+          "answers": [
+            "A corner and a goalkeeper rebound"
+          ],
+          "distractors": [
+            "A penalty and a rebound",
+            "A free kick and a deflection",
+            "A throw-in and a clearance"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "A corner and a goalkeeper rebound",
+            "text": "A corner and a goalkeeper rebound"
+          },
+          "scope": "Sequence described in the club’s 2025 retrospective.",
+          "sourceKey": "adsl-2019-final",
+          "evidence": "The report says a corner led to a save/rebound that Bilbao struck first time."
+        },
+        {
+          "key": "s6-unai-promotion-season",
+          "label": "Unai promotion season",
+          "prompt": "Which season did Bilbao’s goal help San Luis win to secure promotion?",
+          "answers": [
+            "Clausura 2019"
+          ],
+          "distractors": [
+            "Apertura 2018",
+            "Apertura 2019",
+            "Clausura 2020"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Clausura 2019",
+            "text": "Clausura 2019"
+          },
+          "scope": "The second leg and promotion title season.",
+          "sourceKey": "adsl-unai-exit",
+          "evidence": "The June 2024 release identifies the goal as the one that won the 2019 Ascenso final after the 2018–19 bicampeonato."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-ligamx-sixth-unai-records",
+      "subjectKey": "entity-unai-bilbao-sixth",
+      "clubKey": "entity-atletico-san-luis",
+      "chapter": "records",
+      "title": "A rising appearance total",
+      "subtitle": "San Luis marked Bilbao’s club milestones as his appearance total grew.",
+      "story": [
+        {
+          "title": "The hundredth match",
+          "body": "Bilbao reached 100 Atlético appearances in February 2023, while the club credited him with six goals across his San Luis stay at that point."
+        },
+        {
+          "title": "The June 2024 snapshot",
+          "body": "At his transfer to Tijuana, the club reported 146 official matches and ranked him second in its appearance history."
+        }
+      ],
+      "facts": [
+        {
+          "key": "s6-unai-100-date",
+          "label": "Bilbao hundred-match date",
+          "prompt": "On what date did the club report Bilbao’s 100th appearance for San Luis?",
+          "answers": [
+            "14 February 2023"
+          ],
+          "distractors": [
+            "14 February 2022",
+            "14 March 2023",
+            "14 February 2024"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "14 February 2023",
+            "text": "14 February 2023"
+          },
+          "scope": "Milestone date in the official report.",
+          "sourceKey": "adsl-unai-100",
+          "evidence": "The article is dated 14 February 2023 and says the milestone occurred that night."
+        },
+        {
+          "key": "s6-unai-goals",
+          "label": "Bilbao San Luis goals",
+          "prompt": "How many goals did San Luis credit Bilbao with during his club stay in its 2023 milestone report?",
+          "answers": [
+            "Six"
+          ],
+          "distractors": [
+            "Four",
+            "Five",
+            "Seven"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Six",
+            "text": "Six"
+          },
+          "scope": "Club total as of the February 2023 milestone article, not a live total.",
+          "sourceKey": "adsl-unai-100",
+          "evidence": "The article states that Bilbao had scored six goals during his stay."
+        },
+        {
+          "key": "s6-unai-146",
+          "label": "Bilbao official matches at exit",
+          "prompt": "How many official appearances did Bilbao have for San Luis when he transferred in June 2024?",
+          "answers": [
+            "146"
+          ],
+          "distractors": [
+            "136",
+            "144",
+            "156"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "146",
+            "text": "146"
+          },
+          "scope": "Official club appearances through 18 June 2024.",
+          "sourceKey": "adsl-unai-exit",
+          "evidence": "The club release reports 146 official appearances at his departure."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-ligamx-sixth-unai-legacy",
+      "subjectKey": "entity-unai-bilbao-sixth",
+      "clubKey": "entity-atletico-san-luis",
+      "chapter": "legacy",
+      "title": "A last link to the promotion side",
+      "subtitle": "Bilbao’s final 2024 appearance snapshot preserves his role in the club’s rise.",
+      "story": [
+        {
+          "title": "Second in the club list",
+          "body": "At his exit, San Luis described Bilbao as its second-most-used player by appearances."
+        },
+        {
+          "title": "The last from the 2019 squad",
+          "body": "The club also called him the final member of its promotion-era roster to remain through 2024."
+        }
+      ],
+      "facts": [
+        {
+          "key": "s6-unai-rank-at-exit",
+          "label": "Bilbao appearance rank",
+          "prompt": "What rank did San Luis give Bilbao in its all-time appearances list when he left?",
+          "answers": [
+            "Second"
+          ],
+          "distractors": [
+            "First",
+            "Third",
+            "Fourth"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Second",
+            "text": "Second"
+          },
+          "scope": "Club-history rank at the dated June 2024 departure, not a current rank.",
+          "sourceKey": "adsl-unai-exit",
+          "evidence": "The release calls him the second player with the most matches at the club."
+        },
+        {
+          "key": "s6-unai-last-promotion-player",
+          "label": "Last promotion-squad player",
+          "prompt": "What distinction did Bilbao hold among San Luis’s 2019 promotion squad at his 2024 departure?",
+          "answers": [
+            "He was the last member still at the club"
+          ],
+          "distractors": [
+            "He was the squad’s youngest member",
+            "He was its top scorer in 2019",
+            "He was the only goalkeeper"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "He was the last member still at the club",
+            "text": "He was the last member still at the club"
+          },
+          "scope": "Club statement about the last remaining squad member.",
+          "sourceKey": "adsl-unai-exit",
+          "evidence": "The club says he was the last player from the promotion squad to remain through 2024."
+        },
+        {
+          "key": "s6-unai-transfer-destination",
+          "label": "Bilbao transfer destination",
+          "prompt": "Which club completed Bilbao’s permanent transfer in June 2024?",
+          "answers": [
+            "Club Tijuana"
+          ],
+          "distractors": [
+            "Club América",
+            "Necaxa",
+            "Monterrey"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Club Tijuana",
+            "text": "Club Tijuana"
+          },
+          "scope": "Destination stated in the official release.",
+          "sourceKey": "adsl-unai-exit",
+          "evidence": "San Luis says his definitive transfer to Club Tijuana had been completed."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-ligamx-sixth-berterame-career",
+      "subjectKey": "entity-german-berterame-sixth",
+      "clubKey": "entity-atletico-san-luis",
+      "chapter": "career",
+      "title": "A San Luis spell and a move toward Monterrey",
+      "subtitle": "Berterame’s time in San Luis ran from 2019 to 2022, with match reports documenting his role in the club’s 2022 run.",
+      "story": [
+        {
+          "title": "Years in Potosí",
+          "body": "Atlético de San Luis dates Berterame’s spell from 2019 to 2022. In 2022 he remained in the starting side during the Clausura’s final stretch."
+        },
+        {
+          "title": "An Azteca win",
+          "body": "On 5 February 2022, he started in a 3–2 San Luis win over América and scored the visitors’ third goal."
+        }
+      ],
+      "facts": [
+        {
+          "key": "s6-berterame-period",
+          "label": "Berterame San Luis span",
+          "prompt": "Which years does Atlético de San Luis give for Berterame’s time with the club?",
+          "answers": [
+            "2019–2022"
+          ],
+          "distractors": [
+            "2018–2021",
+            "2020–2023",
+            "2021–2024"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "2019–2022",
+            "text": "2019–2022"
+          },
+          "scope": "Club tenure as given by ADSL’s historical scorer article.",
+          "sourceKey": "adsl-goals",
+          "evidence": "The club article says he made a difference with Atlético from 2019 to 2022."
+        },
+        {
+          "key": "s6-berterame-azteca-match",
+          "label": "Berterame 2022 match opponent",
+          "prompt": "Which club did San Luis beat 3–2 at the Estadio Azteca on 5 February 2022?",
+          "answers": [
+            "América"
+          ],
+          "distractors": [
+            "Cruz Azul",
+            "Pumas",
+            "Monterrey"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "América",
+            "text": "América"
+          },
+          "scope": "One 2022 match in which Berterame started and scored.",
+          "sourceKey": "adsl-berterame-azteca",
+          "evidence": "The club report describes a 2–3 Atlético win away to América and lists Berterame in its starting eleven."
+        },
+        {
+          "key": "s6-berterame-azteca-minute",
+          "label": "Berterame Azteca goal minute",
+          "prompt": "At what minute did Berterame score San Luis’s third goal in that match?",
+          "answers": [
+            "60th"
+          ],
+          "distractors": [
+            "53rd",
+            "57th",
+            "67th"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "60th",
+            "text": "60th"
+          },
+          "scope": "His individual goal minute in the 5 February 2022 match.",
+          "sourceKey": "adsl-berterame-azteca",
+          "evidence": "The match report says Berterame scored the third goal on 60 minutes."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-ligamx-sixth-berterame-moments",
+      "subjectKey": "entity-german-berterame-sixth",
+      "clubKey": "entity-atletico-san-luis",
+      "chapter": "moments",
+      "title": "A hat-trick and a late-season run",
+      "subtitle": "Berterame produced defining scoring spells in Apertura 2021 and Clausura 2022.",
+      "story": [
+        {
+          "title": "A three-goal night",
+          "body": "In Apertura 2021, Berterame scored a hat-trick against Tijuana at Alfonso Lastras."
+        },
+        {
+          "title": "Four in three",
+          "body": "By 23 April 2022, the club said he had scored four goals across his most recent three matches."
+        }
+      ],
+      "facts": [
+        {
+          "key": "s6-berterame-hat-trick-opponent",
+          "label": "Berterame hat-trick opponent",
+          "prompt": "Which club conceded Berterame’s Apertura 2021 hat-trick at Alfonso Lastras?",
+          "answers": [
+            "Tijuana"
+          ],
+          "distractors": [
+            "Pumas",
+            "Mazatlán",
+            "Toluca"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Tijuana",
+            "text": "Tijuana"
+          },
+          "scope": "Opponent and venue for his three-goal performance.",
+          "sourceKey": "adsl-goals",
+          "evidence": "The club scorer article identifies a hat-trick against Tijuana at Alfonso Lastras."
+        },
+        {
+          "key": "s6-berterame-hat-trick-count",
+          "label": "Berterame hat-trick goals",
+          "prompt": "How many goals did Berterame score in that match against Tijuana?",
+          "answers": [
+            "Three"
+          ],
+          "distractors": [
+            "Two",
+            "Four",
+            "Five"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Three",
+            "text": "Three"
+          },
+          "scope": "His individual goal count in the named match.",
+          "sourceKey": "adsl-goals",
+          "evidence": "The club article calls it a hat-trick."
+        },
+        {
+          "key": "s6-berterame-april-run",
+          "label": "Berterame three-match run",
+          "prompt": "How many goals had Berterame scored in his last three matches by 23 April 2022?",
+          "answers": [
+            "Four"
+          ],
+          "distractors": [
+            "Two",
+            "Three",
+            "Five"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Four",
+            "text": "Four"
+          },
+          "scope": "A dated three-match scoring run, not a season total.",
+          "sourceKey": "adsl-goals",
+          "evidence": "The club’s 23 April 2022 preview states four goals in his last three matches."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-ligamx-sixth-berterame-records",
+      "subjectKey": "entity-german-berterame-sixth",
+      "clubKey": "entity-atletico-san-luis",
+      "chapter": "records",
+      "title": "A shared scoring crown",
+      "subtitle": "Berterame’s nine-goal Apertura 2021 return put him level at the top of the league scoring list.",
+      "story": [
+        {
+          "title": "A joint lead",
+          "body": "He shared the Grita México Apertura 2021 scoring title with Nicolás López."
+        },
+        {
+          "title": "Goals across the schedule",
+          "body": "The club lists goals against Pumas, Mazatlán, Puebla, Toluca and Atlas, plus the Tijuana hat-trick."
+        }
+      ],
+      "facts": [
+        {
+          "key": "s6-berterame-tournament",
+          "label": "Berterame scoring-title tournament",
+          "prompt": "In which tournament did Berterame win the shared scoring title?",
+          "answers": [
+            "Grita México Apertura 2021"
+          ],
+          "distractors": [
+            "Guardianes 2020",
+            "Apertura 2020",
+            "Clausura 2022"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Grita México Apertura 2021",
+            "text": "Grita México Apertura 2021"
+          },
+          "scope": "Tournament for his personal scoring award.",
+          "sourceKey": "adsl-goals",
+          "evidence": "The club identifies Grita México Apertura 2021 as the scoring-title season."
+        },
+        {
+          "key": "s6-berterame-goals",
+          "label": "Berterame scoring-title goals",
+          "prompt": "How many goals did Berterame score in that title-winning tournament?",
+          "answers": [
+            "Nine"
+          ],
+          "distractors": [
+            "Seven",
+            "Eight",
+            "Ten"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Nine",
+            "text": "Nine"
+          },
+          "scope": "Apertura 2021 regular-season scoring total as reported by the club.",
+          "sourceKey": "adsl-goals",
+          "evidence": "The article says his shared title came with nine goals."
+        },
+        {
+          "key": "s6-berterame-co-winner",
+          "label": "Berterame co-winner",
+          "prompt": "Who shared the Apertura 2021 scoring title with Berterame?",
+          "answers": [
+            "Nicolás López"
+          ],
+          "distractors": [
+            "André-Pierre Gignac",
+            "Henry Martín",
+            "Rogelio Funes Mori"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Nicolás López",
+            "text": "Nicolás López"
+          },
+          "scope": "The co-leader named by Atlético de San Luis.",
+          "sourceKey": "adsl-goals",
+          "evidence": "The club names Nicolás López as the co-winner."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-ligamx-sixth-berterame-legacy",
+      "subjectKey": "entity-german-berterame-sixth",
+      "clubKey": "entity-atletico-san-luis",
+      "chapter": "legacy",
+      "title": "A first for the club’s top-flight scorers",
+      "subtitle": "Berterame’s personal award became a milestone in Atlético de San Luis’s top-division history.",
+      "story": [
+        {
+          "title": "A first champion",
+          "body": "The club says Berterame became Atlético de San Luis’s first top-flight scoring champion."
+        },
+        {
+          "title": "A number remembered",
+          "body": "At the mascot Tunita’s 2023 introduction, San Luis recalled that Berterame had welcomed her while wearing number 7; the mascot later wore that number."
+        }
+      ],
+      "facts": [
+        {
+          "key": "s6-berterame-club-first",
+          "label": "Berterame club distinction",
+          "prompt": "What distinction did Berterame become Atlético de San Luis’s first player to achieve in the top division?",
+          "answers": [
+            "Win the league scoring title"
+          ],
+          "distractors": [
+            "Score in a continental final",
+            "Reach 100 club appearances",
+            "Captain a promotion-winning side"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Win the league scoring title",
+            "text": "Win the league scoring title"
+          },
+          "scope": "First in the club’s top-flight history, as stated by the club.",
+          "sourceKey": "adsl-goals",
+          "evidence": "The club calls him its first Primera División scoring champion."
+        },
+        {
+          "key": "s6-berterame-number",
+          "label": "Berterame shirt number",
+          "prompt": "Which shirt number did Berterame wear when he welcomed the club mascot Tunita?",
+          "answers": [
+            "7"
+          ],
+          "distractors": [
+            "9",
+            "10",
+            "11"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "7",
+            "text": "7"
+          },
+          "scope": "Number remembered by the club’s mascot story.",
+          "sourceKey": "adsl-tunita",
+          "evidence": "The club says Tunita wears number 7 because Berterame, who wore it, welcomed her."
+        },
+        {
+          "key": "s6-berterame-mascot",
+          "label": "Berterame mascot link",
+          "prompt": "Which club mascot did Berterame welcome at the Alfonso Lastras?",
+          "answers": [
+            "Tunita"
+          ],
+          "distractors": [
+            "Lucho",
+            "Goyo",
+            "Zague"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Tunita",
+            "text": "Tunita"
+          },
+          "scope": "Named mascot in the club’s account of the number 7.",
+          "sourceKey": "adsl-tunita",
+          "evidence": "The official club article identifies Tunita as the mascot Berterame welcomed."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-ligamx-sixth-juarez-history",
+      "subjectKey": "entity-juarez",
+      "clubKey": "entity-juarez",
+      "chapter": "history",
+      "title": "Professional football returns to Juárez",
+      "subtitle": "FC Juárez began a new professional era in 2015 and reached the top division four years later.",
+      "story": [
+        {
+          "title": "A return in 2015",
+          "body": "The club says it was founded to restore professional football to Ciudad Juárez after a pause that began in 2012."
+        },
+        {
+          "title": "From Ascenso to Liga MX",
+          "body": "Bravos debuted at home on 25 July 2015, won their first Apertura title that year and made their Liga MX debut in 2019."
+        }
+      ],
+      "facts": [
+        {
+          "key": "s6-juarez-return",
+          "label": "FC Juárez return context",
+          "prompt": "After what year-long interruption did FC Juárez’s foundation mark professional football’s return to the city?",
+          "answers": [
+            "A pause beginning in 2012"
+          ],
+          "distractors": [
+            "A pause beginning in 2009",
+            "A pause beginning in 2010",
+            "A pause beginning in 2014"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "A pause beginning in 2012",
+            "text": "A pause beginning in 2012"
+          },
+          "scope": "The club’s official history frames its founding as the return after the 2012 pause.",
+          "sourceKey": "fcj-history",
+          "evidence": "FC Juárez says professional football had been absent from the city since 2012."
+        },
+        {
+          "key": "s6-juarez-first-match",
+          "label": "FC Juárez first official debut",
+          "prompt": "On what date did Bravos make their official debut at the Estadio Olímpico Benito Juárez?",
+          "answers": [
+            "25 July 2015"
+          ],
+          "distractors": [
+            "25 June 2015",
+            "25 July 2014",
+            "25 August 2015"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "25 July 2015",
+            "text": "25 July 2015"
+          },
+          "scope": "First official match date in the club’s history.",
+          "sourceKey": "fcj-history",
+          "evidence": "The official timeline gives 25 July 2015."
+        },
+        {
+          "key": "s6-juarez-ligamx-debut",
+          "label": "FC Juárez Liga MX debut opponent",
+          "prompt": "Which club did Juárez face in its first Liga MX match in 2019?",
+          "answers": [
+            "Atlas"
+          ],
+          "distractors": [
+            "León",
+            "América",
+            "Tigres UANL"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Atlas",
+            "text": "Atlas"
+          },
+          "scope": "Opponent in the club’s first top-division match.",
+          "sourceKey": "fcj-history",
+          "evidence": "The official timeline says the Liga MX debut was against Atlas on 19 July 2019."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-ligamx-sixth-juarez-2015",
+      "subjectKey": "entity-juarez",
+      "clubKey": "entity-juarez",
+      "chapter": "moments",
+      "title": "A first-tournament championship",
+      "subtitle": "The new Bravos side won the Apertura 2015 title in its first tournament.",
+      "story": [
+        {
+          "title": "A home final",
+          "body": "FC Juárez’s history says the first-tournament title was decided at home against Atlante."
+        },
+        {
+          "title": "An early foundation",
+          "body": "The championship arrived in the same year as the club’s official debut and preceded later Ascenso MX finals in 2016 and 2017."
+        }
+      ],
+      "facts": [
+        {
+          "key": "s6-juarez-first-title",
+          "label": "First Juárez title tournament",
+          "prompt": "In which tournament did FC Juárez win its first championship?",
+          "answers": [
+            "Apertura 2015"
+          ],
+          "distractors": [
+            "Clausura 2015",
+            "Clausura 2016",
+            "Apertura 2016"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Apertura 2015",
+            "text": "Apertura 2015"
+          },
+          "scope": "The club’s inaugural title tournament.",
+          "sourceKey": "fcj-history",
+          "evidence": "The club says it was crowned in its first tournament, Apertura 2015."
+        },
+        {
+          "key": "s6-juarez-final-opponent",
+          "label": "Apertura 2015 final opponent",
+          "prompt": "Which club did Juárez beat at home to win the Apertura 2015 title?",
+          "answers": [
+            "Atlante"
+          ],
+          "distractors": [
+            "Necaxa",
+            "Dorados de Sinaloa",
+            "Lobos BUAP"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Atlante",
+            "text": "Atlante"
+          },
+          "scope": "Opponent in the first-tournament championship.",
+          "sourceKey": "fcj-history",
+          "evidence": "The official history names Atlante as the opponent in the title-clinching home match."
+        },
+        {
+          "key": "s6-juarez-later-finals",
+          "label": "Later Ascenso final",
+          "prompt": "In which season after the first title did Bravos reach another Ascenso MX final?",
+          "answers": [
+            "Clausura 2016"
+          ],
+          "distractors": [
+            "Apertura 2015",
+            "Apertura 2016",
+            "Clausura 2018"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Clausura 2016",
+            "text": "Clausura 2016"
+          },
+          "scope": "One of the later finals explicitly named in the club history.",
+          "sourceKey": "fcj-history",
+          "evidence": "The history cites Clausura 2016 and Clausura 2017 as later finals."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-ligamx-sixth-juarez-copa",
+      "subjectKey": "entity-juarez",
+      "clubKey": "entity-juarez",
+      "chapter": "moments",
+      "title": "A Copa MX run to the final",
+      "subtitle": "The 2019 cup run put Bravos into a national final against América.",
+      "story": [
+        {
+          "title": "Two top-flight scalps",
+          "body": "FC Juárez reached the Clausura 2019 Copa MX final after eliminating León and Pumas."
+        },
+        {
+          "title": "A final without the trophy",
+          "body": "América beat Bravos in the final; later that year Juárez began its Liga MX era against Atlas."
+        }
+      ],
+      "facts": [
+        {
+          "key": "s6-juarez-copa-season",
+          "label": "Juárez Copa MX final season",
+          "prompt": "In which season did FC Juárez reach its first Copa MX final?",
+          "answers": [
+            "Clausura 2019"
+          ],
+          "distractors": [
+            "Apertura 2018",
+            "Apertura 2019",
+            "Clausura 2020"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Clausura 2019",
+            "text": "Clausura 2019"
+          },
+          "scope": "Competition season in the club’s historical timeline.",
+          "sourceKey": "fcj-history",
+          "evidence": "The official history places the cup final run in Clausura 2019."
+        },
+        {
+          "key": "s6-juarez-copa-leon",
+          "label": "Juárez cup run opponent",
+          "prompt": "Which Liga MX club did Juárez eliminate on its way to the 2019 Copa MX final?",
+          "answers": [
+            "León"
+          ],
+          "distractors": [
+            "Atlas",
+            "Toluca",
+            "Pachuca"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "León",
+            "text": "León"
+          },
+          "scope": "One of the two top-flight teams named as eliminated in the run.",
+          "sourceKey": "fcj-history",
+          "evidence": "FC Juárez’s history names León and Pumas as opponents it eliminated."
+        },
+        {
+          "key": "s6-juarez-copa-final",
+          "label": "Juárez Copa MX final opponent",
+          "prompt": "Which club faced Juárez in the 2019 Copa MX final?",
+          "answers": [
+            "América"
+          ],
+          "distractors": [
+            "Pumas",
+            "León",
+            "Cruz Azul"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "América",
+            "text": "América"
+          },
+          "scope": "Final opponent; the title makes no assumption about current competition membership.",
+          "sourceKey": "fcj-history",
+          "evidence": "The official history says the final was against América."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-ligamx-sixth-denzell-career",
+      "subjectKey": "entity-denzell-garcia-sixth",
+      "clubKey": "entity-juarez",
+      "chapter": "career",
+      "title": "A homegrown path to the first team",
+      "subtitle": "Denzell García’s route from Juárez’s academy led to a young first-division debut.",
+      "story": [
+        {
+          "title": "Born in Sinaloa",
+          "body": "The club’s debut list records García’s birthplace as Ahome, Sinaloa."
+        },
+        {
+          "title": "An 18-year-old debut",
+          "body": "He made his Liga MX debut against América on 9 April 2022, aged 18 years, 7 months and 26 days. FC Juárez extended his deal through June 2029 in February 2026."
+        }
+      ],
+      "facts": [
+        {
+          "key": "s6-denzell-birthplace",
+          "label": "Denzell García birthplace",
+          "prompt": "In which city was Denzell García born, according to the club’s debut list?",
+          "answers": [
+            "Ahome"
+          ],
+          "distractors": [
+            "Culiacán",
+            "Ciudad Juárez",
+            "Los Mochis"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Ahome",
+            "text": "Ahome"
+          },
+          "scope": "Birthplace as recorded in the official FC Juárez list.",
+          "sourceKey": "fcj-denzell-debuts",
+          "evidence": "The club gives his birthplace as Ahome, Sinaloa."
+        },
+        {
+          "key": "s6-denzell-debut-date",
+          "label": "Denzell Liga MX debut date",
+          "prompt": "On what date did García make his Liga MX debut?",
+          "answers": [
+            "9 April 2022"
+          ],
+          "distractors": [
+            "9 March 2022",
+            "19 April 2022",
+            "9 April 2023"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "9 April 2022",
+            "text": "9 April 2022"
+          },
+          "scope": "First-division debut, not his first youth or professional match.",
+          "sourceKey": "fcj-denzell-debuts",
+          "evidence": "FC Juárez’s debut list dates his first-division debut to 9 April 2022."
+        },
+        {
+          "key": "s6-denzell-debut-age",
+          "label": "Denzell debut age",
+          "prompt": "How old was García when he debuted against América?",
+          "answers": [
+            "18 years, 7 months and 26 days"
+          ],
+          "distractors": [
+            "18 years, 6 months and 26 days",
+            "18 years, 8 months and 26 days",
+            "19 years, 7 months and 26 days"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "18 years, 7 months and 26 days",
+            "text": "18 years, 7 months and 26 days"
+          },
+          "scope": "Age on the exact debut date as calculated in the official club list.",
+          "sourceKey": "fcj-denzell-debuts",
+          "evidence": "The club lists his age at debut as 18 years, 7 months and 26 days."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-ligamx-sixth-denzell-moments",
+      "subjectKey": "entity-denzell-garcia-sixth",
+      "clubKey": "entity-juarez",
+      "chapter": "moments",
+      "title": "Goals at the end of each half",
+      "subtitle": "García produced two dated goals that helped Bravos take important wins in 2026.",
+      "story": [
+        {
+          "title": "A Mazatlán opener",
+          "body": "On 9 January, he restored Juárez’s lead with a first-half stoppage-time finish in a 2–1 away win."
+        },
+        {
+          "title": "A home first",
+          "body": "Against Atlas on 27 February, he scored at 45+5 as Juárez claimed its first home victory over that opponent."
+        }
+      ],
+      "facts": [
+        {
+          "key": "s6-denzell-mazatlan-score",
+          "label": "Juárez–Mazatlán score",
+          "prompt": "What was FC Juárez’s final score against Mazatlán on 9 January 2026?",
+          "answers": [
+            "2–1"
+          ],
+          "distractors": [
+            "1–0",
+            "1–1",
+            "3–1"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "2–1",
+            "text": "2–1"
+          },
+          "scope": "Single match result with Juárez on the left; not an aggregate or shootout.",
+          "sourceKey": "fcj-denzell-mazatlan",
+          "evidence": "The official report gives the home-side score as Mazatlán 1–2 Juárez.",
+          "scoreInput": {
+            "leftClubKey": "entity-juarez",
+            "rightClubKey": "entity-mazatlan",
+            "leftGoals": 2,
+            "rightGoals": 1
+          }
+        },
+        {
+          "key": "s6-denzell-mazatlan-minute",
+          "label": "Denzell Mazatlán goal minute",
+          "prompt": "At what minute did García score the winning goal against Mazatlán?",
+          "answers": [
+            "45+2"
+          ],
+          "distractors": [
+            "35th",
+            "45th",
+            "55th"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "45+2",
+            "text": "45+2"
+          },
+          "scope": "First-half stoppage-time goal in the 9 January 2026 match.",
+          "sourceKey": "fcj-denzell-mazatlan",
+          "evidence": "The report records his goal at 45+2."
+        },
+        {
+          "key": "s6-denzell-atlas-minute",
+          "label": "Denzell Atlas goal minute",
+          "prompt": "At what minute did García score against Atlas on 27 February 2026?",
+          "answers": [
+            "45+5"
+          ],
+          "distractors": [
+            "35th",
+            "45+2",
+            "55th"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "45+5",
+            "text": "45+5"
+          },
+          "scope": "First-half stoppage-time goal in the 3–1 home win.",
+          "sourceKey": "fcj-denzell-atlas",
+          "evidence": "The match report says García scored at 45+5."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-ligamx-sixth-denzell-records",
+      "subjectKey": "entity-denzell-garcia-sixth",
+      "clubKey": "entity-juarez",
+      "chapter": "records",
+      "title": "A dated appearance record",
+      "subtitle": "By September 2026, García held Juárez’s Primera División appearance mark.",
+      "story": [
+        {
+          "title": "Top-flight record",
+          "body": "The club’s 19 September 2026 appearance table listed García with 114 Liga MX games and 124 total games across competitions."
+        },
+        {
+          "title": "The header matters",
+          "body": "The table labels total games as TJ, then breaks the columns into Liga MX, Leagues Cup, Copa MX and Ascenso MX."
+        }
+      ],
+      "facts": [
+        {
+          "key": "s6-denzell-primeras",
+          "label": "Denzell Liga MX appearances",
+          "prompt": "How many Liga MX games did the club list for García on 19 September 2026?",
+          "answers": [
+            "114"
+          ],
+          "distractors": [
+            "104",
+            "112",
+            "124"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "114",
+            "text": "114"
+          },
+          "scope": "Historical table’s LMX column, as of 19 September 2026.",
+          "sourceKey": "fcj-appearance-table",
+          "evidence": "The table header defines LMX and lists Denzell García at 114."
+        },
+        {
+          "key": "s6-denzell-total",
+          "label": "Denzell total appearances",
+          "prompt": "How many total club games did the table list for García on 19 September 2026?",
+          "answers": [
+            "124"
+          ],
+          "distractors": [
+            "114",
+            "120",
+            "134"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "124",
+            "text": "124"
+          },
+          "scope": "TJ total across listed competitions, as of the article date.",
+          "sourceKey": "fcj-appearance-table",
+          "evidence": "The table lists TJ 124 for Denzell; the source header says TJ means Total de Juegos."
+        },
+        {
+          "key": "s6-denzell-competition-leading",
+          "label": "Denzell Leagues Cup appearances",
+          "prompt": "How many Leagues Cup games were in García’s 124-game total in the same table?",
+          "answers": [
+            "10"
+          ],
+          "distractors": [
+            "0",
+            "4",
+            "14"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "10",
+            "text": "10"
+          },
+          "scope": "LC column, separate from Liga MX and total games.",
+          "sourceKey": "fcj-appearance-table",
+          "evidence": "The table shows 10 in LC and 114 in LMX; the headers were checked before interpreting the columns."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-ligamx-sixth-denzell-legacy",
+      "subjectKey": "entity-denzell-garcia-sixth",
+      "clubKey": "entity-juarez",
+      "chapter": "legacy",
+      "title": "From Bravos to the senior national team",
+      "subtitle": "García’s first Mexico selections came after he set a club appearance record.",
+      "story": [
+        {
+          "title": "A first senior call-up",
+          "body": "FC Juárez reported his January 2026 selection for friendlies against Panama and Bolivia."
+        },
+        {
+          "title": "A first appearance",
+          "body": "The club says he entered against Bolivia in the 57th minute, his first recorded action for the senior national team; a February call-up followed."
+        }
+      ],
+      "facts": [
+        {
+          "key": "s6-denzell-january-callup",
+          "label": "Denzell January call-up opponent",
+          "prompt": "Which two national teams did Mexico face in the friendlies for which García was called in January 2026?",
+          "answers": [
+            "Panama and Bolivia"
+          ],
+          "distractors": [
+            "Canada and the United States",
+            "Colombia and Peru",
+            "Iceland and Chile"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Panama and Bolivia",
+            "text": "Panama and Bolivia"
+          },
+          "scope": "Opponents in the January 2026 senior-team call-up.",
+          "sourceKey": "fcj-denzell-selection",
+          "evidence": "The report says he was called for the January games against Panama and Bolivia."
+        },
+        {
+          "key": "s6-denzell-bolivia-minute",
+          "label": "Denzell Mexico debut minute",
+          "prompt": "At what minute did García enter against Bolivia in January 2026?",
+          "answers": [
+            "57th"
+          ],
+          "distractors": [
+            "47th",
+            "67th",
+            "77th"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "57th",
+            "text": "57th"
+          },
+          "scope": "Substitution minute in his first reported senior national-team appearance.",
+          "sourceKey": "fcj-denzell-selection",
+          "evidence": "The club report says he replaced Jorge Sánchez in the 57th minute."
+        },
+        {
+          "key": "s6-denzell-february-callup",
+          "label": "Denzell next call-up",
+          "prompt": "Which opponent was announced for García’s next Mexico friendly after the January matches?",
+          "answers": [
+            "Iceland"
+          ],
+          "distractors": [
+            "Costa Rica",
+            "Honduras",
+            "Jamaica"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Iceland",
+            "text": "Iceland"
+          },
+          "scope": "Opponent in the February 2026 call-up report.",
+          "sourceKey": "fcj-denzell-selection",
+          "evidence": "The February report says Mexico called him for a 25 February friendly against Iceland."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-ligamx-sixth-aquino-career",
+      "subjectKey": "entity-javier-aquino-sixth",
+      "clubKey": "entity-juarez",
+      "chapter": "career",
+      "title": "From Oaxaca to three European and Mexican clubs",
+      "subtitle": "Javier Aquino’s career included Cruz Azul, two Spanish clubs, Tigres and a 2026 move to Juárez.",
+      "story": [
+        {
+          "title": "First-division debut",
+          "body": "Aquino made his Primera División debut with Cruz Azul in July 2010."
+        },
+        {
+          "title": "Across the Atlantic and back",
+          "body": "He moved to Villarreal in 2013, then Rayo Vallecano in 2014, and returned to Mexico with Tigres in 2015 before joining FC Juárez in 2026."
+        }
+      ],
+      "facts": [
+        {
+          "key": "s6-aquino-origin",
+          "label": "Aquino birthplace",
+          "prompt": "Where was Javier Aquino born?",
+          "answers": [
+            "San Francisco Ixhuatán, Oaxaca"
+          ],
+          "distractors": [
+            "Oaxaca City, Oaxaca",
+            "Culiacán, Sinaloa",
+            "Ciudad Juárez, Chihuahua"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "San Francisco Ixhuatán, Oaxaca",
+            "text": "San Francisco Ixhuatán, Oaxaca"
+          },
+          "scope": "Place of origin in FC Juárez’s official player announcement.",
+          "sourceKey": "fcj-aquino",
+          "evidence": "The club lists San Francisco Ixhuatán, Oaxaca."
+        },
+        {
+          "key": "s6-aquino-debut-year",
+          "label": "Aquino Primera debut year",
+          "prompt": "In which year did Aquino make his Primera División debut for Cruz Azul?",
+          "answers": [
+            "2010"
+          ],
+          "distractors": [
+            "2008",
+            "2009",
+            "2011"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "2010",
+            "text": "2010"
+          },
+          "scope": "Top-flight debut year from FC Juárez’s career summary.",
+          "sourceKey": "fcj-aquino",
+          "evidence": "The announcement dates his first-division debut to July 2010."
+        },
+        {
+          "key": "s6-aquino-europe-first",
+          "label": "Aquino first European club",
+          "prompt": "Which Spanish club did Aquino join first in 2013?",
+          "answers": [
+            "Villarreal"
+          ],
+          "distractors": [
+            "Rayo Vallecano",
+            "Sevilla",
+            "Valencia"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Villarreal",
+            "text": "Villarreal"
+          },
+          "scope": "First of the two Spanish clubs in the career chronology.",
+          "sourceKey": "fcj-aquino",
+          "evidence": "The club says he moved to Spain in 2013 to play for Villarreal, then Rayo in 2014."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-ligamx-sixth-aquino-moments",
+      "subjectKey": "entity-javier-aquino-sixth",
+      "clubKey": "entity-juarez",
+      "chapter": "moments",
+      "title": "A starting role at London 2012",
+      "subtitle": "A documented group-stage appearance anchors Aquino’s Olympic story.",
+      "story": [
+        {
+          "title": "In Mexico’s starting eleven",
+          "body": "The London 2012 match report lists Aquino in Mexico’s starting eleven against South Korea on 26 July 2012."
+        },
+        {
+          "title": "A group-stage appearance",
+          "body": "Mexico won the match 2–0. This lesson stays with the documented group match; the draft does not claim a quarterfinal appearance."
+        }
+      ],
+      "facts": [
+        {
+          "key": "s6-aquino-olympic-group",
+          "label": "Aquino London lineup",
+          "prompt": "Against which opponent does the London 2012 report list Aquino in Mexico’s starting eleven?",
+          "answers": [
+            "South Korea"
+          ],
+          "distractors": [
+            "Senegal",
+            "Brazil",
+            "Japan"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "South Korea",
+            "text": "South Korea"
+          },
+          "scope": "Group-stage match in the 2012 Olympic tournament.",
+          "sourceKey": "olympic-aquino-match",
+          "evidence": "The official match report lists Javier Aquino among Mexico’s eleven starters against Korea."
+        },
+        {
+          "key": "s6-aquino-olympic-date",
+          "label": "Aquino group match date",
+          "prompt": "On what date was that Mexico–South Korea group match played?",
+          "answers": [
+            "26 July 2012"
+          ],
+          "distractors": [
+            "26 June 2012",
+            "4 August 2012",
+            "11 August 2012"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "26 July 2012",
+            "text": "26 July 2012"
+          },
+          "scope": "Date on the London 2012 match report.",
+          "sourceKey": "olympic-aquino-match",
+          "evidence": "The official report is dated 26 July 2012."
+        },
+        {
+          "key": "s6-aquino-olympic-stage",
+          "label": "Aquino Olympic group stage",
+          "prompt": "At what stage of the London 2012 tournament did Mexico face South Korea on 26 July?",
+          "answers": [
+            "Group stage"
+          ],
+          "distractors": [
+            "Quarterfinal",
+            "Semifinal",
+            "Final"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Group stage",
+            "text": "Group stage"
+          },
+          "scope": "Mexico–South Korea match on 26 July 2012, identified by the official Olympic match report as a group match.",
+          "sourceKey": "olympic-aquino-match",
+          "evidence": "The official report is the Mexico–Korea group match report; Aquino is listed in the starting XI."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-ligamx-sixth-aquino-records",
+      "subjectKey": "entity-javier-aquino-sixth",
+      "clubKey": "entity-juarez",
+      "chapter": "records",
+      "title": "A career counted across clubs",
+      "subtitle": "FC Juárez’s 2026 profile gives a separate appearance total for each of Aquino’s prior clubs.",
+      "story": [
+        {
+          "title": "Three measured spells",
+          "body": "The club lists 93 appearances for Cruz Azul, 48 for Villarreal and 25 for Rayo Vallecano."
+        },
+        {
+          "title": "A long Tigres spell",
+          "body": "At Tigres, Aquino played 442 official matches before his 2026 move to Juárez."
+        }
+      ],
+      "facts": [
+        {
+          "key": "s6-aquino-cruz-appearances",
+          "label": "Aquino Cruz Azul appearances",
+          "prompt": "How many matches did Aquino play for Cruz Azul, according to FC Juárez?",
+          "answers": [
+            "93"
+          ],
+          "distractors": [
+            "83",
+            "89",
+            "103"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "93",
+            "text": "93"
+          },
+          "scope": "Club-specific total in the official 2026 career profile.",
+          "sourceKey": "fcj-aquino",
+          "evidence": "The FC Juárez announcement gives him 93 Cruz Azul appearances."
+        },
+        {
+          "key": "s6-aquino-villarreal-appearances",
+          "label": "Aquino Villarreal appearances",
+          "prompt": "How many official matches did Aquino play for Villarreal?",
+          "answers": [
+            "48"
+          ],
+          "distractors": [
+            "38",
+            "45",
+            "58"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "48",
+            "text": "48"
+          },
+          "scope": "Club-specific total in the official career summary.",
+          "sourceKey": "fcj-aquino",
+          "evidence": "The club lists 48 official Villarreal matches."
+        },
+        {
+          "key": "s6-aquino-tigres-appearances",
+          "label": "Aquino Tigres appearances",
+          "prompt": "How many official matches did Aquino play for Tigres before joining Juárez?",
+          "answers": [
+            "442"
+          ],
+          "distractors": [
+            "422",
+            "432",
+            "452"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "442",
+            "text": "442"
+          },
+          "scope": "Club-specific total, not a total across all clubs.",
+          "sourceKey": "fcj-aquino",
+          "evidence": "The announcement reports 442 official Tigres matches."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-ligamx-sixth-aquino-legacy",
+      "subjectKey": "entity-javier-aquino-sixth",
+      "clubKey": "entity-juarez",
+      "chapter": "legacy",
+      "title": "A decorated international career",
+      "subtitle": "Aquino’s 2026 arrival brought a player with Olympic, World Cup and continental-tournament experience.",
+      "story": [
+        {
+          "title": "An Olympic medalist who played",
+          "body": "Mexico won the London 2012 gold medal; the Olympic match record shows Aquino started against Korea and played in the quarterfinal against Senegal."
+        },
+        {
+          "title": "Senior-team tournaments",
+          "body": "FC Juárez says he played at the 2014 and 2018 World Cups, three Copa América editions and two Confederations Cups."
+        }
+      ],
+      "facts": [
+        {
+          "key": "s6-aquino-olympic-medal",
+          "label": "Aquino Olympic medal year",
+          "prompt": "In which year did Mexico win the Olympic football gold medal with Aquino in the squad?",
+          "answers": [
+            "2012"
+          ],
+          "distractors": [
+            "2008",
+            "2016",
+            "2020"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "2012",
+            "text": "2012"
+          },
+          "scope": "Team honor; Aquino’s actual participation is independently documented by the London match sheet.",
+          "sourceKey": "fcj-aquino",
+          "evidence": "FC Juárez says Aquino was part of Mexico’s London 2012 gold-medal team; the Olympic match report verifies he started in the tournament."
+        },
+        {
+          "key": "s6-aquino-world-cups",
+          "label": "Aquino World Cups",
+          "prompt": "Which two FIFA World Cups does FC Juárez list for Aquino?",
+          "answers": [
+            "Brazil 2014 and Russia 2018"
+          ],
+          "distractors": [
+            "South Africa 2010 and Brazil 2014",
+            "Russia 2018 and Qatar 2022",
+            "Brazil 2014 and Qatar 2022"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Brazil 2014 and Russia 2018",
+            "text": "Brazil 2014 and Russia 2018"
+          },
+          "scope": "Senior national-team tournament participation.",
+          "sourceKey": "fcj-aquino-world-cup",
+          "evidence": "The club biography names Brazil 2014 and Russia 2018."
+        },
+        {
+          "key": "s6-aquino-international-caps",
+          "label": "Aquino Mexico appearances",
+          "prompt": "How many senior Mexico appearances does FC Juárez list for Aquino?",
+          "answers": [
+            "54"
+          ],
+          "distractors": [
+            "44",
+            "50",
+            "64"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "54",
+            "text": "54"
+          },
+          "scope": "Senior national-team appearances as listed in the 2026 profile.",
+          "sourceKey": "fcj-aquino",
+          "evidence": "The club biography says he had 54 appearances for Mexico."
+        }
+      ]
+    }
+  ]
+}

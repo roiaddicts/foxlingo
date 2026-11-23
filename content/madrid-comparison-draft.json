@@ -1,0 +1,139 @@
+{
+  "sources": [
+    {
+      "key": "madrid-comparison-cristiano-profile",
+      "title": "Cristiano Ronaldo dos Santos Aveiro - History and honours",
+      "url": "https://www.realmadrid.com/en-US/the-club/history/football-legends/cristiano-ronaldo-dos-santos-aveiro/",
+      "verifiedAt": "2026-10-08"
+    },
+    {
+      "key": "madrid-comparison-ramos-profile",
+      "title": "Sergio Ramos García - History and honours",
+      "url": "https://www.realmadrid.com/en-US/the-club/history/football-legends/sergio-ramos-garcia/",
+      "verifiedAt": "2026-10-08"
+    },
+    {
+      "key": "madrid-comparison-casillas-profile",
+      "title": "Iker Casillas Fernández - History and honours",
+      "url": "https://www.realmadrid.com/en-US/the-club/history/football-legends/iker-casillas-fernandez/",
+      "verifiedAt": "2026-10-08"
+    },
+    {
+      "key": "madrid-comparison-appearance-ranking",
+      "title": "Real Madrid all-time appearances ranking",
+      "url": "https://www.realmadrid.com/en-US/the-club/history/football/first-team/scorers",
+      "verifiedAt": "2026-10-08"
+    }
+  ],
+  "lessons": [
+    {
+      "key": "lesson-madrid-official-appearance-comparison",
+      "clubKey": "entity-madrid",
+      "subjectKeys": [
+        "entity-cristiano",
+        "entity-ramos",
+        "entity-casillas"
+      ],
+      "title": "Three Madrid careers, counted in matches",
+      "subtitle": "Official appearance totals across three completed club tenures",
+      "story": [
+        {
+          "title": "Ronaldo and Ramos",
+          "body": "Real Madrid’s official profile lists Cristiano Ronaldo at 438 competitive appearances during his Madrid tenure from 2009 to 2018. Sergio Ramos’s official profile records 671 Real Madrid appearances across his 2005–2021 spell. These are whole-career totals for two different Madrid eras, not season counts."
+        },
+        {
+          "title": "Casillas and the comparison",
+          "body": "Iker Casillas made 725 official matches for Real Madrid during his 1999–2015 tenure. The three totals therefore order from lowest to highest as Ronaldo (438), Ramos (671), and Casillas (725). Each figure belongs to that player’s complete Madrid career; the ordering compares totals, not seasons played or quality across eras."
+        }
+      ],
+      "facts": [
+        {
+          "key": "madrid-appearances-cristiano",
+          "prompt": "How many competitive appearances does Real Madrid’s official profile list for Cristiano Ronaldo?",
+          "answers": [
+            "438",
+            "four hundred thirty-eight",
+            "four hundred and thirty-eight"
+          ],
+          "distractors": [
+            "671",
+            "725",
+            "451"
+          ],
+          "label": "Cristiano Ronaldo: Madrid appearances",
+          "sourceKey": "madrid-comparison-cristiano-profile",
+          "value": {
+            "kind": "number",
+            "display": "438",
+            "number": 438,
+            "unit": "competitive appearances"
+          },
+          "scope": "Cristiano Ronaldo's complete Real Madrid tenure, 2009–2018; official club profile total",
+          "evidence": "Official profile excerpt: “451 times in 438 competitive appearances with Real Madrid.”"
+        },
+        {
+          "key": "madrid-appearances-ramos",
+          "prompt": "How many Real Madrid appearances does the club’s official profile list for Sergio Ramos?",
+          "answers": [
+            "671",
+            "six hundred seventy-one",
+            "six hundred and seventy-one"
+          ],
+          "distractors": [
+            "438",
+            "725",
+            "6710"
+          ],
+          "label": "Sergio Ramos: Madrid appearances",
+          "sourceKey": "madrid-comparison-ramos-profile",
+          "value": {
+            "kind": "number",
+            "display": "671",
+            "number": 671,
+            "unit": "appearances"
+          },
+          "scope": "Sergio Ramos's complete Real Madrid tenure, 2005–2021; official club profile total",
+          "evidence": "Official profile excerpt: “Real Madrid appearances: 671.”"
+        },
+        {
+          "key": "madrid-appearances-casillas",
+          "prompt": "How many official matches did Iker Casillas play for Real Madrid, according to the club?",
+          "answers": [
+            "725",
+            "seven hundred twenty-five",
+            "seven hundred and twenty-five"
+          ],
+          "distractors": [
+            "438",
+            "671",
+            "7250"
+          ],
+          "label": "Iker Casillas: Madrid official matches",
+          "sourceKey": "madrid-comparison-casillas-profile",
+          "value": {
+            "kind": "number",
+            "display": "725",
+            "number": 725,
+            "unit": "official matches"
+          },
+          "scope": "Iker Casillas's complete Real Madrid tenure, 1999–2015; official club profile total",
+          "evidence": "Official profile excerpt: “725 official games.”"
+        }
+      ],
+      "suggestedLowestToHighest": [
+        {
+          "subjectKey": "entity-cristiano",
+          "appearances": 438
+        },
+        {
+          "subjectKey": "entity-ramos",
+          "appearances": 671
+        },
+        {
+          "subjectKey": "entity-casillas",
+          "appearances": 725
+        }
+      ]
+    }
+  ]
+}

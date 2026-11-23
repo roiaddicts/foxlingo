@@ -168,6 +168,11 @@ public struct ContentPack: Codable, Sendable {
         keys += (relationships ?? []).map(\.key)
         try require(Set(ids).count == ids.count && Set(keys).count == keys.count, "Duplicate content identifiers.")
         let ei = Set(entities.map(\.id)), fi = Set(facts.map(\.id)), oi = Set(objectives.map(\.id)), li = Set(lessons.map(\.id)), xi = Set(exercises.map(\.id)), sk = Set(sources.map(\.key))
+        // Validation uses indexed references so startup scales with the library size.
+        let entitiesByID = Dictionary(uniqueKeysWithValues: entities.map { ($0.id, $0) })
+        let objectivesByID = Dictionary(uniqueKeysWithValues: objectives.map { ($0.id, $0) })
+        let exercisesByID = Dictionary(uniqueKeysWithValues: exercises.map { ($0.id, $0) })
+        let scoresByObjective = Dictionary(grouping: exercises.filter { $0.objectiveIDs.count == 1 && $0.scoreInput != nil }, by: { $0.objectiveIDs[0] })
         for s in sources { try require(URL(string:s.url)?.scheme == "https" && !s.verifiedAt.isEmpty, "Invalid source.") }
         for f in facts {
             try require(ei.contains(f.subjectID) && !f.sourceKeys.isEmpty && Set(f.sourceKeys).isSubset(of:sk) && !f.evidence.isEmpty && !f.scope.isEmpty && !f.value.display.isEmpty, "Missing evidence or subject for \(f.key).")
@@ -187,11 +192,11 @@ public struct ContentPack: Codable, Sendable {
             try require(!x.objectiveIDs.isEmpty && Set(x.objectiveIDs).isSubset(of:oi), "Broken exercise objective.")
             if let score=x.scoreInput {
                 try require(x.kind == "choice" && score.leftEntityID != score.rightEntityID && ei.contains(score.leftEntityID) && ei.contains(score.rightEntityID),"Broken score teams.")
-                try require([score.leftEntityID,score.rightEntityID].allSatisfy {["club","country"].contains(entity($0).type) && entity($0).imageAsset != nil},"Score teams need club or country artwork.")
+                try require([score.leftEntityID,score.rightEntityID].allSatisfy {["club","country"].contains(entitiesByID[$0]!.type) && entitiesByID[$0]!.imageAsset != nil},"Score teams need club or country artwork.")
                 try require((10...99).contains(score.maximum) && (0...score.maximum).contains(score.leftGoals) && (0...score.maximum).contains(score.rightGoals),"Invalid score range.")
                 let expected=[score.leftGoals,score.rightGoals]
                 let correctChoices=x.choices.filter {x.answerIDs.contains($0.id)}
-                try require(!correctChoices.isEmpty && correctChoices.allSatisfy {ScoreInput.pair(in:$0.text) == expected} && x.objectiveIDs.count == 1 && objective(x.objectiveIDs[0]).answers.contains {ScoreInput.pair(in:$0) == expected},"Score conflicts with its authored answer.")
+                try require(!correctChoices.isEmpty && correctChoices.allSatisfy {ScoreInput.pair(in:$0.text) == expected} && x.objectiveIDs.count == 1 && objectivesByID[x.objectiveIDs[0]]!.answers.contains {ScoreInput.pair(in:$0) == expected},"Score conflicts with its authored answer.")
             }
             switch x.kind {
             case "choice":
@@ -204,21 +209,21 @@ public struct ContentPack: Codable, Sendable {
             }
         }
         for o in objectives {
-            let scores=exercises.filter {$0.objectiveIDs == [o.id]}.compactMap(\.scoreInput)
+            let scores=(scoresByObjective[o.id] ?? []).compactMap(\.scoreInput)
             try require(scores.allSatisfy {$0 == scores.first},"Conflicting score orientation for one memory.")
         }
         for l in lessons {
             try require(l.story.count == 2 && l.objectiveIDs.count == 3 && Set(l.objectiveIDs).count == 3 && Set(l.objectiveIDs).isSubset(of:oi) && (4...5).contains(l.exerciseIDs.count) && Set(l.exerciseIDs).count == l.exerciseIDs.count && Set(l.exerciseIDs).isSubset(of:xi), "Invalid lesson \(l.key).")
-            let activities = l.exerciseIDs.map(exercise)
+            let activities = l.exerciseIDs.map { exercisesByID[$0]! }
             try require(activities.filter { $0.kind == "choice" }.count == 4 && activities.filter { $0.kind == "match" }.count == activities.count-4 && Set(activities.flatMap(\.objectiveIDs)) == Set(l.objectiveIDs), "Incomplete assessment \(l.key).")
         }
         try require(Set(roadmaps.map(\.entityID)).count == roadmaps.count,"Duplicate roadmap subjects.")
         for r in roadmaps {
             let lessons=r.chapters.flatMap(\.lessonIDs)
             try require(ei.contains(r.entityID) && !r.chapters.isEmpty && r.chapters.allSatisfy {!$0.lessonIDs.isEmpty} && r.chapters.contains {$0.isOptional != true} && Set(lessons).count == lessons.count && Set(lessons).isSubset(of:li), "Broken roadmap.")
-            switch entity(r.entityID).type {
+            switch entitiesByID[r.entityID]!.type {
             case "club": try require(r.clubID == r.entityID,"Conflicting club roadmap subject.")
-            case "player": try require(r.clubID.map {ei.contains($0) && entity($0).type == "club"} == true,"A player roadmap needs supported club context.")
+            case "player": try require(r.clubID.map {ei.contains($0) && entitiesByID[$0]!.type == "club"} == true,"A player roadmap needs supported club context.")
             case "competition": try require(r.subjectID == r.entityID && r.clubID == nil,"A competition roadmap cannot belong to a club.")
             default: throw ContentError.invalid("Unsupported roadmap subject.")
             }

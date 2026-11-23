@@ -1,0 +1,1598 @@
+{
+  "seasonScopes": {
+    "premier-league": "2026/27 Premier League season"
+  },
+  "sources": [
+    {
+      "key": "pl-members-2026",
+      "title": "New to the Premier League? Here’s all you need to know",
+      "url": "https://www.premierleague.com/en/news/4365156/new-to-the-premier-league-heres-all-you-need-to-know",
+      "verifiedAt": "2026-10-09"
+    },
+    {
+      "key": "pl-season-start-2026",
+      "title": "The 2026/27 Premier League season officially starts",
+      "url": "https://www.premierleague.com/en/news/4673099/the-202627-premier-league-season-officially-starts",
+      "verifiedAt": "2026-10-09"
+    },
+    {
+      "key": "bournemouth-official-history",
+      "title": "AFC Bournemouth Careers – club history",
+      "url": "https://careers.afcb.co.uk/en?scroll_to=js-careers-jobs-block",
+      "verifiedAt": "2026-10-09"
+    },
+    {
+      "key": "bournemouth-pl-history",
+      "title": "AFC Bournemouth promoted to Premier League",
+      "url": "https://www.premierleague.com/en/news/2603059",
+      "verifiedAt": "2026-10-09"
+    },
+    {
+      "key": "brentford-130",
+      "title": "Brentford FC 130 years old",
+      "url": "https://www.brentfordfc.com/en/news/brentford-fc-130-years-old_432999",
+      "verifiedAt": "2026-10-09"
+    },
+    {
+      "key": "brighton-birthday",
+      "title": "Happy birthday to us!",
+      "url": "https://www.brightonandhovealbion.com/media-article/Happy-birthday-to-us%21",
+      "verifiedAt": "2026-10-09"
+    },
+    {
+      "key": "chelsea-founders-2026",
+      "title": "Founders’ Day: The Birth of the Blues",
+      "url": "https://www.chelseafc.com/en/news/article/founders-day-the-birth-of-the-blues",
+      "verifiedAt": "2026-10-09"
+    },
+    {
+      "key": "chelsea-title-1955",
+      "title": "From the museum: 70th anniversary of Chelsea’s first league title",
+      "url": "https://www.chelseafc.com/en/news/article/from-the-museum-70th-anniversary-of-chelseas-champions-of-1955",
+      "verifiedAt": "2026-10-09"
+    },
+    {
+      "key": "pl-history",
+      "title": "Origins and History of the Premier League",
+      "url": "https://www.premierleague.com/en/history",
+      "verifiedAt": "2026-10-09"
+    },
+    {
+      "key": "coventry-cup-pl",
+      "title": "Greatest final-day relegation escapes in Premier League history",
+      "url": "https://www.premierleague.com/en/news/4663873/greatest-final-day-relegation-escapes-in-premier-league-history",
+      "verifiedAt": "2026-10-09"
+    },
+    {
+      "key": "coventry-title",
+      "title": "Our Champions Home Shirt now available!",
+      "url": "https://www.ccfc.co.uk/news/2026/may/13/our-champions-/",
+      "verifiedAt": "2026-10-09"
+    },
+    {
+      "key": "palace-history",
+      "title": "Our history",
+      "url": "https://www.cpfc.co.uk/information/crystal-palace-history/",
+      "verifiedAt": "2026-10-09"
+    },
+    {
+      "key": "palace-2025",
+      "title": "120 Years Ago Today: Palace’s major battle to become a professional league club",
+      "url": "https://www.cpfc.co.uk/news/features/120-years-ago-today-palaces-battle-to-become-a-professional-league-club/",
+      "verifiedAt": "2026-10-09"
+    },
+    {
+      "key": "everton-homes",
+      "title": "Our Former Homes",
+      "url": "https://www.evertonfc.com/club/history/our-former-homes",
+      "verifiedAt": "2026-10-09"
+    },
+    {
+      "key": "everton-honours",
+      "title": "Honours & Records",
+      "url": "https://www.evertonfc.com/club/history/honours/honours-and-records",
+      "verifiedAt": "2026-10-09"
+    },
+    {
+      "key": "fulham-history",
+      "title": "History of Fulham FC",
+      "url": "https://www.fulhamfc.com/club/history/history-of-fulham-football-club",
+      "verifiedAt": "2026-10-09"
+    },
+    {
+      "key": "hull-early",
+      "title": "Through The Years: 1904-1909",
+      "url": "https://www.wearehullcity.co.uk/news/2025/may/19/through-the-years-1904-1909/",
+      "verifiedAt": "2026-10-09"
+    },
+    {
+      "key": "hull-pl-debut",
+      "title": "High flyers to strugglers: Hull’s PL debut",
+      "url": "https://www.premierleague.com/en/news/59703",
+      "verifiedAt": "2026-10-09"
+    },
+    {
+      "key": "hull-promotion",
+      "title": "All you need to know as Hull City are promoted to Premier League",
+      "url": "https://www.premierleague.com/es/news/4664386/all-you-need-to-know-as-hull-city-are-promoted-to-premier-league",
+      "verifiedAt": "2026-10-09"
+    },
+    {
+      "key": "ipswich-history",
+      "title": "Ipswich Town FC | Club History",
+      "url": "https://www.itfc.co.uk/club/history/",
+      "verifiedAt": "2026-10-09"
+    },
+    {
+      "key": "leeds-formation",
+      "title": "17th October 1919: The Fall and Rise of Football in Leeds",
+      "url": "https://www.leedsunited.com/en/news/17th-october-1919-the-fall-and-rise-of-football-in-leeds",
+      "verifiedAt": "2026-10-09"
+    },
+    {
+      "key": "leeds-honours",
+      "title": "Club Honours",
+      "url": "https://www.leedsunited.com/en/club-honours",
+      "verifiedAt": "2026-10-09"
+    },
+    {
+      "key": "newcastle-history",
+      "title": "United’s Victorian start (1881-1899)",
+      "url": "https://www.newcastleunited.com/en/uniteds-victorian-start-1881-1899",
+      "verifiedAt": "2026-10-09"
+    },
+    {
+      "key": "newcastle-kits",
+      "title": "From Stripes to Stunners: A [Geordie] history of Newcastle United kits",
+      "url": "https://www.newcastleunited.com/en/news/kits-a-brief-history",
+      "verifiedAt": "2026-10-09"
+    },
+    {
+      "key": "forest-est",
+      "title": "Nottingham Forest Football Club Key Personnel & Club Information",
+      "url": "https://www.premierleague.com/clubs/15/Nottinghan-Forest/directory",
+      "verifiedAt": "2026-10-09"
+    },
+    {
+      "key": "forest-europe",
+      "title": "Which Premier League clubs have won the most European trophies?",
+      "url": "https://www.premierleague.com/en/news/4650722/which-premier-league-clubs-have-won-the-most-european-trophies",
+      "verifiedAt": "2026-10-09"
+    },
+    {
+      "key": "sunderland-history",
+      "title": "SAFC announce Founders’ and Heroes’ Weeks",
+      "url": "https://www.safc.com/news/2024/september/26/safc-announce-two-themed-weeks",
+      "verifiedAt": "2026-10-09"
+    },
+    {
+      "key": "sunderland-honours",
+      "title": "Promoted clubs: All you need to know about Sunderland",
+      "url": "https://www.premierleague.com/en/news/4323178/promoted-clubs-all-you-need-to-know-about-sunderland",
+      "verifiedAt": "2026-10-09"
+    },
+    {
+      "key": "tottenham-timeline",
+      "title": "Year by Year History",
+      "url": "https://www.tottenhamhotspur.com/the-club/history/year-by-year",
+      "verifiedAt": "2026-10-09"
+    },
+    {
+      "key": "tottenham-1901",
+      "title": "The Miracle of 1901",
+      "url": "https://www.tottenhamhotspur.com/news/featured/1015017",
+      "verifiedAt": "2026-10-09"
+    },
+    {
+      "key": "tottenham-1951",
+      "title": "75 years on | The story of our maiden top-flight title success",
+      "url": "https://www.tottenhamhotspur.com/news/1062493/75-years-on-the-story-of-our-maiden-top-flight-title-success",
+      "verifiedAt": "2026-10-09"
+    }
+  ],
+  "memberships": [
+    {
+      "clubKey": "bournemouth",
+      "entityKey": "entity-bournemouth",
+      "name": "AFC Bournemouth",
+      "seasonKey": "premier-league",
+      "season": "2026/27",
+      "member": true,
+      "sourceKey": "pl-members-2026",
+      "scope": "Official Premier League club list for the 2026/27 season"
+    },
+    {
+      "clubKey": "arsenal",
+      "entityKey": "entity-arsenal",
+      "name": "Arsenal",
+      "seasonKey": "premier-league",
+      "season": "2026/27",
+      "member": true,
+      "sourceKey": "pl-members-2026",
+      "scope": "Official Premier League club list for the 2026/27 season"
+    },
+    {
+      "clubKey": "aston-villa",
+      "entityKey": "entity-aston-villa",
+      "name": "Aston Villa",
+      "seasonKey": "premier-league",
+      "season": "2026/27",
+      "member": true,
+      "sourceKey": "pl-members-2026",
+      "scope": "Official Premier League club list for the 2026/27 season"
+    },
+    {
+      "clubKey": "brentford",
+      "entityKey": "entity-brentford",
+      "name": "Brentford",
+      "seasonKey": "premier-league",
+      "season": "2026/27",
+      "member": true,
+      "sourceKey": "pl-members-2026",
+      "scope": "Official Premier League club list for the 2026/27 season"
+    },
+    {
+      "clubKey": "brighton",
+      "entityKey": "entity-brighton",
+      "name": "Brighton & Hove Albion",
+      "seasonKey": "premier-league",
+      "season": "2026/27",
+      "member": true,
+      "sourceKey": "pl-members-2026",
+      "scope": "Official Premier League club list for the 2026/27 season"
+    },
+    {
+      "clubKey": "chelsea",
+      "entityKey": "entity-chelsea",
+      "name": "Chelsea",
+      "seasonKey": "premier-league",
+      "season": "2026/27",
+      "member": true,
+      "sourceKey": "pl-members-2026",
+      "scope": "Official Premier League club list for the 2026/27 season"
+    },
+    {
+      "clubKey": "coventry-city",
+      "entityKey": "entity-coventry-city",
+      "name": "Coventry City",
+      "seasonKey": "premier-league",
+      "season": "2026/27",
+      "member": true,
+      "sourceKey": "pl-members-2026",
+      "scope": "Official Premier League club list for the 2026/27 season"
+    },
+    {
+      "clubKey": "crystal-palace",
+      "entityKey": "entity-crystal-palace",
+      "name": "Crystal Palace",
+      "seasonKey": "premier-league",
+      "season": "2026/27",
+      "member": true,
+      "sourceKey": "pl-members-2026",
+      "scope": "Official Premier League club list for the 2026/27 season"
+    },
+    {
+      "clubKey": "everton",
+      "entityKey": "entity-everton",
+      "name": "Everton",
+      "seasonKey": "premier-league",
+      "season": "2026/27",
+      "member": true,
+      "sourceKey": "pl-members-2026",
+      "scope": "Official Premier League club list for the 2026/27 season"
+    },
+    {
+      "clubKey": "fulham",
+      "entityKey": "entity-fulham",
+      "name": "Fulham",
+      "seasonKey": "premier-league",
+      "season": "2026/27",
+      "member": true,
+      "sourceKey": "pl-members-2026",
+      "scope": "Official Premier League club list for the 2026/27 season"
+    },
+    {
+      "clubKey": "hull-city",
+      "entityKey": "entity-hull-city",
+      "name": "Hull City",
+      "seasonKey": "premier-league",
+      "season": "2026/27",
+      "member": true,
+      "sourceKey": "pl-members-2026",
+      "scope": "Official Premier League club list for the 2026/27 season"
+    },
+    {
+      "clubKey": "ipswich-town",
+      "entityKey": "entity-ipswich-town",
+      "name": "Ipswich Town",
+      "seasonKey": "premier-league",
+      "season": "2026/27",
+      "member": true,
+      "sourceKey": "pl-members-2026",
+      "scope": "Official Premier League club list for the 2026/27 season"
+    },
+    {
+      "clubKey": "leeds-united",
+      "entityKey": "entity-leeds-united",
+      "name": "Leeds United",
+      "seasonKey": "premier-league",
+      "season": "2026/27",
+      "member": true,
+      "sourceKey": "pl-members-2026",
+      "scope": "Official Premier League club list for the 2026/27 season"
+    },
+    {
+      "clubKey": "liverpool",
+      "entityKey": "entity-liverpool",
+      "name": "Liverpool",
+      "seasonKey": "premier-league",
+      "season": "2026/27",
+      "member": true,
+      "sourceKey": "pl-members-2026",
+      "scope": "Official Premier League club list for the 2026/27 season"
+    },
+    {
+      "clubKey": "manchester-city",
+      "entityKey": "entity-manchester-city",
+      "name": "Manchester City",
+      "seasonKey": "premier-league",
+      "season": "2026/27",
+      "member": true,
+      "sourceKey": "pl-members-2026",
+      "scope": "Official Premier League club list for the 2026/27 season"
+    },
+    {
+      "clubKey": "manchester-united",
+      "entityKey": "entity-manchester-united",
+      "name": "Manchester United",
+      "seasonKey": "premier-league",
+      "season": "2026/27",
+      "member": true,
+      "sourceKey": "pl-members-2026",
+      "scope": "Official Premier League club list for the 2026/27 season"
+    },
+    {
+      "clubKey": "newcastle-united",
+      "entityKey": "entity-newcastle-united",
+      "name": "Newcastle United",
+      "seasonKey": "premier-league",
+      "season": "2026/27",
+      "member": true,
+      "sourceKey": "pl-members-2026",
+      "scope": "Official Premier League club list for the 2026/27 season"
+    },
+    {
+      "clubKey": "nottingham-forest",
+      "entityKey": "entity-nottingham-forest",
+      "name": "Nottingham Forest",
+      "seasonKey": "premier-league",
+      "season": "2026/27",
+      "member": true,
+      "sourceKey": "pl-members-2026",
+      "scope": "Official Premier League club list for the 2026/27 season"
+    },
+    {
+      "clubKey": "sunderland",
+      "entityKey": "entity-sunderland",
+      "name": "Sunderland",
+      "seasonKey": "premier-league",
+      "season": "2026/27",
+      "member": true,
+      "sourceKey": "pl-members-2026",
+      "scope": "Official Premier League club list for the 2026/27 season"
+    },
+    {
+      "clubKey": "tottenham-hotspur",
+      "entityKey": "entity-tottenham-hotspur",
+      "name": "Tottenham Hotspur",
+      "seasonKey": "premier-league",
+      "season": "2026/27",
+      "member": true,
+      "sourceKey": "pl-members-2026",
+      "scope": "Official Premier League club list for the 2026/27 season"
+    }
+  ],
+  "clubs": [
+    {
+      "key": "bournemouth",
+      "name": "AFC Bournemouth",
+      "aliases": [
+        "Bournemouth",
+        "AFCB"
+      ],
+      "competitions": [
+        "premier-league"
+      ],
+      "visual": "BOU",
+      "logoURL": null,
+      "lessons": [
+        {
+          "key": "bournemouth-roots",
+          "title": "From Boscombe to Bournemouth",
+          "subtitle": "A south-coast club with a long road to the top flight.",
+          "story": [
+            {
+              "title": "The early name",
+              "body": "The club’s roots date to 1899, when it began as Boscombe FC. The name AFC Bournemouth came later, in 1971."
+            },
+            {
+              "title": "A top-flight breakthrough",
+              "body": "The club’s modern climb culminated in its first Premier League season in 2015/16. Its best finish in the first five-season spell was ninth in 2016/17."
+            }
+          ],
+          "facts": [
+            {
+              "key": "bournemouth-founded",
+              "prompt": "In what year did the club’s roots begin?",
+              "answers": [
+                "1899"
+              ],
+              "distractors": [
+                "1889",
+                "1901",
+                "1904"
+              ],
+              "label": "Foundation year",
+              "scope": "Club foundation history",
+              "sourceKey": "bournemouth-official-history",
+              "evidence": "“Founded in 1899”"
+            },
+            {
+              "key": "bournemouth-original-name",
+              "prompt": "What was the club originally called?",
+              "answers": [
+                "Boscombe FC"
+              ],
+              "distractors": [
+                "AFC Bournemouth",
+                "Brighton & Hove United",
+                "Brentford FC"
+              ],
+              "label": "Earlier name",
+              "scope": "Club naming history",
+              "sourceKey": "bournemouth-official-history",
+              "evidence": "“originally as Boscombe FC”"
+            },
+            {
+              "key": "bournemouth-best-pl",
+              "prompt": "What was Bournemouth’s best finish in its first five Premier League seasons?",
+              "answers": [
+                "Ninth"
+              ],
+              "distractors": [
+                "Seventh",
+                "Tenth",
+                "Twelfth"
+              ],
+              "label": "Best league finish",
+              "scope": "Premier League seasons 2015/16–2019/20",
+              "sourceKey": "bournemouth-pl-history",
+              "evidence": "“best campaign in 2016/17 when they finished ninth”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "brentford",
+      "name": "Brentford",
+      "aliases": [
+        "Brentford FC",
+        "The Bees"
+      ],
+      "competitions": [
+        "premier-league"
+      ],
+      "visual": "BRE",
+      "logoURL": null,
+      "lessons": [
+        {
+          "key": "brentford-origins",
+          "title": "A club takes shape",
+          "subtitle": "Brentford’s story began with a local ground and a vote over which game to play.",
+          "story": [
+            {
+              "title": "The 1889 decision",
+              "body": "Brentford FC was formally formed in 1889. At its first planning stage, local organisers chose association football over rugby."
+            },
+            {
+              "title": "A home and first opponent",
+              "body": "The Bees played their first match against a Kew eleven in 1889, drawing 1–1. Griffin Park became their home in 1904."
+            }
+          ],
+          "facts": [
+            {
+              "key": "brentford-founded",
+              "prompt": "When was Brentford FC formally formed?",
+              "answers": [
+                "1889"
+              ],
+              "distractors": [
+                "1879",
+                "1899",
+                "1904"
+              ],
+              "label": "Foundation year",
+              "scope": "Club foundation history",
+              "sourceKey": "brentford-130",
+              "evidence": "“officially formed” in 1889"
+            },
+            {
+              "key": "brentford-first-opponent",
+              "prompt": "Who did Brentford face in its first match?",
+              "answers": [
+                "A Kew eleven"
+              ],
+              "distractors": [
+                "Plymouth Argyle",
+                "Chelsea",
+                "Notts County"
+              ],
+              "label": "First opponent",
+              "scope": "Club first match, 23 November 1889",
+              "sourceKey": "brentford-130",
+              "evidence": "“first game against a Kew eleven”"
+            },
+            {
+              "key": "brentford-griffin",
+              "prompt": "In what year did Brentford begin playing at Griffin Park?",
+              "answers": [
+                "1904"
+              ],
+              "distractors": [
+                "1889",
+                "1898",
+                "1910"
+              ],
+              "label": "Ground era",
+              "scope": "Griffin Park tenure",
+              "sourceKey": "brentford-130",
+              "evidence": "“played since 1904”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "brighton",
+      "name": "Brighton & Hove Albion",
+      "aliases": [
+        "Brighton",
+        "Brighton and Hove Albion",
+        "The Seagulls"
+      ],
+      "competitions": [
+        "premier-league"
+      ],
+      "visual": "BHA",
+      "logoURL": null,
+      "lessons": [
+        {
+          "key": "brighton-beginnings",
+          "title": "Albion is born",
+          "subtitle": "A local football club emerged in 1901 and soon settled into its distinctive name and home.",
+          "story": [
+            {
+              "title": "A new club in Brighton",
+              "body": "Brighton & Hove Albion was formed on 24 June 1901 at the Seven Stars pub. Its first proposed name was Brighton & Hove United."
+            },
+            {
+              "title": "Finding an identity",
+              "body": "The name changed to Brighton & Hove Albion before the 1901/02 season began. The Goldstone Ground first hosted the club in 1902, before becoming its home."
+            }
+          ],
+          "facts": [
+            {
+              "key": "brighton-founded",
+              "prompt": "In what year was Brighton & Hove Albion formed?",
+              "answers": [
+                "1901"
+              ],
+              "distractors": [
+                "1889",
+                "1899",
+                "1904"
+              ],
+              "label": "Foundation year",
+              "scope": "Club foundation history",
+              "sourceKey": "brighton-birthday",
+              "evidence": "“club was founded on 24 June 1901”"
+            },
+            {
+              "key": "brighton-first-name",
+              "prompt": "What was the club first called in 1901?",
+              "answers": [
+                "Brighton & Hove United"
+              ],
+              "distractors": [
+                "Brighton United",
+                "Brighton & Hove Albion",
+                "Brighton & Hove Rangers"
+              ],
+              "label": "Original proposed name",
+              "scope": "Initial club name, 1901",
+              "sourceKey": "brighton-birthday",
+              "evidence": "“new club was to be called Brighton & Hove United”"
+            },
+            {
+              "key": "brighton-goldstone",
+              "prompt": "In what year did the Goldstone Ground first host the club?",
+              "answers": [
+                "1902"
+              ],
+              "distractors": [
+                "1901",
+                "1904",
+                "1906"
+              ],
+              "label": "Ground milestone",
+              "scope": "First use by the club",
+              "sourceKey": "brighton-birthday",
+              "evidence": "“first used by the club in 1902”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "chelsea",
+      "name": "Chelsea",
+      "aliases": [
+        "Chelsea FC",
+        "The Blues"
+      ],
+      "competitions": [
+        "premier-league"
+      ],
+      "visual": "CHE",
+      "logoURL": null,
+      "lessons": [
+        {
+          "key": "chelsea-foundation",
+          "title": "Made for Stamford Bridge",
+          "subtitle": "Chelsea began as a new club created to give the newly built stadium a football tenant.",
+          "story": [
+            {
+              "title": "The founding meeting",
+              "body": "Chelsea was founded in 1905 after a meeting at the Rising Sun pub across from Stamford Bridge. The new side was formed to play at the stadium."
+            },
+            {
+              "title": "First league crown",
+              "body": "Fifty years after its founding, Chelsea won its first league championship: the 1954/55 Division One title. Its first Premier League crown followed in 2004/05."
+            }
+          ],
+          "facts": [
+            {
+              "key": "chelsea-founded",
+              "prompt": "In what year was Chelsea founded?",
+              "answers": [
+                "1905"
+              ],
+              "distractors": [
+                "1895",
+                "1899",
+                "1910"
+              ],
+              "label": "Foundation year",
+              "scope": "Club foundation history",
+              "sourceKey": "chelsea-founders-2026",
+              "evidence": "“founded on this day, 10 March 1905”"
+            },
+            {
+              "key": "chelsea-first-league",
+              "prompt": "Which season brought Chelsea its first league title?",
+              "answers": [
+                "1954/55"
+              ],
+              "distractors": [
+                "1949/50",
+                "1964/65",
+                "1970/71"
+              ],
+              "label": "First league title",
+              "scope": "Football League Division One",
+              "sourceKey": "chelsea-title-1955",
+              "evidence": "“1954/55 Division One championship title”"
+            },
+            {
+              "key": "chelsea-first-pl",
+              "prompt": "Which season brought Chelsea its first Premier League title?",
+              "answers": [
+                "2004/05"
+              ],
+              "distractors": [
+                "1997/98",
+                "2001/02",
+                "2009/10"
+              ],
+              "label": "First Premier League title",
+              "scope": "Premier League",
+              "sourceKey": "chelsea-founders-2026",
+              "evidence": "“Premier League 2004/05”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "coventry-city",
+      "name": "Coventry City",
+      "aliases": [
+        "Coventry",
+        "The Sky Blues"
+      ],
+      "competitions": [
+        "premier-league"
+      ],
+      "visual": "COV",
+      "logoURL": null,
+      "lessons": [
+        {
+          "key": "coventry-firsts",
+          "title": "Cup glory and a league first",
+          "subtitle": "Coventry’s history includes a famous Wembley win and a place in the Premier League’s founding season.",
+          "story": [
+            {
+              "title": "The cup final",
+              "body": "Coventry beat Tottenham Hotspur 3–2 to win the 1987 FA Cup. The victory remains the club’s sole FA Cup triumph."
+            },
+            {
+              "title": "A new competition",
+              "body": "Coventry was among the 22 clubs in the first Premier League campaign of 1992/93. The club later won the 2025/26 Championship title."
+            }
+          ],
+          "facts": [
+            {
+              "key": "coventry-cup-year",
+              "prompt": "In what year did Coventry win the FA Cup?",
+              "answers": [
+                "1987"
+              ],
+              "distractors": [
+                "1977",
+                "1983",
+                "1992"
+              ],
+              "label": "FA Cup triumph",
+              "scope": "FA Cup final",
+              "sourceKey": "coventry-cup-pl",
+              "evidence": "“1987 FA Cup final”"
+            },
+            {
+              "key": "coventry-pl-origin",
+              "prompt": "Which Premier League season was Coventry part of from the outset?",
+              "answers": [
+                "1992/93"
+              ],
+              "distractors": [
+                "1990/91",
+                "1994/95",
+                "2000/01"
+              ],
+              "label": "Competition milestone",
+              "scope": "Inaugural Premier League campaign",
+              "sourceKey": "pl-history",
+              "evidence": "“The inaugural Premier League campaign started on Saturday 15 August, 1992”"
+            },
+            {
+              "key": "coventry-championship",
+              "prompt": "Which completed season did Coventry win the Championship?",
+              "answers": [
+                "2025/26"
+              ],
+              "distractors": [
+                "2023/24",
+                "2024/25",
+                "2026/27"
+              ],
+              "label": "League title",
+              "scope": "EFL Championship, 2025/26",
+              "sourceKey": "coventry-title",
+              "evidence": "“Champions of the Championship”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "crystal-palace",
+      "name": "Crystal Palace",
+      "aliases": [
+        "Palace",
+        "The Eagles"
+      ],
+      "competitions": [
+        "premier-league"
+      ],
+      "visual": "CRY",
+      "logoURL": null,
+      "lessons": [
+        {
+          "key": "palace-professional",
+          "title": "The professional Palace",
+          "subtitle": "Crystal Palace’s professional story began in 1905 and reached the top division decades later.",
+          "story": [
+            {
+              "title": "A long football lineage",
+              "body": "The club traces an antecedent team to 1861, but the professional club was formally launched in 1905. Palace first reached the top flight in 1969."
+            },
+            {
+              "title": "A landmark cup",
+              "body": "Crystal Palace won its first FA Cup in 2025, defeating Manchester City in the final. It was the club’s first major trophy."
+            }
+          ],
+          "facts": [
+            {
+              "key": "palace-professional",
+              "prompt": "In what year did Crystal Palace become a professional club?",
+              "answers": [
+                "1905"
+              ],
+              "distractors": [
+                "1861",
+                "1892",
+                "1919"
+              ],
+              "label": "Professional formation",
+              "scope": "Professional club history",
+              "sourceKey": "palace-history",
+              "evidence": "“became professional in 1905”"
+            },
+            {
+              "key": "palace-topflight",
+              "prompt": "In what year did Palace first reach England’s top division?",
+              "answers": [
+                "1969"
+              ],
+              "distractors": [
+                "1959",
+                "1979",
+                "1992"
+              ],
+              "label": "Top-flight arrival",
+              "scope": "English top flight",
+              "sourceKey": "palace-history",
+              "evidence": "“first reaching England’s top-flight in 1969”"
+            },
+            {
+              "key": "palace-cup",
+              "prompt": "In what year did Palace win its first FA Cup?",
+              "answers": [
+                "2025"
+              ],
+              "distractors": [
+                "1990",
+                "2016",
+                "2024"
+              ],
+              "label": "FA Cup milestone",
+              "scope": "FA Cup",
+              "sourceKey": "palace-2025",
+              "evidence": "“FA Cup winners for the first time in 2025”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "everton",
+      "name": "Everton",
+      "aliases": [
+        "Everton FC",
+        "The Toffees"
+      ],
+      "competitions": [
+        "premier-league"
+      ],
+      "visual": "EVE",
+      "logoURL": null,
+      "lessons": [
+        {
+          "key": "everton-goodison",
+          "title": "Goodison and the first title",
+          "subtitle": "Everton’s move to Goodison Park came before its first league championship.",
+          "story": [
+            {
+              "title": "A new home",
+              "body": "Goodison Park officially opened on 24 August 1892. Everton’s first match at the ground was a friendly against Bolton Wanderers."
+            },
+            {
+              "title": "First champions",
+              "body": "Everton won its first league title in 1890/91. The club’s honours list records nine First Division championships in total."
+            }
+          ],
+          "facts": [
+            {
+              "key": "everton-goodison",
+              "prompt": "In what year did Goodison Park officially open?",
+              "answers": [
+                "1892"
+              ],
+              "distractors": [
+                "1884",
+                "1888",
+                "1900"
+              ],
+              "label": "Stadium opening",
+              "scope": "Goodison Park",
+              "sourceKey": "everton-homes",
+              "evidence": "“officially opened Goodison Park on 24 August 1892”"
+            },
+            {
+              "key": "everton-first-title",
+              "prompt": "Which season was Everton’s first league championship?",
+              "answers": [
+                "1890/91"
+              ],
+              "distractors": [
+                "1888/89",
+                "1894/95",
+                "1901/02"
+              ],
+              "label": "First league title",
+              "scope": "Football League championship",
+              "sourceKey": "everton-homes",
+              "evidence": "“In the 1890/91 season, Everton won their first championship”"
+            },
+            {
+              "key": "everton-league-titles",
+              "prompt": "How many First Division titles appear on Everton’s honours list?",
+              "answers": [
+                "Nine"
+              ],
+              "distractors": [
+                "Seven",
+                "Eight",
+                "Ten"
+              ],
+              "label": "League title total",
+              "scope": "First Division honours list",
+              "sourceKey": "everton-honours",
+              "evidence": "“1890/91, 1914/15, 1927/28, 1931/32, 1938/39, 1962/63, 1969/70, 1984/85, 1986/87”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "fulham",
+      "name": "Fulham",
+      "aliases": [
+        "Fulham FC",
+        "The Cottagers"
+      ],
+      "competitions": [
+        "premier-league"
+      ],
+      "visual": "FUL",
+      "logoURL": null,
+      "lessons": [
+        {
+          "key": "fulham-roots",
+          "title": "From Saints to Fulham",
+          "subtitle": "The west London club began as a church team before taking its shorter name and settling at Craven Cottage.",
+          "story": [
+            {
+              "title": "A church-team beginning",
+              "body": "Fulham St Andrew’s was formed in 1879 by a school teacher and churchwarden for local boys. The club shortened its title to Fulham Football Club in 1889."
+            },
+            {
+              "title": "A riverside home",
+              "body": "Fulham moved into Craven Cottage in 1896. The ground became a lasting part of the club’s identity beside the Thames."
+            }
+          ],
+          "facts": [
+            {
+              "key": "fulham-founded",
+              "prompt": "In what year was Fulham St Andrew’s formed?",
+              "answers": [
+                "1879"
+              ],
+              "distractors": [
+                "1865",
+                "1889",
+                "1896"
+              ],
+              "label": "Foundation year",
+              "scope": "Club foundation history",
+              "sourceKey": "fulham-history",
+              "evidence": "“formed a team for local boys ... in 1879”"
+            },
+            {
+              "key": "fulham-renamed",
+              "prompt": "In what year did the club shorten its title to Fulham Football Club?",
+              "answers": [
+                "1889"
+              ],
+              "distractors": [
+                "1879",
+                "1896",
+                "1898"
+              ],
+              "label": "Club name",
+              "scope": "Club naming history",
+              "sourceKey": "fulham-history",
+              "evidence": "“title was shortened to Fulham Football Club in January 1889”"
+            },
+            {
+              "key": "fulham-craven",
+              "prompt": "When did Fulham move into Craven Cottage?",
+              "answers": [
+                "1896"
+              ],
+              "distractors": [
+                "1889",
+                "1892",
+                "1907"
+              ],
+              "label": "Home ground",
+              "scope": "Club ground history",
+              "sourceKey": "fulham-history",
+              "evidence": "“took residence in their new home” in 1896"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "hull-city",
+      "name": "Hull City",
+      "aliases": [
+        "Hull",
+        "The Tigers"
+      ],
+      "competitions": [
+        "premier-league"
+      ],
+      "visual": "HUL",
+      "logoURL": null,
+      "lessons": [
+        {
+          "key": "hull-top-flight",
+          "title": "The Tigers reach the top flight",
+          "subtitle": "Hull City’s early story began in 1904; its later Premier League debut came more than a century later.",
+          "story": [
+            {
+              "title": "A new club in Hull",
+              "body": "Sixteen men are credited with founding Hull City in June 1904. The club entered the Football League Second Division for 1905/06."
+            },
+            {
+              "title": "First in the Premier League",
+              "body": "Hull’s first top-flight season was 2008/09, after promotion through the Championship play-offs. The debut campaign began with a 2–1 win over Fulham."
+            }
+          ],
+          "facts": [
+            {
+              "key": "hull-founded",
+              "prompt": "In what year was Hull City founded?",
+              "answers": [
+                "1904"
+              ],
+              "distractors": [
+                "1899",
+                "1901",
+                "1905"
+              ],
+              "label": "Foundation year",
+              "scope": "Club foundation history",
+              "sourceKey": "hull-early",
+              "evidence": "“foundation of Hull City” in June 1904"
+            },
+            {
+              "key": "hull-league-entry",
+              "prompt": "Which season saw Hull enter the Football League Second Division?",
+              "answers": [
+                "1905/06"
+              ],
+              "distractors": [
+                "1903/04",
+                "1904/05",
+                "1906/07"
+              ],
+              "label": "League entry",
+              "scope": "Football League Second Division",
+              "sourceKey": "hull-early",
+              "evidence": "“ahead of the 1905/06 season”"
+            },
+            {
+              "key": "hull-pl-debut",
+              "prompt": "Which season was Hull’s Premier League debut?",
+              "answers": [
+                "2008/09"
+              ],
+              "distractors": [
+                "2006/07",
+                "2007/08",
+                "2009/10"
+              ],
+              "label": "Premier League debut",
+              "scope": "Premier League",
+              "sourceKey": "hull-pl-debut",
+              "evidence": "“Premier League debut campaign of 2008/09”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "ipswich-town",
+      "name": "Ipswich Town",
+      "aliases": [
+        "Ipswich",
+        "The Tractor Boys"
+      ],
+      "competitions": [
+        "premier-league"
+      ],
+      "visual": "IPS",
+      "logoURL": null,
+      "lessons": [
+        {
+          "key": "ipswich-rise",
+          "title": "From amateur side to champions",
+          "subtitle": "Ipswich turned professional decades after its founding, then made a rapid climb to the top of English football.",
+          "story": [
+            {
+              "title": "A 1878 beginning",
+              "body": "Ipswich Town was formed as an amateur club in 1878 and became professional in 1936. It joined the Football League in 1938."
+            },
+            {
+              "title": "A title and Europe",
+              "body": "Ipswich won the First Division championship in 1961/62, one season after winning the Second Division. The club later lifted the UEFA Cup in 1981."
+            }
+          ],
+          "facts": [
+            {
+              "key": "ipswich-founded",
+              "prompt": "In what year was Ipswich Town formed?",
+              "answers": [
+                "1878"
+              ],
+              "distractors": [
+                "1865",
+                "1889",
+                "1904"
+              ],
+              "label": "Foundation year",
+              "scope": "Club foundation history",
+              "sourceKey": "ipswich-history",
+              "evidence": "“formed as an amateur club in 1878”"
+            },
+            {
+              "key": "ipswich-professional",
+              "prompt": "In what year did Ipswich turn professional?",
+              "answers": [
+                "1936"
+              ],
+              "distractors": [
+                "1928",
+                "1938",
+                "1946"
+              ],
+              "label": "Professional status",
+              "scope": "Club history",
+              "sourceKey": "ipswich-history",
+              "evidence": "“not until 1936 when the Blues turned professional”"
+            },
+            {
+              "key": "ipswich-first-title",
+              "prompt": "Which season did Ipswich win the First Division championship?",
+              "answers": [
+                "1961/62"
+              ],
+              "distractors": [
+                "1956/57",
+                "1960/61",
+                "1967/68"
+              ],
+              "label": "League title",
+              "scope": "Football League First Division",
+              "sourceKey": "ipswich-history",
+              "evidence": "“First Division Championship a year later”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "leeds-united",
+      "name": "Leeds United",
+      "aliases": [
+        "Leeds",
+        "The Whites"
+      ],
+      "competitions": [
+        "premier-league"
+      ],
+      "visual": "LEE",
+      "logoURL": null,
+      "lessons": [
+        {
+          "key": "leeds-formation",
+          "title": "A new club after Leeds City",
+          "subtitle": "Leeds United formed after the city’s previous league club was dissolved, then built a major honours record.",
+          "story": [
+            {
+              "title": "The 1919 formation",
+              "body": "Leeds United was founded in October 1919 after Leeds City was disbanded. The new club was formed with support from Leeds City followers."
+            },
+            {
+              "title": "Titles in two eras",
+              "body": "Leeds won three First Division championships, with its most recent coming in 1991/92. The club also won the FA Cup in 1971/72."
+            }
+          ],
+          "facts": [
+            {
+              "key": "leeds-founded",
+              "prompt": "In what year was Leeds United founded?",
+              "answers": [
+                "1919"
+              ],
+              "distractors": [
+                "1904",
+                "1910",
+                "1920"
+              ],
+              "label": "Foundation year",
+              "scope": "Club foundation history",
+              "sourceKey": "leeds-formation",
+              "evidence": "“helped to found the present Leeds United Football Club” in 1919"
+            },
+            {
+              "key": "leeds-last-first-division",
+              "prompt": "Which season was Leeds’s most recent First Division title?",
+              "answers": [
+                "1991/92"
+              ],
+              "distractors": [
+                "1968/69",
+                "1973/74",
+                "1989/90"
+              ],
+              "label": "Most recent First Division title",
+              "scope": "Football League First Division",
+              "sourceKey": "leeds-honours",
+              "evidence": "“1991-92” appears among First Division champions"
+            },
+            {
+              "key": "leeds-fa-cup",
+              "prompt": "In which season did Leeds win the FA Cup?",
+              "answers": [
+                "1971/72"
+              ],
+              "distractors": [
+                "1967/68",
+                "1969/70",
+                "1972/73"
+              ],
+              "label": "FA Cup title",
+              "scope": "FA Cup",
+              "sourceKey": "leeds-honours",
+              "evidence": "“FA CUP Winners: 1971-72”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "newcastle-united",
+      "name": "Newcastle United",
+      "aliases": [
+        "Newcastle",
+        "The Magpies"
+      ],
+      "competitions": [
+        "premier-league"
+      ],
+      "visual": "NEW",
+      "logoURL": null,
+      "lessons": [
+        {
+          "key": "newcastle-united",
+          "title": "Two clubs become United",
+          "subtitle": "Newcastle United emerged from a merger and took its lasting name in 1892.",
+          "story": [
+            {
+              "title": "A merger on Tyneside",
+              "body": "Newcastle East End absorbed the assets of Newcastle West End and moved to St James’ Park in 1892. In December, the club adopted the name Newcastle United."
+            },
+            {
+              "title": "The stripes arrive",
+              "body": "The club first wore red shirts and white shorts; it adopted its famous black-and-white stripes in 1894. Its modern identity grew from that early merger."
+            }
+          ],
+          "facts": [
+            {
+              "key": "newcastle-merged",
+              "prompt": "Which two clubs combined to create Newcastle United?",
+              "answers": [
+                "Newcastle East End and Newcastle West End"
+              ],
+              "distractors": [
+                "Newcastle East End and Sunderland",
+                "Newcastle West End and Middlesbrough",
+                "Sunderland and Middlesbrough"
+              ],
+              "label": "Founding clubs",
+              "scope": "Club formation, 1892",
+              "sourceKey": "newcastle-history",
+              "evidence": "“East End formally agreed to move to St. James’ Park”"
+            },
+            {
+              "key": "newcastle-name-year",
+              "prompt": "In what year did East End become Newcastle United?",
+              "answers": [
+                "1892"
+              ],
+              "distractors": [
+                "1881",
+                "1889",
+                "1899"
+              ],
+              "label": "Club naming year",
+              "scope": "Club naming history",
+              "sourceKey": "newcastle-history",
+              "evidence": "“East End became Newcastle United” on 9 December 1892"
+            },
+            {
+              "key": "newcastle-stripes",
+              "prompt": "In what year did Newcastle adopt its black-and-white stripes?",
+              "answers": [
+                "1894"
+              ],
+              "distractors": [
+                "1892",
+                "1893",
+                "1896"
+              ],
+              "label": "Kit milestone",
+              "scope": "Club kit history",
+              "sourceKey": "newcastle-kits",
+              "evidence": "“Come 1894 ... black and white stripes”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "nottingham-forest",
+      "name": "Nottingham Forest",
+      "aliases": [
+        "Forest",
+        "The Tricky Trees"
+      ],
+      "competitions": [
+        "premier-league"
+      ],
+      "visual": "NFO",
+      "logoURL": null,
+      "lessons": [
+        {
+          "key": "forest-european-glory",
+          "title": "A remarkable European double",
+          "subtitle": "Nottingham Forest’s history spans a 19th-century foundation and one of English football’s most striking European runs.",
+          "story": [
+            {
+              "title": "A club named for its ground",
+              "body": "Nottingham Forest was established in 1865. Its name came from the Forest Recreation Ground where the team first played."
+            },
+            {
+              "title": "Back-to-back European Cups",
+              "body": "Under Brian Clough, Forest won the European Cup in 1979 and retained it in 1980, completing back-to-back victories."
+            }
+          ],
+          "facts": [
+            {
+              "key": "forest-founded",
+              "prompt": "In what year was Nottingham Forest established?",
+              "answers": [
+                "1865"
+              ],
+              "distractors": [
+                "1862",
+                "1878",
+                "1889"
+              ],
+              "label": "Foundation year",
+              "scope": "Club foundation history",
+              "sourceKey": "forest-est",
+              "evidence": "“Est: 1865”"
+            },
+            {
+              "key": "forest-first-europe",
+              "prompt": "In what year did Forest first win the European Cup?",
+              "answers": [
+                "1979"
+              ],
+              "distractors": [
+                "1977",
+                "1978",
+                "1980"
+              ],
+              "label": "First European Cup",
+              "scope": "European Cup",
+              "sourceKey": "forest-europe",
+              "evidence": "“Forest claimed two of those – in 1979 and 1980”"
+            },
+            {
+              "key": "forest-second-europe",
+              "prompt": "In what year did Forest retain the European Cup?",
+              "answers": [
+                "1980"
+              ],
+              "distractors": [
+                "1978",
+                "1979",
+                "1981"
+              ],
+              "label": "Second European Cup",
+              "scope": "European Cup",
+              "sourceKey": "forest-europe",
+              "evidence": "“in 1979 and 1980”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "sunderland",
+      "name": "Sunderland",
+      "aliases": [
+        "Sunderland AFC",
+        "The Black Cats"
+      ],
+      "competitions": [
+        "premier-league"
+      ],
+      "visual": "SUN",
+      "logoURL": null,
+      "lessons": [
+        {
+          "key": "sunderland-honours",
+          "title": "Wearside’s early champions",
+          "subtitle": "Sunderland became a major force in the Football League’s early decades and added a famous Wembley cup win.",
+          "story": [
+            {
+              "title": "Founded on Wearside",
+              "body": "Sunderland AFC was founded in October 1879. The club won six First Division titles, with its last arriving in 1935/36."
+            },
+            {
+              "title": "A Wembley landmark",
+              "body": "Sunderland’s 1973 FA Cup victory remains one of the club’s defining moments. Ian Porterfield scored the final’s only goal against Leeds United."
+            }
+          ],
+          "facts": [
+            {
+              "key": "sunderland-founded",
+              "prompt": "In what year was Sunderland AFC founded?",
+              "answers": [
+                "1879"
+              ],
+              "distractors": [
+                "1865",
+                "1889",
+                "1892"
+              ],
+              "label": "Foundation year",
+              "scope": "Club foundation history",
+              "sourceKey": "sunderland-history",
+              "evidence": "“Founded in October 1879”"
+            },
+            {
+              "key": "sunderland-titles",
+              "prompt": "How many First Division championships are listed for Sunderland?",
+              "answers": [
+                "Six"
+              ],
+              "distractors": [
+                "Four",
+                "Five",
+                "Seven"
+              ],
+              "label": "League title total",
+              "scope": "Football League First Division honours",
+              "sourceKey": "sunderland-honours",
+              "evidence": "“1891/92, 1892/93, 1894/95, 1901/02, 1912/13, 1935/36”"
+            },
+            {
+              "key": "sunderland-fa-cup",
+              "prompt": "In what year did Sunderland win the FA Cup with Ian Porterfield’s final goal?",
+              "answers": [
+                "1973"
+              ],
+              "distractors": [
+                "1937",
+                "1966",
+                "1975"
+              ],
+              "label": "FA Cup triumph",
+              "scope": "FA Cup final",
+              "sourceKey": "sunderland-honours",
+              "evidence": "“FA Cup (1936/37, 1972/73)”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "tottenham-hotspur",
+      "name": "Tottenham Hotspur",
+      "aliases": [
+        "Tottenham",
+        "Spurs"
+      ],
+      "competitions": [
+        "premier-league"
+      ],
+      "visual": "TOT",
+      "logoURL": null,
+      "lessons": [
+        {
+          "key": "tottenham-milestones",
+          "title": "A non-league cup shock",
+          "subtitle": "Tottenham Hotspur began as Hotspur FC and made history as a non-league side in the FA Cup.",
+          "story": [
+            {
+              "title": "Hotspur takes shape",
+              "body": "The club was formed in 1882 as Hotspur FC and adopted the name Tottenham Hotspur in 1884. It entered the Football League in 1908."
+            },
+            {
+              "title": "Cup and league landmarks",
+              "body": "Spurs won the FA Cup in 1901 while still outside the Football League. Its first league championship came in 1950/51, after winning promotion the season before."
+            }
+          ],
+          "facts": [
+            {
+              "key": "tottenham-founded",
+              "prompt": "In what year was Hotspur FC formed?",
+              "answers": [
+                "1882"
+              ],
+              "distractors": [
+                "1878",
+                "1884",
+                "1892"
+              ],
+              "label": "Foundation year",
+              "scope": "Club foundation history",
+              "sourceKey": "tottenham-timeline",
+              "evidence": "“Club formed” in 1882"
+            },
+            {
+              "key": "tottenham-fa-cup",
+              "prompt": "Which year did Spurs win the FA Cup as a non-league club?",
+              "answers": [
+                "1901"
+              ],
+              "distractors": [
+                "1899",
+                "1900",
+                "1908"
+              ],
+              "label": "FA Cup triumph",
+              "scope": "FA Cup",
+              "sourceKey": "tottenham-1901",
+              "evidence": "“winning the famous FA Cup ... in 1901”"
+            },
+            {
+              "key": "tottenham-league-title",
+              "prompt": "Which season brought Tottenham its first league championship?",
+              "answers": [
+                "1950/51"
+              ],
+              "distractors": [
+                "1949/50",
+                "1951/52",
+                "1960/61"
+              ],
+              "label": "First league title",
+              "scope": "English First Division",
+              "sourceKey": "tottenham-1951",
+              "evidence": "“in season 1950-51”"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

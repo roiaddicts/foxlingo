@@ -58,8 +58,10 @@ struct LessonView: View {
         .onChange(of:completed) {_,_ in proxy.scrollTo("lesson-top",anchor:.top)}
         }.journal().navigationTitle(lesson.title).navigationBarTitleDisplayMode(.inline)
         .toolbar { ToolbarItem(placement:.topBarLeading) { Button { persist(); dismiss() } label:{Image(systemName:"xmark")}.accessibilityLabel("Close lesson") } }
-        .onAppear { if !loaded { resume=model.state.resumes[lesson.id] ?? LessonResume(); loaded=true; prepare() } }
-        .onDisappear { if loaded && !completed { persist() } }
+        .onAppear { model.lessonIsPresented = true; if !loaded { resume=model.state.resumes[lesson.id] ?? LessonResume(); loaded=true; prepare() } }
+        .onDisappear { model.lessonIsPresented = false; if loaded && !completed { persist() } }
+        .modifier(StreakSuccessOverlay(isLessonHost: true))
+        .toolbar(model.streakSuccess == nil ? .visible : .hidden, for: .navigationBar)
     }
     private var lessonSubject: Entity? {
         guard let pack=model.pack,let objectiveID=lesson.objectiveIDs.first,let factID=pack.objective(objectiveID).factIDs.first,let fact=pack.facts.first(where:{$0.id == factID}) else {return nil}

@@ -8,3 +8,12 @@ __pycache__/
 .firecrawl/
 *.py[cod]
 ref/futbol11-snapshots/
+build/
+.swiftpm/
+*.xcresult
+*.xcarchive
+*.ipa
+*.dSYM/
+.env
+.env.*
+!.env.example

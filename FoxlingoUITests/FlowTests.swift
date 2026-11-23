@@ -71,7 +71,7 @@ final class FlowTests: XCTestCase {
         for _ in 0..<8 {if b.exists && b.isHittable {break};app.swipeUp()}
         if !b.exists {XCTAssertTrue(b.waitForExistence(timeout:5),id)};b.tap()
     }
-    func completeLesson(_ key: String) {
+    func completeLesson(_ key: String, expectedStreakSuccess: Bool? = nil) {
         tap(key);tap("lesson-next");tap("lesson-next")
         for index in 0..<4 {
             if app.pickerWheels.count == 2 {
@@ -81,7 +81,30 @@ final class FlowTests: XCTestCase {
             tap("answer-next")
         }
         XCTAssertTrue(app.staticTexts["lesson-complete"].waitForExistence(timeout:3))
+        let success = app.buttons["streak-success-continue"]
+        let appeared = success.waitForExistence(timeout: 2)
+        if let expectedStreakSuccess { XCTAssertEqual(appeared, expectedStreakSuccess) }
+        if appeared { success.tap() }
         tap("back-roadmap")
+    }
+    func testInstalledAppLaunchesWithoutTestingBypasses() {
+        // Exercise the real startup cache and refresh path, then a warm launch.
+        app.launchArguments = []
+        for _ in 0..<2 {
+            app.launch()
+            let deadline = Date().addingTimeInterval(10)
+            while Date() < deadline && !app.buttons["choose-XT"].exists && !app.buttons["switch-club"].exists {
+                _ = app.buttons["choose-XT"].waitForExistence(timeout: 0.5)
+            }
+            XCTAssertTrue(app.buttons["choose-XT"].exists || app.buttons["switch-club"].exists,
+                          "Normal startup must reach onboarding or the saved roadmap.")
+            app.terminate()
+        }
+    }
+    func testStreakSuccessAppearsOncePerActiveDay() {
+        start();tap("choose-XT");chooseCompetition("Liga MX", "liga-mx")
+        completeLesson("lesson-competition-liga-mx-origins", expectedStreakSuccess: true)
+        completeLesson("lesson-competition-liga-mx-short-tournaments", expectedStreakSuccess: false)
     }
     func lessonScore(_ key: String,index: Int) -> (String,String) {
         switch key {
@@ -1460,10 +1483,12 @@ final class FlowTests: XCTestCase {
 
     func testUpdatedLibraryOnboardsWithoutFavoriteRoadmaps() {
         app.launchArguments=["-ui-testing","-reset-test-state","-stage-test-lessons","-test-library-without-favorites"];app.launch()
+        XCTAssertTrue(app.buttons["choose-XT"].waitForExistence(timeout: 15))
         app.terminate();start(reset:false)
-        XCTAssertFalse(app.buttons["choose-XT"].exists);XCTAssertFalse(app.buttons["choose-RM"].exists)
         let choice=app.buttons.matching(NSPredicate(format:"identifier BEGINSWITH %@","choose-")).firstMatch
-        XCTAssertTrue(choice.waitForExistence(timeout:5));choice.tap()
+        XCTAssertTrue(choice.waitForExistence(timeout: 15))
+        XCTAssertFalse(app.buttons["choose-XT"].exists);XCTAssertFalse(app.buttons["choose-RM"].exists)
+        choice.tap()
         XCTAssertTrue(app.tabBars.buttons["Learn"].exists)
         XCTAssertTrue(app.buttons.matching(NSPredicate(format:"identifier BEGINSWITH %@","lesson-")).firstMatch.exists)
         let shot=XCTAttachment(screenshot:app.screenshot());shot.name="Updated library club fallback";shot.lifetime = .keepAlways;add(shot)

@@ -1,0 +1,3047 @@
+{
+  "sources": [
+    {
+      "key": "losc-history",
+      "title": "1944-2014: LOSC formation chronology",
+      "url": "https://www.losc.fr/actualites-foot-lille/1944-2014-souvenez-vous-il-y-70-ans",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "losc-early-history",
+      "title": "LOSC club history, 1944–1955",
+      "url": "https://www.losc.fr/en/node/9458",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "losc-palmares",
+      "title": "LOSC honours and title retrospectives",
+      "url": "https://www.losc.fr/palmares",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "ligue1-derby",
+      "title": "Lens vs LOSC: Five classic Derby du Nord clashes",
+      "url": "https://ligue1.com/en/articles/l1_article_1108-",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "losc-hazard-debut",
+      "title": "Eden Hazard contract extension and Lille career figures (4 March 2011)",
+      "url": "https://www.losc.fr/actualites-foot-lille/hazard-prolonge-avec-le-losc-jusquen-2015",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "losc-hazard-farewell",
+      "title": "Mille mercis, monsieur Hazard (20 May 2012)",
+      "url": "https://losc.fr/en/node/4357",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "losc-hazard-awards",
+      "title": "UNFP awards: Eden Hazard wins twice",
+      "url": "https://losc.fr/en/node/4365",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "losc-david",
+      "title": "Jonathan David farewell and career figures",
+      "url": "https://www.losc.fr/en/node/15239",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "losc-scorers",
+      "title": "LOSC all-time scorer tables, data through 1 July 2025",
+      "url": "https://www.losc.fr/meilleurs-buteurs-de-lhistoire-du-losc",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "lens-foundation",
+      "title": "RC Lens official history: 1906–1918 foundation",
+      "url": "https://www.rclens.fr/fr/club/histoire/1906-1918",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "lens-champions",
+      "title": "RC Lens official history: 1997–1998 champions",
+      "url": "https://www.rclens.fr/fr/club/histoire/champions",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "lens-success",
+      "title": "RC Lens official history: 1998–1999 European and cup success",
+      "url": "https://www.rclens.fr/fr/club/histoire/succes",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "lens-renouveau",
+      "title": "RC Lens official history: 2021–2023 renewal",
+      "url": "https://www.rclens.fr/fr/club/histoire/renouveau",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "lens-seko",
+      "title": "Seko Fofana, 100 matches in Sang et Or",
+      "url": "https://www.rclens.fr/fr/news/100e-match-rclens-seko-fofana-20230302",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "lens-fofana-unfp",
+      "title": "Seko Fofana named Ligue 1 player of September",
+      "url": "https://www.rclens.fr/fr/news/trophees-unfp-seko-fofana-joueur-du-mois-septembre-rclens-20211021",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "lens-varane-homecoming",
+      "title": "Raphaël Varane returns to La Gaillette as World Cup winner",
+      "url": "https://www.rclens.fr/fr/news/le-jour-ou-raphael-varane-champion-du-monde-20-ans-de-la-gaillette-rclens-20221122",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "lens-varane-anniversary",
+      "title": "Raphaël Varane, Sang et Or anniversary retrospective",
+      "url": "https://www.rclens.fr/fr/news/anniversaire-anciens-de-sang-et-dor-rclens-raphael-varane-20220425",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "madrid-varane",
+      "title": "Raphaël Varane official Real Madrid player history and honours",
+      "url": "https://www.realmadrid.com/en-US/the-club/history/football-legends/raphael-varane",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "fff-varane",
+      "title": "Raphaël Varane official France profile",
+      "url": "https://www.fff.fr/equipe-nationale/joueur/8493-varane-raphael/fiche.html",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "betis-history",
+      "title": "Real Betis official history",
+      "url": "https://www.realbetisbalompie.es/club/la-historia",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "betis-copa-2022",
+      "title": "Real Betis 2022 Copa del Rey final report",
+      "url": "https://www.realbetisbalompie.es/noticias/actualidad/cronica-campeones-27561",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "betis-joaquin-retirement",
+      "title": "Joaquín retirement announcement and career account",
+      "url": "https://www.realbetisbalompie.es/noticias/amp/actualidad/joaquin-capitan-y-leyenda-del-real-betis-anuncia-su-retirada-28945",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "betis-joaquin-finale",
+      "title": "Joaquín’s final match and LaLiga appearance record",
+      "url": "https://www.realbetisbalompie.es/noticias/primer-equipo/cronica-gracias-joaquin-29089",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "betis-fekir-signing",
+      "title": "Nabil Fekir joins Real Betis",
+      "url": "https://www.realbetisbalompie.es/noticias/fekir/nabil-fekir-nuevo-jugador-del-real-betis-22631",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "betis-fekir-exit",
+      "title": "Nabil Fekir transfer announcement and Betis totals",
+      "url": "https://en.realbetisbalompie.es/news/first_team/real-betis-balompie-and-al-jazira-agree-on-a-transfer-of-nabil-fekir-30467",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "fff-fekir",
+      "title": "Nabil Fekir official France profile and appearance table",
+      "url": "https://www.fff.fr/equipe-nationale/joueur/8436-fekir-nabil/fiche.html",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "fff-peru",
+      "title": "France–Peru official 2018 World Cup match report",
+      "url": "https://www.fff.fr/selection/matchs/1382-france-perou.html",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "unfp-fekir",
+      "title": "2017–18 UNFP awards article and Ligue 1 team",
+      "url": "https://www.unfp.org/2018/05/neymar-jr-marque-son-territoire/",
+      "verifiedAt": "2026-10-11"
+    },
+    {
+      "key": "betis-2022-events",
+      "title": "Real Betis–Valencia 2022 Copa final match events",
+      "url": "https://en.realbetisbalompie.es/match/betis/valencia-cf/415049/2022/eventos",
+      "verifiedAt": "2026-10-11"
+    }
+  ],
+  "players": [
+    {
+      "key": "entity-eden-hazard",
+      "name": "Eden Hazard",
+      "aliases": [
+        "Hazard"
+      ],
+      "visual": "EH",
+      "clubKey": "entity-lille",
+      "seedID": "player-147",
+      "seedName": "Eden Hazard"
+    },
+    {
+      "key": "entity-jonathan-david",
+      "name": "Jonathan David",
+      "aliases": [
+        "David"
+      ],
+      "visual": "JD",
+      "clubKey": "entity-lille",
+      "seedID": "player-1040",
+      "seedName": "Jonathan David"
+    },
+    {
+      "key": "entity-raphael-varane",
+      "name": "Raphaël Varane",
+      "aliases": [
+        "Raphael Varane",
+        "Varane"
+      ],
+      "visual": "RV",
+      "clubKey": "entity-lens",
+      "seedID": "player-162",
+      "seedName": "Raphael Varane"
+    },
+    {
+      "key": "entity-seko-fofana",
+      "name": "Seko Fofana",
+      "aliases": [
+        "Fofana"
+      ],
+      "visual": "SF",
+      "clubKey": "entity-lens",
+      "seedID": "player-2216",
+      "seedName": "Seko Fofana"
+    },
+    {
+      "key": "entity-joaquin-betis",
+      "name": "Joaquín",
+      "aliases": [
+        "Joaquin"
+      ],
+      "visual": "J",
+      "clubKey": "entity-real-betis",
+      "seedID": "player-369",
+      "seedName": "Joaquin"
+    },
+    {
+      "key": "entity-nabil-fekir",
+      "name": "Nabil Fekir",
+      "aliases": [
+        "Fekir"
+      ],
+      "visual": "NF",
+      "clubKey": "entity-real-betis",
+      "seedID": "player-1022",
+      "seedName": "Nabil Fekir"
+    }
+  ],
+  "lessons": [
+    {
+      "key": "lesson-curriculum-entity-lille-history-1944",
+      "subjectKey": "entity-lille",
+      "clubKey": "entity-lille",
+      "title": "A merger creates Lille’s club",
+      "subtitle": "The club began with a wartime-era merger of two local sides in 1944.",
+      "chapter": "history",
+      "story": [
+        {
+          "title": "A merger creates Lille’s club",
+          "body": "The club began with a wartime-era merger of two local sides in 1944."
+        },
+        {
+          "title": "Roots and identity",
+          "body": "From local roots to the name it carries, Lille’s beginnings are anchored in dates and decisions."
+        }
+      ],
+      "facts": [
+        {
+          "key": "lille-hist-date",
+          "label": "Founding date",
+          "prompt": "On what date did Olympique Lillois and Sporting Club Fivois decide to merge?",
+          "answers": [
+            "23 September 1944"
+          ],
+          "distractors": [
+            "23 September 1943",
+            "25 November 1944",
+            "23 October 1944"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "23 September 1944",
+            "text": "23 September 1944"
+          },
+          "scope": "LOSC formation decision, 23 September 1944",
+          "sourceKey": "losc-history",
+          "evidence": "The official anniversary article dates the decision to merge to 23 September 1944."
+        },
+        {
+          "key": "lille-hist-ol",
+          "label": "Merging club",
+          "prompt": "Which Lille club joined Sporting Club Fivois to form the new organization?",
+          "answers": [
+            "Olympique Lillois"
+          ],
+          "distractors": [
+            "Stade Lillois",
+            "CO Roubaix-Tourcoing",
+            "Olympique Lyonnais"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Olympique Lillois",
+            "text": "Olympique Lillois"
+          },
+          "scope": "The two founding clubs named in the official history",
+          "sourceKey": "losc-history",
+          "evidence": "The club history names Olympique Lillois and Sporting Club Fivois as the parties to the merger."
+        },
+        {
+          "key": "lille-hist-name",
+          "label": "Official name",
+          "prompt": "When was the name LOSC finalized after the initial merger?",
+          "answers": [
+            "25 November 1944"
+          ],
+          "distractors": [
+            "23 September 1944",
+            "5 November 1944",
+            "25 November 1945"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "25 November 1944",
+            "text": "25 November 1944"
+          },
+          "scope": "Name decision following the merger",
+          "sourceKey": "losc-history",
+          "evidence": "The article says the committee chose the LOSC name on 25 November 1944."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-entity-lille-moment-2011-double",
+      "subjectKey": "entity-lille",
+      "clubKey": "entity-lille",
+      "title": "The historic 2011 double",
+      "subtitle": "Lille returned to the top of French football by winning two major domestic trophies in one season.",
+      "chapter": "moments",
+      "story": [
+        {
+          "title": "The historic 2011 double",
+          "body": "Lille returned to the top of French football by winning two major domestic trophies in one season."
+        },
+        {
+          "title": "What the moment changed",
+          "body": "This episode is fixed to a particular competition and turning point in Lille’s history."
+        }
+      ],
+      "facts": [
+        {
+          "key": "lille-2011-double",
+          "label": "Trophies",
+          "prompt": "Which two major trophies did Lille win in its 2010–11 double?",
+          "answers": [
+            "Ligue 1 and Coupe de France"
+          ],
+          "distractors": [
+            "Ligue 1 and Coupe de la Ligue",
+            "Coupe de France and Trophée des Champions",
+            "Ligue 1 and UEFA Europa League"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Ligue 1 and Coupe de France",
+            "text": "Ligue 1 and Coupe de France"
+          },
+          "scope": "LOSC 2010–11 season",
+          "sourceKey": "losc-palmares",
+          "evidence": "The official honours history calls the 2011 achievement a Coupe–Championship double."
+        },
+        {
+          "key": "lille-2011-goals",
+          "label": "Goals",
+          "prompt": "How many goals did Lille score during the 2010–11 season described in the club retrospective?",
+          "answers": [
+            "68"
+          ],
+          "distractors": [
+            "62",
+            "65",
+            "71"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "68",
+            "number": 68,
+            "unit": "goals"
+          },
+          "scope": "LOSC 2010–11 season, all competitions basis not stated by the club page",
+          "sourceKey": "losc-palmares",
+          "evidence": "The club page reports 68 goals and does not specify competition basis; the scope preserves that limitation."
+        },
+        {
+          "key": "lille-2011-losses",
+          "label": "Defeats",
+          "prompt": "How many defeats did the club retrospective report for Lille’s 2010–11 double-winning season?",
+          "answers": [
+            "4"
+          ],
+          "distractors": [
+            "2",
+            "3",
+            "6"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "4",
+            "number": 4,
+            "unit": "defeats"
+          },
+          "scope": "LOSC 2010–11 season, competition basis not stated by the club page",
+          "sourceKey": "losc-palmares",
+          "evidence": "The same retrospective says the side had only four defeats, with one at home; it does not specify competition basis."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-entity-lille-moment-2021-title",
+      "subjectKey": "entity-lille",
+      "clubKey": "entity-lille",
+      "title": "A decisive northern derby",
+      "subtitle": "A derby win late in the 2020–21 season put Lille within reach of a long-awaited championship.",
+      "chapter": "moments",
+      "story": [
+        {
+          "title": "A decisive northern derby",
+          "body": "A derby win late in the 2020–21 season put Lille within reach of a long-awaited championship."
+        },
+        {
+          "title": "What the moment changed",
+          "body": "This episode is fixed to a particular competition and turning point in Lille’s history."
+        }
+      ],
+      "facts": [
+        {
+          "key": "lille-2021-score",
+          "label": "Regulation score",
+          "prompt": "What was the regulation score in Lens vs Lille in May 2021, the derby that assured Lille’s title?",
+          "answers": [
+            "0–3"
+          ],
+          "distractors": [
+            "0–2",
+            "1–3",
+            "1–2"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "0–3",
+            "text": "0–3"
+          },
+          "scope": "Lens vs Lille, May 2021, regulation time",
+          "sourceKey": "ligue1-derby",
+          "evidence": "Ligue 1’s recap identifies the result as Lens 0–3 Lille.",
+          "scoreInput": {
+            "leftClubKey": "entity-lens",
+            "rightClubKey": "entity-lille",
+            "leftGoals": 0,
+            "rightGoals": 3
+          }
+        },
+        {
+          "key": "lille-2021-games",
+          "label": "Title context",
+          "prompt": "How many league games remained after Lille beat Lens in May 2021?",
+          "answers": [
+            "3"
+          ],
+          "distractors": [
+            "1",
+            "2",
+            "4"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "3",
+            "number": 3,
+            "unit": "games"
+          },
+          "scope": "2020–21 Ligue 1 title race",
+          "sourceKey": "ligue1-derby",
+          "evidence": "Ligue 1 says Lille had three games left and the result assured the title."
+        },
+        {
+          "key": "lille-2021-scorers",
+          "label": "Named scorers",
+          "prompt": "Which two Lille players are named as goal scorers in that 0–3 derby win?",
+          "answers": [
+            "Burak Yilmaz and Jonathan David"
+          ],
+          "distractors": [
+            "Jonathan David and Yusuf Yazici",
+            "Burak Yilmaz and Yusuf Yazici",
+            "Jonathan Bamba and Burak Yilmaz"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Burak Yilmaz and Jonathan David",
+            "text": "Burak Yilmaz and Jonathan David"
+          },
+          "scope": "Lens 0–3 Lille, May 2021",
+          "sourceKey": "ligue1-derby",
+          "evidence": "The recap names Burak Yilmaz and Jonathan David as scorers."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-eden-hazard-career",
+      "subjectKey": "entity-eden-hazard",
+      "clubKey": "entity-lille",
+      "title": "A Lille debut at sixteen",
+      "subtitle": "Hazard’s Lille years began in the top flight as a teenager and ended with a memorable farewell.",
+      "chapter": "career",
+      "story": [
+        {
+          "title": "A Lille debut at sixteen",
+          "body": "Hazard’s Lille years began in the top flight as a teenager and ended with a memorable farewell."
+        },
+        {
+          "title": "A milestone along the way",
+          "body": "Eden Hazard’s path is told through a debut, a move and the milestones that followed."
+        }
+      ],
+      "facts": [
+        {
+          "key": "hazard-career-age",
+          "label": "Debut age",
+          "prompt": "How old was Eden Hazard when he made his Ligue 1 debut for Lille?",
+          "answers": [
+            "16"
+          ],
+          "distractors": [
+            "15",
+            "17",
+            "18"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "16",
+            "number": 16,
+            "unit": "years"
+          },
+          "scope": "Ligue 1 debut on 25 November 2007",
+          "sourceKey": "losc-hazard-debut",
+          "evidence": "The club records his Ligue 1 debut at age 16."
+        },
+        {
+          "key": "hazard-career-debut-date",
+          "label": "Debut date",
+          "prompt": "On what date did Hazard make his Ligue 1 debut for Lille?",
+          "answers": [
+            "25 November 2007"
+          ],
+          "distractors": [
+            "25 November 2006",
+            "24 November 2007",
+            "25 December 2007"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "25 November 2007",
+            "text": "25 November 2007"
+          },
+          "scope": "Lille at Nancy, Ligue 1",
+          "sourceKey": "losc-hazard-debut",
+          "evidence": "The club dates the debut against Nancy to 25 November 2007."
+        },
+        {
+          "key": "hazard-career-contract",
+          "label": "Contract milestone",
+          "prompt": "Until what year did Hazard’s renewed Lille contract run, announced in March 2011?",
+          "answers": [
+            "2015"
+          ],
+          "distractors": [
+            "2013",
+            "2014",
+            "2016"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "2015",
+            "text": "2015"
+          },
+          "scope": "Contract extension announced 4 March 2011",
+          "sourceKey": "losc-hazard-debut",
+          "evidence": "LOSC announced a one-year extension binding Hazard to the club through 2015."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-eden-hazard-moments",
+      "subjectKey": "entity-eden-hazard",
+      "clubKey": "entity-lille",
+      "title": "A farewell hat-trick",
+      "subtitle": "Hazard left Lille after scoring three times in his final league appearance for the club.",
+      "chapter": "moments",
+      "story": [
+        {
+          "title": "A farewell hat-trick",
+          "body": "Hazard left Lille after scoring three times in his final league appearance for the club."
+        },
+        {
+          "title": "What the moment changed",
+          "body": "This episode is fixed to a particular competition and turning point in Lille’s history."
+        }
+      ],
+      "facts": [
+        {
+          "key": "hazard-farewell-date",
+          "label": "Final Lille match",
+          "prompt": "On what date did Hazard play his final Lille match against Nancy?",
+          "answers": [
+            "20 May 2012"
+          ],
+          "distractors": [
+            "20 May 2011",
+            "19 May 2012",
+            "20 June 2012"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "20 May 2012",
+            "text": "20 May 2012"
+          },
+          "scope": "Lille vs Nancy, final Ligue 1 match of 2011–12",
+          "sourceKey": "losc-hazard-farewell",
+          "evidence": "The club dated his farewell to Sunday 20 May 2012."
+        },
+        {
+          "key": "hazard-farewell-goals",
+          "label": "Hat-trick",
+          "prompt": "How many goals did Hazard score against Nancy in his Lille farewell?",
+          "answers": [
+            "3"
+          ],
+          "distractors": [
+            "1",
+            "2",
+            "4"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "3",
+            "number": 3,
+            "unit": "goals"
+          },
+          "scope": "Lille vs Nancy, 20 May 2012",
+          "sourceKey": "losc-hazard-farewell",
+          "evidence": "The club says he completed a hat-trick in the farewell match."
+        },
+        {
+          "key": "hazard-farewell-stage",
+          "label": "Competition",
+          "prompt": "In which competition was Hazard’s final Lille match against Nancy played?",
+          "answers": [
+            "Ligue 1"
+          ],
+          "distractors": [
+            "Coupe de France",
+            "UEFA Europa League",
+            "Trophée des Champions"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Ligue 1",
+            "text": "Ligue 1"
+          },
+          "scope": "Lille vs Nancy, 20 May 2012",
+          "sourceKey": "losc-hazard-farewell",
+          "evidence": "The report identifies the match as the final matchday of Ligue 1 2011–12."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-eden-hazard-records",
+      "subjectKey": "entity-eden-hazard",
+      "clubKey": "entity-lille",
+      "title": "Lille career totals",
+      "subtitle": "The club’s farewell account gives a dated final total for Hazard’s Lille career.",
+      "chapter": "records",
+      "story": [
+        {
+          "title": "Lille career totals",
+          "body": "The club’s farewell account gives a dated final total for Hazard’s Lille career."
+        },
+        {
+          "title": "Reading the numbers in context",
+          "body": "Each figure belongs to a stated season or completed career and keeps the measure in context."
+        }
+      ],
+      "facts": [
+        {
+          "key": "hazard-record-apps",
+          "label": "Appearances",
+          "prompt": "By his final Lille match on 20 May 2012, how many all-competition matches had Hazard played for the club?",
+          "answers": [
+            "194"
+          ],
+          "distractors": [
+            "184",
+            "189",
+            "204"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "194",
+            "number": 194,
+            "unit": "matches"
+          },
+          "scope": "Completed Lille career total reported 20 May 2012, all competitions",
+          "sourceKey": "losc-hazard-farewell",
+          "evidence": "The club explicitly labels 194 matches as a total across all competitions."
+        },
+        {
+          "key": "hazard-record-goals",
+          "label": "Goals",
+          "prompt": "By his final Lille match on 20 May 2012, how many all-competition goals had Hazard scored for the club?",
+          "answers": [
+            "50"
+          ],
+          "distractors": [
+            "44",
+            "48",
+            "55"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "50",
+            "number": 50,
+            "unit": "goals"
+          },
+          "scope": "Completed Lille career total reported 20 May 2012, all competitions",
+          "sourceKey": "losc-hazard-farewell",
+          "evidence": "The same report states 50 goals across all competitions."
+        },
+        {
+          "key": "hazard-record-ligue1",
+          "label": "League goals",
+          "prompt": "How many Ligue 1 goals did Hazard score for Lille during his final season at the club?",
+          "answers": [
+            "20"
+          ],
+          "distractors": [
+            "17",
+            "18",
+            "22"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "20",
+            "number": 20,
+            "unit": "goals"
+          },
+          "scope": "2011–12 Ligue 1 season",
+          "sourceKey": "losc-hazard-farewell",
+          "evidence": "The farewell account’s season-by-season table lists 20 Ligue 1 goals in 2011–12."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-eden-hazard-legacy",
+      "subjectKey": "entity-eden-hazard",
+      "clubKey": "entity-lille",
+      "title": "Four UNFP individual honours",
+      "subtitle": "Hazard collected four individual Ligue 1 awards during his Lille career.",
+      "chapter": "legacy",
+      "story": [
+        {
+          "title": "Four UNFP individual honours",
+          "body": "Hazard collected four individual Ligue 1 awards during his Lille career."
+        },
+        {
+          "title": "What remains",
+          "body": "Eden Hazard’s honours are linked to the seasons and performances that earned them."
+        }
+      ],
+      "facts": [
+        {
+          "key": "hazard-award-young",
+          "label": "Young-player awards",
+          "prompt": "How many times did Hazard win Ligue 1’s UNFP best young player award?",
+          "answers": [
+            "2"
+          ],
+          "distractors": [
+            "1",
+            "3",
+            "4"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "2",
+            "number": 2,
+            "unit": "awards"
+          },
+          "scope": "2009 and 2010 UNFP awards",
+          "sourceKey": "losc-hazard-awards",
+          "evidence": "LOSC lists his best-young-player awards in 2009 and 2010."
+        },
+        {
+          "key": "hazard-award-player",
+          "label": "Player awards",
+          "prompt": "How many consecutive times did Hazard win UNFP Ligue 1 Player of the Year?",
+          "answers": [
+            "2"
+          ],
+          "distractors": [
+            "1",
+            "3",
+            "4"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "2",
+            "number": 2,
+            "unit": "awards"
+          },
+          "scope": "2010–11 and 2011–12 UNFP awards",
+          "sourceKey": "losc-hazard-awards",
+          "evidence": "The club states that he received the top Ligue 1 award in two successive years."
+        },
+        {
+          "key": "hazard-award-total",
+          "label": "Individual honours",
+          "prompt": "How many individual UNFP awards had Hazard accumulated after his 2012 Player of the Year win?",
+          "answers": [
+            "4"
+          ],
+          "distractors": [
+            "2",
+            "3",
+            "5"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "4",
+            "number": 4,
+            "unit": "awards"
+          },
+          "scope": "UNFP award total through May 2012",
+          "sourceKey": "losc-hazard-awards",
+          "evidence": "The club calls the 2012 win his fourth individual honour after two young-player and the 2011 player awards."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-jonathan-david-career",
+      "subjectKey": "entity-jonathan-david",
+      "clubKey": "entity-lille",
+      "title": "From signing to first goal",
+      "subtitle": "David joined Lille in 2020 and established his first milestones during his debut season.",
+      "chapter": "career",
+      "story": [
+        {
+          "title": "From signing to first goal",
+          "body": "David joined Lille in 2020 and established his first milestones during his debut season."
+        },
+        {
+          "title": "A milestone along the way",
+          "body": "Jonathan David’s path is told through a debut, a move and the milestones that followed."
+        }
+      ],
+      "facts": [
+        {
+          "key": "david-signing-date",
+          "label": "Signing date",
+          "prompt": "On what date did Jonathan David sign for Lille?",
+          "answers": [
+            "11 August 2020"
+          ],
+          "distractors": [
+            "11 August 2019",
+            "1 August 2020",
+            "11 September 2020"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "11 August 2020",
+            "text": "11 August 2020"
+          },
+          "scope": "Transfer signing, 2020",
+          "sourceKey": "losc-david",
+          "evidence": "The official farewell article dates David’s Lille signing to 11 August 2020."
+        },
+        {
+          "key": "david-first-goal-date",
+          "label": "First Lille goal",
+          "prompt": "On what date did David score his first Lille goal?",
+          "answers": [
+            "22 November 2020"
+          ],
+          "distractors": [
+            "22 October 2020",
+            "21 November 2020",
+            "22 December 2020"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "22 November 2020",
+            "text": "22 November 2020"
+          },
+          "scope": "Lille vs Lorient, 2020–21",
+          "sourceKey": "losc-david",
+          "evidence": "The club identifies Lille–Lorient on 22 November 2020 as his first Lille goal."
+        },
+        {
+          "key": "david-first-goal-opponent",
+          "label": "First Lille goal opponent",
+          "prompt": "Against which club did David score his first Lille goal?",
+          "answers": [
+            "Lorient"
+          ],
+          "distractors": [
+            "Lens",
+            "Nantes",
+            "Rennes"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Lorient",
+            "text": "Lorient"
+          },
+          "scope": "Lille vs Lorient, 22 November 2020",
+          "sourceKey": "losc-david",
+          "evidence": "The club says his first goal came against Lorient."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-jonathan-david-moments",
+      "subjectKey": "entity-jonathan-david",
+      "clubKey": "entity-lille",
+      "title": "A title in his first Lille season",
+      "subtitle": "David scored regularly in his first season and won the French championship with Lille.",
+      "chapter": "moments",
+      "story": [
+        {
+          "title": "A title in his first Lille season",
+          "body": "David scored regularly in his first season and won the French championship with Lille."
+        },
+        {
+          "title": "What the moment changed",
+          "body": "This episode is fixed to a particular competition and turning point in Lille’s history."
+        }
+      ],
+      "facts": [
+        {
+          "key": "david-debut-season-goals",
+          "label": "Debut-season goals",
+          "prompt": "How many goals did David score in all competitions for Lille in 2020–21?",
+          "answers": [
+            "13"
+          ],
+          "distractors": [
+            "10",
+            "12",
+            "15"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "13",
+            "number": 13,
+            "unit": "goals"
+          },
+          "scope": "2020–21 season, all competitions",
+          "sourceKey": "losc-david",
+          "evidence": "The club lists 13 goals “tcc” (all competitions) in his first season."
+        },
+        {
+          "key": "david-title-season",
+          "label": "First title season",
+          "prompt": "In which season did David win the French championship in his first season at Lille?",
+          "answers": [
+            "2020–21"
+          ],
+          "distractors": [
+            "2019–20",
+            "2021–22",
+            "2022–23"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "2020–21",
+            "text": "2020–21"
+          },
+          "scope": "Lille debut season",
+          "sourceKey": "losc-david",
+          "evidence": "The club says David was French champion in his first season, 2020–21."
+        },
+        {
+          "key": "david-second-season-goals",
+          "label": "Next season",
+          "prompt": "How many goals did David score for Lille in all competitions in 2021–22?",
+          "answers": [
+            "19"
+          ],
+          "distractors": [
+            "15",
+            "17",
+            "22"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "19",
+            "number": 19,
+            "unit": "goals"
+          },
+          "scope": "2021–22 season, all competitions",
+          "sourceKey": "losc-david",
+          "evidence": "The club’s season-by-season account lists 19 goals in 2021–22."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-jonathan-david-records",
+      "subjectKey": "entity-jonathan-david",
+      "clubKey": "entity-lille",
+      "title": "A modern Lille scoring record",
+      "subtitle": "David’s five-season run placed him near the top of Lille’s all-time scoring list.",
+      "chapter": "records",
+      "story": [
+        {
+          "title": "A modern Lille scoring record",
+          "body": "David’s five-season run placed him near the top of Lille’s all-time scoring list."
+        },
+        {
+          "title": "Reading the numbers in context",
+          "body": "Each figure belongs to a stated season or completed career and keeps the measure in context."
+        }
+      ],
+      "facts": [
+        {
+          "key": "david-record-goals",
+          "label": "Career goals",
+          "prompt": "How many all-competition goals had David scored for Lille by his May 2025 departure announcement?",
+          "answers": [
+            "109"
+          ],
+          "distractors": [
+            "99",
+            "104",
+            "114"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "109",
+            "number": 109,
+            "unit": "goals"
+          },
+          "scope": "LOSC career through May 2025",
+          "sourceKey": "losc-david",
+          "evidence": "The 18 May 2025 club release states 109 goals in 231 games."
+        },
+        {
+          "key": "david-record-apps",
+          "label": "Career matches",
+          "prompt": "How many matches had David played for Lille by the May 2025 departure announcement?",
+          "answers": [
+            "231"
+          ],
+          "distractors": [
+            "221",
+            "226",
+            "241"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "231",
+            "number": 231,
+            "unit": "matches"
+          },
+          "scope": "LOSC career through May 2025",
+          "sourceKey": "losc-david",
+          "evidence": "The club reports 231 matches at the point of departure."
+        },
+        {
+          "key": "david-record-streak",
+          "label": "League scoring streak",
+          "prompt": "For how many consecutive seasons did David score at least 13 league goals for Lille?",
+          "answers": [
+            "5"
+          ],
+          "distractors": [
+            "3",
+            "4",
+            "6"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "5",
+            "number": 5,
+            "unit": "seasons"
+          },
+          "scope": "Consecutive Ligue 1 seasons, 2020–21 through 2024–25",
+          "sourceKey": "losc-david",
+          "evidence": "LOSC says he scored at least 13 league goals in five straight seasons, unique for the club in the 21st century."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-jonathan-david-legacy",
+      "subjectKey": "entity-jonathan-david",
+      "clubKey": "entity-lille",
+      "title": "A place among Lille’s top scorers",
+      "subtitle": "The club’s all-time lists place David among Lille’s leading scorers.",
+      "chapter": "legacy",
+      "story": [
+        {
+          "title": "A place among Lille’s top scorers",
+          "body": "The club’s all-time lists place David among Lille’s leading scorers."
+        },
+        {
+          "title": "What remains",
+          "body": "Jonathan David’s honours are linked to the seasons and performances that earned them."
+        }
+      ],
+      "facts": [
+        {
+          "key": "david-legacy-rank",
+          "label": "All-time rank",
+          "prompt": "What position did David hold on Lille’s all-competition scoring list as of 1 July 2025?",
+          "answers": [
+            "3"
+          ],
+          "distractors": [
+            "2",
+            "4",
+            "5"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "3",
+            "number": 3,
+            "unit": "rd place"
+          },
+          "scope": "LOSC all-competition scorer table, data through 1 July 2025",
+          "sourceKey": "losc-scorers",
+          "evidence": "The official table ranks Jean Baratte first, André Strappe second, and David third."
+        },
+        {
+          "key": "david-legacy-ligue1",
+          "label": "First-division goals",
+          "prompt": "How many first-division goals did David score for Lille by 1 July 2025?",
+          "answers": [
+            "87"
+          ],
+          "distractors": [
+            "77",
+            "82",
+            "92"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "87",
+            "number": 87,
+            "unit": "goals"
+          },
+          "scope": "LOSC first-division table, data through 1 July 2025",
+          "sourceKey": "losc-scorers",
+          "evidence": "The first-division section lists David with 87 goals."
+        },
+        {
+          "key": "david-legacy-europe",
+          "label": "European competition goals",
+          "prompt": "How many European competition goals did David score for Lille by 1 July 2025?",
+          "answers": [
+            "16"
+          ],
+          "distractors": [
+            "12",
+            "14",
+            "18"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "16",
+            "number": 16,
+            "unit": "goals"
+          },
+          "scope": "LOSC European competition table, data through 1 July 2025",
+          "sourceKey": "losc-scorers",
+          "evidence": "The European competition section lists David with 16 goals."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-entity-lens-history-1906",
+      "subjectKey": "entity-lens",
+      "clubKey": "entity-lens",
+      "title": "A club rooted in Lens",
+      "subtitle": "Students and local leaders founded the Racing Club Lensois in 1906.",
+      "chapter": "history",
+      "story": [
+        {
+          "title": "A club rooted in Lens",
+          "body": "Students and local leaders founded the Racing Club Lensois in 1906."
+        },
+        {
+          "title": "Roots and identity",
+          "body": "From local roots to the name it carries, Lens’s beginnings are anchored in dates and decisions."
+        }
+      ],
+      "facts": [
+        {
+          "key": "lens-hist-year",
+          "label": "Foundation year",
+          "prompt": "In what year was Racing Club Lensois founded?",
+          "answers": [
+            "1906"
+          ],
+          "distractors": [
+            "1904",
+            "1905",
+            "1907"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "1906",
+            "number": 1906,
+            "unit": "year"
+          },
+          "scope": "Foundation of Racing Club Lensois",
+          "sourceKey": "lens-foundation",
+          "evidence": "The official history says Jules Van de Weigh and Carlos Douterlungne founded the club in 1906."
+        },
+        {
+          "key": "lens-hist-founders",
+          "label": "Founders",
+          "prompt": "Which two men does Lens credit with founding Racing Club Lensois?",
+          "answers": [
+            "Jules Van de Weigh and Carlos Douterlungne"
+          ],
+          "distractors": [
+            "Jules Van de Weigh and Émile Basly",
+            "Carlos Douterlungne and Gervais Martel",
+            "Daniel Leclercq and Jules Van de Weigh"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Jules Van de Weigh and Carlos Douterlungne",
+            "text": "Jules Van de Weigh and Carlos Douterlungne"
+          },
+          "scope": "Founding of Racing Club Lensois",
+          "sourceKey": "lens-foundation",
+          "evidence": "The club’s history names Jules Van de Weigh and Carlos Douterlungne as founders."
+        },
+        {
+          "key": "lens-hist-colors",
+          "label": "First colors",
+          "prompt": "What were the club’s original colors?",
+          "answers": [
+            "Green and black"
+          ],
+          "distractors": [
+            "Red and yellow",
+            "Blue and white",
+            "Black and yellow"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Green and black",
+            "text": "Green and black"
+          },
+          "scope": "Initial colors at the club’s 1906 foundation",
+          "sourceKey": "lens-foundation",
+          "evidence": "The club links green to Place Verte and black to the local coal mines."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-entity-lens-moment-1998",
+      "subjectKey": "entity-lens",
+      "clubKey": "entity-lens",
+      "title": "A title secured in Auxerre",
+      "subtitle": "Lens needed only a point on the last day of 1997–98 and earned it through a late goal.",
+      "chapter": "moments",
+      "story": [
+        {
+          "title": "A title secured in Auxerre",
+          "body": "Lens needed only a point on the last day of 1997–98 and earned it through a late goal."
+        },
+        {
+          "title": "What the moment changed",
+          "body": "This episode is fixed to a particular competition and turning point in Lens’s history."
+        }
+      ],
+      "facts": [
+        {
+          "key": "lens-1998-date",
+          "label": "Title-clinching date",
+          "prompt": "On what date did Lens clinch the 1997–98 French championship at Auxerre?",
+          "answers": [
+            "9 May 1998"
+          ],
+          "distractors": [
+            "9 May 1997",
+            "8 May 1998",
+            "9 June 1998"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "9 May 1998",
+            "text": "9 May 1998"
+          },
+          "scope": "Auxerre vs Lens, final day of 1997–98 Division 1",
+          "sourceKey": "lens-champions",
+          "evidence": "The club dates the title-clinching match to 9 May 1998."
+        },
+        {
+          "key": "lens-1998-needed",
+          "label": "Points needed",
+          "prompt": "How many points did Lens need from its Auxerre match to become champion?",
+          "answers": [
+            "1"
+          ],
+          "distractors": [
+            "0",
+            "2",
+            "3"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "1",
+            "number": 1,
+            "unit": "point"
+          },
+          "scope": "1997–98 final match, pre-match requirement",
+          "sourceKey": "lens-champions",
+          "evidence": "Lens’s history says the leaders needed one point to be crowned."
+        },
+        {
+          "key": "lens-1998-scorer",
+          "label": "Equalizer scorer",
+          "prompt": "Who scored Lens’s goal in the 1–1 title-clinching draw at Auxerre?",
+          "answers": [
+            "Yoann Lachor"
+          ],
+          "distractors": [
+            "Daniel Moreira",
+            "Wagneau Eloi",
+            "Michaël Debève"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Yoann Lachor",
+            "text": "Yoann Lachor"
+          },
+          "scope": "Auxerre 1–1 Lens, 9 May 1998",
+          "sourceKey": "lens-champions",
+          "evidence": "The club credits Lens’s draw to Yoann Lachor’s goal."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-entity-lens-moment-1998-europe",
+      "subjectKey": "entity-lens",
+      "clubKey": "entity-lens",
+      "title": "A first French win at Wembley",
+      "subtitle": "Lens became the first French club to win a match at Wembley during its first Champions League campaign.",
+      "chapter": "moments",
+      "story": [
+        {
+          "title": "A first French win at Wembley",
+          "body": "Lens became the first French club to win a match at Wembley during its first Champions League campaign."
+        },
+        {
+          "title": "What the moment changed",
+          "body": "This episode is fixed to a particular competition and turning point in Lens’s history."
+        }
+      ],
+      "facts": [
+        {
+          "key": "lens-wembley-date",
+          "label": "Wembley date",
+          "prompt": "On what date did Lens beat Arsenal at Wembley in the 1998–99 Champions League?",
+          "answers": [
+            "25 November 1998"
+          ],
+          "distractors": [
+            "25 November 1997",
+            "24 November 1998",
+            "25 December 1998"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "25 November 1998",
+            "text": "25 November 1998"
+          },
+          "scope": "Arsenal vs Lens, Champions League group stage",
+          "sourceKey": "lens-success",
+          "evidence": "The club dates the Wembley victory to 25 November 1998."
+        },
+        {
+          "key": "lens-wembley-scorer",
+          "label": "Winning scorer",
+          "prompt": "Who scored Lens’s goal against Arsenal at Wembley?",
+          "answers": [
+            "Michaël Debève"
+          ],
+          "distractors": [
+            "Wagneau Eloi",
+            "Daniel Moreira",
+            "Yoann Lachor"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Michaël Debève",
+            "text": "Michaël Debève"
+          },
+          "scope": "Arsenal vs Lens, Champions League group stage",
+          "sourceKey": "lens-success",
+          "evidence": "The history names Michaël Debève as the scorer."
+        },
+        {
+          "key": "lens-wembley-distinction",
+          "label": "Wembley opponent",
+          "prompt": "Which club did Lens beat at Wembley on 25 November 1998?",
+          "answers": [
+            "Arsenal"
+          ],
+          "distractors": [
+            "Liverpool",
+            "Chelsea",
+            "Manchester United"
+          ],
+          "value": {
+            "kind": "entity",
+            "display": "Arsenal",
+            "entityKey": "entity-arsenal"
+          },
+          "scope": "Lens victory at Wembley, 25 November 1998",
+          "sourceKey": "lens-success",
+          "evidence": "The official Lens history says Lens beat Arsenal at Wembley and became the first French club to win there."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-raphael-varane-career",
+      "subjectKey": "entity-raphael-varane",
+      "clubKey": "entity-lens",
+      "title": "From Lens to Madrid",
+      "subtitle": "Varane developed at Lens before joining Real Madrid as an eighteen-year-old.",
+      "chapter": "career",
+      "story": [
+        {
+          "title": "From Lens to Madrid",
+          "body": "Varane developed at Lens before joining Real Madrid as an eighteen-year-old."
+        },
+        {
+          "title": "A milestone along the way",
+          "body": "Raphaël Varane’s path is told through a debut, a move and the milestones that followed."
+        }
+      ],
+      "facts": [
+        {
+          "key": "varane-career-born",
+          "label": "Birthplace",
+          "prompt": "In which city was Raphaël Varane born?",
+          "answers": [
+            "Lille"
+          ],
+          "distractors": [
+            "Lens",
+            "Madrid",
+            "Arras"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Lille",
+            "text": "Lille"
+          },
+          "scope": "Personal biography",
+          "sourceKey": "madrid-varane",
+          "evidence": "Real Madrid lists Lille, France as his birthplace."
+        },
+        {
+          "key": "varane-career-arrival-age",
+          "label": "Madrid arrival age",
+          "prompt": "How old was Varane when he arrived at Real Madrid in 2011?",
+          "answers": [
+            "18"
+          ],
+          "distractors": [
+            "17",
+            "19",
+            "20"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "18",
+            "number": 18,
+            "unit": "years"
+          },
+          "scope": "Summer 2011 transfer",
+          "sourceKey": "madrid-varane",
+          "evidence": "The Real Madrid profile says Varane arrived at age 18."
+        },
+        {
+          "key": "varane-career-debut",
+          "label": "Madrid debut date",
+          "prompt": "On what date did Varane make his official Real Madrid debut?",
+          "answers": [
+            "21 September 2011"
+          ],
+          "distractors": [
+            "21 August 2011",
+            "27 June 2011",
+            "21 September 2012"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "21 September 2011",
+            "text": "21 September 2011"
+          },
+          "scope": "Real Madrid first-team debut",
+          "sourceKey": "madrid-varane",
+          "evidence": "The profile dates his official debut to 21 September 2011 against Racing Santander."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-raphael-varane-moments",
+      "subjectKey": "entity-raphael-varane",
+      "clubKey": "entity-lens",
+      "title": "A Lens teenager reaches the first team",
+      "subtitle": "Varane’s first-team breakthrough came before he moved to Spain.",
+      "chapter": "moments",
+      "story": [
+        {
+          "title": "A Lens teenager reaches the first team",
+          "body": "Varane’s first-team breakthrough came before he moved to Spain."
+        },
+        {
+          "title": "What the moment changed",
+          "body": "This episode is fixed to a particular competition and turning point in Lens’s history."
+        }
+      ],
+      "facts": [
+        {
+          "key": "varane-lens-debut-date",
+          "label": "Lens debut date",
+          "prompt": "On what date did Varane make his first-team debut for Lens?",
+          "answers": [
+            "7 November 2010"
+          ],
+          "distractors": [
+            "7 October 2010",
+            "17 November 2010",
+            "7 November 2011"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "7 November 2010",
+            "text": "7 November 2010"
+          },
+          "scope": "Lens first-team debut vs Montpellier",
+          "sourceKey": "lens-varane-anniversary",
+          "evidence": "The club retrospective dates Varane’s debut against Montpellier to 7 November 2010."
+        },
+        {
+          "key": "varane-lens-debut-age",
+          "label": "Lens debut age",
+          "prompt": "How old was Varane, in years, when he debuted for Lens?",
+          "answers": [
+            "17"
+          ],
+          "distractors": [
+            "16",
+            "18",
+            "19"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "17",
+            "number": 17,
+            "unit": "years"
+          },
+          "scope": "Lens first-team debut vs Montpellier",
+          "sourceKey": "lens-varane-anniversary",
+          "evidence": "The retrospective says he was 17 at his professional debut."
+        },
+        {
+          "key": "varane-lens-debut-opponent",
+          "label": "Lens debut opponent",
+          "prompt": "Which club did Lens face in Varane’s first-team debut?",
+          "answers": [
+            "Montpellier"
+          ],
+          "distractors": [
+            "Bordeaux",
+            "Caen",
+            "Monaco"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Montpellier",
+            "text": "Montpellier"
+          },
+          "scope": "Lens first-team debut, 7 November 2010",
+          "sourceKey": "lens-varane-anniversary",
+          "evidence": "The club names Montpellier as the opponent."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-raphael-varane-records",
+      "subjectKey": "entity-raphael-varane",
+      "clubKey": "entity-lens",
+      "title": "A decade of Madrid records",
+      "subtitle": "Real Madrid’s official profile summarizes Varane’s completed ten-season spell.",
+      "chapter": "records",
+      "story": [
+        {
+          "title": "A decade of Madrid records",
+          "body": "Real Madrid’s official profile summarizes Varane’s completed ten-season spell."
+        },
+        {
+          "title": "Reading the numbers in context",
+          "body": "Each figure belongs to a stated season or completed career and keeps the measure in context."
+        }
+      ],
+      "facts": [
+        {
+          "key": "varane-record-matches",
+          "label": "Madrid appearances",
+          "prompt": "How many official matches did Varane play for Real Madrid?",
+          "answers": [
+            "360"
+          ],
+          "distractors": [
+            "340",
+            "350",
+            "370"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "360",
+            "number": 360,
+            "unit": "matches"
+          },
+          "scope": "Real Madrid career, 2011–2021",
+          "sourceKey": "madrid-varane",
+          "evidence": "The club profile records 360 official games."
+        },
+        {
+          "key": "varane-record-goals",
+          "label": "Madrid goals",
+          "prompt": "How many goals did Varane score for Real Madrid?",
+          "answers": [
+            "17"
+          ],
+          "distractors": [
+            "12",
+            "15",
+            "20"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "17",
+            "number": 17,
+            "unit": "goals"
+          },
+          "scope": "Real Madrid career, 2011–2021",
+          "sourceKey": "madrid-varane",
+          "evidence": "Real Madrid lists 17 goals in 360 appearances."
+        },
+        {
+          "key": "varane-record-titles",
+          "label": "Madrid trophies",
+          "prompt": "How many titles did Varane win in ten seasons with Real Madrid?",
+          "answers": [
+            "18"
+          ],
+          "distractors": [
+            "16",
+            "17",
+            "19"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "18",
+            "number": 18,
+            "unit": "titles"
+          },
+          "scope": "Real Madrid career, 2011–2021",
+          "sourceKey": "madrid-varane",
+          "evidence": "The club reports 18 titles across his ten seasons."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-raphael-varane-legacy",
+      "subjectKey": "entity-raphael-varane",
+      "clubKey": "entity-lens",
+      "title": "A champion for club and country",
+      "subtitle": "Varane’s honours include major European and international titles as well as individual recognition.",
+      "chapter": "legacy",
+      "story": [
+        {
+          "title": "A champion for club and country",
+          "body": "Varane’s honours include major European and international titles as well as individual recognition."
+        },
+        {
+          "title": "What remains",
+          "body": "Raphaël Varane’s honours are linked to the seasons and performances that earned them."
+        }
+      ],
+      "facts": [
+        {
+          "key": "varane-honour-ucl",
+          "label": "European Cups",
+          "prompt": "How many Champions League titles did Varane win with Real Madrid?",
+          "answers": [
+            "4"
+          ],
+          "distractors": [
+            "2",
+            "3",
+            "5"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "4",
+            "number": 4,
+            "unit": "titles"
+          },
+          "scope": "Real Madrid honours through his 2021 departure",
+          "sourceKey": "madrid-varane",
+          "evidence": "The club says he won four European Cups, including the 2018 final."
+        },
+        {
+          "key": "varane-honour-laliga",
+          "label": "League titles",
+          "prompt": "How many LaLiga titles did Varane win with Real Madrid?",
+          "answers": [
+            "3"
+          ],
+          "distractors": [
+            "1",
+            "2",
+            "4"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "3",
+            "number": 3,
+            "unit": "titles"
+          },
+          "scope": "Real Madrid honours through his 2021 departure",
+          "sourceKey": "madrid-varane",
+          "evidence": "The Madrid profile lists three LaLiga titles."
+        },
+        {
+          "key": "varane-honour-worldxi",
+          "label": "Individual honour",
+          "prompt": "Which 2018 individual team included Varane after his World Cup and European Cup wins?",
+          "answers": [
+            "FIFA/FIFPro World XI"
+          ],
+          "distractors": [
+            "UEFA Team of the Year",
+            "UNFP Ligue 1 Team of the Year",
+            "FIFA Puskás Award"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "FIFA/FIFPro World XI",
+            "text": "FIFA/FIFPro World XI"
+          },
+          "scope": "Individual recognition in 2018",
+          "sourceKey": "madrid-varane",
+          "evidence": "Real Madrid states he was named in the FIFA/FIFPro World XI."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-seko-fofana-career",
+      "subjectKey": "entity-seko-fofana",
+      "clubKey": "entity-lens",
+      "title": "A new start in Lens",
+      "subtitle": "Fofana joined Lens in 2020 and found his place after an interrupted start.",
+      "chapter": "career",
+      "story": [
+        {
+          "title": "A new start in Lens",
+          "body": "Fofana joined Lens in 2020 and found his place after an interrupted start."
+        },
+        {
+          "title": "A milestone along the way",
+          "body": "Seko Fofana’s path is told through a debut, a move and the milestones that followed."
+        }
+      ],
+      "facts": [
+        {
+          "key": "seko-arrival",
+          "label": "Lens arrival",
+          "prompt": "In which year did Fofana join Lens?",
+          "answers": [
+            "2020"
+          ],
+          "distractors": [
+            "2018",
+            "2019",
+            "2021"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "2020",
+            "text": "2020"
+          },
+          "scope": "Arrival at Lens, summer 2020",
+          "sourceKey": "lens-seko",
+          "evidence": "Lens says Fofana arrived in summer 2020."
+        },
+        {
+          "key": "seko-debut-date",
+          "label": "Lens debut date",
+          "prompt": "On what date did Fofana first play for Lens?",
+          "answers": [
+            "19 September 2020"
+          ],
+          "distractors": [
+            "19 August 2020",
+            "20 September 2020",
+            "19 October 2020"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "19 September 2020",
+            "text": "19 September 2020"
+          },
+          "scope": "Lens vs Bordeaux, 2020–21 Ligue 1",
+          "sourceKey": "lens-seko",
+          "evidence": "The club dates his first appearance to the Bordeaux match on 19 September."
+        },
+        {
+          "key": "seko-debut-opponent",
+          "label": "Debut opponent",
+          "prompt": "Which club did Lens face in Fofana’s debut?",
+          "answers": [
+            "Bordeaux"
+          ],
+          "distractors": [
+            "Dijon",
+            "Nantes",
+            "Marseille"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Bordeaux",
+            "text": "Bordeaux"
+          },
+          "scope": "Lens debut, 19 September 2020",
+          "sourceKey": "lens-seko",
+          "evidence": "The official retrospective identifies Bordeaux as his debut opponent."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-seko-fofana-moments",
+      "subjectKey": "entity-seko-fofana",
+      "clubKey": "entity-lens",
+      "title": "A hundredth appearance with a goal",
+      "subtitle": "Fofana reached a Lens milestone while scoring in a Coupe de France tie against Nantes.",
+      "chapter": "moments",
+      "story": [
+        {
+          "title": "A hundredth appearance with a goal",
+          "body": "Fofana reached a Lens milestone while scoring in a Coupe de France tie against Nantes."
+        },
+        {
+          "title": "What the moment changed",
+          "body": "This episode is fixed to a particular competition and turning point in Lens’s history."
+        }
+      ],
+      "facts": [
+        {
+          "key": "seko-100th-opponent",
+          "label": "100th-match opponent",
+          "prompt": "Which club did Lens play when Fofana made his 100th appearance for the club?",
+          "answers": [
+            "Nantes"
+          ],
+          "distractors": [
+            "Bordeaux",
+            "Dijon",
+            "Marseille"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Nantes",
+            "text": "Nantes"
+          },
+          "scope": "Lens vs Nantes, Coupe de France, 1 March 2023",
+          "sourceKey": "lens-seko",
+          "evidence": "The club says Fofana started and scored against Nantes in his 100th Lens match."
+        },
+        {
+          "key": "seko-100th-competition",
+          "label": "Competition",
+          "prompt": "In which competition did Fofana reach 100 Lens appearances?",
+          "answers": [
+            "Coupe de France"
+          ],
+          "distractors": [
+            "Ligue 1",
+            "UEFA Europa League",
+            "Coupe de la Ligue"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Coupe de France",
+            "text": "Coupe de France"
+          },
+          "scope": "Lens vs Nantes, 1 March 2023",
+          "sourceKey": "lens-seko",
+          "evidence": "The club labels the Nantes match as Coupe de France."
+        },
+        {
+          "key": "seko-100th-historic",
+          "label": "Club rank",
+          "prompt": "What numbered Lens player in club history was Fofana to reach 100 matches?",
+          "answers": [
+            "77"
+          ],
+          "distractors": [
+            "67",
+            "72",
+            "82"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "77",
+            "number": 77,
+            "unit": "th player"
+          },
+          "scope": "Lens appearance milestone, 1 March 2023",
+          "sourceKey": "lens-seko",
+          "evidence": "The report says he became the 77th player in club history to reach the mark."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-seko-fofana-records",
+      "subjectKey": "entity-seko-fofana",
+      "clubKey": "entity-lens",
+      "title": "A standout Marseille performance",
+      "subtitle": "The club published Fofana’s individual match figures from Lens’s 2021 win at Marseille.",
+      "chapter": "records",
+      "story": [
+        {
+          "title": "A standout Marseille performance",
+          "body": "The club published Fofana’s individual match figures from Lens’s 2021 win at Marseille."
+        },
+        {
+          "title": "Reading the numbers in context",
+          "body": "Each figure belongs to a stated season or completed career and keeps the measure in context."
+        }
+      ],
+      "facts": [
+        {
+          "key": "seko-marseille-touches",
+          "label": "Touches",
+          "prompt": "How many touches did Fofana record in Lens’s 3–2 win at Marseille in 2021?",
+          "answers": [
+            "80"
+          ],
+          "distractors": [
+            "70",
+            "75",
+            "85"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "80",
+            "number": 80,
+            "unit": "touches"
+          },
+          "scope": "Marseille 2–3 Lens, 2021–22 Ligue 1",
+          "sourceKey": "lens-seko",
+          "evidence": "The Lens report says Fofana touched the ball 80 times in that match."
+        },
+        {
+          "key": "seko-marseille-passing",
+          "label": "Pass accuracy",
+          "prompt": "What pass-completion percentage did Fofana record in Lens’s 3–2 win at Marseille in 2021?",
+          "answers": [
+            "91.1%"
+          ],
+          "distractors": [
+            "81.1%",
+            "86.1%",
+            "96.1%"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "91.1%",
+            "text": "91.1%"
+          },
+          "scope": "Marseille 2–3 Lens, 2021–22 Ligue 1",
+          "sourceKey": "lens-seko",
+          "evidence": "The stat table explicitly labels 91.1% successful passes (51/56)."
+        },
+        {
+          "key": "seko-marseille-recoveries",
+          "label": "Recoveries",
+          "prompt": "How many balls did Fofana recover in Lens’s 3–2 win at Marseille in 2021?",
+          "answers": [
+            "11"
+          ],
+          "distractors": [
+            "7",
+            "9",
+            "13"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "11",
+            "number": 11,
+            "unit": "recoveries"
+          },
+          "scope": "Marseille 2–3 Lens, 2021–22 Ligue 1",
+          "sourceKey": "lens-seko",
+          "evidence": "The report lists 11 ball recoveries, distinct from duels won and touches."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-seko-fofana-legacy",
+      "subjectKey": "entity-seko-fofana",
+      "clubKey": "entity-lens",
+      "title": "Awards in a captain’s rise",
+      "subtitle": "Fofana earned league recognition during Lens’s return to the top end of French football.",
+      "chapter": "legacy",
+      "story": [
+        {
+          "title": "Awards in a captain’s rise",
+          "body": "Fofana earned league recognition during Lens’s return to the top end of French football."
+        },
+        {
+          "title": "What remains",
+          "body": "Seko Fofana’s honours are linked to the seasons and performances that earned them."
+        }
+      ],
+      "facts": [
+        {
+          "key": "seko-award-month",
+          "label": "Player of the month",
+          "prompt": "Which month earned Fofana the UNFP Ligue 1 player-of-the-month award?",
+          "answers": [
+            "September 2021"
+          ],
+          "distractors": [
+            "August 2021",
+            "October 2021",
+            "September 2022"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "September 2021",
+            "text": "September 2021"
+          },
+          "scope": "UNFP Ligue 1 monthly award",
+          "sourceKey": "lens-fofana-unfp",
+          "evidence": "Lens says the prize was for September 2021."
+        },
+        {
+          "key": "seko-award-team",
+          "label": "Season team",
+          "prompt": "In which season was Fofana named in the UNFP Ligue 1 Team of the Season?",
+          "answers": [
+            "2021–22"
+          ],
+          "distractors": [
+            "2020–21",
+            "2022–23",
+            "2023–24"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "2021–22",
+            "text": "2021–22"
+          },
+          "scope": "UNFP season honours, 2021–22",
+          "sourceKey": "lens-seko",
+          "evidence": "The Lens retrospective says he was named in the season’s team at the 2022 UNFP awards."
+        },
+        {
+          "key": "seko-captain-year",
+          "label": "Captaincy context",
+          "prompt": "In which season does Lens identify Fofana as its captain during the club-record points campaign?",
+          "answers": [
+            "2022–23"
+          ],
+          "distractors": [
+            "2020–21",
+            "2021–22",
+            "2023–24"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "2022–23",
+            "text": "2022–23"
+          },
+          "scope": "Lens 2022–23 Ligue 1 campaign",
+          "sourceKey": "lens-renouveau",
+          "evidence": "The club history describes the 2022–23 side as led by captain Seko Fofana."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-entity-real-betis-history",
+      "subjectKey": "entity-real-betis",
+      "clubKey": "entity-real-betis",
+      "title": "Two clubs become Real Betis",
+      "subtitle": "The modern club grew from the merger of Sevilla Balompié and Betis Foot-ball Club.",
+      "chapter": "history",
+      "story": [
+        {
+          "title": "Two clubs become Real Betis",
+          "body": "The modern club grew from the merger of Sevilla Balompié and Betis Foot-ball Club."
+        },
+        {
+          "title": "Roots and identity",
+          "body": "From local roots to the name it carries, Real Betis’s beginnings are anchored in dates and decisions."
+        }
+      ],
+      "facts": [
+        {
+          "key": "betis-hist-found",
+          "label": "Foundation year",
+          "prompt": "In what year did students found Sevilla Balompié, one of Real Betis’s predecessor clubs?",
+          "answers": [
+            "1907"
+          ],
+          "distractors": [
+            "1905",
+            "1906",
+            "1909"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "1907",
+            "number": 1907,
+            "unit": "year"
+          },
+          "scope": "Sevilla Balompié foundation",
+          "sourceKey": "betis-history",
+          "evidence": "Real Betis dates the student-founded Sevilla Balompié to 1907."
+        },
+        {
+          "key": "betis-hist-merger",
+          "label": "Merger",
+          "prompt": "Which two clubs approved their merger in December 1914?",
+          "answers": [
+            "Sevilla Balompié and Betis Foot-ball Club"
+          ],
+          "distractors": [
+            "Sevilla FC and Betis Foot-ball Club",
+            "Sevilla Balompié and Sevilla FC",
+            "Betis Foot-ball Club and Recreativo de Huelva"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Sevilla Balompié and Betis Foot-ball Club",
+            "text": "Sevilla Balompié and Betis Foot-ball Club"
+          },
+          "scope": "Merger approved 6 and 8 December 1914",
+          "sourceKey": "betis-history",
+          "evidence": "The official history names Sevilla Balompié and Betis Foot-ball Club."
+        },
+        {
+          "key": "betis-hist-name-date",
+          "label": "Name adopted",
+          "prompt": "In which month and year was the name Real Betis Balompié approved?",
+          "answers": [
+            "August 1915"
+          ],
+          "distractors": [
+            "December 1914",
+            "August 1914",
+            "September 1915"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "August 1915",
+            "text": "August 1915"
+          },
+          "scope": "Official name change",
+          "sourceKey": "betis-history",
+          "evidence": "The club history says the governor approved the new name in August 1915."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-entity-real-betis-moment-1935",
+      "subjectKey": "entity-real-betis",
+      "clubKey": "entity-real-betis",
+      "title": "The 1935 league title",
+      "subtitle": "Betis claimed a Spanish league championship in the spring of 1935.",
+      "chapter": "moments",
+      "story": [
+        {
+          "title": "The 1935 league title",
+          "body": "Betis claimed a Spanish league championship in the spring of 1935."
+        },
+        {
+          "title": "What the moment changed",
+          "body": "This episode is fixed to a particular competition and turning point in Real Betis’s history."
+        }
+      ],
+      "facts": [
+        {
+          "key": "betis-1935-date",
+          "label": "Title date",
+          "prompt": "On what date did Betis clinch the 1935 league championship?",
+          "answers": [
+            "28 April 1935"
+          ],
+          "distractors": [
+            "28 April 1934",
+            "18 April 1935",
+            "28 May 1935"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "28 April 1935",
+            "text": "28 April 1935"
+          },
+          "scope": "1934–35 La Liga title",
+          "sourceKey": "betis-history",
+          "evidence": "The club history says Betis clinched the title on 28 April 1935."
+        },
+        {
+          "key": "betis-1935-coach",
+          "label": "Head coach",
+          "prompt": "Who coached Betis to the 1935 Spanish league title?",
+          "answers": [
+            "Patrick O’Connell"
+          ],
+          "distractors": [
+            "Rafael Iriondo",
+            "Manuel Pellegrini",
+            "Lorenzo Serra Ferrer"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Patrick O’Connell",
+            "text": "Patrick O’Connell"
+          },
+          "scope": "1934–35 title-winning team",
+          "sourceKey": "betis-history",
+          "evidence": "The club’s account names Patrick O’Connell as coach."
+        },
+        {
+          "key": "betis-1935-location",
+          "label": "Decisive venue city",
+          "prompt": "In which city did Betis beat Racing Santander to seal the 1935 title?",
+          "answers": [
+            "Santander"
+          ],
+          "distractors": [
+            "Seville",
+            "Madrid",
+            "Valencia"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Santander",
+            "text": "Santander"
+          },
+          "scope": "Betis at Racing Santander, final round of 1934–35",
+          "sourceKey": "betis-history",
+          "evidence": "The history says the decisive win came at Racing Santander in Santander."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-entity-real-betis-moment-2022-copa",
+      "subjectKey": "entity-real-betis",
+      "clubKey": "entity-real-betis",
+      "title": "The 2022 Copa final goes to penalties",
+      "subtitle": "Betis lifted the Copa del Rey after a draw with Valencia and a shootout at La Cartuja.",
+      "chapter": "moments",
+      "story": [
+        {
+          "title": "The 2022 Copa final goes to penalties",
+          "body": "Betis lifted the Copa del Rey after a draw with Valencia and a shootout at La Cartuja."
+        },
+        {
+          "title": "What the moment changed",
+          "body": "This episode is fixed to a particular competition and turning point in Real Betis’s history."
+        }
+      ],
+      "facts": [
+        {
+          "key": "betis-2022-final-date",
+          "label": "Final date",
+          "prompt": "On what date did Betis win the 2022 Copa del Rey final?",
+          "answers": [
+            "23 April 2022"
+          ],
+          "distractors": [
+            "23 April 2021",
+            "22 April 2022",
+            "23 May 2022"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "23 April 2022",
+            "text": "23 April 2022"
+          },
+          "scope": "Copa del Rey final at La Cartuja",
+          "sourceKey": "betis-2022-events",
+          "evidence": "The match record dates the final to 23 April 2022."
+        },
+        {
+          "key": "betis-2022-regulation",
+          "label": "Regulation score",
+          "prompt": "What was the score after regulation in the 2022 Copa final, before penalties?",
+          "answers": [
+            "1–1"
+          ],
+          "distractors": [
+            "0–0",
+            "2–1",
+            "1–0"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "1–1",
+            "text": "1–1"
+          },
+          "scope": "Betis vs Valencia, 2022 Copa final; regulation time only",
+          "sourceKey": "betis-copa-2022",
+          "evidence": "The club reports Borja Iglesias scoring at 11 minutes and Hugo Duro equalizing at 30 minutes; extra time ended before the shootout.",
+          "scoreInput": {
+            "leftClubKey": "entity-real-betis",
+            "rightClubKey": "entity-valencia",
+            "leftGoals": 1,
+            "rightGoals": 1
+          }
+        },
+        {
+          "key": "betis-2022-shootout",
+          "label": "Shootout score",
+          "prompt": "What was the penalty-shootout score in the 2022 Copa final, separate from the 1–1 match score?",
+          "answers": [
+            "5–4"
+          ],
+          "distractors": [
+            "4–3",
+            "5–3",
+            "6–5"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "5–4",
+            "text": "5–4"
+          },
+          "scope": "Penalty shootout only after a 1–1 regulation score",
+          "sourceKey": "betis-copa-2022",
+          "evidence": "The match report lists five successful Betis kicks against four Valencia conversions; Musah missed.",
+          "scoreInput": {
+            "leftClubKey": "entity-real-betis",
+            "rightClubKey": "entity-valencia",
+            "leftGoals": 5,
+            "rightGoals": 4
+          }
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-joaquin-career",
+      "subjectKey": "entity-joaquin-betis",
+      "clubKey": "entity-real-betis",
+      "title": "An academy graduate becomes a first-team regular",
+      "subtitle": "Joaquín debuted for Betis at nineteen and helped the club return to the top division.",
+      "chapter": "career",
+      "story": [
+        {
+          "title": "An academy graduate becomes a first-team regular",
+          "body": "Joaquín debuted for Betis at nineteen and helped the club return to the top division."
+        },
+        {
+          "title": "A milestone along the way",
+          "body": "Joaquín’s path is told through a debut, a move and the milestones that followed."
+        }
+      ],
+      "facts": [
+        {
+          "key": "joaquin-debut-date",
+          "label": "First-team debut",
+          "prompt": "On what date did Joaquín make his Betis debut?",
+          "answers": [
+            "3 September 2000"
+          ],
+          "distractors": [
+            "3 September 1999",
+            "13 September 2000",
+            "3 October 2000"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "3 September 2000",
+            "text": "3 September 2000"
+          },
+          "scope": "Betis debut at Santiago de Compostela",
+          "sourceKey": "betis-joaquin-retirement",
+          "evidence": "The club dates his debut to 3 September 2000."
+        },
+        {
+          "key": "joaquin-debut-age",
+          "label": "Debut age",
+          "prompt": "How old was Joaquín when he made his Betis debut?",
+          "answers": [
+            "19"
+          ],
+          "distractors": [
+            "18",
+            "20",
+            "21"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "19",
+            "number": 19,
+            "unit": "years"
+          },
+          "scope": "Betis debut, September 2000",
+          "sourceKey": "betis-joaquin-retirement",
+          "evidence": "The club says he debuted at 19."
+        },
+        {
+          "key": "joaquin-promotion-season",
+          "label": "First-season appearances",
+          "prompt": "How many matches did Joaquín play in his first Betis season, the team’s promotion campaign?",
+          "answers": [
+            "38"
+          ],
+          "distractors": [
+            "30",
+            "34",
+            "42"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "38",
+            "number": 38,
+            "unit": "matches"
+          },
+          "scope": "2000–01 season across all competitions, as reported by club",
+          "sourceKey": "betis-joaquin-retirement",
+          "evidence": "The club says he played 38 matches and was key to Betis’s promotion."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-joaquin-moments",
+      "subjectKey": "entity-joaquin-betis",
+      "clubKey": "entity-real-betis",
+      "title": "A leading role at the 2002 World Cup",
+      "subtitle": "Joaquín started Spain’s quarter-final against South Korea, which ended in a penalty shootout.",
+      "chapter": "moments",
+      "story": [
+        {
+          "title": "A leading role at the 2002 World Cup",
+          "body": "Joaquín started Spain’s quarter-final against South Korea, which ended in a penalty shootout."
+        },
+        {
+          "title": "What the moment changed",
+          "body": "This episode is fixed to a particular competition and turning point in Real Betis’s history."
+        }
+      ],
+      "facts": [
+        {
+          "key": "joaquin-worldcup-year",
+          "label": "Tournament",
+          "prompt": "In what year did Joaquín play at the World Cup in Korea and Japan?",
+          "answers": [
+            "2002"
+          ],
+          "distractors": [
+            "1998",
+            "2000",
+            "2006"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "2002",
+            "text": "2002"
+          },
+          "scope": "Spain at the 2002 FIFA World Cup",
+          "sourceKey": "betis-joaquin-retirement",
+          "evidence": "The Betis retirement retrospective identifies the 2002 World Cup."
+        },
+        {
+          "key": "joaquin-worldcup-opponent",
+          "label": "Quarter-final opponent",
+          "prompt": "Which country did Spain face in Joaquín’s famous 2002 World Cup quarter-final?",
+          "answers": [
+            "South Korea"
+          ],
+          "distractors": [
+            "South Africa",
+            "Japan",
+            "Turkey"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "South Korea",
+            "text": "South Korea"
+          },
+          "scope": "Spain vs South Korea, 2002 World Cup quarter-final",
+          "sourceKey": "betis-joaquin-retirement",
+          "evidence": "The club identifies South Korea as Spain’s quarter-final opponent."
+        },
+        {
+          "key": "joaquin-worldcup-role",
+          "label": "Starting role",
+          "prompt": "Did Joaquín start or enter as a substitute in that quarter-final?",
+          "answers": [
+            "Started"
+          ],
+          "distractors": [
+            "Entered as substitute",
+            "Was unused",
+            "Was suspended"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Started",
+            "text": "Started"
+          },
+          "scope": "Spain vs South Korea, 2002 World Cup quarter-final",
+          "sourceKey": "betis-joaquin-retirement",
+          "evidence": "The official account says Joaquín came out as a starter."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-joaquin-records",
+      "subjectKey": "entity-joaquin-betis",
+      "clubKey": "entity-real-betis",
+      "title": "A record-setting Betis career",
+      "subtitle": "At his retirement announcement, the club documented Joaquín’s appearances and goals.",
+      "chapter": "records",
+      "story": [
+        {
+          "title": "A record-setting Betis career",
+          "body": "At his retirement announcement, the club documented Joaquín’s appearances and goals."
+        },
+        {
+          "title": "Reading the numbers in context",
+          "body": "Each figure belongs to a stated season or completed career and keeps the measure in context."
+        }
+      ],
+      "facts": [
+        {
+          "key": "joaquin-record-betis-apps",
+          "label": "Betis appearances",
+          "prompt": "How many Betis appearances had Joaquín made when he announced his retirement in April 2023?",
+          "answers": [
+            "521"
+          ],
+          "distractors": [
+            "501",
+            "511",
+            "531"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "521",
+            "number": 521,
+            "unit": "matches"
+          },
+          "scope": "Career total at 19 April 2023 announcement, with nine matches still to play",
+          "sourceKey": "betis-joaquin-retirement",
+          "evidence": "The announcement states 521 Betis appearances at that date; it is an interim announcement total, not his final total."
+        },
+        {
+          "key": "joaquin-record-goals",
+          "label": "Betis goals",
+          "prompt": "How many goals had Joaquín scored for Betis by his April 2023 retirement announcement?",
+          "answers": [
+            "66"
+          ],
+          "distractors": [
+            "56",
+            "61",
+            "71"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "66",
+            "number": 66,
+            "unit": "goals"
+          },
+          "scope": "Career total at 19 April 2023 announcement",
+          "sourceKey": "betis-joaquin-retirement",
+          "evidence": "The announcement gives 66 Betis goals as of that date."
+        },
+        {
+          "key": "joaquin-record-laliga",
+          "label": "LaLiga appearances",
+          "prompt": "How many LaLiga appearances did Joaquín finish with when he retired in 2023?",
+          "answers": [
+            "622"
+          ],
+          "distractors": [
+            "612",
+            "617",
+            "627"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "622",
+            "number": 622,
+            "unit": "appearances"
+          },
+          "scope": "Completed LaLiga total at final match, May 2023",
+          "sourceKey": "betis-joaquin-finale",
+          "evidence": "The final-match report records 622 LaLiga appearances and says this equaled the previous record."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-joaquin-legacy",
+      "subjectKey": "entity-joaquin-betis",
+      "clubKey": "entity-real-betis",
+      "title": "Two Copa titles with Betis",
+      "subtitle": "Joaquín featured in Betis’s 2005 and 2022 Copa del Rey victories.",
+      "chapter": "legacy",
+      "story": [
+        {
+          "title": "Two Copa titles with Betis",
+          "body": "Joaquín featured in Betis’s 2005 and 2022 Copa del Rey victories."
+        },
+        {
+          "title": "What remains",
+          "body": "Joaquín’s honours are linked to the seasons and performances that earned them."
+        }
+      ],
+      "facts": [
+        {
+          "key": "joaquin-2005-copa",
+          "label": "First Copa final",
+          "prompt": "Which club did Betis beat in the 2005 Copa del Rey final with Joaquín in the lineup?",
+          "answers": [
+            "Osasuna"
+          ],
+          "distractors": [
+            "Valencia",
+            "Barcelona",
+            "Sevilla"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Osasuna",
+            "text": "Osasuna"
+          },
+          "scope": "2005 Copa del Rey final",
+          "sourceKey": "betis-joaquin-retirement",
+          "evidence": "The official account says Betis beat Osasuna 2–1 and lists Joaquín in the starting lineup."
+        },
+        {
+          "key": "joaquin-2022-copa",
+          "label": "Second Copa final",
+          "prompt": "Which opponent did Betis beat in the 2022 Copa final in which Joaquín scored a shootout penalty?",
+          "answers": [
+            "Valencia"
+          ],
+          "distractors": [
+            "Osasuna",
+            "Barcelona",
+            "Sevilla"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Valencia",
+            "text": "Valencia"
+          },
+          "scope": "2022 Copa del Rey final and penalty shootout",
+          "sourceKey": "betis-copa-2022",
+          "evidence": "The final report names Valencia as opponent and Joaquín among the successful Betis penalty takers."
+        },
+        {
+          "key": "joaquin-two-cups",
+          "label": "Club distinction",
+          "prompt": "What unique Betis distinction did Joaquín achieve through the 2005 and 2022 Copa wins?",
+          "answers": [
+            "Only Betis player to win two Copa del Rey titles with the club"
+          ],
+          "distractors": [
+            "First Betis player to captain in Europe",
+            "Only Betis player to score in three Copa finals",
+            "First Betis player to win the Golden Boot"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Only Betis player to win two Copa del Rey titles with the club",
+            "text": "Only Betis player to win two Copa del Rey titles with the club"
+          },
+          "scope": "Betis honours through retirement in 2023",
+          "sourceKey": "betis-joaquin-retirement",
+          "evidence": "The club calls him its only player to win two Copa titles in the green-and-white shirt."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-nabil-fekir-career",
+      "subjectKey": "entity-nabil-fekir",
+      "clubKey": "entity-real-betis",
+      "title": "Lyon beginnings and a move to Seville",
+      "subtitle": "Fekir came through Lyon’s academy and joined Betis after becoming a world champion.",
+      "chapter": "career",
+      "story": [
+        {
+          "title": "Lyon beginnings and a move to Seville",
+          "body": "Fekir came through Lyon’s academy and joined Betis after becoming a world champion."
+        },
+        {
+          "title": "A milestone along the way",
+          "body": "Nabil Fekir’s path is told through a debut, a move and the milestones that followed."
+        }
+      ],
+      "facts": [
+        {
+          "key": "fekir-lyon-debut",
+          "label": "Lyon debut",
+          "prompt": "On what date did Fekir make his first-team debut for Lyon?",
+          "answers": [
+            "28 August 2013"
+          ],
+          "distractors": [
+            "28 August 2012",
+            "18 July 2013",
+            "28 September 2013"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "28 August 2013",
+            "text": "28 August 2013"
+          },
+          "scope": "Lyon first-team debut",
+          "sourceKey": "betis-fekir-signing",
+          "evidence": "Betis says he made his Lyon debut on 28 August 2013."
+        },
+        {
+          "key": "fekir-betis-joined",
+          "label": "Betis arrival",
+          "prompt": "In which year did Fekir join Real Betis?",
+          "answers": [
+            "2019"
+          ],
+          "distractors": [
+            "2017",
+            "2018",
+            "2020"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "2019",
+            "text": "2019"
+          },
+          "scope": "Transfer from Lyon before 2019–20",
+          "sourceKey": "betis-fekir-signing",
+          "evidence": "The club announced his transfer for the 2019–20 season."
+        },
+        {
+          "key": "fekir-lyon-years",
+          "label": "Previous club",
+          "prompt": "Which club did Fekir leave when he joined Real Betis in 2019?",
+          "answers": [
+            "Olympique Lyonnais"
+          ],
+          "distractors": [
+            "AS Saint-Priest",
+            "FC Vaulx-en-Velin",
+            "Olympique de Marseille"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Olympique Lyonnais",
+            "text": "Olympique Lyonnais"
+          },
+          "scope": "Transfer from Lyon to Betis in summer 2019",
+          "sourceKey": "betis-fekir-signing",
+          "evidence": "The Betis signing announcement says Fekir developed at Lyon and made his first-team debut there in 2013 before his 2019 move."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-nabil-fekir-moments",
+      "subjectKey": "entity-nabil-fekir",
+      "clubKey": "entity-real-betis",
+      "title": "A World Cup cameo against Peru",
+      "subtitle": "Fekir entered France’s 2018 group match against Peru from the bench.",
+      "chapter": "moments",
+      "story": [
+        {
+          "title": "A World Cup cameo against Peru",
+          "body": "Fekir entered France’s 2018 group match against Peru from the bench."
+        },
+        {
+          "title": "What the moment changed",
+          "body": "This episode is fixed to a particular competition and turning point in Real Betis’s history."
+        }
+      ],
+      "facts": [
+        {
+          "key": "fekir-peru-date",
+          "label": "Match date",
+          "prompt": "On what date did Fekir appear against Peru at the 2018 World Cup?",
+          "answers": [
+            "21 June 2018"
+          ],
+          "distractors": [
+            "16 June 2018",
+            "26 June 2018",
+            "21 July 2018"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "21 June 2018",
+            "text": "21 June 2018"
+          },
+          "scope": "France 1–0 Peru, 2018 World Cup group stage",
+          "sourceKey": "fff-peru",
+          "evidence": "The FFF report dates the match to 21 June 2018."
+        },
+        {
+          "key": "fekir-peru-minute",
+          "label": "Substitution minute",
+          "prompt": "In which minute did Fekir enter against Peru?",
+          "answers": [
+            "80"
+          ],
+          "distractors": [
+            "70",
+            "75",
+            "85"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "80",
+            "number": 80,
+            "unit": "minute"
+          },
+          "scope": "France 1–0 Peru, 2018 World Cup group stage",
+          "sourceKey": "fff-peru",
+          "evidence": "The FFF event log shows Fekir replacing Antoine Griezmann in the 80th minute."
+        },
+        {
+          "key": "fekir-peru-result",
+          "label": "Match result",
+          "prompt": "What was the final score of France’s World Cup match against Peru?",
+          "answers": [
+            "1–0"
+          ],
+          "distractors": [
+            "0–0",
+            "2–0",
+            "2–1"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "1–0",
+            "text": "1–0"
+          },
+          "scope": "France vs Peru, 21 June 2018",
+          "sourceKey": "fff-peru",
+          "evidence": "The official match report records France 1–0 Peru."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-nabil-fekir-records",
+      "subjectKey": "entity-nabil-fekir",
+      "clubKey": "entity-real-betis",
+      "title": "Betis totals at departure",
+      "subtitle": "The club reported Fekir’s completed five-season Betis totals when he transferred in August 2024.",
+      "chapter": "records",
+      "story": [
+        {
+          "title": "Betis totals at departure",
+          "body": "The club reported Fekir’s completed five-season Betis totals when he transferred in August 2024."
+        },
+        {
+          "title": "Reading the numbers in context",
+          "body": "Each figure belongs to a stated season or completed career and keeps the measure in context."
+        }
+      ],
+      "facts": [
+        {
+          "key": "fekir-record-apps",
+          "label": "Betis appearances",
+          "prompt": "How many matches had Fekir played for Betis when he left in August 2024?",
+          "answers": [
+            "165"
+          ],
+          "distractors": [
+            "155",
+            "160",
+            "175"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "165",
+            "number": 165,
+            "unit": "matches"
+          },
+          "scope": "Betis career total through 30 August 2024",
+          "sourceKey": "betis-fekir-exit",
+          "evidence": "The club states he left after six seasons and 165 games."
+        },
+        {
+          "key": "fekir-record-goals",
+          "label": "Betis goals",
+          "prompt": "How many goals did Fekir score for Betis by his August 2024 departure?",
+          "answers": [
+            "29"
+          ],
+          "distractors": [
+            "24",
+            "27",
+            "32"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "29",
+            "number": 29,
+            "unit": "goals"
+          },
+          "scope": "Betis career total through 30 August 2024",
+          "sourceKey": "betis-fekir-exit",
+          "evidence": "The transfer announcement lists 29 goals."
+        },
+        {
+          "key": "fekir-record-assists",
+          "label": "Betis assists",
+          "prompt": "How many assists did Fekir record for Betis by his August 2024 departure?",
+          "answers": [
+            "25"
+          ],
+          "distractors": [
+            "20",
+            "23",
+            "28"
+          ],
+          "value": {
+            "kind": "number",
+            "display": "25",
+            "number": 25,
+            "unit": "assists"
+          },
+          "scope": "Betis career total through 30 August 2024",
+          "sourceKey": "betis-fekir-exit",
+          "evidence": "The same release lists 25 assists."
+        }
+      ]
+    },
+    {
+      "key": "lesson-curriculum-nabil-fekir-legacy",
+      "subjectKey": "entity-nabil-fekir",
+      "clubKey": "entity-real-betis",
+      "title": "A World Cup winner and Copa champion",
+      "subtitle": "Fekir’s honours span the France national team and Real Betis.",
+      "chapter": "legacy",
+      "story": [
+        {
+          "title": "A World Cup winner and Copa champion",
+          "body": "Fekir’s honours span the France national team and Real Betis."
+        },
+        {
+          "title": "What remains",
+          "body": "Nabil Fekir’s honours are linked to the seasons and performances that earned them."
+        }
+      ],
+      "facts": [
+        {
+          "key": "fekir-worldcup-honour",
+          "label": "National-team honour",
+          "prompt": "Which major international title did Fekir win with France in 2018?",
+          "answers": [
+            "FIFA World Cup"
+          ],
+          "distractors": [
+            "UEFA European Championship",
+            "UEFA Nations League",
+            "FIFA Confederations Cup"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "FIFA World Cup",
+            "text": "FIFA World Cup"
+          },
+          "scope": "Senior France honours",
+          "sourceKey": "fff-fekir",
+          "evidence": "The FFF profile lists the 2018 World Cup in Fekir’s honours."
+        },
+        {
+          "key": "fekir-betis-copa-honour",
+          "label": "Betis honour",
+          "prompt": "Which domestic cup did Fekir win with Betis in 2022?",
+          "answers": [
+            "Copa del Rey"
+          ],
+          "distractors": [
+            "Copa de la Liga",
+            "Supercopa de España",
+            "UEFA Europa League"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "Copa del Rey",
+            "text": "Copa del Rey"
+          },
+          "scope": "Club honours list",
+          "sourceKey": "fff-fekir",
+          "evidence": "The FFF profile lists the 2022 Copa de España with Real Betis; the club’s 2022 final report names Fekir in the lineup."
+        },
+        {
+          "key": "fekir-unfp-honour",
+          "label": "Individual honour",
+          "prompt": "Which French league season included Fekir in the UNFP Ligue 1 Team of the Year?",
+          "answers": [
+            "2017–18"
+          ],
+          "distractors": [
+            "2015–16",
+            "2016–17",
+            "2018–19"
+          ],
+          "value": {
+            "kind": "text",
+            "display": "2017–18",
+            "text": "2017–18"
+          },
+          "scope": "FFF individual distinctions",
+          "sourceKey": "fff-fekir",
+          "evidence": "The FFF profile lists him in the Ligue 1 Team of the Year in 2018."
+        }
+      ]
+    }
+  ]
+}

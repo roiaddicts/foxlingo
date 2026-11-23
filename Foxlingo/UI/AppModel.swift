@@ -1,6 +1,9 @@
 import SwiftUI
 
 @MainActor final class AppModel: ObservableObject {
+    @Published private(set) var isLoading = true
+    @Published var lessonIsPresented = false
+    @Published var streakSuccess: StreakSuccess?
     @Published var pack: ContentPack?
     @Published var state = LearnerState()
     @Published var rehearsalTopics: [RehearsalTopic] = []
@@ -42,38 +45,54 @@ import SwiftUI
         #else
         store = StateStore(directory:base)
         #endif
-        load()
-        Task {await refreshDailyIfNeeded()}
-        #if DEBUG
-        if args.contains("-ui-testing"),args.contains("-stage-test-lessons"),let cache=contentCache,let pack {
-            do {
-                var json=try JSONSerialization.jsonObject(with:cache.bundledData) as! [String:Any]
-                json["contentVersion"]=pack.contentVersion+1
-                var lessons=json["lessons"] as! [[String:Any]]
-                var story=lessons[0]["story"] as! [[String:String]]
-                story[0]["title"]="Updated story fixture";lessons[0]["story"]=story;json["lessons"]=lessons
-                if args.contains("-test-library-without-favorites") {
-                    json["roadmaps"]=(json["roadmaps"] as! [[String:Any]]).filter {!["roadmap-xolos","roadmap-madrid"].contains($0["key"] as! String)}
-                }
-                try cache.stage(JSONSerialization.data(withJSONObject:json),active:pack)
-                refreshUpdateStatus();updateMessage="Test lesson version is waiting for next launch."
-            } catch {updateMessage=error.localizedDescription}
+        Task {
+            await loadContent()
+            await refreshDailyIfNeeded()
+            #if DEBUG
+            if args.contains("-ui-testing"),args.contains("-stage-test-lessons"),let cache=contentCache,let pack {
+                do {
+                    var json=try JSONSerialization.jsonObject(with:cache.bundledData) as! [String:Any]
+                    json["contentVersion"]=pack.contentVersion+1
+                    var lessons=json["lessons"] as! [[String:Any]]
+                    var story=lessons[0]["story"] as! [[String:String]]
+                    story[0]["title"]="Updated story fixture";lessons[0]["story"]=story;json["lessons"]=lessons
+                    if args.contains("-test-library-without-favorites") {
+                        json["roadmaps"]=(json["roadmaps"] as! [[String:Any]]).filter {!["roadmap-xolos","roadmap-madrid"].contains($0["key"] as! String)}
+                    }
+                    try cache.stage(JSONSerialization.data(withJSONObject:json),active:pack)
+                    refreshUpdateStatus();updateMessage="Test lesson version is waiting for next launch."
+                } catch {updateMessage=error.localizedDescription}
+            }
+            #endif
         }
-        #endif
     }
-    func load() {
+    func load() { Task { await loadContent() } }
+    private func loadContent() async {
+        isLoading = true
+        defer { isLoading = false }
         do {
             guard let url = Bundle.main.url(forResource:"starter-en",withExtension:"json") else { throw ContentError.invalid("The starter lessons are missing.") }
-            let bundledData=try Data(contentsOf:url)
             let contentBase=store.directory.deletingLastPathComponent().appendingPathComponent(store.directory.lastPathComponent == "UITest" ? "ContentUITest" : "FoxlingoContent")
-            contentCache=try ContentCache(directory:contentBase,bundledData:bundledData)
             #if DEBUG
-            if ProcessInfo.processInfo.arguments.contains("-reset-test-state") {try? FileManager.default.removeItem(at:contentBase)}
+            let reset = ProcessInfo.processInfo.arguments.contains("-reset-test-state")
+            #else
+            let reset = false
             #endif
-            do {
-                let result=try contentCache!.load();pack=result.pack;updateMessage=result.notice
-            } catch {pack=try ContentPack.load(bundledData);updateMessage="Saved lesson updates could not be opened. Bundled lessons are available: \(error.localizedDescription)"}
-            refreshUpdateStatus()
+            // Disk reads, decoding and validation must not block the first frame.
+            let prepared = try await Task.detached(priority: .userInitiated) {
+                let data = try Data(contentsOf: url)
+                let cache = try ContentCache(directory: contentBase, bundledData: data)
+                if reset { try? FileManager.default.removeItem(at: contentBase) }
+                let loaded: (pack: ContentPack, notice: String?)
+                do { loaded = try cache.load() }
+                catch { loaded = (cache.bundled, "Saved lesson updates could not be opened. Bundled lessons are available: \(error.localizedDescription)") }
+                return (cache, loaded.pack, loaded.notice, cache.pendingVersion, cache.previousVersion)
+            }.value
+            contentCache = prepared.0
+            pack = prepared.1
+            updateMessage = prepared.2
+            stagedVersion = prepared.3
+            rollbackVersion = prepared.4
         } catch { contentError = error.localizedDescription; return }
         do {
             guard let url=Bundle.main.url(forResource:"games-en",withExtension:"json") else {throw ContentError.invalid("Game content is missing.")}

@@ -7,38 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E026F5932F8618B6C421521E /* DailyXIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAD00F36B3E2AA8D4F5A4EC /* DailyXIView.swift */; };
-		E770092343C255FA1775D495 /* DailyXI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7A0098F81381234F5C4738 /* DailyXI.swift */; };
-		91EE29A532F8E826BF17B8DA /* DailyImpostorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2F82D5A0D09C54A9A6FE3A /* DailyImpostorView.swift */; };
-		CA5E839497E1C0EFCDD412F5 /* DailyImpostor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91AEC2D03D44C511569ED52 /* DailyImpostor.swift */; };
-		1B981FD1DD2470FD6C4792FA /* DailyConnectionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C61505013AB19EB6C1BEA7 /* DailyConnectionsView.swift */; };
-		A6D97EE3A323C98B137E00D4 /* DailyConnections.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C51E4199116810BC8227D9 /* DailyConnections.swift */; };
-		804293031E73B13E2AB8A9D2 /* DailyBingo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741E57FCE562A8B11D3CF457 /* DailyBingo.swift */; };
-		39050F9F1D73536D6C847F1E /* DailyGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314FF71D8C1F94BD6AF4CDB4 /* DailyGridView.swift */; };
-		1267885921801CF7509D3DB6 /* DailyGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9131A70E3C44C7018CD25E8B /* DailyGrid.swift */; };
-		7912502B2C604AC74600F639 /* DailyWordleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F151FDB6EB5A02F2E9F2896 /* DailyWordleView.swift */; };
-		F70142034FF69F3333F2AB0D /* DailyWordle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B084E50CF27566E0DC419B /* DailyWordle.swift */; };
-		D9FDD824B7F6F7BBF15EF7DE /* DailyBingoRetroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58618AD051A7D236FDB5901E /* DailyBingoRetroView.swift */; };
-		FC7B3E4263F104317F70A2C9 /* DailyBingoRetro.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE530EDFE6389DB565E09CC0 /* DailyBingoRetro.swift */; };
-		8BD315532B4AC9D7D08D4571 /* DailyGoltextoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F803F2AD5E5A479A23CC47D /* DailyGoltextoView.swift */; };
-		9D58D8857C7BD87EF7244A3D /* DailyGoltexto.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19C6452921CE3D3E0F27F07 /* DailyGoltexto.swift */; };
-		29CF66FEF124865782BD4AAE /* DailyGuessWhoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B47AEAC721AC629C372BF12 /* DailyGuessWhoView.swift */; };
-		D8E80C99F1DDA1FB4F949710 /* DailyGuessWho.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5ADD6A5C909D04EA3C690A /* DailyGuessWho.swift */; };
 		0AE33D3319C8B3B14DD01D05 /* DailyRanking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626600C4441F578D70FC60AA /* DailyRanking.swift */; };
 		0DB687199F91BAC584FCE1F4 /* Mystery.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C18A5B21E37AAF8EAFEDD6 /* Mystery.swift */; };
 		0E2E56708C090FEFDB0CC103 /* PracticeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE49724F121C78481AA89D89 /* PracticeView.swift */; };
 		0FF94C760F9AF7CFA8224EDC /* DailySquadSliceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5805FBE83EFA5E707214FA /* DailySquadSliceView.swift */; };
+		1267885921801CF7509D3DB6 /* DailyGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9131A70E3C44C7018CD25E8B /* DailyGrid.swift */; };
 		12F69F3E40185E7CEF50D20F /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F87F3A242BA97B77CD920D /* Timeline.swift */; };
 		15651C29A41D3C6A0CE3343A /* Games.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585971EEDF1CEED7EEC0823B /* Games.swift */; };
 		18630EBBC5C3089B37CECC50 /* StreakBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4549B851986FB8C584392F2D /* StreakBadge.swift */; };
+		1B981FD1DD2470FD6C4792FA /* DailyConnectionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C61505013AB19EB6C1BEA7 /* DailyConnectionsView.swift */; };
 		1D78D81DEFE4E24CA58042B0 /* MemoryGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA45E7CA36E4D2F45E70FA7E /* MemoryGameView.swift */; };
 		1E1865D4CFED7ED4A654AB3E /* ClubLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1C7ED3212E0B5D84B7C261 /* ClubLibrary.swift */; };
 		1E5D991E5C811E12B4275712 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 267DA166EFB8DC9CD6BB95DF /* Foundation.framework */; };
 		1EAB88A19F33123421B35AA6 /* Roadmaps.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4459FFC7ECDD8B3D2745338 /* Roadmaps.swift */; };
 		22DBE181761C1F65CCFEB48A /* starter-en.json in Resources */ = {isa = PBXBuildFile; fileRef = 0CF94E40E1DBE5E69BB7F885 /* starter-en.json */; };
+		29CF66FEF124865782BD4AAE /* DailyGuessWhoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B47AEAC721AC629C372BF12 /* DailyGuessWhoView.swift */; };
 		2AD1BC14E7FFC0C83D7818F9 /* StudyPlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF04BE9776E9842A6456BD2C /* StudyPlan.swift */; };
 		3518FC19D3DC254DD426541E /* FoxlingoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CAF16169F54078C4005D08 /* FoxlingoApp.swift */; };
 		35331C00CA2C1D6B9950622C /* DailyReveal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08674D1A67FB4BEBB32B545F /* DailyReveal.swift */; };
+		39050F9F1D73536D6C847F1E /* DailyGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314FF71D8C1F94BD6AF4CDB4 /* DailyGridView.swift */; };
+		400C75DF450F85EFF29CFBA5 /* StreakFire.metal in Sources */ = {isa = PBXBuildFile; fileRef = C4ACF5D2E8132C70FE6299AA /* StreakFire.metal */; };
 		46B3BF1D599171185BC5162A /* Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040EE940F8B19FB06AC7B14F /* Content.swift */; };
 		47369FEA4DBE19E21B44D699 /* games-en.json in Resources */ = {isa = PBXBuildFile; fileRef = 6D6843E51D69668BD8540FBE /* games-en.json */; };
 		47D111E9ED68E8CAF48B9CCE /* RehearsalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9B1366A7BCF1012DB573C8 /* RehearsalView.swift */; };
@@ -59,25 +47,36 @@
 		769A0CFBF5C7D001606397C8 /* FlowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D90F61C2695718E9BCED131 /* FlowTests.swift */; };
 		771846DCC4629031AA025373 /* Learning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44549E9139E3443B66DB2E34 /* Learning.swift */; };
 		77409B84F227F4AEB9C972F9 /* DailyPyramidView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171DB1CE51A229979E27C97B /* DailyPyramidView.swift */; };
+		7912502B2C604AC74600F639 /* DailyWordleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F151FDB6EB5A02F2E9F2896 /* DailyWordleView.swift */; };
+		804293031E73B13E2AB8A9D2 /* DailyBingo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741E57FCE562A8B11D3CF457 /* DailyBingo.swift */; };
 		82150E21B0A20A2157A9663C /* PlayerGroups.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1748C6C507FC54A146D6F51C /* PlayerGroups.swift */; };
 		829EA4E2190693D065F4C3D3 /* DailyChallenges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E56B339B1BD67288DEE76F /* DailyChallenges.swift */; };
+		8BD315532B4AC9D7D08D4571 /* DailyGoltextoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F803F2AD5E5A479A23CC47D /* DailyGoltextoView.swift */; };
 		8C163C272018AC63A3695C8A /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4A1974B3B01C85D26BA1F0 /* Album.swift */; };
 		8C81A81D34C0F0B1DCB608A8 /* MysteryGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78055BFC3AA23280B83DA4D3 /* MysteryGameView.swift */; };
 		8DD514B0DD979023A88925C9 /* GamesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A787A4A96F423AD601B4AF /* GamesView.swift */; };
 		8EB98D9276AE75E20BAF7F52 /* SoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC839D51CA750F88265F29E8 /* SoundPlayer.swift */; };
+		91EE29A532F8E826BF17B8DA /* DailyImpostorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2F82D5A0D09C54A9A6FE3A /* DailyImpostorView.swift */; };
+		9D58D8857C7BD87EF7244A3D /* DailyGoltexto.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19C6452921CE3D3E0F27F07 /* DailyGoltexto.swift */; };
 		A1005C114B258C7607A8598B /* ContentDownload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FC0FA460EC5AF74B59DD8F /* ContentDownload.swift */; };
 		A4C5594ACC500AA8E6365CB7 /* DailyRevealView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CCCC9A83AE35A3079A6E8F /* DailyRevealView.swift */; };
+		A6D97EE3A323C98B137E00D4 /* DailyConnections.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C51E4199116810BC8227D9 /* DailyConnections.swift */; };
 		AA91E756C194CF4D3ADD5A21 /* DraftXIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76FE00149A3C9E3A3970AB7 /* DraftXIView.swift */; };
 		B16F19770BE9E039CD91B532 /* PlayerGroupsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164EF1553A2DCCE0E460298C /* PlayerGroupsView.swift */; };
 		B457BA92F3A07D2F90E8B378 /* FootballWordleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADE050C3166F8029D3AB230 /* FootballWordleView.swift */; };
 		C1458E9D45F9E1846E9020C0 /* SoundAssetsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5EF711CD94AE4DBD7A4EE6 /* SoundAssetsView.swift */; };
+		CA5E839497E1C0EFCDD412F5 /* DailyImpostor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91AEC2D03D44C511569ED52 /* DailyImpostor.swift */; };
 		CBC042094EDA4DDA1440A416 /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A29533AECE8FA1EB16B96D4 /* Graph.swift */; };
 		CF9A929E09FFBE10432EAD98 /* Coverage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7638A5E7DA4EB6E90B02A7 /* Coverage.swift */; };
 		D5496FF3218975A16B79BB86 /* rehearsal-en.json in Resources */ = {isa = PBXBuildFile; fileRef = 8DD871C7BE65AF8D81842116 /* rehearsal-en.json */; };
 		D8D1DF02BED409D8C8A7DC61 /* CoverageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E310116659D3792CD47BE118 /* CoverageView.swift */; };
+		D8E80C99F1DDA1FB4F949710 /* DailyGuessWho.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5ADD6A5C909D04EA3C690A /* DailyGuessWho.swift */; };
 		D937AA11FA167AF13DDEE271 /* timeline-en.json in Resources */ = {isa = PBXBuildFile; fileRef = 2BD06E98514EED3967D7E6BC /* timeline-en.json */; };
+		D9FDD824B7F6F7BBF15EF7DE /* DailyBingoRetroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58618AD051A7D236FDB5901E /* DailyBingoRetroView.swift */; };
+		E026F5932F8618B6C421521E /* DailyXIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAD00F36B3E2AA8D4F5A4EC /* DailyXIView.swift */; };
 		E4A53BB5481E04E9121781B9 /* GameResume.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B49C4B82824235151BA9829 /* GameResume.swift */; };
 		E4C07B436636FFB6564F3716 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD6271B8ABEAC92237DD4836 /* Assets.xcassets */; };
+		E770092343C255FA1775D495 /* DailyXI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7A0098F81381234F5C4738 /* DailyXI.swift */; };
 		EAFF7921952228213686F6A6 /* Rehearsal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA94985E81B1F0E04C77F26 /* Rehearsal.swift */; };
 		EB1413DD838DE09AE7572DF2 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA791A790FCB14403A8DBC23 /* AppModel.swift */; };
 		EE9936A69FB0163F645ED8EB /* PracticeGaps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9293F084AA12E8F914D0DA78 /* PracticeGaps.swift */; };
@@ -85,7 +84,10 @@
 		F459041C6E8B7F609D31DD39 /* ContentUpdates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1D6D25721193BAB6B4D999 /* ContentUpdates.swift */; };
 		F4AE5328C34281A227CD705F /* drafts-en.json in Resources */ = {isa = PBXBuildFile; fileRef = 1D15CE2DB7E9C37C8BEE5083 /* drafts-en.json */; };
 		F5012D961E7D81E94EFE4094 /* DailyTop10View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E742E45065DB444B399B7B /* DailyTop10View.swift */; };
+		F70142034FF69F3333F2AB0D /* DailyWordle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B084E50CF27566E0DC419B /* DailyWordle.swift */; };
+		F7475F05356162BEE97DD517 /* StreakFlameRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB2B56DEC85E89B1767DA4B /* StreakFlameRenderer.swift */; };
 		F7934A1FDECA534CD260691F /* ExplorerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D176CBE6551188EA227BFABA /* ExplorerView.swift */; };
+		FC7B3E4263F104317F70A2C9 /* DailyBingoRetro.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE530EDFE6389DB565E09CC0 /* DailyBingoRetro.swift */; };
 		FD0B4E21402AE9822AA3C66D /* LessonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF9265116E25E2BF11AF2C9 /* LessonView.swift */; };
 /* End PBXBuildFile section */
 
@@ -100,25 +102,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3BAD00F36B3E2AA8D4F5A4EC /* DailyXIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyXIView.swift; sourceTree = "<group>"; };
-		FF7A0098F81381234F5C4738 /* DailyXI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyXI.swift; sourceTree = "<group>"; };
-		3A2F82D5A0D09C54A9A6FE3A /* DailyImpostorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyImpostorView.swift; sourceTree = "<group>"; };
-		D91AEC2D03D44C511569ED52 /* DailyImpostor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyImpostor.swift; sourceTree = "<group>"; };
-		E7C61505013AB19EB6C1BEA7 /* DailyConnectionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyConnectionsView.swift; sourceTree = "<group>"; };
-		C4C51E4199116810BC8227D9 /* DailyConnections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyConnections.swift; sourceTree = "<group>"; };
-		741E57FCE562A8B11D3CF457 /* DailyBingo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyBingo.swift; sourceTree = "<group>"; };
-		314FF71D8C1F94BD6AF4CDB4 /* DailyGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyGridView.swift; sourceTree = "<group>"; };
-		9131A70E3C44C7018CD25E8B /* DailyGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyGrid.swift; sourceTree = "<group>"; };
-		1F151FDB6EB5A02F2E9F2896 /* DailyWordleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyWordleView.swift; sourceTree = "<group>"; };
-		77B084E50CF27566E0DC419B /* DailyWordle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyWordle.swift; sourceTree = "<group>"; };
-		58618AD051A7D236FDB5901E /* DailyBingoRetroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyBingoRetroView.swift; sourceTree = "<group>"; };
-		DE530EDFE6389DB565E09CC0 /* DailyBingoRetro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyBingoRetro.swift; sourceTree = "<group>"; };
-		3F803F2AD5E5A479A23CC47D /* DailyGoltextoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyGoltextoView.swift; sourceTree = "<group>"; };
-		F19C6452921CE3D3E0F27F07 /* DailyGoltexto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyGoltexto.swift; sourceTree = "<group>"; };
-		0B47AEAC721AC629C372BF12 /* DailyGuessWhoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyGuessWhoView.swift; sourceTree = "<group>"; };
-		FE5ADD6A5C909D04EA3C690A /* DailyGuessWho.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyGuessWho.swift; sourceTree = "<group>"; };
 		040EE940F8B19FB06AC7B14F /* Content.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Content.swift; sourceTree = "<group>"; };
 		08674D1A67FB4BEBB32B545F /* DailyReveal.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DailyReveal.swift; sourceTree = "<group>"; };
+		0B47AEAC721AC629C372BF12 /* DailyGuessWhoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyGuessWhoView.swift; sourceTree = "<group>"; };
 		0C9B1366A7BCF1012DB573C8 /* RehearsalView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RehearsalView.swift; sourceTree = "<group>"; };
 		0CF94E40E1DBE5E69BB7F885 /* starter-en.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; path = "starter-en.json"; sourceTree = "<group>"; };
 		14A787A4A96F423AD601B4AF /* GamesView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GamesView.swift; sourceTree = "<group>"; };
@@ -126,19 +112,26 @@
 		171DB1CE51A229979E27C97B /* DailyPyramidView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DailyPyramidView.swift; sourceTree = "<group>"; };
 		1748C6C507FC54A146D6F51C /* PlayerGroups.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PlayerGroups.swift; sourceTree = "<group>"; };
 		1B49C4B82824235151BA9829 /* GameResume.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GameResume.swift; sourceTree = "<group>"; };
-		1D15CE2DB7E9C37C8BEE5083 /* drafts-en.json */ = {isa = PBXFileReference; includeInIndex = 1; path = "drafts-en.json"; sourceTree = "<group>"; };
+		1D15CE2DB7E9C37C8BEE5083 /* drafts-en.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; path = "drafts-en.json"; sourceTree = "<group>"; };
 		1DA94985E81B1F0E04C77F26 /* Rehearsal.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Rehearsal.swift; sourceTree = "<group>"; };
+		1DB2B56DEC85E89B1767DA4B /* StreakFlameRenderer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StreakFlameRenderer.swift; sourceTree = "<group>"; };
+		1F151FDB6EB5A02F2E9F2896 /* DailyWordleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyWordleView.swift; sourceTree = "<group>"; };
 		267DA166EFB8DC9CD6BB95DF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		2BD06E98514EED3967D7E6BC /* timeline-en.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; path = "timeline-en.json"; sourceTree = "<group>"; };
 		2C5EF711CD94AE4DBD7A4EE6 /* SoundAssetsView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SoundAssetsView.swift; sourceTree = "<group>"; };
 		2D1D6D25721193BAB6B4D999 /* ContentUpdates.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ContentUpdates.swift; sourceTree = "<group>"; };
+		314FF71D8C1F94BD6AF4CDB4 /* DailyGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyGridView.swift; sourceTree = "<group>"; };
+		3A2F82D5A0D09C54A9A6FE3A /* DailyImpostorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyImpostorView.swift; sourceTree = "<group>"; };
+		3BAD00F36B3E2AA8D4F5A4EC /* DailyXIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyXIView.swift; sourceTree = "<group>"; };
 		3D90F61C2695718E9BCED131 /* FlowTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FlowTests.swift; sourceTree = "<group>"; };
+		3F803F2AD5E5A479A23CC47D /* DailyGoltextoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyGoltextoView.swift; sourceTree = "<group>"; };
 		42D643E331A929FBDC945021 /* Sounds */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = Sounds; sourceTree = "<group>"; };
 		44549E9139E3443B66DB2E34 /* Learning.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Learning.swift; sourceTree = "<group>"; };
 		4549B851986FB8C584392F2D /* StreakBadge.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StreakBadge.swift; sourceTree = "<group>"; };
 		4AA1EE9385DBFEE017150BDB /* TimelineGameView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TimelineGameView.swift; sourceTree = "<group>"; };
 		4E7638A5E7DA4EB6E90B02A7 /* Coverage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Coverage.swift; sourceTree = "<group>"; };
 		585971EEDF1CEED7EEC0823B /* Games.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Games.swift; sourceTree = "<group>"; };
+		58618AD051A7D236FDB5901E /* DailyBingoRetroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyBingoRetroView.swift; sourceTree = "<group>"; };
 		5A29533AECE8FA1EB16B96D4 /* Graph.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Graph.swift; sourceTree = "<group>"; };
 		5DF9265116E25E2BF11AF2C9 /* LessonView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LessonView.swift; sourceTree = "<group>"; };
 		61FC0FA460EC5AF74B59DD8F /* ContentDownload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ContentDownload.swift; sourceTree = "<group>"; };
@@ -148,13 +141,16 @@
 		69CAF16169F54078C4005D08 /* FoxlingoApp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FoxlingoApp.swift; sourceTree = "<group>"; };
 		6B4A1974B3B01C85D26BA1F0 /* Album.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
 		6D6843E51D69668BD8540FBE /* games-en.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; path = "games-en.json"; sourceTree = "<group>"; };
+		741E57FCE562A8B11D3CF457 /* DailyBingo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyBingo.swift; sourceTree = "<group>"; };
+		77B084E50CF27566E0DC419B /* DailyWordle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyWordle.swift; sourceTree = "<group>"; };
 		77E56B339B1BD67288DEE76F /* DailyChallenges.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DailyChallenges.swift; sourceTree = "<group>"; };
 		77F87F3A242BA97B77CD920D /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Timeline.swift; sourceTree = "<group>"; };
 		78055BFC3AA23280B83DA4D3 /* MysteryGameView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MysteryGameView.swift; sourceTree = "<group>"; };
 		83EC6F3949AFAD0E740F0C61 /* MemoryGame.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MemoryGame.swift; sourceTree = "<group>"; };
 		8D25505AA67832982A60EE08 /* ContentUpdatesView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ContentUpdatesView.swift; sourceTree = "<group>"; };
 		8DA24C96CBA922814BAD5EB4 /* Design.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Design.swift; sourceTree = "<group>"; };
-		8DD871C7BE65AF8D81842116 /* rehearsal-en.json */ = {isa = PBXFileReference; includeInIndex = 1; path = "rehearsal-en.json"; sourceTree = "<group>"; };
+		8DD871C7BE65AF8D81842116 /* rehearsal-en.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; path = "rehearsal-en.json"; sourceTree = "<group>"; };
+		9131A70E3C44C7018CD25E8B /* DailyGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyGrid.swift; sourceTree = "<group>"; };
 		9293F084AA12E8F914D0DA78 /* PracticeGaps.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PracticeGaps.swift; sourceTree = "<group>"; };
 		9F5805FBE83EFA5E707214FA /* DailySquadSliceView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DailySquadSliceView.swift; sourceTree = "<group>"; };
 		AE49724F121C78481AA89D89 /* PracticeView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PracticeView.swift; sourceTree = "<group>"; };
@@ -165,22 +161,30 @@
 		BC35574D37589DA87E7C5A5D /* AlbumView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AlbumView.swift; sourceTree = "<group>"; };
 		BFCB34612F32F812991157E5 /* memory-en.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; path = "memory-en.json"; sourceTree = "<group>"; };
 		C2C18A5B21E37AAF8EAFEDD6 /* Mystery.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Mystery.swift; sourceTree = "<group>"; };
+		C4ACF5D2E8132C70FE6299AA /* StreakFire.metal */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.metal; path = StreakFire.metal; sourceTree = "<group>"; };
+		C4C51E4199116810BC8227D9 /* DailyConnections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyConnections.swift; sourceTree = "<group>"; };
 		C5F42670E83DFD2C425C1988 /* DailySquadSlice.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DailySquadSlice.swift; sourceTree = "<group>"; };
 		CADE050C3166F8029D3AB230 /* FootballWordleView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FootballWordleView.swift; sourceTree = "<group>"; };
 		CF04BE9776E9842A6456BD2C /* StudyPlan.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StudyPlan.swift; sourceTree = "<group>"; };
 		D0A114FDEA77AA562EE89769 /* mystery-en.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; path = "mystery-en.json"; sourceTree = "<group>"; };
 		D176CBE6551188EA227BFABA /* ExplorerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ExplorerView.swift; sourceTree = "<group>"; };
-		D21E10FE85345A04B9442564 /* daily-en.json */ = {isa = PBXFileReference; includeInIndex = 1; path = "daily-en.json"; sourceTree = "<group>"; };
+		D21E10FE85345A04B9442564 /* daily-en.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; path = "daily-en.json"; sourceTree = "<group>"; };
+		D91AEC2D03D44C511569ED52 /* DailyImpostor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyImpostor.swift; sourceTree = "<group>"; };
+		DE530EDFE6389DB565E09CC0 /* DailyBingoRetro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyBingoRetro.swift; sourceTree = "<group>"; };
 		DFE9855923E0E8D93595C59C /* DraftXI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DraftXI.swift; sourceTree = "<group>"; };
 		E310116659D3792CD47BE118 /* CoverageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CoverageView.swift; sourceTree = "<group>"; };
 		E4459FFC7ECDD8B3D2745338 /* Roadmaps.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Roadmaps.swift; sourceTree = "<group>"; };
 		E76FE00149A3C9E3A3970AB7 /* DraftXIView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DraftXIView.swift; sourceTree = "<group>"; };
+		E7C61505013AB19EB6C1BEA7 /* DailyConnectionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyConnectionsView.swift; sourceTree = "<group>"; };
 		EA45E7CA36E4D2F45E70FA7E /* MemoryGameView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MemoryGameView.swift; sourceTree = "<group>"; };
 		F18528AA81076956AB55886B /* SoundAssets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SoundAssets.swift; sourceTree = "<group>"; };
+		F19C6452921CE3D3E0F27F07 /* DailyGoltexto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyGoltexto.swift; sourceTree = "<group>"; };
 		FC839D51CA750F88265F29E8 /* SoundPlayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SoundPlayer.swift; sourceTree = "<group>"; };
 		FD1C7ED3212E0B5D84B7C261 /* ClubLibrary.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ClubLibrary.swift; sourceTree = "<group>"; };
 		FD6271B8ABEAC92237DD4836 /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FE5ADD6A5C909D04EA3C690A /* DailyGuessWho.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyGuessWho.swift; sourceTree = "<group>"; };
 		FE6E53D5680A4EC6313AA676 /* Foxlingo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Foxlingo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF7A0098F81381234F5C4738 /* DailyXI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyXI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -340,6 +344,8 @@
 				2C5EF711CD94AE4DBD7A4EE6 /* SoundAssetsView.swift */,
 				4AA1EE9385DBFEE017150BDB /* TimelineGameView.swift */,
 				4549B851986FB8C584392F2D /* StreakBadge.swift */,
+				1DB2B56DEC85E89B1767DA4B /* StreakFlameRenderer.swift */,
+				C4ACF5D2E8132C70FE6299AA /* StreakFire.metal */,
 				0C9B1366A7BCF1012DB573C8 /* RehearsalView.swift */,
 				CADE050C3166F8029D3AB230 /* FootballWordleView.swift */,
 				164EF1553A2DCCE0E460298C /* PlayerGroupsView.swift */,
@@ -515,6 +521,8 @@
 				12F69F3E40185E7CEF50D20F /* Timeline.swift in Sources */,
 				4D7B21D17CD24BA132AD8D68 /* TimelineGameView.swift in Sources */,
 				18630EBBC5C3089B37CECC50 /* StreakBadge.swift in Sources */,
+				F7475F05356162BEE97DD517 /* StreakFlameRenderer.swift in Sources */,
+				400C75DF450F85EFF29CFBA5 /* StreakFire.metal in Sources */,
 				EAFF7921952228213686F6A6 /* Rehearsal.swift in Sources */,
 				47D111E9ED68E8CAF48B9CCE /* RehearsalView.swift in Sources */,
 				EE9936A69FB0163F645ED8EB /* PracticeGaps.swift in Sources */,
